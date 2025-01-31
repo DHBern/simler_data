@@ -1,0 +1,34 @@
+#name: Transkribus export
+name: Transkribus-Export
+#description: Export a transcription from Transkribus to this repository.
+description: Export einer (rohen) TEI-Transkription aus Transkribus.
+title: "[Export]: "
+labels: ["task:transkribus-export"]
+projects: ["octo-org/1", "octo-org/44"]
+assignees:
+  - octocat
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Starten eines TEI-Exports aus Transkribus durch Einage einer Transkribus-Dokument-ID. 
+#        Use this form to submit a document ID to initiate a Transkribus export to TEI.
+  - type: dropdown
+    id: source-collection
+    attributes:
+#      label: Choose source collection
+      label: Sammlung auswählen
+      multiple: false
+      options:
+        - Johann Wilhelm Simlers Teutsche Gedichte (795736)
+      default: 0
+  - type: input
+    id: document-id
+    attributes:
+#      label: Enter document ID to export
+      label: Dokument-ID eingeben
+#      description: Create a separate issue for each document.
+      description: Pro Issue lässt sich ein Dokument exportieren.
+      placeholder: '0123456'
+    validations:
+      required: true
