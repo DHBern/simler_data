@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="http://www.tei-c.org/release/xml/tei/custom/schema/relaxng/tei_all.rng" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-stylesheet type="text/css" href="kommentare.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Kommentare zur Simler-Edition</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <p>Das ist ein Beispiel für eine Kommentarliste. An dieser Stelle könnte Erklärtext
+               stehen.</p>
+         </sourceDesc>
+      </fileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <noteGrp>
+               <note xml:id="comment-65c85a46-18fa-4122-af9f-1356d3bee7c5" ana="20250220182046694">
+                  <span type="lemma"/>
+                  <p>Hans Eschers] Hans Escher von Berg (1646–1659), Sohn von Hans Heinrich Escher
+                     vom Luchs (GND, 1616–1690) und Anna Dorothea Meiss von Berg (1623–1679), vgl.
+                     Biogramm [Link]; ertrank mit 12 oder 13 Jahren im Rhein, <ref
+                        target="http://www.hfls.ch/humo-gen/family/1/F104223?main_person=I298572"
+                        >HFLS</ref></p>
+                  <p><hi rend="italic">multi-paragraph possible</hi></p>
+               </note>
+            </noteGrp>
+         </div>
+      </body>
+   </text>
+</TEI>
