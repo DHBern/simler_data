@@ -28,8 +28,7 @@
     </teiHeader>
     <text>
         <body>
-            <p><hi rendition="#b" style="font-size:14pt">Aller Psalmen Davids Haubtbegriff / oder Kern: in fünf buͤcher / und so vil gesangsweisen abgeteihlt.</hi>
-                <hi style="font-size:14pt">[4]</hi></p>
+            <p><hi rendition="#b" style="font-size:14pt">Aller Psalmen Davids Haubtbegriff / oder Kern: in fünf buͤcher / und so vil gesangsweisen abgeteihlt.</hi></p>
             <pb n="4"/>
             
             
@@ -2213,7 +2212,8 @@
             <pb n="59"/>
             </lg>
             
-            <head><hi rendition="#b" style="font-size:14pt">Andächtige Fest- und unterweisungs-Gesänge. [60]</hi></head>
+            <head><hi rendition="#b" style="font-size:14pt">Andächtige Fest- und unterweisungs-Gesänge.</hi></head>
+            <pb n="60"/>
             
             
             <lg>
@@ -2548,76 +2548,83 @@
             <head><hi rendition="#b">Liebesgespräch einer Christgläubigen Seel mit ihrem Herren und Heiland Jesus Christus.</hi></head>
             <l>Jn der weis: Einsmals mich ein lust ankam / etc.</l>
             </lg>
-            
+            <!--Bereich überarbeiten (Label, Einrückung) [CF]-->
             <lg>
             <head>1.</head>
-            <l>Seel¦¦JEsus / warer Gottes Sohn /</l>
-            <l rendition="#et2" firstLine="284">deines Vatters freud und won /</l>
-            <l indLef="142" firstLine="992">selber Gott zugleiche:</l>
-            <l indLef="144" firstLine="708">Was doch mag es immer seyn</l>
-            <l indLef="144" firstLine="708">das dich auß des himmels schreyn</l>
-            <l indLef="142" firstLine="992">trib von deinem reiche?</l>
+            <label>Seel</label>
+            <l>JEsus / warer Gottes Sohn /</l>
+            <l>deines Vatters freud und won /</l>
+            <l rendition="#et">selber Gott zugleiche:</l>
+            <l>Was doch mag es immer seyn</l>
+            <l>das dich auß des himmels schreyn</l>
+            <l rendition="#et">trib von deinem reiche?</l>
             </lg>
             
             <lg>
             <head>2.</head>
-            <l indLef="144" firstLine="708">War es gwalt und feyendschafft?</l>
-            <l indLef="144" firstLine="708">War es eine gheime krafft</l>
-            <l indLef="142" firstLine="992">die dich hat gezogen</l>
-            <l indLef="144" firstLine="708">auß des Vatters liebster schoß /</l>
-            <l indLef="144" firstLine="708">auf die erden / arm und bloß?</l>
-            <l indLef="142" firstLine="992">Hat dich list betrogen?</l>
+            <l>War es gwalt und feyendschafft?</l>
+            <l>War es eine gheime krafft</l>
+            <l rendition="#et">die dich hat gezogen</l>
+            <l>auß des Vatters liebster schoß /</l>
+            <l>auf die erden / arm und bloß?</l>
+            <l rendition="#et">Hat dich list betrogen?</l>
             </lg>
             
             <lg>
             <head>3.</head>
-            <l>Christus¦Nein / o nein! noch gwalt / noch list /</l>
-            <l indLef="852">noch so was dergleichen ist /</l>
-            <l indLef="1134">brachte mich auff erden:</l>
-            <l indLef="852">meine liebe nur allein /</l>
-            <l indLef="852">daß ich möchte Heiland seyn /</l>
-            <l indLef="1134">hiesse mich mensch werden.</l>
+            <label>Christus</label>
+            <l>Nein / o nein! noch gwalt / noch list /</l>
+            <l>noch so was dergleichen ist /</l>
+            <l rendition="#et">brachte mich auff erden:</l>
+            <l>meine liebe nur allein /</l>
+            <l>daß ich möchte Heiland seyn /</l>
+            <l rendition="#et">hiesse mich mensch werden.</l>
             <pb n="77"/>
             </lg>
             
             <lg>
             <head>4.</head>
-            <l>Seel¦¦Was für dank nun sol ich dir</l>
-            <l indLef="1136">für die liebe / die du mir</l>
-            <l indLef="1418">hast erzeigt / erweisen?</l>
-            <l indLef="1136">Wan ich ewig lobte dich /</l>
-            <l indLef="1136">wurde doch nicht gnugsam ich</l>
-            <l indLef="1418">deine liebe preisen!</l>
+            <label>Seel</label>
+            <l>Was für dank nun sol ich dir</l>
+            <l>für die liebe / die du mir</l>
+            <l rendition="#et">hast erzeigt / erweisen?</l>
+            <l>Wan ich ewig lobte dich /</l>
+            <l>wurde doch nicht gnugsam ich</l>
+            <l rendition="#et">deine liebe preisen!</l>
             </lg>
             
             <lg>
             <head>5.</head>
-            <l>Christus¦Weil ich so geliebet dich /</l>
-            <l indLef="708" firstLine="143">solst hinwider lieben mich /</l>
-            <l indLef="992" firstLine="142">mir allein vertrauen:</l>
-            <l indLef="708" firstLine="143">meines worts ein tähter seyn /</l>
-            <l indLef="708" firstLine="143">deines glaubens früchte sein</l>
-            <l indLef="992" firstLine="142">klärlich lassen schauen.</l>
+            <label>Christus</label>
+            <l>Weil ich so geliebet dich /</l>
+            <l>solst hinwider lieben mich /</l>
+            <l rendition="#et">mir allein vertrauen:</l>
+            <l>meines worts ein tähter seyn /</l>
+            <l>deines glaubens früchte sein</l>
+            <l rendition="#et">klärlich lassen schauen.</l>
             </lg>
             
             <lg>
             <head>6.</head>
-            <l>Seel¦¦Ja / Herr: aber gib du mir</l>
-            <l indLef="708" firstLine="143">deine gnad / zu folgen dir /</l>
-            <l indLef="992" firstLine="142">hertzlich dich zu lieben:</l>
-            <l indLef="708" firstLine="143">meinen glauben mir vermehr /</l>
-            <l indLef="708" firstLine="143">daß er sich zu deiner ehr /</l>
-            <l indLef="992" firstLine="142">mir zum heil / mög uͤben!</l>
+            <label>Seel</label>
+            <l>Ja / Herr: aber gib du mir</l>
+            <l>deine gnad / zu folgen dir /</l>
+            <l rendition="#et">hertzlich dich zu lieben:</l>
+            <l>meinen glauben mir vermehr /</l>
+            <l>daß er sich zu deiner ehr /</l>
+            <l rendition="#et">mir zum heil / mög uͤben!</l>
             </lg>
             
             <lg>
             <head>7.</head>
-            <l>Christus¦Jch / dein liebstes seelenpfand /</l>
-            <l indLef="708" firstLine="143">stärke deine glaubenshand /</l>
-            <l indLef="992" firstLine="142">vester mich zu fassen.</l>
-            <l>Seel¦¦Hin / o welt / und was in dir /</l>
-            <l indLef="708" firstLine="143">Jesus wil verbleiben mir /</l>
-            <l indLef="992" firstLine="142">nimmer mich verlassen.</l>
+            <label>Christus</label>
+            <l>Jch / dein liebstes seelenpfand /</l>
+            <l>stärke deine glaubenshand /</l>
+            <l rendition="#et">vester mich zu fassen.</l>
+            <label>Seel</label>
+            <l>Hin / o welt / und was in dir /</l>
+            <l>Jesus wil verbleiben mir /</l>
+            <l rendition="#et">nimmer mich verlassen.</l>
             <pb n="78"/>
             </lg>
             
@@ -5650,7 +5657,7 @@
             </lg>
             
             
-            <p><hi rendition="#b" style="font-size:14pt" xml:space="preserve">Vnterschiedliche / auf zeiten und anlässe gerichtete Gesänge / Glükwuͤnschungen / Ehren- und Loblieder: </hi><hi style="font-size:14pt">[194]</hi></p>
+            <p><hi rendition="#b" style="font-size:14pt" xml:space="preserve">Vnterschiedliche / auf zeiten und anlässe gerichtete Gesänge / Glükwuͤnschungen / Ehren- und Loblieder:</hi></p>
             <pb n="194"/>
             
             
@@ -7377,7 +7384,7 @@
             
             <lg>
             <head>8.</head>
-            <l>Schönste Ros / du Gottesgabe /¦¦¦¦¦Dorothea.</l>
+            <l>Schönste Ros / du Gottesgabe / <!--als gap oder label kodieren? [CF]-->Dorothea.</l>
             <l rendition="#et">wird er sprächen / nennt man dich /</l>
             <l>dich ich von dem Himmel habe /</l>
             <l rendition="#et">hertzlich du erfreüest mich:</l>
@@ -7391,7 +7398,7 @@
             <lg>
             <head>9.</head>
             <l>Hertzgeliebter; was außweiset</l>
-            <l rendition="#et">dein so suͤsser Ehrennam[m] /¦¦¦¦¦Johannes.</l>
+            <l rendition="#et">dein so suͤsser Ehrennam[m] / <!--als gap oder label kodieren? [CF]-->Johannes.</l>
             <l>wird sie sagen; ward gepreiset</l>
             <l rendition="#et">von dir / öffter / lobesam:</l>
             <l rendition="#et2">freündtlich / liebreich / angenäm /</l>
@@ -7587,7 +7594,7 @@
             <head>5.</head>
             <l>Selig seyt ihr dan zuschetzen /</l>
             <l rendition="#et">hochgeehrter Bräutigam /</l>
-            <l rendition="#et">wie außweiset euer Nam:¦¦¦¦¦¦Felix.</l>
+            <l rendition="#et">wie außweiset euer Nam: <!--als gap oder label kodieren? [CF]-->Felix.</l>
             <l>weil euch euers leids ergetzet</l>
             <l rendition="#et">ein so tugendsames weib /</l>
             <l rendition="#et">Eine / die mit euch ein leib.</l>
@@ -8741,7 +8748,7 @@
             <l rendition="#et">mit andern wolgetahn die neuen ehleuht hie:</l>
             <l>O daß von ihnen man mög sprechen ie und ie:</l>
             <l><hi style="font-size:13pt">Jn Gott er gehet her / und sie ist Huldenreiche!</hi>
-                <hi style="font-size:10.5pt" xml:space="preserve">Anagr. </hi>[328]</l>
+                <hi style="font-size:10.5pt" xml:space="preserve">Anagr. </hi></l>
             <pb n="328"/>
             </lg>
             
@@ -9304,7 +9311,7 @@
             
             
             <head><hi rendition="#b">Gespräch Eines Manns und Weibs: Auß anlaß Heutiger Ehe-verlobnuß / H. H. H. Sch. und J. S. H.</hi></head>
-            
+            <!--"Mann" und "Weib" als Label auszeichnen? [CF]-->
             <lg>
             <l>Mann.</l>
             <l rendition="#et">Ey! Ey was hör ich doch vom Herren Bräutigam?</l>
@@ -9346,7 +9353,7 @@
             
             <lg>
             <l>Weib.</l>
-            <l indLef="426">Nicht wenig / und nicht klein:</l>
+            <l rendition="#et">Nicht wenig / und nicht klein:</l>
             <l>Dan wie ein freundtlich Weib: so auch ein <hi style="font-size:13pt">Harts</hi> nicht minder</l>
             <l>dem jungen / frischen Mann gibt angenäme Kinder /</l>
             <l rendition="#et">die seine Leid-vergeß und Alters-stüzzen seyn.</l>
@@ -9508,7 +9515,8 @@
             <pb n="353"/>
             </lg>
             
-            <head><hi rendition="#b" style="font-size:14pt">Allerhand erbauliche uͤberschrifften: Geburt- und Sterbgetichte: Sinn- Sitten- Wahl- und Haußsprüche. [504]</hi></head>
+            <head><hi rendition="#b" style="font-size:14pt">Allerhand erbauliche uͤberschrifften: Geburt- und Sterbgetichte: Sinn- Sitten- Wahl- und Haußsprüche.</hi></head>
+            <pb n="504"/>
             
             <p><hi rendition="#i">Leerseite</hi></p>
             <pb n="505"/>
@@ -9667,7 +9675,8 @@
             
             <lg>
             <head type="list"><hi rendition="#b">Werke der barmhertzigkeit / und derselben gnadenbelohnung / Jes. 58. v. 7.</hi></head>
-            <head indLef="360"><hi rendition="#b">Matth. 25. v. 35.</hi></head>
+            <!--Einrückung, lb? [CF]-->
+            <head><hi rendition="#b">Matth. 25. v. 35.</hi></head>
             </lg>
             
             <lg>
@@ -9786,7 +9795,7 @@
             
             
             <lg>
-            <l indLef="426">Die hoffnung und der Glaub mit diser welt vergehen:</l>
+            <l>Die hoffnung und der Glaub mit diser welt vergehen:</l>
             <l>Die Liebe nur allein wird ewiglich bestehen.</l>
             </lg>
             
@@ -9973,24 +9982,24 @@
             <l>was heimlich in dem hertzen war.</l>
             </lg>
             
-            
+            <!--Nummerierung fehlt-->
             
             <lg>
-            <l indLef="426">Wer schertz und schimpf nicht mag erleiden /</l>
+            <l>Wer schertz und schimpf nicht mag erleiden /</l>
             <l>der sol diß hertz von hertzen meiden.</l>
             </lg>
             
             
             
             <lg>
-            <l indLef="426">Der wein entdekt ein iedes hertz /</l>
+            <l>Der wein entdekt ein iedes hertz /</l>
             <l>ob sey darinn schertz oder schmertz.</l>
             </lg>
             
             
             
             <lg>
-            <l indLef="426">Das ädel räbensafft / zur frölichkeit gegeben /</l>
+            <l>Das ädel räbensafft / zur frölichkeit gegeben /</l>
             <l>durch mißbrauch unheil schafft / und kürtzet unser leben.</l>
             </lg>
             
@@ -10135,7 +10144,7 @@
             <l>Es schallet viler Nam[m] noch heut in aller welt /</l>
             <l>mit nicht geringem ruhm; die doch dem Menschen-orden</l>
             <l>längst gute nacht gesagt; zu staub und gar nichts worden:</l>
-            <l>¦warunder sonderlich <hi style="font-size:13pt">Herr Gwalther</hi> wird gezehlt /</l>
+            <l rendition="#et">warunder sonderlich <hi style="font-size:13pt">Herr Gwalther</hi> wird gezehlt /</l>
             <l rendition="#et" n="5">deß Bůch von Festen fast eim ieden wolgefällt</l>
             <l>vom Osten bis zum West; vom Suden bis zum Norden;</l>
             <l>weils weyßt den Lebenswäg; entdekt die Seelen-morden:</l>
@@ -10152,14 +10161,15 @@
             
             <lg>
             <l type="list"><hi rendition="#i #b">U</hi><hi rendition="#b">ber Herren Johannes Wirtzen / etc. Lehr- und trostreiche Predigen vom verlohrnen Sohn.</hi></l>
-            <head indLef="360"><hi rendition="#b">Johannes Wirtz: verwächselt: So warn ihn ietz.</hi></head>
+            <!--Einrückung, lb? [CF]-->
+            <head><hi rendition="#b">Johannes Wirtz: verwächselt: So warn ihn ietz.</hi></head>
             </lg>
             
             <lg>
             <l>Zu so verkehrter zeit; bey so verderbter jugend /</l>
             <l>da vil verlohrne Söhn’ umwandlen in untugend /</l>
             <l rendition="#et">der Tichter dises Bůchs dir gibet disen raht:</l>
-            <l>¦<hi style="font-size:13pt">So warn ihn;</hi> deinen sohn; ietz / eh es wird zuspaht.</l>
+            <l rendition="#et"><hi style="font-size:13pt">So warn ihn;</hi> deinen sohn; ietz / eh es wird zuspaht.</l>
             </lg>
             
             
@@ -10462,7 +10472,7 @@
             <l rendition="#et">und so von stund zu stund in grössers sich verkehrt</l>
             <l>O Zürich / unter deß / mit angefangnem Werke</l>
             <l>fahr immer eyfrig fort; der Nachwelt zum Gemerke;</l>
-            <l n="35">¦daß / dessen yngedenk / die Kindes<seg rendition="background(yellow)" style="font-size:12pt">-</seg>kinder sich</l>
+            <l n="35" rendition="#et">daß / dessen yngedenk / die Kindes<seg rendition="background(yellow)" style="font-size:12pt">-</seg>kinder sich</l>
             <l rendition="#et">verwundern deiner Gaab / und rühmen ewig dich.</l>
             <l>Das Lob der Dapferkeit / so man im Krieg erwirbet /</l>
             <l>dir zwaren nie gebrach; noch nicht: auch nicht erstirbet:</l>
@@ -10507,7 +10517,7 @@
             <l>Das kleiner Zürich ist um Abrams zeit erstanden /</l>
             <l>vom Thurik erstgestifft: hernach in Suevus handen</l>
             <l rendition="#et">die grössre Statt erbaut; Zweyreiche drum genen[n]t;</l>
-            <l>¦auß C<hi rendition="#i">æ</hi>sars zwang verneüt; von Burgern vor verbren[n]t.</l>
+            <l rendition="#et">auß C<hi rendition="#i">æ</hi>sars zwang verneüt; von Burgern vor verbren[n]t.</l>
             <l n="5">Ein hochbefreyte Statt: zum Christenthum bekehret:</l>
             <l>das ein- und andre mal bevestnet und vermehret:</l>
             <l rendition="#et">ihr altes Regiment sich ändert mit gefahr:</l>
@@ -10809,7 +10819,7 @@
             
             <lg>
             <l>Solt’ ich / grosser Gönner / dan nichts von deiner Tugend singen:</l>
-            <l>¦Weil gesamte Ka<unclear>s</unclear>tallinen dich zu ehren sind geneigt /</l>
+            <l rendition="#et">Weil gesamte Ka<unclear>s</unclear>tallinen dich zu ehren sind geneigt /</l>
             <l rendition="#et">und Apollo sich so günstig gegen dir anjetz erzeigt?</l>
             <l>Solte meine stim[m] ohn stim[m] nicht zu deinem Lob erklingen /</l>
             <l n="5">da die Künste<unclear>-</unclear>statt am Rhein; die Belohnung dir zubringen;</l>
@@ -10817,7 +10827,7 @@
             <l rendition="#et">Viva! er ist Doctor worden / schrey ich mit der Musenchor!</l>
             <l>Sein so hochbegabter Geist kan sich himmelhoch erschwingen.</l>
             <l rendition="#et">Churpfaltz seines Diensts begehrt: Zürich findet sich geehrt:</l>
-            <l n="10">¦Wer mit ihm <hi style="font-size:13pt">in Gott Ehr</hi> suchet / deme wirds Gelük beschehrt.</l>
+            <l n="10" rendition="#et">Wer mit ihm <hi style="font-size:13pt">in Gott Ehr</hi> suchet / deme wirds Gelük beschehrt.</l>
             <l>Nun so wünsch ich / schließlich / ihm vil gesunder Tag’ und Jahre</l>
             <l rendition="#et">zum zweyfachen Ehrenstande / ruhmlich ihme zugekent:</l>
             <l rendition="#et">Lehrer in der Gottes-Lehre werd er förterhin genent:</l>
@@ -10828,13 +10838,13 @@
             <p type="list"><hi rendition="#i #b">U</hi><hi rendition="#b">ber des obbemeldten Land- und Lustgůt.</hi></p>
             
             <lg>
-            <l>¦Einst hieß’ ich <hi style="font-size:13pt">Sparenberg:</hi> die ursach weiß’ ich nicht;</l>
-            <l>¦ietz aber <hi style="font-size:13pt">Fridenberg:</hi> darvon ich so bericht:</l>
+            <l rendition="#et">Einst hieß’ ich <hi style="font-size:13pt">Sparenberg:</hi> die ursach weiß’ ich nicht;</l>
+            <l rendition="#et">ietz aber <hi style="font-size:13pt">Fridenberg:</hi> darvon ich so bericht:</l>
             <l>Es hat ein alter Herr; der nun / bey dreissig jahren /</l>
             <l>den Kirchenfriden gsucht / und den noch nicht erfahren;</l>
             <pb n="532"/>
-            <l n="5">¦in foller hofnung doch mich <hi style="font-size:13pt">Fridenberg</hi> genent:</l>
-            <l>¦weil den Besizzer er <hi style="font-size:13pt">fridliebend hat erkent</hi></l>
+            <l n="5" rendition="#et">in foller hofnung doch mich <hi style="font-size:13pt">Fridenberg</hi> genent:</l>
+            <l rendition="#et">weil den Besizzer er <hi style="font-size:13pt">fridliebend hat erkent</hi></l>
             <l>Gott segne dises Gůt / daß die Besizzer haben /</l>
             <l>den Friden / und was sie mag hier und dort erlaben.</l>
             </lg>
@@ -10932,7 +10942,7 @@
             <l>daß die Gelegenheit ihm / keiner zeit / entweich.</l>
             </lg>
             
-            
+            <!--Nummerierung fehlt [CF]-->
             
             <lg>
             <l>Ein klůger ihm zum zwek in allen dingen sezzet /</l>
@@ -10949,8 +10959,8 @@
             
             
             <lg>
-            <l indLef="360">Das Raht und Taht zugleich dir mög ersprießlich seyn /</l>
-            <l indLef="360">so hab ein Daubenhertz und Schlangenäügelein.</l>
+            <l>Das Raht und Taht zugleich dir mög ersprießlich seyn /</l>
+            <l>so hab ein Daubenhertz und Schlangenäügelein.</l>
             </lg>
             
             
@@ -10978,8 +10988,8 @@
             
             
             <lg>
-            <l indLef="360">Wan Tugend bey der Schönheit sitzt /</l>
-            <l indLef="360">gleich einem Deamant sie blitzt.</l>
+            <l>Wan Tugend bey der Schönheit sitzt /</l>
+            <l>gleich einem Deamant sie blitzt.</l>
             </lg>
             
             
@@ -11164,20 +11174,20 @@
             <pb n="537"/>
             </lg>
             
-            
-            <head>¦<hi rendition="#b">140. Anbindgeticht / auf Dorothea tag.</hi></head>
+            <!--Einrückung im Head kodieren? [CF]-->
+            <head><hi rendition="#b">140. Anbindgeticht / auf Dorothea tag.</hi></head>
             
             <lg>
             <l>EJn kraut heißt Gottesgnad / so wir gemeinlich kennen:</l>
             <l>ein namm ist / welchen wir ein Gottesgabe nennen.</l>
             <l rendition="#et">Das kräutlin / Gottesgnad / uns dienet zur artzney:</l>
             <l rendition="#et">der name / Gottesgab / erinnert uns darbey /</l>
-            <l n="5" indLef="-567">¦¦ ¦daß Gott dem Herren wir lob / ehr und dank zu sagen / </l>
+            <l n="5">daß Gott dem Herren wir lob / ehr und dank zu sagen / </l>
             <l>für seine gaben / die er uns hat aufgetragen;</l>
             <l rendition="#et">besonder daß er uns / nach seinem eben bild / </l>
             <l rendition="#et">vernünfftig hat gemacht / und nicht geleich dem Wild / </l>
             <l>daß er uns eine seel gegossen in den leibe / </l>
-            <l n="10" indLef="-567">¦¦¦¦ ¦die nimmer sterblich sey / und ewiglich verbleibe</l>
+            <l n="10">die nimmer sterblich sey / und ewiglich verbleibe</l>
             <l rendition="#et">des Herren Christus gspons / mit dem sie sich verpflicht:</l>
             <l rendition="#et">alß er den gnadenbund im Tauff hat aufgericht.</l>
             </lg>
@@ -11185,12 +11195,12 @@
             <lg>
             <l>Weil nun / Frau Bas / auch ihr den schönen namen fuͤhret / </l>
             <l>bey dem ihr Gottesgab / durch Gottes gnad / verspüret / </l>
-            <l n="15" indLef="-567">¦ ¦¦und eben diser tag denselben mit sich bringt / </l>
+            <l n="15" rendition="#et">und eben diser tag denselben mit sich bringt / </l>
             <l rendition="#et">der Dorothea sonst in seiner spraach erklingt:</l>
             <l>so wünsch vom Herren ich / daß ihr den tag erlebet</l>
             <l>vil jahr / gesund und frisch: befehle mich hienebet</l>
-            <l> ¦zu gunsten allezeit / woran ich zweifel nicht:</l>
-            <l n="20" indLef="-567"> ¦¦Den wunsch erwahre der / zu dem er ist gericht:</l>
+            <l rendition="#et">zu gunsten allezeit / woran ich zweifel nicht:</l>
+            <l n="20" rendition="#et">Den wunsch erwahre der / zu dem er ist gericht:</l>
             </lg>
             
             
@@ -11206,7 +11216,7 @@
             <l>auß demselben dir zuweisen</l>
             <pb n="538"/>
             <l rendition="#et">was mir mein gemuͤth erfreut /</l>
-            <l n="5" indLef="-567">¦¦ ¦¦¦Eine freye Gottes-gab</l>
+            <l n="5" rendition="#et2">Eine freye Gottes-gab</l>
             <l rendition="#et2">heissest du / und bist vorab</l>
             <l>mir geschänket von dem HERREN / </l>
             <l>dessen Nam bekannt ist ferren.</l>
@@ -11215,12 +11225,12 @@
             <lg>
             <head>2.</head>
             <l>Heut / nach unsern Landesbräuchen /</l>
-            <l n="10" indLef="-567"> ¦¦flochte meine treue Hand /</l>
+            <l n="10" rendition="#et">flochte meine treue Hand /</l>
             <l>auß gemahlten Blumensträuchen /</l>
             <l rendition="#et">meiner Liebsten dises Band: </l>
             <l rendition="#et2">daß sie mit verknüpfet sey / </l>
-            <l rendition="#et2">biß sie sich wird lösen frey /¦</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">15 </hi>¦¦ ¦mit beliebter Liebes-gabe /</l>
+            <l rendition="#et2">biß sie sich wird lösen frey /</l>
+            <l n="15">mit beliebter Liebes-gabe /</l>
             <l>die mein junges Hertz erlabe.</l>
             </lg>
             
@@ -11229,7 +11239,7 @@
             <l>Mancher bindet nur im schertzen</l>
             <l rendition="#et">die und die auf disen Tag:</l>
             <l>aber Ich / mit stätem Hertzen /</l>
-            <l n="20" indLef="-567">¦ ¦¦binde dich / so vest ich mag /</l>
+            <l n="20" rendition="#et">binde dich / so vest ich mag /</l>
             <l rendition="#et2">Wünsch’ und bitte Gott dabey</l>
             <l rendition="#et2">daß sich diser Tag verneu</l>
             <l>vilbeliebte jahr / in freuden / </l>
@@ -11238,26 +11248,27 @@
             
             <lg>
             <head>4.</head>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">25 </hi>¦ ¦Liebste / laß es dir belieben</l>
+            <l n="25">Liebste / laß es dir belieben</l>
             <l rendition="#et">wie es ist von mir gemeint:</l>
             <l>werden wir gleich oft vertriben /</l>
             <l rendition="#et">seind wir doch / durch Treu / vereint:</l>
             <l rendition="#et2">Bleib nur immer wie du bist /</l>
-            <l n="30" indLef="-567">¦ ¦¦¦dan / in einer kurtzen frist /</l>
+            <l n="30" rendition="#et2">dan / in einer kurtzen frist /</l>
             <l>werden wir zusamen kommen /</l>
             <l>und dem scheyden seyn entnommen.</l>
             </lg>
             
             <lg>
-            <l>5. </l>
+            <l>5.</l>
             <l>Zwing / Apollo / deine Säiten /</l>
             <l rendition="#et">daß sie / durch geschärfften klang /</l>
-            <l n="35" indLef="-567"> ¦meiner Liebsten Lob außbräiten:</l>
-            <l rendition="#et">Hilff / o Clio / mit Gesang!¦[539]</l>
+            <l n="35">meiner Liebsten Lob außbräiten:</l>
+            <l rendition="#et">Hilff / o Clio / mit Gesang!</l>
+            <pb n="539"/>
             <l rendition="#et2">Flora / mit den guldnen Kle /</l>
             <l rendition="#et2">Ziere meine Dorothe. </l>
             <l>in den balden Fruͤhlings-tagen</l>
-            <l n="40" indLef="-567"> ¦¦ ¦die den Wintergreis verjagen.</l>
+            <l n="40">die den Wintergreis verjagen.</l>
             </lg>
             
             
@@ -11271,12 +11282,12 @@
             <l rendition="#et">alß ihn derselbige / gleich andern / weggerafft /</l>
             <l rendition="#et">er aber von dem Tod / durch wahren Glaubens krafft /</l>
             <l>nach ritterlichem Kampf / ins Leben durchgetrungen</l>
-            <l n="5" indLef="-567">¦ ¦Sein’ edle Seele sich hat uͤber sich geschwungen</l>
+            <l n="5">Sein’ edle Seele sich hat uͤber sich geschwungen</l>
             <l rendition="#et">in jennes Ort / wo sie in stäten freüden lebt /</l>
             <l rendition="#et">erwartend ihres Leibs / des Schöpfers Lob erhebt /</l>
             <l>und stimmet mit / wann wird das Heilig Herr / gesungen.</l>
             <l>Ihr Hinterlaßne laßt nun euer Trauren fahren /</l>
-            <l n="10" indLef="-567"> ¦¦<hi style="font-size:13pt">Herr Zwinger</hi> wünscht nicht mehr in diser Welt zuseyn /</l>
+            <l n="10" rendition="#et"><hi style="font-size:13pt">Herr Zwinger</hi> wünscht nicht mehr in diser Welt zuseyn /</l>
             <l rendition="#et">wo lauter zwang und drang / sorg / muͤh’ und seelen peyn:</l>
             <l>des Trostes Gottes eüch wöll vor weiterm Leid bewahren!</l>
             <l rendition="#et">O / daß ein gleicher Hirt der hinterlaßnen Herd /</l>
@@ -11302,12 +11313,12 @@
             <l rendition="#et">durch den / der allem fleisch versaget Audientz /</l>
             <l rendition="#et">bey welchem weder Bitt / noch Goldgeleiches Gläntz /</l>
             <l>noch auch die Tugend gilt; dieweil er keinem glaubet /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦¦ ¦und ihm der <hi style="font-size:13pt">Schöpfer</hi> selb das Würgen hat erlaubet:</l>
+            <l n="5">und ihm der <hi style="font-size:13pt">Schöpfer</hi> selb das Würgen hat erlaubet:</l>
             <l rendition="#et">Es mag ein König seyn / in einem Purpur-Rok /</l>
             <l rendition="#et">Ein Bättler an der Straß / auff halb verfaultem Stok /</l>
             <l>ein weiser oder thor / er frißts unaußgeklaubet /</l>
             <l rendition="#et">doch nur das Sterbliche / Herrn Buolen Seele lebt /</l>
-            <l n="10" indLef="-567">¦ ¦¦und / selig / Gottes Lob im Himmel hoch erhebt /</l>
+            <l n="10" rendition="#et">und / selig / Gottes Lob im Himmel hoch erhebt /</l>
             <l>erwartend auch des Leibs. Die Ehrgedächtnuß bleibet /</l>
             <l rendition="#et">sein weltbekantes Lob verschwindet nimmermehr /</l>
             <l rendition="#et">wo seiner wird gedacht / beschihets nur in ehr /</l>
@@ -11324,12 +11335,12 @@
             <l>den des strengen <hi style="font-size:13pt">Rheines Runs</hi> / hingerissen und verzukket</l>
             <l>auß des <hi style="font-size:13pt">Brůders</hi> hand und aug / unter <hi style="font-size:13pt">Basel</hi> abgerukket:</l>
             <l>Dan der<hi style="font-size:13pt" xml:space="preserve"> Leichnam</hi> ist gefunden / wo er war verscharret schon /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦¦ ¦und anietz zum trost eüch Eltern; aber auch dem Neid zu hohn /</l>
+            <l n="5">und anietz zum trost eüch Eltern; aber auch dem Neid zu hohn /</l>
             <l>in die <hi style="font-size:13pt">Bergerkirch</hi> versetzt; adelmässig außgeschmukket;</l>
             <l>durch gelehrte <hi style="font-size:13pt">Schrifft</hi> zugleich wird der Nachwelt vorgetrukket</l>
             <l>zu der nachfolg seine Tugend; Ihme zuverdientem lohn.</l>
             <l>Also lebt er nach dem Tod: drum verberget eüern schmertzen /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">10 </hi>¦¦ ¦wüschet weg den Trehnenbach: fasset nicht so tieff zu hertzen /</l>
+            <l n="10">wüschet weg den Trehnenbach: fasset nicht so tieff zu hertzen /</l>
             <l>daß ein <hi style="font-size:13pt">Escher</hi> / auß der <hi style="font-size:13pt">Eschen</hi> / in die <hi style="font-size:13pt">Eschen</hi> widerkehrt:</l>
             <l>Hat eüch gleich des Höchsten Hand; zwar empfindtlich gnug getroffen /</l>
             <l>so ligt eüre Stärke doch in der Still’ und in dem Hoffen:</l>
@@ -11357,7 +11368,7 @@
             <l>Ach! so ist auch ohn euch / <hi style="font-size:13pt">Herr Wolff</hi> / die Schůl gestallt.</l>
             <l>Weil aber euer Geist auch lebet in dem Man</l>
             <l>der gleichen Stand / durch Gott nunmehr getretten an:</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦ ¦Wie solte nicht durch Ihn die Schůl erleuchtet werden</l>
+            <l n="5">Wie solte nicht durch Ihn die Schůl erleuchtet werden</l>
             <l>gleich wie zuvor durch Euch / vom Sonnenschein die Erden!</l>
             <l>Jedoch gebührend Lob / <hi style="font-size:13pt">Herr Wolff</hi> / euch ewig bleibe:</l>
             <l><hi style="font-size:13pt">Herr Spöri</hi> bey der Schůl vil zeits mit nutz vertreibe!</l>
@@ -11378,7 +11389,7 @@
             </lg>
             
             <lg>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦ ¦Zwo Stund / nach letst gehaltner Predig /</l>
+            <l n="5">Zwo Stund / nach letst gehaltner Predig /</l>
             <l>ward meine Seel des Leibes ledig.</l>
             </lg>
             
@@ -11389,7 +11400,7 @@
             
             <lg>
             <l>Vom Guttschlag schon beruͤhrt / den Gottsdienst ich follendet /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">10 </hi>¦ ¦zwo Stund hernach zu Hauß / mein Leben selig endet.</l>
+            <l n="10">zwo Stund hernach zu Hauß / mein Leben selig endet.</l>
             </lg>
             
             <lg>
@@ -11403,12 +11414,12 @@
             </lg>
             
             <lg>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">15 </hi>¦ ¦Wan Lieb’ und Gegenliebe</l>
+            <l n="15">Wan Lieb’ und Gegenliebe</l>
             <l rendition="#et">des Pfarrers / und der Gmein /</l>
             <l>den bittern Tod vertriebe /</l>
             <l rendition="#et">nicht da leg mein Gebein:</l>
             <l>Jch were noch ihr Lehrer:</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">20 </hi>¦ ¦Sie weren noch Zuhörer /</l>
+            <l n="20">Sie weren noch Zuhörer /</l>
             <l rendition="#et">und wurdens förter seyn.</l>
             </lg>
             
@@ -11437,7 +11448,7 @@
             </lg>
             
             <lg>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦ ¦Fünfzehen Hiebe / Schütz / und Stich /</l>
+            <l n="5">Fünfzehen Hiebe / Schütz / und Stich /</l>
             <l>fürs Vatterland mußt leiden Ich.</l>
             </lg>
             
@@ -11445,7 +11456,7 @@
             <l>Für Gottes / und der Freyheit Ehr /</l>
             <l>hab ich gebraucht die Gegenwehr.</l>
             <l>Fünfzehen Wunden / in dem Streit /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">10 </hi>¦ ¦mir haben Leib und Seel entzweit.</l>
+            <l n="10">mir haben Leib und Seel entzweit.</l>
             </lg>
             
             
@@ -11517,15 +11528,15 @@
             <l rendition="#et">daß den Antonius sie übertroffen hett</l>
             <l rendition="#et">in kostlichkeit des mahls; warüber ein Gewett)</l>
             <l>ein perlein / grossen werths / verschlang an statt der speisen /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦ ¦und noch ein anders ihm / zu gleichem brauch / wolt weisen.</l>
+            <l n="5">und noch ein anders ihm / zu gleichem brauch / wolt weisen.</l>
             <l rendition="#et">Also der menschenfraß verschlukte neulich auch</l>
             <l rendition="#et">ein perlein / wunderschnell / in seinen holen bauch /</l>
             <l>welchs iedermenniglich fuͤr edler mußte preisen:</l>
             <l rendition="#et">doch einer sonderlich / der es so gar hoch hielt /</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">10 </hi>¦ ¦¦daß ihme deß verlurst sein hertze schier zerspielt.</l>
+            <l n="10" rendition="#et">daß ihme deß verlurst sein hertze schier zerspielt.</l>
             <l>Diß aber tröstet ihn / daß / gleich wie jenne gnossen</l>
             <l rendition="#et">ein muschelperlein nur / erzeugt im meeresschleim;</l>
-            <l>¦also der menschenfraß n<anchor type="commentRangeStart" n="10"/>ü<anchor type="commentRangeEnd" n="10"/><note place="comment" resp="#Emmenegger">In
+            <l rendition="#et">also der menschenfraß n<anchor type="commentRangeStart" n="10"/>ü<anchor type="commentRangeEnd" n="10"/><note place="comment" resp="#Emmenegger">In
                         Rd 594 «nur»</note>r das was kaht und leim:</l>
             <l>das perlein warte sein im himmel wol verschlossen.</l>
             </lg>
@@ -11559,7 +11570,7 @@
             <l rendition="#et">also auch dise welt hat eine schöne gstalt:</l>
             <l rendition="#et">vom eiß / so das zerbricht / man in das wasser fallt /</l>
             <l>und von der welt zum tod / der ewig ist / absteiget.</l>
-            <l indLef="-567"><hi style="font-size:10pt" xml:space="preserve">5 </hi>¦ ¦Sie beide / welt und eiß / zu ihrer zeit / vergehen:</l>
+            <l n="5">Sie beide / welt und eiß / zu ihrer zeit / vergehen:</l>
             <l rendition="#et">doch löset sich das eiß in wasser / wie es war:</l>
             <l rendition="#et">die welt mit ihrem tuhn verschwindet gantz und gar: </l>
             <l>O Höchster / gib / daß wir die eitelkeit verstehen!</l>
@@ -11651,7 +11662,7 @@
             <head><hi rendition="#b">168. Kämpf wider dich / so schlahest mich.</hi></head>
             
             <lg>
-            <l>Dises ungeheur * zudämpfen /¦¦¦*Lasterthier</l>
+            <l>Dises ungeheur * zudämpfen / <!--als gap oder label kodieren? [CF]-->*Lasterthier</l>
             <l>ieder wider sich muß kämpfen /</l>
             <l rendition="#et">mit der Rüstung angetahn /</l>
             <l rendition="#et">die Sant Paul ihm zeigen kan.</l>
@@ -12126,7 +12137,8 @@
             <l rendition="#et">ein andrer fraget erst: wer ist der gut gesell /</l>
             <l rendition="#et">der einen Schlaftrunk uns / in seinem hauß / aufstell?</l>
             <l n="95">So vil vom Gsundheittrunk. – – – –</l>
-            <l>¦¦– – – – – Von andern Sauffereyen /</l>
+            <!--Linie kodieren? [CF]-->
+            <l rendition="#et2">– – – – – Von andern Sauffereyen /</l>
             <l>die uns zu seel und leib verhindern am gedeyen /</l>
             <l rendition="#et">dich anderstwo umsih: der gschmak ist mir genug /</l>
             <l rendition="#et">und mein’ auch / daß hiervon ich habe schweigens fug.</l>
@@ -12308,7 +12320,8 @@
                 <hi rendition="#i #b #k">agapeti</hi><hi rendition="#b" xml:space="preserve">, </hi><hi rendition="#i #b">Diacons</hi><hi rendition="#b" xml:space="preserve"> der grossen Kirchen zu Constantinopel / an den frommen Keyser </hi><hi rendition="#i #b">J</hi><hi rendition="#i #b #k">ustinianum</hi>
                 <hi rendition="#i #b">LXXII.</hi><hi rendition="#b" xml:space="preserve"> lehrreichen Vermahnungs-capitlen; an des Herren Ehren-nammenstage / den 13. Häumon[at] 1652. nach kurtz zuvor / den 28. tag Brachmonats freybeschehener Wahl / wolmeinlich auf- und fürgestellt</hi></l>
             <head><hi rendition="#b">Von Johann-Wilhelm Simler / Zuchtmeister im mehrern Hofe zum Frauenmünster:</hi></head>
-            <head><hi rendition="#b" xml:space="preserve">alß schuldgeneigtwilligstem Diener / und Vettern. </hi>[562]</head>
+            <head><hi rendition="#b">alß schuldgeneigtwilligstem Diener / und Vettern.</hi></head>
+            <pb n="562"/>
             </lg>
             
             
@@ -12795,7 +12808,7 @@
             <l>S. 509   Jugend] Jngend</l>
             <l>S. 522   522] 122</l>
             <l>S. 524   und] nnd</l>
-            <l>S. 523   Zelt] Zeltz <g style="font-family:Wingdings;" n="F0E0"/> Korrektur?</l>
+            <l>S. 523   Zelt] Zeltz <!--→ Korrektur?--></l>
             <l>S. 532   Tempelbau] Tempelban</l>
             <l>S. 538   dessen] desse</l>
             <l>S. 543   Predig /] Predig /¡</l>
