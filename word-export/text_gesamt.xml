@@ -6,11 +6,8 @@
     <teiHeader>
         <fileDesc>
             <titleStmt>
-                <title>Johann-Wilhelm Simlers teutscher Getichten die dritte, von ihme selbsten um einen Drittheil vermehrt- und verbesserte Aussfertigung</title>
+                <title type="main">Johann-Wilhelm Simlers teutscher Getichten die dritte, von ihme selbsten um einen Drittheil vermehrt- und verbesserte Aussfertigung</title>
                 <author><persName ref="http://d-nb.info/gnd/119151693"><surname>Simler</surname><forename>Johann Wilhelm</forename></persName></author>
-                <respStmt>
-                    <resp><persName><surname>Emmenegger</surname><forename>Nathalie</forename></persName></resp>
-                </respStmt>
             </titleStmt>
             <editionStmt>
                 <edition>Vollständige digitalisierte Ausgabe.</edition>
@@ -22,13 +19,6 @@
                 <p>Converted from a Word document</p>
             </sourceDesc>
         </fileDesc>
-        <encodingDesc>
-            <appInfo>
-                <application xml:id="docxtotei" ident="TEI_fromDOCX" version="7.59.0a">
-                    <label>DOCX to TEI</label>
-                </application>
-            </appInfo>
-        </encodingDesc>
     </teiHeader>
     <text>
         <body>
