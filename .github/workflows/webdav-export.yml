@@ -1,0 +1,59 @@
+name: WebDAV Export
+
+on:
+  schedule:
+    - cron: "0 0 * * *" # Runs daily at midnight
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+jobs:
+  export_webdav:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Fetch Files and Directories from WebDAV Server
+        env:
+         WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
+         WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
+        run: |
+          # Base URL of the WebDAV server
+          WEBDAV_URL="http://185.169.94.128/dsl-webdav/simler/data"
+
+          # Target directory to store fetched files
+          TARGET_DIR="webdav_files"
+          mkdir -p "$TARGET_DIR"
+
+          # Recursively fetch all files and subdirectories
+          download_files() {
+            local remote_path="$1"
+            local local_path="$2"
+
+            # List files and directories in the current remote path
+            curl -s -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" --header "Depth: 1" --request PROPFIND "$WEBDAV_URL$remote_path" | grep -oP '(?<=<D:href>).*?(?=</D:href>)' | tail -n +2 | while read -r item; do
+              local item_name=$(basename "$item")
+
+              # If item is a directory, recursively download it
+              if [[ "$item" == */ ]]; then
+                mkdir -p "$local_path/$item_name"
+                download_files "$remote_path$item_name/" "$local_path/$item_name"
+              else
+                # If item is a file, download it
+                curl -s -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" --header "Depth: 1" --request GET "$WEBDAV_URL$remote_path$item_name" -o "$local_path/$item_name"
+              fi
+            done
+          }
+
+          # Start downloading from the root directory
+          download_files "/" "$TARGET_DIR"
+
+      - name: Commit and Push Changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+          git add webdav_files
+          git commit -m "Update files from WebDAV server" || echo "No changes to commit"
+          git push
