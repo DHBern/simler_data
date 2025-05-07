@@ -22,7 +22,7 @@ jobs:
           WEBDAV_URL="http://185.169.94.128/dsl-webdav/simler/data"
 
           # Target directory to store fetched files
-          TARGET_DIR="webdav_files"
+          TARGET_DIR="webdav/data"
           mkdir -p "$TARGET_DIR"
 
           # Recursively fetch all files and subdirectories
@@ -54,6 +54,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add webdav_files
+          git add webdav
           git commit -m "Update files from WebDAV server" || echo "No changes to commit"
           git push
