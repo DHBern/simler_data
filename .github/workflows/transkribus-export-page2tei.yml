@@ -25,6 +25,7 @@ jobs:
 
   run:
     name: run
+    if: ${{ !github.event.issue.pull_request }}
     runs-on: ubuntu-latest
     # needs: evaluate-label
     # if: needs.evaluate-label.outputs.continue == 'true'
