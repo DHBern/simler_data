@@ -34,6 +34,9 @@ jobs:
             curl -s -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" --header "Depth: 1" --request PROPFIND "$WEBDAV_URL$remote_path" | grep -oP '(?<=<D:href>).*?(?=</D:href>)' | tail -n +2 | while read -r item; do
               local item_name=$(basename "$item")
 
+              # Wait 2 seconds
+              sleep 2
+
               # If item is a directory, recursively download it
               if [[ "$item" == */ ]]; then
                 mkdir -p "$local_path/$item_name"
