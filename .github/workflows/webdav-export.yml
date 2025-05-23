@@ -21,8 +21,9 @@ jobs:
           # Base URL of the WebDAV server
           WEBDAV_URL="http://185.169.94.128/dsl-webdav/simler/data"
 
-          # Target directory to store fetched files
+          # Target directory
           TARGET_DIR="webdav/data"
+          rm -rf "$TARGET_DIR"
           mkdir -p "$TARGET_DIR"
 
           # Recursively fetch all files and subdirectories
