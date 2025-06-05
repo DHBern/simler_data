@@ -19,7 +19,7 @@ jobs:
          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
         run: |
           # Base URL of the WebDAV server
-          WEBDAV_URL="http://185.169.94.128/dsl-webdav/simler/data"
+          WEBDAV_URL=${{ secrets.WEBDAV_HOST }}
 
           # Target directory
           TARGET_DIR="webdav/data"
