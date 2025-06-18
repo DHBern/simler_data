@@ -1863,10 +1863,10 @@
                     <lb/>
                 </div>
                 <pb n="527"/>
+                <head><hi rendition="#b">84. Gedanken über unterschidliche Thier.</hi></head>
+                <lb/>
                 <div n="2">
                     <label>[175.]</label>
-                    <lb/>
-                    <head><hi rendition="#b">84. Gedanken über unterschidliche Thier.</hi></head>
                     <lb/>
                     <head><hi rendition="#b"><hi rendition="#aq">U</hi>ber den Leüen.</hi></head>
                     <lb/>
@@ -5244,7 +5244,7 @@
                     <head><hi rendition="#b">Regentenspiegel.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>[1.] REgenten seind von Gott mit höchstem Stand geehret/</l>
+                        <l>[1.] <hi rendition="#in">R</hi>Egenten seind von Gott mit höchstem Stand geehret/</l>
                         <lb/>
                         <l>damit durch sie sein Lob hinwidrum werd vermehret:</l>
                         <lb/>
@@ -5843,27 +5843,29 @@
                     <lb/>
                     <head><hi rendition="#b">Beschließlicher Wunsch.</hi></head>
                     <lb/>
-                    <lg>
-                        <l>ES wünschet Agapet dem Keyser/ und zugleiche</l>
+                    <lg type="poem">
+                        <lg n="1">
+                            <l><hi rendition="#in">E</hi>S wünschet Agapet dem Keyser/ und zugleiche</l>
+                            <lb/>
+                            <l>des Keysers Gmahelein/ ermäldtes oberst Reiche/</l>
+                            <lb/>
+                            <l rendition="#et">von dem ders geben kan: alß welcher über die/</l>
+                            <lb/>
+                            <l rendition="#et">die bherrscht und herrschend seind/ geherrschet ie
+                                und ie.</l>
+                        </lg>
                         <lb/>
-                        <l>des Keysers Gmahelein/ ermäldtes oberst Reiche/</l>
+                        <lg n="2">
+                            <l n="5">Dem neuerwehlten Herrn wünsch’ ich anjetz nicht minder/</l>
+                            <lb/>
+                            <l>und seiner Gmahelein; auch mit-gemeint die Kinder;</l>
+                        </lg>
                         <lb/>
-                        <l rendition="#et">von dem ders geben kan: alß welcher über die/</l>
-                        <lb/>
-                        <l rendition="#et">die bherrscht und herrschend seind/ geherrschet ie und
-                            ie.</l>
-                    </lg>
-                    <lb/>
-                    <lg>
-                        <l n="5">Dem neuerwehlten Herrn wünsch’ ich anjetz nicht minder/</l>
-                        <lb/>
-                        <l>und seiner Gmahelein; auch mit-gemeint die Kinder;</l>
-                    </lg>
-                    <lb/>
-                    <lg>
-                        <l rendition="#et">O aller Herren HERR/ versetz sie; lebenssatt;</l>
-                        <lb/>
-                        <l rendition="#et">auß disem Threnentahl in höchste Freudenstatt!</l>
+                        <lg n="3">
+                            <l rendition="#et">O aller Herren HERR/ versetz sie; lebenssatt;</l>
+                            <lb/>
+                            <l rendition="#et">auß disem Threnentahl in höchste Freudenstatt!</l>
+                        </lg>
                     </lg>
                 </div>
             </div>
