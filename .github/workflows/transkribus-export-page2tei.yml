@@ -76,16 +76,16 @@ jobs:
     - id: tei_filename
       run: echo "tei_filename=$(xmllint --xpath 'translate(//*[local-name()="trpDocMetadata"]/*[local-name()="title"]," ","_")' scratch/mets.xml)" >> "$GITHUB_OUTPUT"
     - name: METS to TEI (page2tei, XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.7
+      uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
         args: -s:scratch/mets.xml -xsl:page2tei/page2tei-0.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml
     - name: Refine TEI (XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.7
+      uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
         args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/refine-tei.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml
     - run: mv -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml
     - name: Generate issue reply (XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.7
+      uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
         args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/reporting.xsl -it
     - run: mv scratch/exported/*.xml exported/
@@ -173,7 +173,7 @@ jobs:
     #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
     # - name: PAGE XML to raw TEI (XSLT)
     #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   uses: pdaengeli/use-saxon-he-j@12.7
+    #   uses: pdaengeli/use-saxon-he-j@12.8.fix
     #   with:
     #     args: -s:validation_input.xml -xsl:transkribus-export/page-xml-to-raw-tei.xsl debug=${{ steps.debug_param.outputs.debug_param }}
     # - run: ls -l
@@ -189,7 +189,7 @@ jobs:
     # # next we can convert this to dseas-tei (using the -o flag or creating an xsl:result-document)
     # - name: raw TEI to dseas TEI (XSLT)
     #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   uses: pdaengeli/use-saxon-he-j@12.7
+    #   uses: pdaengeli/use-saxon-he-j@12.8.fix
     #   with:
     #     args: -s:data/1-raw-TEI -xsl:transkribus-export/raw-to-dseas-tei.xsl -o:data/2-base-TEI
     # - run: for f in data/2-base-TEI/*_raw.xml; do mv -i -- "$f" "${f//_raw/}"; done
