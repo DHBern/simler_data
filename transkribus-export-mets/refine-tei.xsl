@@ -14,7 +14,31 @@
             <xsl:apply-templates select="node()"/>
         </hi>
     </xsl:template>
+    
+    <xsl:template match="*:Antiqua">
+        <hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq">
+            <xsl:apply-templates select="node()"/>
+        </hi>
+    </xsl:template>
 
+    <xsl:template match="*:italic">
+        <hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#i">
+            <xsl:apply-templates select="node()"/>
+        </hi>
+    </xsl:template>
+
+    <xsl:template match="*:Spaced_letters">
+        <hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#g">
+            <xsl:apply-templates select="node()"/>
+        </hi>
+    </xsl:template>
+    
+    <xsl:template match="*:Small_capitals">
+        <hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#k">
+            <xsl:apply-templates select="node()"/>
+        </hi>
+    </xsl:template>
+    
     <xsl:template match="*:Initial_letter">
         <hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#in">
             <xsl:apply-templates select="node()"/>
