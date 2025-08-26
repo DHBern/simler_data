@@ -78,7 +78,7 @@ jobs:
     - name: METS to TEI (page2tei, XSLT)
       uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
-        args: -s:scratch/mets.xml -xsl:page2tei/page2tei-0.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -param combine true()
+        args: -s:scratch/mets.xml -xsl:page2tei/page2tei-0.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml combine=true
     - name: Refine TEI (XSLT)
       uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
