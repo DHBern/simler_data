@@ -72,7 +72,7 @@ jobs:
     - run: ls -l
     - run: git clone --branch v2.0.2 --single-branch https://github.com/dariok/page2tei.git
     - run: tree
-    - run: sudo apt install -y libxml2-utils
+    - run: sudo apt-get update && sudo apt-get install -y libxml2-utils
     - id: tei_filename
       run: echo "tei_filename=$(xmllint --xpath 'translate(//*[local-name()="trpDocMetadata"]/*[local-name()="title"]," ","_")' scratch/mets.xml)" >> "$GITHUB_OUTPUT"
     - name: METS to TEI (page2tei, XSLT)
