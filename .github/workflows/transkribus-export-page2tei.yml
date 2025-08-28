@@ -12,37 +12,14 @@ on:
 permissions: write-all
 
 jobs:
-  # evaluate-label:
-  #   name: evaluate-label
-  #   runs-on: ubuntu-latest
-  #   env:
-  #     TASKS: ${{ join(github.event.issue.labels.*.name,', ') }}
-  #     CONTINUE: ${{ contains(join(github.event.issue.labels.*.name,', '),'task:transkribus-export') && contains(fromJson(vars.WHITELIST),github.actor) && 'true' || 'false'}}
-  #   outputs:
-  #     continue: ${{ env.CONTINUE }}
-  #   steps:
-  #     - run: echo ${{ env.CONTINUE }}
-
   run:
     name: run
     if: ${{ !github.event.issue.pull_request }}
     runs-on: ubuntu-latest
-    # needs: evaluate-label
-    # if: needs.evaluate-label.outputs.continue == 'true'
-#    if: always() && ${{ contains(fromJson(vars.WHITELIST),github.actor) }} && ${{ contains(github.event.issue.labels.*.name,'task:transkribus-export') }}
     outputs:
       tei_filename: ${{ steps.tei_filename.outputs.tei_filename }}
       issue_reply_file: ${{ steps.issue-reply.outputs.issue_reply_file }}
-    #   schematron_is_valid: ${{ steps.schematron-result.outputs.schematron_is_valid }}
-    #   schematron_svrl: ${{ steps.schematron-svrl.outputs.schematron_svrl }}
-    #   issue_reply_file2: ${{ steps.issue-reply-post-transform.outputs.issue_reply_file2 }}
-    #   debug_param0: ${{ steps.debug_param0.outputs.debug_param0 }}
-    #   debug_param: ${{ steps.debug_param.outputs.debug_param }}
-    # env:
-    #   TASKS: ${{ join(github.event.issue.labels.*.name,', ') }}
     steps:
-    # - run: echo ${{join(github.event.issue.labels.*.name,', ')}}
-    # - run: echo env.TASKS
     - uses: actions/checkout@v4
       with:
         ref: ${{ github.head_ref }}
@@ -117,122 +94,9 @@ jobs:
             sed -e '$a\' .issue-reply-post-transform.txt
             echo "$delimiter"
         } >> "$GITHUB_OUTPUT"
-
-
-
-    # output for auto reply
-    # - name: Read result file
-    #   id: schematron-result
-    #   run: |
-    #     {
-    #       echo 'schematron_is_valid<<DELIM'
-    #       cat ./validation_is_valid.txt
-    #       echo
-    #       echo DELIM
-    #     } >> "$GITHUB_OUTPUT"
-    # # not sure we need this:       
-    # - name: Read svrl file
-    #   id: schematron-svrl
-    #   run: |
-    #     {
-    #       echo 'schematron_svrl<<DELIM'
-    #       cat ./validation_output-svrl.xml
-    #       echo
-    #       echo DELIM
-    #     } >> "$GITHUB_OUTPUT"
-    # - name: Read issue reply file
-    #   id: issue-reply
-    #   run: |
-    #     {
-    #       echo 'issue_reply_file<<DELIM'
-    #       cat ./issue-reply.txt
-    #       echo
-    #       echo DELIM
-    #     } >> "$GITHUB_OUTPUT"    
-    # - name: Debug param (as-is)
-    #   id: debug_param0
-    #   run: echo "debug_param0=$(cat ./issue-parser-result.json | jq -r '.debug[]')" >> "$GITHUB_OUTPUT"
-    # - name: Debug param (boolean)
-    #   id: debug_param
-    #   run: echo "debug_param=${{ steps.debug_param0.outputs.debug_param0 == 'Enable' && 'true' || 'false'}}" >> "$GITHUB_OUTPUT"
-    # - run: |
-    #     {
-    #       echo "### Workflow variables"
-    #       echo "| Variable            | Description              |Value               |"
-    #       echo "| ------------------- | ------------------------ | ------------------ |"
-    #       echo "| schematron_is_valid | Document is valid?       | ${{ steps.schematron-result.outputs.schematron_is_valid }}  |"
-    #       echo "| debug0              | XSLT-Debugging enabled?  | ${{ steps.debug_param0.outputs.debug_param0 == 'Enable' && 'Enable' || 'Disable' }}  |"
-    #       echo "| debug               | XSLT-Debugging (bool)?   | ${{ steps.debug_param.outputs.debug_param }}  |"
-    #     } >> $GITHUB_STEP_SUMMARY
-#    - run: echo "${{ steps.schematron-result.outputs.schematron_is_valid }}"
-    # - run: ls -l
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: mkdir -p ./data/0-transkribus-PAGE ./data/1-raw-TEI ./data/2-base-TEI
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: tree -L 1 
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - name: PAGE XML to raw TEI (XSLT)
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   uses: pdaengeli/use-saxon-he-j@12.8.fix
-    #   with:
-    #     args: -s:validation_input.xml -xsl:transkribus-export/page-xml-to-raw-tei.xsl debug=${{ steps.debug_param.outputs.debug_param }}
-    # - run: ls -l
-    # - run: chmod +x transkribus-export/string-to-tags.sh
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: transkribus-export/string-to-tags.sh ./data/1-raw-TEI/*_[0-9]*_raw.xml
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: ls -l
-    # - run: cat ./data/1-raw-TEI/*_[0-9]*_raw.xml
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    
-    # # at this stage we got a raw xml file in the root directory of the checked out repo (the working directory)
-    # # next we can convert this to dseas-tei (using the -o flag or creating an xsl:result-document)
-    # - name: raw TEI to dseas TEI (XSLT)
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   uses: pdaengeli/use-saxon-he-j@12.8.fix
-    #   with:
-    #     args: -s:data/1-raw-TEI -xsl:transkribus-export/raw-to-dseas-tei.xsl -o:data/2-base-TEI
-    # - run: for f in data/2-base-TEI/*_raw.xml; do mv -i -- "$f" "${f//_raw/}"; done
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: tree -L 2 data
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    # - run: cat data/2-base-TEI/*_[0-9]*.xml
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-
-    # - run: mkdir -p _generated && cp -r data/* _generated/
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-
-    # # Create a multiline string to be used by the git-auto-commit Action
-    # - name: Set commit message
-    #   id: commit_message_step
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   run: |
-    #     echo 'commit_message<<EOF' >> $GITHUB_OUTPUT
-    #     cat commit-message.txt >> $GITHUB_OUTPUT
-    #     echo 'EOF' >> $GITHUB_OUTPUT
-    #     rm -rf commit-message.txt
-
-    # - uses: stefanzweifel/git-auto-commit-action@v5
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   with:
-    #     commit_message: ${{ steps.commit_message_step.outputs.commit_message }}
-    #     file_pattern: '_generated/**'
-    #     skip_fetch: true
-
-    # - name: Read issue reply file
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
-    #   id: issue-reply-post-transform
-    #   run: |
-    #     {
-    #       echo 'issue_reply_file2<<DELIM'
-    #       cat ./issue-reply-post-transform.txt
-    #       echo
-    #       echo DELIM
-    #     } >> "$GITHUB_OUTPUT"  
         
-    # # exclude exported from artifact    
+    # exclude exported from artifact    
     - run: rm -r exported
-    #   if: steps.schematron-result.outputs.schematron_is_valid == 'True'
 
  # for easier debugging:       
     - uses: actions/upload-pages-artifact@v3
@@ -246,19 +110,15 @@ jobs:
   add-comment:
     needs: run
     runs-on: ubuntu-latest
-    #outputs:
-    #  issue_reply: ${{ steps.prepare-comment.outputs.issue_reply }}
     env:
       TASKS: ${{ join(github.event.issue.labels.*.name,', ') }}
       ISSUE_MD: ${{ needs.run.outputs.issue_reply_file }}
-#       ISSUE_MD2: ${{ needs.run.outputs.issue_reply_file2 }}
     permissions:
       issues: write
     steps:
       - run: ls -l
       - name: Prepare comment (success)
         id: prepare-comment-success
-#         if: needs.run.outputs.schematron_is_valid == 'True'
         run: |
           {
             echo 'issue_reply<<DELIM'
@@ -270,41 +130,11 @@ jobs:
             echo 
             echo DELIM
           } >> "$GITHUB_OUTPUT"
-#       - name: Prepare comment (failure)
-#         id: prepare-comment-failure
-#         if: needs.run.outputs.schematron_is_valid == 'False'
-#         run: |
-#           {
-#             echo 'issue_reply<<DELIM'
-#             echo '# Validation not successful :stop_sign:'
-#             echo "$ISSUE_MD"
-#             echo
-#             echo DELIM
-#           } >> "$GITHUB_OUTPUT"
 
       - name: Add comment
-#        run: gh issue comment "$NUMBER" --body-file ./ipynb.txt
         run: gh issue comment "$NUMBER" --body "$BODY"
         env:
-#           OUTPUT1: ${{needs.run.outputs.schematron_is_valid}}
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           NUMBER: ${{ github.event.issue.number }}
           BODY: ${{ steps.prepare-comment-success.outputs.issue_reply }} # ${{ steps.prepare-comment-failure.outputs.issue_reply }}
-
-#         # also add comment for success case (TBD after transformation)
-
-# # adding a reply to the issue thread in case of non-authorization
-#   add-comment-unauthorized:
-#     runs-on: ubuntu-latest
-#     permissions:
-#       issues: write      
-#     steps:
-#       - name: Add comment
-#         if: ${{ ! contains(fromJson(vars.WHITELIST),github.actor)}}
-#         run: gh issue close "$NUMBER" -c "$BODY"
-#         env:
-#           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#           GH_REPO: ${{ github.repository }}
-#           NUMBER: ${{ github.event.issue.number }}
-#           BODY: "**Initiator of the action (${{ github.actor }}) is not whitelisted.**\n\n **Aborting.**\n\n\n [Edit `WHITELIST`](https://github.com/organizations/dse-as/settings/variables/actions/WHITELIST)"
