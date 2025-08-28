@@ -45,4 +45,35 @@
         </hi>
     </xsl:template>
     
+    <xsl:template match="*:abbreviation">
+        <abbr xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:apply-templates select="node()"/>
+        </abbr>
+    </xsl:template>
+    
+    <xsl:template match="*:printing_error">
+        <xsl:choose>
+            <xsl:when test="@sic">
+                <choice xmlns="http://www.tei-c.org/ns/1.0">
+                    <sic>
+                        <xsl:value-of select="@sic => replace('\\u0020',' ')"/>
+                    </sic>
+                    <corr>
+                        <xsl:apply-templates select="node()"/>
+                    </corr>
+                </choice>
+            </xsl:when>
+            <xsl:otherwise>
+                <choice xmlns="http://www.tei-c.org/ns/1.0">
+                    <sic>
+                        <xsl:apply-templates select="node()"/>
+                    </sic>
+                    <corr/>
+                </choice>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
+    
+    <xsl:template match="*:supplied/@reason[.='']"/>
+    
 </xsl:stylesheet>
