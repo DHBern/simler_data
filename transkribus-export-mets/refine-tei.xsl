@@ -47,7 +47,7 @@
     <xsl:template name="facsimile">
         <xsl:param name="filename"/>
         <xsl:param name="node"/>
-        <xsl:result-document href="scratch/exported/{$filename}.xml" method="xml" encoding="UTF-8">
+        <xsl:result-document href="{$filename}.xml" method="xml" encoding="UTF-8">
             <facsimile xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$filename}">
                 <xsl:copy-of select="$node/node()"/>
             </facsimile>
