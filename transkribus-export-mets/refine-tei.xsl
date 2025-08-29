@@ -47,7 +47,7 @@
     <xsl:template name="facsimile">
         <xsl:param name="filename"/>
         <xsl:param name="node"/>
-        <xsl:result-document href="../scratch/exported/{$filename}.xml" method="xml" encoding="UTF-8">
+        <xsl:result-document href="scratch/exported/{$filename}.xml" method="xml" encoding="UTF-8">
             <facsimile xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$filename}">
                 <xsl:copy-of select="$node/node()"/>
             </facsimile>
@@ -70,7 +70,7 @@
     
     <xsl:template match="*:comment">
         <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment) + 1"/>
-        <anchor xml:id="{$anchorId}"/>
+        <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
         <xsl:if test="not(text()=' ')">
             <xsl:apply-templates select="node()"/>
         </xsl:if>
@@ -137,7 +137,7 @@
     <xsl:template match="text()">
         <xsl:analyze-string select="." regex="\$(.+)\$ ">
             <xsl:matching-substring>
-                <label>[<xsl:value-of select="regex-group(1)"/>.]</label>
+                <label xmlns="http://www.tei-c.org/ns/1.0">[<xsl:value-of select="regex-group(1)"/>.]</label>
             </xsl:matching-substring>
             <xsl:non-matching-substring>
                 <xsl:value-of select="."/>
@@ -234,7 +234,7 @@
         <xsl:variable name="facs" select="(preceding-sibling::*:lb)[last()]/@facs"/>
         <xsl:analyze-string select="." regex="\n">
             <xsl:matching-substring>
-                <lb facs="{$facs}"/><xsl:text>&#xa;</xsl:text>
+                <lb xmlns="http://www.tei-c.org/ns/1.0" facs="{$facs}"/><xsl:text>&#xa;</xsl:text>
             </xsl:matching-substring>
             <xsl:non-matching-substring>
                 <xsl:value-of select="."/>
