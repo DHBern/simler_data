@@ -14,6 +14,11 @@
     <xsl:mode name="merge-ab" on-no-match="shallow-copy"/>
     
     <xsl:template match="/">
+
+        <xsl:call-template name="facsimile">
+            <xsl:with-param name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')||'_facs'"/>
+            <xsl:with-param name="node" select="descendant::*:facsimile"/>
+        </xsl:call-template>
         
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates/>
@@ -39,6 +44,16 @@
         
     </xsl:template>
 
+    <xsl:template name="facsimile">
+        <xsl:param name="filename"/>
+        <xsl:param name="node"/>
+        <xsl:result-document href="../scratch/exported/{$filename}.xml" method="xml" encoding="UTF-8">
+            <facsimile xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$filename}">
+                <xsl:copy-of select="$node/node()"/>
+            </facsimile>
+        </xsl:result-document>
+    </xsl:template>
+    
     <xsl:template match="*:facsimile"/>
    
     <xsl:template match="@*[.='']"/>
