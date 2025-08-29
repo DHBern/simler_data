@@ -60,6 +60,7 @@ jobs:
       uses: pdaengeli/use-saxon-he-j@12.8.fix
       with:
         args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/refine-tei.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml
+    - run: cp -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_raw.xml
     - run: mv -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml
     - name: Generate issue reply (XSLT)
       uses: pdaengeli/use-saxon-he-j@12.8.fix
