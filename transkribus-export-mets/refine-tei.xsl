@@ -5,7 +5,20 @@
     exclude-result-prefixes="#all"
     version="3.0">
     
-    <xsl:output method="xml" indent="no"/>
+    <xsl:character-map name="escape-combining-chars">
+        <!--Combining Tilde: -->
+        <xsl:output-character character="&#771;" string="&amp;#x303;"/>
+        <!--Combining Comma Above: -->
+        <xsl:output-character character="&#787;" string="&amp;#x313;"/>
+        <!--Combining Greek Perispomeni: -->
+        <xsl:output-character character="&#834;" string="&amp;#x342;"/>
+        <!--Combining Latin Small Letter E: -->
+        <xsl:output-character character="&#868;" string="&amp;#x364;"/>
+        <!--Combining Latin Small Letter O: -->
+        <xsl:output-character character="&#870;" string="&amp;#x366;"/>
+    </xsl:character-map>
+    
+    <xsl:output method="xml" indent="no" use-character-maps="escape-combining-chars"/>
     
     <xsl:mode on-no-match="shallow-copy" />
     <xsl:mode name="transform-renditions" on-no-match="shallow-copy"/>
