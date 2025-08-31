@@ -25,6 +25,7 @@
     <xsl:mode name="remove-lines" on-no-match="shallow-copy"/>
     <xsl:mode name="move-lb" on-no-match="shallow-copy"/>
     <xsl:mode name="merge-ab" on-no-match="shallow-copy"/>
+    <xsl:mode name="wrap-head" on-no-match="shallow-copy"/>
     <xsl:mode name="indent-whitespace" on-no-match="shallow-copy"/>
     
     <xsl:template match="/">
@@ -52,6 +53,10 @@
         
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="merge-ab"/>
+        </xsl:variable>
+
+        <xsl:variable name="processed" as="node()*">
+            <xsl:apply-templates select="$processed" mode="wrap-head"/>
         </xsl:variable>
         
         <xsl:variable name="processed" as="node()*">
@@ -271,6 +276,71 @@
         <xsl:apply-templates select="node()" mode="merge-ab"/>
     </xsl:template>
     
+    
+    <!-- [mode] wrap-head 
+                wrap elements in head
+       ======================================== -->  
+
+    <!--
+        Example:
+        <num>4.</num><lb/>
+    -->
+    <xsl:template match="*:num
+        [preceding-sibling::node()[1][self::text()]]
+        [following-sibling::node()[1][self::*:lb]]" 
+        mode="wrap-head">
+        <head xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:copy>
+                <xsl:apply-templates select="node()|@*" mode="wrap-head"/> 
+            </xsl:copy>
+        </head>
+    </xsl:template>
+    
+    <!--
+        Example:
+        <hi rendition="#aq"><num>XXII.</num></hi><lb/>
+    -->
+    <xsl:template match="*:hi[@rendition='#aq'][*:num]
+        [not(descendant::*:lb)]
+        [preceding-sibling::node()[1][self::text()]]
+        [following-sibling::node()[1][self::*:lb]]" 
+        mode="wrap-head">
+        <head xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:copy>
+                <xsl:apply-templates select="node()|@*" mode="wrap-head"/>
+            </xsl:copy>   
+        </head>
+    </xsl:template>
+    
+    <!--
+        Example:
+        <label/><hi rendition="#aq"><num>XXII.</num></hi><lb/>
+    -->
+    <xsl:template match="*:body/*:div" mode="wrap-head">
+        <xsl:copy>
+            <xsl:copy-of select="@*"/>
+            <xsl:for-each-group select="node()" group-starting-with="*:label">
+                <xsl:for-each-group select="current-group()" group-ending-with="*:lb">
+                    <xsl:choose>
+                        <xsl:when test="position() = 1 and 
+                            current-group()[self::*:label] and 
+                            current-group()[self::*:lb] and 
+                            current-group()[self::*:hi[@rendition='#aq'][*:num]] and 
+                            not(current-group()[text()[matches(.,'\n')]])">
+                            <head>
+                                <xsl:apply-templates select="current-group()[not(self::*:lb)]" mode="wrap-head"/>
+                            </head>
+                            <xsl:apply-templates select="current-group()/self::*:lb" mode="wrap-head"/>
+                        </xsl:when>
+                        <xsl:otherwise>
+                            <xsl:apply-templates select="current-group()" mode="wrap-head"/>
+                        </xsl:otherwise>
+                    </xsl:choose>
+                </xsl:for-each-group>
+            </xsl:for-each-group>
+        </xsl:copy>
+    </xsl:template>
+
     <!-- [mode] indent-whitespace 
                 indent whitespace
        ======================================== -->  
