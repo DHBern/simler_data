@@ -25,6 +25,7 @@
     <xsl:mode name="remove-lines" on-no-match="shallow-copy"/>
     <xsl:mode name="move-lb" on-no-match="shallow-copy"/>
     <xsl:mode name="merge-ab" on-no-match="shallow-copy"/>
+    <xsl:mode name="indent-whitespace" on-no-match="shallow-copy"/>
     
     <xsl:template match="/">
 
@@ -51,6 +52,10 @@
         
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="merge-ab"/>
+        </xsl:variable>
+        
+        <xsl:variable name="processed" as="node()*">
+            <xsl:apply-templates select="$processed" mode="indent-whitespace"/>
         </xsl:variable>
         
         <xsl:sequence select="$processed"/>
@@ -262,8 +267,17 @@
        ======================================== -->  
 
     <xsl:template match="*:ab" mode="merge-ab">
-        <milestone xmlns="http://www.tei-c.org/ns/1.0" ana="{@facs}"/>
+        <milestone xmlns="http://www.tei-c.org/ns/1.0" unit="page" ana="{@facs}"/>
         <xsl:apply-templates select="node()" mode="merge-ab"/>
+    </xsl:template>
+    
+    <!-- [mode] indent-whitespace 
+                indent whitespace
+       ======================================== -->  
+    
+    <xsl:template match="text()" mode="indent-whitespace" expand-text="yes">
+        <xsl:text disable-output-escaping="yes">{. 
+            => replace('\n            \n            ','&#xa;            ')}</xsl:text>     
     </xsl:template>
     
 </xsl:stylesheet>
