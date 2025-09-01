@@ -351,7 +351,22 @@
     
     <xsl:template match="text()" mode="indent-whitespace" expand-text="yes">
         <xsl:text disable-output-escaping="yes">{. 
+            => replace('               ','            ')
             => replace('\n            \n            ','&#xa;            ')}</xsl:text>     
+    </xsl:template>
+    
+    <xsl:template match="*:label" mode="indent-whitespace">
+        <xsl:copy>
+            <xsl:apply-templates select="node()|@*" mode="indent-whitespace"/>
+        </xsl:copy>
+        <xsl:text> </xsl:text>
+    </xsl:template>
+    
+    <xsl:template match="*:lb" mode="indent-whitespace">
+        <xsl:text>&#xa;            </xsl:text>
+        <xsl:copy>
+            <xsl:apply-templates select="node()|@*" mode="indent-whitespace"/>
+        </xsl:copy>
     </xsl:template>
     
 </xsl:stylesheet>
