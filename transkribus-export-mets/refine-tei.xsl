@@ -253,8 +253,12 @@
         </xsl:copy>
     </xsl:template>
     
-    <xsl:template match="text()[matches(.,'\n')][preceding-sibling::*:lb]" mode="move-lb">
-        <xsl:variable name="facs" select="(preceding-sibling::*:lb)[last()]/@facs"/>
+    <xsl:template match="text()
+        [matches(.,'\n') and not(matches(.,'\n.*\n'))]
+        [ancestor::*:ab]
+        [not(position() = 1 and parent::*:ab)]" 
+        mode="move-lb">
+        <xsl:variable name="facs" select="(preceding::*:lb)[last()]/@facs"/>
         <xsl:analyze-string select="." regex="\n">
             <xsl:matching-substring>
                 <lb xmlns="http://www.tei-c.org/ns/1.0" facs="{$facs}"/><xsl:text>&#xa;</xsl:text>
