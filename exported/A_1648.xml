@@ -290,7 +290,7 @@
                <hi rendition="#k">JOH. CASPARUS SUIZERUS</hi> <abbr>f.</abbr></hi><lb facs="tl_1"/>
                <label>[xvii.]</label><hi rendition="#aq"><num>III.</num>
                In laudem Autoris, <abbr>&amp;c.</abbr><lb facs="tl_20"/>
-               <num>1.</num><lb facs="#facs_17_l"/>
+               <head><num>1.</num></head><lb facs="#facs_17_l"/>
                <hi rendition="#in">A</hi><hi rendition="#i">Ut prodeſſe volunt, aut delectare Poëtæ,</hi><lb facs="tl_21"/>
                <hi rendition="#i">Autor id hoc libro præſtat utrumq<abbr>ʒ</abbr> ſu</hi>o:<lb facs="tl_22"/>
                <hi rendition="#i">Miſcet enim dextrè metrum, melos: utile, dulce,</hi><lb facs="tl_23"/>
@@ -326,7 +326,7 @@
                <num><Catch_word/>V.</num></hi> Zu&#x366;<lb facs="tl_9"/>
             <pb n="19"/>
             <milestone unit="page" ana="#facs_19_tr_1"/>
-               <label>[xix.]</label><hi rendition="#aq"><num>V.</num></hi><lb facs="tl_1"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[xix.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>V.</num></hi></head><lb facs="tl_1"/>
                Zu&#x366; ehren und lobwürdigem ru&#x366;hm<lb facs="tl_2"/>
                dem hochgelehrten Herꝛen<lb facs="tl_3"/>
                <hi rendition="#b">Johann Wilhelm Simler/</hi><lb facs="tl_5"/>
@@ -355,7 +355,7 @@
                <hi rendition="#aq"><num>VI.</num></hi> <anchor xml:id="a27"/>Ob<note type="annotation" targetEnd="a27"><p>"Ob" stimmt nicht mit "Uber" auf der Folgeseite überein</p></note><lb facs="tl_28"/>
             <pb n="20"/>
             <milestone unit="page" ana="#facs_20_r_7"/>
-               <label>[xi.]</label><hi rendition="#aq"><num>VI.</num></hi><lb facs="tl_1"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[xi.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VI.</num></hi></head><lb facs="tl_1"/>
                <hi rendition="#aq">U</hi>ber Herꝛn Dichters namen<lb facs="tl_2"/>
                Bu&#x366;chſtabwa&#x364;chſel<lb facs="tl_3"/>
                JOHANN WJLHELM SJMLER/<lb facs="tl_4"/>
@@ -382,7 +382,7 @@
                
             <pb n="21"/>
             <milestone unit="page" ana="#facs_21_tr_1"/>
-               <label>[xiv.]</label><hi rendition="#aq"><num>VII.</num></hi><lb facs="tl_1"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[xiv.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VII.</num></hi></head><lb facs="tl_1"/>
                <hi rendition="#in">O</hi>B gleich der <hi rendition="#b">Tichter</hi> kunſt ſehr hoch bißher ge-<lb facs="tl_2"/>
                ſtigen/<lb facs="tl_3"/>
                Will Jhr verdienter Ru&#x366;hm bey vns doch bald erligen/<lb facs="tl_4"/>
@@ -455,7 +455,7 @@
                Vntugend wurde ſich bald finden in dem grab/<lb facs="tl_7"/>
                Wann ich ſolch glük erlebt/ nichts mehr zu&#x366; wünſchen hab.<lb facs="tl_8"/>
                Ehrenhold Falk von Traubenberg.<lb facs="tl_9"/>
-               <label>[xvi.]</label><hi rendition="#aq"><num>VIII.</num></hi><lb facs="tl_10"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[xvi.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VIII.</num></hi></head><lb facs="tl_10"/>
                <hi rendition="#in">S</hi>O ſchiket Herꝛ Simler ſein Bu&#x366;che zu&#x366;reiſen/<lb facs="tl_11"/>
                in diſer landsgegend die erſtlinge bringt/<lb facs="tl_12"/>
                Opitziſch/ fein Chriſtlich er tichtet und ſingt/<lb facs="tl_13"/>
@@ -483,7 +483,7 @@
                geſangsweiſen.<lb facs="tl_7"/>
             <pb n="25" test="2"/>
             <milestone unit="page" ana="#facs_25_tr_1"/>
-               <label>[1.]</label><hi rendition="#aq"><num>I.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[1.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>I.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Wer ſcha&#x364;lk und ſpo&#x364;tter fleucht/ und Gottes wort betrachtet/<lb facs="tl_8"/>
                der gru&#x366;net wie ein baum an einem waſſerfluß/<lb facs="tl_13"/>
                iſt ſelig hier und dort: ſein tu&#x366;hn gerahten mu&#x366;ß:<lb facs="tl_18"/>
@@ -541,28 +541,28 @@
             <milestone unit="page" ana="#facs_28_tr_1"/>
                wünſcht ihren undergang/ und wartet unverzagt<lb facs="tl_2"/>
                auff Gottes hülff und gnad/ gelobet ihn zu&#x366; ehren.<lb facs="tl_3"/>
-               <hi rendition="#aq"><num>VI.</num></hi><lb facs="tl_4"/>
+               <head><hi rendition="#aq"><num>VI.</num></hi></head><lb facs="tl_4"/>
                Alß David krank und ſchwach zu&#x366; ſeel und leib gelegen<lb facs="tl_5"/>
                ſu&#x366;cht er ſein hülff vnd troſt bey Gottes gnad allein/<lb facs="tl_6"/>
                ru&#x364;hmt auch derſelben ſich/ zu&#x366; trutz der feindsgemein/<lb facs="tl_7"/>
                die ſeinen tod verhofft/ ihrs willens dann zu&#x366; pflegen.<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>VII.</num></hi><lb facs="tl_9"/>
+               <head><hi rendition="#aq"><num>VII.</num></hi></head><lb facs="tl_9"/>
                Der David von dem Saul der aufru&#x366;hr falſch gezigen/<lb facs="tl_10"/>
                beym Herꝛen ſu&#x366;chet ſchirm: ſein unſchuld ihm er-<lb facs="tl_11"/>
                weißt:<lb facs="tl_12"/>
                weyſſaget wider Saul/ und Gotts gerichte preißt/<lb facs="tl_13"/>
                in deſſen lob er auch gelobt nicht zu&#x366; erligen.<lb facs="tl_14"/>
-               <hi rendition="#aq"><num>VIII.</num></hi><lb facs="tl_15"/>
+               <head><hi rendition="#aq"><num>VIII.</num></hi></head><lb facs="tl_15"/>
                Dein hoher nam&#x342;/ o Herꝛ/ iſt ho&#x364;chlich zu&#x366; erheben/<lb facs="tl_16"/>
                du tilgeſt deinen feind auß kleiner kindern mund/<lb facs="tl_17"/>
                und deine weyßheit uns tu&#x366;hſt in geſcho&#x364;pfften kund:<lb facs="tl_18"/>
                durch deine gu&#x364;te haſt uns alles undergeben.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>IX.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>IX.</num></hi></head><lb facs="tl_20"/>
                Der dankbar David hier des Herꝛen urtheil preiſet<lb facs="tl_21"/>
                in einem ſigeslied/ weil er in einer ſchlacht<lb facs="tl_22"/>
                das feld erhalten hat/ den hauptfeind umgebracht:<lb facs="tl_23"/>
                mit bitt/ daß Gottes hülff ihm fehrner werd erweiſet.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>X.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>X.</num></hi></head><lb facs="tl_25"/>
                Der David ſich erklagt/ im namen aller armen/<lb facs="tl_26"/>
                ab Sauls zu&#x366; groſſem ſtoltz/ betrug und tyranney:<lb facs="tl_27"/>
                ru&#x364;fft Gott um rettung an/ und tr<anchor xml:id="a29"/>o&#x364;<note type="annotation" targetEnd="a29"><p>Das übergeschriebene "e" ist nicht deutlich zu erkennen, auch nicht im göttingischen oder Münchner Exemplar, aber ein Trema scheint ausgeschlossen.</p></note>ſtet ſich darbey<lb facs="tl_28"/>
@@ -570,32 +570,32 @@
                
             <pb n="29" test="6"/>
             <milestone unit="page" ana="#facs_29_tr_1"/>
-               <hi rendition="#aq"><num>XI.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>XI.</num></hi></head><lb facs="tl_2"/>
                Der David hertzlich klagt/ daß ſeine glaubensgnoſſen<lb facs="tl_3"/>
                ihn nicht genommen auf/ alß ihn der Saul verjagt:<lb facs="tl_4"/>
                trawt Gott: entſchuldet ſich/ und ſeinen feinden ſagt<lb facs="tl_5"/>
                der himmel habe ſich zu&#x366; ihrer ſtraff entſchloſſen.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>XII.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>XII.</num></hi></head><lb facs="tl_7"/>
                Es bittet David hier für ſich und alle frommen/<lb facs="tl_8"/>
                daß vor verlümdungen der Ho&#x364;chſt ſie wol bewahr:<lb facs="tl_9"/>
                weyſſaget von der ſtraff der heuchleriſchen ſchar/<lb facs="tl_10"/>
                und von des Herꝛen hülff/ die gwüßlich werde kommen.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XIII.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>XIII.</num></hi></head><lb facs="tl_12"/>
                Der hülffloß David meint/ auch Gott hab ihn verlaſſen/<lb facs="tl_13"/>
                und werden groſſen ſigs die feinde ru&#x364;hmen ſich:<lb facs="tl_14"/>
                deß ru&#x364;ffet er zu&#x366; Gott ſo gar eynbrünſtiglich/<lb facs="tl_15"/>
                gelobet dank/ und kan nun widerum troſt faſſen.<lb facs="tl_16"/>
-               <hi rendition="#aq"><num>XIV.</num></hi><lb facs="tl_17"/>
+               <head><hi rendition="#aq"><num>XIV.</num></hi></head><lb facs="tl_17"/>
                Saul und ſein hofgeſind in foller boßheit ſchweben/<lb facs="tl_18"/>
                und zwar/ wie David klagt/ auß gottsvergeſſenheit/<lb facs="tl_19"/>
                doch werden ſie vor ihm erzittern mit der zeit/<lb facs="tl_20"/>
                die frommen aber durch Meſſiam fro&#x364;lich leben.<lb facs="tl_21"/>
-               <hi rendition="#aq"><num>XV.</num></hi><lb facs="tl_22"/>
+               <head><hi rendition="#aq"><num>XV.</num></hi></head><lb facs="tl_22"/>
                Wer ewig wohnen wil in Gottes hoher hütten/<lb facs="tl_23"/>
                der mu&#x366;ß den tugendwa&#x364;g fort wandlen für und für/<lb facs="tl_24"/>
                zu&#x366; frommen halten ſich/ ſie ehren nach gebür:<lb facs="tl_25"/>
                hingegen loſer leüht ſich allerdings entſchütten.<lb facs="tl_26"/>
-               <hi rendition="#aq"><num>XVI.</num></hi><lb facs="tl_27"/>
+               <head><hi rendition="#aq"><num>XVI.</num></hi></head><lb facs="tl_27"/>
                Ein gulden kleinod iſt was David hier gedichtet/<lb facs="tl_28"/>
                dieweil ſein ho&#x364;chſtes gu&#x366;t im ſelben iſt verfaßt/<lb facs="tl_29"/>
                worauf/ mit dankbarkeit/ er einig ſich verlaßt/<lb facs="tl_30"/>
@@ -603,33 +603,33 @@
             <pb n="30" test="7"/>
             <milestone unit="page" ana="#facs_30_tr_1"/>
                auch uns von Chriſti tod/ erſtehn und reych berichtet.<lb facs="tl_2"/>
-               <hi rendition="#aq"><num>XVII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>XVII.</num></hi></head><lb facs="tl_3"/>
                Weil David von dem Saul nicht mag verho&#x364;r erlangen/<lb facs="tl_4"/>
                und in gerechter ſach noch mu&#x366;ß verfolget ſeyn/<lb facs="tl_5"/>
                beru&#x364;fft er ſich auff den/ der ſiht ins hertz hineyn/<lb facs="tl_6"/>
                und denen hilfft die ihm/ auß zu&#x366;verſicht anhangen.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XVIII.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XVIII.</num></hi></head><lb facs="tl_8"/>
                Ein herꝛlich lobgeſang ſtellt David vorzu&#x366;ſingen/<lb facs="tl_9"/>
                nach dem/ durch Gottes gnad und wunderbare krafft/<lb facs="tl_10"/>
                er an den feinden ſich gerochen hat ſighafft:<lb facs="tl_11"/>
                weyſſaget daß von ihm Meſſias werd entſpringen.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>XIX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>XIX.</num></hi></head><lb facs="tl_13"/>
                Die himmel und das gſtirn dein ehr/ o Herꝛ/ verkünden/<lb facs="tl_14"/>
                bezeugen deine macht/ weyßheit und herꝛlichkeit/<lb facs="tl_15"/>
                doch übertrifft dein gſatz der him&#x342;len zeugnuß weit:<lb facs="tl_16"/>
                bekehr mich/ und verzeih mir meine ſchweren ſünden<anchor xml:id="a30"/>!<note type="annotation" targetEnd="a30"><p>Im Münchner Exemplar eindeutig ein Ausrufezeichen</p></note><lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XX.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XX.</num></hi></head><lb facs="tl_18"/>
                Der David ſich zu&#x366; Gott in kriegsgefahren wendet/<lb facs="tl_19"/>
                und ihn um hülff erſu&#x366;cht/ im namen ſeiner gmeind/<lb facs="tl_20"/>
                verhofft gewüſſen ſig: globt dank/ und redt vom feind<lb facs="tl_21"/>
                alß wer er; weil er ſich auff ſich verlaß; geſcha&#x364;ndet.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>XXI.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>XXI.</num></hi></head><lb facs="tl_23"/>
                Was David jüngſt begert/ das hat ihm Gott beſchehret/<lb facs="tl_24"/>
                darum er ſein gelübd erſtattet gleicher weiß/<lb facs="tl_26"/>
                dankt um erhaltnen ſig: erbietet fehrnern preiß/<lb facs="tl_27"/>
                und glaubt/ es werd der feind/ durch Gottes zorn ver-<lb facs="tl_28"/>
                zehret.<lb facs="tl_29"/>
-               <hi rendition="#aq"><num>XXII.</num></hi><lb facs="tl_30"/>
+               <head><hi rendition="#aq"><num>XXII.</num></hi></head><lb facs="tl_30"/>
                Der David/ ein prophet und vorbild unſers Herꝛen/<lb facs="tl_31"/>
                
             <pb n="31" test="8"/>
@@ -637,28 +637,28 @@
                deſſelben leyden uns an ſich für augen ſtellt/<lb facs="tl_2"/>
                die auferſtehung und erho&#x364;hung auch erzellt/<lb facs="tl_3"/>
                und wie ſein reych ſich werd außbreiten weit und ferꝛen.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>XXIII.</num></hi><lb facs="tl_6"/>
+               <head><hi rendition="#aq"><num>XXIII.</num></hi></head><lb facs="tl_6"/>
                Der Herꝛ mich ſpeißt und tra&#x364;nkt an ſeel und leib zu&#x366;gleiche/<lb facs="tl_7"/>
                er ſchützt und leitet mich alß ein getrewer hirt/<lb facs="tl_8"/>
                durch ſeines Geiſtes troſt die ſeel erquiket wird/<lb facs="tl_9"/>
                er gibt mir ewig platz in ſeinem hauß und reyche.<lb facs="tl_10"/>
-               <hi rendition="#aq"><num>XXIV.</num></hi><lb facs="tl_11"/>
+               <head><hi rendition="#aq"><num>XXIV.</num></hi></head><lb facs="tl_11"/>
                Das gantze weltgeba&#x364;w des Herꝛen iſt und bleibet/<lb facs="tl_12"/>
                doch hat er ihm ein ort im ſelben außerwehlt/<lb facs="tl_13"/>
                und ein beſonder volk zu&#x366; ſeinem dienſt beſtellt/<lb facs="tl_14"/>
                das zu&#x366; des tempels baw der David reitzt und treibet.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>XXV.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>XXV.</num></hi></head><lb facs="tl_16"/>
                Zu&#x366; dir/ o Herꝛ/ mein hertz erheb ich von der erden/<lb facs="tl_17"/>
                auff dich verlaß ich mich: laß du mich nimmermehr<lb facs="tl_18"/>
                durch die aufru&#x364;hriſch rott gerahten in unehr:<lb facs="tl_19"/>
                mich leit/ und mir verzeih: wend Jſraels beſchwerden!<lb facs="tl_20"/>
-               <hi rendition="#aq"><num>XXVI.</num></hi><lb facs="tl_21"/>
+               <head><hi rendition="#aq"><num>XXVI.</num></hi></head><lb facs="tl_21"/>
                Jch wird verfolgt/ o Herꝛ/ und mag kein recht erlangen<lb facs="tl_22"/>
                von meiner Obrigkeit: drum ſu&#x366;ch ich recht bey dir:<lb facs="tl_23"/>
                bewa&#x364;hr mich durch und durch/ ſo wirſt recht ſpre-<lb facs="tl_24"/>
                chen mir/<lb facs="tl_25"/>
                ich aber wil mit dank dir fo&#x364;rter ſt<anchor xml:id="a31"/>e<note type="annotation" targetEnd="a31"><p>Das Zeichen auf dem "e" ist im göttingischen Vergleichsexemplar nicht zu finden.</p></note>iff anhangen.<lb facs="tl_26"/>
-               <hi rendition="#aq"><num>XXVII.</num></hi><lb facs="tl_27"/>
+               <head><hi rendition="#aq"><num>XXVII.</num></hi></head><lb facs="tl_27"/>
                Der Herꝛ mein liecht und heil/ und meines lebens ſta&#x364;rke<lb facs="tl_28"/>
                mich machet ſo gehertzt/ daß ich nichts fo&#x364;rchten kan:<lb facs="tl_29"/>
                o daß ich bleiben mo&#x364;g in ſeinem hauß fortan<lb facs="tl_30"/>
@@ -666,33 +666,33 @@
                
             <pb n="32" test="9"/>
             <milestone unit="page" ana="#facs_32_tr_1"/>
-               <hi rendition="#aq"><num>XXVIII.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>XXVIII.</num></hi></head><lb facs="tl_2"/>
                Jch ſchrey/ o Herꝛ/ zu&#x366; dir: verſtopff du nicht die ohren/<lb facs="tl_3"/>
                und ſtraff mich armen nicht den übelta&#x364;htern gleich/<lb facs="tl_4"/>
                die rach an ihnen u&#x364;b: hilff deinem volk und reych!<lb facs="tl_5"/>
                Dir ſeye lob/ dieweil mein bitt iſt unverloren.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>XXIX.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>XXIX.</num></hi></head><lb facs="tl_7"/>
                Jhr/ die ihr eüch bedunkt gewaltig ſeyn auff erden/<lb facs="tl_8"/>
                bringt ehr/ und dienet dem/ deß ſtimme braußt und<lb facs="tl_9"/>
                ſchallt/<lb facs="tl_10"/>
                wann in der witterung der ſtarke donner knallt/<lb facs="tl_11"/>
                da doch mit krafft und frid die ſeinen gſegnet werden.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>XXX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>XXX.</num></hi></head><lb facs="tl_13"/>
                Nach eyngenom&#x342;ner ſtatt hat David eyngeweyhet<lb facs="tl_14"/>
                mit einem lobgeſang ſein newgebawen Hauß:<lb facs="tl_15"/>
                weil wider Abſolon; in krankheit auch fürauß;<lb facs="tl_16"/>
                Gott ihn behu&#x364;tet hat/ und widerum befreyet.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XXXI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XXXI.</num></hi></head><lb facs="tl_18"/>
                Der David in der noht zu&#x366; Gott dem Herꝛen ſchreyet/<lb facs="tl_19"/>
                alß von Ziphitern er dem Saul verꝛahten war:<lb facs="tl_20"/>
                des Herꝛen hülff/ auff die er ſich verlaſſen gar/<lb facs="tl_21"/>
                und ma&#x364;ngklich angemahnt; zu&#x366; dank ihn hoch erfrewet.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>XXXII.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>XXXII.</num></hi></head><lb facs="tl_23"/>
                Recht ſelig iſt der menſch/ dem alle ſeine ſünden/<lb facs="tl_24"/>
                auff Gott getahne beicht auß gnaden ſeind bedekt/<lb facs="tl_25"/>
                wie widerfahren mir/ der ich mich ſo verſtekt/<lb facs="tl_26"/>
                daß/ auſſer Gottes gnad/ ich keinen troſt zu&#x366; finden.<lb facs="tl_27"/>
-               <hi rendition="#aq"><num>XXXIII.</num></hi><lb facs="tl_28"/>
+               <head><hi rendition="#aq"><num>XXXIII.</num></hi></head><lb facs="tl_28"/>
                Der from&#x342; erfrewe ſich im Herꝛen mit lobſingen/<lb facs="tl_29"/>
                weil durch ſein wort und Geiſt erſchaffen iſt was iſt:<lb facs="tl_30"/>
                
@@ -701,28 +701,28 @@
                ſein wort/ genad und krafft verſchafft daß nichts<lb facs="tl_3"/>
                gebriſt:<lb facs="tl_5"/>
                bey ihm iſt raht und hülff: ohn ihn mag nichts gelingen.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>XXXIV.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>XXXIV.</num></hi></head><lb facs="tl_7"/>
                Der David danket Gott/ dieweil er iſt entgangen<lb facs="tl_8"/>
                dem gwalt Abimelechs/ vor dem er ſich verſtellt:<lb facs="tl_9"/>
                vermahnet ſein gemein zu&#x366; gleichem lob: erzellt/<lb facs="tl_10"/>
                was glaub und gottesforcht vom Herꝛen mo&#x364;g erlangen.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XXXV.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>XXXV.</num></hi></head><lb facs="tl_13"/>
                Der David wider Saul/ und deſſen anhang bittet;<lb facs="tl_14"/>
                alß die ihn immerzu&#x366; verfolget wider recht;<lb facs="tl_15"/>
                daß Gott mit ſeim gericht ſein grechte ſach verfecht:<lb facs="tl_16"/>
                globt dank: verflu&#x364;cht die feind/ und wol getro&#x364;ſt abtrittet.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XXXVI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XXXVI.</num></hi></head><lb facs="tl_18"/>
                Auß gottsvergeſſenheit entſpringt ein gottloß leben/<lb facs="tl_19"/>
                worüber David klagt/ darneben auch erhebt<lb facs="tl_20"/>
                des Herꝛen g<anchor xml:id="a32"/>u&#x364;<note type="annotation" targetEnd="a32"><p>Das übergeschriebene e ist nicht klar zu erkennen, im göttingischen und Münchner Vergleichsexemplar etwas besser</p></note>tigkeit die bis an himmel ſchwebt:<lb facs="tl_21"/>
                wünſcht; na&#x364;chſt der feinden ſtraff; der ſünd zu&#x366;wider-<lb facs="tl_22"/>
                ſtreben.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>XXXVII.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>XXXVII.</num></hi></head><lb facs="tl_24"/>
                Erzo&#x364;rn dich nicht/ wann gleich die bo&#x364;ſen oben ſchweben:<lb facs="tl_25"/>
                dann ihnen iſt ihr zil/ wie reiffem graß/ geſtellt:<lb facs="tl_26"/>
                traw aber deinem Gott/ ſo wirſt du nicht gefellt:<lb facs="tl_27"/>
                tu&#x366;h gu&#x366;ts: dich redlich nehr/ ſo wirſt du ewig leben.<lb facs="tl_28"/>
-               <hi rendition="#aq"><num>XXXVIII.</num></hi><lb facs="tl_29"/>
+               <head><hi rendition="#aq"><num>XXXVIII.</num></hi></head><lb facs="tl_29"/>
                Ach lieber Herꝛ/ nicht ſtraff im zoren meine ſünden:<lb facs="tl_30"/>
                dann ich bekenne ſie/ und ſie bekümmern mich:<lb facs="tl_31"/>
                nim&#x342; meine krankheit weg/ daß freund und feinde ſich<lb facs="tl_32"/>
@@ -730,18 +730,18 @@
                
             <pb n="34" test="11"/>
             <milestone unit="page" ana="#facs_34_tr_1"/>
-               <hi rendition="#aq"><num>XXXIX.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>XXXIX.</num></hi></head><lb facs="tl_2"/>
                Wiewol ich krankner mir gedult hab fürgenommen/<lb facs="tl_3"/>
                ſo hat doch ungedult gewonnen oberhand:<lb facs="tl_4"/>
                O Herꝛ/ verzeyh mir doch/ und mich behu&#x364;t vor ſch<anchor xml:id="a33"/>a<note type="annotation" targetEnd="a33"><p>Das Zeichen auf dem a gibt es weder im Göttingischen noch im Münchner Vergleichsexemplar.</p></note>nd/<lb facs="tl_5"/>
                laß mein geſchrey für dich vor meinem ende kommen!<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>XL.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>XL.</num></hi></head><lb facs="tl_7"/>
                Jn krankheit haſt du mich/ mein Herꝛ und Gott/ er-<lb facs="tl_8"/>
                ho&#x364;ret:<lb facs="tl_9"/>
                Lobopfer wil ich dir verehren jederzeit/<lb facs="tl_10"/>
                und deinen willen tu&#x366;hn: ich wil dein grechtigkeit<lb facs="tl_11"/>
                außkünden: mich erꝛett: mein feind werd umgekehret!<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>XLI.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>XLI.</num></hi></head><lb facs="tl_13"/>
                Wer mit den kranknen wird beſcheidenlich verfahren/<lb facs="tl_14"/>
                der wird auch/ wann er ſiech/ empfinden troſt und<lb facs="tl_15"/>
                krafft:<lb facs="tl_16"/>
@@ -752,7 +752,7 @@
                Pſalmen.<lb facs="tl_21"/>
             <pb n="35" test="12"/>
             <milestone unit="page" ana="#facs_35_tr_1"/>
-               <label>[2.]</label><hi rendition="#aq"><num>II.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[2.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>II.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/<lb facs="tl_7"/>
                nach friſcher waſſerquell mit dürꝛer zungen la&#x364;chtzet:<lb facs="tl_12"/>
                So mein verfolgte ſeel nach Gottes wohnung a&#x364;chtzet/<lb facs="tl_17"/>
@@ -776,32 +776,32 @@
                zu&#x366; deſſen dienſt und preiß/ den ſie mit glauben ſu&#x366;cht.<lb facs="tl_45"/>
             <pb n="37" test="14"/>
             <milestone unit="page" ana="#facs_37_tr_1"/>
-               <num>Jnhalt des <hi rendition="#aq">XLII.</hi> Pſalmens.</num><lb facs="tl_3"/>
+               <head><num>Jnhalt des <hi rendition="#aq">XLII.</hi> Pſalmens.</num></head><lb facs="tl_3"/>
                <hi rendition="#in">G</hi>Leich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/<lb facs="tl_4"/>
                nach friſcher waſſerquell mit dürꝛer zungen la&#x364;chzet:<lb facs="tl_5"/>
                So mein verfolgte ſeel nach Gottes wohnung a&#x364;chzet/<lb facs="tl_6"/>
                zu&#x366; deſſen dienſt und preiß/ den ſie mit glauben ſu&#x366;cht.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XLIII.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XLIII.</num></hi></head><lb facs="tl_8"/>
                O Richter aller welt/ nim&#x342; meine ſach auff dich/<lb facs="tl_9"/>
                und mich erꝛett vor dem/ der mich ohn recht verjaget:<lb facs="tl_10"/>
                laß wider kommen mich wo man dein lob fürtraget!<lb facs="tl_11"/>
                Getroſt/ o liebe ſeel! Gott wird erho&#x364;ren mich.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>XLIV.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>XLIV.</num></hi></head><lb facs="tl_13"/>
                Du haſt/ o Herꝛ; wie uns die va&#x364;tter angezeigt;<lb facs="tl_14"/>
                den alten groſſe hülff/ und ſonſt vil gu&#x366;ts erwiſen:<lb facs="tl_15"/>
                uns übergibeſt gar/ wiewol du wirſt gepriſen:<lb facs="tl_16"/>
                erwach und hilff uns doch: ſey nicht mehr ungeneigt!<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XLV.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XLV.</num></hi></head><lb facs="tl_18"/>
                Von Chriſto/ der die kirch ihm ewig hat vertrawt/<lb facs="tl_19"/>
                ein lob- und hochzeitlied der dichter zierlich ſinget/<lb facs="tl_20"/>
                worinn er beyder ſchmuk/ figürlich zwar/ fürbringet/<lb facs="tl_21"/>
                der gla&#x364;ubig alles doch zu&#x366; ſeinem heil beſchawt.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>XLVI.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>XLVI.</num></hi></head><lb facs="tl_23"/>
                Es mag/ ſo Gott mit uns/ uns nichts zu&#x366;wider ſeyn/<lb facs="tl_24"/>
                wir haben ſeine trew/ in no&#x364;hten ſelbſt erfahren:<lb facs="tl_25"/>
                laßt ſeiner werken uns/ von alter her gewahren/<lb facs="tl_26"/>
                und fo&#x364;rterhin mit dank vertrawen ihm allein.<lb facs="tl_27"/>
-               <hi rendition="#aq"><num>XLVII.</num></hi><lb facs="tl_28"/>
+               <head><hi rendition="#aq"><num>XLVII.</num></hi></head><lb facs="tl_28"/>
                Auf/ auf/ ihr vo&#x364;lker auf! empfahet mit geſang<lb facs="tl_29"/>
                den Ko&#x364;nig aller welt/ den auch die Fürſten ehren:<lb facs="tl_30"/>
                
@@ -810,27 +810,27 @@
                laßt ſeine bundeslad in ſeinem hauß eynkehren!<lb facs="tl_3"/>
                Auf/ auf! der Herꝛ fahrt auf mit ſchall und hellem<lb facs="tl_4"/>
                klang.<lb facs="tl_5"/>
-               <hi rendition="#aq"><num>XLVIII.</num></hi><lb facs="tl_6"/>
+               <head><hi rendition="#aq"><num>XLVIII.</num></hi></head><lb facs="tl_6"/>
                Die ſcho&#x364;ne Gottes ſtatt/ des groſſen Ko&#x364;nigs ſtatt/<lb facs="tl_7"/>
                ein vorbild ſeiner kirch/ auff Zion wol gelegen/<lb facs="tl_9"/>
                den Herꝛen macht verꝛu&#x364;hmt: dann/ alß ihr war entgegen<lb facs="tl_10"/>
                mit Moab Ammons bru&#x364;t/ er ſie beſchirmet hat.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XLIX.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>XLIX.</num></hi></head><lb facs="tl_12"/>
                Dem vieh geleichet ſich wer ſeine hoffnung ſetzt<lb facs="tl_13"/>
                auff zeitlich ehr und gu&#x366;t/ die doch ſo bald zerꝛinnen/<lb facs="tl_14"/>
                und weder ſeine noch des bru&#x366;ders ſeel gewünnen:<lb facs="tl_15"/>
                ein frommer aber wird der armu&#x366;ht wol ergetzt.<lb facs="tl_16"/>
-               <hi rendition="#aq"><num>L.</num></hi><lb facs="tl_17"/>
+               <head><hi rendition="#aq"><num>L.</num></hi></head><lb facs="tl_17"/>
                Der Herꝛ der herꝛlichkeit beru&#x364;fft für ſein gericht<lb facs="tl_18"/>
                die le<anchor xml:id="a34"/>u<note type="annotation" targetEnd="a34"><p>Da Trema auf dem u wurde nachträglich von Hand eingezeichnet. Das ist in den Vergleichsexemplaren nicht zu finden.</p></note>hte diſer welt/ von ihren beyden enden:<lb facs="tl_19"/>
                er wil mit gnaden ſich allein zu&#x366; denen wenden<lb facs="tl_20"/>
                die opfern lob und dank: viehopfer wil er nicht.<lb facs="tl_21"/>
-               <hi rendition="#aq"><num>LI.</num></hi><lb facs="tl_22"/>
+               <head><hi rendition="#aq"><num>LI.</num></hi></head><lb facs="tl_22"/>
                O Gott/ nach deiner gnad/ mir ſünder gna&#x364;dig ſey:<lb facs="tl_23"/>
                ich gebe ſchuldig mich: mein blu&#x366;tſchuld wo&#x364;llſt abwa&#x364;ſchen/<lb facs="tl_24"/>
                und meine bo&#x364;ſe brunſt/ durch deinen Geiſt außlo&#x364;ſchen:<lb facs="tl_25"/>
                Herꝛ/ deine kirch erhalt/ gib daß ich dankbar ſey!<lb facs="tl_26"/>
-               <hi rendition="#aq"><num>LII.</num></hi><lb facs="tl_27"/>
+               <head><hi rendition="#aq"><num>LII.</num></hi></head><lb facs="tl_27"/>
                Was ru&#x364;hmſt du/ Doeg/ dich/ alß einer heldentaht<lb facs="tl_28"/>
                der lugen und des mords an Prieſtern Gotts veru&#x364;bet?<lb facs="tl_29"/>
                Gott wird außwurtzlen dich: ich aber unbetru&#x364;bet<lb facs="tl_30"/>
@@ -839,65 +839,65 @@
                
             <pb n="39" test="16"/>
             <milestone unit="page" ana="#facs_39_tr_1"/>
-               <hi rendition="#aq"><num>LIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LIII.</num></hi></head><lb facs="tl_3"/>
                Der David ab dem Saul und ſeinen ra&#x364;hten klagt<lb facs="tl_4"/>
                wie under ihnen ſey ein gottsvergeſſen leben:<lb facs="tl_5"/>
                weyſſagt von ihrer ſtraff: den frommen wird hieneben<lb facs="tl_6"/>
                ihr heil auß Zion her im Herꝛen zu&#x366;geſagt.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>LIV.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>LIV.</num></hi></head><lb facs="tl_8"/>
                Auß der Ziphiter hand/ o Gott/ wollſt retten mich/<lb facs="tl_9"/>
                die mich unſchuldigen dem ko&#x364;nig Saul verꝛahten:<lb facs="tl_10"/>
                ich weiß du wirſt es tu&#x366;hn/ und ſie nach ihren tahten<lb facs="tl_11"/>
                abſtraffen ohne fehl/ und ich wil preiſen dich.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>LV.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>LV.</num></hi></head><lb facs="tl_13"/>
                O Gott/ erho&#x364;r mich doch: dann meine feinde mir<lb facs="tl_14"/>
                ſchon ligen auff dem halß. Was ſag ich von den feinden?<lb facs="tl_15"/>
                Verꝛa&#x364;hter finden ſich auch under meinen freunden:<lb facs="tl_16"/>
                Herꝛ/ ſtraff ſie/ und mir hilff/ wie ich vertrawe dir.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>LVI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>LVI.</num></hi></head><lb facs="tl_18"/>
                Gleich einer ſtummen daub mu&#x366;ß unbill ſchluken ich/<lb facs="tl_19"/>
                ich hab kein bleibend ort von wegen viler feinden:<lb facs="tl_20"/>
                zu&#x366; grund/ o Herꝛ/ ſie ſtürtz: ſie wo&#x364;llen mich verſchlinden:<lb facs="tl_21"/>
                doch traw ich deiner hülff/ des wil ich preiſen dich.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>LVII.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>LVII.</num></hi></head><lb facs="tl_23"/>
                Der David abermal/ auß ſteiffer zu&#x366;verſicht/<lb facs="tl_24"/>
                hat Gottes hülff begert: weil Saul hineyn gegangen<lb facs="tl_25"/>
                wo er verkrochen ſich: und/ alß er hülff empfangen/<lb facs="tl_26"/>
                hat er zu&#x366; ſeiner bitt geſetzt ein lobgedicht.<lb facs="tl_27"/>
-               <hi rendition="#aq"><num>LVIII.</num></hi><lb facs="tl_28"/>
+               <head><hi rendition="#aq"><num>LVIII.</num></hi></head><lb facs="tl_28"/>
                Jhr ungerechte Ra&#x364;ht/ urtheilet ihr auch recht/<lb facs="tl_29"/>
                wann/ under rechtens ſchein/ ihr wider recht erkennet<lb facs="tl_30"/>
                ich ſey des ko&#x364;nigs feind/ und hab ſein reych zertrennet?<lb facs="tl_31"/>
                Es tilg euch Gottes rach/ und tro&#x364;ſte ſein geſchlecht!<lb facs="tl_32"/>
             <pb n="40" test="17"/>
             <milestone unit="page" ana="#facs_40_tr_1"/>
-               <hi rendition="#aq"><num>LIX.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LIX.</num></hi></head><lb facs="tl_3"/>
                Von denen knechten Sauls/ o Gott wo&#x364;llſt retten<lb facs="tl_4"/>
                mich/<lb facs="tl_5"/>
                die mir mein hauß umſtellt/ zu&#x366;nemmen mir mein leben:<lb facs="tl_6"/>
                vertilg ſie nach und nach: ich aber wil hieneben/<lb facs="tl_7"/>
                o meine ſta&#x364;rke/ dir lobſingen inniglich!<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>LX.</num></hi><lb facs="tl_9"/>
+               <head><hi rendition="#aq"><num>LX.</num></hi></head><lb facs="tl_9"/>
                O Gott/ du hatteſt uns verſtoſſen vor der zeit:<lb facs="tl_10"/>
                nun aber haſt du uns/ nach deinem wort gegeben<lb facs="tl_11"/>
                ein zeichen deiner hülff/ durch die wir ſighafft leben:<lb facs="tl_12"/>
                hilff weiter/ dann mit dir wir dapfer ſeind im ſtreit!<lb facs="tl_13"/>
-               <hi rendition="#aq"><num>LXI.</num></hi><lb facs="tl_14"/>
+               <head><hi rendition="#aq"><num>LXI.</num></hi></head><lb facs="tl_14"/>
                Es bittet Jſrael/ von David ſo gelehrt/<lb facs="tl_15"/>
                für ſeines ko&#x364;nigs ru&#x366;h/ und für gemeines weſen/<lb facs="tl_16"/>
                trawt Gottes ſchutz/ und hofft dort ewig zu&#x366;geneſen/<lb facs="tl_17"/>
                darum es ihm ein glübd der dankbarkeit verehrt.<lb facs="tl_18"/>
-               <hi rendition="#aq"><num>LXII.</num></hi><lb facs="tl_19"/>
+               <head><hi rendition="#aq"><num>LXII.</num></hi></head><lb facs="tl_19"/>
                Es wartet meine ſeel/ ſtillſchweigend nur auf Gott/<lb facs="tl_20"/>
                er iſt allein mein felß/ mein hülff/ mein heil und leben:<lb facs="tl_21"/>
                dem fal faſt nahe ſeind die ſo mir widerſtreben:<lb facs="tl_22"/>
                reichthum und menſchenhülff ſeind eytelkeit und koht.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>LXIII.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>LXIII.</num></hi></head><lb facs="tl_24"/>
                Jn diſer meiner flucht/ und in ſo dürꝛem land/<lb facs="tl_25"/>
                nach Gottes heiligthum mich dürſtet und verlanget:<lb facs="tl_26"/>
                deß gu&#x364;te mich erquikt: die ſeel an ihme hanget/<lb facs="tl_27"/>
                alß der die feinde ſtrafft: mich rettet ſeine hand.<lb facs="tl_28"/>
-               <hi rendition="#aq"><num>LXIV.</num></hi><lb facs="tl_29"/>
+               <head><hi rendition="#aq"><num>LXIV.</num></hi></head><lb facs="tl_29"/>
                O lieber Gott/ behu&#x364;t vor falſchen zungen mich/<lb facs="tl_30"/>
                
             <pb n="41" test="18"/>
@@ -905,27 +905,27 @@
                die mich zu&#x366;ſcha&#x364;digen ſich in geheim verbunden!<lb facs="tl_3"/>
                Du wirſt mit einem pfeil ſie ſchieſſen und verwunden/<lb facs="tl_4"/>
                deß wird der from&#x342; in dir von hertzen frewen ſich.<lb facs="tl_5"/>
-               <hi rendition="#aq"><num>LXV.</num></hi><lb facs="tl_6"/>
+               <head><hi rendition="#aq"><num>LXV.</num></hi></head><lb facs="tl_6"/>
                Der David danket Gott/ im namen ſeiner gmein/<lb facs="tl_7"/>
                für die erho&#x364;rung und verzeihung aller ſünden/<lb facs="tl_8"/>
                für reinen gottesdienſt/ und rettung vor den feinden/<lb facs="tl_9"/>
                für fruchtbarkeit des lands/ die er beſchehrt allein.<lb facs="tl_10"/>
-               <hi rendition="#aq"><num>LXVI.</num></hi><lb facs="tl_11"/>
+               <head><hi rendition="#aq"><num>LXVI.</num></hi></head><lb facs="tl_11"/>
                Der David alles volk zu&#x366; Gottes lob ermahnt/<lb facs="tl_12"/>
                und daß ſie deſſen werk und wunder wol betrachten/<lb facs="tl_13"/>
                auch jüngſt erzeigte hülff in keinen wa&#x364;g verachten:<lb facs="tl_14"/>
                dankopfer er verſpricht/ und machet ſie bekant.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>LXVII.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>LXVII.</num></hi></head><lb facs="tl_16"/>
                O Gott/ laß leuchten uns dein gnadenangeſicht/<lb facs="tl_17"/>
                ſo wird dein nam&#x342; und reych weit außgebreitet werden:<lb facs="tl_18"/>
                es werden preiſen dich die vo&#x364;lcker aller erden/<lb facs="tl_19"/>
                und/ deiner gu&#x364;tern ſatt/ auch ru&#x364;hmen dein gericht.<lb facs="tl_20"/>
-               <hi rendition="#aq"><num>LXVIII.</num></hi><lb facs="tl_21"/>
+               <head><hi rendition="#aq"><num>LXVIII.</num></hi></head><lb facs="tl_21"/>
                Mit einem lobgeſang/ von David angeſtim&#x342;t<lb facs="tl_22"/>
                zu&#x366; ehren Gottes macht/ die allen feind zerſtra&#x364;wet/<lb facs="tl_23"/>
                ſich ob der bundeslad gantz Jſrael erfrewet:<lb facs="tl_24"/>
                welchs bey der himmelfahrt des Herꝛen auch gezim&#x342;t.<lb facs="tl_25"/>
-               <hi rendition="#aq"><num>LXIX.</num></hi><lb facs="tl_26"/>
+               <head><hi rendition="#aq"><num>LXIX.</num></hi></head><lb facs="tl_26"/>
                Der David/ und in ihm Meſſias ſich erklagt<lb facs="tl_27"/>
                ab a&#x364;uſſerſter gefahr vor feind- und falſchen freunden/<lb facs="tl_28"/>
                und daß er werde gſtrafft von wegen fro&#x364;mder ſünden:<lb facs="tl_29"/>
@@ -933,18 +933,18 @@
                
             <pb n="42" test="19"/>
             <milestone unit="page" ana="#facs_42_tr_1"/>
-               <hi rendition="#aq"><num>LXX.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>LXX.</num></hi></head><lb facs="tl_2"/>
                O Gott/ kom&#x342; bald zu&#x366; hülff in meiner krankheit mir/<lb facs="tl_3"/>
                daß meine feinde gſcha&#x364;ndt/ ſich über mich nicht frewen:<lb facs="tl_4"/>
                den frommen wo&#x364;lleſt du dein heil und freud vernewen:<lb facs="tl_5"/>
                Ach/ e<anchor xml:id="a35"/>y<note type="annotation" targetEnd="a35"><p>Das Trema auf dem y wurde nachträglich von Hand eingezeichnet.</p></note>l zu&#x366; helffen mir: mein hoffnung ſteht zu&#x366; dir!<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>LXXI.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>LXXI.</num></hi></head><lb facs="tl_7"/>
                Mein felß und veſte burg/ mein hort und zu&#x366;verſicht<lb facs="tl_8"/>
                von erſten tagen an/ im alter wo&#x364;llſt mich retten/<lb facs="tl_9"/>
                daß nicht mein kind und feind mich erſt zu&#x366; boden tretten:<lb facs="tl_10"/>
                verſchimpff ſie/ Herꝛ/ und ich wil ru&#x364;hmen dein ge-<lb facs="tl_11"/>
                richt.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>LXXII.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>LXXII.</num></hi></head><lb facs="tl_13"/>
                Gib dein gericht/ o Gott/ dem ko&#x364;nig/ meinem ſohn/<lb facs="tl_14"/>
                gib ihm gerechtigkeit/ damit er wol regiere/<lb facs="tl_15"/>
                dein volk auch under ihm ein ru&#x364;hig leben fu&#x364;hre/<lb facs="tl_16"/>
@@ -954,7 +954,7 @@
                
             <pb n="43" test="20"/>
             <milestone unit="page" ana="#facs_43_tr_2"/>
-               <label>[3.]</label><hi rendition="#aq"><num>III.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[3.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>III.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen<lb facs="tl_7"/>
                ab ungeleichem glück der bo&#x364;ſen und der frommen:<lb facs="tl_10"/>
                alß aber ich der ſach was beſſer nachgedacht/<lb facs="tl_15"/>
@@ -979,27 +979,27 @@
                
             <pb n="45" test="22"/>
             <milestone unit="page" ana="#facs_45_tr_1"/>
-               <num>Jnhalt des <hi rendition="#aq">LXXIII.</hi> Pſalmens.</num><lb facs="tl_3"/>
+               <head><num>Jnhalt des <hi rendition="#aq">LXXIII.</hi> Pſalmens.</num></head><lb facs="tl_3"/>
                <hi rendition="#in">J</hi>Ch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen<lb facs="tl_4"/>
                ab ungeleichem glük der bo&#x364;ſen und der frommen:<lb facs="tl_5"/>
                alß aber ich der ſach was beſſer nachgedacht/<lb facs="tl_6"/>
                hat beyder end bey mir vera&#x364;nderung gebracht.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>LXXIV.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>LXXIV.</num></hi></head><lb facs="tl_8"/>
                O Gott/ was wilt du doch/ ſo gar erzo&#x364;rnt/ verderben<lb facs="tl_9"/>
                die ſchaffe deiner weid/ und la&#x364;ngſt erlo&#x364;ßten erben?<lb facs="tl_10"/>
                Dein heiligthum iſt hin: der tempel o&#x364;d und la&#x364;r:<lb facs="tl_11"/>
                Wilt du nicht retten uns/ ſo rett jedoch dein ehr!<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>LXXV.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>LXXV.</num></hi></head><lb facs="tl_13"/>
                Der David mit dem volk des Herꝛen namen preiſet/<lb facs="tl_14"/>
                und für erlangtes reych ſich danckbar ihm erweiſet/<lb facs="tl_15"/>
                verſpricht gerechtigkeit/ und dra&#x364;wet allem pracht:<lb facs="tl_16"/>
                erho&#x364;h- und nidrigung beſteht in Gottes macht.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>LXXVI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>LXXVI.</num></hi></head><lb facs="tl_18"/>
                Jn Juda iſt der Herꝛ bekant durch ſeinen tempel/<lb facs="tl_19"/>
                und daß er ſeiner macht und warheit ein exempel<lb facs="tl_20"/>
                an Aſſur fürgeſtellt: warum ihn Aſaph preißt/<lb facs="tl_21"/>
                und ſich zu&#x366; ſeinem dienſt mit allem volk befleißt.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>LXXVII.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>LXXVII.</num></hi></head><lb facs="tl_23"/>
                Ein hochbetru&#x364;bte ſeel/ die mit verzweiflung ringet/<lb facs="tl_24"/>
                empfindet widrum troſt/ ſo bald ſie ſich erſchwinget<lb facs="tl_25"/>
                für Gottes gnadenthron/ und nimmet wol in acht<lb facs="tl_26"/>
@@ -1008,28 +1008,28 @@
             <pb n="46" test="23"/>
             <milestone unit="page" ana="#facs_46_tr_1"/>
                <Page_number>2<anchor xml:id="a37"/>3<note type="annotation" targetEnd="a37"><p>Zahl hier nicht gut erkennbar. Im Göttinger Exemplar aber etwas besser zu erkennen.</p></note></Page_number><lb facs="#facs_46_l"/>
-               <hi rendition="#aq"><num>LXXVIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LXXVIII.</num></hi></head><lb facs="tl_3"/>
                Der dichter uns erzellt die wunder und gu&#x366;tthaten/<lb facs="tl_4"/>
                mit denen Gott der Herꝛ ſein altes volk berahten/<lb facs="tl_5"/>
                von ihrem außzug an bis auff des Davids zeit:<lb facs="tl_6"/>
                auch wie er ſie geſtrafft um ihr undankbarkeit.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>LXXIX.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>LXXIX.</num></hi></head><lb facs="tl_8"/>
                O Herꝛ/ der Heiden ſchar den tempel hat entehret/<lb facs="tl_9"/>
                und deine knecht erto&#x364;dt: dein Salem umgekehret:<lb facs="tl_10"/>
                rett uns gefangne leuht/ und wend auch deinen grim&#x342;<lb facs="tl_11"/>
                von deinem volk auff ſie/ ſo lobt dich unſer ſtim&#x303;!<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>LXXX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>LXXX.</num></hi></head><lb facs="tl_13"/>
                O du Hirt deines volks/ erwach uns zu&#x366; erho&#x364;ren!<lb facs="tl_14"/>
                Ach/ bring uns wider heim; die feinde wo&#x364;llſt zerſto&#x364;ren!<lb facs="tl_15"/>
                Den weinſtok/ den du ſelb gezilet haſt zu&#x366;vor/<lb facs="tl_16"/>
                zu&#x366; deines namens ehr nun widrum pflantz empor!<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>LXXXI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>LXXXI.</num></hi></head><lb facs="tl_18"/>
                Lobſinget alle Gott/ und laßt die ſeiten klingen<lb facs="tl_19"/>
                am Lauberhüttenfeſt; wie bra&#x364;uch und recht mitbringen;<lb facs="tl_20"/>
                Dein Gott/ ſpricht Gott/ ich bin: o daß du ho&#x364;rteſt<lb facs="tl_21"/>
                mich:<lb facs="tl_22"/>
                ich wolt mit weitzenfrucht und honig ſpeiſen dich!<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>LXXXII.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>LXXXII.</num></hi></head><lb facs="tl_24"/>
                Der oberſt Richter klagt ab ungerechtem richten<lb facs="tl_25"/>
                der richtern ohn verſtand: berichtet ſie der pflichten/<lb facs="tl_26"/>
                und demmet ihren ſtoltz mit ihrer ſterblichkeit:<lb facs="tl_27"/>
@@ -1037,28 +1037,28 @@
                
             <pb n="47" test="24"/>
             <milestone unit="page" ana="#facs_47_tr_1"/>
-               <hi rendition="#aq"><num>LXXXIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LXXXIII.</num></hi></head><lb facs="tl_3"/>
                Die Jſraeler ſich/ zu&#x366; Ezechias tagen/<lb facs="tl_4"/>
                ab ihrer feinden liſt/ und ſtetem aufſatz klagen/<lb facs="tl_5"/>
                und mahnen mit gebett zu&#x366; hülff den ho&#x364;chſten Gott/<lb facs="tl_6"/>
                daß er/ wie etwan&#x303; mehr/ die feinde ſtürtz in ſpott.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>LXXXIV.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>LXXXIV.</num></hi></head><lb facs="tl_8"/>
                Wie lieblich doch/ o Herꝛ/ ſeind deines hauſes hütten?<lb facs="tl_9"/>
                Wol denen/ die darinn dich loben und erbitten!<lb facs="tl_10"/>
                Ach/ laß vertribnen mich nunmehr auch wider eyn/<lb facs="tl_11"/>
                ſo wil für alles ich daſelbſt thürhu&#x364;ter ſeyn!<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>LXXXV.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>LXXXV.</num></hi></head><lb facs="tl_13"/>
                O Herꝛ/ wir bitten um verzeihung unſrer ſünden/<lb facs="tl_14"/>
                und um erledigung/ wie vor der zeit/ von feinden!<lb facs="tl_15"/>
                Wir warten deiner hülff/ und zu&#x366;kunfft na&#x364;chſter zeit/<lb facs="tl_16"/>
                foll gu&#x364;te/ warheit/ trew/ frid und gerechtigkeit.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>LXXXVI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>LXXXVI.</num></hi></head><lb facs="tl_18"/>
                Herꝛ/ neig dein ohr zu&#x366; mir/ und laß mich hülff em-<lb facs="tl_19"/>
                pfinden/<lb facs="tl_20"/>
                bewahr auch deinen knecht vor ſünden und vor feinden:<lb facs="tl_21"/>
                dann du gena&#x364;dig dich erzeigeſt jederman&#x303;/<lb facs="tl_22"/>
                ja/ welcher dich wie ich in no&#x364;hten ru&#x364;ffet an.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>LXXXVII.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>LXXXVII.</num></hi></head><lb facs="tl_24"/>
                Das erſterlo&#x364;ßte volk den newen tempel preiſet/<lb facs="tl_25"/>
                und deſſen fundament auff heilgen bergen weiſet:<lb facs="tl_26"/>
                frolokt/ dieweil der Ho&#x364;chſt zur wohnung ihn beſtellt/<lb facs="tl_27"/>
@@ -1066,12 +1066,12 @@
                
             <pb n="48" test="25"/>
             <milestone unit="page" ana="#facs_48_tr_1"/>
-               <hi rendition="#aq"><num>LXXXVIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LXXXVIII.</num></hi></head><lb facs="tl_3"/>
                Zu&#x366; dir/ o Herꝛ mein heil/ ich unaufho&#x364;rlich ſchreye/<lb facs="tl_4"/>
                von todes banden mich/ und ho&#x364;llenangſt befreye!<lb facs="tl_5"/>
                Warum verſtoſſeſt du/ in deinem zoren mich?<lb facs="tl_6"/>
                Wird in der gru&#x366;be dann auch jemand preiſen dich?<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>LXXXIX.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>LXXXIX.</num></hi></head><lb facs="tl_8"/>
                Von Gottes gnad und gu&#x364;t/ und veſtgeſchwornem<lb facs="tl_9"/>
                bunde<lb facs="tl_10"/>
                der dichter ſingen wil/ ſo lang ſich regt ſein munde:<lb facs="tl_11"/>
@@ -1082,7 +1082,7 @@
                Pſalmen.<lb facs="tl_16"/>
             <pb n="49" test="26"/>
             <milestone unit="page" ana="#facs_49_tr_1"/>
-               <label>[4.]</label><hi rendition="#aq"><num>IV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[4.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>IV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                O Herꝛ/ o unſer Gott und zu&#x366;flucht für und für/<lb facs="tl_10"/>
                Wie flüchtig und wie bo&#x364;ß iſt unſre zeit vor dir/<lb facs="tl_18"/>
                dieweil wir dich erzo&#x364;rnt mit nicht geringen ſünden:<lb facs="tl_29"/>
@@ -1106,29 +1106,29 @@
                lehr uns erkennen die/ und laß uns gnad empfinden.<lb facs="tl_47"/>
             <pb n="51" test="28"/>
             <milestone unit="page" ana="#facs_51_tr_1"/>
-               <num>Jnhalt des <hi rendition="#aq">XC.</hi> Pſalmens.</num><lb facs="tl_3"/>
+               <head><num>Jnhalt des <hi rendition="#aq">XC.</hi> Pſalmens.</num></head><lb facs="tl_3"/>
                <hi rendition="#in">O</hi> Herꝛ/ o unſer Gott und zu&#x366;flucht für und für/<lb facs="tl_4"/>
                wie flüchtig und wie bo&#x364;ß iſt unſre zeit vor dir/<lb facs="tl_5"/>
                dieweil wir dich erzo&#x364;rnt mit nicht geringen ſünden:<lb facs="tl_6"/>
                lehr uns erkennen die/ und laß uns gnad empfinden.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XCI.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XCI.</num></hi></head><lb facs="tl_8"/>
                Wer ihm zu&#x366; ſeinem ſchutz den Ho&#x364;chſten außerkießt/<lb facs="tl_9"/>
                denſelben weder peſt/ noch feindes pfeil erſchießt/<lb facs="tl_10"/>
                ihm ſchaden weder lew/ noch ſchlang/ noch wilde dra-<lb facs="tl_11"/>
                chen/<lb facs="tl_12"/>
                dann Gottes engel ihn/ auß Gotts befehl verwachen.<lb facs="tl_13"/>
-               <hi rendition="#aq"><num>XCII.</num></hi><lb facs="tl_14"/>
+               <head><hi rendition="#aq"><num>XCII.</num></hi></head><lb facs="tl_14"/>
                Das volk ermuntert ſich zu&#x366; einem lobgeſang/<lb facs="tl_15"/>
                auf Gottes eignen tag/ durch ſtim&#x342; und ſeitenklang/<lb facs="tl_16"/>
                dieweil er ſeine feind ob ihrem glük zerſtrewet/<lb facs="tl_17"/>
                die frommen aber ſchützt/ geſegnet und erfrewet.<lb facs="tl_18"/>
-               <hi rendition="#aq"><num>XCIII.</num></hi><lb facs="tl_19"/>
+               <head><hi rendition="#aq"><num>XCIII.</num></hi></head><lb facs="tl_19"/>
                Die gla&#x364;ubig Judenſchafft des Herꝛen herꝛſchafft<lb facs="tl_20"/>
                preißt/<lb facs="tl_21"/>
                und ſeine groſſe macht uns in der ſcho&#x364;pffung weißt/<lb facs="tl_22"/>
                wie auch in dem daß er des wilden meeres wellen/<lb facs="tl_23"/>
                das iſt/ der feinden ſtoltz/ nach ſeinem wort kan fellen.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>XCIV.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>XCIV.</num></hi></head><lb facs="tl_25"/>
                O Gott der rache/ kom&#x342;: kom&#x342; doch zu&#x366;rechen dich<lb facs="tl_26"/>
                an denen die der ſünd ſo trutzig ru&#x364;hmen ſich/<lb facs="tl_27"/>
                
@@ -1136,27 +1136,27 @@
             <milestone unit="page" ana="#facs_52_tr_1"/>
                die deine vorſicht- und gerechtigkeit verneinen:<lb facs="tl_3"/>
                von ihrer tyranney erlo&#x364;ß/ o Herꝛ/ die deinen!<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>XCV.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>XCV.</num></hi></head><lb facs="tl_5"/>
                Herbey/ o Jſrael/ und fro&#x364;lich dich erweiß/<lb facs="tl_6"/>
                mit jauchtzen und geſang/ zu&#x366; Gottes lob und preiß:<lb facs="tl_7"/>
                ihm ſollen dienen wir: ihn ſollen wir anbetten/<lb facs="tl_8"/>
                und nicht/ den va&#x364;ttern gleich/ von ſeinen wa&#x364;gen tretten.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>XCVI.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>XCVI.</num></hi></head><lb facs="tl_10"/>
                Beſingt mit newem lied des Heilands ſig und reych/<lb facs="tl_11"/>
                von eim zum andern tag ſein ehr und heil zu&#x366;gleich:<lb facs="tl_12"/>
                ihr Heiden preiſet ihn/ und kom&#x342;t zu&#x366; ihm mit gaben:<lb facs="tl_13"/>
                dann er mit grechtigkeit wird erd und himmel laben.<lb facs="tl_14"/>
-               <hi rendition="#aq"><num>XCVII.</num></hi><lb facs="tl_15"/>
+               <head><hi rendition="#aq"><num>XCVII.</num></hi></head><lb facs="tl_15"/>
                Meſſi<hi rendition="#aq">æ</hi> ko&#x364;nigreych/ gericht und grechtigkeit<lb facs="tl_16"/>
                die go&#x364;tzendiener ſcha&#x364;ndt; die ſeinen hoch erfrewt:<lb facs="tl_17"/>
                ſo fliehet dann das bo&#x364;ß ihr/ die den Herꝛen liebet/<lb facs="tl_18"/>
                preißt ſeine heiligkeit/ ſo bleibt ihr unbetru&#x364;bet.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>XCVIII.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>XCVIII.</num></hi></head><lb facs="tl_20"/>
                Dem wundertha&#x364;tigen ein newes liedlein ſingt/<lb facs="tl_21"/>
                und dem heilwürkenden mit ſchall und ſeiten klingt:<lb facs="tl_22"/>
                es jauchtze die geſcho&#x364;pff vor dem der kom&#x342;t zu&#x366;richten<lb facs="tl_23"/>
                wie recht und billich iſt/ nach allen richterspflichten.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>XCIX.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>XCIX.</num></hi></head><lb facs="tl_25"/>
                Der Herꝛ ein Ko&#x364;nig iſt/ der um und um regiert/<lb facs="tl_26"/>
                der under ſeinem volk ein geiſtlich reych eynfu&#x364;hrt/<lb facs="tl_27"/>
                
@@ -1164,28 +1164,28 @@
             <milestone unit="page" ana="#facs_53_tr_1"/>
                foll gnad/ gericht und recht: der ſeine diener rettet/<lb facs="tl_3"/>
                und gna&#x364;dig züchtiget: drum preißt ihn und anbettet.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>C.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>C.</num></hi></head><lb facs="tl_5"/>
                Jhr vo&#x364;lker aller welt/ beſu&#x366;chet Gottes hauß<lb facs="tl_6"/>
                mit luſt und fro&#x364;lichkeit: erkennet auch fürauß<lb facs="tl_7"/>
                daß Gott iſt warer Gott/ der uns zu&#x366; ſeinen ſchaffen/<lb facs="tl_8"/>
                ohn uns erſchaffen hat/ und nicht wil ewig ſtraffen.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>CI.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>CI.</num></hi></head><lb facs="tl_10"/>
                Von Gottes gnad und recht ſol mein geſang nur<lb facs="tl_11"/>
                ſeyn/<lb facs="tl_12"/>
                wann in mein ko&#x364;nigreych der Herꝛ mich ſetzet eyn:<lb facs="tl_13"/>
                fürſichtig/ redlich/ trew wil ich zu&#x366; hauſe leben/<lb facs="tl_14"/>
                die bo&#x364;ſen reuten auß; die frommen hoch erheben.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>CII.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>CII.</num></hi></head><lb facs="tl_16"/>
                Es bittet Jſrael/ in ho&#x364;chſtbetru&#x364;btem ſtand/<lb facs="tl_17"/>
                daß Gott ſie widerbring in ihres vatterland/<lb facs="tl_18"/>
                damit zu&#x366; ſeiner ehr/ der tempel werd erbawet/<lb facs="tl_19"/>
                die Heidenſchafft bekehrt: wie ihme ſie vertrawet.<lb facs="tl_20"/>
-               <hi rendition="#aq"><num>CIII.</num></hi><lb facs="tl_21"/>
+               <head><hi rendition="#aq"><num>CIII.</num></hi></head><lb facs="tl_21"/>
                O ſeel/ lob ewig den/ der deinem leib und dir<lb facs="tl_22"/>
                ſo gar vil gu&#x366;ts erzeigt: ihn lobe was in mir:<lb facs="tl_23"/>
                ihr engel/ die ihr ſeyt des Herꝛen ſtarke helden/<lb facs="tl_24"/>
                ihr heerzeug und geſcho&#x364;pff des Herꝛſchers lob ſollt melden.<lb facs="tl_25"/>
-               <hi rendition="#aq"><num>CIV.</num></hi><lb facs="tl_26"/>
+               <head><hi rendition="#aq"><num>CIV.</num></hi></head><lb facs="tl_26"/>
                O ſeel/ erheb doch den/ der alles macht und ziert/<lb facs="tl_28"/>
                und auch zu&#x366; ſeiner ehr und unſerm nutz regiert:<lb facs="tl_29"/>
                mein lied und ſeitenſpil den Herꝛen ewig preiſe/<lb facs="tl_30"/>
@@ -1193,13 +1193,13 @@
                
             <pb n="54" test="31"/>
             <milestone unit="page" ana="#facs_54_tr_1"/>
-               <hi rendition="#aq"><num>CV.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>CV.</num></hi></head><lb facs="tl_3"/>
                O Jſrael/ erkenn/ bekenn und mach uns kund<lb facs="tl_4"/>
                die werk und urtheil Gotts/ nach ſeinem wort und<lb facs="tl_5"/>
                bund/<lb facs="tl_6"/>
                von zeiten Abrahams bis daß er dir gegeben<lb facs="tl_7"/>
                das gu&#x366;t gelobte land: ſeim gſatz gema&#x364;ß zu&#x366; leben.<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>CVI.</num></hi><lb facs="tl_9"/>
+               <head><hi rendition="#aq"><num>CVI.</num></hi></head><lb facs="tl_9"/>
                Gelobet ſey der Herꝛ! So ſprich/ o Jſrael:<lb facs="tl_10"/>
                bekenn/ wie vil er dir gethan an leib und ſeel!<lb facs="tl_11"/>
                Des gu&#x366;ten iſt zu&#x366; vil/ ich kan es nicht außſprechen:<lb facs="tl_12"/>
@@ -1209,7 +1209,7 @@
                der Pſalmen.<lb facs="tl_16"/>
             <pb n="55" test="32"/>
             <milestone unit="page" ana="#facs_55_tr_1"/>
-               <label>[5.]</label><hi rendition="#aq"><num>V.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[5.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>V.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Ein jeder ſeye doch zu&#x366; deſſen lob gefliſſen/<lb facs="tl_8"/>
                der himmel/ erd und meer/ und alle ding regiert:<lb facs="tl_16"/>
                durch ihn wir ja dem feind und tode ſeind entriſſen/<lb facs="tl_24"/>
@@ -1234,32 +1234,32 @@
                
             <pb n="57" test="34"/>
             <milestone unit="page" ana="#facs_57_tr_1"/>
-               <num>Jnhalt des <hi rendition="#aq">CVII.</hi> Pſalmens.</num><lb facs="tl_3"/>
+               <head><num>Jnhalt des <hi rendition="#aq">CVII.</hi> Pſalmens.</num></head><lb facs="tl_3"/>
                <hi rendition="#in">E</hi>Jn jeder ſeye doch zu&#x366; deſſen lob gefliſſen/<lb facs="tl_4"/>
                der himmel/ erd/ und meer/ und alle ding regiert:<lb facs="tl_5"/>
                durch ihn wir ja dem feind und tode ſeind entriſſen/<lb facs="tl_6"/>
                auß hunger-waſſersnoht: auß irꝛ und banden gfu&#x364;hrt.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>CVIII.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>CVIII.</num></hi></head><lb facs="tl_8"/>
                Mein hertz/ der David ſpricht/ iſt fertig lob zu&#x366; ſingen/<lb facs="tl_9"/>
                und um verlihne ſig zu&#x366; danken meinem Gott:<lb facs="tl_10"/>
                dann ſeine gnad und trew ſich himmelan erſchwingen:<lb facs="tl_11"/>
                Er helffe fehrner mir: der menſchen hülff iſt ſpott!<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>CIX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>CIX.</num></hi></head><lb facs="tl_13"/>
                Der David/ und in ihm ſein gegenbild erklagen<lb facs="tl_14"/>
                ab falſchen zungen ſich/ und ab verꝛa&#x364;hterey:<lb facs="tl_15"/>
                den feinden ſchwere ſtraf/ und Gott ihr noht fürtragen/<lb facs="tl_16"/>
                mit bitt um ſchutz und ſchirm: geloben dank darbey.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>CX.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>CX.</num></hi></head><lb facs="tl_18"/>
                Meſſias/ Gott und menſch/ vom Vatter hat empfangen<lb facs="tl_19"/>
                ſein reych und Prieſterthum/ der ihn zur rechten gſetzt:<lb facs="tl_20"/>
                der ſcepter ſeines worts/ von Sion außgegangen/<lb facs="tl_21"/>
                die feinde niderſchlagt; die freunde wol ergetzt.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>CXI.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>CXI.</num></hi></head><lb facs="tl_23"/>
                Der David Gottes bund/ gebott und thaten preiſet/<lb facs="tl_24"/>
                durch die er Jſrael in Canaan gebracht:<lb facs="tl_25"/>
                in warer gottesforcht die ware weyßheit weiſet/<lb facs="tl_26"/>
                alß die ihr lob behalt/ und uns verſta&#x364;ndig macht.<lb facs="tl_27"/>
-               <hi rendition="#aq"><num>CXII.</num></hi><lb facs="tl_28"/>
+               <head><hi rendition="#aq"><num>CXII.</num></hi></head><lb facs="tl_28"/>
                Ein from&#x342;-freygeber menſch für diß und jenes leben<lb facs="tl_29"/>
                
             <pb n="58" test="35"/>
@@ -1267,27 +1267,27 @@
                von Gott verheiſſung hat: der ſegen iſt ſein theil:<lb facs="tl_2"/>
                verflu&#x364;cht ſeind die ſo Gott in allem widerſtreben/<lb facs="tl_3"/>
                ſie ſehen mit verdruß des frommen glük und heil.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>CXIII.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>CXIII.</num></hi></head><lb facs="tl_5"/>
                Jhr Gottesknechte lobt des hohen Gottes namen:<lb facs="tl_6"/>
                er werde hoch gelobt nun und zu&#x366; aller zeit:<lb facs="tl_7"/>
                den himmel und die erd regieret er zu&#x366;ſamen/<lb facs="tl_8"/>
                er gibt geringen ehr; einſamen fruchtbarkeit.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>CXIV.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>CXIV.</num></hi></head><lb facs="tl_10"/>
                Es danket Jſrael/ daß auß Egyptenlande<lb facs="tl_11"/>
                der Herꝛ ſie hat gefu&#x364;hrt/ und ihme außerwehlt:<lb facs="tl_12"/>
                die wunder/ die der Herꝛ gewürkt mit ſtarker hande<lb facs="tl_13"/>
                am roten meer/ Jordan und anderſtwo/ erzehlt.<lb facs="tl_14"/>
-               <hi rendition="#aq"><num>CXV.</num></hi><lb facs="tl_15"/>
+               <head><hi rendition="#aq"><num>CXV.</num></hi></head><lb facs="tl_15"/>
                Nicht unſer ehr/ o Herꝛ/ die deine wolleſt retten<lb facs="tl_16"/>
                vor denen die von dir uns fragen nur auß ſpott:<lb facs="tl_17"/>
                Der go&#x364;tz und go&#x364;tzenſchmid/ und die ſo ihn anbetten<lb facs="tl_18"/>
                ſeind gleich und alle nichts: du/ du biſt unſer Gott.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>CXVI.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>CXVI.</num></hi></head><lb facs="tl_20"/>
                Es iſt mir lieb und gnu&#x366;g/ daß Gott erho&#x364;rt mein flehen/<lb facs="tl_21"/>
                alß mich des todes ſtrik umgeben überal:<lb facs="tl_22"/>
                nun wil ich/ weil ich leb/ anbetten ihn/ und ſehen<lb facs="tl_23"/>
                daß ich/ vor allem volk/ dankopfer ihm bezahl.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>CXVII.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>CXVII.</num></hi></head><lb facs="tl_25"/>
                Der ko&#x364;niglich Prophet vermahnet alle Heiden/<lb facs="tl_26"/>
                und vo&#x364;lker in gemein/ zu&#x366; Gottes lob und preiß:<lb facs="tl_27"/>
                dann ſeine groſſe gnad auch ihnen ſey beſcheiden/<lb facs="tl_28"/>
@@ -1295,28 +1295,28 @@
                
             <pb n="59" test="36"/>
             <milestone unit="page" ana="#facs_59_tr_1"/>
-               <hi rendition="#aq"><num>CXVIII.</num></hi><lb facs="#facs_59_l_43"/>
+               <head><hi rendition="#aq"><num>CXVIII.</num></hi></head><lb facs="#facs_59_l_43"/>
                Der David jeden ſtand vermahnet Gott zu&#x366; preiſen/<lb facs="tl_4"/>
                dieweil er in ſein reych iſt widereyngeſetzt:<lb facs="tl_5"/>
                ru&#x364;hmt Gottes wunderhülff/ und wil ihm dank erweiſen:<lb facs="tl_6"/>
                ſich für Meſſias bild/ weyſſagungsweiſe ſchetzt.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>CXIX.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>CXIX.</num></hi></head><lb facs="tl_8"/>
                Der allerla&#x364;ngſte Pſalm; des Pſalters ſum&#x342; zu&#x366; nennen;<lb facs="tl_9"/>
                erhebt des Herꝛen gſatz/ und deren ſeligkeit<lb facs="tl_10"/>
                die deſſen fleiſſen ſich/ und Gott darauß erkennen:<lb facs="tl_11"/>
                wornach der David wünſcht zu&#x366; leben alle zeit.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>CXX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>CXX.</num></hi></head><lb facs="tl_13"/>
                O Herꝛ/ mein alter troſt/ von des verlümders pfeilen/<lb facs="tl_14"/>
                und falſcher zungen brand wo&#x364;llſt gna&#x364;dig retten mich!<lb facs="tl_15"/>
                Ach/ daß mein elend ſich ſo lange ſol verweilen/<lb facs="tl_16"/>
                und bey fridha&#x364;ſſigen in hütten wohnen ich!<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>CXXI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>CXXI.</num></hi></head><lb facs="tl_18"/>
                Jch finde nirgend hülff alß nur allein beym Herꝛen<lb facs="tl_19"/>
                der alles hat gemacht: er/ er/ o Jſrael/<lb facs="tl_20"/>
                entſchla&#x364;fft und ſchlummert nicht; behu&#x364;tet nah und<lb facs="tl_21"/>
                ferꝛen<lb facs="tl_22"/>
                vor allem übel dich am leib und an der ſeel.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>CXXII.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>CXXII.</num></hi></head><lb facs="tl_24"/>
                Der David frewet ſich des Gottesdienſts im tempel/<lb facs="tl_25"/>
                und erſten regiments: wünſcht heil und glük darzu&#x366;:<lb facs="tl_26"/>
                vermahnet alles volk zu&#x366; folgen ſeim exempel/<lb facs="tl_27"/>
@@ -1324,29 +1324,29 @@
                
             <pb n="60" test="37"/>
             <milestone unit="page" ana="#facs_60_tr_1"/>
-               <hi rendition="#aq"><num>CXXIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>CXXIII.</num></hi></head><lb facs="tl_3"/>
                Wie knecht und ma&#x364;gde nur auff herꝛn und frawen<lb facs="tl_4"/>
                ſehen/<lb facs="tl_5"/>
                zu&#x366; haben ihren ſchirm: ſo ſehen wir auf Gott/<lb facs="tl_6"/>
                biß daß er ſich erbarm uns armen beyzu&#x366;ſtehen:<lb facs="tl_7"/>
                Ach Herꝛ/ erlo&#x364;ß uns doch von ſtoltzer feinden ſpott!<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>CXXIV.</num></hi><lb facs="tl_9"/>
+               <head><hi rendition="#aq"><num>CXXIV.</num></hi></head><lb facs="tl_9"/>
                O Jſrael/ erkenn die wunderhülff des Herꝛen/<lb facs="tl_10"/>
                und dein erlo&#x364;ſung ſchreib nur einig ihme zu&#x366;:<lb facs="tl_11"/>
                dann/ wo er ſeine hülff entzogen ha&#x364;tte ferꝛen/<lb facs="tl_12"/>
                ſo weren wir nicht frey/ und lebten nicht in ru&#x366;h.<lb facs="tl_13"/>
-               <hi rendition="#aq"><num>CXXV.</num></hi><lb facs="tl_14"/>
+               <head><hi rendition="#aq"><num>CXXV.</num></hi></head><lb facs="tl_14"/>
                Wie Sion veſt verbleibt/ ſo auch die Gott vertrawen:<lb facs="tl_15"/>
                dann er beſchirmet ſie/ wie berge/ rings umhar:<lb facs="tl_16"/>
                Herr/ thu&#x366; den frommen gu&#x366;ts/ damit ſie nicht umſcha-<lb facs="tl_17"/>
                wen<lb facs="tl_18"/>
                nach ungerechtigkeit; vertilg die ſcha&#x364;lke gar!<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>CXXVI.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>CXXVI.</num></hi></head><lb facs="tl_20"/>
                Die ledigmachung uns/ auß Babel ho&#x364;chſt erfrewet:<lb facs="tl_21"/>
                Ach/ daß die übrigen auch mo&#x364;chten bey uns ſeyn!<lb facs="tl_22"/>
                Dann die mit thra&#x364;nen einſt den ſamen außgeſtra&#x364;wet/<lb facs="tl_23"/>
                dieſelben tragen jetz die garben fro&#x364;lich eyn.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>CXXVII.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>CXXVII.</num></hi></head><lb facs="tl_25"/>
                Fleiß/ arbeit/ mu&#x364;h und ſorg umſonſt wird angewendet<lb facs="tl_26"/>
                ſo wol in unſerm hauß/ alß in gemeinem ſtand/<lb facs="tl_27"/>
                wo nicht der Herꝛ darzu&#x366; den reichen ſegen ſendet:<lb facs="tl_28"/>
@@ -1354,32 +1354,32 @@
                
             <pb n="61" test="38"/>
             <milestone unit="page" ana="#facs_61_tr_1"/>
-               <hi rendition="#aq"><num>CXXVIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>CXXVIII.</num></hi></head><lb facs="tl_3"/>
                Glükſelig iſt der from&#x342; in ſeinem gantzen leben/<lb facs="tl_4"/>
                dann er genießt was ihm erworben ſeine hand:<lb facs="tl_5"/>
                ſein ehweib fruchtbar iſt/ wie an dem hauß die ra&#x364;ben:<lb facs="tl_6"/>
                er ſihet kindeskind/ und friden in dem land.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>CXXIX.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>CXXIX.</num></hi></head><lb facs="tl_8"/>
                Die feinde haben mich/ von jugend auf gedra&#x364;nget<lb facs="tl_9"/>
                mit viler tyranney; mag ſagen Jſrael;<lb facs="tl_10"/>
                doch übergwaltigt nie: weil Gott es nicht verha&#x364;nget:<lb facs="tl_11"/>
                der wird die Sionsfeind auch ſtraffen ohne fehl.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>CXXX.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>CXXX.</num></hi></head><lb facs="tl_13"/>
                Auß tieffer ſeelennoht/ von wegen meiner ſünden/<lb facs="tl_14"/>
                zu&#x366; dir/ o Herꝛ/ ich ru&#x364;ff: erho&#x364;r gena&#x364;dig mich:<lb facs="tl_15"/>
                dann ſo du rechnen wilt/ iſt keiner grecht zu&#x366; finden:<lb facs="tl_16"/>
                verzeihung iſt bey dir/ damit man fo&#x364;rchte dich!<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>CXXXI.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>CXXXI.</num></hi></head><lb facs="tl_18"/>
                Jch bin/ o Herꝛ/ nicht ſtoltz/ wie aber Saul mich ſchetzet/<lb facs="tl_19"/>
                der immerzu&#x366; vermeint/ ich ſtelle nach dem reych:<lb facs="tl_20"/>
                o nein/ ich gleiche mehr eim kind der bruſt entſetzet/<lb facs="tl_21"/>
                und du/ o Jſrael/ traw deinem Gott zu&#x366;gleich.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>CXXXII.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>CXXXII.</num></hi></head><lb facs="tl_23"/>
                O Herꝛ/ ſpricht Jſrael/ fu&#x364;hr wider zu&#x366; gemu&#x364;hte<lb facs="tl_24"/>
                des Davids mu&#x364;h und glübd für deine bundeslad:<lb facs="tl_25"/>
                dein theürgeſchworner eid ſein gſchlecht und reych behu&#x364;te:<lb facs="tl_26"/>
                zu&#x366; Zion deiner kirch beywohne deine gnad!<lb facs="tl_28"/>
-               <hi rendition="#aq"><num>CXXXIII.</num></hi><lb facs="tl_29"/>
+               <head><hi rendition="#aq"><num>CXXXIII.</num></hi></head><lb facs="tl_29"/>
                Der bru&#x364;der einigkeit wie balſam wird geſchetzet<lb facs="tl_30"/>
                
             <pb n="62" test="39"/>
@@ -1388,27 +1388,27 @@
                fleüßt:<lb facs="tl_4"/>
                ſie gleicht des Hermons tau/ der Sions berge netzet:<lb facs="tl_5"/>
                dann über ſie der Herꝛ des lebens ſegen geußt.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>CXXXIV.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>CXXXIV.</num></hi></head><lb facs="tl_7"/>
                So lobt den Herꝛen nun ihr Prieſter und Leviten/<lb facs="tl_8"/>
                ihr diener/ die ihr nachts des Herꝛen hauß bewacht:<lb facs="tl_9"/>
                zum heiligthum die ha&#x364;nd erhebt zu&#x366; allen zeiten/<lb facs="tl_10"/>
                und ſprecht den ſegen auß von dem der alles macht.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>CXXXV.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>CXXXV.</num></hi></head><lb facs="tl_12"/>
                Jhr Prieſter ſamt dem volk lobt Gottes nam&#x342; und werke/<lb facs="tl_13"/>
                dieweil er euch erwehlt zu&#x366; ſeinem eigenthum/<lb facs="tl_14"/>
                und auß Egypten gfu&#x364;hrt durch ſeines armes ſterke:<lb facs="tl_15"/>
                der Heiden go&#x364;tzen ſeind blind/ athemloß und dum&#x342;.<lb facs="tl_16"/>
-               <hi rendition="#aq"><num>CXXXVI.</num></hi><lb facs="tl_17"/>
+               <head><hi rendition="#aq"><num>CXXXVI.</num></hi></head><lb facs="tl_17"/>
                Dem Herꝛen danke man/ dem der uns gu&#x366;ts beſchehret/<lb facs="tl_18"/>
                dem groſſen Wundergott; dem ſcho&#x364;pffer aller welt/<lb facs="tl_19"/>
                der Jſrael erlo&#x364;ßt/ und alles fleiſch ernehret:<lb facs="tl_20"/>
                dann ſeiner gu&#x364;tigkeit kein ende wird gezehlt.<lb facs="tl_21"/>
-               <hi rendition="#aq"><num>CXXXVII.</num></hi><lb facs="tl_22"/>
+               <head><hi rendition="#aq"><num>CXXXVII.</num></hi></head><lb facs="tl_22"/>
                An flüſſen Babylons vergoſſen wir vil threnen/<lb facs="tl_23"/>
                alß unſre feind ein lied/ mit ſpott von uns begert/<lb facs="tl_24"/>
                nur nach Jeruſalem ſtu&#x366;hnd unſer ſinn und ſehnen:<lb facs="tl_25"/>
                Herꝛ/ widergilt geleichs dem der uns hat beſchwert.<lb facs="tl_26"/>
-               <hi rendition="#aq"><num>CXXXVIII.</num></hi><lb facs="tl_27"/>
+               <head><hi rendition="#aq"><num>CXXXVIII.</num></hi></head><lb facs="tl_27"/>
                Jch dank und trawe Gott<anchor xml:id="a41"/>/<note type="annotation" targetEnd="a41"><p>Komma in dem Göttinger Exemplar etwas besser zu erkennen.</p></note> der meiner bitt e<blackening comment="Im göttingischen Vergleichsexemplar deutlicher zu lesen.">ntſ</blackening>prochen:<lb facs="tl_28"/>
                es werden gleiches thu&#x366;n die ko&#x364;nige der welt/<lb facs="tl_29"/>
                
@@ -1416,28 +1416,28 @@
             <milestone unit="page" ana="#facs_63_tr_1"/>
                wann ſeines mundes wort ſie ho&#x364;ren unverbrochen:<lb facs="tl_3"/>
                er nidrigt meine feind/ und mir das reych zu&#x366;ſtellt.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>CXXXIX.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>CXXXIX.</num></hi></head><lb facs="tl_5"/>
                O Gott/ du kenneſt mich von auſſen und von innen/<lb facs="tl_6"/>
                und weiſſeſt daß der Saul mir/ fa&#x364;lſchlich/ bo&#x364;ſes trawt:<lb facs="tl_7"/>
                Du biſt an allem ort: wer mo&#x364;chte dir entrünnen?<lb facs="tl_8"/>
                Nur deine feind ich haß: auf args mein hertz nicht<lb facs="tl_9"/>
                bawt.<lb facs="tl_10"/>
-               <hi rendition="#aq"><num>CXL.</num></hi><lb facs="tl_11"/>
+               <head><hi rendition="#aq"><num>CXL.</num></hi></head><lb facs="tl_11"/>
                O Herꝛ/ mein heil und troſt/ du wo&#x364;lleſt mich erꝛetten<lb facs="tl_12"/>
                von Saul und Doegs hand/ und ihrer falſchen rott/<lb facs="tl_13"/>
                die durch gewalt und liſt mich wolten undertretten:<lb facs="tl_14"/>
                ich weiß du hilffeſt mir/ und ſtürtzeſt ſie in ſpott.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>CXLI.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>CXLI.</num></hi></head><lb facs="tl_16"/>
                Herꝛ/ eil zu&#x366; helffen mir/ dieweil ich aufſatz ſpüre<lb facs="tl_17"/>
                am ko&#x364;niglichen hof: regier mir hertz und mund/<lb facs="tl_18"/>
                daß nicht zur ungedult ihr wolſtand mich verfu&#x364;hre:<lb facs="tl_19"/>
                in ihre netze ſie verfell und ſtürtz zu&#x366; grund!<lb facs="tl_20"/>
-               <hi rendition="#aq"><num>CXLII.</num></hi><lb facs="tl_21"/>
+               <head><hi rendition="#aq"><num>CXLII.</num></hi></head><lb facs="tl_21"/>
                Auß einer finſtern klufft; verꝛahten und umgeben<lb facs="tl_22"/>
                von Saul und ſeinem Heer; zu&#x366; dir/ o Herꝛ/ ich ſchrey:<lb facs="tl_23"/>
                du biſt mein theil und heil: rett auß gefahr mein leben/<lb facs="tl_24"/>
                daß deinen namen ich nun widrum preiſe frey!<lb facs="tl_25"/>
-               <hi rendition="#aq"><num>CXLIII.</num></hi><lb facs="tl_26"/>
+               <head><hi rendition="#aq"><num>CXLIII.</num></hi></head><lb facs="tl_26"/>
                Herꝛ/ meine bitt erho&#x364;r/ und laß genade finden/<lb facs="tl_27"/>
                dieweil vor deinem gricht nicht einer iſt gerecht:<lb facs="tl_28"/>
                
@@ -1445,28 +1445,28 @@
             <milestone unit="page" ana="#facs_64_tr_1"/>
                durch deinen Geiſt mich leit/ und mich erlo&#x364;ß von feinden/<lb facs="tl_3"/>
                vertilg und rott ſie auß: rett aber deinen knecht.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>CXLIV.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>CXLIV.</num></hi></head><lb facs="tl_5"/>
                Gelobt ſey Gott/ mein felß/ der wider meine feinde<lb facs="tl_6"/>
                mich krieg- und ſigen lehrt/ und widrum machet frey:<lb facs="tl_7"/>
                er demme fehrner ſie/ ſamt allem falſchen gſinde/<lb facs="tl_8"/>
                damit im gantzen land nichts ungeſegnet ſey.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>CXLV.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>CXLV.</num></hi></head><lb facs="tl_10"/>
                Jch wil erho&#x364;hen dich/ und mit den frommen preiſen<lb facs="tl_11"/>
                dein ewig ko&#x364;nigreych/ o Gott in ewigkeit:<lb facs="tl_12"/>
                groß/ gu&#x364;tig/ trew/ gerecht dich deine werk erweiſen/<lb facs="tl_13"/>
                du ſettigſt alles fleiſch: dich lob es jederzeit.<lb facs="tl_14"/>
-               <hi rendition="#aq"><num>CXLVI.</num></hi><lb facs="tl_15"/>
+               <head><hi rendition="#aq"><num>CXLVI.</num></hi></head><lb facs="tl_15"/>
                Nun lobet alle Gott: du auch/ o liebe ſeele:<lb facs="tl_16"/>
                ich wil bis in den tod lobſingen meinem Gott:<lb facs="tl_17"/>
                die fürſt- und menſchlich hülff verſchwindt und ſchlaget<lb facs="tl_18"/>
                fehle/<lb facs="tl_19"/>
                wer aber Gott vertrawt/ hat hülff in aller noht.<lb facs="tl_20"/>
-               <hi rendition="#aq"><num>CXLVII.</num></hi><lb facs="tl_21"/>
+               <head><hi rendition="#aq"><num>CXLVII.</num></hi></head><lb facs="tl_21"/>
                Lobt Gott/ wie recht und gu&#x366;t/ von wegen viler gaben/<lb facs="tl_22"/>
                die ſeine kirch vorauß erlangt zu&#x366; leib und ſeel:<lb facs="tl_23"/>
                die raben und das vieh von ihme nahrung haben/<lb facs="tl_24"/>
                er ſchaffet hitz und froſt/ und heil dem Jſrael.<lb facs="tl_25"/>
-               <hi rendition="#aq"><num>CXLVIII.</num></hi><lb facs="tl_26"/>
+               <head><hi rendition="#aq"><num>CXLVIII.</num></hi></head><lb facs="tl_26"/>
                O engeliſche ſchar/ ihr himmels legionen/<lb facs="tl_27"/>
                den Himmelsherꝛen lobt: es lob ihn all ſein heer:<lb facs="tl_28"/>
                lobt ihn/ ihr element/ und ihr die ſie bewohnen/<lb facs="tl_29"/>
@@ -1474,13 +1474,13 @@
                
             <pb n="65" test="42"/>
             <milestone unit="page" ana="#facs_65_tr_1"/>
-               <hi rendition="#aq"><num>CXLIX.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>CXLIX.</num></hi></head><lb facs="tl_3"/>
                Lobt Gott mit newem lied/ mit harff- und pauken ſchla-<lb facs="tl_4"/>
                gen/<lb facs="tl_5"/>
                daheim und offenlich/ mit mund und hertz zu&#x366;gleich/<lb facs="tl_6"/>
                dann ihm gefallt ſein volk: ſie werden ſchwerter tragen/<lb facs="tl_7"/>
                das iſt/ durch Gottes wort vermehren Chriſti reych.<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>CL.</num></hi><lb facs="tl_9"/>
+               <head><hi rendition="#aq"><num>CL.</num></hi></head><lb facs="tl_9"/>
                Lobt Gott im heiligthum/ und in der himmels veſte/<lb facs="tl_10"/>
                von wegen ſeiner macht und groſſen herꝛlichkeit:<lb facs="tl_11"/>
                mit blaß- und ſeitenſpil lobt ihn/ ihr erdenga&#x364;ſte:<lb facs="tl_12"/>
@@ -1496,7 +1496,7 @@
                Geſa&#x364;nge.<lb facs="tl_5"/>
             <pb n="67" test="44"/>
             <milestone unit="page" ana="#facs_67_tr_1"/>
-               <label>[20.]</label><hi rendition="#aq"><num>VI.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[20.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VI.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Mein troſt anjetz und jederzeit/ im leben und im ſterben/<lb facs="tl_11"/>
                iſt fre<anchor xml:id="a42"/>ü<note type="annotation" targetEnd="a42"><p>Im göttingischen Vergleichsexemplar ist das Trema deutlich zu sehen.</p></note>denfolle ſeligkeit in him&#x303;len zu&#x366; ererben:<lb facs="tl_13"/>
                wo ich bey Gott wird ewig ſeyn/ und ſolche gu&#x364;ter ſamlen eyn<lb facs="tl_20"/>
@@ -1830,7 +1830,7 @@
                ſtürtzt ſich in ewigs leyden!<lb facs="tl_33"/>
             <pb n="79" test="56"/>
             <milestone unit="page" ana="#facs_79_tr_1"/>
-               <label>[8.]</label><hi rendition="#aq"><num>VII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[8.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                <hi rendition="#in">A</hi>Vf/ auf mein hertz/ hilff mir ein liedlein ſingen:<lb facs="tl_6"/>
                ohn ſchimpff und ſchertz/ von gheimnußreichen dingen/<lb facs="tl_7"/>
                die uns ein bott von him&#x342;len m<anchor xml:id="a51"/>u&#x364;<note type="annotation" targetEnd="a51"><p>Das übergeschriebene Zeichen ist schwierig zu erkennen. Im Gedichttext auf S. 58 der Vorlage handelt es sich um ein e und auch in den Vergleichsexemplaren steht e.</p></note>ßte bringen:<lb facs="tl_12"/>
@@ -1919,7 +1919,7 @@
                nim&#x342; mich zu&#x366; deinen ha&#x364;nden!<lb facs="tl_31"/>
             <pb n="83" test="60"/>
             <milestone unit="page" ana="#facs_83_tr_1"/>
-               <label>[9.]</label><hi rendition="#aq"><num>VIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[9.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>VIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Jeſu/ warer Gottes Sohn/ deines Vatters freud und<lb facs="tl_10"/>
                won/ ſelber Gott zu&#x366;gleiche: Was doch mag es<lb facs="tl_14"/>
                immer ſeyn/ das dich auß des himmels ſchrein/<lb facs="tl_19"/>
@@ -1950,21 +1950,21 @@
                Chriſto.<lb facs="tl_6"/>
                Jn der weis:<lb facs="tl_7"/>
                Einsmals mich ein luſt ankam/ ꝛc.<lb facs="tl_8"/>
-               <num>1.</num><lb facs="tl_9"/>
+               <head><num>1.</num></head><lb facs="tl_9"/>
                <hi rendition="#in">J</hi>Eſu/ warer Gottes Sohn/<lb facs="tl_10"/>
                deines Vatters freud und won/<lb facs="tl_11"/>
                ſelber Gott zu&#x366;gleiche:<lb facs="tl_12"/>
                Was doch mag es immer ſeyn<lb facs="tl_13"/>
                das dich auß des himmels ſchreyn<lb facs="tl_14"/>
                trib von deinem reyche?<lb facs="tl_15"/>
-               <num>2.</num><lb facs="tl_16"/>
+               <head><num>2.</num></head><lb facs="tl_16"/>
                War es gwalt vnd feyendſchafft?<lb facs="tl_17"/>
                War es wie magnetenkrafft/<lb facs="tl_18"/>
                die dich hat gezogen<lb facs="tl_19"/>
                auß des Vatters liebſten ſchoß/<lb facs="tl_20"/>
                auff die erden/ arm und bloß?<lb facs="tl_21"/>
                Hat dich liſt betrogen?<lb facs="tl_22"/>
-               <num>3.</num><lb facs="tl_23"/>
+               <head><num>3.</num></head><lb facs="tl_23"/>
                Nein/ o nein! noch liſt/ noch gwalt/<lb facs="tl_24"/>
                noch was anders gleicher gſtalt/<lb facs="tl_25"/>
                brachte mich auff erden:<lb facs="tl_26"/>
@@ -1974,21 +1974,21 @@
                <Catch_word><anchor xml:id="a52"/><num>4</num> Was<note type="annotation" targetEnd="a52"><p>Strenggenommen weicht diese Kustode von der folgenden Seite ab (der Ordinalpunkt fehlt)</p></note></Catch_word><lb facs="#facs_85_l_38"/>
             <pb n="86" test="63"/>
             <milestone unit="page" ana="#facs_86_tr_1"/>
-               <num>4.</num><lb facs="tl_2"/>
+               <head><num>4.</num></head><lb facs="tl_2"/>
                Was für dank nun ſol ich dir<lb facs="tl_3"/>
                für die liebe/ die du mir<lb facs="tl_4"/>
                haſt erzeigt/ erweiſen?<lb facs="tl_5"/>
                Wann ich ewig lobte dich/<lb facs="tl_6"/>
                wurde doch nicht gnu&#x366;gſam ich<lb facs="tl_7"/>
                deine liebe preiſen!<lb facs="tl_8"/>
-               <num>5.</num><lb facs="tl_9"/>
+               <head><num>5.</num></head><lb facs="tl_9"/>
                Weil ich ſo geliebet dich/<lb facs="tl_10"/>
                ſolſt hinwider lieben mich/<lb facs="tl_11"/>
                mir allein vertrawen:<lb facs="tl_12"/>
                meines worts ein ta&#x364;hter ſeyn/<lb facs="tl_13"/>
                deines glaubens früchte fein<lb facs="tl_14"/>
                kla&#x364;rlich laſſen ſchawen.<lb facs="tl_15"/>
-               <num>6.</num><lb facs="tl_16"/>
+               <head><num>6.</num></head><lb facs="tl_16"/>
                Ja/ Herꝛ: aber gib du mir<lb facs="tl_17"/>
                deine gnad/ zu&#x366; folgen dir/<lb facs="tl_18"/>
                hertzlich dich zu&#x366; lieben:<lb facs="tl_19"/>
@@ -1997,7 +1997,7 @@
                mir zum heil mo&#x364;g u&#x364;ben!<lb facs="tl_22"/>
             <pb n="87" test="64"/>
             <milestone unit="page" ana="#facs_87_tr_1"/>
-               <label>[21.]</label><hi rendition="#aq"><num>IX.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[21.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>IX.</num> Cantus.</hi></head><lb facs="tl_3"/>
                O Gott/ du mein gerechtigkeit und leben/ der du mir<lb facs="tl_10"/>
                oft in a&#x364;ngſten lufft gegeben/ erho&#x364;r auch jetz mein ru&#x364;ffen<lb facs="tl_17"/>
                und geſchrey: gib was ich bitt/ und mir gena&#x364;dig ſey: vernim&#x342; mein<lb facs="tl_23"/>
@@ -2137,7 +2137,7 @@
                
             <pb n="93" test="70"/>
             <milestone unit="page" ana="#facs_93_tr_2"/>
-               <label>[22.]</label><hi rendition="#aq"><num>X.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[22.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>X.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Fertig iſt mein hertz zu&#x366;ſingen/ fertig iſt mein hertz/ o Herꝛ/<lb facs="tl_7"/>
                deine gu&#x364;te fürzu&#x366;bringen/ allen vo&#x364;lkern nah und ferꝛ:<lb facs="tl_8"/>
                durch geſang und ſeitenſpil meinen Gott ich loben wil:<lb facs="tl_17"/>
@@ -2289,7 +2289,7 @@
                Herꝛ/ durch ſie mich wo&#x364;lſt bewahren!<lb facs="tl_29"/>
             <pb n="99" test="76"/>
             <milestone unit="page" ana="#facs_99_tr_1"/>
-               <label>[23.]</label><hi rendition="#aq"><num>XI.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[23.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XI.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Aurora/ mit ihren verguldeten ſtralen/<lb facs="tl_11"/>
                wil abermal kla&#x364;rlich das wolkenfeld malen:<lb facs="tl_18"/>
                ſie rennet und eilet der ſonnen vorbey/<lb facs="tl_28"/>
@@ -2317,27 +2317,27 @@
                Morgengeſang.<lb facs="tl_2"/>
                in ſeiner eignen vorhergeſetz-<lb facs="tl_3"/>
                ten weis.<lb facs="tl_4"/>
-               <num>1.</num><lb facs="tl_5"/>
+               <head><num>1.</num></head><lb facs="tl_5"/>
                <hi rendition="#in">A</hi>urora/ mit ihren verguldeten ſtralen/<lb facs="tl_6"/>
                wil abermal kla&#x364;rlich das wolkenfeld mahlen;<lb facs="tl_7"/>
                ſie rennet und eilet der ſonnen vorbey/<lb facs="tl_8"/>
                damit ſie des tages verkünderin ſey.<lb facs="tl_9"/>
-               <num>2.</num><lb facs="tl_10"/>
+               <head><num>2.</num></head><lb facs="tl_10"/>
                Sie weket das leichte geflügel der lüffte<lb facs="tl_11"/>
                zu&#x366; ſingen/ daß widererklingen die klüffte/<lb facs="tl_12"/>
                worüber auch ſelber die ru&#x364;hige nacht/<lb facs="tl_13"/>
                den Scho&#x364;pfer zu&#x366; loben/ mit ihnen erwacht.<lb facs="tl_14"/>
-               <num>3.</num><lb facs="tl_15"/>
+               <head><num>3.</num></head><lb facs="tl_15"/>
                Die ſonne ſchon hinder den bergen fürbliket/<lb facs="tl_16"/>
                vil gla&#x364;ntzende ſtralen vor jhren herſchicket/<lb facs="tl_17"/>
                erleuchtet den himmel von ſternen ſo la&#x364;r/<lb facs="tl_18"/>
                verjaget das dunkel ab erden und meer.<lb facs="tl_19"/>
-               <num>4.</num><lb facs="tl_20"/>
+               <head><num>4.</num></head><lb facs="tl_20"/>
                O Jeſu/ der grechtigkeit einige Sonne/<lb facs="tl_21"/>
                des ewigen Vatters ein Sohne nach wonne/<lb facs="tl_22"/>
                ich ſu&#x366;che/ foll dunkelheit ſtekende/ dich/<lb facs="tl_23"/>
                erleucht du mit gnaden/ o gnadenliecht mich!<lb facs="tl_24"/>
-               <num>5.</num><lb facs="tl_25"/>
+               <head><num>5.</num></head><lb facs="tl_25"/>
                Jch danke dir/ daß ich ſo ſicher geſchlaffen/<lb facs="tl_26"/>
                und bitte/ du wo&#x364;lleſt gena&#x364;dig verſchaffen<lb facs="tl_27"/>
                
@@ -2345,7 +2345,7 @@
             <milestone unit="page" ana="#facs_102_tr_1"/>
                nach deinem gefallen zu&#x366; wandlen am tag/<lb facs="tl_2"/>
                nach meinem beru&#x366;ffe zu&#x366;handlen ohn klag.<lb facs="tl_3"/>
-               <num>6.</num><lb facs="#facs_102_l_79"/>
+               <head><num>6.</num></head><lb facs="#facs_102_l_79"/>
                Gib deinen ſo ſeligen lieblichen friden<lb facs="tl_4"/>
                der ſtreitenden kirchen auff erden hieniden:<lb facs="tl_5"/>
                den geiſtlich- und leiblichen friden beſchehr/<lb facs="tl_6"/>
@@ -2362,7 +2362,7 @@
                
             <pb n="103" test="80"/>
             <milestone unit="page" ana="#facs_103_tr_1"/>
-               <label>[25.]</label><hi rendition="#aq"><num>XII.</num> Cantus</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[25.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XII.</num> Cantus</hi></head><lb facs="tl_3"/>
                Him&#x303;liſcher Gott/ und Vatter/ wir kinder<lb facs="tl_14"/>
                danken dir/ weil des lebens iſt minder<lb facs="tl_16"/>
                aber ein tag<lb facs="#facs_103_l_56"/>
@@ -2410,7 +2410,7 @@
                Abendgeſang.<lb facs="tl_3"/>
                Jn ſeiner eignen vorhergeſetzten<lb facs="tl_4"/>
                weis.<lb facs="tl_5"/>
-               <num>1.</num><lb facs="#facs_105_l_72"/>
+               <head><num>1.</num></head><lb facs="#facs_105_l_72"/>
                <hi rendition="#in">H</hi>Jm&#x342;liſcher Gott/ und Vatter/ wir kinder<lb facs="tl_6"/>
                danken dir/ weil des lebens iſt minder<lb facs="tl_7"/>
                aber ein tag/ und na&#x364;her der tod/<lb facs="tl_8"/>
@@ -2419,7 +2419,7 @@
                welches kein ohr jemalen geho&#x364;rt/<lb facs="tl_11"/>
                keine gedanken mo&#x364;gen verſtehen/<lb facs="tl_12"/>
                keine gewalt der feinden zerſto&#x364;rt.<lb facs="tl_13"/>
-               <num>2.</num><lb facs="tl_14"/>
+               <head><num>2.</num></head><lb facs="tl_14"/>
                Gna&#x364;diger Gott/ verzeih uns die ſünden<lb facs="tl_15"/>
                deren wir uns heut ſchuldig befinden:<lb facs="tl_16"/>
                zell ſie doch nicht/ ſie haben kein zil/<lb facs="tl_17"/>
@@ -2428,7 +2428,7 @@
                weilen wir arme ſündliche knecht:<lb facs="tl_20"/>
                ſonder gedenk/ dich habe verſu&#x364;hnet<lb facs="tl_21"/>
                einer/ in dem wir alle gerecht.<lb facs="tl_22"/>
-               <num>3.</num><lb facs="tl_23"/>
+               <head><num>3.</num></head><lb facs="tl_23"/>
                Ma&#x364;chtiger Ko&#x364;nig/ wehr du dem Teufel/<lb facs="tl_24"/>
                wann er uns reitzt zu&#x366; ſcha&#x364;dlichem zweifel/<lb facs="tl_25"/>
                wann er uns nachts mit tra&#x364;umen erſchrekt/<lb facs="tl_26"/>
@@ -2440,7 +2440,7 @@
                ſonderlich unſern ſeelen nachſtellt/<lb facs="tl_3"/>
                welche der mo&#x364;rder grimmiglich haſſet/<lb facs="tl_4"/>
                deme nur/ was uns ſchadet/ gefa&#x364;llt.<lb facs="tl_5"/>
-               <num>4.</num><lb facs="#facs_106_l_22"/>
+               <head><num>4.</num></head><lb facs="#facs_106_l_22"/>
                Weilen auch für den him&#x342;liſchen bogen<lb facs="tl_6"/>
                eine ſo dike deke gezogen/<lb facs="tl_7"/>
                daß es auff erden finſter und nacht/<lb facs="tl_8"/>
@@ -2452,7 +2452,7 @@
                
             <pb n="107" test="84"/>
             <milestone unit="page" ana="#facs_107_tr_1"/>
-               <label>[26.]</label><hi rendition="#aq"><num>XIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[26.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Es warten aller augen/ Herꝛ/<lb facs="tl_7"/>
                auf dich das oberſt Gu&#x366;t:<lb facs="tl_12"/>
                du ſettigſt alles nah und ferꝛ/<lb facs="tl_17"/>
@@ -2535,7 +2535,7 @@
                
             <pb n="111" test="88"/>
             <milestone unit="page" ana="#facs_111_tr_2"/>
-               <label>[27.]</label><hi rendition="#aq"><num>XIV.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[27.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XIV.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Nun wo&#x364;llen wir/ die wir uns ſatt geeſſen/ dem Herꝛen<lb facs="tl_11"/>
                Gott zu&#x366; danken nicht vergeſſen: dann ja der menſch nicht lebt<lb facs="tl_21"/>
                vom brot allein: er lebt vilmehr durch Gottes wort und ſegen/<lb facs="tl_25"/>
@@ -2620,7 +2620,7 @@
                
             <pb n="115" test="92"/>
             <milestone unit="page" ana="#facs_115_tr_1"/>
-               <label>[44.]</label><hi rendition="#aq"><num>XV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[44.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/<lb facs="tl_6"/>
                deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?<lb facs="tl_14"/>
                Vil kla&#x364;rer alß die gulden ſonn/ der himmels-<lb facs="tl_8"/>
@@ -2668,7 +2668,7 @@
                grecht/ ſanfftmu&#x364;htig/<lb facs="tl_15"/>
                reich an ehren/<lb facs="tl_16"/>
                ma&#x364;chtig iſt mich zu&#x366; bekehren.<lb facs="tl_17"/>
-               <num>2.</num><lb facs="tl_18"/>
+               <head><num>2.</num></head><lb facs="tl_18"/>
                Ein Jeſus iſt er in der taht/<lb facs="tl_19"/>
                der mich allein erlo&#x364;ſet hat<lb facs="tl_20"/>
                von ſünden/ ſtraff und ſchulde:<lb facs="tl_21"/>
@@ -2684,7 +2684,7 @@
                
             <pb n="118" test="95"/>
             <milestone unit="page" ana="#facs_118_tr_1"/>
-               <num>3.</num><lb facs="tl_2"/>
+               <head><num>3.</num></head><lb facs="tl_2"/>
                O Vatter/ Herꝛ der Ewigkeit/<lb facs="tl_3"/>
                der du vor- in- und nach der zeit<lb facs="tl_4"/>
                biſt gleich in deinem weſen:<lb facs="tl_5"/>
@@ -2697,7 +2697,7 @@
                ohne ſchertzen/<lb facs="tl_12"/>
                tro&#x364;ſtet hefftig:<lb facs="tl_13"/>
                deine Gnadenwahl iſt kra&#x364;fftig.<lb facs="tl_14"/>
-               <num>4.</num><lb facs="#facs_118_l_58"/>
+               <head><num>4.</num></head><lb facs="#facs_118_l_58"/>
                Auß deiner va&#x364;tterlichen ſchoß<lb facs="tl_15"/>
                dein lieber Sohn/ auß liebe/ bloß<lb facs="tl_16"/>
                zu&#x366; uns iſt rabgezogen:<lb facs="tl_17"/>
@@ -2710,7 +2710,7 @@
                in dem arme<lb facs="tl_24"/>
                deiner gnaden:<lb facs="tl_25"/>
                zeuch mich/ der du mich geladen!<lb facs="tl_26"/>
-               <num>5.</num><lb facs="tl_27"/>
+               <head><num>5.</num></head><lb facs="tl_27"/>
                Jch bin ein armes ſcha&#x364;ffelein/<lb facs="tl_28"/>
                nichts überal an mir iſt rein/<lb facs="tl_29"/>
                
@@ -2726,7 +2726,7 @@
                mach mich gſunde/<lb facs="tl_10"/>
                auf dir raſte<lb facs="tl_11"/>
                meiner ſünden ſchwerer laſte!<lb facs="tl_12"/>
-               <num>6.</num><lb facs="tl_13"/>
+               <head><num>6.</num></head><lb facs="tl_13"/>
                O Ko&#x364;nig/ Prieſter und Prophet/<lb facs="tl_14"/>
                dein allmacht/ opfer und gebett<lb facs="tl_15"/>
                verſu&#x364;hnen ſünd und ſchulde:<lb facs="tl_16"/>
@@ -2739,7 +2739,7 @@
                mir erwerben<lb facs="tl_23"/>
                jenes leben<lb facs="tl_24"/>
                das von jamer nicht umgeben!<lb facs="tl_25"/>
-               <num>7.</num><lb facs="tl_26"/>
+               <head><num>7.</num></head><lb facs="tl_26"/>
                Der heilig Geiſt kom&#x342; innerlich/<lb facs="tl_27"/>
                daß er unſichtbar rüſte mich<lb facs="tl_28"/>
                durch ſeinen trib und kraffte:<lb facs="tl_29"/>
@@ -2755,7 +2755,7 @@
                mir dein winde<lb facs="tl_6"/>
                die brunſt mehre/<lb facs="tl_7"/>
                daß dein feur die ſünd verzehre!<lb facs="tl_8"/>
-               <num>8.</num><lb facs="tl_9"/>
+               <head><num>8.</num></head><lb facs="tl_9"/>
                Dein go&#x364;ttlich wort und Sacrament;<lb facs="tl_10"/>
                für gültig jederzeit erken&#x342;t;<lb facs="tl_11"/>
                mein hertz erfrewen rechte:<lb facs="tl_12"/>
@@ -2768,7 +2768,7 @@
                und wie rigel:<lb facs="tl_19"/>
                hellengwalte<lb facs="tl_20"/>
                weiche diſem hinderhalte.<lb facs="tl_21"/>
-               <num>9.</num><lb facs="tl_22"/>
+               <head><num>9.</num></head><lb facs="tl_22"/>
                Das gnadenwort die mahlzeit iſt;<lb facs="tl_23"/>
                des kreutzes ſaltz doch nicht gebriſt;<lb facs="tl_24"/>
                deß wird uns hie gegeben<lb facs="tl_25"/>
@@ -2784,7 +2784,7 @@
                iſt/ im hertzen/<lb facs="tl_4"/>
                warer glaube/<lb facs="tl_5"/>
                underworffen keinem raube.<lb facs="tl_6"/>
-               <num>10.</num><lb facs="tl_7"/>
+               <head><num>10.</num></head><lb facs="tl_7"/>
                Dort aber in des himmelsſal<lb facs="tl_8"/>
                wird ſeyn das groſſe freudenmahl/<lb facs="tl_9"/>
                den vorſchmak wir hie haben<lb facs="tl_10"/>
@@ -2797,7 +2797,7 @@
                ſeine lehre/<lb facs="tl_17"/>
                frew dich hertze:<lb facs="tl_18"/>
                hier iſt eitel ſchertz und ſchmertze.<lb facs="tl_19"/>
-               <num>11.</num><lb facs="tl_20"/>
+               <head><num>11.</num></head><lb facs="tl_20"/>
                Wem iſt nun diſe freud bereit?<lb facs="tl_21"/>
                Dem/ der die angeneme zeit<lb facs="tl_22"/>
                recht braucht auf diſer erden:<lb facs="tl_23"/>
@@ -2813,7 +2813,7 @@
                
             <pb n="122" test="99"/>
             <milestone unit="page" ana="#facs_122_tr_1"/>
-               <num>12.</num><lb facs="tl_2"/>
+               <head><num>12.</num></head><lb facs="tl_2"/>
                Herꝛ/ deine liebe gibt mir eyn/<lb facs="tl_3"/>
                daß ich dir ſolle dankbar ſeyn/<lb facs="tl_4"/>
                bis man mich tragt zu&#x366; grabe:<lb facs="tl_5"/>
@@ -2829,7 +2829,7 @@
                
             <pb n="123" test="100"/>
             <milestone unit="page" ana="#facs_123_tr_2"/>
-               <label>[45.]</label><hi rendition="#aq"><num>XVI.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[45.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XVI.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Alß Gott auß nichts geſtaltet die hoch und nidre welt:<lb facs="tl_7"/>
                die er noch jetz verwaltet/ wie uns ſein wort erzellt:<lb facs="tl_9"/>
                hat er/ auß roter erden/<lb facs="tl_11"/>
@@ -2978,7 +2978,7 @@
                
             <pb n="129" test="106"/>
             <milestone unit="page" ana="#facs_129_tr_1"/>
-               <label>[46.]</label><hi rendition="#aq"><num>XVII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[46.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XVII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Glükſelig wird gepreiſet von David diſer mann/<lb facs="tl_10"/>
                der Gott ſein ehr beweiſet/ und wandelt deſſen bann: der Herꝛ wird<lb facs="tl_22"/>
                ihm beſchehren den ſegen/ krafft des bunds: Jch ehre die mich ehren:<lb facs="tl_33"/>
@@ -3060,7 +3060,7 @@
                
             <pb n="133" test="110"/>
             <milestone unit="page" ana="#facs_133_tr_1"/>
-               <label>[47.]</label><hi rendition="#aq"><num>XVIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[47.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XVIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Der hat einen ſchatz erfunden/ beſſer dann Arabiſch gold/<lb facs="tl_13"/>
                dem beſchehrt iſt/ diſer ſtunden/ eine Jungfraw tugendhold:<lb facs="tl_21"/>
                ſie erfrewet ihren mann/ und er liebet ſie fortan.<lb facs="tl_29"/>
@@ -3139,7 +3139,7 @@
                
             <pb n="137" test="114"/>
             <milestone unit="page" ana="#facs_137_tr_1"/>
-               <label>[48.]</label><hi rendition="#aq"><num>XIX.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[48.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XIX.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Jhr ehverlobt-verliebte leuht/ was wu&#x364;nſchen wir euch<lb facs="tl_8"/>
                heut/ auf ewer ehfa&#x364;ſte? Wir wünſchen das beſte: Gott wo&#x364;ll es er-<lb facs="tl_14"/>
                waren/ zu&#x366; ewigen jahren: den ſegen wünſchen wir.<lb facs="tl_18"/>
@@ -3219,7 +3219,7 @@
                
             <pb n="141" test="118"/>
             <milestone unit="page" ana="#facs_141_tr_1"/>
-               <label>[49.]</label><hi rendition="#aq"><num>XX.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[49.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XX.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Wie immer der Fru&#x364;hling/ mit fo&#x364;lligen freuden/ un-<lb facs="tl_7"/>
                fehlbar des jahres in ſeiner friſt/<lb facs="tl_18"/>
                den traurigen winter verſchaffet zu&#x366; ſcheiden/ der<lb facs="tl_9"/>
@@ -3344,25 +3344,25 @@
                <label>[43.]</label>Hochzeitgeſang.<lb facs="tl_3"/>
                Jn der weis:<lb facs="tl_4"/>
                Aurora/ mit ihren verguldeten ſtralen.<lb facs="tl_5"/>
-               <num>1.</num><lb facs="tl_6"/>
+               <head><num>1.</num></head><lb facs="tl_6"/>
                <hi rendition="#in">D</hi>Rey dinge vor allen dem Ho&#x364;chſten gefallen/<lb facs="tl_7"/>
                drey dinge gefallen den menſchen vor allen:<lb facs="tl_8"/>
                wann bru&#x364;der ſeind einig: wann nachbarn ſeind<lb facs="tl_9"/>
                freund:<lb facs="tl_10"/>
                wann ehliche menſchen geſinnet gleich ſeind.<lb facs="tl_11"/>
-               <num>2.</num><lb facs="#facs_146_l"/>
+               <head><num>2.</num></head><lb facs="#facs_146_l"/>
                Des letſten/ und beſten ſich werden befleiſſen<lb facs="tl_12"/>
                die newen ehleuhte/ dieweilen ſie wüſſen<lb facs="tl_13"/>
                daß ihnen daſſelbig zum beſten gereicht/<lb facs="tl_14"/>
                daß m<anchor xml:id="a60"/>a<note type="annotation" targetEnd="a60"><p>Im göttingischen Vergleichsexemplar steht hier kein übergeschriebenes Zeichen. Es muss sich um einen Fleck handeln.</p></note>nches ehkreutze durch diſes erweicht.<lb facs="tl_15"/>
-               <num>3.</num><lb facs="#facs_146_l_33"/>
+               <head><num>3.</num></head><lb facs="#facs_146_l_33"/>
                Hierüber ſo wünſchen wir ihnen vom Herꝛen<lb facs="tl_16"/>
                beſta&#x364;ndiges lieben: das zanken ſey ferꝛen:<lb facs="tl_17"/>
                der go&#x364;ttliche ſegen vermehre das hauß/<lb facs="tl_18"/>
                vertreibe was ſcha&#x364;dlich zur thüren hinauß!<lb facs="tl_19"/>
             <pb n="147" test="124"/>
             <milestone unit="page" ana="#facs_147_tr_1"/>
-               <label>[55.]</label><hi rendition="#aq"><num>XXI.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[55.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXI.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Den new verlobten wünſchen wir gnad/ frid und reichen<lb facs="tl_9"/>
                ſegen. Wir wünſchen ihnen ehr und glük: nichts widrigs ſey ent-<lb facs="tl_16"/>
                gegen. Wir wünſchen kindes kindeskind: geſunde tag und<lb facs="tl_22"/>
@@ -3387,7 +3387,7 @@
                
             <pb n="149" test="126"/>
             <milestone unit="page" ana="#facs_149_tr_1"/>
-               <label>[57.]</label><hi rendition="#aq"><num>XXII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[57.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Ein freudengſang ſolt diſer zeit erklingen/ ſo mu&#x364;ſſen<lb facs="tl_9"/>
                wir von leid und trauren ſingen: wir mu&#x364;ſſen uns verhüllen<lb facs="tl_14"/>
                das geſicht/ und eynher gehn im ſak/ unaufgericht: es<lb facs="tl_21"/>
@@ -3472,7 +3472,7 @@
                
             <pb n="153" test="130"/>
             <milestone unit="page" ana="#facs_153_tr_1"/>
-               <label>[40.]</label><hi rendition="#aq"><num>XXIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[40.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                O Frid/ o Frid wo findt man dich? Wo haſt du<lb facs="tl_13"/>
                dich verſtekt? Europa nach dir ſehnet ſich/ und blu&#x366;tig ha&#x364;nd<lb facs="tl_17"/>
                außſtrekt: Ach/ ach du biſt verloren/ wo nicht von weiſ-<lb facs="tl_24"/>
@@ -3561,7 +3561,7 @@
                
             <pb n="157" test="134"/>
             <milestone unit="page" ana="#facs_157_tr_1"/>
-               <label>[39.]</label><hi rendition="#aq"><num>XXIV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[39.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXIV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Friſch auf/ friſch auf ihr helden/ mit keker fauſt und wehr/<lb facs="tl_10"/>
                tu&#x366;ht tahten Gott zu&#x366; ehr/ die ewig wert zu&#x366; melden<lb facs="tl_17"/>
                dem vatterland zu&#x366; gu&#x366;t/ ihr ku&#x364;hne heldenkinder<lb facs="tl_22"/>
@@ -3644,7 +3644,7 @@
                
             <pb n="161" test="138"/>
             <milestone unit="page" ana="#facs_161_tr_1"/>
-               <label>[42.]</label><hi rendition="#aq"><num>XXV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[42.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Mit David wir die einigkeit erheben/<lb facs="tl_11"/>
                die mitlerin zu&#x366; ru&#x366;herwünſchtem leben:<lb facs="tl_12"/>
                ſie riecht nach balſams arte/ den man auf Aron geußt/<lb facs="tl_24"/>
@@ -3674,21 +3674,21 @@
                Jn nachgeſetzten weiſen.<lb facs="tl_6"/>
                Aſteria/ auß hohem ſtam&#x303; erboren/ ꝛc.<lb facs="tl_7"/>
                Ach S<anchor xml:id="a67"/>y<note type="annotation" targetEnd="a67"><p>Das Trema wurde nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht das y deutlich ohne Trema.</p></note>lvia/ du preiß der Scha&#x364;fferinnen/ ꝛc.<lb facs="tl_8"/>
-               <num>1.</num><lb facs="#facs_163_l"/>
+               <head><num>1.</num></head><lb facs="#facs_163_l"/>
                <hi rendition="#in">M</hi>Jt David wir die einigkeit erheben/<lb facs="tl_9"/>
                die mitlerin zu&#x366; ru&#x366;herwünſchtem leben:<lb facs="tl_10"/>
                ſie riecht nach balſams arte/<lb facs="tl_11"/>
                den man auf Aron geußt/<lb facs="tl_12"/>
                und der vom haupt in barte/<lb facs="tl_13"/>
                und auf die kleider fleußt.<lb facs="tl_14"/>
-               <num>2.</num><lb facs="tl_15"/>
+               <head><num>2.</num></head><lb facs="tl_15"/>
                Gleich wie der thaw den Hermonsberg benetzet/<lb facs="tl_16"/>
                von dem er ſich auf Sionshügel ſetzet:<lb facs="tl_17"/>
                worvon ſie fruchtbar werden/<lb facs="tl_18"/>
                und gru&#x366;nen rechter zeit:<lb facs="tl_19"/>
                ſo ſegnet Gott auf erden<lb facs="tl_20"/>
                die lieblich einigkeit.<lb facs="tl_21"/>
-               <num>3.</num><lb facs="tl_22"/>
+               <head><num>3.</num></head><lb facs="tl_22"/>
                Die einigkeit macht groß geringe werke:<lb facs="tl_23"/>
                Vneinigkeit verderbet krafft und ſterke:<lb facs="tl_24"/>
                ja/ wo einandern küſſen<lb facs="tl_25"/>
@@ -3698,14 +3698,14 @@
                
             <pb n="164" test="141"/>
             <milestone unit="page" ana="#facs_164_tr_1"/>
-               <num>4.</num><lb facs="#facs_164_l_38"/>
+               <head><num>4.</num></head><lb facs="#facs_164_l_38"/>
                Die einigkeit den feinden forcht und ſchreken/<lb facs="tl_2"/>
                den feinden troſt/ in gfahren kan erweken:<lb facs="tl_3"/>
                alß einigkeit verbunden<lb facs="tl_4"/>
                die werthe Eidgnoſchafft/<lb facs="tl_5"/>
                der feind offt hat empfunden<lb facs="tl_6"/>
                ihr wundergroſſe krafft.<lb facs="tl_7"/>
-               <num>5.</num><lb facs="#facs_164_l_68"/>
+               <head><num>5.</num></head><lb facs="#facs_164_l_68"/>
                Wie o&#x364;fter hat ihr kleinvereinter hauffen<lb facs="tl_8"/>
                feldſtarke heer mit ſpott gemacht entlauffen?<lb facs="tl_9"/>
                Gott wo&#x364;lle daß ihr bunde<lb facs="tl_10"/>
@@ -3714,7 +3714,7 @@
                mit ihrem ſtiffter geh!<lb facs="tl_13"/>
             <pb n="165" test="142"/>
             <milestone unit="page" ana="#facs_165_tr_1"/>
-               <label>[30.]</label><hi rendition="#aq"><num>XXVI.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[30.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXVI.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/<lb facs="tl_12"/>
                darvon ſich alles vieh in follen ſprüngen weydet:<lb facs="tl_14"/>
                das federvo&#x364;lklein ſingt: es hüpft der Nymphen chor:<lb facs="tl_21"/>
@@ -3738,7 +3738,7 @@
                das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.<lb facs="tl_44"/>
             <pb n="167" test="144"/>
             <milestone unit="page" ana="#facs_167_tr_1"/>
-               <label>[32.]</label><hi rendition="#aq"><num>XXVII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[32.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXVII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Der ſchnidter in dem feld/ der ma&#x364;der in der matten:<lb facs="tl_10"/>
                der hirt mit ſeiner herd ſu&#x366;cht hoher ba&#x364;umen ſchatten:<lb facs="tl_18"/>
                die ba&#x364;urin ſich erquikt mit ſaur und ſ<supplied>u&#x364;</supplied>ſſer milch/<lb facs="tl_26"/>
@@ -3763,7 +3763,7 @@
                
             <pb n="169" test="146"/>
             <milestone unit="page" ana="#facs_169_tr_1"/>
-               <label>[34.]</label><hi rendition="#aq"><num>XXVIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[34.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXVIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Die groſſe ſommerhitz iſt abermal vergangen/<lb facs="tl_8"/>
                und kom&#x303;t der ku&#x364;hlend herpſt mit vilem nutz zu&#x366; prangen:<lb facs="tl_17"/>
                dann/ nach geſtrewter ſat/ er bringet über tiſch<lb facs="tl_24"/>
@@ -3788,7 +3788,7 @@
                Der<lb facs="#facs_170_l_409"/>
             <pb n="171" test="148"/>
             <milestone unit="page" ana="#facs_171_tr_1"/>
-               <label>[36.]</label><hi rendition="#aq"><num>XXIX.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[36.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXIX.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/<lb facs="tl_8"/>
                es hat ſie Boreas des bundten kleids beraubet/<lb facs="tl_10"/>
                und nur mit weiß bedekt/ die waſſer gleicher weiß<lb facs="tl_16"/>
@@ -3813,7 +3813,7 @@
                
             <pb n="173" test="150"/>
             <milestone unit="page" ana="#facs_173_tr_3"/>
-               <label>[31.a.]</label><hi rendition="#aq"><num>XXX.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[31.a.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXX.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Luſtig werden bekümmerte hertzen/ wann die guldene<lb facs="tl_6"/>
                ſonnen im mertzen/ mit dem widder beginnet zu&#x366;ſchertzen:<lb facs="tl_12"/>
                da der leidige winter vergehet/ und der liebliche Fru&#x364;hling<lb facs="tl_20"/>
@@ -3841,28 +3841,28 @@
                Fru&#x364;hlingsgeſang.<lb facs="tl_3"/>
                Jn der weis:<lb facs="tl_4"/>
                Luſtig iſt man im Fru&#x364;hling im garten/ ꝛc.<lb facs="tl_5"/>
-               <num>1.</num><lb facs="#facs_175_l_40"/>
+               <head><num>1.</num></head><lb facs="#facs_175_l_40"/>
                <hi rendition="#in">L</hi>Vſtig werden bekümmerte hertzen/<lb facs="tl_6"/>
                wann die guldene ſonnen im mertzen/<lb facs="tl_7"/>
                mit dem widder beginnet zu&#x366; ſchertzen:<lb facs="tl_8"/>
                da der leidige winter vergehet/<lb facs="tl_9"/>
                und der liebliche Fru&#x364;hling entſtehet/<lb facs="tl_10"/>
                den der Zephyr mit blu&#x366;men beſa&#x364;et.<lb facs="tl_11"/>
-               <num>2.</num><lb facs="tl_12"/>
+               <head><num>2.</num></head><lb facs="tl_12"/>
                Jn den ga&#x364;rten wir ſehen entſprieſſen<lb facs="tl_13"/>
                Tulipanen/ Violen/ Narciſſen/<lb facs="tl_14"/>
                ohne mahlers hand künſtlich geriſſen:<lb facs="tl_15"/>
                wir betaſten die Ko&#x364;nigeskronen/<lb facs="tl_16"/>
                Gilgen/ Türkiſche bündt/ Anemonen/<lb facs="tl_17"/>
                keiner do&#x364;rnichten roſen wir ſchohnen.<lb facs="tl_18"/>
-               <num>3.</num><lb facs="#facs_175_l_68"/>
+               <head><num>3.</num></head><lb facs="#facs_175_l_68"/>
                Wir bereiten uns ſtr<supplied>a&#x364;</supplied>uſſer und meyen/<lb facs="tl_19"/>
                um die kra&#x364;ntze wir ſingen am reyen/<lb facs="tl_20"/>
                es erto&#x364;hnen die pfeiffen/ ſchalmeyen:<lb facs="tl_21"/>
                alle gſcho&#x364;pfte nach freuden nur ſtreben/<lb facs="tl_22"/>
                auſſert newlich geſchnidtenen ra&#x364;ben/<lb facs="tl_23"/>
                die den Fru&#x364;hling mit weinen anheben.<lb facs="tl_24"/>
-               <num>4.</num><lb facs="#facs_175_l_96"/>
+               <head><num>4.</num></head><lb facs="#facs_175_l_96"/>
                Junge ſaten uns ſchiereſt anlachen/<lb facs="tl_25"/>
                gu&#x366;te hoffnung/ auß vilen urſachen/<lb facs="tl_26"/>
                zu&#x366; der ko&#x364;nftigen ernde ſie machen:<lb facs="tl_27"/>
@@ -3872,28 +3872,28 @@
                alle ba&#x364;ume den roſen ſich gleichen/<lb facs="tl_2"/>
                deren ſcho&#x364;ne mag nichtes erꝛeichen/<lb facs="tl_3"/>
                alles anders derſelben mu&#x366;ß weichen.<lb facs="tl_4"/>
-               <num>5.</num><lb facs="tl_5"/>
+               <head><num>5.</num></head><lb facs="tl_5"/>
                Alle matten und wiſen graßreiche/<lb facs="tl_6"/>
                alle bühel und berge zu&#x366;gleiche/<lb facs="tl_7"/>
                werden weiden dem nutzlichen viehe:<lb facs="tl_8"/>
                auf den gru&#x364;nen betaweten awen<lb facs="tl_9"/>
                freudigſpringende herden wir ſchawen/<lb facs="tl_10"/>
                die zu&#x366;voren in ſta&#x364;llen geſchrawen.<lb facs="tl_11"/>
-               <num>6.</num><lb facs="tl_12"/>
+               <head><num>6.</num></head><lb facs="tl_12"/>
                Das gefiderte vo&#x364;lklein der lüffte/<lb facs="tl_13"/>
                machet widererklingen die klüffte/<lb facs="tl_14"/>
                alß ob Echo denſelbigen ru&#x364;ffte:<lb facs="tl_15"/>
                an die wolken die lerche ſich ſchwinget/<lb facs="tl_16"/>
                ihrem Scho&#x364;pfer zu&#x366; ehren ſie ſinget:<lb facs="tl_17"/>
                zwitzergſchwa&#x364;tze die ſchwalbe fürbringet.<lb facs="tl_18"/>
-               <num>7.</num><lb facs="tl_19"/>
+               <head><num>7.</num></head><lb facs="tl_19"/>
                Minder lieblich bedunket uns zwaren/<lb facs="tl_20"/>
                wann der gukguk/ gefraget von jahren/<lb facs="tl_21"/>
                ſeine tertzen hierüber laßt fahren:<lb facs="tl_22"/>
                wann die bienen ſo heiſerlich brummen/<lb facs="tl_23"/>
                wann ſie über die blu&#x366;men hinſummen/<lb facs="tl_24"/>
                doch erfrewet uns diſer ankommen.<lb facs="tl_25"/>
-               <num>8.</num><lb facs="tl_26"/>
+               <head><num>8.</num></head><lb facs="tl_26"/>
                Die geſchnabelte feinde der ſchlangen/<lb facs="tl_27"/>
                in dem Fru&#x364;hling unfehlbar anlangen/<lb facs="tl_28"/>
                die koaxenden fro&#x364;ſchen ſie fangen/<lb facs="tl_29"/>
@@ -3903,14 +3903,14 @@
                mit denſelben die junge ſie ſpeiſen:<lb facs="tl_3"/>
                ihre junge ſich dankbar erweiſen/<lb facs="tl_4"/>
                deren beyſpil den kindern wir preiſen.<lb facs="tl_5"/>
-               <num>9.</num><lb facs="tl_6"/>
+               <head><num>9.</num></head><lb facs="tl_6"/>
                Auff den weyern der a&#x364;nten geſchwader<lb facs="tl_7"/>
                ſich ergetzet mit vilem geplader/<lb facs="tl_8"/>
                und erꝛeget ein luſtig geſchnader:<lb facs="tl_9"/>
                in den ſeen es wimmelt von fiſchen/<lb facs="tl_10"/>
                die ſich aber geparet vermiſchen/<lb facs="tl_11"/>
                und mit ſchwümmen und ſpringen erfriſchen.<lb facs="tl_12"/>
-               <num>10.</num><lb facs="tl_13"/>
+               <head><num>10.</num></head><lb facs="tl_13"/>
                Nun bedeutet der Fru&#x364;hling hieneben<lb facs="tl_14"/>
                jungen leuhten ihr b<supplied>l</supplied>u&#x364;hendes leben/<lb facs="tl_15"/>
                das der tugend ſie ſollen ergeben:<lb facs="tl_16"/>
@@ -3950,7 +3950,7 @@
                
             <pb n="179" test="156"/>
             <milestone unit="page" ana="#facs_179_tr_2"/>
-               <label>[33.a.]</label><hi rendition="#aq"><num>XXXI.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[33.a.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXI.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/<lb facs="tl_8"/>
                ſo kom&#x342;t jedoch mit nutzbarkeit der ſommer an ihr ſtatt:<lb facs="tl_9"/>
                Da wir Gott zu&#x366;bitten/ daß/ nach landes ſitten/ werden<lb facs="tl_17"/>
@@ -4040,7 +4040,7 @@
                werd auch der omeiß gleich.<lb facs="tl_31"/>
             <pb n="183" test="160"/>
             <milestone unit="page" ana="#facs_183_tr_1"/>
-               <label>[35.a.]</label><hi rendition="#aq"><num>XXXII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[35.a.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Die dritte zeit in jedem jahr nicht minder zwar alß <anchor xml:id="a68"/>andre<note type="annotation" targetEnd="a68"><p>Das ist auch im göttingischen Vergleichsexemplar das letzte Wort der Zeile. Das nahe liegende Fleck hat kein Text nicht unleserlich gemacht.</p></note><lb facs="tl_10"/>
                mich erfrewt: ſie kommet aufgezogen wann ſtork<lb facs="tl_18"/>
                und ſchwalb entflogen/ die ſonn der wag nicht weit.<lb facs="tl_25"/>
@@ -4119,7 +4119,7 @@
                
             <pb n="187" test="164"/>
             <milestone unit="page" ana="#facs_187_tr_1"/>
-               <label>[37.a.]</label><hi rendition="#aq"><num>XXXIII.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[37.a.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXIII.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Der kürtzeſt tag und la&#x364;ngſte nacht<lb facs="tl_9"/>
                den grawen winter bringen:<lb facs="tl_14"/>
                die Nordenwinde ſich mit macht<lb facs="tl_10"/>
@@ -4210,7 +4210,7 @@
                
             <pb n="191" test="168"/>
             <milestone unit="page" ana="#facs_191_tr_1"/>
-               <label>[31.b.]</label><hi rendition="#aq"><num>XXXIV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[31.b.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXIV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Luſtig werden bek<supplied>ü</supplied>mmerte hertzen/ wann die guldene<lb facs="tl_11"/>
                ſonnen im mertzen/ mit dem widder beginnet zu&#x366;ſchertzen:<lb facs="tl_20"/>
                da der leidige winter vergehet/ und der liebliche Fru&#x364;hling ent-<lb facs="tl_29"/>
@@ -4234,7 +4234,7 @@
                ſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.<lb facs="tl_69"/>
             <pb n="193" test="170"/>
             <milestone unit="page" ana="#facs_193_tr_1"/>
-               <label>[33.b.]</label><hi rendition="#aq"><num>XXXV.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[33.b.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXV.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/<lb facs="tl_8"/>
                ſo kom&#x303;t jedoch mit nutzbarkeit der ſommer an ihr ſtatt:<lb facs="tl_9"/>
                da wir Gott zu&#x366; bitten/ daß/ nach landes ſitten/ werden<lb facs="tl_16"/>
@@ -4258,7 +4258,7 @@
                abgeſchnidten die ſaaten fru&#x364;h und ſpaht.<lb facs="tl_36"/>
             <pb n="195" test="172"/>
             <milestone unit="page" ana="#facs_195_tr_1"/>
-               <label>[35.b.]</label><hi rendition="#aq"><num>XXXVI.</num> Cantus.</hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[35.b.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXVI.</num> Cantus.</hi></head><lb facs="tl_3"/>
                Die dritte zeit in jedem jahr/ nicht minder zwar alß<lb facs="tl_7"/>
                andre mich erfrewt: ſie kommet aufgezogen wann ſtork und<lb facs="tl_15"/>
                ſchwalb entflogen/ die ſonn der wag nicht weit.<lb facs="tl_22"/>
@@ -4278,7 +4278,7 @@
                ſchwalb entflogen/ die ſonn der wag nicht weit.<lb facs="tl_43"/>
             <pb n="197" test="174"/>
             <milestone unit="page" ana="#facs_197_tr_2"/>
-               <label>[37.b.]</label><hi rendition="#aq"><num>XXXVII.</num> Cantus.</hi><lb facs="tl_2"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[37.b.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXVII.</num> Cantus.</hi></head><lb facs="tl_2"/>
                Der kürtzeſt tag und la&#x364;ngſte nacht<lb facs="tl_5"/>
                den grawen winter bringen:<lb facs="tl_10"/>
                die Nordenwinde ſich mit macht<lb facs="tl_7"/>
@@ -4334,21 +4334,21 @@
                unſers Herꝛen Jeſu Chriſti<lb facs="tl_6"/>
                Leyden/ Tod und Aufer-<lb facs="tl_7"/>
                ſtehung.<lb facs="tl_8"/>
-               <hi rendition="#aq"><num>I.</num></hi><lb facs="#facs_202_l_122"/>
+               <head><hi rendition="#aq"><num>I.</num></hi></head><lb facs="#facs_202_l_122"/>
                Eynritt Chriſti zu&#x366; Jeru-<lb facs="tl_9"/>
                ſalem.<lb facs="tl_10"/>
                <hi rendition="#in">D</hi>Er Himmelsko&#x364;nig wolt in Salem arm eynreiten/<lb facs="tl_11"/>
                damit er ſo ſein reych deſt beſſer mo&#x364;cht erweiten.<lb facs="tl_12"/>
-               <hi rendition="#aq"><num>II.</num></hi><lb facs="tl_13"/>
+               <head><hi rendition="#aq"><num>II.</num></hi></head><lb facs="tl_13"/>
                Eynſatzung des heiligen<lb facs="tl_14"/>
                Abendmahls.<lb facs="tl_15"/>
                Der Herꝛ; ſeins tods für uns ſtets eyngedenk zu&#x366; ſeyn<anchor xml:id="a71"/>;<note type="annotation" targetEnd="a71"><p>Wahrscheinlich handelt es sich hier um ein Semikolon, es könnte aber auch ein Doppelpunkt sein. Die Vergleichsexemplaren helfen hier nicht.</p></note><lb facs="tl_16"/>
                an ſtatt des Vberſchritts/ ſein Nachtmahl ſetzet eyn.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>III.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>III.</num></hi></head><lb facs="tl_18"/>
                Fu&#x364;ßwa&#x364;ſchung.<lb facs="tl_19"/>
                Den jüngern wa&#x364;ſcht der Herꝛ die fu&#x364;ſſe nach dem eſſen:<lb facs="tl_20"/>
                lehrt ſie demu&#x364;htig ſeyn: der liebe nicht vergeſſen.<lb facs="tl_21"/>
-               <hi rendition="#aq"><num>IV.</num></hi><lb facs="tl_22"/>
+               <head><hi rendition="#aq"><num>IV.</num></hi></head><lb facs="tl_22"/>
                Chriſti kampf am<lb facs="tl_23"/>
                Oelberg.<lb facs="tl_24"/>
                Der Herꝛ/ blu&#x366;tſchwitzend/ hat der hellen angſt erlidten/<lb facs="tl_25"/>
@@ -4356,80 +4356,80 @@
                
             <pb n="203" test="180"/>
             <milestone unit="page" ana="#facs_203_tr_1"/>
-               <hi rendition="#aq"><num>V.</num></hi><lb facs="#facs_203_l_43"/>
+               <head><hi rendition="#aq"><num>V.</num></hi></head><lb facs="#facs_203_l_43"/>
                Verꝛahtung und<lb facs="tl_3"/>
                band.<lb facs="tl_4"/>
                Der Herꝛ ſich/ willig/ laßt verꝛahten/ fangen/ binden/<lb facs="tl_5"/>
                damit wir werden frey/ und ledig von den ſünden.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>VI.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>VI.</num></hi></head><lb facs="tl_7"/>
                Stand für Cajapha.<lb facs="tl_8"/>
                Der Herꝛ/ von Cajapha gefragt um lehr<anchor xml:id="a72"/><note type="annotation" targetEnd="a72"><p>Hier wurde wahrscheinlich ein Komma nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren ist keines zu sehen.</p></note> und leben/<lb facs="tl_9"/>
                lehrt uns des glaubens halb ein runde rechnung geben.<lb facs="tl_10"/>
-               <hi rendition="#aq"><num>VII.</num></hi><lb facs="tl_11"/>
+               <head><hi rendition="#aq"><num>VII.</num></hi></head><lb facs="tl_11"/>
                <anchor xml:id="a73"/>V<note type="annotation" targetEnd="a73"><p>Das Trema wurde hier nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht eindeutig keines.</p></note>berantwortung dem welt-<lb facs="tl_12"/>
                lichen ſtab.<lb facs="tl_13"/>
                Von Prieſtern wird der Herꝛ Pilato zu&#x366;gefu&#x364;hrt:<lb facs="tl_14"/>
                ſein unſchuld<anchor xml:id="a74"/><note type="annotation" targetEnd="a74"><p>Hier wurde das Komma wahrscheinlich von Hand eingezeichnet. In den Vergleichsexemplaren ist keines zu sehen.</p></note> und ihr haß wird auß der klag verſpürt.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>VIII.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>VIII.</num></hi></head><lb facs="tl_16"/>
                Geißlung.<lb facs="tl_17"/>
                Der Herꝛ gegeiſſelt wird; daß nicht der Satan dort/<lb facs="tl_18"/>
                und das gewüſſen uns mu&#x364;ß geiſſeln immerfort.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>IX.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>IX.</num></hi></head><lb facs="tl_20"/>
                Kro&#x364;nung.<lb facs="tl_21"/>
                Mit do&#x364;rnen wird der Herꝛ gekro&#x364;net und verho&#x364;net;<lb facs="tl_22"/>
                damit in ſeinem reych wir werden recht gekro&#x364;net.<lb facs="tl_23"/>
                
             <pb n="204" test="181"/>
             <milestone unit="page" ana="#facs_204_tr_1"/>
-               <hi rendition="#aq"><num>X.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>X.</num></hi></head><lb facs="tl_2"/>
                Fürſtellung.<lb facs="tl_3"/>
                Pilatus Chriſtum zeigt zerꝛiſſen und zerſchlagen:<lb facs="tl_4"/>
                die Juden/ ohn erb<supplied>a&#x364;</supplied>rmd/ auf leib und leben klagen.<lb facs="tl_5"/>
-               <hi rendition="#aq"><num>XI.</num></hi><lb facs="tl_6"/>
+               <head><hi rendition="#aq"><num>XI.</num></hi></head><lb facs="tl_6"/>
                Pilati ha&#x364;ndwa&#x364;ſchung.<lb facs="tl_7"/>
                Pilatus wa&#x364;ſcht die ha&#x364;nd: die Juden auf ſich laden<lb facs="tl_8"/>
                das ſeligmachend blu&#x366;t/ zu&#x366; ihrem ho&#x364;chſten ſchaden.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>XII.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>XII.</num></hi></head><lb facs="tl_10"/>
                Judas verzweiffelter rew.<lb facs="tl_11"/>
                Das ſchno&#x364;d verꝛa&#x364;htergelt trukt Jud<hi rendition="#aq">æ</hi> bo&#x364;ß gewüſſen/<lb facs="tl_12"/>
                daß/ mit verzweifflung/ er daſſelbig weggeſchmiſſen.<lb facs="tl_13"/>
-               <hi rendition="#aq"><num>XIII.</num></hi><lb facs="tl_14"/>
+               <head><hi rendition="#aq"><num>XIII.</num></hi></head><lb facs="tl_14"/>
                Außfu&#x364;hrung Chriſti.<lb facs="tl_15"/>
                Der Simon Chriſto hilfft das kreutz zur richtſtatt tragen:<lb facs="tl_16"/>
                uns aber Gott der Herꝛ: damit wir nicht verzagen.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XIV.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XIV.</num></hi></head><lb facs="tl_18"/>
                Erho&#x364;hung am kreutz.<lb facs="tl_19"/>
                Der Herꝛ; damit er uns zu&#x366; ho&#x364;chſter ehr mo&#x364;cht fo&#x364;rdern;<lb facs="tl_20"/>
                mit ſchmach erho&#x364;het wird entzwüſchen zweyen mo&#x364;rdern.<lb facs="tl_21"/>
-               <hi rendition="#aq"><num>XV.</num></hi><lb facs="tl_22"/>
+               <head><hi rendition="#aq"><num>XV.</num></hi></head><lb facs="tl_22"/>
                Verſcheidung.<lb facs="tl_23"/>
                Am hohen kreutzesſtam&#x342; beſchloß der Herꝛ ſein leben:<lb facs="tl_24"/>
                daß den erwehlten er das leben mo&#x364;chte geben.<lb facs="tl_25"/>
                
             <pb n="205" test="182"/>
             <milestone unit="page" ana="#facs_205_tr_1"/>
-               <hi rendition="#aq"><num>XVI.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>XVI.</num></hi></head><lb facs="tl_3"/>
                Abnemmung von dem<lb facs="tl_4"/>
                kreutz.<lb facs="tl_5"/>
                Von denen/ die zu&#x366;vor zu&#x366; Chriſto heimlich kommen/<lb facs="tl_6"/>
                ſein Leichnam offenlich vom kre<anchor xml:id="a75"/>u<note type="annotation" targetEnd="a75"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In beide Vergleichsexemplaren ist es nicht zu sehen.</p></note>tz wird abgenommen.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XVII.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XVII.</num></hi></head><lb facs="tl_8"/>
                Begra&#x364;bnuß.<lb facs="tl_9"/>
                Mit Chriſto/ der vom kre<anchor xml:id="a76"/>u<note type="annotation" targetEnd="a76"><p>Das Trema wurde nachträglich von Hand eingezeichnet. Das ist in den Vergleichsexemplaren nicht zu sehen.</p></note>tz war todt genommen ab/<lb facs="tl_10"/>
                wird unſer ſünd zu&#x366;gleich vergraben in dem grab.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XVIII.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>XVIII.</num></hi></head><lb facs="tl_12"/>
                Auferſtehung.<lb facs="tl_13"/>
                Nach überwundnem tod iſt Chriſtus auferſtanden/<lb facs="tl_14"/>
                und hat auch uns erlo&#x364;ßt von harten todesbanden.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>XIX.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>XIX.</num></hi></head><lb facs="tl_16"/>
                Erſte erſcheinung.<lb facs="tl_17"/>
                Maria bey der ſtim&#x342; den Herꝛen kon&#x342;t erkennen:<lb facs="tl_18"/>
                dann ſeine ſtim&#x342; uns lehrt/ wie wir ihn ſollen nennen.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>XX.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>XX.</num></hi></head><lb facs="tl_20"/>
                Reis gen Emaus.<lb facs="tl_21"/>
                Zwen Jünger auß der ſtatt gen Emaus traurig gehen:<lb facs="tl_22"/>
                der Herꝛ ſich zu&#x366;geſellt; beweißt ſein auferſtehen.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>XXI.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>XXI.</num></hi></head><lb facs="tl_24"/>
                Andermalige erſcheinung den<lb facs="tl_25"/>
                Jüngern beſchehen.<lb facs="tl_26"/>
                Do Thomas Chriſtum ſicht/ glaubt er ſein auferſtehen:<lb facs="tl_27"/>
@@ -4437,16 +4437,16 @@
                
             <pb n="206" test="183"/>
             <milestone unit="page" ana="#facs_206_tr_1"/>
-               <hi rendition="#aq"><num>XXII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>XXII.</num></hi></head><lb facs="tl_3"/>
                Himmelfahrt.<lb facs="tl_4"/>
                Der Herꝛ gen himmel fahrt: die Jünger ihm nachſehen:<lb facs="tl_5"/>
                uns iſt der weg gemacht dem Herꝛen nachzu&#x366;gehen.<lb facs="tl_6"/>
-               <hi rendition="#aq"><num>XXIII.</num></hi><lb facs="tl_7"/>
+               <head><hi rendition="#aq"><num>XXIII.</num></hi></head><lb facs="tl_7"/>
                Sendung des heiligen<lb facs="tl_8"/>
                Geiſts.<lb facs="tl_9"/>
                Den Jüngern Chriſtus ſelb den heilgen Geiſt verehrt:<lb facs="tl_10"/>
                derſelb vil ſprachen ſie; durch ſie uns alle lehrt.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XXIV.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>XXIV.</num></hi></head><lb facs="tl_12"/>
                Ankündung des letſten<lb facs="tl_13"/>
                Gerichts.<lb facs="tl_14"/>
                Thu&#x366;t bu&#x366;ß: es wird gewüß der Richter endlich kommen/<lb facs="tl_15"/>
@@ -4454,91 +4454,91 @@
                <label>[124.]</label>Werke der barmhertzigkeit/ und derſel-<lb facs="tl_17"/>
                ben gnadenbelohnung/ Jeſ.58.v.7.<lb facs="tl_18"/>
                Matth.25.v.35.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>XXV.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>XXV.</num></hi></head><lb facs="tl_20"/>
                <num><anchor xml:id="a78"/>1.<note type="annotation" targetEnd="a78"><p>Die arabischen Zahlen in diesem Gedicht beziehen sich auf die einzelnen Werke der Barmherzigkeit.</p></note></num> Hungerige ſpeiſen.<lb facs="tl_21"/>
                Wirſt armen gu&#x366;tes tu&#x366;hn/ ſo wirſt es Gott erweiſen/<lb facs="tl_22"/>
                und er wird ewig dich vom baum des lebens ſpeiſen.<lb facs="tl_23"/>
-               <hi rendition="#aq"><num>XXVI.</num></hi><lb facs="tl_24"/>
+               <head><hi rendition="#aq"><num>XXVI.</num></hi></head><lb facs="tl_24"/>
                <num>2.</num> Durſtige tra&#x364;nken.<lb facs="tl_25"/>
                Für einen kalten trunk/ dem durſtigen gegeben/<lb facs="tl_26"/>
                der Herꝛ ein waſſer ſchenkt das tra&#x364;nkt in ewigs leben.<lb facs="tl_27"/>
                
             <pb n="207" test="184"/>
             <milestone unit="page" ana="#facs_207_tr_1"/>
-               <hi rendition="#aq"><num>XXVII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>XXVII.</num></hi></head><lb facs="tl_3"/>
                <num>3.</num> Frembde beherbergen.<lb facs="tl_4"/>
                Wer ſeines hauſes thür dem frembdling wird aufſper-<lb facs="tl_5"/>
                ren/<lb facs="tl_6"/>
                bey deme wird der Herꝛ/ und er beym Herꝛn eynkehren.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XXVIII.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XXVIII.</num></hi></head><lb facs="tl_8"/>
                <num>4.</num> Nakende bekleiden.<lb facs="tl_9"/>
                Bedekſt des armen leib/ den andere berauben/<lb facs="tl_10"/>
                ſo wirſt mit Chriſti kleid bedeket durch den glauben.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>XXIX.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>XXIX.</num></hi></head><lb facs="tl_12"/>
                <num>5.</num> Krankne beſu&#x366;chen.<lb facs="tl_13"/>
                Beſu&#x366;chſt die kranknen gern in ihrem leid und ſchmertzen/<lb facs="tl_14"/>
                ſo fu&#x364;hleſt/ wann du krank/ die Gottes gnad im hertzen.<lb facs="tl_15"/>
-               <hi rendition="#aq"><num>XXX.</num></hi><lb facs="tl_16"/>
+               <head><hi rendition="#aq"><num>XXX.</num></hi></head><lb facs="tl_16"/>
                <num>6.</num> Gefangene tro&#x364;ſten.<lb facs="tl_17"/>
                Weil Chriſtus ſich für dich hat willig laſſen binden/<lb facs="tl_18"/>
                ſo laß gefangne leuht auch deinen troſt empfinden.<lb facs="tl_19"/>
-               <label>[125.]</label><hi rendition="#aq"><num>XXXI.</num></hi><lb facs="tl_20"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[125.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXI.</num></hi></head><lb facs="tl_20"/>
                Auf einen maulchriſten.<lb facs="tl_21"/>
                Ein tugendhaffter Heid; wiewol er glaubloß iſt;<lb facs="tl_22"/>
                iſt beſſer alß ein maul- und doch werkloſer Chriſt.<lb facs="tl_23"/>
-               <label>[126.]</label><hi rendition="#aq"><num>XXXII.</num></hi><lb facs="tl_24"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[126.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXII.</num></hi></head><lb facs="tl_24"/>
                Ein warer Chriſt.<lb facs="tl_25"/>
                Ein Chriſt im werk erſcheint des waren glaubens frucht;<lb facs="tl_26"/>
                in dem er Gottes ehr/ des na&#x364;chſten wolfahrt ſu&#x366;cht.<lb facs="tl_27"/>
                
             <pb n="208" test="185"/>
             <milestone unit="page" ana="#facs_208_tr_1"/>
-               <label>[138.]</label><hi rendition="#aq"><num>XXXIII.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[138.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXIII.</num></hi></head><lb facs="tl_3"/>
                Mu&#x366;ter- und kinderliebe.<lb facs="tl_4"/>
                Die kindermu&#x366;ter liebt/ und wird zu&#x366;gleich geliebet:<lb facs="tl_5"/>
                hiemit wird/ beyderſeits/ was Gott geliebt/ veru&#x364;bet.<lb facs="tl_6"/>
-               <label>[139.]</label><hi rendition="#aq"><num>XXXIV.</num></hi><lb facs="tl_7"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[139.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXIV.</num></hi></head><lb facs="tl_7"/>
                Krieg- und fridensfrüchte.<lb facs="tl_8"/>
                Der krieg die künſt entſchla&#x364;fft; die la&#x364;nder er verheeret:<lb facs="tl_9"/>
                der frid hingegen ſie erwekt/ mehrt/ nehrt und ehret.<lb facs="tl_10"/>
-               <label>[140.]</label><hi rendition="#aq"><num>XXXV.</num></hi><lb facs="tl_11"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[140.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXV.</num></hi></head><lb facs="tl_11"/>
                Wir lehrnen alle tag.<lb facs="tl_12"/>
                Wir lehrnen alle tag/ und lehrnen doch nicht auß/<lb facs="tl_13"/>
                biß daß ein ku&#x364;hles grab wird unſers leibes hauß.<lb facs="tl_14"/>
-               <label>[141.]</label><hi rendition="#aq"><num>XXXVI.</num></hi><lb facs="tl_15"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[141.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXVI.</num></hi></head><lb facs="tl_15"/>
                An den Tadelgern.<lb facs="tl_16"/>
                Was einer nicht verſteht das laß er ungetadelt/<lb facs="tl_17"/>
                er wolle dann zu&#x366;gleich/ wie Midas/ ſe<anchor xml:id="a79"/>y<note type="annotation" targetEnd="a79"><p>Das Trema wurde hier nachträglich von Hand eingezeichnet.</p></note>n geadelt.<lb facs="tl_18"/>
-               <label>[142.]</label><hi rendition="#aq"><num>XXXVII.</num></hi><lb facs="tl_19"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[142.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXVII.</num></hi></head><lb facs="tl_19"/>
                Auf einen verleümder.<lb facs="tl_20"/>
                Wer eines andern glimpf nur ſu&#x366;chet abzu&#x366;ſchneiden/<lb facs="tl_21"/>
                den ſol ein frommes hertz wie ſchlangengifft vermeiden.<lb facs="tl_22"/>
-               <label>[143.]</label><hi rendition="#aq"><num>XXXVIII.</num></hi><lb facs="tl_23"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[143.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXVIII.</num></hi></head><lb facs="tl_23"/>
                Auf falſche fre<anchor xml:id="a80"/>u<note type="annotation" targetEnd="a80"><p>Das Trema wurde hier nachträglich von Hand eingezeichnet.</p></note>nde.<lb facs="tl_24"/>
                Wer gu&#x366;te worte gibt/ und nicht iſt freund von hertzen/<lb facs="tl_25"/>
                der kan des Ho&#x364;chſten huld ihm ſelber wol verſchertzen.<lb facs="tl_26"/>
                
             <pb n="209" test="186"/>
             <milestone unit="page" ana="#facs_209_tr_1"/>
-               <label>[144.]</label><hi rendition="#aq"><num>XXXIX.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[144.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XXXIX.</num></hi></head><lb facs="tl_3"/>
                An ein verguldtes hertz/ oder<lb facs="tl_4"/>
                Trinkgeſchirꝛ.<lb facs="tl_5"/>
                Durch meinen brauch wird offenbar<lb facs="tl_6"/>
                was heimlich in dem hertzen war.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>XL.</num></hi><lb facs="tl_8"/>
+               <head><hi rendition="#aq"><num>XL.</num></hi></head><lb facs="tl_8"/>
                Wer ſchertz<anchor xml:id="a81"/><note type="annotation" targetEnd="a81"><p>Doppelbindestrich nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren gibt es keinen.</p></note> und ſchimpf nicht mag erleiden/<lb facs="tl_9"/>
                der ſol diß hertz von hertzen meiden.<lb facs="tl_10"/>
-               <hi rendition="#aq"><num>XLI.</num></hi><lb facs="tl_11"/>
+               <head><hi rendition="#aq"><num>XLI.</num></hi></head><lb facs="tl_11"/>
                Der wein entdekt ein jedes hertz/<lb facs="tl_12"/>
                ob ſey darinn ſchertz oder ſchmertz.<lb facs="tl_13"/>
-               <hi rendition="#aq"><num>XLII.</num></hi><lb facs="tl_14"/>
+               <head><hi rendition="#aq"><num>XLII.</num></hi></head><lb facs="tl_14"/>
                Das edel ra&#x364;benſafft/ zur fro&#x364;lichkeit gegeben/<lb facs="tl_15"/>
                durch mißbrauch unheil ſchafft/ und kürtzet unſer leben.<lb facs="tl_16"/>
-               <label>[145.]</label><hi rendition="#aq"><num>XLIII.</num></hi><lb facs="tl_17"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[145.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLIII.</num></hi></head><lb facs="tl_17"/>
                Wachtbarkeit.<lb facs="tl_18"/>
                Die wachtbarkeit ein mittel iſt<lb facs="tl_19"/>
                für überfal und feindesliſt.<lb facs="tl_20"/>
-               <label>[146.]</label><hi rendition="#aq"><num>XLIV.</num></hi><lb facs="tl_21"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[146.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLIV.</num></hi></head><lb facs="tl_21"/>
                Auf gewüſſensloſe pfru&#x366;nden-<lb facs="tl_22"/>
                la&#x364;<anchor xml:id="a82"/>u<note type="annotation" targetEnd="a82"><p>Das Trema wurde nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht das u deutlich ohne Trema.</p></note>fflinge.<lb facs="tl_23"/>
                Lauff la&#x364;<anchor xml:id="a83"/>u<note type="annotation" targetEnd="a83"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>ffling/ lauff: es laufft der Satan vor dir hin/<lb facs="tl_24"/>
@@ -4548,7 +4548,7 @@
                
             <pb n="210" test="187"/>
             <milestone unit="page" ana="#facs_210_tr_1"/>
-               <label>[147.]</label><hi rendition="#aq"><num>XLV.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[147.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLV.</num></hi></head><lb facs="tl_3"/>
                Regieren iſt nicht wol-<lb facs="tl_4"/>
                leben.<lb facs="tl_5"/>
                Damocles; ſchmeichlende; regieren nen&#x342;t/ wolleben:<lb facs="tl_6"/>
@@ -4556,19 +4556,19 @@
                und fürzu&#x366;bilden diß; bey beſter mahlzeit zwar;<lb facs="tl_8"/>
                ein ſchwerdt er über ihn henckt an ein Pferdes<lb facs="tl_9"/>
                haar.<lb facs="tl_10"/>
-               <label>[B.1.]</label><hi rendition="#aq"><num>XLVI.</num></hi><lb facs="tl_11"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[B.1.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLVI.</num></hi></head><lb facs="tl_11"/>
                Vber eine zunffthauß-<lb facs="tl_12"/>
                ſta&#x364;gen.<lb facs="tl_13"/>
                <num>1</num> Von ſtaffel zu&#x366; ſtaffel; merk eben darauf;<lb facs="tl_14"/>
                ohn lauffen wirſt kommen die ſta&#x364;gen hinauf:<lb facs="tl_15"/>
                wilt aber abgehen/ ſo hu&#x364;t dich auch wider<lb facs="tl_16"/>
                vor fallen die ſta&#x364;gen durch nider und nider.<lb facs="tl_17"/>
-               <hi rendition="#aq"><num>XLVII.</num></hi><lb facs="tl_18"/>
+               <head><hi rendition="#aq"><num>XLVII.</num></hi></head><lb facs="tl_18"/>
                <num>2</num> Je ho&#x364;her du geſtigen biſt an ehren/<lb facs="tl_19"/>
                je mehr du dich der hoffart mu&#x366;ſt erwehren/<lb facs="tl_20"/>
                der demu&#x366;ht auch befleiſſen für und für/<lb facs="tl_21"/>
                und ehren ſelbſt ein jeden/ nach gebühr.<lb facs="tl_22"/>
-               <label>[B.2.]</label><hi rendition="#aq"><num>XLVIII.</num></hi><lb facs="tl_23"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[B.2.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLVIII.</num></hi></head><lb facs="tl_23"/>
                Vber eine porten oder<lb facs="tl_24"/>
                thüren.<lb facs="tl_25"/>
                <num>3</num> Der überſchreite nicht die ſchwellen diſer thüren/<lb facs="tl_26"/>
@@ -4577,17 +4577,17 @@
                
             <pb n="211" test="188"/>
             <milestone unit="page" ana="#facs_211_tr_1"/>
-               <label>[147.]</label><hi rendition="#aq"><num>XLIX.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[147.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>XLIX.</num></hi></head><lb facs="tl_3"/>
                <num>4</num><anchor xml:id="a87"/><note type="annotation" targetEnd="a87"><p>Der Punkt nach der 4 wurde nachträglich von Hand eingezeichnet.</p></note> O wol dem Regiment/ wo gleichheit gleich regieret/<lb facs="tl_4"/>
                ſo/ daß der arm und reich erlangen gleichen ſchutz/<lb facs="tl_5"/>
                wordurch erhalten wird der allgemeine nutz!<lb facs="tl_6"/>
                zu&#x366; vil geleichheit doch ungleichheit mit ſich fu&#x364;hret.<lb facs="tl_7"/>
-               <hi rendition="#aq"><num>L.</num></hi><lb facs="#facs_211_l"/>
+               <head><hi rendition="#aq"><num>L.</num></hi></head><lb facs="#facs_211_l"/>
                <num>5</num><anchor xml:id="a88"/><note type="annotation" targetEnd="a88"><p>Der Punkt ist nachträglich von Hand eingezeichnet worden.  In den Vergleichsexemplaren gibt es hier kein Punkt.</p></note> Ein ſprüchwort iſt: unrechter gwalt<lb facs="tl_8"/>
                mag nicht beſtehn/ noch werden alt:<lb facs="tl_9"/>
                doch wer das recht nicht wil erleiden/<lb facs="tl_10"/>
                der wird gewalt nicht mo&#x364;gen meiden.<lb facs="tl_11"/>
-               <label>[148.]</label><hi rendition="#aq"><num>LI.</num></hi><lb facs="tl_12"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[148.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LI.</num></hi></head><lb facs="tl_12"/>
                Auß dem Ovid.<lb facs="tl_13"/>
                Der Phaeton begert die ſonn zu&#x366; fu&#x364;hren auf/<lb facs="tl_14"/>
                ſein vatter warnet ihn: er fahret krummen lauff/<lb facs="tl_15"/>
@@ -4597,7 +4597,7 @@
                daß/ durch die hoffart/ man zu&#x366; boden werd gefellt/<lb facs="tl_19"/>
                und daß zu&#x366; junge ra&#x364;ht/ die hitziglich regieren/<lb facs="tl_20"/>
                ſich ſelb/ und ander le<anchor xml:id="a90"/>u<note type="annotation" targetEnd="a90"><p>Das Trema wurde nachträglich von Hand eingezeichnet.  Im göttingischen Vergleichsexemplar steht das u deutlich ohne Trema.</p></note>ht in ſchand<anchor xml:id="a91"/><note type="annotation" targetEnd="a91"><p>Das Komma wurde nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar gibt es hier kein Komma.</p></note> und ſchaden fu&#x364;hren.<lb facs="tl_21"/>
-               <label>[149.]</label><hi rendition="#aq"><num>LII.</num></hi><lb facs="tl_22"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[149.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LII.</num></hi></head><lb facs="tl_22"/>
                Vom Gewüſſen/ und vil<lb facs="tl_23"/>
                wüſſen.<lb facs="tl_24"/>
                <num>1</num><anchor xml:id="a92"/><note type="annotation" targetEnd="a92"><p>Der Punkt nach der 1 wurde nachträglich von Hand eingezeichnet.</p></note> Vil wüſſen loblich iſt/ doch mehr ein gu&#x366;t gewüſſen:<lb facs="tl_25"/>
@@ -4607,73 +4607,73 @@
                
             <pb n="212" test="189"/>
             <milestone unit="page" ana="#facs_212_tr_1"/>
-               <hi rendition="#aq"><num>LIII.</num></hi><lb facs="tl_3"/>
+               <head><hi rendition="#aq"><num>LIII.</num></hi></head><lb facs="tl_3"/>
                <num>2</num> Wer immer all ſein tu&#x366;hn allein auf ſchalkheit richtet/<lb facs="tl_4"/>
                und meint er habe ſolchs/ verdekter weis/ geſchlichtet:<lb facs="tl_5"/>
                der wird/ zu&#x366; ſeiner zeit/ betrogen finden ſich<lb facs="tl_6"/>
                vor deme der ein ze<anchor xml:id="a93"/>u<note type="annotation" targetEnd="a93"><p>Das Trema wurde nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht das u deutlich ohne Trema.</p></note>g und richter iſt zu&#x366;gleich.<lb facs="tl_7"/>
-               <label>[B.3.]</label><hi rendition="#aq"><num>LIV.</num></hi><lb facs="tl_8"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[B.3.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LIV.</num></hi></head><lb facs="tl_8"/>
                Hinder den ofen.<lb facs="tl_9"/>
                <num>1</num> Der forchtſam liebt den ofenſitz:<lb facs="tl_10"/>
                der dapfer ſu&#x366;cht des feindes ſpitz.<lb facs="tl_11"/>
-               <hi rendition="#aq"><num>LV.</num></hi><lb facs="tl_12"/>
+               <head><hi rendition="#aq"><num>LV.</num></hi></head><lb facs="tl_12"/>
                <num>2</num> Wie bald das wintergſtirn die ka&#x364;lte bringt auf erden;<lb facs="tl_13"/>
                wordurch des menſchen leib empfanget vil beſchwerden;<lb facs="tl_14"/>
                ſo liebet jedermann des ſtubenofens hitz/<lb facs="tl_15"/>
                die liebe nur allein hat einen kalten ſitz.<lb facs="tl_16"/>
-               <label>[B.4.]</label><hi rendition="#aq"><num>LVI.</num></hi><lb facs="tl_17"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[B.4.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LVI.</num></hi></head><lb facs="tl_17"/>
                <anchor xml:id="a94"/>V<note type="annotation" targetEnd="a94"><p>Wahrscheinlich handgezeichnetes Trema</p></note>ber eine kuchenthüren.<lb facs="tl_18"/>
                <num>1</num> Wer mit dem fewr<anchor xml:id="a95"/><note type="annotation" targetEnd="a95"><p>Das Komma wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht hier kein Komma.</p></note> und liecht umgehet/<lb facs="tl_19"/>
                der hu&#x364;te ſich vor deſſen brand/<lb facs="tl_20"/>
                und nahe mit zu&#x366; keiner wand:<lb facs="tl_21"/>
                dann eine brunſt gar leicht entſtehet.<lb facs="tl_22"/>
-               <hi rendition="#aq"><num>LVII.</num></hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num>LVII.</num></hi></head><lb facs="tl_23"/>
                <num>2</num> Das kleineſt fünklein oft ein groſſes fewr anzündet/<lb facs="tl_24"/>
                wer nun mit waſſer ſich der erſt darbe<anchor xml:id="a96"/>y<note type="annotation" targetEnd="a96"><p>Das Trema wurde nachträglich von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht das y deutlich ohne Trema.</p></note> befindet/<lb facs="tl_25"/>
                den lobet jedermann; und den nicht minder auch/<lb facs="tl_26"/>
                der zu&#x366; dem friden redt/ und demt unfridens rauch.<lb facs="tl_27"/>
-               <hi rendition="#aq"><num>LVIII.</num></hi><lb facs="tl_28"/>
+               <head><hi rendition="#aq"><num>LVIII.</num></hi></head><lb facs="tl_28"/>
             <pb n="213" test="190"/>
             <milestone unit="page" ana="#facs_213_tr_1"/>
-               <label>[223.]</label><hi rendition="#aq"><num>LVIII.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[223.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LVIII.</num></hi></head><lb facs="tl_3"/>
                Der Niemand.<lb facs="tl_4"/>
                Jch heiſſe Niemand; wie mich jung<anchor xml:id="a97"/><note type="annotation" targetEnd="a97"><p>Handgezeichnetes Komma</p></note> und alte nennen;<lb facs="tl_5"/>
                die faulen knecht<anchor xml:id="a98"/><note type="annotation" targetEnd="a98"><p>Das Komma wurde hier nachträglich von Hand eingezeichnet.</p></note> und ma&#x364;gd/ und kinder mich wol kennen:<lb facs="tl_6"/>
                dann/ was gebrochen ſie; was bo&#x364;ſes ſie getahn/<lb facs="tl_7"/>
                das legen ſie auff mich/ weil ich nicht reden kan.<lb facs="tl_8"/>
-               <label>[224.]</label><hi rendition="#aq"><num>LIX.</num></hi><lb facs="tl_9"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[224.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LIX.</num></hi></head><lb facs="tl_9"/>
                Grabſchrifften.<lb facs="tl_10"/>
                <num>1</num><anchor xml:id="a99"/><note type="annotation" targetEnd="a99"><p>Der Punkt nach der 1 wurde nachträglich von Hand eingezeichnet.</p></note> Es liget einer hier begraben/<lb facs="tl_11"/>
                den kunſt und witz gezieret haben:<lb facs="tl_12"/>
                noch fande nicht ein wo&#x364;rtlein ſtatt<lb facs="tl_13"/>
                be<anchor xml:id="a100"/>y<note type="annotation" targetEnd="a100"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note> deme/ der kein ohren hat.<lb facs="tl_14"/>
-               <hi rendition="#aq"><num>LX.</num></hi><lb facs="tl_15"/>
+               <head><hi rendition="#aq"><num>LX.</num></hi></head><lb facs="tl_15"/>
                <num>2</num><anchor xml:id="a101"/><note type="annotation" targetEnd="a101"><p>Der Punkt nach der 2 wurde nachträglich von Hand eingezeichnet.</p></note> Ein edle fromme ſeel iſt worden ko&#x364;rperloß/<lb facs="tl_16"/>
                und iſt geflogen fort in ihres vatterlande:<lb facs="tl_17"/>
                der ko&#x364;rper jetz im grab/ verſtrikt mit todesbande/<lb facs="tl_18"/>
                wird bald im himmel ſe<anchor xml:id="a102"/>y<note type="annotation" targetEnd="a102"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note>n der ſeelen mitgenoß.<lb facs="tl_19"/>
-               <hi rendition="#aq"><num>LXI.</num></hi><lb facs="tl_20"/>
+               <head><hi rendition="#aq"><num>LXI.</num></hi></head><lb facs="tl_20"/>
                <num>3</num><anchor xml:id="a103"/><note type="annotation" targetEnd="a103"><p>Der Punkt nach der 3 wurde nachträglich von Hand eingezeichnet.</p></note> Es ſchlieſſet diſer ſtein<lb facs="tl_21"/>
                nur eitel fleiſch<anchor xml:id="a104"/><note type="annotation" targetEnd="a104"><p>Das Komma wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht hier kein Komma.</p></note> und bein:<lb facs="tl_22"/>
                die ſeel im himmel lebt/<lb facs="tl_23"/>
                und Gottes lob erhebt.<lb facs="tl_24"/>
-               <hi rendition="#aq"><num>LXII.</num></hi><lb facs="tl_25"/>
+               <head><hi rendition="#aq"><num>LXII.</num></hi></head><lb facs="tl_25"/>
                <num>4</num><anchor xml:id="a105"/><note type="annotation" targetEnd="a105"><p>Der Punkt nach der 4 wurde nachträglich von Hand eingezeichnet.</p></note> Fragſt du/ o wandersmann! wer iſt allhier begraben?<lb facs="tl_26"/>
                Es iſt was ſterblich war an einem frommen weib:<lb facs="tl_27"/>
                die ſeel gen himmel fu&#x366;hr/ und wartet auf den leib/<lb facs="tl_28"/>
                den Gott erweken wird/ und ewiglich erlaben.<lb facs="tl_29"/>
-               <hi rendition="#aq"><num>LXIII.</num></hi><lb facs="tl_30"/>
+               <head><hi rendition="#aq"><num>LXIII.</num></hi></head><lb facs="tl_30"/>
             <pb n="214" test="191"/>
             <milestone unit="page" ana="#facs_214_tr_1"/>
-               <hi rendition="#aq"><num>LXIII.</num></hi><lb facs="tl_2"/>
+               <head><hi rendition="#aq"><num>LXIII.</num></hi></head><lb facs="tl_2"/>
                <num>5</num><anchor xml:id="a106"/><note type="annotation" targetEnd="a106"><p>Der Punkt nach der 5 wurde nachträglich von Hand eingezeichnet.</p></note> Hie ligt was ſterblich war an einem frommen weib:<lb facs="tl_3"/>
                die ſeel im himmel lebt/ und wartet auf den leib.<lb facs="tl_4"/>
-               <hi rendition="#aq"><num>LXIV.</num></hi><lb facs="tl_5"/>
+               <head><hi rendition="#aq"><num>LXIV.</num></hi></head><lb facs="tl_5"/>
                <num>6</num><anchor xml:id="a107"/><note type="annotation" targetEnd="a107"><p>Der Punkt nach der 6 wurde nachträglich von Hand eingezeichnet.</p></note> Hie ru&#x366;het auß ein frommes weib/<lb facs="tl_6"/>
                mit ihrem arbeitſamen leib:<lb facs="tl_7"/>
                die ſeel anjetz im himmel lebt/<lb facs="tl_8"/>
                und/ ſelig/ Gotteslob erhebt.<lb facs="tl_9"/>
-               <hi rendition="#aq"><num>LXV.</num></hi><lb facs="tl_10"/>
+               <head><hi rendition="#aq"><num>LXV.</num></hi></head><lb facs="tl_10"/>
                Klinggedicht.<lb facs="tl_11"/>
                <num>7</num><anchor xml:id="a108"/><note type="annotation" targetEnd="a108"><p>Der Punkt nach der 7 wurde nachträglich von Hand eingezeichnet.</p></note> Wie Cleopatra einſt (im werke zu&#x366; erweiſen<lb facs="tl_12"/>
                daß den Antonius ſie übertroffen hett<lb facs="tl_13"/>
@@ -4692,20 +4692,20 @@
                
             <pb n="215" test="192"/>
             <milestone unit="page" ana="#facs_215_tr_1"/>
-               <label>[225.]</label><hi rendition="#aq"><num>LXVI.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[225.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXVI.</num></hi></head><lb facs="tl_3"/>
                Leben/ Nebel.<lb facs="tl_4"/>
                Was unſer <hi rendition="#b">leben</hi> ſe<anchor xml:id="a111"/>y<note type="annotation" targetEnd="a111"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note>/ und wie es werd vergehen/<lb facs="tl_5"/>
                das wo&#x364;rtlein <hi rendition="#b">leben</hi> ſelbſt gibt/ de<anchor xml:id="a112"/>u<note type="annotation" targetEnd="a112"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren gibt es hier kein Trema.</p></note>tlich/ zu&#x366; verſtehen<lb facs="tl_6"/>
                dem/ der es lißt zu&#x366; ruk. Darum ſol jeder ſtreben<lb facs="tl_7"/>
                nach dem was ewig iſt: ſo wird er ewig leben.<lb facs="tl_8"/>
-               <label>[226.]</label><hi rendition="#aq"><num>LXVII.</num></hi><lb facs="tl_9"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[226.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXVII.</num></hi></head><lb facs="tl_9"/>
                Nichts irꝛdiſches wa&#x364;rhafft.<lb facs="tl_10"/>
                Was nützet hochgeboren ſe<anchor xml:id="a113"/>y<note type="annotation" targetEnd="a113"><p>Das Trema wurde nachträglich von Hand eingezeichnet. in den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note>n? Es iſt ein ſchlechter ru&#x366;hm:<lb facs="tl_11"/>
                die zeitlich ehr geleicht dem plitz: die ſcho&#x364;nheit einer blu&#x366;m:<lb facs="tl_12"/>
                das leben ſelbſt ein nebel iſt im tieffen thra&#x364;nen thal:<lb facs="tl_13"/>
                reichthum vergeht: das bſta&#x364;ndig findſt im hohen him-<lb facs="tl_14"/>
                melsſahl.<lb facs="tl_15"/>
-               <label>[227.]</label><hi rendition="#aq"><num>LXVIII.</num></hi><lb facs="tl_16"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[227.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXVIII.</num></hi></head><lb facs="tl_16"/>
                Eitelkeit der welt.<lb facs="tl_17"/>
                Faſt auß dem Frantzo&#x364;ſiſchen.<lb facs="tl_18"/>
                Gleich wie das ſchlüpfrig eiß ſich ſpiegelhell erzeiget/<lb facs="tl_19"/>
@@ -4720,7 +4720,7 @@
                
             <pb n="216" test="193"/>
             <milestone unit="page" ana="#facs_216_tr_1"/>
-               <label>[150.]</label><hi rendition="#aq"><num>LXIX.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[150.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXIX.</num></hi></head><lb facs="tl_3"/>
                Chriſtenkampff.<lb facs="tl_4"/>
                <hi rendition="#in">D</hi>Er menſch; wie Job beze<anchor xml:id="a115"/>u<note type="annotation" targetEnd="a115"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den beiden Vergleichsexemplaren steht das u deutlich ohne Trema.</p></note>gt; im ſtreit mu&#x366;ß immer<lb facs="tl_5"/>
                leben/<lb facs="tl_7"/>
@@ -4757,7 +4757,7 @@
                der ſig und ſigerslohn vom Herꝛen wird gegeben:<lb facs="tl_4"/>
                deß ru&#x364;ffen wir zu&#x366; ihm/ wir die wir wehrloß ſeind:<lb facs="tl_5"/>
                o Herꝛ/ bewaff uns du/ ſo weichet unſer feind!<lb facs="tl_6"/>
-               <label>[211.]</label><hi rendition="#aq"><num>LXX.</num></hi><lb facs="tl_7"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[211.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXX.</num></hi></head><lb facs="tl_7"/>
                Anbindgedicht/<lb facs="tl_8"/>
                auf den fro&#x364;lichen Ru&#x366;dolffstag.<lb facs="tl_9"/>
                <hi rendition="#in">K</hi>om&#x342;/ kom&#x342; gewünſchter tag/ und ſtill mir das verlan-<lb facs="tl_10"/>
@@ -4787,7 +4787,7 @@
                wann nicht der menſchenfraß ſich wider ihn verbinde.<lb facs="tl_4"/>
                Darum ſo wünſchen wir/ daß diſer tag vil jahr<lb facs="tl_5"/>
                mit frid<anchor xml:id="a137"/><note type="annotation" targetEnd="a137"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und fre<anchor xml:id="a138"/>u<note type="annotation" targetEnd="a138"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>den e<anchor xml:id="a139"/>u<note type="annotation" targetEnd="a139"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>ch vom Herꝛen komme har!<lb facs="tl_6"/>
-               <label>[212.]</label><hi rendition="#aq"><num>LXXI.</num></hi><lb facs="tl_7"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[212.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXI.</num></hi></head><lb facs="tl_7"/>
                Anbindgedicht/ auf<lb facs="tl_8"/>
                Dorothea tag.<lb facs="tl_9"/>
                <hi rendition="#in">E</hi>Jn kraut heißt Gottesgnad/ ſo wir gemeinlich ken&#x342;en:<lb facs="tl_10"/>
@@ -4811,10 +4811,10 @@
                vil jahr/ geſund und friſch: befehle mich hieneben<lb facs="tl_28"/>
                zu&#x366; gunſten allezeit/ woran ich zweiffel nicht:<lb facs="tl_29"/>
                den wunſch erwahre der/ zu&#x366; dem er iſt gericht!<lb facs="tl_30"/>
-               <hi rendition="#aq"><num><anchor xml:id="a147"/><Catch_word/>LXXII<note type="annotation" targetEnd="a147"><p>Im göttingischen Vergleichsexemplar steht nach den römischen Zahlen deutlich kein Punkt.</p></note></num></hi><lb facs="tl_32"/>
+               <head><hi rendition="#aq"><num><anchor xml:id="a147"/><Catch_word/>LXXII<note type="annotation" targetEnd="a147"><p>Im göttingischen Vergleichsexemplar steht nach den römischen Zahlen deutlich kein Punkt.</p></note></num></hi></head><lb facs="tl_32"/>
             <pb n="219" test="196"/>
             <milestone unit="page" ana="#facs_219_tr_1"/>
-               <label>[66.]</label><hi rendition="#aq"><num>LXXII.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[66.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXII.</num></hi></head><lb facs="tl_3"/>
                Chriſtenliches Haußweſen:<lb facs="tl_4"/>
                auf eine Ehrenhochzeit; auß heiliger Schrifft<lb facs="tl_5"/>
                zu&#x366;ſamen gezogen.<lb facs="tl_6"/>
@@ -4941,7 +4941,7 @@
                beyſamen leben werdt/ wird es nicht ſeyn erdichtet.<lb facs="tl_7"/>
                Heut iſt Felicitas in dem kalender zwar:<lb facs="tl_8"/>
                Felicitas von Gott verbleib euch immerdar!<lb facs="tl_9"/>
-               <label>[67.]</label><hi rendition="#aq"><num>LXXIII.</num></hi><lb facs="tl_10"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[67.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXIII.</num></hi></head><lb facs="tl_10"/>
                Haußfrid/<lb facs="tl_11"/>
                alß eine hochzeitliche Ehrengab<lb facs="tl_12"/>
                aufgeſtellt.<lb facs="tl_13"/>
@@ -5009,7 +5009,7 @@
                die liebe von dem mann; ghorſame von dem weib.<lb facs="tl_12"/>
                Der aber alles gibt/ und euch gefu&#x364;gt zu&#x366;ſamen/<lb facs="tl_13"/>
                der geb zu&#x366; meinem wunſch für euch ein kra&#x364;fftig Amen!<lb facs="tl_14"/>
-               <label>[68.]</label><hi rendition="#aq"><num>LXXIV.</num></hi><lb facs="tl_15"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[68.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXIV.</num></hi></head><lb facs="tl_15"/>
                Hochzeitliches Klinggedicht.<lb facs="tl_16"/>
                <hi rendition="#in">D</hi>Em menſchen iſt zwar gu&#x366;t/ daß er kein weib beru&#x364;hre/<lb facs="tl_17"/>
                wie dann Sanct Paulus ſpricht/ und doch nicht widerſpricht/<lb facs="tl_20"/>
@@ -5028,7 +5028,7 @@
                
             <pb n="226" test="203"/>
             <milestone unit="page" ana="#facs_226_tr_1"/>
-               <label>[69.]</label><hi rendition="#aq"><num>LXXV.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[69.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXV.</num></hi></head><lb facs="tl_3"/>
                Liebgedicht/<lb facs="tl_4"/>
                auf eines ſeiner freunden Ehren-<lb facs="tl_5"/>
                hochzeit.<lb facs="tl_6"/>
@@ -5174,10 +5174,10 @@
                es mu&#x366;ß der liebeskampf das bo&#x364;ß darauß verdringen:<lb facs="tl_20"/>
                bis daß ihr/ lebensſatt/ gelangen an das ort/<lb facs="tl_21"/>
                wo lauter lieb ohn leid. So wünſcht mein letſtes wort!<lb facs="tl_22"/>
-               <hi rendition="#aq"><num><Catch_word/>LXX<anchor xml:id="a180"/>VI<note type="annotation" targetEnd="a180"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</num><anchor xml:id="a181"/>VI<note type="annotation" targetEnd="a181"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</hi><lb facs="tl_23"/>
+               <head><hi rendition="#aq"><num><Catch_word/>LXX<anchor xml:id="a180"/>VI<note type="annotation" targetEnd="a180"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</num><anchor xml:id="a181"/>VI<note type="annotation" targetEnd="a181"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</hi></head><lb facs="tl_23"/>
             <pb n="231" test="208"/>
             <milestone unit="page" ana="#facs_231_tr_1"/>
-               <label>[247.]</label><hi rendition="#aq"><num>LXXVI.</num></hi><lb facs="tl_3"/>
+               <head xmlns=""><label xmlns="http://www.tei-c.org/ns/1.0">[247.]</label><hi xmlns="http://www.tei-c.org/ns/1.0" rendition="#aq"><num>LXXVI.</num></hi></head><lb facs="tl_3"/>
                Tiſchzucht.<lb facs="tl_4"/>
                <hi rendition="#in">K</hi>Om&#x342;t her und ho&#x364;rt mir zu&#x366;/ ihr/ die ihr auß der wiegen<lb facs="tl_5"/>
                vor ſiben jahren ſchon/ ohn mu&#x366;terhülf geſtigen/<lb facs="tl_6"/>
