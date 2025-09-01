@@ -90,9 +90,31 @@
             <xsl:apply-templates select="node()"/>
         </abbr>
     </xsl:template>
+   
+    <xsl:template match="*:blackening">
+        <xsl:choose>
+            <xsl:when test="@comment[normalize-space()]">
+                <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening) + 1"/>
+                <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
+                <unclear xmlns="http://www.tei-c.org/ns/1.0" reason="blackening">
+                    <xsl:apply-templates select="node()"/>
+                </unclear>
+                <note xmlns="http://www.tei-c.org/ns/1.0" type="annotation" targetEnd="{$anchorId}">
+                    <p>
+                        <xsl:value-of select="@comment => replace('\\u0020',' ') => replace('\\u0022','&quot;') => replace('\\u003b',';')"/>
+                    </p>
+                </note>
+            </xsl:when>
+            <xsl:otherwise>
+                <unclear xmlns="http://www.tei-c.org/ns/1.0" reason="blackening">
+                    <xsl:apply-templates select="node()"/>
+                </unclear>
+            </xsl:otherwise>
+        </xsl:choose>
+    </xsl:template>
     
     <xsl:template match="*:comment">
-        <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment) + 1"/>
+        <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening) + 1"/>
         <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
         <xsl:if test="not(text()=' ')">
             <xsl:apply-templates select="node()"/>
