@@ -43,9 +43,10 @@
             <xsl:apply-templates select="$processed" mode="transform-renditions"/>
         </xsl:variable>
         
-        <xsl:variable name="processed" as="node()*">
+        <!-- De-activated -->
+        <!--<xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="remove-lines"/>
-        </xsl:variable>
+        </xsl:variable>-->
 
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="move-lb"/>
