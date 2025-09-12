@@ -53,17 +53,17 @@ jobs:
     - id: tei_filename
       run: echo "tei_filename=$(xmllint --xpath 'translate(//*[local-name()="trpDocMetadata"]/*[local-name()="title"]," ","_")' scratch/mets.xml)" >> "$GITHUB_OUTPUT"
     - name: METS to TEI (page2tei, XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.8.fix
+      uses: pdaengeli/use-saxon-he-j@12.9
       with:
         args: -s:scratch/mets.xml -xsl:page2tei/page2tei-0.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml combine=true
     - name: Refine TEI (XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.8.fix
+      uses: pdaengeli/use-saxon-he-j@12.9
       with:
         args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/refine-tei.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml
     - run: cp -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_raw.xml
     - run: mv -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml
     - name: Generate issue reply (XSLT)
-      uses: pdaengeli/use-saxon-he-j@12.8.fix
+      uses: pdaengeli/use-saxon-he-j@12.9
       with:
         args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/reporting.xsl -it
     - run: mv scratch/exported/*.xml exported/
