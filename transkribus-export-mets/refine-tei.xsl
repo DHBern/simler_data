@@ -191,6 +191,18 @@
         </xsl:analyze-string>
     </xsl:template>
     
+    <xsl:template match="*:Catch_word">
+        <fw place="bottom" type="catch" xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:apply-templates select="node()"/>
+        </fw>
+    </xsl:template>
+    
+    <xsl:template match="*:Header">
+        <fw place="top" type="header" xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:apply-templates select="node()"/>
+        </fw>
+    </xsl:template>
+    
     <!-- [mode] transform-renditions 
                 transform rendition tags to hi elements with according value in @rendition
        ======================================== -->  
