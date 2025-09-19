@@ -33,7 +33,7 @@
                 <lb/>
                 <pb n="2"/>
 
-                <div n="2">
+                <div n="2" xml:id="n1">
                     <head>
                         <label>[1.]</label>
                         <lb/>
@@ -722,7 +722,7 @@
                 <lb/>
                 <pb n="12"/>
 
-                <div n="2">
+                <div n="2" xml:id="n2">
                     <head>
                         <label>[2.]</label>
                         <lb/>
@@ -1236,13 +1236,13 @@
                     </div>
                     <lb/>
 
-                    <p><hi rendition="#smaller">Ende des anderen buchs der Psalmen.</hi></p>
+                    <div><p><hi rendition="#smaller">Ende des anderen buchs der Psalmen.</hi></p></div>
                     <lb/>
                 </div>
                 <lb/>
                 <pb n="20"/>
 
-                <div n="2">
+                <div n="2" xml:id="n3">
                     <head>
                         <label>[3.]</label>
                         <lb/>
@@ -1531,13 +1531,13 @@
                     </div>
                     <lb/>
 
-                    <p><hi rendition="#smaller">Ende des dritten buchs der Psalmen.</hi></p>
+                    <div><p><hi rendition="#smaller">Ende des dritten buchs der Psalmen.</hi></p></div>
                     <lb/>
                 </div>
                 <lb/>
                 <pb n="26"/>
 
-                <div n="2">
+                <div n="2" xml:id="n4">
                     <head>
                         <label>[4.]</label>
                         <lb/>
@@ -1827,13 +1827,13 @@
                     </div>
                     <lb/>
 
-                    <p><hi rendition="#smaller">Ende des vierdten buchs der Psalmen.</hi></p>
+                    <div><p><hi rendition="#smaller">Ende des vierdten buchs der Psalmen.</hi></p></div>
                     <lb/>
                 </div>
                 <lb/>
                 <pb n="32"/>
 
-                <div n="2">
+                <div n="2" xml:id="n5">
                     <head>
                         <label>[5.]</label>
                         <lb/>
@@ -2553,17 +2553,19 @@
                 </div>
                 <lb/>
 
-                <p><hi rendition="#smaller">Ende der Vierversen über die Psalmen Davids.</hi></p>
+                <div><p><hi rendition="#smaller">Ende der Vierversen über die Psalmen Davids.</hi></p></div>
                 <lb/>
             </div>
             <lb/>
             <pb n="43"/>
 
-            <div n="2">
-                <label>[6.]</label>
-                <lb/>
-                <head><hi rendition="#b">Jnhälte Aller Psalmen Davids/ in gemeinen Reimschlüssen
-                        begriffen.</hi></head>
+            <div n="2" xml:id="n6">
+                <head>
+                    <label>[6.]</label>
+                    <lb/>
+                    <hi rendition="#b">Jnhälte Aller Psalmen Davids/ in gemeinen Reimschlüssen
+                        begriffen.</hi>
+                </head>
                 <lb/>
                 <milestone unit="section" rendition="#hr"/>
                 <lb/>
