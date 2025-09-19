@@ -97,9 +97,9 @@
             <xsl:when test="@comment[normalize-space()]">
                 <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening) + 1"/>
                 <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
-                <unclear xmlns="http://www.tei-c.org/ns/1.0" reason="blackening">
+                <supplied xmlns="http://www.tei-c.org/ns/1.0">
                     <xsl:apply-templates select="node()"/>
-                </unclear>
+                </supplied>
                 <note xmlns="http://www.tei-c.org/ns/1.0" type="annotation" targetEnd="{$anchorId}">
                     <p>
                         <xsl:value-of select="@comment => replace('\\u0020',' ') => replace('\\u0022','&quot;') => replace('\\u003b',';')"/>
@@ -107,9 +107,9 @@
                 </note>
             </xsl:when>
             <xsl:otherwise>
-                <unclear xmlns="http://www.tei-c.org/ns/1.0" reason="blackening">
+                <supplied xmlns="http://www.tei-c.org/ns/1.0">
                     <xsl:apply-templates select="node()"/>
-                </unclear>
+                </supplied>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -166,9 +166,9 @@
             following-sibling::*:ab[1]/*:page_number[1] => normalize-space()
             else ''"/>
         <xsl:copy>
-            <xsl:apply-templates select="@n"/>
+            <xsl:attribute name="facs" select="@n"/>
             <xsl:if test="$page_number[normalize-space()]">
-                <xsl:attribute name="test" select="$page_number"/>
+                <xsl:attribute name="n" select="$page_number"/>
             </xsl:if>
             <xsl:apply-templates select="node()"/>
         </xsl:copy>
