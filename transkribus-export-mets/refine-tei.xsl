@@ -377,7 +377,7 @@
                             current-group()[self::*:lb] and 
                             current-group()[self::*:hi[@rendition='#aq'][*:num]] and 
                             not(current-group()[text()[matches(.,'\n')]])">
-                            <head>
+                            <head xmlns="http://www.tei-c.org/ns/1.0">
                                 <xsl:apply-templates select="current-group()[not(self::*:lb)]" mode="wrap-head"/>
                             </head>
                             <xsl:apply-templates select="current-group()/self::*:lb" mode="wrap-head"/>
