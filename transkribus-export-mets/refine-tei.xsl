@@ -24,6 +24,7 @@
     <xsl:mode name="transform-renditions" on-no-match="shallow-copy"/>
     <xsl:mode name="remove-lines" on-no-match="shallow-copy"/>
     <xsl:mode name="move-lb" on-no-match="shallow-copy"/>
+    <xsl:mode name="remove-lb-facs" on-no-match="shallow-copy"/>
     <xsl:mode name="merge-ab" on-no-match="shallow-copy"/>
     <xsl:mode name="wrap-head" on-no-match="shallow-copy"/>
     <xsl:mode name="indent-whitespace" on-no-match="shallow-copy"/>
@@ -50,6 +51,10 @@
 
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="move-lb"/>
+        </xsl:variable>
+        
+        <xsl:variable name="processed" as="node()*">
+            <xsl:apply-templates select="$processed" mode="remove-lb-facs"/>
         </xsl:variable>
         
         <xsl:variable name="processed" as="node()*">
@@ -305,6 +310,12 @@
     </xsl:template>
     
     <xsl:template match="*:lb" mode="move-lb"/>
+    
+    <!-- [mode] remove-lb-facs 
+                remove facs attribute from lb
+       ======================================== -->  
+    
+    <xsl:template match="*:lb/@facs" mode="remove-lb-facs"/>
     
     <!-- [mode] merge-ab 
                 merge ab and add milestone as marker
