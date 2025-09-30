@@ -1622,17 +1622,15 @@
                     </lg>
                     <lb/>
                 </div>
+                <!-- Druckfehler, auf Nr. 77 folgt direkt 79. -->
                 <div n="2">
                     <head>
                     <label>[170.]</label>
                     <lb/>
-                        <unclear><hi rendition="#b">78.</hi> Druckfehler, auf Nr. 77 folgt direkt
-                            79.</unclear></head>
+                    <hi rendition="#b #c">Ehren- und Lobgeticht/ fu&#x0364;r die/ im 1629<lb/> jahr/
+                            neuaufgerichte Burgerbu&#x0364;cherey<lb/> zu Zürich:</hi>
                     <lb/>
-                    <head><hi rendition="#b #c">Ehren- und Lobgeticht/ fu&#x0364;r die/ im 1629<lb/> jahr/
-                            neuaufgerichte Burgerbu&#x0364;cherey<lb/> zu Zürich:</hi></head>
-                    <lb/>
-                    <head><hi rendition="#b #c">79. Auß Herren Balthasar Venators Lateini<lb break="no"/>schem
+                    <hi rendition="#b #c">79. Auß Herren Balthasar Venators Lateini<lb break="no"/>schem
                             verteutscht</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -1724,12 +1722,7 @@
                         <lb/>
                         <l>Des Fridens Schäzz und Ku&#x0364;nst/ und schöne nutzbarkeiten</l>
                         <lb/>
-                        <l>in <anchor type="commentRangeStart" n="6"/><anchor
-                                type="commentRangeStart" n="7"/>enere<anchor type="commentRangeEnd"
-                                n="6"/><note place="comment">euere?</note><anchor
-                                type="commentRangeEnd" n="7"/><note place="comment"
-                                resp="#Emmenegger">Könnte beides heissen, «enere» CH so viel wie
-                                «entfernte»</note> Gebiet und Kirchen sich außbreiten!</l>
+                        <l>in euere Gebiet und Kirchen sich außbreiten!</l>
                         <lb/>
                         <l rendition="#et">Der wu&#x0364;ste Rost verderb Spieß/ Schwerter und
                             Rapier/</l>
@@ -1920,7 +1913,7 @@
                     <lb/>
                 </div>
                 <pb n="527"/>
-                <head><hi rendition="#b #c">84. Gedanken über unterschidliche Thier.</hi></head>
+                <div><head><hi rendition="#b #c">84. Gedanken über unterschidliche Thier.</hi></head></div>
                 <lb/>
                 <div n="2">
                     <head>
@@ -3127,7 +3120,7 @@
                     </lg>
                     <lb/>
                 </div>
-                <head><hi rendition="#b #c">Grabschrifften.</hi></head>
+                <div><head><hi rendition="#b #c">Grabschrifften.</hi></head></div>
                 <lb/>
                 <div n="2">
                     <head>
@@ -3582,10 +3575,7 @@
                             <lb/>
                             <l rendition="#et">ein muschelperlein nur/ erzeugt im meeresschleim;</l>
                             <lb/>
-                            <l rendition="#et">also der menschenfraß n<anchor
-                                    type="commentRangeStart" n="10"/>ü<anchor type="commentRangeEnd"
-                                    n="10"/><note place="comment" resp="#Emmenegger">In Rd 594
-                                    «nur»</note>r das was kaht und leim:</l>
+                            <l rendition="#et">also der menschenfraß n<unclear>u</unclear>r das was kaht und leim:</l>
                             <lb/>
                             <l>das perlein warte sein im himmel wol verschlossen.</l>
                         </lg>
@@ -3601,10 +3591,7 @@
                     <lg type="poem">
                         <l>Was unser Leben sey/ und wie es werd vergehen/</l>
                         <lb/>
-                        <l>das wörtlein Leben selbst gibt/ de<anchor type="commentRangeStart" n="11"
-                                />ü<anchor type="commentRangeEnd" n="11"/><note place="comment"
-                                resp="#Emmenegger">u oder ü? auch in Rd 594 nicht klar</note>tlich/
-                            zuverstehen</l>
+                        <l>das wörtlein Leben selbst gibt/ deutlich/ zuverstehen</l>
                         <lb/>
                         <l>dem/ der es lißt zuruk. Darum sol ieder streben.</l>
                         <lb/>
@@ -4835,7 +4822,7 @@
                     </lg>
                     <lb/>
                 </div>
-                <head><hi rendition="#b #c">185. Haußsprüche.</hi></head>
+                <div><head><hi rendition="#b #c">185. Haußsprüche.</hi></head></div>
                 <lb/>
                 <div n="2">
                     <head>
@@ -5071,7 +5058,7 @@
                 </div>
                 <pb n="561"/>
                 <!--Head überarbeiten [CF]-->
-                <head><hi rendition="#b #c">Regentenspiegel:</hi></head>
+                <div><head><hi rendition="#b #c">Regentenspiegel:</hi></head>
                 <lb/>
                 <head><hi rendition="#b #c">Dem hochgeachten/ woledlen/ gestren<lb break="no"/>gen/ frommen/ vesten/
                         fürsichtigen und</hi></head>
@@ -5094,7 +5081,7 @@
                         Frauenmünster:</hi></head>
                 <lb/>
                 <head><hi rendition="#b #c">alß schuldgeneigtwilligstem Diener/<lb/> und
-                    Vettern.</hi></head>
+                    Vettern.</hi></head></div>
                 <lb/>
                 <pb n="562"/>
                 <div n="2">
@@ -5369,9 +5356,9 @@
                 </div>
                 <pb n="566"/>
                 <div n="2">
-                    <label>[265.iv.]</label>
-                    <lb/>
                     <head>
+                        <label>[265.iv.]</label>
+                        <lb/>
                         <hi rendition="#i #b #c">S. CHRYS. ANΔPIANT.<lb/> HOMIL. VI.</hi></head>
                     <lb/>
                     <p rendition="#et"><hi rendition="#aq">ΩΣΠEP NHOΣ TON KΥBEPNHTHN EAN AΠO<lb break="no"/>ΣΤΗΣΗΣ,
@@ -5992,7 +5979,7 @@
                         <l rendition="#et">und in demselben herrsch dem Herren Christus gleich.</l>
                     </lg>
                     <lb/>
-                    <head><hi rendition="#b #c">Beschließlicher Wunsch.</hi></head>
+                    <div><head><hi rendition="#b #c">Beschließlicher Wunsch.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
@@ -6017,7 +6004,7 @@
                             <lb/>
                             <l rendition="#et">auß disem Threnentahl in höchste Freudenstatt!</l>
                         </lg>
-                    </lg>
+                    </lg></div>
                 </div>
             </div>
             <lb/>
