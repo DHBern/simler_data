@@ -249,7 +249,9 @@
             <xsl:apply-templates select="@*" mode="enrich-pb"/>
             <xsl:if test="$manifest and $manifest!=''">
                 <xsl:variable name="canvas_id" select="$manifest//*:map[*:string[@key='label']=$page_index]/*:string[@key='@id']"/>
-                <xsl:attribute name="facs" select="$canvas_id"/>
+                <xsl:if test="$canvas_id and $canvas_id!=''">
+                    <xsl:attribute name="facs" select="$canvas_id"/>
+                </xsl:if>
             </xsl:if>
             <xsl:apply-templates select="node()" mode="enrich-pb"/>
         </xsl:copy>
