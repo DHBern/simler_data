@@ -21,6 +21,7 @@
     <xsl:output method="xml" indent="no" use-character-maps="escape-combining-chars"/>
     
     <xsl:mode on-no-match="shallow-copy" />
+    <xsl:mode name="enrich-pb" on-no-match="shallow-copy"/>
     <xsl:mode name="transform-renditions" on-no-match="shallow-copy"/>
     <xsl:mode name="remove-lines" on-no-match="shallow-copy"/>
     <xsl:mode name="move-lb" on-no-match="shallow-copy"/>
@@ -39,7 +40,24 @@
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates/>
         </xsl:variable>
-        
+
+        <xsl:variable name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+        <xsl:variable name="manifest_id" select="
+            if ($filename='A_1648') then '4017109'
+            else if ($filename='B_1653') then '30217994'
+            else if ($filename='C_1663') then '4049159'
+            else if ($filename='D_1688') then '4076747'
+            else ''"/>
+        <xsl:variable name="manifest" select="if ($manifest_id != '' and unparsed-text-available('https://www.e-rara.ch/i3f/v20/'||$manifest_id||'/manifest/?manifest.json')) 
+            then unparsed-text('https://www.e-rara.ch/i3f/v20/'||$manifest_id||'/manifest/?manifest.json') => json-to-xml() 
+            else ''"/>
+
+        <xsl:variable name="processed" as="node()*">
+            <xsl:apply-templates select="$processed" mode="enrich-pb">
+                <xsl:with-param name="manifest" select="$manifest"/>
+            </xsl:apply-templates>
+        </xsl:variable>
+
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="transform-renditions"/>
         </xsl:variable>
@@ -218,6 +236,23 @@
         <fw place="bottom" type="pageNum" xmlns="http://www.tei-c.org/ns/1.0">
             <xsl:apply-templates select="node()"/>
         </fw>
+    </xsl:template>
+    
+    <!-- [mode] enrich-pb 
+                enrich pb elements with canvas urls from iiif manifest
+       ======================================== --> 
+
+    <xsl:template match="*:pb" mode="enrich-pb">
+        <xsl:param name="manifest"/>
+        <xsl:variable name="page_index" select="@facs"/>
+        <xsl:copy>
+            <xsl:apply-templates select="@*" mode="enrich-pb"/>
+            <xsl:if test="$manifest and $manifest!=''">
+                <xsl:variable name="canvas_id" select="$manifest//*:map[*:string[@key='label']=$page_index]/*:string[@key='@id']"/>
+                <xsl:attribute name="facs" select="$canvas_id"/>
+            </xsl:if>
+            <xsl:apply-templates select="node()" mode="enrich-pb"/>
+        </xsl:copy>
     </xsl:template>
     
     <!-- [mode] transform-renditions 
