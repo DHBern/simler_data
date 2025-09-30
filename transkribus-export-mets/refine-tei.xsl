@@ -208,6 +208,18 @@
         </fw>
     </xsl:template>
     
+    <xsl:template match="*:Page_number|*:page_number">
+        <fw place="top" type="pageNum" xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:apply-templates select="node()"/>
+        </fw>
+    </xsl:template>
+    
+    <xsl:template match="*:Pagination">
+        <fw place="bottom" type="pageNum" xmlns="http://www.tei-c.org/ns/1.0">
+            <xsl:apply-templates select="node()"/>
+        </fw>
+    </xsl:template>
+    
     <!-- [mode] transform-renditions 
                 transform rendition tags to hi elements with according value in @rendition
        ======================================== -->  
