@@ -123,7 +123,7 @@
     <xsl:template match="*:blackening">
         <xsl:choose>
             <xsl:when test="@comment[normalize-space()]">
-                <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening) + 1"/>
+                <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening[@comment[normalize-space()]] | preceding::*:unclear[@reason[normalize-space()]]) + 1"/>
                 <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
                 <supplied xmlns="http://www.tei-c.org/ns/1.0">
                     <xsl:apply-templates select="node()"/>
@@ -143,7 +143,7 @@
     </xsl:template>
     
     <xsl:template match="*:comment">
-        <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening) + 1"/>
+        <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening[@comment[normalize-space()]] | preceding::*:unclear[@reason[normalize-space()]]) + 1"/>
         <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
         <xsl:if test="not(text()=' ')">
             <xsl:apply-templates select="node()"/>
@@ -156,6 +156,28 @@
         <xsl:if test="text()=' '">
             <xsl:apply-templates select="node()"/>
         </xsl:if>
+    </xsl:template>
+
+    <xsl:template match="*:unclear">
+        <xsl:choose>
+            <xsl:when test="@reason[normalize-space()]">
+                <xsl:variable name="anchorId" select="'a'||count(preceding::*:comment | preceding::*:blackening[@comment[normalize-space()]] | preceding::*:unclear[@reason[normalize-space()]]) + 1"/>
+                <anchor xmlns="http://www.tei-c.org/ns/1.0" xml:id="{$anchorId}"/>
+                <unclear xmlns="http://www.tei-c.org/ns/1.0">
+                    <xsl:apply-templates select="node()"/>
+                </unclear>
+                <note xmlns="http://www.tei-c.org/ns/1.0" type="annotation" targetEnd="{$anchorId}">
+                    <p>
+                        <xsl:value-of select="@reason => replace('\\u0020',' ') => replace('\\u0022','&quot;') => replace('\\u003b',';')"/>
+                    </p>
+                </note>
+            </xsl:when>
+            <xsl:otherwise>
+                <unclear xmlns="http://www.tei-c.org/ns/1.0">
+                    <xsl:apply-templates select="node()"/>
+                </unclear>
+            </xsl:otherwise>
+        </xsl:choose>
     </xsl:template>
     
     <xsl:template match="*:printing_error">
