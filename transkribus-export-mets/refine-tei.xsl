@@ -32,17 +32,18 @@
     <xsl:mode name="indent-whitespace" on-no-match="shallow-copy"/>
     
     <xsl:template match="/">
-
+        
+        <xsl:variable name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+        
         <xsl:call-template name="facsimile">
-            <xsl:with-param name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')||'_facs'"/>
+            <xsl:with-param name="filename" select="$filename||'_facs'"/>
             <xsl:with-param name="node" select="descendant::*:facsimile"/>
         </xsl:call-template>
         
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates/>
         </xsl:variable>
-
-        <xsl:variable name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+        
         <xsl:variable name="manifest_id" select="
             if ($filename='A_1648') then '4017109'
             else if ($filename='B_1653') then '30217994'
@@ -104,6 +105,14 @@
                 <xsl:copy-of select="$node/node()"/>
             </facsimile>
         </xsl:result-document>
+    </xsl:template>
+    
+    <xsl:template match="*:TEI">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+            <xsl:attribute name="xml:id" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+            <xsl:apply-templates select="node()"/>
+        </xsl:copy>
     </xsl:template>
     
     <xsl:template match="*:facsimile"/>
