@@ -6,6 +6,8 @@
     version="3.0">
     
     <xsl:character-map name="escape-combining-chars">
+        <!--Combining Acute Accent: -->
+        <xsl:output-character character="&#769;" string="&amp;#x301;"/>
         <!--Combining Tilde: -->
         <xsl:output-character character="&#771;" string="&amp;#x303;"/>
         <!--Combining Comma Above: -->
