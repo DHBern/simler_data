@@ -88,7 +88,7 @@
             			</attList>
             		</classSpec>
             	  <classSpec ident="att.calendarSystem" module="tei" mode="delete" type="atts"/>
-                <classSpec ident="att.breaking" module="tei" mode="delete" type="atts"/>
+                <!--<classSpec ident="att.breaking" module="tei" mode="delete" type="atts"/>-->
                 <!--<classSpec ident="att.canonical" module="tei" mode="change" type="atts">
                     <!-\- includes @ref -\->
                     <attList>
@@ -904,7 +904,7 @@
                            </valList>
                        </attDef>
                        <attDef ident="subtype" mode="delete"/>
-                       <attDef ident="n" mode="delete"/>
+                       <!--<attDef ident="n" mode="delete"/>-->
                        <attDef ident="facs" mode="delete"/>
                        <attDef ident="sameAs" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
@@ -965,7 +965,7 @@
                        <attDef ident="subtype" mode="delete"/>
                        <attDef ident="ed" mode="delete"/>
                        <attDef ident="spanTo" mode="delete"/>
-                       <attDef ident="break" mode="delete"/>
+                       <!--<attDef ident="break" mode="delete"/>-->
                        <attDef ident="xml:lang" mode="delete"/>
                        <attDef ident="rendition" mode="delete"/>
                        <attDef ident="facs" mode="delete"/>
@@ -1533,15 +1533,15 @@
                        <attDef ident="next" mode="delete"/>
                        <attDef ident="corresp" mode="delete"/>
                        <attDef ident="sameAs" mode="delete"/>
-                       <attDef ident="xml:id" mode="change" usage="opt">
+                       <!--<attDef ident="xml:id" mode="change" usage="opt">
                            <valList type="closed" mode="replace">
                                <valItem ident="dtabf"><desc>DTA-Basisformat; notwendig für die Verwendung des DTA-oXygen-Frameworks DTAoX</desc></valItem>
                            </valList>
-                       </attDef>
+                       </attDef>-->
                        <attDef ident="rend" mode="delete"/>
                        <attDef ident="cert" mode="delete"/>
                        <attDef ident="resp" mode="delete"/>
-                       <attDef ident="type" mode="delete"/>
+                       <!--<attDef ident="type" mode="delete"/>-->
                    </attList>
                </elementSpec>
                <elementSpec ident="text" module="textstructure" mode="change">
@@ -1641,6 +1641,7 @@
                            <valList type="closed" mode="replace">
                                <valItem ident="illegible"><desc>Manuskripte: unleserlich</desc></valItem>
                                <valItem ident="covered"><desc>Manuskripte: überschrieben</desc></valItem>
+                               <valItem ident="uncleanPrint"><desc>Drucke: unsauberer Tintenabdruck</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="hand" mode="delete"/>
