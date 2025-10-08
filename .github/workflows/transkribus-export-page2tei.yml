@@ -49,7 +49,7 @@ jobs:
     - run: ls -l
     - run: git clone --branch v2.0.2 --single-branch https://github.com/dariok/page2tei.git
     ## temporary fix for issue (empty sequence in $custom) in page2tei 2.0.2
-    - run: sed -i '637s|<xsl:variable name="custom" as="map(\*)">|<xsl:variable name="custom" as="map(\*)?">|' page2tei/page2tei-0.xsl
+    - run: sed -i '608s|<xsl:variable name="custom" as="map(\*)">|<xsl:variable name="custom" as="map(\*)?">|' page2tei/page2tei-0.xsl
     - run: tree
     - run: sudo apt-get update && sudo apt-get install -y libxml2-utils
     - id: tei_filename
