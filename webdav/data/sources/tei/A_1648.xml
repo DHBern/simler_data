@@ -475,103 +475,99 @@
             <lb/>
             <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017126"/>
             <milestone unit="page" ana="#facs_16_tr_1"/>
+            <milestone unit="section" rendition="#hr"/><lb/>
             
             <div type="poem">
             <head>
                <label>[vii.]</label>
-               <hi rendition="#aq"><num>I.</num></hi>
+               <hi rendition="#aq #c"><num>I.</num><lb/> Ad Authorem<lb/> <hi rendition="#i">doctißimarum Cantionum<lb/>
+               Sacrarum</hi></hi></head>
             <lb/>
-            <hi rendition="#aq">Ad Authorem</hi>
+            <head><hi rendition="#aq #c">Anagramma.<lb/> Ioannes VVilelmus Simlerus.</hi>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#i">doctißimarum Cantionum</hi></hi>
+               <hi rendition="#i">α&#x313;ναγραμματιζόμενος</hi><!-- NE: Der griechische Text muss noch geprüft werden -->
             <lb/>
-            <hi rendition="#aq"><hi rendition="#i">Sacrarum</hi></hi></head>
-            <lb/>
-            <head><hi rendition="#aq">Anagramma.
-            <lb/>
-            Ioannes <choice><corr/><sic>VV</sic></choice>ilelmus Simlerus.</hi>
-            <lb/>
-            <anchor xml:id="a21"/><hi rendition="#i">α&#x313;ναγραμματιζόμενος</hi><note type="annotation" targetEnd="a21"><p>Der griechische Text soll geprüft werden</p></note>
-            <lb/>
-            Illen' vir ſuave melos Muſis?</head>
+            <hi rendition="#aq">Illen' vir ſuave melos Muſis?</hi></head>
             <lb/>
             <lg type="poem">
-               <l><hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi></l>
+               <l><hi rendition="#aq"><hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi></hi></l>
             <lb/>
-            <l>Suave melos <hi rendition="#i">verbis, ſuavéque rebus, amat?</hi></l>
+            <l rendition="#et"><hi rendition="#aq">Suave melos <hi rendition="#i">verbis, ſuavéque rebus, amat?</hi></hi></l>
             <lb/>
-            <l><hi rendition="#i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi></l>
+            <l><hi rendition="#aq #i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi></l>
             <lb/>
-            <l><hi rendition="#i">Suave melos verbis, ſuavéque rebus habet.</hi></l>
+            <l rendition="#et"><hi rendition="#aq #i">Suave melos verbis, ſuavéque rebus habet.</hi></l>
             </lg>
             <lb/>
-            <signed><hi rendition="#k"><hi rendition="#g">IOH. WIRZIUS</hi></hi>
+            <signed><hi rendition="#aq #k #g">IOH. WIRZIUS</hi></signed>
             <lb/>
-            honoris <abbr>c.f.</abbr></hi></signed></div>
+            <signed><hi rendition="#aq">honoris <abbr>c.f.</abbr></hi></signed></div>
             <lb/>
             
-            <label>[A.i.]</label> <hi rendition="#aq"><num>II.</num>
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem">
+               <head>
+               <label>[A.i.]</label> <hi rendition="#aq"><num>II.</num><lb/> <hi rendition="#i">Summa totius Operis Carmine Hexa-<lb break="no"/>
+                  metro expreſſa: ubi ipſe Liber loquens<lb/> introducitur.</hi></hi></head>
             <lb/>
-            <hi rendition="#i">Summa totius Operis Carmine Hexa-</hi>
-            <lb break="no"/>
-            <hi rendition="#i">metro expreſſa: ubi ipſe Liber loquens</hi>
+            <l><hi rendition="#in">P</hi>Luribus lſaides cantor, rex, atque Propheta</l>
             <lb/>
-            <hi rendition="#i">introducitur.</hi>
+            <l>Quæ cecinit, paucis doceo, brevis eſſe laborans.</l>
             <lb/>
-            <hi rendition="#in">P</hi>Luribus lſaides cantor, rex, atque Propheta
+            <l>Quæ credenda tibi, quæ ſint facienda volenti</l>
             <lb/>
-            Quæ cecinit, paucis doceo, brevis eſſe laborans.
+            <l>Poſt obitum ſuperas cœli conſcendere ſedes.</l>
             <lb/>
-            Quæ credenda tibi, quæ ſint facienda volenti
+            <l>Exitus, atque ſalutiferi qui ingreſſus in orbem</l>
             <lb/>
-            Poſt obitum ſuperas cœli conſcendere ſedes.
+            <l>Chriſti, quæ ſors in terris, qu<anchor xml:id="a22"/>â<note type="annotation" targetEnd="a22"><p>Aus einem Vergleich mit dem göttingischen Exemplar ergibt sich, dass hier ein Zirkumflex steht</p></note>m ſplendida cœlo</l>
             <lb/>
-            Exitus, atque ſalutiferi qui ingreſſus in orbem
+            <fw place="bottom" type="sig"><hi rendition="#aq">)( <hi rendition="#i">5</hi></hi></fw>
             <lb/>
-            Chriſti, quæ ſors in terris, qu<anchor xml:id="a22"/>â<note type="annotation" targetEnd="a22"><p>Aus einem Vergleich mit dem göttingischen Exemplar ergibt sich, dass hier ein Zirkumflex steht</p></note>m ſplendida cœlo
-            <lb/>
-            <fw place="bottom" type="sig">)( 5</fw>
-            <lb/>
-            <fw place="bottom" type="catch"/>Glo-</hi>
-            <lb break="no"/>
+            <fw place="bottom" type="catch"/><hi rendition="#aq">Glo-</hi></fw>
             <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017127"/>
             <milestone unit="page" ana="#facs_17_tr_1"/>
-            <hi rendition="#aq">Gloria. Quî veniam factis expoſcere iniquis,
+            <l><hi rendition="#aq">Gloria. Quî veniam factis expoſcere iniquis,</l>
             <lb/>
-            Quîque remittenti poſſis perſolvere grates.
+            <l>Quîque remittenti poſſis perſolvere grates.</l>
             <lb/>
-            Quæ te ſurgentem deceant, quæ munera ſomni
+            <l>Quæ te ſurgentem deceant, quæ munera ſomni</l>
             <lb/>
-            Carpentem deceant, placidè qu<anchor xml:id="a23"/>ô<note type="annotation" targetEnd="a23"><p>Aus einem Vergleich mit dem göttingischen Exemplar ergibt sich, dass hier ein Zirkumflex steht.</p></note> nocte quieſcas.
+            <l>Carpentem deceant, placidè qu<anchor xml:id="a23"/>ô<note type="annotation" targetEnd="a23"><p>Aus einem Vergleich mit dem göttingischen Exemplar ergibt sich, dass hier ein Zirkumflex steht.</p></note> nocte quieſcas.</l>
             <lb/>
-            Conveniant ſacro thalami quæ fœdere junctis.
+            <l>Conveniant ſacro thalami quæ fœdere junctis.</l>
             <lb/>
-            Nobile, quâm ſit opus Summi pax alma, ſed, eheu!
+            <l>Nobile, quâm ſit opus Summi pax alma, ſed, eheu!</l>
             <lb/>
-            Rarius: at furat, &amp; toto Mars impius orbe
+            <l>Rarius: at furat, &amp; toto Mars impius orbe</l>
             <lb/>
-            Obruat innocuæ ſtudium pietatis habentes.
+            <l>Obruat innocuæ ſtudium pietatis habentes.</l>
             <lb/>
-            Veloci Menſes bis ſex numerantur in anno,
+            <l>Veloci Menſes bis ſex numerantur in anno,</l>
             <lb/>
-            Qui quatuor; Ver, ac Æſtas, Autumnus Hiémsque;
+            <l>Qui quatuor; Ver, ac Æſtas, Autumnus Hiémsque;</l>
             <lb/>
-            Tempora: queîs hominum pecudúmq; ſit actio quænam,
+            <l>Tempora: queîs hominum pecudúmq; ſit actio quænam,</l>
             <lb/>
-            Quæ veniant fruges, ſurgant quæ germina terræ.
+            <l>Quæ veniant fruges, ſurgant quæ germina terræ.</l>
             <lb/>
-            Patres, &amp; natos reliquósque domeſtica cura
+            <l>Patres, &amp; natos reliquósque domeſtica cura</l>
             <lb/>
-            Quæ tangat, cuncta ut prudenter &amp; ordine fiant:
+            <l>Quæ tangat, cuncta ut prudenter &amp; ordine fiant:</l>
             <lb/>
-            Hæc brevibus moneo, monſtro: ac Epigrammata ſcribo.
+            <l>Hæc brevibus moneo, monſtro: ac Epigrammata ſcribo.</l>
             <lb/>
-            Ergô quid invidiæ morſus, quid vulnera linguæ
+            <l>Ergô quid invidiæ morſus, quid vulnera linguæ</l>
             <lb/>
-            Curem? Nonniſi, quæ proſint hîc ſcripta relinquo.
+            <l>Curem? Nonniſi, quæ proſint hîc ſcripta relinquo.</l>
             <lb/>
-            <hi rendition="#k">JOH. CASPARUS SUIZERUS</hi> <abbr>f.</abbr></hi>
+            <signed><hi rendition="#k">JOH. CASPARUS SUIZERUS</hi> <abbr>f.</abbr></hi></signed>
             <lb/>
+            </div>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
             <label>[xvii.]</label> <hi rendition="#aq"><num>III.</num>
             <lb/>
             In laudem Autoris, <abbr>&amp;c.</abbr>
