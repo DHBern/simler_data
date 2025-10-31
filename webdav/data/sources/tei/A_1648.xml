@@ -415,7 +415,7 @@
             <milestone unit="section" rendition="#hr"/><lb/>
             
             <div><!-- NE: Briefauszüge als Zitate kodieren? -->
-            <label>[iv.]</label> <hi rendition="#aq"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Lite-
+            <head><label>[iv.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Lite-
             <lb break="no"/>
             ratißimi Viri,</hi>
             <lb/>
@@ -423,9 +423,9 @@
             <lb/>
             Ducentum viri Bernenſis, bis præ-
             <lb break="no"/>
-            fecti, Poëtæ coronati.
+            fecti, Poëtæ coronati.</hi></head>
             <lb/>
-            <hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn.
+            <p><hi rendition="#aq"></hi><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn.
             <lb/>
             Veiraſſius varia tua Scripta Poëtica, quæ
             <lb/>
@@ -441,19 +441,19 @@
             <lb break="no"/>
             ctos, ſed in Ethicis minús verſatos, qui nonnun-
             <lb break="no"/>
-            quam ridendos ſe præbebant. Perge, quæſo, <abbr>&amp;c.</abbr></hi></div>
+            quam ridendos ſe præbebant. Perge, quæſo, <abbr>&amp;c.</abbr></hi></p></div>
             <lb/>
                
             <div>
-            <label>[v.]</label> <hi rendition="#aq"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
+            <head><label>[v.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MULLERI,</hi>
             <lb/>
             Eccleſiæ Talvillanæ ad lacum Tig. Paſtoris
             <lb/>
-            vigilantiſſimi; Poëtæ acutiſſimi.
+            vigilantiſſimi; Poëtæ acutiſſimi.</hi></head>
             <lb/>
-            <hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Odarum
+            <p><hi rendition="#aq"></hi><hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Odarum
             <lb/>
             epitomas lectioni meæ, non dico cenſuræ, concrederes:
             <lb/>
@@ -469,7 +469,7 @@
             <lb/>
             textu contuli) ſenſum eorum quaſi exhauſiſti, <abbr>&amp;c.</abbr> 22. lan.</hi></hi>
             <lb/>
-            1648.</div>
+            1648.</p></div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">I. Ad</hi></fw>
             <lb/>
@@ -604,7 +604,8 @@
             
             <milestone unit="section" rendition="#hr"/><lb/>
             
-            <label>[xviii.]</label> <hi rendition="#aq"><num>IV.</num>
+            <div type="poem">
+               <head><label>[xviii.]</label> <hi rendition="#aq #c"><num>IV.</num>
             <lb/>
             <hi rendition="#i">Ad Reverendum Doctißimúmq<abbr>ʒ</abbr></hi>
             <lb/>
@@ -612,38 +613,39 @@
             <lb/>
             D. GUILHELMUM SIMLERUM,
             <lb/>
-            Libri Adornatorem.
+            Libri Adornatorem.</hi></head>
             <lb/>
-            <hi rendition="#in">N</hi>îl faciunt nugæ; nec inania ſcripta Sophorum
+            <lg type="poem">
+            <l><hi rendition="#aq"><hi rendition="#in">N</hi>îl faciunt nugæ; nec inania ſcripta Sophorum</hi></l>
             <lb/>
-            Exhilarare hominum pectora mœſta queunt:
+            <l rendition="#et"><hi rendition="#aq">Exhilarare hominum pectora mœſta queunt:</hi></l>
             <lb/>
-            SIMLERI ast opus hoc, &amp; ſancta poëmata quemvis
+            <l><hi rendition="#aq">SIMLERIast opus hoc, &amp; ſancta poëmata quemvis</hi></l>
             <lb/>
-            Exhilarant mirâ dexteritatis ope.
+            <l rendition="#et"><hi rendition="#aq">Exhilarant mirâ dexteritatis ope.</hi></l>
             <lb/>
-            Exhilarant Muliebre Genus; Genus atque Virile;
+            <l><hi rendition="#aq">Exhilarant Muliebre Genus; Genus atque Virile;</hi></l>
             <lb/>
-            Exhilarant Juvenes; Erhilarântque Senes.
+            <l rendition="#et"><hi rendition="#aq">Exhilarant Juvenes; Erhilarântque Senes.</hi></l>
             <lb/>
-            Hinc opus hoc meritò (rumpantur <anchor xml:id="a24"/>utilia<note type="annotation" targetEnd="a24"><p>Es ist noch zu prüfen, ob hier "ut Ilia" oder "utilia" steht.</p></note> Momo)
+            <l><hi rendition="#aq">Hinc opus hoc meritò (rumpantur utilia<!-- GP: Es ist noch zu prüfen, ob hier "ut Ilia" oder "utilia" steht. --> Momo)</hi></l>
             <lb/>
-            Terra Propinqua cupit; Terra Remota cupit.
+            <l rendition="#et"><hi rendition="#aq">Terra Propinqua cupit; Terra Remota cupit.</hi></l></lg>
             <lb/>
-            <hi rendition="#i">Obſervantiæ &amp; neceßitudinis ergò appoſuit</hi>
+            <signed><hi rendition="#aq #i #right">Obſervantiæ &amp; neceßitudinis ergò appoſuit</hi></signed>
             <lb/>
-            <hi rendition="#i">Affinis addictißimus</hi>
+            <signed><hi rendition="#aq #i #right">Affinis addictißimus</hi></signed>
             <lb/>
-            <hi rendition="#k">JOHANNES BLASSIUS,</hi> Tigurinus,
+            <signed><hi rendition="#aq #right"><hi rendition="#k">JOHANNES BLASSIUS,</hi> Tigurinus,
             <lb/>
-            Vitoduranorum Diaconus.
+            Vitoduranorum Diaconus.</hi></signed></div>
             <lb/>
             <num><fw place="bottom" type="catch"/>V.</num></hi> Zu&#x366;
             <lb/>
             <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017129"/>
             <milestone unit="page" ana="#facs_19_tr_1"/>
             
-            <head><label>[xix.]</label> <hi rendition="#aq"><num>V.</num></hi></head>
+            <div type="poem"><head><label>[xix.]</label> <hi rendition="#c"><hi rendition="#aq"><num>V.</num></hi>
             <lb/>
             Zu&#x366; ehren und lobwürdigem ru&#x366;hm
             <lb/>
@@ -657,50 +659,51 @@
             <lb/>
             Getichte und Geſa&#x364;nge.
             <lb/>
-            <hi rendition="#aq"><hi rendition="#g">SONNET.</hi></hi>
+            <hi rendition="#aq #g">SONNET.</hi></hi></head>
             <lb/>
-            <hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h vnd fleiß nicht
+            <lg type="poem">
+            <l><hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h vnd fleiß nicht
             <lb/>
-            ſparet
+            ſparet</l>
             <lb/>
-            An zarten Pfla&#x364;ntzleinen/ nimt weg was vnnütz iſt/
+            <l>An zarten Pfla&#x364;ntzleinen/ nimt weg was vnnütz iſt/</l>
             <lb/>
-            Was gu&#x366;t/ er auferze<anchor xml:id="a25"/>u<note type="annotation" targetEnd="a25"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den beiden Vergleichsexemplaren ist es nicht zu sehen.</p></note>cht/ daß ihnen nichts gebriſt:
+            <l>Was gu&#x366;t/ er auferze<anchor xml:id="a25"/>u<note type="annotation" targetEnd="a25"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den beiden Vergleichsexemplaren ist es nicht zu sehen.</p></note>cht/ daß ihnen nichts gebriſt:</l>
             <lb/>
-            An Zierd/ an Fruchtbarkeit ein ſolches man erfahret.
+            <l>An Zierd/ an Fruchtbarkeit ein ſolches man erfahret.</l>
             <lb/>
-            Vilmehr lobwürdig iſt der wachtbarlich bewahret
+            <l>Vilmehr lobwürdig iſt der wachtbarlich bewahret</l>
             <lb/>
-            Die Jugend ihm vertrawt; damit ſie bleib gefriſt
+           <l> Die Jugend ihm vertrawt; damit ſie bleib gefriſt</l>
             <lb/>
-            Vor dem was ſie verfu&#x364;hrt/ vnd werde aufgefriſcht
+            <l>Vor dem was ſie verfu&#x364;hrt/ vnd werde aufgefriſcht</l>
             <lb/>
-            Zur Tugend/ Gottesforcht; eh daß ſie wird verjahret.
+            <l>Zur Tugend/ Gottesforcht; eh daß ſie wird verjahret.</l>
             <lb/>
-            <hi rendition="#b">Simler</hi> deß Meiſter iſt mit ſeiner Tiſcheszucht/
+            <l><hi rendition="#b">Simler</hi> deß Meiſter iſt mit ſeiner Tiſcheszucht/</l>
             <lb/>
-            Die bey der jungen Welt wird/ würklich/ bringen frucht/
+            <l>Die bey der jungen Welt wird/ würklich/ bringen frucht/</l>
             <lb/>
-            Eyfrig er auch abmahnt vom vngeſunden Sauffen:
+            <l>Eyfrig er auch abmahnt vom vngeſunden Sauffen:</l>
             <lb/>
-            Erbawlich ſchaffet fre<anchor xml:id="a26"/>ü<note type="annotation" targetEnd="a26"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren ist es nicht zu sehen.</p></note>d mit allerley Geſang/
+            <l>Erbawlich ſchaffet fre<anchor xml:id="a26"/>ü<note type="annotation" targetEnd="a26"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren ist es nicht zu sehen.</p></note>d mit allerley Geſang/</l>
             <lb/>
-            An jenes ſtatt; vorauß mit Davids Harffenklang:
+            <l>An jenes ſtatt; vorauß mit Davids Harffenklang:</l>
             <lb/>
-            Sein Lob/ <hi rendition="#b">Zürich</hi> zu&#x366; Lob/ wird immerzu&#x366; ſich hauffen.
+            <l>Sein Lob/ <hi rendition="#b">Zürich</hi> zu&#x366; Lob/ wird immerzu&#x366; ſich hauffen.</l></lg>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">DANIEL RHAGORIUS,<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <hi rendition="#aq #g #k #right">DANIEL RHAGORIUS,</hi>
             <lb/>
             Loblicher Statt Bern geweſener Vogt
             <lb/>
-            zu&#x366; Gottſtatt und Thorberg.
+            zu&#x366; Gottſtatt und Thorberg.</div>
             <lb/>
-            <hi rendition="#aq"><num>VI.</num></hi> <anchor xml:id="a27"/>Ob<note type="annotation" targetEnd="a27"><p>"Ob" stimmt nicht mit "Uber" auf der Folgeseite überein</p></note>
+            <fw place="bottom" type="catch"><hi rendition="#aq">VI.</hi> <anchor xml:id="a27"/>Ob<note type="annotation" targetEnd="a27"><p>"Ob" stimmt nicht mit "Uber" auf der Folgeseite überein</p></note></fw>
             <lb/>
             <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017130"/>
             <milestone unit="page" ana="#facs_20_r_7"/>
             
-            <head><label>[xi.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
+            <div type="poem"><head><label>[xi.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
             <lb/>
             <hi rendition="#aq">U</hi>ber Herꝛn Dichters namen
             <lb/>
@@ -746,7 +749,7 @@
             <lb/>
             Geo&#x364;rg Müller Pfarꝛer zu&#x366; Tahlweil/
             <lb/>
-            am Zürichſee.
+            am Zürichſee.</div>
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>VII.</num></hi> Ob
             <lb/>
