@@ -15,6 +15,7 @@
             <bibl>
             <title type="main">A 1648</title>
             <idno type="Transkribus">3289764</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4017109/manifest</idno>
             </bibl>
          </sourceDesc>
       </fileDesc>
@@ -23,12 +24,12 @@
    </teiHeader>
    <text>
          <front><div>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017111"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017112"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017113"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017114"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017115"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017116"/>
+            <pb facs="4017111"/>
+            <pb facs="4017112"/>
+            <pb facs="4017113"/>
+            <pb facs="4017114"/>
+            <pb facs="4017115"/>
+            <pb facs="4017116"/>
             <div type="frontispiece"><figure/><!-- NE: Titel im Frontispiz als halftitle kodieren?-->
             <epigraph><cit><quote>
                <lg>
@@ -36,7 +37,7 @@
                   <l>Ergetzen ſich/ vnd Gottes Lob bis in den tod außbreiten.</l>
                </lg></quote></cit></epigraph><!-- NE: Kodierung des Mottos als Epigraph so richtig?--></div>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017118"/>
+            <pb facs="4017118"/>
             <milestone unit="page" ana="#facs_8_tr_1"/>
             <titlePage type="main">
             <label>[ii.]</label>
@@ -66,7 +67,7 @@
             <lb/>
             <docDate><hi rendition="#aq">M DC XXXXVIII.</hi></docDate></docImprint></titlePage>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017119"/>
+            <pb facs="4017119"/>
             <milestone unit="page" ana="#facs_9_tr_1"/>
             <milestone unit="section" rendition="#hr"/><lb/>
             
@@ -122,7 +123,7 @@
             <lb break="no"/>
             teren.</hi></p><div/>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017120"/>
+            <pb facs="4017120"/>
             <milestone unit="page" ana="#facs_10_tr_1"/>
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
@@ -182,7 +183,7 @@
             <lb/>
             <fw place="bottom" type="catch">genden</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017121"/>
+            <pb facs="4017121"/>
             <milestone unit="page" ana="#facs_11_tr_1"/>
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
@@ -239,7 +240,7 @@
             ſen/ außerleßnen redensarten und poetiſchen Er-
             <lb break="no"/>
             <fw place="bottom" type="catch">fin-</fw>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017122"/>
+            <pb facs="4017122"/>
             <milestone unit="page" ana="#facs_12_tr_1"/>
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
@@ -298,7 +299,7 @@
             <fw place="bottom" type="sig">)( iij</fw>
             <lb/>
             <fw place="bottom" type="catch">wal-</fw>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017123"/>
+            <pb facs="4017123"/>
             <milestone unit="page" ana="#facs_13_tr_1"/>
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
@@ -344,7 +345,7 @@
             <lb/>
             <fw place="bottom" type="catch">An</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017124"/>
+            <pb facs="4017124"/>
             <milestone unit="page" ana="#facs_14_tr_1"/>
             <milestone unit="section" rendition="#hr"/><lb/>
             
@@ -410,7 +411,7 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">Ex</hi></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017125"/>
+            <pb facs="4017125"/>
             <milestone unit="page" ana="#facs_15_tr_1"/>
             <milestone unit="section" rendition="#hr"/><lb/>
             
@@ -473,7 +474,7 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">I. Ad</hi></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017126"/>
+            <pb facs="4017126"/>
             <milestone unit="page" ana="#facs_16_tr_1"/>
             <milestone unit="section" rendition="#hr"/><lb/>
             
@@ -527,7 +528,7 @@
             <fw place="bottom" type="sig"><hi rendition="#aq">)( <hi rendition="#i">5</hi></hi></fw>
             <lb/>
             <fw place="bottom" type="catch"/><hi rendition="#aq">Glo-</hi></fw>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017127"/>
+            <pb facs="4017127"/>
             <milestone unit="page" ana="#facs_17_tr_1"/>
             <l><hi rendition="#aq">Gloria. Quî veniam factis expoſcere iniquis,</hi></l>
             <lb/>
@@ -585,7 +586,7 @@
                <l><hi rendition="#aq #i">Omne proin punctum nemo tuliſſe neget.</hi></l></lg>
             <lb/>
             <num><fw place="bottom" type="catch"/>2.</num> <hi rendition="#i">Uti-</hi></hi>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017128"/>
+            <pb facs="4017128"/>
             <milestone unit="page" ana="#facs_18_tr_1"/>
             <head><hi rendition="#aq"><num>2.</num></head>
             <lb/>
@@ -642,7 +643,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>V.</num></hi> Zu&#x366;
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017129"/>
+            <pb facs="4017129"/>
             <milestone unit="page" ana="#facs_19_tr_1"/>
             
             <div type="poem"><head><label>[xix.]</label> <hi rendition="#c"><hi rendition="#aq"><num>V.</num></hi>
@@ -700,7 +701,7 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">VI.</hi> <anchor xml:id="a27"/>Ob<note type="annotation" targetEnd="a27"><p>"Ob" stimmt nicht mit "Uber" auf der Folgeseite überein</p></note></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017130"/>
+            <pb facs="4017130"/>
             <milestone unit="page" ana="#facs_20_r_7"/>
             
             <div type="poem"><head><label>[xi.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
@@ -753,7 +754,7 @@
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>VII.</num></hi> Ob
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017131"/>
+            <pb facs="4017131"/>
             <milestone unit="page" ana="#facs_21_tr_1"/>
             
             <head><label>[xiv.]</label> <hi rendition="#aq"><num>VII.</num></hi></head>
@@ -814,7 +815,7 @@
             <lb/>
             <fw place="bottom" type="catch">Solt</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017132"/>
+            <pb facs="4017132"/>
             <milestone unit="page" ana="#facs_22_tr_1"/>
             Solt ich der la&#x364;nge nach all Teutſche Tichter nennen/
             <lb/>
@@ -878,7 +879,7 @@
             <lb/>
             <fw place="bottom" type="catch">Er</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017133"/>
+            <pb facs="4017133"/>
             <milestone unit="page" ana="#facs_23_tr_1"/>
             Er ſpannet ſeinen fleiß dem <hi rendition="#b">groſſen Gott</hi> zu&#x366; ehren/
             <lb/>
@@ -937,7 +938,7 @@
             
             <!-- Teil I -->
             
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017134"/>
+            <pb facs="4017134"/>
             <milestone unit="page" ana="#facs_24_tr_1"/>
             Vierverſe
             <lb/>
@@ -953,7 +954,7 @@
             <lb/>
             geſangsweiſen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017135" n="2"/>
+            <pb facs="4017135" n="2"/>
             <milestone unit="page" ana="#facs_25_tr_1"/>
             <fw place="top" type="pageNum">2</fw>
             <lb/>
@@ -981,7 +982,7 @@
             <lb/>
             Wie leichte ſpreü verfliegt wer Gottes wort verachtet.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017136" n="3"/>
+            <pb facs="4017136" n="3"/>
             <milestone unit="page" ana="#facs_26_tr_1"/>
             <fw place="top" type="pageNum">3</fw>
             <lb/>
@@ -1011,7 +1012,7 @@
             <lb/>
             <fw place="bottom" type="pageNum">A ij</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017137" n="4"/>
+            <pb facs="4017137" n="4"/>
             <milestone unit="page" ana="#facs_27_tr_1"/>
             <fw place="top" type="pageNum">4</fw>
             <lb/>
@@ -1080,7 +1081,7 @@
             <lb/>
             <fw place="bottom" type="catch">wünſcht</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017138" n="5"/>
+            <pb facs="4017138" n="5"/>
             <milestone unit="page" ana="#facs_28_tr_1"/>
             <fw place="top" type="pageNum">5</fw>
             <lb/>
@@ -1151,7 +1152,7 @@
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>XI.</num></hi> Der
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017139" n="6"/>
+            <pb facs="4017139" n="6"/>
             <milestone unit="page" ana="#facs_29_tr_1"/>
             <fw place="top" type="pageNum">6</fw>
             <lb/>
@@ -1223,7 +1224,7 @@
             <lb/>
             <fw place="bottom" type="catch">auch</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017140" n="7"/>
+            <pb facs="4017140" n="7"/>
             <milestone unit="page" ana="#facs_30_tr_1"/>
             <fw place="top" type="pageNum">7</fw>
             <lb/>
@@ -1297,7 +1298,7 @@
             <lb/>
             <fw place="bottom" type="catch">deſ-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017141" n="8"/>
+            <pb facs="4017141" n="8"/>
             <milestone unit="page" ana="#facs_31_tr_1"/>
             <fw place="top" type="pageNum">8</fw>
             <lb/>
@@ -1369,7 +1370,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXVIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017142" n="9"/>
+            <pb facs="4017142" n="9"/>
             <milestone unit="page" ana="#facs_32_tr_1"/>
             <fw place="top" type="pageNum">9</fw>
             <lb/>
@@ -1443,7 +1444,7 @@
             <lb/>
             <fw place="bottom" type="catch">ſein</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017143" n="10"/>
+            <pb facs="4017143" n="10"/>
             <milestone unit="page" ana="#facs_33_tr_1"/>
             <fw place="top" type="pageNum">10</fw>
             <lb/>
@@ -1515,7 +1516,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXXIX.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017144" n="11"/>
+            <pb facs="4017144" n="11"/>
             <milestone unit="page" ana="#facs_34_tr_1"/>
             <fw place="top" type="pageNum">11</fw>
             <lb/>
@@ -1564,7 +1565,7 @@
             <lb/>
             Pſalmen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017145" n="12"/>
+            <pb facs="4017145" n="12"/>
             <milestone unit="page" ana="#facs_35_tr_1"/>
             <fw place="top" type="pageNum">12</fw>
             <lb/>
@@ -1592,7 +1593,7 @@
             <lb/>
             zu&#x366; deſſen dienſt und preiß/ den ſie mit glauben ſ<anchor xml:id="a35"/><unclear>u&#x366;</unclear><note type="annotation" targetEnd="a35"><p>Auch verglichen mit dem Göttinger und Münchner Exemplar wäre hier ebenso ein kleines e möglich</p></note>cht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017146" n="13"/>
+            <pb facs="4017146" n="13"/>
             <milestone unit="page" ana="#facs_36_tr_1"/>
             <fw place="top" type="pageNum">13</fw>
             <lb/>
@@ -1620,7 +1621,7 @@
             <lb/>
             zu&#x366; deſſen dienſt und preiß/ den ſie mit glauben ſu&#x366;cht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017147" n="14"/>
+            <pb facs="4017147" n="14"/>
             <milestone unit="page" ana="#facs_37_tr_1"/>
             <fw place="top" type="pageNum">14</fw>
             <lb/>
@@ -1690,7 +1691,7 @@
             <lb/>
             <fw place="bottom" type="catch">laßt</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017148" n="15"/>
+            <pb facs="4017148" n="15"/>
             <milestone unit="page" ana="#facs_38_tr_1"/>
             <fw place="top" type="pageNum">15</fw>
             <lb/>
@@ -1761,7 +1762,7 @@
             <lb/>
             <fw place="bottom" type="catch"/>Der <head><hi rendition="#aq"><num>LIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017149" n="16"/>
+            <pb facs="4017149" n="16"/>
             <milestone unit="page" ana="#facs_39_tr_1"/>
             <fw place="top" type="pageNum">16</fw>
             <lb/>
@@ -1833,7 +1834,7 @@
             <lb/>
             Es tilg euch Gottes rach/ und tro&#x364;ſte ſein geſchlecht!
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017150" n="17"/>
+            <pb facs="4017150" n="17"/>
             <milestone unit="page" ana="#facs_40_tr_1"/>
             <fw place="top" type="pageNum">17</fw>
             <lb/>
@@ -1905,7 +1906,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017151" n="18"/>
+            <pb facs="4017151" n="18"/>
             <milestone unit="page" ana="#facs_41_tr_1"/>
             <fw place="top" type="pageNum">18</fw>
             <lb/>
@@ -1974,7 +1975,7 @@
             <lb/>
             <fw place="bottom" type="catch">O Gott/</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017152" n="19"/>
+            <pb facs="4017152" n="19"/>
             <milestone unit="page" ana="#facs_42_tr_1"/>
             <fw place="top" type="pageNum">19</fw>
             <lb/>
@@ -2021,7 +2022,7 @@
             <lb/>
             <fw place="bottom" type="pageNum">B ij</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017153" n="20"/>
+            <pb facs="4017153" n="20"/>
             <milestone unit="page" ana="#facs_43_tr_2"/>
             <fw place="top" type="pageNum">20</fw>
             <lb/>
@@ -2049,7 +2050,7 @@
             <lb/>
             hat beyder end bey mir vera&#x364;nderung gebracht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017154" n="21"/>
+            <pb facs="4017154" n="21"/>
             <milestone unit="page" ana="#facs_44_tr_3"/>
             <fw place="top" type="pageNum">21</fw>
             <lb/>
@@ -2081,7 +2082,7 @@
             <lb/>
             <fw place="bottom" type="catch">Jn-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017155" n="22"/>
+            <pb facs="4017155" n="22"/>
             <milestone unit="page" ana="#facs_45_tr_1"/>
             <fw place="top" type="pageNum">22</fw>
             <lb/>
@@ -2145,7 +2146,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXXVIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017156" n="23"/>
+            <pb facs="4017156" n="23"/>
             <milestone unit="page" ana="#facs_46_tr_1"/>
             <fw place="top" type="pageNum">2<anchor xml:id="a39"/>3<note type="annotation" targetEnd="a39"><p>Zahl hier nicht gut erkennbar. Im Göttinger Exemplar aber etwas besser zu erkennen.</p></note></fw>
             <lb/>
@@ -2210,7 +2211,7 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017157" n="24"/>
+            <pb facs="4017157" n="24"/>
             <milestone unit="page" ana="#facs_47_tr_1"/>
             <fw place="top" type="pageNum">24</fw>
             <lb/>
@@ -2275,7 +2276,7 @@
             <lb/>
             <fw place="bottom" type="catch">Zu&#x366;</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017158" n="25"/>
+            <pb facs="4017158" n="25"/>
             <milestone unit="page" ana="#facs_48_tr_1"/>
             <fw place="top" type="pageNum">25</fw>
             <lb/>
@@ -2311,7 +2312,7 @@
             <lb/>
             Pſalmen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017159" n="26"/>
+            <pb facs="4017159" n="26"/>
             <milestone unit="page" ana="#facs_49_tr_1"/>
             <fw place="top" type="pageNum">26</fw>
             <lb/>
@@ -2339,7 +2340,7 @@
             <lb/>
             lehr uns erkennen die/ und laß uns gnad empfinden.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017160" n="27"/>
+            <pb facs="4017160" n="27"/>
             <milestone unit="page" ana="#facs_50_tr_2"/>
             <fw place="top" type="pageNum">27</fw>
             <lb/>
@@ -2367,7 +2368,7 @@
             <lb/>
             lehr uns erkennen die/ und laß uns gnad empfinden.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017161" n="28"/>
+            <pb facs="4017161" n="28"/>
             <milestone unit="page" ana="#facs_51_tr_1"/>
             <fw place="top" type="pageNum">28</fw>
             <lb/>
@@ -2430,7 +2431,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017162" n="29"/>
+            <pb facs="4017162" n="29"/>
             <milestone unit="page" ana="#facs_52_tr_1"/>
             <fw place="top" type="pageNum">29</fw>
             <lb/>
@@ -2493,7 +2494,7 @@
             <lb/>
             <fw place="bottom" type="catch">foll</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017163" n="30"/>
+            <pb facs="4017163" n="30"/>
             <milestone unit="page" ana="#facs_53_tr_1"/>
             <fw place="top" type="pageNum">30</fw>
             <lb/>
@@ -2563,7 +2564,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>CV.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017164" n="31"/>
+            <pb facs="4017164" n="31"/>
             <milestone unit="page" ana="#facs_54_tr_1"/>
             <fw place="top" type="pageNum">31</fw>
             <lb/>
@@ -2599,7 +2600,7 @@
             <lb/>
             der Pſalmen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017165" n="32"/>
+            <pb facs="4017165" n="32"/>
             <milestone unit="page" ana="#facs_55_tr_1"/>
             <fw place="top" type="pageNum">32</fw>
             <lb/>
@@ -2627,7 +2628,7 @@
             <lb/>
             auß hunger-waſſers-noht/ auß irꝛ und banden gfu&#x364;hrt.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017166" n="33"/>
+            <pb facs="4017166" n="33"/>
             <milestone unit="page" ana="#facs_56_tr_1"/>
             <fw place="top" type="pageNum">33</fw>
             <lb/>
@@ -2659,7 +2660,7 @@
             <lb/>
             <fw place="bottom" type="catch">Jn-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017168" n="34"/>
+            <pb facs="4017168" n="34"/>
             <milestone unit="page" ana="#facs_57_tr_1"/>
             <fw place="top" type="pageNum">34</fw>
             <lb/>
@@ -2727,7 +2728,7 @@
             <lb/>
             <fw place="bottom" type="catch">von</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017169" n="35"/>
+            <pb facs="4017169" n="35"/>
             <milestone unit="page" ana="#facs_58_tr_1"/>
             <fw place="top" type="pageNum">35</fw>
             <lb/>
@@ -2799,7 +2800,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>CXVIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017170" n="36"/>
+            <pb facs="4017170" n="36"/>
             <milestone unit="page" ana="#facs_59_tr_1"/>
             <fw place="top" type="pageNum">36</fw>
             <lb/>
@@ -2865,7 +2866,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>CXXIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017171" n="37"/>
+            <pb facs="4017171" n="37"/>
             <milestone unit="page" ana="#facs_60_tr_1"/>
             <fw place="top" type="pageNum">37</fw>
             <lb/>
@@ -2935,7 +2936,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>CXXVIII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017172" n="38"/>
+            <pb facs="4017172" n="38"/>
             <milestone unit="page" ana="#facs_61_tr_1"/>
             <fw place="top" type="pageNum">38</fw>
             <lb/>
@@ -3003,7 +3004,7 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017173" n="39"/>
+            <pb facs="4017173" n="39"/>
             <milestone unit="page" ana="#facs_62_tr_1"/>
             <fw place="top" type="pageNum">39</fw>
             <lb/>
@@ -3070,7 +3071,7 @@
             <lb/>
             <fw place="bottom" type="catch">wann</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017174" n="40"/>
+            <pb facs="4017174" n="40"/>
             <milestone unit="page" ana="#facs_63_tr_1"/>
             <fw place="top" type="pageNum">40</fw>
             <lb/>
@@ -3135,7 +3136,7 @@
             <lb/>
             <fw place="bottom" type="catch">durch</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017175" n="41"/>
+            <pb facs="4017175" n="41"/>
             <milestone unit="page" ana="#facs_64_tr_1"/>
             <fw place="top" type="pageNum">41</fw>
             <lb/>
@@ -3205,7 +3206,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>CXLIX.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017176" n="42"/>
+            <pb facs="4017176" n="42"/>
             <milestone unit="page" ana="#facs_65_tr_1"/>
             <fw place="top" type="pageNum">42</fw>
             <lb/>
@@ -3242,7 +3243,7 @@
             
             <!-- Teil II -->
             
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017177"/>
+            <pb facs="4017177"/>
             <milestone unit="page" ana="#facs_66_tr_1"/>
             Folgen
             <lb/>
@@ -3254,7 +3255,7 @@
             <lb/>
             Geſa&#x364;nge.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017178" n="44"/>
+            <pb facs="4017178" n="44"/>
             <milestone unit="page" ana="#facs_67_tr_1"/>
             <fw place="top" type="pageNum">44</fw>
             <lb/>
@@ -3282,7 +3283,7 @@
             <lb/>
             die nimmermehr verderben.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017179" n="45"/>
+            <pb facs="4017179" n="45"/>
             <milestone unit="page" ana="#facs_68_tr_1"/>
             <fw place="top" type="pageNum">45</fw>
             <lb/>
@@ -3312,7 +3313,7 @@
             <lb/>
             <fw place="bottom" type="catch">Ge-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017180" n="46"/>
+            <pb facs="4017180" n="46"/>
             <milestone unit="page" ana="#facs_69_tr_1"/>
             <fw place="top" type="pageNum">46</fw>
             <lb/>
@@ -3375,7 +3376,7 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017181" n="47"/>
+            <pb facs="4017181" n="47"/>
             <milestone unit="page" ana="#facs_70_tr_1"/>
             <fw place="top" type="pageNum">47</fw>
             <lb/>
@@ -3442,7 +3443,7 @@
             <lb/>
             <fw place="bottom" type="catch"><num>7.</num> 5. Die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017182" n="48"/>
+            <pb facs="4017182" n="48"/>
             <milestone unit="page" ana="#facs_71_tr_1"/>
             <fw place="top" type="pageNum">48</fw>
             <lb/>
@@ -3510,7 +3511,7 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>II.</num></hi> Von</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017183" n="49"/>
+            <pb facs="4017183" n="49"/>
             <milestone unit="page" ana="#facs_72_tr_1"/>
             <fw place="top" type="pageNum">49</fw>
             <lb/>
@@ -3577,7 +3578,7 @@
             <lb/>
             <fw place="bottom" type="catch"><num>14</num> Der</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017184" n="50"/>
+            <pb facs="4017184" n="50"/>
             <milestone unit="page" ana="#facs_73_tr_1"/>
             <fw place="top" type="pageNum">50</fw>
             <lb/>
@@ -3645,7 +3646,7 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a46"/><num>18.</num> Jch<note type="annotation" targetEnd="a46"><p>Kustode stimmt nicht gänzlich mit der anschliessenden Seite überein.</p></note></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017185" n="51"/>
+            <pb facs="4017185" n="51"/>
             <milestone unit="page" ana="#facs_74_tr_1"/>
             <fw place="top" type="pageNum">51</fw>
             <lb/>
@@ -3718,7 +3719,7 @@
             <lb/>
             <fw place="bottom" type="catch"><num>22</num> Dann</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017186" n="52"/>
+            <pb facs="4017186" n="52"/>
             <milestone unit="page" ana="#facs_75_tr_1"/>
             <fw place="top" type="pageNum">52</fw>
             <lb/>
@@ -3789,7 +3790,7 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>IV.</num></hi> Von</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017187" n="53"/>
+            <pb facs="4017187" n="53"/>
             <milestone unit="page" ana="#facs_76_tr_1"/>
             <fw place="top" type="pageNum">53</fw>
             <lb/>
@@ -3861,7 +3862,7 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a50"/>mit<note type="annotation" targetEnd="a50"><p>Die Kustode stimmt mit dem ersten Wort auf der darauffolgenden Seite ("im") nicht.</p></note></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017188" n="54"/>
+            <pb facs="4017188" n="54"/>
             <milestone unit="page" ana="#facs_77_tr_1"/>
             <fw place="top" type="pageNum">54</fw>
             <lb/>
@@ -3932,7 +3933,7 @@
             <lb/>
             <fw place="bottom" type="catch">in</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017189" n="55"/>
+            <pb facs="4017189" n="55"/>
             <milestone unit="page" ana="#facs_78_tr_1"/>
             <fw place="top" type="pageNum">55</fw>
             <lb/>
@@ -4005,7 +4006,7 @@
             ſtürtzt ſich in ewigs leyden!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017190" n="56"/>
+            <pb facs="4017190" n="56"/>
             <milestone unit="page" ana="#facs_79_tr_1"/>
             <fw place="top" type="pageNum">56</fw>
             <lb/>
@@ -4033,7 +4034,7 @@
             <lb/>
             darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017191" n="57"/>
+            <pb facs="4017191" n="57"/>
             <milestone unit="page" ana="#facs_80_tr_1"/>
             <fw place="top" type="pageNum">57</fw>
             <lb/>
@@ -4065,7 +4066,7 @@
             <lb/>
             <fw place="bottom" type="catch">Ge-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017192" n="58"/>
+            <pb facs="4017192" n="58"/>
             <milestone unit="page" ana="#facs_81_tr_1"/>
             <fw place="top" type="pageNum">58</fw>
             <lb/>
@@ -4136,7 +4137,7 @@
             <lb/>
             des menſchen auch darneben:
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017193" n="59"/>
+            <pb facs="4017193" n="59"/>
             <milestone unit="page" ana="#facs_82_tr_1"/>
             <fw place="top" type="pageNum">59</fw>
             <lb/>
@@ -4206,7 +4207,7 @@
             nim&#x342; mich zu&#x366; deinen ha&#x364;nden!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017194" n="60"/>
+            <pb facs="4017194" n="60"/>
             <milestone unit="page" ana="#facs_83_tr_1"/>
             <fw place="top" type="pageNum">60</fw>
             <lb/>
@@ -4234,7 +4235,7 @@
             <lb/>
             trib von deinem reyche?
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017195" n="61"/>
+            <pb facs="4017195" n="61"/>
             <milestone unit="page" ana="#facs_84_tr_1"/>
             <fw place="top" type="pageNum">61</fw>
             <lb/>
@@ -4264,7 +4265,7 @@
             <lb/>
             <fw place="bottom" type="catch">Lie-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017196" n="62"/>
+            <pb facs="4017196" n="62"/>
             <milestone unit="page" ana="#facs_85_tr_1"/>
             <fw place="top" type="pageNum">62</fw>
             <lb/>
@@ -4330,7 +4331,7 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a55"/><num>4</num> Was<note type="annotation" targetEnd="a55"><p>Strenggenommen weicht diese Kustode von der folgenden Seite ab (der Ordinalpunkt fehlt)</p></note></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017197" n="63"/>
+            <pb facs="4017197" n="63"/>
             <milestone unit="page" ana="#facs_86_tr_1"/>
             <fw place="top" type="pageNum">63</fw>
             <lb/>
@@ -4382,7 +4383,7 @@
             mir zum heil mo&#x364;g u&#x364;ben!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017198" n="64"/>
+            <pb facs="4017198" n="64"/>
             <milestone unit="page" ana="#facs_87_tr_1"/>
             <fw place="top" type="pageNum">64</fw>
             <lb/>
@@ -4414,7 +4415,7 @@
             <lb break="no"/>
             hu&#x364;t du mich vor wan<anchor xml:id="a56"/><unclear>k</unclear><note type="annotation" targetEnd="a56"><p>Das k ist schwer erkennbar. Auf S. 89 steht deutlich "wanken". Die Vergleichsexemplare helfen nicht.</p></note>en.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017199" n="65"/>
+            <pb facs="4017199" n="65"/>
             <milestone unit="page" ana="#facs_88_tr_1"/>
             <fw place="top" type="pageNum">65</fw>
             <lb/>
@@ -4450,7 +4451,7 @@
             <fw place="bottom" type="catch">Beicht-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017200" n="66"/>
+            <pb facs="4017200" n="66"/>
             <milestone unit="page" ana="#facs_89_tr_1"/>
             <fw place="top" type="pageNum">66</fw>
             <lb/>
@@ -4517,7 +4518,7 @@
             <lb/>
             <fw place="bottom" type="catch"><num>5</num> Ge-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017201" n="67"/>
+            <pb facs="4017201" n="67"/>
             <milestone unit="page" ana="#facs_90_tr_1"/>
             <fw place="top" type="pageNum">67</fw>
             <lb/>
@@ -4588,7 +4589,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017202" n="68"/>
+            <pb facs="4017202" n="68"/>
             <milestone unit="page" ana="#facs_91_tr_1"/>
             <fw place="top" type="pageNum">68</fw>
             <lb/>
@@ -4657,7 +4658,7 @@
             <lb/>
             <fw place="bottom" type="catch">drum</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017203" n="69"/>
+            <pb facs="4017203" n="69"/>
             <milestone unit="page" ana="#facs_92_tr_1"/>
             <fw place="top" type="pageNum">69</fw>
             <lb/>
@@ -4700,7 +4701,7 @@
             <fw place="bottom" type="pageNum">E iij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017204" n="70"/>
+            <pb facs="4017204" n="70"/>
             <milestone unit="page" ana="#facs_93_tr_2"/>
             <fw place="top" type="pageNum">70</fw>
             <lb/>
@@ -4728,7 +4729,7 @@
             <lb/>
             vor und mit der nachtigallen ſol mein lobgedicht erſchallen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017205" n="71"/>
+            <pb facs="4017205" n="71"/>
             <milestone unit="page" ana="#facs_94_tr_1"/>
             <fw place="top" type="pageNum">71</fw>
             <lb/>
@@ -4758,7 +4759,7 @@
             <lb/>
             <fw place="bottom" type="catch">Lob-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017206" n="72"/>
+            <pb facs="4017206" n="72"/>
             <milestone unit="page" ana="#facs_95_tr_1"/>
             <fw place="top" type="pageNum">72</fw>
             <lb/>
@@ -4826,7 +4827,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>4</num> Mein
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017207" n="73"/>
+            <pb facs="4017207" n="73"/>
             <milestone unit="page" ana="#facs_96_tr_1"/>
             <fw place="top" type="pageNum">73</fw>
             <lb/>
@@ -4898,7 +4899,7 @@
             <lb/>
             <fw place="bottom" type="catch">deine</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017208" n="74"/>
+            <pb facs="4017208" n="74"/>
             <milestone unit="page" ana="#facs_97_tr_1"/>
             <fw place="top" type="pageNum">74</fw>
             <lb/>
@@ -4970,7 +4971,7 @@
             <lb/>
             <fw place="bottom" type="catch">darum</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017209" n="75"/>
+            <pb facs="4017209" n="75"/>
             <milestone unit="page" ana="#facs_98_tr_1"/>
             <fw place="top" type="pageNum">75</fw>
             <lb/>
@@ -5036,7 +5037,7 @@
             Herꝛ/ durch ſie mich wo&#x364;lſt bewahren!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017210" n="76"/>
+            <pb facs="4017210" n="76"/>
             <milestone unit="page" ana="#facs_99_tr_1"/>
             <fw place="top" type="pageNum">76</fw>
             <lb/>
@@ -5064,7 +5065,7 @@
             <lb/>
             damit ſie des tages ver<supplied>k</supplied>ünderin ſey.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017211" n="77"/>
+            <pb facs="4017211" n="77"/>
             <milestone unit="page" ana="#facs_100_tr_1"/>
             <fw place="top" type="pageNum">77</fw>
             <lb/>
@@ -5094,7 +5095,7 @@
             <lb/>
             <fw place="bottom" type="catch">Au-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017212" n="78"/>
+            <pb facs="4017212" n="78"/>
             <milestone unit="page" ana="#facs_101_tr_1"/>
             <fw place="top" type="pageNum">78</fw>
             <lb/>
@@ -5160,7 +5161,7 @@
             <lb/>
             <fw place="bottom" type="catch">nach</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017213" n="79"/>
+            <pb facs="4017213" n="79"/>
             <milestone unit="page" ana="#facs_102_tr_1"/>
             <fw place="top" type="pageNum">79</fw>
             <lb/>
@@ -5203,7 +5204,7 @@
             <fw place="bottom" type="catch">Him&#x303;-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017214" n="80"/>
+            <pb facs="4017214" n="80"/>
             <milestone unit="page" ana="#facs_103_tr_1"/>
             <fw place="top" type="pageNum">80</fw>
             <lb/>
@@ -5251,7 +5252,7 @@
             <lb/>
             verſtehen/ keine gewalt der feinden zerſto&#x364;rt.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017215" n="81"/>
+            <pb facs="4017215" n="81"/>
             <milestone unit="page" ana="#facs_104_tr_1"/>
             <fw place="top" type="pageNum">81</fw>
             <lb/>
@@ -5302,7 +5303,7 @@
             <fw place="bottom" type="pageNum"><supplied>F</supplied></fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017216" n="82"/>
+            <pb facs="4017216" n="82"/>
             <milestone unit="page" ana="#facs_105_tr_1"/>
             <fw place="top" type="pageNum">82</fw>
             <lb/>
@@ -5366,7 +5367,7 @@
             <lb/>
             <fw place="bottom" type="catch">dann</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017217" n="83"/>
+            <pb facs="4017217" n="83"/>
             <milestone unit="page" ana="#facs_106_tr_1"/>
             <fw place="top" type="pageNum">83</fw>
             <lb/>
@@ -5402,7 +5403,7 @@
             <fw place="bottom" type="pageNum">F ij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017218" n="84"/>
+            <pb facs="4017218" n="84"/>
             <milestone unit="page" ana="#facs_107_tr_1"/>
             <fw place="top" type="pageNum">84</fw>
             <lb/>
@@ -5430,7 +5431,7 @@
             <lb/>
             erfreweſt hertz und mu&#x366;ht/ erfreweſt hertz und mu&#x366;ht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017219" n="85"/>
+            <pb facs="4017219" n="85"/>
             <milestone unit="page" ana="#facs_108_tr_1"/>
             <fw place="top" type="pageNum">85</fw>
             <lb/>
@@ -5461,7 +5462,7 @@
             <fw place="bottom" type="pageNum">F iij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017220" n="86"/>
+            <pb facs="4017220" n="86"/>
             <milestone unit="page" ana="#facs_109_tr_1"/>
             <fw place="top" type="pageNum">86</fw>
             <lb/>
@@ -5532,7 +5533,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>7</num> O Gott/
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017221" n="87"/>
+            <pb facs="4017221" n="87"/>
             <milestone unit="page" ana="#facs_110_tr_1"/>
             <fw place="top" type="pageNum">87</fw>
             <lb/>
@@ -5595,7 +5596,7 @@
             <lb/>
             <fw place="bottom" type="catch">Nun</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017222" n="88"/>
+            <pb facs="4017222" n="88"/>
             <milestone unit="page" ana="#facs_111_tr_2"/>
             <fw place="top" type="pageNum">88</fw>
             <lb/>
@@ -5627,7 +5628,7 @@
             <lb/>
             daß hierdurch wir leben in gemein.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017223" n="89"/>
+            <pb facs="4017223" n="89"/>
             <milestone unit="page" ana="#facs_112_tr_2"/>
             <fw place="top" type="pageNum">89</fw>
             <lb/>
@@ -5660,7 +5661,7 @@
             daß hierdurch wir leben in gemein.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017224" n="90"/>
+            <pb facs="4017224" n="90"/>
             <milestone unit="page" ana="#facs_113_tr_1"/>
             <fw place="top" type="pageNum">90</fw>
             <lb/>
@@ -5732,7 +5733,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017225" n="91"/>
+            <pb facs="4017225" n="91"/>
             <milestone unit="page" ana="#facs_114_tr_1"/>
             <fw place="top" type="pageNum">91</fw>
             <lb/>
@@ -5788,7 +5789,7 @@
             <fw place="bottom" type="catch">Wie</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017226" n="92"/>
+            <pb facs="4017226" n="92"/>
             <milestone unit="page" ana="#facs_115_tr_1"/>
             <fw place="top" type="pageNum">92</fw>
             <lb/>
@@ -5824,7 +5825,7 @@
             <lb/>
             reich an ehren/ ma&#x364;chtig iſt mich zu&#x366; bekehren.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017227" n="93"/>
+            <pb facs="4017227" n="93"/>
             <milestone unit="page" ana="#facs_116_tr_1"/>
             <fw place="top" type="pageNum">93</fw>
             <lb/>
@@ -5863,7 +5864,7 @@
             <fw place="bottom" type="catch">Ge-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017228" n="94"/>
+            <pb facs="4017228" n="94"/>
             <milestone unit="page" ana="#facs_117_tr_1"/>
             <fw place="top" type="pageNum">94</fw>
             <lb/>
@@ -5931,7 +5932,7 @@
             <num><fw place="bottom" type="catch"/>3</num> O Vat<supplied>-</supplied>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017229" n="95"/>
+            <pb facs="4017229" n="95"/>
             <milestone unit="page" ana="#facs_118_tr_1"/>
             <fw place="top" type="pageNum">9<supplied>5</supplied></fw>
             <lb/>
@@ -6000,7 +6001,7 @@
             <lb/>
             <fw place="bottom" type="catch">be-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017230" n="96"/>
+            <pb facs="4017230" n="96"/>
             <milestone unit="page" ana="#facs_119_tr_1"/>
             <fw place="top" type="pageNum">96</fw>
             <lb/>
@@ -6068,7 +6069,7 @@
             <lb/>
             <fw place="bottom" type="catch">ich</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017231" n="97"/>
+            <pb facs="4017231" n="97"/>
             <milestone unit="page" ana="#facs_120_tr_1"/>
             <fw place="top" type="pageNum">97</fw>
             <lb/>
@@ -6138,7 +6139,7 @@
             <lb/>
             <fw place="bottom" type="catch">ohne</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017232" n="98"/>
+            <pb facs="4017232" n="98"/>
             <milestone unit="page" ana="#facs_121_tr_1"/>
             <fw place="top" type="pageNum">98</fw>
             <lb/>
@@ -6208,7 +6209,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>12</num> Herꝛ/
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017233" n="99"/>
+            <pb facs="4017233" n="99"/>
             <milestone unit="page" ana="#facs_122_tr_1"/>
             <fw place="top" type="pageNum">99</fw>
             <lb/>
@@ -6247,7 +6248,7 @@
             <fw place="bottom" type="catch">Alß</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017234" n="100"/>
+            <pb facs="4017234" n="100"/>
             <milestone unit="page" ana="#facs_123_tr_2"/>
             <fw place="top" type="pageNum">100</fw>
             <lb/>
@@ -6279,7 +6280,7 @@
             <lb/>
             den menſchen aufgeſtellt.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017235" n="101"/>
+            <pb facs="4017235" n="101"/>
             <milestone unit="page" ana="#facs_124_tr_1"/>
             <fw place="top" type="pageNum">101</fw>
             <lb/>
@@ -6316,7 +6317,7 @@
             <fw place="bottom" type="catch">Vo</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017236" n="102"/>
+            <pb facs="4017236" n="102"/>
             <milestone unit="page" ana="#facs_125_tr_1"/>
             <fw place="top" type="pageNum">102</fw>
             <lb/>
@@ -6385,7 +6386,7 @@
             <lb/>
             <fw place="bottom" type="catch">alß</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017237" n="103"/>
+            <pb facs="4017237" n="103"/>
             <milestone unit="page" ana="#facs_126_tr_1"/>
             <fw place="top" type="pageNum">10<supplied>3</supplied></fw>
             <lb/>
@@ -6455,7 +6456,7 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017238" n="104"/>
+            <pb facs="4017238" n="104"/>
             <milestone unit="page" ana="#facs_127_tr_1"/>
             <fw place="top" type="pageNum">104</fw>
             <lb/>
@@ -6523,7 +6524,7 @@
             <lb/>
             <fw place="bottom" type="catch">Diß</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017239" n="105"/>
+            <pb facs="4017239" n="105"/>
             <milestone unit="page" ana="#facs_128_tr_1"/>
             <fw place="top" type="pageNum">105</fw>
             <lb/>
@@ -6585,7 +6586,7 @@
             <fw place="bottom" type="catch">Glük-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017240" n="106"/>
+            <pb facs="4017240" n="106"/>
             <milestone unit="page" ana="#facs_129_tr_1"/>
             <fw place="top" type="pageNum">106</fw>
             <lb/>
@@ -6613,7 +6614,7 @@
             <lb/>
             ehren: ſeind worte ſeines munds.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017241" n="107"/>
+            <pb facs="4017241" n="107"/>
             <milestone unit="page" ana="#facs_130_tr_1"/>
             <fw place="top" type="pageNum">107</fw>
             <lb/>
@@ -6643,7 +6644,7 @@
             <lb/>
             <fw place="bottom" type="catch">Auß</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017242" n="108"/>
+            <pb facs="4017242" n="108"/>
             <milestone unit="page" ana="#facs_131_tr_1"/>
             <fw place="top" type="pageNum">108</fw>
             <lb/>
@@ -6714,7 +6715,7 @@
             <lb/>
             <fw place="bottom" type="catch">ſo</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017243" n="109"/>
+            <pb facs="4017243" n="109"/>
             <milestone unit="page" ana="#facs_132_tr_1"/>
             <fw place="top" type="pageNum">109</fw>
             <lb/>
@@ -6769,7 +6770,7 @@
             <fw place="bottom" type="catch">Der</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017244" n="110"/>
+            <pb facs="4017244" n="110"/>
             <milestone unit="page" ana="#facs_133_tr_1"/>
             <fw place="top" type="pageNum">110</fw>
             <lb/>
@@ -6793,7 +6794,7 @@
             <lb/>
             ſie erfrewet ihren mann/ und er liebet ſie fortan.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017245" n="111"/>
+            <pb facs="4017245" n="111"/>
             <milestone unit="page" ana="#facs_134_tr_1"/>
             <fw place="top" type="pageNum">111</fw>
             <lb/>
@@ -6818,7 +6819,7 @@
             ſie erfrewet ihren mann/ und er liebet ſie fortan.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017246" n="112"/>
+            <pb facs="4017246" n="112"/>
             <milestone unit="page" ana="#facs_135_tr_1"/>
             <fw place="top" type="pageNum">112</fw>
             <lb/>
@@ -6889,7 +6890,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>5</num> Jh<supplied>-</supplied>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017247" n="113"/>
+            <pb facs="4017247" n="113"/>
             <milestone unit="page" ana="#facs_136_tr_1"/>
             <fw place="top" type="pageNum">113</fw>
             <lb/>
@@ -6952,7 +6953,7 @@
             <fw place="bottom" type="catch"/>Jh<supplied>r</supplied>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017248" n="114"/>
+            <pb facs="4017248" n="114"/>
             <milestone unit="page" ana="#facs_137_tr_1"/>
             <fw place="top" type="pageNum">114</fw>
             <lb/>
@@ -6976,7 +6977,7 @@
             <lb/>
             <anchor xml:id="a64"/>waren<note type="annotation" targetEnd="a64"><p>Hier soll "erwaren" stehen, aber "er-" fehlt.</p></note>/ zu&#x366; ewigen jahren: den ſegen wünſchen wir.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017249" n="115"/>
+            <pb facs="4017249" n="115"/>
             <milestone unit="page" ana="#facs_138_tr_1"/>
             <fw place="top" type="pageNum">115</fw>
             <lb/>
@@ -7003,7 +7004,7 @@
             <fw place="bottom" type="pageNum">H ij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017250" n="116"/>
+            <pb facs="4017250" n="116"/>
             <milestone unit="page" ana="#facs_139_tr_1"/>
             <fw place="top" type="pageNum">116</fw>
             <lb/>
@@ -7074,7 +7075,7 @@
             <lb/>
             <fw place="bottom" type="catch">nach-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017251" n="117"/>
+            <pb facs="4017251" n="117"/>
             <milestone unit="page" ana="#facs_140_tr_1"/>
             <fw place="top" type="pageNum">117</fw>
             <lb/>
@@ -7134,7 +7135,7 @@
             <fw place="bottom" type="pageNum">H iij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017252" n="118"/>
+            <pb facs="4017252" n="118"/>
             <milestone unit="page" ana="#facs_141_tr_1"/>
             <fw place="top" type="pageNum">118</fw>
             <lb/>
@@ -7174,7 +7175,7 @@
             <lb break="no"/>
             <supplied>h</supplied>üllet/ ſich ſelber erfüllet mit riſel und hagel/ und regenwind.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017253" n="119"/>
+            <pb facs="4017253" n="119"/>
             <milestone unit="page" ana="#facs_142_tr_1"/>
             <fw place="top" type="pageNum">119</fw>
             <lb/>
@@ -7217,7 +7218,7 @@
             <fw place="bottom" type="pageNum">H iiij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017254" n="120"/>
+            <pb facs="4017254" n="120"/>
             <milestone unit="page" ana="#facs_143_tr_1"/>
             <fw place="top" type="pageNum">120</fw>
             <lb/>
@@ -7285,7 +7286,7 @@
             <lb/>
             <fw place="bottom" type="catch">von</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017255" n="121"/>
+            <pb facs="4017255" n="121"/>
             <milestone unit="page" ana="#facs_144_tr_1"/>
             <fw place="top" type="pageNum">121</fw>
             <lb/>
@@ -7353,7 +7354,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>6</num> Man
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017256" n="122"/>
+            <pb facs="4017256" n="122"/>
             <milestone unit="page" ana="#facs_145_tr_1"/>
             <fw place="top" type="pageNum">122</fw>
             <lb/>
@@ -7404,7 +7405,7 @@
             <fw place="bottom" type="catch">Hoch-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017257" n="123"/>
+            <pb facs="4017257" n="123"/>
             <milestone unit="page" ana="#facs_146_tr_1"/>
             <fw place="top" type="pageNum">123</fw>
             <lb/>
@@ -7453,7 +7454,7 @@
             vertreibe was ſcha&#x364;dlich zur thüren hinauß!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017258" n="124"/>
+            <pb facs="4017258" n="124"/>
             <milestone unit="page" ana="#facs_147_tr_1"/>
             <fw place="top" type="pageNum">124</fw>
             <lb/>
@@ -7481,7 +7482,7 @@
             <lb/>
             Wir wünſchen/ wann ſie lebens ſatt/ die ewig ſeligkeit.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017259" n="125"/>
+            <pb facs="4017259" n="125"/>
             <milestone unit="page" ana="#facs_148_tr_1"/>
             <fw place="top" type="pageNum">125</fw>
             <lb/>
@@ -7511,7 +7512,7 @@
             <lb/>
             <fw place="bottom" type="catch">Ein</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017260" n="126"/>
+            <pb facs="4017260" n="126"/>
             <milestone unit="page" ana="#facs_149_tr_1"/>
             <fw place="top" type="pageNum">126</fw>
             <lb/>
@@ -7543,7 +7544,7 @@
             <lb/>
             uns erfüllet werden.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017261" n="127"/>
+            <pb facs="4017261" n="127"/>
             <milestone unit="page" ana="#facs_150_tr_2"/>
             <fw place="top" type="pageNum">127</fw>
             <lb/>
@@ -7576,7 +7577,7 @@
             uns erfüllet werden.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017262" n="128"/>
+            <pb facs="4017262" n="128"/>
             <milestone unit="page" ana="#facs_151_tr_1"/>
             <fw place="top" type="pageNum">128</fw>
             <lb/>
@@ -7643,7 +7644,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>5</num> Wer
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017263" n="129"/>
+            <pb facs="4017263" n="129"/>
             <milestone unit="page" ana="#facs_152_tr_1"/>
             <fw place="top" type="pageNum">129</fw>
             <lb/>
@@ -7706,7 +7707,7 @@
             <fw place="bottom" type="catch">O Frid!</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017264" n="130"/>
+            <pb facs="4017264" n="130"/>
             <milestone unit="page" ana="#facs_153_tr_1"/>
             <fw place="top" type="pageNum">130</fw>
             <lb/>
@@ -7734,7 +7735,7 @@
             <lb/>
             Moren du widrum wirſt entdekt.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017265" n="131"/>
+            <pb facs="4017265" n="131"/>
             <milestone unit="page" ana="#facs_154_tr_1"/>
             <fw place="top" type="pageNum">131</fw>
             <lb/>
@@ -7767,7 +7768,7 @@
             <fw place="bottom" type="catch">Traur-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017266" n="132"/>
+            <pb facs="4017266" n="132"/>
             <milestone unit="page" ana="#facs_155_tr_1"/>
             <fw place="top" type="pageNum">132</fw>
             <lb/>
@@ -7840,7 +7841,7 @@
             <lb/>
             <fw place="bottom" type="catch">O welt!</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017267" n="133"/>
+            <pb facs="4017267" n="133"/>
             <milestone unit="page" ana="#facs_156_tr_1"/>
             <fw place="top" type="pageNum">133</fw>
             <lb/>
@@ -7911,7 +7912,7 @@
             <fw place="bottom" type="catch">Ver-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017268" n="134"/>
+            <pb facs="4017268" n="134"/>
             <milestone unit="page" ana="#facs_157_tr_1"/>
             <fw place="top" type="pageNum">134</fw>
             <lb/>
@@ -7939,7 +7940,7 @@
             <lb/>
             nicht ſparet ewer blu&#x366;t/ des feindes noch vil minder.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017269" n="135"/>
+            <pb facs="4017269" n="135"/>
             <milestone unit="page" ana="#facs_158_tr_1"/>
             <fw place="top" type="pageNum">135</fw>
             <lb/>
@@ -7972,7 +7973,7 @@
             <fw place="bottom" type="catch">Ver-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017270" n="136"/>
+            <pb facs="4017270" n="136"/>
             <milestone unit="page" ana="#facs_159_tr_1"/>
             <fw place="top" type="pageNum">136</fw>
             <lb/>
@@ -8040,7 +8041,7 @@
             <lb/>
             <num>4</num> Nun
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017271" n="137"/>
+            <pb facs="4017271" n="137"/>
             <milestone unit="page" ana="#facs_160_tr_1"/>
             <fw place="top" type="pageNum">137</fw>
             <lb/>
@@ -8100,7 +8101,7 @@
             <fw place="bottom" type="catch">Mit</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017272" n="138"/>
+            <pb facs="4017272" n="138"/>
             <milestone unit="page" ana="#facs_161_tr_1"/>
             <fw place="top" type="pageNum">138</fw>
             <lb/>
@@ -8128,7 +8129,7 @@
             <lb/>
             und der vom haupt in barte/ und auf die kleider fleußt.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017273" n="139"/>
+            <pb facs="4017273" n="139"/>
             <milestone unit="page" ana="#facs_162_tr_1"/>
             <fw place="top" type="pageNum">139</fw>
             <lb/>
@@ -8157,7 +8158,7 @@
             und der vom haupt in barte/ und auf die kleider fleußt.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017274" n="140"/>
+            <pb facs="4017274" n="140"/>
             <milestone unit="page" ana="#facs_163_tr_1"/>
             <fw place="top" type="pageNum">140</fw>
             <lb/>
@@ -8223,7 +8224,7 @@
             <lb/>
             <num><fw place="bottom" type="catch"/>4</num> Die
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017275" n="141"/>
+            <pb facs="4017275" n="141"/>
             <milestone unit="page" ana="#facs_164_tr_1"/>
             <fw place="top" type="pageNum">141</fw>
             <lb/>
@@ -8260,7 +8261,7 @@
             mit ihrem ſtiffter geh!
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017276" n="142"/>
+            <pb facs="4017276" n="142"/>
             <milestone unit="page" ana="#facs_165_tr_1"/>
             <fw place="top" type="pageNum">142</fw>
             <lb/>
@@ -8288,7 +8289,7 @@
             <lb/>
             das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017277" n="143"/>
+            <pb facs="4017277" n="143"/>
             <milestone unit="page" ana="#facs_166_tr_1"/>
             <fw place="top" type="pageNum">143</fw>
             <lb/>
@@ -8316,7 +8317,7 @@
             <lb/>
             das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017278" n="144"/>
+            <pb facs="4017278" n="144"/>
             <milestone unit="page" ana="#facs_167_tr_1"/>
             <fw place="top" type="pageNum">144</fw>
             <lb/>
@@ -8344,7 +8345,7 @@
             <lb/>
             bekleidet ihres gſ<supplied>i</supplied>nd/ ſich ſelbſten auch in zwilch.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017279" n="145"/>
+            <pb facs="4017279" n="145"/>
             <milestone unit="page" ana="#facs_168_tr_1"/>
             <fw place="top" type="pageNum">145</fw>
             <lb/>
@@ -8376,7 +8377,7 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017280" n="146"/>
+            <pb facs="4017280" n="146"/>
             <milestone unit="page" ana="#facs_169_tr_1"/>
             <fw place="top" type="pageNum">146</fw>
             <lb/>
@@ -8404,7 +8405,7 @@
             <lb/>
             baumfrücht und ra&#x364;benſafft/ wildbra&#x364;t und gu&#x366;te fiſch.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017281" n="147"/>
+            <pb facs="4017281" n="147"/>
             <milestone unit="page" ana="#facs_170_tr_1"/>
             <fw place="top" type="pageNum">147</fw>
             <lb/>
@@ -8436,7 +8437,7 @@
             <lb/>
             Der
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017282" n="148"/>
+            <pb facs="4017282" n="148"/>
             <milestone unit="page" ana="#facs_171_tr_1"/>
             <fw place="top" type="pageNum">148</fw>
             <lb/>
@@ -8464,7 +8465,7 @@
             <lb/>
             er vberzogen hat mit harniſchhartem eyß.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017283" n="149"/>
+            <pb facs="4017283" n="149"/>
             <milestone unit="page" ana="#facs_172_tr_1"/>
             <fw place="top" type="pageNum">149</fw>
             <lb/>
@@ -8496,7 +8497,7 @@
             <lb/>
             <fw place="bottom" type="catch">Luſtig</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017284" n="150"/>
+            <pb facs="4017284" n="150"/>
             <milestone unit="page" ana="#facs_173_tr_3"/>
             <fw place="top" type="pageNum">150</fw>
             <lb/>
@@ -8524,7 +8525,7 @@
             <lb/>
             entſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017285" n="151"/>
+            <pb facs="4017285" n="151"/>
             <milestone unit="page" ana="#facs_174_tr_1"/>
             <fw place="top" type="pageNum">151</fw>
             <lb/>
@@ -8557,7 +8558,7 @@
             <fw place="bottom" type="catch">Fru&#x364;h-</fw>
             
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017286" n="152"/>
+            <pb facs="4017286" n="152"/>
             <milestone unit="page" ana="#facs_175_tr_1"/>
             <fw place="top" type="pageNum">152</fw>
             <lb/>
@@ -8626,7 +8627,7 @@
             <lb/>
             <fw place="bottom" type="catch">alle</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017287" n="153"/>
+            <pb facs="4017287" n="153"/>
             <milestone unit="page" ana="#facs_176_tr_1"/>
             <fw place="top" type="pageNum">153</fw>
             <lb/>
@@ -8694,7 +8695,7 @@
             <lb/>
             <fw place="bottom" type="catch">mit</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017288" n="154"/>
+            <pb facs="4017288" n="154"/>
             <milestone unit="page" ana="#facs_177_tr_1"/>
             <fw place="top" type="pageNum">154</fw>
             <lb/>
@@ -8737,7 +8738,7 @@
             ſo die zeiten erlauben und lehren.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017289" n="155"/>
+            <pb facs="4017289" n="155"/>
             <milestone unit="page" ana="#facs_178_tr_1"/>
             <fw place="top" type="pageNum">155</fw>
             
@@ -8805,7 +8806,7 @@
             <fw place="bottom" type="catch">Wie</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017290" n="156"/>
+            <pb facs="4017290" n="156"/>
             <milestone unit="page" ana="#facs_179_tr_2"/>
             <fw place="top" type="pageNum">156</fw>
             <lb/>
@@ -8833,7 +8834,7 @@
             <lb/>
             abgeſchnidten/ die ſaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017291" n="157"/>
+            <pb facs="4017291" n="157"/>
             <milestone unit="page" ana="#facs_180_tr_2"/>
             <fw place="top" type="pageNum">157</fw>
             <lb/>
@@ -8866,7 +8867,7 @@
             abgeſchnidten die ſaten fru&#x364;h und ſpaht.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017292" n="158"/>
+            <pb facs="4017292" n="158"/>
             <milestone unit="page" ana="#facs_181_tr_1"/>
             <fw place="top" type="pageNum">158</fw>
             <lb/>
@@ -8937,7 +8938,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017293" n="159"/>
+            <pb facs="4017293" n="159"/>
             <milestone unit="page" ana="#facs_182_tr_1"/>
             <fw place="top" type="pageNum">159</fw>
             <lb/>
@@ -9007,7 +9008,7 @@
             werd auch der omeiß gleich.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017294" n="160"/>
+            <pb facs="4017294" n="160"/>
             <milestone unit="page" ana="#facs_183_tr_1"/>
             <fw place="top" type="pageNum">160</fw>
             <lb/>
@@ -9031,7 +9032,7 @@
             <lb/>
             und ſchwalb entf<supplied>l</supplied>ogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017295" n="161"/>
+            <pb facs="4017295" n="161"/>
             <milestone unit="page" ana="#facs_184_tr_1"/>
             <fw place="top" type="pageNum">161</fw>
             <lb/>
@@ -9058,7 +9059,7 @@
             <fw place="bottom" type="pageNum">L</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017296" n="162"/>
+            <pb facs="4017296" n="162"/>
             <milestone unit="page" ana="#facs_185_tr_1"/>
             <fw place="top" type="pageNum">162</fw>
             <lb/>
@@ -9131,7 +9132,7 @@
             <lb/>
             <fw place="bottom" type="catch">wird</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017297" n="163"/>
+            <pb facs="4017297" n="163"/>
             <milestone unit="page" ana="#facs_186_tr_1"/>
             <fw place="top" type="pageNum">163</fw>
             <lb/>
@@ -9190,7 +9191,7 @@
             <fw place="bottom" type="pageNum">L ij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017298" n="164"/>
+            <pb facs="4017298" n="164"/>
             <milestone unit="page" ana="#facs_187_tr_1"/>
             <fw place="top" type="pageNum">164</fw>
             <lb/>
@@ -9226,7 +9227,7 @@
             <lb/>
             ſich ſchlieſſen allerdingen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017299" n="165"/>
+            <pb facs="4017299" n="165"/>
             <milestone unit="page" ana="#facs_188_tr_1"/>
             <fw place="top" type="pageNum">165</fw>
             <lb/>
@@ -9265,7 +9266,7 @@
             <fw place="bottom" type="pageNum">L iij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017300" n="166"/>
+            <pb facs="4017300" n="166"/>
             <milestone unit="page" ana="#facs_189_tr_1"/>
             <fw place="top" type="pageNum">166</fw>
             <lb/>
@@ -9334,7 +9335,7 @@
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017301" n="167"/>
+            <pb facs="4017301" n="167"/>
             <milestone unit="page" ana="#facs_190_tr_1"/>
             <fw place="top" type="pageNum">167</fw>
             <lb/>
@@ -9394,7 +9395,7 @@
             <fw place="bottom" type="pageNum">L iiij</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017302" n="168"/>
+            <pb facs="4017302" n="168"/>
             <milestone unit="page" ana="#facs_191_tr_1"/>
             <fw place="top" type="pageNum">168</fw>
             <lb/>
@@ -9422,7 +9423,7 @@
             <lb break="no"/>
             ſtehet/ den der Zephyr mit blu&#x366;men beſ<supplied>a&#x364;</supplied>et.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017303" n="169"/>
+            <pb facs="4017303" n="169"/>
             <milestone unit="page" ana="#facs_192_tr_1"/>
             <fw place="top" type="pageNum">169</fw>
             <lb/>
@@ -9450,7 +9451,7 @@
             <lb break="no"/>
             ſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017304" n="170"/>
+            <pb facs="4017304" n="170"/>
             <milestone unit="page" ana="#facs_193_tr_1"/>
             <fw place="top" type="pageNum">170</fw>
             <lb/>
@@ -9478,7 +9479,7 @@
             <lb/>
             abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017305" n="171"/>
+            <pb facs="4017305" n="171"/>
             <milestone unit="page" ana="#facs_194_tr_2"/>
             <fw place="top" type="pageNum">171</fw>
             <lb/>
@@ -9506,7 +9507,7 @@
             <lb/>
             abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017306" n="172"/>
+            <pb facs="4017306" n="172"/>
             <milestone unit="page" ana="#facs_195_tr_1"/>
             <fw place="top" type="pageNum">172</fw>
             <lb/>
@@ -9530,7 +9531,7 @@
             <lb/>
             ſchwalb entflogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017307" n="173"/>
+            <pb facs="4017307" n="173"/>
             <milestone unit="page" ana="#facs_196_tr_1"/>
             <fw place="top" type="pageNum">173</fw>
             <lb/>
@@ -9554,7 +9555,7 @@
             <lb/>
             ſchwalb entflogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017308" n="174"/>
+            <pb facs="4017308" n="174"/>
             <milestone unit="page" ana="#facs_197_tr_2"/>
             <fw place="top" type="pageNum">174</fw>
             <lb/>
@@ -9590,7 +9591,7 @@
             <lb/>
             ſich ſchlieſſen allerdingen.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017309" n="175"/>
+            <pb facs="4017309" n="175"/>
             <milestone unit="page" ana="#facs_198_tr_2"/>
             <fw place="top" type="pageNum">175</fw>
             <lb/>
@@ -9627,7 +9628,7 @@
             ſich ſchlieſſen allerdingen.
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017310" n="176"/>
+            <pb facs="4017310" n="176"/>
             <milestone unit="page" ana="#facs_199_tr_1"/>
             <fw place="top" type="pageNum">176</fw>
             
@@ -9660,7 +9661,7 @@
             
             <!-- Teil III -->
             
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017311"/>
+            <pb facs="4017311"/>
             <milestone unit="page" ana="#facs_200_tr_1"/>
             Folgen
             <lb/>
@@ -9668,8 +9669,8 @@
             <lb break="no"/>
             ſchrifften.
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017312" n="179"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017313" n="179"/>
+            <pb facs="4017312" n="179"/>
+            <pb facs="4017313" n="179"/>
             <milestone unit="page" ana="#facs_202_tr_1"/>
             <fw place="top" type="pageNum">179</fw>
             <lb/>
@@ -9734,7 +9735,7 @@
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>V.</num></hi> Ver-
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017314" n="180"/>
+            <pb facs="4017314" n="180"/>
             <milestone unit="page" ana="#facs_203_tr_1"/>
             <fw place="top" type="pageNum">180</fw>
             <lb/>
@@ -9796,7 +9797,7 @@
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>X.</num></hi> Für-
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017315" n="181"/>
+            <pb facs="4017315" n="181"/>
             <milestone unit="page" ana="#facs_204_tr_1"/>
             <fw place="top" type="pageNum">181</fw>
             <lb/>
@@ -9866,7 +9867,7 @@
             <lb/>
             <hi rendition="#aq"><num><fw place="bottom" type="catch"/>XVI.</num></hi> Ab-
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017316" n="182"/>
+            <pb facs="4017316" n="182"/>
             <milestone unit="page" ana="#facs_205_tr_1"/>
             <fw place="top" type="pageNum">182</fw>
             <lb/>
@@ -9939,7 +9940,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXII.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017317" n="183"/>
+            <pb facs="4017317" n="183"/>
             <milestone unit="page" ana="#facs_206_tr_1"/>
             <fw place="top" type="pageNum">183</fw>
             <lb/>
@@ -10012,7 +10013,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXVII</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017318" n="184"/>
+            <pb facs="4017318" n="184"/>
             <milestone unit="page" ana="#facs_207_tr_1"/>
             <fw place="top" type="pageNum">184</fw>
             <lb/>
@@ -10084,7 +10085,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXXIII.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017319" n="185"/>
+            <pb facs="4017319" n="185"/>
             <milestone unit="page" ana="#facs_208_tr_1"/>
             <fw place="top" type="pageNum">185</fw>
             <lb/>
@@ -10153,7 +10154,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XXXIX.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017320" n="186"/>
+            <pb facs="4017320" n="186"/>
             <milestone unit="page" ana="#facs_209_tr_1"/>
             <fw place="top" type="pageNum">186</fw>
             <lb/>
@@ -10224,7 +10225,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XLV.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017321" n="187"/>
+            <pb facs="4017321" n="187"/>
             <milestone unit="page" ana="#facs_210_tr_1"/>
             <fw place="top" type="pageNum">187</fw>
             <lb/>
@@ -10294,7 +10295,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>XLIX.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017322" n="188"/>
+            <pb facs="4017322" n="188"/>
             <milestone unit="page" ana="#facs_211_tr_1"/>
             <fw place="top" type="pageNum">188</fw>
             <lb/>
@@ -10366,7 +10367,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LIII.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017323" n="189"/>
+            <pb facs="4017323" n="189"/>
             <milestone unit="page" ana="#facs_212_tr_1"/>
             <fw place="top" type="pageNum">189</fw>
             <lb/>
@@ -10436,7 +10437,7 @@
             <head><hi rendition="#aq"><num>LVIII.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017324" n="190"/>
+            <pb facs="4017324" n="190"/>
             <milestone unit="page" ana="#facs_213_tr_1"/>
             <fw place="top" type="pageNum">190</fw>
             <lb/>
@@ -10510,7 +10511,7 @@
             <head><hi rendition="#aq"><num>LXIII.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017325" n="191"/>
+            <pb facs="4017325" n="191"/>
             <milestone unit="page" ana="#facs_214_tr_1"/>
             <fw place="top" type="pageNum">191</fw>
             <lb/>
@@ -10573,7 +10574,7 @@
             
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXVI.</num></hi></head>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017326" n="192"/>
+            <pb facs="4017326" n="192"/>
             <milestone unit="page" ana="#facs_215_tr_1"/>
             <fw place="top" type="pageNum">192</fw>
             <lb/>
@@ -10639,7 +10640,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXIX.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017327" n="193"/>
+            <pb facs="4017327" n="193"/>
             <milestone unit="page" ana="#facs_216_tr_1"/>
             <fw place="top" type="pageNum">193</fw>
             <lb/>
@@ -10709,7 +10710,7 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a131"/>Der<note type="annotation" targetEnd="a131"><p>Das Zeichen (möglicherweise ein Doppelbindestrich) nach "Der" ist in den Vergleichsexemplaren nicht vorhanden. Vielleicht wurde das auch von Hand eingezeichnet.</p></note></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017328" n="194"/>
+            <pb facs="4017328" n="194"/>
             <milestone unit="page" ana="#facs_217_tr_1"/>
             <fw place="top" type="pageNum">194</fw>
             <lb/>
@@ -10773,7 +10774,7 @@
             <lb/>
             <fw place="bottom" type="catch">daß</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017329" n="195"/>
+            <pb facs="4017329" n="195"/>
             <milestone unit="page" ana="#facs_218_tr_1"/>
             <fw place="top" type="pageNum">195</fw>
             <lb/>
@@ -10843,7 +10844,7 @@
             <head><hi rendition="#aq"><num><anchor xml:id="a155"/><fw place="bottom" type="catch"/>LXXII<note type="annotation" targetEnd="a155"><p>Im göttingischen Vergleichsexemplar steht nach den römischen Zahlen deutlich kein Punkt.</p></note></num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017330" n="196"/>
+            <pb facs="4017330" n="196"/>
             <milestone unit="page" ana="#facs_219_tr_1"/>
             <fw place="top" type="pageNum">196</fw>
             <lb/>
@@ -10907,7 +10908,7 @@
             <fw place="bottom" type="catch">Na&#x364;chſt</fw>
             <lb/>
             
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017331" n="197"/>
+            <pb facs="4017331" n="197"/>
             <milestone unit="page" ana="#facs_220_tr_1"/>
             <fw place="top" type="pageNum">197</fw>
             <lb/>
@@ -10978,7 +10979,7 @@
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017332" n="198"/>
+            <pb facs="4017332" n="198"/>
             <milestone unit="page" ana="#facs_221_tr_1"/>
             <fw place="top" type="pageNum">198</fw>
             <lb/>
@@ -11045,7 +11046,7 @@
             <fw place="bottom" type="catch">Gegen</fw>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017333" n="199"/>
+            <pb facs="4017333" n="199"/>
             <milestone unit="page" ana="#facs_222_tr_1"/>
             <fw place="top" type="pageNum">199</fw>
             <lb/>
@@ -11117,7 +11118,7 @@
             <lb/>
             <fw place="bottom" type="catch">und</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017334" n="200"/>
+            <pb facs="4017334" n="200"/>
             <milestone unit="page" ana="#facs_223_tr_1"/>
             <fw place="top" type="pageNum">200</fw>
             <lb/>
@@ -11185,7 +11186,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017335" n="201"/>
+            <pb facs="4017335" n="201"/>
             <milestone unit="page" ana="#facs_224_tr_1"/>
             <fw place="top" type="pageNum">201</fw>
             <lb/>
@@ -11252,7 +11253,7 @@
             <lb/>
             <fw place="bottom" type="catch">Vnd</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017336" n="202"/>
+            <pb facs="4017336" n="202"/>
             <milestone unit="page" ana="#facs_225_tr_1"/>
             <fw place="top" type="pageNum">202</fw>
             <lb/>
@@ -11321,7 +11322,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXXV.</num></hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017337" n="203"/>
+            <pb facs="4017337" n="203"/>
             <milestone unit="page" ana="#facs_226_tr_1"/>
             <fw place="top" type="pageNum">203</fw>
             <lb/>
@@ -11390,7 +11391,7 @@
             <lb/>
             <fw place="bottom" type="catch">Heſio-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017338" n="204"/>
+            <pb facs="4017338" n="204"/>
             <milestone unit="page" ana="#facs_227_tr_1"/>
             <fw place="top" type="pageNum">204</fw>
             <lb/>
@@ -11456,7 +11457,7 @@
             <lb/>
             <fw place="bottom" type="catch">Diß</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017339" n="205"/>
+            <pb facs="4017339" n="205"/>
             <milestone unit="page" ana="#facs_228_tr_1"/>
             <fw place="top" type="pageNum">205</fw>
             <lb/>
@@ -11523,7 +11524,7 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017340" n="206"/>
+            <pb facs="4017340" n="206"/>
             <milestone unit="page" ana="#facs_229_tr_1"/>
             <fw place="top" type="pageNum">206</fw>
             <lb/>
@@ -11590,7 +11591,7 @@
             <lb/>
             <fw place="bottom" type="catch">Nein/</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017341" n="207"/>
+            <pb facs="4017341" n="207"/>
             <milestone unit="page" ana="#facs_230_tr_1"/>
             <fw place="top" type="pageNum">207</fw>
             <lb/>
@@ -11642,7 +11643,7 @@
             <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXX<anchor xml:id="a188"/>VI<note type="annotation" targetEnd="a188"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</num><anchor xml:id="a189"/>VI<note type="annotation" targetEnd="a189"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</hi></head>
             
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017342" n="208"/>
+            <pb facs="4017342" n="208"/>
             <milestone unit="page" ana="#facs_231_tr_1"/>
             <fw place="top" type="pageNum">208</fw>
             <lb/>
@@ -11714,7 +11715,7 @@
             <lb/>
             <fw place="bottom" type="catch">Mit</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017343" n="209"/>
+            <pb facs="4017343" n="209"/>
             <milestone unit="page" ana="#facs_232_tr_1"/>
             <fw place="top" type="pageNum">209</fw>
             <lb/>
@@ -11784,7 +11785,7 @@
             <lb/>
             <fw place="bottom" type="catch">Es</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017344" n="210"/>
+            <pb facs="4017344" n="210"/>
             <milestone unit="page" ana="#facs_233_tr_1"/>
             <fw place="top" type="pageNum">210</fw>
             <lb/>
@@ -11852,7 +11853,7 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017345" n="211"/>
+            <pb facs="4017345" n="211"/>
             <milestone unit="page" ana="#facs_234_tr_1"/>
             <fw place="top" type="pageNum">211</fw>
             <lb/>
@@ -11924,7 +11925,7 @@
             <lb/>
             <fw place="bottom" type="catch">Ve-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017346" n="212"/>
+            <pb facs="4017346" n="212"/>
             <milestone unit="page" ana="#facs_235_tr_1"/>
             <fw place="top" type="pageNum">212</fw>
             <lb/>
@@ -11990,7 +11991,7 @@
             <lb/>
             <fw place="bottom" type="catch">war-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017347" n="213"/>
+            <pb facs="4017347" n="213"/>
             <milestone unit="page" ana="#facs_236_tr_1"/>
             <fw place="top" type="pageNum">213</fw>
             <lb/>
@@ -12058,7 +12059,7 @@
             <lb/>
             <fw place="bottom" type="catch">Ha<choice><sic>¡</sic><corr>!</corr></choice></fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017348" n="214"/>
+            <pb facs="4017348" n="214"/>
             <milestone unit="page" ana="#facs_237_tr_1"/>
             <fw place="top" type="pageNum">214</fw>
             <lb/>
@@ -12124,7 +12125,7 @@
             <lb/>
             <fw place="bottom" type="catch">doch</fw>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017349" n="215"/>
+            <pb facs="4017349" n="215"/>
             <milestone unit="page" ana="#facs_238_tr_1"/>
             <fw place="top" type="pageNum">215</fw>
             <lb/>
@@ -12190,7 +12191,7 @@
             <lb/>
             <fw place="bottom" type="catch">Be-</fw>
             <lb break="no"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017350" n="216"/>
+            <pb facs="4017350" n="216"/>
             <milestone unit="page" ana="#facs_239_tr_1"/>
             <fw place="top" type="pageNum">216</fw>
             <lb/>
@@ -12254,10 +12255,10 @@
             <lb/>
             <hi rendition="#g">ENDE.</hi>
             <lb/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017351"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017352"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017353"/>
-            <pb facs="https://www.e-rara.ch/i3f/v20/4017109/canvas/4017354"/>
+            <pb facs="4017351"/>
+            <pb facs="4017352"/>
+            <pb facs="4017353"/>
+            <pb facs="4017354"/>
          </div>
    </text>
 </TEI>
