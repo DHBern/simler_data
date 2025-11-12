@@ -415,7 +415,7 @@
             <milestone unit="page" ana="#facs_15_tr_1"/>
             <milestone unit="section" rendition="#hr"/><lb/>
             
-            <div><!-- NE: Briefauszüge als Zitate kodieren? -->
+            <div type="letter"><!-- NE: Briefauszüge als Zitate kodieren? -->
             <head><label>[iv.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Lite-
             <lb break="no"/>
             ratißimi Viri,</hi>
@@ -442,10 +442,10 @@
             <lb break="no"/>
             ctos, ſed in Ethicis minús verſatos, qui nonnun-
             <lb break="no"/>
-            quam ridendos ſe præbebant. Perge, quæſo, <abbr>&amp;c.</abbr></hi></p></div>
+            quam ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi></p></div>
             <lb/>
                
-            <div>
+            <div type="letter">
             <head><label>[v.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MULLERI,</hi>
@@ -943,7 +943,8 @@
             <lb/>
             <fw place="bottom" type="catch">Vier-</fw>
             <lb/>
-         </front><body>
+         </front>
+      <body>
             
             <!-- Teil I -->
             
@@ -10614,8 +10615,8 @@
             <lb/>
             
             <head><hi rendition="#aq"><num>LXIV.</num></hi></head>
-            
             <lb/>
+            
             <num>6</num><anchor xml:id="a115"/><note type="annotation" targetEnd="a115"><p>Der Punkt nach der 6 wurde nachträglich von Hand eingezeichnet.</p></note> Hie ru&#x366;het auß ein frommes weib/
             <lb/>
             mit ihrem arbeitſamen leib:
@@ -10628,8 +10629,8 @@
             <head><hi rendition="#aq"><num>LXV.</num></hi>
             <lb/>
             Klinggedicht.</head>
-            
             <lb/>
+            
             <num>7</num><anchor xml:id="a116"/><note type="annotation" targetEnd="a116"><p>Der Punkt nach der 7 wurde nachträglich von Hand eingezeichnet.</p></note> Wie Cleopatra einſt (im werke zu&#x366; erweiſen
             <lb/>
             daß den Antonius ſie übertroffen hett
@@ -10659,7 +10660,7 @@
             das perlein warte ſein im himmel wol verſchloſſen.
             <lb/>
             
-            <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXVI.</num></hi></head>
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXVI.</hi></fw>
             <lb/>
             <pb facs="4017326" n="192"/>
             <milestone unit="page" ana="#facs_215_tr_1"/>
@@ -10671,8 +10672,8 @@
             <head><label>[225.]</label> <hi rendition="#aq"><num>LXVI.</num></hi>
             <lb/>
             Leben/ Nebel.</head>
-            
             <lb/>
+            
             Was unſer <hi rendition="#b">leben</hi> ſe<anchor xml:id="a119"/>y<note type="annotation" targetEnd="a119"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note>/ und wie es werd vergehen/
             <lb/>
             das wo&#x364;rtlein <hi rendition="#b">leben</hi> ſelbſt gibt/ de<anchor xml:id="a120"/>u<note type="annotation" targetEnd="a120"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den Vergleichsexemplaren gibt es hier kein Trema.</p></note>tlich/ zu&#x366; verſtehen
@@ -10685,8 +10686,8 @@
             <head><label>[226.]</label> <hi rendition="#aq"><num>LXVII.</num></hi>
             <lb/>
             Nichts irꝛdiſches wa&#x364;rhafft.</head>
-            
             <lb/>
+            
             Was nützet hochgeboren ſe<anchor xml:id="a121"/>y<note type="annotation" targetEnd="a121"><p>Das Trema wurde nachträglich von Hand eingezeichnet. in den Vergleichsexemplaren steht das y deutlich ohne Trema.</p></note>n? Es iſt ein ſchlechter ru&#x366;hm:
             <lb/>
             die zeitlich ehr geleicht dem plitz: die ſcho&#x364;nheit einer blu&#x366;m:
@@ -10701,8 +10702,8 @@
             <head><label>[227.]</label> <hi rendition="#aq"><num>LXVIII.</num></hi>
             <lb/>
             Eitelkeit der welt.</head>
-            
             <lb/>
+            
             Faſt auß dem Frantzo&#x364;ſiſchen.
             <lb/>
             Gleich wie das ſchlüpfrig eiß ſich ſpiegelhell erzeiget/
@@ -10724,8 +10725,7 @@
             O ho&#x364;chſter/ gib daß wir die eitelkeit verſtehen!
             <lb/>
             
-            <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXIX.</num></hi></head>
-            
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXIX.</hi></fw>
             <lb/>
             <pb facs="4017327" n="193"/>
             <milestone unit="page" ana="#facs_216_tr_1"/>
@@ -10737,8 +10737,8 @@
             <head><label>[150.]</label> <hi rendition="#aq"><num>LXIX.</num></hi>
             <lb/>
             Chriſtenkampff.</head>
-            
             <lb/>
+            
             <hi rendition="#in">D</hi>Er menſch; wie Job beze<anchor xml:id="a123"/>u<note type="annotation" targetEnd="a123"><p>Das Trema wurde nachträglich von Hand eingezeichnet. In den beiden Vergleichsexemplaren steht das u deutlich ohne Trema.</p></note>gt; im ſtreit mu&#x366;ß immer
             <lb/>
             leben/
@@ -10817,8 +10817,8 @@
             Anbindgedicht/
             <lb/>
             auf den fro&#x364;lichen Ru&#x366;dolffstag.</head>
-            
             <lb/>
+            
             <hi rendition="#in">K</hi>om&#x342;/ kom&#x342; gewünſchter tag/ und ſtill mir das verlan-
             <lb break="no"/>
             gen
@@ -10881,8 +10881,8 @@
             Anbindgedicht/ auf
             <lb/>
             Dorothea tag.</head>
-            
             <lb/>
+            
             <hi rendition="#in">E</hi>Jn kraut heißt Gottesgnad/ ſo wir gemeinlich ken&#x342;en:
             <lb/>
             ein nam&#x342; iſt/ welchen wir ein Gottes gabe nennen.
@@ -10928,8 +10928,7 @@
             <fw place="bottom" type="pageNum">N ij</fw>
             <lb/>
             
-            <head><hi rendition="#aq"><num><anchor xml:id="a155"/><fw place="bottom" type="catch"/>LXXII<note type="annotation" targetEnd="a155"><p>Im göttingischen Vergleichsexemplar steht nach den römischen Zahlen deutlich kein Punkt.</p></note></num></hi></head>
-            
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXXII<!-- GP: Im göttingischen Vergleichsexemplar steht nach der römischen Zahl eindeutig kein Punkt. --></hi></fw>
             <lb/>
             <pb facs="4017330" n="196"/>
             <milestone unit="page" ana="#facs_219_tr_1"/>
@@ -10939,15 +10938,14 @@
             <lb/>
             
             <head><label>[66.]</label> <hi rendition="#aq"><num>LXXII.</num></hi>
-            
             <lb/>
             Chriſtenliches Haußweſen:
             <lb/>
             auf eine Ehrenhochzeit; auß heiliger Schrifft
             <lb/>
             zu&#x366;ſamen gezogen.</head>
-            
             <lb/>
+            
             <hi rendition="#in">O</hi> daß ich doch einmal die Davids harf beka&#x364;m/
             <lb/>
             und ich/ gleich ihme/ ko&#x364;n&#x303;t derſelben ſeiten zwingen!
@@ -10965,12 +10963,11 @@
             daß meine ſtim&#x342; ohn ſtim&#x342; ſol werden offenbar.
             <lb/>
             1.Sam.6.v.5.
+            <lb/>
             
-            <head><lb/>
-            Wie der Ehſtand anzu&#x366;heben/
+            <head>Wie der Ehſtand anzu&#x366;heben/
             <lb/>
             daß er wol gerahte.</head>
-            
             <lb/>
             O du/ wer du auch ſeyſt/ der du frid/ fre<anchor xml:id="a156"/>u<note type="annotation" targetEnd="a156"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>d<anchor xml:id="a157"/><note type="annotation" targetEnd="a157"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und ru&#x366;h
             <lb/>
@@ -10992,16 +10989,16 @@
             <lb/>
             und 17. Prov.19.14.
             <lb/>
+               
             <fw place="bottom" type="catch">Na&#x364;chſt</fw>
             <lb/>
-            
             <pb facs="4017331" n="197"/>
             <milestone unit="page" ana="#facs_220_tr_1"/>
             <fw place="top" type="pageNum">197</fw>
             <lb/>
             <fw place="top" type="header">Vberſchrifften.</fw>
-            
             <lb/>
+            
             Na&#x364;chſt Gott in diſer ſach zu&#x366;fragen dich nicht ſcha&#x364;m
             <lb/>
             die eltern/ und darbey zu&#x366;folgen ihrem rahte:
@@ -11021,10 +11018,9 @@
             Gen.24. Exod.20/12. Deut.15/16. Coloſſ.3/20. Prov.6/20/ꝛc.
             <lb/>
             Syr.7/29. Gen.29/26. Syr.13. Levit.18. Matth.14.
+            <lb/>
             
-            <head><lb/>
-            Pflichten eines Ehmanns.</head>
-            
+            <head>Pflichten eines Ehmanns.</head>
             <lb/>
             Wie dann im ehſtand ſelb; damit das glük nicht weich;
             <lb/>
@@ -11043,10 +11039,9 @@
             die ma&#x364;ngel deines weibs: das ſchaffet frid und ru&#x366;h.
             <lb/>
             Epheſ.5.26/27/28/29/30/31/32. Prov.10. 1.Pet.4/8.
+            <lb/>
             
-            <head><lb/>
-            Pflichten eines Ehweibs.</head>
-            
+            <head>Pflichten eines Ehweibs.</head>
             <lb/>
             Das weib/ der kirchen gleich die nur auf Chriſtum
             <lb/>
@@ -11062,7 +11057,7 @@
             <lb/>
             ſie ihn auch ehren ſol; ſein ehr<anchor xml:id="a164"/><note type="annotation" targetEnd="a164"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und gu&#x366;t verwachen:
             <lb/>
-            <fw place="bottom" type="pageNum">N iij</fw>
+            <fw place="bottom" type="sig">N iij</fw>
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
@@ -11077,12 +11072,11 @@
             in ihrem ehmann ſie auch ehret ihren Gott.
             <lb/>
             Eph.5<anchor xml:id="a165"/>/<note type="annotation" targetEnd="a165"><p>Im göttingischen Vergleichsexemplar steht hier eindeutig eine Virgel.</p></note>22/23/24. Tit.2/4/5. Coloſſ.3/18.
+            <lb/>
             
-            <head><lb/>
-            Gemeine pflichten der Ehle<anchor xml:id="a166"/>u<note type="annotation" targetEnd="a166"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>hten.
+            <head>Gemeine pflichten der Ehle<anchor xml:id="a166"/>u<note type="annotation" targetEnd="a166"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>hten.
             <lb/>
             Gegen ſich ſelbſten.</head>
-            
             <lb/>
             Sie beyde/ mann<anchor xml:id="a167"/><note type="annotation" targetEnd="a167"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und weib wie ich geſchriben find/
             <lb/>
@@ -11103,12 +11097,11 @@
             Prov.4.20. und cap.5/18<anchor xml:id="a172"/>/<note type="annotation" targetEnd="a172"><p>Im göttingischen Vergleichsexemplar steht hier deutlich eine Virgel.</p></note>19/20. Syr.9/20. Ehp.5/3. 1.Cor.6/18.
             <lb/>
             Gen.2/24. Matth.19/5/6. Eph.5.31.
+            <lb/>
             
-            <head><lb/>
-            Gegen den eltern/ kindern<anchor xml:id="a173"/><note type="annotation" targetEnd="a173"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und
+            <head>Gegen den eltern/ kindern<anchor xml:id="a173"/><note type="annotation" targetEnd="a173"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und
             <lb/>
             dienſten.</head>
-            
             <lb/>
             Ehele<anchor xml:id="a174"/>u<note type="annotation" targetEnd="a174"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>hte ſollen auch; wie Eltern; ehren recht
             <lb/>
@@ -11130,20 +11123,19 @@
             <lb/>
             cap.30/13. Eph.6/4. Levit. 25/39. und v.43. Eph.6/9.
             <lb/>
-            <fw place="bottom" type="catch">Gegen</fw>
             
+            <fw place="bottom" type="catch">Gegen</fw>
             <lb/>
             <pb facs="4017333" n="199"/>
             <milestone unit="page" ana="#facs_222_tr_1"/>
             <fw place="top" type="pageNum">199</fw>
             <lb/>
             <fw place="top" type="header">Vberſchrifften.</fw>
+            <lb/>
             
-            <head><lb/>
-            Gegen dem gantzen haußgeſind/ nachbaren/
+            <head>Gegen dem gantzen haußgeſind/ nachbaren/
             <lb/>
             und Fürgeſetzten.</head>
-            
             <lb/>
             Dem gantzen haußgeſind dich ſtell zum beyſpil dar
             <lb/>
@@ -11166,13 +11158,13 @@
             Tit.2/v.4/7. 1.Sam.15/17. Prov.20/3. und cap.27.10. item cap.
             <lb/>
             3/27. und cap.5.16. Matth.8/5. Luc.7/1ꝛc. Syr.7/31.
+            <lb/>
             
-            <head><lb/>
-            Frucht und nutz ehlicher
+            <head>Frucht und nutz ehlicher
             <lb/>
             from&#x342;keit.</head>
-            
             <lb/>
+            
             Wer nun/ wie obgemeldt/ wird tretten in die eh/
             <lb/>
             und ſo/ was ſeine pflicht erha&#x364;<anchor xml:id="a183"/>u<note type="annotation" targetEnd="a183"><p>Das Trema wurde nachträglich von Hand eingezeichnet.</p></note>ſcht/ ins werke ſetzen:
@@ -11190,18 +11182,18 @@
             mit luſt er ſehen wird gleich alß o&#x364;lzweige friſch.
             <lb/>
             Pſalm.128.
+            <lb/>
             
-            <head><lb/>
+            <head>
             Wunſch für die newen
             <lb/>
             Ehleuthe.</head>
-            
             <lb/>
             Nun ſchreit ich zu&#x366; dem wunſch für euch/ Herꝛ Bra&#x364;u-
             <lb break="no"/>
             tigam/
             <lb/>
-            <fw place="bottom" type="pageNum">N iiij</fw>
+            <fw place="bottom" type="sig">N iiij</fw>
             <lb/>
             <fw place="bottom" type="catch">und</fw>
             <lb/>
@@ -11233,8 +11225,8 @@
             alß eine hochzeitliche Ehrengab
             <lb/>
             aufgeſtellt.</head>
-            
             <lb/>
+            
             <hi rendition="#in">G</hi>Lük zu&#x366; dem Bra&#x364;utigam! glük zu&#x366; der ſcho&#x364;nen Braut!
             <lb/>
             ru&#x364;fft jeder der auf heut ihr Ehrenhochzeit ſchawt:
@@ -11282,8 +11274,8 @@
             die gu&#x364;ter in gemein ohn ihne armu&#x366;t ſind/
             <lb/>
             bey dem Haußfriden ich den armen reich befind.
-            
             <lb/>
+            
             Ein Gottesgabe zwar (worauff die jungen ſehen)
             <lb/>
             des leibes ſcho&#x364;nheit iſt: doch kan ſie bald vergehen
@@ -11336,7 +11328,7 @@
             <lb/>
             der liebe Gottesfrid/ und einigkeit auf erden.
             <lb/>
-            <fw place="bottom" type="pageNum">N v</fw>
+            <fw place="bottom" type="sig">N v</fw>
             <lb/>
             <fw place="bottom" type="catch">Vnd</fw>
             <lb/>
@@ -11353,8 +11345,8 @@
             namlich/ die bru&#x364;derlieb: und/ wann ſich wol begehen
             <lb/>
             die nachbarn: und/ wann ſich ehleuhte wol verſtehen.
-            
             <lb/>
+            
             Hiemit verehr ich euch/ o wolgepartes par!
             <lb/>
             ſo vil und ich vermag: doch mehr dann die bißhar
@@ -11375,8 +11367,8 @@
             <head><label>[68.]</label> <hi rendition="#aq"><num>LXXIV.</num></hi>
             <lb/>
             Hochzeitliches Klinggedicht.</head>
-            
             <lb/>
+            
             <hi rendition="#in">D</hi>Em menſchen iſt zwar gu&#x366;t/ daß er kein weib beru&#x364;hre/
             <lb/>
             wie dann Sanct Paulus ſpricht/ und doch nicht widerſpricht/
@@ -11406,8 +11398,7 @@
             <hi rendition="#b">Jn Gott</hi> er gehet <hi rendition="#b">her</hi>/ und ſie iſt <hi rendition="#b">Huldenreiche!</hi>
             <lb/>
             
-            <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXXV.</num></hi></head>
-            
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXXV.</hi></fw>
             <lb/>
             <pb facs="4017337" n="203"/>
             <milestone unit="page" ana="#facs_226_tr_1"/>
@@ -11423,8 +11414,8 @@
             auf eines ſeiner freunden Ehren-
             <lb break="no"/>
             hochzeit.</head>
-            
             <lb/>
+            
             <hi rendition="#in">W</hi>Jewol ich nimmermehr vertrawe meinen ſinnen/
             <lb/>
             daß ihnen müglich ſey zu&#x366; machen/ nach beginnen/
@@ -11450,8 +11441,8 @@
             auch in dem Rund der welt das groſſe liecht mag ſeyn:
             <lb/>
             das iſt in jedem fahl die liebe nur allein.
-            
             <lb/>
+            
             Ein ſchiff kan auß gefahr/ ohn ſteurman&#x303;/ ſich nicht heben;
             <lb/>
             ohn Obern alle ſta&#x364;tt in ſteten ſorgen ſchweben;
@@ -11499,8 +11490,8 @@
             Auch Socrates/ der weys/ bezeuget rund und frey:
             <lb/>
             er geb dem liebgeſpra&#x364;ch den preyß bey gaſterey.
-            
             <lb/>
+            
             Diß ſahen go&#x364;ttlich ſeyn die/ ſo von Gott nichts wüſſen:
             <lb/>
             wie ſolte dann ein Chriſt hierauf nicht ſeyn gefliſſen?
@@ -11524,8 +11515,8 @@
             daß/ wie des hirſchen brunſt und liebe zu&#x366; dem hind;
             <lb/>
             alſo zu&#x366; deinem weib die deine ſich befind.
-            
             <lb/>
+            
             Noch eines mir verzeih; worauß geleichs erſcheinet;
             <lb/>
             die keuſche Turturtaub/ auß liebe/ ſeufftzt und weinet:
@@ -11557,8 +11548,8 @@
             der menſch zu&#x366; lehrnen auch/ was lieben heißt und iſt/
             <lb/>
             dem an den ſinnen doch das wenigſt nicht gebriſt?
-            
             <lb/>
+            
             Wer einig die geſtalt des menſchen wird betrachten/
             <lb/>
             auch in dem anblik nur/ wird ihn liebw<supplied>ü</supplied>rdig achten:
@@ -11574,8 +11565,8 @@
             ſinn- freud-  und huldenreich erſchaffen iſt der mann:
             <lb/>
             das weib/ den perlen gleich/ die ſcho&#x364;ne zeigen kan.
-            
             <lb/>
+            
             Wann aber/ mit gedult/ mich weiter wilt verho&#x364;ren/
             <lb/>
             ſo wil ich beyſpil dir von warer lieb eynfu&#x364;hren.
@@ -11599,8 +11590,8 @@
             alß/ mit vergiftem ſchwerdt/ er ward geſchlagen wund:
             <lb/>
             das hat ein andrer uns/ unla&#x364;ngſt gemachet kund.
-            
             <lb/>
+            
             Dergleichen beyſpil mehr wir finden bey den Heiden:
             <lb/>
             nun aber wil ich dich/ auß Gottes wort/ bescheiden
@@ -11648,8 +11639,8 @@
             ja/ wie den eignen leib/ den er nicht haſſen kan:
             <lb/>
             das weib nicht minder auch ſol lieben ihren mann.
-            
             <lb/>
+            
             So iſt nun auf der welt ſo ſchwa&#x364;res nicht zu&#x366;finden/
             <lb/>
             das/ durch die liebe/ wir nicht mo&#x364;gen überwinden:
@@ -11691,8 +11682,8 @@
             liebt das was liebens werth; die ma&#x364;ngel deket zu&#x366;:
             <lb/>
             ſo widerfahret euch die gegenlieb in ru&#x366;h.
-            
             <lb/>
+            
             Was iſt es aber noht die liebe zu&#x366; gelieben
             <lb/>
             dem deſſe hertz von Gott/ auß liebe/ war getriben/
@@ -11708,8 +11699,8 @@
             künſch/ wie Suſanna war; an zucht der Heſter gleich
             <lb/>
             iſt ſie/ nach hertzens wunſch: ihr Herꝛ an hulden reich.
-            
             <lb/>
+            
             Was ſol man weiter nun für einen wunſch erdenken?
             <lb/>
             Was ſol man/ ſchließlich/ doch an diß Gedichte henken?
@@ -11727,8 +11718,7 @@
             wo lauter lieb ohn leid. So wünſcht mein letſtes wort!
             <lb/>
             
-            <head><hi rendition="#aq"><num><fw place="bottom" type="catch"/>LXX<anchor xml:id="a188"/>VI<note type="annotation" targetEnd="a188"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</num><anchor xml:id="a189"/>VI<note type="annotation" targetEnd="a189"><p>In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor.</p></note>.</hi></head>
-            
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXXVI<!-- GP: In den beiden Vergleichsexemplaren gibt es zwischen V und I kein Leerzeichen. Möglicherweise liegt hier ein Druckfehler vor. --></hi></fw>
             <lb/>
             <pb facs="4017342" n="208"/>
             <milestone unit="page" ana="#facs_231_tr_1"/>
@@ -11740,8 +11730,8 @@
             <head><label>[247.]</label> <hi rendition="#aq"><num>LXXVI.</num></hi>
             <lb/>
             Tiſchzucht.</head>
-            
             <lb/>
+            
             <hi rendition="#in">K</hi>Om&#x342;t her und ho&#x364;rt mir zu&#x366;/ ihr/ die ihr auß der wiegen
             <lb/>
             vor ſiben jahren ſchon/ ohn mu&#x366;terhülf geſtigen/
@@ -11749,10 +11739,9 @@
             ich lehre Tiſcheszucht/ ohn die von altem har
             <lb/>
             des lieben vatters tiſch dem kind verbotten war.
+            <lb/>
             
-            <head><lb/>
-            Zu&#x366;rüſtung des tiſches.</head>
-            
+            <head>Zu&#x366;rüſtung des tiſches.</head>
             <lb/>
             So wa&#x364;ſch die ha&#x364;nde nun/ und dann/ zu&#x366; rechter zeite/
             <lb/>
@@ -11777,10 +11766,9 @@
             die augen/ ha&#x364;nd und hertz zu&#x366; ihm heb <anchor xml:id="a190"/>überſich<note type="annotation" targetEnd="a190"><p>Das Grimm-Wörterbuch bestätigt, dass es sich um ein einheitliches Wort handelt.</p></note>/
             <lb/>
             und um den ſegen ihn demu&#x364;htiglich anſprich.
+            <lb/>
             
-            <head><lb/>
-            Das tiſchdienen oder aufwarten.</head>
-            
+            <head>Das tiſchdienen oder aufwarten.</head>
             <lb/>
             Wann dann die eltern ſich mit ſpeiß und trank erlaben/
             <lb/>
@@ -11831,10 +11819,9 @@
             und wann er brots begert/ ſo bring ihm eilend mehr;
             <lb/>
             doch nicht in bloſſer hand; auf einem teller her
+            <lb/>
             
-            <head><lb/>
-            Gebührende zucht über tiſch.</head>
-            
+            <head>Gebührende zucht über tiſch.</head>
             <lb/>
             Sitzſt aber ſelb zu&#x366; tiſch/ bey jungen oder alten/
             <lb/>
@@ -11868,7 +11855,7 @@
             <lb/>
             vil minder auf den geitz/ und dich nicht überfriß.
             <lb/>
-            <fw place="bottom" type="pageNum">O</fw>
+            <fw place="bottom" type="sig">O</fw>
             <lb/>
             <fw place="bottom" type="catch">Es</fw>
             <lb/>
@@ -11979,10 +11966,9 @@
             wa&#x364;ſch deine ha&#x364;nde rein; und um die ſpeiß und trank/
             <lb/>
             ſag Gott/ mit lauter ſtim&#x342;/ von hertzen lob und dank.
+            <lb/>
             
-            <head><lb/>
-            Das aufnemmen des tiſches.</head>
-            
+            <head>Das aufnemmen des tiſches.</head>
             <lb/>
             Wann nun die mahlzeit jetzt ihr endſchafft hat bekom&#x342;en/
             <lb/>
@@ -12008,7 +11994,8 @@
             <lb/>
             das tu&#x366;ch im korb erſchütt/ und dann zu&#x366;ſamen leg.
             <lb/>
-            <fw place="bottom" type="pageNum">O ij</fw>
+            
+            <fw place="bottom" type="sig">O ij</fw>
             <lb/>
             <fw place="bottom" type="catch">Ve-</fw>
             <lb break="no"/>
@@ -12017,10 +12004,9 @@
             <fw place="top" type="pageNum">212</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
+            <lb/>
             
-            <head><lb/>
-            Vermahnung an die kinder.</head>
-            
+            <head>Vermahnung an die kinder.</head>
             <lb/>
             Sol nun/ o liebes kind! die Tiſcheszucht dich zieren/
             <lb/>
@@ -12029,15 +12015,15 @@
             den eltern/ lehrern/ und fürgſetzten in gemein
             <lb/>
             im Herꝛen/ williglich/ und ſtets gehorſam ſeyn.
+            <lb/>
             
-            <head><lb/>
-            <label>[248.]</label> Beſchreibung
+            <head><label>[248.]</label> Beſchreibung
             <lb/>
             des ungeſunden Geſund-
             <lb break="no"/>
             heittrinkens.</head>
-            
             <lb/>
+            
             <hi rendition="#in">K</hi>Om&#x342;t/ jung<anchor xml:id="a193"/><note type="annotation" targetEnd="a193"><p>Das Komma wurde nachträglich von Hand eingezeichnet.</p></note> und alte kom&#x342;t! ihr ſolt da wunder ſehen/
             <lb/>
             wie doch bey Bacchusfeſt Geſundheittrünk umgehen/
@@ -12045,12 +12031,11 @@
             ſo gar daß ſie; da ſie ſeyn ſolten ein artzney;
             <lb/>
             wo nicht den tod/ jedoch vil krankheit bringen bey.
+            <lb/>
             
-            <head><lb/>
-            Ru&#x366;hmloſe ſatzungen der Geſund-
+            <head>Ru&#x366;hmloſe ſatzungen der Geſund-
             <lb break="no"/>
             heitſa&#x364;uffer.</head>
-            
             <lb/>
             Bey ſolchem freßmahl nun zu&#x366; oberſt wird geſetzet
             <lb/>
@@ -12107,10 +12092,9 @@
             doch findt man deren wol/ die diſes wenig irꝛt/
             <lb/>
             ob es gleich ſinn und hirn verirꝛet und verwirꝛt.
+            <lb/>
             
-            <head><lb/>
-            Gemeiner Geſundheittrunk.</head>
-            
+            <head>Gemeiner Geſundheittrunk.</head>
             <lb/>
             Herꝛ Witzla&#x364;r iſt gezeug/ und weißt hiervon zu&#x366; ſingen:
             <lb/>
@@ -12167,12 +12151,11 @@
             dann/ weil der trunk bey mir erꝛeicht ſein end und zil/
             <lb/>
             des Fürſten Gſundheit ich hiemit anheben wil.
+            <lb/>
             
-            <head><lb/>
-            Geſundheittrunk groſſer
+            <head>Geſundheittrunk groſſer
             <lb/>
             Herꝛen.</head>
-            
             <lb/>
             Des Fürſten Gſundheit gilt! jetz wird es recht angehen:
             <lb/>
@@ -12221,10 +12204,9 @@
             doch ward ihr zorn geſtillt/ und wider eyngeſchenkt
             <lb/>
             ſo vil/ daß ihn hernach ein grimmig fieber kra&#x364;nkt.
+            <lb/>
             
-            <head><lb/>
-            Newer Geſundheittrunk.</head>
-            
+            <head>Newer Geſundheittrunk.</head>
             <lb/>
             Secht! mit dergleichen ſchimpf/ und groben narꝛenpoſſen
             <lb/>
@@ -12243,12 +12225,11 @@
             ſie thu&#x366;n es alle nach; ein jeder meiſterlich.
             <lb/>
             Bey diſem bleibt es nicht/ ꝛc.
+            <lb/>
             
-            <head><lb/>
-            Stantibus illis/ auf Sant
+            <head>Stantibus illis/ auf Sant
             <lb/>
             Johans ſegen.</head>
-            
             <lb/>
             Wann ſie vom tiſche gehen/
             <lb/>
@@ -12277,18 +12258,18 @@
             und mein auch/ daß hiervon ich habe ſchweigens fu&#x366;g.
             <lb/>
             <fw place="bottom" type="catch">Be-</fw>
-            <lb break="no"/>
+            <lb/>
             <pb facs="4017350" n="216"/>
             <milestone unit="page" ana="#facs_239_tr_1"/>
             <fw place="top" type="pageNum">216</fw>
             <lb/>
             <fw place="top" type="header">Allerhand Vberſchrifften.</fw>
             <lb/>
-            Beſchließliche erinner- und abmahnung vom
+            <head>Beſchließliche erinner- und abmahnung vom
             <lb/>
             leib- und ſeelen-ſcha&#x364;dlichen Geſundheit-
             <lb break="no"/>
-            trinken.
+            trinken.</head>
             <lb/>
             Wann nun durch füllerey/ und durch geſundheitſauffen/
             <lb/>
@@ -12342,10 +12323,11 @@
             <lb/>
             <hi rendition="#g">ENDE.</hi>
             <lb/>
+               
             <pb facs="4017351"/>
             <pb facs="4017352"/>
             <pb facs="4017353"/>
             <pb facs="4017354"/>
-         </div>
+      </body>
    </text>
 </TEI>
