@@ -121,7 +121,7 @@
             <lb/>
             Vetteren/ Schwa&#x364;geren und Gefa&#x364;t-
             <lb break="no"/>
-            teren.</hi></p><div/>
+            teren.</hi></p></div>
             <lb/>
             <pb facs="4017120"/>
             <milestone unit="page" ana="#facs_10_tr_1"/>
@@ -426,7 +426,7 @@
             <lb break="no"/>
             fecti, Poëtæ coronati.</hi></head>
             <lb/>
-            <p><hi rendition="#aq"></hi><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn.
+            <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn.
             <lb/>
             Veiraſſius varia tua Scripta Poëtica, quæ
             <lb/>
@@ -454,7 +454,7 @@
             <lb/>
             vigilantiſſimi; Poëtæ acutiſſimi.</hi></head>
             <lb/>
-            <p><hi rendition="#aq"></hi><hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Odarum
+            <p><hi rendition="#aq"><hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Odarum
             <lb/>
             epitomas lectioni meæ, non dico cenſuræ, concrederes:
             <lb/>
@@ -527,7 +527,7 @@
             <lb/>
             <fw place="bottom" type="sig"><hi rendition="#aq">)( <hi rendition="#i">5</hi></hi></fw>
             <lb/>
-            <fw place="bottom" type="catch"/><hi rendition="#aq">Glo-</hi></fw>
+            <fw place="bottom" type="catch"><hi rendition="#aq">Glo-</hi></fw>
             <pb facs="4017127"/>
             <milestone unit="page" ana="#facs_17_tr_1"/>
             <l><hi rendition="#aq">Gloria. Quî veniam factis expoſcere iniquis,</hi></l>
@@ -564,7 +564,7 @@
             <lb/>
             <l><hi rendition="#aq">Curem? Nonniſi, quæ proſint hîc ſcripta relinquo.</hi></l></lg>
             <lb/>
-            <signed><hi rendition="#aq #right"></hi><hi rendition="#k">JOH. CASPARUS SUIZERUS</hi> <abbr>f.</abbr></hi></signed>
+            <signed><hi rendition="#aq #right"><hi rendition="#k">JOH. CASPARUS SUIZERUS</hi> <abbr>f.</abbr></hi></signed>
             <lb/>
             </div>
             
@@ -572,7 +572,7 @@
             
             <div type="poem">
             <head><label>[xvii.]</label>
-               <hi rendition="#aq #c"><num>III.</num><lb/> In laudem Autoris, <abbr>&amp;c.</abbr></head>
+               <hi rendition="#aq #c"><num>III.</num><lb/> In laudem Autoris, <abbr>&amp;c.</abbr></hi></head>
             <lb/>
             <head><hi rendition="#aq"><num>1.</num></hi></head>
             <lb/>
@@ -585,10 +585,10 @@
             <lb/>
                <l><hi rendition="#aq #i">Omne proin punctum nemo tuliſſe neget.</hi></l></lg>
             <lb/>
-            <num><fw place="bottom" type="catch"/>2.</num> <hi rendition="#i">Uti-</hi></hi>
+            <fw place="bottom" type="catch"><num>2.</num> <hi rendition="#i">Uti-</hi></fw>
             <pb facs="4017128"/>
             <milestone unit="page" ana="#facs_18_tr_1"/>
-            <head><hi rendition="#aq"><num>2.</num></head>
+            <head><hi rendition="#aq"><num>2.</num></hi></head>
             <lb/>
                <lg type="poem"><l><hi rendition="#aq #i">Utile quisquis amas, ac audis ſuave libenter,</hi></l>
             <lb/>
@@ -641,7 +641,7 @@
             <lb/>
             Vitoduranorum Diaconus.</hi></signed></div>
             <lb/>
-            <num><fw place="bottom" type="catch"/>V.</num></hi> Zu&#x366;
+            <fw place="bottom" type="catch"><num>V.</num> Zu&#x366;</fw>
             <lb/>
             <pb facs="4017129"/>
             <milestone unit="page" ana="#facs_19_tr_1"/>
@@ -943,6 +943,7 @@
             <lb/>
             <fw place="bottom" type="catch">Vier-</fw>
             <lb/>
+         </div>
          </front>
       <body>
             
@@ -10244,7 +10245,7 @@
             der kan des Ho&#x364;chſten huld ihm ſelber wol verſchertzen.
             <lb/>
             
-            <num><fw place="bottom" type="catch"><hi rendition="#aq">XXXIX.</hi></fw>
+            <fw place="bottom" type="catch"><num><hi rendition="#aq">XXXIX.</hi></num></fw>
             <lb/>
             <pb facs="4017320" n="186"/>
             <milestone unit="page" ana="#facs_209_tr_1"/>
