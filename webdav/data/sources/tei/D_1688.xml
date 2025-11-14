@@ -28,7 +28,6 @@
             <pb facs="4076749"/>
             <pb facs="4076750"/>
             <pb facs="4076751"/>
-            <pb facs="4"/>
             <milestone unit="page" ana="#facs_4_tr_1"/>
             <label>[ii.]</label> Johann-Wilhelm
             <lb/>
@@ -1051,7 +1050,7 @@
             <lb break="no"/>
             ſche Getichte und Geſa&#x364;nge.
             <lb/>
-            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET.</hi></hi></hi>
             <lb/>
             <hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h und fleiß nicht
             <lb/>
@@ -1091,7 +1090,7 @@
             <lb/>
             Gottſtatt und Thorberg.
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XIV.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>XIV.</num></hi></fw>
             <lb/>
             <pb facs="4076771"/>
             <milestone unit="page" ana="#facs_23_tr_1"/>
@@ -1325,13 +1324,13 @@
             <lb break="no"/>
             troniq&#x301;ue loco ſuſpiciundo authori, <hi rendition="#k"><hi rendition="#g">JO-</hi></hi>
             <lb break="no"/>
-            <hi rendition="#k"/><hi rendition="#k"/><hi rendition="#g"/>
+            <hi rendition="#k"/><hi rendition="#k"/><hi rendition="#g"/><!--Zeile fehlt ? [CF]-->
             <lb/>
             paſtor Eden-Kobianus inferioris palati-
             <lb break="no"/>
             natus Helv. Tig.</hi>
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><hi rendition="#i"><choice><sic>VVihel-</sic><corr><choice><corr/><sic>VV</sic></choice>ilhel-</corr></choice><fw place="bottom" type="catch"/></hi><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><hi rendition="#i"/></hi><hi rendition="#i"/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><hi rendition="#i"><choice><sic>VVihel-</sic><corr><choice><corr/><sic>VV</sic></choice>ilhel-</corr></choice></hi></hi></fw>
             <lb break="no"/>
             <pb facs="4076773"/>
             <milestone unit="page" ana="#facs_25_tr_1"/>
@@ -1537,7 +1536,7 @@
             
             <!-- Teil I -->
             
-            <pb facs="4076776"/>
+            <pb facs="4076776" n="[1]"/>
             <milestone unit="page" ana="#facs_28_tr_1"/>
             Aller
             <lb/>
@@ -1972,7 +1971,7 @@
             <lb/>
             Dir ſeye lob/ dieweil mein bitten unverloren.
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XXIX.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>XXIX.</num></hi></fw>
             <lb/>
             <pb facs="4076784" n="9"/>
             <milestone unit="page" ana="#facs_36_tr_1"/>
@@ -2291,7 +2290,7 @@
             <lb/>
             klang.
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XLVIII.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>XLVIII.</num></hi></fw>
             <lb/>
             <pb facs="4076790" n="15"/>
             <milestone unit="page" ana="#facs_42_tr_1"/>
@@ -2582,7 +2581,7 @@
             <lb/>
             Ach/ eil zuhelffen mir: mein hoffnung ſteht zu dir!
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>LXXI.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>LXXI.</num></hi></fw>
             <lb/>
             <pb facs="4076794" n="19"/>
             <milestone unit="page" ana="#facs_46_tr_1"/>
@@ -3023,7 +3022,7 @@
             <lb/>
             das iſt/ der feinden ſtoltz/ nach ſeinem wort/ kan fellen.
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XCIV.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>XCIV.</num></hi></fw>
             <lb/>
             <pb facs="4076804" n="29"/>
             <milestone unit="page" ana="#facs_56_tr_1"/>
@@ -3399,7 +3398,7 @@
             <lb/>
             <fw place="bottom" type="pageNum"><anchor xml:id="a62"/>C ij<note type="annotation" targetEnd="a62"><p>Die Paginierung weicht vom üblichen Schema ab, nach welchem hier "D ij" stehen müsste</p></note></fw>
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>CXVIII.<fw place="bottom" type="catch"/></num><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><num/></hi><num/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><num>CXVIII.</num></hi></fw>
             <lb/>
             <pb facs="4076811" n="36"/>
             <milestone unit="page" ana="#facs_63_tr_1"/>
@@ -11245,7 +11244,7 @@
             <lb/>
             und unſer dich erbarm/ und unſer/ ꝛc.
             <lb/>
-            <num><fw place="bottom" type="catch"/>7</num> O Gott
+            <fw place="bottom" type="catch"><num>7</num> O Gott</fw>
             <lb/>
             <pb facs="4076938" n="163"/>
             <milestone unit="page" ana="#facs_190_tr_1"/>
@@ -11702,7 +11701,7 @@
             <lb/>
             und alle ſinn erfreut!
             <lb/>
-            <num><fw place="bottom" type="catch"/>3.</num> Was
+            <fw place="bottom" type="catch"><num>3.</num> Was</fw>
             
             <lb/>
             <pb facs="4076946" n="171"/>
@@ -12757,7 +12756,7 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="4076969"/>
+            <pb facs="4076969" n="194"/>
             <milestone unit="page" ana="#facs_221_tr_1"/>
             1<anchor xml:id="a145"/><unclear>9</unclear><note type="annotation" targetEnd="a145"><p>Wahrscheinlich wurde die 9 nicht vollständig gedruckt. Sieht im Augsburger Exemplar auch so aus.</p></note>4
             <lb/>
@@ -20724,7 +20723,7 @@
             <lb/>
             <fw place="top" type="header">Hochzeit-Geſang.</fw>
             
-            <<head>lb/>
+            <head><lb/>
             <label>[D.10.]</label> Auf Herꝛen J. J. G. und Jungf. R. R.
             <lb/>
             Ehren-hochzeit:</head> den 9. <hi rendition="#aq">Febr.</hi> 1669.
@@ -27459,7 +27458,7 @@
             
             <!-- Teil V -->
             
-            <pb facs="4077248"/>
+            <pb facs="4077248" n="[1]"/>
             <milestone unit="page" ana="#facs_500_tr_1"/>
             Anhang der Gedichten
             <lb/>
@@ -27486,9 +27485,9 @@
             <hi rendition="#aq">M DC LXXXVIII.</hi>
             
             <lb/>
-            <pb facs="4077249"/>
+            <pb facs="4077249" n="[2]"/>
             
-            <pb facs="4077250"/>
+            <pb facs="4077250" n="[3]"/>
             <milestone unit="page" ana="#facs_502_tr_1"/>
             <fw place="top" type="header">Allerhand Uberſchrifften.</fw>
             
@@ -27571,7 +27570,7 @@
             <lb/>
             damit in ſeinem reych wir werden recht gekro&#x364;net.
             
-            <<head>lb/>
+            <head><lb/>
             <num>10.</num> Fu&#x364;rſtellung.</head>
             
             <lb/>
@@ -33124,66 +33123,83 @@
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
             
-            <lb/>
-            <label>[D.148.]</label> <num>252.</num> Hrn. Jacob Frieſen S.
+            <head><lb/>
+            <label>[D.148.]</label> <num>252.</num> Hrn. Jacob Frieſen S.</head>
+            
             <lb/>
             Der From&#x342; Verwahlter Frieß ſeins krancknen Leibes pflegte/
             <lb/>
             lebt ma&#x364;ſſig/ doch den Tod/ zum ſchohnen nicht bewegte.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.149.]</label> <num>253.</num> Hrn. D. und Statt-Artzets Joh.
             <lb/>
-            Rud. Geigers S.
+            Rud. Geigers S.</head>
+            
             <lb/>
             Der vilen Kranknen half/ erkrancket ſelb und ſtirbet:
             <lb/>
             Lebt aber ewig dort/ ſein Nam&#x342; auch nicht verdirbet.
-            <lb/>
-            <label>[D.150.]</label> <num>254.</num> Hrn. C. Maurers S.
+            
+            <head><lb/>
+            <label>[D.150.]</label> <num>254.</num> Hrn. C. Maurers S.</head>
+            
             <lb/>
             Herꝛ Maurer vil erbaut mit Schrifft gema&#x364;ſſer Predig:
             <lb/>
             ward alt und lebensſatt/ des Seelen-kerkers ledig.
-            <lb/>
-            $D.151$ <num>255.</num> Hrn. C. Suters S.
+            
+            <head><lb/>
+            $D.151$ <num>255.</num> Hrn. C. Suters S.</head>
+            
             <lb/>
             Herꝛ Suter gab ans Liecht; eh Er von uns geſchiden;
             <lb/>
             ſein ſcho&#x364;nes Zeugnußbuch: Lebt nun in ſteten Freuden.
-            <lb/>
-            $D.152$ <num>256.</num> Hrn. Fel. Weißen S. Pf. Z. Fr. M.
+            
+            <head><lb/>
+            $D.152$ <num>256.</num> Hrn. Fel. Weißen S. Pf. Z. Fr. M.</head>
+            
             <lb/>
             Herꝛ Weiß nur weiſes lehrt/ mit eifer und mit fleiß/
             <lb/>
             zu Ehren dem/ der einſt uns wird bekleiden weiß.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.153.]</label> <num>257.</num> Hrn. Joh. Holtzhalben S. Pfarꝛern
             <lb/>
-            zun Predigern.
+            zun Predigern.</head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ Holtzhalb</hi> ſeiner Gmeind/ in Treuen ſtuhnde vor/
             <lb/>
             und wieſe eifrigſt ſie/ zum <hi rendition="#b">Lebens-holtz</hi> empor.
-            <lb/>
-            <label>[D.154.]</label> <num>258.</num> Hrn. H. C. Wirtzen S. Pf. Z. Pr.
+            
+            <head><lb/>
+            <label>[D.154.]</label> <num>258.</num> Hrn. H. C. Wirtzen S. Pf. Z. Pr.</head>
+            
             <lb/>
             Tieffſinnig war Herꝛ Wirtz in aller Weißheit-Lehr:
             <lb/>
             der Kirchen und der Schul/ und Vatterlandes Ehr.
-            <lb/>
+            
+            <head><lb/>
             Nachruhm Etlicher Weltbekannten Herꝛen
             <lb/>
             <hi rendition="#aq">Profeſſorum</hi> der Schul Zu&#x364;rich:
             <lb/>
-            als
-            <lb/>
+            als</head>
+            
+            <head><lb/>
             <label>[D.155.]</label> <num>259.</num> Hrn. Caſpar Waſers/ viler Sprachen
             <lb/>
-            ku&#x364;ndigen <hi rendition="#aq">Theologi.</hi>
+            ku&#x364;ndigen <hi rendition="#aq">Theologi.</hi></head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ Waſer<anchor xml:id="a462"/>/<note type="annotation" targetEnd="a462"><p>Die Virgel wird als fett mitgetagt, weil sie zur Sinneinheit gehört.</p></note></hi> der die Welt; Kreutzweiſe; durchgeſtrichen/
             <lb/>
             <supplied>iſt</supplied>; daß Er ewig leb; mit ho&#x364;chſtem ruhm verblichen.
+            
             <lb/>
             <fw place="bottom" type="catch">Ein</fw>
             <lb/>
@@ -33192,8 +33208,10 @@
             <fw place="top" type="pageNum">65</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            <label>[D.156.]</label> Ein anders.
+            
+            <head><lb/>
+            <label>[D.156.]</label> Ein anders.</head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ Waſer</hi> wolgereiſt/ und viler Spraachen ku&#x364;ndig/
             <lb/>
@@ -33202,54 +33220,70 @@
             Starb/ wie er hat <anchor xml:id="a464"/>g<note type="annotation" targetEnd="a464"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>elebt/ vernu&#x364;nftig/ ſelig ab
             <lb/>
             die Seel im Him<anchor xml:id="a465"/>m<note type="annotation" targetEnd="a465"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>el jetz: der Leib ruht in dem Grab.
-            <lb/>
-            <label>[D.157.]</label> <num>260.</num> Hrn. R. <hi rendition="#aq">Hoſpiniani.</hi> S.
+            
+            <head><lb/>
+            <label>[D.157.]</label> <num>260.</num> Hrn. R. <hi rendition="#aq">Hoſpiniani.</hi> S.</head>
+            
             <lb/>
             <hi rendition="#aq">Hoſpinianus</hi> iſt ein ſo<anchor xml:id="a466"/>l<note type="annotation" targetEnd="a466"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>cher Mann geſtorben/
             <lb/>
             Der von den Freund und Feind ein ewigs Lob erworbe<supplied>n.</supplied>
-            <lb/>
-            <label>[D.158.]</label> <num>261.</num> Hrn H. Erni. S.
+            
+            <head><lb/>
+            <label>[D.158.]</label> <num>261.</num> Hrn H. Erni. S.</head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ Hei<supplied>n</supplied>rich E<anchor xml:id="a467"/>r<note type="annotation" targetEnd="a467"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>ni </hi>ſtarb ein hochgelehrter Lehrer
             <lb/>
             der hohen Gottes Leh<supplied>r</supplied>/ und Ehren Gottes Mehrer.
-            <lb/>
-            <label>[D.159.]</label> <num>262.</num> <anchor xml:id="a468"/>H<note type="annotation" targetEnd="a468"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>rn. P. Tommans. S.
+            
+            <head><lb/>
+            <label>[D.159.]</label> <num>262.</num> <anchor xml:id="a468"/>H<note type="annotation" targetEnd="a468"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>rn. P. Tommans. S.</head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ To<supplied>m</supplied>man</hi> h<anchor xml:id="a469"/>a<note type="annotation" targetEnd="a469"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein einzelnes a.</p></note>tte vil auf alten Rariteten:
             <lb/>
             Er war <hi rendition="#aq">Pro<supplied>fe</supplied>ſſor</hi> auc<anchor xml:id="a470"/>h<note type="annotation" targetEnd="a470"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note> der Schrifften der Propheten.
-            <lb/>
-            <label>[D.160.]</label> <num>263.</num> Hrn. R. Stukki. S.
+            
+            <head><lb/>
+            <label>[D.160.]</label> <num>263.</num> Hrn. R. Stukki. S.</head>
+            
             <lb/>
             Dem Herꝛe<supplied>n</supplied> Stukki war das Stukkewerk erleidet:
             <lb/>
             Drum hat d<supplied>e</supplied>r Scho&#x364;p<anchor xml:id="a471"/>f<note type="annotation" targetEnd="a471"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>er ihn/ mit ganzer Wa&#x364;ht/ bekleidet.
-            <lb/>
-            <label>[D.161.]</label> <num>264.</num> Hrn. H. Zeller. S.
+            
+            <head><lb/>
+            <label>[D.161.]</label> <num>264.</num> Hrn. H. Zeller. S.</head>
+            
             <lb/>
             Des <hi rendition="#b">Herꝛen Zellers</hi> Treu/ in ſchwerer Schularbeit
             <lb/>
             war unvergleichlich groß: ruh't ietz in ewigkeit.
-            <lb/>
-            <label>[D.162.]</label> <num>265.</num> Hrn. J. H. Hottinger.
+            
+            <head><lb/>
+            <label>[D.162.]</label> <num>265.</num> Hrn. J. H. Hottinger.</head>
+            
             <lb/>
             Biß zur ve<supplied>w</supplied>underung <hi rendition="#b">Hottinger</hi> war gelehrt:
             <lb/>
             <hi rendition="#b">Schweitz: Pfaltz: Holl-Engelland</hi> Jhn deſſentwegen ehrt.
-            <lb/>
-            <label>[D.163.]</label> Ein anders.
+            
+            <head><lb/>
+            <label>[D.163.]</label> Ein anders.</head>
+            
             <lb/>
             Von dem di<supplied>e</supplied> Glehrte ſelbs/ gleich einem Fluß/ gefloſſen/
             <lb/>
             der hat; <anchor xml:id="a472"/>A<note type="annotation" targetEnd="a472"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>ch/ daß er hat! im Fluß ſein Leben b'ſchloſſen.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.164.]</label> <num>266.</num> Merkwürdig/
             <lb/>
             wie Ja<anchor xml:id="a473"/>c<note type="annotation" targetEnd="a473"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>o<anchor xml:id="a474"/>b<note type="annotation" targetEnd="a474"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>/ der domalige Knecht im Sparenberg
             <lb/>
-            die hochbetru&#x364;bte Fr. Doctorin getro&#x364;ſtet.
+            die hochbetru&#x364;bte Fr. Doctorin getro&#x364;ſtet.</head>
+            
             <lb/>
             Jſts nicht a<supplied>l</supplied>ſo Frau Gvatterin/ Gott gab Euch Euern Herꝛen?
             <lb/>
@@ -33262,26 +33296,31 @@
             <fw place="bottom" type="pageNum">e</fw>
             <lb/>
             <fw place="bottom" type="catch"><num>267.</num> Ei-</fw>
+            
             <lb break="no"/>
             <pb facs="4077313" n="66"/>
             <milestone unit="page" ana="#facs_565_tr_1"/>
             <fw place="top" type="pageNum">66</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
+            
+            <head><lb/>
             <label>[D.165.]</label> <num>267.</num> Hrn. <hi rendition="#aq">D.</hi> Hottingers ſel. Stim&#x342; von
             <lb/>
-            Himmel.
+            Himmel.</head>
+            
             <lb/>
             Alß mich anjetz beru&#x364;ft Holland
             <lb/>
             nam Gott mich auf ins Hohe Land/
             <lb/>
             und auch zugleich ins Engelland.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.166.]</label> <num>268.</num> Der betrübten nachgelaßnen Fr. Wittib.
             <lb/>
-            Klagred.
+            Klagred.</head>
+            
             <lb/>
             Ach <hi rendition="#b">Leiden/ Leiden<anchor xml:id="a476"/>/<note type="annotation" targetEnd="a476"><p>Die Virgel wird hier als Teil der Sinneinheit als fett mitgetaggt.</p></note></hi><anchor xml:id="a477"/><note type="annotation" targetEnd="a477"><p>Die Virgel wird hier als Teil der Sinneinheit als fett mitgetaggt.</p></note> du magſt/ billich mir erleiden!
             <lb/>
@@ -33290,18 +33329,22 @@
             Gedult! Gott ſelber wird bald enden Euer leiden/
             <lb/>
             und in die gro&#x364;ſte Freud verkehren alles leiden!
-            <lb/>
-            <label>[D.167.]</label> <num>269.</num> Hrn. Joſt von Kuſen S. <hi rendition="#aq">Prof. Log.</hi>
+            
+            <head><lb/>
+            <label>[D.167.]</label> <num>269.</num> Hrn. Joſt von Kuſen S. <hi rendition="#aq">Prof. Log.</hi></head>
+            
             <lb/>
             <hi rendition="#b">Der From&#x303; von Ku&#x364;ſen</hi> ſtarb; von gantzer Schul berauen;
             <lb/>
             do&#x364;rfft eigner G'lehrte nicht/ auß Demuth/ fo&#x364;llig trauen.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.168.]</label> <num>270.</num> Hrn. Heinrich Ulrichen Sel. Schul-
             <lb break="no"/>
             herꝛen und <hi rendition="#aq">Profeſſor.</hi> der Griechiſchen
             <lb/>
-            Spraach.
+            Spraach.</head>
+            
             <lb/>
             Der <hi rendition="#b">Ehrentempel</hi> ſtuhnd dem Herꝛen billich offen/
             <lb/>
@@ -33310,7 +33353,8 @@
             damit der Jugend Er die Sprach- und Sitten-Lehr
             <lb/>
             einpflantzen mo&#x364;cht/ und ſo befo&#x364;rdern Gottes Ehr.
-            <lb/>
+            
+            <head><lb/>
             <label>[219.]</label> <num>271.</num> Traur- und Troſtgeticht/
             <lb/>
             u&#x364;ber
@@ -33321,7 +33365,8 @@
             <lb/>
             Herꝛen Felix Chriſtian Spo&#x364;ris
             <lb/>
-            nachfolg.
+            nachfolg.</head>
+            
             <lb/>
             <hi rendition="#in">W</hi>Je/ <anchor xml:id="a478"/>ſ<note type="annotation" targetEnd="a478"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>onder Sonnenſchein/ der Tag uns traurig fallt/
             <lb/>
@@ -33346,38 +33391,46 @@
             Jedoch gebu&#x364;hrend Lob/ <hi rendition="#b">Herꝛ Wolff/</hi> Euch ewig bleibe:
             <lb/>
             <hi rendition="#b">Herꝛ Spo&#x364;ri</hi> bey der Schul vil zeits mit nutz ver<anchor xml:id="a483"/>t<note type="annotation" targetEnd="a483"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>reibe!
-            <lb/>
+            
+            <head><lb/>
             <label>[220.]</label> <num>272.</num> Uber Herꝛen Peter Simlers/ weiland Pf.
             <lb/>
             zu Altorff/ geſchwinden/ ſeligen/ und merkwu&#x364;r-
             <lb break="no"/>
-            digen Hinſcheid/
+            digen Hinſcheid/</head>
             <lb/>
             den 21. Hornung/ 1654.
+            
             <lb/>
             Vom Predigſtul des HERREN Hand
             <lb/>
             mich fu&#x364;hret in das V<anchor xml:id="a484"/>a<note type="annotation" targetEnd="a484"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>tterland.
+            
             <lb/>
             Vor zw<supplied>e</supplied>yen Stunde<anchor xml:id="a485"/>n<note type="annotation" targetEnd="a485"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> Predigt' ich/
             <lb/>
             nun bin ich eine Todtenleich.
+            
             <lb/>
             Zwo S<supplied>t</supplied>und/ nach le<anchor xml:id="a486"/>t<note type="annotation" targetEnd="a486"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ſt gehaltner Predig/
             <lb/>
             ward m<supplied>e</supplied>ine Seel de<anchor xml:id="a487"/>s<note type="annotation" targetEnd="a487"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> Leibes ledig.
+            
             <lb/>
             Vom o<supplied>r</supplied>t meins Brufs der Herꝛ zu ſich
             <lb/>
             auß diſer zeit b<anchor xml:id="a488"/>e<note type="annotation" targetEnd="a488"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ru&#x364;fte mich.
+            
             <lb/>
             Vom Guttſch<anchor xml:id="a489"/>l<note type="annotation" targetEnd="a489"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein einzelnes l.</p></note>ag <choice><sic>ſchon ſchon</sic><corr>ſchon</corr></choice> beru&#x364;hrt/ den Gottsdienſt ich follendet/
             <lb/>
             zwo Stund he<anchor xml:id="a490"/>r<note type="annotation" targetEnd="a490"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein einzelnes r.</p></note>nach zu Hauß/ mein Leben ſelig endet.
+            
             <lb/>
             Vom Guttſch<anchor xml:id="a491"/>l<note type="annotation" targetEnd="a491"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein einzelnes l.</p></note>ag/ in der Kirch/ ich um die Rede kam/
             <lb/>
             ums Leben in dem Hauß. Der Ho&#x364;chſt mich zu ſich nam.
+            
             <lb/>
             Meins Leben<anchor xml:id="a492"/>s<note type="annotation" targetEnd="a492"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> allerletſtes Wort/
             <lb/>
@@ -33398,11 +33451,13 @@
             Sie weren noch Zuho&#x364;rer/
             <lb/>
             und wurdens fo&#x364;rter ſeyn.
-            <lb/>
+            
+            <head><lb/>
             <milestone unit="page" ana="#facs_566_r_4"/>
             <label>[D.169.]</label> <num>273.</num> Grabſchrifft/
             <lb/>
-            Uber Hrn. Pf. Geßner ſel. zu Baſſerſtorff.
+            Uber Hrn. Pf. Geßner ſel. zu Baſſerſtorff.</head>
+            
             <lb/>
             Jm Kirchenſtand zwentz'g Jahr ich war/
             <lb/>
@@ -33415,16 +33470,19 @@
             <fw place="bottom" type="pageNum">e ij</fw>
             <lb/>
             <fw place="bottom" type="catch"><num>274.</num> Lob-</fw>
+            
             <lb break="no"/>
             <pb facs="4077315" n="68"/>
             <milestone unit="page" ana="#facs_567_tr_1"/>
             <fw place="top" type="pageNum">68</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
+            
+            <head><lb/>
             <label>[221.]</label> <num>274.</num> Lob- und Leichgeticht/ auf H. H. J. Gw. ſ.
             <lb/>
-            A. Z. Fr. M. Ehrenbegra&#x364;bnuß.
+            A. Z. Fr. M. Ehrenbegra&#x364;bnuß.</head>
+            
             <lb/>
             Die Handgriff in der Kunſt Chimey/
             <lb/>
@@ -33433,10 +33491,12 @@
             <anchor xml:id="a493"/>u<note type="annotation" targetEnd="a493"><p>Verschwommen. Wahrscheinlich Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein u.</p></note>nſterblich meinen Nammen machen/
             <lb/>
             biß daß zum Heil ich wird' erwachen.
-            <lb/>
+            
+            <head><lb/>
             <label>[222.]</label> <num>275.</num> Auf Herꝛen Haubtm. Joh. Hofm. ſ.
             <lb/>
-            Ehrenbegra&#x364;bnuß.
+            Ehrenbegra&#x364;bnuß.</head>
+            
             <lb/>
             Eins Helden Leib hie ruhet auß:
             <lb/>
@@ -33457,8 +33517,10 @@
             Fu&#x364;nfzehen Wunden/ in dem Streit/
             <lb/>
             mir haben Leib und Seel entzweit.
-            <lb/>
-            <label>[223.]</label> <num>276.</num> Der Niemand.
+            
+            <head><lb/>
+            <label>[223.]</label> <num>276.</num> Der Niemand.</head>
+            
             <lb/>
             Jch heiſſe Niemand; wie mich jung' und alte nennen;
             <lb/>
@@ -33467,6 +33529,7 @@
             dan/ was gebrochen ſie; was bo&#x364;ſes ſie getahn/
             <lb/>
             das legen ſie auf mich/ weil ich nicht reden kan.
+            
             <lb/>
             <label>[224.]</label> <num>277.</num> Es liget einer hier begraben
             <lb/>
@@ -33475,6 +33538,7 @@
             noch fande nicht ein wo&#x364;rtlein ſtatt
             <lb/>
             bey deme/ der kein/ ohren hat.
+            
             <lb/>
             <num>278.</num> Ein a&#x364;dle fromme Seel iſt worden ko&#x364;rperloß/
             <lb/>
@@ -33483,6 +33547,7 @@
             der ko&#x364;rper ietz im grab/ verſtrikt mit todesbande/
             <lb/>
             wird bald im himmel ſeyn der ſeelen mitgenoß.
+            
             <lb/>
             <milestone unit="page" ana="#facs_567_r"/>
             <num>279.</num> Es ſchlieſſet diſer Stein
@@ -33493,6 +33558,7 @@
             die Seel im Himmel lebt<anchor xml:id="a494"/>/<note type="annotation" targetEnd="a494"><p>Verschwommen. Wahrscheinlich Defekt im Digitalisat.</p></note>
             <lb/>
             und Gottes Lob erhebt.
+            
             <lb/>
             <milestone unit="page" ana="#facs_567_r_2"/>
             <num>280.</num> Fragſt du/ o Wandersmann! Wer liget hier begrabe<anchor xml:id="a495"/>n<note type="annotation" targetEnd="a495"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein n.</p></note>?
@@ -33510,6 +33576,7 @@
             die ſe<supplied>el</supplied> gen himmel fuhr/ und wartet auf den leib/
             <lb/>
             den Got<supplied>t</supplied> erwekken wi<supplied>r</supplied>d/ und ewiglich erlaben.
+            
             <lb/>
             <num>28<supplied>1</supplied>.</num> Hie ruhet <supplied>a</supplied>uß ein frommes Weib/
             <lb/>
@@ -33518,6 +33585,7 @@
             di<supplied>e</supplied> ſeel anjetz im himmel lebt/
             <lb/>
             u<supplied>n</supplied>d/ ſelig/ Gottes lob erhebt.
+            
             <lb/>
             <num>282.</num> Wie Cleopatra einſt (im werke zu erweiſen/
             <lb/>
@@ -33546,8 +33614,10 @@
             alſo der Menſch<supplied>en</supplied>fraß nur das was kaht und leim:
             <lb/>
             das Perlein warte ſ<supplied>e</supplied>in im himmel wol verſchloſſen.
-            <lb/>
-            <label>[225.]</label> <num>283.</num> Leben/ Nebel.
+            
+            <head><lb/>
+            <label>[225.]</label> <num>283.</num> Leben/ Nebel.</head>
+            
             <lb/>
             Was unſer Leben ſey/ und wie es werd vergehen/
             <lb/>
@@ -33556,8 +33626,10 @@
             dem/ d<supplied>e</supplied>r es lißt zuru<supplied>k</supplied>. Darum ſol jeder ſtreben
             <lb/>
             nach dem was ewig i<supplied>ſ</supplied>t: ſo wird er ewig leben.
-            <lb/>
-            <label>[226.]</label> <num>284.</num> Nichts jrꝛdiſches wa&#x364;hrhafft.
+            
+            <head><lb/>
+            <label>[226.]</label> <num>284.</num> Nichts jrꝛdiſches wa&#x364;hrhafft.</head>
+            
             <lb/>
             Was nutzet hoch geb<supplied>o</supplied>ren ſeyn? Es iſt ein ſchlechter ruhm:
             <lb/>
@@ -33566,8 +33638,10 @@
             das Leben ſelbſt ein Nebel iſt im tieffen trehnentahl:
             <lb/>
             reichthum vergeht: <supplied>d</supplied>as bſta&#x364;ndig findſt im hohen himmels-ſal.
-            <lb/>
-            <label>[227.]</label> <num>285.</num> Eitelkeit <anchor xml:id="a497"/>d<note type="annotation" targetEnd="a497"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>er Welt. Auß dem Frantzo&#x364;ſiſchen.
+            
+            <head><lb/>
+            <label>[227.]</label> <num>285.</num> Eitelkeit <anchor xml:id="a497"/>d<note type="annotation" targetEnd="a497"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>er Welt. Auß dem Frantzo&#x364;ſiſchen.</head>
+            
             <lb/>
             Gleich wie das ſchl<supplied>u&#x364;p</supplied>frig Eiß ſich/ ſpiegelhell/ erzeiget/
             <lb/>
@@ -33594,6 +33668,7 @@
             die welt mit ihrem tuhn verſchwindet gantz und gar:
             <lb/>
             O Ho&#x364;chſter/ gib/ daß wir die eitelkeit verſtehen!
+            
             <lb/>
             <label>[228.]</label> <num>286.</num> So gwiß der Tod/ ſo ungewiß
             <lb/>
@@ -33602,24 +33677,28 @@
             o menſchenkind/ und wart hinfort
             <lb/>
             der todesſtund an jedem ort.
+            
             <lb/>
             <num>287.</num> Beym Tod gilt weder Bitt noch Beit:
             <lb/>
             darumb auf ihn dich vorbereit.
+            
             <lb/>
             <num>288.</num> Zum Tod ſol ieder ſich/ bey zeiten/ vorbereiten/
             <lb/>
             weil/ keinen augenblik/ er/ u&#x364;bers zil/ wird beiten.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.170.]</label> <num>289.</num> Wolwu&#x364;rdiges Lob-geticht/
             <lb/>
             an
             <lb/>
-            Herꝛen Johann Anthoni Wo&#x364;llwein/
+            Herꝛen Johann Anthoni Wo&#x364;llwein/</head>
             <lb/>
             Alß derſelbige mit ſeligen Tods-Gedancken
             <lb/>
             umbgegangen.
+            
             <lb/>
             <hi rendition="#b">Herꝛ Wo&#x364;llwein</hi> hat ihm ſelbs den beſſern theil er-
             <lb break="no"/>
@@ -33850,10 +33929,12 @@
             Sie werden ſeuffzen dann/ und wu&#x364;nſchen fu&#x364;r und fu&#x364;r:
             <lb/>
             O Gott/ erwek in uns geleichen Luſt zu dir!
-            <lb/>
+            
+            <head><lb/>
             <label>[229.]</label> <num>290.</num> Uber Herꝛen Johan Riſten/ den welt-
             <lb break="no"/>
-            bekanten Tichter.
+            bekanten Tichter.</head>
+            
             <lb/>
             Ob Riſt annoch in Leben ſey/
             <lb/>
@@ -33862,20 +33943,22 @@
             Herꝛ Riſt in ſeinen Schrifften lebt/
             <lb/>
             und Gottes Lob/ ohn end/ erhebt.
-            <lb/>
+            
+            <head><head><lb/>
             <label>[D.171.]</label> <num>291.</num> Wolklingender Ho&#x364;chſtverdienter
             <lb/>
-            Nachruhm:
+            Nachruhm:</head>
             <lb/>
             Dem ſelig abgeleibten/ Edelgekro&#x364;nten/ Sa&#x364;nge<anchor xml:id="a509"/>r<note type="annotation" targetEnd="a509"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>fu&#x364;r-
             <lb break="no"/>
             ſten/ und unvergleichlichem Poeten/
             <lb/>
-            Herꝛen Johann Riſten/ dem Rüſtigen: Jh-
+            Herꝛen Johann Riſten/</head> dem Rüſtigen: Jh-
             <lb break="no"/>
             me vom Authore zu ehren geklungen/
             <lb/>
             den 20. <hi rendition="#aq">Nov.</hi> 1668.
+            
             <lb/>
             <hi rendition="#b">Herꝛ Riſt<anchor xml:id="a510"/>/<note type="annotation" targetEnd="a510"><p>die Virgel wird hier als Teil der Sinneinheit mitgetaggt.</p></note></hi> du groſſer Mann von Wiſſen und Gewiſſen/
             <lb/>
@@ -33927,12 +34010,13 @@
             und geben hier <anchor xml:id="a514"/>e<note type="annotation" targetEnd="a514"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>in Lob/ das abſtirbt nimmermehr:
             <lb/>
             Dort aber preißt Jhr Gott mit frohen <hi rendition="#b">Himmels-Liedern</hi>!
-            <lb/>
+            
+            <head><lb/>
             <label>[D.172.]</label> <num>292.</num> Gegenſchallendes Lob- und Kling-Geticht/
             <lb/>
             auf des Edelgekro&#x364;nten Ka&#x364;yſerl. Poetens/
             <lb/>
-            Herꝛen Daniel B<unclear>a&#x364;</unclear>rholtzen von Elbing/
+            Herꝛen Daniel B<unclear>a&#x364;</unclear>rholtzen von Elbing/</head>
             <lb/>
             auß Preuſſen:
             <lb/>
@@ -33949,6 +34033,7 @@
             mir vorher erſchalletes
             <lb/>
             Ruhm- und Kling-Getichte.
+            
             <lb/>
             <hi rendition="#b">Herꝛ Ba&#x364;rholtz<anchor xml:id="a516"/>/<note type="annotation" targetEnd="a516"><p>Die Virgel wird hier als teil der Sinneinheit mitgetaggt.</p></note></hi> habet danck/ fu&#x364;r das ſo Jhr getichtet/
             <lb/>
@@ -33985,12 +34070,13 @@
             in Muſengarten Jhns ich pflantze bey dem Hauß/
             <lb/>
             der Ho&#x364;heſt bo&#x364;ſen Lufft vom Hauß und garten wende!
-            <lb/>
+            
+            <head><lb/>
             <label>[D.173.]</label> <num>293.</num> Glükwünſchender Ehrenklang/ und
             <lb/>
             Danckgeticht/
             <lb/>
-            Fu&#x364;r Herꝛen Joh. Ulrich Bachofen von Z. K.
+            Fu&#x364;r Herꝛen Joh. Ulrich Bachofen</head> von Z. K.
             <lb/>
             E. G. P. und Fu&#x364;rtrefflichem Mitgliede der Preiß-
             <lb break="no"/>
@@ -34003,6 +34089,7 @@
             Bekro&#x364;nungs-Tage/ wolmeinlich u&#x364;berſendet
             <lb/>
             von dem Authore.
+            
             <lb/>
             So rufft man freudig Heut: Glu&#x364;ck zu dem werthen Mann!
             <lb/>
@@ -34031,10 +34118,13 @@
             und Jhn der <hi rendition="#b">Lilien-Zunfft</hi>/ alß wu&#x364;rdigſt einverleibet/
             <lb/>
             ſo wu&#x364;nſch' Jch Glu&#x364;k zur Ehr! Kein Unglu&#x364;ck werd verſpu&#x364;hrt<supplied>!</supplied>
-            <lb/>
-            Sinn- und Sitten-bilder.
-            <lb/>
-            <label>[230.]</label> <num>294.</num> Jung gebogen/ recht gezogen.
+            
+            <head><lb/>
+            Sinn- und Sitten-bilder.</head>
+            
+            <head><lb/>
+            <label>[230.]</label> <num>294.</num> Jung gebogen/ recht gezogen.</head>
+            
             <lb/>
             Die liebe Kinderlein den Zweiglinen nacharten/
             <lb/>
@@ -34059,8 +34149,10 @@
             drum/ wer an Kindern wil erleben freud und ehr/
             <lb/>
             der ſpar an ihnen nicht die ruhten/ zucht/ und lehr.
-            <lb/>
-            <label>[231.]</label> <num>295.</num> Junger ſuchs: Alter brauchs.
+            
+            <head><lb/>
+            <label>[231.]</label> <num>295.</num> Junger ſuchs: Alter brauchs.</head>
+            
             <lb/>
             O/ du ſorgenfreyes Blut/ ſuch/ in friſcher jugend/
             <lb/>
@@ -34077,8 +34169,10 @@
             b<supplied>ei</supplied>de bleiben ehrenloß. Darum/ liebe Leuth/
             <lb/>
             ſ<supplied>uc</supplied>het jung/ und brauchet alt zugelaßne Beut.
-            <lb/>
-            <label>[D.174.]</label> <num>296.</num> Tugendwa&#x364;g/ oder/ Liecht und Leben.
+            
+            <head><lb/>
+            <label>[D.174.]</label> <num>296.</num> Tugendwa&#x364;g/ oder/ Liecht und Leben.</head>
+            
             <lb/>
             Der Tugendwa&#x364;g iſt ruch und ſchmal/
             <lb/>
@@ -34087,8 +34181,10 @@
             Jhr Eltern wyßt hierzu die Jugend:
             <lb/>
             Kein <supplied>w</supplied>a&#x364;g unwa&#x364;gſam iſt der Tugend.
-            <lb/>
-            Laſterſtraß/ oder/ Finſternuß und Tod.
+            
+            <head><lb/>
+            Laſterſtraß/ oder/ Finſternuß und Tod.</head>
+            
             <lb/>
             Die breit ge<supplied>p</supplied>flaſtert Laſterſtraaß/
             <lb/>
@@ -34097,10 +34193,12 @@
             an w<supplied>e</supplied>lchem wil erworgen mu&#x364;ſſen/
             <lb/>
             und ewig in der Ho&#x364;llen bu&#x364;ſſen.
-            <lb/>
+            
+            <head><lb/>
             <label>[232.]</label> <num>297.</num> Am Scheidwa&#x364;g nicht verfehl:
             <lb/>
-            Die rechte Straß erwehl.
+            Die rechte Straß erwehl.</head>
+            
             <lb/>
             O/ es wo&#x364;ll/ es wo&#x364;ll der Himmel/ daß/ zu diſer zwei<anchor xml:id="a519"/>f<note type="annotation" targetEnd="a519"><p>Im Augsburger Exemplar ist das f eindeutig.</p></note>elzeit/
             <lb/>
@@ -34117,6 +34215,7 @@
             Aber jenner wolluſtwa&#x364;g/ wie gebahnet er gepreiſet/
             <lb/>
             mit dem Schla&#x364;m&#x342;er in dem Teich/ ach! in Schwa&#x364;felteich verweiſet.
+            
             <lb/>
             <fw place="bottom" type="catch"><num>298.</num> Ka&#x364;mpf</fw>
             <lb/>
@@ -34125,8 +34224,10 @@
             <fw place="top" type="pageNum">76</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            <label>[233.]</label> <num>298.</num> Ka&#x364;mpf wider dich/ ſo ſchlaheſt mich.
+            
+            <head><lb/>
+            <label>[233.]</label> <num>298.</num> Ka&#x364;mpf wider dich/ ſo ſchlaheſt mich.</head>
+            
             <lb/>
             Diſ<supplied>e</supplied>s ungeheur* zu da&#x364;mpfen/
             <lb/>
@@ -34143,10 +34244,12 @@
             ſonſten wider ihn erto&#x364;hnt:
             <lb/>
             Nicht geka&#x364;mpfet: nicht gekro&#x364;nt.
-            <lb/>
+            
+            <head><lb/>
             <label>[234.]</label> <num>299<choice><sic>\u003a</sic><corr>.</corr></choice></num> <hi rendition="#b">Es bleib was hin iſt/ hin:
             <lb/>
-            Verlurſt iſt oft Gewin.</hi>
+            Verlurſt iſt oft Gewin.</hi></head>
+            
             <lb/>
             Fort/ fort den Bergen zu/ wo rettung iſt zu finden/
             <lb/>
@@ -34163,8 +34266,10 @@
             Nur einmal ſeine hand gelegt an Tugendpflug/
             <lb/>
             iſt zu der Seligkeit bey weitem nicht genug.
-            <lb/>
-            <label>[235.]</label> <num>300.</num> Stirb/ eh du ſterbſt/ daß nicht verderbſt.
+            
+            <head><lb/>
+            <label>[235.]</label> <num>300.</num> Stirb/ eh du ſterbſt/ daß nicht verderbſt.</head>
+            
             <lb/>
             So ungeleich gelebt/ ſo ungeleich geſtorben:
             <lb/>
@@ -34181,12 +34286,14 @@
             Jhm wird/ was er geliebt/ zur heiſſen Ho&#x364;llenglut.
             <lb/>
             Drum/ eh du ſterbeſt/ ſtirb; ſo bleibt dir ewigs G<anchor xml:id="a521"/>u<note type="annotation" targetEnd="a521"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>t.
-            <lb/>
+            
+            <head><lb/>
             <label>[236.]</label> <num>301.</num> Fu&#x364;nfer Sinnen rechter Sinn/
             <lb/>
             Bringet Leib und Seel Gewinn.
             <lb/>
-            Ab der <hi rendition="#aq">Biblioth.</hi> mit E. Kupf. 1657.
+            Ab der <hi rendition="#aq">Biblioth.</hi> mit E. Kupf. 1657.</head>
+            
             <lb/>
             O Scho&#x364;pfer/ der du mir der Sinnen fu&#x364;nf gegeben/
             <lb/>
@@ -34238,8 +34345,10 @@
             und ru&#x364;h<supplied>r</supplied>e ſo mein hertz/ daß es zugleich empfind
             <lb/>
             mein/ u<supplied>n</supplied>d des Na&#x364;chſten Kreutz/ und Troſt im ſterb<supplied>e</supplied>n find!
-            <lb/>
-            <label>[237.]</label> <num>302.</num> Nicht nur mit auſſern Waffen.
+            
+            <head><lb/>
+            <label>[237.]</label> <num>302.</num> Nicht nur mit auſſern Waffen.</head>
+            
             <lb/>
             Durch Waff<supplied>e</supplied>n und Geba&#x364;tt ward Amalek beſtritten/
             <lb/>
@@ -34248,8 +34357,10 @@
             So a<supplied>u</supplied>ch im ſtreit des Geiſts iſt widerſtand umſonſt/
             <lb/>
             wo das <supplied>G</supplied>eba&#x364;tte nicht erlangt des Ho&#x364;chſten gunſt.
-            <lb/>
-            <label>[238.]</label> <num>303.</num> Allein von oben herab.
+            
+            <head><lb/>
+            <label>[238.]</label> <num>303.</num> Allein von oben herab.</head>
+            
             <lb/>
             Getreue Lehrer ſeind gefu&#x364;llte Gſchirꝛ der Ehren;
             <lb/>
@@ -34258,8 +34369,10 @@
             die/ der<supplied>en</supplied> Le<anchor xml:id="a523"/>b<note type="annotation" targetEnd="a523"><p>Wegen Defekts im Digitalisat verschwommen.</p></note>en nicht mit ihrer Lehre ſtimmt/
             <lb/>
             ſeind S<supplied>c</supplied>handgeſchirꝛ/ auf die der Herꝛ im Zorn ergrimmt.
-            <lb/>
-            <label>[239.]</label> <num>3<supplied>0</supplied>4.</num> Vil wüſſen/ nichts wüſſen.
+            
+            <head><lb/>
+            <label>[239.]</label> <num>3<supplied>0</supplied>4.</num> Vil wüſſen/ nichts wüſſen.</head>
+            
             <lb/>
             Wer/ was i<supplied>hm</supplied> Gott verdekt/ auß fu&#x364;rwitz will ergru&#x364;nden/
             <lb/>
@@ -34268,8 +34381,9 @@
             wer au<supplied>ſſe</supplied>r Chriſto dich/ vermeßner weiſe/ fu&#x364;hrt/
             <lb/>
             ſich ſelb <supplied>u</supplied>nd dich verſtu&#x364;rtzt: kein hu&#x364;lf euch mehr beru&#x364;hrt.
-            <lb/>
-            <label>[240.]</label> <num>305.</num> Was rechte baut/ die linke ſchleißt.
+            
+            <head><lb/>
+            <label>[240.]</label> <num>305.</num> Was rechte baut/ die linke ſchleißt.</head>
             <lb/>
             Wann die <supplied>R</supplied>egenten ſelb/ die Lehrer und Haußva&#x364;tter/
             <lb/>
@@ -34286,8 +34400,10 @@
             ſo wird das gut/ ſo ſie gebotten und gelehrt/
             <lb/>
             durch ihres beyſpil bald verdamlich umgekehrt.
-            <lb/>
-            <label>[D.175.]</label> <num>306.</num> Getreue Arbeit fruchtet.
+            
+            <head><lb/>
+            <label>[D.175.]</label> <num>306.</num> Getreue Arbeit fruchtet.</head>
+            
             <lb/>
             Geſegnet iſt die Erd/ die ihren Bauer nehrt:
             <lb/>
@@ -34296,8 +34412,10 @@
             Drum nehrt und ehrt die Gmein/ gedopplet/ ihren Lehrer/
             <lb/>
             der ſelber T<anchor xml:id="a525"/>a&#x364;<note type="annotation" targetEnd="a525"><p>übergeschriebenes e im Augsburger Exemplar etwas besser sichtbar.</p></note>hter iſt/ nicht aber Wortverkehrer.
-            <lb/>
-            <label>[241.]</label> <num>307.</num> Der geber ſamlet Scha&#x364;tze.
+            
+            <head><lb/>
+            <label>[241.]</label> <num>307.</num> Der geber ſamlet Scha&#x364;tze.</head>
+            
             <lb/>
             Wer aber freudig gibt/ der ſamlet/ ſonder fehlen/
             <lb/>
@@ -34306,8 +34424,10 @@
             dan in den armen wird der Heiland ſelb beſcha&#x364;nkt/
             <lb/>
             beherbergt und bekleidt/ geſpeiſet und getr<anchor xml:id="a526"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a526"><p>Sowohl hier als im Augsburger Exemplar ist ein übergeschriebenes e kaum zu erkennen. Der reim fordert aber einen Umlaut.</p></note>nkt.
-            <lb/>
-            <label>[D.176.]</label> <num>308.</num> <hi rendition="#aq">Acceptum communicat orbi.</hi>
+            
+            <head><lb/>
+            <label>[D.176.]</label> <num>308.</num> <hi rendition="#aq">Acceptum communicat orbi.</hi></head>
+            
             <lb/>
             Die Sonne/ was ſie hat vom Scho&#x364;pfer ſelbſt empfangen/
             <lb/>
@@ -34316,12 +34436,15 @@
             mittheilet andern gern/ ſo vil/ Er weißt und kan/
             <lb/>
             in hoffnung/ daß er dort werd/ ſonnenſcho&#x364;ner prangen.
+            
             <lb/>
             Wer ſeiner Gaben Glantz mittheilet ſeinem Na&#x364;chſten/
             <lb/>
             dem wird ein Ehrenkrantz beſchehret von dem Ho&#x364;chſten.
-            <lb/>
-            <label>[242.]</label> <num>309.</num> Mit Hoffnungsflu&#x364;glen.
+            
+            <head><lb/>
+            <label>[242.]</label> <num>309.</num> Mit Hoffnungsflu&#x364;glen.</head>
+            
             <lb/>
             Auß a&#x364;uſſerſter gefahr/ zu waſſer und zu lande/
             <lb/>
@@ -34330,8 +34453,10 @@
             mit Hofnungsflu&#x364;glen ſich der gla&#x364;ubig obſich ſchwingt/
             <lb/>
             und durch das Firmament zu ſeinem Retter dringt.
-            <lb/>
-            <label>[243.]</label> <num>310.</num> Der Maſtung/ folgt die Schlachtung.
+            
+            <head><lb/>
+            <label>[243.]</label> <num>310.</num> Der Maſtung/ folgt die Schlachtung.</head>
+            
             <lb/>
             Wer nur dem Leibe pflegt/ der ma&#x364;ſtet ſich zum ſchlachten/
             <lb/>
@@ -34340,10 +34465,12 @@
             Die Maſtung zwar ergetzt; doch eine kurtze zeit;
             <lb/>
             die Schlachtung aber ſchmirtzt wie feur/ in ewigkeit.
-            <lb/>
+            
+            <head><lb/>
             <label>[244.]</label> <num>311.</num> Geiſt- und Weltkinder ſchauen den Tod
             <lb/>
-            ungleich an.
+            ungleich an.</head>
+            
             <lb/>
             Der Glaub an Chriſtum bringet ſreud/
             <lb/>
@@ -34354,14 +34481,17 @@
             in todsged<anchor xml:id="a527"/>a&#x364;<note type="annotation" targetEnd="a527"><p>Übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>chtnuß weinen macht.
             <lb/>
             <fw place="bottom" type="catch"><num><supplied>3</supplied>12.</num> Geiſt</fw>
+            
             <lb/>
             <pb facs="4077326" n="79"/>
             <milestone unit="page" ana="#facs_578_tr_1"/>
             <fw place="top" type="pageNum">79</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            <label>[245.]</label> <num>312.</num> Geiſtlicher Wekher.
+            
+            <head><lb/>
+            <label>[245.]</label> <num>312.</num> Geiſtlicher Wekher.</head>
+            
             <lb/>
             O menſch/ nicht ſchlaff im Su&#x364;ndenſchlamm/
             <lb/>
@@ -34370,8 +34500,10 @@
             und ſpah<anchor xml:id="a528"/>t<note type="annotation" targetEnd="a528"><p>Verschwommen wegen Defekts im digitalisat. Im Augsburger Exemplar eindeutig.</p></note>er Reu/ zur Seelenrhu
             <lb/>
             die Gnadenthu&#x364;r ſchon finde zu.
-            <lb/>
-            <label>[246.]</label> <num>313.</num> Tiſch-Segen/ auß dem Frantzo&#x364;ſiſchen.
+            
+            <head><lb/>
+            <label>[246.]</label> <num>313.</num> Tiſch-Segen/ auß dem Frantzo&#x364;ſiſchen.</head>
+            
             <lb/>
             <hi rendition="#in">D</hi>Em Her<supplied>ꝛ</supplied>en Gott wir dank/ von gantzem Hertzen/ ſagen/
             <lb/>
@@ -34380,6 +34512,7 @@
             geſegnet ſpei<anchor xml:id="a531"/>ß<note type="annotation" targetEnd="a531"><p>Verschwommen wegen Defekts im digitalisat. Im Augsburger Exemplar eindeutig.</p></note> und trank/ wardurch Er uns ernehrt:
             <lb/>
             deß ſey der <anchor xml:id="a532"/>V<note type="annotation" targetEnd="a532"><p>Verschwommen wegen Defekts im digitalisat. Im Augsburger Exemplar eindeutig.</p></note>atter/ Sohn/ und Heilig Geiſt geehrt.
+            
             <lb/>
             Haußvatter.
             <lb/>
@@ -34398,6 +34531,7 @@
             nur heil<supplied>i</supplied>gkeit ſol ſeyn/ was ihren halß umringt:
             <lb/>
             zur arbeit ſie anfu&#x364;hr: die Tra&#x364;gheit ſich verliere.
+            
             <lb/>
             Haußmutter.
             <lb/>
@@ -34408,6 +34542,7 @@
             Zu di<anchor xml:id="a537"/>ſ<note type="annotation" targetEnd="a537"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>en haltet euch/ der euch auß nichts gemacht/
             <lb/>
             und dankt ihm um das gut/ ſo er euch beygebracht.
+            
             <lb/>
             Kinder.
             <lb/>
@@ -34418,8 +34553,10 @@
             wardur<supplied>c</supplied>h wir w<supplied>e</supplied>rden gfu&#x364;hrt zu Gott dem Ho&#x364;chſten Schatz/
             <lb/>
             damit i<anchor xml:id="a539"/>n<note type="annotation" targetEnd="a539"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> aller hertz ſein Geiſt auch habe platz.
-            <lb/>
-            <label>[247.]</label> <num>314.</num> Tiſchzucht.
+            
+            <head><lb/>
+            <label>[247.]</label> <num>314.</num> Tiſchzucht.</head>
+            
             <lb/>
             <hi rendition="#in">K</hi>Ommt <supplied>h</supplied>er und ho&#x364;rt mir zu/ ihr/ die ihr auß der wiegen
             <lb/>
@@ -34436,8 +34573,10 @@
             <fw place="top" type="pageNum">80</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            Zuru&#x364;ſtung des Tiſches.
+            
+            <head><lb/>
+            Zuru&#x364;ſtung des Tiſches.</head>
+            
             <lb/>
             So wa&#x364;ſch die Ha&#x364;nde nun/ und dann/ zu rechter zeite/
             <lb/>
@@ -34462,8 +34601,10 @@
             die Augen/ H<anchor xml:id="a543"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a543"><p>Das übergeschriebene e ist im Augsburger Exemplar auch kaum sichtbar.</p></note>nd' und Hertz zu Jhm heb u&#x364;berſich/
             <lb/>
             und um den Segen Jhn demu&#x364;htiglich anſprich.
-            <lb/>
-            Das Tiſchdienen oder Aufwarten.
+           
+            <head><lb/>
+            Das Tiſchdienen oder Aufwarten.</head>
+            
             <lb/>
             Wann dann die Eltern ſich mit Speiß und Trank erlaben/
             <lb/>
@@ -34644,8 +34785,10 @@
             wa&#x364;ſch deine ha&#x364;nde rein; und um die ſpeiß und trank/
             <lb/>
             ſag Gott/ mit lauter ſtimm/ von hertzen lob und dank.
-            <lb/>
-            Das aufnemmen des Tiſches.
+            
+            <head><lb/>
+            Das aufnemmen des Tiſches.</head>
+            
             <lb/>
             Wann nun die mahlzeit ietzt ihr endſchafft hat bekommen/
             <lb/>
@@ -34670,8 +34813,10 @@
             die kleinen ſtu&#x364;klein brot im tiſchtuch trag hinweg:
             <lb/>
             das tuch im korb erſchu&#x364;tt/ und dann zuſamen leg.
-            <lb/>
-            Vermahnung an die Kinder.
+            
+            <head><lb/>
+            Vermahnung an die Kinder.</head>
+            
             <lb/>
             Sol nun/ o liebes kind! die Tiſcheszucht dich zieren/
             <lb/>
@@ -34688,12 +34833,14 @@
             den el<supplied>t</supplied>ern/ lehre<anchor xml:id="a578"/>r<note type="annotation" targetEnd="a578"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>n/ und fu&#x364;rgſetzten in gemein
             <lb/>
             im H<anchor xml:id="a579"/>e<note type="annotation" targetEnd="a579"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>rꝛen/ will<anchor xml:id="a580"/>i<note type="annotation" targetEnd="a580"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>glich/ und ſtets gehorſam ſeyn.
-            <lb/>
+            
+            <head><lb/>
             <label>[248.]</label> <num>315.</num> Beſchreibung
             <lb/>
             des ungeſunden Geſund-
             <lb break="no"/>
-            heit trinkens.
+            heit trinkens.</head>
+            
             <lb/>
             <hi rendition="#in">K</hi>Ommt/ jung u<anchor xml:id="a581"/>n<note type="annotation" targetEnd="a581"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>d alte kommt! ihr ſolt da wunder ſehen/
             <lb/>
@@ -34702,10 +34849,12 @@
             ſo gar daß ſie; da ſie ſeyn ſolten ein' artzney;
             <lb/>
             wo nicht den tod/ iedoch vil krankheit bringen bey.
-            <lb/>
+            
+            <head><lb/>
             Ruhmloſe Satzungen der Geſund-
             <lb break="no"/>
-            heitſa&#x364;uffer.
+            heitſa&#x364;uffer.</head>
+            
             <lb/>
             Bey ſolchem fra&#x364;ßmahl nun zu oberſt wird geſetzet
             <lb/>
@@ -34764,8 +34913,10 @@
             <fw place="top" type="pageNum">84</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            Gemeiner Geſundheittrunk.
+            
+            <head><lb/>
+            Gemeiner Geſundheittrunk.</head>
+            
             <lb/>
             Herꝛ Witzla&#x364;r iſt gez<anchor xml:id="a594"/>e<note type="annotation" targetEnd="a594"><p>Das e ist im Augsburger Exemplar besser erkennbar.</p></note>ug/ und weißt hiervon zu ſingen:
             <lb/>
@@ -34814,8 +34965,10 @@
             dann/ weil der trunk bey mir erꝛeicht ſein end und zil/
             <lb/>
             des Fu&#x364;rſten Gſundheit ich hiemit anheben wil.
-            <lb/>
-            Geſundheittrunk groſſer Herꝛen.
+            
+            <head><lb/>
+            Geſundheittrunk groſſer Herꝛen.</head>
+            
             <lb/>
             Des Fu&#x364;rſten Gſundheit gilt! ietz wird es recht angehen;
             <lb/>
@@ -34864,8 +35017,10 @@
             doch ward ihr z<anchor xml:id="a602"/>o<note type="annotation" targetEnd="a602"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>rn geſtillt/ und wider eyngeſcha&#x364;nkt
             <lb/>
             ſo vil<anchor xml:id="a603"/>/<note type="annotation" targetEnd="a603"><p>Virgel wegen Defekt im Digitalisat schwer erkennbar. Im Augsburger Exemplar eindeutig.</p></note> daß ihn hernach ein grimmig fieber krankt.
-            <lb/>
-            Neuer Geſundheittrunk.
+            
+            <head><lb/>
+            Neuer Geſundheittrunk.</head>
+            
             <lb/>
             Seht! mit derglei<anchor xml:id="a604"/>ch<note type="annotation" targetEnd="a604"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>en ſchimpf/ und groben narꝛenpoſſen
             <lb/>
@@ -34884,8 +35039,10 @@
             ſie thun es alle <anchor xml:id="a613"/>n<note type="annotation" targetEnd="a613"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig ein n.</p></note>ach; ein jeder meiſterlich.
             <lb/>
             Bey diſem bleibt es nicht/ ꝛc.
-            <lb/>
-            Sta&#x364;ndlingen/ auf Sant Johans ſegen.
+            
+            <head><lb/>
+            Sta&#x364;ndlingen/ auf Sant Johans ſegen.</head>
+            
             <lb/>
             Wan ſie vom tiſche gehen/
             <lb/>
@@ -34912,12 +35069,14 @@
             dich a<anchor xml:id="a617"/>n<note type="annotation" targetEnd="a617"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig ein n.</p></note>derſtwo umſih: der gſchmak iſt mir genug/
             <lb/>
             und m<anchor xml:id="a618"/>e<note type="annotation" targetEnd="a618"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>in' auch/ daß hiervon ich habe ſchweigens fug.
-            <lb/>
+            
+            <head><lb/>
             Beſchließliche erꝛinner- und abmahnung vom
             <lb/>
             leib- und ſeelen-ſcha&#x364;dlichen Geſundheit-
             <lb break="no"/>
-            trinken.
+            trinken.</head>
+            
             <lb/>
             Wann nun durch fu&#x364;llerey/ und durch geſundheit ſauffen/
             <lb/>
@@ -34976,10 +35135,12 @@
             Denſelben wu&#x364;nſch' ich nun der gantzen Chriſtenheit/
             <lb/>
             durch Chriſtum endlich auch die ware ſeligkeit!
-            <lb/>
+            
+            <head><lb/>
             <label>[249.]</label> <num>316.</num> Cornet- und Fahnen- oder Wahl-
             <lb break="no"/>
-            Sprüche.
+            Sprüche.</head>
+            
             <lb/>
             1. Mit Gott gewagt/ macht unverzagt.
             <lb/>
@@ -34994,10 +35155,13 @@
             5. Beharꝛ den Krieg/ biß auf den Sieg.
             <lb/>
             6. Tod/ oder Sieg/ end unſern Krieg!
-            <lb/>
-            <num>317.</num> Haußſprüche/
-            <lb/>
-            <label>[D.177.]</label> 1. Jm Hauß-Ehren.
+            
+            <head><lb/>
+            <num>317.</num> Haußſprüche/</head>
+            
+            <head><lb/>
+            <label>[D.177.]</label> 1. Jm Hauß-Ehren.</head>
+            
             <lb/>
             Jn des ho&#x364;chſten Nam&#x342;en ſol ieder gehen auß und ein/
             <lb/>
@@ -35018,32 +35182,41 @@
             Gottes ſege<anchor xml:id="a625"/>n<note type="annotation" targetEnd="a625"><p>Verschwommen wegen Defekts im Digitalisat.</p></note> machet reich; alles komt von Jhme her/
             <lb/>
             darum ſol <anchor xml:id="a626"/>m<note type="annotation" targetEnd="a626"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>an alles auch richten nur zu ſeiner Ehr.
-            <lb/>
-            <label>[250.]</label> 2. Uber das Hauß zur Sonnenblumen.
+            
+            <head><lb/>
+            <label>[250.]</label> 2. Uber das Hauß zur Sonnenblumen.</head>
+            
             <lb/>
             Das Hauß zur Sonnenblum ſo lange mu&#x364;ß beſtehen/
             <lb/>
             alß lang die Sonne ſelbs wird auf- und nidergehen.
-            <lb/>
-            <label>[251.]</label> 3. Uber die Haußthu&#x364;r.
+            
+            <head><lb/>
+            <label>[251.]</label> 3. Uber die Haußthu&#x364;r.</head>
+            
             <lb/>
             Den Ein- und Außgang Gott bewahr
             <lb/>
             fu&#x364;r allem u&#x364;bel und gefahr!
-            <lb/>
-            <label>[252.]</label> 4. Uber die Stubenthu&#x364;r.
+            
+            <head><lb/>
+            <label>[252.]</label> 4. Uber die Stubenthu&#x364;r.</head>
+            
             <lb/>
             Die Stubenthu&#x364;r geht auf und zu:
             <lb/>
             im Himmel iſt die ewig Rhu.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.178.]</label> 5. Offenverſe in der H. E. Chorherꝛen Geſell-
             <lb break="no"/>
-            ſchafft-Stuben.
-            <lb/>
+            ſchafft-Stuben.</head>
+            
+            <head><lb/>
             (1)
             <lb/>
-            <hi rendition="#aq">Omnia ab uno: omnia ad unum.</hi>
+            <hi rendition="#aq">Omnia ab uno: omnia ad unum.</hi></head>
+            
             <lb/>
             Wie alle Flu&#x364;ß vom Meer außflieſſen/
             <lb/>
@@ -35052,10 +35225,12 @@
             So kommet alls von einem her/
             <lb/>
             damit es dien zu ſeiner Ehr.
-            <lb/>
+            
+            <head><lb/>
             (2)
             <lb/>
-            <hi rendition="#aq">Sapientia ſanctitati juncta.</hi>
+            <hi rendition="#aq">Sapientia ſanctitati juncta.</hi></head>
+            
             <lb/>
             Alß Adam noch in unſchuld lebt/
             <lb/>
@@ -35064,10 +35239,12 @@
             do w<anchor xml:id="a627"/>a<note type="annotation" targetEnd="a627"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>r er klug in allen dingen/
             <lb/>
             natur gema&#x364;ß Sie fu&#x364;rzubringen.
-            <lb/>
+            
+            <head><lb/>
             (3)
             <lb/>
-            <hi rendition="#aq">In phantaſia volant.</hi>
+            <hi rendition="#aq">In phantaſia volant.</hi></head>
+            
             <lb/>
             Die <anchor xml:id="a628"/>u&#x364;<note type="annotation" targetEnd="a628"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>bertrettung hat verdunkelt/
             <lb/>
@@ -35084,10 +35261,12 @@
             <fw place="top" type="pageNum">88</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
+            
+            <head><lb/>
             (4)
             <lb/>
-            <hi rendition="#aq">Datur Regreſſus.</hi>
+            <hi rendition="#aq">Datur Regreſſus.</hi></head>
+            
             <lb/>
             Die Hoffnung iſt nicht gar benommen/
             <lb/>
@@ -35096,10 +35275,12 @@
             und etwas hier in diſer zeit/
             <lb/>
             follkommen in der Ewigkeit.
-            <lb/>
+            
+            <head><lb/>
             (5)
             <lb/>
-            <hi rendition="#aq">Horum; ſcilicet Senſuum; reſiduo Semine.</hi>
+            <hi rendition="#aq">Horum; ſcilicet Senſuum; reſiduo Semine.</hi></head>
+            
             <lb/>
             Durch Mittel a&#x364;uſſerlicher Sinnen/
             <lb/>
@@ -35108,10 +35289,12 @@
             dann/ ſol was im verſtand beſtehen/
             <lb/>
             ſo muß es durch die Sinn beſchehen.
-            <lb/>
+            
+            <head><lb/>
             (6)
             <lb/>
-            <hi rendition="#aq">Ars naturam juvat.</hi>
+            <hi rendition="#aq">Ars naturam juvat.</hi></head>
+            
             <lb/>
             Jn diſem ellend und beſchwerden/
             <lb/>
@@ -35120,10 +35303,12 @@
             Gibt einem die Natur was eyn/
             <lb/>
             komt Kunſt darzu/ wird's duppelt ſeyn.
-            <lb/>
+            
+            <head><lb/>
             (7)
             <lb/>
-            <hi rendition="#aq">Ordo anima rerum.</hi>
+            <hi rendition="#aq">Ordo anima rerum.</hi></head>
+            
             <lb/>
             Natur und Kunſt ein ordnung halten/
             <lb/>
@@ -35132,10 +35317,12 @@
             ſo auch wer recht ſtudieren wil/
             <lb/>
             mit ordnung kommt zu ſeinem zil.
-            <lb/>
+            
+            <head><lb/>
             (8)
             <lb/>
-            <hi rendition="#aq">His reſerantur operta.</hi>
+            <hi rendition="#aq">His reſerantur operta.</hi></head>
+            
             <lb/>
             Die Red aufſchlieſſet und entdekt
             <lb/>
@@ -35144,10 +35331,12 @@
             drum ſprach auch jen&#x303;er wol und wahr;
             <lb/>
             Nun red; damit ich dich erfahr.
-            <lb/>
+            
+            <head><lb/>
             (9)
             <lb/>
-            <hi rendition="#aq">Sic emolliuntur dura.</hi>
+            <hi rendition="#aq">Sic emolliuntur dura.</hi></head>
+            
             <lb/>
             Der Waſſertropf/ durch o&#x364;ftern fal/
             <lb/>
@@ -35164,10 +35353,12 @@
             <fw place="top" type="pageNum">89</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
+            
+            <head><lb/>
             (10)
             <lb/>
-            <hi rendition="#aq">Decerpta diſpono.</hi>
+            <hi rendition="#aq">Decerpta diſpono.</hi></head>
+            
             <lb/>
             Vernunfftkunſt das/ ſo ſie ergriffen/
             <lb/>
@@ -35176,11 +35367,12 @@
             ein jedes wo es hingeho&#x364;rt/
             <lb/>
             damit der menſch bleib unbetho&#x364;rt.
-            <lb/>
+            
+            <head><lb/>
             (11)
             <lb/>
+            <hi rendition="#aq">Contemplando.</hi></head>
             
-            <head><hi rendition="#aq">Contemplando.</hi></head>
             <lb/>
             Jſt das Gemu&#x364;ht <anchor xml:id="a630"/>d<note type="annotation" targetEnd="a630"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>urch Kunſt/ geſchliffen/
             <lb/>
@@ -35189,11 +35381,11 @@
             durch die Betrach<anchor xml:id="a632"/>t<note type="annotation" targetEnd="a632"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>ung aller dingen/
             <lb/>
             warauß die Glehrte muß entſpringen.
-            <lb/>
+            
+            <head><lb/>
             (12)
             <lb/>
-            
-            <head><hi rendition="#aq">Agendo.</hi></head>
+            <hi rendition="#aq">Agendo.</hi></head>
             <lb/>
             Verſtand den wi<anchor xml:id="a633"/>ll<note type="annotation" targetEnd="a633"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>en leiten ſol/
             <lb/>
@@ -35202,10 +35394,12 @@
             den Laſterwa&#x364;g man meid fortan/
             <lb/>
             und wandle nur der Tugend Ban.
-            <lb/>
+            
+            <head><lb/>
             (13)
             <lb/>
-            <hi rendition="#aq">Faſces ſubmittendo.</hi>
+            <hi rendition="#aq">Faſces ſubmittendo.</hi></head>
+            
             <lb/>
             Zu Gottes Ehr iſt alls verpflichtet/
             <lb/>
@@ -35214,11 +35408,12 @@
             dan<anchor xml:id="a634"/>n<note type="annotation" targetEnd="a634"><p>Verschwommen wegen Defekts im Digitalisat.</p></note> diſes hat vil gro&#x364;ſſre Krafſt
             <lb/>
             alß alle Kunſt und Wu&#x364;ſſenſchafft.
-            <lb/>
+            
+            <head><lb/>
             (14)
             <lb/>
+            <hi rendition="#aq">Felicitas.</hi></head>
             
-            <head><hi rendition="#aq">Felicitas.</hi></head>
             <lb/>
             Bey de<anchor xml:id="a635"/>m<note type="annotation" targetEnd="a635"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>/ der guter Lehr entſpricht/
             <lb/>
@@ -35227,8 +35422,10 @@
             Hier hat er ſeinen Glu&#x364;kes theil/
             <lb/>
             und dort/ zum Gnadenlohn/ das Heil.
-            <lb/>
-            <label>[253.]</label> 6. Uber die Kammerthu&#x364;r.
+            
+            <head><lb/>
+            <label>[253.]</label> 6. Uber die Kammerthu&#x364;r.</head>
+            
             <lb/>
             Das Schlafgemach dient mu&#x364;dem Leib:
             <lb/>
@@ -35241,14 +35438,18 @@
             <fw place="top" type="pageNum">90</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            <label>[D.179.]</label> Ein anders.
+            
+            <head><lb/>
+            <label>[D.179.]</label> Ein anders.</head>
+            
             <lb/>
             Untergehn/ und nicht vergehn/ iſt der Sonnen eigenſchafft:
             <lb/>
             Auß dem ſchlaf und tod erſtehen/ iſt des Scho&#x364;pfers gnad und krafft.
-            <lb/>
-            <label>[254.]</label> 7. Jn die Schlafkammer.
+            
+            <head><lb/>
+            <label>[254.]</label> 7. Jn die Schlafkammer.</head>
+            
             <lb/>
             <hi rendition="#b">Herꝛ<anchor xml:id="a637"/>/<note type="annotation" targetEnd="a637"><p>Hier wird die Virgel als Teil der Sinneinheit mitgetagt.</p></note></hi> wann ich ſchließ die augen zu/
             <lb/>
@@ -35257,8 +35458,10 @@
             ſo wo&#x364;lſt/ als wa&#x364;chter/ mich bedeken/
             <lb/>
             und mich/ zu rechter zeit/ erweken.
-            <lb/>
-            <label>[255.]</label> 8. Wekker.
+            
+            <head><lb/>
+            <label>[255.]</label> 8. Wekker.</head>
+            
             <lb/>
             Auf/ auf! die Sonne ſteiget auf/
             <lb/>
@@ -35267,14 +35470,18 @@
             Lauf/ lauf/ o Menſch/ zu deinem Bruff/
             <lb/>
             den dir die Sonn der gnaden ſchuf.
-            <lb/>
-            <label>[256.]</label> 9. Uber eine Salthu&#x364;ren.
+            
+            <head><lb/>
+            <label>[256.]</label> 9. Uber eine Salthu&#x364;ren.</head>
+            
             <lb/>
             W<supplied>e</supplied>r eifrig ſucht den Himmelſal/
             <lb/>
             derſelb entgeht der Ho&#x364;llenqual.
-            <lb/>
-            <label>[257.]</label> 10. Uber die Kuchenthu&#x364;ren.
+            
+            <head><lb/>
+            <label>[257.]</label> 10. Uber die Kuchenthu&#x364;ren.</head>
+            
             <lb/>
             Wird in die Kuch was guts beſchehrt/
             <lb/>
@@ -35283,42 +35490,53 @@
             Den Koch nicht macht ein langes Meſſer;
             <lb/>
             wol kochen macht die Speiſen beſſer.
-            <lb/>
-            Ein anders.
+            
+            <head><lb/>
+            Ein anders.</head>
+            
             <lb/>
             Wem in die Kuch nicht ſchla&#x364;gt der Hagel/
             <lb/>
             der ha&#x364;nket bald den Hut an nagel.
-            <lb/>
-            <label>[258.]</label> 11. Uber die Speißkammer.
+            
+            <head><lb/>
+            <label>[258.]</label> 11. Uber die Speißkammer.</head>
+            
             <lb/>
             Erfu&#x364;llſt du mich/ zu rechter zeit/
             <lb/>
             ſo ſpeiß ich dich/ wanns unglu&#x364;k ſchneyt.
-            <lb/>
-            <label>[259.]</label> 12. Uber die Kellerthu&#x364;ren.
+            
+            <head><lb/>
+            <label>[259.]</label> 12. Uber die Kellerthu&#x364;ren.</head>
+            
             <lb/>
             Wein eyn/ witz auß: drum hu&#x364;te dich
             <lb/>
             fu&#x364;r Fu&#x364;llerey: trink ma&#x364;ſſiglich.
-            <lb/>
-            <label>[260.]</label> 13. Jn eine Schreibſtuben.
+            
+            <head><lb/>
+            <label>[260.]</label> 13. Jn eine Schreibſtuben.</head>
+            
             <lb/>
             Kein fleiß noch witz/ ohn Gott/ beſtehet/
             <lb/>
             oh<choice><sic>u</sic><corr>n</corr></choice> ihn den Kra&#x364;bsgang alles gehet.
             <lb/>
             <fw place="bottom" type="catch">14. Uber</fw>
+            
             <lb/>
             <pb facs="4077338" n="91"/>
             <milestone unit="page" ana="#facs_590_tr_1"/>
             <fw place="top" type="pageNum">91</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
+            
+            <head><lb/>
             <label>[D.180.]</label> 14. Uber eine Werkſtatt/ oder
             <lb/>
-            Kramladen.
+            Kramladen.</head>
+            
             <lb/>
             Wer mittelma&#x364;ſſig ſich ernehrt/
             <lb/>
@@ -35327,8 +35545,10 @@
             der hat den beſten Gwin verſehen/
             <lb/>
             bey dem <supplied>es</supplied> ihm w<anchor xml:id="a639"/>i<note type="annotation" targetEnd="a639"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>rd wol ergehen.
-            <lb/>
-            <label>[261.]</label> 15. Uber/ die Gelt- und Silberlad.
+            
+            <head><lb/>
+            <label>[261.]</label> 15. Uber/ die Gelt- und Silberlad.</head>
+            
             <lb/>
             Sucht/ und ſam<anchor xml:id="a640"/>m<note type="annotation" targetEnd="a640"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>elt Himmels-Scha&#x364;zze;
             <lb/>
@@ -35337,20 +35557,26 @@
             doch/ wer diſe brauchet recht/
             <lb/>
             iſt und bleibt ein Gottesknecht.
-            <lb/>
-            <label>[263.]</label> 16. Uber oder an das Kamin.
+            
+            <head><lb/>
+            <label>[263.]</label> 16. Uber oder an das Kamin.</head>
+            
             <lb/>
             Bey tag und nacht verſorg das Feur:
             <lb/>
             ſonſt <anchor xml:id="a641"/>f<note type="annotation" targetEnd="a641"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>rißt es um ſich ungeheur.
-            <lb/>
-            <label>[D.181.]</label> Ein anders.
+            
+            <head><lb/>
+            <label>[D.181.]</label> Ein anders.</head>
+            
             <lb/>
             Wilſt du nicht u<anchor xml:id="a642"/>n<note type="annotation" targetEnd="a642"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig en n.</p></note>glu&#x364;k haben/
             <lb/>
             ſo laß den Ruß <anchor xml:id="a643"/>a<note type="annotation" targetEnd="a643"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>bſchaben.
-            <lb/>
-            <label>[D.182.]</label> An ein Camin.
+            
+            <head><lb/>
+            <label>[D.182.]</label> An ein Camin.</head>
+            
             <lb/>
             Wer feursgefahr vermeiden wil/
             <lb/>
@@ -35359,8 +35585,10 @@
             verſorg das Liecht/ und Kuchenfeur:
             <lb/>
             Beſehl auch Gott ſein Haus und Scheur!
-            <lb/>
-            <label>[D.183.]</label> 17. Uber eine Sta&#x364;ge<supplied>n</supplied>
+            
+            <head><lb/>
+            <label>[D.183.]</label> 17. Uber eine Sta&#x364;ge<supplied>n</supplied></head>
+            
             <lb/>
             Zum auf- und niderſteigen dir/
             <lb/>
@@ -35371,32 +35599,40 @@
             und ſchaden dir auf deinem Ruken.
             <lb/>
             <fw place="bottom" type="catch"><supplied>18. Uber</supplied></fw>
+            
             <lb/>
             <pb facs="4077339" n="92"/>
             <milestone unit="page" ana="#facs_591_tr_1"/>
             <fw place="top" type="pageNum">92</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
-            <lb/>
-            <label>[D.184.]</label> 18. Uber die Heimlichkeit.
+            
+            <head><lb/>
+            <label>[D.184.]</label> 18. Uber die Heimlichkeit.</head>
+            
             <lb/>
             Nach dem Geruch/
             <lb/>
             mich jeder ſuch.
+            
             <lb/>
             So no&#x364;htig iſt kein weiter Sal/
             <lb/>
             als ich/ wiewol ich bin ſo ſchmal.
+            
             <lb/>
             Wer mein bedarff/ der ſuchet mich:
             <lb/>
             Wo nicht/ ſo wird geſchohen ich.
+            
             <lb/>
             Der mich jetz ſcheucht/
             <lb/>
             bald zu mir fleucht.
-            <lb/>
-            <label>[262.]</label> 19. Uber ein Bad-hauß.
+            
+            <head><lb/>
+            <label>[262.]</label> 19. Uber ein Bad-hauß.</head>
+            
             <lb/>
             Wer baden wil in diſem Hauß/
             <lb/>
@@ -35405,10 +35641,12 @@
             dann beſſer iſt ein Kleid von Schammet/
             <lb/>
             als aber eins vom beſten Sammet.
-            <lb/>
+            
+            <head><lb/>
             $D.185$ Ein anders:
             <lb/>
-            Uber ein luſtiges Badhauß.
+            Uber ein luſtiges Badhauß.</head>
+            
             <lb/>
             Badhauſes Bau zur Luſtbarkeit/
             <lb/>
@@ -35417,8 +35655,10 @@
             dann o&#x364;fter u&#x364;bertrifft der Schad
             <lb/>
             den Nutzen/ welchen ſuchſt im Bad.
-            <lb/>
-            <label>[D.186.]</label> 20. Spru&#x364;che in das Badhauß.
+            
+            <head><lb/>
+            <label>[D.186.]</label> 20. Spru&#x364;che in das Badhauß.</head>
+            
             <lb/>
             Jm Bad- und Wo&#x364;ſchhauß meid anreitzendes Geſchwa&#x364;tz
             <lb/>
@@ -35427,14 +35667,17 @@
             dann/ was du/ ſonder nutz/ geredt in diſem Leben/
             <lb/>
             darvon muſt Rechenſchafft dem groſſen Richter geben.
+            
             <lb/>
             Die Sa&#x364;u&#x364;glock bleib unangezogen:
             <lb/>
             nur guten g'ſpra&#x364;chs werd hier gepflogen.
+            
             <lb/>
             Guck nicht herein/ ſonſt mo&#x364;cht geſchehen/
             <lb/>
             daß unerlaubts du wurdeſt ſehen.
+            
             <lb/>
             <supplied>Das</supplied> Waſſerbad den Leib benetzt:
             <lb/>
@@ -35447,52 +35690,66 @@
             <fw place="top" type="pageNum">93</fw>
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
+            
             <lb/>
             Jm Waſſerbad/ d<anchor xml:id="a647"/>em<note type="annotation" targetEnd="a647"><p>Im Augsburger Exemplar gibt es kein Zeichen zwischen dem e und dem m.</p></note>u&#x364;htiglich/
             <lb/>
             deß Su&#x364;ndenwu&#x364;ſts erꝛinner dich.
+            
             <lb/>
             Gott ſegne diſes <anchor xml:id="a648"/>Bad<note type="annotation" targetEnd="a648"><p>Im Augsburger Exemplar gibt es kein Zeichen zwischen dem B und dem a.</p></note>/ und mach geſund den Leib/
             <lb/>
             verwahr zugleich d<anchor xml:id="a649"/>i<note type="annotation" targetEnd="a649"><p>Im Augsburger Exemplar eindeutig ein einzelnes i.</p></note>e Seel/ daß ſie geſund verbleib!
-            <lb/>
+            
+            <head><lb/>
             <label>[D.187.]</label> 21. Uber die in einem Bad-Hauß gemahlten
             <lb/>
-            Suſanna-Richter.
+            Suſanna-Richter.</head>
+            
             <lb/>
             Die alten Richter<anchor xml:id="a650"/>g<note type="annotation" targetEnd="a650"><p>Im Augsburger Exemplar ein einzelnes g.</p></note>a&#x364;nß geluſtet noch zu ſchwaderen:
             <lb/>
             Drum mit <hi rendition="#b">Suſ<anchor xml:id="a651"/>a<note type="annotation" targetEnd="a651"><p>Im Augsburger Exemplar eindeutig ein einzelnes a</p></note>nna</hi> Sie ſo freundt- und ernſtlich taderen.
-            <lb/>
-            <label>[D.188.]</label> 22. Uber eine Badſtanden.
+            
+            <head><lb/>
+            <label>[D.188.]</label> 22. Uber eine Badſtanden.</head>
+            
             <lb/>
             Ein Nohtſtall bin Jch offt den kranknen Baderga&#x364;ſten:
             <lb/>
             Geſunde ſich in m<anchor xml:id="a652"/>i<note type="annotation" targetEnd="a652"><p>Im Augsburger Exemplar ein einzelnes i.</p></note>r mit La&#x364;kkerbiſſen ma&#x364;ſten.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.189.]</label> 23. <anchor xml:id="a653"/>Ub<note type="annotation" targetEnd="a653"><p>Im Augsburger Exemplar kein Zeichen zwischen U und dem b.</p></note>er den Waſſerpompen im
             <lb/>
-            Badkeſſel.
+            Badkeſſel.</head>
+            
             <lb/>
             Der Ba&#x364;der ſelbe<anchor xml:id="a654"/>r<note type="annotation" targetEnd="a654"><p>Im Augsburger Exemplar ein einzelnes r.</p></note> pompt warm Waſſer durch mich eyn/
             <lb/>
             damit er in deim <anchor xml:id="a655"/>B<note type="annotation" targetEnd="a655"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>ad mo&#x364;g recht erwa&#x364;rmet ſeyn.
-            <lb/>
-            <label>[D.190.]</label> 24. Ube<anchor xml:id="a656"/>r<note type="annotation" targetEnd="a656"><p>Im Augsburger Exemplar ein einzelnes r.</p></note> das zwerche Standenbrett.
+            
+            <head><lb/>
+            <label>[D.190.]</label> 24. Ube<anchor xml:id="a656"/>r<note type="annotation" targetEnd="a656"><p>Im Augsburger Exemplar ein einzelnes r.</p></note> das zwerche Standenbrett.</head>
+            
             <lb/>
             Das zwerche St<anchor xml:id="a657"/>a<note type="annotation" targetEnd="a657"><p>Im Augsburger Exemplar ein einzelnes a.</p></note>ndenbrett iſt eines Ba&#x364;ders Tiſch/
             <lb/>
             der nicht iſt Vog<anchor xml:id="a658"/>e<note type="annotation" targetEnd="a658"><p>Im Augsburger Exemplar ein einzelnes e.</p></note>lſcheuch; liebt Hu&#x364;ner/ Krebs/ und Fiſch.
-            <lb/>
+            
+            <head><lb/>
             <label>[D.191.]</label> 25. Ube<anchor xml:id="a659"/>r<note type="annotation" targetEnd="a659"><p>Im Augsburger Exemplar eindeutig ein einzelnes r.</p></note> die bey dem Bad gebra&#x364;uchige
             <lb/>
-            Sanduhr.
+            Sanduhr.</head>
+            
             <lb/>
             Wie bald ein Gl<anchor xml:id="a660"/>a&#x364;<note type="annotation" targetEnd="a660"><p>Im Augsburger Exemplar eindeutig ein einzelnes a.</p></note>slein la&#x364;r/ ſo wird es umgeſtu&#x364;rtzet/
             <lb/>
             damit dem Ba&#x364;de<anchor xml:id="a661"/>r<note type="annotation" targetEnd="a661"><p>Im Augsburger Exemplar eindeutig ein einzelnes r.</p></note> werd die lange weil verku&#x364;rtzet.
-            <lb/>
-            <label>[D.192.]</label> 26. Uber e<anchor xml:id="a662"/>i<note type="annotation" targetEnd="a662"><p>Im Augsburger Exemplar ein einzelnes i.</p></note>n Vexier-oder Würffelba&#x364;cherlein.
+            
+            <head><lb/>
+            <label>[D.192.]</label> 26. Uber e<anchor xml:id="a662"/>i<note type="annotation" targetEnd="a662"><p>Im Augsburger Exemplar ein einzelnes i.</p></note>n Vexier-oder Würffelba&#x364;cherlein.</head>
+            
             <lb/>
             Ergreiff den Stil: den Knopff erſchu&#x364;tt:
             <lb/>
@@ -35501,6 +35758,7 @@
             Fallt nacher eins muſt trincken wider/
             <lb/>
             wilt du geachtet werden bider.
+            
             <lb/>
             Der Wu&#x364;rffel in dem Knopff uns zeigt: wer mu&#x364;ſſe trincken:
             <lb/>
@@ -35517,6 +35775,7 @@
             Wann ieder ſich geſetzt zu ſeiner liebſten nider/
             <lb/>
             ſo trinckt wer wu&#x364;rfflet Eins: wer wider Eins/ trinkt wider.
+            
             <lb/>
             Man nennet mich Vexiergeſchirꝛ/
             <lb/>
@@ -35525,8 +35784,10 @@
             Fallt wider Eins/ ſo fahrſt du fu&#x364;r/
             <lb/>
             biß anders fallt; diß wu&#x364;nſch' ich dir!
-            <lb/>
-            <label>[264.]</label> <num>27.</num> Uber eine Gartenthu&#x364;r.
+            
+            <head><lb/>
+            <label>[264.]</label> <num>27.</num> Uber eine Gartenthu&#x364;r.</head>
+            
             <lb/>
             Man ſihet/ ſeiner zeit/ hierinnen in dem Garten/
             <lb/>
@@ -35535,12 +35796,14 @@
             Das reinſte Kra&#x364;utlein uns des Scho&#x364;pfers Allmacht preiſet:
             <lb/>
             Die allerſcho&#x364;nſte Blum des Lebens Ku&#x364;rtze weiſet.
+            
             <lb/>
             <pb facs="4077342" n="95."/>
             <milestone unit="page" ana="#facs_594_tr_1"/>
             <fw place="top" type="pageNum">95.</fw>
-            <lb/>
-            Regenten-Spiegel:
+            
+            <head><lb/>
+            Regenten-Spiegel:</head>
             <lb/>
             Dem hochgeachten/ woledlen/ geſtrengen/
             <lb/>
@@ -35587,10 +35850,12 @@
             <pb facs="4077343" n="96."/>
             <milestone unit="page" ana="#facs_595_tr_1"/>
             <fw place="top" type="pageNum">96.</fw>
-            <lb/>
+            
+            <head><lb/>
             Uber J. E. W. Hrn<supplied>.</supplied> Burgermeiſter
             <lb/>
-            H. H. W. Contrafactur.
+            H. H. W. Contrafactur.</head>
+            
             <lb/>
             Den Vatter Vatterlands ich zeig' im Widerſcheine/
             <lb/>
@@ -35601,20 +35866,23 @@
             chen/
             <lb/>
             dem mu&#x364;ßt Apelles Hand und ſtoltzer Penſel weichen.
+            
             <lb/>
             <fw place="bottom" type="catch">Zu-</fw>
             <lb break="no"/>
             <pb facs="4077344" n="97."/>
             <milestone unit="page" ana="#facs_596_tr_1"/>
             <fw place="top" type="pageNum">97.</fw>
-            <lb/>
-            <label>[265.i.]</label> Zuſchrifftsgetichte:
+            
+            <head><lb/>
+            <label>[265.i.]</label> Zuſchrifftsgetichte:</head>
             <lb/>
             Darinn ſonderbar der bekannte Geißthurn-
             <lb break="no"/>
             Jamer/ den 10. Tag Brachm. 1652. be-
             <lb break="no"/>
             ſchrieben wird.
+            
             <lb/>
             <hi rendition="#in">H</hi>Ochgeachter Herꝛ/ und Freund vom geblu&#x364;t; und vom ge-
             <lb break="no"/>
@@ -35641,6 +35909,7 @@
             Alſo der Regentenſpiegel/ mit beluſtigung dem Herꝛn
             <lb/>
             wider in geda&#x364;chtnuß bringe was er la&#x364;ngſt geſehen gern.
+            
             <lb/>
             Ha&#x364;tt' ich ko&#x364;nnen diſer zeit etwas angena&#x364;mers ſchreiben/
             <lb/>
@@ -35699,6 +35968,7 @@
             ja/ auch den/ der ſonſt zuvoren/ alß ein Heid/ zufluchen pflag:
             <lb/>
             jeder meint ſein hauß getroffen von dem ſtarken W<anchor xml:id="a667"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a667"><p>Das übergeschriebene e ist nicht eindeutig, auch nicht im Augsburger Exemplar.</p></note>tterſchlag<supplied>.</supplied>
+            
             <lb/>
             Alle ſuchten hin und her einen ſichern Ort zu finden/
             <lb/>
@@ -35707,6 +35977,7 @@
             dann es ſchien als wolt vergehen diſes groſſe Rund der welt/
             <lb/>
             mit dem jenen was wir ſehen/ und zum ſelben wird gezellt.
+            
             <lb/>
             Mancher klagte daß der Tag/ ach! der groſſe Tag ſey kommen:
             <lb/>
@@ -35715,6 +35986,7 @@
             alles war erfu&#x364;llt mit ſchr<anchor xml:id="a670"/>a&#x364;<note type="annotation" targetEnd="a670"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>ken/ und es zagt ein iederman/
             <lb/>
             wu&#x364;nſchet hertzlich daß er h<anchor xml:id="a671"/>a&#x364;<note type="annotation" targetEnd="a671"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>tte fu&#x364;r das bo&#x364;ſe guts getahn.
+            
             <lb/>
             Acht perſonen bliben todt; theils erſtiket/ theils erſchlagen;
             <lb/>
@@ -35729,6 +36001,7 @@
             wie der wenigſt zweifel iſt: Wol gelebet/ wol geſtorben:
             <lb/>
             iſt ein alt Schrifftm<anchor xml:id="a673"/>a&#x364;<note type="annotation" targetEnd="a673"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>ſſig Wort/ ewig wahr und unverdor<anchor xml:id="a674"/>b<note type="annotation" targetEnd="a674"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>en.
+            
             <lb/>
             Der verletzten zahl war gro&#x364;ſſer: aber gegem augenſchei<supplied>n</supplied>/
             <lb/>
@@ -35783,50 +36056,59 @@
             <supplied>w</supplied>ie ich billich ſollen tuhn. Doch verhoff' ich/ ſeine Gu&#x364;te
             <lb/>
             <supplied>w</supplied>erd annemmen was ich gib' ohne falſch/ und von gemu&#x364;hte.
+            
             <lb/>
             Gott erhalt in ſeinen gnaden unſer werthes Vatterland/
             <lb/>
             und verleih dem neuen Herꝛen was beſeligt ſeinen Stand!
+            
             <lb/>
             E.  E. W.
+            
             <lb/>
             Schuldgeneigtwilligſter Diener
             <lb/>
             und Vetter
+            
             <lb/>
             Joh. Wilhelm Simler.
             <lb/>
             <fw place="bottom" type="pageNum">g ij</fw>
             <lb/>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><hi rendition="#i">Ad<fw place="bottom" type="catch"/></hi><fw place="bottom" type="catch"/></fw><fw place="bottom" type="catch"/><hi rendition="#i"/></hi><hi rendition="#i"/>
+            <fw place="bottom" type="catch"><hi rendition="#aq"><hi rendition="#i">Ad</hi></hi></fw>
             <lb/>
             <pb facs="4077347" n="100"/>
             <milestone unit="page" ana="#facs_599_tr_1"/>
             <fw place="top" type="pageNum">100</fw>
-            <lb/>
+            
+            <head><lb/>
             <label>[265.ii.]</label> <hi rendition="#aq"><hi rendition="#i">Ad Lectorem</hi>
             <lb/>
-            PROOEMII SIMLERIANI<anchor xml:id="a677"/>.<note type="annotation" targetEnd="a677"><p>Punkt im Augsburger Exemplar eindeutig.</p></note>
+            PROOEMII SIMLERIANI<anchor xml:id="a677"/>.<note type="annotation" targetEnd="a677"><p>Punkt im Augsburger Exemplar eindeutig.</p></note></hi></head>
+            
             <lb/>
-            <hi rendition="#in">P</hi>Ulvere de Pyrio ſi vis deflere ruinam,
+            <hi rendition="#aq"><hi rendition="#in">P</hi>Ulvere de Pyrio ſi vis deflere ruinam,
             <lb/>
             Et te deficiunt lachrymæ: lege Carmina Va<supplied>-</supplied>
             <lb break="no"/>
             tis
             <lb/>
             <hi rendition="#k">SIMLERI</hi>, lachrymas, &amp; ſufficienter habebis.
+            
             <lb/>
             <hi rendition="#k">FELIX WYSSIUS<anchor xml:id="a678"/>,<note type="annotation" targetEnd="a678"><p>Das Komma wird hier als Teil der Sinneinheit mitgetaggt.</p></note></hi> Abbatiſſanæ
             <lb/>
             Eccleſiæ Paſtor.</hi>
-            <lb/>
+            
+            <head><lb/>
             <label>[265.iii.]</label> <hi rendition="#aq">Ad præſtantiſſimum
             <lb/>
             Idéæ boni Principis, ex AGAPETI
             <lb/>
-            ſcitè dictis Autorem.
+            ſcitè dictis Autorem.</hi></head>
+            
             <lb/>
-            <hi rendition="#in">P</hi>Rincipis ldéam veterem, <hi rendition="#k">SIMLERE<anchor xml:id="a679"/>,<note type="annotation" targetEnd="a679"><p>Das Komma wird hier als Teil der Sinneinheit mitgetaggt.</p></note></hi> novan-
+            <hi rendition="#aq"><hi rendition="#in">P</hi>Rincipis ldéam veterem, <hi rendition="#k">SIMLERE<anchor xml:id="a679"/>,<note type="annotation" targetEnd="a679"><p>Das Komma wird hier als Teil der Sinneinheit mitgetaggt.</p></note></hi> novan-
             <lb break="no"/>
             do,
             <lb/>
@@ -35835,20 +36117,25 @@
             O bene <hi rendition="#k"><hi rendition="#g">WASERO</hi></hi> hæc <hi rendition="#k"><hi rendition="#g">AGAPETI</hi></hi> Dicta dicantur,
             <lb/>
             Optimi enimn eſt <hi rendition="#k">CONSUL</hi> Principis iſte Typus.
+            
             <lb/>
             <hi rendition="#i">Honoris c. f.</hi>
+            
             <lb/>
             GEORGIUS MVLLERUS.
             <lb/>
             Eccleſiæ Talvillenſis P.</hi>
+            
             <lb/>
             <pb facs="4077348" n="101"/>
             <milestone unit="page" ana="#facs_600_tr_1"/>
             <fw place="top" type="pageNum">101</fw>
-            <lb/>
+            
+            <head><lb/>
             <label>[265.iv.]</label> S. CHYRS.
             <lb/>
-            HOMIL. VI.
+            HOMIL. VI.</head>
+            
             <lb/>
             <lb/>
             <lb/>
@@ -35857,7 +36144,8 @@
             <lb/>
             <lb/>
             <lb/>
-            <lb/>
+            
+            <head><lb/>
             <hi rendition="#aq"><hi rendition="#in">Q</hi>UEMADMODUM NAVIS, SUO PRIVATA</hi>
             <lb/>
             <hi rendition="#aq">NAVICULATORE, MERGITUR: ITA</hi>
@@ -35874,16 +36162,18 @@
             <lb break="no"/>
             <hi rendition="#aq">RI INFIRMIOREM, ATROCI MANSUETUM.</hi>
             <lb/>
-            
-            <head><hi rendition="#aq">CONSUMENTE.</hi></head>
+            <hi rendition="#aq">CONSUMENTE.</hi></head>
             <lb/>
             <fw place="bottom" type="catch">Re-</fw>
+            
             <lb break="no"/>
             <pb facs="4077349" n="102."/>
             <milestone unit="page" ana="#facs_601_tr_1"/>
             <fw place="top" type="pageNum">102.</fw>
-            <lb/>
-            <label>[265.]</label> Regentenſpiegel.
+            
+            <head><lb/>
+            <label>[265.]</label> Regentenſpiegel.</head>
+            
             <lb/>
             <hi rendition="#in">R</hi>Egenten ſeind von Gott mit ho&#x364;chſtem Stand geehre<supplied>t</supplied>/
             <lb/>
@@ -35892,6 +36182,7 @@
             drum ſey der Richter ſelb den Gſatzen unterthan/
             <lb/>
             und richte nach dem Gſatz/ ſo folgt ihm iederman.
+            
             <lb/>
             <num>2.</num> Der Steurmann in dem Schiff/ vor andern Schiffgen<supplied>o</supplied>ſſen/
             <lb/>
@@ -35900,6 +36191,7 @@
             nicht minder ein Regent arbeite mit verſtand/
             <lb/>
             daß ſein Regierungsſchiff zu keinen zeiten ſtrand.
+            
             <lb/>
             <num>3.</num> Den Scho&#x364;pfer und ſich ſelb in demuht recht erkennen/
             <lb/>
@@ -35908,6 +36200,7 @@
             dann welcher Gott und ſich erkennet wie er ſol/
             <lb/>
             der lebet und regiert auch anderſt nicht alß wol.
+            
             <lb/>
             <num>4.</num> Geſchlecht iſt ſchlechter Ruhm: wir alle ſeind auß erde<supplied>n</supplied>/
             <lb/>
@@ -35916,6 +36209,7 @@
             drum prange keiner mit. Der Tugendadel gilt/
             <lb/>
             und fu&#x364;hrt allein mit recht ero&#x364;fnet Ha&#x364;lm und Schilt.
+            
             <lb/>
             <num>5.</num> Die pflicht der Dankbarkeit vor andern dem gebu&#x364;ret
             <lb/>
@@ -35924,6 +36218,7 @@
             dann diſe Tugend Gott an uns ſo wol gefallt/
             <lb/>
             daß mit mehr gaben Er uns unſre pflicht bezallt.
+            
             <lb/>
             <num>6.</num> Das wo&#x364;llen und das tuhn den Obern iſt gegeben/
             <lb/>
@@ -35932,6 +36227,7 @@
             zu wo&#x364;llen und zu thun was die Gemeine nu&#x364;tzt/
             <lb/>
             und nur was diſer wil der ihren gwalt beſchu&#x364;tzt.
+            
             <lb/>
             <num>7.</num> Die gu&#x364;ter diſer welt/ dem waſſer gleich/ verflieſſen/
             <lb/>
@@ -35940,6 +36236,7 @@
             die zu des na&#x364;chſten nutz wir brauchen in gebu&#x364;r/
             <lb/>
             dieweil der woltaht dank umkehret fu&#x364;r und f<anchor xml:id="a680"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a680"><p>Das übergeschriebene e ist im Referenzexemplar nicht eindeutig und im Augsburger Exemplar kaum sichtbar.</p></note>r.
+            
             <lb/>
             <num>8.</num> Verſtopf die ohren nicht vor denen die dich bitten
             <lb/>
@@ -35948,6 +36245,7 @@
             damit der ho&#x364;chſt Regent ſein ohr ero&#x364;fne dir:
             <lb/>
             der gegen uns geſinnt wie gegen andern wir.
+            
             <lb/>
             <num>9.</num> Daß im urtheilen ſich ein Richter nicht vergehe/
             <lb/>
@@ -35964,6 +36262,7 @@
             <fw place="top" type="pageNum">103</fw>
             <lb/>
             <fw place="top" type="header">Regentenſpiegel.</fw>
+            
             <lb/>
             <num><supplied>1</supplied>0.</num> Wa<anchor xml:id="a681"/>n<note type="annotation" targetEnd="a681"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig ein n.</p></note>n ſich der Steurmann ſelb in ſeiner Schiffart irꝛet/
             <lb/>
@@ -35972,6 +36271,7 @@
             alſo wann ein Regent in laſtern ſich vergeht/
             <lb/>
             ſein undergebne Gmein in ho&#x364;chſten gfahren ſteht.
+            
             <lb/>
             <num>11.</num> Das gegenwertig ſich vera&#x364;nderlich befindet/
             <lb/>
@@ -35980,6 +36280,7 @@
             da<anchor xml:id="a682"/>r<note type="annotation" targetEnd="a682"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>um mit veſtem muht auf Gott allein vertrau/
             <lb/>
             und auf das irꝛdiſche dir keine hoffnung bau.
+            
             <lb/>
             <num>12.</num> Die raben einig nur der todten ko&#x364;rper augen
             <lb/>
@@ -35988,6 +36289,7 @@
             alſo die ſchmeichler art die hertzensaugen bl<anchor xml:id="a683"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a683"><p>Das übergeschriebene e ist hier kaum sichtbar. Im Augsburger Exemplar ist es nur ansatzweise vorhanden.</p></note>ndt/
             <lb/>
             in dem ſie bo&#x364;ſes lobt/ das gute ſchma&#x364;cht und ſcha&#x364;ndt.
+            
             <lb/>
             <num>13.</num> Ei<anchor xml:id="a684"/>n<note type="annotation" targetEnd="a684"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>s Obern muht und ſinn im guten ſey beſta&#x364;ndig/
             <lb/>
@@ -35996,6 +36298,7 @@
             da<anchor xml:id="a686"/>m<note type="annotation" targetEnd="a686"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>it das unglu&#x364;k ihm den bodenſtoß nicht geb/
             <lb/>
             de<anchor xml:id="a687"/>r<note type="annotation" targetEnd="a687"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> wolſtand aber auch ihn nicht zu hoch erheb.
+            
             <lb/>
             <num>14.</num> W<anchor xml:id="a688"/>e<note type="annotation" targetEnd="a688"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>r menſchlichen betrug und eigne ſchwachheit kennet/
             <lb/>
@@ -36004,6 +36307,7 @@
             w<anchor xml:id="a691"/>a<note type="annotation" targetEnd="a691"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>s bo&#x364;ſer ne<anchor xml:id="a692"/>i<note type="annotation" targetEnd="a692"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>gung auch ſeim fleiſch eynpflantzet ſey/
             <lb/>
             d<anchor xml:id="a693"/>e<note type="annotation" targetEnd="a693"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>r wird in <anchor xml:id="a694"/>h<note type="annotation" targetEnd="a694"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>o&#x364;chſtem Stand verbleiben hoffartfrey.
+            
             <lb/>
             <num>15.</num> Pracht/ Rei<anchor xml:id="a695"/>c<note type="annotation" targetEnd="a695"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>hthum/ Ehr und Gunſt im augenblik verſchwin-
             <lb break="no"/>
@@ -36014,6 +36318,7 @@
             g<anchor xml:id="a697"/>e<note type="annotation" targetEnd="a697"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>r<supplied>e</supplied>chtes R<anchor xml:id="a698"/>e<note type="annotation" targetEnd="a698"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>giment wird immer außgebreit/
             <lb/>
             d<anchor xml:id="a699"/>e<note type="annotation" targetEnd="a699"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>r fromme<anchor xml:id="a700"/>n<note type="annotation" targetEnd="a700"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> Obern wird vergeſſen keiner zeit.
+            
             <lb/>
             <num>16.</num> <anchor xml:id="a701"/>D<note type="annotation" targetEnd="a701"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>aß nic<anchor xml:id="a702"/>h<note type="annotation" targetEnd="a702"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>t durch u&#x364;berfluß des reichen leib verderbe/
             <lb/>
@@ -36022,6 +36327,7 @@
             ſ<anchor xml:id="a703"/>o<note type="annotation" targetEnd="a703"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> ſol e<anchor xml:id="a704"/>i<note type="annotation" targetEnd="a704"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>n weiſer Herꝛ auf mittel ſeyn bedacht
             <lb/>
             <anchor xml:id="a705"/>w<note type="annotation" targetEnd="a705"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ie et<anchor xml:id="a706"/>w<note type="annotation" targetEnd="a706"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>as gleichheit werd in ihnen aufgebracht.
+            
             <lb/>
             <num>17.</num> <anchor xml:id="a707"/>G<note type="annotation" targetEnd="a707"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>eſa&#x364;gn<anchor xml:id="a708"/>e<note type="annotation" targetEnd="a708"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>t iſt die zeit/ da weiſe leuht regieren/
             <lb/>
@@ -36030,6 +36336,7 @@
             <anchor xml:id="a710"/>w<note type="annotation" targetEnd="a710"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ie jenner wol geredt. Nun diſe Gnadenzeit
             <lb/>
             <anchor xml:id="a711"/>i<note type="annotation" targetEnd="a711"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ſt auch an uns erfu&#x364;llt durch Gottes gu&#x364;tigkeit.
+           
             <lb/>
             <num>18.</num> <anchor xml:id="a712"/>R<note type="annotation" targetEnd="a712"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>echtswegen herꝛſchet der/ der ſich kan u&#x364;berwinden/
             <lb/>
@@ -36038,6 +36345,7 @@
             <anchor xml:id="a713"/>m<note type="annotation" targetEnd="a713"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>it ma&#x364;ſſigkeit geziert/ mit grech<supplied>tig</supplied>keit bekleidt:
             <lb/>
             <anchor xml:id="a714"/>e<note type="annotation" targetEnd="a714"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>in ſolcher herꝛſchet auch in grauer ewigkeit.
+            
             <lb/>
             <num>19.</num> <anchor xml:id="a715"/>S<note type="annotation" targetEnd="a715"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ol dir ein ſtehter Ruhm bey deiner Herꝛſchafft bleiben/
             <lb/>
@@ -36056,6 +36364,7 @@
             dann ein erzwungen lob iſt eine heucheley/
             <lb/>
             ie ho&#x364;hers Ehrenwort/ ie gro&#x364;ſſre triegerey.
+            
             <lb/>
             <num>20.</num> Ehrwu&#x364;rdig wird mit recht diß Regiment gepreiſet
             <lb/>
@@ -36064,6 +36373,7 @@
             dann zwu&#x364;ſchen Tyranney und ſolchem Regiment/
             <lb/>
             wie zwu&#x364;ſchen Wolf und Lamm wird underſcheid erke<choice><sic>m</sic><corr>nn</corr></choice>t.
+            
             <lb/>
             <num>21.</num> Des leibes weſen nach ein menſch dem andern gleichet/
             <lb/>
@@ -36072,6 +36382,7 @@
             und gleichet Gott im Stand: iſt aber ſtaub und erd/
             <lb/>
             drum ma&#x364;ſſig er den ſtoltz/ und nicht zu zornig werd.
+            
             <lb/>
             <num>22.</num> Den ra&#x364;hten/ die dem Reich zu nutzen rahten ko&#x364;nnen/
             <lb/>
@@ -36080,6 +36391,7 @@
             Die Schmeichelra&#x364;hte meid/ ſo zu gefallen dir/
             <lb/>
             und nicht dem Reich zu nutz/ mißrahten fu&#x364;r und fu&#x364;r.
+           
             <lb/>
             <num>23.</num> Den Dienern dich erzeig/ wie du verhofſt zugleiche
             <lb/>
@@ -36088,6 +36400,7 @@
             dann wie den na&#x364;chſten wir erho&#x364;r- und ſehen an/
             <lb/>
             ſo wird mit gegenrecht vom HERREN uns getahn.
+            
             <lb/>
             <num>24.</num> Ein Spiegel/ den man rein und unbetruglich preiſet/
             <lb/>
@@ -36096,6 +36409,7 @@
             So ſtimmet Gotts Gericht mit unſern werken eyn/
             <lb/>
             nach dem dieſelben ſeind/ wird unſre blohnung ſeyn<anchor xml:id="a716"/>.<note type="annotation" targetEnd="a716"><p>Wegen verschmierter Tinte könnte man hier einen Bindestrich erkennen. Bei genauerer Betrachtung aber ist es ein Punkt.</p></note>
+           
             <lb/>
             <num>25.</num> Weil unbedachter Raht in wichtig hohen dingen
             <lb/>
@@ -36104,6 +36418,7 @@
             ſo raht mit weil und fleiß/ und mit gebett zugleich/
             <lb/>
             ſetz aber bald zu werk was dienet deinem Reich.
+           
             <lb/>
             <num>26.</num> Du wirſt das Regiment am beſten denn verwalten/
             <lb/>
@@ -36112,6 +36427,7 @@
             was zu verꝛichten iſt: dann Oberkeitlichs wort/
             <lb/>
             wie ring es immer ſcheint/ mit nachtruk gehet fort.
+            
             <lb/>
             <num>27.</num> Wann die Regenten ſelb/ nach ihren Gſatzen/ leben/
             <lb/>
@@ -36120,6 +36436,7 @@
             dann ieder untertahn bey diſem wird verſtehn/
             <lb/>
             daß kein verbrecher werd geſetzter ſtraf entgehn.
+            
             <lb/>
             <num>28.</num> Selb ſu&#x364;nden/ oder auch den Su&#x364;ndern nicht abwehren/
             <lb/>
@@ -36136,6 +36453,7 @@
             <fw place="top" type="pageNum">105</fw>
             <lb/>
             <fw place="top" type="header">Spiegel.</fw>
+            
             <lb/>
             <num>29.</num> Bey bo&#x364;ſen wird man ſiech: muß ſu&#x364;nden oder leiden:
             <lb/>
@@ -36144,6 +36462,7 @@
             zu frommen halten ſich: bey denen lehrnet man
             <lb/>
             den laſtern abbruch tuhn/ der tugend hangen an.
+           
             <lb/>
             <num>30.</num> Zu Ehrena&#x364;mtern die/ die ſich unehrbar halten/
             <lb/>
@@ -36152,6 +36471,7 @@
             in eim und anderm Stand/ erfordert Gott von dir/
             <lb/>
             der du ſie haſt erwehlt: drum wehl nach Eidsgebu&#x364;r.
+            
             <lb/>
             <num>31.</num> O Richter/ richt geleich/ dem feinde wie dem freunde/
             <lb/>
@@ -36160,6 +36480,7 @@
             tuh beyden <anchor xml:id="a718"/>w<note type="annotation" targetEnd="a718"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>iderſtand/ und weich vom rechten nicht/
             <lb/>
             ſo werden fe<anchor xml:id="a719"/>i<note type="annotation" targetEnd="a719"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>nd und freund gutheiſſen dein gericht.
+            
             <lb/>
             <num>32.</num> Halt fu&#x364;r den beſten freund; nicht den der alles preiſet
             <lb/>
@@ -36168,6 +36489,7 @@
             in allem tu<anchor xml:id="a720"/>h<note type="annotation" targetEnd="a720"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>n getreu&#x364;/ ſo/ daß zur unfalszeit
             <lb/>
             er ſich mit d<anchor xml:id="a721"/>i<note type="annotation" targetEnd="a721"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>r betru&#x364;bt/ im wolſtand mit-erfreu&#x364;t.
+           
             <lb/>
             <num>33.</num> Die laſt des Regiments nicht ſchreke dein gemu&#x364;hte/
             <lb/>
@@ -36176,6 +36498,7 @@
             Hab einen veſten muht/ und ſey dir immer gleich/
             <lb/>
             im glu&#x364;k werd nicht zu ſtoltz/ im unglu&#x364;k nicht zu weich.
+           
             <lb/>
             <num>34.</num> Geleiche dich dem Gold/ warauß man vil formieret/
             <lb/>
@@ -36184,6 +36507,7 @@
             noch bleibt es immer Gold/ und gleich im weſen gut:
             <lb/>
             alſo kein' Ehrenſtell vera&#x364;ndre deinen muht.
+           
             <lb/>
             <num>35.</num> Das band der Liebe macht ein Regiment beſta&#x364;ndig/
             <lb/>
@@ -36192,6 +36516,7 @@
             darum alſo regier/ daß untertahnen dich/
             <lb/>
             na&#x364;chſt einer Kinderforcht/ auch lieben inniglich.
+            
             <lb/>
             <num>36.</num> Den Stand/ dem niemand darf geſatz und ordnung geben/
             <lb/>
@@ -36200,6 +36525,7 @@
             er zo&#x364;rne wider ſich wie widern undertahn/
             <lb/>
             wann ſelber er verfehlt: ſo lobt ihn iederman.
+            
             <lb/>
             <num>37.</num> Biſt in der undern welt zu hoher Ehr erhaben/
             <lb/>
@@ -36208,6 +36534,7 @@
             und fu&#x364;r die ho&#x364;heſt ehr es achten iederzeit/
             <lb/>
             wann untertahnen du erzeigſt barmhertzigkeit.
+            
             <lb/>
             <num>38.</num> Es ſollen u&#x364;ber gold und a&#x364;delgſtein auff erden
             <lb/>
@@ -36226,6 +36553,7 @@
             dann ſie beluſtigen/ auß hoffnung jener freüd/
             <lb/>
             die immerw<anchor xml:id="a723"/>a&#x364;<note type="annotation" targetEnd="a723"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>hrend iſt/ ohn einig hertzenleid.
+            
             <lb/>
             <num>39.</num> Ein Herꝛ ſol iederzeit hochachten die ge<supplied>t</supplied>reuen/
             <lb/>
@@ -36234,6 +36562,7 @@
             dann alſo wird der fromm zu mehrer treu bewegt/
             <lb/>
             dem bo&#x364;ſen wird der wa&#x364;g zum u&#x364;beltuhn verlegt.
+            
             <lb/>
             <num>40.</num> Dem Vieh geleichet ſich wer tyranney veru&#x364;bet/
             <lb/>
@@ -36242,6 +36571,7 @@
             Darum in ho&#x364;chſtem Stand das Recht vor augen hab
             <lb/>
             und ſag der tyranney/ ſamt aller frechheit ab.
+            
             <lb/>
             <num>41.</num> Der Richter hu&#x364;te ſich den freunde loß zuſprechen:
             <lb/>
@@ -36250,6 +36580,7 @@
             er laß dem feind und freund geleiches Recht ergehn:
             <lb/>
             dann bo&#x364;ß verbleibet bo&#x364;ß/ von wem es gleich geſchehn.
+           
             <lb/>
             <num>42.</num> Mit ſonderm fleiß anho&#x364;r die klagenden partheyen/
             <lb/>
@@ -36258,6 +36589,7 @@
             ſo findeſt du das recht: und wie du bleibſt darbey/
             <lb/>
             alſo gibſt keinem zu daß er verfa&#x364;lſcher ſey.
+           
             <lb/>
             <num>43.</num> Wer mit gutthaten ko&#x364;nt der Sternen zahl erꝛ<supplied>e</supplied>ichen/
             <lb/>
@@ -36266,6 +36598,7 @@
             gleich wie auch keiner mag vorgehen eignem Schatt:
             <lb/>
             dann Gott/ was wir getahn/ vorhin gegeben hat.
+           
             <lb/>
             <num>44.</num> Des woltuhns ſcha&#x364;tze nicht/ gleich anderm ſchatz der erden/
             <lb/>
@@ -36274,6 +36607,7 @@
             durch geben werden ſie geſamlet mehr und mehr/
             <lb/>
             und am vergeltungstag belohnt mit reicher Ehr.
+           
             <lb/>
             <num>45.</num> Wer/ durch des Ho&#x364;chſten gnad/ zur Herꝛſchafft außerkohren/
             <lb/>
@@ -36282,6 +36616,7 @@
             der gleiche ſeinem Herꝛn/ der ihn erhoben hat/
             <lb/>
             und laß der armen bitt bey ihme finden ſtatt.
+           
             <lb/>
             <num>46.</num> Der Herꝛſcher iſt dem Folk/ wies aug dem leib/ gegeben/
             <lb/>
@@ -36290,6 +36625,7 @@
             darum er auch auf ſie die fleiſſig' achtung hab/
             <lb/>
             daß ſie im guten zu- im bo&#x364;ſen nemmen ab.
+          
             <lb/>
             <num>47.</num> Ein Herꝛ lebt auſſer gfahr/ und immer unbetru&#x364;bet/
             <lb/>
@@ -36306,6 +36642,7 @@
             <fw place="top" type="pageNum">107</fw>
             <lb/>
             <fw place="top" type="header">Regentenſpiegel.</fw>
+           
             <lb/>
             <num>48.</num> Des Obern hoher Stand wil forcht und liebe haben/
             <lb/>
@@ -36314,6 +36651,7 @@
             zu vil ge<anchor xml:id="a724"/>li<note type="annotation" targetEnd="a724"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ndigkeit in die verachtung bringt/
             <lb/>
             und ein <supplied>z</supplied>u groſſer ernſt der undern Lieb verdringt.
+           
             <lb/>
             <num>49.</num> Wer ſel<supplied>b</supplied>er tuht was er den undern wird gebieten/
             <lb/>
@@ -36322,6 +36660,7 @@
             ſein Regiment wird auch anſehenlich gemacht:
             <lb/>
             ein ieder Oberherꝛ nemm diſes wol in acht.
+           
             <lb/>
             <num>50.</num> Du ſolſt der armen bitt/ ungmietet/ lieber ho&#x364;ren
             <lb/>
@@ -36330,6 +36669,7 @@
             da<anchor xml:id="a727"/>n<note type="annotation" targetEnd="a727"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>n d<supplied>iſ</supplied>en wurdeſt du hierdurch verpflichtet ſeyn/
             <lb/>
             fu&#x364;r jene ſtellt ſich Gott alß ein verga&#x364;lter eyn.
+           
             <lb/>
             <num>51.</num> Das hel<anchor xml:id="a728"/><unclear>l</unclear><note type="annotation" targetEnd="a728"><p>Wahrscheinlich ist das zweite l wegen eines Defektes im Digitalisat unsichtbar. An dieser Stelle ist aber das Bild nicht verschwommen. Im Augsburger Exemplar eindeutig zwei Mal l.</p></note>e Sonnenliecht/ mit ſeinen guldnen ſtralen/
             <lb/>
@@ -36338,6 +36678,7 @@
             do<anchor xml:id="a731"/>c<note type="annotation" targetEnd="a731"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>h wichet es der nacht: ein Herꝛ/ den armen gneigt/
             <lb/>
             mi<anchor xml:id="a732"/>t<note type="annotation" targetEnd="a732"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> kla<supplied>r</supplied>em <anchor xml:id="a733"/>w<note type="annotation" targetEnd="a733"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>arheitsliecht den ſchalk im finſtern zeigt.
+           
             <lb/>
             <num>52.</num> Ein tug<supplied>e</supplied>ndreicher Fu&#x364;rſt ſein leben alſo fu&#x364;hret/
             <lb/>
@@ -36346,6 +36687,7 @@
             zu ſeiner gn<anchor xml:id="a734"/>a<note type="annotation" targetEnd="a734"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>d geſtad der du&#x364;rſtig zuflucht nimmt/
             <lb/>
             und ei<supplied>n</supplied> erlo&#x364;ßter ihm ein Ehrenliedlein ſtimmt.
+           
             <lb/>
             <num>53.</num> S<anchor xml:id="a735"/>o<note type="annotation" targetEnd="a735"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> vil <supplied>e</supplied>in <anchor xml:id="a736"/>H<note type="annotation" targetEnd="a736"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>erꝛ an macht den andern wird vorgehen/
             <lb/>
@@ -36354,6 +36696,7 @@
             Dann <supplied>m</supplied>it gutta&#x364;htigkeit wird ſeines Standes ehr/
             <lb/>
             d<supplied>u</supplied>rch <supplied>a</supplied>rmer leuhten lob gefo&#x364;rdert mehr und mehr.
+          
             <lb/>
             <num>54.</num> Betra<supplied>c</supplied>htung dem Befehl vorgehe/ wies gebu&#x364;ret/
             <lb/>
@@ -36362,6 +36705,7 @@
             d<anchor xml:id="a739"/>a<note type="annotation" targetEnd="a739"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>s ſc<supplied>h</supplied>lipfr<anchor xml:id="a740"/>i<note type="annotation" targetEnd="a740"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>cht glid/ die zung/ bald heil/ bald unheil bringt/
             <lb/>
             n<anchor xml:id="a741"/>a<note type="annotation" targetEnd="a741"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ch d<supplied>e</supplied>m ſie wird geſtimmt/ nach dem ſie auch erklingt.
+           
             <lb/>
             <num>55.</num> E<anchor xml:id="a742"/>i<note type="annotation" targetEnd="a742"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>n H<supplied>e</supplied>rꝛ ſcharfſinnig ſey im urtheil hoher dingen/
             <lb/>
@@ -36370,6 +36714,7 @@
             e<anchor xml:id="a744"/>r<note type="annotation" targetEnd="a744"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note> zo&#x364;r<supplied>n</supplied> und zo&#x364;rne nicht; theils/ daß er bo&#x364;ſem wehr;
             <lb/>
             t<anchor xml:id="a745"/>h<note type="annotation" targetEnd="a745"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>eils/ ihm geneigtes gmu&#x364;ht erkenne mehr und mehr!
+           
             <lb/>
             <num>56.</num> Erwi<supplied>g</supplied> im hertzensſchrein die ſitten und naturen
             <lb/>
@@ -36378,6 +36723,7 @@
             <anchor xml:id="a746"/>d<note type="annotation" targetEnd="a746"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>iew<supplied>ei</supplied>l zu diſer zeit vil ſo&#x364;lcher heuchler ſeind/
             <lb/>
             <anchor xml:id="a747"/>d<note type="annotation" targetEnd="a747"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ie d<supplied>e</supplied>m leichttrauenden mehr ſchaden alß der feind.
+           
             <lb/>
             <num>57.</num> So d<supplied>u</supplied> was nutzlichs ho&#x364;rſt/ ſo ho&#x364;r es auch von hertzen/
             <lb/>
@@ -36394,6 +36740,7 @@
             erwig in ieder ſach auch ſelber die gebu&#x364;r/
             <lb/>
             und was erꝛahten iſt/ das acht nicht hinderfu&#x364;r.
+           
             <lb/>
             <num>58.</num> Ein wolverwahrtes Schloß mit gra&#x364;ben und mit mauren/
             <lb/>
@@ -36402,6 +36749,7 @@
             alſo ein miltreich Reich/ beveſtnet mit gebett/
             <lb/>
             ſich ſighaft widern feind beſchu&#x364;tzet und erꝛett.
+          
             <lb/>
             <num>59.</num> Der Regimentsehr dich alſo gebrauch auf erde/
             <lb/>
@@ -36410,6 +36758,7 @@
             ein rechtes Vatterhertz den undertahnen hab/
             <lb/>
             mit dra&#x364;uung mehr als ſtraf ſie halt von laſtern ab/
+           
             <lb/>
             <num>60.</num> Der Gutta&#x364;htmantel iſt ein Kleid das nicht veraltet/
             <lb/>
@@ -36418,6 +36767,7 @@
             wer nun mit diſen ſich bekleidet hier in zeit/
             <lb/>
             dem wird hernach verehrt die himmliſch Herꝛlichkeit.
+           
             <lb/>
             <num>61.</num> Weil Gott den Zepter dir gegeben hat vor allen/
             <lb/>
@@ -36426,6 +36776,7 @@
             das bſchihet wann wie dich du liebſt den undertahn/
             <lb/>
             und ihn als Gottes Gſcho&#x364;pf mit gnaden ſiheſt an.
+           
             <lb/>
             <num>62.</num> Ein Oberherꝛ vorauß begehr der hu&#x364;lf von oben/
             <lb/>
@@ -36434,6 +36785,7 @@
             ſonſt ſol ein ieder menſch/ der eigne wolfahrt ſucht/
             <lb/>
             zur hu&#x364;lff von oben her nur nemmen ſeine flucht.
+           
             <lb/>
             <num>63.</num> Der HERR zwar keines dings/ du aber wol des Herꝛe<supplied>n</supplied>/
             <lb/>
@@ -36442,6 +36794,7 @@
             die armen ihrer bitt/ und nicht ſeyn ſo genau:
             <lb/>
             vonwegen wu&#x364;rdiger ſie alle milt anſchau.
+          
             <lb/>
             <num>64.</num> Wer ſelb von Gott begehrt verzeihung ſeiner ſu&#x364;nden/
             <lb/>
@@ -36450,6 +36803,7 @@
             die ihn beleidiget: warauß man dann verſteht/
             <lb/>
             er ſey ein Gottes freu&#x364;nd/ des zoren bald vergeht.
+           
             <lb/>
             <num>65.</num> Wilſt in dem Regiment den Stand unſtra&#x364;flich fu&#x364;hren/
             <lb/>
@@ -36458,6 +36812,7 @@
             ja/ ſcheuh dich vor dir ſelb: dann ſo der untertahn
             <lb/>
             dißfahls zu fo&#x364;rchten iſt: ſo biſts du weit voran.
+          
             <lb/>
             <num>66.</num> Mann ein geringer menſch ſtrafwu&#x364;rdig ſich vergehet/
             <lb/>
@@ -36474,6 +36829,7 @@
             <fw place="top" type="pageNum">109</fw>
             <lb/>
             <fw place="top" type="header">Spiegel.</fw>
+           
             <lb/>
             <num>67.</num> Der M<anchor xml:id="a750"/>e<note type="annotation" targetEnd="a750"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>nſchenfraß verzehrt den ſchlimſten und den beſten:
             <lb/>
@@ -36482,6 +36838,7 @@
             dann er muß naket fort/ ins finſterhole Grab/
             <lb/>
             und an dem groſſen Tag die Rechnung legen ab.
+           
             <lb/>
             <num>68.</num> Der iſt mit recht ein Herꝛ/ der die vernunft bezwinget/
             <lb/>
@@ -36490,6 +36847,7 @@
             darum bewafne dich/ als Gottes treuer Knecht/
             <lb/>
             mit ku&#x364;nſcher ma&#x364;ſſigkeit/ ſo bleibeſt Herꝛ mit recht.
+           
             <lb/>
             <num>69.</num> Gleich alß im Sonnenſchein der dunkel Schatt/ ohn fehlen:
             <lb/>
@@ -36498,6 +36856,7 @@
             drum mag ſich am Gericht außla&#x364;ugnen keiner gar/
             <lb/>
             eins ieden werk wird ſelb ſich machen offenbar.
+           
             <lb/>
             <num>70.</num> Diß Leben/ Schiffgeleich/ fahrt unvermerkt von hinnen/
             <lb/>
@@ -36506,6 +36865,7 @@
             darum ein ieder heut nach jener anfurth ſtreb/
             <lb/>
             in deren er hernach auch ewig ſicher leb.
+           
             <lb/>
             <num>71.</num> Jſt einer gleich ein Herꝛ des beſten theils der Erden/
             <lb/>
@@ -36514,6 +36874,7 @@
             und wie er auß dem Staub geſtigen auf den Thron/
             <lb/>
             ſo muß er/ ſeiner zeit/ abſteigen auch darvon.
+           
             <lb/>
             <num>72.</num> Wer eine Leiter ſteigt/ ſich na&#x364;hert ho&#x364;chſter ſproſſen:
             <lb/>
@@ -36522,8 +36883,10 @@
             ſo h<anchor xml:id="a756"/>o<note type="annotation" targetEnd="a756"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>ch/ biß er erꝛeicht das oberſt Ko&#x364;nigreich/
             <lb/>
             und in demſelben herꝛſch dem Herꝛen Chriſtus gleich.
-            <lb/>
-            Beſchließlicher Wunſch.
+            
+            <head><lb/>
+            Beſchließlicher Wunſch.</head>
+            
             <lb/>
             <hi rendition="#in">E</hi>S wu&#x364;nſchet Agapet dem Keyſer/ und zugleiche
             <lb/>
@@ -36542,6 +36905,7 @@
             O all<supplied>e</supplied>r Herꝛen HERR/ verſetz ſie; lebensſatt;
             <lb/>
             auß d<supplied>i</supplied>ſem Threnentahl in ho&#x364;chſte Freudenſtatt!
+            
             <lb/>
             <hi rendition="#g">ENDE.</hi>
             <lb/>
