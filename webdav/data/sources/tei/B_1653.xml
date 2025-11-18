@@ -23,8 +23,7 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
-         <div>
+         <front><div>
             <pb facs="30217995"/>
             <pb facs="30217996"/>
             <pb facs="30217997"/>
@@ -33,41 +32,56 @@
             <pb facs="30218000"/>
             <pb facs="30218001"/>
             <pb facs="30218002"/>
+            <div type="frontispiece"><figure/><!-- NE: Titel im Frontispiz als halftitle kodieren?-->
+               <epigraph><cit><quote>
+                  <lg>
+                     <l>Ein künſches Hertz mag mit Geſang/ mit Jnſtrument- vnd Seiten/</l>
+                     <l>Ergetzen ſich/ vnd Gottes Lob bis in den tod außbreiten.</l>
+                  </lg></quote></cit></epigraph><!-- NE: Kodierung des Mottos als Epigraph so richtig?--></div>
+            <lb/>
             <pb facs="30218004"/>
-            <pb facs="30218005"/>
-            <label>[ii.]</label> Johann-Wilhelm
+            <pb facs="30218005"/>
+
+            <titlePage type="main">
+               <label>[ii.]</label>
+               <lb/><docAuthor>Johann-Wilhelm
             <lb/>
-            Simlers
+            Simlers</docAuthor>
             <lb/>
-            Teutſche Gedichte:
+            <docTitle><titlePart type="main">Teutſche Gedichte:</titlePart>
             <lb/>
-            darinnen
+            <titlePart type="desc">darinnen
             <lb/>
-            <hi rendition="#aq"><num>I.</num></hi> Haubtbegriffliche Jnha&#x364;lte der Pſalmen
+            <hi rendition="#aq">I.</hi> Haubtbegriffliche Jnha&#x364;lte der Pſalmen
             <lb/>
             Davids:
             <lb/>
-            <hi rendition="#aq"><num>II.</num></hi> Underſchiedliche/ auf zeiten und anla&#x364;ſſe
+            <hi rendition="#aq">II.</hi> Underſchiedliche/ auf zeiten und anla&#x364;ſſe
             <lb/>
             gerichtete Geſa&#x364;nge:
             <lb/>
-            <hi rendition="#aq"><num>III.</num></hi> Allerhand erbauliche Überſchrifften/ ꝛc.
+            <hi rendition="#aq">III.</hi> Allerhand erbauliche Überſchrifften/ ꝛc.
             <lb/>
-            enthalten ſeind.
+            enthalten ſeind.</titlePart></docTitle>
             <lb/>
-            Anietz zum zweyten mal außgefertiget/ und
+            <docEdition>Anietz zum zweyten mal außgefertiget/ und
             <lb/>
             mit einer neuen Zu&#x366;gabe ge-
             <lb break="no"/>
-            mehret.
+            mehret.</docEdition>
             <lb/>
-            Getrukt zu&#x366; Zürich/
+            <docImprint>Getrukt zu&#x366; <pubPlace>Zürich/</pubPlace>
             <lb/>
-            Bey Johann Jacob Bodmer.
+            Bey J<publisher>ohann Jacob Bodmer</publisher>.
             <lb/>
-            <hi rendition="#aq">M DC LIII.</hi>
+            <docDate><hi rendition="#aq">M DC LIII.</hi></docDate></docImprint></titlePage>
             <lb/>
-            <pb facs="30218006"/>
+            <pb facs="30218006"/>
+            
+            <milestone rendition="#hr" unit="section"/>
+
+            <div type="dedication">
+            <p><!-- NE: Vielleicht besser list als p? -->
             <label>[iii.]</label> Denen hochgeachten/ wola&#x364;d-
             <lb break="no"/>
             len/ veſten/ frommen/ ehren-noht-
@@ -110,26 +124,29 @@
             <lb/>
             der Statt Zürich/ und Altſchützenmeiſtern:
             <lb/>
-            Meinen allerſeits hochgeehrten Herꝛen
+            <hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen
             <lb/>
             Günneren; theils auch lieben Herꝛen
             <lb/>
             Vetteren/ Schwa&#x364;geren und Gefa&#x364;t-
             <lb break="no"/>
-            teren.
+            teren.</hi></p></div>
             <lb/>
-            <pb facs="30218007"/>
+            <pb facs="30218007"/>
+
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
-            <hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ wola&#x364;dle/ veſte/ from-</hi>
+            
+            <div type="preface">
+            <p><hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ wola&#x364;dle/ veſte/ from-</hi>
             <lb break="no"/>
             me/ ehren-nohtveſte/ fürſichtige/ weyſe/
             <lb/>
             hochgeehrte Herꝛen Günnere; auch liebe
             <lb/>
-            Herꝛen Vettere/ Schwa&#x364;gere/ und Gefa&#x364;ttere.
+            Herꝛen Vettere/ Schwa&#x364;gere/ und Gefa&#x364;ttere.</p>
             <lb/>
-            Das abſehen eines Chriſtlichen Poeten ſol
+            <p>Das abſehen eines Chriſtlichen Poeten ſol
             <lb/>
             fürnemlich gerichtet ſeyn auf den Nutzen; und
             <lb/>
@@ -145,9 +162,9 @@
             <lb/>
             und worten ſeyen/ daß dardurch auch der klu&#x366;gen
             <lb/>
-            verſtand beluſtiget und geſcha&#x364;rffet werde.
+            verſtand beluſtiget und geſcha&#x364;rffet werde.</p>
             <lb/>
-            Diſe beyde Stüke nun haben ſich bey dem
+            <p>Diſe beyde Stüke nun haben ſich bey dem
             <lb/>
             gro&#x364;ſſern theil Teutſcher Poeten und Reymen-
             <lb break="no"/>
@@ -169,15 +186,16 @@
             <lb/>
             hingegen/ mit ihren übelklingenden Verſen
             <lb/>
-            nichts minders alß beluſtigen ko&#x364;nnen.
+            nichts minders alß beluſtigen ko&#x364;nnen.</p>
             <lb/>
-            Diſer zeit aber/ und zwar mitten under denen
+            <p>Diſer zeit aber/ und zwar mitten under denen
             <lb/>
             <fw place="bottom" type="pageNum">A ij</fw>
             <lb/>
             <fw place="bottom" type="catch">ver-</fw>
             <lb break="no"/>
-            <pb facs="30218008"/>
+            <pb facs="30218008"/>
+
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
             verzehrenden kriegsflammen/ bemu&#x364;het ſich die
@@ -200,9 +218,9 @@
             <lb/>
             ihre ru&#x366;hmwürdige Schrifften geleſen; in abred
             <lb/>
-            ſeyn wird.
+            ſeyn wird.</p>
             <lb/>
-            Jch/ für meine wenige perſon/ beka&#x364;nne mich
+            <p>Jch/ für meine wenige perſon/ beka&#x364;nne mich
             <lb/>
             deßnacher gegen der Teutſchen Dicht- und
             <lb/>
@@ -236,12 +254,13 @@
             <lb/>
             <fw place="bottom" type="catch">mei-</fw>
             <lb break="no"/>
-            <pb facs="30218009"/>
+            <pb facs="30218009"/>
+
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
-            meiner Gedichten von mir gerichtet worden.
+            meiner Gedichten von mir gerichtet worden.</p>
             <lb/>
-            Damit aber auch Kunſtverſta&#x364;ndige/ durch di-
+            <p>Damit aber auch Kunſtverſta&#x364;ndige/ durch di-
             <lb break="no"/>
             ſes Bu&#x364;chlein ſich in etwas zu&#x366;beluſtigen ha&#x364;tten/
             <lb/>
@@ -289,15 +308,16 @@
             <lb/>
             verhoffenlich/ die erwünſchte Beluſtigung auch
             <lb/>
-            nicht ermanglen.
+            nicht ermanglen.</p>
             <lb/>
-            Daß aber/ großgünſtige/ hochgeehrte Herꝛen/
+            <p>Daß aber/ großgünſtige/ hochgeehrte Herꝛen/
             <lb/>
             <fw place="bottom" type="pageNum">A iij</fw>
             <lb/>
             diſe
             <lb/>
-            <pb facs="30218010"/>
+            <pb facs="30218010"/>
+
             <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
             <lb/>
             diſe meine poetiſche Erſtlinge Euern Ehrenper-
@@ -332,9 +352,9 @@
             <lb/>
             zu mehrerm fleiß und vergeltung erweken und
             <lb/>
-            anfriſchen.
+            anfriſchen.</p>
             <lb/>
-            Vnder deſſen flehne ich zum gna&#x364;digen Gott/
+            <p>Vnder deſſen flehne ich zum gna&#x364;digen Gott/
             <lb/>
             Er wolle Eure Ehrenperſonen mit lieben ange-
             <lb break="no"/>
@@ -346,32 +366,36 @@
             <lb/>
             beharꝛlichen ihren gunſten ich/ beſten fleiſſes/ mich
             <lb/>
-            empfehle: verbleibend
+            empfehle: verbleibend</p>
             <lb/>
-            meiner hochgeehrten Herꝛen
+            <closer><salute>meiner hochgeehrten Herꝛen
             <lb/>
-            ſchuldgeneigtwilliger diener
+            ſchuldgeneigtwilliger diener</salute>
             <lb/>
-            Zu&#x364;rich/ den 28. tag Brachm. 1648.
+            <dateline>Zu&#x364;rich/ den 28. tag Brachm. 1648.</dateline>
             <lb/>
-            Joh. Wilhelm Simler.
+            <signed>Joh. Wilhelm Simler</signed>.</closer></div>
             <lb/>
-            <pb facs="30218011"/>
-            <label>[iv.]</label> <hi rendition="#aq"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
+            <pb facs="30218011"/>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
+
+            <div type="letter"><!-- NE: Briefauszüge als Zitate kodieren? -->
+            <head><label>[iv.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-
             <lb break="no"/>
-            <hi rendition="#i">ſimi Viri,</hi>
+            ſimi Viri,</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN.</hi> DANIELIS RHAGORII,</hi>
             <lb/>
             Ducentumviri Bernenſis, bis præfecti,
             <lb/>
-            Poëtæ coronati.
+            Poëtæ coronati.</hi></head>
             <lb/>
-            <hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn. Veiraſ-
+            <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus Dn. Veiraſ-
             <lb break="no"/>
             ſius varia tua Scripta Poëtica, quæ cum voluptate
             <lb/>
-            legi, im<anchor xml:id="a1"/><unclear>ò</unclear><note type="annotation" targetEnd="a1"><p>Man kann hier nicht unterscheiden, ob es sich um einen Gravis oder um einen Zirkumflex handelt. Die Frage lässt sich auch nicht durch ein Vergleich mit der SBB klären. Allerdings steht hier in den Ausgaben A, C und D ein Gravis.</p></note> relegi, quippe quæ probarent quàm cordi Ti-
+            legi, im<anchor xml:id="a1"/><unclear reason="uncleanPrint">ò</unclear><note type="annotation" targetEnd="a1"><p>Man kann hier nicht unterscheiden, ob es sich um einen Gravis oder um einen Zirkumflex handelt. Die Frage lässt sich auch nicht durch ein Vergleich mit der SBB klären. Allerdings steht hier in den Ausgaben A, C und D ein Gravis.</p></note> relegi, quippe quæ probarent quàm cordi Ti-
             <lb break="no"/>
             bi ſit atque curæ, ut tenera Ætas rectè inſtituatur non
             <lb/>
@@ -381,17 +405,19 @@
             <lb break="no"/>
             ctos, ſed in Ethicis minùs verſatos, qui nonnunquam
             <lb/>
-            ridendos ſe præbebant. Perge, quæſo, &amp;c.
+            ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi></p></div>
             <lb/>
-            <label>[v.]</label> <hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
+            
+            <div type="letter">
+            <head><label>[v.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MVLLERI,</hi>
             <lb/>
             Eccleſiæ Talvillanæ ad lacum Tig. Paſto-
             <lb break="no"/>
-            ris vigilantiſſimi; Poëtæ acutiſſimi.
+            ris vigilantiſſimi; Poëtæ acutiſſimi.</hi></head>
             <lb/>
-            <hi rendition="#in">V</hi>Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Oda-
+            <p><hi rendition="#aq"><hi rendition="#in">V</hi>Iſum ita fuit humanitati tuæ, ut iſtas ſacrarum Oda-
             <lb break="no"/>
             rum epitomas lectioni meæ, non dico cenſuræ, con-
             <lb break="no"/>
@@ -407,33 +433,43 @@
             <lb break="no"/>
             pendiis tuis (quæ cum ſacroſancto textu contuli) ſen-
             <lb break="no"/>
-            ſum eorum quaſi exhauſiſti, &amp;c. 22. Jan. 1648.</hi>
+            ſum eorum quaſi exhauſiſti, &amp;c. 22. Jan. 1648.</hi></p></div>
             <lb/>
             <fw place="bottom" type="pageNum">A iiij</fw>
             <lb/>
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>I.</num> Ad</hi></head></fw>
             <lb/>
-            <pb facs="30218012"/>
-            <label>[vi.]</label> <hi rendition="#aq"><num>I.</num>
+            <pb facs="30218012"/>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
+
+            <div type="poem">
+            <head>
+               <label>[vi.]</label> 
+               <hi rendition="#aq #c"><num>I.</num>
             <lb/>
             Ad Authorem
             <lb/>
             <hi rendition="#i">doctißimarum Cantionum</hi>
             <lb/>
-            <hi rendition="#i">Sacrarum.</hi>
+            <hi rendition="#i">Sacrarum.</hi></hi></head>
             <lb/>
-            <hi rendition="#in">O</hi>Mnia perplacuere mihi, <hi rendition="#k"><hi rendition="#g">SIMLERE</hi></hi> diſerte,
+            <lg type="poem">
+               <hi rendition="#in">
+            <l>O</hi>Mnia perplacuere mihi, <hi rendition="#k"><hi rendition="#g">SIMLERE</hi></hi> diſerte,</l>
             <lb/>
-            Quæ volvenda mihi miſit amica manus.
+            <l>Quæ volvenda mihi miſit amica manus.</l>
             <lb/>
-            Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,
+            <l>Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,</l>
             <lb/>
-            Tu tuba divinæ laudis es altiſona.
+            <l>Tu tuba divinæ laudis es altiſona.</l>
+            </lg>
             <lb/>
             <hi rendition="#g">FELIX <hi rendition="#k">WYSSIVS</hi>,</hi>
             <lb/>
-            Abbatiſſanæ Eccleſiæ Paſtor.</hi>
+            Abbatiſſanæ Eccleſiæ Paſtor.</hi></div>
+            
             <lb/>
             <label>[vii.]</label> <hi rendition="#aq"><num>II.</num>
             <lb/>
@@ -481,7 +517,8 @@
             <lb/>
             <hi rendition="#i">Profeſſor ordinarius.</hi></hi>
             <lb/>
-            <pb facs="30218013"/>
+            <pb facs="30218013"/>
+
             <label>[ix.]</label> <hi rendition="#aq"><num>IV.</num>
             <lb/>
             <hi rendition="#i"><hi rendition="#in">E</hi>St opus Angelicum laudes cantare Iehovæ,</hi>
@@ -537,7 +574,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>V.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218014"/>
+            <pb facs="30218014"/>
+
             
             <head><label>[x.]</label> <hi rendition="#aq"><num>V.</num></hi></head>
             <lb/>
@@ -569,7 +607,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>VI.</num> In</hi></head></fw>
             <lb/>
-            <pb facs="30218015"/>
+            <pb facs="30218015"/>
+
             
             <head><label>[xvii.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
             <lb/>
@@ -632,7 +671,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>VIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218016"/>
+            <pb facs="30218016"/>
+
             
             <head><label>[xix.]</label> <hi rendition="#aq"><num>VIII.</num></hi></head>
             <lb/>
@@ -688,7 +728,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>IX.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
-            <pb facs="30218017"/>
+            <pb facs="30218017"/>
+
             
             <head><label>[xi.]</label> <hi rendition="#aq"><num>IX.</num></hi></head>
             <lb/>
@@ -740,7 +781,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>X.</num></hi> Ob</fw>
             <lb/>
-            <pb facs="30218018"/>
+            <pb facs="30218018"/>
+
             
             <head><label>[xiv.]</label> <hi rendition="#aq"><num>X.</num></hi></head>
             <lb/>
@@ -800,7 +842,8 @@
             <lb/>
             <fw place="bottom" type="catch">Solt</fw>
             <lb/>
-            <pb facs="30218019"/>
+            <pb facs="30218019"/>
+
             Solt ich der la&#x364;nge nach all Teutſche Tichter na&#x364;nnen/
             <lb/>
             Jch wurd die gantze zal noch lang nicht finden ko&#x364;nnen/
@@ -863,7 +906,8 @@
             <lb/>
             <fw place="bottom" type="catch">Er</fw>
             <lb/>
-            <pb facs="30218020"/>
+            <pb facs="30218020"/>
+
             Er ſpannet ſeinen fleiß dem <hi rendition="#b">groſſen Gott</hi> zu&#x366; ehren/
             <lb/>
             Von deſſen Wundermacht ſein Leyr er laſſet ho&#x364;ren/
@@ -919,10 +963,13 @@
             <lb/>
             Haubt-
             <lb break="no"/>
-            
+         </front>
+       <body>
+               
             <!-- Teil I -->
             
-            <pb facs="30218021" n="[1]"/>
+            <pb facs="30218021" n="[1]"/>
+
             Haubtbegriffliche
             <lb/>
             Jnha&#x364;lte der Pſalmen Davids/
@@ -933,7 +980,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">B</fw>
             <lb/>
-            <pb facs="30218022" n="2"/>
+            <pb facs="30218022" n="2"/>
+
             <fw place="top" type="pageNum">2</fw>
             <lb/>
             <fw place="top" type="header">Das erſt bu&#x366;ch</fw>
@@ -960,7 +1008,8 @@
             <lb/>
             Wie leichte ſpreü verfliegt wer Gottes wort verachtet.
             <lb/>
-            <pb facs="30218023" n="3"/>
+            <pb facs="30218023" n="3"/>
+
             <fw place="top" type="pageNum">3</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -990,7 +1039,8 @@
             <fw place="bottom" type="pageNum">B ij</fw>
             
             <lb/>
-            <pb facs="30218024" n="4"/>
+            <pb facs="30218024" n="4"/>
+
             <fw place="top" type="pageNum">4</fw>
             <lb/>
             <fw place="top" type="header">Das erſt bu&#x366;ch</fw>
@@ -1056,7 +1106,8 @@
             <lb/>
             <fw place="bottom" type="catch">wünſcht</fw>
             <lb/>
-            <pb facs="30218025" n="5"/>
+            <pb facs="30218025" n="5"/>
+
             <fw place="top" type="pageNum">5</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1126,7 +1177,8 @@
             <lb/>
             <hi rendition="#aq"><num>XI.</num></hi> Der
             <lb/>
-            <pb facs="30218026" n="6"/>
+            <pb facs="30218026" n="6"/>
+
             <fw place="top" type="pageNum">6</fw>
             <lb/>
             <fw place="top" type="header">Das erſt bu&#x366;ch</fw>
@@ -1197,7 +1249,8 @@
             <lb/>
             <fw place="bottom" type="catch">auch</fw>
             <lb/>
-            <pb facs="30218027" n="7"/>
+            <pb facs="30218027" n="7"/>
+
             <fw place="top" type="pageNum">7</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1270,7 +1323,8 @@
             <lb/>
             <fw place="bottom" type="catch">deſ-</fw>
             <lb break="no"/>
-            <pb facs="30218028" n="8"/>
+            <pb facs="30218028" n="8"/>
+
             <fw place="top" type="pageNum">8</fw>
             <lb/>
             <fw place="top" type="header">Das erſt bu&#x366;ch</fw>
@@ -1341,7 +1395,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>XXVIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218029" n="9"/>
+            <pb facs="30218029" n="9"/>
+
             <fw place="top" type="pageNum">9</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1414,7 +1469,8 @@
             <lb/>
             <fw place="bottom" type="catch">ſein</fw>
             <lb/>
-            <pb facs="30218030" n="10"/>
+            <pb facs="30218030" n="10"/>
+
             <fw place="top" type="pageNum">10</fw>
             <lb/>
             <fw place="top" type="header">Das erſt bu&#x366;ch</fw>
@@ -1485,7 +1541,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>XXXIX.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218031" n="11"/>
+            <pb facs="30218031" n="11"/>
+
             <fw place="top" type="pageNum">11</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1533,7 +1590,8 @@
             <lb/>
             Pſalmen.
             <lb/>
-            <pb facs="30218032" n="12"/>
+            <pb facs="30218032" n="12"/>
+
             <fw place="top" type="pageNum">12</fw>
             <lb/>
             <fw place="top" type="header">Das ander bu&#x366;ch</fw>
@@ -1560,7 +1618,8 @@
             <lb/>
             zu&#x366; de<anchor xml:id="a7"/>ſ<note type="annotation" targetEnd="a7"><p>In der SBB eindeutig ein Schaft-s.</p></note>ſen dienſt und preiß/ den ſie mit glauben ſu&#x366;cht.
             <lb/>
-            <pb facs="30218033" n="13"/>
+            <pb facs="30218033" n="13"/>
+
             <fw place="top" type="pageNum">13</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1588,7 +1647,8 @@
             zu&#x366; deſſen dienſt und preiß/ den ſie mit glauben ſu&#x366;cht.
             
             <lb/>
-            <pb facs="30218034" n="14"/>
+            <pb facs="30218034" n="14"/>
+
             <fw place="top" type="pageNum">14</fw>
             <lb/>
             <fw place="top" type="header">Das ander bu&#x366;ch</fw>
@@ -1657,7 +1717,8 @@
             <lb/>
             <fw place="bottom" type="catch">laßt</fw>
             <lb/>
-            <pb facs="30218035" n="15"/>
+            <pb facs="30218035" n="15"/>
+
             <fw place="top" type="pageNum">15</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1727,7 +1788,8 @@
             <lb/>
             <anchor xml:id="a9"/>Der <hi rendition="#aq"><num>LIII.</num></hi><note type="annotation" targetEnd="a9"><p>Der Artikel „der“ befindet sich vor der römischen Zahl. Auf der folgenden Seite ist es umgekehrt.</p></note>
             <lb/>
-            <pb facs="30218036" n="16"/>
+            <pb facs="30218036" n="16"/>
+
             <fw place="top" type="pageNum">16</fw>
             <lb/>
             <fw place="top" type="header">Das ander bu&#x366;ch</fw>
@@ -1798,7 +1860,8 @@
             <lb/>
             Es tilg euch Gottes rach/ und tro&#x364;ſte ſein geſchlecht!
             <lb/>
-            <pb facs="30218037" n="17"/>
+            <pb facs="30218037" n="17"/>
+
             <fw place="top" type="pageNum">17</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1869,7 +1932,8 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="30218038" n="18"/>
+            <pb facs="30218038" n="18"/>
+
             <fw place="top" type="pageNum">18</fw>
             <lb/>
             <fw place="top" type="header">Das ander bu&#x366;ch</fw>
@@ -1937,7 +2001,8 @@
             <lb/>
             O Gott/
             <lb/>
-            <pb facs="30218039" n="19"/>
+            <pb facs="30218039" n="19"/>
+
             <fw place="top" type="pageNum">19</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -1981,7 +2046,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">C ij</fw>
             <lb/>
-            <pb facs="30218040" n="20"/>
+            <pb facs="30218040" n="20"/>
+
             <fw place="top" type="pageNum">20</fw>
             <lb/>
             <fw place="top" type="header">Das dritt bu&#x366;ch</fw>
@@ -2008,7 +2074,8 @@
             <lb/>
             hat beyder end bey mir vera&#x364;nderung gebracht.
             <lb/>
-            <pb facs="30218041" n="21"/>
+            <pb facs="30218041" n="21"/>
+
             <fw place="top" type="pageNum">21</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2040,7 +2107,8 @@
             <fw place="bottom" type="catch">Jn-</fw>
             
             <lb break="no"/>
-            <pb facs="30218042" n="22"/>
+            <pb facs="30218042" n="22"/>
+
             <fw place="top" type="pageNum">22</fw>
             <lb/>
             <fw place="top" type="header">Das dritt bu&#x366;ch</fw>
@@ -2103,7 +2171,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>LXXVIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218043" n="23"/>
+            <pb facs="30218043" n="23"/>
+
             <fw place="top" type="pageNum">23</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2169,7 +2238,8 @@
             <lb/>
             Die
             <lb/>
-            <pb facs="30218044" n="24"/>
+            <pb facs="30218044" n="24"/>
+
             <fw place="top" type="pageNum">24</fw>
             <lb/>
             <fw place="top" type="header">Das dritt bu&#x366;ch</fw>
@@ -2233,7 +2303,8 @@
             <lb/>
             <fw place="bottom" type="catch">Zu&#x366;</fw>
             <lb/>
-            <pb facs="30218045" n="25"/>
+            <pb facs="30218045" n="25"/>
+
             <fw place="top" type="pageNum">25</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2269,7 +2340,8 @@
             Pſalmen.
             
             <lb/>
-            <pb facs="30218046" n="26"/>
+            <pb facs="30218046" n="26"/>
+
             <fw place="top" type="pageNum">26</fw>
             <lb/>
             <fw place="top" type="header">Das viert bu&#x366;ch</fw>
@@ -2296,7 +2368,8 @@
             <lb/>
             lehr uns erkennen die/ und laß uns gnad empfinden.
             <lb/>
-            <pb facs="30218047" n="27"/>
+            <pb facs="30218047" n="27"/>
+
             <fw place="top" type="pageNum">27</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2324,7 +2397,8 @@
             lehr uns erkennen die/ und laß uns gnad empfinden.
             
             <lb/>
-            <pb facs="30218048" n="28"/>
+            <pb facs="30218048" n="28"/>
+
             <fw place="top" type="pageNum">28</fw>
             <lb/>
             <fw place="top" type="header">Das viert bu&#x366;ch</fw>
@@ -2386,7 +2460,8 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="30218049" n="29"/>
+            <pb facs="30218049" n="29"/>
+
             <fw place="top" type="pageNum">29</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2448,7 +2523,8 @@
             <lb/>
             foll
             <lb/>
-            <pb facs="30218050" n="30"/>
+            <pb facs="30218050" n="30"/>
+
             <fw place="top" type="pageNum">30</fw>
             <lb/>
             <fw place="top" type="header">Das viert bu&#x366;ch</fw>
@@ -2517,7 +2593,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>CV.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218051" n="31"/>
+            <pb facs="30218051" n="31"/>
+
             <fw place="top" type="pageNum">31</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2553,7 +2630,8 @@
             der Pſalmen.
             
             <lb/>
-            <pb facs="30218052" n="32"/>
+            <pb facs="30218052" n="32"/>
+
             <fw place="top" type="pageNum">32</fw>
             <lb/>
             <fw place="top" type="header">Das fünft bu&#x366;ch</fw>
@@ -2580,7 +2658,8 @@
             <lb/>
             auß hunger-waſſers<anchor xml:id="a18"/>-<note type="annotation" targetEnd="a18"><p>Bindestrich steht nur bei Diskant und Tenor. Auf Seite 33 werden waſſers und noht wie im eigentlichen Psalmenbuch zusammengeschrieben. Evtl. Druckfehler</p></note>noht/ auß irꝛ und banden gfu&#x364;hrt.
             <lb/>
-            <pb facs="30218053" n="33"/>
+            <pb facs="30218053" n="33"/>
+
             <fw place="top" type="pageNum">33</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2610,7 +2689,8 @@
             <fw place="bottom" type="pageNum">D</fw>
             
             <lb/>
-            <pb facs="30218054" n="34"/>
+            <pb facs="30218054" n="34"/>
+
             <fw place="top" type="pageNum">34</fw>
             <lb/>
             <fw place="top" type="header">Das fünft bu&#x366;ch</fw>
@@ -2677,7 +2757,8 @@
             <lb/>
             <fw place="bottom" type="catch">von</fw>
             <lb/>
-            <pb facs="30218055" n="35"/>
+            <pb facs="30218055" n="35"/>
+
             <fw place="top" type="pageNum">35</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2748,7 +2829,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>CXVIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218056" n="36"/>
+            <pb facs="30218056" n="36"/>
+
             <fw place="top" type="pageNum">36</fw>
             <lb/>
             <fw place="top" type="header">Das fünft bu&#x366;ch</fw>
@@ -2813,7 +2895,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>CXXIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218057" n="37"/>
+            <pb facs="30218057" n="37"/>
+
             <fw place="top" type="pageNum">37</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -2882,7 +2965,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>CXXVIII.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218058" n="38"/>
+            <pb facs="30218058" n="38"/>
+
             <fw place="top" type="pageNum">38</fw>
             <lb/>
             <fw place="top" type="header">Das fu&#x364;nfft bu&#x366;ch</fw>
@@ -2949,7 +3033,8 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="30218059" n="39"/>
+            <pb facs="30218059" n="39"/>
+
             <fw place="top" type="pageNum">39</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -3017,7 +3102,8 @@
             <lb/>
             <fw place="bottom" type="catch">wan</fw>
             <lb/>
-            <pb facs="30218060" n="40"/>
+            <pb facs="30218060" n="40"/>
+
             <fw place="top" type="pageNum">40</fw>
             <lb/>
             <fw place="top" type="header">Das fu&#x364;nfft bu&#x366;ch.</fw>
@@ -3081,7 +3167,8 @@
             <lb/>
             <fw place="bottom" type="catch">durch</fw>
             <lb/>
-            <pb facs="30218061" n="41"/>
+            <pb facs="30218061" n="41"/>
+
             <fw place="top" type="pageNum">41</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
@@ -3149,7 +3236,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>CXLIX.</num></hi></fw>
             <lb/>
-            <pb facs="30218062" n="42"/>
+            <pb facs="30218062" n="42"/>
+
             <fw place="top" type="pageNum">42</fw>
             <lb/>
             <fw place="top" type="header">Das fünfft bu&#x366;ch der Pſalmen.</fw>
@@ -3185,7 +3273,8 @@
             
             <!-- Teil II -->
             
-            <pb facs="30218063" n="[43]"/>
+            <pb facs="30218063" n="[43]"/>
+
             Folgen
             <lb/>
             underſchiedliche/ zu&#x366; vier
@@ -3198,7 +3287,8 @@
             <lb break="no"/>
             ſa&#x364;nge.
             <lb/>
-            <pb facs="30218064" n="44"/>
+            <pb facs="30218064" n="44"/>
+
             <fw place="top" type="pageNum">44</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmus geſang.</fw>
@@ -3224,7 +3314,8 @@
             <lb/>
             die nimmermehr verderben.
             <lb/>
-            <pb facs="30218065" n="45"/>
+            <pb facs="30218065" n="45"/>
+
             <fw place="top" type="pageNum">45</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmus geſang.</fw>
@@ -3253,7 +3344,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ge-</fw>
             <lb break="no"/>
-            <pb facs="30218066" n="46"/>
+            <pb facs="30218066" n="46"/>
+
             <fw place="top" type="pageNum">46</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3315,7 +3407,8 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="30218067" n="47"/>
+            <pb facs="30218067" n="47"/>
+
             <fw place="top" type="pageNum">47</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmus geſang.</fw>
@@ -3381,7 +3474,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>7.</num> 5. Die</fw>
             <lb/>
-            <pb facs="30218068" n="48"/>
+            <pb facs="30218068" n="48"/>
+
             <fw place="top" type="pageNum">48</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmus geſang.</fw>
@@ -3448,7 +3542,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>II.</num></hi> <anchor xml:id="a19"/>Von<note type="annotation" targetEnd="a19"><p>Auf der folgenden Seite steht "Vom", also mit m statt n.</p></note></fw>
             <lb/>
-            <pb facs="30218069" n="49"/>
+            <pb facs="30218069" n="49"/>
+
             <fw place="top" type="pageNum">49</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3514,7 +3609,8 @@
             <lb/>
             <num>14</num><anchor xml:id="a20"/><note type="annotation" targetEnd="a20"><p>In der Kustode fehlt die 3. die hingegen auf der folgenden Seite nach der 14 erscheint.</p></note> Der
             <lb/>
-            <pb facs="30218070" n="50"/>
+            <pb facs="30218070" n="50"/>
+
             <fw place="top" type="pageNum">50</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3581,7 +3677,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>18<anchor xml:id="a22"/>.<note type="annotation" targetEnd="a22"><p>Auf der folgenden Seite steht nach 18 kein Punkt. Zwischen 18 und Ich gibt es aber "8."</p></note></num> Jch</fw>
             <lb/>
-            <pb facs="30218071" n="51"/>
+            <pb facs="30218071" n="51"/>
+
             <fw place="top" type="pageNum">51</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3653,7 +3750,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>22</num> Dan</fw>
             <lb/>
-            <pb facs="30218072" n="52"/>
+            <pb facs="30218072" n="52"/>
+
             <fw place="top" type="pageNum">52</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang/</fw>
@@ -3724,7 +3822,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>IV.</num></hi> Von</fw>
             <lb/>
-            <pb facs="30218073" n="53"/>
+            <pb facs="30218073" n="53"/>
+
             <fw place="top" type="pageNum">53</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3795,7 +3894,8 @@
             <lb/>
             <fw place="bottom" type="catch">im</fw>
             <lb/>
-            <pb facs="30218074" n="54"/>
+            <pb facs="30218074" n="54"/>
+
             <fw place="top" type="pageNum">54</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3865,7 +3965,8 @@
             <lb/>
             <fw place="bottom" type="catch">in</fw>
             <lb/>
-            <pb facs="30218075" n="55"/>
+            <pb facs="30218075" n="55"/>
+
             <fw place="top" type="pageNum">55</fw>
             <lb/>
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
@@ -3937,7 +4038,8 @@
             ſtürtzt ſich in ewigs leyden!
             
             <lb/>
-            <pb facs="30218076" n="56"/>
+            <pb facs="30218076" n="56"/>
+
             <fw place="top" type="pageNum">56</fw>
             <lb/>
             <fw place="top" type="header">Geſang von</fw>
@@ -3964,7 +4066,8 @@
             <lb/>
             darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.
             <lb/>
-            <pb facs="30218077" n="57"/>
+            <pb facs="30218077" n="57"/>
+
             <fw place="top" type="pageNum">57</fw>
             <lb/>
             <fw place="top" type="header">Chriſtus geburt.</fw>
@@ -3995,7 +4098,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ge-</fw>
             <lb break="no"/>
-            <pb facs="30218078" n="58"/>
+            <pb facs="30218078" n="58"/>
+
             <fw place="top" type="pageNum">58</fw>
             <lb/>
             <fw place="top" type="header">Geſang von</fw>
@@ -4067,7 +4171,8 @@
             <lb/>
             <fw place="bottom" type="catch">doch</fw>
             <lb/>
-            <pb facs="30218079" n="59"/>
+            <pb facs="30218079" n="59"/>
+
             <fw place="top" type="pageNum">59</fw>
             <lb/>
             <fw place="top" type="header">Chriſtus geburt/ ꝛc.</fw>
@@ -4136,7 +4241,8 @@
             nim&#x342; mich zu&#x366; deinen ha&#x364;nden!
             
             <lb/>
-            <pb facs="30218080" n="60"/>
+            <pb facs="30218080" n="60"/>
+
             <fw place="top" type="pageNum">60</fw>
             <lb/>
             <fw place="top" type="header">Geiſtliches</fw>
@@ -4163,7 +4269,8 @@
             <lb/>
             trib von deinem reyche?
             <lb/>
-            <pb facs="30218081" n="61"/>
+            <pb facs="30218081" n="61"/>
+
             <fw place="top" type="pageNum">61</fw>
             <lb/>
             <fw place="top" type="header">Liebesgeſpra&#x364;ch.</fw>
@@ -4192,7 +4299,8 @@
             <lb/>
             <fw place="bottom" type="catch">Lie-</fw>
             <lb break="no"/>
-            <pb facs="30218082" n="62"/>
+            <pb facs="30218082" n="62"/>
+
             <fw place="top" type="pageNum">62</fw>
             <lb/>
             <fw place="top" type="header">Geiſtliches</fw>
@@ -4257,7 +4365,8 @@
             <lb/>
             <num>4</num><anchor xml:id="a34"/><note type="annotation" targetEnd="a34"><p>Auf der folgenden Seite steht nach der 4 ein Punkt.</p></note> Was
             <lb/>
-            <pb facs="30218083" n="63"/>
+            <pb facs="30218083" n="63"/>
+
             <fw place="top" type="pageNum">63</fw>
             <lb/>
             <fw place="top" type="header">Liebesgeſpra&#x364;ch.</fw>
@@ -4322,7 +4431,8 @@
             <lb/>
             nimmer mich verlaſſen.
             <lb/>
-            <pb facs="30218084" n="64"/>
+            <pb facs="30218084" n="64"/>
+
             <fw place="top" type="pageNum">64</fw>
             <lb/>
             <fw place="top" type="header">Beicht- und</fw>
@@ -4353,7 +4463,8 @@
             <lb break="no"/>
             hu&#x364;t du mich vor wanken.
             <lb/>
-            <pb facs="30218085" n="65"/>
+            <pb facs="30218085" n="65"/>
+
             <fw place="top" type="pageNum">65</fw>
             <lb/>
             <fw place="top" type="header">Bittgeſang.</fw>
@@ -4388,7 +4499,8 @@
             <lb/>
             <fw place="bottom" type="catch">Beicht-</fw>
             <lb break="no"/>
-            <pb facs="30218086" n="66"/>
+            <pb facs="30218086" n="66"/>
+
             <fw place="top" type="pageNum">66</fw>
             <lb/>
             <fw place="top" type="header">Beicht- und</fw>
@@ -4454,7 +4566,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num><anchor xml:id="a39"/>5<note type="annotation" targetEnd="a39"><p>5 auch im Digitalisat der SBB schlecht erkennbar</p></note></num> Ge-</fw>
             <lb break="no"/>
-            <pb facs="30218087" n="67"/>
+            <pb facs="30218087" n="67"/>
+
             <fw place="top" type="pageNum">67</fw>
             <lb/>
             <fw place="top" type="header">Bittgeſang.</fw>
@@ -4524,7 +4637,8 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="30218088" n="68"/>
+            <pb facs="30218088" n="68"/>
+
             <fw place="top" type="pageNum">68</fw>
             <lb/>
             <fw place="top" type="header">Beicht- und</fw>
@@ -4592,7 +4706,8 @@
             <lb/>
             <fw place="bottom" type="catch">drum</fw>
             <lb/>
-            <pb facs="30218089" n="69"/>
+            <pb facs="30218089" n="69"/>
+
             <fw place="top" type="pageNum">69</fw>
             <lb/>
             <fw place="top" type="header">Bittgeſang.</fw>
@@ -4633,7 +4748,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">F iij</fw>
             <lb/>
-            <pb facs="30218090" n="70"/>
+            <pb facs="30218090" n="70"/>
+
             <fw place="top" type="pageNum">70</fw>
             <lb/>
             <fw place="top" type="header">Lobgeſang</fw>
@@ -4660,7 +4776,8 @@
             <lb/>
             vor und mit der nachtigallen ſol mein lobgedicht erſchallen.
             <lb/>
-            <pb facs="30218091" n="71"/>
+            <pb facs="30218091" n="71"/>
+
             <fw place="top" type="pageNum">71</fw>
             <lb/>
             <fw place="top" type="header">für gna&#x364;dige erho&#x364;rung/ ꝛc.</fw>
@@ -4689,7 +4806,8 @@
             <lb/>
             <fw place="bottom" type="catch">Lob-</fw>
             <lb break="no"/>
-            <pb facs="30218092" n="72"/>
+            <pb facs="30218092" n="72"/>
+
             <fw place="top" type="pageNum">72</fw>
             <lb/>
             <fw place="top" type="header">Lobgeſang</fw>
@@ -4756,7 +4874,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>4</num> Mein</fw>
             <lb/>
-            <pb facs="30218093" n="73"/>
+            <pb facs="30218093" n="73"/>
+
             <fw place="top" type="pageNum">73</fw>
             <lb/>
             <fw place="top" type="header">für gna&#x364;dige erho&#x364;rung.</fw>
@@ -4827,7 +4946,8 @@
             <lb/>
             <fw place="bottom" type="catch">deine</fw>
             <lb/>
-            <pb facs="30218094" n="74"/>
+            <pb facs="30218094" n="74"/>
+
             <fw place="top" type="pageNum">74</fw>
             <lb/>
             <fw place="top" type="header">Lobgeſang</fw>
@@ -4898,7 +5018,8 @@
             <lb/>
             <fw place="bottom" type="catch">darum</fw>
             <lb/>
-            <pb facs="30218095" n="75"/>
+            <pb facs="30218095" n="75"/>
+
             <fw place="top" type="pageNum">75</fw>
             <lb/>
             <fw place="top" type="header">für gna&#x364;dige erho&#x364;rung/ ꝛc.</fw>
@@ -4962,7 +5083,8 @@
             <lb/>
             Herꝛ/ durch ſie mich wo&#x364;llſt bewahren!
             <lb/>
-            <pb facs="30218096" n="76"/>
+            <pb facs="30218096" n="76"/>
+
             <fw place="top" type="pageNum">76</fw>
             <lb/>
             <fw place="top" type="header">Morgengeſang.</fw>
@@ -4989,7 +5111,8 @@
             <lb/>
             damit ſie des tages verkünderin ſey.
             <lb/>
-            <pb facs="30218097" n="77"/>
+            <pb facs="30218097" n="77"/>
+
             <fw place="top" type="pageNum">77</fw>
             <lb/>
             <fw place="top" type="header">Morgengeſang.</fw>
@@ -5018,7 +5141,8 @@
             <lb/>
             <fw place="bottom" type="catch">Au-</fw>
             <lb break="no"/>
-            <pb facs="30218098" n="78"/>
+            <pb facs="30218098" n="78"/>
+
             <fw place="top" type="pageNum">78</fw>
             <lb/>
             <fw place="top" type="header">Morgengeſang.</fw>
@@ -5083,7 +5207,8 @@
             <lb/>
             <fw place="bottom" type="catch">nach</fw>
             <lb/>
-            <pb facs="30218099" n="79"/>
+            <pb facs="30218099" n="79"/>
+
             <fw place="top" type="pageNum">79</fw>
             <lb/>
             <fw place="top" type="header">Morgengeſang.</fw>
@@ -5137,7 +5262,8 @@
             <fw place="bottom" type="catch">Him&#x342;-</fw>
             
             <lb break="no"/>
-            <pb facs="30218100" n="80"/>
+            <pb facs="30218100" n="80"/>
+
             <fw place="top" type="pageNum">80</fw>
             <lb/>
             <fw place="top" type="header">Abendgeſang.</fw>
@@ -5184,7 +5310,8 @@
             <lb/>
             verſtehen/ keine gewalt der feinden zerſto&#x364;rt.
             <lb/>
-            <pb facs="30218101" n="81"/>
+            <pb facs="30218101" n="81"/>
+
             <fw place="top" type="pageNum">81</fw>
             <lb/>
             <fw place="top" type="header">Abendgeſang.</fw>
@@ -5233,7 +5360,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">G</fw>
             <lb/>
-            <pb facs="30218102" n="82"/>
+            <pb facs="30218102" n="82"/>
+
             <fw place="top" type="pageNum">82</fw>
             <lb/>
             <fw place="top" type="header">Abendgeſang.</fw>
@@ -5300,7 +5428,8 @@
             <lb/>
             <fw place="bottom" type="catch">ſon-</fw>
             <lb break="no"/>
-            <pb facs="30218103" n="83"/>
+            <pb facs="30218103" n="83"/>
+
             <fw place="top" type="pageNum">83</fw>
             <lb/>
             <fw place="top" type="header">Abendgeſang.</fw>
@@ -5350,7 +5479,8 @@
             <fw place="bottom" type="pageNum">G ij</fw>
             
             <lb/>
-            <pb facs="30218104" n="84"/>
+            <pb facs="30218104" n="84"/>
+
             <fw place="top" type="pageNum">84</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5377,7 +5507,8 @@
             <lb/>
             erfreueſt hertz und mu&#x366;ht/ erfreueſt hertz und mu&#x366;ht.
             <lb/>
-            <pb facs="30218105" n="85"/>
+            <pb facs="30218105" n="85"/>
+
             <fw place="top" type="pageNum">85</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5406,7 +5537,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">G iij</fw>
             <lb/>
-            <pb facs="30218106" n="86"/>
+            <pb facs="30218106" n="86"/>
+
             <fw place="top" type="pageNum">86</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5476,7 +5608,8 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a52"/>O Gott/<note type="annotation" targetEnd="a52"><p>Die 7, die auf der folgenden Seite vor „O Gott/“ erscheint, fehlt hier.</p></note></fw>
             <lb/>
-            <pb facs="30218107" n="87"/>
+            <pb facs="30218107" n="87"/>
+
             <fw place="top" type="pageNum">87</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5540,7 +5673,8 @@
             <fw place="bottom" type="catch">Nun</fw>
             
             <lb/>
-            <pb facs="30218108" n="88"/>
+            <pb facs="30218108" n="88"/>
+
             <fw place="top" type="pageNum">88</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5571,7 +5705,8 @@
             <lb/>
             daß hierdurch wir leben in gemein.
             <lb/>
-            <pb facs="30218109" n="89"/>
+            <pb facs="30218109" n="89"/>
+
             <fw place="top" type="pageNum">89</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5602,7 +5737,8 @@
             <lb/>
             daß hierdurch wir leben in gemein.
             <lb/>
-            <pb facs="30218110" n="90"/>
+            <pb facs="30218110" n="90"/>
+
             <fw place="top" type="pageNum">90</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5673,7 +5809,8 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="30218111" n="91"/>
+            <pb facs="30218111" n="91"/>
+
             <fw place="top" type="pageNum">91</fw>
             <lb/>
             <fw place="top" type="header">Tiſchgeſang.</fw>
@@ -5727,7 +5864,8 @@
             <lb/>
             <fw place="bottom" type="catch">Wie</fw>
             <lb/>
-            <pb facs="30218112" n="92"/>
+            <pb facs="30218112" n="92"/>
+
             <fw place="top" type="pageNum">92</fw>
             <lb/>
             <fw place="top" type="header">Erſtes</fw>
@@ -5762,7 +5900,8 @@
             <lb/>
             reich an ehren/ ma&#x364;chtig iſt mich zu&#x366; bekehren.
             <lb/>
-            <pb facs="30218113" n="93"/>
+            <pb facs="30218113" n="93"/>
+
             <fw place="top" type="pageNum">93</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -5799,7 +5938,8 @@
             <lb/>
             Ge-
             <lb break="no"/>
-            <pb facs="30218114" n="94"/>
+            <pb facs="30218114" n="94"/>
+
             <fw place="top" type="pageNum">94</fw>
             <lb/>
             <fw place="top" type="header">Erſtes</fw>
@@ -5865,7 +6005,8 @@
             <lb/>
             <num>3</num><anchor xml:id="a62"/><note type="annotation" targetEnd="a62"><p>Auf der folgenden Seite steht nach der 3 ein Punkt.</p></note> O Vat
             <lb/>
-            <pb facs="30218115" n="85"/>
+            <pb facs="30218115" n="85"/>
+
             <fw place="top" type="pageNum"><anchor xml:id="a63"/>8<note type="annotation" targetEnd="a63"><p>ist auch im Digitalisat der SBB 8 statt 9</p></note>5</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -5933,7 +6074,8 @@
             <lb/>
             <fw place="bottom" type="catch">be-</fw>
             <lb break="no"/>
-            <pb facs="30218116" n="96"/>
+            <pb facs="30218116" n="96"/>
+
             <fw place="top" type="pageNum">96</fw>
             <lb/>
             <fw place="top" type="header">Erſtes</fw>
@@ -6000,7 +6142,8 @@
             <lb/>
             <fw place="bottom" type="catch">ich</fw>
             <lb/>
-            <pb facs="30218117" n="97"/>
+            <pb facs="30218117" n="97"/>
+
             <fw place="top" type="pageNum">97</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6069,7 +6212,8 @@
             <lb/>
             <fw place="bottom" type="catch">ohne</fw>
             <lb/>
-            <pb facs="30218118" n="98"/>
+            <pb facs="30218118" n="98"/>
+
             <fw place="top" type="pageNum">98</fw>
             <lb/>
             <fw place="top" type="header">Erſtes</fw>
@@ -6138,7 +6282,8 @@
             <lb/>
             <num>12</num> Herꝛ/
             <lb/>
-            <pb facs="30218119" n="99"/>
+            <pb facs="30218119" n="99"/>
+
             <fw place="top" type="pageNum">99</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6175,7 +6320,8 @@
             <fw place="bottom" type="catch">Alß</fw>
             
             <lb/>
-            <pb facs="30218120" n="100"/>
+            <pb facs="30218120" n="100"/>
+
             <fw place="top" type="pageNum">100</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -6206,7 +6352,8 @@
             <lb/>
             den menſchen aufgeſtellt.
             <lb/>
-            <pb facs="30218121" n="101"/>
+            <pb facs="30218121" n="101"/>
+
             <fw place="top" type="pageNum">101</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6242,7 +6389,8 @@
             <fw place="bottom" type="catch">Von</fw>
             
             <lb/>
-            <pb facs="30218122" n="102"/>
+            <pb facs="30218122" n="102"/>
+
             <fw place="top" type="pageNum">102</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -6310,7 +6458,8 @@
             <lb/>
             <fw place="bottom" type="catch">alß</fw>
             <lb/>
-            <pb facs="30218123" n="103"/>
+            <pb facs="30218123" n="103"/>
+
             <fw place="top" type="pageNum">103</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6379,7 +6528,8 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="30218124" n="104"/>
+            <pb facs="30218124" n="104"/>
+
             <fw place="top" type="pageNum">104</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -6446,7 +6596,8 @@
             <lb/>
             <fw place="bottom" type="catch">Diß</fw>
             <lb/>
-            <pb facs="30218125" n="105"/>
+            <pb facs="30218125" n="105"/>
+
             <fw place="top" type="pageNum">105</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang</fw>.
@@ -6507,7 +6658,8 @@
             <fw place="bottom" type="catch">Glük-</fw>
             
             <lb break="no"/>
-            <pb facs="30218126" n="106"/>
+            <pb facs="30218126" n="106"/>
+
             <fw place="top" type="pageNum">106</fw>
             <lb/>
             <fw place="top" type="header">Das dritt</fw>
@@ -6534,7 +6686,8 @@
             <lb/>
             ehren: ſeind worte ſeines munds.
             <lb/>
-            <pb facs="30218127" n="107"/>
+            <pb facs="30218127" n="107"/>
+
             <fw place="top" type="pageNum">107</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6564,7 +6717,8 @@
             <fw place="bottom" type="catch">Hoch-</fw>
             
             <lb break="no"/>
-            <pb facs="30218128" n="108"/>
+            <pb facs="30218128" n="108"/>
+
             <fw place="top" type="pageNum">108</fw>
             <lb/>
             <fw place="top" type="header">Das dritt</fw>
@@ -6634,7 +6788,8 @@
             <lb/>
             <fw place="bottom" type="catch">ſo</fw>
             <lb/>
-            <pb facs="30218129" n="109"/>
+            <pb facs="30218129" n="109"/>
+
             <fw place="top" type="pageNum">109</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6688,7 +6843,8 @@
             <fw place="bottom" type="catch">Der</fw>
             
             <lb/>
-            <pb facs="30218130" n="110"/>
+            <pb facs="30218130" n="110"/>
+
             <fw place="top" type="pageNum">110</fw>
             <lb/>
             <fw place="top" type="header">Das <anchor xml:id="a71"/><unclear>vierte</unclear><note type="annotation" targetEnd="a71"><p>Es scheint, dass das Wort "viert" hier fettgeschrieben ist. Allerdings gibt es keinen Grund, dieses Wort hervorzuheben. Wahrscheinlich handelt es sich um einen Druckfehler. In der SBB sieht gleich aus.</p></note></fw>
@@ -6711,7 +6867,8 @@
             <lb/>
             ſie erfreuet ihren mann/ und er liebet ſie fortan.
             <lb/>
-            <pb facs="30218131" n="111"/>
+            <pb facs="30218131" n="111"/>
+
             <fw place="top" type="pageNum">111</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6737,7 +6894,8 @@
             <fw place="bottom" type="catch">Ge-</fw>
             
             <lb break="no"/>
-            <pb facs="30218132" n="112"/>
+            <pb facs="30218132" n="112"/>
+
             <fw place="top" type="pageNum">112</fw>
             <lb/>
             <fw place="top" type="header">Das viert</fw>
@@ -6807,7 +6965,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>5</num> Jh-</fw>
             <lb break="no"/>
-            <pb facs="30218133" n="113"/>
+            <pb facs="30218133" n="113"/>
+
             <fw place="top" type="pageNum">113</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6869,7 +7028,8 @@
             <fw place="bottom" type="catch">Jhr</fw>
             
             <lb/>
-            <pb facs="30218134" n="114"/>
+            <pb facs="30218134" n="114"/>
+
             <fw place="top" type="pageNum">114</fw>
             <lb/>
             <fw place="top" type="header">Das fünfft</fw>
@@ -6892,7 +7052,8 @@
             <lb break="no"/>
             wahren/ zu&#x366; ewigen jahren: den ſegen w<anchor xml:id="a74"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a74"><p>die übrigen drei Stimmen sowie der eigentliche Hochzeitgesang würden hier ein ü vermuten lassen. In der SBB sieht es allerdings auch eher nach ue aus</p></note>nſchen wir.
             <lb/>
-            <pb facs="30218135" n="115"/>
+            <pb facs="30218135" n="115"/>
+
             <fw place="top" type="pageNum">115</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -6918,7 +7079,8 @@
             <fw place="bottom" type="pageNum">J ij</fw>
             
             <lb/>
-            <pb facs="30218136" n="116"/>
+            <pb facs="30218136" n="116"/>
+
             <fw place="top" type="pageNum">116</fw>
             <lb/>
             <fw place="top" type="header">Das fünfft</fw>
@@ -6988,7 +7150,8 @@
             <lb/>
             <fw place="bottom" type="catch">nach</fw>
             <lb/>
-            <pb facs="30218137" n="117"/>
+            <pb facs="30218137" n="117"/>
+
             <fw place="top" type="pageNum">117</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7047,7 +7210,8 @@
             <fw place="bottom" type="pageNum">J iij</fw>
             
             <lb/>
-            <pb facs="30218138" n="118"/>
+            <pb facs="30218138" n="118"/>
+
             <fw place="top" type="pageNum">118</fw>
             <lb/>
             <fw place="top" type="header">Das ſechßt</fw>
@@ -7086,7 +7250,8 @@
             <lb break="no"/>
             hüllet/ ſich ſelber erfüllet mit riſel und hagel/ und regenwind.
             <lb/>
-            <pb facs="30218139" n="119"/>
+            <pb facs="30218139" n="119"/>
+
             <fw place="top" type="pageNum">119</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7127,7 +7292,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">J iiij</fw>
             <lb/>
-            <pb facs="30218140" n="120"/>
+            <pb facs="30218140" n="120"/>
+
             <fw place="top" type="pageNum">120</fw>
             <lb/>
             <fw place="top" type="header">Das ſechßt</fw>
@@ -7194,7 +7360,8 @@
             <lb/>
             <fw place="bottom" type="catch">von</fw>
             <lb/>
-            <pb facs="30218141" n="121"/>
+            <pb facs="30218141" n="121"/>
+
             <fw place="top" type="pageNum">121</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7261,7 +7428,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>6</num> Man</fw>
             <lb/>
-            <pb facs="30218142" n="122"/>
+            <pb facs="30218142" n="122"/>
+
             <fw place="top" type="pageNum">122</fw>
             <lb/>
             <fw place="top" type="header">Das ſechßt Hochzeitgeſang.</fw>
@@ -7311,7 +7479,8 @@
             <fw place="bottom" type="catch">Hoch-</fw>
             
             <lb break="no"/>
-            <pb facs="30218143" n="123"/>
+            <pb facs="30218143" n="123"/>
+
             <fw place="top" type="pageNum">123</fw>
             <lb/>
             <fw place="top" type="header">Das ſibend Hochzeitgeſang.</fw>
@@ -7360,7 +7529,8 @@
             <lb/>
             <fw place="bottom" type="catch">Den</fw>
             <lb/>
-            <pb facs="30218144" n="124"/>
+            <pb facs="30218144" n="124"/>
+
             <fw place="top" type="pageNum">124</fw>
             <lb/>
             <fw place="top" type="header">Das acht</fw>
@@ -7387,7 +7557,8 @@
             <lb/>
             Wir wünſchen/ wan ſ<anchor xml:id="a84"/>i<note type="annotation" targetEnd="a84"><p>in der SBB ein klares i</p></note>e lebensſat/ die ſelig ewigkeit.
             <lb/>
-            <pb facs="30218145" n="125"/>
+            <pb facs="30218145" n="125"/>
+
             <fw place="top" type="pageNum">125</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7416,7 +7587,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ein</fw>
             <lb/>
-            <pb facs="30218146" n="126"/>
+            <pb facs="30218146" n="126"/>
+
             <fw place="top" type="pageNum">126</fw>
             <lb/>
             <fw place="top" type="header">Das neunt</fw>
@@ -7447,7 +7619,8 @@
             <lb/>
             uns erfüllet werden.
             <lb/>
-            <pb facs="30218147" n="127"/>
+            <pb facs="30218147" n="127"/>
+
             <fw place="top" type="pageNum">127</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7479,7 +7652,8 @@
             uns erfüllet werden.
             
             <lb/>
-            <pb facs="30218148" n="128"/>
+            <pb facs="30218148" n="128"/>
+
             <fw place="top" type="pageNum">128</fw>
             <lb/>
             <fw place="top" type="header">Das neunt</fw>
@@ -7545,7 +7719,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>5</num> Wer</fw>
             <lb/>
-            <pb facs="30218149" n="129"/>
+            <pb facs="30218149" n="129"/>
+
             <fw place="top" type="pageNum">129</fw>
             <lb/>
             <fw place="top" type="header">Hochzeitgeſang.</fw>
@@ -7607,7 +7782,8 @@
             <fw place="bottom" type="catch">O Frid!</fw>
             
             <lb/>
-            <pb facs="30218150" n="130"/>
+            <pb facs="30218150" n="130"/>
+
             <fw place="top" type="pageNum">130</fw>
             <lb/>
             <fw place="top" type="header">Traurgeſang.</fw>
@@ -7634,7 +7810,8 @@
             <lb/>
             Moren du widrum wirſt entdekt.
             <lb/>
-            <pb facs="30218151" n="131"/>
+            <pb facs="30218151" n="131"/>
+
             <fw place="top" type="pageNum">131</fw>
             <lb/>
             <fw place="top" type="header">über verlornen Friden.</fw>
@@ -7665,7 +7842,8 @@
             <lb/>
             <fw place="bottom" type="catch">Traur-</fw>
             <lb break="no"/>
-            <pb facs="30218152" n="132"/>
+            <pb facs="30218152" n="132"/>
+
             <fw place="top" type="pageNum">132</fw>
             <lb/>
             <fw place="top" type="header">Traurgeſang</fw>
@@ -7737,7 +7915,8 @@
             <lb/>
             <fw place="bottom" type="catch">O welt!</fw>
             <lb/>
-            <pb facs="30218153" n="133"/>
+            <pb facs="30218153" n="133"/>
+
             <fw place="top" type="pageNum">133</fw>
             <lb/>
             <fw place="top" type="header">über verlornen Friden.</fw>
@@ -7806,7 +7985,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ver</fw>
             <lb/>
-            <pb facs="30218154" n="134"/>
+            <pb facs="30218154" n="134"/>
+
             <fw place="top" type="pageNum">134</fw>
             <lb/>
             <fw place="top" type="header">Vermahnungsgeſang</fw>
@@ -7833,7 +8013,8 @@
             <lb/>
             nicht ſparet euer blu&#x366;t/ des feindes noch vil minder.
             <lb/>
-            <pb facs="30218155" n="135"/>
+            <pb facs="30218155" n="135"/>
+
             <fw place="top" type="pageNum">135</fw>
             <lb/>
             <fw place="top" type="header">zu&#x366; rechtma&#x364;ſſigem ſtreit.</fw>
@@ -7865,7 +8046,8 @@
             <fw place="bottom" type="catch">Ver-</fw>
             
             <lb break="no"/>
-            <pb facs="30218156" n="136"/>
+            <pb facs="30218156" n="136"/>
+
             <fw place="top" type="pageNum">136</fw>
             <lb/>
             <fw place="top" type="header">Vermahnungsgeſang</fw>
@@ -7932,7 +8114,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>4</num> Nun</fw>
             <lb/>
-            <pb facs="30218157" n="137"/>
+            <pb facs="30218157" n="137"/>
+
             <fw place="top" type="pageNum">137</fw>
             <lb/>
             <fw place="top" type="header">zu&#x366; rechtma&#x364;ſſigem ſtreit.</fw>
@@ -7991,7 +8174,8 @@
             <fw place="bottom" type="catch">Mit</fw>
             
             <lb/>
-            <pb facs="30218158" n="138"/>
+            <pb facs="30218158" n="138"/>
+
             <fw place="top" type="pageNum">138</fw>
             <lb/>
             <fw place="top" type="header">Von lobwürdiger</fw>
@@ -8018,7 +8202,8 @@
             <lb/>
             und der vom haubt in barte/ und auf die kleider fleußt.
             <lb/>
-            <pb facs="30218159" n="139"/>
+            <pb facs="30218159" n="139"/>
+
             <fw place="top" type="pageNum">139</fw>
             <lb/>
             <fw place="top" type="header">einigkeit.</fw>
@@ -8045,7 +8230,8 @@
             <lb/>
             und der vom haubt in barte/ und auf die kleider fleußt.
             <lb/>
-            <pb facs="30218160" n="140"/>
+            <pb facs="30218160" n="140"/>
+
             <fw place="top" type="pageNum">140</fw>
             <lb/>
             <fw place="top" type="header">Von lobwürdiger</fw>
@@ -8110,7 +8296,8 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
-            <pb facs="30218161" n="141"/>
+            <pb facs="30218161" n="141"/>
+
             <fw place="top" type="pageNum">141</fw>
             <lb/>
             <fw place="top" type="header">einigkeit.</fw>
@@ -8175,7 +8362,8 @@
             <lb/>
             durch gaaben und genuß!
             <lb/>
-            <pb facs="30218162" n="142"/>
+            <pb facs="30218162" n="142"/>
+
             <fw place="top" type="pageNum">142</fw>
             <lb/>
             <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
@@ -8202,7 +8390,8 @@
             <lb/>
             das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
             <lb/>
-            <pb facs="30218163" n="143"/>
+            <pb facs="30218163" n="143"/>
+
             <fw place="top" type="pageNum">143</fw>
             <lb/>
             <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
@@ -8229,7 +8418,8 @@
             <lb/>
             das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
             <lb/>
-            <pb facs="30218164" n="144"/>
+            <pb facs="30218164" n="144"/>
+
             <fw place="top" type="pageNum">144</fw>
             <lb/>
             <fw place="top" type="header">Sommergeſang.</fw>
@@ -8256,7 +8446,8 @@
             <lb/>
             b<anchor xml:id="a106"/>ek<note type="annotation" targetEnd="a106"><p>ek deutlicher in der SBB</p></note>leidet ihres gſind/ ſich ſelbſten auch in zwilch.
             <lb/>
-            <pb facs="30218165" n="145"/>
+            <pb facs="30218165" n="145"/>
+
             <fw place="top" type="pageNum">145</fw>
             <lb/>
             <fw place="top" type="header">Sommergeſang.</fw>
@@ -8287,7 +8478,8 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
-            <pb facs="30218166" n="146"/>
+            <pb facs="30218166" n="146"/>
+
             <fw place="top" type="pageNum">146</fw>
             <lb/>
             <fw place="top" type="header">Herbſtgeſang.</fw>
@@ -8314,7 +8506,8 @@
             <lb/>
             baumfrücht und ra&#x364;benſafft/ wildbra&#x364;t und gu&#x366;te fiſch.
             <lb/>
-            <pb facs="30218167" n="147"/>
+            <pb facs="30218167" n="147"/>
+
             <fw place="top" type="pageNum">147</fw>
             <lb/>
             <fw place="top" type="header">Herbſtgeſang.</fw>
@@ -8345,7 +8538,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218168" n="148"/>
+            <pb facs="30218168" n="148"/>
+
             <fw place="top" type="pageNum">148</fw>
             <lb/>
             <fw place="top" type="header">Wintergeſang.</fw>
@@ -8372,7 +8566,8 @@
             <lb/>
             er vberzogen hat mit harniſchhartem eyß.
             <lb/>
-            <pb facs="30218169" n="149"/>
+            <pb facs="30218169" n="149"/>
+
             <fw place="top" type="pageNum">149</fw>
             <lb/>
             <fw place="top" type="header">Wintergeſang.</fw>
@@ -8403,7 +8598,8 @@
             <lb/>
             <fw place="bottom" type="catch">Luſtig</fw>
             <lb/>
-            <pb facs="30218170" n="150"/>
+            <pb facs="30218170" n="150"/>
+
             <fw place="top" type="pageNum">150</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -8430,7 +8626,8 @@
             <lb/>
             entſtehet/ den der Zeph<anchor xml:id="a110"/>y<note type="annotation" targetEnd="a110"><p>y in der SBB eindeutig</p></note>r mit blu&#x366;men beſa&#x364;et.
             <lb/>
-            <pb facs="30218171" n="151"/>
+            <pb facs="30218171" n="151"/>
+
             <fw place="top" type="pageNum">151</fw>
             <lb/>
             <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
@@ -8458,7 +8655,8 @@
             entſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.
             
             <lb/>
-            <pb facs="30218172" n="152"/>
+            <pb facs="30218172" n="152"/>
+
             <fw place="top" type="pageNum">152</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -8525,7 +8723,8 @@
             <lb/>
             <fw place="bottom" type="catch">alle</fw>
             <lb/>
-            <pb facs="30218173" n="153"/>
+            <pb facs="30218173" n="153"/>
+
             <fw place="top" type="pageNum">153</fw>
             <lb/>
             <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
@@ -8592,7 +8791,8 @@
             <lb/>
             <fw place="bottom" type="catch">mit</fw>
             <lb/>
-            <pb facs="30218174" n="154"/>
+            <pb facs="30218174" n="154"/>
+
             <fw place="top" type="pageNum">154</fw>
             <lb/>
             <fw place="top" type="header">Das 2. Fru&#x364;hlingsgeſang.</fw>
@@ -8634,7 +8834,8 @@
             ſo die zeiten erlauben und lehren.
             
             <lb/>
-            <pb facs="30218175" n="155"/>
+            <pb facs="30218175" n="155"/>
+
             <fw place="top" type="pageNum">155</fw>
             
             <head><lb/>
@@ -8701,7 +8902,8 @@
             <fw place="bottom" type="catch">Wie</fw>
             
             <lb/>
-            <pb facs="30218176" n="156"/>
+            <pb facs="30218176" n="156"/>
+
             <fw place="top" type="pageNum">156</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -8728,7 +8930,8 @@
             <lb/>
             abgeſchnidten<anchor xml:id="a117"/>/<note type="annotation" targetEnd="a117"><p>in den übrigen drei Stimmen sowie im eigentlichen Sommergesang hat es an dieser Stelle kein Komma. Evtl. Druckfehler</p></note> die ſaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="30218177" n="157"/>
+            <pb facs="30218177" n="157"/>
+
             <fw place="top" type="pageNum">157</fw>
             <lb/>
             <fw place="top" type="header">Sommergeſang.</fw>
@@ -8760,7 +8963,8 @@
             abgeſchnidten die ſaten fru&#x364;h und ſpaht.
             
             <lb/>
-            <pb facs="30218178" n="158"/>
+            <pb facs="30218178" n="158"/>
+
             <fw place="top" type="pageNum">158</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -8830,7 +9034,8 @@
             <lb/>
             <fw place="bottom" type="catch">die</fw>
             <lb/>
-            <pb facs="30218179" n="159"/>
+            <pb facs="30218179" n="159"/>
+
             <fw place="top" type="pageNum">159</fw>
             <lb/>
             <fw place="top" type="header">Sommergeſang.</fw>
@@ -8901,7 +9106,8 @@
             <fw place="bottom" type="catch">Die</fw>
             
             <lb/>
-            <pb facs="30218180" n="160"/>
+            <pb facs="30218180" n="160"/>
+
             <fw place="top" type="pageNum">160</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -8924,7 +9130,8 @@
             <lb/>
             und ſchwalb entflogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="30218181" n="161"/>
+            <pb facs="30218181" n="161"/>
+
             <fw place="top" type="pageNum">161</fw>
             <lb/>
             <fw place="top" type="header">Herbſtgeſang.</fw>
@@ -8949,7 +9156,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">M</fw>
             <lb/>
-            <pb facs="30218182" n="162"/>
+            <pb facs="30218182" n="162"/>
+
             <fw place="top" type="pageNum">162</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -9021,7 +9229,8 @@
             <lb/>
             <fw place="bottom" type="catch">wird</fw>
             <lb/>
-            <pb facs="30218183" n="163"/>
+            <pb facs="30218183" n="163"/>
+
             <fw place="top" type="pageNum">163</fw>
             <lb/>
             <fw place="top" type="header">Herbſtgeſang.</fw>
@@ -9079,7 +9288,8 @@
             <fw place="bottom" type="pageNum">M ij</fw>
             
             <lb/>
-            <pb facs="30218184" n="164"/>
+            <pb facs="30218184" n="164"/>
+
             <fw place="top" type="pageNum">164</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -9114,7 +9324,8 @@
             <lb/>
             ſich ſchlieſſen allerdingen.
             <lb/>
-            <pb facs="30218185" n="165"/>
+            <pb facs="30218185" n="165"/>
+
             <fw place="top" type="pageNum">165</fw>
             <lb/>
             <fw place="top" type="header">Wintergeſang.</fw>
@@ -9152,7 +9363,8 @@
             <fw place="bottom" type="pageNum"><anchor xml:id="a122"/>M iij<note type="annotation" targetEnd="a122"><p>Paginierung in der SBB eindeutiger zu sehen.</p></note></fw>
            
             <lb/>
-            <pb facs="30218186" n="166"/>
+            <pb facs="30218186" n="166"/>
+
             <fw place="top" type="pageNum">166</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
@@ -9220,7 +9432,8 @@
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
-            <pb facs="30218187" n="167"/>
+            <pb facs="30218187" n="167"/>
+
             <fw place="top" type="pageNum">167</fw>
             <lb/>
             <fw place="top" type="header">Wintergeſang.</fw>
@@ -9279,7 +9492,8 @@
             <fw place="bottom" type="pageNum">M iiij</fw>
             
             <lb/>
-            <pb facs="30218188" n="168"/>
+            <pb facs="30218188" n="168"/>
+
             <fw place="top" type="pageNum">168</fw>
             <lb/>
             <fw place="top" type="header">Andere weis über das</fw>
@@ -9306,7 +9520,8 @@
             <lb break="no"/>
             ſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.
             <lb/>
-            <pb facs="30218189" n="169"/>
+            <pb facs="30218189" n="169"/>
+
             <fw place="top" type="pageNum">169</fw>
             <lb/>
             <fw place="top" type="header">ander Fru&#x364;hlingsgeſang.</fw>
@@ -9333,7 +9548,8 @@
             <lb break="no"/>
             ſtehet/ den der Zephyr mit blu&#x366;men beſa&#x364;et.
             <lb/>
-            <pb facs="30218190" n="170"/>
+            <pb facs="30218190" n="170"/>
+
             <fw place="top" type="pageNum">170</fw>
             <lb/>
             <fw place="top" type="header">Andere weis über das</fw>
@@ -9360,7 +9576,8 @@
             <lb/>
             abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="30218191" n="171"/>
+            <pb facs="30218191" n="171"/>
+
             <fw place="top" type="pageNum">171</fw>
             <lb/>
             <fw place="top" type="header"><anchor xml:id="a123"/>ander Sommergeſang.<note type="annotation" targetEnd="a123"><p>Es scheint, am Ende der Kopfzeile ein Apostroph vorhanden zu sein. Sieht in der SBB auch so aus.</p></note></fw>
@@ -9387,7 +9604,8 @@
             <lb/>
             abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
             <lb/>
-            <pb facs="30218192" n="172"/>
+            <pb facs="30218192" n="172"/>
+
             <fw place="top" type="pageNum">172</fw>
             <lb/>
             <fw place="top" type="header">Andere weis über das</fw>
@@ -9410,7 +9628,8 @@
             <lb/>
             ſchwalb entflogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="30218193" n="173"/>
+            <pb facs="30218193" n="173"/>
+
             <fw place="top" type="pageNum">173</fw>
             <lb/>
             <fw place="top" type="header">ander Herbſtgeſang.</fw>
@@ -9433,7 +9652,8 @@
             <lb/>
             ſchwalb entflogen/ die ſonn der wag nicht weit.
             <lb/>
-            <pb facs="30218194" n="174"/>
+            <pb facs="30218194" n="174"/>
+
             <fw place="top" type="pageNum">174</fw>
             <lb/>
             <fw place="top" type="header">Andere weis über das</fw>
@@ -9468,7 +9688,8 @@
             <lb/>
             ſich ſchlieſſen allerdingen.
             <lb/>
-            <pb facs="30218195" n="175"/>
+            <pb facs="30218195" n="175"/>
+
             <fw place="top" type="pageNum">175</fw>
             <lb/>
             <fw place="top" type="header">ander Wintergeſang.</fw>
@@ -9504,7 +9725,8 @@
             ſich ſchlieſſen allerdingen.
             
             <lb/>
-            <pb facs="30218196" n="176"/>
+            <pb facs="30218196" n="176"/>
+
             <fw place="top" type="pageNum">176</fw>
             
             <head><lb/>
@@ -9536,7 +9758,8 @@
             
             <!-- Teil III -->
             
-            <pb facs="30218197" n="[177]"/>
+            <pb facs="30218197" n="[177]"/>
+
             Folgen
             <lb/>
             allerhand <hi rendition="#aq">U</hi>ber-
@@ -9546,7 +9769,8 @@
             <fw place="bottom" type="pageNum">N</fw>
             <lb/>
             <pb facs="30218198" n="[178]"/>
-            <pb facs="30218199" n="179"/>
+            <pb facs="30218199" n="179"/>
+
             <fw place="top" type="pageNum">179</fw>
             <lb/>
             <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -9610,7 +9834,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>V.</num></hi> Ver-</fw>
             <lb break="no"/>
-            <pb facs="30218200" n="180"/>
+            <pb facs="30218200" n="180"/>
+
             <fw place="top" type="pageNum">180</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -9673,7 +9898,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>X.</num></hi> Für-</fw>
             <lb break="no"/>
-            <pb facs="30218201" n="181"/>
+            <pb facs="30218201" n="181"/>
+
             <fw place="top" type="pageNum">181</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -9744,7 +9970,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>XVI.</num></hi> Ab</fw>
             <lb/>
-            <pb facs="30218202" n="182"/>
+            <pb facs="30218202" n="182"/>
+
             <fw place="top" type="pageNum">182</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -9816,7 +10043,8 @@
             
             <head><hi rendition="#aq"><num>XXII.</num></hi></head>
             <lb/>
-            <pb facs="30218203" n="183"/>
+            <pb facs="30218203" n="183"/>
+
             <fw place="top" type="pageNum">183</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -9887,7 +10115,8 @@
             
             <head><hi rendition="#aq"><num>XXVII.</num></hi></head>
             <lb/>
-            <pb facs="30218204" n="184"/>
+            <pb facs="30218204" n="184"/>
+
             <fw place="top" type="pageNum">184</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -9957,7 +10186,8 @@
             
             <head><hi rendition="#aq"><num>XXXIII.</num></hi></head>
             <lb/>
-            <pb facs="30218205" n="185."/>
+            <pb facs="30218205" n="185."/>
+
             <fw place="top" type="pageNum">185.</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10024,7 +10254,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>XXXIX.</num></hi></fw>
             <lb/>
-            <pb facs="30218206" n="186"/>
+            <pb facs="30218206" n="186"/>
+
             <fw place="top" type="pageNum">186</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10094,7 +10325,8 @@
             
             <head><hi rendition="#aq"><num>XLV.</num></hi></head>
             <lb/>
-            <pb facs="30218207" n="187"/>
+            <pb facs="30218207" n="187"/>
+
             <fw place="top" type="pageNum">187</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10160,7 +10392,8 @@
             
             <head><hi rendition="#aq"><num>XLIX.</num></hi></head>
             <lb/>
-            <pb facs="30218208" n="188"/>
+            <pb facs="30218208" n="188"/>
+
             <fw place="top" type="pageNum">188</fw>
             <lb/>
             <fw place="top" type="header">Allerha<choice><sic>u</sic><corr>n</corr></choice>d</fw>
@@ -10230,7 +10463,8 @@
             
             <head><hi rendition="#aq"><num>LIII.</num></hi></head>
             <lb/>
-            <pb facs="30218209" n="189"/>
+            <pb facs="30218209" n="189"/>
+
             <fw place="top" type="pageNum">189</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10298,7 +10532,8 @@
             
             <head><hi rendition="#aq"><num>LVIII.</num></hi></head>
             <lb/>
-            <pb facs="30218210" n="190"/>
+            <pb facs="30218210" n="190"/>
+
             <fw place="top" type="pageNum">190</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10369,7 +10604,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>LXIII.</num></hi></fw>
             <lb/>
-            <pb facs="30218211" n="191"/>
+            <pb facs="30218211" n="191"/>
+
             <fw place="top" type="pageNum">191</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10431,7 +10667,8 @@
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>LXVI.</num></hi></fw>
             
             <lb/>
-            <pb facs="30218212" n="192"/>
+            <pb facs="30218212" n="192"/>
+
             <fw place="top" type="pageNum">192</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10495,7 +10732,8 @@
             
             <head><hi rendition="#aq"><num>LXIX.</num></hi></head>
             <lb/>
-            <pb facs="30218213" n="193"/>
+            <pb facs="30218213" n="193"/>
+
             <fw place="top" type="pageNum">193</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10564,7 +10802,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218214" n="194"/>
+            <pb facs="30218214" n="194"/>
+
             <fw place="top" type="pageNum">194</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10627,7 +10866,8 @@
             <lb/>
             daß
             <lb/>
-            <pb facs="30218215" n="195"/>
+            <pb facs="30218215" n="195"/>
+
             <fw place="top" type="pageNum">195</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10696,7 +10936,8 @@
             <head><hi rendition="#aq"><num>LXXII.</num></hi></head>
             
             <lb/>
-            <pb facs="30218216" n="196"/>
+            <pb facs="30218216" n="196"/>
+
             <fw place="top" type="pageNum">196</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10757,7 +10998,8 @@
             <lb/>
             Na&#x364;chſt
             <lb/>
-            <pb facs="30218217" n="197"/>
+            <pb facs="30218217" n="197"/>
+
             <fw place="top" type="pageNum">197</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10826,7 +11068,8 @@
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
-            <pb facs="30218218" n="198"/>
+            <pb facs="30218218" n="198"/>
+
             <fw place="top" type="pageNum">198</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -10891,7 +11134,8 @@
             <lb/>
             <fw place="bottom" type="catch">Gegen</fw>
             <lb/>
-            <pb facs="30218219" n="199"/>
+            <pb facs="30218219" n="199"/>
+
             <fw place="top" type="pageNum">199</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -10962,7 +11206,8 @@
             <lb/>
             <fw place="bottom" type="catch">und</fw>
             <lb/>
-            <pb facs="30218220" n="200"/>
+            <pb facs="30218220" n="200"/>
+
             <fw place="top" type="pageNum">200</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11027,7 +11272,8 @@
             <lb/>
             die
             <lb/>
-            <pb facs="30218221" n="201"/>
+            <pb facs="30218221" n="201"/>
+
             <fw place="top" type="pageNum">201</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11091,7 +11337,8 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>nd</fw>
             <lb/>
-            <pb facs="30218222" n="202"/>
+            <pb facs="30218222" n="202"/>
+
             <fw place="top" type="pageNum">202</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11159,7 +11406,8 @@
             
             <head><hi rendition="#aq"><num>LXXV.</num></hi></head>
             <lb/>
-            <pb facs="30218223" n="203"/>
+            <pb facs="30218223" n="203"/>
+
             <fw place="top" type="pageNum">203</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften</fw>
@@ -11226,7 +11474,8 @@
             <lb/>
             Heſio-
             <lb break="no"/>
-            <pb facs="30218224" n="204"/>
+            <pb facs="30218224" n="204"/>
+
             <fw place="top" type="pageNum">204</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11290,7 +11539,8 @@
             <lb/>
             <fw place="bottom" type="catch">Diß</fw>
             <lb/>
-            <pb facs="30218225" n="205"/>
+            <pb facs="30218225" n="205"/>
+
             <fw place="top" type="pageNum">205</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11356,7 +11606,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218226" n="206"/>
+            <pb facs="30218226" n="206"/>
+
             <fw place="top" type="pageNum">206</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11422,7 +11673,8 @@
             <lb/>
             <fw place="bottom" type="catch">Nein!</fw>
             <lb/>
-            <pb facs="30218227" n="207"/>
+            <pb facs="30218227" n="207"/>
+
             <fw place="top" type="pageNum">207</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11472,7 +11724,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>LXXVI.</num></hi></head></fw>
             <lb/>
-            <pb facs="30218228" n="208"/>
+            <pb facs="30218228" n="208"/>
+
             <fw place="top" type="pageNum">208</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11544,7 +11797,8 @@
             <fw place="bottom" type="catch">Mit</fw>
             
             <lb/>
-            <pb facs="30218229" n="209"/>
+            <pb facs="30218229" n="209"/>
+
             <fw place="top" type="pageNum">209</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11615,7 +11869,8 @@
             <fw place="bottom" type="catch">Es</fw>
             
             <lb/>
-            <pb facs="30218230" n="210"/>
+            <pb facs="30218230" n="210"/>
+
             <fw place="top" type="pageNum">210</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11682,7 +11937,8 @@
             <fw place="bottom" type="catch">die</fw>
             
             <lb/>
-            <pb facs="30218231" n="211"/>
+            <pb facs="30218231" n="211"/>
+
             <fw place="top" type="pageNum">211</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11755,7 +12011,8 @@
             <fw place="bottom" type="catch"><anchor xml:id="a153"/>Ver-<note type="annotation" targetEnd="a153"><p>P ij und Ver- etwas deutlicher in der SBB</p></note></fw>
             
             <lb/>
-            <pb facs="30218232" n="212"/>
+            <pb facs="30218232" n="212"/>
+
             <fw place="top" type="pageNum">212</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11820,7 +12077,8 @@
             <lb/>
             war-
             <lb break="no"/>
-            <pb facs="30218233" n="213"/>
+            <pb facs="30218233" n="213"/>
+
             <fw place="top" type="pageNum">213</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -11889,7 +12147,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ha!</fw>
             <lb/>
-            <pb facs="30218234" n="214"/>
+            <pb facs="30218234" n="214"/>
+
             <fw place="top" type="pageNum">214</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -11954,7 +12213,8 @@
             <lb/>
             <fw place="bottom" type="catch">doch</fw>
             <lb/>
-            <pb facs="30218235" n="215"/>
+            <pb facs="30218235" n="215"/>
+
             <fw place="top" type="pageNum">215</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -12022,7 +12282,8 @@
             <fw place="bottom" type="catch">Be-</fw>
             
             <lb break="no"/>
-            <pb facs="30218236" n="216"/>
+            <pb facs="30218236" n="216"/>
+
             <fw place="top" type="pageNum">216</fw>
             <lb/>
             <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -12089,7 +12350,8 @@
             <hi rendition="#g">ENDE.</hi>
             
             <lb/>
-            <pb facs="30218237" n="[217]"/>
+            <pb facs="30218237" n="[217]"/>
+
             Johann-Wilhelm
             <lb/>
             Simlers
@@ -12107,7 +12369,8 @@
             <lb/>
             <pb facs="30218238" n="[218]"/>
             
-            <pb facs="30218239" n="[219]"/>
+            <pb facs="30218239" n="[219]"/>
+
             
             <head>Regentenſpiegel:</head>
             
@@ -12153,7 +12416,8 @@
             und Vettern.
             
             <lb/>
-            <pb facs="30218240" n="[220]"/>
+            <pb facs="30218240" n="[220]"/>
+
             
             <head><label>[265.i.]</label> Zu&#x366;ſchrifftsgedichte.</head>
             
@@ -12227,7 +12491,8 @@
             <lb/>
             <fw place="bottom" type="catch">We-</fw>
             <lb break="no"/>
-            <pb facs="30218241" n="221"/>
+            <pb facs="30218241" n="221"/>
+
             <fw place="top" type="pageNum">221</fw>
             <lb/>
             <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
@@ -12310,7 +12575,8 @@
             <lb/>
             <fw place="bottom" type="catch">W<anchor xml:id="a166"/>o<note type="annotation" targetEnd="a166"><p>in der SBB ein deutliches o</p></note></fw>
             <lb/>
-            <pb facs="30218242" n="222"/>
+            <pb facs="30218242" n="222"/>
+
             <fw place="top" type="pageNum">222</fw>
             <lb/>
             <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
@@ -12343,7 +12609,8 @@
             Joh. Wilhelm Simler.
             
             <lb/>
-            <pb facs="30218243" n="223"/>
+            <pb facs="30218243" n="223"/>
+
             <fw place="top" type="pageNum">223</fw>
             
             <head><lb/>
@@ -12385,7 +12652,8 @@
             Eccleſiæ Talvillenſis P.</hi>
             
             <lb/>
-            <pb facs="30218244" n="224"/>
+            <pb facs="30218244" n="224"/>
+
             <fw place="top" type="pageNum">224</fw>
             
             <head><lb/>
@@ -12434,7 +12702,8 @@
             <fw place="bottom" type="catch">Regen-</fw>
             
             <lb break="no"/>
-            <pb facs="30218245" n="225"/>
+            <pb facs="30218245" n="225"/>
+
             <fw place="top" type="pageNum">225</fw>
             
             <head><lb/>
@@ -12505,7 +12774,8 @@
             <lb/>
             <fw place="bottom" type="catch">Das</fw>
             <lb/>
-            <pb facs="30218246" n="226"/>
+            <pb facs="30218246" n="226"/>
+
             <fw place="top" type="pageNum">226</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -12580,7 +12850,8 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
-            <pb facs="30218247" n="227"/>
+            <pb facs="30218247" n="227"/>
+
             <fw place="top" type="pageNum">227</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -12655,7 +12926,8 @@
             <lb/>
             <fw place="bottom" type="catch">wie</fw>
             <lb/>
-            <pb facs="30218248" n="228"/>
+            <pb facs="30218248" n="228"/>
+
             <fw place="top" type="pageNum">228</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -12727,7 +12999,8 @@
             <lb/>
             <fw place="bottom" type="catch">Den</fw>
             <lb/>
-            <pb facs="30218249" n="229"/>
+            <pb facs="30218249" n="229"/>
+
             <fw place="top" type="pageNum">229</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -12802,7 +13075,8 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="30218250" n="230"/>
+            <pb facs="30218250" n="230"/>
+
             <fw place="top" type="pageNum">230</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -12876,7 +13150,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ge-</fw>
             <lb break="no"/>
-            <pb facs="30218251" n="231"/>
+            <pb facs="30218251" n="231"/>
+
             <fw place="top" type="pageNum">231</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -12953,7 +13228,8 @@
             <lb/>
             <fw place="bottom" type="catch">Dem</fw>
             <lb/>
-            <pb facs="30218252" n="232"/>
+            <pb facs="30218252" n="232"/>
+
             <fw place="top" type="pageNum">232</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13025,7 +13301,8 @@
             <lb/>
             <fw place="bottom" type="catch">Wer/</fw>
             <lb/>
-            <pb facs="30218253" n="233"/>
+            <pb facs="30218253" n="233"/>
+
             <fw place="top" type="pageNum">233</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13100,7 +13377,8 @@
             <lb/>
             <fw place="bottom" type="catch">Das</fw>
             <lb/>
-            <pb facs="30218254" n="234"/>
+            <pb facs="30218254" n="234"/>
+
             <fw place="top" type="pageNum">234</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13172,7 +13450,8 @@
             <lb/>
             <fw place="bottom" type="catch">Erwig</fw>
             <lb/>
-            <pb facs="30218255" n="235"/>
+            <pb facs="30218255" n="235"/>
+
             <anchor xml:id="a183"/><fw place="top" type="pageNum">235</fw><note type="annotation" targetEnd="a183"><p>3 und 5 hier schlecht zu sehen. Aber die Zahlen stimmen in der SBB</p></note>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13245,7 +13524,8 @@
             <lb/>
             <fw place="bottom" type="catch">das</fw>
             <lb/>
-            <pb facs="30218256" n="236"/>
+            <pb facs="30218256" n="236"/>
+
             <fw place="top" type="pageNum">236</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13320,7 +13600,8 @@
             <lb/>
             <fw place="bottom" type="catch">dan</fw>
             <lb/>
-            <pb facs="30218257" n="237"/>
+            <pb facs="30218257" n="237"/>
+
             <fw place="top" type="pageNum">237</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13390,7 +13671,8 @@
             <lb/>
             Be-
             <lb break="no"/>
-            <pb facs="30218258" n="238"/>
+            <pb facs="30218258" n="238"/>
+
             <fw place="top" type="pageNum">238</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13420,7 +13702,8 @@
             <fw place="bottom" type="catch">Jn-</fw>
             
             <lb break="no"/>
-            <pb facs="30218259" n="239"/>
+            <pb facs="30218259" n="239"/>
+
             <fw place="top" type="pageNum">239</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13480,7 +13763,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ver-</fw>
             <lb break="no"/>
-            <pb facs="30218260" n="240"/>
+            <pb facs="30218260" n="240"/>
+
             <fw place="top" type="pageNum">240</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13557,7 +13841,8 @@
             <lb/>
             <fw place="bottom" type="catch">Saul</fw>
             <lb/>
-            <pb facs="30218261" n="241"/>
+            <pb facs="30218261" n="241"/>
+
             <fw place="top" type="pageNum">241</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13636,7 +13921,8 @@
             <lb/>
             <fw place="bottom" type="catch">O Herꝛ/</fw>
             <lb/>
-            <pb facs="30218262" n="242"/>
+            <pb facs="30218262" n="242"/>
+
             <fw place="top" type="pageNum">242</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13713,7 +13999,8 @@
             <lb/>
             <fw place="bottom" type="catch">De<anchor xml:id="a194"/>s<note type="annotation" targetEnd="a194"><p>s in der SBB deutlicher</p></note></fw>
             <lb/>
-            <pb facs="30218263" n="243"/>
+            <pb facs="30218263" n="243"/>
+
             <fw place="top" type="pageNum">243</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften</fw>
@@ -13792,7 +14079,8 @@
             <lb/>
             <fw place="bottom" type="catch">Seyt</fw>
             <lb/>
-            <pb facs="30218264" n="244"/>
+            <pb facs="30218264" n="244"/>
+
             <fw place="top" type="pageNum">244</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -13869,7 +14157,8 @@
             <lb/>
             <fw place="bottom" type="catch">Herꝛ/</fw>
             <lb/>
-            <pb facs="30218265" n="245"/>
+            <pb facs="30218265" n="245"/>
+
             <fw place="top" type="pageNum">245</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -13948,7 +14237,8 @@
             <lb/>
             <fw place="bottom" type="catch">Gott</fw>
             <lb/>
-            <pb facs="30218266" n="246"/>
+            <pb facs="30218266" n="246"/>
+
             <fw place="top" type="pageNum">246</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14025,7 +14315,8 @@
             <lb/>
             <fw place="bottom" type="catch">Mein</fw>
             <lb/>
-            <pb facs="30218267" n="247"/>
+            <pb facs="30218267" n="247"/>
+
             <fw place="top" type="pageNum">247</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14102,7 +14393,8 @@
             <lb/>
             Er-
             <lb break="no"/>
-            <pb facs="30218268" n="248"/>
+            <pb facs="30218268" n="248"/>
+
             <fw place="top" type="pageNum">248</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14179,7 +14471,8 @@
             <lb/>
             <fw place="bottom" type="catch">Meſ-</fw>
             <lb break="no"/>
-            <pb facs="30218269" n="249"/>
+            <pb facs="30218269" n="249"/>
+
             <fw place="top" type="pageNum">249</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14256,7 +14549,8 @@
             <lb/>
             <fw place="bottom" type="catch">Lobt</fw>
             <lb/>
-            <pb facs="30218270" n="250"/>
+            <pb facs="30218270" n="250"/>
+
             <fw place="top" type="pageNum">250</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14333,7 +14627,8 @@
             <lb/>
             <fw place="bottom" type="catch">O ihr</fw>
             <lb/>
-            <pb facs="30218271" n="251"/>
+            <pb facs="30218271" n="251"/>
+
             <anchor xml:id="a202"/><fw place="top" type="pageNum">251</fw><note type="annotation" targetEnd="a202"><p>2 in der SBB relativ deutlich, 5 und 1 nicht mehr als hier</p></note>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14410,7 +14705,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ohn</fw>
             <lb/>
-            <pb facs="30218272" n="252"/>
+            <pb facs="30218272" n="252"/>
+
             <fw place="top" type="pageNum">252</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14487,7 +14783,8 @@
             <lb/>
             <fw place="bottom" type="catch">Zu&#x366;</fw>
             <lb/>
-            <pb facs="30218273" n="253"/>
+            <pb facs="30218273" n="253"/>
+
             <fw place="top" type="pageNum">253</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14564,7 +14861,8 @@
             <lb/>
             <fw place="bottom" type="catch">Lobt</fw>
             <lb/>
-            <pb facs="30218274" n="254"/>
+            <pb facs="30218274" n="254"/>
+
             <fw place="top" type="pageNum">254</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14624,7 +14922,8 @@
             <anchor xml:id="a208"/>ü<note type="annotation" targetEnd="a208"><p>Auf der folgenden Seite ist das u grossgeschrieben.</p></note>ber
             
             <lb/>
-            <pb facs="30218275" n="255"/>
+            <pb facs="30218275" n="255"/>
+
             <fw place="top" type="pageNum">255</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14680,7 +14979,8 @@
             <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>ber</fw>
             
             <lb/>
-            <pb facs="30218276" n="256"/>
+            <pb facs="30218276" n="256"/>
+
             <fw place="top" type="pageNum">256</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14749,7 +15049,8 @@
             <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>ber</fw>
             
             <lb/>
-            <pb facs="30218277" n="257"/>
+            <pb facs="30218277" n="257"/>
+
             <fw place="top" type="pageNum">257</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14817,7 +15118,8 @@
             <fw place="bottom" type="catch">Jn</fw>
             
             <lb/>
-            <pb facs="30218278" n="258"/>
+            <pb facs="30218278" n="258"/>
+
             <fw place="top" type="pageNum">258</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -14873,7 +15175,8 @@
             <fw place="bottom" type="catch">Jam-</fw>
             
             <lb break="no"/>
-            <pb facs="30218279" n="259"/>
+            <pb facs="30218279" n="259"/>
+
             <fw place="top" type="pageNum">259</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -14943,7 +15246,8 @@
             Alle werden nach dem tod/ ſternenho&#x364;her/ ewig ſchweben
             
             <lb/>
-            <pb facs="30218280" n="260"/>
+            <pb facs="30218280" n="260"/>
+
             <fw place="top" type="pageNum">260</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15002,7 +15306,8 @@
             <lb/>
             <fw place="bottom" type="catch">der</fw>
             <lb/>
-            <pb facs="30218281" n="261"/>
+            <pb facs="30218281" n="261"/>
+
             <fw place="top" type="pageNum">261</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15080,7 +15385,8 @@
             <fw place="bottom" type="catch">Junger</fw>
             
             <lb/>
-            <pb facs="30218282" n="262"/>
+            <pb facs="30218282" n="262"/>
+
             <fw place="top" type="pageNum">262</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15154,7 +15460,8 @@
             <fw place="bottom" type="catch"><anchor xml:id="a215"/>Hier<note type="annotation" targetEnd="a215"><p>Das Erste auf der folgenden Seite ist „Uber“</p></note></fw>
             
             <lb/>
-            <pb facs="30218283" n="263"/>
+            <pb facs="30218283" n="263"/>
+
             <fw place="top" type="pageNum">263</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15220,7 +15527,8 @@
             <lb/>
             <fw place="bottom" type="catch">Durch</fw>
             <lb/>
-            <pb facs="30218284" n="264"/>
+            <pb facs="30218284" n="264"/>
+
             <fw place="top" type="pageNum">264</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15283,7 +15591,8 @@
             <lb/>
             <fw place="bottom" type="catch">Er</fw>
             <lb/>
-            <pb facs="30218285" n="265"/>
+            <pb facs="30218285" n="265"/>
+
             <fw place="top" type="pageNum">265</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15347,7 +15656,8 @@
             <fw place="bottom" type="catch"><anchor xml:id="a219"/>Was<note type="annotation" targetEnd="a219"><p>Auf der folgenden Seite gibt es vor „Was“ die Zahl „8.“.</p></note></fw>
             
             <lb/>
-            <pb facs="30218286" n="266"/>
+            <pb facs="30218286" n="266"/>
+
             <fw place="top" type="pageNum">266</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15421,7 +15731,8 @@
             <fw place="bottom" type="catch">Geiſt.</fw>
             
             <lb/>
-            <pb facs="30218287" n="267"/>
+            <pb facs="30218287" n="267"/>
+
             <fw place="top" type="pageNum">267</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15498,7 +15809,8 @@
             <hi rendition="#aq">U</hi>ber
             
             <lb/>
-            <pb facs="30218288" n="268"/>
+            <pb facs="30218288" n="268"/>
+
             <fw place="top" type="pageNum">268</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15570,7 +15882,8 @@
             <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>ber</fw>
             
             <lb/>
-            <pb facs="30218289" n="269"/>
+            <pb facs="30218289" n="269"/>
+
             <fw place="top" type="pageNum">269</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15642,7 +15955,8 @@
             <hi rendition="#aq">U</hi>ber
             
             <lb/>
-            <pb facs="30218290" n="270"/>
+            <pb facs="30218290" n="270"/>
+
             <fw place="top" type="pageNum">270</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15710,7 +16024,8 @@
             <lb/>
             <fw place="bottom" type="catch">daß</fw>
             <lb/>
-            <pb facs="30218291" n="271"/>
+            <pb facs="30218291" n="271"/>
+
             <fw place="top" type="pageNum">271</fw>
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15778,7 +16093,8 @@
             <fw place="bottom" type="catch">Wir</fw>
             
             <lb/>
-            <pb facs="30218292" n="272"/>
+            <pb facs="30218292" n="272"/>
+
             <fw place="top" type="pageNum">272</fw>
             <lb/>
             <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
@@ -15819,7 +16135,8 @@
             <fw place="bottom" type="catch">Folgen</fw>
             
             <lb/>
-            <pb facs="30218293" n="[273]"/>
+            <pb facs="30218293" n="[273]"/>
+
             Folgen
             <lb/>
             allerhand vierſtimmige/ neü-
@@ -15829,7 +16146,8 @@
             <fw place="bottom" type="pageNum">T</fw>
             
             <lb/>
-            <pb facs="30218294" n="274"/>
+            <pb facs="30218294" n="274"/>
+
             <fw place="top" type="pageNum">274</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15856,7 +16174,8 @@
             <lb/>
             wan ehliche menſchen geleichen ſinns ſeind.
             <lb/>
-            <pb facs="30218295" n="275"/>
+            <pb facs="30218295" n="275"/>
+
             <fw place="top" type="pageNum">275</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -15888,7 +16207,8 @@
             <fw place="bottom" type="catch">So</fw>
             
             <lb/>
-            <pb facs="30218296" n="276"/>
+            <pb facs="30218296" n="276"/>
+
             <fw place="top" type="pageNum">276</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -15954,7 +16274,8 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a224"/>Darum<note type="annotation" targetEnd="a224"><p>Das Erste auf der folgenden Seite ist eine 3.</p></note></fw>
             <lb/>
-            <pb facs="30218297" n="277"/>
+            <pb facs="30218297" n="277"/>
+
             <fw place="top" type="pageNum">277</fw>
             <lb/>
             <fw place="top" type="header">Geſ<anchor xml:id="a225"/>a&#x364;<note type="annotation" targetEnd="a225"><p>das kleine e ist in der SBB deutlicher</p></note>nge.</fw>
@@ -16017,7 +16338,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218298" n="278"/>
+            <pb facs="30218298" n="278"/>
+
             <fw place="top" type="pageNum">278</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16084,7 +16406,8 @@
             <lb/>
             <fw place="bottom" type="catch">diſer</fw>
             <lb/>
-            <pb facs="30218299" n="279"/>
+            <pb facs="30218299" n="279"/>
+
             <fw place="top" type="pageNum">279</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16154,7 +16477,8 @@
             <lb/>
             <fw place="bottom" type="catch">ſie</fw>
             <lb/>
-            <pb facs="30218300" n="280"/>
+            <pb facs="30218300" n="280"/>
+
             <fw place="top" type="pageNum">280</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16219,12 +16543,15 @@
             du geliebeſt über gold/
             <lb/>
             dir verbleib' ich einig hold:
-            <lb/>
+            <lb/>
+
             Dorothea.
-            <lb/>
+            <lb/>
+
             <fw place="bottom" type="catch">fro&#x364;mde</fw>
             <lb/>
-            <pb facs="30218301" n="281"/>
+            <pb facs="30218301" n="281"/>
+
             <fw place="top" type="pageNum">281</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16270,11 +16597,13 @@
             daß ihr Leibesfrüchte ſehet/
             <lb/>
             alt zur Himmelsfreüd eyngehet!
-            <lb/>
+            <lb/>
+
             Johannes.
             
             <lb/>
-            <pb facs="30218302" n="282"/>
+            <pb facs="30218302" n="282"/>
+
             <fw place="top" type="pageNum">282</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16301,7 +16630,8 @@
             <lb/>
             ſta&#x364;rket hertz und glider/ und alle ſinn erfreüt<anchor xml:id="a229"/><unclear>.</unclear><note type="annotation" targetEnd="a229"><p>könnte auch, verglichen mit der SBB, ein Strichpunkt sein</p></note>
             <lb/>
-            <pb facs="30218303" n="283"/>
+            <pb facs="30218303" n="283"/>
+
             <fw place="top" type="pageNum">283</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16328,7 +16658,8 @@
             <lb/>
             ſta&#x364;rket hertz und glider/ und alle ſinn erfreüt.
             <lb/>
-            <pb facs="30218304" n="284"/>
+            <pb facs="30218304" n="284"/>
+
             <fw place="top" type="pageNum">284</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16355,7 +16686,8 @@
             <lb/>
             Er kommet von Him&#x342;len/ zu&#x366;wohnen hieniden.
             <lb/>
-            <pb facs="30218305" n="285"/>
+            <pb facs="30218305" n="285"/>
+
             <fw place="top" type="pageNum">285</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16382,7 +16714,8 @@
             <lb/>
             Er kommet von Him&#x342;len/ zu&#x366;wohnen hieniden.
             <lb/>
-            <pb facs="30218306" n="286"/>
+            <pb facs="30218306" n="286"/>
+
             <fw place="top" type="pageNum">286</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16421,7 +16754,8 @@
             <lb/>
             mir vorgenommen hab.
             <lb/>
-            <pb facs="30218307" n="287"/>
+            <pb facs="30218307" n="287"/>
+
             <fw place="top" type="pageNum">287</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16461,7 +16795,8 @@
             mir vorgenommen hab.
             
             <lb/>
-            <pb facs="30218308" n="288"/>
+            <pb facs="30218308" n="288"/>
+
             <fw place="top" type="pageNum">288</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16531,7 +16866,8 @@
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a234"/>zum<note type="annotation" targetEnd="a234"><p>ist in der SBB etwas besser zu erkennen</p></note></fw>
             <lb/>
-            <pb facs="30218309" n="289"/>
+            <pb facs="30218309" n="289"/>
+
             <fw place="top" type="pageNum">289</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16602,7 +16938,8 @@
             <fw place="bottom" type="catch"><anchor xml:id="a235"/>Ach<note type="annotation" targetEnd="a235"><p>„Ach“ ist nicht das Erste auf der folgenden Seite.</p></note></fw>
             
             <lb/>
-            <pb facs="30218310" n="290"/>
+            <pb facs="30218310" n="290"/>
+
             <fw place="top" type="pageNum">290</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16639,7 +16976,8 @@
             <lb/>
             und wie das verwelklich graß.
             <lb/>
-            <pb facs="30218311" n="291"/>
+            <pb facs="30218311" n="291"/>
+
             <fw place="top" type="pageNum">291</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16676,7 +17014,8 @@
             <lb/>
             <fw place="bottom" type="pageNum"><hi rendition="#aq">U</hi> ij</fw>
             <lb/>
-            <pb facs="30218312" n="292"/>
+            <pb facs="30218312" n="292"/>
+
             <fw place="top" type="pageNum">292</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16711,7 +17050,8 @@
             <lb/>
             und wie das verwelklich graß.
             <lb/>
-            <pb facs="30218313" n="293"/>
+            <pb facs="30218313" n="293"/>
+
             <fw place="top" type="pageNum">293</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16748,7 +17088,8 @@
             <lb/>
             <fw place="bottom" type="pageNum"><hi rendition="#aq">U</hi> iij</fw>
             <lb/>
-            <pb facs="30218314" n="294"/>
+            <pb facs="30218314" n="294"/>
+
             <fw place="top" type="pageNum">294</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16773,7 +17114,8 @@
             <lb/>
             des Kindeleins zu&#x366; Bethlehem.
             <lb/>
-            <pb facs="30218315" n="295"/>
+            <pb facs="30218315" n="295"/>
+
             <fw place="top" type="pageNum">295</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16796,7 +17138,8 @@
             <lb/>
             des Kindeleins zu&#x366; Bethlehem.
             <lb/>
-            <pb facs="30218316" n="296"/>
+            <pb facs="30218316" n="296"/>
+
             <fw place="top" type="pageNum">296</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16819,7 +17162,8 @@
             <lb/>
             des Kindeleins zu&#x366; Bethlehem.
             <lb/>
-            <pb facs="30218317" n="297"/>
+            <pb facs="30218317" n="297"/>
+
             <fw place="top" type="pageNum">297</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16843,7 +17187,8 @@
             des Kindeleins zu&#x366; Bethlehem.
             
             <lb/>
-            <pb facs="30218318" n="298"/>
+            <pb facs="30218318" n="298"/>
+
             <fw place="top" type="pageNum">298</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -16910,7 +17255,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>8</num> Des</fw>
             <lb/>
-            <pb facs="30218319" n="299"/>
+            <pb facs="30218319" n="299"/>
+
             <fw place="top" type="pageNum">299</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -16980,7 +17326,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>17</num> Er</fw>
             <lb/>
-            <pb facs="30218320" n="300"/>
+            <pb facs="30218320" n="300"/>
+
             <fw place="top" type="pageNum">300</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17050,7 +17397,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>2<choice><sic>9</sic><corr>6</corr></choice></num> Gold/</fw>
             <lb/>
-            <pb facs="30218321" n="301"/>
+            <pb facs="30218321" n="301"/>
+
             <fw place="top" type="pageNum">301</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17109,7 +17457,8 @@
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>IX.</num> Cantus.</hi></head></fw>
             <lb/>
-            <pb facs="30218322" n="302"/>
+            <pb facs="30218322" n="302"/>
+
             <fw place="top" type="pageNum">30<choice><sic>3</sic><corr>2</corr></choice></fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17152,7 +17501,8 @@
             <lb/>
             durch die ſo hoch verbottne ſpeiß/
             <lb/>
-            <pb facs="30218323" n="303"/>
+            <pb facs="30218323" n="303"/>
+
             <fw place="top" type="pageNum">30<choice><sic>2</sic><corr>3</corr></choice></fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17195,7 +17545,8 @@
             <lb/>
             durch die ſo hoch verbottne ſpeiß/
             <lb/>
-            <pb facs="30218324" n="304"/>
+            <pb facs="30218324" n="304"/>
+
             <fw place="top" type="pageNum">304</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17225,7 +17576,8 @@
             <lb/>
             do war es ſo geſtifftet.
             <lb/>
-            <pb facs="30218325" n="305"/>
+            <pb facs="30218325" n="305"/>
+
             <fw place="top" type="pageNum">305</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17254,7 +17606,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">X</fw>
             <lb/>
-            <pb facs="30218326" n="306"/>
+            <pb facs="30218326" n="306"/>
+
             <fw place="top" type="pageNum">306</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17320,7 +17673,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>3</num> Wo</fw>
             <lb/>
-            <pb facs="30218327" n="307"/>
+            <pb facs="30218327" n="307"/>
+
             <fw place="top" type="pageNum">307</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17392,7 +17746,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218328" n="308"/>
+            <pb facs="30218328" n="308"/>
+
             <fw place="top" type="pageNum">308</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17461,7 +17816,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>8</num> Sie</fw>
             <lb/>
-            <pb facs="30218329" n="309"/>
+            <pb facs="30218329" n="309"/>
+
             <fw place="top" type="pageNum">309</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17533,7 +17889,8 @@
             <lb/>
             ero&#x364;f-
             <lb break="no"/>
-            <pb facs="30218330" n="310"/>
+            <pb facs="30218330" n="310"/>
+
             <fw place="top" type="pageNum">310</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17602,7 +17959,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>13</num> Auf/</fw>
             <lb/>
-            <pb facs="30218331" n="311"/>
+            <pb facs="30218331" n="311"/>
+
             <fw place="top" type="pageNum">311</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17674,7 +18032,8 @@
             <lb/>
             <fw place="bottom" type="catch">O/ nein<anchor xml:id="a247"/>!<note type="annotation" targetEnd="a247"><p>das Ausrufezeichen ist auch in der SBB nicht deutlich und gegen oben verschoben</p></note></fw>
             <lb/>
-            <pb facs="30218332" n="312"/>
+            <pb facs="30218332" n="312"/>
+
             <fw place="top" type="pageNum">312</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17743,7 +18102,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>18</num> Weil</fw>
             <lb/>
-            <pb facs="30218333" n="313"/>
+            <pb facs="30218333" n="313"/>
+
             <fw place="top" type="pageNum">313</fw>
             <lb/>
             <fw place="top" type="header">Geſ<anchor xml:id="a249"/>a&#x364;<note type="annotation" targetEnd="a249"><p>kleines e auch in der SBB nicht eindeutig</p></note>nge.</fw>
@@ -17813,7 +18173,8 @@
             <lb/>
             <fw place="bottom" type="catch">Wird</fw>
             <lb/>
-            <pb facs="30218334" n="314"/>
+            <pb facs="30218334" n="314"/>
+
             <fw place="top" type="pageNum">314</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -17882,7 +18243,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>2<anchor xml:id="a250"/>4<note type="annotation" targetEnd="a250"><p>die 24 stimmt eigentlich nicht überein mit der 23 auf der folgenden Seite (in der SBB der gleiche Fehler)</p></note></num> So</fw>
             <lb/>
-            <pb facs="30218335" n="315"/>
+            <pb facs="30218335" n="315"/>
+
             <fw place="top" type="pageNum">315</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -17952,7 +18314,8 @@
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
             <lb/>
-            <pb facs="30218336" n="316"/>
+            <pb facs="30218336" n="316"/>
+
             <fw place="top" type="pageNum">316</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18021,7 +18384,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>28</num> Pila-</fw>
             <lb break="no"/>
-            <pb facs="30218337" n="317"/>
+            <pb facs="30218337" n="317"/>
+
             <fw place="top" type="pageNum">317</fw>
             <lb/>
             <fw place="top" type="header">Gesa&#x364;nge.</fw>
@@ -18091,7 +18455,8 @@
             <lb/>
             <fw place="bottom" type="catch">deß</fw>
             <lb/>
-            <pb facs="30218338" n="318"/>
+            <pb facs="30218338" n="318"/>
+
             <fw place="top" type="pageNum">318</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18160,7 +18525,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>33</num> Diß</fw>
             <lb/>
-            <pb facs="30218339" n="319"/>
+            <pb facs="30218339" n="319"/>
+
             <fw place="top" type="pageNum">319</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18230,7 +18596,8 @@
             <lb/>
             <fw place="bottom" type="catch">Er</fw>
             <lb/>
-            <pb facs="30218340" n="320"/>
+            <pb facs="30218340" n="320"/>
+
             <fw place="top" type="pageNum">320</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18299,7 +18666,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>38</num> Vil</fw>
             <lb/>
-            <pb facs="30218341" n="321"/>
+            <pb facs="30218341" n="321"/>
+
             <fw place="top" type="pageNum">321</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18371,7 +18739,8 @@
             <lb/>
             <fw place="bottom" type="catch">ja/</fw>
             <lb/>
-            <pb facs="30218342" n="322"/>
+            <pb facs="30218342" n="322"/>
+
             <fw place="top" type="pageNum">322</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18440,7 +18809,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>43</num> Pilatus</fw>
             <lb/>
-            <pb facs="30218343" n="323"/>
+            <pb facs="30218343" n="323"/>
+
             <fw place="top" type="pageNum">323</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18512,7 +18882,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ha/</fw>
             <lb/>
-            <pb facs="30218344" n="324"/>
+            <pb facs="30218344" n="324"/>
+
             <fw place="top" type="pageNum">324</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18581,7 +18952,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>48</num> Das</fw>
             <lb/>
-            <pb facs="30218345" n="325"/>
+            <pb facs="30218345" n="325"/>
+
             <fw place="top" type="pageNum">325</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18653,7 +19025,8 @@
             <lb/>
             <fw place="bottom" type="catch">Ach/</fw>
             <lb/>
-            <pb facs="30218346" n="326"/>
+            <pb facs="30218346" n="326"/>
+
             <fw place="top" type="pageNum">326</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18722,7 +19095,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>53</num> Der</fw>
             <lb/>
-            <pb facs="30218347" n="327"/>
+            <pb facs="30218347" n="327"/>
+
             <fw place="top" type="pageNum">327</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18794,7 +19168,8 @@
             <lb/>
             <fw place="bottom" type="catch">Auch</fw>
             <lb/>
-            <pb facs="30218348" n="328"/>
+            <pb facs="30218348" n="328"/>
+
             <fw place="top" type="pageNum">328</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18863,7 +19238,8 @@
             <lb/>
             <fw place="bottom" type="catch"><num>58</num> Ma-</fw>
             <lb break="no"/>
-            <pb facs="30218349" n="329"/>
+            <pb facs="30218349" n="329"/>
+
             <fw place="top" type="pageNum">329</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -18933,7 +19309,8 @@
             <lb/>
             <fw place="bottom" type="catch">Jhr</fw>
             <lb/>
-            <pb facs="30218350" n="330"/>
+            <pb facs="30218350" n="330"/>
+
             <fw place="top" type="pageNum">330</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -18978,7 +19355,8 @@
             <fw place="bottom" type="catch">Kling-</fw>
             
             <lb break="no"/>
-            <pb facs="30218351" n="331"/>
+            <pb facs="30218351" n="331"/>
+
             <fw place="top" type="pageNum">331</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19032,7 +19410,8 @@
             Joh. Wilhelm Simler.
             
             <lb/>
-            <pb facs="30218352" n="332"/>
+            <pb facs="30218352" n="332"/>
+
             <fw place="top" type="pageNum">332</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19077,7 +19456,8 @@
             <lb/>
             Nichts ohne dich/ erfreüet mich: die Welt: mein Leib:
             <lb/>
-            <pb facs="30218353" n="333"/>
+            <pb facs="30218353" n="333"/>
+
             <fw place="top" type="pageNum">333</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19122,7 +19502,8 @@
             <lb/>
             Nichts ohne dich/ erfreüet mich: die Welt: mein Leib:
             <lb/>
-            <pb facs="30218354" n="334"/>
+            <pb facs="30218354" n="334"/>
+
             <fw place="top" type="pageNum">334</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19165,7 +19546,8 @@
             <lb break="no"/>
             neüert/ dich verneu&#x364;ert ſtehen.
             <lb/>
-            <pb facs="30218355" n="335"/>
+            <pb facs="30218355" n="335"/>
+
             <fw place="top" type="pageNum">335</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19208,7 +19590,8 @@
             <lb break="no"/>
             neüert/ dich verneu&#x364;ert ſtehen.
             <lb/>
-            <pb facs="30218356" n="336"/>
+            <pb facs="30218356" n="336"/>
+
             <fw place="top" type="pageNum">336</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19235,7 +19618,8 @@
             <lb/>
             O/ daß dem ſcho&#x364;nen klang/ O daß dem ſcho&#x364;nen klang/
             <lb/>
-            <pb facs="30218357" n="337"/>
+            <pb facs="30218357" n="337"/>
+
             <fw place="top" type="pageNum">337</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19264,7 +19648,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">Z</fw>
             <lb/>
-            <pb facs="30218358" n="338"/>
+            <pb facs="30218358" n="338"/>
+
             <fw place="top" type="pageNum">338</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19291,7 +19676,8 @@
             <lb/>
             Lobopfer Gott zu&#x366;bringen: Lobopfer/ Lobopfer Gott z<anchor xml:id="a276"/><unclear>u&#x366;</unclear><note type="annotation" targetEnd="a276"><p>könnte in der SBB wie auch hier ein ü sein</p></note>bringen.
             <lb/>
-            <pb facs="30218359" n="339"/>
+            <pb facs="30218359" n="339"/>
+
             <fw place="top" type="pageNum">339</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19320,7 +19706,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">Z ij</fw>
             <lb/>
-            <pb facs="30218360" n="340"/>
+            <pb facs="30218360" n="340"/>
+
             <fw place="top" type="pageNum">340</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19351,7 +19738,8 @@
             <lb/>
             und ſolt ihm gleich/ und ſolt ihm
             <lb/>
-            <pb facs="30218361" n="341"/>
+            <pb facs="30218361" n="341"/>
+
             <fw place="top" type="pageNum">341</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19384,7 +19772,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">Z iij</fw>
             <lb/>
-            <pb facs="30218362" n="342"/>
+            <pb facs="30218362" n="342"/>
+
             <fw place="top" type="pageNum">342</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19415,7 +19804,8 @@
             <lb/>
             und loben ſeinen Gott.
             <lb/>
-            <pb facs="30218363" n="343"/>
+            <pb facs="30218363" n="343"/>
+
             <fw place="top" type="pageNum">343</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19448,7 +19838,8 @@
             <lb/>
             <fw place="bottom" type="pageNum">Z iiij</fw>
             <lb/>
-            <pb facs="30218364" n="344"/>
+            <pb facs="30218364" n="344"/>
+
             <fw place="top" type="pageNum">344</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19479,7 +19870,8 @@
             <lb/>
             Herꝛen: benedeyt den Ko&#x364;nge der ehren/ benedeyt den Ko&#x364;nge der
             <lb/>
-            <pb facs="30218365" n="345"/>
+            <pb facs="30218365" n="345"/>
+
             <fw place="top" type="pageNum">345</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19510,7 +19902,8 @@
             <lb/>
             dem Herꝛen: benedeyt den Ko&#x364;nge der ehren ij
             <lb/>
-            <pb facs="30218366" n="346"/>
+            <pb facs="30218366" n="346"/>
+
             <fw place="top" type="pageNum">346</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19541,7 +19934,8 @@
             <lb/>
             ohne ſchertz/ opfert anietz ohne ſchertz/ ij opfert/ ij anietz/
             <lb/>
-            <pb facs="30218367" n="347"/>
+            <pb facs="30218367" n="347"/>
+
             <fw place="top" type="pageNum">347</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19572,7 +19966,8 @@
             <lb/>
             ohne ſchertz/ ij ij opfert<anchor xml:id="a287"/>/<note type="annotation" targetEnd="a287"><p>in der SBB eindeutig ein Komma</p></note> opfert anietz/
             <lb/>
-            <pb facs="30218368" n="348"/>
+            <pb facs="30218368" n="348"/>
+
             <fw place="top" type="pageNum">348</fw>
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
@@ -19599,7 +19994,8 @@
             <lb/>
             eigen/ ihm eigen/ eigen/ eigenes hertz.
             <lb/>
-            <pb facs="30218369" n="349"/>
+            <pb facs="30218369" n="349"/>
+
             <fw place="top" type="pageNum">349</fw>
             <lb/>
             <fw place="top" type="header">Geſa&#x364;nge.</fw>
@@ -19628,7 +20024,8 @@
             <lb/>
             <hi rendition="#g">ENDE.</hi>
             <lb/>
-            <pb facs="30218370"/>
+            <pb facs="30218370"/>
+
             Geſa&#x364;ngregiſter/
             <lb/>
             warinnen die vorder zal die Geſangweiſen/
@@ -19695,7 +20092,8 @@
             <lb/>
             <fw place="bottom" type="catch">Jhr</fw>
             <lb/>
-            <pb facs="30218371"/>
+            <pb facs="30218371"/>
+
             <fw place="top" type="header">Geſa&#x364;ngregiſter.</fw>
             <lb/>
             * 3. Jhr arme bedra&#x364;ngte/ begru&#x364;ſſet den Friden/ ꝛc. 284
@@ -19738,7 +20136,8 @@
             <lb/>
             <hi rendition="#g">ENDE.</hi>
             <lb/>
-            <pb facs="30218372"/>
+            <pb facs="30218372"/>
+
             Verbeſſerung
             <lb/>
             deren Fehleren/ ſo/ bey eylfertiger <choice><sic>überle-leſung/</sic><corr>überle-
@@ -19778,6 +20177,6 @@
             <pb facs="30218377"/>
             <pb facs="383"/>
          </div>
-      </body>
+            </body>
    </text>
 </TEI>
