@@ -33,12 +33,12 @@
             <pb facs="30218000"/>
             <pb facs="30218001"/>
             <pb facs="30218002"/>
-            <div type="frontispiece"><figure/><!-- NE: Titel im Frontispiz als halftitle kodieren?-->
+            <div type="frontispiece"><figure/>
                <epigraph><cit><quote>
                   <lg>
                      <l>Ein künſches Hertz mag mit Geſang/ mit Jnſtrument- vnd Seiten/</l>
                      <l>Ergetzen ſich/ vnd Gottes Lob bis in den tod außbreiten.</l>
-                  </lg></quote></cit></epigraph><!-- NE: Kodierung des Mottos als Epigraph so richtig?--></div>
+                  </lg></quote></cit></epigraph></div>
             <lb/>
             <pb facs="30218004"/>
             <pb facs="30218005"/>
@@ -82,7 +82,7 @@
             <milestone rendition="#hr" unit="section"/>
 
             <div type="dedication">
-            <p><!-- NE: Vielleicht besser list als p? -->
+            <p>
             <label>[iii.]</label> Denen hochgeachten/ wola&#x364;d-
             <lb break="no"/>
             len/ veſten/ frommen/ ehren-noht-
@@ -381,7 +381,7 @@
             
             <milestone unit="section" rendition="#hr"/><lb/>
 
-            <div type="letter"><!-- NE: Briefauszüge als Zitate kodieren? -->
+            <div type="letter">
             <head><label>[iv.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-
             <lb break="no"/>
             ſimi Viri,</hi>
@@ -457,42 +457,52 @@
             <hi rendition="#i">Sacrarum.</hi></hi></head>
             <lb/>
             <lg type="poem">
-               <hi rendition="#in">
-            <l>O</hi>Mnia perplacuere mihi, <hi rendition="#k"><hi rendition="#g">SIMLERE</hi></hi> diſerte,</l>
+               <l><hi rendition="#aq"><hi rendition="#in">
+            O</hi>Mnia perplacuere mihi, <hi rendition="#k"><hi rendition="#g">SIMLERE</hi></hi> diſerte,</hi></l>
             <lb/>
-            <l>Quæ volvenda mihi miſit amica manus.</l>
+            <l rendition="#et"><hi rendition="#aq">Quæ volvenda mihi miſit amica manus.</hi></l>
             <lb/>
-            <l>Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,</l>
+            <l><hi rendition="#aq">Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,</hi></l>
             <lb/>
-            <l>Tu tuba divinæ laudis es altiſona.</l>
+            <l rendition="#et"><hi rendition="#aq">Tu tuba divinæ laudis es altiſona.</hi></l>
             </lg>
             <lb/>
-            <hi rendition="#g">FELIX <hi rendition="#k">WYSSIVS</hi>,</hi>
+            <signed><hi rendition="#g">FELIX <hi rendition="#k">WYSSIVS</hi>,</hi></signed>
             <lb/>
-            Abbatiſſanæ Eccleſiæ Paſtor.</hi></div>
+            <signed><hi rendition="#aq">Abbatiſſanæ Eccleſiæ Paſtor.</hi></signed></div>
+            <lb/>
             
-            <lb/>
-            <label>[vii.]</label> <hi rendition="#aq"><num>II.</num>
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem">
+            <head><label>[vii.]</label> <hi rendition="#aq"><num>II.</num>
             <lb/>
             <hi rendition="#b">I</hi>oannes <hi rendition="#b"><choice><corr/><sic>VV</sic></choice></hi>ilelmus Simlerus.</hi>
             <lb/>
             <anchor xml:id="a2"/>α&#x313;ναγραμματιζόμενος<note type="annotation" targetEnd="a2"><p>Dieses griechische Wort muss noch geprüft werden.</p></note>,
             <lb/>
-            <hi rendition="#aq"><hi rendition="#b">I</hi>llen' vir ſuave melos Muſis?
+            <hi rendition="#aq"><hi rendition="#b">I</hi>llen' vir ſuave melos Muſis?</hi></head>
             <lb/>
-            <hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi>
+            <lg type="poem">
+            <l><hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi></l>
             <lb/>
-            Suave melos <hi rendition="#i">verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus, amat?</hi>
+            <l>Suave melos <hi rendition="#i">verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus, amat?</hi></l>
             <lb/>
-            <hi rendition="#i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi>
+            <l><hi rendition="#i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi></l>
             <lb/>
-            <hi rendition="#i">Suave melos verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus habet.</hi>
+            <l><hi rendition="#i">Suave melos verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus habet.</hi></l>
+            </lg>
             <lb/>
-            <hi rendition="#g">IOH. <hi rendition="#k">WIRZIVS</hi>,</hi> S. Th. Prof.
+            <signed><hi rendition="#g">IOH. <hi rendition="#k">WIRZIVS</hi>,</hi> S. Th. Prof.</signed>
             <lb/>
-            honoris c. f.</hi>
+            <signed><hi rendition="#g">honoris c. f.</hi></signed>
+            </div>
             <lb/>
-            <label>[viii.]</label> <hi rendition="#aq"><num>III.</num>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem">
+            <head><label>[viii.]</label> <hi rendition="#aq"><num>III.</num>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">JOANNES</hi> GUIELMUS SIMLERUS</hi>
             <lb/>
@@ -500,85 +510,96 @@
             <lb/>
             <hi rendition="#i">Per Anagramma.</hi>
             <lb/>
-            Anne Muſicus eriget hiſce: <hi rendition="#i">ut, re, mi, fa, ſol, la?</hi>
+            Anne Muſicus eriget hiſce: <hi rendition="#i">ut, re, mi, fa, ſol, la?</hi></hi></head>
             <lb/>
-            <hi rendition="#in">U</hi>T RElevet Mlſerum FAtum, SOLitóſque LAbores
+            <lg type="poem">
+            <l><hi rendition="#aq"><hi rendition="#in">U</hi>T RElevet Mlſerum FAtum, SOLitóſque LAbores</hi></l>
             <lb/>
-            MVSICVS ANNE notis abjectos ERIGET HISce?
+            <l><hi rendition="#aq">MVSICVS ANNE notis abjectos ERIGET HISce?</hi></l>
             <lb/>
-            Falleris: Eſt virtus major, Suadæq&#x301;ue medulla
+            <l><hi rendition="#aq">Falleris: Eſt virtus major, Suadæq&#x301;ue medulla</hi></l>
             <lb/>
-            Largo quam promit SIMLERIA pectore Muſa.
+            <l><hi rendition="#aq">Largo quam promit SIMLERIA pectore Muſa.</hi></l>
+            </lg>
             <lb/>
-            <hi rendition="#g"><hi rendition="#i">IOH. HENRICVS HOTTINGERVS,</hi></hi>
+            <signed><hi rendition="#g #aq"><hi rendition="#i">IOH. HENRICVS HOTTINGERVS,</hi></hi></signed>
             <lb/>
-            <hi rendition="#i">Eccleſ. Hiſtoriæ, Linguarum Orientalium,</hi>
+            <signed><hi rendition="#i #aq">Eccleſ. Hiſtoriæ, Linguarum Orientalium,</hi></signed>
             <lb/>
-            <hi rendition="#i">Artiúmque Logicarum in Collegio Carolino</hi>
+            <signed><hi rendition="#i #aq">Artiúmque Logicarum in Collegio Carolino</hi></signed>
             <lb/>
-            <hi rendition="#i">Profeſſor ordinarius.</hi></hi>
+            <signed><hi rendition="#i #aq">Profeſſor ordinarius.</hi></signed></div>
             <lb/>
             <pb facs="30218013"/>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
 
-            <label>[ix.]</label> <hi rendition="#aq"><num>IV.</num>
+            <div type="poem">
+            <head><label>[ix.]</label> <hi rendition="#aq"><num>IV.</num></hi></head>
             <lb/>
-            <hi rendition="#i"><hi rendition="#in">E</hi>St opus Angelicum laudes cantare Iehovæ,</hi>
+            <lg type="poem">
+            <l><hi rendition="#i #aq"><hi rendition="#in">E</hi>St opus Angelicum laudes cantare Iehovæ,</hi></l>
             <lb/>
-            <hi rendition="#i">Angelicus cantat facta ſtupenda chorus:</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Angelicus cantat facta ſtupenda chorus:</hi></l>
             <lb/>
-            <hi rendition="#i">Ingeminat, Sanctus, Sanctus, Sanctúsque reclamat,</hi>
+               <l><hi rendition="#i #aq">Ingeminat, Sanctus, Sanctus, Sanctúsque reclamat,</hi></l>
             <lb/>
-            <hi rendition="#i">Et nos ad laudes excitat ille Dei.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Et nos ad laudes excitat ille Dei.</hi></l>
             <lb/>
-            <hi rendition="#i">Illius Angelici inſiſtit veſtigia Cœtus,</hi>
+               <l><hi rendition="#i #aq">Illius Angelici inſiſtit veſtigia Cœtus,</hi></l>
             <lb/>
-            <hi rendition="#i">Excelſi quisquis facta ſtupenda canit.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Excelſi quisquis facta ſtupenda canit.</hi></l>
             <lb/>
-            <hi rendition="#i">Hoc quoque</hi> Simlerum <hi rendition="#i">felicem nomine duco,</hi>
+               <l><hi rendition="#i #aq">Hoc quoque</hi> Simlerum <hi rendition="#i">felicem nomine duco,</hi></l>
             <lb/>
-            <hi rendition="#i">Quòd pubi noſtræ carmina ſancta ferat.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Quòd pubi noſtræ carmina ſancta ferat.</hi></l>
             <lb/>
-            <hi rendition="#i">Is pueris dictat noſtris, noſtrísque puellis,</hi>
+               <l><hi rendition="#i #aq">Is pueris dictat noſtris, noſtrísque puellis,</hi></l>
             <lb/>
-            <hi rendition="#i">Queis poßint Dominum concelebrare modis.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Queis poßint Dominum concelebrare modis.</hi></l>
             <lb/>
-            <hi rendition="#i">Térque quatérque beatus erit, qui talia diſcet</hi>
+               <l><hi rendition="#i #aq">Térque quatérque beatus erit, qui talia diſcet</hi></l>
             <lb/>
-            <hi rendition="#i">Carmina, qui Domino cantica ſancta canet.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Carmina, qui Domino cantica ſancta canet.</hi></l>
             <lb/>
-            <hi rendition="#i">Qui non voce modò, tota ſed mente ſonabit</hi>
+               <l><hi rendition="#i #aq">Qui non voce modò, tota ſed mente ſonabit</hi></l>
             <lb/>
-            <hi rendition="#i">Divinum, Paulo ritè monente, melos.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Divinum, Paulo ritè monente, melos.</hi></l>
             <lb/>
-            <hi rendition="#i">„Non vox, ſed votum; non muſica chordula, ſed cor;</hi>
+               <l><hi rendition="#i #aq">„Non vox, ſed votum; non muſica chordula, ſed cor;</hi></l>
             <lb/>
-            <hi rendition="#i">„Non clamor, ſed amor clangit in aure Dei.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">„Non clamor, ſed amor clangit in aure Dei.</hi></l>
             <lb/>
-            <hi rendition="#i">Ille beatus erit, toto qui tempore vitæ</hi>
+               <l><hi rendition="#i #aq">Ille beatus erit, toto qui tempore vitæ</hi></l>
             <lb/>
-            <hi rendition="#i">Vitam ſinceram vixerit atque probam.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Vitam ſinceram vixerit atque probam.</hi></l>
             <lb/>
-            <hi rendition="#i">Ejus facta Deum pſallent pietate coruſca,</hi>
+               <l><hi rendition="#i #aq">Ejus facta Deum pſallent pietate coruſca,</hi></l>
             <lb/>
-            <hi rendition="#i">Hæc vitæ &amp; morum Muſica ſuavis erit.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Hæc vitæ &amp; morum Muſica ſuavis erit.</hi></l>
             <lb/>
-            <hi rendition="#i">Cœleſtem ille Patrem per ſecla perennia tandem</hi>
+               <l><hi rendition="#i #aq">Cœleſtem ille Patrem per ſecla perennia tandem</hi></l>
             <lb/>
-            <hi rendition="#i">Cantabit, ſcandens culmina celſa poli.</hi>
+               <l rendition="#et"><hi rendition="#i #aq">Cantabit, ſcandens culmina celſa poli.</hi></l>
+            </lg>
             <lb/>
-            Dilectiſſimo D. Affini modulabar
+            <signed><hi rendition="#aq">Dilectiſſimo D. Affini modulabar</hi></signed>
             <lb/>
-            <hi rendition="#g">IOH. RODOLPHVS HOFMEISTERVS,</hi>
+            <signed><hi rendition="#g #aq">IOH. RODOLPHVS HOFMEISTERVS,</hi></signed>
             <lb/>
-            V. D. M. &amp; Profeſſor Græco-Latinus.</hi>
+            <signed><hi rendition="#aq">V. D. M. &amp; Profeſſor Græco-Latinus.</hi></signed>
+            </div>
             <lb/>
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>V.</num></hi></head></fw>
             <lb/>
             <pb facs="30218014"/>
 
+            <milestone unit="section" rendition="#hr"/><lb/>
             
+            <div type="poem">
             <head><label>[x.]</label> <hi rendition="#aq"><num>V.</num></hi></head>
+            <lg type="poem">
             <lb/>
             <lb/>
             <lb/>
@@ -597,85 +618,101 @@
             <lb/>
             <lb/>
             <lb/>
-            <hi rendition="#aq">Honoris c. f.</hi>
+            </lg>
+            <signed><hi rendition="#aq">Honoris c. f.</hi></signed>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#g">IOHANNES CASPARVS SVIZERVS,</hi></hi>
+            <signed><hi rendition="#aq"><hi rendition="#g">IOHANNES CASPARVS SVIZERVS,</hi></hi></signed>
             <lb/>
-            <hi rendition="#aq">Collegii Neo-parth. Inſpector, &amp; Theolog. Ca-</hi>
+            <signed><hi rendition="#aq">Collegii Neo-parth. Inſpector, &amp; Theolog. Ca-</hi></signed>
             <lb break="no"/>
-            <hi rendition="#aq">techet. in Auditorio Hum. Prof.</hi>
+            <signed><hi rendition="#aq">techet. in Auditorio Hum. Prof.</hi></signed>
+            </div>
             <lb/>
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>VI.</num> In</hi></head></fw>
             <lb/>
             <pb facs="30218015"/>
-
             
-            <head><label>[xvii.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
-            <lb/>
-            <hi rendition="#aq"><hi rendition="#i">In laudem Autoris, &amp;c.</hi></hi>
-            <lb/>
+            <milestone unit="section" rendition="#hr"/><lb/>
             
-            <head><hi rendition="#aq"><num>1.</num></hi></head>
+            <div type="poem">
+            <head><label>[xvii.]</label> <hi rendition="#aq"><num>VI.</num></hi>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#in">A</hi>Ut prodeſſe volunt, aut delectare Poëtæ,</hi>
-            <lb/>
-            <hi rendition="#aq">Autor id hoc libro præſtat utrúmque ſuo:</hi>
-            <lb/>
-            <hi rendition="#aq">Miſcet enim dextrè metrum, melos: utile, dulce,</hi>
-            <lb/>
-            <hi rendition="#aq">Omne proin punctum nemo tuliſſe neget.</hi>
+            <hi rendition="#aq"><hi rendition="#i">In laudem Autoris, &amp;c.</hi></hi></head>
             <lb/>
             
-            <head><hi rendition="#aq"><num>2.</num></hi></head>
+            <lg type="poem">
+            <lg n="1"><head><hi rendition="#aq"><num>1.</num></hi></head>
             <lb/>
-            <hi rendition="#aq">Utile quisquis amas, ac audis ſuave libenter,</hi>
+            <l><hi rendition="#aq"><hi rendition="#in">A</hi>Ut prodeſſe volunt, aut delectare Poëtæ,</hi></l>
             <lb/>
-            <hi rendition="#aq">Utile volve metrum hoc, hoc cane ſuave melos:</hi>
+            <l rendition="#et"><hi rendition="#aq">Autor id hoc libro præſtat utrúmque ſuo:</hi></l>
             <lb/>
-            <hi rendition="#aq">Quin metro, cantu, alterutrum, ſeu quæris utrúmque,</hi>
+            <l><hi rendition="#aq">Miſcet enim dextrè metrum, melos: utile, dulce,</hi></l>
             <lb/>
-            <hi rendition="#aq">Utile, ſuave ſatis; Lector; utrinque patet.</hi>
+            <l rendition="#et"><hi rendition="#aq">Omne proin punctum nemo tuliſſe neget.</hi></l></lg>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#i">Sinceræ affinitatis ergò poſuit</hi></hi>
+            
+            <lg n="2"><head><hi rendition="#aq"><num>2.</num></hi></head>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#g">IACOBVS REDINGERVS,</hi></hi>
+            <l><hi rendition="#aq">Utile quisquis amas, ac audis ſuave libenter,</hi></l>
             <lb/>
-            <hi rendition="#aq">Paſtor Dieticonenſis.</hi>
+            <l rendition="#et"><hi rendition="#aq">Utile volve metrum hoc, hoc cane ſuave melos:</hi></l>
             <lb/>
-            <label>[xviii.]</label> <hi rendition="#aq"><num>VII.</num>
+            <l><hi rendition="#aq">Quin metro, cantu, alterutrum, ſeu quæris utrúmque,</hi></l>
             <lb/>
-            <hi rendition="#i"><hi rendition="#in">N</hi>Il faciunt nugæ; nec inania ſcripta Sophorum</hi>
+            <l rendition="#et"><hi rendition="#aq">Utile, ſuave ſatis; Lector; utrinque patet.</hi></l></lg>
+            </lg>
             <lb/>
-            <hi rendition="#i">Exhilarare hominum pectora mœſta queunt:</hi>
+            <signed><hi rendition="#aq"><hi rendition="#i">Sinceræ affinitatis ergò poſuit</hi></hi></signed>
             <lb/>
-            <hi rendition="#i"><hi rendition="#g">SIMLERI</hi> ast opus hoc, &amp; ſancta poëmata quemvis</hi>
+            <signed><hi rendition="#aq"><hi rendition="#g">IACOBVS REDINGERVS,</hi></hi></signed>
             <lb/>
-            <hi rendition="#i">Exhilarant mirâ dexteritatis ope.</hi>
+            <signed><hi rendition="#aq">Paſtor Dieticonenſis.</hi></signed>
+            </div>
             <lb/>
-            <hi rendition="#i">Exhilarant Muliebre Genus; Genus atque Virile;</hi>
+            
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem">
+            <head><label>[xviii.]</label> <hi rendition="#aq"><num>VII.</num></hi></head>
             <lb/>
-            <hi rendition="#i">Exhilarant Iuvenes; Exhilarántque Senes.</hi>
+            <lg type="poem">
+            <l><hi rendition="#i #aq"><hi rendition="#in">N</hi>Il faciunt nugæ; nec inania ſcripta Sophorum</hi></l>
             <lb/>
-            <hi rendition="#i">Hinc opus hoc meritò (rumpantur ut ilia momo)</hi>
+            <l rendition="#et"><hi rendition="#i #aq">Exhilarare hominum pectora mœſta queunt:</hi></l>
             <lb/>
-            <hi rendition="#i">Terra Propinqua cupit; Terra Remota cupit.</hi>
+            <l><hi rendition="#i #aq"><hi rendition="#g">SIMLERI</hi> ast opus hoc, &amp; ſancta poëmata quemvis</hi></l>
             <lb/>
-            Obſervantiæ &amp; neceſſitudinis ergò appoſui<supplied>t</supplied>
+            <l rendition="#et"><hi rendition="#i #aq">Exhilarant mirâ dexteritatis ope.</hi></l>
             <lb/>
-            Affinis addictiſſimus
+            <l><hi rendition="#i #aq">Exhilarant Muliebre Genus; Genus atque Virile;</hi></l>
             <lb/>
-            <hi rendition="#g">IOHANNES BLASSIVS,</hi> Tigurinus,
+            <l rendition="#et"><hi rendition="#i #aq">Exhilarant Iuvenes; Exhilarántque Senes.</hi></l>
             <lb/>
-            Vitoduranorum Diaconus.</hi>
+            <l><hi rendition="#i #aq">Hinc opus hoc meritò (rumpantur ut ilia momo)</hi></l>
+            <lb/>
+            <l rendition="#et"><hi rendition="#i #aq">Terra Propinqua cupit; Terra Remota cupit.</hi></l>
+            </lg>
+            <lb/>
+            <signed><hi rendition="#aq">Obſervantiæ &amp; neceſſitudinis ergò appoſui<supplied>t</supplied>
+            <lb/>
+            Affinis addictiſſimus</hi></signed>
+            <lb/>
+            <signed><hi rendition="#aq"><hi rendition="#g">IOHANNES BLASSIVS,</hi> Tigurinus,
+            <lb/>
+            Vitoduranorum Diaconus.</hi></signed>
+            </div>
             <lb/>
             
             <fw place="bottom" type="catch"><head><hi rendition="#aq"><num>VIII.</num></hi></head></fw>
             <lb/>
             <pb facs="30218016"/>
 
+            <milestone unit="section" rendition="#hr"/><lb/>
             
-            <head><label>[xix.]</label> <hi rendition="#aq"><num>VIII.</num></hi></head>
+            <div type="poem">
+            <head><label>[xix.]</label> <hi rendition="#c"><hi rendition="#aq"><num>VIII.</num></hi>
             <lb/>
             Zu&#x366; ehren und lobwürdigem ru&#x366;hm
             <lb/>
@@ -687,54 +724,58 @@
             <lb break="no"/>
             nico</hi> zu&#x366; Zürich/ über ſeine außgangne Poe-
             <lb break="no"/>
-            tiſche Getichte und Geſa&#x364;nge.
+            tiſche Getichte und Geſa&#x364;nge.</hi></head>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET.</hi></hi></hi>
+            <head><hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET.</hi></hi></hi></head>
             <lb/>
-            <hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h und fleiß nicht
+            <lg type="poem">
+            <l><hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h und fleiß nicht
             <lb/>
-            ſpahret
+            ſpahret</l>
             <lb/>
-            An zarten Pfla&#x364;ntzleinen/ nimt weg was vnnütz iſt/
+            <l>An zarten Pfla&#x364;ntzleinen/ nimt weg was vnnütz iſt/</l>
             <lb/>
-            Was gu&#x366;t/ er auferzeücht/ daß ihnen nichts gebriſt:
+            <l>Was gu&#x366;t/ er auferzeücht/ daß ihnen nichts gebriſt:</l>
             <lb/>
-            An Zierd/ an Fruchtbarkeit ein ſo&#x364;lches man erfahret.
+            <l>An Zierd/ an Fruchtbarkeit ein ſo&#x364;lches man erfahret.</l>
             <lb/>
-            Vilmehr lobwürdig iſt der wachtbarlich bewahret
+            <l rendition="#et">Vilmehr lobwürdig iſt der wachtbarlich bewahret</l>
             <lb/>
-            Die Jugend ihm vertrawt; damit ſie bleib gefriſt
+            <l>Die Jugend ihm vertrawt; damit ſie bleib gefriſt</l>
             <lb/>
-            Vor dem was ſie verfu&#x364;hrt/ vnd werde aufgefriſcht
+            <l>Vor dem was ſie verfu&#x364;hrt/ vnd werde aufgefriſcht</l>
             <lb/>
-            Zur Tugend/ Gottesforcht; eh daß ſie wird verjahret.
+            <l>Zur Tugend/ Gottesforcht; eh daß ſie wird verjahret.</l>
             <lb/>
-            <hi rendition="#b">Simler</hi> deß Meiſter iſt mit ſeiner Tiſcheszucht/
+            <l rendition="#et"><hi rendition="#b">Simler</hi> deß Meiſter iſt mit ſeiner Tiſcheszucht/</l>
             <lb/>
-            Die bey der jungen Welt wird/ würklich/ bringen frucht/
+            <l>Die bey der jungen Welt wird/ würklich/ bringen frucht/</l>
             <lb/>
-            Eyfrig er auch abmahnt vom vngeſunden Sauffen:
+            <l>Eyfrig er auch abmahnt vom vngeſunden Sauffen:</l>
             <lb/>
-            Erbawlich ſchaffet freud mit allerley Geſang/
+            <l rendition="#et">Erbawlich ſchaffet freud mit allerley Geſang/</l>
             <lb/>
-            An jenes ſtatt; vorauß mit Davids Harffenklang:
+            <l>An jenes ſtatt; vorauß mit Davids Harffenklang:</l>
             <lb/>
-            Sein Lob/ <hi rendition="#b">Zürich</hi> zu&#x366; Lob/ wird immerzu&#x366; ſich hauffen.
+            <l>Sein Lob/ <hi rendition="#b">Zürich</hi> zu&#x366; Lob/ wird immerzu&#x366; ſich hauffen.</l>
+            </lg>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#g">DANIEL RHAGORIVS,</hi></hi>
+            <signed><hi rendition="#aq #g #c"><hi rendition="#g">DANIEL RHAGORIVS,</hi></hi></signed>
             <lb/>
-            Loblicher Statt Bern geweſener Vogt
+            <signed><hi rendition="#right">Loblicher Statt Bern geweſener Vogt
             <lb/>
-            zu Gottſtatt und Thorberg.
+            zu Gottſtatt und Thorberg.</hi></signed></div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>IX.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
             <pb facs="30218017"/>
 
+            <milestone unit="section" rendition="#hr"/><lb/>
             
-            <head><label>[xi.]</label> <hi rendition="#aq"><num>IX.</num></hi></head>
+            <div type="poem">
+            <head><label>[xi.]</label> <hi rendition="#aq #c"><num>IX.</num></hi>
             <lb/>
-            <hi rendition="#aq">U</hi>ber Herꝛn Dichters namen
+            <hi rendition="#c"><hi rendition="#aq">U</hi>ber Herꝛn Dichters namen
             <lb/>
             Bu&#x366;chſtabwa&#x364;chſel
             <lb/>
@@ -746,224 +787,232 @@
             <lb/>
             und
             <lb/>
-            Lobſpruch.
+            Lobſpruch.</hi></head>
             <lb/>
-            <hi rendition="#b"><hi rendition="#in">H</hi>Erꝛ Simler</hi> euer mehl Wird finden ſeinen preiſS
+            <lg type="poem">
+            <l><hi rendition="#b"><hi rendition="#in">H</hi>Erꝛ Simler</hi> euer mehl Wird finden ſeinen preiſS</l>
             <lb/>
-            beym <hi rendition="#b">fruchtbereichten volk/</hi> dieweil mit ſonderm fleiß
+            <l>beym <hi rendition="#b">fruchtbereichten volk/</hi> dieweil mit ſonderm fleiß</l>
             <lb/>
-            Jhr trachtet/ daß es rein; Ja ſimmelweiſſe ſeJ
+            <l>Jhr trachtet/ daß es rein; Ja ſimmelweiſſe ſeJ</l>
             <lb/>
-            darunter nichts verma&#x364;ngt von tra&#x364;bern oder kley.
+            <l>darunter nichts verma&#x364;ngt von tra&#x364;bern oder kley.</l>
             <lb/>
-            O ſcho&#x364;ne ſchreibensart Lehrꝛeicher reden bluM
+            <l>O ſcho&#x364;ne ſchreibensart Lehrꝛeicher reden bluM</l>
             <lb/>
-            wodurch zur ſonnen ſteigt der <hi rendition="#b">Teutſchen Sprache</hi> ruhm.
+            <l>wodurch zur ſonnen ſteigt der <hi rendition="#b">Teutſchen Sprache</hi> ruhm.</l>
             <lb/>
-            Hier eine quell ohn ſchlam&#x303;; Holdſeligkeit ohn grimM
+            <l>Hier eine quell ohn ſchlam&#x303;; Holdſeligkeit ohn grimM</l>
             <lb/>
-            hier iſt nichts a&#x364;rgerlichs/ und daß ſich nicht gezim&#x342;.
+            <l>hier iſt nichts a&#x364;rgerlichs/ und daß ſich nicht gezim&#x342;.</l>
             <lb/>
-            Arbeitet deſſen viel Es iſt rein ſimmelmehL
+            <l>Arbeitet deſſen viel Es iſt rein ſimmelmehL</l>
             <lb/>
-            die dichtling fallen wol/ und flieſſen ohne fehl.
+            <l>die dichtling fallen wol/ und flieſſen ohne fehl.</l>
             <lb/>
-            Nur immer friſch daran; Laßt ſparen uns kein mu&#x364;hE
+            <l>Nur immer friſch daran; Laßt ſparen uns kein mu&#x364;hE</l>
             <lb/>
-            damit die <hi rendition="#b">Jndiſch Nuß</hi> auch diſer enden blu&#x364;he!
+            <l>damit die <hi rendition="#b">Jndiſch Nuß</hi> auch diſer enden blu&#x364;he!</l>
             <lb/>
-            Neidhart du tuhſt uns nichts. Man wird der Teutſchen ehR
+            <l>Neidhart du tuhſt uns nichts. Man wird der Teutſchen ehR</l>
             <lb/>
-            auß Pho&#x364;bus namenbuch außtilgen nimmermehr.
+            <l>auß Pho&#x364;bus namenbuch außtilgen nimmermehr.</l>
+            </lg>
             <lb/>
-            Geo&#x364;rg Müller/ Pfarꝛer zu&#x366; Tahlwe<anchor xml:id="a3"/><unclear>i</unclear><note type="annotation" targetEnd="a3"><p>Müsste eigentlich ein i sein, ist aber weder hier noch in der SBB klar von einem l zu unterscheiden</p></note>l/
+            <signed>Geo&#x364;rg Müller/ Pfarꝛer zu&#x366; Tahlwe<anchor xml:id="a3"/><unclear>i</unclear><note type="annotation" targetEnd="a3"><p>Müsste eigentlich ein i sein, ist aber weder hier noch in der SBB klar von einem l zu unterscheiden</p></note>l/
             <lb/>
-            am Zürichſee.
+            am Zürichſee.</signed></div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>X.</num></hi> Ob</fw>
             <lb/>
             <pb facs="30218018"/>
-
             
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem">
             <head><label>[xiv.]</label> <hi rendition="#aq"><num>X.</num></hi></head>
             <lb/>
-            <hi rendition="#in">O</hi>B gleich der <hi rendition="#b">Tichter</hi> kunſt ſehr hoch bisher ge-
+            <l><hi rendition="#in">O</hi>B gleich der <hi rendition="#b">Tichter</hi> kunſt ſehr hoch bisher ge-</l>
             <lb break="no"/>
-            ſtigen/
+            <l>ſtigen/</l>
             <lb/>
-            Will ihr verdienter Ru&#x366;hm bey uns doch bald erligen/
+            <l>Will ihr verdienter Ru&#x366;hm bey uns doch bald erligen/</l>
             <lb/>
-            Nicht darum/ daß nunmehr kein geiſt zu&#x366; finden ſey
+            <l rendition="#et">Nicht darum/ daß nunmehr kein geiſt zu&#x366; finden ſey</l>
             <lb/>
-            So durch ſein wüſſenſchafft den <hi rendition="#b">Alten</hi> komme bey;
+               <l rendition="#et">So durch ſein wüſſenſchafft den <hi rendition="#b">Alten</hi> komme bey;</l>
             <lb/>
-            Der <hi rendition="#b">Teutſch</hi> <hi rendition="#aq">Virgilius</hi> hat er nicht übertroffen
+            <l>Der <hi rendition="#b">Teutſch</hi> <hi rendition="#aq">Virgilius</hi> hat er nicht übertroffen</l>
             <lb/>
-            Die ſo geweſen ſeyn/ vnd die wir noch zu&#x366; hoffen?
+            <l>Die ſo geweſen ſeyn/ vnd die wir noch zu&#x366; hoffen?</l>
             <lb/>
-            Mit ihme <hi rendition="#b">Bu&#x366;chner</hi> hat ein groſſen preiß erlangt/
+               <l rendition="#et">Mit ihme <hi rendition="#b">Bu&#x366;chner</hi> hat ein groſſen preiß erlangt/</l>
             <lb/>
-            <hi rendition="#aq">Venator,</hi> <hi rendition="#b">Nüßler</hi> auch/ mit denen er ſtets prangt.
+               <l rendition="#et"><hi rendition="#aq">Venator,</hi> <hi rendition="#b">Nüßler</hi> auch/ mit denen er ſtets prangt.</l>
             <lb/>
-            Wer hat nicht hin vnd her von <hi rendition="#b">Wekerlin</hi> vernommen/
+            <l>Wer hat nicht hin vnd her von <hi rendition="#b">Wekerlin</hi> vernommen/</l>
             <lb/>
-            Hat nicht ſein edles bu&#x366;ch zu&#x366; vns noch mu&#x364;ſſen kommen/
+            <l>Hat nicht ſein edles bu&#x366;ch zu&#x366; vns noch mu&#x364;ſſen kommen/</l>
             <lb/>
-            Nach dem es manche zeit dort in dem finſtern lag/
+               <l rendition="#et">Nach dem es manche zeit dort in dem finſtern lag/</l>
             <lb/>
-            Vnd der Poeten volk verfu&#x364;hrt ein lange klag?
+               <l rendition="#et">Vnd der Poeten volk verfu&#x364;hrt ein lange klag?</l>
             <lb/>
-            Wer wolt des <hi rendition="#b">Hübners</hi> werk mit ſattem ru&#x366;hm auß-
+               <l>Wer wolt des <hi rendition="#b">Hübners</hi> werk mit ſattem ru&#x366;hm auß-</l>
             <lb break="no"/>
-            ſtreichen/
+               <l>ſtreichen/</l>
             <lb/>
-            Weil ihm der Muſen ſchar mu&#x366;ß aller enden weichen?
+               <l>Weil ihm der Muſen ſchar mu&#x366;ß aller enden weichen?</l>
             <lb/>
-            Dem edelen <hi rendition="#aq">Bartas</hi> hat er bey vns mehr pracht/
+               <l rendition="#et">Dem edelen <hi rendition="#aq">Bartas</hi> hat er bey vns mehr pracht/</l>
             <lb/>
-            Alß <hi rendition="#aq">Gamon</hi> durch vorwitz Jhm etwan ſchimpf ge-
+               <l rendition="#et">Alß <hi rendition="#aq">Gamon</hi> durch vorwitz Jhm etwan ſchimpf ge-</l>
             <lb break="no"/>
-            macht.
+               <l>macht.</l>
             <lb/>
-            Es wer von <hi rendition="#b">Werder</hi> auch dem weitbekanten Helden
+               <l>Es wer von <hi rendition="#b">Werder</hi> auch dem weitbekanten Helden</l>
             <lb/>
-            Vil mehr alß ich vermag an diſem ort zu&#x366; melden/
+               <l>Vil mehr alß ich vermag an diſem ort zu&#x366; melden/</l>
             <lb/>
-            Jeruſalem hat ihm ſo groſſes lob erwekt/
+               <l rendition="#et">Jeruſalem hat ihm ſo groſſes lob erwekt/</l>
             <lb/>
-            Daß <hi rendition="#aq">Taſſus</hi> ſelbſt vor ihm ſein angeſicht verdekt.
+               <l rendition="#et">Daß <hi rendition="#aq">Taſſus</hi> ſelbſt vor ihm ſein angeſicht verdekt.</l>
             <lb/>
-            Hat <hi rendition="#aq">Lundius</hi> nicht auch ſein feder hoch geſchwungen?
+               <l>Hat <hi rendition="#aq">Lundius</hi> nicht auch ſein feder hoch geſchwungen?</l>
             <lb/>
-            Jſt der lieb <hi rendition="#aq">Riſtius</hi> nicht an Parnaß geſprungen/
+               <l>Jſt der lieb <hi rendition="#aq">Riſtius</hi> nicht an Parnaß geſprungen/</l>
             <lb/>
-            Wo <hi rendition="#aq">Pegaſus</hi> ſein huef hat in den felß geſetzt
+               <l rendition="#et">Wo <hi rendition="#aq">Pegaſus</hi> ſein huef hat in den felß geſetzt</l>
             <lb/>
-            Von dem ſeithero ſich der Muſen Thron benetzt?
+               <l rendition="#et">Von dem ſeithero ſich der Muſen Thron benetzt?</l>
             <lb/>
             <fw place="bottom" type="catch">Solt</fw>
             <lb/>
             <pb facs="30218019"/>
 
-            Solt ich der la&#x364;nge nach all Teutſche Tichter na&#x364;nnen/
+               <l>Solt ich der la&#x364;nge nach all Teutſche Tichter na&#x364;nnen/</l>
             <lb/>
-            Jch wurd die gantze zal noch lang nicht finden ko&#x364;nnen/
+               <l>Jch wurd die gantze zal noch lang nicht finden ko&#x364;nnen/</l>
             <lb/>
-            Die <hi rendition="#b">fruchtbar Gſellſchaft</hi> hat die andern eynver-
+               <l rendition="#et">Die <hi rendition="#b">fruchtbar Gſellſchaft</hi> hat die andern eynver-</l>
             <lb break="no"/>
-            leibt
+            <l>leibt</l>
             <lb/>
-            Jn ihren <hi rendition="#b">Krantz/</hi> darinn ihr Ru&#x366;hm ohnſterblich bleibt.
+               <l rendition="#et">Jn ihren <hi rendition="#b">Krantz/</hi> darinn ihr Ru&#x366;hm ohnſterblich bleibt.</l>
             <lb/>
-            Diß/ ſag ich/ iſt allein (warumb man wil verlaſſen
+               <l>Diß/ ſag ich/ iſt allein (warumb man wil verlaſſen</l>
             <lb/>
-            Bey vns der Tichter kunſt/ warumb dieſelb zu&#x366;haſſen
+               <l>Bey vns der Tichter kunſt/ warumb dieſelb zu&#x366;haſſen</l>
             <lb/>
-            Ein mancher anlaß nimt) die vrſach/ daß der <hi rendition="#b">brauch</hi>
+               <l rendition="#et">Ein mancher anlaß nimt) die vrſach/ daß der <hi rendition="#b">brauch</hi></l>
             <lb/>
-            Gar oft hindan geſetzt/ vnd mancher toller <hi rendition="#b">Gauch/</hi>
+               <l rendition="#et">Gar oft hindan geſetzt/ vnd mancher toller <hi rendition="#b">Gauch/</hi></l>
             <lb/>
-            Die edle Kunſt mißbraucht/ befleket ſie mit zotten
+               <l>Die edle Kunſt mißbraucht/ befleket ſie mit zotten</l>
             <lb/>
-            Vnd reimt was vngereimt/ deß billich man zuſpotten/
+               <l>Vnd reimt was vngereimt/ deß billich man zuſpotten/</l>
             <lb/>
-            Lobt falſchgemeinte <hi rendition="#b">Lieb/</hi> vnd <hi rendition="#b">Heidengo&#x364;tter</hi>-zunft/
+               <l rendition="#et">Lobt falſchgemeinte <hi rendition="#b">Lieb/</hi> vnd <hi rendition="#b">Heidengo&#x364;tter</hi>-zunft/</l>
             <lb/>
-            Legt ſein gewu&#x364;ſſen hin/ verſchertzet all vernunft.
+               <l rendition="#et">Legt ſein gewu&#x364;ſſen hin/ verſchertzet all vernunft.</l>
             <lb/>
-            Wie mancher bricht ſein Schlaf/ nur daß nicht der
+               <l>Wie mancher bricht ſein Schlaf/ nur daß nicht der</l>
             <lb/>
-            <hi rendition="#b">Maitreſſen</hi>
+            <l><hi rendition="#b">Maitreſſen</hi></l>
             <lb/>
-            (Die <hi rendition="#b">Liebſte</hi> gilt nicht mehr) man balde mo&#x364;cht vergeſſen/
+               <l>(Die <hi rendition="#b">Liebſte</hi> gilt nicht mehr) man balde mo&#x364;cht vergeſſen/</l>
             <lb/>
-            Tringt Jhren ſo vil witz vnd hoher tugend auf/
+               <l rendition="#et">Tringt Jhren ſo vil witz vnd hoher tugend auf/</l>
             <lb/>
-            Alß ob man ſie nicht ken&#x303;t vnd nicht wußt ihren lauff.
+               <l rendition="#et">Alß ob man ſie nicht ken&#x303;t vnd nicht wußt ihren lauff.</l>
             <lb/>
-            Jch ko&#x364;nt nicht ohn verdruß die <hi rendition="#b">Thorheit</hi> gar beſchreiben
+               <l>Jch ko&#x364;nt nicht ohn verdruß die <hi rendition="#b">Thorheit</hi> gar beſchreiben</l>
             <lb/>
-            So diſe Leuthe heut mit vollem Segel treiben/
+               <l>So diſe Leuthe heut mit vollem Segel treiben/</l>
             <lb/>
-            Vnd das am a&#x364;rgſten iſt/ die <hi rendition="#b">Kunſt</hi> mu&#x366;ß ſchuldig ſeyn
+               <l rendition="#et">Vnd das am a&#x364;rgſten iſt/ die <hi rendition="#b">Kunſt</hi> mu&#x366;ß ſchuldig ſeyn</l>
             <lb/>
-            Wan&#x303; ſie ein handwerksgſell nicht recht genom&#x342;en eyn.
+               <l rendition="#et">Wan&#x303; ſie ein handwerksgſell nicht recht genom&#x342;en eyn.</l>
             <lb/>
-            Welchs ja ſo na&#x364;rꝛiſch iſt/ alß ob man ſolte ſchelten
+               <l>Welchs ja ſo na&#x364;rꝛiſch iſt/ alß ob man ſolte ſchelten</l>
             <lb/>
-            Ein ehrlich keuſches weib/ vnd ſie nicht laſſen gelten/
+               <l>Ein ehrlich keuſches weib/ vnd ſie nicht laſſen gelten/</l>
             <lb/>
-            Darumb dieweil es auch vil geiler Hu&#x366;ren gibt/
+               <l rendition="#et">Darumb dieweil es auch vil geiler Hu&#x366;ren gibt/</l>
             <lb/>
-            Ob ſchon das from&#x342; gemu&#x364;ht kein waſſer hat betru&#x364;bt.
+               <l rendition="#et">Ob ſchon das from&#x342; gemu&#x364;ht kein waſſer hat betru&#x364;bt.</l>
             <lb/>
-            Herꝛ <hi rendition="#b">Simler</hi> hat dardurch ſich niemal laſſen blenden/
+               <l>Herꝛ <hi rendition="#b">Simler</hi> hat dardurch ſich niemal laſſen blenden/</l>
             <lb/>
-            Er konte meiſterlich ſein angeſicht abwenden
+               <l>Er konte meiſterlich ſein angeſicht abwenden</l>
             <lb/>
-            Von aller Eitelkeit/ er ſchreibt nicht von der lieb/
+               <l rendition="#et">Von aller Eitelkeit/ er ſchreibt nicht von der lieb/</l>
             <lb/>
-            Wie <hi rendition="#b">Venus</hi> vn&#x303; ihr <hi rendition="#b">Sohn</hi> der Jugend hertz betru&#x364;b.
+               <l rendition="#et">Wie <hi rendition="#b">Venus</hi> vn&#x303; ihr <hi rendition="#b">Sohn</hi> der Jugend hertz betru&#x364;b.</l>
             <lb/>
             <fw place="bottom" type="catch">Er</fw>
             <lb/>
             <pb facs="30218020"/>
 
-            Er ſpannet ſeinen fleiß dem <hi rendition="#b">groſſen Gott</hi> zu&#x366; ehren/
+               <l>Er ſpannet ſeinen fleiß dem <hi rendition="#b">groſſen Gott</hi> zu&#x366; ehren/</l>
             <lb/>
-            Von deſſen Wundermacht ſein Leyr er laſſet ho&#x364;ren/
+               <l>Von deſſen Wundermacht ſein Leyr er laſſet ho&#x364;ren/</l>
             <lb/>
-            Er ſchafft mit groſſem ernſt die <hi rendition="#b">gmeinen Laſter</hi> ab/
+               <l rendition="#et">Er ſchafft mit groſſem ernſt die <hi rendition="#b">gmeinen Laſter</hi> ab/</l>
             <lb/>
-            Vnd zeigt was <hi rendition="#b">Trunkenheit</hi> für vnheil auf ſich hab.
+               <l rendition="#et">Vnd zeigt was <hi rendition="#b">Trunkenheit</hi> für vnheil auf ſich hab.</l>
             <lb/>
-            Wann vnſer Vatterland vil ſolcher Tichter hette/
+               <l>Wann vnſer Vatterland vil ſolcher Tichter hette/</l>
             <lb/>
-            Vnd ſich nach ihrer Lehr ein ieder richten tehte/
+               <l>Vnd ſich nach ihrer Lehr ein ieder richten tehte/</l>
             <lb/>
-            Vntugend wurde ſich bald finden in dem grab/
+               <l rendition="#et">Vntugend wurde ſich bald finden in dem grab/</l>
             <lb/>
-            Wann ich ſolch glük erlebt/ nichts mehr zu&#x366; wünſchen
+               <l rendition="#et">Wann ich ſolch glük erlebt/ nichts mehr zu&#x366; wünſchen</l>
             <lb/>
-            hab.
+               <l>hab.</l>
             <lb/>
-            Ehrenhold Falk von Traubenberg.
+               <signed><hi rendition="#right">Ehrenhold Falk von Traubenberg.</hi></signed></div>
             <lb/>
             
-            <head><label>[xvi.]</label> <hi rendition="#aq"><num>XI.</num></hi></head>
+            <milestone unit="section" rendition="#hr"/><lb/>
+            
+            <div type="poem"><head><label>[xvi.]</label> <hi rendition="#aq"><num>XI.</num></hi></head>
             <lb/>
-            <hi rendition="#in">S</hi>O ſchikket Herꝛ Simler ſein Bu&#x366;che zureiſen/
+            <lg type="poem"><l><hi rendition="#in">S</hi>O ſchikket Herꝛ Simler ſein Bu&#x366;che zureiſen/</l>
             <lb/>
-            in diſer lands gegend die erſtlinge bringt/
+            <l>in diſer lands gegend die erſtlinge bringt/</l>
             <lb/>
-            Opitziſch/ fein Chriſtlich er tichtet und ſingt/
+            <l>Opitziſch/ fein Chriſtlich er tichtet und ſingt/</l>
             <lb/>
-            die jugend zur tugend zuleiten und weiſen.
+            <l>die jugend zur tugend zuleiten und weiſen.</l>
             <lb/>
-            Diß Buche wird geben beliebete fru&#x364;chte/
+            <l>Diß Buche wird geben beliebete fru&#x364;chte/</l>
             <lb/>
-            und weilen es gla&#x364;ntzet von lehren und kunſt/
+            <l>und weilen es gla&#x364;ntzet von lehren und kunſt/</l>
             <lb/>
-            beym fruchtbaren Orden wird finden den gunſt/
+            <l>beym fruchtbaren Orden wird finden den gunſt/</l>
             <lb/>
-            ſeim Herꝛen heimbringen ein gutes geru&#x364;chte.
+            <l>ſeim Herꝛen heimbringen ein gutes geru&#x364;chte.</l>
             <lb/>
-            Jch wu&#x364;nſchte den nammen des Tichters zuſehn
+            <l>Jch wu&#x364;nſchte den nammen des Tichters zuſehn</l>
             <lb/>
-            wo fu&#x364;nftzigneunmalen/ und ſiben ſchon ſtehn.
+            <l>wo fu&#x364;nftzigneunmalen/ und ſiben ſchon ſtehn.</l>
             <lb/>
-            O daß er in diſe Geſellſchaft werd gnommen!
+            <l>O daß er in diſe Geſellſchaft werd gnommen!</l>
             <lb/>
-            und ihme zum ru&#x366;hme der Ku&#x364;nſtler am Ma&#x364;in
+            <l>und ihme zum ru&#x366;hme der Ku&#x364;nſtler am Ma&#x364;in</l>
             <lb/>
-            mu&#x364;ß etzen und graben ins kupfer hineyn/
+            <l>mu&#x364;ß etzen und graben ins kupfer hineyn/</l>
             <lb/>
-            wann ba&#x364;ldeſt nach hundert Sinnbilder außkommen.
+            <l>wann ba&#x364;ldeſt nach hundert Sinnbilder außkommen.</l></lg>
             <lb/>
-            Johann Jacob Bodmer.
+            <signed>Johann Jacob Bodmer.</signed>
+            </div>
             <lb/>
-            Haubt-
+            <fw place="bottom" type="catch">Haubt-</fw>
             <lb break="no"/>
+         </div>
        </front>
        <body>
                
