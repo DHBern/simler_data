@@ -26,7 +26,6 @@
     </teiHeader>
     <text>
         <body>
-            <!--<p>NE: Transkription Zuschrift und Widmungsgedichte aus Simler <hi rendition="#i">Gedichten</hi> (<hi rendition="#sup">3</hi>1663).</p>-->
             
             <head><hi rendition="#b">Zuschrifft.</hi></head><lb/>
             
@@ -139,15 +138,15 @@
                 <head>
                     <hi rendition="#i #b">II.</hi><lb/>
                     <hi rendition="#i #b">Ioannes Wilelmus Simlerus.</hi><lb/>
-                    <anchor xml:id="a1"/><hi rendition="#i #b background(yellow)">…</hi><note type="annotation" targetEnd="a1">Griechischer Text, noch zu ergänzen (JA)</note><lb/>
-                    <hi rendition="#i #b">Illen’ vir suave melos Musis</hi><hi rendition="#i #b background(yellow)">?</hi>
+                    <!-- Griechischer Text zu ergänzen (JA) --><lb/>
+                    <hi rendition="#i #b">Illen’ vir suave melos Musis<unclear reason="uncleanPrint">?</unclear></hi>
                 </head><lb/>
                 
                 <lg>
                     <l><hi rendition="#i">ILléne Vir Musis &amp; christo fundere dignum,</hi></l><lb/>
-                    <l rendition="#et"><hi rendition="#i">Suave melos verbis, suave</hi><anchor xml:id="a3"/><hi rendition="#i">q</hi><note type="annotation" targetEnd="a3">q mit Akut?</note><hi rendition="#i">; rebus, amat?</hi></l><lb/>
-                    <l><hi rendition="#i">Sic est: ecce liber præsens hoc firmat abund</hi><hi rendition="#i background(yellow)">e</hi><hi rendition="#i">;</hi></l><lb/>
-                    <l rendition="#et"><hi rendition="#i">suave melos verbis, suave</hi><anchor xml:id="a4"/><hi rendition="#i">q</hi><note type="annotation" targetEnd="a4">q mit Akut?</note><hi rendition="#i">; rebus habet.</hi></l>
+                    <l rendition="#et"><hi rendition="#i">Suave melos verbis, suaveq<!-- que-Abkürzung? -->; rebus, amat?</hi></l><lb/>
+                    <l><hi rendition="#i">Sic est: ecce liber præsens hoc firmat abund<unclear reason="uncleanPrint">e</unclear>;</hi></l><lb/>
+                    <l rendition="#et"><hi rendition="#i">suave melos verbis, suaveq<!-- que-Abkürzung? -->; rebus habet.</hi></l>
                 </lg><lb/>
                 
                 <p rendition="#et"><hi rendition="#i">IOH. WIRZIVS, S. Th. Prof. honoris c.f.</hi></p><lb/>
@@ -158,7 +157,7 @@
                     <hi rendition="#i #b">III.</hi><lb/>
                     <hi rendition="#i #b">IOANNES GVIELMVS SIMLERVS ARTE FECIT.</hi><lb/>
                     <hi rendition="#i #b">Per Anagramma,</hi><lb/>
-                    <hi rendition="#i #b">Anne Musicus eriget hisce: ut, re, mi, fa, sol, la</hi><hi rendition="#i #b background(yellow)">?</hi>
+                    <hi rendition="#i #b">Anne Musicus eriget hisce: ut, re, mi, fa, sol, la<unclear reason="uncleanPrint">?</unclear></hi>
                 </head><lb/>
                 
                 <lg>
@@ -193,7 +192,7 @@
                     <l><hi rendition="#i">Térque quatérque beatus erit, qui talia discet</hi></l><lb/>
                     <l rendition="#et"><hi rendition="#i">Carmina, qui Domino cantica sancta canet.</hi></l><lb/>
                     <l><hi rendition="#i">Qui non voce modò, tota sed mente sonabit</hi></l><lb/>
-                    <l rendition="#et"><hi rendition="#i">Divinum, Paulo rit</hi><hi rendition="#i background(yellow)">e</hi> <hi rendition="#i">monente, melos.</hi></l><lb/>
+                    <l rendition="#et"><hi rendition="#i">Divinum, Paulo rite<!-- e mit Akut? --> monente, melos.</hi></l><lb/>
                     <l><hi rendition="#i">„Non vox, sed votum, non musica chordula, sed cor;</hi></l><lb/>
                     <l rendition="#et"><hi rendition="#i">„Non clamor, sed amor clangit in aure Dei.</hi></l><lb/>
                     <l><hi rendition="#i">Ille beatus erit, toto qui tempore vitæ</hi></l><lb/>
@@ -274,7 +273,7 @@
             <div>
                <head>
                    <hi rendition="#i #b">VII.</hi><lb/>
-                   <hi rendition="#b">über den gl</hi><hi rendition="#b background(yellow)">ů</hi><hi rendition="#b">klichen fortgang erwünschter Außůbung der ädlen hochteutschen Haubt- und Heldensprach:
+                   <hi rendition="#b">über den gl<unclear reason="uncleanPrint">ů</unclear>klichen fortgang erwünschter Außůbung der ädlen hochteutschen Haubt- und Heldensprach:
                            Warnung an die unteutschen.</hi>
                </head><lb/>
                
@@ -535,14 +534,14 @@
                     <hi rendition="#b">gehaltenes Ehren- und Ehefest / verfasset und übergeben.</hi>
                 </head><lb/>
                 
-                <!--Layout mit cb kodieren?-->
+                <!--Layout mit cb kodieren? NE: hier am besten wohl keine Spalten codieren, da Lesetext-->
                 <lg>
                     <l>Euers Herren Vatters dichten /</l><lb/>
                     <l rendition="#et">Herr Hochzeiter / treibt mich an /</l><lb/>
                     <l>mich anjez nach Jhm zurichten</l><lb/>
                     <l rendition="#et">ob ichs / Jhme gleich / nicht kan /</l><lb/>
                     <l rendition="#et">der auß angeborner brunßt</l><lb/>
-                    <l rendition="#et">seine s<unclear>ü</unclear>sse Dichterkunst</l><lb/>
+                    <l rendition="#et">seine s<unclear reason="uncleanPrint">ü</unclear>sse Dichterkunst</l><lb/>
                     <l>in vil weis und weg gewisen /</l><lb/>
                     <l>daß Er ewig wird geprisen. /</l>
                 </lg><lb/>
@@ -628,7 +627,7 @@
                     <l rendition="#et">weißt so schön und wundervil /</l><lb/>
                     <l rendition="#et">Daß Er keines nicht vergißt /</l><lb/>
                     <l rendition="#et">sonder alles wol ermißt</l><lb/>
-                    <l>Jhr sinnreichen <unclear>ü</unclear>berschriften</l><lb/>
+                    <l>Jhr sinnreichen <unclear reason="uncleanPrint">ü</unclear>berschriften</l><lb/>
                     <l>nichts an Euch ist zuvergiften.</l>
                 </lg><lb/>
                 
