@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" type="simler-framework">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">ANHANG VON: Johann-Wilhelm Simlers teutscher Getichten die
+                    dritte, von ihme selbsten um einen Drittheil vermehrt- und verbesserte
+                    Aussfertigung</title>
+                <author><persName ref="http://d-nb.info/gnd/119151693"
+                            ><surname>Simler</surname><forename>Johann
+                    Wilhelm</forename></persName></author>
+            </titleStmt>
+            <editionStmt>
+                <edition>Vollständige digitalisierte Ausgabe.</edition>
+            </editionStmt>
+            <publicationStmt>
+                <p/>
+            </publicationStmt>
+            <sourceDesc>
+                <p/>
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    <text>
+        <body>
+
+            <!-- Vielleicht macht hier eine zusätzliche div-Ebene Sinn für den Band, aus dem die Teile stammen -->
+            <div>
+                
+                <!-- Dummy text, löschen -->
+                
+                <pb n="503"/>
+    
+                <div n="1">
+                    <head><hi rendition="#b #c">TITEL</hi></head>
+                    <lb/>
+                    <pb n="504"/>
+                    <div n="2">
+                        <head>
+                            <label>[123.]</label>
+                            <lb/>
+                            <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber unsers Herren ...</hi>
+                        </head>
+                        <lb/>
+                        <div n="3">
+                            <head><hi rendition="#b #c">1. Christus Einritt zu Jerusalem.</hi></head>
+                            <lb/>
+                            <lg type="poem">
+                                <l><hi rendition="#in">D</hi>Er Himmelskönig wolt ...</l>
+                                <lb/>
+                                <l>damit er ...</l>
+                            </lg>
+                            <lb/>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dummy text -->
+                
+            </div>
+            
+        </body>
+    </text>
+</TEI>
