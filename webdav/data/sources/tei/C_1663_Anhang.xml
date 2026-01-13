@@ -26,42 +26,288 @@
     </teiHeader>
     <text>
         <body>
-
-            <!-- Vielleicht macht hier eine zusätzliche div-Ebene Sinn für den Band, aus dem die Teile stammen -->
-            <div>
-                
-                <!-- Dummy text, löschen -->
-                
-                <pb n="503"/>
-    
-                <div n="1">
-                    <head><hi rendition="#b #c">TITEL</hi></head>
+            <div n="1">
+                <pb facs="4017126"/>
+                <div n="2" type="poem">
+                    <head>
+                        <label>[A.i.]</label><lb/>
+                        <hi rendition="#aq #c #i">Summa totius Operis Carmine Hexa<lb break="no"/>
+                            metro expreſſa: ubi ipſe Liber loquens<lb/> introducitur.</hi></head>
                     <lb/>
-                    <pb n="504"/>
-                    <div n="2">
-                        <head>
-                            <label>[123.]</label>
-                            <lb/>
-                            <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber unsers Herren ...</hi>
-                        </head>
+                    <lg type="poem">
+                        <l><hi rendition="#aq"><hi rendition="#in">P</hi>Luribus lſaides cantor,
+                                rex, atque Propheta</hi></l>
                         <lb/>
-                        <div n="3">
-                            <head><hi rendition="#b #c">1. Christus Einritt zu Jerusalem.</hi></head>
+                        <l><hi rendition="#aq">Quæ cecinit, paucis doceo, brevis eſſe
+                            laborans.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Quæ credenda tibi, quæ ſint facienda volenti</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Poſt obitum ſuperas cœli conſcendere ſedes.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Exitus, atque ſalutiferi qui ingreſſus in
+                            orbem</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Chriſti, quæ ſors in terris, quâm ſplendida
+                            cœlo</hi></l>
+                        <lb/>
+                        <pb facs="4017127"/>
+
+                        <l><hi rendition="#aq">Gloria. Quî veniam factis expoſcere iniquis,</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Quîque remittenti poſſis perſolvere grates.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Quæ te ſurgentem deceant, quæ munera ſomni</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Carpentem deceant, placidè quô nocte
+                            quieſcas.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Conveniant ſacro thalami quæ fœdere junctis.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Nobile, quâm ſit opus Summi pax alma, ſed,
+                            eheu!</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Rarius: at furat, &amp; toto Mars impius
+                            orbe</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Obruat innocuæ ſtudium pietatis habentes.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Veloci Menſes bis ſex numerantur in anno,</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Qui quatuor; Ver, ac Æſtas, Autumnus
+                            Hiémsque;</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Tempora: queîs hominum pecudúmq; ſit actio
+                                quænam,</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Quæ veniant fruges, ſurgant quæ germina
+                            terræ.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Patres, &amp; natos reliquósque domeſtica
+                            cura</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Quæ tangat, cuncta ut prudenter &amp; ordine
+                                fiant:</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Hæc brevibus moneo, monſtro: ac Epigrammata
+                                ſcribo.</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Ergô quid invidiæ morſus, quid vulnera
+                            linguæ</hi></l>
+                        <lb/>
+                        <l><hi rendition="#aq">Curem? Nonniſi, quæ proſint hîc ſcripta
+                                relinquo.</hi></l>
+                    </lg>
+                    <lb/>
+                    <closer>
+                        <salute><hi rendition="#aq #right"><hi rendition="#k">JOH. CASPARUS
+                                    SUIZERUS</hi>
+                                <abbr>f.</abbr></hi></salute>
+                    </closer>
+                    <lb/>
+                </div>
+            </div>
+            <div n="1">
+                <pb facs="30218207" n="187"/>
+                <div n="2">
+                    <head><label>[B.1.]</label><lb/>
+                        <hi rendition="#b #c">über eine ſta&#x364;gen.</hi></head>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>1 Von ſtaffel zu&#x366; ſtaffel; merk eben darauf;</l>
                             <lb/>
-                            <lg type="poem">
-                                <l><hi rendition="#in">D</hi>Er Himmelskönig wolt ...</l>
-                                <lb/>
-                                <l>damit er ...</l>
-                            </lg>
+                            <l>ohn lauffen wirſt kommen die ſta&#x364;gen hinauf:</l>
                             <lb/>
-                        </div>
+                            <l>wilſt aber abgehen/ ſo hu&#x364;t dich auch wider</l>
+                            <lb/>
+                            <l>vor fallen die ſta&#x364;gen durch nider und nider.</l>
+                        </lg>
+                    </div>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>2 Je ho&#x364;her du geſtigen biſt an ehren/</l>
+                            <lb/>
+                            <l>ie mehr du dich der hoffart muſt erwehren/</l>
+                            <lb/>
+                            <l rendition="#et">der demu&#x366;ht auch befleiſſen für und für/</l>
+                            <lb/>
+                            <l rendition="#et">und ehren ſelbſt ein ieden/ nach gebühr.</l>
+                        </lg>
+                        <lb/>
                     </div>
                 </div>
-                
-                <!-- Dummy text -->
+                <div n="2">
+                    <head>
+                        <label>[B.2.]</label><lb/>
+                        <lb/>
+                        <hi rendition="#b #c">über eine porten oder <lb/> thüren.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>3 Der überſchreite nicht die ſchwellen diſer thüren/</l>
+                        <lb/>
+                        <l>auß deſſen munde man mag kalt und warms verſpü<lb break="no"/>ren.</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <pb facs="30218209" n="189"/>
+                <div n="2">
+                    <head>
+                        <label>[B.3.]</label><lb/>
+                        <lb/>
+                        <hi rendition="#b #c">Hinder den ofen.</hi></head>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>1 Der forchtſam liebt den ofenſitz:</l>
+                            <lb/>
+                            <l>der dapfer ſu&#x366;cht des feindes ſpitz.</l>
+                        </lg>
+                    </div>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>2 Wie bald das wintergſtirn die ka&#x364;lte bringt auf erden;</l>
+                            <lb/>
+                            <l>wordurch des menſchen leib empfanget vil beſchwerden;</l>
+                            <lb/>
+                            <l rendition="#et">ſo liebet iedermann des ſtubenofens hitz/</l>
+                            <lb/>
+                            <l rendition="#et">die liebe nur allein hat einen kalten ſitz.</l>
+                        </lg>
+                        <lb/>
+                    </div>
+                </div>
+                <div n="2">
+                    <head><label>[B.4.]</label><lb/>
+                        <hi rendition="#b #c">über eine kuchenthüren.</hi></head>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>1 Wer mit dem feur und liecht umgehet/</l>
+                            <lb/>
+                            <l rendition="#et">der hu&#x364;te ſich vor deſſen brand/</l>
+                            <lb/>
+                            <l rendition="#et">und nahe mit zu&#x366; keiner wand:</l>
+                            <lb/>
+                            <l>dan eine brunſt gar leicht entſtehet.</l>
+                        </lg>
+                    </div>
+                    <lb/>
+                    <div n="3">
+                        <lg type="poem">
+                            <l>2 Das kleineſt fünklein oft ein groſſes feur anzündet/</l>
+                            <lb/>
+                            <l>wer nun mit waſſer ſich der erſt darbey befindet/</l>
+                            <lb/>
+                            <l rendition="#et">den lobet iedermann; und den nicht minder auch/</l>
+                            <lb/>
+                            <l rendition="#et">der zu&#x366; dem friden redt/ und demt unfridens
+                                rauch.</l>
+                        </lg>
+                        <lb/>
+                    </div>
+                </div>
+                <pb facs="30218281" n="261"/>
+                <div n="2">
+                    <head>
+                        <label>[B.5.]</label><lb/>
+                        <hi rendition="#b #c">Fridenswunſch.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>O lieber Fridensgott/ gib/ daß zum Friden ſich</l>
+                        <lb/>
+                        <l>Gerechtigkeit verbind/ und alles lobe dich!</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <pb facs="30218282" n="262"/>
+                <div n="2">
+                    <head>
+                        <label>[B.6.]</label><lb/>
+                        <hi rendition="#b #c">Gewüſſer Sig.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>Gedult und Hofnung werden ſigen/</l>
+                        <lb/>
+                        <l>Welt/ Neid und Teufel undenligen.</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <div n="2">
+                    <head>
+                        <label>[B.7.]</label><lb/>
+                        <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber eines Richters
+                                th<unclear reason="covered">ü</unclear>ren.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>Diſe thür ſteht denen offen</l>
+                        <lb/>
+                        <l>die das Recht ohn unrecht hoffen.</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <div n="2">
+                    <head>
+                        <label>[B.8.]</label><lb/>
+                        <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber eine
+                            Schlafkam&#x342;er.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l><hi rendition="#aq">U</hi>ndergehn/ und nicht vergehen/ iſt der Sonnen
+                                eigen<lb break="no"/>ſchafft:</l>
+                        <lb/>
+                        <l>Auß dem Schlaf und Tod erſtehen/ iſt des Scho&#x364;pfers gnad und
+                            krafft.</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <div n="2">
+                    <head>
+                        <label>[B.9.]</label><lb/>
+                        <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber einen mit Conterfeten/
+                            und andern <lb/> koſtlichkeiten gezierten Sal.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>Was n<unclear reason="uncleanPrint">u</unclear>tzet
+                            hochgeboren ſeyn? Es iſt ein ſchlechter<lb/> Ru&#x366;hm:</l>
+                        <lb/>
+                        <l>Die zeitlich' Ehr geleicht dem Plitz: die Scho&#x364;nheit einer<lb
+                                break="no"/> Blu&#x366;hm:</l>
+                        <lb/>
+                        <l>Das Leben nur ein Nebel iſt/ im tieffen Threnentahl:</l>
+                        <lb/>
+                        <l>Reichthum vergeht: beſta&#x364;ndigs Gu&#x366;t iſt in dem
+                                Him&#x342;els-<lb break="no"/>ſahl.</l>
+                        <lb/>
+                        <l>Nach Chriſtus ieder Chriſt ſich ſehn: das übrig er befehl</l>
+                        <lb/>
+                        <l>dem Vatter/ der uns nehrt und ehrt/ am leib und an der<lb/>
+                            ſeel.</l>
+                    </lg>
+                    <lb/>
+                </div>
+                <pb facs="30218283" n="263"/>
+                <div n="2">
+                    <head>
+                        <label>[B.10.]</label><lb/>
+                        <hi rendition="#b #c"><hi rendition="#aq">U</hi>ber eine
+                            Wohn&#x303;ſtuben.</hi></head>
+                    <lb/>
+                    <lg type="poem">
+                        <l>Hier verbleiben wir nicht lange: gehen immer auß und<lb/>
+                            eyn:</l>
+                        <lb/>
+                        <l><hi rendition="#aq">U</hi>nſre wohnung iſt im Him&#x342;el/ da wir werden
+                            ewig ſeyn.</l>
+                    </lg>
+                    <lb/>
+                </div>
+            </div>
+            <div n="1">
                 
             </div>
-            
         </body>
     </text>
 </TEI>
