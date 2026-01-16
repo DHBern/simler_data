@@ -373,7 +373,8 @@
             <pb facs="4076758"/>
 
             <div n="2">
-               <label>[D.i.]</label> An die Statt Zu&#x364;rich:
+               <head><label>[D.i.]</label><lb/>
+                  An die Statt Zu&#x364;rich:
             <lb/>
             Vber Deroſelben beru&#x364;hmte drey
             <lb/>
@@ -381,35 +382,38 @@
             <lb/>
             Hn. J. W. S. Hr. J. J. B. und
             <lb/>
-            Hr. J. U. B.
+            Hr. J. U. B.</head>
             <lb/>
-            <hi rendition="#in">W</hi>As dich/ Groſſes Zu&#x364;rich/ lobt/ unter tauſend ander'n
+            <lg type="poem">
+               <l><hi rendition="#in">W</hi>As dich/ Groſſes Zu&#x364;rich/ lobt/ unter tauſend ander'n
             <lb/>
-            Sachen/
+            Sachen/</l>
             <lb/>
-            Die dir deinen hohen Ruhm/ und die Ehre gro&#x364;ſſer
+            <l>Die dir deinen hohen Ruhm/ und die Ehre gro&#x364;ſſer
             <lb/>
-            machen/
+            machen/</l>
             <lb/>
-            Jſt der Dichter edles Kleeblat/ und die hochberu&#x364;hmte
+            <l>Jſt der Dichter edles Kleeblat/ und die hochberu&#x364;hmte
             <lb/>
-            Schwahnen:
+            Schwahnen:</l>
             <lb/>
-            Diſe ſind es/ die dir ſtekken auf die Teutſchen Ehren-fahnen<anchor xml:id="a7"/>;<note type="annotation" targetEnd="a7"><p>Im Vergleichsexemplar ist hier ein Semikolon eindeutig zu sehen.</p></note>
+            <l>Diſe ſind es/ die dir ſtekken auf die Teutſchen Ehren-fahnen<anchor xml:id="a7"/>;<note type="annotation" targetEnd="a7"><p>Im Vergleichsexemplar ist hier ein Semikolon eindeutig zu sehen.</p></note></l>
             <lb/>
-            Diſe ſeind es/ welche dir/ durch gelehrte Dichter-ſchrifften/
+            <l>Diſe ſeind es/ welche dir/ durch gelehrte Dichter-ſchrifften/</l>
             <lb/>
-            Die ein Weiſer billich liebt/ ſolch ein Denckmal ko&#x364;nnen ſtifften/
+            <l>Die ein Weiſer billich liebt/ ſolch ein Denckmal ko&#x364;nnen ſtifften/</l>
             <lb/>
-            Das beſtehndig ſteht und w<anchor xml:id="a8"/>a&#x364;<note type="annotation" targetEnd="a8"><p>Das übergeschriebene e ist im Vergleichsexemplar besser sichtbar.</p></note>hret. Darum bleibe nie ver-
+            <l>Das beſtehndig ſteht und w<anchor xml:id="a8"/>a&#x364;<note type="annotation" targetEnd="a8"><p>Das übergeschriebene e ist im Vergleichsexemplar besser sichtbar.</p></note>hret. Darum bleibe nie ver-
             <lb break="no"/>
-            geſſen/
+            geſſen/</l>
             <lb/>
-            Wie gar ho&#x364;chlich diſen Dreyen Du mit ſchulden ſeyſt ve<anchor xml:id="a9"/><supplied>r-</supplied><note type="annotation" targetEnd="a9"><p>Wahrscheinlich verschmierte Tinte. Im Vergleichsexemplar steht eindeutig "ver-"</p></note>
+            <l>Wie gar ho&#x364;chlich diſen Dreyen Du mit ſchulden ſeyſt ve<anchor xml:id="a9"/><supplied>r-</supplied><note type="annotation" targetEnd="a9"><p>Wahrscheinlich verschmierte Tinte. Im Vergleichsexemplar steht eindeutig "ver-"</p></note>
             <lb/>
-            ſeſſen.
+            ſeſſen.</l>
+            </lg>
             <lb/>
-            Auß obligender Schuldigkeit und Pflicht
+            <closer>
+               Auß obligender Schuldigkeit und Pflicht
             <lb/>
             ſezt und u&#x364;berſendet diſes von der Hohen
             <lb/>
@@ -417,7 +421,7 @@
             <lb/>
             1669.
             <lb/>
-            Daniel Ba&#x364;rholtz/ von Elbing
+            <salute>Daniel Ba&#x364;rholtz/ von Elbing
             <lb/>
             auß Preuſſen/ Edelgekro&#x364;nter K. Poet/
             <lb/>
@@ -425,8 +429,10 @@
             <lb/>
             Roſengſellſchaffteren
             <lb/>
-            Der Sanfftmu&#x364;htige.</div>
+            Der Sanfftmu&#x364;htige.</salute>
+            </closer>
             <lb/>
+            </div>
             <fw place="bottom" type="pageNum">A iiij</fw>
             <lb/>
             <hi rendition="#aq"><hi rendition="#i">Ex</hi></hi>
@@ -1471,12 +1477,15 @@
             <lb/>
             <fw place="bottom" type="catch">Die</fw>
             <lb/>
+               
             <pb facs="4076775"/>
-            <l><label>[D.ii.]</label>Bey heraußgebung diſer Letſteren und</l>
+            <div n="2">
+               <head><label>[D.ii.]</label><lb/>Bey heraußgebung diſer Letſteren und
             <lb/>
-            <l>Vierten<hi rendition="#aq"><hi rendition="#i">Edition.</hi></hi></l>
+            Vierten<hi rendition="#aq"><hi rendition="#i">Edition.</hi></hi></head>
             <lb/>
-            <l><hi rendition="#in">W</hi>As theils vor langer zeit/ theils auch vor wenig Jahren</l>
+            <lg type="poem">
+               <l><hi rendition="#in">W</hi>As theils vor langer zeit/ theils auch vor wenig Jahren</l>
             <lb/>
             <l><anchor xml:id="a39"/>J<note type="annotation" targetEnd="a39"><p>Das J ist im augsburgischen Vergleichsexemplar eindeutiger zu sehen.</p></note>m werthen<hi rendition="#b">Simler-ſtamm</hi>fu&#x364;r edle Ma&#x364;nner waren/</l>
             <lb/>
@@ -1488,7 +1497,7 @@
             <lb/>
             <l>Und auf die<hi rendition="#b">Sternen-kunſt</hi>begehrt ſeyn zugefliſſen;</l>
             <lb/>
-            <l>Wer zu der<hi rendition="#b">Medi<anchor xml:id="a40"/><unclear>c</unclear><note type="annotation" targetEnd="a40"><p>Könnte auch ein "e" sein, also ein Druckfehler</p></note>in</hi>wil neigen ſein Gemu&#x364;th;</l>
+            <l>Wer zu der<hi rendition="#b">Medi<anchor xml:id="a40"/><unclear reason="uncleanPrint">c</unclear><note type="annotation" targetEnd="a40"><p>Könnte auch ein "e" sein, also ein Druckfehler</p></note>in</hi>wil neigen ſein Gemu&#x364;th;</l>
             <lb/>
             <l>Wer in der<hi rendition="#b">Poeſie</hi>wil tuncken ſein Geblu&#x364;th;</l>
             <lb/>
@@ -1514,7 +1523,7 @@
             <lb/>
             <l>Doch vilmehr nun um vil verbeſſert und vermehrt/</l>
             <lb/>
-            <l><hi rendition="#b">Ne<anchor xml:id="a41"/><unclear>u</unclear><note type="annotation" targetEnd="a41"><p>Trema wäre hier möglich, besonders im Vergleich mit dem Augsburger Exemplar</p></note>truk an Verſen mehr/ Gſangweiſen <choice><corr/><sic>neu&#x364;</sic></choice></hi>beſchehrt:</l>
+            <l><hi rendition="#b">Ne<anchor xml:id="a41"/><unclear reason="uncleanPrint">u</unclear><note type="annotation" targetEnd="a41"><p>Trema wäre hier möglich, besonders im Vergleich mit dem Augsburger Exemplar</p></note>truk an Verſen mehr/ Gſangweiſen <choice><corr/><sic>neu&#x364;</sic></choice></hi>beſchehrt:</l>
             <lb/>
             <l><hi rendition="#b">Scho&#x364;n Pſalm- Feſt- Tag- Jahrszeit- Frid- Krieg- und Hochzeit-
             <lb break="no"/>
@@ -1549,9 +1558,11 @@
             <l>Den Author diſes Buchs nun Fama hoch erhebt/</l>
             <lb/>
             <l>Nach vilem<anchor xml:id="a42"/><note type="annotation" targetEnd="a42"><p>Das Zeichen zwischen "vilem" und "Creutze" ist im augsburgischen Vergleichsexemplar eindeutig nicht vorhanden.</p></note>Creutze/ der bey Gott im Himmel lebt.</l>
+            </lg>
             <lb/>
-            <l>Beygeſezt von einem Treugeſinnten.</l>
+            <closer>Beygeſezt von einem Treugeſinnten.</closer>
             <lb/>
+            </div>
 
             <!-- Teil I -->
 
@@ -23307,8 +23318,8 @@
             <fw place="top" type="header">Hochzeitgeticht.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.1.]</label> Hertz-wolgemeinter Hochzeitlicher
+            <head><label>[D.1.]</label><lb/>
+               Hertz-wolgemeinter Hochzeitlicher
             <lb/>
             Sa&#x364;gen-Wunſch:
             <lb/>
@@ -23330,11 +23341,12 @@
             <lb/>
             einem luſtigen Meer-Gewa&#x364;chß/ zum Trinck-Geſchirꝛ von
             <lb/>
-            L. E. Kindern und Tochterma&#x364;n. u&#x364;bergeben/</head>
-            <lb/>
+            L. E. Kindern und Tochterma&#x364;n. u&#x364;bergeben/
+               <lb/>
+               den 8. Chriſtm. 1668.
+               </head>
+               <lb/>
             <lg type="poem">
-            <l>den 8. Chriſtm. 1668.</l>
-            <lb/>
             <l><hi rendition="#in">J</hi>Etz/ da die Tage kurtz/ die Na&#x364;chte la&#x364;nger werden/</l>
             <lb/>
             <l>Und kalter Nordenwind beſchlieſſen wil die Erden:</l>
@@ -23398,7 +23410,10 @@
             <l>wir wu&#x364;nſche&#x303; endtlich Euch; wan&#x303; ihr des lebensſatt;</l>
             <lb/>
             <l>erwu&#x364;nſchte Seligkeit in jenner Freuden Statt!</l>
+            </lg>
             <lb/>
+            </div>
+         
             <l><label>[D.3.]</label><hi rendition="#aq">Cantus.</hi></l>
             <lb/>
             <l>Auf/ Tichterhauff! Auf/ auf ins feld: Gefangen iſt der Tichter held</l>
@@ -23406,9 +23421,7 @@
             <l>Auf! auf! Jhn loß zumachen! Ey nein! Er hats ja ſo begehrt/</l>
             <lb/>
             <l>und iſt hiemit der Bitt gewehrt: Er wurd nur un-ſer lachen.</l>
-            </lg>
             <lb/>
-            </div>
 
             <div type="poem-div">
             <head><hi rendition="#aq">Tenor.</hi></head>
@@ -23429,15 +23442,14 @@
             <fw place="top" type="header">Hochzeit-Geſang.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.2.]</label> Beſchließlicher Segenwunſch/
+            <head><label>[D.2.]</label><lb/>Beſchließlicher Segenwunſch/
             <lb/>
             Auf Hr. J. J. U. Pf. zum Gr. M. un&#x303; Fr. A. O.
             <lb/>
-            anſeh. Ehefeſt/</head>
-            <lg type="poem">
-            <l>den 29. April 1667.</l>
+            anſeh. Ehefeſt/
+            den 29. April 1667.</head>
             <lb/>
+            <lg type="poem">
             <l>Ho&#x364;chſter/ viertes Eheband ſegne/</l>
             <lb/>
             <l>wie das Erſte; Zweyt; und Dritt!</l>
@@ -23516,8 +23528,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.4.]</label> Antwort-Schreiben:
+            <head><label>[D.4.]</label><lb/>Antwort-Schreiben:
             <lb/>
             An Herꝛen Georg Mu&#x364;llern/ Pf. zu Thal-
             <lb break="no"/>
@@ -23536,7 +23547,7 @@
             <lb/>
             <l>auß Kaſtalis genetzt: wolt Jhr nun eins bekommen/</l>
             <lb/>
-            <l>ſo machet es zuvor/ und ſchicket mir es zu<anchor xml:id="a204"/><unclear>/</unclear><note type="annotation" targetEnd="a204"><p>Könnte eine Virgel sein, ist aber nicht eindeutig. Sieht im Augsburger Exemplar gleich aus.</p></note></l>
+            <l>ſo machet es zuvor/ und ſchicket mir es zu<anchor xml:id="a204"/><unclear reason="uncleanPrint">/</unclear><note type="annotation" targetEnd="a204"><p>Könnte eine Virgel sein, ist aber nicht eindeutig. Sieht im Augsburger Exemplar gleich aus.</p></note></l>
             <lb/>
             <l>wo nicht/ ſo laſſet mich des Tichtens halb in rhu!</l>
             </lg>
@@ -23582,15 +23593,14 @@
             <fw place="top" type="header">Hochzeitgeticht.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.5.]</label> Auf Herꝛ'n H. J. R. S. anſeh. Ehefeſt
+            <head><label>[D.5.]</label><lb/>Auf Herꝛ'n H. J. R. S. anſeh. Ehefeſt
             <lb/>
             unter eines anderen Fr. und Hn.
             <lb/>
             Nam&#x342;en.</head>
             <lb/>
             <lg type="poem">
-            <l><hi rendition="#in">H</hi>Erꝛ Schwager/ ſeyt Jhr nicht/ vor wenig wenig</l>
+            <lg n="1"><l><hi rendition="#in">H</hi>Erꝛ Schwager/ ſeyt Jhr nicht/ vor wenig wenig</l>
             <lb/>
             <l>Jahren/</l>
             <lb/>
@@ -23598,9 +23608,10 @@
             <lb/>
             <l>im Schiff; die<hi rendition="#b">Liebe</hi>g'nen&#x303;t; zu ſtreiten auf der See/</l>
             <lb/>
-            <l>wo/ fu&#x364;r die<hi rendition="#b">Liebe/</hi>man nur krieget Ach und Wee?</l>
+            <l>wo/ fu&#x364;r die<hi rendition="#b">Liebe/</hi>man nur krieget Ach und Wee?</l></lg>
             <lb/>
-            <l>Antwort: Gegenfrag/ und Wunſch.</l>
+            <lg n="2">
+               <head>Antwort: Gegenfrag/ und Wunſch.</head>
             <lb/>
             <l>Ja freylich: Aber was wolt Jhr hiemit andeuten?</l>
             <lb/>
@@ -23626,9 +23637,10 @@
             <lb/>
             <l>vermehret Euer Gſchlecht/ und bringt es ho&#x364;her auf/</l>
             <lb/>
-            <l>der oberſt Schiffpatron ſelbs leite Schiffes lauff!</l>
+            <l>der oberſt Schiffpatron ſelbs leite Schiffes lauff!</l></lg>
             <lb/>
-            <l>Beſchließlicher Neben-wunſch.</l>
+            <lg n="3">
+               <head>Beſchließlicher Neben-wunſch.</head>
             <lb/>
             <l>Noch eines iſt allhier zu wu&#x364;nſchen: daß die<hi rendition="#b">Liebe;</hi></l>
             <lb/>
@@ -23638,8 +23650,9 @@
             <lb/>
             <l>Ach/ daß es ba&#x364;ldeſt mo&#x364;g ung'ſcha&#x364;digt lauffen eyn</l>
             <lb/>
-            <l><hi rendition="#b">in Texel oder Flie:</hi>ein Fridenſchiff zu ſeyn!</l>
+            <l><hi rendition="#b">in Texel oder Flie:</hi>ein Fridenſchiff zu ſeyn!</l></lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch">Herꝛ</fw>
 
             <lb/>
@@ -23661,7 +23674,6 @@
             <l>vil Jnſlen die nicht weichen.</l>
             </lg>
             <lb/>
-            </div>
 
             <div type="poem-div">
             <head><hi rendition="#aq">Tenor.</hi></head>
@@ -23832,8 +23844,7 @@
             <fw place="top" type="header">Das Drey- und Zwantzigſte</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.7.]</label> Hochzeitgeſang/ an gewu&#x364;ſſe Ehrenperſohnen.</head>
+            <head><label>[D.7.]</label><lb/>Hochzeitgeſang/ an gewu&#x364;ſſe Ehrenperſohnen.</head>
             <lb/>
             </div>
 
@@ -23865,6 +23876,7 @@
             <lb/>
             <l>Venus diſes nicht verſchweiget/ ſonder ihrem Marſen zeiget.</l>
             <lb/>
+               
             <l><hi rendition="#in">V</hi>enus/ in der Beckelhauben</l>
             <lb/>
             <l>welche Mars hat abgelegt/</l>
@@ -23995,38 +24007,38 @@
             <fw place="top" type="pageNum">308</fw>
             <lb/>
             <fw place="top" type="header">Das Vier- und Zwantzigſte</fw>
-            <l><heada><lb/>
-            <label>[D.8.]</label> Auf Ein gewiß Hochzeitliches Ehren-Feſt/ den 23.
+               
+            <div n="2"><head><label>[D.8.]</label><lb/>Auf Ein gewiß Hochzeitliches Ehren-Feſt/ den 23.
             <lb/>
             Jenner/ 1665. in Zu&#x364;rich.
             <lb/>
-            Geſungen unter eines Kinds-Kindes Nam&#x342;en/</heada></l>
+            Geſungen unter eines Kinds-Kindes Nam&#x342;en/
             <lb/>
-            <l>Jn der Melodey:</l>
+            Jn der Melodey:
             <lb/>
-            <l>Jch armer hette ſchier ein a&#x364;rgernuß ꝛc.</l>
+            Jch armer hette ſchier ein a&#x364;rgernuß ꝛc.</head>
             <lb/>
-            <l>Großvatter/ Glu&#x364;k/ Glu&#x364;k zu! durch Chriſtum den Er-</l>
-            <lb break="no"/>
-            <l>halter/</l>
+            <lg type="poem"><l>Großvatter/ Glu&#x364;k/ Glu&#x364;k zu! durch Chriſtum den Er-
+            <lb break="no"/>halter/</l>
             <lb/>
             <l>zum dritten Band der Eh'/ in Euerm Ehren-Alter!</l>
             <lb/>
             <l>Einhundert fu&#x364;nfzig Jahr/ und etliche darzu/</l>
             <lb/>
-            <l>Macht Jhr und eure Braut: Lebt mehr in Frid</l>
+            <l>Macht Jhr und eure Braut: Lebt mehr in Frid
+            <lb/>und Rhu!</l></lg><lb/>
+            </div>
+               
+            <head><label>[D.9.]</label> Hochzeitl. Geſpra&#x364;ch und Triumph Geſa&#x364;nglein/
             <lb/>
-            <l>und Rhu!<heaad><lb/>
-            <label>[D.9.]</label> Hochzeitl. Geſpra&#x364;ch und Triumph Geſa&#x364;nglein/
-            <lb/>
-            auf das Ehefeſt Hr. C. E. H. und Jfr. C. H.</heaad>ge-</l>
+            auf das Ehefeſt Hr. C. E. H. und Jfr. C. H.ge-</l>
             <lb break="no"/>
             <l>halten/ den 25. Nov. 1667.</l>
             <lb/>
             <l>Sonſt auch in den Gſangsweiſen: Wiewol der zeiten ſcho&#x364;nſte/ ꝛc.</l>
             <lb/>
             <l>und: Und wer das Creutze/ ꝛc.</l>
-            </lg>
+            </lg></head>
             <lb/>
             </lg>
             </div>
