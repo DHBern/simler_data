@@ -66,9 +66,7 @@
             <milestone unit="section" rendition="#hr"/>
             <lb/>
 
-            <div type="dedication">
-
-                <head><label>[iii.]</label></head>
+            <div type="dedication" xml:id="iii">
 
                 <list>
                     <head>Denen Hochgeachten / woledlen / vesten / frommen / ehren-nohtvesten /
@@ -209,9 +207,8 @@
             </div>
             <pb n="[A v r]"/>
 
-            <div>
+            <div xml:id="iv">
                 <head>
-                    <label>[iv.]</label>
                     <hi rendition="#aq #b">Ex Epistola Magnifici simul ac Literatissimi Viri,</hi><lb/>
                     <hi rendition="#aq #b #k">Dn.</hi>
                     <hi rendition="#aq #b"><rs type="person" key="person_022">DANIELIS
@@ -231,9 +228,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="v">
                 <head>
-                    <label>[v.]</label>
                     <hi rendition="#aq #b">Ex Epistola V. rev. &amp; doctißimi</hi><lb/>
                     <hi rendition="#aq #b #k">Dn.</hi>
                     <hi rendition="#aq #b"><rs type="person" key="person_009">GEORGII
@@ -255,9 +251,8 @@
 
             <pb n="[A v v]"/>
 
-            <div>
+            <div xml:id="vi">
                 <head>
-                    <label>[vi.]</label>
                     <hi rendition="#aq #b">I.</hi><lb/>
                     <hi rendition="#aq #b">Ad Authorem</hi><lb/>
                     <hi rendition="#aq #b">doctißimarum Cantionum sacrarum.</hi>
@@ -290,9 +285,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="vii">
                 <head>
-                    <label>[vii.]</label>
                     <hi rendition="#aq #b">II.</hi><lb/>
                     <hi rendition="#aq #b">Ioannes Wilelmus Simlerus.</hi><lb/>
                     <!-- Griechischer Text zu ergänzen (JA) --><lb/>
@@ -320,9 +314,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="viii">
                 <head>
-                    <label>[viii.]</label>
                     <hi rendition="#aq #b">III.</hi><lb/>
                     <hi rendition="#aq #b">IOANNES GVIELMVS SIMLERVS ARTE FECIT.</hi><lb/>
                     <hi rendition="#aq #b">Per Anagramma,</hi><lb/>
@@ -356,9 +349,8 @@
 
             <pb n="[A vi r]"/>
 
-            <div>
+            <div xml:id="ix">
                 <head>
-                    <label>[ix.]</label>
                     <hi rendition="#aq #b">IV.</hi></head>
                 <lb/>
 
@@ -438,9 +430,8 @@
 
             <pb n="[A vi v]"/>
 
-            <div>
+            <div xml:id="x">
                 <head>
-                    <label>[x.]</label>
                     <hi rendition="#aq #b">V.</hi></head>
                 <lb/>
 
@@ -452,9 +443,8 @@
 
             <pb n="[A vii r]"/>
 
-            <div>
+            <div xml:id="xi">
                 <head>
-                    <label>[xi.]</label>
                     <hi rendition="#aq #b">VI.</hi><lb/>
                     <hi rendition="#aq #b">U</hi><hi rendition="#b">ber Herrn Tichters namen
                         Bu&#x366;chstabwächsel</hi><lb/>
@@ -541,9 +531,8 @@
 
             <pb n="[A vii v]"/>
 
-            <div>
+            <div xml:id="xii">
                 <head>
-                    <label>[xii.]</label>
                     <hi rendition="#aq #b">VII.</hi><lb/>
                     <hi rendition="#b">über den gl<unclear reason="uncleanPrint"
                         >u&#x366;</unclear>klichen fortgang erwünschter Außu&#x366;bung der ädlen
@@ -609,9 +598,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="xiii">
                 <head>
-                    <label>[xiii.]</label>
                     <hi rendition="#b">Der Tichter an sein Bu&#x366;ch.</hi></head>
                 <lb/>
 
@@ -629,9 +617,8 @@
 
             <pb n="[A viii r]"/>
 
-            <div>
+            <div xml:id="xiv">
                 <head>
-                    <label>[xiv.]</label>
                     <hi rendition="#aq #b">VIII.</hi></head>
                 <lb/>
 
@@ -807,9 +794,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="xv">
                 <head>
-                    <label>[xv.]</label>
                     <hi rendition="#aq #b">IX.</hi><lb/>
                     <hi rendition="#b">An Herren <rs type="person" key="person_024">Ehrenhold Falken
                             / von Traubenberg</rs> / Sonnet.</hi>
@@ -864,9 +850,8 @@
 
             <pb n="[X i v]"/>
 
-            <div>
+            <div xml:id="xvi">
                 <head>
-                    <label>[xvi.]</label>
                     <hi rendition="#aq #b">X.</hi></head>
                 <lb/>
 
@@ -920,9 +905,8 @@
 
             <pb n="[X ii r]"/>
 
-            <div>
+            <div xml:id="xvii">
                 <head>
-                    <label>[xvii.]</label>
                     <hi rendition="#aq #b">XI.</hi><lb/>
                     <hi rendition="#aq #b">In laudem Autoris, &amp;c.</hi>
                 </head>
@@ -968,9 +952,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="xviii">
                 <head>
-                    <label>[xviii.]</label>
                     <hi rendition="#aq #b">XII.</hi></head>
 
                 <lg>
@@ -980,9 +963,8 @@
 
             <pb n="[X ii v]"/>
 
-            <div>
+            <div xml:id="xix">
                 <head>
-                    <label>[xix.]</label>
                     <hi rendition="#aq #b">XIII.</hi><lb/>
                     <hi rendition="#b">Zu ehren und lobwürdigem ruhm dem hochgelehrten Herren Johann
                         Wilhelm Simler / Zuchtherren im obern</hi>
@@ -1043,9 +1025,8 @@
 
             <pb n="[X iii r]"/>
 
-            <div>
+            <div xml:id="xx">
                 <head>
-                    <label>[xx.]</label>
                     <hi rendition="#aq #b">XIV.</hi><lb/>
                     <hi rendition="#b">Haubtbegriff des gantzen Bu&#x366;chs / auf zweyer des H.
                         Tichters Söhnen / zugleich</hi><lb/>
@@ -1292,9 +1273,8 @@
                 <lb/>
             </div>
 
-            <div>
+            <div xml:id="xxi">
                 <head>
-                    <label>[xxi.]</label>
                     <hi rendition="#aq #b">XV.</hi><lb/>
                     <hi rendition="#aq #b">Omne trinum perfectum.</hi>
                 </head>
@@ -1329,9 +1309,8 @@
 
             <pb n="[X iv r]"/>
 
-            <div>
+            <div xml:id="xxii">
                 <head>
-                    <label>[xxii.]</label>
                     <hi rendition="#aq #b">XVI.</hi>
                 </head>
 
@@ -1342,9 +1321,8 @@
 
             <pb n="[X iv v]"/>
 
-            <div>
+            <div xml:id="xxiii">
                 <head>
-                    <label>[xxiii.]</label>
                     <hi rendition="#aq #b">XVII.</hi></head>
                 <lb/>
 
