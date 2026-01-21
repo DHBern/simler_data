@@ -423,7 +423,7 @@
        ======================================== -->  
 
     <xsl:template match="*:ab" mode="merge-ab">
-        <milestone xmlns="http://www.tei-c.org/ns/1.0" unit="page" ana="{@facs}"/>
+        <!--<milestone xmlns="http://www.tei-c.org/ns/1.0" unit="page" ana="{@facs}"/>-->
         <xsl:apply-templates select="node()" mode="merge-ab"/>
     </xsl:template>
     
