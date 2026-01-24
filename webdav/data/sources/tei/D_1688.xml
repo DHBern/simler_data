@@ -23,16 +23,17 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
+      <front>
             <pb facs="4076749"/>
             <pb facs="4076750"/>
             <pb facs="4076751"/>
 
-            <label>[ii.]</label> Johann-Wilhelm
+            <div>
+               <titlePage type="main"><label>[ii.]</label><docAuthor>Johann-Wilhelm
             <lb/>
-            Simlers
+            Simlers</docAuthor>
             <lb/>
-            <hi rendition="#b">Teutſcher Getich-</hi>
+            <docTitle><titlePart type="main"><hi rendition="#in">T</hi>eutſcher <hi rendition="#in">G</hi>etich-
             <lb break="no"/>
             ten die Vierte/ von Jhme ſelbſten
             <lb/>
@@ -40,111 +41,116 @@
             <lb/>
             einen Viertheil vermehrt- und ver-
             <lb break="no"/>
-            beſſerte Außfertigung:
+            beſſerte Außfertigung:</titlePart>
             <lb/>
-            Jn ſich haltend
+            <titlePart type="desc">Jn ſich haltend
             <lb/>
-            <hi rendition="#aq"><num>I.</num></hi> Aller Pſalmen Davids Haubtbegriff: in 150.
+            <list>
+               <item><hi rendition="#aq">I.</hi> Aller Pſalmen Davids Haubtbegriff: in 150.
             <lb/>
-            Viergetichten/ <anchor xml:id="a1"/>undſo<note type="annotation" targetEnd="a1"><p>Zusammengeschriebene Form nicht nachgewiesen, vermutlich handelt es sich um eine platzsparende Massnahme des Druckers.</p></note> vilen Reimſchlüſſen:
+            Viergetichten/ <sic>undſo</sic> vilen Reimſchlüſſen:</item>
             <lb/>
-            <hi rendition="#aq"><num>II.</num></hi> Feſt- und Unterweiſungs-Geſa&#x364;nge:
+            <item><hi rendition="#aq">II.</hi> Feſt- und Unterweiſungs-Geſa&#x364;nge:</item>
             <lb/>
-            <hi rendition="#aq"><num>III.</num></hi> Unterſchiedliche/ auf zeiten und anla&#x364;ſſe ge-
+            <item><hi rendition="#aq">III.</hi> Unterſchiedliche/ auf zeiten und anla&#x364;ſſe ge-
             <lb break="no"/>
             richtete Geſa&#x364;nge/ Glu&#x364;ckwu&#x364;nſchungen/
             <lb/>
-            Ehren- und Loblieder:
+            Ehren- und Loblieder:</item>
             <lb/>
-            <hi rendition="#aq"><num>IV.</num></hi> Neuaußgeſezte/ mit geiſtlichen neuen Texten
+            <item><hi rendition="#aq">IV.</hi> Neuaußgeſezte/ mit geiſtlichen neuen Texten
             <lb/>
             unterlegte Muſikſtu&#x364;kke: denen auch andre
             <lb/>
-            außerleſene/ beygefu&#x364;get worden.
+            außerleſene/ beygefu&#x364;get worden.</item>
             <lb/>
-            <hi rendition="#aq"><num>V.</num></hi> Allerhand erbauliche Uberſchriften: Geburt-
+            <item><hi rendition="#aq">V.</hi> Allerhand erbauliche Uberſchriften: Geburt-
             <lb break="no"/>
             und Sterb-Getichte: Sinn-Sitten-
             <lb break="no"/>
-            Wahl- und Haußſpru&#x364;che.
+            Wahl- und Haußſpru&#x364;che.</item></list></titlePart></docTitle>
             <lb/>
-            Getrukt zu Zu&#x364;rich/
+               <milestone rendition="#hr" unit="section"/>
+               <lb/>
+            <docImprint>Getrukt zu <pubPlace>Zu&#x364;rich</pubPlace>/
             <lb/>
-            Jn Verlegung Joh. Wilhelm Simlers/ <hi rendition="#aq">Bp.</hi>
+            Jn Verlegung <publisher>Joh. Wilhelm Simlers</publisher>/ <hi rendition="#aq">Bp.</hi>
             <lb/>
             durch
             <lb/>
-            Johann Rudolph Simler.
+           <publisher> Johann Rudolph Simler</publisher>.
             <lb/>
-            Anno 1688.
+            Anno <docDate>1688</docDate>.</docImprint></titlePage>
             <lb/>
             <pb facs="4076753"/>
 
             <fw place="top" type="header">Deß Auth. Seligen</fw>
             <lb/>
-            <label>[iii.]</label> <hi rendition="#b">Denen Hochgeachten/ woledlen/ veſten/</hi>
+         <div n="2" type="dedication">
+            <list><head><label>[iii.]</label> <hi rendition="#c"><hi rendition="#b">Denen Hochgeachten/ woledlen/ veſten/</hi>
             <lb/>
             from&#x342;en/ ehren-nohtveſten/ fu&#x364;rſichtigen und
             <lb/>
-            weiſen Herꝛen:
+            weiſen Herꝛen:</hi></head>
             <lb/>
-            <hi rendition="#b">Herꝛn Hans Jacob Leu&#x364;en/ des Rahts/ Statt-</hi>
+            <item><hi rendition="#b">Herꝛn Hans Jacob Leu&#x364;en/ des Rahts/ Statt-</hi>
             <lb break="no"/>
             haltern/ und oberſten Leutenant u&#x364;ber der Statt
             <lb/>
-            Zu&#x364;rich Panner:
+            Zu&#x364;rich Panner:</item>
             <lb/>
-            <hi rendition="#b">Junkern Hans Heinrich Eſchern/ des Rahts</hi>
+            <item><hi rendition="#b">Junkern Hans Heinrich Eſchern/ des Rahts</hi>
             <lb/>
-            und Statthaubtmann:
+            und Statthaubtmann:</item>
             <lb/>
-            <hi rendition="#b">Herrn Matthias Landolten/ des Rahts von</hi>
+            <item><hi rendition="#b">Herrn Matthias Landolten/ des Rahts von</hi>
             <lb/>
-            der freyen Wahl:
+            der freyen Wahl:</item>
             <lb/>
-            <hi rendition="#b">Herꝛn Hans Bergern/ des Rahts von der</hi>
+            <item><hi rendition="#b">Herꝛn Hans Bergern/ des Rahts von der</hi>
             <lb/>
             freyen Wahl/ Bauherꝛn/ und geweſenem Vogt
             <lb/>
-            der Herꝛſchafft Weinfelden:
+            der Herꝛſchafft Weinfelden:</item>
             <lb/>
-            <hi rendition="#b">Herꝛn Hans Heinrich Schultheſſen/ des</hi>
+            <item><hi rendition="#b">Herꝛn Hans Heinrich Schultheſſen/ des</hi>
             <lb/>
-            Rahts und Zunfftmeiſtern:
+            Rahts und Zunfftmeiſtern:</item>
             <lb/>
-            <hi rendition="#b">Herꝛn Hans Heinrich Mu&#x364;llern/ des Rahts/</hi>
+            <item><hi rendition="#b">Herꝛn Hans Heinrich Mu&#x364;llern/ des Rahts/</hi>
             <lb/>
             Zunfftmeiſtern/ und Geſandten u&#x364;ber das
             <lb/>
-            Gebirg:
+            Gebirg:</item>
             <lb/>
-            <hi rendition="#b">Herꝛn Hans Heinrich Rahnen/ des Regi-</hi>
+            <item><hi rendition="#b">Herꝛn Hans Heinrich Rahnen/ des Regi-</hi>
             <lb break="no"/>
             ments der Statt Zu&#x364;rich/ und Altſchu&#x364;zzen-
             <lb break="no"/>
-            meiſtern:
+            meiſtern:</item></list>
             <lb/>
-            Meinen allerſeits hochgeehrten Herꝛen Go&#x364;nnern/
+            <p><hi rendition="#smaller #et">Meinen allerſeits hochgeehrten Herꝛen Go&#x364;nnern/
             <lb/>
             theils auch lieben Herꝛen Vettern/
             <lb/>
-            Schwa&#x364;geren und Gefa&#x364;tteren.
+            Schwa&#x364;geren und Gefa&#x364;tteren.</hi></p>
             <lb/>
             <fw place="bottom" type="catch">Hoch-</fw>
-            <lb break="no"/>
+            <lb/>
             <pb facs="4076754"/>
 
             <fw place="top" type="header">Zuſchrifft.</fw>
             <lb/>
-            <hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ woledle/ veſte/ fromme/</hi>
+           <div>
+              <p><hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ woledle/ veſte/ fromme/</hi>
             <lb/>
             ehren-nohtveſte/ fu&#x364;rſichtige/ weyſe/ hoch-
             <lb break="no"/>
             geehrte Herꝛen Go&#x364;nnere; auch liebe Herꝛen
             <lb/>
-            Vettere/ Schwa&#x364;gere/ und Gefa&#x364;ttere.
+            Vettere/ Schwa&#x364;gere/ und Gefa&#x364;ttere.</p>
             <lb/>
-            Das abſehen eines Chriſtlichen Poeten ſol
+            <p>Das abſehen eines Chriſtlichen Poeten ſol
             <lb/>
             fu&#x364;rnemlich gerichtet ſeyn auf den Nutzen; und
             <lb/>
@@ -160,9 +166,9 @@
             <lb/>
             worten ſeyen/ daß dardurch auch der klugen ver-
             <lb break="no"/>
-            ſtand beluſtiget und geſcha&#x364;rffet werde.
+            ſtand beluſtiget und geſcha&#x364;rffet werde.</p>
             <lb/>
-            Diſe beyde Stu&#x364;kke nun haben ſich bey dem
+            <p>Diſe beyde Stu&#x364;kke nun haben ſich bey dem
             <lb/>
             gro&#x364;ſſern theil Teutſcher Poeten und Reymentich-
             <lb break="no"/>
@@ -184,9 +190,9 @@
             <lb/>
             u&#x364;belklingenden Verſen nichts minders alß beluſti-
             <lb break="no"/>
-            gen ko&#x364;nnen.
+            gen ko&#x364;nnen.</p>
             <lb/>
-            Diſer zeit aber/ und zwar mitten unter denen
+            <p>Diſer zeit aber/ und zwar mitten unter denen
             <lb/>
             <fw place="bottom" type="pageNum">A ij</fw>
             <lb/>
@@ -212,11 +218,11 @@
             <lb/>
             wider herfu&#x364;r gezogen: wie deſſen kein verſta&#x364;ndiger
             <lb/>
-            und redlicher Teutſchm<anchor xml:id="a2"/>a<note type="annotation" targetEnd="a2"><p>Über das a steht hier kein übergeschriebenes e, sondern ein Fleck. Dieser Schluss ergibt sich aus dem Vergleich mit dem Exemplar der Staats- und Stadtbibliothek Augsburg.</p></note>nn; der ihre ruhmwu&#x364;rdi-
+            und redlicher Teutſchmann; der ihre ruhmwu&#x364;rdi-
             <lb break="no"/>
-            ge Schrifften geleſen; in abred ſeyn wird.
+            ge Schrifften geleſen; in abred ſeyn wird.</p>
             <lb/>
-            Jch/ fu&#x364;r meine wenige perſon/ beka&#x364;nne mich
+            <p>Jch/ fu&#x364;r meine wenige perſon/ beka&#x364;nne mich
             <lb/>
             deßnacher gegen der Teutſchen Ticht- und Reym-
             <lb break="no"/>
@@ -234,11 +240,11 @@
             <lb/>
             neben denſelben/ wenig andere/ iedoch nicht uner-
             <lb break="no"/>
-            bauliche ſachen eyngef<anchor xml:id="a3"/><choice><corr/><sic>u&#x366;</sic></choice><note type="annotation" targetEnd="a3"><p>Schreibweise mit u&#x366; war wohl auch möglich, in C steht allerdings u&#x364;</p></note>hrt. Die Beluſtigung
+            bauliche ſachen eyngefu&#x366;hrt. Die Beluſtigung
             <lb/>
             aber kan ich nicht zeigen in wolklingenden Ver-
             <lb break="no"/>
-            <anchor xml:id="a4"/>ſ<note type="annotation" targetEnd="a4"><p>Im Vergleichsexemplar ist auch der Buchstabe besonders fett. Allerdings scheint er da einem Schaft-s deutlich ähnlicher.</p></note>en/ außerleſnen redensarten und poetiſchen erfin-
+            ſen/ außerleſnen redensarten und poetiſchen erfin-
             <lb break="no"/>
             dungen; alß in welchen ich faſt unerfahren bin;
             <lb/>
@@ -248,7 +254,7 @@
             <lb/>
             Geſangweiſen/ auf die der gro&#x364;ſſer theil meiner Ge-
             <lb break="no"/>
-            tichten von mir gerichtet worden.
+            tichten von mir gerichtet worden.</p>
             <lb/>
             <fw place="bottom" type="catch">Damit</fw>
             <lb/>
@@ -256,7 +262,7 @@
 
             <fw place="top" type="header">Zuſchrifft.</fw>
             <lb/>
-            Damit aber auch Kunſtverſta&#x364;ndige/ durch
+            <p>Damit aber auch Kunſtverſta&#x364;ndige/ durch
             <lb/>
             diſes Bu&#x364;chlein ſich in etwas zubeluſtigen ha&#x364;tten/
             <lb/>
@@ -302,9 +308,9 @@
             <lb/>
             worden. Wird alſo/ verhoffenlich/ die erwu&#x364;nſchte
             <lb/>
-            Beluſtigung auch nicht ermanglen.
+            Beluſtigung auch nicht ermanglen.</p>
             <lb/>
-            Daß aber/ großgünſtige/ hochgeehrte Herꝛen/
+            <p>Daß aber/ großgünſtige/ hochgeehrte Herꝛen/
             <lb/>
             diſe meine poetiſche Erſtlinge Euern Ehrenperſo-
             <lb break="no"/>
@@ -316,9 +322,9 @@
             <lb/>
             <pb facs="4076757"/>
 
-            <fw place="top" type="header">Zuſchrifft<anchor xml:id="a5"/>.<note type="annotation" targetEnd="a5"><p>Im Vergleichsexemplar (Augsburg) steht kein Doppelpunkt, sondern eindeutig ein Punkt.</p></note></fw>
+            <fw place="top" type="header">Zuſchrifft.</fw>
             <lb/>
-            auß alter ge<anchor xml:id="a6"/>w<note type="annotation" targetEnd="a6"><p>Der Buchstabe "w" scheint etwas grösser als die anderen.</p></note>ohnheit/ ꝛc. teihls aber und fu&#x364;rnem-
+            auß alter gewohnheit/ ꝛc. teihls aber und fu&#x364;rnem-
             <lb break="no"/>
             lich meine ho&#x364;chſtſchuldige dankbarkeit fu&#x364;r vilfaltig
             <lb/>
@@ -344,9 +350,9 @@
             <lb break="no"/>
             gen mo&#x364;gen/ wird es mich zu mehrerm fleiß in ver-
             <lb break="no"/>
-            geltung erweken und anfriſchen.
+            geltung erweken und anfriſchen.</p>
             <lb/>
-            Unter deſſen flehne ich zum gna&#x364;digen Gott/
+            <p>Unter deſſen flehne ich zum gna&#x364;digen Gott/
             <lb/>
             Er wolle Eure Ehrenperſonen mit lieben angeho&#x364;-
             <lb break="no"/>
@@ -358,31 +364,33 @@
             <lb break="no"/>
             harꝛlichen ihren gunſten ich/ beſten fleiſſes/ mich
             <lb/>
-            empfehle: verbleibend
+            empfehle: verbleibend</p>
             <lb/>
-            meiner hochgeehrten Herꝛen
+            <closer><salute><hi rendition="#c">meiner hochgeehrten Herꝛen</hi>
             <lb/>
-            ſchuldgeneigtwilliger diener
+            <hi rendition="#c #et">ſchuldgeneigtwilliger diener</hi>
             <lb/>
             Zu&#x364;rich/ den 28. tag Brachm.
             <lb/>
-            1648.
+            <hi rendition="#et">1648.</hi>
             <lb/>
-            Joh. Wilhelm Simler.
+            <hi rendition="#right">Joh. Wilhelm Simler.</hi></salute></closer></div></div>
             <lb/>
             <pb facs="4076758"/>
-
-            <div n="2">
+               
+               <milestone rendition="#hr" unit="section"/>
+               <lb/>
+               <div n="2">
                <head><label>[D.i.]</label><lb/>
-                  An die Statt Zu&#x364;rich:
+                  <hi rendition="#c">An die Statt Zu&#x364;rich:</hi>
             <lb/>
-            Vber Deroſelben beru&#x364;hmte drey
+           <hi rendition="#c #b"> Vber Deroſelben beru&#x364;hmte drey
             <lb/>
             hochdeutſche Tichter/
             <lb/>
             Hn. J. W. S. Hr. J. J. B. und
             <lb/>
-            Hr. J. U. B.</head>
+            Hr. J. U. B.</hi></head>
             <lb/>
             <lg type="poem">
                <l><hi rendition="#in">W</hi>As dich/ Groſſes Zu&#x364;rich/ lobt/ unter tauſend ander'n
@@ -393,26 +401,26 @@
             <lb/>
             machen/</l>
             <lb/>
-            <l>Jſt der Dichter edles Kleeblat/ und die hochberu&#x364;hmte
+            <l rendition="#et">Jſt der Dichter edles Kleeblat/ und die hochberu&#x364;hmte
             <lb/>
             Schwahnen:</l>
             <lb/>
-            <l>Diſe ſind es/ die dir ſtekken auf die Teutſchen Ehren-fahnen<anchor xml:id="a7"/>;<note type="annotation" targetEnd="a7"><p>Im Vergleichsexemplar ist hier ein Semikolon eindeutig zu sehen.</p></note></l>
+               <l rendition="#et">Diſe ſind es/ die dir ſtekken auf die Teutſchen Ehren-fahnen<supplied>;</supplied></l>
             <lb/>
             <l>Diſe ſeind es/ welche dir/ durch gelehrte Dichter-ſchrifften/</l>
             <lb/>
             <l>Die ein Weiſer billich liebt/ ſolch ein Denckmal ko&#x364;nnen ſtifften/</l>
             <lb/>
-            <l>Das beſtehndig ſteht und w<anchor xml:id="a8"/>a&#x364;<note type="annotation" targetEnd="a8"><p>Das übergeschriebene e ist im Vergleichsexemplar besser sichtbar.</p></note>hret. Darum bleibe nie ver-
+               <l rendition="#et">Das beſtehndig ſteht und wa&#x364;hret. Darum bleibe nie ver-
             <lb break="no"/>
             geſſen/</l>
             <lb/>
-            <l>Wie gar ho&#x364;chlich diſen Dreyen Du mit ſchulden ſeyſt ve<anchor xml:id="a9"/><supplied>r-</supplied><note type="annotation" targetEnd="a9"><p>Wahrscheinlich verschmierte Tinte. Im Vergleichsexemplar steht eindeutig "ver-"</p></note>
-            <lb/>
+               <l rendition="#et">Wie gar ho&#x364;chlich diſen Dreyen Du mit ſchulden ſeyſt ver-
+            <lb break="no"/>
             ſeſſen.</l>
             </lg>
             <lb/>
-            <closer>
+            <closer rendition="#et">
                Auß obligender Schuldigkeit und Pflicht
             <lb/>
             ſezt und u&#x364;berſendet diſes von der Hohen
@@ -421,25 +429,26 @@
             <lb/>
             1669.
             <lb/>
-            <salute>Daniel Ba&#x364;rholtz/ von Elbing
+            <salute><hi rendition="#et2">Daniel Ba&#x364;rholtz/ von Elbing
             <lb/>
             auß Preuſſen/ Edelgekro&#x364;nter K. Poet/
             <lb/>
             unter der hochlobl. Deutſchgeſinneten
             <lb/>
-            Roſengſellſchaffteren
+            Roſengſellſchaffteren</hi>
             <lb/>
-            Der Sanfftmu&#x364;htige.</salute>
+            <hi rendition="#right #b">Der Sanfftmu&#x364;htige.</hi></salute>
             </closer>
             <lb/>
             </div>
             <fw place="bottom" type="pageNum">A iiij</fw>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#i">Ex</hi></hi>
+               <fw place="bottom" type="catch"><hi rendition="#aq #i">Ex</hi></fw>
             <lb/>
             <pb facs="4076759"/>
 
-            <label>[iv.]</label> <hi rendition="#aq"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
+            <div n="2">
+               <head><label>[iv.]</label><hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
             <lb break="no"/>
             <hi rendition="#i">ſimi Viri,</hi>
             <lb/>
@@ -447,9 +456,9 @@
             <lb/>
             Ducentum viri Bernenſis, bis præfect<anchor xml:id="a10"/>i<note type="annotation" targetEnd="a10"><p>Im Vergleichsexemplar ist das i eindeutig sichtbar.</p></note>,
             <lb/>
-            Poetæ coronati.
+            Poetæ coronati.</hi></head>
             <lb/>
-            <hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus
+               <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus
             <lb/>
             Dn. Veiraſſius varia tua Scripta Poëtica, quæ
             <lb/>
@@ -465,9 +474,10 @@
             <lb break="no"/>
             ctos, ſed in Ethicis minùs verſatos, qui nonnun-
             <lb break="no"/>
-            quam ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi>
+            quam ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi></p></div>
             <lb/>
-            <label>[v.]</label> <hi rendition="#aq"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctiſſimi</hi>
+            <div n="2">
+               <head><label>[v.]</label> <hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctiſſimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN</hi>. GEORGII MULLERI,</hi>
             <lb/>
@@ -475,9 +485,9 @@
             <lb/>
             Paſtoris vigilantiſſimi; Poetæ
             <lb/>
-            acutiſſimi.
+            acutiſſimi.</hi></head>
             <lb/>
-            <hi rendition="#in">V</hi>lſum ita fuit humanitati tuæ, ut iſtas ſacra-
+            <p><hi rendition="#aq"><hi rendition="#in">V</hi>lſum ita fuit humanitati tuæ, ut iſtas ſacra-
             <lb break="no"/>
             rum Odarum epitomas lectioni meæ, non
             <lb/>
@@ -497,51 +507,58 @@
             <lb/>
             textu contuli) ſenſum eorum quaſi exhauſiſti,
             <lb/>
-            &amp;c. 22. Jan. 1648.
+            &amp;c. 22. Jan. 1648.</hi></p></div>
             <lb/>
-            <fw place="bottom" type="catch"><num>I.</num> Ad</fw></hi>
+            <fw place="bottom" type="catch"><hi rendition="#aq">I. Ad</hi></fw>
             <lb/>
             <pb facs="4076760"/>
 
-            <label>[vi.]</label> <hi rendition="#aq"><num>I.</num>
+            <div n="2">
+               <head><label>[vi.]</label> <hi rendition="#aq #c">I.
             <lb/>
             Ad Authorem
             <lb/>
-            <hi rendition="#i">doctiſſimarum Cantionum</hi>
+            <hi rendition="#i">doctiſſimarum Cantionum
             <lb/>
-            <hi rendition="#i">Sacrarum.</hi>
+               Sacrarum.</hi></hi></head>
             <lb/>
-            <hi rendition="#in">O</hi>Mnia perplacuere mihi, <hi rendition="#k"><hi rendition="#g">SIMLERE</hi></hi> diſerte,
+            <lg type="poem">
+               <l><hi rendition="#aq"><hi rendition="#in">O</hi>Mnia perplacuere mihi, <hi rendition="#k #g">SIMLERE</hi> diſerte,</hi></l>
             <lb/>
-            Quæ volvenda mihi miſit amica manus.
+            <l rendition="#et"><hi rendition="#aq">Quæ volvenda mihi miſit amica manus.</hi></l>
             <lb/>
-            Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,
+            <l><hi rendition="#aq">Si Deus eſt Pſalmis, ſi glorificandus &amp; Hymnis,</hi></l>
             <lb/>
-            Tu tuba divinæ laudis es altiſona.
+            <l rendition="#et"><hi rendition="#aq">Tu tuba divinæ laudis es altiſona.</hi></l></lg>
             <lb/>
-            FELIX WYSSIUS, Abbatiſſ. Eccl. Paſtor.</hi>
+            <closer rendition="#right"><hi rendition="#aq">FELIX WYSSIUS, Abbatiſſ. Eccl. Paſtor.</hi></closer></div>
             <lb/>
-            <label>[vii.]</label> <hi rendition="#aq"><num>II.</num>
+               <milestone rendition="#hr" unit="section"/>
+               <lb/>
+            <div n="2">
+               <head><label>[vii.]</label> <hi rendition="#aq">II.
             <lb/>
             Joannes Wilelmus Simlerus.</hi>
             <lb/>
-            <anchor xml:id="a11"/>α&#x313;ναγραμματιζόμενος<note type="annotation" targetEnd="a11"><p>Die Schreibung dieses griechischen Wortes muss geprüft werden.</p></note>,
+            α&#x313;ναγραμματιζόμενος,<!-- Schreibung prüfen griechisch -->
             <lb/>
-            <hi rendition="#aq">Illen' vir ſuave melos Muſis?
+            <hi rendition="#aq">Illen' vir ſuave melos Muſis?</hi></head>
             <lb/>
-            <hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi>
+            <lg type="poem"><l><hi rendition="#aq"><hi rendition="#in">I</hi>Lléne Vir Muſis <hi rendition="#i">&amp; Chriſto fundere dignum,</hi></hi></l>
             <lb/>
-            Suave melos <hi rendition="#i">verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus, amat?</hi>
+               <l rendition="#et"><hi rendition="#aq">Suave melos <hi rendition="#i">verbis, ſuaveq&#x301;<!-- que-Abkürzung --> rebus, amat?</hi></hi></l>
             <lb/>
-            <hi rendition="#i">Sic eſt: ecce liber præſe<anchor xml:id="a12"/><choice><sic>u</sic><corr>n</corr></choice><note type="annotation" targetEnd="a12"><p>In den Ausgaben A, B UND C steht hier "præſens", also mit n statt u. Wahrscheinlich handelt es sich um einen Druckfehler.</p></note>s hoc firmat abundè;</hi>
+            <l><hi rendition="#aq"><hi rendition="#i">Sic eſt: ecce liber præſe<choice><sic>u</sic><corr>n</corr></choice>s hoc firmat abundè;</hi></hi></l>
             <lb/>
-            <hi rendition="#i">Suave melos verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus habet.</hi>
+            <l rendition="#et"><hi rendition="#aq"><hi rendition="#i">Suave melos verbis, ſuaveq&#x301;<!-- que-Abkürzung --> rebus habet.</hi></hi></l></lg>
             <lb/>
-            JOH. WIRZIUS, S. S. Th. Prof.
+            <closer rendition="#right"><hi rendition="#aq"><hi rendition="#b">JOH. WIRZIUS, S. S. Th. Prof.</hi>
             <lb/>
-            honoris c. f.</hi>
+            honoris c. f.</hi></closer></div>
             <lb/>
-            <label>[viii.]</label> <hi rendition="#aq"><num>III.</num>
+               <milestone rendition="#hr" unit="section"/>
+               <lb/>
+            <div><head><label>[viii.]</label><hi rendition="#aq">III.
             <lb/>
             <hi rendition="#g">JOANNES GUIELMUS SIMLERUS</hi>
             <lb/>
@@ -549,93 +566,93 @@
             <lb/>
             <hi rendition="#i">Per Anagramma,</hi>
             <lb/>
-            Ann<anchor xml:id="a13"/>e<note type="annotation" targetEnd="a13"><p>Man könnte hier den Eindruck haben, dass eine ae-Ligatur vorliegt, obwohl schlecht sichtbar. Im Vergleichsexemplar steht aber eindeutig ein e.</p></note> Muſicus eriget hiſce: <hi rendition="#i">ut, re, mi, fa, ſol, la.</hi>
+            Anne Muſicus eriget hiſce: <hi rendition="#i">ut, re, mi, fa, ſol, la.</hi></hi></head>
             <lb/>
-            <hi rendition="#in">U</hi>T RElevet MIſerum FArum, SOLitósque LAbores
+            <lg type="poem"><l><hi rendition="#aq"><hi rendition="#in">U</hi>T RElevet MIſerum FArum, SOLitósque LAbores</hi></l>
             <lb/>
-            MVSICVS ANNE notis abjectos ERIGET HISCE<anchor xml:id="a14"/>?<note type="annotation" targetEnd="a14"><p>Im Vergleichsexemplar ist dieses Zeichen auch nicht gut erkennbar. Dieser Text erscheint aber auch in den Ausgaben B und C, wo eindeutig ein Fragezeichen steht.</p></note>
+            <l><hi rendition="#aq">MVSICVS ANNE notis abjectos ERIGET HISCE<supplied>?</supplied></hi></l>
             <lb/>
-            Falleris: Eſt virtus major; Suadæq&#x301;ue medulla
+            <l><hi rendition="#aq">Falleris: Eſt virtus major; Suadæq&#x301;ue medulla</hi></l>
             <lb/>
-            Largo quam promit SIMLERIA péctore Muſa.
+            <l><hi rendition="#aq">Largo quam promit SIMLERIA péctore Muſa.</hi></l></lg>
             <lb/>
-            JOH. HENRICUS HOTTINGERUS,
+            <closer rendition="#right"><hi rendition="#aq"><hi rendition="#b">JOH. HENRICUS HOTTINGERUS,</hi>
             <lb/>
             Eccleſ. Hiſtoriæ, Linguarum Orientalium,
             <lb/>
             Artiumq&#x301;ue Logicarum in Collegio Carolino
             <lb/>
-            Profeſſor ordinarius.</hi>
+            Profeſſor ordinarius.</hi></closer></div>
             <lb/>
             <fw place="bottom" type="pageNum">A v</fw>
             <lb/>
-            <fw place="bottom" type="catch"><hi rendition="#i">IV. E<anchor xml:id="a15"/>st<note type="annotation" targetEnd="a15"><p>Auch im Vergleichsexemplar nicht gut sichtbar. Da es sich um eine Kustode handelt, kann das Wort dank einem Vergleich mit der folgenden Seite rekonstruiert werden.</p></note></hi></fw>
+            <fw place="bottom" type="catch"><hi rendition="#aq #i">IV. Est</hi></fw>
             <lb/>
             <pb facs="4076761"/>
 
-            <label>[ix.]</label> <hi rendition="#aq"><num>IV.</num>
+            <div n="2">
+               <head><label>[ix.]</label> <hi rendition="#aq #c">IV.</hi></head>
             <lb/>
-            <hi rendition="#in">E</hi><hi rendition="#i">St opus Angelicum laudes cantare Jehovæ,</hi>
+            <lg type="poem"><l><hi rendition="#aq"><hi rendition="#in">E</hi><hi rendition="#i">St opus Angelicum laudes cantare Jehovæ,</hi></hi></l>
             <lb/>
-            <hi rendition="#i">Angelicus cantat facta ſtupenda chorus:</hi>
+            <l rendition="#et"><hi rendition="#aq #i">Angelicus cantat facta ſtupenda chorus:</hi></l>
             <lb/>
-            <hi rendition="#i">Ingeminat, Sanctus, Sanctusq&#x301;<abbr>ʒ</abbr> reclamat,</hi>
+               <l><hi rendition="#aq #i">Ingeminat, Sanctus, Sanctusq&#x301;<!-- que-Abkürzung --> reclamat,</hi></l>
             <lb/>
-            <hi rendition="#i">Et nos ad laudes excitat ille Dei.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Et nos ad laudes excitat ille Dei.</hi></l>
             <lb/>
-            <hi rendition="#i">Illius Angelici inſiſtit veſtigia cœtus,</hi>
+            <l><hi rendition="#aq #i">Illius Angelici inſiſtit veſtigia cœtus,</hi></l>
             <lb/>
-            <hi rendition="#i">Excelſi quisquis facta ſtupenda canit.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Excelſi quisquis facta ſtupenda canit.</hi></l>
             <lb/>
-            <hi rendition="#i">Hoc quoque</hi> Simlerum <hi rendition="#i">felicem nomine duco,</hi>
+            <l><hi rendition="#aq"><hi rendition="#i">Hoc quoque</hi> <hi rendition="#larger">Simlerum</hi> <hi rendition="#i">felicem nomine duco,</hi></hi></l>
             <lb/>
-            <hi rendition="#i">Quòd pubi noſtræ carmina ſancta ferat.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Quòd pubi noſtræ carmina ſancta ferat.</hi></l>
             <lb/>
-            <hi rendition="#i">Is pueris dictat noſtris, noſtrisque puellis,</hi>
+            <l><hi rendition="#aq #i">Is pueris dictat noſtris, noſtrisque puellis,</hi></l>
             <lb/>
-            <hi rendition="#i">Queis poßint Dominum concelebrare modis.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Queis poßint Dominum concelebrare modis.</hi></l>
             <lb/>
-            <hi rendition="#i">Teq&#x301;<abbr>ʒ</abbr> quaterq&#x301;<abbr>ʒ</abbr> beatus erit, qui talia diſcet</hi><abbr>ʒ</abbr> beatus erit, qui talia diſcet
+               <l><hi rendition="#aq #i">Terq&#x301;<!-- que-Abkürzung --> quaterq&#x301;<!-- que-Abkürzung --> beatus erit, qui talia diſcet</hi></l>
             <lb/>
-            <hi rendition="#i">Carmina, qui Domino cantica ſancta canet.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Carmina, qui Domino cantica ſancta canet.</hi></l>
             <lb/>
-            <hi rendition="#i">Qui non voce modò, tota ſed mente ſonabit</hi>
+            <l><hi rendition="#aq #i">Qui non voce modò, tota ſed mente ſonabit</hi></l>
             <lb/>
-            <hi rendition="#i">Divinum, Paulo ritè monente, melos.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Divinum, Paulo ritè monente, melos.</hi></l>
             <lb/>
-            <hi rendition="#i">„Non vox, ſed votum, non muſica chordula, ſed cor;</hi>
+            <l><hi rendition="#aq #i">„Non vox, ſed votum, non muſica chordula, ſed cor;</hi></l>
             <lb/>
-            <hi rendition="#i">„Non clamor, ſed amor clangit in aure Dei.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">„Non clamor, ſed amor clangit in aure Dei.</hi></l>
             <lb/>
-            <hi rendition="#i">Ille beatus erit, toto qui tempore vitæ</hi>
+            <l><hi rendition="#aq #i">Ille beatus erit, toto qui tempore vitæ</hi></l>
             <lb/>
-            <hi rendition="#i">Vitam ſinceram vixerit atque probam.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Vitam ſinceram vixerit atque probam.</hi></l>
             <lb/>
-            <hi rendition="#i">Ejus facta Deum pſallent pietate coruſca,</hi>
+            <l><hi rendition="#aq #i">Ejus facta Deum pſallent pietate coruſca,</hi></l>
             <lb/>
-            <hi rendition="#i">Hæc vitæ &amp; morum Muſica ſuavis erit.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Hæc vitæ &amp; morum Muſica ſuavis erit.</hi></l>
             <lb/>
-            <hi rendition="#i">Cœleſtem ille Patrem per ſecla perennia tandem</hi>
+            <l><hi rendition="#aq #i">Cœleſtem ille Patrem per ſecla perennia tandem</hi></l>
             <lb/>
-            <hi rendition="#i">Cantabit, ſcandens culmina celſa poli.</hi>
+               <l rendition="#et"><hi rendition="#aq #i">Cantabit, ſcandens culmina celſa poli.</hi></l></lg>
             <lb/>
-            Dilectiſſimo D. Affini modulabar
+            <closer><hi rendition="#aq #et2">Dilectiſſimo D. Affini modulabar</hi>
             <lb/>
-            JOH. RODOLPHUS HOFMEISTERUS,
+            <hi rendition="#aq #right"><hi rendition="#b">JOH. RODOLPHUS HOFMEISTERUS,</hi>
             <lb/>
-            V. D. M. &amp; Profeſſor Græco-Latinus.
+            V. D. M. &amp; Profeſſor Græco-Latinus.</hi></closer></div>
             <lb/>
-            <fw place="bottom" type="catch"><anchor xml:id="a16"/>'AN<note type="annotation" targetEnd="a16"><p>Da es sich wahrscheinlich um griechische Buchstaben handelt, wird das Tag "Antiqua" nicht verwendet.</p></note></fw></hi>
+            <fw place="bottom" type="catch">'AN<!-- Griechisch, Betonungszeichen? --></fw>
             <lb/>
             <pb facs="4076762"/>
-
             
-            
-            <div type="poem-div">
+            <div n="2">
             <head><label>[x.]</label> <hi rendition="#aq"><num>V.</num></hi></head>
             <lb/>
+               <!-- Griechisches Gedicht zu ergänzen --></div>
             <pb facs="4076763"/>
-            </div>
+            
 
             <div type="poem-div">
             <head><label>[xi.]</label> <hi rendition="#aq"><num>VI.</num></hi></head>
@@ -1562,7 +1579,8 @@
             <lb/>
             <closer>Beygeſezt von einem Treugeſinnten.</closer>
             <lb/>
-            </div>
+            </div></div></front>
+            <body>   
 
             <!-- Teil I -->
 
@@ -36202,28 +36220,25 @@
             </div>
 
             <div type="poem-div">
-            <head>
-            <lb/>
-            <label>[D.111.]</label> <num>180.</num> Ehrengeda&#x364;chtnus und Danckbezeug<supplied>u</supplied>ng
+            <head><label>[D.111.]</label><lb/>180. Ehrengeda&#x364;chtnus und Danckbezeug<supplied>u</supplied>ng
             <lb/>
             der Statt Stein am Rhein/ und deß daſelbſt verburger-
             <lb break="no"/>
-            ten wol geadleten Schmieden-geſchlechts;</head>
+               ten wol geadleten Schmieden-geſchlechts; an Wolgeb. Herꝛen/
+               <lb/>
+               Herꝛen Johann Rudolff/ Freyherꝛen von Schwartzenhorn/ Ro&#x364;m.
+               <lb/>
+               K<anchor xml:id="a388"/>a&#x364;<note type="annotation" targetEnd="a388"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>yſ. May. damalige<anchor xml:id="a389"/>n<note type="annotation" targetEnd="a389"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>Hof-KriegsRaht/ geweſnen Bottſchaffter
+               <lb/>
+               an die Ottomanniſche Pforten/ Herꝛen zu St. Margaretha an der
+               <lb/>
+               Wien/ u. a. w. der Ho<anchor xml:id="a390"/>ch<note type="annotation" targetEnd="a390"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>l. Fruchtbringenden Gſellſchafft wolwu&#x364;rd.
+               <lb/>
+               Mitgliede: Fu&#x364;r verehrte koſtbare Preſent/ und anderwer-
+               <lb break="no"/>
+               tige hocherſprießliche Verꝛichtungen.</head>
+               <lb/>
             <lg type="poem">
-            <l>an Wolgeb. Herꝛen/</l>
-            <lb/>
-            <l>Herꝛen Johann Rudolff/ Freyherꝛen von Schwartzenhorn/ Ro&#x364;m.</l>
-            <lb/>
-            <l>K<anchor xml:id="a388"/>a&#x364;<note type="annotation" targetEnd="a388"><p>übergeschriebenes e im Augsburger Exemplar besser sichtbar.</p></note>yſ. May. damalige<anchor xml:id="a389"/>n<note type="annotation" targetEnd="a389"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>Hof-KriegsRaht/ geweſnen Bottſchaffter</l>
-            <lb/>
-            <l>an die Ottomanniſche Pforten/ Herꝛen zu St. Margaretha an der</l>
-            <lb/>
-            <l>Wien/ u. a. w. der Ho<anchor xml:id="a390"/>ch<note type="annotation" targetEnd="a390"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>l. Fruchtbringenden Gſellſchafft wolwu&#x364;rd.</l>
-            <lb/>
-            <l>Mitgliede: Fu&#x364;r verehrte koſtbare Preſent/ und anderwer-</l>
-            <lb break="no"/>
-            <l>tige hocherſprießliche Verꝛichtungen.</l>
-            <lb/>
             <l>Mit Meduſen Zaube<anchor xml:id="a391"/>r<note type="annotation" targetEnd="a391"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>haubt/ Plutons Helm/ und Mercurs Degen/</l>
             <lb/>
             <l>mit der Pallas Schi<supplied>l</supplied>t zugleich/ brachte nicht ſo vil zu wegen</l>
@@ -36236,9 +36251,9 @@
             <lb/>
             <l>daß es einem Heymatkind wol ergeh in frembden landen/</l>
             <lb/>
-            <l>Nam&#x303;ens/<hi rendition="#b">Johann Rudolt Schmieden</hi>/ deinem ehmal<anchor xml:id="a395"/><unclear>s</unclear><note type="annotation" targetEnd="a395"><p>Verschmierte Tinte, auch im Augsburger Exemplar. Eine Virgel würde hier aber keinen Sinn ergeben.</p></note></l>
+            <l>Nam&#x303;ens/<hi rendition="#b">Johann Rudolt Schmieden</hi>/ deinem ehmal<anchor xml:id="a395"/><unclear reason="uncleanPrint">s</unclear><note type="annotation" targetEnd="a395"><p>Verschmierte Tinte, auch im Augsburger Exemplar. Eine Virgel würde hier aber keinen Sinn ergeben.</p></note>
             <lb/>
-            <l>Burgersman/</l>
+            Burgersman/</l>
             <lb/>
             <l>Der/ nach Herꝛen Vatters Tode/ minderja&#x364;hrig zog hindan</l>
             <lb/>
@@ -36292,17 +36307,17 @@
             <lb/>
             <l>ſelberwu&#x364;nſchtes-Wolergehn: Alles widrig weiche ferꝛen</l>
             <lb/>
-            <l>von dem<hi rendition="#b">Schwartzenhorner Stammen</hi>/ daß Er immer</l>
+            <l>von dem<hi rendition="#b">Schwartzenhorner Stammen</hi>/ daß Er immer
             <lb/>
-            <l>gru&#x364;hnend ſey/</l>
+            gru&#x364;hnend ſey/</l>
             <lb/>
             <l>daß Er alt'/ und nicht veralte; ſtets außſproſſend ſich verneu!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.112.]</label> <num>181.</num> Ehren- und Segen-Wunſch/ Herꝛen Hein-
+            <head><label>[D.112.]</label><lb/>181. Ehren- und Segen-Wunſch/ Herꝛen Hein-
             <lb break="no"/>
             rich Heſſen/ beru&#x364;hmtem Handels-herꝛen/ u&#x364;ber die
             <lb/>
@@ -36355,11 +36370,11 @@
             <lb/>
             <l>wie vor/ beſta&#x364;ndig bleib/ und immer ſich verneu!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.113.]</label> <num>182.</num> Uber Herꝛen. H. Ulr. Befu&#x364;rderung den
+            <head><label>[D.113.]</label><lb/>182. Uber Herꝛen. H. Ulr. Befu&#x364;rderung den
             <lb/>
             28. <hi rendition="#aq">May,</hi> 1666.</head>
             <lb/>
@@ -36372,11 +36387,11 @@
             <lb/>
             <l>Gott ſegne diſ're Wahl/ und geb/ was Jhr begehrt!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.114.]</label> <num>183.</num> Uber Hrn. J. L. Mu&#x364;llers zu Fr. Feld wol-
+            <head><label>[D.114.]</label><lb/>183. Uber Hrn. J. L. Mu&#x364;llers zu Fr. Feld wol-
             <lb break="no"/>
             meritierte Schultheſſen-Wahl/ An. 1666.</head>
             <lb/>
@@ -36387,10 +36402,11 @@
             <lb/>
             <l>zum Vatter Vatterlands; Herꝛn Lochern zugeſellet;</l>
             <lb/>
-            <l>Jch wu&#x364;nſche Glu&#x364;k zur Ehr! Gott ſegne Gut und Muht<anchor xml:id="a397"/><unclear>!</unclear><note type="annotation" targetEnd="a397"><p>Auch im Augsburger Exemplar ist nicht klar, ob hier ein Ausrufezeichen unsauber gedruckt worden oder ein Doppelpunkt verschmiert ist. Im Kontext macht "!" mehr Sinn</p></note></l>
+            <l>Jch wu&#x364;nſche Glu&#x364;k zur Ehr! Gott ſegne Gut und Muht<anchor xml:id="a397"/><unclear reason="uncleanPrint">!</unclear><note type="annotation" targetEnd="a397"><p>Auch im Augsburger Exemplar ist nicht klar, ob hier ein Ausrufezeichen unsauber gedruckt worden oder ein Doppelpunkt verschmiert ist. Im Kontext macht "!" mehr Sinn</p></note></l>
             <lb/>
             <l>Gott ſegne Raht und That/ dem Vatterland zu gut!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -36654,8 +36670,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.115.]</label> <num>210.</num> Neu-Jahrsgab eines Ehemanns fu&#x364;r
+            <head><label>[D.115.]</label><lb/>210. Neu-Jahrsgab eines Ehemanns fu&#x364;r
             <lb/>
             ſeine Liebſte.</head>
             <lb/>
@@ -36680,6 +36695,7 @@
             <lb/>
             <l>vom Vatterland nicht nemm Abſchid!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -36772,11 +36788,9 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.116.]</label> <num>212.</num> Kurtzes Anbind-Brieflin.</head>
+            <head><label>[D.116.]</label><lb/>212. Kurtzes Anbind-Brieflin.</head>
             <lb/>
             <lg type="poem">
-            <lg type="poem-subgroup">
             <l>Hochgeachter Herꝛ und Freund/</l>
             <lb/>
             <l>zo&#x364;rnet nicht/ daß ich Euch bind</l>
@@ -36788,7 +36802,10 @@
             <l>wu&#x364;nſchend/ daß Euch diſer Tag</l>
             <lb/>
             <l>o&#x364;ffter widerkomm ohn Klag!</l>
-            <lb/>
+            </lg>
+               <lb/>
+            </div>
+         
             <fw place="bottom" type="catch"><num>213.</num> An-</fw>
 
             <lb break="no"/>
@@ -36798,21 +36815,17 @@
             <lb/>
             <fw place="top" type="header">Uberſchrifft.</fw>
 
+            <div type="poem-div">
+            <head><label>[D.117.]</label><lb/>213.Ein anders:
             <lb/>
-            <l><label>[D.117.]</label></l>
-            </lg>
-               
-            <lg type="poem-subgroup">
-            <l><num>213.</num>Ein anders:</l>
+            Einer Frauen/ an Jhren abweſenden
             <lb/>
-            <l>Einer Frauen/ an Jhren abweſenden</l>
-            <lb/>
-            <l>Liebſten.</l>
-            </lg>
+            Liebſten.</head>
             <lb/>
                
-            <lg type="poem-subgroup">
-            <l><num>1.</num>W<anchor xml:id="a403"/>il<note type="annotation" targetEnd="a403"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>lkom&#x342; liebſter Tag/</l>
+            <lg type="poem">
+               <lg type="poem-subgroup">
+            <l>1. W<anchor xml:id="a403"/>il<note type="annotation" targetEnd="a403"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>lkom&#x342; liebſter Tag/</l>
             <lb/>
             <l>fehr von aller Klag/</l>
             <lb/>
@@ -36827,7 +36840,7 @@
             <lb/>
                
             <lg type="poem-subgroup">
-            <l><num>2.</num>M<supplied>ei</supplied>ne Treu&#x364;e Hand</l>
+            <l>2. M<supplied>ei</supplied>ne Treu&#x364;e Hand</l>
             <lb/>
             <l>flochte diſes Band/</l>
             <lb/>
@@ -36842,7 +36855,7 @@
             <lb/>
                
             <lg type="poem-subgroup">
-            <l><num>3.</num>Nach deß Landes ſitt</l>
+            <l>3. Nach deß Landes ſitt</l>
             <lb/>
             <l>bind ich Euch hiemit/</l>
             <lb/>
@@ -36857,7 +36870,7 @@
             <lb/>
                
             <lg type="poem-subgroup">
-            <l><num>4.</num>Euren Nammens-Tag</l>
+            <l>4. Euren Nammens-Tag</l>
             <lb/>
             <l>o&#x364;ffter/ ohne Klag/</l>
             <lb/>
@@ -36868,14 +36881,12 @@
             <l>wolt Euch/ ohn vergeß/</l>
             <lb/>
             <l>ba&#x364;ldeſt zu mir wenden!</l>
-            </lg>
-            </lg>
+            </lg></lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.118.]</label> <num>214.</num> Auf etlicher Herꝛen Ehren-Nam&#x342;ens-Tag:
+            <head><label>[D.118.]</label><lb/>214. Auf etlicher Herꝛen Ehren-Nam&#x342;ens-Tag:
             <lb/>
             den 6. Jenner. 1667</head>
             <lb/>
@@ -36896,22 +36907,22 @@
             <lb/>
             <l>Der Ho&#x364;chſt Sie ſpar geſunde<supplied>!</supplied></l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.119.]</label> <num>215.</num> Ein anders/ auf Caſpars-Tag.</head>
+            <head><label>[D.119.]</label><lb/>215. Ein anders/ auf Caſpars-Tag.</head>
             <lb/>
             <lg type="poem">
             <l>Wer Caſpars Nam&#x342;en tragt/ iſt Ko&#x364;niglich zu Ehren</l>
             <lb/>
-            <l>mit Gſellſchafftsleiſtu<supplied>n</supplied>g Heut<anchor xml:id="a406"/><unclear>'</unclear><note type="annotation" targetEnd="a406"><p>Im Augsburger Exemplar ist kein Apostroph zu sehen.</p></note>: dabey man helff verzehren</l>
+            <l>mit Gſellſchafftsleiſtu<supplied>n</supplied>g Heut<anchor xml:id="a406"/><unclear reason="uncleanPrint">'</unclear><note type="annotation" targetEnd="a406"><p>Im Augsburger Exemplar ist kein Apostroph zu sehen.</p></note>: dabey man helff verzehren</l>
             <lb/>
             <l>La&#x364;chs: Braatwu&#x364;rſt: Haſenfleiſch: in aller Fru&#x364;ndtlichkeit;</l>
             <lb/>
             <l>Luſtig! by ſu&#x364;ſſem Tranck wu&#x364;nſcht lange Lebens-zeit!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -37093,8 +37104,7 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.120.]</label> <num>218.</num> Ein anders/ auf Dorothea-Tag.</head>
+            <head><label>[D.120.]</label><lb/>218. Ein anders/ auf Dorothea-Tag.</head>
             <lb/>
             <lg type="poem">
             <l>Der<hi rendition="#b">Almanach;</hi>wie ichs verſtehe;</l>
@@ -37137,11 +37147,11 @@
             <lb/>
             <l>biß daß Er ewig Euch erfreut!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.121.]</label> <num>219.</num> Gemeines Anbindgeticht auf Suſan&#x303;a Tag.</head>
+            <head><label>[D.121.]</label><lb/>219. Gemeines Anbindgeticht auf Suſan&#x303;a Tag.</head>
             <lb/>
             <lg type="poem">
             <l>Heut iſt<hi rendition="#b">Suſanna</hi>Tag/ drumb ſchick ich diß gebende/</l>
@@ -37152,11 +37162,11 @@
             <lb/>
             <l>von heu<anchor xml:id="a413"/>t<note type="annotation" targetEnd="a413"><p>Verschwommen wegen Defekts im Digitalisat. Im Augsburger Exemplar eindeutig.</p></note>auch u&#x364;bers Jahr/ und u&#x364;bers Jahr ohn Ende!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.122.]</label> <num>220.</num> Anbindza&#x364;delein/ an alle Kinder/ die
+            <head><label>[D.122.]</label><lb/>220. Anbindza&#x364;delein/ an alle Kinder/ die
             <lb/>
             Peter heiſſen.</head>
             <lb/>
@@ -37187,8 +37197,7 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.123.]</label> <num>221.</num> Auf Matthias-Tag/ unter eines Tru-
+            <head><label>[D.123.]</label><lb/>221. Auf Matthias-Tag/ unter eines Tru-
             <lb break="no"/>
             ker J. Namen.</head>
             <lb/>
@@ -37225,6 +37234,7 @@
             <lb/>
             <l>und underzwu&#x364;ſchen Euch auch ſtets verbunden ſeyn.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -37285,8 +37295,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.124.]</label> <num>223.</num> Ein anders/ auf Rudolfs-Tag:
+            <head><label>[D.124.]</label><lb/>223. Ein anders/ auf Rudolfs-Tag:
             <lb/>
             An einen gewu&#x364;ſſen Freund.</head>
             <lb/>
@@ -37303,11 +37312,11 @@
             <lb/>
             <l>Scho&#x364;pffer/ mach geſund und fromm!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.125.]</label> <num>224.</num> Ein anders.</head>
+            <head><label>[D.125.]</label><lb/>224. Ein anders.</head>
             <lb/>
             <lg type="poem">
             <l>Rodolfs-Tag iſt angelangt/</l>
@@ -37332,12 +37341,11 @@
             <lb/>
             <l>o&#x364;ffter widerkomm ſein Tag!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.126.]</label> <num>225.</num> Anbindungs-Wunſch gegen allen <choice><sic>redli-lichen</sic><corr>redli-
+            <head><label>[D.126.]</label><lb/>225. Anbindungs-Wunſch gegen allen <choice><sic>redli-lichen</sic><corr>redli-
             <lb break="no"/>
             chen</corr></choice> Wilhelmen.</head>
             <lb/>
@@ -37362,12 +37370,11 @@
             <lb/>
             <l>als rechte Himmels-Erben!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.127.]</label> <num>226.</num> Auf eines guten Freunds
+            <head><label>[D.127.]</label><lb/>226. Auf eines guten Freunds
             <lb/>
             Wilhelmen Nammens-Tag.</head>
             <lb/>
@@ -37380,19 +37387,18 @@
             <lb/>
             <l>biß Jhr erꝛeicht des Lebenszil!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.128.]</label> <num>227.</num> Auf St. Johannis-Tag/ an einen ge-
+            <head><label>[D.128.]</label><lb/>227. Auf St. Johannis-Tag/ an einen ge-
             <lb break="no"/>
             wu&#x364;ſſen Freund. 1669.</head>
             <lb/>
             <lg type="poem">
             <l><supplied>Sanct</supplied>Johannes heiß und klahr/</l>
             <lb/>
-            <l>in<anchor xml:id="a419"/>dem<note type="annotation" targetEnd="a419"><p>Defekt im Digitalisat. Wort im Augsburger Exemplar eindeutig.</p></note>Sechzigneun<anchor xml:id="a420"/><unclear>t</unclear><note type="annotation" targetEnd="a420"><p>Auch im Augsburger Exemplar kann man nicht unterscheiden, ob hier ein t oder ein fälschlicherweise gedrucktes l steht.</p></note>en Jahr/</l>
+            <l>in<anchor xml:id="a419"/>dem<note type="annotation" targetEnd="a419"><p>Defekt im Digitalisat. Wort im Augsburger Exemplar eindeutig.</p></note>Sechzigneun<anchor xml:id="a420"/><unclear reason="uncleanPrint">t</unclear><note type="annotation" targetEnd="a420"><p>Auch im Augsburger Exemplar kann man nicht unterscheiden, ob hier ein t oder ein fälschlicherweise gedrucktes l steht.</p></note>en Jahr/</l>
             <lb/>
             <fw place="bottom" type="catch">heißt</fw>
 
@@ -37408,9 +37414,9 @@
             <lb/>
             <l>weil die Tru&#x364;bel-Bluſt fu&#x364;r<anchor xml:id="a421"/>u&#x364;<note type="annotation" targetEnd="a421"><p>übergeschriebenes e im Augsburger Exemplar eindeutig.</p></note>ber.</l>
             <lb/>
-            <l>Euch/ Herꝛ Schwager/ der Jhr</l>
+            <l>Euch/ Herꝛ Schwager/ der Jhr
             <lb/>
-            <l>fu&#x364;hrt</l>
+            fu&#x364;hrt</l>
             <lb/>
             <l>diſen Nammen; Euch gebu&#x364;hrt</l>
             <lb/>
@@ -37426,12 +37432,11 @@
             <lb/>
             <l>alß der na&#x364;chſt mit Euch vereinet!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.129.]</label> <num>228.</num> Anbind-gedicht an einen gewu&#x364;ſſen Nam-
+            <head><label>[D.129.]</label><lb/>228. Anbind-gedicht an einen gewu&#x364;ſſen Nam-
             <lb break="no"/>
             mentrager Peter Paul.</head>
             <lb/>
@@ -37450,21 +37455,21 @@
             <lb/>
             <l>Nun auch du/ ein Peterman/</l>
             <lb/>
-            <l>binden wir dich/ wu&#x364;nſchend/</l>
+            <l>binden wir dich/ wu&#x364;nſchend/
             <lb/>
-            <l>an:</l>
+            an:</l>
             <lb/>
             <l>Paulus Lehr dich underweiſe/</l>
             <lb/>
-            <l>zu des Scho&#x364;pffers Ehr und</l>
+            <l>zu des Scho&#x364;pffers Ehr und
             <lb/>
-            <l>Preiſe!</l>
+            Preiſe!</l>
             <lb/>
             <l>Peters Geiſt ſey dein Gefehrt!</l>
             <lb/>
-            <l>Bleib geſund und werd ge-</l>
+            <l>Bleib geſund und werd ge-
             <lb break="no"/>
-            <l>lehrt!</l>
+            lehrt!</l>
             <lb/>
             <l>Dir zur Fo&#x364;rderung uns zur Fꝛeude/</l>
             <lb/>
@@ -37474,12 +37479,11 @@
             <lb/>
             <l>welcher unſre Hofnung iſt!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.130.]</label> <num>229.</num> Anbind-gedicht auf Herꝛen Obm. J. H. R.
+            <head><label>[D.130.]</label><lb/>229. Anbind-gedicht auf Herꝛen Obm. J. H. R.
             <lb/>
             Ehren- und Nammens-Tag.</head>
             <lb/>
@@ -37630,11 +37634,11 @@
             <lb/>
             <l>die Gottes Gnad/ vil Glu&#x364;ck und Heil!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.131.]</label> <num>230.</num> Auf Hrn. J. U. O. Pf. Ehren-Nam&#x303;ens-
+            <head><label>[D.131.]</label><lb/>230. Auf Hrn. J. U. O. Pf. Ehren-Nam&#x303;ens-
             <lb break="no"/>
             Tage.</head>
             <lb/>
@@ -37651,11 +37655,11 @@
             <lb/>
             <l>zu deß Ho&#x364;chſten Ehr und Preiß!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.132.]</label> <num>231.</num> An eine bekandte:
+            <head><label>[D.132.]</label><lb/>231. An eine bekandte:
             <lb/>
             An Catharina-Tag.</head>
             <lb/>
@@ -37676,11 +37680,11 @@
             <lb/>
             <l>hundert<hi rendition="#b">Catharinen-Tag</hi>!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.133.]</label> <num>232.</num> Auf Ku&#x366;nrath-Tag.</head>
+            <head><label>[D.133.]</label><lb/>232. Auf Ku&#x366;nrath-Tag.</head>
             <lb/>
             <lg type="poem">
             <lg type="poem-subgroup">
@@ -37765,11 +37769,11 @@
             <l>bey Gott Er ewig lebe!</l>
             </lg>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.134.]</label> <num>233.</num> BARBARA
+            <head><label>[D.134.]</label><lb/>233. BARBARA
             <lb/>
             oder
             <lb/>
@@ -37810,33 +37814,33 @@
             <lb/>
             <l>nach Jhres Hertzens-wunſch und ſinn! zu bleiben Kloſter-feind!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.135.]</label> <num>234.</num> Lob- und Wunſch-ſchrifft:
+            <head><label>[D.135.]</label><lb/>234. Lob- und Wunſch-ſchrifft:
             <lb/>
             An J. E. W. Herꝛen Burgermeiſter
             <lb/>
-            J. H. R.</head>
+            J. H. R.
             <lb/>
-            <lg type="poem">
-            <l>Als ſelbiger den 11. Chriſtmonat/ 1667. die hohe</l>
+            Als ſelbiger den 11. Chriſtmonat/ 1667. die hohe
             <lb/>
-            <l>Burgermeiſter-Stell/ mit hertzbeweglichen Worten/</l>
+            Burgermeiſter-Stell/ mit hertzbeweglichen Worten/
             <lb/>
-            <l>und ſchier unwidertreiblichen gru&#x364;nden/ vor R. und B. Schrifftlich/</l>
+            und ſchier unwidertreiblichen gru&#x364;nden/ vor R. und B. Schrifftlich/
             <lb/>
-            <l>ſampt allen Accidentien auffgegeben hatte; Auch diſere auffgebung/</l>
+            ſampt allen Accidentien auffgegeben hatte; Auch diſere auffgebung/
             <lb/>
-            <l>auff bitten deß Namhafften Außſchuſſes von Beiden</l>
+            auff bitten deß Namhafften Außſchuſſes von Beiden
             <lb/>
-            <l>Sta&#x364;nden/ alles ernſts beharꝛet:</l>
+            Sta&#x364;nden/ alles ernſts beharꝛet:
             <lb/>
-            <l>Hieru&#x364;ber aber bey dem theuren Eyd/ wider neu er-</l>
+            Hieru&#x364;ber aber bey dem theuren Eyd/ wider neu er-
             <lb break="no"/>
-            <l>wehlt/ und einhellig beſtetiget worden.</l>
-            <lb/>
+            wehlt/ und einhellig beſtetiget worden.</head>
+               <lb/>
+               <lg type="poem">
             <l>Zu diſer ſchweren Zeit ein Burgermeiſter ſeyn/</l>
             <lb/>
             <l>dem haubt vil ſorgen macht/ und dem gemu&#x364;hte pein:</l>
@@ -37863,6 +37867,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="catch"><num>235.</num> Grab-</fw>
 
             <lb break="no"/>
@@ -37936,8 +37941,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.136.]</label> <num>237.</num> Ein anders Traur- und Troſt-gedicht
+            <head><label>[D.136.]</label><lb/>237. Ein anders Traur- und Troſt-gedicht
             <lb/>
             über obgedachten ſeliges Ableiben/ unter eines
             <lb/>
@@ -37986,6 +37990,7 @@
             <lb/>
             <l>verleih auch hier Gedult/ und<anchor xml:id="a442"/><note type="annotation" targetEnd="a442"><p>Hier Tintenabdruck.</p></note>Sieg im letſten ſtreit!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -38047,15 +38052,13 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.137.]</label> <num>239.</num> Grabſchrifft
+            <head><label>[D.137.]</label><lb/>239. Grabſchrifft
             <lb/>
-            Herꝛen Burgermeiſters H. H. W.</head>
-            <lg type="poem">
-            <l>welcher in</l>
+            Herꝛen Burgermeiſters H. H. W. welcher in
             <lb/>
-            <l>Gott ſelig verſcheiden/ den 10.<hi rendition="#aq">Febr.</hi>1669.</l>
+               Gott ſelig verſcheiden/ den 10.<hi rendition="#aq">Febr.</hi>1669.</head>
             <lb/>
+               <lg type="poem">
             <l>Herꝛ<hi rendition="#b">Waſer</hi>/ ohne Qual/ geendet hat ſein Leben.</l>
             <lb/>
             <l>O ſelig/ der/ wie Er den Tod kan u&#x364;berſtreben.</l>
@@ -38064,11 +38067,11 @@
             <lb/>
             <l>gleich<anchor xml:id="a444"/>w<note type="annotation" targetEnd="a444"><p>Wahrscheinlich Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein w.</p></note>ie Er hat regiert; lebt nun in ſteten Freuden.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.138.]</label> <num>240.</num> Ehrengeda&#x364;chtnus
+            <head><label>[D.138.]</label><lb/>240. Ehrengeda&#x364;chtnus
             <lb/>
             H<anchor xml:id="a445"/>eꝛ<note type="annotation" targetEnd="a445"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>en Obmans/ Hans Heinrichen Mu&#x364;llers
             <lb/>
@@ -38112,8 +38115,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.139.]</label> <num>241.</num> Grabſchrifft Juncker Rittm. u. Statt R.
+            <head><label>[D.139.]</label><lb/>241. Grabſchrifft Juncker Rittm. u. Statt R.
             <lb/>
             Schneebergers.</head>
             <lb/>
@@ -38128,6 +38130,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="catch"><num>242.</num> Troſt-</fw>
 
             <lb break="no"/>
@@ -38191,8 +38194,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.140.]</label> <num>243.</num> Grabſchrifft/
+            <head><label>[D.140.]</label><lb/>243. Grabſchrifft/
             <lb/>
             Dreyer Adels-Perſonen vom Eſcher-
             <lb break="no"/>
@@ -38205,6 +38207,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="catch"><num>244.</num> Uber</fw>
 
             <lb/>
@@ -38234,7 +38237,7 @@
             </lg>
             </div>
 
-            <div type="poem-div">
+            <div>
             <head><lb/>
             Nachruhm etlicher um das Vatterland/ die
             <lb/>
@@ -38244,41 +38247,40 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.141.]</label> <num>245.</num> Hn. Huldr. Zwingli. S.</head>
+            <head><label>[D.141.]</label><lb/>245. Hn. Huldr. Zwingli. S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ Zwingel</hi>ſeine Lehr mit eignem Tod bezeuget/</l>
             <lb/>
             <l>Die/ alß in Gottes Wort gegru&#x364;ndt/ uns nicht betreuget.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.142.]</label> <num>246.</num> Hrn. Heinr. Bullingers. S.</head>
+            <head><label>[D.142.]</label><lb/>246. Hrn. Heinr. Bullingers. S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Bullinger/ Zwinglen</hi>folgt: mit lehren und mit ſchreiben/</l>
             <lb/>
             <l>Erlangt ein ſolches Lob/ das Ewig wird bekleiben.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.143.]</label> <num>247.</num> Hrn. J. Rod. Gwalthers. S.</head>
+            <head><label>[D.143.]</label><lb/>247. Hrn. J. Rod. Gwalthers. S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ Gwalther</hi>eifert ſehr die Laſter außzureuten/</l>
             <lb/>
             <l>Und wider'n Antic<anchor xml:id="a456"/>h<note type="annotation" targetEnd="a456"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>riſt mit Gottes Wort zu ſtreiten.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.144.]</label> <num>248.</num> Hrn. Joh. Jacob Breitingers. S.</head>
+            <head><label>[D.144.]</label><lb/>248. Hrn. Joh. Jacob Breitingers. S.</head>
             <lb/>
             <lg type="poem">
             <l>Des Herꝛen Ruh<anchor xml:id="a457"/>m<note type="annotation" targetEnd="a457"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>gema&#x364;ß/ und denen hohen Sachen</l>
@@ -38289,33 +38291,33 @@
             <lb/>
             <l>und bſitzet Er anj<supplied>etz</supplied>/ was Chriſtus vorbereitet.</l>
             </lg>
+               <bl/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.145.]</label> <num>249.</num> Hrn. Jacob Jrmingers. S.</head>
+            <head><label>[D.145.]</label><lb/>249. Hrn. Jacob Jrmingers. S.</head>
             <lb/>
             <lg type="poem">
             <l>Der ſtill Jrming<supplied>er</supplied>iſt/ im Herꝛen/ ſanfft verblichen/</l>
             <lb/>
             <l>wa&#x364;r doch zu ſeiner<supplied> </supplied>zeit/ an G'lehrte/ keinem gwichen.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.146.]</label> <num>250.</num> Der Herꝛen Lavateren ins gemein.</head>
+            <head><label>[D.146.]</label><lb/>250. Der Herꝛen Lavateren ins gemein.</head>
             <lb/>
             <lg type="poem">
             <l>Die Herꝛen Lava<supplied>t</supplied>er in allen Sta&#x364;nden haben</l>
             <lb/>
             <l>dem Vatterland<supplied>g</supplied>edient mit ihren ſcho&#x364;nen Gaben.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.147.]</label> <num>251.</num> Ve<supplied>r</supplied>waltern der Stifft/ Z. Gr. M.
+            <head><label>[D.147.]</label><lb/>251. Ve<supplied>r</supplied>waltern der Stifft/ Z. Gr. M.
             <lb/>
             He<supplied>r</supplied>ꝛen M. Jacob Vlrichs.</head>
             <lb/>
@@ -38323,11 +38325,12 @@
             <l>Die<anchor xml:id="a459"/>K<note type="annotation" targetEnd="a459"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>irch und<supplied>S</supplied>chul/ die Stifft und Schrifft/</l>
             <lb/>
             <l>dem<anchor xml:id="a460"/>H<note type="annotation" targetEnd="a460"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>erꝛen ein<supplied>G</supplied>eda&#x364;chtnuß ſtifft.</l>
-            <lb/>
-            <l><hi rendition="#b"><anchor xml:id="a461"/><num>252.</num> Uber-<note type="annotation" targetEnd="a461"><p>In dieser Kustode sind Zahl des Überschriftes und Kopfzeile vermischt.</p></note></hi></l>
             </lg>
             <lb/>
             </div>
+        
+            <lb/>
+            <hi rendition="#b"><anchor xml:id="a461"/><num>252.</num> Uber-<note type="annotation" targetEnd="a461"><p>In dieser Kustode sind Zahl des Überschriftes und Kopfzeile vermischt.</p></note></hi>
             <pb facs="4077311" n="64"/>
 
             <fw place="top" type="pageNum">64</fw>
@@ -38335,19 +38338,18 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.148.]</label> <num>252.</num> Hrn. Jacob Frieſen S.</head>
+            <head><label>[D.148.]</label><lb/>252. Hrn. Jacob Frieſen S.</head>
             <lb/>
             <lg type="poem">
             <l>Der From&#x342; Verwahlter Frieß ſeins krancknen Leibes pflegte/</l>
             <lb/>
             <l>lebt ma&#x364;ſſig/ doch den Tod/ zum ſchohnen nicht bewegte.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.149.]</label> <num>253.</num> Hrn. D. und Statt-Artzets Joh.
+            <head><label>[D.149.]</label><lb/>253. Hrn. D. und Statt-Artzets Joh.
             <lb/>
             Rud. Geigers S.</head>
             <lb/>
@@ -38356,44 +38358,44 @@
             <lb/>
             <l>Lebt aber ewig dort/ ſein Nam&#x342; auch nicht verdirbet.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.150.]</label> <num>254.</num> Hrn. C. Maurers S.</head>
+            <head><label>[D.150.]</label><lb/>254. Hrn. C. Maurers S.</head>
             <lb/>
             <lg type="poem">
             <l>Herꝛ Maurer vil erbaut mit Schrifft gema&#x364;ſſer Predig:</l>
             <lb/>
             <l>ward alt und lebensſatt/ des Seelen-kerkers ledig.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            $D.151$ <num>255.</num> Hrn. C. Suters S.</head>
+            <head><label>[D.151]</label><lb/>255. Hrn. C. Suters S.</head>
             <lb/>
             <lg type="poem">
             <l>Herꝛ Suter gab ans Liecht; eh Er von uns geſchiden;</l>
             <lb/>
             <l>ſein ſcho&#x364;nes Zeugnußbuch: Lebt nun in ſteten Freuden.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            $D.152$ <num>256.</num> Hrn. Fel. Weißen S. Pf. Z. Fr. M.</head>
+            <head><label>[D.152]</label><lb/>256. Hrn. Fel. Weißen S. Pf. Z. Fr. M.</head>
             <lb/>
             <lg type="poem">
             <l>Herꝛ Weiß nur weiſes lehrt/ mit eifer und mit fleiß/</l>
             <lb/>
             <l>zu Ehren dem/ der einſt uns wird bekleiden weiß.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.153.]</label> <num>257.</num> Hrn. Joh. Holtzhalben S. Pfarꝛern
+            <head><label>[D.153.]</label><lb/>257. Hrn. Joh. Holtzhalben S. Pfarꝛern
             <lb/>
             zun Predigern.</head>
             <lb/>
@@ -38402,20 +38404,21 @@
             <lb/>
             <l>und wieſe eifrigſt ſie/ zum<hi rendition="#b">Lebens-holtz</hi>empor.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.154.]</label> <num>258.</num> Hrn. H. C. Wirtzen S. Pf. Z. Pr.</head>
+            <head><label>[D.154.]</label><lb/>258. Hrn. H. C. Wirtzen S. Pf. Z. Pr.</head>
             <lb/>
             <lg type="poem">
             <l>Tieffſinnig war Herꝛ Wirtz in aller Weißheit-Lehr:</l>
             <lb/>
             <l>der Kirchen und der Schul/ und Vatterlandes Ehr.</l>
             </lg>
+               <lb/>
             </div>
 
-            <div type="poem-div">
+            <div>
             <head><lb/>
             Nachruhm Etlicher Weltbekannten Herꝛen
             <lb/>
@@ -38425,8 +38428,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.155.]</label> <num>259.</num> Hrn. Caſpar Waſers/ viler Sprachen
+            <head><label>[D.155.]</label><lb/>259. Hrn. Caſpar Waſers/ viler Sprachen
             <lb/>
             ku&#x364;ndigen <hi rendition="#aq">Theologi.</hi></head>
             <lb/>
@@ -38437,6 +38439,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="catch">Ein</fw>
             <lb/>
             <pb facs="4077312" n="65"/>
@@ -38446,8 +38449,7 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.156.]</label> Ein anders.</head>
+            <head><label>[D.156.]</label><lb/>Ein anders.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ Waſer</hi>wolgereiſt/ und viler Spraachen ku&#x364;ndig/</l>
@@ -38458,88 +38460,88 @@
             <lb/>
             <l>die Seel im Him<anchor xml:id="a465"/>m<note type="annotation" targetEnd="a465"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>el jetz: der Leib ruht in dem Grab.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.157.]</label> <num>260.</num> Hrn. R. <hi rendition="#aq">Hoſpiniani.</hi> S.</head>
+            <head><label>[D.157.]</label><lb/>260. Hrn. R. <hi rendition="#aq">Hoſpiniani.</hi> S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#aq">Hoſpinianus</hi>iſt ein ſo<anchor xml:id="a466"/>l<note type="annotation" targetEnd="a466"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>cher Mann geſtorben/</l>
             <lb/>
             <l>Der von den Freund und Feind ein ewigs Lob erworbe<supplied>n.</supplied></l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.158.]</label> <num>261.</num> Hrn H. Erni. S.</head>
+            <head><label>[D.158.]</label><lb/>261. Hrn H. Erni. S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ Hei<supplied>n</supplied>rich E<anchor xml:id="a467"/>r<note type="annotation" targetEnd="a467"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>ni </hi>ſtarb ein hochgelehrter Lehrer</l>
             <lb/>
             <l>der hohen Gottes Leh<supplied>r</supplied>/ und Ehren Gottes Mehrer.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.159.]</label> <num>262.</num> <anchor xml:id="a468"/>H<note type="annotation" targetEnd="a468"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>rn. P. Tommans. S.</head>
+            <head><label>[D.159.]</label><lb/>262. <anchor xml:id="a468"/>H<note type="annotation" targetEnd="a468"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>rn. P. Tommans. S.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ To<supplied>m</supplied>man</hi>h<anchor xml:id="a469"/>a<note type="annotation" targetEnd="a469"><p>Defekt im Digitalisat. Im Augsburger Exemplar eindeutig ein einzelnes a.</p></note>tte vil auf alten Rariteten:</l>
             <lb/>
             <l>Er war<hi rendition="#aq">Pro<supplied>fe</supplied>ſſor</hi>auc<anchor xml:id="a470"/>h<note type="annotation" targetEnd="a470"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>der Schrifften der Propheten.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.160.]</label> <num>263.</num> Hrn. R. Stukki. S.</head>
+            <head><label>[D.160.]</label><lb/>263. Hrn. R. Stukki. S.</head>
             <lb/>
             <lg type="poem">
             <l>Dem Herꝛe<supplied>n</supplied>Stukki war das Stukkewerk erleidet:</l>
             <lb/>
             <l>Drum hat d<supplied>e</supplied>r Scho&#x364;p<anchor xml:id="a471"/>f<note type="annotation" targetEnd="a471"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>er ihn/ mit ganzer Wa&#x364;ht/ bekleidet.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.161.]</label> <num>264.</num> Hrn. H. Zeller. S.</head>
+            <head><label>[D.161.]</label><lb/>264. Hrn. H. Zeller. S.</head>
             <lb/>
             <lg type="poem">
             <l>Des<hi rendition="#b">Herꝛen Zellers</hi>Treu/ in ſchwerer Schularbeit</l>
             <lb/>
             <l>war unvergleichlich groß: ruh't ietz in ewigkeit.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.162.]</label> <num>265.</num> Hrn. J. H. Hottinger.</head>
+            <head><label>[D.162.]</label><lb/>265. Hrn. J. H. Hottinger.</head>
             <lb/>
             <lg type="poem">
             <l>Biß zur ve<supplied>w</supplied>underung<hi rendition="#b">Hottinger</hi>war gelehrt:</l>
             <lb/>
             <l><hi rendition="#b">Schweitz: Pfaltz: Holl-Engelland</hi>Jhn deſſentwegen ehrt.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.163.]</label> Ein anders.</head>
+            <head><label>[D.163.]</label><lb/>Ein anders.</head>
             <lb/>
             <lg type="poem">
             <l>Von dem di<supplied>e</supplied>Glehrte ſelbs/ gleich einem Fluß/ gefloſſen/</l>
             <lb/>
             <l>der hat;<anchor xml:id="a472"/>A<note type="annotation" targetEnd="a472"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>ch/ daß er hat! im Fluß ſein Leben b'ſchloſſen.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.164.]</label> <num>266.</num> Merkwürdig/
+            <head><label>[D.164.]</label><lb/>266. Merkwürdig/
             <lb/>
             wie Ja<anchor xml:id="a473"/>c<note type="annotation" targetEnd="a473"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>o<anchor xml:id="a474"/>b<note type="annotation" targetEnd="a474"><p>Verschwommen wegen Defekts im Digitalisats. Im Augsburger Exemplar eindeutig.</p></note>/ der domalige Knecht im Sparenberg
             <lb/>
@@ -38556,6 +38558,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="pageNum">e</fw>
             <lb/>
             <fw place="bottom" type="catch"><num>267.</num> Ei-</fw>
@@ -38568,8 +38571,7 @@
             <fw place="top" type="header">Uberſchrifften.</fw>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.165.]</label> <num>267.</num> Hrn. <hi rendition="#aq">D.</hi> Hottingers ſel. Stim&#x342; von
+            <head><label>[D.165.]</label><lb/>267. Hrn. <hi rendition="#aq">D.</hi> Hottingers ſel. Stim&#x342; von
             <lb/>
             Himmel.</head>
             <lb/>
@@ -38580,11 +38582,11 @@
             <lb/>
             <l>und auch zugleich ins Engelland.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.166.]</label> <num>268.</num> Der betrübten nachgelaßnen Fr. Wittib.
+            <head><label>[D.166.]</label><lb/>268. Der betrübten nachgelaßnen Fr. Wittib.
             <lb/>
             Klagred.</head>
             <lb/>
@@ -38597,22 +38599,22 @@
             <lb/>
             <l>und in die gro&#x364;ſte Freud verkehren alles leiden!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.167.]</label> <num>269.</num> Hrn. Joſt von Kuſen S. <hi rendition="#aq">Prof. Log.</hi></head>
+            <head><label>[D.167.]</label><lb/>269. Hrn. Joſt von Kuſen S. <hi rendition="#aq">Prof. Log.</hi></head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Der From&#x303; von Ku&#x364;ſen</hi>ſtarb; von gantzer Schul berauen;</l>
             <lb/>
             <l>do&#x364;rfft eigner G'lehrte nicht/ auß Demuth/ fo&#x364;llig trauen.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.168.]</label> <num>270.</num> Hrn. Heinrich Ulrichen Sel. Schul-
+            <head><label>[D.168.]</label><lb/>270. Hrn. Heinrich Ulrichen Sel. Schul-
             <lb break="no"/>
             herꝛen und <hi rendition="#aq">Profeſſor.</hi> der Griechiſchen
             <lb/>
@@ -38627,6 +38629,7 @@
             <lb/>
             <l>einpflantzen mo&#x364;cht/ und ſo befo&#x364;rdern Gottes Ehr.</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">
@@ -38726,9 +38729,7 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-
-            <label>[D.169.]</label> <num>273.</num> Grabſchrifft/
+            <head><label>[D.169.]</label><lb/>273. Grabſchrifft/
             <lb/>
             Uber Hrn. Pf. Geßner ſel. zu Baſſerſtorff.</head>
             <lb/>
@@ -38743,6 +38744,7 @@
             </lg>
             <lb/>
             </div>
+         
             <fw place="bottom" type="pageNum">e ij</fw>
             <lb/>
             <fw place="bottom" type="catch"><num>274.</num> Lob-</fw>
@@ -39004,21 +39006,20 @@
             </div>
 
             <div type="poem-div">
-            <head><lb/>
-            <label>[D.170.]</label> <num>289.</num> Wolwu&#x364;rdiges Lob-geticht/
+            <head><label>[D.170.]</label><lb/>289. Wolwu&#x364;rdiges Lob-geticht/
             <lb/>
             an
             <lb/>
-            Herꝛen Johann Anthoni Wo&#x364;llwein/</head>
+            Herꝛen Johann Anthoni Wo&#x364;llwein/
             <lb/>
-            <lg type="poem">
-            <l>Alß derſelbige mit ſeligen Tods-Gedancken</l>
+            Alß derſelbige mit ſeligen Tods-Gedancken
             <lb/>
-            <l>umbgegangen.</l>
+            umbgegangen.</head>
             <lb/>
-            <l><hi rendition="#b">Herꝛ Wo&#x364;llwein</hi>hat ihm ſelbs den beſſern theil er-</l>
+               <lg type="poem">
+            <l><hi rendition="#b">Herꝛ Wo&#x364;llwein</hi>hat ihm ſelbs den beſſern theil er-
             <lb break="no"/>
-            <l>wehlet/</l>
+            wehlet/</l>
             <lb/>
             <l>nachdem er immerdar mit ſonderm fleiß geſtellet:</l>
             <lb/>
@@ -39036,9 +39037,9 @@
             <lb/>
             <l>war ſeine Hertzens-freud/ auch ho&#x364;chſte zier und Ehr.</l>
             <lb/>
-            <l>Fu&#x364;r ſeinen Schatz und Schutz des Leibes und der See-</l>
+            <l>Fu&#x364;r ſeinen Schatz und Schutz des Leibes und der See-
             <lb break="no"/>
-            <l>len/</l>
+            len/</l>
             <lb/>
             <l>hat er gehalten den/ der heilen kan und quelen;</l>
             <lb/>
@@ -39076,17 +39077,17 @@
             <lb/>
             <l>der alles ſeiner Kirch zum beſten pflegt zu wenden.</l>
             <lb/>
-            <l>Er/ er/<hi rendition="#b">Herꝛ Wo&#x364;llwein</hi>hat geſucht das ho&#x364;chſte</l>
+            <l>Er/ er/<hi rendition="#b">Herꝛ Wo&#x364;llwein</hi>hat geſucht das ho&#x364;chſte
             <lb/>
-            <l>Gut/</l>
+            Gut/</l>
             <lb/>
             <l>und bey dem zeitlichen gelebt ohn u&#x364;bermuth:</l>
             <lb/>
             <l>Er hats geſucht bey dem/ der ſeine Himmelſcha&#x364;tze/</l>
             <lb/>
-            <l>durch Jeſum ſeinen Sohn dem Glauben ſchenkt zur</l>
+            <l>durch Jeſum ſeinen Sohn dem Glauben ſchenkt zur
             <lb/>
-            <l>Letze:</l>
+            Letze:</l>
             <lb/>
             <l>Er hats geſucht bey dem/ der Leib und Seel ernehrt/</l>
             <lb/>
@@ -39106,9 +39107,9 @@
             <lb/>
             <l>in das er ſie gedrukt/ durch ſeinen heilgen Geiſt/</l>
             <lb/>
-            <l>der unſrer Kindſchafft Pfand und Erbes Sigel</l>
+            <l>der unſrer Kindſchafft Pfand und Erbes Sigel
             <lb/>
-            <l>heißt.</l>
+            heißt.</l>
             <lb/>
             <l>Wie hat er ihn geſchu&#x364;tzt/ in jennen jammerjahren/</l>
             <lb/>
@@ -39118,15 +39119,15 @@
             <lb/>
             <l>Deß dankt Er ihme nun von hertzen und mit mund.</l>
             <lb/>
-            <l>Hat nicht Gott Jhn erfu&#x364;llt mit ſeinen Himmels-ſcha&#x364;-</l>
+            <l>Hat nicht Gott Jhn erfu&#x364;llt mit ſeinen Himmels-ſcha&#x364;-
             <lb break="no"/>
-            <l>tzen/</l>
+            tzen/</l>
             <lb/>
             <l>die ih<supplied>m</supplied>kein Diebe raubt/ noch Motte kan verletzen?</l>
             <lb/>
-            <l>D<anchor xml:id="a503"/>e<note type="annotation" targetEnd="a503"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>n Glauben ich vermein' in wahrer Wu&#x364;ſſen-</l>
+            <l>D<anchor xml:id="a503"/>e<note type="annotation" targetEnd="a503"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>n Glauben ich vermein' in wahrer Wu&#x364;ſſen-
             <lb break="no"/>
-            <l>ſchafft/</l>
+            ſchafft/</l>
             <lb/>
             <l>und ſteiffer zuverſicht/ woran das Leben hafft:</l>
             <lb/>
@@ -39206,9 +39207,9 @@
             <lb/>
             <l>und mit verlangen ſich ſehnt nach der Ewigkeit:</l>
             <lb/>
-            <l>Welchs; wann dermalen einſt der Leib im Grab wird</l>
+            <l>Welchs; wann dermalen einſt der Leib im Grab wird
             <lb/>
-            <l>ligen/</l>
+            ligen/</l>
             <lb/>
             <l>die Seel ins Vatters Schoß; nicht bleiben ſol verſchwigen.</l>
             <lb/>
@@ -39224,7 +39225,19 @@
             <lb/>
             <l>O Gott/ erwek in uns geleichen Luſt zu dir!</l>
             </lg>
+               <lb/>
             </div>
+         
+         <l><hi rendition="#aq">Apoc.7.17.</hi></l>
+         <lb/>
+         <l><hi rendition="#aq">Joh.5.25.</hi></l>
+         <lb/>
+         <l><hi rendition="#aq">Apoc.7.16.</hi></l>
+         <lb/>
+         <l><hi rendition="#aq">Eccl.12.7.</hi></l>
+         <lb/>
+         <l><hi rendition="#aq">Phil.1.21.</hi></l>
+         <lb/>
 
             <div type="poem-div">
             <head><lb/>
@@ -39244,23 +39257,22 @@
             </div>
 
             <div type="poem-div">
-            <head><head><lb/>
-            <label>[D.171.]</label> <num>291.</num> Wolklingender Ho&#x364;chſtverdienter
+            <head><label>[D.171.]</label><lb/>291. Wolklingender Ho&#x364;chſtverdienter
             <lb/>
-            Nachruhm:</head>
+            Nachruhm:
             <lb/>
             Dem ſelig abgeleibten/ Edelgekro&#x364;nten/ Sa&#x364;nge<anchor xml:id="a509"/>r<note type="annotation" targetEnd="a509"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>fu&#x364;r-
             <lb break="no"/>
             ſten/ und unvergleichlichem Poeten/
             <lb/>
-            Herꝛen Johann Riſten/</head>
-            <lg type="poem">
-            <l>dem Rüſtigen: Jh-</l>
+            Herꝛen Johann Riſten/
+            dem Rüſtigen: Jh-
             <lb break="no"/>
-            <l>me vom Authore zu ehren geklungen/</l>
+            me vom Authore zu ehren geklungen/
             <lb/>
-            <l>den 20.<hi rendition="#aq">Nov.</hi>1668.</l>
-            <lb/>
+               den 20.<hi rendition="#aq">Nov.</hi>1668.</head>
+               <lb/>
+               <lg type="poem">
             <l><hi rendition="#b">Herꝛ Riſt<anchor xml:id="a510"/>/<note type="annotation" targetEnd="a510"><p>die Virgel wird hier als Teil der Sinneinheit mitgetaggt.</p></note></hi>du groſſer Mann von Wiſſen und Gewiſſen/</l>
             <lb/>
             <l>haſt auch; wie andere Streitſchrifften außgeſtreut/</l>
@@ -39269,16 +39281,7 @@
             <lb/>
             <fw place="bottom" type="catch">O mein!</fw>
             <lb/>
-            <l><hi rendition="#aq">Apoc.7.17.</hi></l>
-            <lb/>
-            <l><hi rendition="#aq">Joh.5.25.</hi></l>
-            <lb/>
-            <l><hi rendition="#aq">Apoc.7.16.</hi></l>
-            <lb/>
-            <l><hi rendition="#aq">Eccl.12.7.</hi></l>
-            <lb/>
-            <l><hi rendition="#aq">Phil.1.21.</hi></l>
-            <lb/>
+            
             <pb facs="4077320" n="73"/>
 
             <fw place="top" type="pageNum">73</fw>
@@ -39307,6 +39310,7 @@
             <lb/>
             <l>Dort aber preißt Jhr Gott mit frohen<hi rendition="#b">Himmels-Liedern</hi>!</l>
             </lg>
+               <lb/>
             </div>
 
             <div type="poem-div">

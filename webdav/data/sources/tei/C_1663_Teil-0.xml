@@ -28,13 +28,13 @@
         <front>
             <pb n="[A ii r]"/>
             <titlePage type="main">
-                <docAuthor><hi rendition="#c"><rs type="person" key="person_001">Johann-Wilhelm<lb/>
-                            Simlers</rs></hi></docAuthor>
+                <docAuthor><rs type="person" key="person_001">Johann-Wilhelm<lb/>
+                            Simlers</rs></docAuthor>
                 <docTitle>
-                    <titlePart type="main"><hi rendition="#c">Teutscher Getich<lb break="no"/>ten
+                    <titlePart type="main"><hi rendition="#in">T</hi>eutscher <hi rendition="#in">G</hi>etich<lb break="no"/>ten
                             die Dritte/ von Jhme selbsten<lb/> um einen Drittheil vermehrt- und
-                                ver<lb break="no"/>besserte Außfertigung:</hi></titlePart>
-                    <titlePart type="desc"><hi rendition="#c">Jn sich haltend</hi><lb/>
+                                ver<lb break="no"/>besserte Außfertigung:</titlePart>
+                    <titlePart type="desc">Jn sich haltend<lb/>
                         <list>
                             <item><hi rendition="#aq">I.</hi> Aller Psalmen Davids Haubtbegriff: in
                                 150.<lb/> Viergetichten/ und so vilen Reimschlüssen:</item>
@@ -51,13 +51,13 @@
                                     rendition="#aq">U</hi>berschrifften: Geburt-<lb/> und
                                 Sterb-Getichte: Sinn- Sitten- Wahl-<lb/> und Haußsprüche.</item>
                         </list></titlePart>
-                </docTitle>
+                </docTitle><lb/>
                 <milestone rendition="#hr" unit="section"/>
                 <lb/>
-                <docImprint><hi rendition="#c">Getrukt zu <pubPlace><rs type="place" key="place_001"
+                <docImprint>Getrukt zu <pubPlace><rs type="place" key="place_001"
                                 >Zürich</rs></pubPlace>/<lb/> Jn verlegung <publisher>Joh. Wilhelm
                             Simlers</publisher>/ Bu&#x366;chh.<lb/>
-                        <docDate><hi rendition="#aq">M DC. LXIII.</hi></docDate></hi></docImprint>
+                        <docDate><hi rendition="#aq">M DC. LXIII.</hi></docDate></docImprint>
             </titlePage>
             <lb/>
 
@@ -623,7 +623,7 @@
                 <lb/>
 
                 <lg>
-                    <l>OBgleich der <hi rendition="#larger">Tichter</hi> kunst sehr hoch bisher
+                    <l><hi rendition="#in">O</hi>Bgleich der <hi rendition="#larger">Tichter</hi> kunst sehr hoch bisher
                         gestigen /</l>
                     <lb/>
                     <l rendition="#et">Will ihr verdienter Ru&#x366;hm bey uns doch bald erligen
