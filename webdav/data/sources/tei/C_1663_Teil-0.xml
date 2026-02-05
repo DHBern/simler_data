@@ -844,7 +844,7 @@
                 <lb/>
 
                 <lg type="poem">
-                    <l>Jst dan der Teutschen Geist von seinem eignen blut /</l>
+                    <l><hi rendition="#in">J</hi>st dan der Teutschen Geist von seinem eignen blut /</l>
                     <lb/>
                     <l rendition="#et">wie zuvor von dem Wein / nunmehr so gar besoffen /</l>
                     <lb/>
@@ -901,7 +901,7 @@
                 <lb/>
 
                 <lg type="poem">
-                    <l>SO schikket Herr <rs type="person" key="person_001">Simler</rs> sein
+                    <l><hi rendition="#in">S</hi>O schikket Herr <rs type="person" key="person_001">Simler</rs> sein
                         Bu&#x366;che zureisen /</l>
                     <lb/>
                     <l rendition="#et">in diser landsgegend die erstlinge bringt /</l>
@@ -956,14 +956,14 @@
             <div xml:id="xvii">
                 <head>
                     <label>[xvii.]</label>
-                    <hi rendition="#aq #b">XI.</hi><lb/>
-                    <hi rendition="#aq #b">In laudem Autoris, &amp;c.</hi>
+                    <hi rendition="#aq #b">XI.<lb/>
+                    <hi rendition="#i">In laudem Autoris, &amp;c.</hi></hi>
                 </head>
                 <lb/>
 
                 <lg type="poem">
                     <head>1.</head>
-                    <l><hi rendition="#aq">AUt prodesse volunt, aut delectare Poëtæ,</hi></l>
+                    <l><hi rendition="#aq"><hi rendition="#in">A</hi>Ut prodesse volunt, aut delectare Poëtæ,</hi></l>
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq">Autor id hoc libro præstat utrúmque
                             suo:</hi></l>
@@ -991,7 +991,7 @@
                 <lb/>
 
                 <lg>
-                    <l rendition="#et"><hi rendition="#aq">Sinceræ affinitatis ergò posuit</hi></l>
+                    <l rendition="#et"><hi rendition="#aq #i">Sinceræ affinitatis ergò posuit</hi></l>
                     <lb/>
                     <l rendition="#et2"><hi rendition="#aq"><rs type="person" key="person_020"
                                 >IACOBVS REDINGERVS</rs>,</hi></l>
@@ -1010,8 +1010,34 @@
                     <hi rendition="#aq #b">XII.</hi></head>
 
                 <lg type="poem">
-                    <l><!-- Lateinisches Gedicht, noch zu ergänzen von JA --></l>
-                </lg>
+                    <l><hi rendition="#aq #i"><hi rendition="#in">N</hi>îl faciunt nugæ; nec inania scripta Sophorum</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq #i">Exhilarare hominum pectora mœsta queunt:</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq #i"></hi>SIMLERI ast opus hoc, &amp; sancta poëmata quemvis</l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq #i">Exhilarant mirâ dexteritatis ope.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq #i">Exhilarant Muliebre Genus; Genus atque Virile;</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq #i">Exhilarant Juvenes: Exhilarántque Senes.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq #i">Hinc opus hoc meritò (rumpantur ut ilia momo)</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq #i">Terra Propinqua cupit; Terra Remota cupit.</hi></l>
+                    </lg>
+                    <lb/>
+                
+              <lg>
+                  <l rendition="#et"><hi rendition="#aq">Observantiæ &amp; necessitudinis ergò aposuit</hi></l>
+                  <lb/>
+                  <l rendition="#et2"><hi rendition="#aq">Affinis addictissimus.</hi></l>
+                  <lb/>
+                  <l><hi rendition="#aq"></hi>IOHANNES BLASSIVS, Tigurinus,</l>
+                  <lb/>
+                  <l rendition="#et"><hi rendition="#aq"></hi>Vitoduranorum Diaconus.</l>
+              </lg>
+                <lb/>
             </div>
 
             <pb n="[X ii v]"/>
@@ -1022,19 +1048,20 @@
             <div xml:id="xix">
                 <head>
                     <label>[xix.]</label>
-                    <hi rendition="#aq #b">XIII.</hi><lb/>
-                    <hi rendition="#b">Zu ehren und lobwürdigem ruhm dem hochgelehrten Herren Johann
-                        Wilhelm Simler / Zuchtherren im obern</hi>
-                    <hi rendition="#aq #b">Collegio Parehentco</hi>
-                    <hi rendition="#b">zu Zürich / über seine außgangne Poetische Getichte und
-                        Gesänge.</hi><lb/>
-                    <hi rendition="#b">S</hi><hi rendition="#b #k">onnet</hi><hi rendition="#b"
-                        >.</hi>
+                    <hi rendition="#b #c"><hi rendition="#aq">XIII.</hi><lb/>
+                    Zu ehren und lobwürdigem ruhm<lb/> 
+                        dem hochgelehrten Herren<lb/> 
+                        Johann Wilhelm Simler /<lb/> 
+                        Zuchtherren im obern
+                    <hi rendition="#aq">Collegio Par<lb break="no"/>thenico</hi>
+                    zu Zürich / über seine außgangne<lb/> 
+                        Poetische Getichte undmGesänge.<lb/>
+                    <hi rendition="#b">S</hi><hi rendition="#k">onnet.</hi></hi>
                 </head>
                 <lb/>
 
                 <lg type="poem">
-                    <l>DEr Gärtner wird gelobt / der mu&#x364;h und fleiß nicht spahret</l>
+                    <l><hi rendition="#in">D</hi>Er Gärtner wird gelobt / der mu&#x364;h und fleiß nicht spahret</l>
                     <lb/>
                     <l>An zarten Pfläntzleinen / nimt weg was vnnütz ist /</l>
                     <lb/>
@@ -1088,16 +1115,17 @@
             <div xml:id="xx">
                 <head>
                     <label>[xx.]</label>
-                    <hi rendition="#aq #b">XIV.</hi><lb/>
-                    <hi rendition="#b">Haubtbegriff des gantzen Bu&#x366;chs / auf zweyer des H.
-                        Tichters Söhnen / zugleich</hi><lb/>
-                    <hi rendition="#b">gehaltenes Ehren- und Ehefest / verfasset und übergeben.</hi>
+                    <hi rendition="#b #c"><hi rendition="#aq">XIV.</hi><lb/>
+                    Haubtbegriff des gantzen Bu&#x366;chs / auf<lb/> 
+                    zweyer des H.Tichters Söhnen / zugleich gehal<lb break="no"/>tenes
+                    Ehren- und Ehefest / verfasset und<lb/>
+                    übergeben.</hi>
                 </head>
                 <lb/>
 
                 <!--Layout mit cb kodieren? NE: hier am besten wohl keine Spalten codieren, da Lesetext-->
                 <lg type="poem">
-                    <l>Euers Herren Vatters dichten /</l>
+                    <l><hi rendition="#in">E</hi>uers Herren Vatters dichten /</l>
                     <lb/>
                     <l rendition="#et">Herr Hochzeiter / treibt mich an /</l>
                     <lb/>
@@ -1329,7 +1357,7 @@
                 <lb/>
 
                 <p rendition="#et"><hi rendition="#larger"><rs type="person" key="person_039">Johann
-                            Jacob Stäffen</rs> / Pfarrer zu <rs type="place" key="place_005"
+                            Jacob Stäffen</rs> / Pfarrer<lb/> zu <rs type="place" key="place_005"
                             >Weinfelden</rs>.</hi></p>
                 <lb/>
             </div>
@@ -1337,16 +1365,16 @@
             <div xml:id="xxi">
                 <head>
                     <label>[xxi.]</label>
-                    <hi rendition="#aq #b">XV.</hi><lb/>
-                    <hi rendition="#aq #b">Omne trinum perfectum.</hi>
+                    <hi rendition="#aq #b #c">XV.<lb/>
+                    <hi rendition="#i">Omne trinum perfectum.</hi></hi>
                 </head>
                 <lb/>
 
                 <lg type="poem">
-                    <l>REcht so! Zum drittenmahl Herr <rs type="person" key="person_001"
+                    <l><hi rendition="#in">R</hi>Echt so! Zum drittenmahl Herr <rs type="person" key="person_001"
                             >Simlers</rs> Bu&#x366;ch außgehet /</l>
                     <lb/>
-                    <l>Der laster-platz wirt g’weh’rt / der Tugend-schatz bestehet.</l>
+                    <l rendition="#et">Der laster-platz wirt g’weh’rt / der Tugend-schatz bestehet.</l>
                     <lb/>
                     <l rendition="#et">Der schöne Tugend-schatz tragt Himmels Edelgstein /</l>
                     <lb/>
@@ -1365,7 +1393,10 @@
                 </lg>
                 <lb/>
 
-                <p><!-- Lateinischer Teil zu ergänzen (JA) --></p>
+                <p>Sic raptim, abituriens rurſus in palatinatum<lb/><hi rendition="#et">Vovet Reverendo, Doctiſsimóque Do<lb break="no"/>mino,
+                    parentis olim &amp; adhuc dum, pa<lb break="no"/>troniq́ue 
+                    loco ſuſpiciundo authori,<hi rendition="#k">JO<lb break="no"/>HANNES HENRICUS HERDERUS</hi>,<lb/>
+                    paſtor Eden-Kobianus inferioris palati<lb break="no"/>natus Helv. Tig.</hi></p>
 
             </div>
 
@@ -1377,12 +1408,65 @@
             <div xml:id="xxii">
                 <head>
                     <label>[xxii.]</label>
-                    <hi rendition="#aq #b">XVI.</hi>
+                    <hi rendition="#aq #b #c">XVI.</hi>
                 </head>
 
                 <lg>
-                    <l><!-- Lateinisches Gedicht, noch zu ergänzen von JA --></l>
+                    <l><hi rendition="#aq #i #c">VVilhelmus.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Wilhelmus Vates vincit validiſsima voto,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">VVilhelmo Vates vivida vota vovent:</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">VVilhelmus vireat, veniant vagetantia vultum</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">VVilhelmi! Vivat veridicus, vocitant!</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Vivificaturus viſum velamine vinctos,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Verificet votum! Vivificante volet!</hi></l>
+                    <lb/>
                 </lg>
+                <lb/>
+                
+                <lg>
+                    <l><hi rendition="#aq #i #c">Simlerus.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Simleri suadent Statibus solertia scripta</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Summis sancta satis sollicitè studia:</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Suavia simplicibus subdunt solatia sanctè,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Sollicitant stolidos, sic sapiant, stimulo.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Sic sapient Summi, sapient sincera sonantes,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Sic stolidis somnus succutitur stimulo.</hi></l>
+                    <lb/>
+                </lg>
+                <lb/>
+                
+                <lg>
+                    <l><hi rendition="#aq #i #c">Poëta.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Proponit populo præcepta probata poëta,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Perpetuùm populus pollicitis potitur.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Plebiscita probat pia pectore prompta poëta,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Plaudit propterea plebs pia palmifero.</hi></l>
+                    <lb/>
+                    <l><hi rendition="#aq">Porro, pater pollens, patronum protege promptum,</hi></l>
+                    <lb/>
+                    <l rendition="#et"><hi rendition="#aq">Pinguia patrono pabula proveniant!</hi></l>
+                    <lb/>
+                </lg>
+                <lb/>
+                
+                <p><hi rendition="#aq #larger #et">Idem H. H<hi rendition="#k">ERDERUS</hi>.</hi></p>
+            
             </div>
 
             <pb n="[X iv v]"/>
@@ -1393,13 +1477,13 @@
             <div xml:id="xxiii">
                 <head>
                     <label>[xxiii.]</label>
-                    <hi rendition="#aq #b">XVII.</hi></head>
+                    <hi rendition="#aq #b #c">XVII.</hi></head>
                 <lb/>
 
                 <lg type="poem">
-                    <l>WJe in dem Orden / der viel frucht und nutzen bringet /</l>
+                    <l><hi rendition="#in">W</hi>Je in dem Orden / der viel frucht und nutzen bringet /</l>
                     <lb/>
-                    <l>Gar mancher gute Geist die hohe sinnen schwinget /</l>
+                    <l rendition="#et">Gar mancher gute Geist die hohe sinnen schwinget /</l>
                     <lb/>
                     <l rendition="#et">Vnd unsre Sprache baut (da einer lieblich <hi
                             rendition="#larger">spielt</hi> /</l>
@@ -1465,11 +1549,9 @@
                 </lg>
                 <lb/>
 
-                <p rendition="#et"><rs type="person" key="person_040"><hi rendition="#larger"
-                            >Hans</hi>
-                        <hi rendition="#aq #larger">U</hi><hi rendition="#larger">lrich
-                        Amman</hi></rs>
-                    <hi rendition="#larger">/ Diener des Worts Gottes. [1]</hi></p>
+                <p rendition="#et"><hi rendition="#larger"><rs type="person" key="person_040">Hans
+                        <hi rendition="#aq">U</hi>lrich Amman</rs> /<lb/>
+                    Diener des Worts Gottes. [1]</hi></p>
                 <lb/>
             </div>
             <pb/>
