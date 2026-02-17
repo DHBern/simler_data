@@ -73,7 +73,7 @@
                     <head><hi rendition="#c"><hi rendition="#b">Denen Hochgeachten / woledlen / vesten /</hi><lb/> frommen / ehren-nohtvesten /
                         fu&#x364;rsichtigen und<lb/> weisen Herren:</hi></head>
                     <lb/>
-                    <item rendition="#et"><hi rendition="#larger">Herrn <rs type="person" key="person_015">Hans Jakob
+                    <item><hi rendition="#larger">Herrn <rs type="person" key="person_015">Hans Jakob
                             Leu&#x364;en</rs> / des <rs type="institution" key="institution_001"
                                 >Rahts</rs> / Statt<lb break="no"/></hi>haltern / und obersten Leutenant über der <rs
                                 type="place" key="place_001">Statt Zü<lb break="no"/>rich</rs> Panner:</item>
@@ -84,7 +84,7 @@
                     <item><hi rendition="#larger">Herrn <rs type="person" key="person_007">Matthias Ladolten</rs> / des
                         Rahts von der</hi><lb/> freyen Wahl:</item>
                     <lb/>
-                    <item rendition="#et"><hi rendition="#larger">Herrn <rs type="person" key="person_016">Hans Bergern</rs>
+                    <item><hi rendition="#larger">Herrn <rs type="person" key="person_016">Hans Bergern</rs>
                         / des Rahts von der freyen</hi><lb/> Wahl / Bauherrn / und gewesenem Vogt der
                         Herr<lb break="no"/>schafft <rs type="place" key="place_005">Weinfelden</rs>:</item>
                     <lb/>
@@ -196,12 +196,11 @@
                     <lb/>
 
                     <closer>
-                        <salute><hi rendition="#c">meiner hochgeehrten Herren<lb/>
-                                <hi rendition="#et">schuldgeneigtwilliger diener</hi></hi><lb/>
-                            <rs type="place" key="place_001">Zürich</rs> / den 28. tag Brachm. 1648.<lb/>
-                            <hi rendition="#right"><rs type="person" key="person_001">Joh. Wilhelm
-                                    Simler</rs></hi>
-                        </salute>
+                        <salute><hi rendition="#et">meiner hochgeehrten Herren</hi><lb/>
+                            <hi rendition="#et2">schuldgeneigtwilliger diener</hi></salute><lb/>
+                        <dateline><rs type="place" key="place_001">Zürich</rs> / den 28. tag Brachm. 1648.</dateline><lb/>
+                        <signed><hi rendition="#right"><rs type="person" key="person_001">Joh. Wilhelm
+                                Simler</rs></hi></signed>
                     </closer>
                     <lb/>
                 </div>
@@ -217,9 +216,9 @@
                     <lb/>
                     <hi rendition="#aq #b #c">
                         <hi rendition="#i">Ex Epistola Magnifici simul ac Literatis<lb break="no"/>simi Viri,</hi><lb/>
-                    <hi rendition="#k">Dn.</hi>
+                    <hi rendition="#g"><hi rendition="#k">Dn.</hi>
                     <rs type="person" key="person_022">DANIELIS
-                        RHAGORII</rs>,<lb/>
+                        RHAGORII</rs>,</hi><lb/>
                         Ducentum viri Bernensis, bis præfecti,<lb/> 
                         Poetæ coronati.</hi>
                 </head>
@@ -243,8 +242,8 @@
                     <hi rendition="#aq #b #c">
                         <hi rendition="#i">Ex Epistola V. rev. &amp; doctißimi</hi><lb/>
                     <hi rendition="#k">Dn.</hi>
-                    <rs type="person" key="person_009">GEORGII
-                        MULLERI</rs>,<lb/>
+                    <hi rendition="#g"><rs type="person" key="person_009">GEORGII
+                        MULLERI</rs>,</hi><lb/>
                         Ecclesiæ Talvillanæ ad lacum Tig. Pa<lb break="no"/>storis
                         vigilantissimi, Poetæ acutissimi.</hi>
                 </head>
@@ -280,7 +279,7 @@
 
                 <lg type="poem">
                     <l><hi rendition="#aq"><hi rendition="#in">O</hi>Mnia perplacuere mihi,</hi>
-                        <hi rendition="#aq #k"><rs type="person" key="person_001">Simlere</rs></hi>
+                        <hi rendition="#aq #k #g"><rs type="person" key="person_001">Simlere</rs></hi>
                         <hi rendition="#aq">diserte,</hi></l>
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq">Quæ volvenda mihi misit amica
@@ -294,13 +293,13 @@
                 </lg>
                 <lb/>
 
-                <lg>
-                    <l rendition="#et"><hi rendition="#aq #g"><rs type="person" key="person_014">FELIX
-                                WYSSIVS</rs>,</hi></l>
-                    <lb/>
-                    <l rendition="#et"><hi rendition="#aq"><rs type="institution"
-                                key="institution_010">Abbatisanæ Ecclesiæ</rs> Pastor.</hi></l>
-                </lg>
+                <closer>
+                    <signed><hi rendition="#right #aq #g"><rs type="person" key="person_014">FELIX
+                        WYSSIVS</rs>,</hi><lb/>
+                        <hi rendition="#right #aq"><rs type="institution"
+                            key="institution_010">Abbatisanæ Ecclesiæ</rs> Pastor.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -329,9 +328,13 @@
                             suaveq<!-- que-Abkürzung? -->; rebus habet.</hi></l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><hi rendition="#aq"><hi rendition="#g"><rs type="person" key="person_018">IOH.
-                    WIRZIVS</rs></hi>, S. Th. Prof.<lb/> honoris c.f.</hi></p>
+                
+                <closer>
+                    <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_018">IOH.
+                        WIRZIVS</rs></hi>, S. Th. Prof.<lb/>
+                        honoris c.f.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -359,16 +362,16 @@
                         >SIMLERIA</rs> pectore Musa.</hi></l>
                 </lg>
                 <lb/>
-
-                <lg>
-                    <l rendition="#et"><hi rendition="#aq #g"><rs type="person" key="person_006">IOH.
-                                HENRICVS HOTTINGERVS</rs>.</hi></l>
-                    <lb/>
-                    <l rendition="#et"><hi rendition="#aq #i">Eccles. Historiæ, Linguarum Orientalium,<lb/>
+                
+                <closer>
+                    <signed><hi rendition="#right #aq #g"><rs type="person" key="person_006">IOH.
+                        HENRICVS HOTTINGERVS</rs>,</hi><lb/>
+                        <hi rendition="#right #aq #i">Eccles. Historiæ, Linguarum Orientalium,<lb/>
                             Artiùmque Logicarum in <rs type="institution" key="institution_005"
                                 >Collegio Carolino</rs><lb/> 
-                            Professor ordinarius.</hi></l>
-                </lg>
+                            Professor ordinarius.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -446,15 +449,14 @@
                             poli.</hi></l>
                 </lg>
                 <lb/>
-
-                <lg>
-                    <l rendition="#et"><hi rendition="#aq">Dilectissimo D. Affini modulabar</hi></l>
-                    <lb/>
-                    <l><hi rendition="#aq #c #g"><rs type="person" key="person_019">IOH. RODOLPHVS
-                                HOFMEISTERVS</rs>,</hi></l>
-                    <lb/>
-                    <l><hi rendition="#aq #c">V.D.M. &amp; Professor Græco Latinus.</hi></l>
-                </lg>
+                
+                <closer>
+                    <salute><hi rendition="#right #aq">Dilectissimo D. Affini modulabar</hi></salute>
+                    <signed><hi rendition="#right #aq #g"><rs type="person" key="person_019">IOH. RODOLPHVS
+                        HOFMEISTERVS</rs>,</hi><lb/>
+                        <hi rendition="#right #aq">V.D.M. &amp; Professor Græco Latinus.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -475,18 +477,14 @@
                 </lg>
                 <lb/>
                 
-                <lg>
-                    <l rendition="#et"><hi rendition="#aq">Honoris c. f.</hi></l>
-                    <lb/>
-                    <l rendition="#et"><hi rendition="#aq #g">IOHANNES CASPARVS SVIZERVS,</hi></l>
-                    <lb/>
-                    <l rendition="#et2"><hi rendition="#aq">Collegii Neo. parth. Inspector, &amp; Theolog.</hi></l>
-                    <lb/>
-                    <l rendition="#et2"><hi rendition="#aq">Catechet. in Auditorio Hum. Prof.</hi></l>
-                </lg>
+                <closer>
+                    <salute><hi rendition="#right #aq">Honoris c. f.</hi></salute>
+                    <signed><hi rendition="#right #aq #g">IOHANNES CASPARVS SVIZERVS,</hi><lb/>
+                        <hi rendition="#right #aq">Collegii Neo. parth. Inspector, &amp; Theolog.<lb/>
+                            Catechet. in Auditorio Hum. Prof.</hi>
+                    </signed>
+                </closer>
                 <lb/>
-                
-                
             </div>
 
             <pb n="[A vii r]"/>
@@ -575,10 +573,13 @@
                     <l rendition="#et">außtilgen nimmermehr.</l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><rs type="person" key="person_009">Georg Müller</rs> / Pfarrer zu
-                        <rs type="place" key="place_008">Tahlweil</rs> /<lb/> am <rs type="place"
-                        key="place_007">Zürichsee</rs>.</p>
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_009">Georg Müller</rs> / Pfarrer zu
+                        <rs type="place" key="place_008">Tahlweil</rs> /<lb/> 
+                        am <rs type="place" key="place_007">Zürichsee</rs>.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -854,9 +855,12 @@
                     <l rendition="#et">Wann ich solch glük erlebt / nichts mehr zu wünschen hab.</l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><rs type="person" key="person_024">Ehrenhold Falk von
-                        Traubenberg</rs> /</p>
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_024">Ehrenhold Falk von
+                    Traubenberg</rs> /</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
             
@@ -908,15 +912,16 @@
                         haben.</l>
                 </lg>
                 <lb/>
-
-                <lg>
-                    <l rendition="#et2"><rs type="person" key="person_032">J. G. R.
-                        Wekherlin</rs>.</l>
-                    <lb/>
-                    <l rendition="#et"><rs type="place" key="place_012">Londen</rs> / in <rs
-                            type="place" key="place_013">Engelland</rs>. <hi rendition="#aq"
-                            >Decemb.</hi> 1648.</l>
-                </lg>
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_032">J. G. R.
+                        Wekherlin</rs>.</hi>
+                    </signed><lb/>
+                    <dateline><hi rendition="#right"><rs type="place" key="place_012">Londen</rs> / in <rs
+                        type="place" key="place_013">Engelland</rs>                        
+                        <hi rendition="#aq">Decemb.</hi> 1648.</hi>
+                    </dateline>
+                </closer>
                 <lb/>
             </div>
 
@@ -975,8 +980,11 @@
                     <l>wann bäldest nach hundert Sinnbilder außkommen.</l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><rs type="person" key="person_004">Johann Jakob Bodmer</rs>.</p>
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_004">Johann Jakob Bodmer</rs>.</hi>    
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -1022,15 +1030,14 @@
                             patet.</hi></l>
                 </lg>
                 <lb/>
-
-                <lg>
-                    <l rendition="#et"><hi rendition="#aq #i">Sinceræ affinitatis ergò posuit</hi></l>
-                    <lb/>
-                    <l rendition="#et2"><hi rendition="#aq #g"><rs type="person" key="person_020"
-                                >IACOBVS REDINGERVS</rs>,</hi></l>
-                    <lb/>
-                    <l rendition="#et3"><hi rendition="#aq">Pastor Dieticonensis</hi></l>
-                </lg>
+                
+                <closer>
+                    <salute><hi rendition="#right #aq #i">Sinceræ affinitatis ergò posuit</hi></salute><lb/>
+                    <signed><hi rendition="#right #aq #g"><rs type="person" key="person_020"
+                        >IACOBVS REDINGERVS</rs>,</hi><lb/>
+                        <hi rendition="#right #aq">Pastor Dieticonensis</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
             
@@ -1062,15 +1069,13 @@
                     </lg>
                     <lb/>
                 
-              <lg>
-                  <l rendition="#et"><hi rendition="#aq">Observantiæ &amp; necessitudinis ergò aposuit</hi></l>
-                  <lb/>
-                  <l rendition="#et2"><hi rendition="#aq">Affinis addictissimus.</hi></l>
-                  <lb/>
-                  <l><hi rendition="#aq #g">IOHANNES BLASSIVS, Tigurinus,</hi></l>
-                  <lb/>
-                  <l rendition="#et"><hi rendition="#aq">Vitoduranorum Diaconus.</hi></l>
-              </lg>
+                <closer>
+                    <salute><hi rendition="#right #aq">Observantiæ &amp; necessitudinis ergò aposuit<lb/>
+                        Affinis addictissimus.</hi></salute><lb/>
+                    <signed><hi rendition="#right #aq"><hi rendition="#g">IOHANNES BLASSIVS</hi>, Tigurinus,<lb/> 
+                        Vitoduranorum Diaconus.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -1092,7 +1097,7 @@
                         <hi rendition="#aq">Collegio Par<lb break="no"/>thenico</hi>
                         zu Zürich / über seine außgangne<lb/> 
                         Poetische Getichte und Gesänge.<lb/>
-                        <hi rendition="#k">Sonnet.</hi></hi>
+                        <hi rendition="#k #g">Sonnet.</hi></hi>
                 </head>
                 <lb/>
 
@@ -1132,14 +1137,13 @@
                                 >Zürich</rs></hi> zu Lob / wird immerzu sich hauffen.</l>
                 </lg>
                 <lb/>
-
-                <lg>
-                    <l rendition="#et"><hi rendition="#g"><rs type="person" key="person_022">DANIEL RHAGORIVS</rs></hi>,</l>
-                    <lb/>
-                    <l rendition="#et2">Loblicher <rs type="place" key="place_009">Statt Bern</rs>
-                        gewesener Vogt<lb/> zu <rs type="place" key="place_010">Gottstatt</rs> und <rs
-                            type="place" key="place_011">Thorberg</rs>.</l>
-                </lg>
+                
+                <closer>
+                    <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_022">DANIEL RHAGORIVS</rs>,</hi><lb/>
+                        Loblicher <rs type="place" key="place_009">Statt Bern</rs> gewesener Vogt<lb/> 
+                        zu <rs type="place" key="place_010">Gottstatt</rs> und <rs type="place" key="place_011">Thorberg</rs>.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -1393,10 +1397,12 @@
                     <l>noch so frisch / alß jezt / nicht minder.</l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><hi rendition="#larger"><rs type="person" key="person_039">Johann
-                            Jacob Stäffen</rs> / Pfarrer<lb/> zu <rs type="place" key="place_005"
-                            >Weinfelden</rs>.</hi></p>
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_039">Johann Jacob Stäffen</rs> / Pfarrer<lb/> 
+                        zu <rs type="place" key="place_005">Weinfelden</rs>.</hi>
+                    </signed>
+                </closer>
                 <lb/>
             </div>
 
@@ -1504,8 +1510,10 @@
                 </lg>
                 <lb/>
                 
-                <p rendition="#et"><hi rendition="#aq #larger">Idem H. H<hi rendition="#k">erderus</hi>.</hi></p>
-            
+                <closer>
+                    <signed><hi rendition="#right #aq">Idem <hi rendition="#k">H.Herderus.</hi></hi></signed>
+                </closer>
+                <lb/>
             </div>
 
             <pb n="[X iv v]"/>
@@ -1587,10 +1595,13 @@
                     <l rendition="#et">Biß seine Seele geht in dritten Himmel eyn.</l>
                 </lg>
                 <lb/>
-
-                <p rendition="#et"><hi rendition="#larger"><rs type="person" key="person_040">Hans
+                
+                <closer>
+                    <signed><hi rendition="#right"><rs type="person" key="person_040">Hans
                         <hi rendition="#aq">U</hi>lrich Amman</rs> / Diener<lb/> 
-                    des Worts Gottes. [1]</hi></p>
+                        des Worts Gottes. [1]</hi> 
+                    </signed>
+                </closer>
                 <lb/>
             </div>
             <pb/>
