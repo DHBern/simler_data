@@ -3166,7 +3166,7 @@
                             <head><hi rendition="#c">8.</hi></head>
                             <lb/>
                             <l>Schönste Ros/ du Gottesgabe/
-                                <!--als gap oder label kodieren? [CF]--><rs type="person" key="person_098">Dorothea</rs>.</l>
+                                <!--als gap oder label kodieren? [CF]--><note place="right"><rs type="person" key="person_098">Dorothea</rs>.</note></l>
                             <lb/>
                             <l rendition="#et">wird er sprächen/ nennt man dich/</l>
                             <lb/>
@@ -3191,7 +3191,7 @@
                             <l>Hertzgeliebter; was außweiset</l>
                             <lb/>
                             <l rendition="#et">dein so su&#x364;sser Ehrennamm/
-                                <!--als gap oder label kodieren? [CF]--><rs type="person" key="person_099">Johannes</rs>.</l>
+                                <!--als gap oder label kodieren? [CF]--><note place="right"><rs type="person" key="person_099">Johannes</rs>.</note></l>
                             <lb/>
                             <l>wird sie sagen; ward gepreiset</l>
                             <lb/>
@@ -3542,7 +3542,7 @@
                             <l rendition="#et">hochgeehrter Bräutigam/</l>
                             <lb/>
                             <l rendition="#et">wie außweiset euer Nam:
-                                <!--als gap oder label kodieren? [CF]--><rs type="person" key="person_014">Felix</rs>.</l>
+                                <!--als gap oder label kodieren? [CF]--><note place="right"><rs type="person" key="person_014">Felix</rs>.</note></l>
                             <lb/>
                             <l>weil euch euers leids ergetzet</l>
                             <lb/>
@@ -3596,7 +3596,7 @@
                             <l>sagt: wie die Räben/ diser zeit/ bring su&#x364;ssen most und
                                 wein/</l>
                             <lb/>
-                            <l>so werd auch/ um des frommen hauß/ sein Ehweib fruchtbar seyn.</l>
+                            <l>so werd auch/ um des frommen hauß/ sein Ehweib frucht<lb break="no"/>bar seyn.</l>
                             <lb/>
                             <l><hi rendition="#smaller">Psalm 128. v. 1.2. etc.</hi></l>
                         </lg>
@@ -3620,13 +3620,13 @@
                         <lg n="3">
                             <head><hi rendition="#c">3.</hi></head>
                             <lb/>
-                            <l>Des klugen <rs type="person" key="person_108">Syrachs</rs> kluger sohn von solchem weib bezeuget:</l>
+                            <l>Des klugen <rs type="person" key="person_108">Syrachs</rs> kluger sohn von solchem weib be<lb break="no"/>zeuget:</l>
                             <lb/>
-                            <l>sie sey des frommen guter teihl; (erfahrung nicht betreuget:)</l>
+                            <l>sie sey des frommen guter teihl; (erfahrung nicht be<lb break="no"/>treuget:)</l>
                             <lb/>
                             <l>das zweite leben ihres manns/ und seines alters rhu:</l>
                             <lb/>
-                            <l>ein’ hertzensfreud/ und hauses ehr: des Höchsten Gab darzu.</l>
+                            <l>ein’ hertzensfreud/ und hauses ehr: des Höchsten Gab <lb/>darzu.</l>
                             <lb/>
                             <l><hi rendition="#smaller">Syrach. 26. v. 1.2.16.17. etc.</hi></l>
                         </lg>
@@ -3637,7 +3637,7 @@
                         <lg n="4">
                             <head><hi rendition="#c">4.</hi></head>
                             <lb/>
-                            <l>O wol deßhalben! sprechen wir: wol dem/ dem Gott auff erden</l>
+                            <l>O wol deßhalben! sprechen wir: wol dem/ dem Gott <lb/>auff erden</l>
                             <lb/>
                             <l>beschehret solche Helfferinn; zuringern die beschwerden/</l>
                             <lb/>
@@ -3650,16 +3650,16 @@
                         <lg n="5">
                             <head><hi rendition="#c">5.</hi></head>
                             <lb/>
-                            <l>Herr Bräutigam wird heut getröst um vorgeliebte <choice>
+                            <l>Herr Bräutigam wird heut getröst um vorgeliebte <lb/><choice>
                                     <sic><rs type="person" key="person_135">JAHEl</rs></sic>
                                     <corr>JAHEL</corr>
                                 </choice>:</l>
                             <lb/>
-                            <l>Frau Braut des witwenstands ergetzt mit disem Ehgemahel.</l>
+                            <l>Frau Braut des witwenstands ergetzt mit disem Ehge<lb/>mahel.</l>
                             <lb/>
                             <l>Gott segne Sie zu seel und leib/ im Eh- und Ehrenstand:</l>
                             <lb/>
-                            <l>So wünscht die werthe Burgerschafft/ und gantzes Vatterland!</l>
+                            <l>So wünscht die werthe Burgerschafft/ und gantzes <lb/>Vatterland!</l>
                         </lg>
                     </lg>
                     <lb/>
@@ -3675,9 +3675,9 @@
 
                     <lg type="poem">
                         <l><hi rendition="#in">D</hi>En neuverlobten wünschen wir gnad/ frid und
-                            reichen segen.</l>
+                            <lb/>reichen segen.</l>
                         <lb/>
-                        <l>Wir wünschen ihnen ehr und glük: nichts widrigs sey entgegen.</l>
+                        <l>Wir wünschen ihnen ehr und glük: nichts widrigs <lb/>sey entgegen.</l>
                         <lb/>
                         <l>Wir wünschen kindes kindeskind: gesunde tag und zeit.</l>
                         <lb/>
@@ -4476,7 +4476,7 @@
                         <head>Erklärung.</head>
                         <lb/>
                         <l><hi rendition="#in">G</hi>Lük zu/ glük zu/ man schrey/ den Neu-verlobten
-                            Hertzen/</l>
+                            <lb/>Hertzen/</l>
                         <lb/>
                         <l rendition="#et">Die auff dem Liebes-Meer so weit gefahren sind/</l>
                         <lb/>
@@ -4493,7 +4493,7 @@
                         <l rendition="#et">So höret/ ohne spott/ wie Beider Namm erklingt:</l>
                         <lb/>
                         <l><hi rendition="#larger">O Zierlich Frücht (ich wünsch) von gruenenden
-                                Zweyg-schossen!</hi></l>
+                                <lb/>Zweyg-schossen!</hi></l>
                         <lb/>
                         <l rendition="#et">Verstehet hüpsche Kind/ von beiderley Geschlecht/</l>
                         <lb/>
@@ -4508,7 +4508,7 @@
                         <l>Darum euch widerum/ zu vorigem beginnen/</l>
                         <lb/>
                         <pb n="310" facs="4049509"/>
-                        <l rendition="#et">Jch wünsch der Kinder’n vil: Reichthum euch nicht
+                        <l rendition="#et">Jch wünsch der Kinder’n vil: Reichthum euch <lb/>nicht
                             gebricht.</l>
                         <lb/>
                         <l>Euch ist verborgen nicht das übergroß verlangen</l>
@@ -4517,7 +4517,7 @@
                         <lb/>
                         <l>Das Gottes-Wort bericht/ wie sie vil mehr geprangen/</l>
                         <lb/>
-                        <l rendition="#et">Mit Kinder’n alß mit Gelt. So lieb war Liebesfrucht!</l>
+                        <l rendition="#et">Mit Kinder’n alß mit Gelt. So lieb war Liebes<lb break="no"/>frucht!</l>
                         <lb/>
                         <l><hi rendition="#aq">U</hi>nd nicht unbillich zwar. Gold/ Silber/ und
                             dergleichen/</l>
@@ -4529,9 +4529,9 @@
                         <l rendition="#et">Die Kinder nur allein sind unsre Himmels-zier.</l>
                         <lb/>
                         <l>Wann dann/ <hi rendition="#aq">ô</hi> Schönes Par! mein Wunsch wol
-                            abgeloffen/</l>
+                            ab<lb break="no"/>geloffen/</l>
                         <lb/>
-                        <l rendition="#et">So wartet gwüß auff euch nicht wenig Freud und Muht:</l>
+                        <l rendition="#et">So wartet gwüß auff euch nicht wenig Freud und <lb/>Muht:</l>
                         <lb/>
                         <l><hi rendition="#aq">U</hi>nd habt ihr/ über Jar/ ein Heyrahts- Frucht zu
                             hoffen/</l>
@@ -4542,7 +4542,7 @@
                         <l>Ja/ wann Jhr Beide denn dermalen eins abletzen/</l>
                         <lb/>
                         <l rendition="#et"><hi rendition="#aq">U</hi>nd mit der Frommen Schar Das
-                            Halleluja singt:</l>
+                            Halleluja <lb/>singt:</l>
                         <lb/>
                         <l>Dann werden euch/ ohn leid/ die Kinder auch ergetzen/</l>
                         <lb/>
@@ -4847,7 +4847,7 @@
                             <head>14.</head>
                             <lb/>
                             <l>Dann: <hi rendition="#larger">Selig ist gepreiset</hi><lb/>
-                                <hi rendition="#smaller">Psal. 128.</hi></l>
+                                <note place="right"><hi rendition="#smaller">Psal. 128.</hi></note></l>
                             <lb/>
                             <l><hi rendition="#larger">Der Gott vor augen helt/</hi></l>
                             <lb/>
@@ -5006,7 +5006,7 @@
                         <lg n="3">
                             <head><hi rendition="#b #c">Epodus.</hi></head>
                             <lb/>
-                            <l>Wann dann/ Herr Bräutigam/ der Himmel euch gegeben</l>
+                            <l>Wann dann/ Herr Bräutigam/ der Himmel euch ge<lb break="no"/>geben</l>
                             <lb/>
                             <l rendition="#et">Eine solche Braut/</l>
                             <lb/>
@@ -5051,17 +5051,17 @@
                         <l>Beym edlen Rebenstok/ der Früchten voll wird hangen</l>
                         <lb/>
                         <l rendition="#et"><hi rendition="#aq">U</hi>nd den deßwegen man mit Weiden
-                            hefft und bindt;</l>
+                            hefft und <lb/>bindt;</l>
                         <lb/>
                         <l rendition="#et">Die man zugleich auch gut zu einem Zaun befindt/</l>
                         <lb/>
                         <l>Damit zur edlen frucht die Thiere nicht gelangen.</l>
                         <lb/>
                         <pb n="318" facs="4049517"/>
-                        <l rendition="#et">Weil nun das Salisch Gschlecht/ dem Nammen nach/
+                        <l rendition="#et">Weil nun das Salisch Gschlecht/ dem Nammen <lb/>nach/
                             entspringt</l>
                         <lb/>
-                        <l rendition="#et">Vom edlen Weidenbaum; wie das ihr Spraach mitbringt;</l>
+                        <l rendition="#et">Vom edlen Weidenbaum; wie das ihr Spraach <lb/>mitbringt;</l>
                         <lb/>
                         <l><hi rendition="#aq">U</hi>nd die verlobten Zwey den Nammen/ thätlich/
                             fu&#x364;hren/</l>
@@ -5070,7 +5070,7 @@
                         <lb/>
                         <l rendition="#et">O daß auß ihrer Lieb erwachß ein ewig Band/</l>
                         <lb/>
-                        <l>Wordurch die Bündt und Sie man mög’ verknüpfet spüren!</l>
+                        <l>Wordurch die Bündt und Sie man mög’ verknüpfet <lb/>spüren!</l>
                     </lg>
                     <lb/>
                 </div>
@@ -5191,7 +5191,7 @@
                         <l rendition="#et">im Winter zu leben.</l>
                         <lb/>
                         <l><hi rendition="#larger">Nun wünschet auch Früchte den neuen
-                                Ehleuten/</hi></l>
+                            Eh<lb break="no"/>leuten/</hi></l>
                         <lb/>
                         <l rendition="#et"><hi rendition="#larger">in künfftigen Zeiten!</hi></l>
                         <lb/>
@@ -5210,26 +5210,26 @@
                     <lb/>
                     <lg type="poem">
                         <head><hi rendition="#c">3.</hi></head>
-                        <l><hi rendition="#larger">Wir haben; spricht <rs type="person" key="person_044">Sant Paul</rs>; Nichts mitgebracht
+                        <l><hi rendition="#larger">Wir haben; spricht <rs type="person" key="person_044">Sant Paul</rs>; Nichts mitge<lb break="no"/>bracht
                                 auf Erden:</hi></l>
                         <lb/>
                         <l>So ist bekannt/ daß wir auch <hi rendition="#larger">Nichts</hi>
                             mitnemmen werden</l>
                         <lb/>
                         <l rendition="#et">Wir werden <hi rendition="#larger">Etwas</hi> doch;
-                            spricht jener Gottesknecht;</l>
+                            spricht jener Gottes<lb break="no"/>knecht;</l>
                         <lb/>
                         <l rendition="#et">Mit nemmen/ Das allhie wir auch besessen recht.</l>
                         <lb/>
                         <l>Nun ist die Frag: <hi rendition="#larger">Wie Nichts und Etwas
-                                zuverstehen:</hi></l>
+                            zuver<lb break="no"/>stehen:</hi></l>
                         <lb/>
-                        <l><hi rendition="#larger">Weil Nichts/ und Etwas doch mit uns wird dorthin
+                        <l><hi rendition="#larger">Weil Nichts/ und Etwas doch mit uns wird <lb/>dorthin
                                 gehen?</hi></l>
                         <lb/>
-                        <l rendition="#et">Das <hi rendition="#larger">Nichts</hi> ist zeitlich <hi rendition="#larger">Gut</hi>/ und muß verbleiben hier:</l>
+                        <l rendition="#et">Das <hi rendition="#larger">Nichts</hi> ist zeitlich <hi rendition="#larger">Gut</hi>/ und muß ver<lb break="no"/>bleiben hier:</l>
                         <lb/>
-                        <l rendition="#et">Das <hi rendition="#larger">Etwas</hi>/ Kinder seind: <hi rendition="#larger">Der HErr Euch mit bezier!</hi></l>
+                        <l rendition="#et">Das <hi rendition="#larger">Etwas</hi>/ Kinder seind: <hi rendition="#larger">Der HErr <lb/>Euch mit bezier!</hi></l>
                         <lb/>
                     </lg>
                 </div>
@@ -5512,7 +5512,7 @@
                         <lb/>
                         <lg type="poem">
                             <l rendition="#et">Nun schreit’ ich zu dem wunsch für euch/ Herr
-                                Bräutigam/</l>
+                                Bräu<lb break="no"/>tigam/</l>
                             <lb/>
                             <pb n="325" facs="4049524"/>
                             <l>und euer edle Braut/ euch ehlich heut verpflichtet:</l>
@@ -5681,7 +5681,7 @@
                             beru&#x364;hre/</l>
                         <lb/>
                         <l rendition="#et">wie dan <rs type="person" key="person_044">Sanct Paulus</rs> spricht/ und doch nicht
-                            widerspricht/</l>
+                            wider<lb break="no"/>spricht/</l>
                         <lb/>
                         <l>wan/ nach beschaffenheit/ ein ieder sich verpflicht:</l>
                         <lb/>
@@ -5708,7 +5708,7 @@
                         <lb/>
                         <l><hi rendition="#larger">Jn Gott er gehet her/ und sie ist
                                 Huldenreiche!</hi>
-                            <hi rendition="#smaller">Anagr.</hi></l>
+                            <note place="right"><hi rendition="#smaller">Anagr.</hi></note></l>
                     </lg>
                     <lb/>
                 </div>
@@ -5964,7 +5964,7 @@
                             <l>dem andern seinen trunk/ zum vordersten/ credentzen.</l>
                             <lb/>
                             <l rendition="#et">Solch/ und dergleichen schimpf geschehen ohn
-                                vernunft/</l>
+                                ver<lb break="no"/>nunft/</l>
                             <lb/>
                             <l rendition="#et">und finden keinen platz bey weiser leuhten zunft.</l>
                             <lb/>
@@ -5991,7 +5991,7 @@
                             <l>der <rs type="person" key="person_080">Hanna</rs> fromkeit ist ihr einiges beginnen:</l>
                             <lb/>
                             <l rendition="#et">künsch/ wie <rs type="person" key="person_081">Susanna</rs> war; an zucht der <rs type="person" key="person_082">Hester</rs>
-                                gleich</l>
+                                <lb/>gleich</l>
                             <lb/>
                             <l rendition="#et">ist sie/ nach hertzens wunsch: ihr Herr an hulden
                                 reich.</l>
@@ -6368,8 +6368,8 @@
                             <lb/>
                             <l rendition="#et2">hat erfüllet Berg und Thal:</l>
                             <lb/>
-                            <l rendition="#et"><hi rendition="#i #larger">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
-                                    schreiben</hi></l>
+                            <l rendition="#et"><hi rendition="#aq">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
+                                    <lb/>schreiben</hi></l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#larger">alß was der <rs type="person" key="person_091">Mars</rs> und seine
                                     Diener treiben.</hi></l>
@@ -6386,8 +6386,8 @@
                             <lb/>
                             <l rendition="#et2">von dem ungehaltnen feind:</l>
                             <lb/>
-                            <l rendition="#et"><hi rendition="#i #larger">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
-                                    schreiben</hi></l>
+                            <l rendition="#et"><hi rendition="#aq">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
+                                    <lb/>schreiben</hi></l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#larger">alß was der Mars und seine
                                     Diener treiben.</hi></l>
@@ -6405,8 +6405,8 @@
                             <lb/>
                             <l rendition="#et2">ohne zehrung auß dem Land:</l>
                             <lb/>
-                            <l rendition="#et"><hi rendition="#i #larger">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
-                                    schreiben</hi></l>
+                            <l rendition="#et"><hi rendition="#aq">U</hi><hi rendition="#larger">nd weißt man bald schier anders nichts zu
+                                    <lb/>schreiben</hi></l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#larger">alß was der Mars und seine
                                     Diener treiben.</hi></l>
@@ -6423,8 +6423,8 @@
                             <lb/>
                             <l rendition="#et2">zu vergiessen menschenblut:</l>
                             <lb/>
-                            <l rendition="#et"><hi rendition="#i #larger">U</hi><hi rendition="#larger">nd darff man nicht/ was mehr beschicht/
-                                    beschreiben/</hi></l>
+                            <l rendition="#et"><hi rendition="#aq">U</hi><hi rendition="#larger">nd darff man nicht/ was mehr beschicht/
+                                be<lb break="no"/>schreiben/</hi></l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#larger">wo <rs type="person" key="person_091">Mars</rs> im Land und seine
                                     Diener bleiben.</hi></l>
@@ -6446,7 +6446,7 @@
                             <l rendition="#et2">Ferr von obbemeldter klag:</l>
                             <lb/>
                             <l><hi rendition="#larger">Dann er; Gott lob; bißhar nicht weißt
-                                    zuschreiben/</hi></l>
+                                zu<lb break="no"/>schreiben/</hi></l>
                             <lb/>
                             <l><hi rendition="#larger">Was Mars im Land und seine Diener
                                     treiben.</hi></l>
@@ -6696,14 +6696,14 @@
 
                     <lg type="poem">
                         <l rendition="#et">Wie so! <hi rendition="#larger">Herr Bräutigam</hi>/ wolt
-                            ihr es achten ring</l>
+                            ihr es achten <lb/>ring</l>
                         <lb/>
                         <l>den ledig-freyen-Stand/ und uns mit ihm z’verlassen?</l>
                         <lb/>
                         <l>Villeicht hat jemand euch verursacht uns zu hassen?</l>
                         <lb/>
                         <l rendition="#et">Villeicht versteht ihr nicht was mu&#x364;h der Ehstand
-                            bring/</l>
+                            <lb/>bring/</l>
                         <lb/>
                         <l rendition="#et">die nicht verachten sol/ wer wil daß ihm geling/</l>
                         <lb/>
@@ -6742,9 +6742,9 @@
                     <lb/>
 
                     <lg type="poem">
-                        <l><hi rendition="#in">E</hi>Jn schnee-weiß-schnelle Hind/ von einem <hi rendition="#larger">Wolff</hi> getriben</l>
+                        <l><hi rendition="#in">E</hi>Jn schnee-weiß-schnelle Hind/ von einem <hi rendition="#larger">Wolff</hi> <lb/>getriben</l>
                         <lb/>
-                        <l rendition="#et">durch Berg und tieffe Tahl/ an <rs type="place" key="place_043">Rheines</rs>-Paß hinauß/</l>
+                        <l rendition="#et">durch Berg und tieffe Tahl/ an <rs type="place" key="place_043">Rheines</rs>-Paß <lb/>hinauß/</l>
                         <lb/>
                         <l rendition="#et">Nam ihren <hi rendition="#larger">Lauf-herein</hi>/ zum
                             Hirtzen/ in ein Hauß</l>
@@ -6754,7 +6754,7 @@
                         <l>O wunderliche Gschicht/ dergleichen nicht beschriben:</l>
                         <lb/>
                         <l rendition="#et">Der <hi rendition="#larger">Wolff</hi> erzeiget sich
-                            erlangtem Raub nicht hart/</l>
+                            erlangtem Raub nicht <lb/>hart/</l>
                         <lb/>
                         <l rendition="#et">an ihme niemand spürt geringste <hi rendition="#larger">Wolffes-art</hi>/</l>
                         <lb/>
@@ -6763,12 +6763,12 @@
                         <l rendition="#et"><hi rendition="#aq">U</hi>nd die gefangne Hind gereüet
                             ihrer Flucht/</l>
                         <lb/>
-                        <l rendition="#et">Beym <hi rendition="#larger">Wolff</hi>/ im <hi rendition="#larger">Wolffbach</hi> jetz sie ihr ergetzung sucht!</l>
+                        <l rendition="#et">Beym <hi rendition="#larger">Wolff</hi>/ im <hi rendition="#larger">Wolffbach</hi> jetz sie ihr erge<lb break="no"/>tzung sucht!</l>
                         <lb/>
                         <l>Entzwüschen beiden sich die Einigkeit vermehret:</l>
                         <lb/>
                         <l rendition="#et">Der <hi rendition="#larger">Wolff</hi> genießt des Raubs/
-                            mit sonderbarem lust/</l>
+                            mit sonderbarem <lb/>lust/</l>
                         <lb/>
                         <l rendition="#et">mit gegen-lieb die Hind entzündet Hertz und Brust.</l>
                         <lb/>
@@ -6821,7 +6821,7 @@
                             <l>mit einer die von euch <hi rendition="#larger"><rs type="person" key="person_155">Hartmännin</rs></hi> wird
                                 geheissen:</l>
                             <lb/>
-                            <l rendition="#et">Jst sie nun <hi rendition="#larger">Hart</hi> dem <hi rendition="#larger">Mann!</hi> mag er sie lieben nicht.</l>
+                            <l rendition="#et">Jst sie nun <hi rendition="#larger">Hart</hi> dem <hi rendition="#larger">Mann!</hi> mag er sie lieben <lb/>nicht.</l>
                         </lg>
                         <lb/>
 
@@ -6862,7 +6862,7 @@
                             <lb/>
                             <l rendition="#et">Nicht wenig/ und nicht klein:</l>
                             <lb/>
-                            <l>Dan wie ein freundtlich Weib: so auch ein <hi rendition="#larger">Harts</hi> nicht minder</l>
+                            <l>Dan wie ein freundtlich Weib: so auch ein <hi rendition="#larger">Harts</hi> nicht <lb/>minder</l>
                             <lb/>
                             <l>dem jungen/ frischen Mann gibt angenäme Kinder/</l>
                             <lb/>
@@ -6884,7 +6884,7 @@
                             <l>und essen Brot im schweiß/ worauf sie pflegt zureiben</l>
                             <lb/>
                             <l rendition="#et">scharff-beissig Mundes-Saltz: so wird er sein
-                                gesund.</l>
+                                ge<lb break="no"/>sund.</l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#aq">U</hi>nd weil ein junger Mann
                                 sich gleichet einem Rind</l>
@@ -6938,7 +6938,7 @@
                                 Weib erinnern jeder frist.</l>
                             <lb/>
                             <l rendition="#et"><hi rendition="#aq">U</hi>nd wie der/ welchem Gott
-                                ein freundtlich Weib beschehrt/</l>
+                                ein freundtlich Weib <lb/>beschehrt/</l>
                             <lb/>
                             <l>ein langes leben wünscht/ und schmertzlich von ihr scheidet/</l>
                             <lb/>
@@ -6967,7 +6967,7 @@
                             <l rendition="#et"><hi rendition="#aq">U</hi>nd seye nicht geredt zu
                                 ihrem ungelimpff.</l>
                             <lb/>
-                            <l rendition="#et">Dan nur dem Namen nach die Jungfrau Braut ist <hi rendition="#larger">hart:</hi></l>
+                            <l rendition="#et">Dan nur dem Namen nach die Jungfrau Braut <lb/>ist <hi rendition="#larger">hart:</hi></l>
                             <lb/>
                             <l>Da sonsten ihr gemu&#x364;ht der Bräutigam befindet/</l>
                             <lb/>
@@ -7037,9 +7037,9 @@
 
                     <lg type="poem">
                         <l><hi rendition="#larger"><hi rendition="#in">R</hi>Echt tuhn ist über
-                                hübsch</hi> ; hat recht und wol gesprochen:</l>
+                            hübsch</hi> ; hat recht und wol ge<lb break="no"/>sprochen:</l>
                         <lb/>
-                        <l rendition="#et">die heutig Jungfrau Braut/ alß man sie <hi rendition="#larger">Wu&#x364;st</hi> genent:</l>
+                        <l rendition="#et">die heutig Jungfrau Braut/ alß man sie <hi rendition="#larger">Wu&#x364;st</hi> <lb/>genent:</l>
                         <lb/>
                         <l rendition="#et">Jetz/ da ihr Bräutigam sie für die schönst erkent/</l>
                         <lb/>
@@ -7058,7 +7058,7 @@
                     <head><label>[78.]</label>
                         <lb/>
                         <hi rendition="#b #c">Regenten Kleinodt/ <lb/>oder <lb/>Der <hi rendition="#aq">LXXII</hi>. Psalm des geistreichen Poeten/ <lb/>und Königlichen
-                            Propheten Davids: <lb/>Zu Ehren Jhr Ehrs. <rs type="person" key="person_158">Wht. H. B. H. H. R.</rs> <lb/>in andre Reimen
+                            Propheten Davids: <lb/>Zu Ehren Jhr Ehrs. <rs type="person" key="person_229">Wht. H. B. H. H. R.</rs> <lb/>in andre Reimen
                             gebracht:</hi></head>
                     <lb/>
                     <p><hi rendition="#c">Jn der weise: Jesus wahrer Gottes Sohn/ etc.</hi></p>
@@ -7323,7 +7323,7 @@
 
                     </div>
 
-                    <p>Getrukt in dem Fridenwünschenden <lb/>Heiljahr: <lb/><rs type="person" key="person_158">Herr Rahn</rs> <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t
+                    <p>Getrukt in dem Fridenwünschenden <lb/>Heiljahr: <lb/><rs type="person" key="person_229">Herr Rahn</rs> <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t
                         <hi rendition="#aq">IM</hi> Fr<hi rendition="#aq">ID</hi>en <lb/>re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.</p>
                     <lb/>
                 </div>
