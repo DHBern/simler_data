@@ -244,7 +244,7 @@
                     <hi rendition="#k">Dn.</hi>
                     <hi rendition="#g"><rs type="person" key="person_009">GEORGII
                         MULLERI</rs>,</hi><lb/>
-                        Ecclesiæ Talvillanæ ad lacum Tig. Pa<lb break="no"/>storis
+                        Ecclesiæ <rs type="place" key="place_008">Talvillanæ</rs> ad lacum Tig. Pa<lb break="no"/>storis
                         vigilantissimi, Poetæ acutissimi.</hi>
                 </head>
                 <lb/>
@@ -308,7 +308,7 @@
                     <label>[vii.]</label>
                     <lb/>
                     <hi rendition="#aq #b #c">II.<lb/>
-                    Ioannes Wilelmus Simlerus.<lb/>
+                        <rs type="person" key="person_001">Ioannes Wilelmus Simlerus</rs>.<lb/>
                     <!-- Griechischer Text zu ergänzen (JA) --><lb/>
                     Illen’ vir suave melos Musis<unclear
                             reason="uncleanPrint">?</unclear></hi>
@@ -343,7 +343,7 @@
                     <label>[viii.]</label>
                     <lb/>
                     <hi rendition="#aq #b #c">III.<lb/>
-                    IOANNES GVIELMVS SIMLERVS<lb/> 
+                        <rs type="person" key="person_001">IOANNES GVIELMVS SIMLERVS</rs><lb/> 
                         ARTE FECIT.<lb/>
                     <hi rendition="#i">Per Anagramma,</hi><lb/>
                     Anne Musicus eriget hisce:<hi rendition="#i"> ut, re, mi, fa, sol,
@@ -405,7 +405,7 @@
                             canit.</hi></l>
                     <lb/>
                     <l><hi rendition="#aq #i">Hoc quoque</hi>
-                        <hi rendition="#aq #larger">Simlerum</hi>
+                        <hi rendition="#aq #larger"><rs type="person" key="person_001">Simlerum</rs></hi>
                         <hi rendition="#aq #i">felicem nomine duco,</hi></l>
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq #i">Quòd pubi nostræ carmina sancta
@@ -479,7 +479,7 @@
                 
                 <closer>
                     <salute><hi rendition="#right #aq">Honoris c. f.</hi></salute><lb/>
-                    <signed><hi rendition="#right #aq #g">IOHANNES CASPARVS SVIZERVS,</hi><lb/>
+                    <signed><hi rendition="#right #aq #g"><rs type="person" key="person_276">IOHANNES CASPARVS SVIZERVS</rs>,</hi><lb/>
                         <hi rendition="#right #aq">Collegii Neo. parth. Inspector, &amp; Theolog.<lb/>
                             Catechet. in Auditorio Hum. Prof.</hi>
                     </signed>
@@ -500,7 +500,7 @@
                         <hi rendition="#aq">VI.</hi><lb/>
                         <hi rendition="#aq">U</hi>ber Herrn Tichters namen
                         Bu&#x366;chstabwächsel<lb/>
-                        JOHANN WJLHELM SJMLER /<lb/>
+                        <rs type="person" key="person_001">JOHANN WJLHELM SJMLER</rs> /<lb/>
                         W / in <hi rendition="#aq">U</hi> / und V / aufgelöset:<lb/>
                         Nu mahl / i<hi rendition="#aq">ô</hi>!
                         vil reins mehl;<lb/>
@@ -641,7 +641,7 @@
                     <lb/>
                     <l>E<space dim="horizontal"
                         />y<!--Von Hand (mit Bleistift?) den y-Strich verlängert und y-Punkte hinzugefügt.-->
-                        an dem Zürichse<space dim="horizontal"/>E</l>
+                        an dem <rs type="place" key="place_007">Zürichse</rs><space dim="horizontal"/>E</l>
                     <lb/>
                     <l rendition="#et">so gu&#x366;t alß irgend wo</l>
                     <lb/>
@@ -822,7 +822,7 @@
                     <l rendition="#et">Ob schon das from[m] gemu&#x364;ht kein wasser hat
                         betru&#x364;bt.</l>
                     <lb/>
-                    <l>Herr <hi rendition="#larger">Simler</hi> hat dardurch sich niemal lassen
+                    <l>Herr <hi rendition="#larger"><rs type="person" key="person_001">Simler</rs></hi> hat dardurch sich niemal lassen
                         blenden /</l>
                     <lb/>
                     <l>Er konte meisterlich sein angesicht abwenden</l>
@@ -1055,7 +1055,7 @@
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq #i">Exhilarare hominum pectora mœsta queunt:</hi></l>
                     <lb/>
-                    <l><hi rendition="#aq #i"><hi rendition="#g">SIMLERI</hi> ast opus hoc, &amp; sancta poëmata quemvis</hi></l>
+                    <l><hi rendition="#aq #i"><hi rendition="#g"><rs type="person" key="person_001">SIMLERI</rs></hi> ast opus hoc, &amp; sancta poëmata quemvis</hi></l>
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq #i">Exhilarant mirâ dexteritatis ope.</hi></l>
                     <lb/>
@@ -1072,7 +1072,7 @@
                 <closer>
                     <salute><hi rendition="#right #aq">Observantiæ &amp; necessitudinis ergò aposuit<lb/>
                         Affinis addictissimus.</hi></salute><lb/>
-                    <signed><hi rendition="#right #aq"><hi rendition="#g">IOHANNES BLASSIVS</hi>, Tigurinus,<lb/> 
+                    <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_021">IOHANNES BLASSIVS</rs></hi>, Tigurinus,<lb/> 
                         Vitoduranorum Diaconus.</hi>
                     </signed>
                 </closer>
@@ -1092,10 +1092,10 @@
                         <hi rendition="#aq">XIII.</hi><lb/>
                         Zu ehren und lobwürdigem ruhm<lb/> 
                         dem hochgelehrten Herren<lb/> 
-                        Johann Wilhelm Simler /<lb/> 
+                        <rs type="person_001" key="person_001">Johann Wilhelm Simler</rs> /<lb/> 
                         Zuchtherren im obern
-                        <hi rendition="#aq">Collegio Par<lb break="no"/>thenico</hi>
-                        zu Zürich / über seine außgangne<lb/> 
+                        <hi rendition="#aq"><rs type="institution" key="institution_004">Collegio Par<lb break="no"/>thenico</rs></hi>
+                        zu <rs type="place" key="place_001">Zürich</rs> / über seine außgangne<lb/> 
                         Poetische Getichte und Gesänge.<lb/>
                         <hi rendition="#k #g">Sonnet.</hi></hi>
                 </head>
