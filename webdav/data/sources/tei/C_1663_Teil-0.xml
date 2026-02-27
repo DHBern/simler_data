@@ -1333,8 +1333,8 @@
                 <lg type="poem">
                     <l><hi rendition="#larger">O Jhr wehrtesten Weisheiten /</hi></l>
                     <lb/>
-                    <l>Jhr Herr <hi rendition="#larger">Waser</hi> / Jhr Herr <hi
-                            rendition="#larger">Rahn</hi> /</l>
+                    <l>Jhr Herr <hi rendition="#larger"><rs type="person" key="person_134">Waser</rs></hi> / Jhr Herr <hi
+                        rendition="#larger"><rs type="person" key="person_010">Rahn</rs></hi> /</l>
                     <lb/>
                     <l>Euer lob weit auß zubreiten</l>
                     <lb/>
@@ -1373,7 +1373,7 @@
                 <lb/>
 
                 <lg type="poem">
-                    <l>O / Herr Simler / Euer dichten</l>
+                    <l>O / Herr <rs type="person" key="person_001">Simler</rs> / Euer dichten</l>
                     <lb/>
                     <l rendition="#et">hat getriben mich so weit.</l>
                     <lb/>
@@ -1440,7 +1440,7 @@
 
                 <p rendition="#et"><hi rendition="#aq">Sic raptim, abituriens rurſus in palatinatum<lb/> Vovet Reverendo, Doctiſsimóque Do<lb break="no"/>mino,
                     parentis olim &amp; adhuc dum, pa<lb break="no"/>troniq́ue 
-                    loco ſuſpiciundo authori,<hi rendition="#k #g">Jo<lb break="no"/>hannes Henricus Herderus</hi>,<lb/>
+                    loco ſuſpiciundo authori,<hi rendition="#k #g"><rs type="person" key="person_227">Jo<lb break="no"/>hannes Henricus Herderus</rs></hi>,<lb/>
                     paſtor Eden-Kobianus inferioris palati<lb break="no"/>natus Helv. Tig.</hi></p>
 
             </div>
@@ -1475,9 +1475,9 @@
                 <lb/>
                 
                 <lg>
-                    <head><hi rendition="#aq #i #c">Simlerus.</hi></head>
+                    <head><hi rendition="#aq #i #c"><rs type="person" key="person_001">Simlerus</rs>.</hi></head>
                     <lb/>
-                    <l><hi rendition="#aq">Simleri suadent Statibus solertia scripta</hi></l>
+                    <l><hi rendition="#aq"><rs type="person" key="person_001">Simleri</rs> suadent Statibus solertia scripta</hi></l>
                     <lb/>
                     <l rendition="#et"><hi rendition="#aq">Summis sancta satis sollicitè studia:</hi></l>
                     <lb/>
@@ -1511,7 +1511,7 @@
                 <lb/>
                 
                 <closer>
-                    <signed><hi rendition="#right #aq">Idem <hi rendition="#k">H.Herderus.</hi></hi></signed>
+                    <signed><hi rendition="#right #aq">Idem <hi rendition="#k"><rs type="person" key="person_227">H.Herderus</rs>.</hi></hi></signed>
                 </closer>
                 <lb/>
             </div>
