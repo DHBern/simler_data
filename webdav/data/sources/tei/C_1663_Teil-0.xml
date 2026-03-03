@@ -55,8 +55,8 @@
                 <milestone rendition="#hr" unit="section"/>
                 <lb/>
                 <docImprint><hi rendition="#c">Getrukt zu <pubPlace><rs type="place" key="place_001"
-                                >Zürich</rs></pubPlace>/<lb/> Jn verlegung <publisher>Joh. Wilhelm
-                                    Simlers</publisher>/ Bu&#x366;chh.</hi><lb/>
+                                >Zürich</rs></pubPlace>/<lb/> Jn verlegung <publisher><rs type="person" key="person_193">Joh. Wilhelm
+                                    Simlers</rs></publisher>/ Bu&#x366;chh.</hi><lb/>
                     <docDate><hi rendition="#aq #c">M DC. LXIII.</hi></docDate></docImprint>
             </titlePage>
             <lb/>
@@ -75,8 +75,8 @@
                     <lb/>
                     <item><hi rendition="#larger">Herrn <rs type="person" key="person_015">Hans Jakob
                             Leu&#x364;en</rs> / des <rs type="institution" key="institution_001"
-                                >Rahts</rs> / Statt<lb break="no"/></hi>haltern / und obersten Leutenant über der <rs
-                                type="place" key="place_001">Statt Zü<lb break="no"/>rich</rs> Panner:</item>
+                                >Rahts</rs> / Statt<lb break="no"/></hi>haltern / und obersten Leutenant über der Statt <rs
+                                type="place" key="place_001">Zü<lb break="no"/>rich</rs> Panner:</item>
                     <lb/>
                     <item><hi rendition="#larger">Junkern <rs type="person" key="person_005">Hans Heinrich Eschern</rs> /
                         des Rahts</hi><lb/> und Statthaubtmann:</item>
@@ -131,7 +131,7 @@
                         mit ihren u&#x364;belklingenden Versen nichts minders alß belustigen
                         können.</p>
                     <lb/>
-                    <p rendition="#et">Diser zeit aber / und zwar mitten unter denen <pb
+                    <p rendition="#et">Diser zeit aber / und zwar mitten unter denen Z<pb
                             n="[A iii v]"/> verzehrenden kriegsflammen / bemu&#x364;het sich die<lb/>
                         höchstlöbliche <rs type="institution" key="institution_002">Fruchtbringende
                             Gesellschafft</rs> bei<lb break="no"/>den erwehnten poetischen Forderungen und Zier<lb break="no"/>den /
@@ -219,7 +219,7 @@
                     <hi rendition="#g"><hi rendition="#k">Dn.</hi>
                     <rs type="person" key="person_022">DANIELIS
                         RHAGORII</rs>,</hi><lb/>
-                        Ducentum viri Bernensis, bis præfecti,<lb/> 
+                        Ducentum viri <rs type="place" key="place_009">Bernensis</rs>, bis præfecti,<lb/> 
                         Poetæ coronati.</hi>
                 </head>
                 <lb/>
@@ -244,7 +244,7 @@
                     <hi rendition="#k">Dn.</hi>
                     <hi rendition="#g"><rs type="person" key="person_009">GEORGII
                         MULLERI</rs>,</hi><lb/>
-                        Ecclesiæ <rs type="place" key="place_008">Talvillanæ</rs> ad lacum Tig. Pa<lb break="no"/>storis
+                        Ecclesiæ <rs type="place" key="place_008">Talvillanæ</rs> ad <rs type="place" key="place_007">lacum Tig.</rs> Pa<lb break="no"/>storis
                         vigilantissimi, Poetæ acutissimi.</hi>
                 </head>
                 <lb/>
@@ -1035,7 +1035,7 @@
                     <salute><hi rendition="#right #aq #i">Sinceræ affinitatis ergò posuit</hi></salute><lb/>
                     <signed><hi rendition="#right #aq #g"><rs type="person" key="person_020"
                         >IACOBVS REDINGERVS</rs>,</hi><lb/>
-                        <hi rendition="#right #aq">Pastor Dieticonensis</hi>
+                        <hi rendition="#right #aq">Pastor <rs type="place" key="place_094">Dieticonensis</rs></hi>
                     </signed>
                 </closer>
                 <lb/>
@@ -1072,8 +1072,8 @@
                 <closer>
                     <salute><hi rendition="#right #aq">Observantiæ &amp; necessitudinis ergò aposuit<lb/>
                         Affinis addictissimus.</hi></salute><lb/>
-                    <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_021">IOHANNES BLASSIVS</rs></hi>, Tigurinus,<lb/> 
-                        Vitoduranorum Diaconus.</hi>
+                    <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_021">IOHANNES BLASSIVS</rs></hi>, <rs type="place" key="place_001">Tigurinus</rs>,<lb/> 
+                        <rs type="place" key="place_095">Vitoduranorum</rs> Diaconus.</hi>
                     </signed>
                 </closer>
                 <lb/>
@@ -1092,7 +1092,7 @@
                         <hi rendition="#aq">XIII.</hi><lb/>
                         Zu ehren und lobwürdigem ruhm<lb/> 
                         dem hochgelehrten Herren<lb/> 
-                        <rs type="person_001" key="person_001">Johann Wilhelm Simler</rs> /<lb/> 
+                        <rs type="person" key="person_001">Johann Wilhelm Simler</rs> /<lb/> 
                         Zuchtherren im obern
                         <hi rendition="#aq"><rs type="institution" key="institution_004">Collegio Par<lb break="no"/>thenico</rs></hi>
                         zu <rs type="place" key="place_001">Zürich</rs> / über seine außgangne<lb/> 
@@ -1140,7 +1140,7 @@
                 
                 <closer>
                     <signed><hi rendition="#right #aq"><hi rendition="#g"><rs type="person" key="person_022">DANIEL RHAGORIVS</rs>,</hi><lb/>
-                        Loblicher <rs type="place" key="place_009">Statt Bern</rs> gewesener Vogt<lb/> 
+                        Loblicher Statt <rs type="place" key="place_009">Bern</rs> gewesener Vogt<lb/> 
                         zu <rs type="place" key="place_010">Gottstatt</rs> und <rs type="place" key="place_011">Thorberg</rs>.</hi>
                     </signed>
                 </closer>
@@ -1529,7 +1529,7 @@
                 <lb/>
 
                 <lg type="poem">
-                    <l><hi rendition="#in">W</hi>Je in dem Orden / der viel frucht und nutzen bringet /</l>
+                    <l><hi rendition="#in">W</hi>Je in dem <rs type="institution" key="institution_002">Orden</rs> / der viel frucht und nutzen bringet /</l>
                     <lb/>
                     <l rendition="#et">Gar mancher gute Geist die hohe sinnen schwinget /</l>
                     <lb/>
