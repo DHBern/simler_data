@@ -1212,9 +1212,10 @@
                         <label>[154.]</label>
                         <lb/>
                         <hi rendition="#b #c">62. <hi rendition="#aq">U</hi>ber Herrn <rs
-                                type="person" key="person_162">Jacob Vollenweiders</rs>/ etc.
-                                schrifft<lb break="no"/>mässige widerlegung des Gotthardischen<lb/>
-                            Augspiegels.</hi></head>
+                                type="person" key="person_162">Jacob Vollenweiders</rs>/ etc. <rs
+                                type="bibl" key="work_022">schrifft<lb break="no"/>mässige
+                                widerlegung</rs> des <rs type="bibl" key="work_023"
+                                >Gotthardischen<lb/> Augspiegels</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l rendition="#et">O lieber Leser liß/ liß/ liß und widerliß/</l>
@@ -1900,7 +1901,7 @@
                                 type="person" key="person_055">Abrams</rs> zeit erstanden/</l>
                         <lb/>
                         <l>vom <rs type="person" key="person_118">Thurik</rs> erstgestifft: hernach
-                            in Suevus handen</l>
+                            in <rs type="person" key="person_282">Suevus</rs> handen</l>
                         <lb/>
                         <l rendition="#et">die grössre Statt erbaut; Zweyreiche drum genennt;</l>
                         <lb/>
@@ -2503,12 +2504,15 @@
                     <head>
                         <label>[197.]</label>
                         <lb/>
-                        <hi rendition="#b #c">106. <hi rendition="#aq">U</hi>ber des obbemeldten
-                            Land- und <lb/>Lustgu&#x366;t.</hi></head>
+                        <hi rendition="#b #c">106. <hi rendition="#aq">U</hi>ber des <rs
+                                type="person" key="person_006">obbemeldten</rs>
+                            <rs type="place" key="place_081">Land- und
+                            <lb/>Lustgu&#x366;t</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l rendition="#et">Einst hieß’ ich <hi rendition="#larger">Sparenberg:</hi>
-                            die ursach weiß’ ich nicht;</l>
+                        <l rendition="#et">Einst hieß’ ich <hi rendition="#larger"><rs type="place"
+                                    key="place_081">Sparenberg</rs>:</hi> die ursach weiß’ ich
+                            nicht;</l>
                         <lb/>
                         <l rendition="#et">ietz aber <hi rendition="#larger">Fridenberg:</hi> darvon
                             ich so bericht:</l>
@@ -3058,7 +3062,8 @@
                         <lb/>
                         <l rendition="#et">von farben und geruch den menschen angenäm:</l>
                         <lb/>
-                        <l rendition="#et">ist also diser namm/ Herr Doctor/ euch bequäm.</l>
+                        <l rendition="#et">ist also diser namm/ Herr <rs type="person"
+                                key="person_192">Doctor</rs>/ euch bequäm.</l>
                         <lb/>
                         <l>Die farb bedeutet kunst/ und der geruch die tugend/</l>
                         <lb/>
