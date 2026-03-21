@@ -19,7 +19,10 @@
                 <p>unknown</p>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <!--<p>Converted from a Word document</p>-->
+                <bibl>
+                    <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4049159/manifest</idno>
+                </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
@@ -4253,8 +4256,6 @@
             </div>
 
             <pb n="59" facs="4049258"/>
-
-            <!-- Ende des ersten Teils [CF] -->
 
         </body>
     </text>

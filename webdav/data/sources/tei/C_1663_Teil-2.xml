@@ -19,14 +19,15 @@
                 <p>unknown</p>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <!--<p>Converted from a Word document</p>-->
+                <bibl>
+                    <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4049159/manifest</idno>
+                </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
-
-            <!-- Anfang des zweiten Teils [CF] -->
 
             <div n="1">
                 <head><hi rendition="#b #c">Andächtige <lb/>Fest- und unterweisungs-<lb break="no"/>Gesänge.</hi></head>
@@ -6177,8 +6178,6 @@
             </div>
 
             <pb n="193" facs="4049392"/>
-
-            <!-- Ende des zweiten Teils [CF] -->
 
         </body>
     </text>

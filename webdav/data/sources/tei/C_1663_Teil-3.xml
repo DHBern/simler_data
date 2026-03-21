@@ -19,14 +19,15 @@
                 <p>unknown</p>
             </publicationStmt>
             <sourceDesc>
-                <p>Converted from a Word document</p>
+                <!--<p>Converted from a Word document</p>-->
+                <bibl>
+                    <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4049159/manifest</idno>
+                </bibl>
             </sourceDesc>
         </fileDesc>
     </teiHeader>
     <text>
         <body>
-
-            <!-- Anfang des dritten Teils [CF] -->
 
             <div n="1">
                 <head><hi rendition="#b #c">Vnterschiedliche/ auf zeiten und <lb/>anlässe gerichtete
@@ -7350,8 +7351,6 @@
             </div>
 
             <pb n="353" facs="4049552"/>
-
-            <!-- Ende des dritten Teils [CF] -->
 
         </body>
     </text>
