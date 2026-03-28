@@ -6,20 +6,120 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Johann Wilhelm Simlers Teutsche Gedichte (A 1648)</title>
+            <title type="main">Johann Wilhelm Simlers Teutsche Gedichte</title>
+            <title type="sub">darinnen I. Vierverse/ oder sum[m]begriffenliche Jnhälte der Psalmen Davids: II. Vnderscheidenliche/ auf zeiten und anlässe gerichtete Gesänge: III. Allerhand Vberschrifften.</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/119151693">
+                  <surname>Simler</surname>
+                  <forename>Johann Wilhelm</forename>
+               </persName>
+            </author>
+            <respStmt>
+               <persName>
+                  <surname>Amslinger</surname>
+                  <forename>Julia</forename>
+               </persName>
+               <persName>
+                  <surname>Detering</surname>
+                  <forename>Nicolas</forename>
+               </persName>
+               <persName>
+                  <surname>Emmenegger</surname>
+                  <forename>Nathalie</forename>
+               </persName>
+               <persName>
+                  <surname>Sauer</surname>
+                  <forename>Hein</forename>
+               </persName>
+               <resp>
+                  <note type="remarkResponsibility">Bearbeitung der digitalen Edition.</note>
+                  <date type="importDTA">2026-03-27T13:43:06Z</date>
+               </resp>
+            </respStmt>
          </titleStmt>
+         <editionStmt><edition>Digitale Edition.</edition></editionStmt>
          <publicationStmt>
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">A 1648</title>
-            <idno type="Transkribus">3289764</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4017109/manifest</idno>
-            </bibl>
+            <bibl type="M">Simler, Johann Wilhelm: Teutsche Gedichte. Zürich 1648.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title level="m" type="main">Johann Wilhelm Simlers Teutsche Gedichte</title>
+                  <title level="m" type="sub">darinnen I. Vierverse/ oder sum[m]begriffentliche Jnhälte der Psalmen Davids: II. Vnderscheidenliche/ auf zeiten und anlässe gerichtete Gesänge: III. Allerhand Vberschrifften.</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/119151693">
+                        <surname>Simler</surname>
+                        <forename>Johann Wilhelm</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <editionStmt>
+                  <edition n="1"/>
+               </editionStmt>
+               <extent>
+                  <measure type="pages">[8] Bl., 216 S. ; 16 cm (8°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher><name>Getrukt zu Zürich/ Bey Johann Jakob Bodmer.</name></publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1648</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1" corresp="#availability-imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">3.211</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990037193400205508</idno>
+                     <idno type="Transkribus">3289764</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4017109/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
+      <encodingDesc>
+         <editorialDecl>
+            <p>Die Transkription erfolgte nach den unter
+               <ref target="https://www.deutschestextarchiv.de/doku/basisformat/">https://www.deutschestextarchiv.de/doku/basisformat/</ref>
+               formulierten Richtlinien.</p>
+            <p>Verfahren der Texterfassung: OCR mit Nachkorrektur.</p>
+            <p>
+               Bogensignaturen: gekennzeichnet;
+               Druckfehler: dokumentiert;
+               fremdsprachliches Material: keine Angabe;
+               Geminations-/Abkürzungsstriche: wie Vorlage;
+               Hervorhebungen (Antiqua, Sperrschrift, Kursive etc.): gekennzeichnet;
+               i/j in Fraktur: wie Vorlage;
+               I/J in Fraktur: wie Vorlage;
+               Kolumnentitel: gekennzeichnet;
+               Kustoden: gekennzeichnet;
+               langes s (ſ): wie Vorlage;
+               Normalisierungen: dokumentiert;
+               rundes r (&amp;#xa75b;): wie Vorlage;
+               Seitenumbrüche markiert: ja;
+               Silbentrennung: wie Vorlage;
+               u/v bzw. U/V: wie Vorlage;
+               Vokale mit übergest. e: wie Vorlage;
+               Vollständigkeit: vollständig erfasst;
+               Zeichensetzung: DTABf-getreu;
+               Zeilenumbrüche markiert: ja;
+            </p>
+         </editorialDecl>
+      </encodingDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>
