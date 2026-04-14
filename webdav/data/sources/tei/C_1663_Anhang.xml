@@ -3030,35 +3030,41 @@
                 <div n="2">
                     <head><label>[D.79.]</label><lb/><hi rendition="#c">117. Freudiger
                             Willkom&#x342;: als <lb/><hi rendition="#b">Jhr Churfu&#x364;rſtl.
-                                Durchl. von Heidelberg <lb/> Erb-Printz/</hi>
+                                Durchl. von <rs type="place" key="place_102">Heidelberg</rs>
+                                <lb/> Erb-Printz/</hi>
                             <lb/>
                             <hi rendition="#aq"><hi rendition="#g"><rs type="person"
                                         key="person_271">CAROLVS</rs>;</hi></hi>
-                            <lb/> Den 2. Augſtmonat/ 1670. Jahrs/ die Burgerb<anchor xml:id="a357"
-                                />u&#x364;<note type="annotation" targetEnd="a357"
-                                    ><p>übergeschriebenes e im Augsburger Exemplar besser
-                                    sichtbar.</p></note>che<lb break="no"/> rey in Zu&#x364;rich zu
-                            beſichtigen <lb/> wu&#x364;rdigte.</hi></head>
+                            <lb/> Den 2. Augſtmonat/ 1670. Jahrs/ die <rs type="org"
+                                key="institution_008">Burgerb<anchor xml:id="a357"/>u&#x364;<note
+                                    type="annotation" targetEnd="a357"><p>übergeschriebenes e im
+                                        Augsburger Exemplar besser sichtbar.</p></note>che<lb
+                                    break="no"/> rey</rs> in <rs type="place" key="place_001"
+                                >Zu&#x364;rich</rs> zu beſichtigen <lb/>
+                        wu&#x364;rdigte.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Willkom&#x342;/ erwu&#x364;nſchter Gaſt! <rs type="person"
-                                key="person_271">Churprintz</rs>: verwandter Fu&#x364;rſt!</l>
+                        <l>Willkom&#x342;/ erwu&#x364;nſchter <rs type="person" key="person_271"
+                                >Gaſt</rs>! Churprintz: verwandter Fu&#x364;rſt!</l>
                         <lb/>
                         <l>Den nach der Tugend nur/ und nach den Ku&#x364;nſten Du&#x364;rſt:</l>
                         <lb/>
-                        <l>Willkom&#x342;/ Gevatterſohn! von dem wir beſtes hoffen:</l>
+                        <l>Willkom&#x342;/ <rs type="person" key="person_271">Gevatterſohn</rs>! von
+                            dem wir beſtes hoffen:</l>
                         <lb/>
                         <l>Jhm ſtehet dieſer Ort/ ſampt unſern Hertzen offen.</l>
                         <lb/>
                     </lg>
                     <p><hi rendition="#right">Jm Nammen der <rs type="institution"
-                                key="institution_008">Burger B.</rs> aufgeſetzt.</hi></p>
+                                key="institution_008"><rs type="org" key="institution_008">Burger
+                                    B.</rs></rs> aufgeſetzt.</hi></p>
                     <lb/>
                 </div>
                 <pb facs="4077277" n="30"/>
                 <div n="2">
                     <head><label>[D.80.]</label><lb/><hi rendition="#c">119. <hi rendition="#aq"
-                                >NOBILE TUREGUM MULTARUM <lb/> COPIA RERUM.</hi></hi></head>
+                                >NOBILE <rs type="place" key="place_001">TUREGUM</rs> MULTARUM <lb/>
+                                COPIA RERUM.</hi></hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Das Edel <rs type="place" key="place_001">Zu&#x364;rich</rs> iſt/
@@ -3076,7 +3082,9 @@
                 </div>
                 <div n="2">
                     <head><label>[D.81.]</label><lb/><hi rendition="#c">122. Uber die Abbildung des
-                            zerſpringenden <lb/> Geiß- oder Pulverthurns. 1652.</hi></head>
+                            zerſpringenden <lb/>
+                            <rs type="place" key="place_058">Geiß- oder Pulverthurns</rs>.
+                            1652.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l rendition="#et">Wer mich beſchaut/ derſelb betracht/</l>
@@ -3208,10 +3216,10 @@
                         <lb/>
                     </lg>
                     <cb type="end"/>
-                    <p>Herauß gegeben im Jahr/ <lb/> O E<hi rendition="#aq">ID</hi>gnoßſ<hi
-                            rendition="#aq">C</hi>hafft <hi rendition="#aq">DV LI</hi>gſt a<hi
-                            rendition="#aq">V</hi>ff De<hi rendition="#aq">I</hi>ner Ne<hi
-                            rendition="#aq">I</hi>ge.</p>
+                    <p>Herauß gegeben im Jahr/ <lb/> O <rs type="place" key="place_003">E<hi
+                                rendition="#aq">ID</hi>gnoßſ<hi rendition="#aq">C</hi>hafft</rs>
+                        <hi rendition="#aq">DV LI</hi>gſt a<hi rendition="#aq">V</hi>ff De<hi
+                            rendition="#aq">I</hi>ner Ne<hi rendition="#aq">I</hi>ge.</p>
                     <lb/>
                 </div>
                 <div n="2">
@@ -3307,7 +3315,7 @@
                             <lb break="no"/>ren hoch hinauffſteigenden/ Nutz und Ehrbrin<lb
                                 break="no"/> genden/ (im 1666. Jahre wol erfundenen/ und <lb/> im
                             Weinm. 1668. fo&#x364;llig auffgerichteten <lb/>
-                            <rs type="place" key="place_078">Linden-Hof</rs>-Brunnen.</hi></head>
+                            <rs type="place" key="place_103">Linden-Hof-Brunnen</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Auff hohem <rs type="place" key="place_078">Lindenhof</rs>; der unſers
@@ -3315,17 +3323,19 @@
                         <lb/>
                         <l>und da der Bogenſchu&#x364;tz ſich offters erluſtieret/</l>
                         <lb/>
-                        <l rendition="#et">iſt nun ein edler Brunn/ zur Luſt- und Nutzbarkeit</l>
+                        <l rendition="#et">iſt nun ein edler <rs type="place" key="place_103"
+                                >Brunn</rs>/ zur Luſt- und Nutzbarkeit</l>
                         <lb/>
-                        <l rendition="#et">vom Fuß des Bergs gefu&#x364;hrt hieher und ander
-                            weit/</l>
+                        <l rendition="#et">vom Fuß des <rs type="place" key="place_078">Bergs</rs>
+                            gefu&#x364;hrt hieher und ander weit/</l>
                         <lb/>
-                        <l>durch jenes Ku&#x364;nſtlers Hand/ der auch die Statt verſchantzet/</l>
+                        <l>durch jenes <rs type="person" key="person_308">Ku&#x364;nſtlers</rs>
+                            Hand/ der auch die Statt verſchantzet/</l>
                         <lb/>
                         <l>und deſſen Ehren-Namm hieru&#x364;ber weit erglantzet.</l>
                         <lb/>
-                        <l rendition="#et">Nun/ diſers Brunnens Naß ergetzet Gho&#x364;r und
-                            Gſicht/</l>
+                        <l rendition="#et">Nun/ diſers <rs type="place" key="place_103"
+                                >Brunnens</rs> Naß ergetzet Gho&#x364;r und Gſicht/</l>
                         <lb/>
                         <l rendition="#et">durch liebliches Gereu&#x364;ſch/ und ſeiner Klarheit
                             Liecht:</l>
@@ -3338,7 +3348,8 @@
                         <lb/>
                         <l rendition="#et">Der gantzen Burgerſchafft/ geliebt er mehr und mehr.</l>
                         <lb/>
-                        <l>O alles guten Brunn/ gib deſſen zu genieſſen</l>
+                        <l>O alles guten <rs type="place" key="place_103">Brunn</rs>/ gib deſſen zu
+                            genieſſen</l>
                         <lb/>
                         <l>ſo lang die <rs type="place" key="place_004">Limmat</rs> wird/ durch <rs
                                 type="place" key="place_001">Zu&#x364;rich</rs> nidſich
@@ -3355,8 +3366,8 @@
                 <pb facs="4077281" n="34"/>
                 <div n="2">
                     <head><label>[D.87.]</label><lb/><hi rendition="#c"><hi rendition="#b">129. Uber
-                                einen <rs type="place" key="place_079">Galg-brunnen</rs>
-                                genennt</hi><lb/> Nicht-entba&#x364;ren.</hi></head>
+                                einen Galg-brunnen genennt</hi><lb/>
+                        Nicht-entba&#x364;ren.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Man nennet mich/ mit recht/ den Brunnen <hi rendition="#larger"
@@ -3371,7 +3382,7 @@
                                 type="place" key="place_080">Alten Kornhauß</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l><rs type="person" key="person_215">Werkmeiſter Oeri</rs> mich; zu mehrer
+                        <l>Werkmeiſter <rs type="person" key="person_215">Oeri</rs> mich; zu mehrer
                             Kom&#x342;lichkeit</l>
                         <lb/>
                         <l>der Land- und Burgerſchafft; ſo hatte zubereit</l>
@@ -3422,7 +3433,8 @@
                     <lg type="poem">
                         <l><rs type="place" key="place_054">Glarus</rs> iſt mir nicht erleidet/</l>
                         <lb/>
-                        <l rendition="#et">auch der Glarner-Ziger nicht</l>
+                        <l rendition="#et">auch der <rs type="place" key="place_054"
+                            >Glarner</rs>-Ziger nicht</l>
                         <lb/>
                         <l>von den Kreuteren/ da ſich wei<lb break="no"/>det</l>
                         <lb/>
@@ -3480,7 +3492,7 @@
                         <lb/>
                         <l>Gott ſegne diſen Platz! So wu&#x364;nſch wer ihn beſchaut!</l>
                         <lb/>
-                        <l>Gott ſegn<supplied>e</supplied>den/ der Jhn/ anjetz und fo&#x364;rter
+                        <l>Gott ſegn<supplied>e</supplied> den/ der Jhn/ anjetz und fo&#x364;rter
                             bau't!</l>
                         <lb/>
                         <l rendition="#et">Der Guntzenbacher Stamm da gru&#x364;ne fu&#x364;r und
@@ -3508,13 +3520,15 @@
                     <head><label>[D.94.]</label><lb/><hi rendition="#c">138. Ein Anders.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Das warme Baderbad auftru&#x364;knet kalte Flu&#x364;ſſe</l>
+                        <l>Das warme <rs type="place" key="place_064">Baderbad</rs>
+                            auftru&#x364;knet kalte Flu&#x364;ſſe</l>
                         <lb/>
                         <l>dem/ der es brauchet recht/ und meidet kalte Gu&#x364;ſſe:</l>
                         <lb/>
                         <l>Sonſt iſt es einem nutz/ dem anderen aber ſchad.</l>
                         <lb/>
-                        <l>Wer ſich nicht ſchonen kan/ der meide diſes Bad.</l>
+                        <l>Wer ſich nicht ſchonen kan/ der meide diſes <rs type="place"
+                                key="place_064">Bad</rs>.</l>
                     </lg>
                     <lb/>
                 </div>
@@ -3530,15 +3544,16 @@
                         <l rendition="#et">Auch o&#x364;ffter u&#x364;bertrifft auß mir erwachßner
                             Schad</l>
                         <lb/>
-                        <l rendition="#et">den Nutzen/ der nicht recht wird gſucht im Bader-Bad.</l>
+                        <l rendition="#et">den Nutzen/ der nicht recht wird gſucht im <rs
+                                type="place" key="place_064">Bader-Bad</rs>.</l>
                     </lg>
                     <lb/>
                 </div>
                 <div n="2">
                     <head><label>[D.96.]</label><lb/><hi rendition="#c"><hi rendition="#b">140. An
-                                einen <rs type="person" key="person_220">Pfarꝛherꝛen</rs> von <rs
-                                    type="place" key="place_001">Zu&#x364;rich</rs> in der</hi><lb/>
-                            Baden-Cur – daſelbſt. im Aug. 1665.</hi></head>
+                                einen Pfarꝛherꝛen von <rs type="place" key="place_001"
+                                    >Zu&#x364;rich</rs> in der</hi><lb/> Baden-Cur – daſelbſt. im
+                            Aug. 1665.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Hier zeigt Jhr s' Heil zum Seelenſchaden:</l>
@@ -3603,8 +3618,8 @@
                 </div>
                 <div n="2">
                     <head><label>[D.99.]</label><lb/><hi rendition="#c"><hi rendition="#b">143. Uber
-                                das/ in der <rs type="place" key="place_074">Herꝛſchafft
-                                    Gru&#x364;ningen</rs></hi><lb/> ligende/ <rs type="place"
+                                das/ in der Herꝛſchafft <rs type="place" key="place_074"
+                                    >Gru&#x364;ningen</rs></hi><lb/> ligende/ <rs type="place"
                                 key="place_066">Gyren-Bad</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3615,8 +3630,8 @@
                         <l rendition="#et">Diß Bad macht a&#x364;ſſig Leuht: der Gyr vil Speiß
                             verzehrt:</l>
                         <lb/>
-                        <l rendition="#et">Hiemit uns auch der Namm deß Bades Wu&#x364;rkung
-                            lehrt.</l>
+                        <l rendition="#et">Hiemit uns auch der Namm deß <rs type="place"
+                                key="place_066">Bades</rs> Wu&#x364;rkung lehrt.</l>
                     </lg>
                     <lb/>
                 </div>
@@ -3664,8 +3679,8 @@
                         <pb facs="4077284" n="37"/>
                         <l>Da hilfft kein widerſteh'n: Gedult iſt beſtes Mittel/</l>
                         <lb/>
-                        <l>ſampt ſtillem Bethgebett. Diß bringt den <hi rendition="#larger"
-                                >Jobes</hi>-titel/</l>
+                        <l>ſampt ſtillem Bethgebett. Diß bringt den <hi rendition="#larger"><rs
+                                    type="person" key="person_106">Jobes</rs></hi>-titel/</l>
                         <lb/>
                         <l rendition="#et">und machet alles gut: drum gib' ich dir ſo vor:</l>
                         <lb/>
@@ -3864,13 +3879,15 @@
                             Ro&#x364;m. <lb/> K<anchor xml:id="a388"/>a&#x364;<note
                                 type="annotation" targetEnd="a388"><p>übergeschriebenes e im
                                     Augsburger Exemplar besser sichtbar.</p></note>yſ. May.
-                            damaligen Hof-KriegsRaht/ geweſnen Bottſchaffter <lb/> an die
-                            Ottomanniſche Pforten/ Herꝛen zu St. Margaretha an der <lb/>
+                            damaligen Hof-KriegsRaht/ geweſnen Bottſchaffter <lb/> an die <rs
+                                type="place" key="place_104">Ottomanniſche</rs> Pforten/ Herꝛen zu
+                            St. Margaretha an der <lb/>
                             <rs type="place" key="place_091">Wien</rs>/ u. a. w. der Hochl. <rs
-                                type="institution" key="institution_002">Fruchtbringenden
-                                Gſellſchafft</rs> wolwu&#x364;rd. <lb/> Mitgliede: Fu&#x364;r
-                            verehrte koſtbare Preſent/ und anderwer <lb break="no"/> tige
-                            hocherſprießliche Verꝛichtungen.</hi></head>
+                                type="institution" key="institution_002"><rs type="org"
+                                    key="institution_002">Fruchtbringenden Gſellſchafft</rs></rs>
+                            wolwu&#x364;rd. <lb/> Mitgliede: Fu&#x364;r verehrte koſtbare Preſent/
+                            und anderwer <lb break="no"/> tige hocherſprießliche
+                        Verꝛichtungen.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Mit <rs type="person" key="person_263">Meduſen</rs> Zauberhaubt/ <rs
@@ -3885,22 +3902,23 @@
                             zeiten/ alß; <hi rendition="#aq">ô</hi> werthes <rs type="place"
                                 key="place_060">Stein am Rhein</rs>;</l>
                         <lb/>
-                        <l rendition="#et">Dein beru&#x364;hmter Tugendhelde/ mit der Zungen nur
-                            allein:</l>
+                        <l rendition="#et">Dein beru&#x364;hmter <rs type="person" key="person_221"
+                                >Tugendhelde</rs>/ mit der Zungen nur allein:</l>
                         <lb/>
                         <l>Billich haſt du/ Wundergern/ vom Geru&#x364;chte diß verſtanden/</l>
                         <lb/>
                         <l>daß es einem Heymatkind wol ergeh in frembden landen/</l>
                         <lb/>
-                        <l rendition="#et">Nam&#x303;ens/ <hi rendition="#larger">Johann Rudolt
-                                Schmieden</hi>/ deinem ehmal<anchor xml:id="a395"/><unclear
-                                reason="uncleanPrint">s</unclear><note type="annotation"
-                                targetEnd="a395"><p>Verschmierte Tinte, auch im Augsburger Exemplar.
-                                    Eine Virgel würde hier aber keinen Sinn ergeben.</p></note>
+                        <l rendition="#et">Nam&#x303;ens/ <hi rendition="#larger"><rs type="person"
+                                    key="person_221">Johann Rudolt Schmieden</rs></hi>/ deinem
+                                ehmal<anchor xml:id="a395"/><unclear reason="uncleanPrint"
+                                >s</unclear><note type="annotation" targetEnd="a395"><p>Verschmierte
+                                    Tinte, auch im Augsburger Exemplar. Eine Virgel würde hier aber
+                                    keinen Sinn ergeben.</p></note>
                             <lb/> Burgersman/</l>
                         <lb/>
-                        <l rendition="#et">Der/ nach <rs type="person" key="person_222">Herꝛen
-                                Vatters</rs> Tode/ minderja&#x364;hrig zog hindan</l>
+                        <l rendition="#et">Der/ nach Herꝛen <rs type="person" key="person_222"
+                                >Vatters</rs> Tode/ minderja&#x364;hrig zog hindan</l>
                         <lb/>
                         <l>wo Jhn das Verha&#x364;ngnuß fu&#x364;hrt; wol gewahrend aller
                             ſachen/</l>
@@ -3928,7 +3946,8 @@
                                     Rhein</rs>
                             </hi>iſt freudenfoll/ daß danahen iſt entſproſſen</l>
                         <lb/>
-                        <l>ſolch ein Burger/ deſſen Sie/ und die Chriſtenheit genoſſen/</l>
+                        <l>ſolch ein <rs type="person" key="person_221">Burger</rs>/ deſſen Sie/ und
+                            die Chriſtenheit genoſſen/</l>
                         <lb/>
                         <l rendition="#et">Welcher/ alß ein edel Kleynod/ nicht nur zieret diſe
                             Statt</l>
@@ -3940,8 +3959,9 @@
                                     Rhein</rs></hi> bedanket ſich/ ho&#x364;chſten fleiſſes/ alles
                             deſſen</l>
                         <lb/>
-                        <l>was vom Herꝛn von <hi rendition="#larger">Schwartzenhorn</hi>/
-                            hargefloſſen; unvergeſſen</l>
+                        <l>was vom <rs type="person" key="person_221">Herꝛn von <hi
+                                    rendition="#larger">Schwartzenhorn</hi></rs>/ hargefloſſen;
+                            unvergeſſen</l>
                         <lb/>
                         <l rendition="#et">angena&#x364;hmer Gegendienſten/ nach gebu&#x364;hr und
                             mo&#x364;glichkeit;</l>
@@ -3960,8 +3980,8 @@
                         <l rendition="#et">im Wolwo&#x364;llen fortzuſchreitten/ und Sie
                             heimzuſuchen gar:</l>
                         <lb/>
-                        <l>Allerſeits vom Ho&#x364;chſten Herꝛen/ hertzlich wu&#x364;nſchend dem
-                            Freyherren</l>
+                        <l>Allerſeits vom Ho&#x364;chſten Herꝛen/ hertzlich wu&#x364;nſchend dem <rs
+                                type="person" key="person_221">Freyherren</rs></l>
                         <lb/>
                         <l>ſelberwu&#x364;nſchtes-Wolergehn: Alles widrig weiche ferꝛen</l>
                         <lb/>
@@ -3985,11 +4005,13 @@
                         <l>Glu&#x364;k zu! Glu&#x364;k zu! Glu&#x364;k zu/ zum neuen
                             Ehrenſtande!</l>
                         <lb/>
-                        <l rendition="#et">der dir/ Herꝛ Schwager/ heut einhellig zugekennt:</l>
+                        <l rendition="#et">der dir/ Herꝛ <rs type="person" key="person_223"
+                                >Schwager</rs>/ heut einhellig zugekennt:</l>
                         <lb/>
                         <l rendition="#et">warzu Brufwidrigs nichts iſt worden eingewendt:</l>
                         <lb/>
-                        <l>Glu&#x364;k zu der gantzen Statt! Glu&#x364;k zu dem gantzen Lande!</l>
+                        <l>Glu&#x364;k zu der gantzen <rs type="place" key="place_001">Statt</rs>!
+                            Glu&#x364;k zu dem gantzen Lande!</l>
                         <lb/>
                         <l rendition="#et">Jch meine/ wo man ſo das Regiment beſtellt/</l>
                         <lb/>
@@ -4036,7 +4058,7 @@
                             <lb/> 28. <hi rendition="#aq">May,</hi> 1666.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>So ſeyt/ <rs type="person" key="person_224">Herꝛ Helffer</rs>/ Jhr zum
+                        <l>So ſeyt/ Herꝛ <rs type="person" key="person_224">Helffer</rs>/ Jhr zum
                             Pfarꝛer nun erwellet/</l>
                         <lb/>
                         <l>Vor allen/ die man Euch im fu&#x364;rſchlag zugeſellet</l>
@@ -4050,8 +4072,9 @@
                 <div n="2">
                     <head><label>[D.114.]</label><lb/><hi rendition="#c"><hi rendition="#b">183.
                                 Uber Hrn. <rs type="person" key="person_225">J. L.
-                                    Mu&#x364;llers</rs> zu Fr. Feld wol <lb break="no"/> meritierte
-                                Schultheſſen-Wahl/ An. 1666.</hi></hi></head>
+                                    Mu&#x364;llers</rs> zu <rs type="place" key="place_105">Fr.
+                                    Feld</rs> wol <lb break="no"/> meritierte Schultheſſen-Wahl/ An.
+                                1666.</hi></hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>unter E. Vettern Nam&#x342;en außgegeben.</l>
@@ -4199,7 +4222,7 @@
                     <cb type="start"/>
                     <lg type="poem">
                         <l>Vermeinter <hi rendition="#larger"><rs type="person" key="person_228"
-                                    >Caſpar Ko&#x364;nig</rs></hi></l>
+                                    >Caſpar</rs> Ko&#x364;nig</hi></l>
                         <lb/>
                         <l>uns gab der Freuden wenig:</l>
                         <lb/>
@@ -4220,11 +4243,12 @@
                     <lb/>
                 </div>
                 <div n="2">
-                    <head><label>[D.119.]</label><lb/><hi rendition="#c #b">215. Ein anders/ auf
-                            Caſpars-Tag.</hi></head>
+                    <head><label>[D.119.]</label><lb/><hi rendition="#c #b">215. Ein anders/ auf <rs
+                                type="person" key="person_228">Caſpars</rs>-Tag.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Wer Caſpars Nam&#x342;en tragt/ iſt Ko&#x364;niglich zu Ehren</l>
+                        <l>Wer <rs type="person" key="person_228">Caſpars</rs> Nam&#x342;en tragt/
+                            iſt Ko&#x364;niglich zu Ehren</l>
                         <lb/>
                         <l>mit Gſellſchafftsleiſtu<supplied>n</supplied>g Heut<anchor xml:id="a406"
                                 /><unclear reason="uncleanPrint">'</unclear><note type="annotation"
@@ -4313,7 +4337,8 @@
                             <lb/> Peter heiſſen.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Peters-Tag die Storchen bringet/</l>
+                        <l><rs type="person" key="person_072">Peters</rs>-Tag die Storchen
+                            bringet/</l>
                         <lb/>
                         <l>und zu Jhrem Ruhme ſinget:</l>
                         <lb/>
@@ -4330,12 +4355,13 @@
                 <pb facs="4077299" n="52"/>
                 <div n="2">
                     <head><label>[D.123.]</label><lb/><hi rendition="#c"><hi rendition="#b">221. Auf
-                                Matthias-Tag/ unter eines Tru</hi>
+                                    <rs type="person" key="person_111">Matthias</rs>-Tag/ unter
+                                eines Tru</hi>
                             <lb break="no"/> ker J. Namen.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Freud u&#x364;<supplied>b</supplied>er Freud auf heut! Matthias Tag
-                            bricht an/</l>
+                        <l>Freud u&#x364;<supplied>b</supplied>er Freud auf heut! <rs type="person"
+                                key="person_111">Matthias</rs> Tag bricht an/</l>
                         <lb/>
                         <l>da man/ <supplied>n</supplied>ach altem brauch/ mit liebe binden kan</l>
                         <lb/>
@@ -4378,8 +4404,7 @@
                 <div n="2">
                     <head><label>[D.124.]</label><lb/><hi rendition="#c"><hi rendition="#b">223. Ein
                                 anders/ auf Rudolfs-Tag:</hi>
-                            <lb/> An einen gewu&#x364;ſſen <rs type="person" key="person_269"
-                                >Freund</rs>.</hi></head>
+                            <lb/> An einen gewu&#x364;ſſen Freund.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Rudolfs-Tag; nach vielen tru&#x364;ben;</l>
@@ -4448,7 +4473,7 @@
                         <l>auch ehrlich Nam&#x342;entrager</l>
                         <lb/>
                         <cb/>
-                        <l>bewahren vor dem Plager:</l>
+                        <l>bewahren vor dem <rs type="person" key="person_078">Plager</rs>:</l>
                         <lb/>
                         <l>damit ſie fro&#x364;lich alten</l>
                         <lb/>
