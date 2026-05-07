@@ -22,15 +22,15 @@ place_020,Hermon,Hermon,,6252331,Berg,Bergmassiv im Antilibanon
 place_021,Jerusalem,Jerusalem,Salem,281184,Stadt,
 place_022,Jordan,Jordan,,294624,Gewässer,Fluss im Nahen Osten
 place_023,Rotes Meer,Rotes Meer,,350155,Gewässer,
-place_024,Juda,Juda,,,,Historisches Königreich
+place_024,Juda,Juda,,,,Historisches Königreich im östlichen Mittelmeerraum
 place_025,Moab,Moab,,,,Historisches Gebiet im heutigen Jordanien
 place_026,Ammon,Ammon,,,,Historisches Königreich im heutigen Jordanien
 place_027,Zion,Zion,Sion,281214,Berg,Berg in Jerusalem
-place_028,Assur,Assur,,,,
-place_029,Israel,Israel,,294640,,Historisches Königreich Israel
+place_028,Assur,Assur,,,Stadt,Historische Stadt im Norden des heutigen Iraks 
+place_029,Israel,Israel,,294640,Land,Historisches Königreich Israel
 place_030,Nazaret,Nazaret,,294098,Stadt,Stadt in Galiläa
 place_031,Rom,Rom,,3169070,Stadt,Hauptstadt des Römischen Reiches
-place_032,Samaria,Samaria,Samarien,,Stadt,Stadt im Norden vom Westjordanland
+place_032,Samaria,Samaria,Samarien,284584,Region,Region im Norden vom Westjordanland
 place_033,Kedronbach,Kedronbach,,,Gewässer,"Bach im Kidrontal, Jerusalem"
 place_034,Garten von Getsemani,Garten von Getsemani,,,Biblischer Ort,
 place_035,Urdorf,Urdorf,,7287390,Politische Gemeinde,Politische Gemeinde im Bezirk Dietikon im Kanton Zürich
@@ -50,7 +50,7 @@ place_048,Pindos,Pindos,,363258,Berg,"Gebirge in Griechenland, mythologischer Or
 place_049,Neckar,Neckar,,2866784,Gewässer,Fluss in Deutschland
 place_050,Kurpfalz,Kurpfalz,,,Land,Historisches Territorium im Heiligen Römischen Reich
 place_051,Eglisau,Eglisau,,7285707,Politische Gemeinde,Politische Gemeinde im Kanton Zürich
-place_052,Altenklingen,Altenklingen,,,,
+place_052,Altenklingen,Altenklingen,,11571272,,Ortschaft im Kanton Thurgau
 place_053,Altorff,Altorff,,,,
 place_054,Glarus,Glarus,,2660593,,Stadt und eidg. Ort
 place_055,Reformierte Kirche Berg am Irchel,Reformierte Kirche Berg am Irchel,Bergerkirche,,,
@@ -65,8 +65,8 @@ place_063,Preussen,Preussen,,,Land,Historische Region und Staat in Europa
 place_064,Heilbäder Baden,Heilbäder Baden,,,,
 place_065,Bad Schinznach,Bad Schinznach,,,,Heilbad in der Schweiz
 place_066,Girenbad,Girenbad,Gyren-Bad,,,Kurbad in Hinwil
-place_067,Wängibad,Wängibad,,,,"Kurbad, https://search.ortsnamen.ch/de/record/7001562/"
-place_068,Aeugst am Albis,Aeugst am Albis,,,Politische Gemeinde,
+place_067,Wängibad,Wängibad,"Wengi, Wängi",,,"Kurbad, https://search.ortsnamen.ch/de/record/7001562/"
+place_068,Aeugst am Albis,Aeugst am Albis,,,Politische Gemeinde,"Doppelt, löschen"
 place_069,Bassersdorf,Bassersdorf,,7285165,Politische Gemeinde,Politische Gemeinde im Kanton Zürich
 place_070,Hauptwil,Hauptwil,Hauptwil-Gottshaus,7286036,Politische Gemeinde,Politische Gemeinde im Kanton Thurgau
 place_071,Schaffhausen,Schaffhausen,,,,
