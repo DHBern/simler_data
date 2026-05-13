@@ -465,7 +465,8 @@
                         <l>Und nach Erſtorbnem Mann vil Nu&#x364;tzen und Ergo&#x364;tzen.</l>
                         <lb/>
                         <l rendition="#et">Den <rs type="person" key="person_001">Author</rs> diſes
-                            Buchs nun <rs type="person" key="person_050">Fama</rs> hoch erhebt/</l>
+                                <rs type="bibl" key="work_001">Buchs</rs> nun <rs type="person"
+                                key="person_050">Fama</rs> hoch erhebt/</l>
                         <lb/>
                         <l rendition="#et">Nach vilem Creutze/ der bey Gott im Himmel lebt.</l>
                     </lg>
@@ -598,7 +599,8 @@
                         <lg n="2">
                             <l>Die <hi rendition="#larger"><rs type="person" key="person_199"
                                         >Lokerin</rs></hi> hat Jhn verſtrickt<note place="right"><hi
-                                        rendition="#aq">Anagr.</hi><lb/>Kolerin</note></l>
+                                        rendition="#aq">Anagr.</hi><lb/><rs type="person"
+                                        key="person_199">Kolerin</rs></note></l>
                             <lb/>
                             <l>So bald Er Sie/ Sie Jhn erblickt:</l>
                             <lb/>
@@ -1080,9 +1082,9 @@
                         </lg>
                         <lb/>
                         <lg n="4">
-                            <l>4. Dann auch <rs type="person" key="person_049">Da</rs><supplied><rs
-                                        type="person" key="person_049">vid</rs> ſ</supplied>elig
-                                preiſet</l>
+                            <l>4. Dann auch <rs type="person" key="person_049"
+                                        >Da<supplied>vid</supplied></rs>
+                                <supplied>ſ</supplied>elig preiſet</l>
                             <lb/>
                             <l rendition="#et">jeden fro<supplied>mmen Eh</supplied>renmann/</l>
                             <lb/>
@@ -1332,10 +1334,10 @@
                         <lb/>
                         <l rendition="#et2"><hi rendition="#larger">Herꝛ'n <rs type="person"
                                     key="person_206">Hirtzlen</rs>: Herꝛen <rs type="person"
-                                    key="person_010">R<choice>
+                                    key="person_010"><choice>
                                         <corr/>
-                                        <sic>o</sic>
-                                    </choice>hn</rs>!</hi></l>
+                                        <sic>Rohn</sic>
+                                    </choice></rs>!</hi></l>
                     </lg>
                     <lb/>
                 </div>
@@ -1772,7 +1774,8 @@
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
-                            <l>1. Nichts wehrter Sohn/ gar bo&#x364;ſer Art/</l>
+                            <l>1. Nichts wehrter <rs type="person" key="person_305">Sohn</rs>/ gar
+                                bo&#x364;ſer Art/</l>
                             <lb/>
                             <l>ſein Erb erzwingt/ von Heymat fahrt.</l>
                         </lg>
@@ -2290,8 +2293,7 @@
                             <rs type="place" key="place_001">Zu&#x364;rich</rs> ehrt mit
                             Gfatterſchafft/</l>
                         <lb/>
-                        <l>alß <rs type="person" key="person_217">Burger freu&#x364;nd</rs>. Gott
-                            gebe Krafft!</l>
+                        <l>alß Burger freu&#x364;nd. Gott gebe Krafft!</l>
                     </lg>
                     <lb/>
                 </div>

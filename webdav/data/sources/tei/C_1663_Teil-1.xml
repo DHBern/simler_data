@@ -2493,9 +2493,9 @@
                 <head>
                     <label>[6.]</label>
                     <lb/>
-                    <hi rendition="#b #c">Inhälte<lb/> Aller Psalmen <rs type="person" key="person_049"
-                            >Davids</rs>/<lb/> in gemeinen Reimschlüs<lb break="no"/>sen
-                        begriffen.</hi>
+                    <hi rendition="#b #c">Inhälte<lb/> Aller Psalmen <rs type="person"
+                            key="person_049">Davids</rs>/<lb/> in gemeinen Reimschlüs<lb break="no"
+                        />sen begriffen.</hi>
                 </head>
                 <lb/>
                 <milestone unit="section" rendition="#hr"/>
@@ -3141,8 +3141,7 @@
                     <head><hi rendition="#aq #c">LXIII.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Die <rs type="place" key="place_098">Wüste Juda</rs> mich
-                            versteket/</l>
+                        <l>Die <rs type="place" key="place_098">Wüste Juda</rs> mich versteket/</l>
                         <lb/>
                         <l>nach Gottes hauß mir durst erweket.</l>
                     </lg>
@@ -3274,7 +3273,8 @@
                     <head><hi rendition="#aq #c">LXXVI.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l rendition="#et">Dein Hauß und Assurs niderlag</l>
+                        <l rendition="#et">Dein Hauß und <rs type="place" key="place_028"
+                                >Assurs</rs> niderlag</l>
                         <lb/>
                         <l rendition="#et">dich rühmen/ Herr. Dir dank ich sag.</l>
                     </lg>
@@ -3408,8 +3408,8 @@
                     <lg type="poem">
                         <l>Von Gottes gnad und vestem Bunde/</l>
                         <lb/>
-                        <l>nächst <rs type="person" key="person_049">Davids</rs> trübsal/
-                            singt mein munde.</l>
+                        <l>nächst <rs type="person" key="person_049">Davids</rs> trübsal/ singt mein
+                            munde.</l>
                     </lg>
                 </div>
                 <lb/>
@@ -3439,7 +3439,7 @@
                     <lg type="poem">
                         <l rendition="#et">Lobt Gott mit säitenspil und stimm</l>
                         <lb/>
-                        <l rendition="#et">Er schützt uns: straft die feind' im grimm</l>
+                        <l rendition="#et">Er schützt uns: straft die feind’ im grimm</l>
                     </lg>
                 </div>
                 <lb/>
@@ -3631,7 +3631,7 @@
                     <head><hi rendition="#aq #c">CXI.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Gotts bund/ gebott/ und werk’ ich preise/</l>
+                        <l>Gotts bund/ gebott’/ und werk’ ich preise/</l>
                         <lb/>
                         <l>in seiner forcht die weisheit weise.</l>
                     </lg>
@@ -3664,8 +3664,7 @@
                         <l rendition="#et">Beym außzug auß <rs type="place" key="place_019"
                                 >Egyptenland</rs>/</l>
                         <lb/>
-                        <l rendition="#et">lob Israel Gotts
-                            wunderhand.</l>
+                        <l rendition="#et">lob Israel Gotts wunderhand.</l>
                     </lg>
                 </div>
                 <lb/>
@@ -3972,7 +3971,7 @@
                     <lg type="poem">
                         <l rendition="#et">Gott lob/ der überwinden lehrt:</l>
                         <lb/>
-                        <l rendition="#et">Jm land sich frid und segen mehrt.</l>
+                        <l rendition="#et">Im land sich frid und segen mehrt.</l>
                     </lg>
                 </div>
                 <lb/>
@@ -4037,10 +4036,8 @@
                     </lg>
                 </div>
                 <lb/>
+                <milestone unit="section" rendition="#hr"/><lb/>
             </div>
-
-            <pb n="59" facs="4049258"/>
-
         </body>
     </text>
 </TEI>
