@@ -30,7 +30,7 @@
         <body>
             <pb n="[1]" facs="4049200"/>
             <div n="1">
-                <head><hi rendition="#b #c">Aller<lb/> Psalmen <rs type="person" key="person_049">Davids</rs> Haubt<lb break="no"/>begriff/ oder Kern:<lb/> in
+                <head><hi rendition="#b #c">Aller<lb/> Psalmen Davids Haubt<lb break="no"/>begriff/ oder Kern:<lb/> in
                     fünf bücher/ und so vil gesangsweisen<lb/> abgeteihlt.</hi></head>
                 <lb/>
                 <pb n="2" facs="4049201"/>
@@ -1204,8 +1204,7 @@
                         <head><hi rendition="#aq #c">LXXII.</hi></head>
                         <lb/>
                         <lg type="poem">
-                            <l rendition="#et">Gib dein gericht/ o Gott/ dem könig/ meinem <rs
-                                    type="person" key="person_103">sohn</rs>/</l>
+                            <l rendition="#et">Gib dein gericht/ o Gott/ dem könig/ meinem sohn/</l>
                             <lb/>
                             <l>gib ihm gerechtigkeit/ damit er wol regiere/</l>
                             <lb/>
@@ -1459,7 +1458,7 @@
                         <lg type="poem">
                             <l>Das ersterlößte volk den neuen tempel preiset/</l>
                             <lb/>
-                            <l>und dessen fundament auff heilgen bergen weiset:</l>
+                            <l>und dessen fundament auff <rs type="place" key="place_027">heilgen bergen</rs> weiset:</l>
                             <lb/>
                             <l rendition="#et">frolockt/ dieweil der Höchst zur wohnung ihn
                                 bestellt/</l>
@@ -2151,7 +2150,7 @@
                             <l rendition="#et">der wird <choice>
                                     <sic>des</sic>
                                     <corr>die</corr>
-                                </choice> Sionsfeind’ auch straffen sonder fehl.</l>
+                            </choice> <rs type="place" key="place_027">Sion</rs>sfeind’ auch straffen sonder fehl.</l>
                         </lg>
                     </div>
                     <lb/>
@@ -2483,7 +2482,7 @@
                 </div>
                 <lb/>
 
-                <div><p><hi rendition="#smaller #c">Ende der Vierversen über die<lb/> Psalmen <rs type="person" key="person_049">Davids</rs>.</hi></p></div>
+                <div><p><hi rendition="#smaller #c">Ende der Vierversen über die<lb/> Psalmen Davids.</hi></p></div>
                 <lb/>
             </div>
             <lb/>
@@ -2493,8 +2492,7 @@
                 <head>
                     <label>[6.]</label>
                     <lb/>
-                    <hi rendition="#b #c">Inhälte<lb/> Aller Psalmen <rs type="person"
-                            key="person_049">Davids</rs>/<lb/> in gemeinen Reimschlüs<lb break="no"
+                    <hi rendition="#b #c">Inhälte<lb/> Aller Psalmen Davids/<lb/> in gemeinen Reimschlüs<lb break="no"
                         />sen begriffen.</hi>
                 </head>
                 <lb/>
@@ -3232,8 +3230,7 @@
                     <head><hi rendition="#aq #c">LXXII.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l rendition="#et">Herr/ gib gerichte meinem <rs type="person"
-                                key="person_103">Sohn</rs>/</l>
+                        <l rendition="#et">Herr/ gib gerichte meinem Sohn/</l>
                         <lb/>
                         <l rendition="#et">bis daß der dein bsitz seinen Trohn.</l>
                     </lg>
