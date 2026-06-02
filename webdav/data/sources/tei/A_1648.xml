@@ -5354,7 +5354,7 @@
 
                <lg type="poem">
                   <lg n="1">
-                     <head>1.</head>
+                     <head><hi rendition="#c">1.</hi></head>
                      <lb/>
                      <l><hi rendition="#in">J</hi>Eſu/ warer Gottes Sohn/</l>
                      <lb/>
@@ -5371,7 +5371,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head>2.</head>
+                     <head><hi rendition="#c">2.</hi></head>
                      <lb/>
                      <l>War es gwalt vnd feyendſchafft?</l>
                      <lb/>
@@ -5388,7 +5388,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head>3.</head>
+                     <head><hi rendition="#c">3.</hi></head>
                      <lb/>
                      <l>Nein/ o nein! noch liſt/ noch gwalt/</l>
                      <lb/>
@@ -5416,7 +5416,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head>4.</head>
+                     <head><hi rendition="#c">4.</hi></head>
                      <lb/>
                      <l>Was für dank nun ſol ich dir</l>
                      <lb/>
@@ -5433,7 +5433,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head>5.</head>
+                     <head><hi rendition="#c">5.</hi></head>
                      <lb/>
                      <l>Weil ich ſo geliebet dich/</l>
                      <lb/>
@@ -5450,7 +5450,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head>6.</head>
+                     <head><hi rendition="#c">6.</hi></head>
                      <lb/>
                      <l>Ja/ Herꝛ: aber gib du mir</l>
                      <lb/>
@@ -6434,7 +6434,10 @@
                   </lg>
                </lg>
             </div>
-
+            
+            <lb/>
+            <milestone unit="section" rendition="#hr"/>
+            
             <div n="2" xml:id="n24">
                <head><hi rendition="#c #b">Geiſtlicher Weker.</hi></head>
                <lb/>
@@ -6458,6 +6461,9 @@
                </lg>
                <lb/>
             </div>
+            
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
 
             <fw place="bottom" type="catch">Him&#x303;-</fw>
             <lb/>
