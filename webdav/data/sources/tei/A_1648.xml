@@ -142,13 +142,13 @@
             <pb facs="4017118"/>
 
             <div n="2" xml:id="ii">
-               <titlePage type="main">
+             <titlePage type="main">
                   <lb/>
                   <docAuthor><hi rendition="#c"><hi rendition="#in">J</hi>ohann <hi rendition="#in"
                            >W</hi>ilhelm <hi rendition="#in">S</hi>imlers</hi></docAuthor>
                   <lb/>
                   <docTitle>
-                     <titlePart type="main"><hi rendition="#c">Teutſche <lb/>
+                     <titlePart type="main"><hi rendition="#c">Teutſche<lb/>
                            <hi rendition="#b"><hi rendition="#in"
                         >G</hi>edichte:</hi></hi></titlePart>
                      <lb/>
@@ -156,11 +156,11 @@
                         <lb/>
                         <list>
                            <item><hi rendition="#aq">I.</hi> Vierverſe/ oder
-                              ſum&#x342;begriffenliche Jn- <lb break="no"/> ha&#x364;lte der Pſalmen
+                              ſum&#x342;begriffenliche Jn-<lb break="no"/>ha&#x364;lte der Pſalmen
                               Davids:</item>
                            <lb/>
-                           <item><hi rendition="#aq">II.</hi> Vnderſcheidenliche/ auf zeiten und
-                              <lb/> anla&#x364;ſſe gerichtete Geſa&#x364;nge:</item>
+                           <item><hi rendition="#aq">II.</hi> Vnderſcheidenliche/ auf zeiten und<lb/>
+                              anla&#x364;ſſe gerichtete Geſa&#x364;nge:</item>
                            <lb/>
                            <item><hi rendition="#aq">III.</hi> Allerhand Vberſchrifften.</item>
                         </list>
@@ -169,8 +169,8 @@
                   <lb/>
                   <milestone unit="section" rendition="#hr"/>
                   <lb/>
-                  <docImprint><hi rendition="#c">Getrukt zů <pubPlace>Zürich</pubPlace>/ <lb/> Bey
-                           <publisher>Johann Jakob Bodmer</publisher>.</hi>
+                <docImprint><hi rendition="#c">Getrukt zů</hi> <pubPlace><hi rendition="#c">Zürich</hi></pubPlace>/<lb/> 
+                   <hi rendition="#c">Bey</hi> <publisher><hi rendition="#c">Johann Jakob Bodmer</hi></publisher>.
                      <lb/>
                      <docDate><hi rendition="#aq #c">M DC XXXXVIII.</hi></docDate></docImprint>
                </titlePage>
@@ -184,43 +184,44 @@
             <div n="2" xml:id="iii">
                <div n="3" type="dedication">
                   <list>
-                     <head><hi rendition="#c"><hi rendition="#b">Denen hochgeachten/ woled-</hi><lb
-                              break="no"/>len/ veſten/ frommen/ ehren-noht-<lb break="no"/>veſten/
-                           fürſichtigen/ weyſen<lb/> Herꝛen:</hi></head>
+                     <head><hi rendition="#c"><hi rendition="#b">Denen hochgeachten/ woled-</hi><lb break="no"/>len/ 
+                        veſten/ frommen/ ehren-noht-<lb break="no"/>veſten/ fürſichtigen/ weyſen<lb/> 
+                        Herꝛen:</hi></head>
                      <lb/>
-                     <item>Herꝛn Hans-Jacob Lewen/ des Rahts/ Statt-<lb break="no"/>haltern/ und
-                        oberſten Le<anchor xml:id="a1"/>u<note type="annotation" targetEnd="a1"
-                              ><p>Die ü-Pünktchen wurden vom Leser/von der Leserin von Hand
-                              einezeichnet; im Vergleichsexemplar aus Göttingen steht eindeutig ein
-                              u.</p></note>tenant über der<lb/> Statt Zürich Panner:</item>
+                     <item>Herꝛn Hans-Jacob Lewen/ des Rahts/ Statt-<lb break="no"/>haltern/ 
+                        und oberſten Le<anchor xml:id="a1"/>u<note type="annotation" targetEnd="a1">
+                        <p>Die ü-Pünktchen wurden vom Leser/von der Leserin von Hand
+                           einezeichnet; im Vergleichsexemplar aus Göttingen steht eindeutig ein
+                           u.</p></note>tenant über der<lb/> 
+                        Statt Zürich Panner:</item>
                      <lb/>
                      <item>Junkern Hans-Heinrich Eſchern/ des Rahts/<lb/> und Statthauptmann:</item>
                      <lb/>
-                     <item>Herꝛn Matthias Landolten/ des Rahts von<lb/> der fre<anchor xml:id="a2"
-                           />y<note type="annotation" targetEnd="a2"><p>Handschriftliches
-                           Trema</p></note>en wahl:</item>
+                     <item>Herꝛn Matthias Landolten/ des Rahts von<lb/> 
+                        der fre<anchor xml:id="a2"/>y<note type="annotation" targetEnd="a2">
+                        <p>Handschriftliches Trema</p></note>en wahl:</item>
                      <lb/>
-                     <item>Herꝛn Hans Bergern/ des Rahts  von der <lb/> fre<anchor xml:id="a3"
-                           />y<note type="annotation" targetEnd="a3">
-                           <p>Das Trema über dem y wurde nachträglich von Hand eingezeichnet, siehe
-                              auch Komm. oben zu u/ü.</p></note>en wahl/ Bawherꝛn<anchor xml:id="a4"
-                           /><note type="annotation" targetEnd="a4"><p>Handschriftliches
-                           Komma</p></note> und geweſnem Vogt<lb/> der Herꝛſchafft
-                        Weinfelden.</item>
+                     <item>Herꝛn Hans Bergern/ des Rahts  von der<lb/> 
+                        fre<anchor xml:id="a3"/>y<note type="annotation" targetEnd="a3">
+                        <p>Das Trema über dem y wurde nachträglich von Hand eingezeichnet, siehe
+                           auch Komm. oben zu u/ü.</p></note>en wahl/ 
+                        Bawherꝛn<anchor xml:id="a4"/><note type="annotation" targetEnd="a4">
+                        <p>Handschriftliches Komma</p></note> und geweſnem Vogt<lb/> 
+                        der Herꝛſchafft Weinfelden.</item>
                      <lb/>
-                     <item>Herꝛn Hans-Heinrich Schultheſſen/ des<lb/> Rahts/ und
-                        Zunfftmeiſtern:</item>
+                     <item>Herꝛn Hans-Heinrich Schultheſſen/ des<lb/> 
+                        Rahts/ und Zunfftmeiſtern:</item>
                      <lb/>
-                     <item>Herꝛen Hans-Heinrich Müllern/ des Rahts/<lb/> Zunfftmeiſtern/ und
-                        Geſandten über das<lb/> Gebirg:</item>
+                     <item>Herꝛen Hans-Heinrich Müllern/ des Rahts/<lb/> 
+                        Zunfftmeiſtern/ und Geſandten über das<lb/> Gebirg:</item>
                      <lb/>
-                     <item>Herꝛn Hans-Heinrich Rahnen/ des Regiments<lb/> der Statt Zürich und
-                        Altſchützenmeiſtern:</item>
+                     <item>Herꝛn Hans-Heinrich Rahnen/ des Regiments<lb/> 
+                        der Statt Zürich und Altſchützenmeiſtern:</item>
                   </list>
                   <lb/>
-                  <p><hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> Günneren;
-                        theils auch lieben Herꝛen<lb/> Vetteren/ Schwa&#x364;geren und
-                           Gefa&#x364;t-<lb break="no"/>teren.</hi></p>
+                  <p><hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> 
+                     Günneren; theils auch lieben Herꝛen<lb/> 
+                     Vetteren/ Schwa&#x364;geren und Gefa&#x364;t-<lb break="no"/>teren.</hi></p>
                   <lb/>
                </div>
                <lb/>
@@ -231,131 +232,141 @@
 
                <div n="3" type="preface">
                   <p><hi rendition="#in">H</hi><hi rendition="#larger">Ochgeachte/ woledle/ veſte/
-                           from-<lb break="no"/></hi> me/ ehren-nohtveſte/ fürſichtige/ weyſe/<lb/>
-                     hochgeehrte Herꝛen Günnere; auch liebe<lb/> Herꝛen Vettere/ Schwa&#x364;gere
-                     und Gefa&#x364;ttere.</p>
+                     from-<lb break="no"/></hi> me/ ehren-nohtveſte/ fürſichtige/ weyſe/<lb/>
+                     hochgeehrte Herꝛen Günnere; auch liebe<lb/> 
+                     Herꝛen Vettere/ Schwa&#x364;gere und Gefa&#x364;ttere.</p>
                   <lb/>
-                  <p rendition="#et">Das abſehen eines rechtſchaffnen Chriſten-<lb break="no"
-                     />lichen Poeten<anchor xml:id="a6"/><note type="annotation" targetEnd="a6"
-                           ><p>Das Komma nach "Poeten" wurde nachträglich von Hand
-                           eingezeichnet.</p></note> ſol fürnemlich gerichtet ſeyn auf<lb/> den
-                     nutzen; und die beluſtigung. Auf den nu-<lb break="no"/>tzen dergeſtalt/ daß
-                     des Allerho&#x364;chſten Ehr durch<lb/> ſeine Gedichte befo&#x364;rdert; der
-                        na&#x364;chſt<anchor xml:id="a7"/><note type="annotation" targetEnd="a7"
-                           ><p>Das Komma nach "na&#x364;chſt" wurde nachträglich von Hand
-                           eingezeichnet.</p></note> und er ſelbs<lb/> erbawen: auf die beluſtigung;
-                     daß ſeine Verſe<lb/> nicht allein lieblich klingen/ ſonder auch von ſol-<lb
-                        break="no"/>chen erfindungen<anchor xml:id="a8"/><note type="annotation"
-                        targetEnd="a8"><p>Das Komma nach "erfindungen" wurde nachträglich von Hand
-                           eingezeichnet.</p></note> und worten ſe<anchor xml:id="a9"/>y<note
-                        type="annotation" targetEnd="a9"><p>Das Trema über y wurde nachträglich von
-                           Hand eingezeichnet.</p></note>en/ daß dar-<lb break="no"/>durch auch der
-                     klu&#x366;gen verſtand beluſtiget<anchor xml:id="a10"/><note type="annotation"
-                        targetEnd="a10"><p>Das Komma nach "beluſtiget" wurde nachträglich von Hand
-                           eingezeichnet.</p></note> und ge-<lb break="no"/> ſcha&#x364;rffet
-                     werde.</p>
+                  <p rendition="#et">Das abſehen eines rechtſchaffnen Chriſten-<lb break="no"/>lichen 
+                     Poeten<anchor xml:id="a6"/><note type="annotation" targetEnd="a6">
+                     <p>Das Komma nach "Poeten" wurde nachträglich von Hand
+                        eingezeichnet.</p></note> ſol fürnemlich gerichtet ſeyn auf<lb/> 
+                     den nutzen; und die beluſtigung. Auf den nu-<lb break="no"/>tzen 
+                     dergeſtalt/ daß des Allerho&#x364;chſten Ehr durch<lb/> ſeine Gedichte befo&#x364;rdert; 
+                     der na&#x364;chſt<anchor xml:id="a7"/><note type="annotation" targetEnd="a7">
+                     <p>Das Komma nach "na&#x364;chſt" wurde nachträglich von Hand
+                        eingezeichnet.</p></note> und er ſelbs<lb/> 
+                     erbawen: auf die beluſtigung; daß ſeine Verſe<lb/> 
+                     nicht allein lieblich klingen/ ſonder auch von ſol-<lb break="no"/>chen 
+                     erfindungen<anchor xml:id="a8"/><note type="annotation" targetEnd="a8">
+                     <p>Das Komma nach "erfindungen" wurde nachträglich von Hand
+                        eingezeichnet.</p></note> und worten 
+                     ſe<anchor xml:id="a9"/>y<note type="annotation" targetEnd="a9">
+                     <p>Das Trema über y wurde nachträglich von Hand eingezeichnet.</p></note>en/ daß 
+                     dar-<lb break="no"/>durch auch der klu&#x366;gen verſtand 
+                     beluſtiget<anchor xml:id="a10"/><note type="annotation" targetEnd="a10">
+                     <p>Das Komma nach "beluſtiget" wurde nachträglich von Hand
+                        eingezeichnet.</p></note> und ge-<lb break="no"/> ſcha&#x364;rffet werde.</p>
                   <lb/>
-                  <p rendition="#et">Diſe beyde ſtüke nun<anchor xml:id="a11"/><note
-                        type="annotation" targetEnd="a11"><p>Das Komma nach "nun" wurde nachträglich
-                           von Hand eingezeichnet.</p></note> haben ſich bey dem gro&#x364;ſ-<lb
-                        break="no"/>ſern theil unſerer Te<anchor xml:id="a12"/>u<note
-                        type="annotation" targetEnd="a12"><p>Das Trema über dem u wurde nachträglich
-                           von Hand eingezeichnet.</p></note>tſchen Poeten<anchor xml:id="a13"
-                        /><note type="annotation" targetEnd="a13"><p>Der Doppelbindestrich nach
-                           "Poeten" wurde nachträglich von Hand eingezeichnet.</p></note> und
-                        Re<anchor xml:id="a14"/>y<note type="annotation" targetEnd="a14"><p>Das
-                           Trema über dem y wurde nachträglich von Hand eingezeichnet</p></note>-<lb
-                        break="no"/>menſchmiden eine geraume zeit verloren: in dem<lb/> andere
-                     nichts anders dann von der elenden Hei-<lb break="no"/>den go&#x364;tter<anchor
-                        xml:id="a15"/><note type="annotation" targetEnd="a15"><p>Das Komma nach
-                           "go&#x364;tter" wurde von Hand nachträglich eingezeichnet.</p></note> und
-                     go&#x364;ttinnen/ alß der leichtfertigen<lb/> Venus<anchor xml:id="a16"/><note
-                        type="annotation" targetEnd="a16"><p>Das Komma nach "Venus" wurde
-                           nachträglich von Hand eingezeichnet</p></note> und ihrem garſtigen ſohn
-                     Kupido/ oder<lb/> andern dergleichen unnützen narꝛenpoſſen zu&#x366;<lb/>
-                     dichten gewüßt; worauß verdamlicher ſchad/<lb/> Chriſtenlicher ohren<anchor
-                        xml:id="a17"/><note type="annotation" targetEnd="a17"><p>Das Komma nach
-                           "ohren" wurde nachtràglich von Hand eingezeichnet.</p></note> und
+                  <p rendition="#et">Diſe beyde ſtüke nun<anchor xml:id="a11"/><note type="annotation" targetEnd="a11">
+                     <p>Das Komma nach "nun" wurde nachträglich von Hand eingezeichnet.</p></note> haben ſich 
+                     bey dem gro&#x364;ſ-<lb break="no"/>ſern theil unſerer 
+                     Te<anchor xml:id="a12"/>u<note type="annotation" targetEnd="a12">
+                     <p>Das Trema über dem u wurde nachträglich von Hand eingezeichnet.</p></note>tſchen 
+                     Poeten<anchor xml:id="a13"/><note type="annotation" targetEnd="a13">
+                     <p>Der Doppelbindestrich nach "Poeten" wurde nachträglich von Hand eingezeichnet.</p></note> und
+                     Re<anchor xml:id="a14"/>y<note type="annotation" targetEnd="a14">
+                     <p>Das Trema über dem y wurde nachträglich von Hand eingezeichnet</p></note>-<lb
+                        break="no"/>menſchmiden eine geraume zeit verloren: in dem<lb/> 
+                     andere nichts anders dann von der elenden Hei-<lb break="no"/>den 
+                     go&#x364;tter<anchor xml:id="a15"/><note type="annotation" targetEnd="a15">
+                     <p>Das Komma nach "go&#x364;tter" wurde von Hand nachträglich eingezeichnet.</p></note> und
+                     go&#x364;ttinnen/ alß der leichtfertigen<lb/> 
+                     Venus<anchor xml:id="a16"/><note type="annotation" targetEnd="a16">
+                     <p>Das Komma nach "Venus" wurde nachträglich von Hand eingezeichnet</p></note> und 
+                     ihrem garſtigen ſohn Kupido/ oder<lb/> andern dergleichen unnützen narꝛenpoſſen zu&#x366;<lb/>
+                     dichten gewüßt; worauß verdamlicher ſchad/<lb/> 
+                     Chriſtenlicher ohren<anchor xml:id="a17"/><note type="annotation" targetEnd="a17">
+                     <p>Das Komma nach "ohren" wurde nachtràglich von Hand eingezeichnet.</p></note> und
                      künſcher hertzen verle-<lb break="no"/>tzung/ ja/ betru&#x364;bung des heiligen
                      Geiſtes erwach-<lb break="no"/>ſen mu&#x364;ſſen: andere hingegen/ mit ihren
-                        übelklin-<lb break="no"/>
+                     übelklin-<lb break="no"/>
                      <fw place="bottom" type="sig">)( ij</fw>
                      <lb/>
                      <fw place="bottom" type="catch">genden</fw>
                      <lb/>
                      <pb facs="4017121"/>
+                     
                      <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
-                     <lb/> genden Verſen/ nichts minders alß beluſtigen<lb/> ko&#x364;nnen.</p>
+                     <lb/> 
+                     genden Verſen/ nichts minders alß beluſtigen<lb/> ko&#x364;nnen.</p>
                   <lb/>
                   <p rendition="#et">Diſer zeit aber/ und zwar mitten under de-<lb break="no"/>nen
-                     verzehrenden kriegsflammen/ bemu&#x364;het ſich<lb/> die ho&#x364;chſtlobliche
-                     Fruchtbringende Geſellſchafft<lb/> beyden erwehnten poetiſchen forderungen
-                     und<lb/> zierden/ mo&#x364;glichſt/ herfür zu&#x366;helffen: ja/ es haben<lb/>
-                     bereits vil edle mitglider derſelbigen/ durch ihre<lb/> herꝛliche
-                     Bu&#x364;cher/ ſo wol den poetiſchen nutzen alß<lb/> die beluſtigung/ gleichſam
-                     auß dikeſter finſternuß<lb/> wider herfür gezogen: wie deſſen kein
-                        verſta&#x364;ndi-<lb break="no"/>ger und redlicher Te<anchor xml:id="a18"
-                        />u<note type="annotation" targetEnd="a18"><p>Das Trema über dem "u" wurde
-                           nachträglich von Hand eingezeichnet.</p></note>tſchmann; der ihre
-                        ru&#x366;hm-<lb break="no"/>würdige ſchrifften geleſen; in abred ſeyn
-                     wird.</p>
+                     verzehrenden kriegsflammen/ bemu&#x364;het ſich<lb/> 
+                     die ho&#x364;chſtlobliche Fruchtbringende Geſellſchafft<lb/> 
+                     beyden erwehnten poetiſchen forderungen und<lb/> 
+                     zierden/ mo&#x364;glichſt/ herfür zu&#x366;helffen: ja/ es haben<lb/>
+                     bereits vil edle mitglider derſelbigen/ durch ihre<lb/> 
+                     herꝛliche Bu&#x364;cher/ ſo wol den poetiſchen nutzen alß<lb/> 
+                     die beluſtigung/ gleichſam auß dikeſter finſternuß<lb/> 
+                     wider herfür gezogen: wie deſſen kein verſta&#x364;ndi-<lb break="no"/>ger und redlicher 
+                     Te<anchor xml:id="a18"/>u<note type="annotation" targetEnd="a18">
+                     <p>Das Trema über dem "u" wurde nachträglich von Hand eingezeichnet.</p></note>tſchmann; 
+                     der ihre ru&#x366;hm-<lb break="no"/>würdige ſchrifften geleſen; in abred ſeyn wird.</p>
                   <lb/>
-                  <p rendition="#et">Jch/ für meine wenige perſon/ bekenne mich deß<lb/> naher gegen
-                     der Teutſchen Dicht- und Reym-<lb break="no"/>kunſt; deren ich zu&#x366;vor
+                  <p rendition="#et">Jch/ für meine wenige perſon/ bekenne mich deß<lb/> 
+                     naher gegen der Teutſchen Dicht- und Reym-<lb break="no"/>kunſt; deren ich zu&#x366;vor
                      nichts geachtet; ſehr ver-<lb break="no"/>liebt/ und zu&#x366; folgenden
                      Reymgedichten/ oder vil-<lb break="no"/>mehr poetiſchen Erſtlingen/ gereitzt
                      und veran-<lb break="no"/>laſſet.</p>
                   <lb/>
-                  <p rendition="#et">Mein abſehen zwar war auch auf den nutzen/<lb/> und auf die
-                     beluſtigung zu&#x366;gleich/ gerichtet. Des<lb/> nutzes halber hab ich
-                     mehrtheils geiſtliche; und/<lb/> neben denſelben/ wenig andere/ jedoch nicht
-                        uner-<lb break="no"/>bawliche ſachen eyngefu&#x364;hrt. Die beluſtigung<lb/>
-                     aber kan ich nicht zeigen in wolklingenden Ver-<lb break="no"/>ſen/ außerleßnen
-                     redensarten und poetiſchen Er-<lb break="no"/>
+                  <p rendition="#et">Mein abſehen zwar war auch auf den nutzen/<lb/> 
+                     und auf die beluſtigung zu&#x366;gleich/ gerichtet. Des<lb/> 
+                     nutzes halber hab ich mehrtheils geiſtliche; und/<lb/> 
+                     neben denſelben/ wenig andere/ jedoch nicht uner-<lb break="no"/>bawliche ſachen eyngefu&#x364;hrt. 
+                     Die beluſtigung<lb/> aber kan ich nicht zeigen in wolklingenden Ver-<lb break="no"/>ſen/ 
+                     außerleßnen redensarten und poetiſchen Er-<lb break="no"/>
                      <fw place="bottom" type="catch">fin-</fw>
                      <pb facs="4017122"/>
+                     
                      <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
-                     <lb/> findungen; alß in welchen ich faſt unerfahren<lb/> bin; ſonder allein/
-                     und zwar nur den einfaltigen/<lb/> in underſchidlichen/ altbekanten jedoch
-                     lieblichen<lb/> Geſangweiſen/ auf die der gro&#x364;ſſer theil meiner<lb/>
-                     Gedichten von mir gerichtet worden. Damit<lb/> aber auch
-                     kunſtverſta&#x364;ndige und gelehrte Leuhte/<lb/> ſich durch diſes
-                     Bu&#x364;chlein in etwas zu&#x366;beluſtigen <lb/> ha&#x364;tten/ alß hab ich
-                     (wie in folgender Vorꝛede<lb/> und bericht an den Leſer zu&#x366;ſehen) die
-                     Geſa&#x364;nge<lb/> durch einen trefflichen Muſikanten alſo außſe-<lb
-                        break="no"/>tzen laſſen/ daß/ verhoffenlich/ die erwünſchte be-<lb
-                        break="no"/>luſtigung auch nicht ermanglen wird.</p>
+                     <lb/> 
+                     findungen; alß in welchen ich faſt unerfahren<lb/> 
+                     bin; ſonder allein/ und zwar nur den einfaltigen/<lb/> 
+                     in underſchidlichen/ altbekanten jedoch lieblichen<lb/> 
+                     Geſangweiſen/ auf die der gro&#x364;ſſer theil meiner<lb/>
+                     Gedichten von mir gerichtet worden. Damit<lb/> 
+                     aber auch kunſtverſta&#x364;ndige und gelehrte Leuhte/<lb/> 
+                     ſich durch diſes Bu&#x364;chlein in etwas zu&#x366;beluſtigen <lb/> 
+                     ha&#x364;tten/ alß hab ich (wie in folgender Vorꝛede<lb/> 
+                     und bericht an den Leſer zu&#x366;ſehen) die Geſa&#x364;nge<lb/> 
+                     durch einen trefflichen Muſikanten alſo außſe-<lb break="no"/>tzen laſſen/ daß/ verhoffenlich/ 
+                     die erwünſchte be-<lb break="no"/>luſtigung auch nicht ermanglen wird.</p>
                   <lb/>
                   <p rendition="#et">Daß aber/ großgünſtige/ hochgeehrte Her-<lb break="no"/>ꝛen/
                      diſe meine poetiſche Erſtlinge Ewern Eh-<lb break="no"/>renperſonen ich
                      underdienſtlich zu&#x366;ſchreibe/ be-<lb break="no"/>ſchihet theils auß alter
                      gewonheit/ nach deren<lb/> man jederzeit gepflogen denen im Truk new<lb/>
-                     außgehenden Bu&#x364;chern gewüſſe Schutzherꝛen zu&#x366;<lb/> ſu&#x366;chen/
-                     damit ſie under deroſelben ſicherm geleit<lb/> die tadelſüchtige welt
-                     durchwandern mo&#x364;chten:<lb/> theils aber und fürnemlich meine
-                     gehorſame<lb/> dienſte und ho&#x364;chſtſchuldige dankbarkeit für vil-<lb
-                        break="no"/>faltig erzeigte gnaden und gu&#x366;tthaten offenlich<lb/>
-                     zu&#x366; bezügen: der troſtlichen zu&#x366;verſicht/ es werden<lb/> dieſelbige
-                     diſe geringe gab nicht mit geringern<lb/> gunſten auf- und annemmen/ alß eineſt
-                     der ge-<lb break="no"/>
+                     außgehenden Bu&#x364;chern gewüſſe Schutzherꝛen zu&#x366;<lb/> 
+                     ſu&#x366;chen/ damit ſie under deroſelben ſicherm geleit<lb/> 
+                     die tadelſüchtige welt durchwandern mo&#x364;chten:<lb/> 
+                     theils aber und fürnemlich meine gehorſame<lb/> dienſte und ho&#x364;chſtſchuldige 
+                     dankbarkeit für vil-<lb break="no"/>faltig erzeigte gnaden und gu&#x366;tthaten offenlich<lb/>
+                     zu&#x366; bezügen: der troſtlichen zu&#x366;verſicht/ es werden<lb/> 
+                     dieſelbige diſe geringe gab nicht mit geringern<lb/> 
+                     gunſten auf- und annemmen/ alß eineſt der ge-<lb break="no"/>
                      <fw place="bottom" type="sig">)( iij</fw>
                      <lb/>
                      <fw place="bottom" type="catch">wal-</fw>
                      <pb facs="4017123"/>
+                     
                      <fw place="top" type="header">Zu&#x366;ſchrifft.</fw>
-                     <lb/> waltige Perſiſche Monarch/ Xerxes/ von einem<lb/> armen Ba&#x364;urlein/
-                     im fürüber reiſen einen mit der<lb/> hand geſcho&#x364;pften waſſertrunk
-                     empfangen/ und<lb/> ja nicht die geringheit der gab/ ſonder vilmehr<lb/>
-                     ſeinen wolmeinenden willen gna&#x364;digeſt angeſehen<lb/> hat: Wann ich nun
-                     diſes/ (worfür ich einig bitte)<lb/> wird erlangen mo&#x364;gen/ wird es mich
-                     zu&#x366; mehrerm<lb/> fleiß und vergeltung erweken und anfriſchen.</p>
+                     <lb/> 
+                     waltige Perſiſche Monarch/ Xerxes/ von einem<lb/> 
+                     armen Ba&#x364;urlein/ im fürüber reiſen einen mit der<lb/> 
+                     hand geſcho&#x364;pften waſſertrunk empfangen/ und<lb/> 
+                     ja nicht die geringheit der gab/ ſonder vilmehr<lb/>
+                     ſeinen wolmeinenden willen gna&#x364;digeſt angeſehen<lb/> 
+                     hat: Wann ich nun diſes/ (worfür ich einig bitte)<lb/> 
+                     wird erlangen mo&#x364;gen/ wird es mich zu&#x366; mehrerm<lb/> 
+                     fleiß und vergeltung erweken und anfriſchen.</p>
                   <lb/>
-                  <p rendition="#et">Vnder deſſen flehne ich zum gna&#x364;digen Gott/<lb/> Er wo&#x364;lle Ewere
-                     Ehrenperſonen mit lieben an-<lb break="no"/>geho&#x364;rigen ſam&#x342;t- und
-                     ſonderlich in langwirꝛiger<lb/> geſundheit/ und geſegnetem wolergehen
-                     beſta&#x364;n-<lb break="no"/>dig erhalten: in deſſen va&#x364;tterliche
-                     obacht ſie/ und<lb/> zu&#x366; beharꝛlichen ihren gunſten ich/ beſten
-                     fleiſſes/<lb/> mich empfehle: verbleibend</p>
+                  <p rendition="#et">Vnder deſſen flehne ich zum gna&#x364;digen Gott/<lb/> 
+                     Er wo&#x364;lle Ewere Ehrenperſonen mit lieben an-<lb break="no"/>geho&#x364;rigen 
+                     ſam&#x342;t- und ſonderlich in langwirꝛiger<lb/> 
+                     geſundheit/ und geſegnetem wolergehen beſta&#x364;n-<lb break="no"/>dig erhalten: 
+                     in deſſen va&#x364;tterliche obacht ſie/ und<lb/> 
+                     zu&#x366; beharꝛlichen ihren gunſten ich/ beſten fleiſſes/<lb/> 
+                     mich empfehle: verbleibend</p>
                   <lb/>
                   <closer>
                      <salute><hi rendition="#et">meiner großgünſtigen/ hochge-<lb break="no"/>ehrten Herꝛen</hi><lb/>
@@ -376,43 +387,42 @@
                <lb/>
 
                <div n="3" type="preface">
-                  <head><hi rendition="#c">An den Leſer.</hi></head>
+                  <head><hi rendition="#c #b">An den Leſer.</hi></head>
                   <lb/>
                   <p><hi rendition="#in">D</hi>Jcht- und Singkunſtliebender Leſer. Wüß/ zum bericht:<lb/> 
                      1. Daß ich meine Gedichte/ oder vil mehr poetiſche Erſt-<lb break="no"/>linge 
-                     nicht auß eigner ku&#x364;hnheit/ ſondern auß viler nicht<lb/> geringer
-                     freunden unabla&#x364;ſſigem antrib/ an das liecht kommen<lb/> laſſe: theils/
-                     angedeuten freunden ein genu&#x364;gen zu&#x366; <anchor xml:id="a19"/>t<note
-                        type="annotation" targetEnd="a19"><p>"t" im göttingischen Exemplar gut
-                           erkennbar.</p></note>hu&#x366;n: theils<lb/> aber auch mit jenem
-                     kunſtreichen Mahler beſagter meiner<lb/> Gedichten ma&#x364;ngel von ihren
-                     beſichtigern/ zu&#x366; künftiger verbeſ-<lb break="no"/>ſerung/ zu&#x366;
-                     erfahren.</p>
+                     nicht auß eigner ku&#x364;hnheit/ ſondern auß viler nicht<lb/> 
+                     geringer freunden unabla&#x364;ſſigem antrib/ an das liecht kommen<lb/> 
+                     laſſe: theils/ angedeuten freunden ein genu&#x364;gen 
+                     zu&#x366; <anchor xml:id="a19"/>t<note type="annotation" targetEnd="a19">
+                     <p>"t" im göttingischen Exemplar gut erkennbar.</p></note>hu&#x366;n: theils<lb/> 
+                     aber auch mit jenem kunſtreichen Mahler beſagter meiner<lb/> 
+                     Gedichten ma&#x364;ngel von ihren beſichtigern/ zu&#x366; künftiger verbeſ-<lb break="no"/>ſerung/ 
+                     zu&#x366; erfahren.</p>
                   <lb/>
                   <p rendition="#et">2. Daß Herꝛ <hi rendition="#larger">Andreas Schwilge/</hi> wolbeſtellter
                      Sa&#x364;nger/<lb/> Kirchen und Schu&#x366;ldiener allhie/ meine zuvor nur auf
                      altbekan&#x303;-<lb break="no"/>te weiſen gerichtete Geſa&#x364;nge/ theils
-                     tranſponiert <anchor xml:id="a20"/>-<note type="annotation" targetEnd="a20"
-                           ><p>Hier kurzer Bindestrich als Gedankenstrich gewählt.</p></note> theils
+                     tranſponiert <anchor xml:id="a20"/>-<note type="annotation" targetEnd="a20">
+                     <p>Hier kurzer Bindestrich als Gedankenstrich gewählt.</p></note> theils
                      natür-<lb break="no"/>lich/ aber new - und zu&#x366; vier ſtimmen alſo
-                     außgeſetzt/ daß ſie acht<lb/> die begrifflichſte/ ſamt des <hi rendition="#aq"
-                        >b.</hi> mollariſchen geſangs miſchthon<lb/> bey ſich haben/ in welchen der
+                     außgeſetzt/ daß ſie acht<lb/> die begrifflichſte/ ſamt des <hi rendition="#aq">b.</hi> 
+                     mollariſchen geſangs miſchthon<lb/> bey ſich haben/ in welchen der
                      Diſcant die gemeine weis durch-<lb break="no"/>auß verbleibt; und
-                     abſonderlich zu&#x366; dem Baß (welches auch<lb/> von dem Tenor und Alt
-                     zu&#x366; verſtehen) kan geſungen/ und zu&#x366;<lb/> allen Jnſtrumenten
-                     gebraucht werden: wie dann ein erfahrner<lb/> Muſikant auß allen cadentzen
-                     (deren nicht eine außgelaſſen)<lb/> ſo wol auf dem Clavier/ alß Poſaunen/
-                     Fagot/ Flo&#x364;ten/ Geigen<lb/> und Lauten/ leichtlich wird verſpüren
-                     ko&#x364;nnen. Was aber die<lb/> trili im ſingen; die Coloraturen auf dem
-                     Clavier; die mordan-<lb break="no"/>ten auf der Geigen und Lauten; die di<hi
-                        rendition="#aq">æ</hi>ſes auf dem Fagot und<lb/> Flo&#x364;ten betrifft/
-                     ſeind ſelbige den Verſen zu&#x366; lieb; und weil ſie ei-<lb break="no"/>nem
-                     geu&#x364;bten/ faſt in jedem tak ſo wol im tripel alß dupel ſelb-<lb
-                        break="no"/>ſten zu&#x366;ſu&#x366;chen nicht unſchwer ſeyn werden;
-                     außgelaſſen worden. <lb/>
+                     abſonderlich zu&#x366; dem Baß (welches auch<lb/> 
+                     von dem Tenor und Alt zu&#x366; verſtehen) kan geſungen/ und zu&#x366;<lb/> 
+                     allen Jnſtrumenten gebraucht werden: wie dann ein erfahrner<lb/> 
+                     Muſikant auß allen cadentzen (deren nicht eine außgelaſſen)<lb/> 
+                     ſo wol auf dem Clavier/ alß Poſaunen/ Fagot/ Flo&#x364;ten/ Geigen<lb/> 
+                     und Lauten/ leichtlich wird verſpüren ko&#x364;nnen. Was aber die<lb/> 
+                     trili im ſingen; die Coloraturen auf dem Clavier; die mordan-<lb break="no"/>ten auf der 
+                     Geigen und Lauten; die di<hi rendition="#aq">æ</hi>ſes auf dem Fagot und<lb/> 
+                     Flo&#x364;ten betrifft/ ſeind ſelbige den Verſen zu&#x366; lieb; und weil ſie ei-<lb break="no"/>nem
+                     geu&#x364;bten/ faſt in jedem tak ſo wol im tripel alß dupel ſelb-<lb break="no"/>ſten zu&#x366;
+                     ſu&#x366;chen nicht unſchwer ſeyn werden; außgelaſſen worden.<lb/>
                      <hi rendition="#c">Hiemit wolle ſich der gu&#x366;thertzige Leſer für dißmal
-                        ſetti-<lb break="no"/>gen/ in gu&#x366;ter geſundheit und erwünſchtem
-                        friden/<lb/> mir gewogen verbleiben.</hi></p>
+                     ſetti-<lb break="no"/>gen/ in gu&#x366;ter geſundheit und erwünſchtem friden/<lb/> 
+                     mir gewogen verbleiben.</hi></p>
                </div>
             </div>
             <lb/>
@@ -428,39 +438,37 @@
 
             <div n="2" type="letter" xml:id="iv">
                <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac 
-                  Lite-<lb break="no"/> ratißimi Viri,</hi>
-                     <lb/>
+                  Lite-<lb break="no"/> ratißimi Viri,</hi><lb/>
                   <hi rendition="#g">Dn. DANIELIS RHAGORII,</hi><lb/>
                    Ducentum viri Bernenſis, bis præ-<lb break="no"/>fecti, Poëtæ
-                     coronati.</hi></head>
+                   coronati.</hi></head>
                <lb/>
-               <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimus
-                     Dn.<lb/> Veiraſſius varia tua Scripta Poëtica, quæ<lb/> cum voluptate legi,
-                     imò relegi, quippe quæ<lb/> probarent quâm cordi Tibi ſit atque curæ, ut<lb/>
-                     tenera Ætas rectè inſtituatur non modò in veræ<lb/> Religionis fundamentis,
-                     ſed etiam in bonis Mo-<lb break="no"/>ribus. Memini me vidiſſe homines
-                     impenſè do-<lb break="no"/>ctos, ſed in Ethicis minús verſatos, qui nonnun-<lb break="no"/> 
-                     quam ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi></p>
+               <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir præſtantiſſimusmDn.<lb/> 
+                  Veiraſſius varia tua Scripta Poëtica, quæ<lb/> 
+                  cum voluptate legi, imò relegi, quippe quæ<lb/> 
+                  probarent quâm cordi Tibi ſit atque curæ, ut<lb/>
+                  tenera Ætas rectè inſtituatur non modò in veræ<lb/> 
+                  Religionis fundamentis, ſed etiam in bonis Mo-<lb break="no"/>ribus. 
+                  Memini me vidiſſe homines impenſè do-<lb break="no"/>ctos, ſed in Ethicis minús verſatos, 
+                  qui nonnun-<lb break="no"/> quam ridendos ſe præbebant. Perge, quæſo, &amp;c.</hi></p>
             </div>
             <lb/>
 
             <div n="2" type="letter" xml:id="v">
-               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola V. rev. &amp;
-                        doctißimi</hi>
-                     <lb/>
-                     <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MULLERI,</hi>
-                     <lb/> Eccleſiæ Talvillanæ ad lacum Tig. Paſtoris<lb/> vigilantiſſimi; Poëtæ
-                     acutiſſimi.</hi></head>
+               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi><lb/>
+                  <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MULLERI,</hi><lb/> 
+                  Eccleſiæ Talvillanæ ad lacum Tig. Paſtoris<lb/> vigilantiſſimi; Poëtæ acutiſſimi.</hi></head>
                <lb/>
                <p><hi rendition="#aq"><hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit
-                        humanitati tuæ, ut iſtas ſacrarum Odarum <lb/> epitomas lectioni meæ, non
-                        dico cenſuræ, concrederes:<lb/> quas; juxta grates; laudis præconio ornare,
-                        &amp; ſine adulatio-<lb break="no"/>ne debeo &amp; poſſum, nec tantùm ob
-                        argumenti dignitatem,<lb/> quod eſt Theologicum; ſed &amp; ſtili in ea
-                        materie decoram<lb/> gravitatem: quâ Pſalmorum ſcopum non ſolùm rectè col-<lb break="no"/>limaſti,
-                        verùm etiam Compendiis tuis (quæ cùm ſacroſancto<lb/> textu contuli) 
-                        ſenſum eorum quaſi exhauſiſti, <abbr>&amp;c.</abbr> 22. lan.</hi></hi>
-                        <lb/> 1648.</p>
+                  humanitati tuæ, ut iſtas ſacrarum Odarum<lb/> 
+                  epitomas lectioni meæ, non dico cenſuræ, concrederes:<lb/> 
+                  quas; juxta grates; laudis præconio ornare, &amp; ſine adulatio-<lb break="no"/>ne 
+                  debeo &amp; poſſum, nec tantùm ob argumenti dignitatem,<lb/> 
+                  quod eſt Theologicum; ſed &amp; ſtili in ea materie decoram<lb/> 
+                  gravitatem: quâ Pſalmorum ſcopum non ſolùm rectè col-<lb break="no"/>limaſti,
+                  verùm etiam Compendiis tuis (quæ cùm ſacroſancto<lb/> 
+                  textu contuli) ſenſum eorum quaſi exhauſiſti, &amp;c. 22. lan.</hi></hi><lb/> 
+                  1648.</p>
             </div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">I. Ad</hi></fw>
@@ -471,22 +479,19 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="vii">
-               <head>
-                  <hi rendition="#aq #c">I.<lb/> Ad Authorem<lb/>
+               <head><hi rendition="#aq #c #b">I.<lb/> Ad Authorem<lb/>
                      <hi rendition="#i">doctißimarum Cantionum<lb/> Sacrarum</hi></hi></head>
                <lb/>
-               <head><hi rendition="#aq #c">Anagramma.<lb/> Ioannes VVilelmus Simlerus.</hi>
-                  <lb/>
-                  <hi rendition="#i">α&#x313;ναγραμματιζόμενος</hi><!-- NE: Der griechische Text muss noch geprüft werden -->
-                  <lb/>
-                  <hi rendition="#aq">Illen' vir ſuave melos Muſis?</hi></head>
+               <head><hi rendition="#aq #c #b">Anagramma.<lb/> Ioannes VVilelmus Simlerus.</hi><lb/>
+                  <hi rendition="#i #c #b">α&#x313;ναγραμματιζόμενος</hi><lb/><!-- NE: Der griechische Text muss noch geprüft werden -->
+                  <hi rendition="#aq #c #b">Illen' vir ſuave melos Muſis?</hi></head>
                <lb/>
                <lg type="poem">
-                  <l><hi rendition="#aq"><hi rendition="#in">I</hi>Lléne Vir Muſis <hi
-                           rendition="#i">&amp; Chriſto fundere dignum,</hi></hi></l>
+                  <l><hi rendition="#aq"><hi rendition="#in">I</hi>Lléne Vir Muſis 
+                     <hi rendition="#i">&amp; Chriſto fundere dignum,</hi></hi></l>
                   <lb/>
-                  <l rendition="#et"><hi rendition="#aq">Suave melos <hi rendition="#i">verbis,
-                           ſuavéque rebus, amat?</hi></hi></l>
+                  <l><hi rendition="#aq">Suave melos <hi rendition="#i">verbis,
+                     ſuavéque rebus, amat?</hi></hi></l>
                   <lb/>
                   <l><hi rendition="#aq #i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi></l>
                   <lb/>
@@ -494,9 +499,11 @@
                         habet.</hi></l>
                </lg>
                <lb/>
-               <signed rendition="#right"><hi rendition="#aq #k #g">IOH. WIRZIUS</hi></signed>
-               <lb/>
-               <signed rendition="#right"><hi rendition="#aq">honoris <abbr>c.f.</abbr></hi></signed>
+               <closer>
+                  <signed rendition="#right"><hi rendition="#aq"><hi rendition="#k #g">IOH. WIRZIUS</hi><lb/>
+                     honoris <abbr>c.f.</abbr></hi>
+                  </signed>
+               </closer>
             </div>
             <lb/>
 
@@ -504,8 +511,7 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="A.i">
-               <head>
-                  <hi rendition="#aq #c">II.<lb/>
+               <head><hi rendition="#aq #c #b">II.<lb/>
                      <hi rendition="#i">Summa totius Operis Carmine Hexa-<lb break="no"/>metro
                         expreſſa: ubi ipſe Liber loquens<lb/> introducitur.</hi></hi></head>
                <lb/>
@@ -577,11 +583,11 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xvii">
-               <head>
-                  <hi rendition="#aq #c">III.<lb/> 
-                     In laudem Autoris,<abbr>&amp;c.</abbr></hi></head>
+               <head><hi rendition="#aq #c #b">III.<lb/> 
+                     In laudem Autoris, &amp;c.</hi></head>
                <lb/>
-               <head><hi rendition="#aq">1.</hi></head>
+              <div n="3"> 
+                 <head><hi rendition="#aq #b #c">1.</hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">A</hi><hi rendition="#i">Ut prodeſſe volunt, 
@@ -593,11 +599,13 @@
                   <lb/>
                   <l rendition="#et"><hi rendition="#aq #i">Omne proin punctum nemo tuliſſe neget.</hi></l>
                </lg>
-               <lb/>
-               <fw place="bottom" type="catch"><hi rendition="#aq">2. <hi rendition="#i">Uti-</hi></hi></fw>
-               <pb facs="4017128"/>
+              </div>
+              <lb/>
+              <fw place="bottom" type="catch"><hi rendition="#aq">2. <hi rendition="#i">Uti-</hi></hi></fw>
+              <pb facs="4017128"/>
                
-               <head><hi rendition="#aq">2.</hi></head>
+              <div n="3"> 
+                 <head><hi rendition="#aq #c #b">2.</hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq #i">Utile quisquis amas, ac audis ſuave libenter,</hi></l>
@@ -610,11 +618,14 @@
                   <l rendition="#et"><hi rendition="#aq #i">Utile, ſuave ſatis; Lector;
                         utrinq<abbr>ʒ</abbr> patet.</hi></l>
                </lg>
-               <lb/>
-               <signed rendition="#et2"><hi rendition="#aq">Sinceræ affinitatis ergò poſuit</hi></signed>
+              </div>
+              <lb/>
+              <closer> 
+                 <salute rendition="#et2"><hi rendition="#aq">Sinceræ affinitatis ergò poſuit</hi></salute>
                <lb/>
                <signed rendition="#right"><hi rendition="#aq"><hi rendition="#k #g">JACOBUS REDINGERUS,</hi><lb/>
                      Paſtor Dieticonenſis.</hi></signed>
+              </closer>
             </div>
             <lb/>
 
@@ -622,17 +633,15 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xviii">
-               <head><hi rendition="#aq #c">IV.
-                     <lb/>
-                     <hi rendition="#i">Ad Reverendum Doctißimúmq<abbr>ʒ</abbr><lb/> Virum</hi>
-                     <lb/> D. GUILHELMUM SIMLERUM,<lb/> Libri Adornatorem.</hi></head>
+               <head><hi rendition="#aq #c #b">IV.<lb/>
+                  <hi rendition="#i">Ad Reverendum Doctißimúmq<abbr>ʒ</abbr><lb/> Virum</hi><lb/> 
+                  D. GUILHELMUM SIMLERUM,<lb/> Libri Adornatorem.</hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">N</hi>îl faciunt nugæ; nec inania
                         ſcripta Sophorum</hi></l>
                   <lb/>
-                  <l rendition="#et"><hi rendition="#aq">Exhilarare hominum pectora mœſta
-                        queunt:</hi></l>
+                  <l><hi rendition="#aq">Exhilarare hominum pectora mœſta queunt:</hi></l>
                   <lb/>
                   <l><hi rendition="#aq">SIMLERIast opus hoc, &amp; ſancta poëmata quemvis</hi></l>
                   <lb/>
@@ -640,28 +649,27 @@
                   <lb/>
                   <l><hi rendition="#aq">Exhilarant Muliebre Genus; Genus atque Virile;</hi></l>
                   <lb/>
-                  <l rendition="#et"><hi rendition="#aq">Exhilarant Juvenes; Erhilarântque
-                        Senes.</hi></l>
+                  <l rendition="#et"><hi rendition="#aq">Exhilarant Juvenes; Erhilarântque Senes.</hi></l>
                   <lb/>
                   <l><hi rendition="#aq">Hinc opus hoc meritò (rumpantur
                         utilia<!-- GP: Es ist noch zu prüfen, ob hier "ut Ilia" oder "utilia" steht. -->
                         Momo)</hi></l>
                   <lb/>
-                  <l rendition="#et"><hi rendition="#aq">Terra Propinqua cupit; Terra Remota
-                        cupit.</hi></l>
+                  <l rendition="#et"><hi rendition="#aq">Terra Propinqua cupit; Terra Remota cupit.</hi></l>
                </lg>
                <lb/>
-               <signed rendition="#right"><hi rendition="#aq #i">Obſervantiæ &amp; neceßitudinis ergò
-                  appoſuit<lb/> Affinis addictißimus</hi></signed>
+               <closer>
+                  <salute rendition="#et2"><hi rendition="#aq #i">Obſervantiæ &amp; neceßitudinis ergò
+                  appoſuit<lb/> Affinis addictißimus</hi></salute>
                <lb/>
                <signed rendition="#right"><hi rendition="#aq"><hi rendition="#k">JOHANNES BLASSIUS,</hi>
-                     Tigurinus,<lb/> Vitoduranorum Diaconus.</hi></signed>
+                  Tigurinus,<lb/> Vitoduranorum Diaconus.</hi></signed>
+               </closer>
             </div>
             <lb/>
-            <fw place="bottom" type="catch">V. Zu&#x366;</fw>
+            <fw place="bottom" type="catch"><hi rendition="#aq">V</hi>. Zu&#x366;</fw>
             <lb/>
             <pb facs="4017129"/>
-
 
             <div n="2" type="poem" xml:id="xix">
                <head><hi rendition="#c #b"><hi rendition="#aq">V.</hi><lb/> 
@@ -5354,7 +5362,7 @@
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head>1.</head>
                      <lb/>
                      <l><hi rendition="#in">J</hi>Eſu/ warer Gottes Sohn/</l>
                      <lb/>
@@ -5371,7 +5379,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head>2.</head>
                      <lb/>
                      <l>War es gwalt vnd feyendſchafft?</l>
                      <lb/>
@@ -5388,7 +5396,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head>3.</head>
                      <lb/>
                      <l>Nein/ o nein! noch liſt/ noch gwalt/</l>
                      <lb/>
@@ -5416,7 +5424,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head>4.</head>
                      <lb/>
                      <l>Was für dank nun ſol ich dir</l>
                      <lb/>
@@ -5433,7 +5441,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head>5.</head>
                      <lb/>
                      <l>Weil ich ſo geliebet dich/</l>
                      <lb/>
@@ -5450,7 +5458,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head><hi rendition="#c">6.</hi></head>
+                     <head>6.</head>
                      <lb/>
                      <l>Ja/ Herꝛ: aber gib du mir</l>
                      <lb/>
@@ -6434,10 +6442,7 @@
                   </lg>
                </lg>
             </div>
-            
-            <lb/>
-            <milestone unit="section" rendition="#hr"/>
-            
+
             <div n="2" xml:id="n24">
                <head><hi rendition="#c #b">Geiſtlicher Weker.</hi></head>
                <lb/>
@@ -6461,9 +6466,6 @@
                </lg>
                <lb/>
             </div>
-            
-            <milestone unit="section" rendition="#hr"/>
-            <lb/>
 
             <fw place="bottom" type="catch">Him&#x303;-</fw>
             <lb/>
