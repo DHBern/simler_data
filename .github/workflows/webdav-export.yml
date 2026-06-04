@@ -18,22 +18,39 @@ jobs:
          WEBDAV_USERNAME: ${{ secrets.WEBDAV_USERNAME }}
          WEBDAV_PASSWORD: ${{ secrets.WEBDAV_PASSWORD }}
         run: |
+          # Abort the whole step on any unhandled error or failed pipe element
+          set -euo pipefail
+
           # Base URL of the WebDAV server
           WEBDAV_URL=${{ secrets.WEBDAV_HOST }}
 
-          # Target directory
-          TARGET_DIR="webdav/data"
-          rm -rf "$TARGET_DIR"
-          mkdir -p "$TARGET_DIR"
+          # Download into a staging dir first; only swap into place once the
+          # fetch is known to have succeeded. This avoids wiping the repo's
+          # content when the WebDAV server is unavailable or returns an error.
+          STAGING_DIR="$(mktemp -d)"
 
           # Recursively fetch all files and subdirectories
           download_files() {
             local remote_path="$1"
             local local_path="$2"
 
-            # List files and directories in the current remote path
-            curl -s -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" --header "Depth: 1" --request PROPFIND "$WEBDAV_URL$remote_path" | grep -oP '(?<=<D:href>).*?(?=</D:href>)' | tail -n +2 | while read -r item; do
-              local item_name=$(basename "$item")
+            # List files and directories in the current remote path.
+            # -f makes curl fail (non-zero exit) on HTTP errors, --retry covers
+            # transient failures. Capturing into a variable lets `set -e` abort
+            # the run if the listing request fails.
+            local listing
+            listing=$(curl -fsS --retry 3 --retry-delay 5 \
+              -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" \
+              --header "Depth: 1" --request PROPFIND "$WEBDAV_URL$remote_path")
+
+            # Parse hrefs; `|| true` so an empty directory doesn't abort the run.
+            local items
+            items=$(echo "$listing" | grep -oP '(?<=<D:href>).*?(?=</D:href>)' | tail -n +2 || true)
+
+            while read -r item; do
+              [ -z "$item" ] && continue
+              local item_name
+              item_name=$(basename "$item")
 
               # Wait 2 seconds
               sleep 2
@@ -44,20 +61,59 @@ jobs:
                 download_files "$remote_path$item_name/" "$local_path/$item_name"
               else
                 # If item is a file, download it
-                curl -s -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" --header "Depth: 1" --request GET "$WEBDAV_URL$remote_path$item_name" -o "$local_path/$item_name"
+                curl -fsS --retry 3 --retry-delay 5 \
+                  -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" \
+                  --request GET "$WEBDAV_URL$remote_path$item_name" \
+                  -o "$local_path/$item_name"
               fi
-            done
+            done <<< "$items"
           }
 
           # Start downloading from the root directory
-          download_files "/" "$TARGET_DIR"
+          download_files "/" "$STAGING_DIR"
+
+          # Safety check: make sure we actually downloaded something before we
+          # delete the existing copy. A failed/empty fetch must not wipe the repo.
+          file_count=$(find "$STAGING_DIR" -type f | wc -l)
+          echo "Downloaded $file_count files from WebDAV."
+          if [ "$file_count" -eq 0 ]; then
+            echo "::error::No files downloaded from WebDAV; aborting to avoid deleting repository content."
+            exit 1
+          fi
+
+          # Swap the freshly downloaded tree into place only after success.
+          TARGET_DIR="webdav/data"
+          rm -rf "$TARGET_DIR"
+          mkdir -p "$(dirname "$TARGET_DIR")"
+          mv "$STAGING_DIR" "$TARGET_DIR"
 
       - name: Commit and Push Changes
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          set -euo pipefail
           git config user.name "GitHub Actions Bot"
           git config user.email "actions@github.com"
-          git add 'webdav/**/*.xml'
+
+          # Total tracked files under webdav/ BEFORE staging this run's changes.
+          total_before=$(git ls-files 'webdav/' | wc -l)
+
+          git add -A 'webdav/'
+
+          added=$(git diff --cached --name-only --diff-filter=A 'webdav/' | wc -l)
+          modified=$(git diff --cached --name-only --diff-filter=M 'webdav/' | wc -l)
+          deleted=$(git diff --cached --name-only --diff-filter=D 'webdav/' | wc -l)
+          echo "Staged changes under webdav/: $added added, $modified modified, $deleted deleted (was $total_before tracked)."
+
+          # Defense in depth: intentional deletions of individual files ARE
+          # allowed and committed. Only block a *catastrophic wipe* -- i.e. the
+          # run deletes (nearly) every tracked file and adds nothing back, which
+          # is the signature of a failed/empty fetch rather than a real edit.
+          if [ "$added" -eq 0 ] && [ "$modified" -eq 0 ] \
+             && [ "$total_before" -gt 0 ] && [ "$deleted" -ge "$total_before" ]; then
+            echo "::error::Refusing to commit: all $total_before tracked file(s) under webdav/ would be deleted with nothing added. Aborting to protect repository content."
+            exit 1
+          fi
+
           git commit -m "Update files from WebDAV server" || echo "No changes to commit"
           git push
