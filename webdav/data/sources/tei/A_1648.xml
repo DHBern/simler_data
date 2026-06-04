@@ -674,7 +674,7 @@
             <div n="2" type="poem" xml:id="xix">
                <head><hi rendition="#c #b"><hi rendition="#aq">V.</hi><lb/> 
                   Zu&#x366; ehren und lobwürdigem ru&#x366;hm<lb/> 
-                  dem hochgelehrten Herꝛen <lb/> Johann Wilhelm Simler/<lb/> 
+                  dem hochgelehrten Herꝛen<lb/> Johann Wilhelm Simler/<lb/> 
                   Zuchtherꝛen im <hi rendition="#aq #i">Collegio Parthenico</hi>
                   zu&#x366;<lb/> Zürich/ über ſeine außgangne Poetiſche<lb/>
                   Getichte und Geſa&#x364;nge.<lb/>
@@ -721,10 +721,13 @@
                   </lg>
                </lg>
                <lb/>
-               <signed><hi rendition="#aq #g #k #right">DANIEL RHAGORIUS,</hi>
+               <closer>
+                  <signed><hi rendition="#aq #g #k #et2">DANIEL RHAGORIUS,</hi>
                   <lb/>
                   <hi rendition="#right">Loblicher Statt Bern geweſener Vogt<lb/> 
-                     zu&#x366; Gottſtatt und Thorberg.</hi></signed>
+                     zu&#x366; Gottſtatt und Thorberg.</hi>
+                  </signed>
+               </closer>
             </div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">VI.</hi>
@@ -732,9 +735,8 @@
             <lb/>
             <pb facs="4017130"/>
 
-
             <div n="2" type="poem" xml:id="xi">
-               <head><hi rendition="#c"><hi rendition="#aq">VI.</hi><lb/>
+               <head><hi rendition="#c #b"><hi rendition="#aq">VI.</hi><lb/>
                   <hi rendition="#aq">U</hi>ber Herꝛn Dichters namen<lb/>
                   Bu&#x366;chſtabwa&#x364;chſel<lb/> JOHANN WJLHELM SJMLER/<lb/> 
                   W/ in <hi rendition="#aq">U</hi>/ und V/ aufgelo&#x364;ſet:<lb/> 
@@ -776,19 +778,21 @@
                   <l>auß Pho&#x364;bus namenbu&#x366;ch außtilgen nimmermehr.</l>
                </lg>
                <lb/>
-               <signed><hi rendition="#right">Geo&#x364;rg Müller Pfarꝛer zu&#x366; Tahlweil/<lb/>
-                     am Zürichſee.</hi></signed>
+               <closer>
+                  <signed><hi rendition="#right">Geo&#x364;rg Müller Pfarꝛer zu&#x366; Tahlweil/<lb/>
+                     am Zürichſee.</hi>
+                  </signed>
+               </closer>
             </div>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">VII.</hi> Ob</fw>
             <lb/>
             <pb facs="4017131"/>
 
-
             <div n="2" type="poem" xml:id="xiv">
-               <head><hi rendition="#aq #c">VII.</hi></head>
+               <head><hi rendition="#aq #c #b">VII.</hi></head>
                <lb/>
-               <lg>
+               <lg type="poem">
                   <l xml:id="l1a" next="#l1b"><hi rendition="#in">O</hi>B gleich der <hi rendition="#larger">Tichter</hi> kunſt
                      ſehr hoch bißher ge-</l>
                   <lb break="no"/> 
@@ -829,8 +833,7 @@
                   <lb/>
                   <l>Weil ihm der Muſen ſchar mu&#x366;ß aller enden weichen?</l>
                   <lb/>
-                  <l rendition="#et">Dem edelen <hi rendition="#larger #aq">Bartas</hi> hat er bey vns mehr
-                     pracht/</l>
+                  <l rendition="#et">Dem edelen <hi rendition="#larger #aq">Bartas</hi> hat er bey vns mehr pracht/</l>
                   <lb/>
                   <l xml:id="l3a" next="#l3b" rendition="#et">Alß <hi rendition="#larger #aq">Gamon</hi> durch vorwitz Jhm etwan
                      ſchimpf ge-</l>
@@ -844,16 +847,13 @@
                   <lb/>
                   <l rendition="#et">Jeruſalem hat ihm ſo groſſes lob erwekt/</l>
                   <lb/>
-                  <l rendition="#et">Daß <hi rendition="#larger #aq">Taſſus</hi> ſelbſt vor ihm ſein
-                     angeſicht verdekt.</l>
+                  <l rendition="#et">Daß <hi rendition="#larger #aq">Taſſus</hi> ſelbſt vor ihm ſein angeſicht verdekt.</l>
                   <lb/>
-                  <l>Hat <hi rendition="#larger #aq">Lundius</hi> nicht auch ſein feder hoch
-                     geſchwungen?</l>
+                  <l>Hat <hi rendition="#larger #aq">Lundius</hi> nicht auch ſein feder hoch geſchwungen?</l>
                   <lb/>
                   <l>Jſt der lieb <hi rendition="#larger #aq">Riſtius</hi> nicht an Parnaß geſprungen/</l>
                   <lb/>
-                  <l rendition="#et">Wo <hi rendition="#larger #aq">Pegaſus</hi> ſein huef hat in den felß
-                     geſetzt</l>
+                  <l rendition="#et">Wo <hi rendition="#larger #aq">Pegaſus</hi> ſein huef hat in den felß geſetzt</l>
                   <lb/>
                   <l rendition="#et">Von dem ſeithero ſich der Muſen Thron benetzt?</l>
                   <lb/>
@@ -967,7 +967,9 @@
                   <!-- HS: "hab" steht in der vorangehenden Zeile; wie codieren? -->
                </lg>
                <lb/>
-               <signed><hi rendition="#right">Ehrenhold Falk von Traubenberg.</hi></signed>
+               <closer>
+                  <signed><hi rendition="#right">Ehrenhold Falk von Traubenberg.</hi></signed>
+               </closer>
             </div>
             <lb/>
 
@@ -975,7 +977,7 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xvi">
-               <head><hi rendition="#aq #c">VIII.</hi></head>
+               <head><hi rendition="#aq #c #b">VIII.</hi></head>
                <lb/>
                <lg type="poem">
                   <lg>
@@ -1016,7 +1018,9 @@
                   </lg>
                </lg>
                <lb/>
-               <signed><hi rendition="#right">Johann Jakob Bodmer.</hi></signed>
+               <closer>
+                  <signed><hi rendition="#right">Johann Jakob Bodmer.</hi></signed>
+               </closer>
             </div>
             <lb/>
             <fw place="bottom" type="catch">Vier-</fw>
