@@ -9,7 +9,8 @@
                 <title type="main">TEIL 2 VON: Johann-Wilhelm Simlers teutscher Getichten die
                     dritte, von ihme selbsten um einen Drittheil vermehrt- und verbesserte
                     Aussfertigung</title>
-                <author><persName ref="http://d-nb.info/gnd/119151693"><surname>Simler</surname><forename>Johann
+                <author><persName ref="http://d-nb.info/gnd/119151693"
+                            ><surname>Simler</surname><forename>Johann
                     Wilhelm</forename></persName></author>
             </titleStmt>
             <editionStmt>
@@ -29,7 +30,6 @@
     <text>
         <body>
             <pb n="59" facs="4049258"/>
-
             <div n="1">
                 <head><hi rendition="#b #c">Andächtige <lb/>Fest- und unterweisungs-<lb break="no"
                         />Gesänge.</hi></head>
@@ -1760,7 +1760,7 @@
                             <lb/>
                             <l>und die erlangte gnad darbey/</l>
                             <lb/>
-                            <l rendition="#et">noch heüt eim ieden sünder</l>
+                            <l rendition="#et">noch heüt eim jeden sünder</l>
                             <lb/>
                             <l>der ab des Herren wort erschrikt/</l>
                             <lb/>
@@ -1796,7 +1796,9 @@
                             <lb/>
                             <l>daß der gefangne Jesus Christ</l>
                             <lb/>
-                            <l rendition="#et">der Schilo sey mit nammen.</l>
+                            <l rendition="#et">der
+                                Schilo<!-- Biblische Figur? Als Person taggen? --> sey mit
+                                nammen.</l>
                         </lg>
                         <lb/>
                         <lg n="23">
@@ -1978,7 +1980,7 @@
                         <lg n="29">
                             <head>29.</head>
                             <lb/>
-                            <l>Weg/ weg mit disem! ieder schrey/</l>
+                            <l>Weg/ weg mit disem! jeder schrey/</l>
                             <lb/>
                             <l>nicht Jesus: <rs type="person" key="person_063">Barrabas</rs> werd
                                 frey/</l>
@@ -2224,7 +2226,7 @@
                             <lb/>
                             <l rendition="#et">zum Tohr hinauß geführet:</l>
                             <lb/>
-                            <l>Er tragt/ wie <rs type="person" key="person_104">Jsak</rs>/ selbs
+                            <l>Er tragt/ wie <rs type="person" key="person_104">Isak</rs>/ selbs
                                 auff sich</l>
                             <lb/>
                             <l>sein marterholtz gedultiglich/</l>
@@ -2253,7 +2255,7 @@
                             <lb/>
                             <l rendition="#et">die weiber ihn beweinen :/:</l>
                             <lb/>
-                            <l>ihr <rs type="place" key="place_021">Salem</rs>stöchter; spricht der
+                            <l>Ihr <rs type="place" key="place_021">Salem</rs>stöchter; spricht der
                                 Herr;</l>
                             <lb/>
                             <l>Ach! weinet über eüch vilmehr/</l>
@@ -2286,13 +2288,16 @@
                             <lb/>
                             <l>von Todtenschädlen/ Schädelort;</l>
                             <lb/>
-                            <l>(sonst Golgotha vom stammen wort)</l>
+                            <l>(sonst Golgotha<!-- Als Ort taggen? --> vom stammen wort)</l>
                             <lb/>
                             <l rendition="#et">mit Greülen sehr beschmeisset.</l>
                             <lb/>
                             <l>Da gibt man ihme Myrrhenwein;</l>
                             <lb/>
-                            <l>ein trank den ũbeltähtern gmein;</l>
+                            <l>ein trank den <choice>
+                                    <sic>ũ</sic>
+                                    <corr>ü</corr>
+                                </choice>beltähtern gmein;</l>
                             <lb/>
                             <l rendition="#et">die todesangst zustillen:</l>
                             <lb/>
@@ -2342,7 +2347,7 @@
                             <lb/>
                             <l>O/ daß wir wolbedächten die/</l>
                             <lb/>
-                            <l>zumeiden alles ie und ie</l>
+                            <l>zumeiden alles je und je</l>
                             <lb/>
                             <pb n="111" facs="4049310"/>
                             <l rendition="#et">was wider möcht verdammen.</l>
@@ -2380,7 +2385,7 @@
                             <lb/>
                             <l>alß ihr Heilschlänglein schauen an</l>
                             <lb/>
-                            <l rendition="#et">im glauben iederzeiten.</l>
+                            <l rendition="#et">im glauben jederzeiten.</l>
                             <lb/>
                             <l>Die mörder/ ihme zugesellt/</l>
                             <lb/>
@@ -2491,7 +2496,7 @@
                             <lb/>
                             <l rendition="#et">er mag sich nicht erwehren.</l>
                             <lb/>
-                            <l>Jst er der Christ/ und Köng vorab</l>
+                            <l>Ist er der Christ/ und Köng vorab</l>
                             <lb/>
                             <l>des Judenfolks/ so steig er nab</l>
                             <lb/>
@@ -2513,7 +2518,7 @@
                             <lb/>
                             <l rendition="#et">ist über alle plagen :/:</l>
                             <lb/>
-                            <l>Nun schreiten wir ietz weiter fort/</l>
+                            <l>Nun schreiten wir jetz weiter fort/</l>
                             <lb/>
                             <l>zuhören Christus letzte Wort/</l>
                             <lb/>
@@ -2554,7 +2559,7 @@
                             <lb/>
                             <l rendition="#et">vom Kreütze stuhnd zugegen.</l>
                             <lb/>
-                            <l>ihr kinder/ lehrnt dem Herren ab/</l>
+                            <l>Ihr kinder/ lehrnt dem Herren ab/</l>
                             <lb/>
                             <l>und dem <rs type="person" key="person_073">Johannes</rs>/ biß ins
                                 grab/</l>
@@ -2601,7 +2606,7 @@
                             <lb/>
                             <l>warüber einer auß der Rott</l>
                             <lb/>
-                            <l>ihm Essig und Jsopen bott</l>
+                            <l>ihm Essig und Isopen bott</l>
                             <lb/>
                             <l rendition="#et">auß einem spötterhertzen.</l>
                             <lb/>
@@ -2720,7 +2725,7 @@
                             <lb/>
                             <l rendition="#et">ohn Sabbaths übertretten.</l>
                             <lb/>
-                            <l>ihr heüchler suchet Sabbathsfeir/</l>
+                            <l>Ihr heüchler suchet Sabbathsfeir/</l>
                             <lb/>
                             <l>den Sabbathsherren tödet ihr;</l>
                             <lb/>
@@ -2742,7 +2747,7 @@
                             <lb/>
                             <l rendition="#et">ihm werd man kein bein brechen :/:</l>
                             <lb/>
-                            <l>Seins tods iedoch gewüß zuseyn/</l>
+                            <l>Seins tods jedoch gewüß zuseyn/</l>
                             <lb/>
                             <l>ein kriegsknecht in die Seit hineyn/</l>
                             <lb/>
@@ -2854,17 +2859,17 @@
                         <lg n="59">
                             <head>59.</head>
                             <lb/>
-                            <l>O/ gantz verkehrt- verderbtes gschlecht/</l>
+                            <l>O/ gantz verkehrt-verderbtes gschlecht/</l>
                             <lb/>
                             <l>ist euch/ was andern sünd ist/ recht?</l>
                             <lb/>
                             <l rendition="#et">seind dises Osterwerkhe?</l>
                             <lb/>
-                            <l>ihr führtet wider Christus Klag/</l>
+                            <l>Ihr führtet wider Christus Klag/</l>
                             <lb/>
                             <l>so bald er heilt am Sabbathtag:</l>
                             <lb/>
-                            <l rendition="#et">ietz gebt ihr selbs gemerke</l>
+                            <l rendition="#et">jetz gebt ihr selbs gemerke</l>
                             <lb/>
                             <l>der gleyßnerey; partheyligkeit;</l>
                             <lb/>
@@ -2895,7 +2900,7 @@
                             <pb n="119" facs="4049318"/>
                             <l rendition="#et">und werden neügeboren.</l>
                             <lb/>
-                            <l>ihr aber die ihr leide trägt/</l>
+                            <l>Ihr aber die ihr leide trägt/</l>
                             <lb/>
                             <l>und glaubt an Christus/ nicht verzägt/</l>
                             <lb/>
@@ -5928,9 +5933,7 @@
                     <lb/>
                 </div>
             </div>
-
             <pb n="193" facs="4049392"/>
-
         </body>
     </text>
 </TEI>
