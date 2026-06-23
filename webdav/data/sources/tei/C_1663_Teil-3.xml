@@ -7066,11 +7066,12 @@
                     <p><hi rendition="#c">Jn der weise: Jesus wahrer Gottes Sohn/ etc.</hi></p>
                     <lb/>
 
-                    <!--Linke Spalte kodieren [CF]-->
+                    <!--NE: Positionen der notes/Marginalien überprüfen-->
                     <div type="poem">
-
                         <lg type="poem">
                             <lg n="1">
+                                <note place="right" type="marginalia"><hi rendition="#smaller"><rs type="person" key="person_049">David</rs> bit<lb break="no"/>tet für <rs type="person" key="person_103">Salo<lb break="no"/>mon</rs>: daß<lb/> Gott ihn
+                                    be<lb break="no"/>gaabe 1. mit <lb/>Gerechtig<lb break="no"/>keit 2. Jhm <lb/>öffne seine <lb/>Gerichte:</hi></note>
                                 <l><hi rendition="#in">H</hi>Errscher auff dem höchsten trohn/</l>
                                 <lb/>
                                 <l>gib dem König/ Königs- sohn</l>
@@ -7086,6 +7087,9 @@
                             <lb/>
 
                             <lg n="2">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">und lehrt hie<lb break="no"/>mit
+                                    alle Re<lb break="no"/>genten/ wie sie <lb/>regieren sol<lb break="no"/>len.<lb/> Frücht ei<lb break="no"/>nes rechten<lb/> Regiments.<lb/>
+                                    1. Frid und <lb/>Gerechtig<lb break="no"/>keit.</hi></note>
                                 <l>Daß er/ nach gewissen/ richt/</l>
                                 <lb/>
                                 <l>reich- und armer händel schlicht/</l>
@@ -7101,6 +7105,7 @@
                             <lb/>
 
                             <lg n="3">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">2. Schutz der<lb/> armen.</hi></note>
                                 <l>Diser König/ fromm und frey/</l>
                                 <lb/>
                                 <l>wird den armen stehen bey</l>
@@ -7118,6 +7123,7 @@
                             <pb n="350" facs="4049549"/>
 
                             <lg n="4">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">3. Waarer<lb/> glaub und<lb/> Gottesforcht</hi></note>
                                 <l>Jederman mit forchten ihn</l>
                                 <lb/>
                                 <l>wird verehren förterhin</l>
@@ -7133,6 +7139,7 @@
                             <lb/>
 
                             <lg n="5">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">4. Gemeiner<lb/> wolstand und<lb/> verbesserung<lb/> aller mäng<lb break="no"/>len.</hi></note>
                                 <l>Einem Regen er geleicht/</l>
                                 <lb/>
                                 <l>der von oben ab befeucht</l>
@@ -7163,6 +7170,7 @@
                             <lb/>
 
                             <lg n="7">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">5. Mehrung<lb/> des Reychs.</hi></note>
                                 <l>Er wird herrschen nah und fehr/</l>
                                 <lb/>
                                 <l>ja/ von eim zum andern Meer/</l>
@@ -7194,6 +7202,8 @@
                             <lb/>
 
                             <lg n="9">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">Wideräfe<lb break="no"/>rung<!-- NE: Helvetismus für Wiederholung; siehe 'äferen' im Idiotikon --> der ei<lb break="no"/>genschaften<lb/> eines guten<lb/> Regenten/<lb/> darauß
+                                    vor<lb break="no"/>gemeldte<lb/> Frücht ent<lb break="no"/>springen.</hi></note>
                                 <l>Dan den arm-verlaßnen mann</l>
                                 <lb/>
                                 <l>wird er retten/ und fortan</l>
@@ -7209,6 +7219,8 @@
                             <lb/>
 
                             <lg n="10">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">Belohnung<lb/> eines trewen<lb/> Regenten.<lb/>
+                                    1. Langes<lb/> Leben<lb/> 2. Reich<lb break="no"/>tage.<lb/> 3. Gunst<lb/> und ehre.</hi></note>
                                 <l>Er wird leben/ und zugleich</l>
                                 <lb/>
                                 <l>wird ihm das <rs type="place" key="place_044">Arabisch Reich</rs></l>
@@ -7224,6 +7236,7 @@
                             <lb/>
 
                             <lg n="11">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">4. Frucht<lb break="no"/>barkeit des<lb/> Lands.</hi></note>
                                 <l>Wirfft man auß/ auff dürrer heid/</l>
                                 <lb/>
                                 <l>eine hand fol vom getreid/</l>
@@ -7239,6 +7252,8 @@
                             <lb/>
 
                             <lg n="12">
+                                <note place="right" type="marginalia"><hi rendition="#smaller">5. Meh<lb break="no"/>rung des<lb/> Volks.<lb/> 6. Ehrli<lb break="no"/>cher Namm/<lb/> und lobliches<lb/>
+                                    gedächtnuß<lb/> under allen<lb/> völkern.</hi></note>
                                 <l>Wolbewohnte Stätte man/</l>
                                 <lb/>
                                 <l>gu&#x364;nend wie das graß voran/</l>
@@ -7262,6 +7277,8 @@
                                 <lb/>
                                 <l rendition="#et">und ihn selig preisen:</l>
                                 <lb/>
+                                <note place="right" type="marginalia"><hi rendition="#smaller">Vndertah<lb break="no"/>nen sollen<lb/> Gott loben/<lb/> und ihm dan<lb break="no"/>ken
+                                    wann er<lb/> gute Regen<lb break="no"/>ten und Obe<lb break="no"/>ren gibt.</hi></note>
                                 <l>Jsraels Gott in der Gmein/</l>
                                 <lb/>
                                 <l>weil er wunder würkt allein/</l>
@@ -7285,50 +7302,13 @@
                             </lg>
                         </lg>
                         <lb/>
-
                     </div>
 
-                    <!--Rechte Spalte kodieren [CF]-->
-                    <div>
-
-                        <p><hi rendition="#smaller"><rs type="person" key="person_049">David</rs> bit<lb break="no"/>tet für <rs type="person" key="person_103">Salo<lb break="no"/>mon</rs>: daß <lb/>Gott ihn
-                            be<lb break="no"/>gaabe</hi></p>
-                        <p><hi rendition="#smaller">1. mit <lb/>Gerechtig<lb break="no"/>keit</hi></p>
-                        <p><hi rendition="#smaller">2. Jhm <lb/>öffne seine <lb/>Gerichte: <lb/>und lehrt hie<lb break="no"/>mit
-                            alle Re<lb break="no"/>genten/ wie sie <lb/>regieren sol<lb break="no"/>len.</hi></p>
-
-                        <p><hi rendition="#smaller">Frücht ei<lb break="no"/>nes rechten <lb/>Regiments.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>1. Frid und <lb/>Gerechtig<lb break="no"/>keit.</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>2. Schutz der <lb/>armen.</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>3. Waarer <lb/>glaub und <lb/>Gottesforcht</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>4. Gemeiner <lb/>wolstand und <lb/>verbesserung</hi></p>
-                        <p><hi rendition="#smaller"><lb/>aller mäng<lb break="no"/>len.</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>5. Mehrung <lb/>des Reychs.</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>Widerä<unclear reason="uncleanPrint">f</unclear>e<lb break="no"/>rung der ei<lb break="no"/>genschaften <lb/>eines guten <lb/>Regenten/ <lb/>darauß
-                            vor<lb break="no"/>gemeldte <lb/>Frücht ent<lb break="no"/>springen.</hi></p>
-
-                        <p><hi rendition="#smaller"><lb/>Belohnung <lb/>eines trewen <lb/>Regenten.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>1. Langes <lb/>Leben</hi></p>
-                        <p><hi rendition="#smaller"><lb/>2. Reich<lb break="no"/>tage.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>3. Gunst <lb/>und ehre.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>4. Frucht<lb break="no"/>barkeit des <lb/>Lands.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>5. Meh<lb break="no"/>rung des <lb/>Volks.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>6. Ehrli<lb break="no"/>cher Namm/ <lb/>und lobliches <lb/>gedächtnuß
-                            <lb/>under allen <lb/>völkern.</hi></p>
-                        <p><hi rendition="#smaller"><lb/>Vndertah<lb break="no"/>nen sollen <lb/>Gott loben/ <lb/>und ihm dan<lb break="no"/>ken
-                            wann er <lb/>gute Regen<lb break="no"/>ten und Obe<lb break="no"/>ren gibt.</hi></p>
-
-                    </div>
-
-                    <closer>Getrukt in dem Fridenwünschenden <lb/>Heiljahr: <lb/><rs type="person" key="person_229">Herr Rahn</rs> <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t
+                    <closer rendition="#c">Getrukt in dem Fridenwünschenden <lb/>Heiljahr: <lb/><rs type="person" key="person_229">Herr Rahn</rs> <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t
                         <hi rendition="#aq">IM</hi> Fr<hi rendition="#aq">ID</hi>en <lb/>re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.</closer>
                     <lb/>
                 </div>
+                <milestone unit="section" rendition="#hr"/><lb/>
 
                 <div n="2" xml:id="n79">
                     <head><label>[79.]</label>

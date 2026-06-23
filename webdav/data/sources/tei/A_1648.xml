@@ -480,9 +480,8 @@
 
             <div n="2" type="poem" xml:id="vii">
                <head><hi rendition="#aq #c #b">I.<lb/> Ad Authorem<lb/>
-                     <hi rendition="#i">doctißimarum Cantionum<lb/> Sacrarum</hi></hi></head>
-               <lb/>
-               <head><hi rendition="#aq #c #b">Anagramma.<lb/> Ioannes VVilelmus Simlerus.</hi><lb/>
+                     <hi rendition="#i">doctißimarum Cantionum<lb/> Sacrarum</hi><lb/>
+               Anagramma.<lb/> Ioannes VVilelmus Simlerus.</hi><lb/>
                   <hi rendition="#i #c #b">α&#x313;ναγραμματιζόμενος</hi><lb/><!-- NE: Der griechische Text muss noch geprüft werden -->
                   <hi rendition="#aq #c #b">Illen' vir ſuave melos Muſis?</hi></head>
                <lb/>
@@ -1044,7 +1043,7 @@
          <pb facs="4017134" n="[1]"/>
 
          <div n="1">
-            <head><hi rendition="#c">Vierverſe <lb/> über die Pſalmen <hi rendition="#in"
+            <head><hi rendition="#c #b">Vierverſe <lb/> über die Pſalmen <hi rendition="#in"
                   >D</hi>avids/ <lb/> darinnen der Jnhalt eines jeden <lb/> Pſalms hauptbegrifflich
                   für- <lb break="no"/> geſtellt wird: <lb/> Abgetheilt in 5. bu&#x364;cher und ſo
                   vil <lb/> geſangsweiſen.</hi></head>
@@ -1060,7 +1059,7 @@
             <div n="2" xml:id="n1">
 
                <!-- Musiknoten -->
-               <div n="3">
+               <div type="poem">
                   <head><hi rendition="#aq">I. Cantus.</hi></head>
                   <lb/>
                   <lg type="poem">
@@ -1076,7 +1075,7 @@
                   <lb/>
                </div>
 
-               <div>
+               <div type="poem">
                   <head><hi rendition="#aq">Tenor.</hi></head>
                   <lb/>
                   <lg type="poem">
@@ -1099,7 +1098,7 @@
                <fw place="top" type="header">der Pſalmen.</fw>
                <lb/>
 
-               <div>
+               <div type="poem">
                   <head><hi rendition="#aq">Altus.</hi></head>
                   <lb/>
                   <lg type="poem">
@@ -1115,7 +1114,7 @@
                   <lb/>
                </div>
 
-               <div>
+               <div type="poem">
                   <head><hi rendition="#aq">Baſis.</hi></head>
                   <lb/>
                   <lg type="poem">
@@ -1907,7 +1906,6 @@
                      der<lb/>Pſalmen.</hi></p>
                </div>
             </div>
-         </div>
 
          <pb facs="4017145" n="12"/>
 
@@ -4198,6 +4196,7 @@
                <p><hi rendition="#c #smaller">Ende der Vierverſen über die<lb/>Pſalmen
                   Davids.</hi></p>
             </div>
+         </div>
          </div>
 
          <!-- Teil II -->

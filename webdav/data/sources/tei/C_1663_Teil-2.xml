@@ -577,12 +577,12 @@
                     <p><hi rendition="#c">In der weis: <lb/>Einsmals mich ein lust ankam/
                         etc.</hi></p>
                     <lb/>
-                    <!--Bereich überarbeiten (Label, Einrückung) [CF]-->
+                    <!--NE: Sprechakte (Seel, Christus) vorerst als note/Marginalie kodiert. Type 'speaker' muss im Schema noch erlaubt werden.   -->
                     <lg type="poem">
                         <lg n="1">
                             <head>1.</head>
                             <lb/>
-                            <label>Seel</label>
+                            <note place="left" type="speaker">Seel</note>
                             <l><hi rendition="#in">J</hi>Esus/ warer Gottes Sohn/</l>
                             <lb/>
                             <l>deines Vatters freud und won/</l>
@@ -615,7 +615,7 @@
                         <lg n="3">
                             <head>3.</head>
                             <lb/>
-                            <label>Christus</label>
+                            <note place="left" type="speaker">Christus</note>
                             <l>Nein/ o nein! noch gwalt/ noch list/</l>
                             <lb/>
                             <l>noch so was dergleichen ist/</l>
@@ -633,7 +633,7 @@
                         <lg n="4">
                             <head>4.</head>
                             <lb/>
-                            <label>Seel</label>
+                            <note place="left" type="speaker">Seel</note>
                             <l>Was für dank nun sol ich dir</l>
                             <lb/>
                             <l>für die liebe/ die du mir</l>
@@ -650,7 +650,7 @@
                         <lg n="5">
                             <head>5.</head>
                             <lb/>
-                            <label>Christus</label>
+                            <note place="left" type="speaker">Christus</note>
                             <l>Weil ich so geliebet dich/</l>
                             <lb/>
                             <l>solst hinwider lieben mich/</l>
@@ -667,7 +667,7 @@
                         <lg n="6">
                             <head>6.</head>
                             <lb/>
-                            <label>Seel</label>
+                            <note place="left" type="speaker">Seel</note>
                             <l>Ja/ Herr: aber gib du mir</l>
                             <lb/>
                             <l>deine gnad/ zu folgen dir/</l>
@@ -684,14 +684,14 @@
                         <lg n="7">
                             <head>7.</head>
                             <lb/>
-                            <label>Christus</label>
+                            <note place="left" type="speaker">Christus</note>
                             <l>Ich/ dein liebstes seelenpfand/</l>
                             <lb/>
                             <l>stärke deine glaubenshand/</l>
                             <lb/>
                             <l rendition="#et">vester mich zu fassen.</l>
                             <lb/>
-                            <label>Seel</label>
+                            <note place="left" type="speaker">Seel</note>
                             <l>Hin/ o welt/ und was in dir/</l>
                             <lb/>
                             <l>Jesus wil verbleiben mir/</l>
@@ -3252,6 +3252,8 @@
                     </lg>
                     <lb/>
                 </div>
+                <milestone unit="section" rendition="#hr"/>
+                <lb/>
                 <div n="2" xml:id="n16">
                     <head>
                         <label>[16.]</label>
@@ -3264,8 +3266,8 @@
                         <lg n="1">
                             <head>[1.]</head>
                             <lb/>
-                            <l rendition="#et"><hi rendition="#in">A</hi>uf disen tag den starken
-                                Helden preiset/</l>
+                            <l><hi rendition="#in">A</hi>uf disen tag den starken Helden
+                                preiset/</l>
                             <lb/>
                             <l>und ihme dank/ für die Erlösung/ weiset</l>
                             <lb/>
@@ -3278,7 +3280,7 @@
                             <lb/>
                             <l>durch seinen Tod und Auferstehn gedämpfet;</l>
                             <lb/>
-                            <l rendition="#et">ietz gfangen führt so gnennte gfangenschaft</l>
+                            <l rendition="#et">jetz gfangen führt so gnennte gfangenschaft</l>
                             <lb/>
                             <l rendition="#et">und/ im Triumf/ schauträget alß sieghaft.</l>
                         </lg>
@@ -3286,7 +3288,7 @@
                         <lg n="2">
                             <head>2.</head>
                             <lb/>
-                            <l rendition="#et">Lob seye dir/ der/ auf dem Wolkenwagen/</l>
+                            <l>Lob seye dir/ der/ auf dem Wolkenwagen/</l>
                             <lb/>
                             <l>so herrlich wirst/ gen Himmel/ aufgetragen/</l>
                             <lb/>
@@ -3300,14 +3302,14 @@
                             <lb/>
                             <l rendition="#et">in hertzensangst und widerwertigkeit/</l>
                             <lb/>
-                            <l rendition="#et">mit satem Trost begegnest iederzeit.</l>
+                            <l rendition="#et">mit satem Trost begegnest jederzeit.</l>
                         </lg>
                         <lb/>
                         <pb n="129" facs="4049328"/>
                         <lg n="3">
                             <head>3.</head>
                             <lb/>
-                            <l rendition="#et">Du Lebensfürst/ von ewigkeit entsprossen/</l>
+                            <l>Du Lebensfürst/ von ewigkeit entsprossen/</l>
                             <lb/>
                             <l>hast widerum den Himmel aufgeschlossen/</l>
                             <lb/>
@@ -3327,7 +3329,7 @@
                         <lg n="4">
                             <head>4.</head>
                             <lb/>
-                            <l rendition="#et">Du Haubt der Gmein/ wirst uns/ alß deine Glider/</l>
+                            <l>Du Haubt der Gmein/ wirst uns/ alß deine Glider/</l>
                             <lb/>
                             <l>mitnemmen einst/ wan du wirst kommen wider/</l>
                             <lb/>
@@ -3341,13 +3343,13 @@
                             <lb/>
                             <l rendition="#et">dan uns verlangt zusingen für und für/</l>
                             <lb/>
-                            <l rendition="#et">im Paradeis/ das dreyfach HEJLJG/ dir!</l>
+                            <l rendition="#et">im Paradeis/ das dreyfach HEILIG/ dir!</l>
                         </lg>
                         <lb/>
                         <lg n="5">
                             <head>5.</head>
                             <lb/>
-                            <l rendition="#et">Hilf/ daß wir hier/ in disem jammerleben/</l>
+                            <l>Hilf/ daß wir hier/ in disem jammerleben/</l>
                             <lb/>
                             <l>die Himmelfahrt/ im glauben/ recht anheben/</l>
                             <lb/>
@@ -3376,14 +3378,14 @@
                     <head>
                         <label>[17.]</label>
                         <lb/>
-                        <hi rendition="#b #c">Bittgesang/ zu dem H Geist.</hi></head>
+                        <hi rendition="#b #c">Bittgesang/ zu dem H. Geist.</hi></head>
                     <lb/>
-                    <p><hi rendition="#c">In der weise des 38. Psalmens. <lb/>Herr/ zur zucht in
+                    <p><hi rendition="#c">In der weise des 38. Psalmens.<lb/> Herr/ zur zucht in
                             deinem grimme.</hi></p>
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
-                            <head><hi rendition="#c">[1.]</hi></head>
+                            <head>[1.]</head>
                             <lb/>
                             <l><hi rendition="#in">D</hi>u/ der auff dem wasser schwebte/</l>
                             <lb/>
@@ -3399,9 +3401,9 @@
                         </lg>
                         <lb/>
                         <lg n="2">
-                            <head><hi rendition="#c">2.</hi></head>
+                            <head>2.</head>
                             <lb/>
-                            <l>Komm auch ietz/ du Geist der gnaden/</l>
+                            <l>Komm auch jetz/ du Geist der gnaden/</l>
                             <lb/>
                             <l>komm/ geladen/</l>
                             <lb/>
@@ -3415,7 +3417,7 @@
                         </lg>
                         <lb/>
                         <lg n="3">
-                            <head><hi rendition="#c">3.</hi></head>
+                            <head>3.</head>
                             <lb/>
                             <l>Lösch/ <hi rendition="#aq">ô</hi> Quell/ den durst der seelen/</l>
                             <lb/>
@@ -3431,7 +3433,7 @@
                         </lg>
                         <lb/>
                         <lg n="4">
-                            <head><hi rendition="#c">4.</hi></head>
+                            <head>4.</head>
                             <lb/>
                             <l>Starcker Wind/ den staub der sünden/</l>
                             <lb/>
@@ -3442,13 +3444,13 @@
                             <l>daß wir/ sonder widerstreben/</l>
                             <lb/>
                             <pb n="133" facs="4049332"/>
-                            <l>heilig leben.</l>
+                            <l>heilig leben/</l>
                             <lb/>
                             <l>wie es ist des Vatters will.</l>
                         </lg>
                         <lb/>
                         <lg n="5">
-                            <head><hi rendition="#c">5.</hi></head>
+                            <head>5.</head>
                             <lb/>
                             <l>Himmelsflamm/ die zung besizze/</l>
                             <lb/>
@@ -3464,7 +3466,7 @@
                         </lg>
                         <lb/>
                         <lg n="6">
-                            <head><hi rendition="#c">6.</hi></head>
+                            <head>6.</head>
                             <lb/>
                             <l>Ewigs Liecht/ uns geistlich blinden/</l>
                             <lb/>
@@ -3480,7 +3482,7 @@
                         </lg>
                         <lb/>
                         <lg n="7">
-                            <head><hi rendition="#c">7.</hi></head>
+                            <head>7.</head>
                             <lb/>
                             <l>Kraft des Höchsten/ in uns sterke/</l>
                             <lb/>
@@ -3496,7 +3498,7 @@
                         </lg>
                         <lb/>
                         <lg n="8">
-                            <head><hi rendition="#c">8.</hi></head>
+                            <head>8.</head>
                             <lb/>
                             <l>Gottes raht und rechter Finger/</l>
                             <lb/>
@@ -3551,12 +3553,12 @@
                         <lg n="2">
                             <head>2.</head>
                             <lb/>
-                            <l><rs type="person" key="person_301">Sauls sohn</rs>/ hinkend und auch
+                            <l><rs type="person" key="person_301">Sauls sohn</rs><!-- Es handelt sich hier nicht wie angegeben um Sauls Sohn, sondern um Sauls Enkel Merib–Baal/Mefi-Boschet -->/ hinkend und auch
                                 lame/</l>
                             <lb/>
                             <l>alß er disen trost bekame/</l>
                             <lb/>
-                            <l>daß er sich zu <rs type="person" key="person_049">David</rs>s
+                            <l>daß er sich zu <rs type="person" key="person_049">Davids</rs>
                                 tisch</l>
                             <lb/>
                             <l>förter solte setzen frisch:</l>
