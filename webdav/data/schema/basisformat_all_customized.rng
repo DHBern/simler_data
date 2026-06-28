@@ -5,9 +5,9 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2025-10-02T14:37:28Z. . 
-TEI Edition: P5 Version 4.10.0. Last updated on 15th August 2025, revision ebf0834e1 
-TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0/ 
+Schema generated from ODD source 2026-06-25T12:31:21Z. . 
+TEI Edition: P5 Version 4.11.0. Last updated on 18th February 2026, revision 358d2e48e 
+TEI Edition Location: https://www.tei-c.org/Vault/P5/4.11.0/ 
   
 --><!--[https://creativecommons.org/licenses/by-sa/3.0/de/deed.en] Distributed under the Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) Licence.-->
    <define name="tei_macro.paraContent">
@@ -267,6 +267,14 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.10.0/
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manuskripte:) Vorgedrucktes auf der Manuskriptseite</a:documentation>
                      <value>#mRetrace</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manuskripte:) nachgeschrieben</a:documentation>
+                     <value>#twocol</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">twocol</a:documentation>
+                     <value>#acrostic</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acrostic</a:documentation>
+                     <value>#acroInit</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acroInit</a:documentation>
+                     <value>#acroFin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acroFin</a:documentation>
                   </choice>
                </oneOrMore>
             </list>
@@ -1809,6 +1817,7 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    <define name="tei_model.divTopPart">
       <choice>
          <ref name="tei_model.headLike"/>
+         <ref name="tei_address"/>
          <ref name="tei_opener"/>
          <ref name="tei_signed"/>
       </choice>
@@ -1841,6 +1850,7 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    </define>
    <define name="tei_model.divBottomPart">
       <choice>
+         <ref name="tei_address"/>
          <ref name="tei_trailer"/>
          <ref name="tei_closer"/>
          <ref name="tei_signed"/>
@@ -2256,7 +2266,7 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
    </define>
    <define name="tei_p">
       <element name="p">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(paragraph) marks paragraphs in prose. [3.1. Paragraphs 7.2.6. Speech Contents]</a:documentation>
          <ref name="tei_macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2386,6 +2396,14 @@ Suggested values include: 1] sole; 2] major; 3] minor</a:documentation>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manuskripte:) Vorgedrucktes auf der Manuskriptseite</a:documentation>
                      <value>#mRetrace</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(Manuskripte:) nachgeschrieben</a:documentation>
+                     <value>#twocol</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">twocol</a:documentation>
+                     <value>#acrostic</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acrostic</a:documentation>
+                     <value>#acroInit</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acroInit</a:documentation>
+                     <value>#acroFin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">acroFin</a:documentation>
                   </choice>
                </oneOrMore>
             </list>
@@ -2762,6 +2780,42 @@ Normalization 13. Critical Apparatus]</a:documentation>
                </zeroOrMore>
             </oneOrMore>
          </group>
+         <ref name="tei_att.canonical.attributes"/>
+         <optional>
+            <attribute name="type">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the address in some sense, using any convenient classification scheme or typology.
+Suggested values include: 1] billing; 2] delivery; 3] mailing; 4] military; 5] physical</a:documentation>
+               <choice>
+                  <value>billing</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which a bill for goods or services should be sent.</a:documentation>
+                  <value>delivery</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which packages should be sent via a private delivery service.</a:documentation>
+                  <value>mailing</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which mail should be sent via a public postal service.</a:documentation>
+                  <value>military</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address to which mail to deployed military personnel should be sent.</a:documentation>
+                  <value>physical</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the address of a building irrespective of where mail to its occupants should be sent (for example, for the fire department).</a:documentation>
+                  <data type="token">
+                     <param name="pattern">[^\p{C}\p{Z}]+</param>
+                  </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="role">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">specifies further information about the purpose of the address.
+Sample values include: 1] sender; 2] return; 3] recipient ; 4] work; 5] home; 6] start; 7] finish; 8] pickup; 9] dropOff</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <data type="token">
+                        <param name="pattern">[^\p{C}\p{Z}]+</param>
+                     </data>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <empty/>
       </element>
    </define>
    <define name="tei_addrLine">
@@ -3081,6 +3135,10 @@ Measures]</a:documentation>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">nur in &lt;teiHeader&gt; zu verwenden</a:documentation>
                   <value>remarkDocument</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">nur in &lt;teiHeader&gt; zu verwenden</a:documentation>
+                  <value>speaker</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">speaker</a:documentation>
+                  <value>marginalia</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">marginalia</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -3136,7 +3194,7 @@ Elements]</a:documentation>
    <define name="tei_lb">
       <element name="lb">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line beginning) marks the beginning of a topographic line in some edition or version of a text. [3.11.3. Milestone
-Elements 7.2.5. Speech Contents]</a:documentation>
+Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <ref name="tei_att.global.attribute.n"/>
          <ref name="tei_att.breaking.attributes"/>
@@ -3434,7 +3492,7 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
    </define>
    <define name="tei_l">
       <element name="l">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(verse line) contains a single, possibly incomplete, line of verse. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <zeroOrMore>
             <choice>
                <text/>
@@ -3466,7 +3524,7 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
    </define>
    <define name="tei_lg">
       <element name="lg">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.5. Speech Contents]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(line group) contains one or more verse lines functioning as a formal unit, e.g. a stanza, refrain, verse paragraph, etc. [3.13.1. Core Tags for Verse 3.13. Passages of Verse or Drama 7.2.6. Speech Contents]</a:documentation>
          <group>
             <zeroOrMore>
                <choice>
@@ -3548,36 +3606,19 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
    <define name="tei_sp">
       <element name="sp">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech) contains an individual speech in a performance text, or a passage presented as such in a prose or verse text. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.2. Speeches and Speakers]</a:documentation>
-         <group>
-            <zeroOrMore>
-               <choice>
-                  <ref name="tei_model.global"/>
-                  <ref name="tei_model.stageLike"/>
-               </choice>
-            </zeroOrMore>
-            <group>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_model.stageLike"/>
+               <ref name="tei_model.global"/>
+               <ref name="tei_model.lLike"/>
+               <ref name="tei_model.pLike"/>
+               <ref name="tei_model.listLike"/>
+               <ref name="tei_model.attributable"/>
                <ref name="tei_speaker"/>
-               <zeroOrMore>
-                  <ref name="tei_model.global"/>
-               </zeroOrMore>
-            </group>
-            <oneOrMore>
-               <choice>
-                  <ref name="tei_lg"/>
-                  <ref name="tei_model.lLike"/>
-                  <ref name="tei_model.pLike"/>
-                  <ref name="tei_model.listLike"/>
-                  <ref name="tei_model.stageLike"/>
-                  <ref name="tei_model.attributable"/>
-               </choice>
-               <choice>
-                  <zeroOrMore>
-                     <ref name="tei_model.global"/>
-                  </zeroOrMore>
-                  <ref name="tei_q"/>
-               </choice>
-            </oneOrMore>
-         </group>
+               <ref name="tei_lg"/>
+               <ref name="tei_q"/>
+            </choice>
+         </zeroOrMore>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.xmllang"/>
          <ref name="tei_att.global.linking.attribute.corresp"/>
@@ -3607,7 +3648,7 @@ Suggested values include: 1] DTACorpusPublisher</a:documentation>
    </define>
    <define name="tei_stage">
       <element name="stage">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.4. Stage Directions]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(stage direction) contains any kind of stage direction within a dramatic text or fragment. [3.13.2. Core Tags for Drama 3.13. Passages of Verse or Drama 7.2.5. Stage Directions]</a:documentation>
          <ref name="tei_macro.specialPara"/>
          <ref name="tei_att.global.attribute.xmlid"/>
          <ref name="tei_att.global.attribute.xmllang"/>
@@ -5227,7 +5268,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
    </define>
    <define name="tei_spGrp">
       <element name="spGrp">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech group) contains a group of speeches or songs in a performance text presented in a source as constituting a single unit or number. [7.2.3. Grouped Speeches]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(speech group) contains a group of speeches, speech groups, or songs in a performance text presented in a source as constituting a single unit or number. [7.2.3. Grouped Speeches]</a:documentation>
          <group>
             <zeroOrMore>
                <ref name="tei_model.headLike"/>
@@ -5236,6 +5277,7 @@ Sample values include: 1] http://www.deutschestextarchiv.de/doku/klassifikation#
                <choice>
                   <ref name="tei_model.global"/>
                   <ref name="tei_sp"/>
+                  <ref name="tei_spGrp"/>
                   <ref name="tei_model.stageLike"/>
                </choice>
             </oneOrMore>

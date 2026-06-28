@@ -216,6 +216,11 @@
                                 <!-- Manuskripte: -->
                                 <valItem ident="#mPrint"><desc>(Manuskripte:) Vorgedrucktes auf der Manuskriptseite</desc></valItem>
                                 <valItem ident="#mRetrace"><desc>(Manuskripte:) nachgeschrieben</desc></valItem>
+                                <!-- Page-layout renditions for the interleaved two-column / acrostic poems. -->
+                                <valItem ident="#twocol"><desc>twocol</desc></valItem>
+                                <valItem ident="#acrostic"><desc>acrostic</desc></valItem>
+                                <valItem ident="#acroInit"><desc>acroInit</desc></valItem>
+                                <valItem ident="#acroFin"><desc>acroFin</desc></valItem>
                             </valList>
                         </attDef>
                     </attList>
@@ -903,6 +908,13 @@
                                <valItem ident="leftMargin"/>
                            </valList>
                        </attDef>
+                       <attDef ident="rendition" mode="change">
+                           <valList type="closed" mode="replace">
+                               <valItem ident="#aq"><desc>Antiqua-Schrift in Fraktur-Werken</desc></valItem>
+                               <valItem ident="#right"><desc>rechtsbündig</desc></valItem>
+                               <valItem ident="#c"><desc>zentriert</desc></valItem>
+                           </valList>
+                       </attDef>
                        <attDef ident="subtype" mode="delete"/>
                        <!--<attDef ident="n" mode="delete"/>-->
                        <attDef ident="facs" mode="delete"/>
@@ -1125,6 +1137,9 @@
                                <valItem ident="remarkRevisionDTA"><desc>nur in &lt;teiHeader&gt; zu verwenden</desc></valItem>
                                <valItem ident="remarkSource"><desc>nur in &lt;teiHeader&gt; zu verwenden</desc></valItem>
                                <valItem ident="remarkDocument"><desc>nur in &lt;teiHeader&gt; zu verwenden</desc></valItem>
+                               <!-- Weitere: -->
+                               <valItem ident="speaker"><desc>speaker</desc></valItem>
+                               <valItem ident="marginalia"><desc>marginalia</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="subtype" mode="delete"/>

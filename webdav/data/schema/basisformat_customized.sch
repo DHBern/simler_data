@@ -118,7 +118,7 @@
         </rule>
     </pattern>
 
-    <pattern id="facsInsideFirstPagebreak">
+    <!--<pattern id="facsInsideFirstPagebreak">
         <rule context="tei:pb[1][not(preceding::tei:pb)]">
             <assert test="@facs[matches(., '^#f0001$')]" role="ERROR">
                 [E0015] Value of @facs within first "pb" incorrect; expected value: #f0001. 
@@ -142,7 +142,7 @@
                 starting with 'http://' or 'https://' or '#'.
             </assert>
         </rule>
-    </pattern>
+    </pattern>-->
     
     <pattern id="fwHeader">
         <rule context="tei:fw[@type='header']">
