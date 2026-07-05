@@ -577,7 +577,7 @@
                     <p><hi rendition="#c">In der weis: <lb/>Einsmals mich ein lust ankam/
                         etc.</hi></p>
                     <lb/>
-                    <!--NE: Sprechakte (Seel, Christus) vorerst als note/Marginalie kodiert. Type 'speaker' muss im Schema noch erlaubt werden.   -->
+                    <!--NE: Sprechakte (Seel, Christus) vorerst als note/Marginalie kodiert.  -->
                     <lg type="poem">
                         <lg n="1">
                             <head>1.</head>
@@ -2255,7 +2255,7 @@
                             <lb/>
                             <l rendition="#et">die weiber ihn beweinen :/:</l>
                             <lb/>
-                            <l>Ihr <rs type="place" key="place_021">Salem</rs>stöchter; spricht der
+                            <l>Ihr <rs type="place" key="place_021">Salems</rs>töchter; spricht der
                                 Herr;</l>
                             <lb/>
                             <l>Ach! weinet über eüch vilmehr/</l>
@@ -5177,7 +5177,7 @@
                             <lb/>
                             <l rendition="#et">innigliche hertzens freud:</l>
                             <lb/>
-                            <l rendition="#et2">darum wil ich iederzeit</l>
+                            <l rendition="#et2">darum wil ich jederzeit</l>
                             <lb/>
                             <l rendition="#et2">seine treu und gütigkeit</l>
                             <lb/>
@@ -5204,7 +5204,7 @@
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
-                            <head><hi rendition="#c">1.</hi></head>
+                            <head>1.</head>
                             <lb/>
                             <l><rs type="person" key="person_302"><hi rendition="#in"
                                     >A</hi>urora</rs>/ mit ihren verguldeten strahlen/</l>
@@ -5217,7 +5217,7 @@
                         </lg>
                         <lb/>
                         <lg n="2">
-                            <head><hi rendition="#c">2.</hi></head>
+                            <head>2.</head>
                             <lb/>
                             <l>Sie weket das leichte geflügel der lüffte</l>
                             <lb/>
@@ -5229,7 +5229,7 @@
                         </lg>
                         <lb/>
                         <lg n="3">
-                            <head><hi rendition="#c">3.</hi></head>
+                            <head>3.</head>
                             <lb/>
                             <l>Die sonne schon hinder den bergen fürbliket/</l>
                             <lb/>
@@ -5237,11 +5237,12 @@
                             <lb/>
                             <l rendition="#et">erleuchtet den himmel von sternen so lär/</l>
                             <lb/>
-                            <l rendition="#et">verjaget das dunkel ab erden und meer.</l>
+                            <l rendition="#et">verjaget das <supplied cert="high">d</supplied>unkel
+                                ab erden und meer.</l>
                         </lg>
                         <lb/>
                         <lg n="4">
-                            <head><hi rendition="#c">4.</hi></head>
+                            <head>4.</head>
                             <lb/>
                             <l>O Jesus/ der grechtigkeit einige Sonne/</l>
                             <lb/>
@@ -5253,7 +5254,7 @@
                         </lg>
                         <lb/>
                         <lg n="5">
-                            <head><hi rendition="#c">5.</hi></head>
+                            <head>5.</head>
                             <lb/>
                             <l>Ich danke dir/ daß ich so sicher geschlaffen/</l>
                             <lb/>
@@ -5266,7 +5267,7 @@
                         </lg>
                         <lb/>
                         <lg n="6">
-                            <head><hi rendition="#c">6.</hi></head>
+                            <head>6.</head>
                             <lb/>
                             <l>Gib/ daß ich noch nüchter dich selber anzeuhe/</l>
                             <lb/>
@@ -5278,7 +5279,7 @@
                         </lg>
                         <lb/>
                         <lg n="7">
-                            <head><hi rendition="#c">7.</hi></head>
+                            <head>7.</head>
                             <lb/>
                             <l>Schaff deinen so seligen lieblichen friden</l>
                             <lb/>
@@ -5291,6 +5292,8 @@
                     </lg>
                     <lb/>
                 </div>
+                <milestone unit="section" rendition="#hr"/>
+                <lb/>
                 <div n="2" xml:id="n24">
                     <head>
                         <label>[24.]</label>
@@ -5309,6 +5312,7 @@
                     </lg>
                     <lb/>
                 </div>
+                <milestone unit="section" rendition="#hr"/>
                 <pb n="170" facs="4049369"/>
                 <!-- Musikalien -->
                 <pb n="171" facs="4049370"/>
@@ -5324,7 +5328,7 @@
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
-                            <head><hi rendition="#c">1.</hi></head>
+                            <head>1.</head>
                             <lb/>
                             <l><hi rendition="#in">H</hi>immlischer Gott/ und Vatter/ wir kinder</l>
                             <lb/>
@@ -5336,7 +5340,7 @@
                             <lb/>
                             <l>näher ist/ was kein auge gesehen/</l>
                             <lb/>
-                            <l rendition="#et">welches kein ohr iemalen gehört/</l>
+                            <l rendition="#et">welches kein ohr jemalen gehört/</l>
                             <lb/>
                             <l>keine gedanken mögen verstehen/</l>
                             <lb/>
@@ -5344,7 +5348,7 @@
                         </lg>
                         <lb/>
                         <lg n="2">
-                            <head><hi rendition="#c">2.</hi></head>
+                            <head>2.</head>
                             <lb/>
                             <l>Quelle der gaaben/ seyest gepreiset/</l>
                             <lb/>
@@ -5358,13 +5362,13 @@
                             <lb/>
                             <l rendition="#et">wider die keiner wurde bestehn:</l>
                             <lb/>
-                            <l>ieder deßwegen seye geflissen</l>
+                            <l>jeder deßwegen seye geflissen</l>
                             <lb/>
                             <l rendition="#et">dankbarlich ins nachtläger zugehn.</l>
                         </lg>
                         <lb/>
                         <lg n="3">
-                            <head><hi rendition="#c">3.</hi></head>
+                            <head>3.</head>
                             <lb/>
                             <l>Gnädiger Gott/ verzeihe die sünden</l>
                             <lb/>
@@ -5385,7 +5389,7 @@
                         </lg>
                         <lb/>
                         <lg n="4">
-                            <head><hi rendition="#c">4.</hi></head>
+                            <head>4.</head>
                             <lb/>
                             <l>Mächtiger König/ wehre dem <rs type="person" key="person_078"
                                     >Teufel</rs>/</l>
@@ -5406,7 +5410,7 @@
                         </lg>
                         <lb/>
                         <lg n="5">
-                            <head><hi rendition="#c">5.</hi></head>
+                            <head>5.</head>
                             <lb/>
                             <l>Weilen dan für den himmlischen Bogen</l>
                             <lb/>
@@ -5494,7 +5498,7 @@
                         <lg n="5">
                             <head>5.</head>
                             <lb/>
-                            <l>Vnd wan es schon verdorben ist/</l>
+                            <l>Und wan es schon verdorben ist/</l>
                             <lb/>
                             <l rendition="#et">bringst du es wider doch:</l>
                             <lb/>
@@ -5694,13 +5698,13 @@
                             <lb/>
                             <l>zum Herren Gott ihr angesicht erheben/</l>
                             <lb/>
-                            <l rendition="#et">und er verschafft eim ieden/ nach gebür/</l>
+                            <l rendition="#et">und er verschafft eim jeden/ nach gebür/</l>
                             <lb/>
                             <l>die nahrung gar zum lust und wolgefallen/</l>
                             <lb/>
                             <l>ja überfluß: darum er auch von allen;</l>
                             <lb/>
-                            <l rendition="#et">nach iedes weis; gelobt wird für und für.</l>
+                            <l rendition="#et">nach jedes weis; gelobt wird für und für.</l>
                         </lg>
                         <lb/>
                         <lg n="7">
@@ -5754,15 +5758,15 @@
                     <head>
                         <label>[28.]</label>
                         <lb/>
-                        <hi rendition="#b #c">Gesang von des menschlichen lebens nich<lb break="no"
-                            />tigkeit.</hi></head>
+                        <hi rendition="#b #c">Gesang <lb/>von des menschlichen lebens nich<lb
+                                break="no"/>tigkeit.</hi></head>
                     <lb/>
                     <p><hi rendition="#c">In der weis des 146. Psalmens. <lb/>Oder. <lb/>Der hat
                             einen schatz erfunden/ etc.</hi></p>
                     <lb/>
                     <lg type="poem">
                         <lg n="1">
-                            <head><hi rendition="#c">[1.]</hi></head>
+                            <head>[1.]</head>
                             <lb/>
                             <l><hi rendition="#in">A</hi>Ch! was ist der menschen leben?</l>
                             <lb/>
@@ -5778,7 +5782,7 @@
                         </lg>
                         <lb/>
                         <lg n="2">
-                            <head><hi rendition="#c">2.</hi></head>
+                            <head>2.</head>
                             <lb/>
                             <l>Es geleichet sich dem schatten/</l>
                             <lb/>
@@ -5794,7 +5798,7 @@
                         </lg>
                         <lb/>
                         <lg n="3">
-                            <head><hi rendition="#c">3.</hi></head>
+                            <head>3.</head>
                             <lb/>
                             <l>Es geleichet einer blasen</l>
                             <lb/>
@@ -5811,7 +5815,7 @@
                         <lb/>
                         <pb n="189" facs="4049388"/>
                         <lg n="4">
-                            <head><hi rendition="#c">4.</hi></head>
+                            <head>4.</head>
                             <lb/>
                             <l>Weil nun unser zeitlich leben</l>
                             <lb/>
@@ -5827,7 +5831,7 @@
                         </lg>
                         <lb/>
                         <lg n="5">
-                            <head><hi rendition="#c">5.</hi></head>
+                            <head>5.</head>
                             <lb/>
                             <l>Nun gewinn’ ich lust zuscheiden</l>
                             <lb/>
@@ -5845,6 +5849,8 @@
                     </lg>
                     <lb/>
                 </div>
+                <milestone unit="section" rendition="#hr"/>
+                <lb/>
                 <pb n="190" facs="4049389"/>
                 <!-- Musikalien -->
                 <pb n="191" facs="4049390"/>
@@ -5864,7 +5870,7 @@
                         <lg n="1">
                             <head>1.</head>
                             <lb/>
-                            <l>Und wär das kreutze noch so schwär/</l>
+                            <l><hi rendition="#aq">U</hi>nd wär das kreutze noch so schwär/</l>
                             <lb/>
                             <l>so endets mit der zeit/</l>
                             <lb/>
@@ -5886,7 +5892,7 @@
                             <lb/>
                             <l>Die gantze Schrifft bezeuget diß</l>
                             <lb/>
-                            <l>von frommen iederzeit:</l>
+                            <l>von frommen jederzeit:</l>
                             <lb/>
                             <l>Erfahrung selbs es macht gewiß:</l>
                             <lb/>
@@ -5907,13 +5913,10 @@
                             <l>Was wil ich dan bekränken mich</l>
                             <lb/>
                             <l>im kreutze diser zeit:</l>
-                            <!-- NE: Die zweite und vierte Zeile dieser Strophe sind im Referenzexemplar eingerückt. 
-                                Der Einheitlichkeit halber wurde dies aber hier nicht übernommen. -->
                             <lb/>
                             <l>dieweil ich weiß/ was ewiglich</l>
                             <lb/>
                             <l>in himlen mir bereit?</l>
-                            <!-- NE: s. o. -->
                             <lb/>
                             <l>Schlägt das kreutze nider:</l>
                             <lb/>

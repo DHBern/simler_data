@@ -9,7 +9,8 @@
                 <title type="main">TEIL 5 VON: Johann-Wilhelm Simlers teutscher Getichten die
                     dritte, von ihme selbsten um einen Drittheil vermehrt- und verbesserte
                     Aussfertigung</title>
-                <author><persName ref="http://d-nb.info/gnd/119151693"><surname>Simler</surname><forename>Johann
+                <author><persName ref="http://d-nb.info/gnd/119151693"
+                            ><surname>Simler</surname><forename>Johann
                     Wilhelm</forename></persName></author>
             </titleStmt>
             <editionStmt>
@@ -1407,8 +1408,7 @@
                     <lg type="poem">
                         <l>Ihr Ehrenfreünde ziert/ mit eüren Ehrennammen/</l>
                         <lb/>
-                        <l>mit Sprüchen und Gemähl/ mein Bu&#x366;ch
-                                der Freünden Stammen:</l>
+                        <l>mit Sprüchen und Gemähl/ mein Bu&#x366;ch der Freünden Stammen:</l>
                         <lb/>
                         <l rendition="#et">doch schreib ich keinem vor; ich bitte nur allein/</l>
                         <lb/>
@@ -3997,8 +3997,7 @@
                         <hi rendition="#b #c">168. Kämpf wider dich/ so schlahest mich.</hi></head>
                     <lb/>
                     <lg type="poem">
-                        <l>Dises ungeheur* zudämpfen/<note
-                                place="right">*Lasterthier</note></l>
+                        <l>Dises ungeheur* zudämpfen/<note place="right">*Lasterthier</note></l>
                         <lb/>
                         <l>ieder wider sich muß kämpfen/</l>
                         <lb/>
@@ -4374,13 +4373,15 @@
                     <lb/>
                 </div>
                 <div n="2">
-                    <label>[247.]</label>
-                    <lb/>
-                    <div n="3">
-                        <head>
-                            <hi rendition="#b #c">182. Tischzucht.</hi></head>
+                    <head>
+                        <label>[247.]</label>
                         <lb/>
-                        <lg type="poem">
+                        <hi rendition="#b #c">182. Tischzucht.</hi></head>
+                    <lb/>
+
+                    <lg type="poem">
+
+                        <lg n="1">
                             <l><hi rendition="#in">K</hi>Ommt her und hört mir zu/ ihr/ die ihr auß
                                 der wiegen</l>
                             <lb/>
@@ -4390,47 +4391,53 @@
                             <lb/>
                             <l>des lieben vatters tisch dem kind verbotten war.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="5"><hi rendition="#b #c">Zurüstung des tisches.</hi></head>
                         <lb/>
-                        <lg type="poem">
-                            <l>So wäsch die hände nun/ und dan/ zu rechter zeite/</l>
+
+                        <lg n="2">
+                            <head n="5"><hi rendition="#b #c">Zurüstung des tisches.</hi></head>
                             <lb/>
-                            <l>das tischtu&#x366;ch/ nach der schnu&#x366;r/ und eben
-                                überspreite:</l>
-                            <lb/>
-                            <l rendition="#et">setz auch den blattenring; wo nicht; an desse
-                                statt/</l>
-                            <lb/>
-                            <l rendition="#et">in mitten auf den tisch das sonnengleiche blat.</l>
-                            <lb/>
-                            <l n="10">Nach rechter ordnung leg die teller und die zwehlen/</l>
-                            <lb/>
-                            <l>die messer auch darzu: es sol kein löffel fehlen:</l>
-                            <lb/>
-                            <l rendition="#et">des saltzes nicht vergiß: des brots bis
-                                eyngedänk.</l>
-                            <lb/>
-                            <l rendition="#et">die sideln ruk herbey: die gläser sauber schwänk.</l>
-                            <lb/>
-                            <l>Jst nun/ nach landes sitt/ der tisch gerüst zum essen/</l>
-                            <lb/>
-                            <l n="15">so werde des gebätts zum Herren nicht vergessen:</l>
-                            <lb/>
-                            <l rendition="#et">die augen/ händ’ und hertz zu ihm heb übersich/</l>
-                            <lb/>
-                            <l rendition="#et">und um den segen ihn demu&#x364;htiglich
-                                ansprich.</l>
+                            <lg>
+                                <l>So wäsch die hände nun/ und dan/ zu rechter zeite/</l>
+                                <lb/>
+                                <l>das tischtu&#x366;ch/ nach der schnu&#x366;r/ und eben
+                                    überspreite:</l>
+                                <lb/>
+                                <l rendition="#et">setz auch den blattenring; wo nicht; an desse
+                                    statt/</l>
+                                <lb/>
+                                <l rendition="#et">in mitten auf den tisch das sonnengleiche
+                                    blat.</l>
+                                <lb/>
+                                <l n="10">Nach rechter ordnung leg die teller und die zwehlen/</l>
+                                <lb/>
+                                <l>die messer auch darzu: es sol kein löffel fehlen:</l>
+                                <lb/>
+                                <l rendition="#et">des saltzes nicht vergiß: des brots bis
+                                    eyngedänk.</l>
+                                <lb/>
+                                <l rendition="#et">die sideln ruk herbey: die gläser sauber
+                                    schwänk.</l>
+                                <lb/>
+                            </lg>
+                            <lg>
+                                <l>Jst nun/ nach landes sitt/ der tisch gerüst zum essen/</l>
+                                <lb/>
+                                <l n="15">so werde des gebätts zum Herren nicht vergessen:</l>
+                                <lb/>
+                                <l rendition="#et">die augen/ händ’ und hertz zu ihm heb
+                                    übersich/</l>
+                                <lb/>
+                                <l rendition="#et">und um den segen ihn demu&#x364;htiglich
+                                    ansprich.</l>
+                            </lg>
                         </lg>
-                    </div>
-                    <lb/>
-                    <pb n="552" facs="4049751"/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">Das tischdienen oder aufwarten.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <pb n="552" facs="4049751"/>
+
+                        <lg n="3">
+                            <head><hi rendition="#b #c">Das tischdienen oder aufwarten.</hi></head>
+                            <lb/>
                             <l>Wan dan die eltern sich mit speiß und trank erlaben/</l>
                             <lb/>
                             <l n="20">und das aufwarten dir fürauß befohlen haben/</l>
@@ -4478,12 +4485,11 @@
                             <l rendition="#et">doch nicht in blosser hand; auff einem teller
                                 her.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">Gebührende zucht über tisch.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="4">
+                            <head><hi rendition="#b #c">Gebührende zucht über tisch.</hi></head>
+                            <lb/>
                             <l n="40">Sitzst aber selb zu tisch/ bey jungen oder alten/</l>
                             <lb/>
                             <l>so solst die fu&#x364;sse still und eng zusamen halten:</l>
@@ -4626,12 +4632,12 @@
                             <l rendition="#et">sag Gott/ mit lauter stimm/ von hertzen lob und
                                 dank.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="100"><hi rendition="#b #c">Das aufnemmen des tisches.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="5">
+                            <head n="100"><hi rendition="#b #c">Das aufnemmen des
+                                tisches.</hi></head>
+                            <lb/>
                             <l>Wan nun die mahlzeit ietzt ihr endschafft hat bekommen/</l>
                             <lb/>
                             <l>wan ihren abscheid auch die gäste gar genommen/</l>
@@ -4662,12 +4668,11 @@
                             <l rendition="#et">das tu&#x366;ch im korb erschütt/ und dan zusamen
                                 leg.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">Vermahnung an die kinder.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="6">
+                            <head><hi rendition="#b #c">Vermahnung an die kinder.</hi></head>
+                            <lb/>
                             <l>Sol nun/ o liebes kind! die Tischeszucht dich zieren/</l>
                             <lb/>
                             <l n="115">so must hierneben auch ein frommes leben fu&#x364;hren:</l>
@@ -4676,18 +4681,20 @@
                             <lb/>
                             <l rendition="#et">im Herren/ williglich/ und stets gehorsam seyn.</l>
                         </lg>
-                    </div>
+                    </lg>
                     <lb/>
                 </div>
                 <pb n="555" facs="4049754"/>
                 <div n="2">
-                    <label>[248.]</label>
+                    <head>
+                        <label>[248.]</label><hi rendition="#b #c">183. Beschreibung <lb/>des
+                            ungesunden Gesund<lb break="no"/>heittrinkens.</hi></head>
                     <lb/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">183. Beschreibung <lb/>des ungesunden Gesund<lb
-                                    break="no"/>heittrinkens.</hi></head>
-                        <lb/>
-                        <lg type="poem">
+                    <lb/>
+
+                    <lg type="poem">
+
+                        <lg n="1">
                             <l><hi rendition="#in">K</hi>Ommt/ jung und alte kommt! ihr solt da
                                 wunder sehen/</l>
                             <lb/>
@@ -4699,13 +4706,13 @@
                             <l rendition="#et">wo nicht den tod/ jedoch vil krankheit bringen
                                 bey.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="5"><hi rendition="#b #c">Ruhmlose satzungen der Gesund<lb
-                                    break="no"/>heitsäuffer.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="2">
+                            <head n="5"><hi rendition="#b #c">Ruhmlose satzungen der Gesund<lb
+                                        break="no"/>heitsäuffer.</hi></head>
+                            <lb/>
+
                             <l>Bey solchem fräßmahl nun zu oberst wird gesetzet</l>
                             <lb/>
                             <l>wer sich/ für ander auß/ mit räbensafft benetzet:</l>
@@ -4759,12 +4766,11 @@
                             <lb/>
                             <l rendition="#et">ob es gleich sinn und hirn verirret und verwirrt.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="30"><hi rendition="#b #c">Gemeiner Gesundheittrunk.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="3">
+                            <head n="30"><hi rendition="#b #c">Gemeiner Gesundheittrunk.</hi></head>
+                            <lb/>
                             <l>Herr Witzlär ist gezeug/ und weißt hiervon zu singen:</l>
                             <lb/>
                             <l>dan/ alß Herr Allzeitfoll ihm einen thate bringen</l>
@@ -4819,72 +4825,67 @@
                             <lb/>
                             <l rendition="#et">des Fürsten Gsundheit ich hiemit anheben wil.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="55"><hi rendition="#b #c">Gesundheittrunck grosser
-                                <lb/>Herren.</hi></head>
                         <lb/>
-                        <lg type="poem">
-                            <lg n="1">
-                                <l>Des Fürsten Gsundheit gilt! ietz wird es recht angehen;</l>
-                                <lb/>
-                                <l>es wil Herr Allzeitfoll bey disem umtrunk stehen:</l>
-                                <lb/>
-                                <l rendition="#et">Herr Witzlär aber meint/ daß vilmehr ehr
-                                    darbey</l>
-                                <lb/>
-                                <l rendition="#et">wan/ auf der bank erhöcht/ man sich erzeige
-                                    frey.</l>
-                                <lb/>
-                                <pb n="557" facs="4049756"/>
-                                <l n="60">Der Schnarcher widerspricht/ und wil man solle kneuen:</l>
-                                <lb/>
-                                <l>der Prasser sie beredt: es diene zum verdeuen:</l>
-                                <lb/>
-                                <l rendition="#et">und der Gutgeber sagt: ich aber haben wil/</l>
-                                <lb/>
-                                <l rendition="#et">daß man zu disem trunk trompet und wol
-                                    aufspil.</l>
-                                <lb/>
-                                <l>Von andern in gemein ein Trinklied wird gesungen/</l>
-                                <lb/>
-                                <l n="65">bis ieder seinen trunk/ auf seine weis/ verschlungen/</l>
-                                <lb/>
-                                <l rendition="#et">und auf das nägelein geläret das geschirr/</l>
-                                <lb/>
-                                <l rendition="#et">auch über seine knöpf rabzogen mit gekirr.</l>
-                            </lg>
+
+                        <lg n="4">
+                            <head n="55"><hi rendition="#b #c">Gesundheittrunck grosser
+                                    <lb/>Herren.</hi></head>
                             <lb/>
-                            <lg n="2">
+                            <lg>
+                                <l>Des Fürsten Gsundheit gilt! ietz wird es recht angehen;</l>
+                            <lb/>
+                            <l>es wil Herr Allzeitfoll bey disem umtrunk stehen:</l>
+                            <lb/>
+                            <l rendition="#et">Herr Witzlär aber meint/ daß vilmehr ehr darbey</l>
+                            <lb/>
+                            <l rendition="#et">wan/ auf der bank erhöcht/ man sich erzeige frey.</l>
+                            <lb/>
+                            <pb n="557" facs="4049756"/>
+                            <l n="60">Der Schnarcher widerspricht/ und wil man solle kneuen:</l>
+                            <lb/>
+                            <l>der Prasser sie beredt: es diene zum verdeuen:</l>
+                            <lb/>
+                            <l rendition="#et">und der Gutgeber sagt: ich aber haben wil/</l>
+                            <lb/>
+                            <l rendition="#et">daß man zu disem trunk trompet und wol aufspil.</l>
+                            <lb/>
+                            <l>Von andern in gemein ein Trinklied wird gesungen/</l>
+                            <lb/>
+                            <l n="65">bis ieder seinen trunk/ auf seine weis/ verschlungen/</l>
+                            <lb/>
+                            <l rendition="#et">und auf das nägelein geläret das geschirr/</l>
+                            <lb/>
+                            <l rendition="#et">auch über seine knöpf rabzogen mit gekirr.</l>
+                            <lb/>
+                            </lg>
+                            <lg>
                                 <l>Herr Witzlär abermal; dem <rs type="person" key="person_186"
-                                        >Bacchus</rs>gsatz zuwider;</l>
-                                <lb/>
-                                <l>doch auß vergeßlichkeit/ den umtrunk stellte nider/</l>
-                                <lb/>
-                                <l rendition="#et" n="70">warüber sich/ geschwind/ erhub
-                                    uneinigkeit/</l>
-                                <lb/>
-                                <l rendition="#et">ein fluchen und gezänk/ und auch ein harber
-                                    streit:</l>
-                                <lb/>
-                                <l>dan sie vermeinten all’: es wurde dises reichen</l>
-                                <lb/>
-                                <l>dem Fürsten selb zur schmach: deß kamen sie zu streichen:</l>
-                                <lb/>
-                                <l rendition="#et">doch ward ihr zorn gestillt/ und wider
-                                    eyngeschänkt</l>
-                                <lb/>
-                                <l rendition="#et" n="75">so vil/ daß ihn hernach ein grimmig fieber
-                                    kränkt.</l>
+                                    >Bacchus</rs>gsatz zuwider;</l>
+                            <lb/>
+                            <l>doch auß vergeßlichkeit/ den umtrunk stellte nider/</l>
+                            <lb/>
+                            <l rendition="#et" n="70">warüber sich/ geschwind/ erhub
+                                uneinigkeit/</l>
+                            <lb/>
+                            <l rendition="#et">ein fluchen und gezänk/ und auch ein harber
+                                streit:</l>
+                            <lb/>
+                            <l>dan sie vermeinten all’: es wurde dises reichen</l>
+                            <lb/>
+                            <l>dem Fürsten selb zur schmach: deß kamen sie zu streichen:</l>
+                            <lb/>
+                            <l rendition="#et">doch ward ihr zorn gestillt/ und wider
+                                eyngeschänkt</l>
+                            <lb/>
+                            <l rendition="#et" n="75">so vil/ daß ihn hernach ein grimmig fieber
+                                kränkt.</l>
                             </lg>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">Neuer Gesundheittrunk.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="5">
+                            <head><hi rendition="#b #c">Neuer Gesundheittrunk.</hi></head>
+                            <lb/>
                             <l>Geht! mit dergleichen schimpf/ und groben narrenpossen</l>
                             <lb/>
                             <l>seind ein halb dotzet stund bey nahem gar verflossen/</l>
@@ -4906,13 +4907,12 @@
                             <lb/>
                             <l n="85">Bey disem bleibt es nicht/ etc. – – –</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head><hi rendition="#b #c">Ständlingen/ auf Sant <rs type="person"
-                                    key="person_073">Johans</rs> segen.</hi></head>
                         <lb/>
-                        <lg type="poem">
+
+                        <lg n="6">
+                            <head><hi rendition="#b #c">Ständlingen/ auf Sant <rs type="person"
+                                        key="person_073">Johans</rs> segen.</hi></head>
+                            <lb/>
                             <l>– – – – Wan sie vom tische gehen/</l>
                             <lb/>
                             <l>so bleiben sie noch lang beym lieben trünklein stehen:</l>
@@ -4945,81 +4945,78 @@
                             <l rendition="#et">und mein’ auch/ daß hiervon ich habe schweigens
                                 fug.</l>
                         </lg>
-                    </div>
-                    <lb/>
-                    <div n="3">
-                        <head n="100"><hi rendition="#b #c">Beschließliche erinner- und abmahnung
-                                vom<lb/> leib- und seelen-schädlichen Gesundheit<lb break="no"
-                                />trinken.</hi></head>
                         <lb/>
-                        <lg type="poem">
-                            <lg n="1">
-                                <l>Wan nun durch füllerey/ und durch gesundheitsauffen/</l>
-                                <lb/>
-                                <l>dem feind erschlagen wurd der minste kriegeshauffen/</l>
-                                <lb/>
-                                <l rendition="#et">behu&#x364;t! o Herr behu&#x364;t/ wie geb er
-                                    fersengelt/</l>
-                                <lb/>
-                                <l rendition="#et" n="105">er liesse hindersich troß/ waffen und
-                                    gezellt!</l>
-                                <lb/>
-                                <l>Dan hinderm <rs type="person" key="person_186">Bacchus</rs>tisch
-                                    den feind wil ieder fressen/</l>
-                                <lb/>
-                                <l>deß aber in dem feld sie allzumal vergessen:</l>
-                                <lb/>
-                                <l rendition="#et">sie leben alle gern nur immerdar im sauß/</l>
-                                <lb/>
-                                <l rendition="#et">und löschen nicht wan brünnt des allernächsten
-                                    hauß:</l>
-                                <lb/>
-                                <l n="110">gedänken niemal auch/ zu ihrem grossen schaden/</l>
-                                <lb/>
-                                <l>daß sie durch schwelgerey/ des Herren zorn aufladen/</l>
-                                <lb/>
-                                <l rendition="#et">und daß/ gemeiniglich/ unmässig speiß und
-                                    trank</l>
-                                <lb/>
-                                <l rendition="#et">mach jennen an dem leib/ und den im beutel
-                                    krank.</l>
-                                <lb/>
-                                <l>Dan ja Gott selber spricht: Weh! weh dem bösen hauffen/</l>
-                                <lb/>
-                                <l n="115">die starke helden seind/ ja helden wein zu sauffen!</l>
-                                <lb/>
-                                <l rendition="#et">Der <rs type="person" key="person_044"
-                                        >Heidenlehrer</rs> auch von den weinsäuffern spricht/</l>
-                                <lb/>
-                                <l rendition="#et">daß sie das Himmelreych ererben werden nicht.</l>
-                            </lg>
+
+                        <lg n="7">
+                            <head n="100"><hi rendition="#b #c">Beschließliche erinner- und
+                                    abmahnung vom<lb/> leib- und seelen-schädlichen Gesundheit<lb
+                                        break="no"/>trinken.</hi></head>
                             <lb/>
-                            <lg n="2">
+                            <lg>
+                                <l>Wan nun durch füllerey/ und durch gesundheitsauffen/</l>
+                            <lb/>
+                            <l>dem feind erschlagen wurd der minste kriegeshauffen/</l>
+                            <lb/>
+                            <l rendition="#et">behu&#x364;t! o Herr behu&#x364;t/ wie geb er
+                                fersengelt/</l>
+                            <lb/>
+                            <l rendition="#et" n="105">er liesse hindersich troß/ waffen und
+                                gezellt!</l>
+                            <lb/>
+                            <l>Dan hinderm <rs type="person" key="person_186">Bacchus</rs>tisch den
+                                feind wil ieder fressen/</l>
+                            <lb/>
+                            <l>deß aber in dem feld sie allzumal vergessen:</l>
+                            <lb/>
+                            <l rendition="#et">sie leben alle gern nur immerdar im sauß/</l>
+                            <lb/>
+                            <l rendition="#et">und löschen nicht wan brünnt des allernächsten
+                                hauß:</l>
+                            <lb/>
+                            <l n="110">gedänken niemal auch/ zu ihrem grossen schaden/</l>
+                            <lb/>
+                            <l>daß sie durch schwelgerey/ des Herren zorn aufladen/</l>
+                            <lb/>
+                            <l rendition="#et">und daß/ gemeiniglich/ unmässig speiß und trank</l>
+                            <lb/>
+                            <l rendition="#et">mach jennen an dem leib/ und den im beutel krank.</l>
+                            <lb/>
+                            <l>Dan ja Gott selber spricht: Weh! weh dem bösen hauffen/</l>
+                            <lb/>
+                            <l n="115">die starke helden seind/ ja helden wein zu sauffen!</l>
+                            <lb/>
+                            <l rendition="#et">Der <rs type="person" key="person_044"
+                                    >Heidenlehrer</rs> auch von den weinsäuffern spricht/</l>
+                            <lb/>
+                            <l rendition="#et">daß sie das Himmelreych ererben werden nicht.</l>
+                            <lb/>
+                            </lg>
+                            <lg>
                                 <l>Darum ermahn’ ich euch/ ich bitt’/ ich seufftz’ und flehe/</l>
-                                <lb/>
-                                <l>daß iedermänniglich weinsauffens mu&#x364;ssig gehe/</l>
-                                <lb/>
-                                <l rendition="#et" n="120">zu diser schwären zeit/ da zeichen
-                                    vilerley/</l>
-                                <lb/>
-                                <l rendition="#et">des nahen ends der welt seind eine gwüsse
-                                    Chrey.</l>
-                                <lb/>
-                                <l>Der schaden <rs type="person" key="person_076">Josephs</rs> doch
-                                    im hertzen euch bekränke/</l>
-                                <lb/>
-                                <l>damit der Fridensfürst euch seinen friden schänke:</l>
-                                <lb/>
-                                <l rendition="#et">Denselben wünsch’ ich nun der gantzen
-                                    Christenheit/</l>
-                                <lb/>
-                                <l rendition="#et" n="125">durch Christum endlich auch die ware
-                                    seligkeit!</l>
+                            <lb/>
+                            <l>daß iedermänniglich weinsauffens mu&#x364;ssig gehe/</l>
+                            <lb/>
+                            <l rendition="#et" n="120">zu diser schwären zeit/ da zeichen
+                                vilerley/</l>
+                            <lb/>
+                            <l rendition="#et">des nahen ends der welt seind eine gwüsse Chrey.</l>
+                            <lb/>
+                            <l>Der schaden <rs type="person" key="person_076">Josephs</rs> doch im
+                                hertzen euch bekränke/</l>
+                            <lb/>
+                            <l>damit der Fridensfürst euch seinen friden schänke:</l>
+                            <lb/>
+                            <l rendition="#et">Denselben wünsch’ ich nun der gantzen
+                                Christenheit/</l>
+                            <lb/>
+                            <l rendition="#et" n="125">durch Christum endlich auch die ware
+                                seligkeit!</l>
                             </lg>
                         </lg>
-                    </div>
+                    </lg>
                     <lb/>
                 </div>
+
                 <pb n="559" facs="4049758"/>
                 <div n="2" xml:id="n249">
                     <head>
@@ -5336,9 +5333,11 @@
                             <lb/>
                             <l>seht mit gnadenaugen an/ nach der anerbornen gu&#x364;te/</l>
                             <lb/>
-                            <l rendition="#et">mein so wolgemeintes Werklein/ dise meine Viergeticht/</l>
+                            <l rendition="#et">mein so wolgemeintes Werklein/ dise meine
+                                Viergeticht/</l>
                             <lb/>
-                            <l rendition="#et">oder den Regentenspiegel/ von der Oberherren pflicht:</l>
+                            <l rendition="#et">oder den Regentenspiegel/ von der Oberherren
+                                pflicht:</l>
                             <lb/>
                             <l n="5">Zwaren nicht zu disem end/ daß ihr meiner lehr bedörfet:</l>
                             <lb/>
@@ -5355,7 +5354,8 @@
                             <l n="10">seine wolgestalte zeigt/ und erweket lust fu&#x364;r
                                 grauen:</l>
                             <lb/>
-                            <l rendition="#et">Also der Regentenspiegel/ mit belustigung dem Herrn</l>
+                            <l rendition="#et">Also der Regentenspiegel/ mit belustigung dem
+                                Herrn</l>
                             <lb/>
                             <l rendition="#et">wider in gedächtnuß bringe was er längst gesehen
                                 gern.</l>

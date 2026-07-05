@@ -3197,8 +3197,7 @@
                             <head><hi rendition="#c">8.</hi></head>
                             <lb/>
                             <l>Schönste Ros/ du Gottesgabe/
-                                    <!--als gap oder label kodieren? [CF]--><note place="right"><rs
-                                        type="person" key="person_098">Dorothea</rs>.</note></l>
+                                    <note place="right"><rs type="person" key="person_098">Dorothea</rs>.</note></l>
                             <lb/>
                             <l rendition="#et">wird er sprächen/ nennt man dich/</l>
                             <lb/>
@@ -3223,8 +3222,7 @@
                             <l>Hertzgeliebter; was außweiset</l>
                             <lb/>
                             <l rendition="#et">dein so su&#x364;sser Ehrennamm/
-                                    <!--als gap oder label kodieren? [CF]--><note place="right"><rs
-                                        type="person" key="person_099">Johannes</rs>.</note></l>
+                                    <note place="right"><rs type="person" key="person_099">Johannes</rs>.</note></l>
                             <lb/>
                             <l>wird sie sagen; ward gepreiset</l>
                             <lb/>
@@ -3541,7 +3539,7 @@
                         <lg n="3">
                             <head><hi rendition="#c">3.</hi></head>
                             <lb/>
-                            <l> Herr Hochzeiter sich erweiset</l>
+                            <l>Herr Hochzeiter sich erweiset</l>
                             <lb/>
                             <l rendition="#et">höchsterbaulich an dem ort/</l>
                             <lb/>
@@ -3559,7 +3557,7 @@
                         <lg n="4">
                             <head><hi rendition="#c">4.</hi></head>
                             <lb/>
-                            <l> Frau Hochzeiterin zugleiche/</l>
+                            <l>Frau Hochzeiterin zugleiche/</l>
                             <lb/>
                             <l rendition="#et">vor/ und in dem wittwenstand/</l>
                             <lb/>
@@ -3582,8 +3580,7 @@
                             <l rendition="#et">hochgeehrter Bräutigam/</l>
                             <lb/>
                             <l rendition="#et">wie außweiset euer Nam:
-                                    <!--als gap oder label kodieren? [CF]--><note place="right"><rs
-                                        type="person" key="person_014">Felix</rs>.</note></l>
+                                    <note place="right"><rs type="person" key="person_014">Felix</rs>.</note></l>
                             <lb/>
                             <l>weil euch euers leids ergetzet</l>
                             <lb/>
@@ -6965,7 +6962,7 @@
                                 >H. H. Sch.</rs> und J. <rs type="person" key="person_155">S.
                                 H.</rs></hi></head>
                     <lb/>
-                    <!--"Mann" und "Weib" als Label auszeichnen? [CF]-->
+                    <!--"Mann" und "Weib" mit <label> oder <note type="speaker"> auszeichnen? [CF]-->
                     <lg type="poem">
                         <lg n="1">
                             <label><hi rendition="#c">Mann.</hi></label>

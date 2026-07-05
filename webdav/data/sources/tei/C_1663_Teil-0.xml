@@ -540,13 +540,10 @@
                             rendition="#aq">ô</hi>! vil reins mehl;<lb/> und<lb/> Lobspruch.</hi>
                 </head>
                 <lb/>
-                <!--Layout mit space kodieren?-->
-                <lg type="poem">
-                    <l><hi rendition="#larger"><hi rendition="#in">H</hi>Err <rs type="person"
-                                key="person_001">Simler</rs></hi> euer mehl</l>
+                <lg type="poem" rendition="#twocol">
+                    <l><hi rendition="#larger"><hi rendition="#in">H</hi>Err <rs type="person" key="person_001">Simler</rs></hi> euer mehl</l>
                     <lb/>
-                    <l>W<space dim="horizontal"/>ird finden seinen preis<space dim="horizontal"
-                        />S</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">W</hi>ird finden seinen preis<hi rendition="#acroFin">S</hi></l>
                     <lb/>
                     <l rendition="#et">beym <hi rendition="#larger">fruchtbereichten volk</hi>/</l>
                     <lb/>
@@ -554,7 +551,7 @@
                     <lb/>
                     <l>Jhr trachtet/ daß es rein;</l>
                     <lb/>
-                    <l>J<space dim="horizontal"/>a simmelweisse se<space dim="horizontal"/>J</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">J</hi>a simmelweisse se<hi rendition="#acroFin">J</hi></l>
                     <lb/>
                     <l rendition="#et">darunter nichts vermängt</l>
                     <lb/>
@@ -562,7 +559,7 @@
                     <lb/>
                     <l>O schöne schreibensart</l>
                     <lb/>
-                    <l>L<space dim="horizontal"/>ehrreicher reden blu<space dim="horizontal"/>M</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>ehrreicher reden blu<hi rendition="#acroFin">M</hi></l>
                     <lb/>
                     <l rendition="#et">wodurch zur sonnen steigt</l>
                     <lb/>
@@ -570,7 +567,7 @@
                     <lb/>
                     <l>Hier eine quell ohn schlam[m];</l>
                     <lb/>
-                    <l>H<space dim="horizontal"/>oldseligkeit ohn grim<space dim="horizontal"/>M</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">H</hi>oldseligkeit ohn grim<hi rendition="#acroFin">M</hi></l>
                     <lb/>
                     <l rendition="#et">hier ist nichts ärgerlichs/</l>
                     <lb/>
@@ -578,7 +575,7 @@
                     <lb/>
                     <l>Arbeitet dessen viel</l>
                     <lb/>
-                    <l>E<space dim="horizontal"/>s ist rein simmelmeh<space dim="horizontal"/>L</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">E</hi>s ist rein simmelmeh<hi rendition="#acroFin">L</hi></l>
                     <lb/>
                     <l rendition="#et">die dichtling fallen wol</l>
                     <lb/>
@@ -586,8 +583,7 @@
                     <lb/>
                     <l>Nur immer frisch daran;</l>
                     <lb/>
-                    <l>L<space dim="horizontal"/>aßt sparen uns kein müh<space dim="horizontal"
-                        />E</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>aßt sparen uns kein müh<hi rendition="#acroFin">E</hi></l>
                     <lb/>
                     <l rendition="#et">damit die <hi rendition="#larger">Jndisch Nuß</hi></l>
                     <lb/>
@@ -595,11 +591,9 @@
                     <lb/>
                     <l><rs type="person" key="person_046">Neid hart</rs> du tuhst uns nichts.</l>
                     <lb/>
-                    <l>M<space dim="horizontal"/>an wird der Teutschen eh<space dim="horizontal"
-                        />R</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">M</hi>an wird der Teutschen eh<hi rendition="#acroFin">R</hi></l>
                     <lb/>
-                    <l rendition="#et">auß <rs type="person" key="person_045">Phöbus</rs>
-                        namenbuch</l>
+                    <l rendition="#et">auß <rs type="person" key="person_045">Phöbus</rs> namenbuch</l>
                     <lb/>
                     <l rendition="#et">außtilgen nimmermehr.</l>
                 </lg>
@@ -627,21 +621,20 @@
                         Warnung an die unteutschen.</hi>
                 </head>
                 <lb/>
-                <!--Layout mit space kodieren?-->
-                <lg type="poem">
+                <!-- In der ersten Spalte des Akrostichon wird zudem der Name SJMLER hervorgehoben, 
+                     allerdings ohne Einrückung. Kodieren? -->
+                <lg type="poem" rendition="#twocol">
                     <l><hi rendition="#in">S</hi>Eht/ wie der Teutschen ru&#x366;h</l>
                     <lb/>
-                    <l>M<space dim="horizontal"/>it flügel schnellem Lo<space dim="horizontal"
-                        />B</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">M</hi>it flügel schnellem Lo<hi rendition="#acroFin">B</hi></l>
                     <lb/>
                     <l rendition="#et">sich Himmelhoch erschwingt:</l>
                     <lb/>
-                    <l rendition="#et">und <rs type="person" key="person_046">Nydhart</rs> zörnt
-                        darob.</l>
+                    <l rendition="#et">und <rs type="person" key="person_046">Nydhart</rs> zörnt darob.</l>
                     <lb/>
                     <l>Jn einem kurtzen</l>
                     <lb/>
-                    <l>nV<space dim="horizontal"/>nd blik erwachset s<space dim="horizontal"/>O</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">nV</hi>nd blik erwachset s<hi rendition="#acroFin">O</hi></l>
                     <lb/>
                     <l rendition="#et">daß Tadelgern erstaunt</l>
                     <lb/>
@@ -649,7 +642,7 @@
                     <lb/>
                     <l>Mein armer Grimmefol</l>
                     <lb/>
-                    <l>L<space dim="horizontal"/>aß fahren deinen ny<space dim="horizontal"/>D</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>aß fahren deinen ny<hi rendition="#acroFin">D</hi></l>
                     <lb/>
                     <l rendition="#et">Das stachlich Bienenvolk</l>
                     <lb/>
@@ -657,7 +650,7 @@
                     <lb/>
                     <l>Lern schweigen; und das mau</l>
                     <lb/>
-                    <l>L<space dim="horizontal"/>eit im gebiß und zau<space dim="horizontal"/>M</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>eit im gebiß und zau<hi rendition="#acroFin">M</hi></l>
                     <lb/>
                     <l rendition="#et">nicht tadlend was nicht taugt</l>
                     <lb/>
@@ -665,10 +658,7 @@
                     <lb/>
                     <l>Es wachßt hier an dem se</l>
                     <lb/>
-                    <l>E<space dim="horizontal"
-                        />y<!--Von Hand (mit Bleistift?) den y-Strich verlängert und y-Punkte hinzugefügt.-->
-                        an dem <rs type="place" key="place_007">Zürichse</rs><space dim="horizontal"
-                        />E</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">E</hi>y<!--Von Hand (mit Bleistift?) den y-Strich verlängert und y-Punkte hinzugefügt.--> an dem <rs type="place" key="place_007">Zürichse<hi rendition="#acroFin">E</hi></rs></l>
                     <lb/>
                     <l rendition="#et">so gu&#x366;t alß irgend wo</l>
                     <lb/>
@@ -676,8 +666,7 @@
                     <lb/>
                     <l>Rott auß; so säen wi</l>
                     <lb/>
-                    <l>R<space dim="horizontal"/>eiß ab/ so pflantzen wi<space dim="horizontal"
-                        />R:</l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">R</hi>eiß ab/ so pflantzen wi<hi rendition="#acroFin">R:</hi></l>
                     <lb/>
                     <l rendition="#et">du Nyder tuhst uns nichts;</l>
                     <lb/>
