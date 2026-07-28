@@ -130,12 +130,17 @@
                         Gedichte:</hi></titlePart>
                      <lb/>
                      <titlePart type="desc"><hi rendition="#c">darinnen</hi><lb/>
-                        <hi rendition="#aq">I.</hi> Haubtbegriffliche Jnha&#x364;lte der
-                        Pſalmen<lb/> Davids:<lb/>
-                        <hi rendition="#aq">II.</hi> Underſchiedliche/ auf zeiten und
-                        anla&#x364;ſſe<lb/> gerichtete Geſa&#x364;nge:<lb/>
-                        <hi rendition="#aq">III.</hi> Allerhand erbauliche Überſchrifften/ ꝛc.<lb/>
-                        enthalten ſeind.</titlePart>
+                        <list>
+                           <item><hi rendition="#aq">I.</hi> Haubtbegriffliche Jnha&#x364;lte der
+                              Pſalmen<lb/> Davids:</item>
+                           <lb/>
+                           <item><hi rendition="#aq">II.</hi> Underſchiedliche/ auf zeiten und
+                              anla&#x364;ſſe<lb/> gerichtete Geſa&#x364;nge:</item>
+                           <lb/>
+                           <item><hi rendition="#aq">III.</hi> Allerhand erbauliche Überſchrifften/ ꝛc.<lb/>
+                              enthalten ſeind.</item>
+                        </list>
+                       </titlePart>
                   </docTitle>
                   <lb/>
                   <docEdition><hi rendition="#c">Anietz zum zweyten mal außgefertiget/ und<lb/> mit
@@ -153,20 +158,30 @@
 
             <div n="2" xml:id="iii">
                <div n="3" type="dedication">
-                  <head><hi rendition="#c"><hi rendition="#b">Denen hochgeachten/ wola&#x364;d-<lb
-                              break="no"/></hi>len/ veſten/ frommen/ ehren-noht-<lb break="no"
-                        />veſten/ fürſichtigen/ weyſen<lb/> Herꝛen:</hi></head>
-                  <lb/>
-                  <p> Herꝛn Hans-Jacob Leuen/ des Rahts/ Statt-<lb break="no"/>haltern/ und oberſten
-                     Leutenant über der<lb/> Statt Zürich Panner:<lb/> Junkern Hans-Heinrich
-                     Eſchern/ des Rahts/<lb/> und Statthaubtmann:<lb/> Herꝛn Matthias Landolten/ des
-                     Rahts von der<lb/> freyen wahl:<lb/> Herꝛn Hans Bergern/ des Rahts von der
-                     <lb/> freyen wahl/ Bauherꝛn/ und geweſnem Vogt<lb/> der Herꝛſchafft
-                     Weinfelden:<lb/> Herꝛn Hans-Heinrich Schultheſſen/ des<lb/> Rahts/ und
-                     Zunfftmeiſtern:<lb/> Herꝛn Hans-Heinrich Müllern/ des Rahts/<lb/>
-                     Zunfftmeiſtern/ und Geſandten über das<lb/> Gebirg:<lb/> Herꝛn Hans-Heinrich
-                     Rahnen/ des Regiments<lb/> der Statt Zürich/ und Altſchützenmeiſtern:<lb/>
-                     <hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> Günneren;
+                  <list>
+                     <head><hi rendition="#c"><hi rendition="#b">Denen hochgeachten/ wola&#x364;d-<lb
+                        break="no"/></hi>len/ veſten/ frommen/ ehren-noht-<lb break="no"/>veſten/
+                         fürſichtigen/ weyſen<lb/> Herꝛen:</hi></head>
+                     <lb/>
+                     <item>Herꝛn Hans-Jacob Leuen/ des Rahts/ Statt-<lb break="no"/>haltern/ und oberſten
+                        Leutenant über der<lb/> Statt Zürich Panner:</item>
+                     <lb/> 
+                     <item>Junkern Hans-Heinrich Eſchern/ des Rahts/<lb/> und Statthaubtmann:</item>
+                     <lb/> 
+                     <item>Herꝛn Matthias Landolten/ des Rahts von der<lb/> freyen wahl:</item>
+                     <lb/> 
+                     <item>Herꝛn Hans Bergern/ des Rahts von der<lb/> freyen wahl/ Bauherꝛn/ und geweſnem Vogt<lb/> 
+                        der Herꝛſchafft Weinfelden:</item>
+                     <lb/>
+                     <item>Herꝛn Hans-Heinrich Schultheſſen/ des<lb/> Rahts/ und Zunfftmeiſtern:</item>
+                     <lb/>
+                     <item>Herꝛn Hans-Heinrich Müllern/ des Rahts/<lb/>
+                        Zunfftmeiſtern/ und Geſandten über das<lb/> Gebirg:</item>
+                     <lb/> 
+                     <item>Herꝛn Hans-Heinrich Rahnen/ des Regiments<lb/> der Statt Zürich/ und Altſchützenmeiſtern:</item>
+                  </list>
+                     <lb/>
+                  <p><hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> Günneren;
                         theils auch lieben Herꝛen<lb/> Vetteren/ Schwa&#x364;geren und
                            Gefa&#x364;t-<lb break="no"/>teren.</hi></p>
                </div>
@@ -177,7 +192,7 @@
                <lb/>
 
                <div n="3" type="preface">
-                  <p><hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ wola&#x364;dle/ veſte/
+                  <p><hi rendition="#larger"><hi rendition="#in">H</hi>Ochgeachte/ wola&#x364;dle/ veſte/
                         from-</hi><lb break="no"/>me/ ehren-nohtveſte/ fürſichtige/ weyſe/<lb/>
                      hochgeehrte Herꝛen Günnere; auch liebe<lb/> Herꝛen Vettere/ Schwa&#x364;gere/
                      und Gefa&#x364;ttere.</p>
@@ -297,7 +312,8 @@
                      <lb/>
                      <dateline>Zu&#x364;rich/ den 28. tag Brachm. 1648.</dateline>
                      <lb/>
-                     <signed><hi rendition="#right">Joh. Wilhelm Simler</hi></signed>. </closer>
+                     <signed><hi rendition="#right">Joh. Wilhelm Simler.</hi></signed>
+                  </closer>
                </div>
             </div>
             <lb/>
@@ -307,7 +323,7 @@
             <lb/>
 
             <div n="2" type="letter" xml:id="iv">
-               <head><hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac
+               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac
                            Literatiſ-<lb break="no"/>ſimi Viri,</hi><lb/>
                      <hi rendition="#g"><hi rendition="#k">DN.</hi> DANIELIS RHAGORII,</hi><lb/>
                      Ducentumviri Bernenſis, bis præfecti,<lb/> Poëtæ coronati.</hi></head>
@@ -329,7 +345,7 @@
             <lb/>
 
             <div n="2" type="letter" xml:id="v">
-               <head><hi rendition="#aq #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp;
+               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola V. rev. &amp;
                         doctißimi</hi><lb/>
                      <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MVLLERI,</hi><lb/>
                      Eccleſiæ Talvillanæ ad lacum Tig. Paſto-<lb break="no"/>ris vigilantiſſimi;
@@ -385,34 +401,33 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="vii">
-               <head><hi rendition="#aq #b">II.<lb/>
-                     <hi rendition="#b">I</hi>oannes <hi rendition="#b">
+               <head><hi rendition="#aq #b #c">II.<lb/>
+                     Ioannes
                         <choice>
                            <sic>VV</sic>
                            <corr>W</corr>
-                        </choice></hi>ilelmus Simlerus.</hi><lb/>
-                  <anchor xml:id="a2"/>α&#x313;ναγραμματιζόμενος<note type="annotation"
-                     targetEnd="a2"><p>Dieses griechische Wort muss noch geprüft werden.</p></note>,<lb/>
-                  <hi rendition="#aq #b"><hi rendition="#b">I</hi>llen' vir ſuave melos
+                        </choice>ilelmus Simlerus.</hi><lb/>
+                  α&#x313;ναγραμματιζόμενος,<lb/> <!-- HS: Der griechische Text muss noch überprüft werden. -->
+                  <hi rendition="#aq #b">Illen' vir ſuave melos
                   Muſis?</hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">I</hi>Lléne Vir Muſis <hi
                            rendition="#i">&amp; Chriſto fundere dignum,</hi></hi></l>
                   <lb/>
-                  <l><hi rendition="#aq">Suave melos <hi rendition="#i">verbis,
+                  <l rendition="#et"><hi rendition="#aq">Suave melos <hi rendition="#i">verbis,
                               ſuaveq&#x301;<abbr>ʒ</abbr> rebus, amat?</hi></hi></l>
                   <lb/>
                   <l><hi rendition="#aq #i">Sic eſt: ecce liber præſens hoc firmat abundè;</hi></l>
                   <lb/>
-                  <l><hi rendition="#aq #i">Suave melos verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus
+                  <l rendition="#et"><hi rendition="#aq #i">Suave melos verbis, ſuaveq&#x301;<abbr>ʒ</abbr> rebus
                         habet.</hi></l>
                </lg>
                <lb/>
                <closer>
                   <signed><hi rendition="#aq #right"><hi rendition="#g">IOH. <hi rendition="#k"
-                              >WIRZIVS</hi>,</hi> S. Th. Prof.<lb/> honoris <abbr>c.
-                     f.</abbr></hi></signed>
+                              >WIRZIVS</hi>,</hi> S. Th. Prof.<lb/> honoris 
+                     <abbr>c.f.</abbr></hi></signed>
                </closer>
             </div>
             <lb/>
@@ -421,11 +436,11 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="viii">
-               <head><hi rendition="#aq #b">III.<lb/>
+               <head><hi rendition="#aq #b #c">III.<lb/>
                      <hi rendition="#g"><hi rendition="#k">JOANNES</hi> GUIELMUS SIMLERUS<lb/> ARTE
                         FECIT.</hi><lb/>
-                     <hi rendition="#i">Per Anagramma.</hi><lb/> Anne Muſicus eriget hiſce: <hi
-                        rendition="#i">ut, re, mi, fa, ſol, la?</hi></hi></head>
+                     <hi rendition="#i">Per Anagramma.</hi><lb/> Anne Muſicus eriget hiſce: 
+                  <hi rendition="#i">ut, re, mi, fa, ſol, la?</hi></hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">U</hi>T RElevet Mlſerum FAtum,
@@ -532,9 +547,9 @@
             <milestone unit="section" rendition="#hr"/>
             <lb/>
 
-            <div n="w" type="poem" xml:id="x">
-               <head><hi rendition="#aq">V.</hi></head>
-               <lg type="poem">
+            <div n="2" type="poem" xml:id="x">
+               <head><hi rendition="#aq #c #b">V.</hi></head>
+               <lg type="poem"> <!-- HS: Der griechische Text muss noch ergänzt werden. -->
                   <l/>
                   <lb/>
                   <lb/>
@@ -572,14 +587,13 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xvii">
-               <head><hi rendition="#aq #c">VI.</hi><lb/>
+               <head><hi rendition="#aq #c #b">VI.</hi><lb/>
                   <hi rendition="#i">In laudem Autoris, &amp;c.</hi></head>
                <lb/>
-
-               <lg type="poem">
-                  <lg n="1">
-                     <head><hi rendition="#aq #c">1.</hi></head>
-                     <lb/>
+               <div n="3">
+                  <head><hi rendition="#aq #c #b">1.</hi></head>
+                  <lb/>
+                  <lg type="poem">
                      <l><hi rendition="#aq"><hi rendition="#in">A</hi>Ut prodeſſe volunt, aut
                            delectare Poëtæ,</hi></l>
                      <lb/>
@@ -591,11 +605,13 @@
                      <l rendition="#et"><hi rendition="#aq">Omne proin punctum nemo tuliſſe
                            neget.</hi></l>
                   </lg>
+               </div>
+               <lb/>
+               
+               <div n="3">
+                  <head><hi rendition="#aq #c">2.</hi></head>
                   <lb/>
-
-                  <lg n="2">
-                     <head><hi rendition="#aq #c">2.</hi></head>
-                     <lb/>
+                  <lg type="poem">
                      <l><hi rendition="#aq">Utile quisquis amas, ac audis ſuave libenter,</hi></l>
                      <lb/>
                      <l rendition="#et"><hi rendition="#aq">Utile volve metrum hoc, hoc cane ſuave
@@ -607,7 +623,7 @@
                      <l rendition="#et"><hi rendition="#aq">Utile, ſuave ſatis; Lector; utrinque
                            patet.</hi></l>
                   </lg>
-               </lg>
+               </div>
                <lb/>
                <closer>
                   <salute><hi rendition="#aq #c #i">Sinceræ affinitatis ergò poſuit</hi></salute>
@@ -668,8 +684,8 @@
                      lobwürdigem ru&#x366;hm<lb/> dem hochgelehrten Herꝛen<lb/> Johann-Wilhelm
                      Simler/<lb/> Zuchtherꝛen im obern <hi rendition="#aq">Collegio Parthe-<lb
                            break="no"/>nico</hi> zu&#x366; Zürich/ über ſeine außgangne Poe-<lb
-                        break="no"/>tiſche Getichte und Geſa&#x364;nge.</hi><lb/>
-                  <hi rendition="#aq #g #k">SONNET.</hi></head>
+                        break="no"/>tiſche Getichte und Geſa&#x364;nge.<lb/>
+                  <hi rendition="#aq #g #k">SONNET.</hi></hi></head>
                <lb/>
                <lg type="poem">
                   <l xml:id="l1a" next="#l1b"><hi rendition="#in">D</hi>Er Ga&#x364;rtner wird
@@ -729,11 +745,12 @@
                         rendition="#aq">iô!</hi> vil reins mehl;<lb/> und<lb/>
                   Lobſpruch.</hi></head>
                <lb/>
+               <!-- HS: Positionen müssen noch codiert werden. -->
                <lg type="poem">
-                  <l><hi rendition="#b"><hi rendition="#in">H</hi>Erꝛ Simler</hi> euer mehl Wird
+                  <l><hi rendition="#larger"><hi rendition="#in">H</hi>Erꝛ Simler</hi> euer mehl Wird
                      finden ſeinen preiſS</l>
                   <lb/>
-                  <l>beym <hi rendition="#b">fruchtbereichten volk/</hi> dieweil mit ſonderm
+                  <l>beym <hi rendition="#larger">fruchtbereichten volk/</hi> dieweil mit ſonderm
                      fleiß</l>
                   <lb/>
                   <l>Jhr trachtet/ daß es rein; Ja ſimmelweiſſe ſeJ</l>
@@ -742,7 +759,7 @@
                   <lb/>
                   <l>O ſcho&#x364;ne ſchreibensart Lehrꝛeicher reden bluM</l>
                   <lb/>
-                  <l>wodurch zur ſonnen ſteigt der <hi rendition="#b">Teutſchen Sprache</hi>
+                  <l>wodurch zur ſonnen ſteigt der <hi rendition="#larger">Teutſchen Sprache</hi>
                      ruhm.</l>
                   <lb/>
                   <l>Hier eine quell ohn ſchlam&#x303;; Holdſeligkeit ohn grimM</l>
@@ -755,7 +772,7 @@
                   <lb/>
                   <l>Nur immer friſch daran; Laßt ſparen uns kein mu&#x364;hE</l>
                   <lb/>
-                  <l>damit die <hi rendition="#b">Jndiſch Nuß</hi> auch diſer enden
+                  <l>damit die <hi rendition="#larger">Jndiſch Nuß</hi> auch diſer enden
                      blu&#x364;he!</l>
                   <lb/>
                   <l>Neidhart du tuhſt uns nichts. Man wird der Teutſchen ehR</l>
@@ -786,14 +803,14 @@
                <lg type="poem">
                   <l xml:id="l2a" next="#l2b"><hi rendition="#in">O</hi>B gleich der <hi
                         rendition="#larger">Tichter</hi> kunſt ſehr hoch bisher ge-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l xml:id="l2b" prev="#l2a">ſtigen/</l>
                   <lb/>
                   <l>Will ihr verdienter Ru&#x366;hm bey uns doch bald erligen/</l>
                   <lb/>
                   <l rendition="#et">Nicht darum/ daß nunmehr kein geiſt zu&#x366; finden ſey</l>
                   <lb/>
-                  <l rendition="#et">So durch ſein wüſſenſchafft den <hi rendition="#b">Alten</hi>
+                  <l rendition="#et">So durch ſein wüſſenſchafft den <hi rendition="#larger">Alten</hi>
                      komme bey;</l>
                   <lb/>
                   <l>Der <hi rendition="#larger">Teutſch <hi rendition="#aq">Virgilius</hi></hi> hat
@@ -818,7 +835,7 @@
                   <lb/>
                   <l xml:id="l3a" next="#l3b">Wer wolt des <hi rendition="#larger">Hübners</hi> werk
                      mit ſattem ru&#x366;hm auß-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l xml:id="l3b" prev="#l3a">ſtreichen/</l>
                   <lb/>
                   <l>Weil ihm der Muſen ſchar mu&#x366;ß aller enden weichen?</l>
@@ -828,7 +845,7 @@
                   <lb/>
                   <l xml:id="l4a" next="#l4b" rendition="#et">Alß <hi rendition="#aq #larger"
                         >Gamon</hi> durch vorwitz Jhm etwan ſchimpf ge-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l xml:id="l4b" prev="#l4a">macht.</l>
                   <lb/>
                   <l>Es wer von <hi rendition="#larger">Werder</hi> auch dem weitbekanten Helden</l>
@@ -862,7 +879,7 @@
                   <lb/>
                   <l xml:id="l5a" next="#l5b" rendition="#et">Die <hi rendition="#larger">fruchtbar
                         Gſellſchaft</hi> hat die andern eynver-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l xml:id="l5b" prev="#l5a">leibt</l>
                   <l xml:id="l6a" prev="#l6b">(bleibt.</l>
                   <lb/>
@@ -892,7 +909,7 @@
                   <lb/>
                   <l xml:id="l7b" prev="#l7a"><hi rendition="#larger">Maitreſſen</hi></l>
                   <lb/>
-                  <l>(Die <hi rendition="#b">Liebſte</hi> gilt nicht mehr) man balde mo&#x364;cht
+                  <l>(Die <hi rendition="#larger">Liebſte</hi> gilt nicht mehr) man balde mo&#x364;cht
                      vergeſſen/</l>
                   <lb/>
                   <l rendition="#et">Tringt Jhren ſo vil witz vnd hoher tugend auf/</l>
@@ -902,7 +919,7 @@
                   <lb/>
                   <l xml:id="l8a" next="#l8b">Jch ko&#x364;nt nicht ohn verdruß die <hi
                         rendition="#larger">Thorheit</hi> gar beſchrei-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l>So diſe Leuthe heut mit vollem Segel treiben/</l>
                   <l xml:id="l8b" prev="#l8a">(ben</l>
                   <lb/>
@@ -972,35 +989,43 @@
                <head><hi rendition="#aq #c #b">XI.</hi></head>
                <lb/>
                <lg type="poem">
-                  <l><hi rendition="#in">S</hi>O ſchikket Herꝛ Simler ſein Bu&#x366;che
+                  <lg n="1">
+                     <l><hi rendition="#in">S</hi>O ſchikket Herꝛ Simler ſein Bu&#x366;che
                      zureiſen/</l>
+                     <lb/>
+                     <l rendition="#et">in diſer lands gegend die erſtlinge bringt/</l>
+                     <lb/>
+                     <l rendition="#et">Opitziſch/ fein Chriſtlich er tichtet und ſingt/</l>
+                     <lb/>
+                     <l>die jugend zur tugend zuleiten und weiſen.</l>
+                  </lg>
                   <lb/>
-                  <l rendition="#et">in diſer lands gegend die erſtlinge bringt/</l>
+                  <lg n="2">
+                     <l>Diß Buche wird geben beliebete fru&#x364;chte/</l>
+                     <lb/>
+                     <l rendition="#et">und weilen es gla&#x364;ntzet von lehren und kunſt/</l>
+                     <lb/>
+                     <l rendition="#et">beym fruchtbaren Orden wird finden den gunſt/</l>
+                     <lb/>
+                     <l>ſeim Herꝛen heimbringen ein gutes geru&#x364;chte.</l>
+                  </lg>
                   <lb/>
-                  <l rendition="#et">Opitziſch/ fein Chriſtlich er tichtet und ſingt/</l>
+                  <lg n="3">
+                     <l rendition="#et">Jch wu&#x364;nſchte den nammen des Tichters zuſehn</l>
+                     <lb/>
+                     <l rendition="#et">wo fu&#x364;nftzigneunmalen/ und ſiben ſchon ſtehn.</l>
+                  </lg>
                   <lb/>
-                  <l>die jugend zur tugend zuleiten und weiſen.</l>
-                  <lb/>
-                  <l>Diß Buche wird geben beliebete fru&#x364;chte/</l>
-                  <lb/>
-                  <l rendition="#et">und weilen es gla&#x364;ntzet von lehren und kunſt/</l>
-                  <lb/>
-                  <l rendition="#et">beym fruchtbaren Orden wird finden den gunſt/</l>
-                  <lb/>
-                  <l>ſeim Herꝛen heimbringen ein gutes geru&#x364;chte.</l>
-                  <lb/>
-                  <l rendition="#et">Jch wu&#x364;nſchte den nammen des Tichters zuſehn</l>
-                  <lb/>
-                  <l rendition="#et">wo fu&#x364;nftzigneunmalen/ und ſiben ſchon ſtehn.</l>
-                  <lb/>
-                  <l>O daß er in diſe Geſellſchaft werd gnommen!</l>
-                  <lb/>
-                  <l rendition="#et">und ihme zum ru&#x366;hme der Ku&#x364;nſtler am
+                  <lg n="4">
+                     <l>O daß er in diſe Geſellſchaft werd gnommen!</l>
+                     <lb/>
+                     <l rendition="#et">und ihme zum ru&#x366;hme der Ku&#x364;nſtler am
                      Ma&#x364;in</l>
-                  <lb/>
-                  <l rendition="#et">mu&#x364;ß etzen und graben ins kupfer hineyn/</l>
-                  <lb/>
-                  <l>wann ba&#x364;ldeſt nach hundert Sinnbilder außkommen.</l>
+                     <lb/>
+                     <l rendition="#et">mu&#x364;ß etzen und graben ins kupfer hineyn/</l>
+                     <lb/>
+                     <l>wann ba&#x364;ldeſt nach hundert Sinnbilder außkommen.</l>
+                  </lg>
                </lg>
                <lb/>
                <closer>
@@ -1136,7 +1161,7 @@
                   <lg type="poem">
                      <l xml:id="l10a" next="#l10b"><hi rendition="#in">W</hi>Er ſcha&#x364;lk' und
                         ſpo&#x364;tter fleucht/ und Gottes wort be-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l10b" prev="#l10a">trachtet/</l>
                      <lb/>
                      <l rendition="#et">der gru&#x366;net wie ein baum an einem waſſerfluß/</l>
@@ -1189,7 +1214,7 @@
                      <lb/>
                      <l xml:id="l11a" next="#l11b" rendition="#et">des Davids wahl und reych: welchs
                         ihnen er ver-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l11b" prev="#l11a">weißt/</l>
                      <lb/>
                      <l rendition="#et">vermahnet ſie zur bu&#x366;ß/ und Gottes gu&#x364;te
@@ -1256,7 +1281,7 @@
                      <lb/>
                      <l xml:id="l13a" next="#l13b" rendition="#et">beym Herꝛen ſu&#x366;chet ſchirm:
                         ſein' unſchuld ihm er-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l13b" prev="#l13a">weißt:</l>
                      <lb/>
                      <l rendition="#et">weyſſaget wider Saul/ und Gotts gerichte preißt/</l>
@@ -1496,7 +1521,7 @@
                   <lg type="poem">
                      <l xml:id="l14a" next="#l14b">Was David jüngſt begert/ das hat ihm Gott
                         beſcheh-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l rendition="#et">darum er ſein gelübd erſtattet gleicher weiß/</l>
                      <l xml:id="l14b" prev="#l14a">(ret/</l>
                      <lb/>
@@ -1504,7 +1529,7 @@
                      <lb/>
                      <l xml:id="l15a" next="#l15b">und glaubt/ es werd der feind/ durch Gottes zorn
                         ver-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l15b" prev="#l15a">zehret.</l>
                   </lg>
                   <lb/>
@@ -1546,7 +1571,7 @@
                   <lg type="poem">
                      <l xml:id="l16b" next="#l16a">Der Herꝛ mich ſpeißt und tra&#x364;nkt an ſeel
                         und leib zu&#x366;-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l rendition="#et">er ſchützt und leitet mich alß ein getreuer hirt/</l>
                      <lb/>
                      <l rendition="#et">durch ſeines Geiſtes troſt die ſeel erquiket wirt/</l>
@@ -1599,7 +1624,7 @@
                      <lb/>
                      <l xml:id="l17a" next="#l17b" rendition="#et">bewa&#x364;hr mich durch und
                         durch/ ſo wirſt recht ſpre-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l17b" prev="#l17a">chen mir/</l>
                      <lb/>
                      <l>ich aber wil mit dank dir fo&#x364;rter ſteiff anhangen.</l>
@@ -1738,7 +1763,7 @@
                      <l xml:id="l20a" prev="#l20b">(gen.</l>
                      <lb/>
                      <l xml:id="l20b" next="#l20a">bey ihm iſt raht und hülff: ohn ihn mag nichts
-                        gelin-</l>
+                        gelin-</l><lb break="no"/>
                   </lg>
                   <lb/>
                </div>
@@ -1788,7 +1813,7 @@
                      <lb/>
                      <l xml:id="l22a" next="#l22b">wünſcht; na&#x364;chſt der feinden ſtraf; der
                         ſünd zu&#x366;wider-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l22b" prev="#l22a">ſtreben.</l>
                   </lg>
                   <lb/>
@@ -1856,7 +1881,7 @@
                   <lg type="poem">
                      <l xml:id="l23a" next="#l23b">Jn krankheit haſt du mich/ mein Herꝛ und Gott/
                         er-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l23b" prev="#l23a">ho&#x364;ret:</l>
                      <lb/>
                      <l rendition="#et">Lobopfer wil ich dir verehren iederzeit/</l>
@@ -1881,7 +1906,7 @@
                      <lb/>
                      <l xml:id="l25a" next="#l25b" rendition="#et">mich plagten feind' und freund'/
                         alß ich war la&#x364;ger-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l25b" prev="#l25a">hafft/</l>
                      <lb/>
                      <l>ich aber ſprach: Herꝛ/ hilff! Dein lob wil ich nicht ſparen.</l>
@@ -2881,7 +2906,7 @@
                   <lg type="poem">
                      <l xml:id="l30a" next="#l30b">Herꝛ/ neig dein ohr zu&#x366; mir/ und laß mich
                         hülff em-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l30b" prev="#l30a">pfinden/</l>
                      <lb/>
                      <l>bewahr auch deinen knecht vor ſünden und vor feinden:</l>
@@ -3090,7 +3115,7 @@
                      <lb/>
                      <l xml:id="l33a" next="#l33b">ihm ſchaden weder leu/ noch ſchlang/ noch wilde
                         dra-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l33b" prev="#l33a">chen/</l>
                      <lb/>
                      <l>dan Gottes engel ihn/ auß Gotts befehl verwachen.</l>
@@ -3329,7 +3354,7 @@
                      <l>ihr engel/ die ihr ſeyt des Herꝛen ſtarke helden/</l>
                      <lb/>
                      <l xml:id="l36a" next="#l36b">ihr heerzeug' und geſcho&#x364;pff des Herꝛſchers
-                        lob ſollt mel-</l>
+                        lob ſollt mel-</l><lb break="no"/>
                   </lg>
                   <lb/>
                </div>
@@ -3389,7 +3414,7 @@
                      <lb/>
                      <l xml:id="l38a" next="#l38b">Herꝛ/ uns gefangne lo&#x364;ß: den undank
                         wo&#x364;llſt nicht re-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l38b" prev="#l38a">chen!</l>
                   </lg>
                   <lb/>
@@ -3793,7 +3818,7 @@
                   <lg type="poem">
                      <l xml:id="l40a" next="#l40b">Wie knecht' und ma&#x364;gde nur auf herꝛn und
                         frauen ſe-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l40b" prev="#l40a">hen/</l>
                      <lb/>
                      <l rendition="#et">zu&#x366; haben ihren ſchirm: ſo ſehen wir auf Gott/</l>
@@ -3833,7 +3858,7 @@
                      <lb/>
                      <l xml:id="l41a" next="#l41b">Herꝛ/ thu&#x366; den frommen gu&#x366;ts/ damit
                         ſie nicht um-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l41b" prev="#l41a">ſchauen</l>
                      <lb/>
                      <l rendition="#et">nach ungerechtigkeit; vertilg die ſcha&#x364;lke gar!</l>
@@ -3957,7 +3982,7 @@
                      <lb/>
                      <l xml:id="l42a" next="#l42b">dein theürgeſchworner eid ſein gſchlecht und
                         reych behu&#x364;-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l rendition="#et">zu&#x366; Zion deiner kirch beywohne deine gnad!</l>
                      <l xml:id="l42b" prev="#l42a">(te:</l>
                   </lg>
@@ -4264,7 +4289,7 @@
                   <lg type="poem">
                      <l xml:id="l46a" next="#l46b">Lobt Gott mit neuem lied/ mit harff- und pauken
                         ſchla-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l46b" prev="#l46a">gen/</l>
                      <lb/>
                      <l rendition="#et">daheim und offenlich/ mit mund und hertz
@@ -5836,7 +5861,7 @@
                            mein</l>
                         <lb/>
                         <l>wort/ und merk auf die gedanken: dich bett ich an/ be-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>hu&#x364;t du mich vor wanken.</l>
                      </lg>
                      <lb/>
@@ -5860,10 +5885,10 @@
                                  steht weder in den drei übrigen Stimmen noch im eigentlichen
                                  Bettgesang, wo stattdessen ein Doppelpunkt geschrieben ist.
                                  Wahrsch. Druckfehler</p></note> ver-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>nim&#x342; mein wort/ und merk auf die gedanken: dich bett ich an/
                            be-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>hu&#x364;t du mich vor wanken.</l>
                      </lg>
                      <lb/>
@@ -5886,7 +5911,7 @@
                            ru&#x364;ffen</l>
                         <lb/>
                         <l>und geſchrey: gib was ich bitt/ und mir gena&#x364;dig ſey: ver-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>nim&#x342; mein wort/ und merk auf die gedanken: dich bett ich</l>
                         <lb/>
                         <l>an/ behu&#x364;t du mich vor wanken.</l>
@@ -5908,7 +5933,7 @@
                         <lb/>
                         <l>nim&#x342; mein wort/ und merk auf die gedanken: dich bett ich an/
                            be-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>hu&#x364;t du mich vor wanken.</l>
                      </lg>
                      <lb/>
@@ -6906,7 +6931,7 @@
                   <lb/>
                   <l xml:id="l48a" next="#l48b">Der him&#x342;liſch Bra&#x364;utigam wird
                      ba&#x364;ldeſt ſeyn vor-</l>
-                  <lb/>
+                  <lb break="no"/>
                   <l xml:id="l48b" prev="#l48a">handen:</l>
                   <lb/>
                   <l xml:id="l49a" next="#l49b">nemt o&#x364;l des glaubens mit/ ſonſt kommet ihr
@@ -9268,7 +9293,7 @@
                            es er-</l>
                         <lb break="no"/>
                         <l>wahren/ zu&#x366; ewigen jahren: den ſegen w<anchor xml:id="a74"
-                              /><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a74"
+                              /><unclear reason="uncleanPrint">u&#x364;</unclear><note type="annotation" targetEnd="a74"
                                  ><p>die übrigen drei Stimmen sowie der eigentliche Hochzeitgesang
                                  würden hier ein ü vermuten lassen. In der SBB sieht es allerdings
                                  auch eher nach ue aus</p></note>nſchen wir.</l>
@@ -12175,7 +12200,7 @@
                      <lb/>
                      <l xml:id="l52b" next="#l52a" rendition="#et">ſie kommet aufgezogen/ wan ſtork
                         und ſchwalb ent-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l>die ſonn der wag nicht weit.</l>
                   </lg>
                   <lb/>
@@ -12223,7 +12248,7 @@
                      <lb/>
                      <l xml:id="l53a" next="#l53b" rendition="#et">was bleibt wird abgeſchlagen/
                         aufgleſen/ heimgetra-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l>zu&#x366; mancherley genuß.</l>
                      <lb/>
                      <l xml:id="l53b" prev="#l53a">(gen/</l>
@@ -12243,7 +12268,7 @@
                      <lb/>
                      <l xml:id="l54b" next="#l54a" rendition="#et">die zwetzgen/ feigen/
                         ka&#x364;ſten/ und mandel ſeind der ga&#x364;-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l>ziparten ißt das gſind.</l>
                   </lg>
                   <lb/>
@@ -13106,7 +13131,7 @@
                      <l>Der Herꝛ/ von Cajaphas gefragt um lehr und leben/</l>
                      <lb/>
                      <l xml:id="l60a" next="#l60b">lehrt uns des glaubens halb gantzrunde rechnung ge-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l60b" prev="#l60a">ben.</l>
                   </lg>
                   </div>
@@ -13200,7 +13225,7 @@
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l61a" next="#l61b">Der Simon Chriſtus hilfft das kreutz zur richtſtatt tra-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l61b" prev="#l61a">gen:</l>
                      <lb/>
                      <l>uns aber Gott der Herꝛ: damit wir nicht verzagen.</l>
@@ -13415,7 +13440,7 @@
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l62a" next="#l62b">Wer ſeines hauſes thür dem fremdling wird aufſper-</l>
-                     <lb/>
+                     <lb break="no"/>
                      <l xml:id="l62b" prev="#l62a">ren/</l>
                      <lb/>
                      <l>bey deme wird der Herꝛ/ und er beym Herꝛn eynkehren.</l>
