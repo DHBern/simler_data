@@ -94,9 +94,16 @@
         <xsl:variable name="processed" as="node()*">
             <xsl:apply-templates select="$processed" mode="indent-whitespace"/>
         </xsl:variable>
-        
+
+        <!-- xml-model PIs (schema associations) -->
+        <xsl:text>&#xa;</xsl:text>
+        <xsl:processing-instruction name="xml-model">href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+        <xsl:text>&#xa;</xsl:text>
+        <xsl:processing-instruction name="xml-model">href="../../schema/basisformat_customized.sch" type="application/xml"&#xa;&#x9;schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:processing-instruction>
+        <xsl:text>&#xa;</xsl:text>
+
         <xsl:sequence select="$processed"/>
-        
+
     </xsl:template>
 
     <xsl:template name="facsimile">
@@ -113,10 +120,34 @@
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
             <xsl:attribute name="xml:id" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+            <xsl:attribute name="type">simler-framework</xsl:attribute>
             <xsl:apply-templates select="node()"/>
         </xsl:copy>
     </xsl:template>
-    
+
+    <!-- empty out the publication statement -->
+    <xsl:template match="*:publicationStmt/*:p">
+        <xsl:copy>
+            <xsl:apply-templates select="@*"/>
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- add an empty IIIF manifest idno next to the Transkribus id -->
+    <xsl:template match="*:bibl/*:idno[@type='Transkribus']">
+        <xsl:copy>
+            <xsl:apply-templates select="@*|node()"/>
+        </xsl:copy>
+        <xsl:text>&#xa;            </xsl:text>
+        <idno xmlns="http://www.tei-c.org/ns/1.0" type="URLIIIF"/>
+    </xsl:template>
+
+    <!-- drop the indentation orphaned by the removed facsimile element -->
+    <xsl:template match="*:TEI/text()[not(normalize-space())]">
+        <xsl:if test="not(following-sibling::node()[1][self::*:facsimile])">
+            <xsl:value-of select="replace(., '(\n[ \t]*)+\n', '&#xa;')"/>
+        </xsl:if>
+    </xsl:template>
+
     <xsl:template match="*:facsimile"/>
    
     <xsl:template match="@*[.='']"/>
