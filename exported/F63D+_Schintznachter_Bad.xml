@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F63D+_Schintznachter_Bad" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F63D+ Schintznachter Bad</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F63D+ Schintznachter Bad</title>
+            <idno type="Transkribus">7707777</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1" n="17"/>
+            <pb facs="2" n="17"/>
+            <pb facs="3" n="17"/>
+            <pb facs="4" n="17"/>
+            <pb facs="5" n="17"/>
+            <pb facs="6" n="17"/>
+            <pb facs="7" n="17"/>
+            <pb facs="8" n="17"/>
+            <pb facs="9" n="17"/>
+            <pb facs="10" n="17"/>
+            <pb facs="11" n="17"/>
+            <pb facs="12" n="17"/>
+            <pb facs="13" n="17"/>
+            <pb facs="14" n="17"/>
+            <pb facs="15" n="17"/>
+            <pb facs="16" n="17"/>
+            <pb facs="17" n="17"/>
+            <pb facs="18" n="17"/>
+            <pb facs="19" n="17"/>
+            <pb facs="20" n="17"/>
+            <pb facs="21" n="17"/>
+            <pb facs="22" n="17"/>
+            <fw place="top" type="pageNum">17</fw>
+            <lb/>
+            <fw place="top" type="header">Bey Schintznacht in dem Bern-Gebieth.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>I.</num></hi></head>
+            <lb/>
+            Vber
+            <lb/>
+            das newe Geſund-Bad bey Schintznacht.
+            <lb/>
+            Herꝛen Johann Wilhelm Simlers
+            <lb/>
+            Viergedicht.
+            <lb/>
+            <hi rendition="#in">V</hi>Jel Ba&#x364;der werden vns geru&#x364;hmt von vnſern Alten:
+            <lb/>
+            Fürtrefflich wir das Bad/ zu na&#x364;chſt bey Schintznacht halten/
+            <lb/>
+            Dieweilen es ſich ru&#x364;hmt durch eigne gute Proben:
+            <lb/>
+            Für aller Ba&#x364;deren Krafft ſoll'n wir den Scho&#x364;pffer loben.
+            <lb/>
+            <fw place="bottom" type="pageNum">C</fw>
+            <lb/>
+            <pb facs="23"/>
+            <pb facs="24"/>
+            <pb facs="25"/>
+            <pb facs="26"/>
+            <pb facs="27"/>
+         </div>
+      </body>
+   </text>
+</TEI>
