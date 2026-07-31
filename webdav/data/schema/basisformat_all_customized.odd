@@ -624,6 +624,7 @@
 	                   	<attDef ident="sameAs" mode="delete"/>
                        <attDef ident="type" mode="change">
                            <valList type="closed" mode="replace">
+                               <valItem ident="music"><desc>Noten</desc></valItem>
                                <valItem ident="abbreviations"><desc>Abkürzungsverzeichnis</desc></valItem>
                                <valItem ident="act"><desc>Akt im Drama</desc></valItem>
                                <valItem ident="advertisement"><desc>Anzeige</desc></valItem>
@@ -908,13 +909,6 @@
                                <valItem ident="leftMargin"/>
                            </valList>
                        </attDef>
-                       <attDef ident="rendition" mode="change">
-                           <valList type="closed" mode="replace">
-                               <valItem ident="#aq"><desc>Antiqua-Schrift in Fraktur-Werken</desc></valItem>
-                               <valItem ident="#right"><desc>rechtsbündig</desc></valItem>
-                               <valItem ident="#c"><desc>zentriert</desc></valItem>
-                           </valList>
-                       </attDef>
                        <attDef ident="subtype" mode="delete"/>
                        <!--<attDef ident="n" mode="delete"/>-->
                        <attDef ident="facs" mode="delete"/>
@@ -1140,6 +1134,7 @@
                                <!-- Weitere: -->
                                <valItem ident="speaker"><desc>speaker</desc></valItem>
                                <valItem ident="marginalia"><desc>marginalia</desc></valItem>
+                               <valItem ident="bibl"><desc>bible quote</desc></valItem>
                            </valList>
                        </attDef>
                        <attDef ident="subtype" mode="delete"/>
@@ -1151,6 +1146,7 @@
                                <valItem ident="right"><desc>Marginalie rechts</desc></valItem>
                                <valItem ident="foot"><desc>Fußnote</desc></valItem>
                                <valItem ident="end"><desc>Endnote</desc></valItem>
+                               <valItem ident="bottom"><desc>unten</desc></valItem>
                                <valItem ident="mInline"><desc>Manuskripte: Anmerkung innerhalb der Zeile</desc></valItem>
                                <valItem ident="mTop"><desc>Manuskripte: am oberen Rand</desc></valItem>
                                <valItem ident="mBottom"><desc>Manuskripte: am unteren Rand</desc></valItem>
@@ -2141,6 +2137,7 @@
                            		 <valItem ident="DOI"/>
                            	<valItem ident="VD"/>
                            	<valItem ident="URLIIIF"/>
+                               <valItem ident="Transkribus"/>
                            </valList>
                        </attDef>
                        <attDef ident="xml:id" mode="delete"/>

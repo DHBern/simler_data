@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F63D+_Schintznachter_Bad" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F63D+ Schintznachter Bad</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F63D+ Schintznachter Bad</title>
+            <idno type="Transkribus">7707777</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4011806/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="4011829"/>
+            <fw place="top" type="pageNum">17</fw>
+            <lb/>
+            <fw place="top" type="header">Bey Schintznacht in dem Bern-Gebieth.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>I.</num></hi></head>
+            <lb/>
+            Vber
+            <lb/>
+            das newe Geſund-Bad bey Schintznacht.
+            <lb/>
+            Herꝛen Johann Wilhelm Simlers
+            <lb/>
+            Viergedicht.
+            <lb/>
+            <hi rendition="#in">V</hi>Jel Ba&#x364;der werden vns geru&#x364;hmt von vnſern Alten:
+            <lb/>
+            Fürtrefflich wir das Bad/ zu na&#x364;chſt bey Schintznacht halten/
+            <lb/>
+            Dieweilen es ſich ru&#x364;hmt durch eigne gute Proben:
+            <lb/>
+            Für aller Ba&#x364;deren Krafft ſoll'n wir den Scho&#x364;pffer loben.
+            <lb/>
+            <fw place="bottom" type="pageNum">C</fw>
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>
