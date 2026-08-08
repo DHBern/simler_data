@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN48A_Herbstgesang" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN48A Herbstgesang</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN48A Herbstgesang</title>
+            <idno type="Transkribus">4578988</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <hi rendition="#aq">Cantus.</hi>
+            <lb/>
+            Die dritte Zeit
+            <lb/>
+            Jn jedem Jahr/ Nicht minder zwar
+            <lb/>
+            Alß andre mich erfreüt:/:
+            <lb/>
+            Sie kom&#x303;t herzu&#x366; geſchlichen
+            <lb/>
+            Wan&#x303; Stork v<anchor xml:id="a1"/><unclear>n&#x303;</unclear><note type="annotation" targetEnd="a1"><p>Anstatt des Nasalstriches könnte hier ein Trema fälschlicherweise gedruckt worden sein.</p></note> Schwalm entwichen/
+            <lb/>
+            Die Sonn der Waag nicht weit.
+            <lb/>
+            
+            <hi rendition="#aq">Altus.</hi>
+            <lb/>
+            Die dritte Zeit
+            <lb/>
+            Jn jedem Jahr/ Nicht minder zwar
+            <lb/>
+            Alß andre mich erfreüt:/:
+            <lb/>
+            Sie kom&#x303;t herzu&#x366; geſchlichen
+            <lb/>
+            Wan&#x303; Stork vn&#x303; Schwalm entwichen/
+            <lb/>
+            Die Sonn der Waag nicht weit.
+            <lb/>
+            
+            <hi rendition="#aq">Tenor.</hi>
+            <lb/>
+            Die dritte Zeit
+            <lb/>
+            Jn jedem Jahr/ Nicht minder zwar
+            <lb/>
+            Alß andre mich erfreüt:/:
+            <lb/>
+            Sie ko<anchor xml:id="a2"/><unclear>m&#x303;</unclear><note type="annotation" targetEnd="a2"><p>Nicht sicher, ob wie in Diskant und Alt hier auch ein Nasalstrich steht</p></note>t herzu&#x366; geſchlichen
+            <lb/>
+            Wan&#x303; Stork vn&#x303; Schwalm entwichen/
+            <lb/>
+            Die Sonn der Waag nicht weit.
+            <lb/>
+            
+            <hi rendition="#aq">Baſis.</hi>
+            <lb/>
+            Die dritte Zeit
+            <lb/>
+            Jn jedem Jahr/ Nicht minder zwar
+            <lb/>
+            Alß andre mich erfreüt:/:
+            <lb/>
+            Sie kom&#x303;t herzu&#x366; geſchlichen
+            <lb/>
+            Wan&#x303; Stork vn&#x303; Schwalm entwichen/
+            <lb/>
+            Die Sonn der Waag nicht weit.
+            <lb/>
+            
+            <head><num>2.</num></head>
+            <lb/>
+            Sie bringet mit
+            <lb/>
+            Vil Garten-frücht/ Vnd andre Z<unclear>u&#x364;</unclear>cht/
+            <lb/>
+            Nach jedes landes ſitt:/:
+            <lb/>
+            Ko&#x364;l/ Ru&#x364;ben/ Kürbß/ Limonen/
+            <lb/>
+            Pomrantzen vnd Citronen/
+            <lb/>
+            Auch wolgeſchmakte Quitt.
+            <lb/>
+            <head><num>3.</num></head>
+            <lb/>
+            Der Byren laſt
+            <lb/>
+            Die a&#x364;ſte bukt/ Vnd nidertrukt
+            <lb/>
+            Biß zu&#x366; der Erden vaſt:/:
+            <lb/>
+            Die ſcho&#x364;nen Aepfel prangen
+            <lb/>
+            Mit jhren rohten Wangen/
+            <lb/>
+            Erquiken manchen Gaſt.
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Man findet auch
+            <lb/>
+            Auff diſes zil/ Baumnuſſen vil/
+            <lb/>
+            Zu&#x366; mancherley gebrauch:/:
+            <lb/>
+            Wie arme Leuhte wüſſen:
+            <lb/>
+            So findet man auch nüſſen
+            <lb/>
+            Am wilden Haſelſtrauch.
+            <lb/>
+            
+            <head><num>5.</num></head>
+            <lb/>
+            Die Pferſich ſind
+            <lb/>
+            Ein Kinderſpeiß/ Geleicher weiß
+            <lb/>
+            Die Na&#x364;ſpel teig vnd lind:/:
+            <lb/>
+            Die Zwetzgen/ Feygen/ Ka&#x364;ſten
+            <lb/>
+            Vnd Mandel ſeind der Ga&#x364;ſten:
+            <lb/>
+            Ziparten ißt das Gſind.
+            <lb/>
+            <head><num>6.</num></head>
+            <lb/>
+            Jnſonderheit
+            <lb/>
+            Die edel Frucht/ Der Ra&#x364;ben zucht
+            <lb/>
+            Wird flüſſig diſer zeit:/:
+            <lb/>
+            Der arbeit niemand ſchohnet/
+            <lb/>
+            Dieweil ſie trewlich lohnet
+            <lb/>
+            Mit luſt vnd nutzbarkeit.
+            <lb/>
+            <head><num>7.</num></head>
+            <lb/>
+            Die beſten Fiſch/
+            <lb/>
+            Den Lachß vorauß/ Man tra&#x364;gt zu&#x366; hauß
+            <lb/>
+            Den Reichen alſo friſch:/:
+            <lb/>
+            Auß Weyern/ Seen/ Flüſſen:
+            <lb/>
+            Der mindern auch genieſſen
+            <lb/>
+            Die Armen über Tiſch.
+            <lb/>
+            
+            <head><num>8.</num></head>
+            <lb/>
+            Der Wa&#x364;idmann ſich
+            <lb/>
+            Jm Fa&#x364;ld ergetzt/ Die Haſen hetzt/
+            <lb/>
+            Vnd lokt dem Lerchen ſtrich:/:
+            <lb/>
+            Er ſu&#x366;chet/ mit verlangen/
+            <lb/>
+            Die Schna&#x364;pfe beyzu&#x366;fangen
+            <lb/>
+            Jn Schlingen liſtiglich.
+            <lb/>
+            <head><num>9.</num></head>
+            <lb/>
+            Der Akkermann/
+            <lb/>
+            Alß wol vernu&#x364;gt/ Das Fa&#x364;lde pflu&#x364;gt/
+            <lb/>
+            Vnd widrumb ſa&#x364;yet an:/:
+            <lb/>
+            Die dürꝛen a&#x364;ſt er ſchneitelt:
+            <lb/>
+            Sein Weibe ra&#x364;tſcht vnd reitelt
+            <lb/>
+            Den Hanff/ ſo gu&#x366;t ſie kan.
+            <lb/>
+            <head><num>10</num></head>
+            <lb/>
+            Die Herpſtes-Zeit
+            <lb/>
+            Jn jedem Jahr/ Nicht minder zwar
+            <lb/>
+            Alß andre was bedeut:/:
+            <lb/>
+            Das ma&#x364;nnlich Alter; merke;
+            <lb/>
+            Erzeigen ſol im werke
+            <lb/>
+            Des Glaubens Fruchtbarkeit.
+            <lb/>
+            
+            Mag auch geſungen werden in der melodey: Bey mir mein Hertz/ ꝛc.
+            <lb/>
+            
+            Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-
+            <lb break="no"/>
+            Bibliothek für das 1648. Jahre/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
