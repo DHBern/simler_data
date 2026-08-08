@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN49A_Wintergesang" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN49A Wintergesang</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN49A Wintergesang</title>
+            <idno type="Transkribus">5826831</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <hi rendition="#aq">C. M. fe.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Cantus.</hi>
+            <lb/>
+            Der kürtzeſt tag vnd la&#x364;ngſte nacht
+            <lb/>
+            Den grawen Winter bringen:
+            <lb/>
+            Die Nordenwinde ſich mit macht
+            <lb/>
+            Auß ihren kammern dringen:
+            <lb/>
+            Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee
+            <lb/>
+            Sich ſchlieſſen allerdingen.
+            <lb/>
+            <hi rendition="#aq">Altus.</hi>
+            <lb/>
+            Der kürtzeſt tag vnd la&#x364;ngſte nacht
+            <lb/>
+            Den grawen Winter bringen:
+            <lb/>
+            Die Nordenwinde ſich mit macht
+            <lb/>
+            Auß ihren kammern dringen:
+            <lb/>
+            Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee
+            <lb/>
+            Sich ſchlieſſen allerdingen.
+            <lb/>
+            <hi rendition="#aq">Tenor.</hi>
+            <lb/>
+            Der kürtzeſt tag vnd la&#x364;ngſte nacht
+            <lb/>
+            Den grawen Winter bringen:
+            <lb/>
+            Die Nordenwinde ſich mit macht
+            <lb/>
+            Auß ihren kammern dringen:
+            <lb/>
+            Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee
+            <lb/>
+            Sich ſchlieſſen allerdingen.
+            <lb/>
+            <hi rendition="#aq">Baſis.</hi>
+            <lb/>
+            Der kürtzeſt tag vnd la&#x364;ngſte nacht
+            <lb/>
+            Den grawen Winter bringen:
+            <lb/>
+            Die Nordenwinde ſich mit macht
+            <lb/>
+            Auß ihren kammern dringen:
+            <lb/>
+            Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee
+            <lb/>
+            Sich ſchlieſſen allerdingen.
+            <lb/>
+            
+            <head><num>2.</num></head>
+            <lb/>
+            Der gru&#x364;ne Wald iſt worden kal/
+            <lb/>
+            Das bundte Feld entkleidet:
+            <lb/>
+            Kein zam- noch wildes thier zumal
+            <lb/>
+            An ſeinem ort ſich weidet:
+            <lb/>
+            Das Federheer
+            <lb/>
+            Singt auch nicht mehr/
+            <lb/>
+            Ein theil von vns wegſcheidet.
+            <lb/>
+            <head><num>3.</num></head>
+            <lb/>
+            Das einſam Turturta&#x364;ubelein
+            <lb/>
+            Nur ſeufftzend wird geho&#x364;ret:
+            <lb/>
+            Die Rabenſtim&#x303; iſt ietz gemein/
+            <lb/>
+            Vnd vns das gho&#x364;r verſehret:
+            <lb/>
+            Melancholey
+            <lb/>
+            Wohnt allem bey/
+            <lb/>
+            Vnd alle freud zerſto&#x364;ret.
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Was lebt vnd ſchwebt den Winter ſcheucht/
+            <lb/>
+            Vnd ſu&#x366;chet ſich zu wa&#x364;rmen:
+            <lb/>
+            Der Kriegsmann ſelber ſich verkreucht/
+            <lb/>
+            Vnd machet keine la&#x364;rmen:
+            <lb/>
+            Das Alter jetz
+            <lb/>
+            Liebt Ofens hitz/
+            <lb/>
+            Von wegen kalter Da&#x364;rmen.
+            <lb/>
+            <head><num>5.</num></head>
+            <lb/>
+            Der Weidmann doch/ für ſeinen ſpaß/
+            <lb/>
+            Das Hochgewilde hetzet:
+            <lb/>
+            Das Eiß/ wann es wie ſpiegelglaß/
+            <lb/>
+            Die Jugend auch ergetzet:
+            <lb/>
+            Man metzget eyn
+            <lb/>
+            Vil feißte Schwein/
+            <lb/>
+            Vnd ſich zum Wurſtmahl ſetzet.
+            <lb/>
+            <head><num>6.</num></head>
+            <lb/>
+            Der Winter/ alß des Jahres bauch/
+            <lb/>
+            Verzehrt was wir erworben
+            <lb/>
+            Mit ſaurer arbeit/ zum gebrauch
+            <lb/>
+            Wann jetz die Saat erſtorben:
+            <lb/>
+            Wann vberal
+            <lb/>
+            Zu Berg vnd Thal
+            <lb/>
+            Jſt alles wie verdorben.
+            <lb/>
+            <head><num>7.</num></head>
+            <lb/>
+            Alſo/ dem Winter gleich/ die Zeit
+            <lb/>
+            Jm Alter vns verſchlinget:
+            <lb/>
+            Doch iſt vom Tode nicht befreyt
+            <lb/>
+            Der jung/ wie hoch er ſpringet:
+            <lb/>
+            Drumb haltet wacht
+            <lb/>
+            Bey tag vnd nacht/
+            <lb/>
+            Vnd ſo zum leben dringet!
+            <lb/>
+            
+            Mag auch geſungen werden in der melodey: So wünſch ich ihr ein gu&#x366;te nacht/ ꝛc.
+            <lb/>
+            
+            Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-Bibliothek
+            <lb/>
+            für das 1649. Jahre/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
