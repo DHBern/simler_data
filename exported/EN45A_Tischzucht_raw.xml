@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN45A Tischzucht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN45A Tischzucht</title>
+               <idno type="Transkribus">4576567</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80087146.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=SMCAYISWCEHDMSKZKDFNZRSO&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="129,462 1888,462 1888,1509 129,1509" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="989,476 1126,476 1126,543 989,543" rendition="Line" xml:id="facs_2_r_tl_1"/>
+            <zone points="546,1423 938,1423 938,1484 546,1484" rendition="Line" xml:id="facs_2_r_tl_2"/>
+         </zone>
+         <zone points="113,1542 228,1542 228,2988 113,2988" rendition="TextRegion" xml:id="facs_2_r_334">
+            <zone points="120,1648 212,1648 212,1679 120,1679" rendition="Line" xml:id="facs_2_l"/>
+            <zone points="119,1668 194,1668 194,1699 119,1699" rendition="Line" xml:id="facs_2_l_101"/>
+            <zone points="120,1692 222,1692 222,1722 120,1722" rendition="Line" xml:id="facs_2_l_105"/>
+            <zone points="119,1959 191,1959 191,1991 119,1991" rendition="Line" xml:id="facs_2_l_109"/>
+            <zone points="117,1983 203,1983 203,2014 117,2014" rendition="Line" xml:id="facs_2_l_113"/>
+            <zone points="118,2005 200,2005 200,2035 118,2035" rendition="Line" xml:id="facs_2_l_117"/>
+            <zone points="116,2025 219,2025 219,2058 116,2058" rendition="Line" xml:id="facs_2_l_121"/>
+            <zone points="120,2485 214,2485 214,2518 120,2518" rendition="Line" xml:id="facs_2_l_125"/>
+            <zone points="119,2506 205,2506 205,2539 119,2539" rendition="Line" xml:id="facs_2_l_129"/>
+            <zone points="120,2530 220,2530 220,2561 120,2561" rendition="Line" xml:id="facs_2_l_133"/>
+            <zone points="122,2552 197,2552 197,2584 122,2584" rendition="Line" xml:id="facs_2_l_137"/>
+         </zone>
+         <zone points="234,1540 890,1540 890,2996 234,2996" rendition="TextRegion" xml:id="facs_2_r_336">
+            <zone points="338,1522 845,1522 845,1580 338,1580" rendition="Line" xml:id="facs_2_r_336_tl_1"/>
+            <zone points="342,1568 788,1568 788,1599 342,1599" rendition="Line" xml:id="facs_2_r_336_tl_2"/>
+            <zone points="350,1593 789,1593 789,1625 350,1625" rendition="Line" xml:id="facs_2_r_336_tl_3"/>
+            <zone points="236,1595 832,1595 832,1656 236,1656" rendition="Line" xml:id="facs_2_r_336_tl_4"/>
+            <zone points="140,1646 720,1646 720,1686 140,1686" rendition="Line" xml:id="facs_2_r_336_tl_5"/>
+            <zone points="548,1676 728,1676 728,1710 548,1710" rendition="Line" xml:id="facs_2_r_336_tl_6"/>
+            <zone points="341,1704 487,1704 487,1738 341,1738" rendition="Line" xml:id="facs_2_r_336_tl_8"/>
+            <zone points="357,1731 819,1731 819,1771 357,1771" rendition="Line" xml:id="facs_2_r_336_tl_10"/>
+            <zone points="232,1736 315,1736 315,1789 232,1789" rendition="Line" xml:id="facs_2_r_336_tl_11"/>
+            <zone points="475,1779 647,1779 647,1813 475,1813" rendition="Line" xml:id="facs_2_r_336_tl_13"/>
+            <zone points="359,1788 816,1788 816,1837 359,1837" rendition="Line" xml:id="facs_2_r_336_tl_15"/>
+            <zone points="543,1830 819,1830 819,1872 543,1872" rendition="Line" xml:id="facs_2_r_336_tl_16"/>
+            <zone points="541,1850 655,1850 655,1889 541,1889" rendition="Line" xml:id="facs_2_r_336_tl_17"/>
+            <zone points="381,1881 532,1881 532,1917 381,1917" rendition="Line" xml:id="facs_2_r_336_tl_19"/>
+            <zone points="384,1909 532,1909 532,1942 384,1942" rendition="Line" xml:id="facs_2_r_336_tl_22"/>
+            <zone points="371,1927 798,1927 798,1966 371,1966" rendition="Line" xml:id="facs_2_r_336_tl_23"/>
+            <zone points="236,1960 786,1960 786,1995 236,1995" rendition="Line" xml:id="facs_2_r_336_tl_24"/>
+            <zone points="236,1992 568,1992 568,2024 236,2024" rendition="Line" xml:id="facs_2_r_336_tl_25"/>
+            <zone points="589,2005 778,2005 778,2043 589,2043" rendition="Line" xml:id="facs_2_r_336_tl_26"/>
+            <zone points="583,2040 693,2040 693,2072 583,2072" rendition="Line" xml:id="facs_2_r_336_tl_27"/>
+            <zone points="231,2054 317,2054 317,2102 231,2102" rendition="Line" xml:id="facs_2_r_336_tl_31"/>
+            <zone points="239,2092 319,2092 319,2137 239,2137" rendition="Line" xml:id="facs_2_r_336_tl_33"/>
+            <zone points="702,2092 879,2092 879,2163 702,2163" rendition="Line" xml:id="facs_2_r_336_tl_34"/>
+            <zone points="496,2116 587,2116 587,2175 496,2175" rendition="Line" xml:id="facs_2_r_336_tl_35"/>
+            <zone points="466,2165 586,2165 586,2199 466,2199" rendition="Line" xml:id="facs_2_r_336_tl_38"/>
+            <zone points="230,2196 355,2196 355,2241 230,2241" rendition="Line" xml:id="facs_2_r_336_tl_40"/>
+            <zone points="467,2219 763,2219 763,2279 467,2279" rendition="Line" xml:id="facs_2_r_336_tl_42"/>
+            <zone points="490,2242 601,2242 601,2275 490,2275" rendition="Line" xml:id="facs_2_r_336_tl_43"/>
+            <zone points="636,2267 724,2267 724,2322 636,2322" rendition="Line" xml:id="facs_2_r_336_tl_46"/>
+            <zone points="230,2293 367,2293 367,2337 230,2337" rendition="Line" xml:id="facs_2_r_336_tl_48"/>
+            <zone points="456,2319 578,2319 578,2353 456,2353" rendition="Line" xml:id="facs_2_r_336_tl_49"/>
+            <zone points="394,2333 802,2333 802,2386 394,2386" rendition="Line" xml:id="facs_2_r_336_tl_51"/>
+            <zone points="227,2364 481,2364 481,2406 227,2406" rendition="Line" xml:id="facs_2_r_336_tl_53"/>
+            <zone points="235,2397 466,2397 466,2441 235,2441" rendition="Line" xml:id="facs_2_r_336_tl_55"/>
+            <zone points="492,2407 832,2407 832,2456 492,2456" rendition="Line" xml:id="facs_2_r_336_tl_57"/>
+            <zone points="329,2442 808,2442 808,2490 329,2490" rendition="Line" xml:id="facs_2_r_336_tl_58"/>
+            <zone points="239,2469 524,2469 524,2519 239,2519" rendition="Line" xml:id="facs_2_r_336_tl_60"/>
+            <zone points="371,2504 527,2504 527,2540 371,2540" rendition="Line" xml:id="facs_2_r_336_tl_62"/>
+            <zone points="232,2509 738,2509 738,2565 232,2565" rendition="Line" xml:id="facs_2_r_336_tl_63"/>
+            <zone points="505,2555 717,2555 717,2591 505,2591" rendition="Line" xml:id="facs_2_r_336_tl_64"/>
+            <zone points="380,2581 473,2581 473,2613 380,2613" rendition="Line" xml:id="facs_2_r_336_tl_66"/>
+            <zone points="550,2579 661,2579 661,2636 550,2636" rendition="Line" xml:id="facs_2_r_336_tl_68"/>
+            <zone points="547,2612 866,2612 866,2671 547,2671" rendition="Line" xml:id="facs_2_r_336_tl_70"/>
+            <zone points="458,2652 714,2652 714,2688 458,2688" rendition="Line" xml:id="facs_2_r_336_tl_72"/>
+            <zone points="239,2680 714,2680 714,2714 239,2714" rendition="Line" xml:id="facs_2_r_336_tl_73"/>
+            <zone points="430,2704 705,2704 705,2740 430,2740" rendition="Line" xml:id="facs_2_r_336_tl_74"/>
+            <zone points="392,2731 570,2731 570,2768 392,2768" rendition="Line" xml:id="facs_2_r_336_tl_76"/>
+            <zone points="392,2746 842,2746 842,2797 392,2797" rendition="Line" xml:id="facs_2_r_336_tl_77"/>
+            <zone points="227,2778 378,2778 378,2819 227,2819" rendition="Line" xml:id="facs_2_r_336_tl_79"/>
+            <zone points="227,2811 352,2811 352,2855 227,2855" rendition="Line" xml:id="facs_2_r_336_tl_82"/>
+            <zone points="650,2806 766,2806 766,2863 650,2863" rendition="Line" xml:id="facs_2_r_336_tl_83"/>
+            <zone points="290,2854 589,2854 589,2916 290,2916" rendition="Line" xml:id="facs_2_r_336_tl_85"/>
+            <zone points="367,2870 647,2870 647,2915 367,2915" rendition="Line" xml:id="facs_2_r_336_tl_86"/>
+            <zone points="347,2881 737,2881 737,2940 347,2940" rendition="Line" xml:id="facs_2_r_336_tl_87"/>
+            <zone points="347,2917 832,2917 832,2965 347,2965" rendition="Line" xml:id="facs_2_r_336_tl_88"/>
+            <zone points="307,2960 796,2960 796,3011 307,3011" rendition="Line" xml:id="facs_2_r_336_tl_89"/>
+         </zone>
+         <zone points="979,1552 1492,1552 1492,2973 979,2973" rendition="TextRegion" xml:id="facs_2_r_338">
+            <zone points="993,2561 1100,2561 1100,2592 993,2592" rendition="Line" xml:id="facs_2_l_151"/>
+            <zone points="993,2579 1079,2579 1079,2612 993,2612" rendition="Line" xml:id="facs_2_l_155"/>
+            <zone points="993,2601 1079,2601 1079,2633 993,2633" rendition="Line" xml:id="facs_2_l_159"/>
+            <zone points="995,2622 1075,2622 1075,2654 995,2654" rendition="Line" xml:id="facs_2_l_163"/>
+            <zone points="993,2675 1095,2675 1095,2706 993,2706" rendition="Line" xml:id="facs_2_l_168"/>
+            <zone points="987,2877 1072,2877 1072,2908 987,2908" rendition="Line" xml:id="facs_2_l_173"/>
+            <zone points="988,2899 1093,2899 1093,2929 988,2929" rendition="Line" xml:id="facs_2_l_177"/>
+            <zone points="989,2918 1063,2918 1063,2952 989,2952" rendition="Line" xml:id="facs_2_l_181"/>
+         </zone>
+         <zone points="1110,1533 1778,1533 1778,2989 1110,2989" rendition="TextRegion" xml:id="facs_2_r_339">
+            <zone points="1443,1524 1602,1524 1602,1572 1443,1572" rendition="Line" xml:id="facs_2_r_339_tl_2"/>
+            <zone points="1124,1563 1244,1563 1244,1619 1124,1619" rendition="Line" xml:id="facs_2_r_339_tl_4"/>
+            <zone points="1516,1588 1687,1588 1687,1626 1516,1626" rendition="Line" xml:id="facs_2_r_339_tl_5"/>
+            <zone points="1515,1610 1688,1610 1688,1654 1515,1654" rendition="Line" xml:id="facs_2_r_339_tl_6"/>
+            <zone points="1128,1633 1263,1633 1263,1676 1128,1676" rendition="Line" xml:id="facs_2_r_339_tl_9"/>
+            <zone points="1116,1664 1339,1664 1339,1710 1116,1710" rendition="Line" xml:id="facs_2_r_339_tl_10"/>
+            <zone points="1254,1686 1463,1686 1463,1726 1254,1726" rendition="Line" xml:id="facs_2_r_339_tl_12"/>
+            <zone points="1301,1718 1395,1718 1395,1753 1301,1753" rendition="Line" xml:id="facs_2_r_339_tl_15"/>
+            <zone points="1117,1717 1245,1717 1245,1777 1117,1777" rendition="Line" xml:id="facs_2_r_339_tl_17"/>
+            <zone points="1117,1770 1260,1770 1260,1825 1117,1825" rendition="Line" xml:id="facs_2_r_339_tl_18"/>
+            <zone points="1548,1779 1745,1779 1745,1826 1548,1826" rendition="Line" xml:id="facs_2_r_339_tl_22"/>
+            <zone points="1259,1823 1515,1823 1515,1876 1259,1876" rendition="Line" xml:id="facs_2_r_339_tl_23"/>
+            <zone points="1266,1846 1455,1846 1455,1884 1266,1884" rendition="Line" xml:id="facs_2_r_339_tl_26"/>
+            <zone points="1289,1870 1455,1870 1455,1905 1289,1905" rendition="Line" xml:id="facs_2_r_339_tl_27"/>
+            <zone points="1289,1894 1703,1894 1703,1928 1289,1928" rendition="Line" xml:id="facs_2_r_339_tl_28"/>
+            <zone points="1222,1922 1641,1922 1641,1952 1222,1952" rendition="Line" xml:id="facs_2_l_2739"/>
+            <zone points="1160,1923 1263,1923 1263,1979 1160,1979" rendition="Line" xml:id="facs_2_r_339_tl_29"/>
+            <zone points="1158,1973 1249,1973 1249,2012 1158,2012" rendition="Line" xml:id="facs_2_r_339_tl_32"/>
+            <zone points="1287,1975 1417,1975 1417,2032 1287,2032" rendition="Line" xml:id="facs_2_r_339_tl_33"/>
+            <zone points="1641,1999 1759,1999 1759,2068 1641,2068" rendition="Line" xml:id="facs_2_r_339_tl_35"/>
+            <zone points="1115,2044 1257,2044 1257,2081 1115,2081" rendition="Line" xml:id="facs_2_r_339_tl_38"/>
+            <zone points="1119,2075 1257,2075 1257,2114 1119,2114" rendition="Line" xml:id="facs_2_r_339_tl_40"/>
+            <zone points="1478,2094 1690,2094 1690,2129 1478,2129" rendition="Line" xml:id="facs_2_r_339_tl_41"/>
+            <zone points="1431,2126 1714,2126 1714,2165 1431,2165" rendition="Line" xml:id="facs_2_r_339_tl_43"/>
+            <zone points="1143,2143 1245,2143 1245,2182 1143,2182" rendition="Line" xml:id="facs_2_r_339_tl_44"/>
+            <zone points="1142,2176 1247,2176 1247,2215 1142,2215" rendition="Line" xml:id="facs_2_r_339_tl_47"/>
+            <zone points="1596,2185 1720,2185 1720,2240 1596,2240" rendition="Line" xml:id="facs_2_r_339_tl_48"/>
+            <zone points="1233,2224 1497,2224 1497,2257 1233,2257" rendition="Line" xml:id="facs_2_r_339_tl_50"/>
+            <zone points="1120,2246 1395,2246 1395,2281 1120,2281" rendition="Line" xml:id="facs_2_r_339_tl_52"/>
+            <zone points="1119,2277 1330,2277 1330,2316 1119,2316" rendition="Line" xml:id="facs_2_r_339_tl_53"/>
+            <zone points="1228,2292 1744,2292 1744,2341 1228,2341" rendition="Line" xml:id="facs_2_r_339_tl_54"/>
+            <zone points="1339,2323 1718,2323 1718,2362 1339,2362" rendition="Line" xml:id="facs_2_r_339_tl_55"/>
+            <zone points="1112,2344 1243,2344 1243,2396 1112,2396" rendition="Line" xml:id="facs_2_r_339_tl_58"/>
+            <zone points="1111,2377 1246,2377 1246,2421 1111,2421" rendition="Line" xml:id="facs_2_r_339_tl_59"/>
+            <zone points="1427,2403 1543,2403 1543,2436 1427,2436" rendition="Line" xml:id="facs_2_r_339_tl_60"/>
+            <zone points="1409,2420 1694,2420 1694,2461 1409,2461" rendition="Line" xml:id="facs_2_r_339_tl_61"/>
+            <zone points="1117,2440 1607,2440 1607,2482 1117,2482" rendition="Line" xml:id="facs_2_r_339_tl_62"/>
+            <zone points="1114,2481 1596,2481 1596,2521 1114,2521" rendition="Line" xml:id="facs_2_r_339_tl_63"/>
+            <zone points="1232,2492 1747,2492 1747,2542 1232,2542" rendition="Line" xml:id="facs_2_r_339_tl_64"/>
+            <zone points="1233,2529 1729,2529 1729,2571 1233,2571" rendition="Line" xml:id="facs_2_r_339_tl_65"/>
+            <zone points="1102,2558 1663,2558 1663,2596 1102,2596" rendition="Line" xml:id="facs_2_r_339_tl_66"/>
+            <zone points="1120,2592 1623,2592 1623,2632 1120,2632" rendition="Line" xml:id="facs_2_r_339_tl_67"/>
+            <zone points="1245,2612 1505,2612 1505,2647 1245,2647" rendition="Line" xml:id="facs_2_r_339_tl_68"/>
+            <zone points="1641,2604 1742,2604 1742,2687 1641,2687" rendition="Line" xml:id="facs_2_r_339_tl_69"/>
+            <zone points="1111,2666 1568,2666 1568,2700 1111,2700" rendition="Line" xml:id="facs_2_r_339_tl_71"/>
+            <zone points="1251,2691 1586,2691 1586,2722 1251,2722" rendition="Line" xml:id="facs_2_r_339_tl_72"/>
+            <zone points="1586,2707 1708,2707 1708,2751 1586,2751" rendition="Line" xml:id="facs_2_r_339_tl_74"/>
+            <zone points="1218,2740 1530,2740 1530,2775 1218,2775" rendition="Line" xml:id="facs_2_r_339_tl_76"/>
+            <zone points="1111,2767 1575,2767 1575,2801 1111,2801" rendition="Line" xml:id="facs_2_r_339_tl_77"/>
+            <zone points="1428,2787 1598,2787 1598,2825 1428,2825" rendition="Line" xml:id="facs_2_r_339_tl_78"/>
+            <zone points="1428,2818 1583,2818 1583,2850 1428,2850" rendition="Line" xml:id="facs_2_r_339_tl_81"/>
+            <zone points="1198,2832 1744,2832 1744,2880 1198,2880" rendition="Line" xml:id="facs_2_r_339_tl_82"/>
+            <zone points="1111,2872 1587,2872 1587,2910 1111,2910" rendition="Line" xml:id="facs_2_r_339_tl_83"/>
+            <zone points="1218,2899 1580,2899 1580,2931 1218,2931" rendition="Line" xml:id="facs_2_r_339_tl_85"/>
+            <zone points="1219,2917 1638,2917 1638,2958 1219,2958" rendition="Line" xml:id="facs_2_r_339_tl_86"/>
+            <zone points="1207,2952 1643,2952 1643,2995 1207,2995" rendition="Line" xml:id="facs_2_r_339_tl_87"/>
+         </zone>
+         <zone points="806,2992 1278,2992 1278,3034 806,3034" rendition="TextRegion" xml:id="facs_2_r_340">
+            <zone points="794,2966 1281,2966 1281,3038 794,3038" rendition="Line" xml:id="facs_2_r_340_tl_1"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_r_tl_1" n="N001"/>Tiſchzucht.
+               <lb facs="#facs_2_r_tl_2" n="N002"/><Antiqua>Con. Meÿer fecit et excudit. A<comment comment="Unter dem kleinen o könnte ein Punkt stehen.">°</comment> 1645.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_334" type="">
+               <lb facs="#facs_2_l" n="N001"/>1. Von Zu-
+               <lb facs="#facs_2_l_101" n="N002"/>rüſtung
+               <lb facs="#facs_2_l_105" n="N003"/>des Tiſches.
+               <lb facs="#facs_2_l_109" n="N004"/>2. Vom
+               <lb facs="#facs_2_l_113" n="N005"/>Tiſch die-
+               <lb facs="#facs_2_l_117" n="N006"/>nen oder
+               <lb facs="#facs_2_l_121" n="N007"/>aufwarten.
+               <lb facs="#facs_2_l_125" n="N008"/>3. Von ge-
+               <lb facs="#facs_2_l_129" n="N009"/>bürender
+               <lb facs="#facs_2_l_133" n="N010"/>Zucht über
+               <lb facs="#facs_2_l_137" n="N011"/>Tiſch ꝛc.
+            </ab>
+            <ab facs="#facs_2_r_336" type="">
+               <lb facs="#facs_2_r_336_tl_1" n="N001"/><Initial_letter>K</Initial_letter>Ommt her und hoͤrt mir zu/ ihr die ihr auß der Wiegen
+               <lb facs="#facs_2_r_336_tl_2" n="N002"/>Vor ſiben jahren ſchon/ ohn Mutter Huͤlff/ geſtigen/
+               <lb facs="#facs_2_r_336_tl_3" n="N003"/>Jch lehre Tiſches-Zucht/ ohn die von altem har/
+               <lb facs="#facs_2_r_336_tl_4" n="N004"/>Des lieben Vatters Tiſch dem Kind verbotten war.
+               <lb facs="#facs_2_r_336_tl_5" n="N005"/>So waͤſche nun die Haͤnd'/ und dann zu rechter zeite
+               <lb facs="#facs_2_r_336_tl_6" n="N006"/>Das Tiſchtuch nach der ſchnur/ und eben uͤberſpreite:
+               <lb facs="#facs_2_r_336_tl_8" n="N007"/>Setz' auch den Blatten-Ring; wo nicht; an deſſen ſtatt
+               <lb facs="#facs_2_r_336_tl_10" n="N008"/>Jn mitten auf dem Tiſch das Sonnengleiche Blatt.
+               <lb facs="#facs_2_r_336_tl_11" n="N009"/>Nach Ordnung lege dar die Taͤller und die Zwaͤhlen/
+               <lb facs="#facs_2_r_336_tl_13" n="N010"/>Die Meſſer auch darzu: es ſol kein Loͤffel fehlen:
+               <lb facs="#facs_2_r_336_tl_15" n="N011"/>Des Salzes nicht vergiß: des Brots biß eingedaͤnck:
+               <lb facs="#facs_2_r_336_tl_16" n="N012"/>Die Siedeln rucke bey: die Glaͤſſer ſauber ſchwaͤnck.
+               <lb facs="#facs_2_r_336_tl_17" n="N013"/>Jſt nun nach Landes Sitt/ der Tiſch geruͤſt zum eſſen/
+               <lb facs="#facs_2_r_336_tl_19" n="N014"/>So werde des Gebaͤtts zum Herꝛen nicht vergeſſen:
+               <lb facs="#facs_2_r_336_tl_22" n="N015"/>Die Augen/ Hertz und Haͤnd' erhebe uͤberſich/
+               <lb facs="#facs_2_r_336_tl_23" n="N016"/>Und um den Saͤgen ſein/ demuͤhtig/ ihn anſprich.
+               <lb facs="#facs_2_r_336_tl_24" n="N017"/>Wann dann die Eltern ſich mit Speiß und Tranck erlaben/
+               <lb facs="#facs_2_r_336_tl_25" n="N018"/>Und das aufwarten dir fuͤrauß befohlen haben/
+               <lb facs="#facs_2_r_336_tl_26" n="N019"/>So ſtehe barhaupt da/ auf beiden Fuͤſſen dein:
+               <lb facs="#facs_2_r_336_tl_27" n="N020"/>Kratz / ſpew und huſte nicht dann nur beyſeits allein.
+               <lb facs="#facs_2_r_336_tl_31" n="N021"/>Die Haͤnde nicht verberg: gib achtung auf den Mangel:
+               <lb facs="#facs_2_r_336_tl_33" n="N022"/>Doch gaffe niemand an/ mit offnem Maul im Angel:
+               <lb facs="#facs_2_r_336_tl_34" n="N023"/>Trag auf und ab die Speiß/ und niemand mit beſchmirꝛ:
+               <lb facs="#facs_2_r_336_tl_35" n="N024"/>Nicht uͤberfuͤlle gar der Gaͤſten Trinckgeſchirꝛ:
+               <lb facs="#facs_2_r_336_tl_38" n="N025"/>Mit Ehrenbietung thu die vollen uͤberꝛeichen:
+               <lb facs="#facs_2_r_336_tl_40" n="N026"/>Die laͤren auch empfach mit gleichen Ehrenzeichen/
+               <lb facs="#facs_2_r_336_tl_42" n="N027"/>Und ſchwaͤncke widerum in einem Waſſer friſch:
+               <lb facs="#facs_2_r_336_tl_43" n="N028"/>Auf einmal trage nur zwo Blatten uͤber Tiſch.
+               <lb facs="#facs_2_r_336_tl_46" n="N029"/>Die gleichen Speiſen du nicht ſolt zuſammen ſtellen/
+               <lb facs="#facs_2_r_336_tl_48" n="N030"/>Und fleiſſig huͤten dich die Glaͤſſer umzufellen:
+               <lb facs="#facs_2_r_336_tl_49" n="N031"/>Auch ſolſt du uͤber den/ der oben ſitzet an/
+               <lb facs="#facs_2_r_336_tl_51" n="N032"/>Nichts tragen auf und ab/ ſuch' einen andern plan.
+               <lb facs="#facs_2_r_336_tl_53" n="N033"/>Vor deme der noch ißt/ die Blatten laſſe ſtehen
+               <lb facs="#facs_2_r_336_tl_55" n="N034"/>Bis er ſie rucket weg/ und heiſſet dich mit gehen:
+               <lb facs="#facs_2_r_336_tl_57" n="N035"/>Und wann er Brots begaͤrt/ ſo bringe du noch mehr/
+               <lb facs="#facs_2_r_336_tl_58" n="N036"/>Doch nicht in bloſſer Hand/ auf einem Taͤller her.
+               <lb facs="#facs_2_r_336_tl_60" n="N037"/>Sitzſt aber ſelb zu Tiſch/ bey jungen oder Alten/
+               <lb facs="#facs_2_r_336_tl_62" n="N038"/>So ſolſt du deine Fuͤß ſtill und zuſammen halten:
+               <lb facs="#facs_2_r_336_tl_63" n="N039"/>Die Ellenbogen dir nicht ſollen ſtuͤtzen ſeyn:
+               <lb facs="#facs_2_r_336_tl_64" n="N040"/>Die Arme lege nicht biß zu denſelben eyn.
+               <lb facs="#facs_2_r_336_tl_66" n="N041"/>Mit aufgerichtem leib zuſitzen dich gewehne/
+               <lb facs="#facs_2_r_336_tl_68" n="N042"/>Und mit den Achßlen dich nicht ungebuͤrlich lehne:
+               <lb facs="#facs_2_r_336_tl_70" n="N043"/>Nicht kratz' auf bloſſem Haupt: nicht in dem Buſem dein:
+               <lb facs="#facs_2_r_336_tl_72" n="N044"/>Das Naſengruͤblen gar laß underwegen ſeyn.
+               <lb facs="#facs_2_r_336_tl_73" n="N045"/>Beyſeits abwende dich im ſchneutzen/ huſten/ nieſſen:
+               <lb facs="#facs_2_r_336_tl_74" n="N046"/>Das riechen an der Speiß thut maͤnniglich verdrieſſen:
+               <lb facs="#facs_2_r_336_tl_76" n="N047"/>Dieſelbe du nicht ſolſt beſchauen immerdar/
+               <lb facs="#facs_2_r_336_tl_77" n="N048"/>Sey auch der letſt darinn/ und ſchnell von dannen fahr.
+               <lb facs="#facs_2_r_336_tl_79" n="N049"/>Die Koſt verꝛiechen laß'/ um etwas auch erkalten:
+               <lb facs="#facs_2_r_336_tl_82" n="N050"/>Des ſtarcken blaſens dich ſolſt uͤber Tiſch enthalten.
+               <lb facs="#facs_2_r_336_tl_83" n="N051"/>Jn keines andern Ort auß gmeiner Blatten iß:
+               <lb facs="#facs_2_r_336_tl_85" n="N052"/>Vil minder auf den Geitz/ und dich nicht uͤberfriß.
+               <lb facs="#facs_2_r_336_tl_86" n="N053"/>Den andern Biſſen ſolſt mit deinem Mund nicht faſſen/
+               <lb facs="#facs_2_r_336_tl_87" n="N054"/>Du habeſt dann zuvor den erſten abgelaſſen:
+               <lb facs="#facs_2_r_336_tl_88" n="N055"/>Auch trincke nicht/ wann du noch etwas in dem Mund/
+               <lb facs="#facs_2_r_336_tl_89" n="N056"/>Nicht rede dannzumal/ und gar nichts ohne grund.
+            </ab>
+            <ab facs="#facs_2_r_338" type="">
+               <lb facs="#facs_2_l_151" n="N001"/>4. Von dem
+               <lb facs="#facs_2_l_155" n="N002"/>aufheben
+               <lb facs="#facs_2_l_159" n="N003"/>oder auf-
+               <lb facs="#facs_2_l_163" n="N004"/>nemmen
+               <lb facs="#facs_2_l_168" n="N005"/>des Tiſches
+               <lb facs="#facs_2_l_173" n="N006"/>Vermah-
+               <lb facs="#facs_2_l_177" n="N007"/>nung an die
+               <lb facs="#facs_2_l_181" n="N008"/>Kinder.
+            </ab>
+            <ab facs="#facs_2_r_339" type="">
+               <lb facs="#facs_2_r_339_tl_2" n="N001"/>Mit dreyen Fingern nur angreiffe du die Speiſen/
+               <lb facs="#facs_2_r_339_tl_4" n="N002"/>Das Glaß mit einer Hand: im trincken thu nicht pfeiſen:
+               <lb facs="#facs_2_r_339_tl_5" n="N003"/>Die beſten Bißlein auch nicht ſolſt außklauben dir:
+               <lb facs="#facs_2_r_339_tl_6" n="N004"/>Den Wein vermiſche wol mit Waſſer im Geſchirꝛ:
+               <lb facs="#facs_2_r_339_tl_9" n="N005"/>Die Speiſen und Getraͤnck zutadeln nicht gedencke:
+               <lb facs="#facs_2_r_339_tl_10" n="N006"/>Ja gar zuruͤhmen nicht: das Maul nicht d'ruͤber hencke:
+               <lb facs="#facs_2_r_339_tl_12" n="N007"/>Was du gekoſtet haſt/ keim andern lege fuͤr/
+               <lb facs="#facs_2_r_339_tl_15" n="N008"/>Und werffe nichts von dir biß zu der Stubenthuͤr.
+               <lb facs="#facs_2_r_339_tl_17" n="N009"/>Gar alles (ohne Fiſch) mit gutem Meſſer ſchneide:
+               <lb facs="#facs_2_r_339_tl_18" n="N010"/>Jn dem einſchieben doch das Meſſer gaͤntzlich meide:
+               <lb facs="#facs_2_r_339_tl_22" n="N011"/>Daſſelbig ſey ohn Schmutz/ wann du mit nimmeſt Saltz:
+               <lb facs="#facs_2_r_339_tl_23" n="N012"/>Das Tiſchtuch nicht beſchmirꝛ mit Soſſen oder Schmaltz.
+               <lb facs="#facs_2_r_339_tl_26" n="N013"/>Die Finger lecke nicht/ doch thu ſie underzwuͤſchen/
+               <lb facs="#facs_2_r_339_tl_27" n="N014"/>Wann du Brot ſchneiden wilſt/ mit deiner Zwaͤhlen wuͤſchen:
+               <lb facs="#facs_2_r_339_tl_28" n="N015"/>Die Rinden von dem Brot nicht nimme weg allein:
+               <lb facs="#facs_2_l_2739" n="N016"/>Zerſchneide nicht zu vil: das hoͤlen laſſe <unclear alternative="f" reason="Sinngemäss soll hier ein Schaft-s stehen. Hier könnte aber ein fälschlicherweise gedrucktes f vorliegen.">ſ</unclear>eyn.
+               <lb facs="#facs_2_r_339_tl_29" n="N017"/>Nichts wider auß dem Mund ſolſt auf den Taͤller legen:
+               <lb facs="#facs_2_r_339_tl_32" n="N018"/>Nicht alles eſſen auf: mit Brot kein Blatten fegen:
+               <lb facs="#facs_2_r_339_tl_33" n="N019"/>Das angebiſſen auch nicht duncke wider ein:
+               <lb facs="#facs_2_r_339_tl_35" n="N020"/>Nicht wie der Aff umgaff: nicht ſchmatze wie das Schwein:
+               <lb facs="#facs_2_r_339_tl_38" n="N021"/>Die Bein/ den Hunden gleich/ mit Zaͤhnen nicht benage/
+               <lb facs="#facs_2_r_339_tl_40" n="N022"/>Noch/ wegen ihres Marcks/ auf Brot und Taͤller ſchlage:
+               <lb facs="#facs_2_r_339_tl_41" n="N023"/>Nicht ſauge laut daran: nimm' aber von dem Bein
+               <lb facs="#facs_2_r_339_tl_43" n="N024"/>Das Fleiſch und Marck hinweg mit einem Meſſerlein:
+               <lb facs="#facs_2_r_339_tl_44" n="N025"/>Die Bein eroͤffne nicht: dieweil es uͤbel ſtehet
+               <lb facs="#facs_2_r_339_tl_47" n="N026"/>Wann damit uͤber Tiſch ein junger Menſch umgehet:
+               <lb facs="#facs_2_r_339_tl_48" n="N027"/>Und was noch mehr iſt hart/ mit keinem Meſſer brich/
+               <lb facs="#facs_2_r_339_tl_50" n="N028"/>Vil minder beiß' es auf mit Zaͤhnen grimmiglich.
+               <lb facs="#facs_2_r_339_tl_52" n="N029"/>Den Wein außduͤnckle nicht/ und ſuͤrffle nicht im trincken:
+               <lb facs="#facs_2_r_339_tl_53" n="N030"/>Ja/ ſchencke dir nicht ein ohn deines Vatters wincken:
+               <lb facs="#facs_2_r_339_tl_54" n="N031"/>Blaaß' auß dem Baͤcher nichts/ und trincke nicht zu gach/
+               <lb facs="#facs_2_r_339_tl_55" n="N032"/>Auch wuͤſche deinen Mund mit Zwaͤhlen vor und nach.
+               <lb facs="#facs_2_r_339_tl_58" n="N033"/>Die Zwaͤhlen und das Brot/ den Taͤller und das Meſſer
+               <lb facs="#facs_2_r_339_tl_59" n="N034"/>Richt wie der meiſte Theil/ und ein geſchickter Eſſer:
+               <lb facs="#facs_2_r_339_tl_60" n="N035"/>Jn Zaͤhnen gruͤble nicht mit Eiſen oder Stahl:
+               <lb facs="#facs_2_r_339_tl_61" n="N036"/>Nichts zoͤrne was es ſey/ bey einem Freunden-Mahl.
+               <lb facs="#facs_2_r_339_tl_62" n="N037"/>Am erſten von dem Tiſch mit Urlaub ſolſt aufſtehen/
+               <lb facs="#facs_2_r_339_tl_63" n="N038"/>Und nach dem Saͤgen-Wunſch/ fein zuͤchtig darvon gehen:
+               <lb facs="#facs_2_r_339_tl_64" n="N039"/>Rein waͤſche deine Haͤnd'/ und um die Speiß und Tranck/
+               <lb facs="#facs_2_r_339_tl_65" n="N040"/>Mit Ernſt und lauter Stimm Gott ſage lob und danck.
+               <lb facs="#facs_2_r_339_tl_66" n="N041"/>Wann nun die Mahlzeit jetz ihr Endſchafft hat bekommen/
+               <lb facs="#facs_2_r_339_tl_67" n="N042"/>Wann ihren Abſcheid auch die Ehrengaͤſt genommen/
+               <lb facs="#facs_2_r_339_tl_68" n="N043"/>So hebe du den Tiſch/ nach Ordnung wider auf/
+               <lb facs="#facs_2_r_339_tl_69" n="N044"/>Und nicht/ wie einen Berg/ das Gſchirꝛ zuſammen hauff:
+               <lb facs="#facs_2_r_339_tl_71" n="N045"/>Die Glaͤſſer erſtlich nimm/ und zwaren bey den Fuͤſſen:
+               <lb facs="#facs_2_r_339_tl_72" n="N046"/>Die Stuͤmplein ſolſt darauß in keine Kannen gieſſen:
+               <lb facs="#facs_2_r_339_tl_74" n="N047"/>Die noch nicht laͤren Gſchirꝛ nicht auf einandern ſtell/
+               <lb facs="#facs_2_r_339_tl_76" n="N048"/>Zur uͤberblibnen Speiß die groͤſte Blatte erwehl.
+               <lb facs="#facs_2_r_339_tl_77" n="N049"/>Das Saltz beſonder thu: die Loͤffel all zuſammen
+               <lb facs="#facs_2_r_339_tl_78" n="N050"/>Auf einen Taͤller leg: die Meſſer auch mit nammen:
+               <lb facs="#facs_2_r_339_tl_81" n="N051"/>Die kleinen ſtuͤcklein Brot im Tiſcht<unclear reason="Hier\u0020könnte\u0020auch\u0020\u0022n\u0022\u0020stehen,\u0020also\u0020ein\u0020Druckfehler" alternative="n">u</unclear>ch trage weg:
+               <lb facs="#facs_2_r_339_tl_82" n="N052"/>Das Tuch im Korb erſchuͤtt'/ und dann zuſammen leg/ ꝛc.
+               <lb facs="#facs_2_r_339_tl_83" n="N053"/>So vil von Tiſches Zucht. Sol aber ſie dich zieren/
+               <lb facs="#facs_2_r_339_tl_85" n="N054"/>So ſolſt hierneben auch ein <printing_error sic="ſ">f</printing_error>rommes leben fuͤhren:
+               <lb facs="#facs_2_r_339_tl_86" n="N055"/>Den Eltern und zugleich den Fuͤrgeſetzten dein
+               <lb facs="#facs_2_r_339_tl_87" n="N056"/>Jm Herꝛen/ williglich und ſtets gehorſam ſeyn.
+            </ab>
+            <ab facs="#facs_2_r_340" type="">
+               <lb facs="#facs_2_r_340_tl_1" n="N001"/>Zufinden bey Johannes Meyer/ in Zuͤrich.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
