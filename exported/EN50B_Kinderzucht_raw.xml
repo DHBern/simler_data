@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN50B Kinderzucht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN50B Kinderzucht</title>
+               <idno type="Transkribus">4579009</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="3508" lry="2479" xml:id="facs_2">
+         <graphic url="80096766.jpg" width="3508px" height="2479px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=MHTOKXAWBWCVFWRFNDGKZMJA&amp;fileType=view" width="3508px" height="2479px"/>
+         <zone points="651,186 2126,186 2126,475 651,475" rendition="TextRegion" xml:id="facs_2_r_13">
+            <zone points="1151,139 1703,139 1703,288 1151,288" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="842,235 1983,235 1983,408 842,408" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+            <zone points="1134,355 1835,355 1835,472 1134,472" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+         </zone>
+         <zone points="661,1389 2106,1389 2106,2126 661,2126" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="652,1406 1710,1406 1710,1556 652,1556" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+            <zone points="707,1535 1940,1535 1940,1658 707,1658" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+            <zone points="813,1612 1988,1612 1988,1737 813,1737" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="859,1686 2034,1686 2034,1789 859,1789" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="677,1761 2058,1761 2058,1883 677,1883" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="729,1838 2044,1838 2044,1964 729,1964" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="765,1941 2077,1941 2077,2027 765,2027" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+            <zone points="815,1996 2073,1996 2073,2135 815,2135" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+         </zone>
+         <zone points="1334,2134 2109,2134 2109,2327 1334,2327" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="1341,2096 2097,2096 2097,2233 1341,2233" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+            <zone points="1415,2207 2092,2207 2092,2281 1415,2281" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+            <zone points="1518,2248 2000,2248 2000,2351 1518,2351" rendition="Line" xml:id="facs_2_tr_1_tl_15"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r_13" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>1. Sinnenbild.
+               <lb facs="#facs_2_tr_1_tl_2" n="N002"/>Kinderzucht ſol von der wiegen
+               <lb facs="#facs_2_tr_1_tl_3" n="N003"/>her angehebt werden.
+            </ab>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_4" n="N001"/>Die lieben Kinderlein den Zweiglinen nacharten/
+               <lb facs="#facs_2_tr_1_tl_6" n="N002"/>weil ſie zu biegen ſeind/ eh ſie zu alt erharten.
+               <lb facs="#facs_2_tr_1_tl_7" n="N003"/>Zu bleiben laſterlaͤr/ zu werden tugendfol/
+               <lb facs="#facs_2_tr_1_tl_8" n="N004"/>ſie von der <unclear alternative="wiegenher">wiegen her</unclear> man recht erziehen ſol.
+               <lb facs="#facs_2_tr_1_tl_9" n="N005"/>Dann wie ein alter Baum nicht anderſt wird gebogen/
+               <lb facs="#facs_2_tr_1_tl_10" n="N006"/>ſo bleibet auch der maͤnſch gleich wie er iſt erzogen.
+               <lb facs="#facs_2_tr_1_tl_11" n="N007"/>Drum/ wer an Kindern wil erleben freüd und ehr/
+               <lb facs="#facs_2_tr_1_tl_12" n="N008"/>der ſpar an ihnen nicht die ruͦten zucht und lehr.
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_13" n="N001"/>Einer zartbluͤhenden Jugend in Zürich
+               <lb facs="#facs_2_tr_1_tl_14" n="N002"/>ab der BurgerBibliothek/ für das
+               <lb facs="#facs_2_tr_1_tl_15" n="N003"/>1650 Jahre/ verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
