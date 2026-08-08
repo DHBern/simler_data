@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN51B_Junger_suchs,_Alter_brauchs" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN51B Junger suchs, Alter brauchs</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN51B Junger suchs, Alter brauchs</title>
+            <idno type="Transkribus">4579087</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            2. Sinnenbild.
+            <lb/>
+            Junger ſu&#x366;chs: Alter brauchs.
+            <lb/>
+            <hi rendition="#aq">Con. Meÿer fecit.</hi>
+            <lb/>
+            
+            O/ du ſorgenfreÿes Blu&#x366;t/ ſu&#x366;ch/ in friſcher jugend/
+            <lb/>
+            durch die Sinn- und Handarbeit was dich fuhrt zur Tugend;
+            <lb/>
+            was im grawen alter dich nehr- und ehren ſol:
+            <lb/>
+            wie in diſem Sinnenbild/ vorgebildet wol!
+            <lb/>
+            Durch den ſchno&#x364;den Mu&#x364;ſſiggang Fleiſch und Geiſt erſchwachet/
+            <lb/>
+            reicher armet/ und der arm a&#x364;rmer wird gemachet:
+            <lb/>
+            beide bleiben ehrenloſs. Darum liebe Leüth/
+            <lb/>
+            ſu&#x366;chet jung/ und brauchet alt zu&#x366;gelaſſne Beüth.
+            <lb/>
+            
+            Einer Kunſt- und Ehrliebenden Jugend
+            <lb/>
+            in Zürich/ ab der Burgerbibliothec da-
+            <lb break="no"/>
+            ſelbſten/ für das 1651. oder erſte nach
+            <lb/>
+            dem Erdbidemjahr/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

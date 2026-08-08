@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN51B Junger suchs, Alter brauchs</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN51B Junger suchs, Alter brauchs</title>
+               <idno type="Transkribus">4579087</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80097165.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=XGCSZPXEZAJORWXABNMIXOHM&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="129,515 1697,515 1697,1960 129,1960" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="714,513 1205,513 1205,622 714,622" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="630,597 1577,597 1577,761 630,761" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+            <zone points="643,1890 882,1890 882,1924 643,1924" rendition="Line" xml:id="facs_2_l"/>
+         </zone>
+         <zone points="125,1972 1723,1972 1723,2652 125,2652" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="117,1958 1536,1958 1536,2115 117,2115" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+            <zone points="180,2060 1704,2060 1704,2171 180,2171" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="276,2164 1559,2164 1559,2256 276,2256" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="278,2236 1420,2236 1420,2310 278,2310" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="129,2279 1702,2279 1702,2412 129,2412" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="141,2377 1493,2377 1493,2504 141,2504" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+            <zone points="272,2451 1493,2451 1493,2547 272,2547" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+            <zone points="272,2502 1610,2502 1610,2668 272,2668" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+         </zone>
+         <zone points="871,2707 1715,2707 1715,2998 871,2998" rendition="TextRegion" xml:id="facs_2_r_13">
+            <zone points="876,2704 1639,2704 1639,2821 876,2821" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+            <zone points="951,2799 1647,2799 1647,2880 951,2880" rendition="Line" xml:id="facs_2_tr_1_tl_15"/>
+            <zone points="941,2850 1594,2850 1594,2944 941,2944" rendition="Line" xml:id="facs_2_tr_1_tl_16"/>
+            <zone points="966,2899 1547,2899 1547,3007 966,3007" rendition="Line" xml:id="facs_2_tr_1_tl_17"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>2. Sinnenbild.
+               <lb facs="#facs_2_tr_1_tl_3" n="N002"/>Junger ſuͦchs: Alter brauchs.
+               <lb facs="#facs_2_l" n="N003"/><Antiqua>Con. Meÿer fecit.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_6" n="N001"/>O/ du ſorgenfreÿes Bluͦt/ ſuͦch/ in friſcher jugend/
+               <lb facs="#facs_2_tr_1_tl_7" n="N002"/>durch die Sinn- und Handarbeit was dich fuhrt zur Tugend;
+               <lb facs="#facs_2_tr_1_tl_8" n="N003"/>was im grawen alter dich nehr- und ehren ſol:
+               <lb facs="#facs_2_tr_1_tl_9" n="N004"/>wie in diſem Sinnenbild/ vorgebildet wol!
+               <lb facs="#facs_2_tr_1_tl_10" n="N005"/>Durch den ſchnoͤden Muͤſſiggang Fleiſch und Geiſt erſchwachet/
+               <lb facs="#facs_2_tr_1_tl_11" n="N006"/>reicher armet/ und der arm aͤrmer wird gemachet:
+               <lb facs="#facs_2_tr_1_tl_12" n="N007"/>beide bleiben ehrenloſs. Darum liebe Leüth/
+               <lb facs="#facs_2_tr_1_tl_13" n="N008"/>ſuͦchet jung/ und brauchet alt zuͦgelaſſne Beüth.
+            </ab>
+            <ab facs="#facs_2_r_13" type="">
+               <lb facs="#facs_2_tr_1_tl_14" n="N001"/>Einer Kunſt- und Ehrliebenden Jugend
+               <lb facs="#facs_2_tr_1_tl_15" n="N002"/>in Zürich/ ab der Burgerbibliothec da-
+               <lb facs="#facs_2_tr_1_tl_16" n="N003"/>ſelbſten/ für das 1651. oder erſte nach
+               <lb facs="#facs_2_tr_1_tl_17" n="N004"/>dem Erdbidemjahr/ verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
