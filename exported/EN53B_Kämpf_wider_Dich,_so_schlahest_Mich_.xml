@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN53B_Kämpf_wider_Dich,_so_schlahest_Mich_" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN53B Kämpf wider Dich, so schlahest Mich </title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN53B Kämpf wider Dich, so schlahest Mich </title>
+            <idno type="Transkribus">4579089</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            4. Sinnenbild.
+            <lb/>
+            Ka&#x364;mpf wider Dich/ So ſchlaheſt Mich.
+            <lb/>
+            <hi rendition="#aq">Conrad Meÿer, Pictor, fecit.</hi>
+            <lb/>
+            
+            Diſes Ungeheür* zu&#x366; da&#x364;mpfen/
+            <lb/>
+            jeder wider ſich mu&#x366;ß ka&#x364;mpfen/
+            <lb/>
+            mit der Rüſtung angethan/
+            <lb/>
+            die Sant Paul ihm zeigen kan.
+            <lb/>
+            Er mu&#x366;ß ſeinen Leib beza&#x364;mmen;
+            <lb/>
+            Glider to&#x364;den; Lüſte ha&#x364;mmen;
+            <lb/>
+            ſonſten wider ihn ertho&#x364;nt:
+            <lb/>
+            Wer nicht ka&#x364;mpft wird nicht gekro&#x364;nt.
+            <lb/>
+            
+            <hi rendition="#aq">Eph.6.v.11.
+            <lb/>
+            Coloſs.3.v.5
+            <lb/>
+            2.Tim.2.v.5</hi>
+            <lb/>
+            
+            <hi rendition="#aq">*Laſterthier</hi>
+            <lb/>
+            
+            Einer Tugendliebenden Jugend in Zürich
+            <lb/>
+            ab der Burgerbibliothec/ für das
+            <lb/>
+            1653. oder erſte nach dem ſchro&#x364;klichen
+            <lb/>
+            Donner-jahr/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
