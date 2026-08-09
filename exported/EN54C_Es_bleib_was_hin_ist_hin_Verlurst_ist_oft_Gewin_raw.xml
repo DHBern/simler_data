@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN54C Es bleib, was hin ist, hin; Verlurst ist oft Gewin</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN54C Es bleib, was hin ist, hin; Verlurst ist oft Gewin</title>
+               <idno type="Transkribus">4579808</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80099926.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=URCUZTIVEXIRBCMNGOEMIZNJ&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="101,533 1674,533 1674,1963 101,1963" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="618,465 969,465 969,598 618,598" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="124,596 1669,596 1669,778 124,778" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+            <zone points="212,1856 345,1856 345,1893 212,1893" rendition="Line" xml:id="facs_2_l"/>
+         </zone>
+         <zone points="104,1970 1610,1970 1610,2677 104,2677" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="139,1984 1401,1984 1401,2142 139,2142" rendition="Line" xml:id="facs_2_tr_1_tl_5"/>
+            <zone points="278,2098 1363,2098 1363,2200 278,2200" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="272,2148 1588,2148 1588,2279 272,2279" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="266,2248 1529,2248 1529,2341 266,2341" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="93,2299 1463,2299 1463,2434 93,2434" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="98,2378 1650,2378 1650,2530 98,2530" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+            <zone points="208,2476 1467,2476 1467,2607 208,2607" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+            <zone points="257,2561 1461,2561 1461,2669 257,2669" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+         </zone>
+         <zone points="91,2683 430,2683 430,2881 91,2881" rendition="TextRegion" xml:id="facs_2_r_5">
+            <zone points="122,2652 413,2652 413,2754 122,2754" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+            <zone points="125,2725 403,2725 403,2802 125,2802" rendition="Line" xml:id="facs_2_tr_1_tl_15"/>
+            <zone points="89,2746 295,2746 295,2843 89,2843" rendition="Line" xml:id="facs_2_tr_1_tl_17"/>
+            <zone points="129,2810 390,2810 390,2889 129,2889" rendition="Line" xml:id="facs_2_tr_1_tl_19"/>
+         </zone>
+         <zone points="1031,2742 1677,2742 1677,2902 1031,2902" rendition="TextRegion" xml:id="facs_2_r_7">
+            <zone points="1040,2719 1637,2719 1637,2847 1040,2847" rendition="Line" xml:id="facs_2_tr_1_tl_16"/>
+            <zone points="1067,2808 1629,2808 1629,2883 1067,2883" rendition="Line" xml:id="facs_2_tr_1_tl_18"/>
+            <zone points="1181,2845 1432,2845 1432,2928 1181,2928" rendition="Line" xml:id="facs_2_tr_1_tl_20"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>5. Sinnen-bild.
+               <lb facs="#facs_2_tr_1_tl_4" n="N002"/>Es bleib/ was hin iſt/ hin: Verlurſt iſt oft Gewin.
+               <lb facs="#facs_2_l" n="N003"/><Antiqua>C. Meÿer f.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_5" n="N001"/>Fort/ fort den Bergen zuͦ/ wo rettung iſt zuͦfinden/
+               <lb facs="#facs_2_tr_1_tl_7" n="N002"/>laß alles hinder dir; du aber bleib nicht hinden;
+               <lb facs="#facs_2_tr_1_tl_8" n="N003"/>ſonſt geheſt mit zuͦgrund. So ſprach der Himmelsbott
+               <lb facs="#facs_2_tr_1_tl_9" n="N004"/>der Sodom angeſtekt/ zuͦ dem gerechten Loth.
+               <lb facs="#facs_2_tr_1_tl_10" n="N005"/>Fort/ fort dem Himmel zuͦ/ du neübekehrter Sünder/
+               <lb facs="#facs_2_tr_1_tl_11" n="N006"/>Weltliebe/ Wolluſt/ Pracht dich auf der Straaß nicht hinder:
+               <lb facs="#facs_2_tr_1_tl_12" n="N007"/>Nur ein mal ſeine hand gelegt an Tugendpfluͦg
+               <lb facs="#facs_2_tr_1_tl_13" n="N008"/>iſt zuͦ der Seligkeit beÿ weitem nicht genuͦg.
+            </ab>
+            <ab facs="#facs_2_r_5" type="">
+               <lb facs="#facs_2_tr_1_tl_14" n="N001"/><Antiqua>Genes.XIX.cap.
+               <lb facs="#facs_2_tr_1_tl_15" n="N002"/>Luc.XVII.32.
+               <lb facs="#facs_2_tr_1_tl_17" n="N003"/>2.Pet.II.7.
+               <lb facs="#facs_2_tr_1_tl_19" n="N004"/>Luc.IX.62.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_7" type="">
+               <lb facs="#facs_2_tr_1_tl_16" n="N001"/>Einer Tugendliebenden Jugend in Zürich
+               <lb facs="#facs_2_tr_1_tl_18" n="N002"/>ab der Burgerbibliothec/ für das 1654.
+               <lb facs="#facs_2_tr_1_tl_20" n="N003"/>Jahr verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
