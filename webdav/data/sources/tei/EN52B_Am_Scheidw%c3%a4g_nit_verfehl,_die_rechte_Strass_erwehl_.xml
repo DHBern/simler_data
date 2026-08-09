@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN52B_Am_Scheidwäg_nit_verfehl,_die_rechte_Strass_erwehl_" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN52B Am Scheidwäg nit verfehl, die rechte Strass erwehl</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN52B Am Scheidwäg nit verfehl, die rechte Strass erwehl </title>
+            <idno type="Transkribus">4579088</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729209/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2"/>
+            3. Sinnenbild.
+            <lb/>
+            Am Scheidwa&#x364;g nit verfehl/ die rechte Straß erwehl.
+            <lb/>
+            <hi rendition="#aq">Con: Meÿer fecit</hi>
+            <lb/>
+            
+            O/ es wo&#x364;ll/ es wo&#x364;ll der Himmel! daß/ zu&#x366; diſer Zweÿfelzeit/
+            <lb/>
+            die bald heüratreiffe Jugend von dem Scheidewa&#x364;g nicht weit/
+            <lb/>
+            nicht verfehl der Tugendſtraß/ die zwar rüher wird geſchetzet
+            <lb/>
+            alß die ſanfte Wolluſtbahn; aber nicht wie ſelbe letzet.
+            <lb/>
+            Tugendſtraß zum Leben fu&#x364;hret/ in des Abrahamen Schoß/
+            <lb/>
+            da/ wie Lazarus zu&#x366;werden ho&#x364;chſter Freüden mitgenoß.
+            <lb/>
+            Aber jenner Wolluſtwa&#x364;g/ wie gebahnet er gepreiſet/
+            <lb/>
+            mit dem Schla&#x364;mmer in den Teich/ ach! in Sch<anchor xml:id="a1"/>w<note type="annotation" targetEnd="a1"><p>Nachträglich über der Zeile eingefügt</p></note>a&#x364;felteich verweiſet.
+            <lb/>
+            
+            Einer Tugendliebenden Jugend in
+            <lb/>
+            Zürich/ ab der Bu&#x366;rgerbibliothec
+            <lb/>
+            für das 1652. Jahr/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

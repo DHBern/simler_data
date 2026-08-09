@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN47A_Sommergesang" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN47A Sommergesang</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN47A Sommergesang</title>
+            <idno type="Transkribus">4579007</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/15073017/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2"/>
+            <hi rendition="#aq">C. Meÿer fecit, et ex:</hi>
+            <lb/>
+            
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">CANTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Wiewol der zeiten ſcho&#x364;nſte Zeit
+            <lb/>
+            Vns abgenadet hat:/:
+            <lb/>
+            So kom&#x342;t jedoch/ mit nutzbarkeit/
+            <lb/>
+            Der Sommer an jhr ſtatt:
+            <lb/>
+            Da wir Gott zu&#x366; bitten/
+            <lb/>
+            Daß/ nach Landes ſitten/
+            <lb/>
+            Werden abgeſchnidten
+            <lb/>
+            Die Saaten/ fru&#x364;h vnd ſpaat.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">TENOR.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Wiewol der zeiten ſcho&#x364;nſte Zeit
+            <lb/>
+            Vns abgenadet hat:/:
+            <lb/>
+            So kom&#x342;t jedoch/ mit nutzbarkeit/
+            <lb/>
+            Der Sommer an jhr ſtatt:
+            <lb/>
+            Da wir Gott zu&#x366; bitten/
+            <lb/>
+            Daß/ nach Landes ſitten/
+            <lb/>
+            Werden abgeſchnidten
+            <lb/>
+            Die Saaten/ fru&#x364;h vnd ſpaat.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">ALTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Wiewol der zeiten ſcho&#x364;nſte Zeit
+            <lb/>
+            Vns abgenadet hat<anchor xml:id="a1"/><unclear>: :</unclear><note type="annotation" targetEnd="a1"><p>Entweder fehlt in diesem Wiederholungszeichen die Virgel oder sie ist nicht mehr erkennbar.</p></note>
+            <lb/>
+            So kom&#x342;t jedoch/ mit nutzbarkeit/
+            <lb/>
+            Der Sommer an jhr ſtatt:
+            <lb/>
+            Da wir Gott zu&#x366; bitten/
+            <lb/>
+            Daß<anchor xml:id="a2"/>/<note type="annotation" targetEnd="a2"><p>Komma hier schlecht zu erkennen, aber in Diskant und Tenor steht auch eines.</p></note> nach Landes ſitten/
+            <lb/>
+            Werden abgeſchnidten
+            <lb/>
+            Die Saaten/ fru&#x364;h vnd ſpaat.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">BASIS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Wiewol der zeiten ſcho&#x364;nſte Zeit
+            <lb/>
+            Vns abgenadet hat:/:
+            <lb/>
+            So kom&#x342;t jedoch/ mit nutzbarkeit
+            <lb/>
+            Der Sommer an jhr ſtatt:
+            <lb/>
+            Da wir Gott zu&#x366; bitten/
+            <lb/>
+            Daß<anchor xml:id="a3"/><unclear>/</unclear><note type="annotation" targetEnd="a3"><p>Kaum zu erkennen, ob das Komma wie in Diskant und Tenor auch hier steht</p></note> nach Landes ſitten/
+            <lb/>
+            Werden abgeſchnidten
+            <lb/>
+            Die Saaten/ fru&#x364;h vnd ſpaat.
+            <lb/>
+            
+            <head><num>2.</num></head>
+            <lb/>
+            Es gibt der Sommer/ was er ſol/
+            <lb/>
+            Durch Gottes gu&#x364;tigkeit:/:
+            <lb/>
+            Korn/ Ga&#x364;rſten/ Bonen/ Hanff vnd Ko&#x364;l/
+            <lb/>
+            Vnd anderley Getra&#x364;id:
+            <lb/>
+            Ho&#x364;w vnd Graß darneben
+            <lb/>
+            Thu&#x366;t er/ reichlich/ geben
+            <lb/>
+            Allem Vieh/ zu&#x366; leben
+            <lb/>
+            Jm Stall/ vnd auff der Weyd.
+            <lb/>
+            <head><num>3.</num></head>
+            <lb/>
+            Der Ma&#x364;der auff der Matten fellt
+            <lb/>
+            Das noch Taw-naſſe Graß<anchor xml:id="a4"/>:<note type="annotation" targetEnd="a4"><p>Dieser Doppelpunkt weicht typographisch von den anderen ab.</p></note>/:
+            <lb/>
+            Die Wa&#x364;ydwerck werden eyngeſtellt/
+            <lb/>
+            Deß mehret ſich der Has:
+            <lb/>
+            Berg vnd Thal erklingen/
+            <lb/>
+            Alle Grillen ſingen/
+            <lb/>
+            Die Ho&#x364;wſchra&#x364;cken ſpringen/
+            <lb/>
+            Bien-honig fließt fürbaß.
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Wann Sirius mit ſeiner Glu&#x366;t
+            <lb/>
+            Die Saat entfa&#x364;rwet gantz<anchor xml:id="a5"/>:<note type="annotation" targetEnd="a5"><p>Dieser Doppelpunkt weicht typographisch von den anderen ab.</p></note>/:
+            <lb/>
+            Die Ceres jhr bereiten thu&#x366;t
+            <lb/>
+            Von a&#x364;hren einen Krantz:
+            <lb/>
+            Bald es anhebt tagen/
+            <lb/>
+            Vor dem Sonnen-wagen/
+            <lb/>
+            Thu&#x366;t ſie vmbhinſagen
+            <lb/>
+            Zum rauchen Sichel-dantz.
+            <lb/>
+            <head><num>5.</num></head>
+            <lb/>
+            Die Wa&#x364;gen von der Garben laſt/
+            <lb/>
+            Vnd groſſer Fu&#x366;dern Ho&#x364;w:/:
+            <lb/>
+            Wie ſa&#x364;ufftzen ho&#x364;rt man gyren vaſt/
+            <lb/>
+            Jſt doch ein fro&#x364;lich gſchrey:
+            <lb/>
+            Man erfüllt die Scheuren/
+            <lb/>
+            Thu&#x366;t dem Hunger ſteuren/
+            <lb/>
+            Durch die Hitz verleuren
+            <lb/>
+            Die Bronnen ſich vorbey.
+            <lb/>
+            <head><num>6.</num></head>
+            <lb/>
+            Darumb beſcha&#x364;r von Wollen dick
+            <lb/>
+            Die Schaaffe/ wer es kan:/:
+            <lb/>
+            Berupff die Ga&#x364;nß/ beſtreych vnd lick/
+            <lb/>
+            Das Ba&#x364;ltzwerck leg hindan:
+            <lb/>
+            Luſtig ſich erku&#x364;hlen/
+            <lb/>
+            Vnd zu&#x366;gleich abſpu&#x364;hlen
+            <lb/>
+            Junge leuht/ die fühlen
+            <lb/>
+            Des Sommers Hitz voran.
+            <lb/>
+            <head><num>7.</num></head>
+            <lb/>
+            Wie nun/ zu&#x366; end der Sommers zeit/
+            <lb/>
+            Zum reyffen ſchicken ſich:/:
+            <lb/>
+            Die Tra&#x364;ubel vnd das Obs bereit/
+            <lb/>
+            So ſchick/ o Jüngling/ dich:
+            <lb/>
+            Reyff in rechten dingen/
+            <lb/>
+            Gu&#x366;te frücht zu&#x366; bringen:
+            <lb/>
+            Thu&#x366; die Laſter zwingen/
+            <lb/>
+            Werd auch der Omeiß gleich.
+            <lb/>
+            
+            Mag auch geſungen werden in der melodey: Der Fru&#x364;hling ſcho&#x364;n hardringen thu&#x366;t/ ꝛc.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

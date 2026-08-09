@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN50B_Kinderzucht" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN50B Kinderzucht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN50B Kinderzucht</title>
+            <idno type="Transkribus">4579009</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729201/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2"/>
+            1. Sinnenbild.
+            <lb/>
+            Kinderzucht ſol von der wiegen
+            <lb/>
+            her angehebt werden.
+            <lb/>
+            
+            Die lieben Kinderlein den Zweiglinen nacharten/
+            <lb/>
+            weil ſie zu biegen ſeind/ eh ſie zu alt erharten.
+            <lb/>
+            Zu bleiben laſterla&#x364;r/ zu werden tugendfol/
+            <lb/>
+            ſie von der <unclear>wiegen her</unclear> man recht erziehen ſol.
+            <lb/>
+            Dann wie ein alter Baum nicht anderſt wird gebogen/
+            <lb/>
+            ſo bleibet auch der ma&#x364;nſch gleich wie er iſt erzogen.
+            <lb/>
+            Drum/ wer an Kindern wil erleben freüd und ehr/
+            <lb/>
+            der ſpar an ihnen nicht die ru&#x366;ten zucht und lehr.
+            <lb/>
+            
+            Einer zartblu&#x364;henden Jugend in Zürich
+            <lb/>
+            ab der BurgerBibliothek/ für das
+            <lb/>
+            1650 Jahre/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

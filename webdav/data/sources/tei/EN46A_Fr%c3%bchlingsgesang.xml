@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN46A_Frühlingsgesang" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN46A Frühlingsgesang</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN46A Frühlingsgesang</title>
+            <idno type="Transkribus">4576472</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729188/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2"/>
+            j.
+            <lb/>
+            <hi rendition="#aq">Con: Meÿer fecit et excu:
+            <lb/>
+            1646</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Diſcantus.</hi>
+            <lb/>
+            Luſtig werden beku&#x364;mmerte hertzen/
+            <lb/>
+            Wan&#x303; die guldine Sonnen im Mertzen
+            <lb/>
+            Mit dem Widdergeſtirne thu&#x366;t ſchertzen:
+            <lb/>
+            Da der leidige Winter vergehet/
+            <lb/>
+            Vnd der liebliche Fru&#x364;hling entſtehet/
+            <lb/>
+            Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.
+            <lb/>
+            <hi rendition="#aq">Altus.</hi>
+            <lb/>
+            Luſtig werden beku&#x364;mmerte hertzen/
+            <lb/>
+            Wan&#x303; die guldine Sonnen im Mertzen
+            <lb/>
+            Mit dem Widdergeſtirne thu&#x366;t ſchertzen:
+            <lb/>
+            Da der leidige Winter vergehet/
+            <lb/>
+            Vnd der liebliche Fru&#x364;hling entſtehet/
+            <lb/>
+            Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.
+            <lb/>
+            <hi rendition="#aq">Tenor.</hi>
+            <lb/>
+            Luſtig werden beku&#x364;mmerte hertzen/
+            <lb/>
+            Wan&#x303; die guldine Sonnen im Mertzen
+            <lb/>
+            Mit dem Widdergeſtirne thu&#x366;t ſchertzen:
+            <lb/>
+            Da der leidige Winter vergehet/
+            <lb/>
+            Vnd der liebliche Fru&#x364;hling entſtehet/
+            <lb/>
+            Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.
+            <lb/>
+            <hi rendition="#aq">Baſis.</hi>
+            <lb/>
+            Luſtig werden beku&#x364;mmerte hertzen/
+            <lb/>
+            Wan&#x303; die guldine Sonnen im Mertzen/
+            <lb/>
+            Mit dem Widdergeſtirne thu&#x366;t ſchertzen:
+            <lb/>
+            Da der leidige Winter vergehet/
+            <lb/>
+            Vnd der liebliche Fru&#x364;hling entſtehet/
+            <lb/>
+            Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.
+            <lb/>
+            
+            <head><num>2.</num></head>
+            <lb/>
+            Jn den Ga&#x364;rten wir ſehen entſprieſſen
+            <lb/>
+            Tulipanen/ Violen/ Narciſſen/
+            <lb/>
+            Ohne Mahlers Hand/ ku&#x364;nſtlich/ geriſſen:
+            <lb/>
+            Wir betaſten die Ko&#x364;niges Cronen/
+            <lb/>
+            Gilgen/ Tu&#x364;rckiſche Bu&#x364;ndt/ Anemonen/
+            <lb/>
+            Keiner do&#x364;rnichten Roſen wir ſchonen.
+            <lb/>
+            <head><num>3.</num></head>
+            <lb/>
+            Wir bereiten vns Stra&#x364;uſſer vnd Meyen/
+            <lb/>
+            Vmb die Kra&#x364;ntze wir ſingen am Reyen/
+            <lb/>
+            Es erto&#x364;nen die Pfeiffen/ Schalmeyen:
+            <lb/>
+            Alles/ Alles in frewden thu&#x366;t leben/
+            <lb/>
+            Auſſert newlich geſchnittenen Reben/
+            <lb/>
+            Die den Fru&#x364;hling mit weynen anheben.
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Junge Saaten vns ſchiereſt anlachen/
+            <lb/>
+            Gute hoffnung/ auß vilen vrſachen/
+            <lb/>
+            Zu der ko&#x364;nfftigen Ernde ſie machen:
+            <lb/>
+            Alle Ba&#x364;ume den Roſen ſich gleichen/
+            <lb/>
+            Deren Scho&#x364;ne mag nichtes erꝛeichen/
+            <lb/>
+            Alles anders derſelben muß weichen.
+            <lb/>
+            <head><num>5.</num></head>
+            <lb/>
+            Alle Matten vnd Wieſen Graßreiche/
+            <lb/>
+            Alle Bu&#x364;hel vnd Berge zugleiche/
+            <lb/>
+            Werden Weiden dem nutzlichen Veiche:
+            <lb/>
+            Auff den gru&#x364;nen betaweten Awen/
+            <lb/>
+            Frewdig ſpringende Herden wir ſchawen/
+            <lb/>
+            Die zu&#x366;voren in Sta&#x364;llen geſchrawen.
+            <lb/>
+            <head><num>6.</num></head>
+            <lb/>
+            Das gefidderte Vo&#x364;lcklein der Lu&#x364;ffte/
+            <lb/>
+            Machet wider erklingen die klu&#x364;ffte/
+            <lb/>
+            Alß ob Echo denſelbigen ru&#x364;ffte:
+            <lb/>
+            An die Wolcken die Lerche ſich ſchwinget/
+            <lb/>
+            Jhrem Scho&#x364;pffer zu ehren ſie ſinget/
+            <lb/>
+            Zwitzer gſchwa&#x364;tze die Schwalbe fu&#x364;rbringet.
+            <lb/>
+            <head><num>7.</num></head>
+            <lb/>
+            Minder lieblich beduncket vns zwaren/
+            <lb/>
+            Wann der Guckguck/ gefraget von jahren/
+            <lb/>
+            Seine Tertzen hieru&#x364;ber laßt fahren:
+            <lb/>
+            Wann die Bienen ſo heiſer thu&#x366;n brummen/
+            <lb/>
+            Wann ſie vber die Blumen hinſummen:
+            <lb/>
+            Doch erfrewet vns jhres ankommen.
+            <lb/>
+            <head><num>8.</num></head>
+            <lb/>
+            Die geſchnabelten feinde der Schlangen/
+            <lb/>
+            Jn dem Fru&#x364;hling/ ohnfehlbar anlangen/
+            <lb/>
+            Die coaxenden Fro&#x364;ſchen ſie fangen:
+            <lb/>
+            Mit denſelben die jungen ſie ſpeiſen/
+            <lb/>
+            Jhre jungen ſich danckbar erweiſen/
+            <lb/>
+            Deren beyſpil den Kindern wir preiſen.
+            <lb/>
+            <head><num>9.</num></head>
+            <lb/>
+            Jn den Weyern der Enten geſchwader/
+            <lb/>
+            Sich ergetzet mit vilem geplader/
+            <lb/>
+            Vnd erꝛeget ein luſtig geſchnader:
+            <lb/>
+            Jn den Seen es wimmelt von Fiſchen/
+            <lb/>
+            Die ſich aber geparet vermiſchen/
+            <lb/>
+            Vnd mit ſchwu&#x364;mmen vnd ſpringen erfriſchen.
+            <lb/>
+            <head><num>10.</num></head>
+            <lb/>
+            Nun bedeutet der Fru&#x364;hling hieneben
+            <lb/>
+            Jungen Leuhten jhr blu&#x364;hendes Leben/
+            <lb/>
+            Das der Tugend ſie ſollen ergeben/
+            <lb/>
+            Doch ſo wollen wir jhnen nicht wehren
+            <lb/>
+            Die gebu&#x364;rlichen frewden/ in ehren/
+            <lb/>
+            So die zeiten erlauben vnd lehren.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
