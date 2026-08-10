@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN55C_Stirb_eh_du_sterbst_dass_nicht_verderbst" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN55C Stirb, eh du sterbst, dass nicht verderbst</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN55C Stirb, eh du sterbst, dass nicht verderbst</title>
+            <idno type="Transkribus">4579907</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            6. Sinnenbild.
+            <lb/>
+            Stirb/ eh du ſterbſt/ daß nicht verderbſt.
+            <lb/>
+            <hi rendition="#aq">Co Meÿer
+            <lb/>
+            inve: et
+            <lb/>
+            fecit.</hi>
+            <lb/>
+            
+            So ungeleich gelebt/ ſo ungeleich geſtorben:
+            <lb/>
+            Der From&#x303; ergibt ſich gern/ weil Chriſtus Jhm erworben
+            <lb/>
+            das Leben in dem Tod; die ewig Ehrenkron/
+            <lb/>
+            in ho&#x364;chſter Seligkeit: Ô ſcho&#x364;nſter Gnadenlohn!
+            <lb/>
+            Der Laſterfolle Wanſt wolt nie der Sünd abſterben/
+            <lb/>
+            deß ſtirbet er zu&#x366;letzt zum ewigen verderben:
+            <lb/>
+            Jhm wird/ was er geliebt/ zur heiſſen Ho&#x364;llenglu&#x366;t.
+            <lb/>
+            Drum/ eh du ſterbeſt/ ſtirb; ſo bleibt dir ewigs Gu&#x366;t.
+            <lb/>
+            
+            Einer Tugendliebenden Jugend in Zürich/ ab der
+            <lb/>
+            Burgerbibliot; für das 1655. Jahr verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

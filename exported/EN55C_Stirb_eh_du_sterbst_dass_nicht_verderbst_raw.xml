@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN55C Stirb, eh du sterbst, dass nicht verderbst</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN55C Stirb, eh du sterbst, dass nicht verderbst</title>
+               <idno type="Transkribus">4579907</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80100166.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=VFVXGFICFZJTIPUVAHRYOWUT&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="169,451 1713,451 1713,2279 169,2279" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="656,383 960,383 960,528 656,528" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="250,471 1660,471 1660,603 250,603" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+            <zone points="181,2035 269,2035 269,2116 181,2116" rendition="Line" xml:id="facs_2_l"/>
+            <zone points="209,2051 293,2051 293,2128 209,2128" rendition="Line" xml:id="facs_2_l_23"/>
+            <zone points="254,2072 313,2072 313,2132 254,2132" rendition="Line" xml:id="facs_2_l_27"/>
+         </zone>
+         <zone points="118,2322 1656,2322 1656,2934 118,2934" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="243,2316 1442,2316 1442,2462 243,2462" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+            <zone points="252,2409 1586,2409 1586,2515 252,2515" rendition="Line" xml:id="facs_2_tr_1_tl_5"/>
+            <zone points="318,2492 1486,2492 1486,2587 318,2587" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+            <zone points="324,2557 1541,2557 1541,2652 324,2652" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="160,2635 1549,2635 1549,2737 160,2737" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="172,2696 1367,2696 1367,2823 172,2823" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="252,2731 1581,2731 1581,2900 252,2900" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="273,2830 1634,2830 1634,2965 273,2965" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+         </zone>
+         <zone points="1002,2940 1727,2940 1727,3060 1002,3060" rendition="TextRegion" xml:id="facs_2_r_26">
+            <zone points="1002,2911 1690,2911 1690,3020 1002,3020" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+            <zone points="1052,3002 1710,3002 1710,3090 1052,3090" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>6. Sinnenbild.
+               <lb facs="#facs_2_tr_1_tl_2" n="N002"/>Stirb/ eh du ſterbſt/ daß nicht verderbſt.
+               <lb facs="#facs_2_l" n="N003"/><Antiqua>Co Meÿer
+               <lb facs="#facs_2_l_23" n="N004"/>inve: et
+               <lb facs="#facs_2_l_27" n="N005"/>fecit.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_4" n="N001"/>So ungeleich gelebt/ ſo ungeleich geſtorben:
+               <lb facs="#facs_2_tr_1_tl_5" n="N002"/>Der From̃ ergibt ſich gern/ weil Chriſtus Jhm erworben
+               <lb facs="#facs_2_tr_1_tl_6" n="N003"/>das Leben in dem Tod; die ewig Ehrenkron/
+               <lb facs="#facs_2_tr_1_tl_7" n="N004"/>in hoͤchſter Seligkeit: Ô ſchoͤnſter Gnadenlohn!
+               <lb facs="#facs_2_tr_1_tl_8" n="N005"/>Der Laſterfolle Wanſt wolt nie der Sünd abſterben/
+               <lb facs="#facs_2_tr_1_tl_9" n="N006"/>deß ſtirbet er zuͦletzt zum ewigen verderben:
+               <lb facs="#facs_2_tr_1_tl_10" n="N007"/>Jhm wird/ was er geliebt/ zur heiſſen Hoͤllengluͦt.
+               <lb facs="#facs_2_tr_1_tl_11" n="N008"/>Drum/ eh du ſterbeſt/ ſtirb; ſo bleibt dir ewigs Guͦt.
+            </ab>
+            <ab facs="#facs_2_r_26" type="">
+               <lb facs="#facs_2_tr_1_tl_12" n="N001"/>Einer Tugendliebenden Jugend in Zürich/ ab der
+               <lb facs="#facs_2_tr_1_tl_13" n="N002"/>Burgerbibliot; für das 1655. Jahr verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
