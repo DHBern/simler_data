@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN67D+ Betrachtung Menschlichen Alters, nach anleitung der vier Tags- und Jahrs-Zeiten</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN67D+ Betrachtung Menschlichen Alters, nach anleitung der vier Tags- und Jahrs-Zeiten</title>
+               <idno type="Transkribus">4580247</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="p002.jpg" width="2479px" height="3508px"/>
+         <zone points="73,332 1825,332 1825,463 73,463" rendition="TextRegion" xml:id="facs_2_r_1">
+            <zone points="115,428 1777,428 1777,460 115,460" rendition="Line" xml:id="facs_2_l"/>
+         </zone>
+         <zone points="72,493 982,493 982,1497 72,1497" rendition="TextRegion" xml:id="facs_2_r_2">
+            <zone points="150,529 847,529 847,901 150,901" rendition="Line" xml:id="facs_2_l_40"/>
+            <zone points="152,1038 537,1038 537,1470 152,1470" rendition="Line" xml:id="facs_2_l_78"/>
+            <zone points="130,1096 563,1096 563,1506 130,1506" rendition="Line" xml:id="facs_2_l_101"/>
+            <zone points="534,1479 562,1479 562,1509 534,1509" rendition="Line" xml:id="facs_2_l_10"/>
+            <zone points="570,725 962,725 962,1497 570,1497" rendition="Line" xml:id="facs_2_l_54"/>
+         </zone>
+         <zone points="95,1507 964,1507 964,1747 95,1747" rendition="TextRegion" xml:id="facs_2_r_5">
+            <zone points="118,1550 946,1550 946,1583 118,1583" rendition="Line" xml:id="facs_2_l_8"/>
+            <zone points="133,1594 936,1594 936,1631 133,1631" rendition="Line" xml:id="facs_2_l_12"/>
+            <zone points="191,1638 896,1638 896,1676 191,1676" rendition="Line" xml:id="facs_2_l_16"/>
+            <zone points="200,1691 941,1691 941,1724 200,1724" rendition="Line" xml:id="facs_2_l_20"/>
+         </zone>
+         <zone points="1000,495 1839,495 1839,1495 1000,1495" rendition="TextRegion" xml:id="facs_2_r_3">
+            <zone points="1005,531 1745,531 1745,869 1005,869" rendition="Line" xml:id="facs_2_l_29"/>
+            <zone points="1006,1084 1395,1084 1395,1473 1006,1473" rendition="Line" xml:id="facs_2_l_66"/>
+            <zone points="988,1110 1414,1110 1414,1494 988,1494" rendition="Line" xml:id="facs_2_l_95"/>
+            <zone points="1326,1468 1400,1468 1400,1505 1326,1505" rendition="Line" xml:id="facs_2_l_99"/>
+            <zone points="1432,839 1810,839 1810,1480 1432,1480" rendition="Line" xml:id="facs_2_l_136"/>
+            <zone points="1094,746 1255,746 1255,1079 1094,1079" rendition="Line" xml:id="facs_2_l_30"/>
+            <zone points="1488,1241 1566,1241 1566,1285 1488,1285" rendition="Line" xml:id="facs_2_l_34"/>
+            <zone points="1470,1282 1547,1282 1547,1321 1470,1321" rendition="Line" xml:id="facs_2_l_38"/>
+         </zone>
+         <zone points="972,1510 1839,1510 1839,1757 972,1757" rendition="TextRegion" xml:id="facs_2_r_4">
+            <zone points="980,1553 1795,1553 1795,1585 980,1585" rendition="Line" xml:id="facs_2_l_13"/>
+            <zone points="991,1596 1796,1596 1796,1633 991,1633" rendition="Line" xml:id="facs_2_l_17"/>
+            <zone points="1038,1638 1783,1638 1783,1676 1038,1676" rendition="Line" xml:id="facs_2_l_21"/>
+            <zone points="1046,1689 1803,1689 1803,1721 1046,1721" rendition="Line" xml:id="facs_2_l_25"/>
+         </zone>
+         <zone points="79,1746 963,1746 963,2769 79,2769" rendition="TextRegion" xml:id="facs_2_r_6">
+            <zone points="157,1781 885,1781 885,2051 157,2051" rendition="Line" xml:id="facs_2_l_22"/>
+            <zone points="117,2201 957,2201 957,2716 117,2716" rendition="Line" xml:id="facs_2_l_128"/>
+         </zone>
+         <zone points="72,2773 963,2773 963,2986 72,2986" rendition="TextRegion" xml:id="facs_2_r_8">
+            <zone points="110,2796 929,2796 929,2828 110,2828" rendition="Line" xml:id="facs_2_l_18"/>
+            <zone points="129,2841 947,2841 947,2877 129,2877" rendition="Line" xml:id="facs_2_l_23"/>
+            <zone points="161,2887 934,2887 934,2919 161,2919" rendition="Line" xml:id="facs_2_l_27"/>
+            <zone points="155,2935 958,2935 958,2970 155,2970" rendition="Line" xml:id="facs_2_l_31"/>
+         </zone>
+         <zone points="982,1757 1844,1757 1844,2767 982,2767" rendition="TextRegion" xml:id="facs_2_r_7">
+            <zone points="1027,1776 1735,1776 1735,2021 1027,2021" rendition="Line" xml:id="facs_2_l_53"/>
+            <zone points="995,2263 1345,2263 1345,2704 995,2704" rendition="Line" xml:id="facs_2_l_100"/>
+            <zone points="971,2305 1349,2305 1349,2729 971,2729" rendition="Line" xml:id="facs_2_l_137"/>
+            <zone points="1407,2278 1789,2278 1789,2716 1407,2716" rendition="Line" xml:id="facs_2_l_166"/>
+            <zone points="1478,2408 1794,2408 1794,2727 1478,2727" rendition="Line" xml:id="facs_2_l_188"/>
+         </zone>
+         <zone points="963,2777 1842,2777 1842,2990 963,2990" rendition="TextRegion" xml:id="facs_2_r_9">
+            <zone points="982,2792 1750,2792 1750,2824 982,2824" rendition="Line" xml:id="facs_2_l_4"/>
+            <zone points="995,2836 1719,2836 1719,2870 995,2870" rendition="Line" xml:id="facs_2_l_9"/>
+            <zone points="1036,2877 1789,2877 1789,2916 1036,2916" rendition="Line" xml:id="facs_2_l_14"/>
+            <zone points="1037,2919 1756,2919 1756,2956 1037,2956" rendition="Line" xml:id="facs_2_l_19"/>
+         </zone>
+         <zone points="105,2998 1839,2998 1839,3167 105,3167" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="144,3019 891,3019 891,3051 144,3051" rendition="Line" xml:id="facs_2_l_28"/>
+            <zone points="228,3054 988,3054 988,3097 228,3097" rendition="Line" xml:id="facs_2_l_32"/>
+            <zone points="1121,3031 1810,3031 1810,3078 1121,3078" rendition="Line" xml:id="facs_2_l_36"/>
+            <zone points="1147,3064 1711,3064 1711,3104 1147,3104" rendition="Line" xml:id="facs_2_l_41"/>
+            <zone points="1264,3110 1658,3110 1658,3141 1264,3141" rendition="Line" xml:id="facs_2_l_45"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r_1" type="">
+               <lb facs="#facs_2_l" n="N001"/>Betrachtung Menſchlichen Alters/ nach anleitung der vier Tags- und Jahrs-Zeiten.
+            </ab>
+            <ab facs="#facs_2_r_2" type="">
+               <lb facs="#facs_2_l_40" n="N001"/>Morgen Zeit: Fruͤhling/ oder Jugend.
+               <lb facs="#facs_2_l_78" n="N002"/>Wer Ruͦtten ſpart/ der Haſſet ſeinen Sohn:
+               <lb facs="#facs_2_l_101" n="N003"/>Wer in aber lieb hat/ der zeuch in früe zur Zucht. <Antiqua>Prov.XIII.
+               <lb facs="#facs_2_l_10" n="N004"/>24.</Antiqua>
+               <lb facs="#facs_2_l_54" n="N005"/>Die forcht Gottes iſt ein Kron der Weÿßheit. <Antiqua>Sirach.I.16.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_5" type="">
+               <lb facs="#facs_2_l_8" n="N001"/>Die fruͤhe Morgenzeit/ und Fruͤhling reiz zuͦr Tugend:
+               <lb facs="#facs_2_l_12" n="N002"/>Dann/ wer ſich der'n befleißt in ſeiner erſten jugend/
+               <lb facs="#facs_2_l_16" n="N003"/>dem ſelben/ ſonder<choice><corr/><sic>/</sic></choice> fehl/ der Schoͤpfer hat bereit
+               <lb facs="#facs_2_l_20" n="N004"/>ein' Ehrenkron alhier/ und Dort die Seligkeit.
+            </ab>
+            <ab facs="#facs_2_r_3" type="">
+               <lb facs="#facs_2_l_29" n="N001"/>Mittages Zeit: Sommer: oder Mañliches Alter.
+               <lb facs="#facs_2_l_66" n="N002"/>Selig iſt der/ der den HERREN förchtet/ und auf
+               <lb facs="#facs_2_l_95" n="N003"/>ſeinen wegen wandlet/ du wirſt dich nehren deiner händen arbeit:
+               <lb facs="#facs_2_l_99" n="N004"/><Antiqua>Pſal.128.</Antiqua>
+               <lb facs="#facs_2_l_136" n="N005"/>Wee dem/ der deß HERREN werk hinleßig thuͦt.<Antiqua> Jere:48.10.</Antiqua>
+               <lb facs="#facs_2_l_30" n="N006"/>Baͤtten und Arbeiten.
+               <lb facs="#facs_2_l_34" n="N007"/><Antiqua>C.M.
+               <lb facs="#facs_2_l_38" n="N008"/>fecit.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_4" type="">
+               <lb facs="#facs_2_l_13" n="N001"/>Die ſchoͤn Mittaͤgig Sonn/ in langen Sommer Tagen/
+               <lb facs="#facs_2_l_17" n="N002"/>am hoͤchſten fahrt daher/ auff ihrem guldnen Wagen:
+               <lb facs="#facs_2_l_21" n="N003"/>Jm andern Alter wir; alß unſrer Sommers Zeit;
+               <lb facs="#facs_2_l_25" n="N004"/>durch Arbeit und Gebett auch ſollen fahren weit.
+            </ab>
+            <ab facs="#facs_2_r_6" type="">
+               <lb facs="#facs_2_l_22" n="N001"/>Abend: Herpſt: oder/ Grauwes Alter.
+               <lb facs="#facs_2_l_128" n="N002"/>Jm Hauſe des gottloſen iſt der Fluͦch des HERREN/ Aber/ der gerechten Hauß wird geſegnet. <Antiqua>Pro.III.33.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_8" type="">
+               <lb facs="#facs_2_l_18" n="N001"/>Dem Herpſt und Abend wir angehndes Alter gleichen/
+               <lb facs="#facs_2_l_23" n="N002"/>ſo/ ſonder Wachßthum/ nie vorgehnde ließ entweichen:
+               <lb facs="#facs_2_l_27" n="N003"/>Drum ſamlet es die Frucht/ mit freüden/ reichlich eÿn:
+               <lb facs="#facs_2_l_31" n="N004"/>Der Traͤg und Gottloß wird im Alter Darbend ſeÿn.
+            </ab>
+            <ab facs="#facs_2_r_7" type="">
+               <lb facs="#facs_2_l_53" n="N001"/>Nacht: Winter: oder Hoͤchſtes Alter.
+               <lb facs="#facs_2_l_100" n="N002"/>Es iſt dem Menſchen geſetzt/ ein mahl zuͦ
+               <lb facs="#facs_2_l_137" n="N003"/>Sterben: darnach aber das Gericht. <Antiqua>Heb:IX.15.</Antiqua>
+               <lb facs="#facs_2_l_166" n="N004"/>Theüwer iſt in den Augen deß HERRE der Tod ſeiner
+               <lb facs="#facs_2_l_188" n="N005"/><unclear>Giderben</unclear> Leütten. <Antiqua>Pſalm CXVI.15.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_9" type="">
+               <lb facs="#facs_2_l_4" n="N001"/>Dem Winter und der Nacht iſt aͤhnlich kaltes Alter/
+               <lb facs="#facs_2_l_9" n="N002"/>erfüllet mit beſchwerd im finſteren Gehalter:
+               <lb facs="#facs_2_l_14" n="N003"/>Die Zeit nun eilt zum End; das Alter zuͦ dem Grab/
+               <lb facs="#facs_2_l_19" n="N004"/>und freüt ſich daß es ſol der Welt genaden ab!
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_l_28" n="N001"/><Antiqua>SIt CVræ pVerIs, IV VenIqVe, VIroqVe, senIqVe
+               <lb facs="#facs_2_l_32" n="N002"/>Vlta pla: Vt poſsIt Mors pla et InDe seqVI.</Antiqua>
+               <lb facs="#facs_2_l_36" n="N003"/>Einer Kunst und Tugend liebenden Jugend in Zürich
+               <lb facs="#facs_2_l_41" n="N004"/>ab der Burgerbüchereÿ daſelbſten/ für das
+               <lb facs="#facs_2_l_45" n="N005"/>1667. jahr/ verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
