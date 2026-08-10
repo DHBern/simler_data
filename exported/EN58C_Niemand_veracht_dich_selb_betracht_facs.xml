@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><facsimile xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN58C_Niemand_veracht_dich_selb_betracht_facs">
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="p002.jpg" width="2479px" height="3508px"/>
+         <zone points="85,429 1727,429 1727,2659 85,2659" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="132,486 1422,486 1422,521 132,521" rendition="Line" xml:id="facs_2_l"/>
+            <zone points="649,1071 1028,1071 1028,1163 649,1163" rendition="Line" xml:id="facs_2_l_19"/>
+            <zone points="637,1117 1025,1117 1025,1212 637,1212" rendition="Line" xml:id="facs_2_l_30"/>
+            <zone points="643,1176 1025,1176 1025,1254 643,1254" rendition="Line" xml:id="facs_2_l_41"/>
+            <zone points="677,1218 959,1218 959,1284 677,1284" rendition="Line" xml:id="facs_2_l_48"/>
+            <zone points="741,1285 924,1285 924,1317 741,1317" rendition="Line" xml:id="facs_2_l_52"/>
+         </zone>
+         <zone points="82,2674 1735,2674 1735,3099 82,3099" rendition="TextRegion" xml:id="facs_2_r_33">
+            <zone points="84,3040 856,3040 856,3076 84,3076" rendition="Line" xml:id="facs_2_l_50"/>
+            <zone points="1176,3031 1715,3031 1715,3071 1176,3071" rendition="Line" xml:id="facs_2_l_54"/>
+         </zone>
+      </surface>
+   </facsimile>

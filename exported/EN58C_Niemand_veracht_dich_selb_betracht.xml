@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN58C_Niemand_veracht_dich_selb_betracht" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN58C Niemand veracht, dich selb betracht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN58C Niemand veracht, dich selb betracht</title>
+            <idno type="Transkribus">4579949</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            Niemand veracht/ dich ſelb betracht.
+            <lb/>
+            Der Hertzen ſpiegel zeigt
+            <lb/>
+            eim jeden ſeine Mängel:
+            <lb/>
+            Wer ſich darin beſchaut
+            <lb/>
+            der findet keinen
+            <lb/>
+            Engel.
+            <lb/>
+            
+            Ab der Burgerbibliothec verehr A°. 1658 Jahr.
+            <lb/>
+            <hi rendition="#aq">Conrad Meÿer invenit fecit et excu.</hi>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
