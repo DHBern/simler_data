@@ -2,9 +2,34 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
     xmlns:xs="http://www.w3.org/2001/XMLSchema"
     xmlns:tei="http://www.tei-c.org/ns/1.0"
+    xmlns:local="https://simler.dhbern.ch/ns/local"
     exclude-result-prefixes="#all"
     version="3.0">
-    
+
+    <!-- Base name for the output files, passed in by the GitHub Action. -->
+    <xsl:param name="filename" as="xs:string?" select="()"/>
+
+    <!-- Keep unicode letters and digits (umlauts survive), drop everything the
+         shell, the file system or an xml:id (NCName) would choke on. Must stay
+         in sync with the tei_filename step of the workflow. -->
+    <xsl:function name="local:sanitize" as="xs:string">
+        <xsl:param name="title" as="xs:string?"/>
+        <xsl:sequence select="normalize-space($title)
+            => replace('\s+','_')
+            => replace('[^\p{L}\p{N}._-]','')
+            => replace('_+','_')
+            => replace('^[_.-]+|[_.-]+$','')"/>
+    </xsl:function>
+
+    <!-- The base name to use: the parameter if one was passed, the sanitized
+         title of the source document otherwise. -->
+    <xsl:function name="local:basename" as="xs:string">
+        <xsl:param name="node" as="node()"/>
+        <xsl:sequence select="if ($filename[normalize-space()])
+            then local:sanitize($filename)
+            else local:sanitize(root($node)/descendant::*:titleStmt/*:title[1])"/>
+    </xsl:function>
+
     <xsl:character-map name="escape-combining-chars">
         <!--Combining Acute Accent: -->
         <xsl:output-character character="&#769;" string="&amp;#x301;"/>
@@ -35,10 +60,10 @@
     
     <xsl:template match="/">
         
-        <xsl:variable name="filename" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
-        
+        <xsl:variable name="basename" as="xs:string" select="local:basename(.)"/>
+
         <xsl:call-template name="facsimile">
-            <xsl:with-param name="filename" select="$filename||'_facs'"/>
+            <xsl:with-param name="filename" select="$basename||'_facs'"/>
             <xsl:with-param name="node" select="descendant::*:facsimile"/>
         </xsl:call-template>
         
@@ -47,10 +72,10 @@
         </xsl:variable>
         
         <xsl:variable name="manifest_id" select="
-            if ($filename='A_1648') then '4017109'
-            else if ($filename='B_1653') then '30217994'
-            else if ($filename='C_1663') then '4049159'
-            else if ($filename='D_1688') then '4076747'
+            if ($basename='A_1648') then '4017109'
+            else if ($basename='B_1653') then '30217994'
+            else if ($basename='C_1663') then '4049159'
+            else if ($basename='D_1688') then '4076747'
             else ''"/>
         <xsl:variable name="manifest" select="if ($manifest_id != '' and unparsed-text-available('https://www.e-rara.ch/i3f/v20/'||$manifest_id||'/manifest/?manifest.json')) 
             then unparsed-text('https://www.e-rara.ch/i3f/v20/'||$manifest_id||'/manifest/?manifest.json') => json-to-xml() 
@@ -119,7 +144,7 @@
     <xsl:template match="*:TEI">
         <xsl:copy>
             <xsl:apply-templates select="@*"/>
-            <xsl:attribute name="xml:id" select="descendant::*:titleStmt/*:title => replace(' ','_')"/>
+            <xsl:attribute name="xml:id" select="local:basename(.)"/>
             <xsl:attribute name="type">simler-framework</xsl:attribute>
             <xsl:apply-templates select="node()"/>
         </xsl:copy>

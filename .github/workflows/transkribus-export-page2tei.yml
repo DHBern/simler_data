@@ -54,9 +54,14 @@ jobs:
     - run: sudo apt-get update && sudo apt-get install -y libxml2-utils
     - id: tei_filename
       shell: bash
+      # Whitespace -> _, then drop every ASCII character the shell, the file
+      # system or an xml:id (NCName) chokes on.
       run: |
         title=$(xmllint --xpath 'normalize-space(//*[local-name()="trpDocMetadata"]/*[local-name()="title"])' scratch/mets.xml)
-        sanitized_title=$(printf '%s' "$title" | tr ' ' '_' | tr -cd 'A-Za-z0-9._-')
+        sanitized_title=$(printf '%s' "$title" \
+          | tr -s '[:space:]' '_' \
+          | tr -cd 'A-Za-z0-9._\200-\377-' \
+          | sed -E 's/_+/_/g; s/^[_.-]+//; s/[_.-]+$//')
         echo "tei_filename=$sanitized_title" >> "$GITHUB_OUTPUT"
     - name: METS to TEI (page2tei, XSLT)
       uses: pdaengeli/use-saxon-he-j@13.0.fix
@@ -65,7 +70,7 @@ jobs:
     - name: Refine TEI (XSLT)
       uses: pdaengeli/use-saxon-he-j@13.0.fix
       with:
-        args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/refine-tei.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml
+        args: -s:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml -xsl:transkribus-export-mets/refine-tei.xsl -o:scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml filename=${{ steps.tei_filename.outputs.tei_filename }}
     - run: cp -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_raw.xml
     - run: mv -f scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}_refined.xml scratch/exported/${{ steps.tei_filename.outputs.tei_filename }}.xml
     - name: Generate issue reply (XSLT)
