@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
+               <idno type="Transkribus">4579928</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80100405.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=MROPKCZMYVZRGBAHLJPXTLBL&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="281,610 1762,610 1762,753 281,753" rendition="TextRegion" xml:id="facs_2_r_44">
+            <zone points="296,634 1734,634 1734,749 296,749" rendition="Line" xml:id="facs_2_tr_3_tl_17"/>
+         </zone>
+         <zone points="1278,916 1580,916 1580,1076 1278,1076" rendition="TextRegion" xml:id="facs_2_r_46">
+            <zone points="1309,939 1504,939 1504,1020 1309,1020" rendition="Line" xml:id="facs_2_l_4"/>
+            <zone points="1278,942 1566,942 1566,1057 1278,1057" rendition="Line" xml:id="facs_2_l_8"/>
+            <zone points="1375,1006 1454,1006 1454,1051 1375,1051" rendition="Line" xml:id="facs_2_l_12"/>
+         </zone>
+         <zone points="356,1559 476,1559 476,1597 356,1597" rendition="TextRegion" xml:id="facs_2_r_45">
+            <zone points="358,1560 465,1560 465,1592 358,1592" rendition="Line" xml:id="facs_2_l_20"/>
+         </zone>
+         <zone points="167,801 322,801 322,1614 167,1614" rendition="TextRegion" xml:id="facs_2_r_37">
+            <zone points="164,798 300,798 300,838 164,838" rendition="Line" xml:id="facs_2_tr_3_tl_20"/>
+            <zone points="155,828 291,828 291,860 155,860" rendition="Line" xml:id="facs_2_tr_3_tl_21"/>
+            <zone points="149,853 289,853 289,887 149,887" rendition="Line" xml:id="facs_2_tr_3_tl_22"/>
+            <zone points="162,879 243,879 243,915 162,915" rendition="Line" xml:id="facs_2_tr_3_tl_23"/>
+            <zone points="169,905 301,905 301,938 169,938" rendition="Line" xml:id="facs_2_l_66"/>
+            <zone points="169,928 305,928 305,959 169,959" rendition="Line" xml:id="facs_2_l_62"/>
+            <zone points="171,950 301,950 301,981 171,981" rendition="Line" xml:id="facs_2_l_58"/>
+            <zone points="185,955 291,955 291,1008 185,1008" rendition="Line" xml:id="facs_2_tr_3_tl_24"/>
+            <zone points="172,996 304,996 304,1028 172,1028" rendition="Line" xml:id="facs_2_l_53"/>
+            <zone points="173,1019 301,1019 301,1052 173,1052" rendition="Line" xml:id="facs_2_l_48"/>
+            <zone points="170,1045 304,1045 304,1076 170,1076" rendition="Line" xml:id="facs_2_l_44"/>
+            <zone points="173,1065 304,1065 304,1096 173,1096" rendition="Line" xml:id="facs_2_l_40"/>
+            <zone points="172,1088 302,1088 302,1119 172,1119" rendition="Line" xml:id="facs_2_l_36"/>
+            <zone points="170,1111 301,1111 301,1142 170,1142" rendition="Line" xml:id="facs_2_l_32"/>
+            <zone points="187,1138 294,1138 294,1174 187,1174" rendition="Line" xml:id="facs_2_tr_3_tl_26"/>
+            <zone points="183,1162 294,1162 294,1196 183,1196" rendition="Line" xml:id="facs_2_tr_3_tl_27"/>
+            <zone points="194,1185 294,1185 294,1217 194,1217" rendition="Line" xml:id="facs_2_tr_3_tl_28"/>
+            <zone points="194,1213 294,1213 294,1242 194,1242" rendition="Line" xml:id="facs_2_tr_3_tl_29"/>
+            <zone points="174,1227 305,1227 305,1259 174,1259" rendition="Line" xml:id="facs_2_l_68"/>
+            <zone points="172,1252 307,1252 307,1283 172,1283" rendition="Line" xml:id="facs_2_l_64"/>
+            <zone points="173,1276 305,1276 305,1308 173,1308" rendition="Line" xml:id="facs_2_l_60"/>
+            <zone points="173,1297 300,1297 300,1329 173,1329" rendition="Line" xml:id="facs_2_l_56"/>
+            <zone points="179,1321 305,1321 305,1351 179,1351" rendition="Line" xml:id="facs_2_l_52"/>
+            <zone points="206,1325 294,1325 294,1383 206,1383" rendition="Line" xml:id="facs_2_tr_3_tl_30"/>
+            <zone points="168,1372 289,1372 289,1404 168,1404" rendition="Line" xml:id="facs_2_tr_3_tl_31"/>
+            <zone points="162,1398 296,1398 296,1423 162,1423" rendition="Line" xml:id="facs_2_tr_3_tl_32"/>
+            <zone points="160,1417 298,1417 298,1449 160,1449" rendition="Line" xml:id="facs_2_tr_3_tl_33"/>
+            <zone points="162,1442 294,1442 294,1470 162,1470" rendition="Line" xml:id="facs_2_tr_3_tl_34"/>
+            <zone points="168,1468 294,1468 294,1496 168,1496" rendition="Line" xml:id="facs_2_tr_3_tl_35"/>
+            <zone points="164,1487 294,1487 294,1517 164,1517" rendition="Line" xml:id="facs_2_tr_3_tl_36"/>
+            <zone points="168,1515 298,1515 298,1545 168,1545" rendition="Line" xml:id="facs_2_tr_3_tl_37"/>
+            <zone points="172,1538 287,1538 287,1568 172,1568" rendition="Line" xml:id="facs_2_tr_3_tl_38"/>
+            <zone points="172,1555 289,1555 289,1585 172,1585" rendition="Line" xml:id="facs_2_l_51"/>
+            <zone points="264,1576 310,1576 310,1608 264,1608" rendition="Line" xml:id="facs_2_l"/>
+         </zone>
+         <zone points="1753,803 1908,803 1908,1620 1753,1620" rendition="TextRegion" xml:id="facs_2_r_43">
+            <zone points="1754,797 1888,797 1888,828 1754,828" rendition="Line" xml:id="facs_2_l_5"/>
+            <zone points="1754,821 1887,821 1887,853 1754,853" rendition="Line" xml:id="facs_2_l_9"/>
+            <zone points="1754,843 1888,843 1888,878 1754,878" rendition="Line" xml:id="facs_2_l_13"/>
+            <zone points="1756,868 1875,868 1875,902 1756,902" rendition="Line" xml:id="facs_2_l_17"/>
+            <zone points="1755,890 1892,890 1892,923 1755,923" rendition="Line" xml:id="facs_2_l_21"/>
+            <zone points="1756,915 1888,915 1888,945 1756,945" rendition="Line" xml:id="facs_2_l_25"/>
+            <zone points="1755,939 1893,939 1893,969 1755,969" rendition="Line" xml:id="facs_2_l_29"/>
+            <zone points="1756,960 1890,960 1890,991 1756,991" rendition="Line" xml:id="facs_2_l_33"/>
+            <zone points="1753,984 1890,984 1890,1014 1753,1014" rendition="Line" xml:id="facs_2_l_37"/>
+            <zone points="1754,1007 1890,1007 1890,1039 1754,1039" rendition="Line" xml:id="facs_2_l_41"/>
+            <zone points="1754,1029 1894,1029 1894,1060 1754,1060" rendition="Line" xml:id="facs_2_l_45"/>
+            <zone points="1756,1052 1848,1052 1848,1085 1756,1085" rendition="Line" xml:id="facs_2_l_49"/>
+            <zone points="1759,1084 1891,1084 1891,1116 1759,1116" rendition="Line" xml:id="facs_2_l_6"/>
+            <zone points="1787,1105 1867,1105 1867,1136 1787,1136" rendition="Line" xml:id="facs_2_l_10"/>
+            <zone points="1782,1131 1891,1131 1891,1161 1782,1161" rendition="Line" xml:id="facs_2_l_14"/>
+            <zone points="1758,1155 1892,1155 1892,1185 1758,1185" rendition="Line" xml:id="facs_2_l_18"/>
+            <zone points="1758,1178 1892,1178 1892,1211 1758,1211" rendition="Line" xml:id="facs_2_l_22"/>
+            <zone points="1757,1199 1878,1199 1878,1230 1757,1230" rendition="Line" xml:id="facs_2_l_26"/>
+            <zone points="1758,1224 1892,1224 1892,1257 1758,1257" rendition="Line" xml:id="facs_2_l_30"/>
+            <zone points="1758,1250 1895,1250 1895,1280 1758,1280" rendition="Line" xml:id="facs_2_l_34"/>
+            <zone points="1759,1270 1892,1270 1892,1301 1759,1301" rendition="Line" xml:id="facs_2_l_38"/>
+            <zone points="1759,1292 1886,1292 1886,1324 1759,1324" rendition="Line" xml:id="facs_2_l_42"/>
+            <zone points="1761,1319 1821,1319 1821,1350 1761,1350" rendition="Line" xml:id="facs_2_l_46"/>
+            <zone points="1762,1347 1892,1347 1892,1380 1762,1380" rendition="Line" xml:id="facs_2_l_50"/>
+            <zone points="1790,1369 1866,1369 1866,1401 1790,1401" rendition="Line" xml:id="facs_2_l_54"/>
+            <zone points="1778,1390 1898,1390 1898,1422 1778,1422" rendition="Line" xml:id="facs_2_l_59"/>
+            <zone points="1758,1415 1891,1415 1891,1449 1758,1449" rendition="Line" xml:id="facs_2_l_63"/>
+            <zone points="1757,1442 1893,1442 1893,1475 1757,1475" rendition="Line" xml:id="facs_2_l_67"/>
+            <zone points="1762,1461 1880,1461 1880,1492 1762,1492" rendition="Line" xml:id="facs_2_l_71"/>
+            <zone points="1758,1486 1895,1486 1895,1518 1758,1518" rendition="Line" xml:id="facs_2_l_75"/>
+            <zone points="1759,1508 1893,1508 1893,1539 1759,1539" rendition="Line" xml:id="facs_2_l_79"/>
+            <zone points="1756,1531 1889,1531 1889,1563 1756,1563" rendition="Line" xml:id="facs_2_l_83"/>
+            <zone points="1759,1554 1904,1554 1904,1586 1759,1586" rendition="Line" xml:id="facs_2_l_87"/>
+            <zone points="1760,1579 1822,1579 1822,1610 1760,1610" rendition="Line" xml:id="facs_2_l_91"/>
+         </zone>
+         <zone points="167,1659 1636,1659 1636,1702 167,1702" rendition="TextRegion" xml:id="facs_2_r_25">
+            <zone points="162,1651 1868,1651 1868,1711 162,1711" rendition="Line" xml:id="facs_2_tr_3_tl_42"/>
+         </zone>
+         <zone points="162,1744 1920,1744 1920,2107 162,2107" rendition="TextRegion" xml:id="facs_2_r_26">
+            <zone points="317,1734 417,1734 417,1787 317,1787" rendition="Line" xml:id="facs_2_tr_3_tl_43"/>
+            <zone points="208,1828 315,1828 315,1862 208,1862" rendition="Line" xml:id="facs_2_tr_3_tl_50"/>
+            <zone points="389,1851 562,1851 562,1889 389,1889" rendition="Line" xml:id="facs_2_tr_3_tl_53"/>
+            <zone points="238,1908 460,1908 460,1964 238,1964" rendition="Line" xml:id="facs_2_tr_3_tl_60"/>
+            <zone points="217,2000 570,2000 570,2031 217,2031" rendition="Line" xml:id="facs_2_l_116"/>
+            <zone points="208,2068 525,2068 525,2123 208,2123" rendition="Line" xml:id="facs_2_tr_3_tl_75"/>
+            <zone points="781,1744 858,1744 858,1774 781,1774" rendition="Line" xml:id="facs_2_l_16"/>
+            <zone points="632,1806 970,1806 970,1855 632,1855" rendition="Line" xml:id="facs_2_tr_3_tl_48"/>
+            <zone points="625,1847 979,1847 979,1887 625,1887" rendition="Line" xml:id="facs_2_tr_3_tl_52"/>
+            <zone points="643,1927 957,1927 957,1958 643,1958" rendition="Line" xml:id="facs_2_l_43"/>
+            <zone points="621,1989 974,1989 974,2034 621,2034" rendition="Line" xml:id="facs_2_tr_3_tl_64"/>
+            <zone points="681,2051 925,2051 925,2121 681,2121" rendition="Line" xml:id="facs_2_tr_3_tl_72"/>
+            <zone points="1201,1743 1291,1743 1291,1777 1201,1777" rendition="Line" xml:id="facs_2_l_27"/>
+            <zone points="1077,1826 1423,1826 1423,1856 1077,1856" rendition="Line" xml:id="facs_2_l_77"/>
+            <zone points="1057,1776 1140,1776 1140,1887 1057,1887" rendition="Line" xml:id="facs_2_tr_3_tl_51"/>
+            <zone points="1230,1881 1308,1881 1308,1957 1230,1957" rendition="Line" xml:id="facs_2_tr_3_tl_58"/>
+            <zone points="1072,1876 1245,1876 1245,2032 1072,2032" rendition="Line" xml:id="facs_2_tr_3_tl_65"/>
+            <zone points="1066,2070 1362,2070 1362,2117 1066,2117" rendition="Line" xml:id="facs_2_tr_3_tl_74"/>
+            <zone points="1647,1748 1715,1748 1715,1780 1647,1780" rendition="Line" xml:id="facs_2_l_11"/>
+            <zone points="1510,1825 1854,1825 1854,1860 1510,1860" rendition="Line" xml:id="facs_2_l_82"/>
+            <zone points="1512,1849 1851,1849 1851,1884 1512,1884" rendition="Line" xml:id="facs_2_l_86"/>
+            <zone points="1512,1931 1831,1931 1831,1963 1512,1963" rendition="Line" xml:id="facs_2_l_90"/>
+            <zone points="1507,1999 1856,1999 1856,2035 1507,2035" rendition="Line" xml:id="facs_2_l_94"/>
+            <zone points="1489,2040 1791,2040 1791,2125 1489,2125" rendition="Line" xml:id="facs_2_tr_3_tl_73"/>
+         </zone>
+         <zone points="161,2116 1897,2116 1897,2617 161,2617" rendition="TextRegion" xml:id="facs_2_tr_3">
+            <zone points="438,2117 468,2117 468,2148 438,2148" rendition="Line" xml:id="facs_2_l_55"/>
+            <zone points="128,2113 711,2113 711,2193 128,2193" rendition="Line" xml:id="facs_2_tr_3_tl_78"/>
+            <zone points="117,2172 615,2172 615,2225 117,2225" rendition="Line" xml:id="facs_2_tr_3_tl_81"/>
+            <zone points="200,2213 540,2213 540,2255 200,2255" rendition="Line" xml:id="facs_2_tr_3_tl_84"/>
+            <zone points="226,2245 513,2245 513,2285 226,2285" rendition="Line" xml:id="facs_2_tr_3_tl_87"/>
+            <zone points="202,2264 487,2264 487,2327 202,2327" rendition="Line" xml:id="facs_2_tr_3_tl_90"/>
+            <zone points="238,2306 491,2306 491,2359 238,2359" rendition="Line" xml:id="facs_2_tr_3_tl_93"/>
+            <zone points="437,2361 475,2361 475,2394 437,2394" rendition="Line" xml:id="facs_2_l_61"/>
+            <zone points="168,2364 660,2364 660,2436 168,2436" rendition="Line" xml:id="facs_2_tr_3_tl_96"/>
+            <zone points="162,2421 621,2421 621,2476 162,2476" rendition="Line" xml:id="facs_2_tr_3_tl_99"/>
+            <zone points="202,2453 479,2453 479,2502 202,2502" rendition="Line" xml:id="facs_2_tr_3_tl_102"/>
+            <zone points="236,2472 521,2472 521,2527 236,2527" rendition="Line" xml:id="facs_2_tr_3_tl_105"/>
+            <zone points="204,2508 553,2508 553,2572 204,2572" rendition="Line" xml:id="facs_2_tr_3_tl_108"/>
+            <zone points="226,2553 540,2553 540,2610 226,2610" rendition="Line" xml:id="facs_2_tr_3_tl_111"/>
+            <zone points="1007,2117 1039,2117 1039,2148 1007,2148" rendition="Line" xml:id="facs_2_l_69"/>
+            <zone points="742,2115 1283,2115 1283,2196 742,2196" rendition="Line" xml:id="facs_2_tr_3_tl_76"/>
+            <zone points="734,2176 1245,2176 1245,2223 734,2223" rendition="Line" xml:id="facs_2_tr_3_tl_79"/>
+            <zone points="770,2206 1066,2206 1066,2259 770,2259" rendition="Line" xml:id="facs_2_tr_3_tl_83"/>
+            <zone points="800,2234 1102,2234 1102,2283 800,2283" rendition="Line" xml:id="facs_2_tr_3_tl_85"/>
+            <zone points="772,2264 1102,2264 1102,2327 772,2327" rendition="Line" xml:id="facs_2_tr_3_tl_88"/>
+            <zone points="800,2304 1087,2304 1087,2359 800,2359" rendition="Line" xml:id="facs_2_tr_3_tl_91"/>
+            <zone points="1015,2359 1045,2359 1045,2390 1015,2390" rendition="Line" xml:id="facs_2_l_73"/>
+            <zone points="740,2362 1206,2362 1206,2425 740,2425" rendition="Line" xml:id="facs_2_tr_3_tl_94"/>
+            <zone points="742,2410 1272,2410 1272,2474 742,2474" rendition="Line" xml:id="facs_2_tr_3_tl_97"/>
+            <zone points="779,2444 1081,2444 1081,2498 779,2498" rendition="Line" xml:id="facs_2_tr_3_tl_101"/>
+            <zone points="800,2487 1064,2487 1064,2534 800,2534" rendition="Line" xml:id="facs_2_tr_3_tl_104"/>
+            <zone points="770,2510 1036,2510 1036,2566 770,2566" rendition="Line" xml:id="facs_2_tr_3_tl_106"/>
+            <zone points="804,2542 1057,2542 1057,2596 804,2596" rendition="Line" xml:id="facs_2_tr_3_tl_109"/>
+            <zone points="1583,2110 1626,2110 1626,2146 1583,2146" rendition="Line" xml:id="facs_2_l_78"/>
+            <zone points="1319,2119 1789,2119 1789,2187 1319,2187" rendition="Line" xml:id="facs_2_tr_3_tl_77"/>
+            <zone points="1317,2181 1774,2181 1774,2234 1317,2234" rendition="Line" xml:id="facs_2_tr_3_tl_80"/>
+            <zone points="1349,2208 1628,2208 1628,2257 1349,2257" rendition="Line" xml:id="facs_2_tr_3_tl_82"/>
+            <zone points="1372,2234 1725,2234 1725,2300 1372,2300" rendition="Line" xml:id="facs_2_tr_3_tl_86"/>
+            <zone points="1347,2266 1625,2266 1625,2323 1347,2323" rendition="Line" xml:id="facs_2_tr_3_tl_89"/>
+            <zone points="1372,2310 1615,2310 1615,2362 1372,2362" rendition="Line" xml:id="facs_2_tr_3_tl_92"/>
+            <zone points="1584,2359 1618,2359 1618,2392 1584,2392" rendition="Line" xml:id="facs_2_l_84"/>
+            <zone points="1313,2362 1853,2362 1853,2442 1313,2442" rendition="Line" xml:id="facs_2_tr_3_tl_95"/>
+            <zone points="1311,2423 1825,2423 1825,2476 1311,2476" rendition="Line" xml:id="facs_2_tr_3_tl_98"/>
+            <zone points="1347,2451 1642,2451 1642,2502 1347,2502" rendition="Line" xml:id="facs_2_tr_3_tl_100"/>
+            <zone points="1372,2485 1640,2485 1640,2527 1372,2527" rendition="Line" xml:id="facs_2_tr_3_tl_103"/>
+            <zone points="1347,2506 1642,2506 1642,2570 1347,2570" rendition="Line" xml:id="facs_2_tr_3_tl_107"/>
+            <zone points="1383,2536 1683,2536 1683,2602 1383,2602" rendition="Line" xml:id="facs_2_tr_3_tl_110"/>
+         </zone>
+         <zone points="452,2636 1646,2636 1646,2811 452,2811" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="451,2617 1598,2617 1598,2689 451,2689" rendition="Line" xml:id="facs_2_tr_3_tl_112"/>
+            <zone points="932,2670 1155,2670 1155,2723 932,2723" rendition="Line" xml:id="facs_2_tr_3_tl_113"/>
+            <zone points="808,2698 1240,2698 1240,2764 808,2764" rendition="Line" xml:id="facs_2_tr_3_tl_114"/>
+            <zone points="804,2755 1270,2755 1270,2808 804,2808" rendition="Line" xml:id="facs_2_tr_3_tl_115"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r_44" type="">
+               <lb facs="#facs_2_tr_3_tl_17" n="N001"/>Geſang von lieb- und lobwuͤrdiger Einigkeit.
+            </ab>
+            <ab facs="#facs_2_r_46" type="">
+               <lb facs="#facs_2_l_4" n="N001"/><Antiqua>CONCORDIA
+               <lb facs="#facs_2_l_8" n="N002"/>CŒLESTIS HARMO-
+               <lb facs="#facs_2_l_12" n="N003"/>NIA.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_45" type="">
+               <lb facs="#facs_2_l_20" n="N001"/>RS. fecit.
+            </ab>
+            <ab facs="#facs_2_r_37" type="">
+               <lb facs="#facs_2_tr_3_tl_20" n="N001"/><Antiqua><italic>B. Auguſtinus</italic>
+               <lb facs="#facs_2_tr_3_tl_21" n="N002"/><italic>Lib. de Civita-</italic>
+               <lb facs="#facs_2_tr_3_tl_22" n="N003"/><italic>te Dei, cap.</italic> 21.
+               <lb facs="#facs_2_tr_3_tl_23" n="N004"/><Initial_letter>U</Initial_letter>t in fidibus
+               <lb facs="#facs_2_l_66" n="N005"/>ac tibiis, atque
+               <lb facs="#facs_2_l_62" n="N006"/>cantu ipſo, ac
+               <lb facs="#facs_2_l_58" n="N007"/>voce concen-
+               <lb facs="#facs_2_tr_3_tl_24" n="N008"/>tus eſt quidam
+               <lb facs="#facs_2_l_53" n="N009"/>tenendus ex di
+               <lb facs="#facs_2_l_48" n="N010"/>ſtinctis ſonis,
+               <lb facs="#facs_2_l_44" n="N011"/>quem immu-
+               <lb facs="#facs_2_l_40" n="N012"/>tatum aut di-
+               <lb facs="#facs_2_l_36" n="N013"/>ſcrepantem au
+               <lb facs="#facs_2_l_32" n="N014"/>res eruditæ fer-
+               <lb facs="#facs_2_tr_3_tl_26" n="N015"/>re non poſſunt,
+               <lb facs="#facs_2_tr_3_tl_27" n="N016"/>isq́ue concen-
+               <lb facs="#facs_2_tr_3_tl_28" n="N017"/>tus ex diſſimil-
+               <lb facs="#facs_2_tr_3_tl_29" n="N018"/>limarum vo-
+               <lb facs="#facs_2_l_68" n="N019"/>cum modera-
+               <lb facs="#facs_2_l_64" n="N020"/>tione, concors
+               <lb facs="#facs_2_l_60" n="N021"/>tamen efficitur
+               <lb facs="#facs_2_l_56" n="N022"/>&amp; congruens:
+               <lb facs="#facs_2_l_52" n="N023"/>Sic ex ſummis
+               <lb facs="#facs_2_tr_3_tl_30" n="N024"/>&amp; mediis, &amp; in-
+               <lb facs="#facs_2_tr_3_tl_31" n="N025"/>fimis interje-
+               <lb facs="#facs_2_tr_3_tl_32" n="N026"/>ctis ordinibus
+               <lb facs="#facs_2_tr_3_tl_33" n="N027"/>ut ſonis mode-
+               <lb facs="#facs_2_tr_3_tl_34" n="N028"/>ratam ratione
+               <lb facs="#facs_2_tr_3_tl_35" n="N029"/>civitatem con-
+               <lb facs="#facs_2_tr_3_tl_36" n="N030"/>ſenſu diſſimil-
+               <lb facs="#facs_2_tr_3_tl_37" n="N031"/>limorum con-
+               <lb facs="#facs_2_tr_3_tl_38" n="N032"/>cinere, &amp; quæ
+               <lb facs="#facs_2_l_51" n="N033"/>harmonia à
+               <lb facs="#facs_2_l" n="N034"/><Catch_word>mu-</Catch_word></Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_43" type="">
+               <lb facs="#facs_2_l_5" n="N001"/><Antiqua>muſicis dicitur
+               <lb facs="#facs_2_l_9" n="N002"/>in cantu, eam
+               <lb facs="#facs_2_l_13" n="N003"/>eſſe in civitate
+               <lb facs="#facs_2_l_17" n="N004"/>concordiam,
+               <lb facs="#facs_2_l_21" n="N005"/>arctiſſimum at-
+               <lb facs="#facs_2_l_25" n="N006"/>que optimum
+               <lb facs="#facs_2_l_29" n="N007"/>in Republica
+               <lb facs="#facs_2_l_33" n="N008"/>vinculum inco
+               <lb facs="#facs_2_l_37" n="N009"/>lumitatis, eam-
+               <lb facs="#facs_2_l_41" n="N010"/>q́ue ſine juſti-
+               <lb facs="#facs_2_l_45" n="N011"/>tia nullo pacto
+               <lb facs="#facs_2_l_49" n="N012"/>eſſe poſſe.
+               <lb facs="#facs_2_l_6" n="N013"/><italic>Plutarchus in</italic>
+               <lb facs="#facs_2_l_10" n="N014"/><italic>Moralib.</italic>
+               <lb facs="#facs_2_l_14" n="N015"/><Initial_letter>U</Initial_letter>t ſingula
+               <lb facs="#facs_2_l_18" n="N016"/>haſtilia facilè
+               <lb facs="#facs_2_l_22" n="N017"/>frangas, con-
+               <lb facs="#facs_2_l_26" n="N018"/>juncta non
+               <lb facs="#facs_2_l_30" n="N019"/>poſſis: ita diſ-
+               <lb facs="#facs_2_l_34" n="N020"/>ſidentes facilè
+               <lb facs="#facs_2_l_38" n="N021"/>superãtur, con-
+               <lb facs="#facs_2_l_42" n="N022"/>cordes haud
+               <lb facs="#facs_2_l_46" n="N023"/>facilè.
+               <lb facs="#facs_2_l_50" n="N024"/><italic>Paulus Aemi-</italic>
+               <lb facs="#facs_2_l_54" n="N025"/><italic>lius l.</italic> 1.
+               <lb facs="#facs_2_l_59" n="N026"/>Nulla præ-
+               <lb facs="#facs_2_l_63" n="N027"/>valida armis
+               <lb facs="#facs_2_l_67" n="N028"/>gens, inter ſe
+               <lb facs="#facs_2_l_71" n="N029"/>conſentiens,
+               <lb facs="#facs_2_l_75" n="N030"/>vinci ab exter-
+               <lb facs="#facs_2_l_79" n="N031"/>no hoſte, licèt
+               <lb facs="#facs_2_l_83" n="N032"/>feroci, opibus-
+               <lb facs="#facs_2_l_87" n="N033"/>q́ue præſtante,
+               <lb facs="#facs_2_l_91" n="N034"/>poteſt.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_25" type="">
+               <lb facs="#facs_2_tr_3_tl_42" n="N001"/>Noch eines; naͤchſt der Buͦß; iſt noͤhtig diſer zeit/ Zum ſchirm des Vatterlands: die heilig' Einigkeit.
+            </ab>
+            <ab facs="#facs_2_r_26" type="">
+               <lb facs="#facs_2_tr_3_tl_43" n="N001"/><Antiqua>Cantus.</Antiqua>
+               <lb facs="#facs_2_tr_3_tl_50" n="N002"/>Mit David wir die Einigkeit erheben
+               <lb facs="#facs_2_tr_3_tl_53" n="N003"/>die mitlerin zu ruh-erwuͤnſchtem leben:
+               <lb facs="#facs_2_tr_3_tl_60" n="N004"/>ſie riecht nach balſams arte/ den man
+               <lb facs="#facs_2_l_116" n="N005"/>auf Aron geußt/ und der vom haubt in
+               <lb facs="#facs_2_tr_3_tl_75" n="N006"/>barte/ und auf die kleider fleußt.
+               <lb facs="#facs_2_l_16" n="N007"/><Antiqua>Altus.</Antiqua>
+               <lb facs="#facs_2_tr_3_tl_48" n="N008"/>Mit David wir die Einigkeit erheben
+               <lb facs="#facs_2_tr_3_tl_52" n="N009"/>die mitlerin zu ruh-erwuͤnſchtem leben:
+               <lb facs="#facs_2_l_43" n="N010"/>ſie riecht nach balſams arte/ den man
+               <lb facs="#facs_2_tr_3_tl_64" n="N011"/>auf Aron geußt/ und der vom haubt in
+               <lb facs="#facs_2_tr_3_tl_72" n="N012"/>barte/ und auf die kleider fleußt.
+               <lb facs="#facs_2_l_27" n="N013"/><Antiqua>Tenor.</Antiqua>
+               <lb facs="#facs_2_l_77" n="N014"/>Mit David wir die Einigkeit erheben
+               <lb facs="#facs_2_tr_3_tl_51" n="N015"/>die mitlerin zu ruh-erwuͤnſchtem leben:
+               <lb facs="#facs_2_tr_3_tl_58" n="N016"/>ſie riecht nach balſams arte/ den man
+               <lb facs="#facs_2_tr_3_tl_65" n="N017"/>auf Aron geußt/ und der vom haubt in
+               <lb facs="#facs_2_tr_3_tl_74" n="N018"/>barte/ und auf die kleider fleußt.
+               <lb facs="#facs_2_l_11" n="N019"/><Antiqua>Baſis.</Antiqua>
+               <lb facs="#facs_2_l_82" n="N020"/>Mit David wir die Einigkeit erheben
+               <lb facs="#facs_2_l_86" n="N021"/>die mitlerin zu ruh-erwuͤnſchtem leben:
+               <lb facs="#facs_2_l_90" n="N022"/>ſie riecht nach balſams arte/ den man
+               <lb facs="#facs_2_l_94" n="N023"/>auf Aron geußt/ und der vom haubt in
+               <lb facs="#facs_2_tr_3_tl_73" n="N024"/>barte/ und auf die kleider fleußt.
+            </ab>
+            <ab facs="#facs_2_tr_3" type="">
+               <lb facs="#facs_2_l_55" n="N001"/><Numbering>2.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_78" n="N002"/>Gleich wie der thau den Hermonsberg benetzet/
+               <lb facs="#facs_2_tr_3_tl_81" n="N003"/>von dem er ſich auf Sions huͤgel ſetzet:
+               <lb facs="#facs_2_tr_3_tl_84" n="N004"/>warvon ſie fruchtbar werden
+               <lb facs="#facs_2_tr_3_tl_87" n="N005"/>und grunen rechter zeit:
+               <lb facs="#facs_2_tr_3_tl_90" n="N006"/>ſo ſegnet Gott auf erden
+               <lb facs="#facs_2_tr_3_tl_93" n="N007"/>die lieblich' Einigkeit.
+               <lb facs="#facs_2_l_61" n="N008"/><Numbering>3.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_96" n="N009"/>Die Einigkeit macht groß geringe werke:
+               <lb facs="#facs_2_tr_3_tl_99" n="N010"/>Uneinigkeit verderbet kraft und ſterke:
+               <lb facs="#facs_2_tr_3_tl_102" n="N011"/>ja/ wo einandern kuͤſſen
+               <lb facs="#facs_2_tr_3_tl_105" n="N012"/>Frid und Gerechtigkeit/
+               <lb facs="#facs_2_tr_3_tl_108" n="N013"/>ſie/ ſchantzenweis/ umſchlieſſen
+               <lb facs="#facs_2_tr_3_tl_111" n="N014"/>die ſtaͤtte/ land und leuht.
+               <lb facs="#facs_2_l_69" n="N015"/><Numbering>4.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_76" n="N016"/>Die Einigkeit den feinden forcht und ſchreken/
+               <lb facs="#facs_2_tr_3_tl_79" n="N017"/>den freunden troſt in gfahren kan erweken:
+               <lb facs="#facs_2_tr_3_tl_83" n="N018"/>alß Einigkeit verbunden
+               <lb facs="#facs_2_tr_3_tl_85" n="N019"/>die werthe Eidgnoſchaft/
+               <lb facs="#facs_2_tr_3_tl_88" n="N020"/>der feind oft hat empfunden
+               <lb facs="#facs_2_tr_3_tl_91" n="N021"/>ihr wundergroſſe kraft.
+               <lb facs="#facs_2_l_73" n="N022"/><Numbering>5.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_94" n="N023"/>Wie oͤfter hat ihr kleinvereinter hauffen
+               <lb facs="#facs_2_tr_3_tl_97" n="N024"/>feldſtarke heer vom feind gemacht entlauffen?
+               <lb facs="#facs_2_tr_3_tl_101" n="N025"/>Gott woͤlle daß ihr bunde
+               <lb facs="#facs_2_tr_3_tl_104" n="N026"/>verneuert veſt beſteh!
+               <lb facs="#facs_2_tr_3_tl_106" n="N027"/>Uneinigkeit zu grunde
+               <lb facs="#facs_2_tr_3_tl_109" n="N028"/>mit ihrem ſtiffter geh!
+               <lb facs="#facs_2_l_78" n="N029"/><Numbering>6.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_77" n="N030"/>Daß aber Frid im Lande moͤg bekleiben/
+               <lb facs="#facs_2_tr_3_tl_80" n="N031"/>muß ieder in beruffes ſchranken bleiben/
+               <lb facs="#facs_2_tr_3_tl_82" n="N032"/>auf Gott in allem ſehen/
+               <lb facs="#facs_2_tr_3_tl_86" n="N033"/>dem naͤchſten dienſtlich ſeyn:
+               <lb facs="#facs_2_tr_3_tl_89" n="N034"/>landſittlich ſich begehen
+               <lb facs="#facs_2_tr_3_tl_92" n="N035"/>mit allen in gemein.
+               <lb facs="#facs_2_l_84" n="N036"/><Numbering>7.</Numbering>
+               <lb facs="#facs_2_tr_3_tl_95" n="N037"/>O Hoͤchſter/ ſchenk den werthen Friden wider/
+               <lb facs="#facs_2_tr_3_tl_98" n="N038"/>ſo ſtim͂t man an die dank- und freudenlieder:
+               <lb facs="#facs_2_tr_3_tl_100" n="N039"/>gib/ daß ſich arme nehren
+               <lb facs="#facs_2_tr_3_tl_103" n="N040"/>mit reichem uͤberfluß:
+               <lb facs="#facs_2_tr_3_tl_107" n="N041"/>die kuͤnſte ſich vermehren
+               <lb facs="#facs_2_tr_3_tl_110" n="N042"/>durch gaaben und genuß!
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_3_tl_112" n="N001"/>Einer kunſt- und tugendliebenden Jugend in Zuͤrich/ ab der Burger-Bibliothek zur neuen Jahrſchenke verehrt/
+               <lb facs="#facs_2_tr_3_tl_113" n="N002"/>Jm Jahr des Herꝛen:
+               <lb facs="#facs_2_tr_3_tl_114" n="N003"/>Es <Antiqua>I</Antiqua>ſt an re<Antiqua>C</Antiqua>hter E<Antiqua>I</Antiqua>n<Antiqua>I</Antiqua>gke<Antiqua>I</Antiqua>t
+               <lb facs="#facs_2_tr_3_tl_115" n="N004"/>N<Antiqua>I</Antiqua>t gr<Antiqua>I</Antiqua>nger <Antiqua>M</Antiqua>ange<Antiqua>L</Antiqua> <Antiqua>DI</Antiqua>ſer ze<Antiqua>I</Antiqua>t.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>

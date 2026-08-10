@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN58A_Gesang_von_lieb-_und_lobwürdiger_Einigkeit" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
+            <idno type="Transkribus">4579928</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            Geſang von lieb- und lobwu&#x364;rdiger Einigkeit.
+            <lb/>
+            
+            <hi rendition="#aq">CONCORDIA
+            <lb/>
+            CŒLESTIS HARMO-
+            <lb break="no"/>
+            NIA.</hi>
+            <lb/>
+            
+            RS. fecit.
+            <lb/>
+            
+            <hi rendition="#aq"><hi rendition="#i">B. Auguſtinus</hi>
+            <lb/>
+            <hi rendition="#i">Lib. de Civita-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">te Dei, cap.</hi> 21.
+            <lb/>
+            <hi rendition="#in">U</hi>t in fidibus
+            <lb/>
+            ac tibiis, atque
+            <lb/>
+            cantu ipſo, ac
+            <lb/>
+            voce concen-
+            <lb break="no"/>
+            tus eſt quidam
+            <lb/>
+            tenendus ex di
+            <lb/>
+            ſtinctis ſonis,
+            <lb/>
+            quem immu-
+            <lb break="no"/>
+            tatum aut di-
+            <lb break="no"/>
+            ſcrepantem au
+            <lb/>
+            res eruditæ fer-
+            <lb break="no"/>
+            re non poſſunt,
+            <lb/>
+            isq&#x301;ue concen-
+            <lb break="no"/>
+            tus ex diſſimil-
+            <lb break="no"/>
+            limarum vo-
+            <lb break="no"/>
+            cum modera-
+            <lb break="no"/>
+            tione, concors
+            <lb/>
+            tamen efficitur
+            <lb/>
+            &amp; congruens:
+            <lb/>
+            Sic ex ſummis
+            <lb/>
+            &amp; mediis, &amp; in-
+            <lb break="no"/>
+            fimis interje-
+            <lb break="no"/>
+            ctis ordinibus
+            <lb/>
+            ut ſonis mode-
+            <lb break="no"/>
+            ratam ratione
+            <lb/>
+            civitatem con-
+            <lb break="no"/>
+            ſenſu diſſimil-
+            <lb break="no"/>
+            limorum con-
+            <lb break="no"/>
+            cinere, &amp; quæ
+            <lb/>
+            harmonia à
+            <lb/>
+            <fw place="bottom" type="catch">mu-</fw></hi>
+            <lb break="no"/>
+            
+            <hi rendition="#aq">muſicis dicitur
+            <lb/>
+            in cantu, eam
+            <lb/>
+            eſſe in civitate
+            <lb/>
+            concordiam,
+            <lb/>
+            arctiſſimum at-
+            <lb break="no"/>
+            que optimum
+            <lb/>
+            in Republica
+            <lb/>
+            vinculum inco
+            <lb/>
+            lumitatis, eam-
+            <lb break="no"/>
+            q&#x301;ue ſine juſti-
+            <lb break="no"/>
+            tia nullo pacto
+            <lb/>
+            eſſe poſſe.
+            <lb/>
+            <hi rendition="#i">Plutarchus in</hi>
+            <lb/>
+            <hi rendition="#i">Moralib.</hi>
+            <lb/>
+            <hi rendition="#in">U</hi>t ſingula
+            <lb/>
+            haſtilia facilè
+            <lb/>
+            frangas, con-
+            <lb break="no"/>
+            juncta non
+            <lb/>
+            poſſis: ita diſ-
+            <lb break="no"/>
+            ſidentes facilè
+            <lb/>
+            supera&#x303;tur, con-
+            <lb break="no"/>
+            cordes haud
+            <lb/>
+            facilè.
+            <lb/>
+            <hi rendition="#i">Paulus Aemi-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">lius l.</hi> 1.
+            <lb/>
+            Nulla præ-
+            <lb break="no"/>
+            valida armis
+            <lb/>
+            gens, inter ſe
+            <lb/>
+            conſentiens,
+            <lb/>
+            vinci ab exter-
+            <lb break="no"/>
+            no hoſte, licèt
+            <lb/>
+            feroci, opibus-
+            <lb break="no"/>
+            q&#x301;ue præſtante,
+            <lb/>
+            poteſt.</hi>
+            <lb/>
+            
+            Noch eines; na&#x364;chſt der Bu&#x366;ß; iſt no&#x364;htig diſer zeit/ Zum ſchirm des Vatterlands: die heilig' Einigkeit.
+            <lb/>
+            
+            <hi rendition="#aq">Cantus.</hi>
+            <lb/>
+            Mit David wir die Einigkeit erheben
+            <lb/>
+            die mitlerin zu ruh-erwu&#x364;nſchtem leben:
+            <lb/>
+            ſie riecht nach balſams arte/ den man
+            <lb/>
+            auf Aron geußt/ und der vom haubt in
+            <lb/>
+            barte/ und auf die kleider fleußt.
+            <lb/>
+            <hi rendition="#aq">Altus.</hi>
+            <lb/>
+            Mit David wir die Einigkeit erheben
+            <lb/>
+            die mitlerin zu ruh-erwu&#x364;nſchtem leben:
+            <lb/>
+            ſie riecht nach balſams arte/ den man
+            <lb/>
+            auf Aron geußt/ und der vom haubt in
+            <lb/>
+            barte/ und auf die kleider fleußt.
+            <lb/>
+            <hi rendition="#aq">Tenor.</hi>
+            <lb/>
+            Mit David wir die Einigkeit erheben
+            <lb/>
+            die mitlerin zu ruh-erwu&#x364;nſchtem leben:
+            <lb/>
+            ſie riecht nach balſams arte/ den man
+            <lb/>
+            auf Aron geußt/ und der vom haubt in
+            <lb/>
+            barte/ und auf die kleider fleußt.
+            <lb/>
+            <hi rendition="#aq">Baſis.</hi>
+            <lb/>
+            Mit David wir die Einigkeit erheben
+            <lb/>
+            die mitlerin zu ruh-erwu&#x364;nſchtem leben:
+            <lb/>
+            ſie riecht nach balſams arte/ den man
+            <lb/>
+            auf Aron geußt/ und der vom haubt in
+            <lb/>
+            barte/ und auf die kleider fleußt.
+            <lb/>
+            
+            <head><num>2.</num></head>
+            <lb/>
+            Gleich wie der thau den Hermonsberg benetzet/
+            <lb/>
+            von dem er ſich auf Sions hu&#x364;gel ſetzet:
+            <lb/>
+            warvon ſie fruchtbar werden
+            <lb/>
+            und grunen rechter zeit:
+            <lb/>
+            ſo ſegnet Gott auf erden
+            <lb/>
+            die lieblich' Einigkeit.
+            <lb/>
+            <head><num>3.</num></head>
+            <lb/>
+            Die Einigkeit macht groß geringe werke:
+            <lb/>
+            Uneinigkeit verderbet kraft und ſterke:
+            <lb/>
+            ja/ wo einandern ku&#x364;ſſen
+            <lb/>
+            Frid und Gerechtigkeit/
+            <lb/>
+            ſie/ ſchantzenweis/ umſchlieſſen
+            <lb/>
+            die ſta&#x364;tte/ land und leuht.
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Die Einigkeit den feinden forcht und ſchreken/
+            <lb/>
+            den freunden troſt in gfahren kan erweken:
+            <lb/>
+            alß Einigkeit verbunden
+            <lb/>
+            die werthe Eidgnoſchaft/
+            <lb/>
+            der feind oft hat empfunden
+            <lb/>
+            ihr wundergroſſe kraft.
+            <lb/>
+            <head><num>5.</num></head>
+            <lb/>
+            Wie o&#x364;fter hat ihr kleinvereinter hauffen
+            <lb/>
+            feldſtarke heer vom feind gemacht entlauffen?
+            <lb/>
+            Gott wo&#x364;lle daß ihr bunde
+            <lb/>
+            verneuert veſt beſteh!
+            <lb/>
+            Uneinigkeit zu grunde
+            <lb/>
+            mit ihrem ſtiffter geh!
+            <lb/>
+            <head><num>6.</num></head>
+            <lb/>
+            Daß aber Frid im Lande mo&#x364;g bekleiben/
+            <lb/>
+            muß ieder in beruffes ſchranken bleiben/
+            <lb/>
+            auf Gott in allem ſehen/
+            <lb/>
+            dem na&#x364;chſten dienſtlich ſeyn:
+            <lb/>
+            landſittlich ſich begehen
+            <lb/>
+            mit allen in gemein.
+            <lb/>
+            <head><num>7.</num></head>
+            <lb/>
+            O Ho&#x364;chſter/ ſchenk den werthen Friden wider/
+            <lb/>
+            ſo ſtim&#x342;t man an die dank- und freudenlieder:
+            <lb/>
+            gib/ daß ſich arme nehren
+            <lb/>
+            mit reichem u&#x364;berfluß:
+            <lb/>
+            die ku&#x364;nſte ſich vermehren
+            <lb/>
+            durch gaaben und genuß!
+            <lb/>
+            
+            Einer kunſt- und tugendliebenden Jugend in Zu&#x364;rich/ ab der Burger-Bibliothek zur neuen Jahrſchenke verehrt/
+            <lb/>
+            Jm Jahr des Herꝛen:
+            <lb/>
+            Es <hi rendition="#aq">I</hi>ſt an re<hi rendition="#aq">C</hi>hter E<hi rendition="#aq">I</hi>n<hi rendition="#aq">I</hi>gke<hi rendition="#aq">I</hi>t
+            <lb/>
+            N<hi rendition="#aq">I</hi>t gr<hi rendition="#aq">I</hi>nger <hi rendition="#aq">M</hi>ange<hi rendition="#aq">L</hi> <hi rendition="#aq">DI</hi>ſer ze<hi rendition="#aq">I</hi>t.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
