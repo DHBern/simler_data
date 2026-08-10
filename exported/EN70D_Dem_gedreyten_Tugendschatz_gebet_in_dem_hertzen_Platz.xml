@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN70D_Dem_gedreyten_Tugendschatz_gebet_in_dem_hertzen_Platz" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN70D+ Dem gedreyten Tugendschatz/ gebet in dem hertzen Platz </title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN70D+ Dem gedreyten Tugendschatz/ gebet in dem hertzen Platz </title>
+            <idno type="Transkribus">4580249</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            Dem gedreÿten Tugendſchatz/ gebet in dem Hertzen Platz.
+            <lb/>
+            <hi rendition="#aq">Conr: Meÿer fecit.</hi>
+            <lb/>
+            
+            Zu&#x366; diſer <anchor xml:id="a1"/><unclear>Letſten zeit</unclear><note type="annotation" targetEnd="a1"><p>Wörter stehen auch sonst eher gedrängt beieinander, z.B. auch "zum Ende" in der gleichen Zeile</p></note>; da alles eilt zum Ende/
+            <lb/>
+            und nichts beſtehndig bleibt/ wohin man je ſich wende/
+            <lb/>
+            weiſſ' ich der jungen Welt/ auff weitem Erdenplatz/
+            <lb/>
+            zu&#x366; weiſen Beſſers nichts/ als diſen Tugendſchatz:
+            <lb/>
+            Glaub: Hoffnung: Lieb'; ich mein'; alß die den Wüſſenſcha<anchor xml:id="a2"/>ff<note type="annotation" targetEnd="a2"><p>Doppel-f-Ligatur?</p></note>ten
+            <lb/>
+            <unclear>w</unclear>eit vorzezeühen ſeind/ dieweil ſie beſſer hafften/
+            <lb/>
+            die Liebe ſonderlich: dan&#x303; Diſe wird beſtehn
+            <lb/>
+            wan&#x303; andre Kunſt und Witz/ und Tugend wird vergehn.
+            <lb/>
+            Beſihe hierüber
+            <lb/>
+            <hi rendition="#aq">I.Cor.Cap.13.</hi>
+            <lb/>
+            
+            Einer Tugendliebenden Jugend in Zürich
+            <lb/>
+            ab der Burgerbu&#x364;chereÿ daſelbſten/
+            <lb/>
+            für das 1670. Jahre verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

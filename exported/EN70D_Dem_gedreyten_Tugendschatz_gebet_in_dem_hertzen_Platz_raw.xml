@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN70D+ Dem gedreyten Tugendschatz/ gebet in dem hertzen Platz </title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN70D+ Dem gedreyten Tugendschatz/ gebet in dem hertzen Platz </title>
+               <idno type="Transkribus">4580249</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="80101765.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=WGLRRRLGDZPLOZELTEEJJHTP&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="128,503 1728,503 1728,2078 128,2078" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="116,421 1696,421 1696,600 116,600" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="706,2000 1031,2000 1031,2032 706,2032" rendition="Line" xml:id="facs_2_l"/>
+         </zone>
+         <zone points="143,2093 1742,2093 1742,2890 143,2890" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="224,2117 1419,2117 1419,2221 224,2221" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+            <zone points="234,2202 1574,2202 1574,2310 234,2310" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+            <zone points="309,2278 1578,2278 1578,2402 309,2402" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+            <zone points="311,2355 1546,2355 1546,2477 311,2477" rendition="Line" xml:id="facs_2_tr_1_tl_5"/>
+            <zone points="212,2394 1724,2394 1724,2550 212,2550" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+            <zone points="185,2518 1424,2518 1424,2603 185,2603" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="297,2570 1460,2570 1460,2670 297,2670" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="305,2597 1684,2597 1684,2754 305,2754" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="177,2727 460,2727 460,2839 177,2839" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="185,2810 456,2810 456,2888 185,2888" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+         </zone>
+         <zone points="923,2870 1708,2870 1708,3068 923,3068" rendition="TextRegion" xml:id="facs_2_r_26">
+            <zone points="915,2843 1672,2843 1672,2995 915,2995" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+            <zone points="962,2953 1535,2953 1535,3024 962,3024" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+            <zone points="990,2989 1539,2989 1539,3079 990,3079" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>Dem gedreÿten Tugendſchatz/ gebet in dem Hertzen Platz.
+               <lb facs="#facs_2_l" n="N002"/><Antiqua>Conr: Meÿer fecit.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_2" n="N001"/>Zuͦ diſer <unclear alternative="Letſtenzeit" reason="Wörter stehen auch sonst eher gedrängt beieinander, z.B. auch &#34;zum Ende&#34; in der gleichen Zeile">Letſten zeit</unclear>; da alles eilt zum Ende/
+               <lb facs="#facs_2_tr_1_tl_3" n="N002"/>und nichts beſtehndig bleibt/ wohin man je ſich wende/
+               <lb facs="#facs_2_tr_1_tl_4" n="N003"/>weiſſ' ich der jungen Welt/ auff weitem Erdenplatz/
+               <lb facs="#facs_2_tr_1_tl_5" n="N004"/>zuͦ weiſen Beſſers nichts/ als diſen Tugendſchatz:
+               <lb facs="#facs_2_tr_1_tl_6" n="N005"/>Glaub: Hoffnung: Lieb'; ich mein'; alß die den Wüſſenſcha<comment comment="Doppel-f-Ligatur?">ff</comment>ten
+               <lb facs="#facs_2_tr_1_tl_7" n="N006"/><unclear alternative="W">w</unclear>eit vorzezeühen ſeind/ dieweil ſie beſſer hafften/
+               <lb facs="#facs_2_tr_1_tl_8" n="N007"/>die Liebe ſonderlich: dañ Diſe wird beſtehn
+               <lb facs="#facs_2_tr_1_tl_9" n="N008"/>wañ andre Kunſt und Witz/ und Tugend wird vergehn.
+               <lb facs="#facs_2_tr_1_tl_10" n="N009"/>Beſihe hierüber
+               <lb facs="#facs_2_tr_1_tl_11" n="N010"/><Antiqua>I.Cor.Cap.13.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_26" type="">
+               <lb facs="#facs_2_tr_1_tl_12" n="N001"/>Einer Tugendliebenden Jugend in Zürich
+               <lb facs="#facs_2_tr_1_tl_13" n="N002"/>ab der Burgerbuͤchereÿ daſelbſten/
+               <lb facs="#facs_2_tr_1_tl_14" n="N003"/>für das 1670. Jahre verehrt.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
