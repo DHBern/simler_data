@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN59C_Regenten-Kleinodt" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN59C Regenten-Kleinodt</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN59C Regenten-Kleinodt</title>
+            <idno type="Transkribus">4580048</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            Regenten-Kleinodt:
+            <lb/>
+            Oder/
+            <lb/>
+            Der <hi rendition="#aq">LXXII.</hi> Pſalm/ des geiſtreichen Poeten/ und ko&#x364;niglichen Propheten Davids:
+            <lb/>
+            geſtellt/ und dem Volk zuſingen fu&#x364;rgeſchriben/ alß er ſeinen Sohn/ den Salomon/ zum Ko&#x364;nig ernennt/
+            <lb/>
+            und offenlich eyngeſetzt hatte: Da er zugleich/ under dem Vorbild des geſa&#x364;gneten Reychs ſeines Sohns/
+            <lb/>
+            von dem ewig-ſeligen Reych Chriſti weyſſaget:
+            <lb/>
+            Dem hochgeachten/ wola&#x364;dlen/ geſtrengen/ frommen/ veſten/
+            <lb/>
+            fu&#x364;rſichtigen und wolweyſen Herꝛen/
+            <lb/>
+            Herꝛen Hans Heinrich Rhanen/
+            <lb/>
+            alß Drittem diſes Ehrengeſchlechts/ den 13. Wintermonats/ 1655. wolverdienlich
+            <lb/>
+            erwehltem Herꝛen Burgermeiſter loblicher Statt Zu&#x364;rich/ zu ſondern Ehren und Ruhm/
+            <lb/>
+            in andere Reym- und Geſangweiſe gebracht/ und Jhr Ehrſ. Weyßh. ſchriftlich
+            <lb/>
+            domals u&#x364;berlifert:
+            <lb/>
+            Aniezt aber/ mit beygeſezten vier Stimmen in offnem Truk/ der Singkunſt-liebenden Jugend
+            <lb/>
+            in Zu&#x364;rich/ ab der Burger-Bibliothek daſelbſten/ zur Neuen Jahrſchenke
+            <lb/>
+            mitgetheilt.
+            <lb/>
+            
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">CANTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Herꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">TENOR.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Herꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">ALTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Herꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">BASIS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Herꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            
+            Diſer Pſalm mag auch geſungen werden in der Geſangweiſe:
+            <lb/>
+            Jeſus/ waarer Gottes Sohn/ ꝛc.
+            <lb/>
+            
+            David bittet
+            <lb/>
+            fu&#x364;r Salom<anchor xml:id="a1"/>o<note type="annotation" targetEnd="a1"><p>Teilweise fehlende Tinte.</p></note>n:
+            <lb/>
+            daß Gott ihn
+            <lb/>
+            begaabe 1. mit
+            <lb/>
+            Gerechtigkeit.
+            <lb/>
+            2. Jhm o&#x364;ffne
+            <lb/>
+            ſeine Gerichte:
+            <lb/>
+            und lehrt hie-
+            <lb break="no"/>
+            mit alle Re-
+            <lb break="no"/>
+            genten/ wie ſie
+            <lb/>
+            regieren ſollen.
+            <lb/>
+            Fru&#x364;cht eines
+            <lb/>
+            rechten Regi-
+            <lb break="no"/>
+            ments.
+            <lb/>
+            1. Frid und Ge-
+            <lb break="no"/>
+            rechtigkeit.
+            <lb/>
+            2. Schutz der
+            <lb/>
+            armen.
+            <lb/>
+            3. Waarer
+            <lb/>
+            glaub und Got-
+            <lb break="no"/>
+            tesforcht.
+            <lb/>
+            4. Gemeiner
+            <lb/>
+            wolſtand und
+            <lb/>
+            verbeſſerung
+            <lb/>
+            aller ma&#x364;ng-
+            <lb break="no"/>
+            len.
+            <lb/>
+            
+            <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn
+            <lb/>
+            dein gericht und rechte:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            Daß er/ nach gewiſſen/ richt/
+            <lb/>
+            reich- und armer ha&#x364;ndel ſchlicht/
+            <lb/>
+            ohn perſon anſehen:
+            <lb/>
+            alßdann werden u&#x364;beral/
+            <lb/>
+            ſo zu berge/ ſo zu thal/
+            <lb/>
+            Frid und Recht aufgehen.
+            <lb/>
+            Diſer Ko&#x364;nig/ from&#x342; und frey/
+            <lb/>
+            wird den armen ſtehen bey
+            <lb/>
+            wider gwalt auf erden:
+            <lb/>
+            la&#x364;ſterer und bo&#x364;ſewicht
+            <lb/>
+            werden/ durch ſein ſtreng gericht/
+            <lb/>
+            gantz vertilget werden.
+            <lb/>
+            Jederman mit forchten ihn
+            <lb/>
+            wird verehren fo&#x364;rterhin
+            <lb/>
+            von geſchlecht zu gſchlechte:
+            <lb/>
+            ihme wird man ghorſam ſeyn/
+            <lb/>
+            weil der Mond- und Sonnenſchein
+            <lb/>
+            halten ihre Rechte.
+            <lb/>
+            Einem Regen er geleicht/
+            <lb/>
+            der von oben ab befeucht
+            <lb/>
+            abgema&#x364;yte wiſen:
+            <lb/>
+            und den tropfen/ die das graß
+            <lb/>
+            machen friſch und lieblich naß/
+            <lb/>
+            wird er gleich gepriſen.
+            <lb/>
+            
+            5. Mehrung
+            <lb/>
+            des Reychs.
+            <lb/>
+            Widera&#x364;ferung
+            <lb/>
+            der eigenſchaf-
+            <lb break="no"/>
+            ten eines guten
+            <lb/>
+            Regenten/ da-
+            <lb break="no"/>
+            rauß vorge-
+            <lb break="no"/>
+            meldte Fru&#x364;cht
+            <lb/>
+            entſpringen.
+            <lb/>
+            Belohnung ei-
+            <lb break="no"/>
+            nes trewen Re-
+            <lb break="no"/>
+            genten.
+            <lb/>
+            1. Langes Le-
+            <lb break="no"/>
+            ben.
+            <lb/>
+            2. Reichtage.
+            <lb/>
+            3. Gunſt und
+            <lb/>
+            ehre.
+            <lb/>
+            
+            Nun/ zu diſes Ko&#x364;nigs zeit/
+            <lb/>
+            wird der grechte/ ſonder ſtreit/
+            <lb/>
+            in dem wolſtand gru&#x364;nen:
+            <lb/>
+            eitel Frid ſo lang wird ſeyn
+            <lb/>
+            alß verbleibt des Mondes ſchein
+            <lb/>
+            an der Himmels-bu&#x364;hnen.
+            <lb/>
+            Er wird herꝛſchen nah und fehr/
+            <lb/>
+            ja/ von eim zum andern Meer/
+            <lb/>
+            bis ans end der Erden:
+            <lb/>
+            fremde vo&#x364;lker/ freund und feind/
+            <lb/>
+            underta&#x364;hnig ihm geſchwind
+            <lb/>
+            zfu&#x364;ſſen fallen werden.
+            <lb/>
+            Meer- und Jnslen-ko&#x364;nig ſich
+            <lb/>
+            mit geſcha&#x364;nke williglich
+            <lb/>
+            freyga&#x364;b ihm erzeigen:
+            <lb/>
+            alle ko&#x364;nig in gemein/
+            <lb/>
+            ſamt den Heiden/ ihn allein
+            <lb/>
+            ba&#x364;tten an mit neigen.
+            <lb/>
+            Dann den arm-verlaßnen mann
+            <lb/>
+            wird er retten/ und fortan
+            <lb/>
+            ſchonen des geringen:
+            <lb/>
+            vor gewalt und liſt in hut
+            <lb/>
+            arme nemmen/ und ihr blut
+            <lb/>
+            vorziehn allen dingen.
+            <lb/>
+            Er wird leben/ und zugleich
+            <lb/>
+            wird ihm das Arabiſch Reych
+            <lb/>
+            gold-geſcha&#x364;nke bringen:
+            <lb/>
+            ieder auch/ fu&#x364;r ſeinen theil/
+            <lb/>
+            Gottes ſa&#x364;gen/ glu&#x364;k und heil
+            <lb/>
+            wu&#x364;nſchen mit lobſingen<anchor xml:id="a2"/>.<note type="annotation" targetEnd="a2"><p>Tintenabdruck über dem Punkt.</p></note>
+            <lb/>
+            
+            4. Fruchtbar-
+            <lb break="no"/>
+            keit des Lands.
+            <lb/>
+            5. Mehrung
+            <lb/>
+            des Volks.
+            <lb/>
+            6. Ehrlicher
+            <lb/>
+            Nam&#x303;/ und lob-
+            <lb break="no"/>
+            liches geda&#x364;cht-
+            <lb break="no"/>
+            nuß under allen
+            <lb/>
+            vo&#x364;lkern.
+            <lb/>
+            Untertahnen
+            <lb/>
+            ſollen Gott lo-
+            <lb break="no"/>
+            ben/ und ihm
+            <lb/>
+            danken wann
+            <lb/>
+            er gute Regen-
+            <lb break="no"/>
+            ten und Oberen
+            <lb/>
+            gibt.
+            <lb/>
+            
+            Wirfft man auß/ auf du&#x364;rꝛer heid/
+            <lb/>
+            eine handfol vom getreid/
+            <lb/>
+            wirds vil fru&#x364;chte geben:
+            <lb/>
+            die/ wie ba&#x364;um auf Libanon/
+            <lb/>
+            von dem wind beweget ſchon/
+            <lb/>
+            ein gera&#x364;uſch erheben.
+            <lb/>
+            Wolbewohnte Sta&#x364;tte man/
+            <lb/>
+            gru&#x364;nend wie das graß voran/
+            <lb/>
+            fo&#x364;rterhin wird ſehen:
+            <lb/>
+            Diſes Ko&#x364;nigs Nam&#x342; ſo lang/
+            <lb/>
+            alß die Sonn behalt den gang/
+            <lb/>
+            bleibet ohn vergehen.
+            <lb/>
+            Alle vo&#x364;lker werden ſich
+            <lb/>
+            in ihm ſa&#x364;gnen ewiglich/
+            <lb/>
+            und ihn ſelig preiſen:
+            <lb/>
+            Jſraels Gott in der Gmein/
+            <lb/>
+            weil er wunder wu&#x364;rkt allein/
+            <lb/>
+            ſol man ehr beweiſen.
+            <lb/>
+            Hochgelobet immer werd
+            <lb/>
+            ſein ſo werther Nam&#x342; auf Erd
+            <lb/>
+            von uns allenſamen:
+            <lb/>
+            Alles land von ſeiner Ehr
+            <lb/>
+            werd erfu&#x364;llet mehr/ und mehr/
+            <lb/>
+            ietz und ewig/ Amen!
+            <lb/>
+            
+            Getrukt in dem Fridenwu&#x364;nſchenden
+            <lb/>
+            Heiljahr:
+            <lb/>
+            Herꝛ Rahn <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t <hi rendition="#aq">IM</hi> Fr<hi rendition="#aq">ID</hi>en
+            <lb/>
+            re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
