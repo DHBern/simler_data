@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN54C_Es_bleib,_was_hin_ist,_hin;_Verlurst_ist_oft_Gewin" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN54C Es bleib, was hin ist, hin; Verlurst ist oft Gewin</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN54C Es bleib, was hin ist, hin; Verlurst ist oft Gewin</title>
+            <idno type="Transkribus">4579808</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729218/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="17729219"/>
+            5. Sinnen-bild.
+            <lb/>
+            Es bleib/ was hin iſt/ hin: Verlurſt iſt oft Gewin.
+            <lb/>
+            <hi rendition="#aq">C. Meÿer f.</hi>
+            <lb/>
+            
+            Fort/ fort den Bergen zu&#x366;/ wo rettung iſt zu&#x366;finden/
+            <lb/>
+            laß alles hinder dir; du aber bleib nicht hinden;
+            <lb/>
+            ſonſt geheſt mit zu&#x366;grund. So ſprach der Himmelsbott
+            <lb/>
+            der Sodom angeſtekt/ zu&#x366; dem gerechten Loth.
+            <lb/>
+            Fort/ fort dem Himmel zu&#x366;/ du neübekehrter Sünder/
+            <lb/>
+            Weltliebe/ Wolluſt/ Pracht dich auf der Straaß nicht hinder:
+            <lb/>
+            Nur ein mal ſeine hand gelegt an Tugendpflu&#x366;g
+            <lb/>
+            iſt zu&#x366; der Seligkeit beÿ weitem nicht genu&#x366;g.
+            <lb/>
+            
+            <hi rendition="#aq">Genes.XIX.cap.
+            <lb/>
+            Luc.XVII.32.
+            <lb/>
+            2.Pet.II.7.
+            <lb/>
+            Luc.IX.62.</hi>
+            <lb/>
+            
+            Einer Tugendliebenden Jugend in Zürich
+            <lb/>
+            ab der Burgerbibliothec/ für das 1654.
+            <lb/>
+            Jahr verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

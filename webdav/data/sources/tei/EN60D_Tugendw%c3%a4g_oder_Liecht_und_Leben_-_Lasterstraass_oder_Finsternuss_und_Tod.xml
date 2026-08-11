@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN60D_Tugendwäg_oder_Liecht_und_Leben_-_Lasterstraass_oder_Finsternuss_und_Tod" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN60D+ Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN60D+ Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
+            <idno type="Transkribus">4580049</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729250/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="17729251"/>
+            Tugendwa&#x364;g/ oder/ Liecht und Leben.
+            <lb/>
+            <hi rendition="#aq">C. Meÿer fecit.
+            <lb/>
+            1660.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Wenig findend den Engen Tugend-wäg zum Himel.</hi>
+            <lb/>
+            Der Tugendwa&#x364;g iſt ruch und ſchmal/
+            <lb/>
+            fu&#x364;hrt aber in den Himmelſal.
+            <lb/>
+            Jhr Eltern wÿſt hierzu&#x366; die Ju&#x366;gend:
+            <lb/>
+            Kein wa&#x364;g unwa&#x364;gſam iſt der Tugend.
+            <lb/>
+            
+            <hi rendition="#aq">IESUS Chriſtus
+            <lb/>
+            ſricht/ Matth.VII.13 14
+            <lb/>
+            Luc.XIII.24.
+            <lb/>
+            Ringet darnach daß
+            <lb/>
+            ihr eÿngangind durch
+            <lb/>
+            die ënge porten: dann
+            <lb/>
+            vil werden (ſage ich eüch)
+            <lb/>
+            ſuchen eÿnzu&#x366;gehen/ und
+            <lb/>
+            werden es nicht mögen:
+            <lb/>
+            IESUS ſprach/ Luc.IX.<anchor xml:id="a1"/><choice><sic>62</sic><corr/></choice><note type="annotation" targetEnd="a1"><p>gespiegelt gedruckt</p></note>.
+            <lb/>
+            Niemand/ der ſein hand
+            <lb/>
+            an den pflu&#x366;g leget/ und
+            <lb/>
+            zu&#x366;ruck ſihet/ iſt bequem
+            <lb/>
+            zum Reich Gottes:</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Ezechiel. 33.v.12.etc.
+            <lb/>
+            Dann/ <anchor xml:id="a2"/><unclear>NB</unclear><note type="annotation" targetEnd="a2"><p>Bisher unklar, was NB hier bedeutet und ob es überhaupt "NB" heissen soll</p></note>*
+            <lb/>
+            *Wan ein gerechter böſes thut/ ſo wirds ihn nicht helfen/ das er from geweſen iſt. etc. Dann
+            <lb/>
+            In das Himliſche Ieruſalem wird nichts unreins ejngehen. Apoc.XXI.27.XXII.15.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Act.XIV.22.
+            <lb/>
+            Durch vil tru&#x364;bſalen
+            <lb/>
+            mu&#x364;ſſen wir eingehen in
+            <lb/>
+            das Reich Gottes. Aber
+            <lb/>
+            Rom.XII.12.
+            <lb/>
+            Seÿt frölich in der Hoff-
+            <lb break="no"/>
+            nung. Gedultig in Trüb-
+            <lb break="no"/>
+            ſalen. Verharet im Gebëtt<unclear>.</unclear>
+            <lb/>
+            Dann die ſchnelle leichtigkeit
+            <lb/>
+            unſerer Tru&#x364;bſal/ würket
+            <lb/>
+            uns die allerfürtreffliche-
+            <lb break="no"/>
+            ſte Ewige wichtigkeit der
+            <lb/>
+            Herrlichkeit: II.Cor:IIII</hi>
+            <lb/>
+            
+            Laſterſtraaß/ oder/ Finſternuß und Tod.
+            <lb/>
+            Dich ſelbs
+            <lb/>
+            Betrachte.
+            <lb/>
+            <hi rendition="#aq">Niemand verachte.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Aber Vil lauffend die Weÿte Laſterſtraaß zu&#x366;r Höllen.</hi>
+            <lb/>
+            Die breit gepflaſtert Laſterſtraaß/
+            <lb/>
+            iſt ein anreitzlich Teüfels-Aaß/
+            <lb/>
+            an welchem vil erworgen mu&#x364;ſſen/
+            <lb/>
+            und ewig in der Ho&#x364;llen bu&#x364;ſſen.
+            <lb/>
+            
+            <hi rendition="#aq"><anchor xml:id="a3"/>Sir.XXI.10.<note type="annotation" targetEnd="a3"><p>Text müsste der Bibelstelle gemäss Sir.XXI.10 lauten, obwohl es aussieht wie 11</p></note>)
+            <lb/>
+            Der wëg der ſünderen
+            <lb/>
+            iſt mit ſteinen beſetzet</hi>/
+            <lb/>
+            <hi rendition="#aq">am ënde aber iſt die
+            <lb/>
+            gru&#x366;be der hellen.
+            <lb/>
+            Rom.II.9.
+            <lb/>
+            Tru&#x364;bſal und angſt u&#x364;ber
+            <lb/>
+            alle Seelen der menſchen
+            <lb/>
+            die böſes thu&#x366;nd/ etc.*</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Ezechiel.33.v.12. etc.
+            <lb/>
+            *Iedoch Wan ein gottloſer from&#x303; wird/ ſo ſols jm&#x303; nicht ſchaden/ daß er gottloß geweſen iſt: etc.
+            <lb/>
+            XXII.15. Aber/ Da auſſen ſind die Hünd/ und die Zauberer/ und die Hurer/ und die Todschla&#x364;ger. etc.
+            <lb/>
+            die das geſpeümete widerum inſich fräſſen. II.Pet.II.22.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Apoc.XVIII.4.
+            <lb/>
+            Gehet auſs von ihr/ du mein
+            <lb/>
+            Volk/ auf daß ihr ihrer ſünden
+            <lb/>
+            nicht theilhaftig werdet</hi>/
+            <lb/>
+            <hi rendition="#aq">und von ihren plagen nicht
+            <lb/>
+            empfahet. <anchor xml:id="a4"/><unclear>NB</unclear><note type="annotation" targetEnd="a4"><p>Bisher unklar, was NB hier bedeutet und ob es überhaupt "NB" heissen soll</p></note>
+            <lb/>
+            Der rauch ihrer Qual wird
+            <lb/>
+            auf ſteigen von Ewigkeit
+            <lb/>
+            zu Ewigkeit:
+            <lb/>
+            Pſalm.CXLV.18.
+            <lb/>
+            Der HERR iſt Gerëcht in
+            <lb/>
+            allen ſeinen wägen/ und Heilig
+            <lb/>
+            in allen ſeinen Werken.</hi>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

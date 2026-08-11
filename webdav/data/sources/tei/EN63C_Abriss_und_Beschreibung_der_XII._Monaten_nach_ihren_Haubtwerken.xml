@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN63C_Abriss_und_Beschreibung_der_XII._Monaten_nach_ihren_Haubtwerken" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN63C Abriss, und Beschreibung der XII. Monaten nach ihren Haubtwerken</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN63C Abriss, und Beschreibung der XII. Monaten nach ihren Haubtwerken</title>
+            <idno type="Transkribus">4580051</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729267/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="17729268"/>
+            Abriß/ und Beſchreibung der XII<unclear>.</unclear> Monaten/
+            <lb/>
+            nach jhren Haubtwerken.
+            <lb/>
+            <num>1.</num> Ja&#x364;nner.
+            <lb/>
+            Der Jahrs anfa&#x364;nger lehrt das Ofenholtz zerſpalten:
+            <lb/>
+            reizt junge Leüht aufs Eis; zum Ofenſitz die Alten.
+            <lb/>
+            <num>2<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Unklar, ob hier der Punkt vergessen wurde oder nur nicht mehr gut zu sehen ist</p></note></num> Hornung.
+            <lb/>
+            Der Hornung bricht das Eis; ra&#x364;bſtikelt; mehrt den Orden
+            <lb/>
+            der na&#x364;rꝛſchen Mummereÿ/ in Oſt/ Weſt/ Sud und Norden.
+            <lb/>
+            <num>3.</num> Mertz.
+            <lb/>
+            Der Mertz das Jahr verneüt; man rüſtet <unclear><unclear/>z</unclear>aun und Garten;
+            <lb/>
+            fu&#x364;hrt krieger in das Feld; die A&#x364;rtzt der kranken warten.
+            <lb/>
+            <num>4.</num> Aprel.
+            <lb/>
+            Die vor verſchloßne Erd jetz trinkt Aprellen güllen/
+            <lb/>
+            dem Pflantzer hofnung macht die Kiſten auß zu&#x366;füllen.
+            <lb/>
+            <num>5.</num> Meÿ.
+            <lb/>
+            Meÿmonat Leüht und Vieh erquiket und erfreüt
+            <lb/>
+            mit ſchönſtem Blu&#x366;hmenſchmuk/ und viler nutzbarkeit.
+            <lb/>
+            <num>6.</num> Brachmonat.
+            <lb/>
+            Der Sommer trittet eÿn/ beſcha&#x364;r die Schaaff von wollen;
+            <lb/>
+            berupf die Ga&#x364;ns; beſtrÿch/ und laß ein Trünklein holen.
+            <lb/>
+            <num>7.</num> Heümonat.
+            <lb/>
+            Was für geſcha&#x364;fft im tu&#x366;hn/ des Monats Nam&#x303; uns lehrt:
+            <lb/>
+            Gelobet ſeÿe der/ der leüht und Vieh ernehrt.
+            <lb/>
+            <num>8</num> Augſtmonat.
+            <lb/>
+            Das Korn iſt eingebracht: der Stork und Schwalb entflogen:
+            <lb/>
+            den Jmmen nimmet man: der Hanf wird außgezogen.
+            <lb/>
+            <num>9.</num> Herpſtmonat.
+            <lb/>
+            Der Sa&#x364;ÿer wirfft die Saat/ in foller hoffnung/ auß:
+            <lb/>
+            man traget Obs und Fiſch/ mit freüden/ naher hauß.
+            <lb/>
+            <num>10.</num> Weinmonat.
+            <lb/>
+            Man nieſſet Wildpret/ Schnepf/ Ra&#x364;bvo&#x364;gel/ Hu&#x364;ner/ Dauben;
+            <lb/>
+            fellt Ba&#x364;üm/ und preſſet auß den ſu&#x364;ſſen ſafft der Trauben.
+            <lb/>
+            <num><anchor xml:id="a2"/>11<note type="annotation" targetEnd="a2"><p>spiegelverkehrt gedruckt</p></note>.</num> Wintermonat.
+            <lb/>
+            Der arbeitſame Baur jetz dro&#x364;ſchet daß er ſchwitzt:
+            <lb/>
+            Die Ba&#x364;ürin <unclear>diſer zeit</unclear>/ meiſt beÿ der Ha&#x364;chel ſitzt.
+            <lb/>
+            <num>12.</num> Chriſtmonat.
+            <lb/>
+            Der Chriſtmon ſchließt das jahr; den Winter uns zu&#x366;ſpeiſen;
+            <lb/>
+            wird gmetzget allerleÿ: warum der Ho&#x364;chſt zupreiſen.
+            <lb/>
+            
+            Vermahnung an die Jugend.
+            <lb/>
+            Laß keinen Tag; <hi rendition="#aq">ô</hi> liebe Jugend:
+            <lb/>
+            für über gehn/ ohn Kunſt und Tugend:
+            <lb/>
+            Wachß immer in derſelben auff/
+            <lb/>
+            ſo endeſt wol den Lebens lauff.
+            <lb/>
+            
+            Einer Tugendliebenden Jugend
+            <lb/>
+            in Zürich ab der Burgerbibliothec/
+            <lb/>
+            für das 1663 Jahr verehrt.
+            <lb/>
+            <hi rendition="#aq">Conrad Me<unclear>ÿ</unclear>er fecit.</hi>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

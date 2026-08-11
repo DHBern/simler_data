@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN57C_Der_fünf_Sinnen_rechter_Sinn_Bringet_Leib_und_Seel_Gewinn" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN57C Der fünf Sinnen rechter Sinn Bringet Leib und Seel Gewinn</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN57C Der fünf Sinnen rechter Sinn Bringet Leib und Seel Gewinn</title>
+            <idno type="Transkribus">4579908</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729230/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="17729231"/>
+            Der fünf Sinnen rechter Sinn Bringet Leib und Seel Gewinn.
+            <lb/>
+            Wan&#x303;
+            <lb/>
+            dein wort
+            <lb/>
+            offenbar
+            <lb/>
+            wird/ ſo
+            <lb/>
+            erleüch-
+            <lb break="no"/>
+            tet es/
+            <lb/>
+            und mach
+            <lb/>
+            et die ein
+            <lb/>
+            faltigen
+            <lb/>
+            verſtändig
+            <lb/>
+            O HERR/
+            <lb/>
+            Dein Wort
+            <lb/>
+            iſt ein kerzen
+            <lb/>
+            meinem fu&#x366;ß/
+            <lb/>
+            und ein Liecht
+            <lb/>
+            auf meinem
+            <lb/>
+            wäg: Pſal:
+            <lb/>
+            CXIX
+            <lb/>
+            <hi rendition="#aq">Con: Meÿer fecit.</hi>
+            <lb/>
+            
+            O Scho&#x364;pfer/ der du mir der Sinnen fünf gegeben/
+            <lb/>
+            die auch den Thieren gmein: verhu&#x364;t ein thieriſch Leben:
+            <lb/>
+            von eitelm Augenluſt abwende mein Geſicht/
+            <lb/>
+            daß ich es nur auf gu&#x366;ts/ und auf das Ewig richt!
+            <lb/>
+            Verleümdung/ <anchor xml:id="a1"/><unclear>A&#x364;</unclear><note type="annotation" targetEnd="a1"><p>Unklar, ob kleines oder grosses "A" gemeint. Im Kontext müsste es gross sein, aber andernorts wird ein grosses "A" mit kleinem "e" anders geschrieben (vgl. "Abriß und Beſchreibung der XII Monaten", Zeile 11)</p></note>rgernus/ Gedicht und falſche Lehre/
+            <lb/>
+            auch Narꝛentheidigung nicht mein Gehör verſehre:
+            <lb/>
+            das ſeligmachend Wort in meinen <unclear>o</unclear>hren kling/
+            <lb/>
+            und von den ſelbigen hineÿn zum hertzen dring!
+            <lb/>
+            O das ich den Geruch alſo gebrauch auf erden/
+            <lb/>
+            damit ich meinem Gott ein gu&#x366;ter Gruch mo&#x364;g werden:
+            <lb/>
+            mein O&#x364;l und Amber ſeÿ der Sünden Rew und Schmertz/
+            <lb/>
+            ein gla&#x364;übiges Geba&#x364;tt/ und ein demu&#x364;tig hertz!
+            <lb/>
+            Beÿ dem Geſchmak/ <hi rendition="#aq">ô</hi> Herꝛ/ im Trinken oder Eſſen/
+            <lb/>
+            laß dein/ alß Gebers/ mich zu&#x366; keiner zeit vergeſſen:
+            <lb/>
+            damit ich ma&#x364;ſſig bleib/ und nicht durch Speiß und Trank/
+            <lb/>
+            am Leib und an der Seel mich ſelber mache krank!
+            <lb/>
+            O Ho&#x364;chſter/ gib mir mehr Empfindung deiner Gu&#x364;te/
+            <lb/>
+            alß aber deines <unclear>z</unclear>orns: vor Sünden mich behu&#x364;te/
+            <lb/>
+            und ru&#x364;hre ſo mein Hertz/ daß es zu&#x366;gleich empfind
+            <lb/>
+            mein und des Na&#x364;chſten Creütz/ und Troſt im ſterben find!
+            <lb/>
+            
+            Einer Kunſt- und Tugendliebenden Jugend
+            <lb/>
+            in Zürich/ ab der Burgerbibliothec
+            <lb/>
+            für das 165<anchor xml:id="a2"/>7<note type="annotation" targetEnd="a2"><p>6 nachträglich mit 7 überschrieben. Unklar, von wem.</p></note>. Jahr/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
