@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F44C.1_Vermischtes_Hochzeitsgedicht" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F44C.1 Vermischtes Hochzeitsgedicht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F44C.1 Vermischtes Hochzeitsgedicht</title>
+            <idno type="Transkribus">7527860</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <pb facs="3"/>
+            <pb facs="4"/>
+            <pb facs="5"/>
+            <pb facs="6"/>
+            <head><hi rendition="#aq"><num>II.</num></hi></head>
+            <lb/>
+            <hi rendition="#aq">Jambi<choice><sic>e</sic><corr>c</corr></choice>o-Trochaicum.</hi>
+            <lb/>
+            <hi rendition="#in">D</hi>As arme Teutſche Land/ für ander' auß/ beklaget
+            <lb/>
+            Was von der letſten Zeit der Fridens-Fürſt weyſſaget:
+            <lb/>
+            Dann es in der thaat erfahret
+            <lb/>
+            Daß der liebe Frid geſparet/
+            <lb/>
+            Krieg vnd kriegs-geſchrey zu&#x366;mal
+            <lb/>
+            Hat erfüllet Berg vnd Thal:
+            <lb/>
+            <hi rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben
+            <lb/>
+            Alß was der Mars vnd ſeine Diener treiben.</hi>
+            <lb/>
+            Es lautet alles nur von jam&#x342;er/ noht vnd klage/
+            <lb/>
+            Kein Zeitung heiſſet new/ die nichts von kriegen ſage:
+            <lb/>
+            Manche Statt wirt eyngenommen/
+            <lb/>
+            Thu&#x366;t vmb jhre Freyheit kommen:
+            <lb/>
+            Ander vil zerſto&#x364;ret ſeind
+            <lb/>
+            Von dem vngehaltnen Feind:
+            <lb/>
+            <hi rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben
+            <lb/>
+            Alß was der Mars vnd ſeine Diener treiben.</hi>
+            <lb/>
+            Die Burger man beſchwa&#x364;rt mit Contributionen/
+            <lb/>
+            Vnd thu&#x366;t in diſem fahl nicht einem Stand verſchonen:
+            <lb/>
+            Geiſt- vnd Weltlich/ Arm vnd Reiche
+            <lb/>
+            Werden da ge<anchor xml:id="a1"/>a<note type="annotation" targetEnd="a1"><p>Die Punkte darüber haben wahrscheinlich nichts zu bedeuten. In Druck C und D steht kein Trema</p></note>chtet gleiche:
+            <lb/>
+            Wer nichts gibet/ mu&#x366;ß zu&#x366;hand
+            <lb/>
+            Ohne zehrung auß dem Land:
+            <lb/>
+            <hi rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben
+            <lb/>
+            Alß was der Mars vnd ſeine Diener treiben.</hi>
+            <lb/>
+            <fw place="bottom" type="pageNum">)( 3</fw>
+            <lb/>
+            <fw place="bottom" type="catch">Wie</fw>
+            <lb/>
+            <pb facs="7"/>
+            Wie manche Feſtung wirt mit hartem Sturm berennet/
+            <lb/>
+            Vnd durch des Pulfers ſta&#x364;rck bezwungen vnd verbrennet!
+            <lb/>
+            Himmels-gleiche Berg vnd Schroffen/
+            <lb/>
+            Wider alles ſein verhoffen/
+            <lb/>
+            Der Feind vberſteigen thu&#x366;t/
+            <lb/>
+            Zu&#x366; vergieſſen Menſchenblu&#x366;t:
+            <lb/>
+            <hi rendition="#b">Vnd darff man nicht/ was mehr beſchicht beſchreiben/
+            <lb/>
+            Wo Mars im Land vnd ſeine Diener bleiben.</hi>
+            <lb/>
+            <hi rendition="#in">D</hi>As Freye <hi rendition="#b">Schweitzerland</hi> hingegen weißt zu&#x366; ſagen
+            <lb/>
+            Daß durch des Ho&#x364;chſten gnad/ es nichtes hab' zu klagen:
+            <lb/>
+            Darumb auch; wie ich verſtehen;
+            <lb/>
+            Wird ein <hi rendition="#b">Schweitzer</hi> heut begehen
+            <lb/>
+            Seinen Ehren-Hochzeit-Tag/
+            <lb/>
+            Ferꝛ von obbemeldter klag:
+            <lb/>
+            <hi rendition="#b">Dann er; Gott lob; bißhar nicht weißt zu&#x366; ſchreiben/
+            <lb/>
+            Was Mars im Land vnd ſeine Diener treiben.</hi>
+            <lb/>
+            Von <hi rendition="#b">Zürich</hi> gieng er auß; man ſagt/ er ſey geloffen;
+            <lb/>
+            Nach <hi rendition="#b">Dieſſenhoff'n</hi> am <hi rendition="#b">Rhein</hi>/ allwo er angetroffen
+            <lb/>
+            Ein rechtſchaffne <hi rendition="#b">Ka&#x364;llerinne</hi>/
+            <lb/>
+            Nach all ſeinem Mu&#x366;ht vnd Sinne/
+            <lb/>
+            Die jhm ſeinen Durſt geſtillt
+            <lb/>
+            Mit dem Wein der Liebe milt:
+            <lb/>
+            <hi rendition="#b">Die auch nicht weißt von jhrem Land zu&#x366; ſchreiben
+            <lb/>
+            Was Mars darinn vnd ſeine Diener treiben.</hi>
+            <lb/>
+            Dieweil es nun an dem/ daß jhr geheim verſprechen
+            <lb/>
+            Nach Chriſtenlichem brauch ſoll offentlich außbrechen/
+            <lb/>
+            Ey! ſo laßt vns fro&#x364;lich ſingen/
+            <lb/>
+            Daß es auch zu&#x366; <hi rendition="#b">Baſadingen</hi>
+            <lb/>
+            Vnd im gantzen Land erſchall'
+            <lb/>
+            Mit dem ſta&#x364;ten Widerhall:
+            <lb/>
+            <hi rendition="#b">Daß keines wüß vom Vatterland zu&#x366; ſchreiben
+            <lb/>
+            Was Mars darinn vnd ſeine Diener treiben.</hi>
+            <lb/>
+            <fw place="bottom" type="catch">Wir</fw>
+            <lb/>
+            <pb facs="8"/>
+            Wir wünſchen allerſeits den reichen Gottes-Segen/
+            <lb/>
+            Woran im Stand der Eh das meiſte iſt gelegen;
+            <lb/>
+            Daß er namlich mo&#x364;ge ſehen
+            <lb/>
+            Reyens-weiſe vor jhm ſtehen
+            <lb/>
+            Seine Kinder vmb den Tiſch/
+            <lb/>
+            Wie die jungen o&#x364;lzweyg friſch:
+            <lb/>
+            <hi rendition="#b">Die gleicher gſtalt niemalen ko&#x364;nnen ſchreiben
+            <lb/>
+            Was Mars im Land vnd ſeine Diener treiben!
+            <lb/>
+            <hi rendition="#i">Amoris teſtificandi causâ f.</hi>
+            <lb/>
+            <hi rendition="#k">JOH. GULIELMUS SIMLERUS<anchor xml:id="a2"/><unclear>,</unclear><note type="annotation" targetEnd="a2"><p>Das Komma oder Semikolon wird hier als Teil der Sinneinheit auch getaggt.</p></note></hi>
+            <lb/>
+            Collegij Parthenij Inſpector.</hi>
+            <lb/>
+            <pb facs="9"/>
+         </div>
+      </body>
+   </text>
+</TEI>
