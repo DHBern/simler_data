@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F44C.2a-c_Hochzeit_Schulthess" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F44C.2a-c Hochzeit Schulthess</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F44C.2a-c Hochzeit Schulthess</title>
+            <idno type="Transkribus">10034096</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <pb facs="3"/>
+            <pb facs="4"/>
+            <head><hi rendition="#aq"><num>II.</num></hi></head>
+            <lb/>
+            Geſpra&#x364;ch
+            <lb/>
+            Eines Manns vnd Weibs:
+            <lb/>
+            Von
+            <lb/>
+            Heutiger Ehe-verlobnuß.
+            <lb/>
+            Mann.
+            <lb/>
+            Ey! Ey was ho&#x364;r ich doch vom Herꝛen Bra&#x364;utigam?
+            <lb/>
+            Man ſagt/ Er hab' erwehlt zu&#x366; lieben was wir haſſen/
+            <lb/>
+            Vnd weſſen wegen vil jhr Vatterland verlaſſen/
+            <lb/>
+            Da mancher vber Meer vnd niemal widerkam.
+            <lb/>
+            Weib.
+            <lb/>
+            Ey nein/ es wird nicht ſeyn!
+            <lb/>
+            Mann.
+            <lb/>
+            Er hat ſich ja verpflicht
+            <lb/>
+            Sein gantze Lebens-zeit im Ehſtand zu&#x366; verſchleiſſen
+            <lb/>
+            Mit einer die von eüch <hi rendition="#b">Hartma&#x364;nnin</hi> wird geheiſſen:
+            <lb/>
+            Jſt ſie nun <hi rendition="#b">Hart</hi> dem <hi rendition="#b">Mann!</hi> mag er ſie lieben nicht.
+            <lb/>
+            Weib.
+            <lb/>
+            Sie ſey vnd heiſſe gleich <hi rendition="#b">Hartma&#x364;nnin</hi> oder lind/
+            <lb/>
+            Sol er ſie lieben doch: weil Gottes Wort jhn lehret
+            <lb/>
+            Daß auch ein <hi rendition="#b">hartes</hi> Weib vom Herꝛen werd' beſchehret/
+            <lb/>
+            Wie Job vnd Simſon deß genu&#x366;gſam Zeügen ſind.
+            <lb/>
+            Z<choice><sic>n mit hochgestelltem "o"</sic><corr>u&#x366;</corr></choice> deme weißt er auch/ daß groſſe nutzbarkeit
+            <lb/>
+            Von einem <hi rendition="#b">harten</hi> Weib ein frommer Mann bekrieget/
+            <lb/>
+            Wann anderſt vns hierinn ein Bu&#x364;chlein nicht betrieget/
+            <lb/>
+            Worinn dergleichen wir geleſen vor der zeit.
+            <lb/>
+            Mann.
+            <lb/>
+            Was dann für nutzbarkeit?
+            <lb/>
+            Weib.
+            <lb/>
+            Nicht wenig/ vnd nicht klein:
+            <lb/>
+            Dann wie ein freundtlich Weib: ſo auch ein <hi rendition="#b">Harts</hi> nicht minder
+            <lb/>
+            Dem jungen/ friſchen Mann gibt angena&#x364;me Kinder/
+            <lb/>
+            Die ſeine Leid-vergeß vnd Alters-ſtützen ſeyn.
+            <lb/>
+            <fw place="bottom" type="pageNum">A ij</fw>
+            <lb/>
+            <fw place="bottom" type="catch">So</fw>
+            <lb/>
+            
+            <hi rendition="#aq"><hi rendition="#i">Ex mala mu-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">liere fructus</hi>
+            <lb/>
+            <hi rendition="#i">boni.</hi></hi>
+            <lb/>
+            Beſihe den An-
+            <lb break="no"/>
+            hang des Hauß-
+            <lb break="no"/>
+            frids am 298.
+            <lb/>
+            blat.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#i">Sobolis pro-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">creatio.</hi></hi>
+            <lb/>
+            <pb facs="5"/>
+            <hi rendition="#aq"><hi rendition="#i">Luxus evita-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">tio.</hi>
+            <lb/>
+            <hi rendition="#i">Sanitatis ac-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">quiſitio.</hi>
+            <lb/>
+            <hi rendition="#i">Vitiorum ex-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">tirpatio.</hi>
+            <lb/>
+            <hi rendition="#i">Patientiæ me-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">ditatio.</hi>
+            <lb/>
+            <hi rendition="#i">Ardens pre-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">catio.</hi>
+            <lb/>
+            <hi rendition="#i">Caniciei acce-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">leratio.</hi>
+            <lb/>
+            <hi rendition="#i">Ordinis cele-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">bratio, &amp;</hi>
+            <lb/>
+            <hi rendition="#i">continuatio.</hi>
+            <lb/>
+            <hi rendition="#i">Delictorum</hi>
+            <lb/>
+            <hi rendition="#i">commiſſorum</hi>
+            <lb/>
+            <hi rendition="#i">recordatio.</hi>
+            <lb/>
+            <hi rendition="#i">Promptißima</hi>
+            <lb/>
+            <hi rendition="#i">ad mortem</hi>
+            <lb/>
+            <hi rendition="#i">preparatio.</hi></hi>
+            <lb/>
+            
+            So haltet offt den Mann ein <hi rendition="#b">hart-</hi> vnd bo&#x364;ſes Weib
+            <lb/>
+            Von naſſer Gſellſchafft ab/ vnd jhn hingegen lehret
+            <lb/>
+            Die rechte ſparſamkeit: vil laſter ſie erwehret/
+            <lb/>
+            Vnd machet daß das Gelt in ſeinem Beütel bleib.
+            <lb/>
+            Wann auch jhr <hi rendition="#b">harter</hi> Zahn jhn hat gebiſſen wund/
+            <lb/>
+            So daß er in dem Hauß mu&#x366;ß ob der Arbeit bleiben/
+            <lb/>
+            Vnd eſſen Brot im ſchweiß/ worauff ſie jhm thu&#x366;t reiben
+            <lb/>
+            Scharpff-beiſſig Mundes-Saltz: ſo wird er fein geſund.
+            <lb/>
+            Vnd weil ein junger Mann ſich gleichet einem Rind
+            <lb/>
+            Das leichtlich ſeinen Halß abſtürtzet vngebunden/
+            <lb/>
+            So hat man jederzeit gar nutzlich ſeyn befunden
+            <lb/>
+            Daß er mit ſolchem Weib werd' angeſeilt geſchwind.
+            <lb/>
+            Auch lehrt ein <hi rendition="#b">hartes</hi> Weib den Mann gedultig ſeyn
+            <lb/>
+            Jn vnglück auſſerhalb/ vnd was jhm joch begegnet:
+            <lb/>
+            Weil mit Xantippen ſie zu&#x366; Hauſe jhn beregnet/
+            <lb/>
+            Vnd jhn/ wie Socratem/ zum Creütz gewehnet fein.
+            <lb/>
+            Wann auch vom ba&#x364;tten hie zu&#x366; reden ſich gezim&#x342;t/
+            <lb/>
+            So lehret ſie jhn recht die letſte Bitt verſtehen:
+            <lb/>
+            <hi rendition="#b">Vom Vbel vns erlo&#x364;ß!</hi> vil Sa&#x364;ufftzer jhm entgehen
+            <lb/>
+            Wann zur Fru&#x364;h-Metten ſie ein Predig z'handen nim&#x342;t.
+            <lb/>
+            Sie kan auch ſchwartz in weiß/ das iſt/ den jungen <anchor xml:id="a1"/>Mann<note type="annotation" targetEnd="a1"><p>Bei den Zeichen nach dem Wort "Mann" handelt es sich nicht um ein Doppelpunkt.</p></note>
+            <lb/>
+            Jn einen Alten bald/ verwunderlich/ verkehren/
+            <lb/>
+            So/ daß jhn ma&#x364;nniglich mit reverentz thu&#x366;t ehren/
+            <lb/>
+            Vnd eine Rahts-ſtell jhm deſt eher tra&#x364;get an.
+            <lb/>
+            Es iſt auch troſtlich das/ vnd ohne nutzen nicht/
+            <lb/>
+            Daß Ma&#x364;nner allerley im <hi rendition="#b">harten</hi> Weiber-Orden
+            <lb/>
+            Von anbeginn der Welt biß jetz erfunden worden/
+            <lb/>
+            Vnd iſt hiemit nicht new/ wann es noch weiter b'ſchicht.
+            <lb/>
+            Wer auch/ nach Landes brauch/ zur Beicht gezwungen iſt/
+            <lb/>
+            Vnd/ auß vergeßlichkeit/ nicht alles thu&#x366;t entdecken/
+            <lb/>
+            Hiemit vnabſolviert in Sünden bleibet ſtecken/
+            <lb/>
+            Den wird ſein <hi rendition="#b">hartes</hi> Weib erinnern jeder friſt.
+            <lb/>
+            Vnd wie der/ welchem Gott ein freündtlich Weib beſchehrt/
+            <lb/>
+            Ein langes Leben wünſcht/ vnd ſchmertzlich von jhr ſcheidet/
+            <lb/>
+            Alſo hingegen dem das Leben leicht erleidet/
+            <lb/>
+            Der Sieman bleiben mu&#x366;ß biß daß der Tod eynkehrt.
+            <lb/>
+            <fw place="bottom" type="catch">Noch</fw>
+            <lb/>
+            <pb facs="6"/>
+            Noch eine nutzbarkeit zeigt man in jener Welt:
+            <lb/>
+            Daß namlich die ſo glebt im <hi rendition="#b">harten</hi> Weiber-Orden/
+            <lb/>
+            Vnd alſo mehr dann gnu&#x366;g allhie gefa&#x364;get worden/
+            <lb/>
+            Vom Fa&#x364;gfewr ſeyen frey/ ohn Meß vnd ohne Gelt.
+            <lb/>
+            Mann.
+            <lb/>
+            Ha! Ha! was ho&#x364;r ich da?
+            <lb/>
+            Weib.
+            <lb/>
+            Die waarheit in dem ſchimpff:
+            <lb/>
+            Doch ſol man auch darbey fein eigentlich verſtehen
+            <lb/>
+            Daß die Verlobten es gar nichtes thu&#x366; angehen/
+            <lb/>
+            Vnd ſeye nicht geredt zu&#x366; jhrem vngelimpff.
+            <lb/>
+            Dann nur dem Namen nach die Jungfraw Braut iſt <hi rendition="#b">hart:</hi>
+            <lb/>
+            Da ſonſten jhr Gemu&#x364;ht der Bra&#x364;utigam befindet/
+            <lb/>
+            Geſchlacht/ gelind vnd ſanfft/ wordurch er vberwindet
+            <lb/>
+            Was <hi rendition="#b">hartes</hi> jmmer jhm im Ehſtand widerfahrt.
+            <lb/>
+            Mann.
+            <lb/>
+            Nun/ nun! Jſt dem alſo? Jſt <hi rendition="#b">Hart</hi> allein ihr <hi rendition="#b">Nam?</hi>
+            <lb/>
+            Sie aber iſt vnd bleibt/ durch Gottes gnad vnd gu&#x364;te/
+            <lb/>
+            Geſchlacht/ gelind vnd ſanfft/ von Hertzen vnd Gemu&#x364;hte/
+            <lb/>
+            So hat/ was liebens wa&#x364;rth/ erwehlt Herꝛ Bra&#x364;utigam.
+            <lb/>
+            Weib.
+            <lb/>
+            Ja freylich: dann/ wie vns vor diſem auch gelehrt
+            <lb/>
+            Der ſcho&#x364;ne Lobes-ſpruch vom tugendſamen Weibe:
+            <lb/>
+            Wird ſie des Mannes Hertz erfrewen in dem Leibe/
+            <lb/>
+            Worzu&#x366; ſie jhme dann vom Herꝛen iſt beſchehrt.
+            <lb/>
+            Mann.
+            <lb/>
+            Wolan/ ſo wünſchen ich von dem getrewen Gott/
+            <lb/>
+            Er wolle diſem Par vil Heyl vnd Glück verleyen!
+            <lb/>
+            Weib.
+            <lb/>
+            Jch wünſch/ Er wolle ſie in allweg benedeyen/
+            <lb/>
+            Vnd bhu&#x364;ten gna&#x364;diglich vor vnfahl/ leid vnd noht!
+            <lb/>
+            <fw place="bottom" type="pageNum">A iij</fw>
+            <lb/>
+            <fw place="bottom" type="catch">Hoch-</fw>
+            <lb break="no"/>
+            
+            <hi rendition="#aq"><hi rendition="#i">Purgatorij</hi>
+            <lb/>
+            <hi rendition="#i">post mortem</hi>
+            <lb/>
+            <hi rendition="#i">excluſio.</hi>
+            <lb/>
+            <hi rendition="#i"><unclear>αιαχ</unclear></hi>
+            <lb/>
+            <hi rendition="#i">Vide Enco-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">mium mulie-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">ris probæ C.G.</hi></hi>
+            <lb/>
+            <pb facs="7"/>
+            Hochzeitliches Fru&#x364;hlings-Geſang.
+            <lb/>
+            Jn folgenden Melodeyen.
+            <lb/>
+            Selig iſt der gepreiſet. Pſalm.128.
+            <lb/>
+            Zu&#x366; dir von hertzen grunde. Pſalm.130.
+            <lb/>
+            Hertzlich thu&#x366;t mich erfrewen/ ꝛc.
+            <lb/>
+            Wilhelm bin ich der Telle/ ꝛc.
+            <lb/>
+            
+            <hi rendition="#in">D</hi>Er kalte Winter endet/
+            <lb/>
+            Der Schnee verlaßt den Sitz/
+            <lb/>
+            Jm Widder-Gſtirn ſich wendet
+            <lb/>
+            Zu&#x366; vns der Sonnen Hitz:
+            <lb/>
+            Es iſt/ Gott lob/ verhanden
+            <lb/>
+            Die angena&#x364;hmeſt Zeit/
+            <lb/>
+            Erfrewlich vnſern Landen
+            <lb/>
+            Mit jhrer Luſtbarkeit.
+            <lb/>
+            <num>2</num> Dann was durch Schnee vnd Eiſe
+            <lb/>
+            Der Winter hat erſteckt/
+            <lb/>
+            Daſſelb/ zu&#x366; Gottes preiſe/
+            <lb/>
+            Der Fru&#x364;hling vns erweckt:
+            <lb/>
+            Er machet daß wir ſehen
+            <lb/>
+            Vil ſtoltzer Tulipan
+            <lb/>
+            Jn den Luſtga&#x364;rten ſtehen/
+            <lb/>
+            Auch Ko&#x364;nigs-Cron voran.
+            <lb/>
+            <num>3</num> Vil Violen/ Narciſſen/
+            <lb/>
+            Vil Gilgen/ Meyen-reiß/
+            <lb/>
+            Mit Farben auffgeriſſen
+            <lb/>
+            Ohn Mahlers hand vnd fleiß:
+            <lb/>
+            Der Blu&#x366;men Ko&#x364;niginne
+            <lb/>
+            Mit Do&#x364;rnen wol verwahrt/
+            <lb/>
+            Anreitzet deſſen Sinne
+            <lb/>
+            Der jhren Gruch erfahrt.
+            <lb/>
+            <num>4</num> Die bſchnidtnen Ra&#x364;ben rinnen
+            <lb/>
+            Vnd weynen erſtlich zwar/
+            <lb/>
+            Bald aber ſie gewinnen
+            <lb/>
+            Getro&#x364;cknet Augen gar/
+            <lb/>
+            Thu&#x366;n ſie dieſelben lupffen/
+            <lb/>
+            Vnd ſchawen friſch herumb
+            <lb/>
+            Wohin doch mo&#x364;gen hupffen
+            <lb/>
+            Jhr Schoſſe grad vnd krumb.
+            <lb/>
+            
+            <num>5</num> Die Ba&#x364;ume ſich außbreiten
+            <lb/>
+            Mit jhren Aeſten hart/
+            <lb/>
+            Bekleidet zu&#x366; den ſeiten
+            <lb/>
+            Mit Blu&#x366;ſt an Zweygen zart/
+            <lb/>
+            Worauß Ba&#x364;rbollen ſchieſſen
+            <lb/>
+            Zu&#x366; angena&#x364;hmer Frucht/
+            <lb/>
+            Derſelben zu&#x366; genieſſen
+            <lb/>
+            Der Reich vnd Arme ſu&#x366;cht.
+            <lb/>
+            <num>6</num> Die ſcho&#x364;n gemahlten Wiſen/
+            <lb/>
+            Die zahmen Bühelein/
+            <lb/>
+            Die Berge hoch gepriſen
+            <lb/>
+            Graßreiche Weiden ſeyn:
+            <lb/>
+            Die Felder vns anlachen
+            <lb/>
+            Von wegen jhrer Saht/
+            <lb/>
+            Vil frewden ſie vrꝛſachen
+            <lb/>
+            Wann jhre Frucht geraht.
+            <lb/>
+            <num>7</num> Das leichte Volck der Lüfften/
+            <lb/>
+            Das kriechend in dem Thal/
+            <lb/>
+            Das Wilde in den Klüfften/
+            <lb/>
+            Das zahme Vieh im Stal/
+            <lb/>
+            Das ſtreiffend Heer der Fiſchen/
+            <lb/>
+            Vnd was den Athem zeücht/
+            <lb/>
+            Sich ſehnen zu&#x366; erfriſchen
+            <lb/>
+            So bald der Winter fleücht.
+            <lb/>
+            <num>8</num> Der Schwalbe kompt geflogen/
+            <lb/>
+            Der gſchnabelt Schlangen-Feind
+            <lb/>
+            Kompt vber Meer gezogen/
+            <lb/>
+            Su&#x366;cht ſein alt Na&#x364;ſt geſchwind:
+            <lb/>
+            Die Amſel pfeiffet ſcho&#x364;ne/
+            <lb/>
+            Die Lerche lobet Gott/
+            <lb/>
+            Ein lieblich/ ſu&#x364;ß Getho&#x364;ne
+            <lb/>
+            Macht Nachtigalliſch Rott.
+            <lb/>
+            <fw place="bottom" type="catch"><num>9</num> Wir</fw>
+            <lb/>
+            <pb facs="8"/>
+            <num>9</num> Wir ſehen bey der Herde
+            <lb/>
+            Den Stiere mu&#x366;htig ſeyn/
+            <lb/>
+            Das fra&#x364;ch vnd ſtoltze Pferde
+            <lb/>
+            Springt wichelend hereyn/
+            <lb/>
+            Das Waſſer-thier vmbreiſet
+            <lb/>
+            Mit ſchwümmen manches Land/
+            <lb/>
+            Das Kriechend ſich erweiſet
+            <lb/>
+            Gantz fro&#x364;lich in dem Sand.
+            <lb/>
+            <num>10</num> Nach jhrer art ſich paren
+            <lb/>
+            Die Thiere in gemein/
+            <lb/>
+            Jm anfang aller Jahren
+            <lb/>
+            Do ſie erſchaffen ſeyn:
+            <lb/>
+            Wie ſolches etlich dichten
+            <lb/>
+            Von liebſter Fru&#x364;hlings-zeit/
+            <lb/>
+            Nach dem zu&#x366;vor auß nichten
+            <lb/>
+            Die Welt war zu&#x366;bereit.
+            <lb/>
+            <num>11</num> Do auch nach ſeinem Bilde
+            <lb/>
+            Gott ſchu&#x366;ff den erſten Man&#x303;/
+            <lb/>
+            Das Feld/ vnd alles Wilde
+            <lb/>
+            Jhm machte vnderthan/
+            <lb/>
+            Vnd diſer noch alleine
+            <lb/>
+            Seins gleichen fande nicht/
+            <lb/>
+            Von ſeinem Fleiſch vnd Beine
+            <lb/>
+            Der Herꝛ ein Weib zu&#x366;richt.
+            <lb/>
+            <num>12</num> Daſſelb er jhm zu&#x366;fu&#x364;hret/
+            <lb/>
+            Vnd beyde ſo vereint/
+            <lb/>
+            Daß Adam bald verſpüret
+            <lb/>
+            Worzu&#x366; es ſey gemeint:
+            <lb/>
+            Dahar er ſie erkennet
+            <lb/>
+            Sein Fleiſch vnd Bein zu&#x366; ſeyn/
+            <lb/>
+            Ein Ma&#x364;nnin er ſie nennet:
+            <lb/>
+            Gott ſatzt den Ehſtand eyn.
+            <lb/>
+            <num>13</num> Drumb meynen vil/ im Meyen/
+            <lb/>
+            Vnd allerna&#x364;chſt zu&#x366;vor
+            <lb/>
+            Am beſten ſey zu&#x366; freyen
+            <lb/>
+            Von der Erſchaffung har:
+            <lb/>
+            Jch aber halt/ den Frommen
+            <lb/>
+            Sey gu&#x366;t ein jede zeit
+            <lb/>
+            Den Segen zu&#x366; bekommen/
+            <lb/>
+            Durch Gottes gu&#x364;tigkeit.
+            <lb/>
+            
+            <num>14</num> Dan&#x303;: Selig iſt gepreiſet Pſ.128.
+            <lb/>
+            Der Gott vor augen helt/
+            <lb/>
+            Sich ſeiner wa&#x364;g befleiſſet/
+            <lb/>
+            Davon auch nicht abfellt:
+            <lb/>
+            Dann du wirſt dich wol nehren
+            <lb/>
+            Mit arbeit deiner Hand/
+            <lb/>
+            Gott wird dir glück beſchehren
+            <lb/>
+            Vnd ſegnen deinen Stand.
+            <lb/>
+            <num>15</num> Dein Weib gleich einer Ra&#x364;ben
+            <lb/>
+            Jn deinem Hauß wird ſeyn/
+            <lb/>
+            Die jhre Frucht thu&#x366;t geben
+            <lb/>
+            Zu&#x366; ſeiner zeit vom Wein:
+            <lb/>
+            Dein Kinder wirſtu ſehen
+            <lb/>
+            Zu&#x366; rings vmb deinen Tiſch/
+            <lb/>
+            Nach einer reyen ſtehen
+            <lb/>
+            Gleich wie die Oelzweyg friſch.
+            <lb/>
+            <num>16</num> Das ſind die ſcho&#x364;nen Gaben
+            <lb/>
+            Die Gott den Menſchen gibt/
+            <lb/>
+            Die jhn in ehren haben/
+            <lb/>
+            Von den er wird geliebt:
+            <lb/>
+            Er wird dich benedeyen
+            <lb/>
+            Auß Sion/ vnd der Statt
+            <lb/>
+            Jeruſalem verleyen
+            <lb/>
+            Bey deinem leben gnad.
+            <lb/>
+            <num>17</num> Du wirſt auch endtlich ſehen
+            <lb/>
+            Kinds-kinder/ vnd dazu&#x366;
+            <lb/>
+            Jſraels ſachen ſtehen
+            <lb/>
+            Jn gu&#x366;tem frid vnd ru&#x366;h.
+            <lb/>
+            Diß wünſchen nun wir alle
+            <lb/>
+            Dem new-verlobten Par:
+            <lb/>
+            Dem Herꝛen wol gefalle
+            <lb/>
+            Den Wunſch zu&#x366; machen wahr!
+            <lb/>
+            <fw place="bottom" type="catch">Pin-</fw>
+            <lb break="no"/>
+            <pb facs="9"/>
+            Pindariſche Ode.
+            <lb/>
+            Auß dem 31. Cap. der Sprüchwo&#x364;rter Salomons.
+            <lb/>
+            Strophe.
+            <lb/>
+            Selig iſt der Mann geſchetzet
+            <lb/>
+            Dem der Himmel hat beſchehrt
+            <lb/>
+            Eine Fraw die Gott verehrt/
+            <lb/>
+            Vnd hierneben jhn ergetzet.
+            <lb/>
+            Solche alles Edelgſtein
+            <lb/>
+            Vbertriffet in gemein.
+            <lb/>
+            Jhren kan jhr Mann vertrawen:
+            <lb/>
+            Dann ſie thu&#x366;t das Hauß erbawen;
+            <lb/>
+            Nahrung jhme mangelt nicht/
+            <lb/>
+            Freundtlich ſie ſich jhm erweiſet
+            <lb/>
+            Darumb man ſie billich preiſet
+            <lb/>
+            Mit Geſang vnd Lobgedicht.
+            <lb/>
+            Antiſtrophe.
+            <lb/>
+            Sie verſorget jhr Geſinde/
+            <lb/>
+            Vnd vergißt der Armen nicht/
+            <lb/>
+            Jhre Kleider ſie zu&#x366;richt
+            <lb/>
+            Wider Regen/ Schnee vnd Winde.
+            <lb/>
+            Sie iſt jhres Mannes Cron/
+            <lb/>
+            Leüchtet kla&#x364;rer alß der Mon:
+            <lb/>
+            Jhre Kinder ſie verehren
+            <lb/>
+            Vnd Er thu&#x366;t jhr Lob vermehren.
+            <lb/>
+            Falſch iſt viler freündtlichkeit/
+            <lb/>
+            Leibes-ſcho&#x364;ne thu&#x366;t vergehen/
+            <lb/>
+            Billich aber ſol beſtehen
+            <lb/>
+            Frommer Weiber Lob allzeit.
+            <lb/>
+            Epodus.
+            <lb/>
+            Wann dann/ Herꝛ Bra&#x364;utigam/ der Himmel eüch gegeben
+            <lb/>
+            Eine ſolche Braut/
+            <lb/>
+            Die auff Tugend ſchawt:
+            <lb/>
+            So werden/ billich/ jhr nicht <hi rendition="#b">hart</hi> mit jhro leben.
+            <lb/>
+            O daß jhr leben wol! O daß jhr leben lang
+            <lb/>
+            Hier auff Erden/
+            <lb/>
+            Ohn beſchwerden!
+            <lb/>
+            O daß es hier vnd dort eüch beyden wol ergang!
+            <lb/>
+            J.W.S.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
