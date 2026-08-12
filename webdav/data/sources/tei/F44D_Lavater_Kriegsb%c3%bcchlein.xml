@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F44D_Lavater_Kriegsbüchlein" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F44D+ Lavater Kriegsbüchlein</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F44D+ Lavater Kriegsbüchlein</title>
+            <idno type="Transkribus">7528172</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2891086/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2891107"/>
+            New-gewundener Lorbeer-Krantz/
+            <lb/>
+            Dem Author des Kriegs-Bu&#x364;chleins/
+            <lb/>
+            Auff den 22. Tag Brachmonats
+            <lb/>
+            des <hi rendition="#aq">M DC XL IV.</hi> Jahrs
+            <lb/>
+            vberſendet.
+            <lb/>
+            <hi rendition="#in">N</hi>Vn mu&#x364;ſſen wir nicht mehr in fro&#x364;mbde La&#x364;nder reiſen/
+            <lb/>
+            Daß wir in Krieges-kunſt vns laſſen vnderweiſen:
+            <lb/>
+            Wir lehrnen es allhier in diſem Bu&#x364;chlein klar/
+            <lb/>
+            Von einem der dem Mars gedienet etlich Jahr.
+            <lb/>
+            Dann: <hi rendition="#b">Was ein Veſtung ſey/ mit allen jhren Wercken:
+            <lb/>
+            Was ein Beſatzung ſey/ die Veſtung zu&#x366; verſta&#x364;rcken:
+            <lb/>
+            Was der gebrauch der Wehr: vnd/ Wie ein Krieges-Held
+            <lb/>
+            Sich zu&#x366; verhalten hab' im La&#x364;ger oder Feld:</hi>
+            <lb/>
+            Der Author vns erzellt/ vnd ſo für Augen ſtellet/
+            <lb/>
+            Alß hetten Wort vnd Werck zu&#x366;ſammen ſich geſellet:
+            <lb/>
+            Darumb gebüret jhm/ zu&#x366; ſeinem ſondern Preiß/
+            <lb/>
+            Ein new-gewundner Krantz/ auff alte Ro&#x364;mer-weiß.
+            <lb/>
+            J. W. S.
+            <lb/>
+            <fw place="bottom" type="pageNum">)()( iij</fw>
+            <lb/>
+            <fw place="bottom" type="catch">Poèti-</fw>
+            <lb break="no"/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

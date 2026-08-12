@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F42B_Vollenweider" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F42B Vollenweider</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F42B Vollenweider</title>
+            <idno type="Transkribus">7527922</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/22413009/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="22413063"/>
+            <head><hi rendition="#aq"><num>IV.</num></hi></head>
+            <lb/>
+            An den Warheits-begirꝛigen Leſer.
+            <lb/>
+            <hi rendition="#in">O</hi> Lieber Leſer liß/ <choice><corr/><sic>L</sic></choice>iß/ liß vnd widerliß/
+            <lb/>
+            Liß diß vnd jehns; bewa&#x364;hrs; <hi rendition="#b">das gu&#x366;t</hi> darauß erliß:
+            <lb/>
+            Daſſelb in <hi rendition="#b">Gottes-Wort</hi> du wirſt gegru&#x364;ndet finden:
+            <lb/>
+            <hi rendition="#b">Vernunfft</hi> verfu&#x364;hret dich gleich wie der Blind den Blinden.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#i">Scripſit Tiguri</hi>
+            <lb/>
+            <hi rendition="#k">JOH. VVILHELMUS SIMLERUS,</hi>
+            <lb/>
+            CollegI ParthenI Inſpector.</hi>
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>
