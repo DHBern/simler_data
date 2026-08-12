@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F54C.2_Begräbnis_Genath" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F54C.2 Begräbnis Genath</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F54C.2 Begräbnis Genath</title>
+            <idno type="Transkribus">10034088</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1" n="29"/>
+            <pb facs="2" n="29"/>
+            <pb facs="3" n="29"/>
+            <pb facs="4" n="29"/>
+            <pb facs="5" n="29"/>
+            <pb facs="6" n="29"/>
+            <pb facs="7" n="29"/>
+            <pb facs="8" n="29"/>
+            <pb facs="9" n="29"/>
+            <pb facs="10" n="29"/>
+            <pb facs="11" n="29"/>
+            <pb facs="12" n="29"/>
+            <pb facs="13" n="29"/>
+            <pb facs="14" n="29"/>
+            <pb facs="15" n="29"/>
+            <pb facs="16" n="29"/>
+            <pb facs="17" n="29"/>
+            <pb facs="18" n="29"/>
+            <pb facs="19" n="29"/>
+            <pb facs="20" n="29"/>
+            <pb facs="21" n="29"/>
+            <pb facs="22" n="29"/>
+            <pb facs="23" n="29"/>
+            <pb facs="24" n="29"/>
+            <pb facs="25" n="29"/>
+            <pb facs="26" n="29"/>
+            <pb facs="27" n="29"/>
+            <pb facs="28" n="29"/>
+            <pb facs="29" n="29"/>
+            <pb facs="30" n="29"/>
+            <fw place="top" type="pageNum">29</fw>
+            <lb/>
+            Auf
+            <lb/>
+            Herꝛen Johann Jacob Genathen/ ꝛc.
+            <lb/>
+            Begra&#x364;bnuß.
+            <lb/>
+            <hi rendition="#in">N</hi><hi rendition="#aq">U</hi>n iſts mit Jhm gethan; nun fahrt
+            <lb/>
+            Er hin im Friden;
+            <lb/>
+            doch iſt ſein guter Nam&#x342; von uns nicht abge-
+            <lb break="no"/>
+            ſchiden:
+            <lb/>
+            die weitbekan&#x303;te Preß/ durch die ein Mann
+            <lb/>
+            mehr ſchreibt
+            <lb/>
+            eins Tags alß ſonſt ein Jahr/ macht daß
+            <lb/>
+            Er ewig bleibt.
+            <lb/>
+            Johann Willhelm Simler/
+            <lb/>
+            Zuchtmeiſter im mehrern
+            <lb/>
+            Hof.
+            <lb/>
+            <fw place="bottom" type="pageNum">D iij</fw>
+            <lb/>
+            
+            Genath.
+            <lb/>
+            <pb facs="31"/>
+            <pb facs="32"/>
+            <pb facs="33"/>
+         </div>
+      </body>
+   </text>
+</TEI>
