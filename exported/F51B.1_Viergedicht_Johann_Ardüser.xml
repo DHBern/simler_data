@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F51B.1_Viergedicht_Johann_Ardüser" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F51B.1 Viergedicht Johann Ardüser</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F51B.1 Viergedicht Johann Ardüser</title>
+            <idno type="Transkribus">7528371</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            Viergedicht/
+            <lb/>
+            oder
+            <lb/>
+            Lob- vnd Jnnhaltsſpruch/
+            <lb/>
+            über
+            <lb/>
+            Herꝛen Johann Ardüſers/
+            <lb/>
+            Hauptm. und Jngenieurs/
+            <lb/>
+            newaußgangenes Bu&#x366;ch/
+            <lb/>
+            vom
+            <lb/>
+            Veſtungsbaw.
+            <lb/>
+            <hi rendition="#in">W</hi>As vil/ mit viler zahl/ und groſſer mu&#x364;h gewiſen
+            <lb/>
+            von jedem <hi rendition="#b">Veſtungsbaw</hi>: das zeigt <hi rendition="#b">Ardüſers Hand</hi><anchor xml:id="a1"/><unclear>;</unclear><note type="annotation" targetEnd="a1"><p>Wahrscheinlich Semikolon, aber nicht eindeutig</p></note>
+            <lb/>
+            in zweyfelhafftem Frid; dem wa&#x364;rthen Vatterland/
+            <lb/>
+            einfa&#x364;ltig/ doch mit grund: Kunſthalber hochgepriſen.
+            <lb/>
+            Zu ſchuldigen ehren
+            <lb/>
+            ſchreibt ſolches
+            <lb/>
+            Joh. Wilhelm Simler.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
