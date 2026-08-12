@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F59C.1_Regenten_Kleinodt_Rahn" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F59C.1 Regenten Kleinodt Rahn</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F59C.1 Regenten Kleinodt Rahn</title>
+            <idno type="Transkribus">7707854</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+         </langUsage>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <pb facs="3"/>
+            <pb facs="4"/>
+            <pb facs="5"/>
+            <pb facs="6"/>
+            <pb facs="7"/>
+            <pb facs="8"/>
+            <pb facs="9"/>
+            <pb facs="10"/>
+            <pb facs="11"/>
+            <pb facs="12"/>
+            <pb facs="13"/>
+            <pb facs="14"/>
+            <pb facs="15"/>
+            <pb facs="16"/>
+            <pb facs="17"/>
+            <pb facs="18"/>
+            <pb facs="19"/>
+            <pb facs="20"/>
+            <pb facs="21"/>
+            <pb facs="22"/>
+            <pb facs="23"/>
+            <pb facs="24"/>
+            <pb facs="25"/>
+            <pb facs="26"/>
+            <pb facs="27"/>
+            <pb facs="28"/>
+            <pb facs="29"/>
+            <pb facs="30"/>
+            <pb facs="31"/>
+            <pb facs="32"/>
+            <pb facs="33"/>
+            <pb facs="34"/>
+            <pb facs="35"/>
+            <pb facs="36"/>
+            <pb facs="37"/>
+            <pb facs="38"/>
+            <pb facs="39"/>
+            <pb facs="40"/>
+            <pb facs="41"/>
+            <pb facs="42"/>
+            <pb facs="43"/>
+            <pb facs="44"/>
+            <pb facs="45"/>
+            <pb facs="46"/>
+            <pb facs="47"/>
+            <pb facs="48"/>
+            <pb facs="49"/>
+            <pb facs="50"/>
+            <pb facs="51"/>
+            <pb facs="52"/>
+            <pb facs="53"/>
+            <pb facs="54"/>
+            <pb facs="55"/>
+            <pb facs="56"/>
+            <pb facs="57"/>
+            <pb facs="58"/>
+            <pb facs="59"/>
+            <pb facs="60"/>
+            <pb facs="61"/>
+            <pb facs="62"/>
+            <pb facs="63"/>
+            <pb facs="64"/>
+            <pb facs="65"/>
+            <pb facs="66"/>
+            <pb facs="67"/>
+            <pb facs="68"/>
+            <pb facs="69"/>
+            <pb facs="70"/>
+            <pb facs="71"/>
+            <pb facs="72"/>
+            <pb facs="73"/>
+            <pb facs="74"/>
+            <pb facs="75"/>
+            <pb facs="76"/>
+            <pb facs="77"/>
+            <pb facs="78"/>
+            <pb facs="79"/>
+            <pb facs="80"/>
+            Regenten Kleinodt:
+            <lb/>
+            Oder/
+            <lb/>
+            Der <hi rendition="#aq">LXXII.</hi> Pſalm/ des geiſtreichen Poeten/
+            <lb/>
+            und ko&#x364;niglichen Propheten Davids: geſtellt/ und dem volk
+            <lb/>
+            zuſingen fu&#x364;rgeſchriben/ alß er ſeinen Sohn/ den Salomon/ zum Ko&#x364;nig ernennt/
+            <lb/>
+            und offenlich eyngeſetzt hatte: Da er zugleich/ under dem Vorbild des geſa&#x364;gneten
+            <lb/>
+            Reychs ſeines Sohns/ von dem ewig-ſeligen Reych Chriſti
+            <lb/>
+            weyſſaget:
+            <lb/>
+            Dem hochgeachten/ wola&#x364;dlen/ geſtrengen/ frommen/ veſten/
+            <lb/>
+            fu&#x364;rſichtigen und wolweyſen Herꝛen/
+            <lb/>
+            H. Hans Heinri<choice><sic>t</sic><corr>c</corr></choice>h Rahnen/
+            <lb/>
+            alß Drittem diſes Ehrengeſchlechts/ den 13. Win-
+            <lb break="no"/>
+            termonats/ 1655. wolverdienlich erwehltem Herꝛen Burger-
+            <lb break="no"/>
+            meiſter loblicher Statt Zu&#x364;rich/ zu ſondern Ehren und Ruhm/ in andere
+            <lb/>
+            Reym- und Geſangweiſe gebracht/ und Jhr Ehrſam Weyßheit
+            <lb/>
+            undertha&#x364;nigſt u&#x364;berlifert
+            <lb/>
+            Von Johann Wilhelm Simler/ Diener am H. W. G.
+            <lb/>
+            und Zuchtmeiſter zum Frauenmu&#x364;nſter.
+            <lb/>
+            <pb facs="81"/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">CANTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/ gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte: daß er/ nach der billichkeit/ dein volk mit be-
+            <lb break="no"/>
+            ſcheidenheit/ richt/ regier/ verfechte.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">TENOR.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/ gib dem Ko&#x364;nig/ K<anchor xml:id="a1"/><unclear>o&#x364;</unclear><note type="annotation" targetEnd="a1"><p>das kleine "e" ist wahrscheinlich, aber hier nicht mehr erkennbar</p></note>nigs-ſohn/
+            <lb/>
+            dein gericht und rechte: daß er/ nach der billichkeit/ dein volk/ mit be-
+            <lb break="no"/>
+            ſcheidenheit/ richt/ regier/ verfechte.
+            <lb/>
+            
+            Diſer <hi rendition="#aq">LXXII.</hi> Pſalm mag auch geſungen werden
+            <lb/>
+            in der Geſangweiſe:
+            <lb/>
+            Jeſus/ waarer Gottes-Sohn/ ꝛc.
+            <lb/>
+            <head><num>1</num></head>
+            <lb/>
+            <hi rendition="#aq">a</hi> <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/
+            <lb/>
+            gib dem Ko&#x364;nig/ Ko&#x364;nigs-Sohn/
+            <lb/>
+            dein gericht und rechte:/:
+            <lb/>
+            daß er/ nach der billichkeit/
+            <lb/>
+            dein volk/ mit beſcheidenheit/
+            <lb/>
+            richt/ regier/ verfechte.
+            <lb/>
+            <head><num>2</num></head>
+            <lb/>
+            Daß er/ nach gewiſſen/ richt/
+            <lb/>
+            reich- und armer ha&#x364;ndel ſchlicht/
+            <lb/>
+            ohn perſon anſehen:/:
+            <lb/>
+            <hi rendition="#aq">b</hi> alßdan werden u&#x364;beral/
+            <lb/>
+            ſo zu berge/ ſo zu thal/
+            <lb/>
+            Frid und Recht aufgehen.
+            <lb/>
+            <head><num>3</num></head>
+            <lb/>
+            Diſer ko&#x364;nig/ from&#x342; und frey/
+            <lb/>
+            wird den <hi rendition="#aq">c</hi> armen ſtehen bey/
+            <lb/>
+            wider gwalt auf erden:/:
+            <lb/>
+            La&#x364;ſterer und bo&#x364;ſewicht/
+            <lb/>
+            werden/ durch ſein ſtreng gericht/
+            <lb/>
+            gantz vertilget werden.
+            <lb/>
+            <head><num>4</num></head>
+            <lb/>
+            Jederman mit <hi rendition="#aq">d</hi> forchten ihn
+            <lb/>
+            wird verehren fo&#x364;rterhin
+            <lb/>
+            von geſchlecht zu gſchlechte:/:
+            <lb/>
+            ihme wird man ghorſam ſeyn/
+            <lb/>
+            weil der mond und ſonnenſchein
+            <lb/>
+            halten ihre Rechte.
+            <lb/>
+            <fw place="bottom" type="catch"><num>5</num> Einem</fw>
+            <lb/>
+            
+            <hi rendition="#aq">a</hi> David
+            <lb/>
+            bittet fu&#x364;r
+            <lb/>
+            Salomon:
+            <lb/>
+            daß Gott ihn
+            <lb/>
+            begaabe 1. mit
+            <lb/>
+            Gerechtigkeit.
+            <lb/>
+            2. Jhm o&#x364;ffne
+            <lb/>
+            ſeine Gerichte:
+            <lb/>
+            und lehrt hie-
+            <lb break="no"/>
+            mit alle Re-
+            <lb break="no"/>
+            genten/ wie ſie
+            <lb/>
+            regieren ſollen.
+            <lb/>
+            <hi rendition="#aq">b</hi> Fru&#x364;cht eines
+            <lb/>
+            rechten Regi-
+            <lb break="no"/>
+            ments.
+            <lb/>
+            1. Frid und Ge-
+            <lb break="no"/>
+            rechtigkeit.
+            <lb/>
+            <hi rendition="#aq">c</hi> 2. Schutz der
+            <lb/>
+            armen.
+            <lb/>
+            <hi rendition="#aq">d</hi> 3. Waarer
+            <lb/>
+            glaub und Got-
+            <lb break="no"/>
+            tesforcht.
+            <lb/>
+            <pb facs="82"/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">ALTUS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/ gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte: daß er/ nach der billichkeit/ dein volk/ mit be-
+            <lb break="no"/>
+            ſcheidenheit/ richt/ regier/ verfechte.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">BASIS.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/ gib dem K<anchor xml:id="a2"/><unclear>o&#x364;</unclear><note type="annotation" targetEnd="a2"><p>Wahrscheinlich kleines e, aber nicht klar erkennbar</p></note>nig/ Ko&#x364;nigs-ſohn/
+            <lb/>
+            dein gericht und rechte: daß er/ nach der billichkeit/ dein volk/ mit be-
+            <lb break="no"/>
+            ſcheidenheit/ richt/ regier/ verfechte.
+            <lb/>
+            
+            <head><num>5</num></head>
+            <lb/>
+            <hi rendition="#aq">e</hi> Einem Regen er geleicht/
+            <lb/>
+            der von oben ab befeucht
+            <lb/>
+            abgema&#x364;yte wiſen:/:
+            <lb/>
+            und den tropfen/ die das graß
+            <lb/>
+            machen friſch und lieblich naß/
+            <lb/>
+            wird er gleich gepriſen.
+            <lb/>
+            <head><num>6</num></head>
+            <lb/>
+            Nun/ zu diſes ko&#x364;nigs zeit/
+            <lb/>
+            wird der grechte/ ſonder ſtreit/
+            <lb/>
+            in dem wolſtand gr<anchor xml:id="a3"/>u&#x364;<note type="annotation" targetEnd="a3"><p>Das kleine e ist in höherer Auflösung etwas besser zu erkennen. Auch in Druck C steht ein e</p></note>nen:/:
+            <lb/>
+            eitel Frid ſo lang wird ſeyn
+            <lb/>
+            alß verbleibt des mondes ſchein
+            <lb/>
+            an der himmels-bu&#x364;hnen.
+            <lb/>
+            <head><num>7</num></head>
+            <lb/>
+            <hi rendition="#aq">f</hi> Er wird herꝛſchen nah und feer/
+            <lb/>
+            ja von eim zum andern Meer/
+            <lb/>
+            bis ans end der erden:/:
+            <lb/>
+            fremde vo&#x364;lker/ freund und feind/
+            <lb/>
+            undertha&#x364;nig ihm geſchwind
+            <lb/>
+            zfuſſen fallen werden.
+            <lb/>
+            <head><num>8</num></head>
+            <lb/>
+            Meer- und Jnſlen-Ko&#x364;nig ſich
+            <lb/>
+            mit geſcha&#x364;nke williglich
+            <lb/>
+            freyga&#x364;b ihm erzeigen:/:
+            <lb/>
+            alle ko&#x364;nig in gemein/
+            <lb/>
+            ſamt den heiden/ ihn allein
+            <lb/>
+            ba&#x364;tten an mit neigen.
+            <lb/>
+            <fw place="bottom" type="pageNum">K</fw>
+            <lb/>
+            <fw place="bottom" type="catch"><num>9</num> Dan</fw>
+            <lb/>
+            
+            <hi rendition="#aq">e</hi> 4. Gemeiner
+            <lb/>
+            wolſtand und
+            <lb/>
+            verbeſſerung
+            <lb/>
+            aller ma&#x364;nglen.
+            <lb/>
+            <hi rendition="#aq">f</hi> 5. Mehrung
+            <lb/>
+            des Reychs.
+            <lb/>
+            <pb facs="83"/>
+            <head><num>9</num></head>
+            <lb/>
+            <hi rendition="#aq">g</hi> Dan den arm-verlaßnen mann
+            <lb/>
+            wird er retten/ und fortan
+            <lb/>
+            ſchonen des geringen:/:
+            <lb/>
+            vor gewalt und liſt in hut
+            <lb/>
+            arme nemmen/ und ihr blut
+            <lb/>
+            vorziehen allen dingen.
+            <lb/>
+            <head><num>10</num></head>
+            <lb/>
+            <hi rendition="#aq">h</hi> Er wird leben/ und zuglich
+            <lb/>
+            wird ihm das Arabiſch Reich
+            <lb/>
+            gold-geſcha&#x364;nke bringen:/:
+            <lb/>
+            jeder auch/ fu&#x364;r ſeinen theil/
+            <lb/>
+            Gottes ſa&#x364;gen/ glu&#x364;k und heil
+            <lb/>
+            wu&#x364;nſchen mit lobſingen
+            <lb/>
+            <head><num>11</num></head>
+            <lb/>
+            <hi rendition="#aq">i</hi> Wirft man auß/ auf du&#x364;rer heid/
+            <lb/>
+            eine handfol vom getreid/
+            <lb/>
+            wirds vil fru&#x364;chte geben:/:
+            <lb/>
+            die/ wie ba&#x364;um' auf Libanon/
+            <lb/>
+            von dem wind beweget ſchon/
+            <lb/>
+            ein gera&#x364;uſch erheben.
+            <lb/>
+            <head><num>12</num></head>
+            <lb/>
+            <hi rendition="#aq">k</hi> Wolbewohnte Sta&#x364;tte man/
+            <lb/>
+            gr<anchor xml:id="a4"/><unclear>u</unclear><note type="annotation" targetEnd="a4"><p>Das kleine e ist hier nicht zu erkennen, steht aber in Druck C</p></note>nend wie das graß voran/
+            <lb/>
+            fo&#x364;rterhin wird ſehen:/:
+            <lb/>
+            Diſes Ko&#x364;nigs <hi rendition="#aq">l</hi> Nam&#x342; ſo lang/
+            <lb/>
+            alß die ſonn behalt den gang/
+            <lb/>
+            bleibet ohn vergehen.
+            <lb/>
+            <head><num>13</num></head>
+            <lb/>
+            Alle vo&#x364;lker werden ſich
+            <lb/>
+            in ihm ſa&#x364;gnen ewiglich/
+            <lb/>
+            und ihn ſelig preiſen:/:
+            <lb/>
+            <hi rendition="#aq">m</hi> Jſraëls Gott in der Gmein/
+            <lb/>
+            weil er wunder wu&#x364;rkt allein
+            <lb/>
+            ſol man ehr beweiſen.
+            <lb/>
+            <head><num>14</num></head>
+            <lb/>
+            Hochgelobet immer werd
+            <lb/>
+            ſein ſo werther Nam&#x342; auf erd
+            <lb/>
+            von uns allenſamen:/:
+            <lb/>
+            Alles land von ſeiner Ehr
+            <lb/>
+            werd erfu&#x364;llet mehr und mehr/
+            <lb/>
+            ietz/ und ewig/ Amen!
+            <lb/>
+            
+            <hi rendition="#aq">g</hi> Widera&#x364;fe-
+            <lb break="no"/>
+            rung der eigen-
+            <lb break="no"/>
+            ſchaften eines
+            <lb/>
+            guten Regen-
+            <lb break="no"/>
+            ten/ darauß
+            <lb/>
+            vorgemeldte
+            <lb/>
+            Fr<anchor xml:id="a5"/><unclear>ü</unclear><note type="annotation" targetEnd="a5"><p>Wahrscheinlich Trema wie in Druck C</p></note>cht ent-
+            <lb break="no"/>
+            ſpringen.
+            <lb/>
+            <hi rendition="#aq">h</hi> Belohnung
+            <lb/>
+            eines trewen
+            <lb/>
+            Regenten.
+            <lb/>
+            1. Langes Le-
+            <lb break="no"/>
+            ben.
+            <lb/>
+            2. Reichtage.
+            <lb/>
+            3. Gunſt und
+            <lb/>
+            ehre.
+            <lb/>
+            <hi rendition="#aq">i</hi> 4. <anchor xml:id="a6"/><unclear>Fruchbar-
+            <lb break="no"/>
+            keit</unclear><note type="annotation" targetEnd="a6"><p>Die Form "Fruchbarkeit", also ohne t, ist im frühneuhochdeutschen Wörterbuch belegt.</p></note> des Lands.
+            <lb/>
+            <hi rendition="#aq">k</hi> 5. Mehrung
+            <lb/>
+            des Volks.
+            <lb/>
+            <hi rendition="#aq">l</hi> 6. Ehrlicher
+            <lb/>
+            Nam&#x303;/ und lob-
+            <lb break="no"/>
+            liches geda&#x364;cht-
+            <lb break="no"/>
+            nuß under al-
+            <lb break="no"/>
+            len vo&#x364;lkern.
+            <lb/>
+            <hi rendition="#aq">m</hi> Undertah-
+            <lb break="no"/>
+            nen ſollen Gott
+            <lb/>
+            loben/ und ihm
+            <lb/>
+            dancken/ wann
+            <lb/>
+            er gute Regen-
+            <lb break="no"/>
+            ten und Oberen
+            <lb/>
+            gibt
+            <lb/>
+            <pb facs="84"/>
+            <pb facs="85"/>
+         </div>
+      </body>
+   </text>
+</TEI>
