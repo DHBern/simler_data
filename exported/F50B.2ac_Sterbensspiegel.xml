@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2ac_Sterbensspiegel" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F50B.2a–c Sterbensspiegel</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F50B.2a–c Sterbensspiegel</title>
+            <idno type="Transkribus">7527928</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <pb facs="3"/>
+            <head><hi rendition="#aq"><num>II.</num></hi></head>
+            <lb/>
+            <head><num>1.</num></head>
+            <lb/>
+            Alexandriniſcher Vorwunſch/
+            <lb/>
+            über
+            <lb/>
+            wolangeſtellten und kunſtlich-
+            <lb break="no"/>
+            vollfu&#x364;hrten
+            <lb/>
+            Mejeriſchen Todtendantz.
+            <lb/>
+            <hi rendition="#in">D</hi>Jß dreyfachgu&#x366;te Werk ſelbſelb den Meiſter ru&#x364;hmet/
+            <lb/>
+            nicht no&#x364;htig daß es werd mit fro&#x364;mdem ru&#x366;hm verblu&#x364;hmet:
+            <lb/>
+            die klu&#x366;ge Künſtlerhand; der flammend Dichtergeiſt/
+            <lb/>
+            und hohe Sa&#x364;ngerkunſt uns hier verſtummen heißt.
+            <lb/>
+            Wir wünſchen nur allein auß diſem zu erlehrnen
+            <lb/>
+            des Lebens Flüchtigkeit/ damit wir uns entfehrnen
+            <lb/>
+            von eitelm augenluſt; verwehnter ſicherheit;
+            <lb/>
+            vom gelt- und ehrengeitz; von ungerechtigkeit:
+            <lb/>
+            hingegen aber uns/ zu diſen wunderzeiten/
+            <lb/>
+            zur Wallfahrt auß der welt/ im glauben/ vorbereiten/
+            <lb/>
+            damit die Todtenpfort uns mo&#x364;g ein Eyngang ſeyn
+            <lb/>
+            ins rechtgelobte Land/ wo weder Tod noch pein!
+            <lb/>
+            <head><num>2.</num></head>
+            <lb/>
+            Trochaiſcher/ oder fallender
+            <lb/>
+            Ra&#x364;tzelvierling.
+            <lb/>
+            <hi rendition="#in">D</hi>Vrch den ungeſtalten Tod wird der ein beru&#x364;hmter leben.
+            <lb/>
+            Eines andern bundne Zung wird dem Tod die Rede geben.
+            <lb/>
+            Dritter wird uns halbertodt auß den tieffen Noten heben.
+            <lb/>
+            Alle werden nach dem tod/ ſternenho&#x364;her/ ewig ſchweben.
+            <lb/>
+            <fw place="bottom" type="pageNum">b</fw>
+            <lb/>
+            <fw place="bottom" type="catch">Jam-</fw>
+            <lb break="no"/>
+            <pb facs="4"/>
+            <head><num>3.</num></head>
+            <lb/>
+            Jambiſcher/
+            <lb/>
+            oder
+            <lb/>
+            ſteigender Vorſprung/
+            <lb/>
+            zu ſeligem
+            <lb/>
+            Todtendantz.
+            <lb/>
+            <hi rendition="#in">O</hi>Hn underſcheid
+            <lb/>
+            der Menſchenma&#x364;der ſchneidet/
+            <lb/>
+            ſey/ wem es wolle/ leid:
+            <lb/>
+            Darum vermeid
+            <lb/>
+            was traurigeſt abſcheidet
+            <lb/>
+            von ho&#x364;chſter Himmelfreüd.
+            <lb/>
+            Stirb/ eh du ſterbſt/
+            <lb/>
+            daß nicht verderbſt;
+            <lb/>
+            genad erwerbſt;
+            <lb/>
+            nicht ewig ſerbſ<anchor xml:id="a1"/><unclear>t</unclear><note type="annotation" targetEnd="a1"><p>Unklar, ob das Zeichen nach "t" von der Rückseite stammt oder aus Versehen beim Drucken passiert ist. In C steht jedenfalls kein Semikolon.</p></note>
+            <lb/>
+            im ho&#x364;llenreich/
+            <lb/>
+            im ſchwefelteich/
+            <lb/>
+            wo ſchmertzen ſonder ende/
+            <lb/>
+            wo trauren ſonder troſt.
+            <lb/>
+            O Herꝛ/ in deine ha&#x364;nde
+            <lb/>
+            nim&#x342; die ſo ſind erloßt!
+            <lb/>
+            Zu ſchuldigen ehren/ und bezeugung
+            <lb/>
+            offener freundſchafft und dienſte
+            <lb/>
+            ſpielt ſolches
+            <lb/>
+            Johan&#x303; Wilhelm Simler.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="catch">IN</fw></hi>
+            <lb/>
+            <pb facs="5"/>
+            <pb facs="6"/>
+            <pb facs="7"/>
+         </div>
+      </body>
+   </text>
+</TEI>
