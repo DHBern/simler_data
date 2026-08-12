@@ -1,0 +1,1218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F52B_Regentenspiegel" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F52B Regentenspiegel</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F52B Regentenspiegel</title>
+            <idno type="Transkribus">7527859</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <pb facs="3"/>
+            <pb facs="4"/>
+            <pb facs="5"/>
+            <pb facs="6"/>
+            <pb facs="7"/>
+            <pb facs="8"/>
+            <pb facs="9"/>
+            <pb facs="10"/>
+            <pb facs="11"/>
+            <pb facs="12"/>
+            <pb facs="13"/>
+            <pb facs="14"/>
+            <pb facs="15"/>
+            S. CHRYSOST. ANΔPIANT.
+            <lb/>
+            HOMILIA VI.
+            <lb/>
+            <hi rendition="#in">Ω</hi>ΣΠEP NHOΣ TON KΥBEPNHTHN EAN AΠOΣΤΗΣΗΣ,
+            <lb/>
+            ΚATEΠONΤIΣΑΣ ΤΟ ΣΚΑΦΟΣ OYTΩ TΩN ΠΟΛΕ-
+            <lb break="no"/>
+            ΩN TOΥΣ APXONTAΣ EAN ANEΛHΣ, ΘHPIΩN AΛO-
+            <lb break="no"/>
+            TΩN AΛOTΩTEPON BIΩΣOMEΘA BION, ΔAΚNONΤΕΣ
+            <lb/>
+            AΛΛHΛΟΥΣ, KAI KATEΣΘIONTEΣ TON ΠENEΣTEPON
+            <lb/>
+            O ΠΛΟYΣΙΟΣ, TON AΣΘENEΣTEPON O ΔYNAΤΩTΕ-
+            <lb break="no"/>
+            ΡΟΣ, TON ΕΠIΕIΚΕΣΤΕΡON O ΘΡΑΣYΤΕΡΟΣ.
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#in">Q</hi>UEMADMODUM NAVIS, SUO PRIVATA NAVICULA-
+            <lb break="no"/>
+            TORE, MERGITUR: ITA SUBLATO MAGISTRATU,
+            <lb/>
+            INCULTA MAGIS ET HORRIDA, QUAM EXPERTIUM RA-
+            <lb break="no"/>
+            TIONIS ET ORATIONIS FERARUM, TRADUCITUR VITA,
+            <lb/>
+            ALIIS ALIOS MORDENTIBUS, DIVITE PAUPEREM, FOR-
+            <lb break="no"/>
+            TIORI INFIRMIOREM, ATROCI MANSUETUM, CONSU-
+            <lb break="no"/>
+            MENTE.</hi>
+            <lb/>
+            <pb facs="16"/>
+            <pb facs="17"/>
+            <pb facs="18"/>
+            <pb facs="19"/>
+            <pb facs="20"/>
+            <pb facs="21"/>
+            <pb facs="22"/>
+            <pb facs="23"/>
+            <pb facs="24"/>
+            <pb facs="25"/>
+            <pb facs="26"/>
+            <pb facs="27"/>
+            <pb facs="28"/>
+            <pb facs="29"/>
+            <pb facs="30"/>
+            <pb facs="31"/>
+            <pb facs="32"/>
+            <pb facs="33"/>
+            <pb facs="34"/>
+            <pb facs="35"/>
+            <pb facs="36"/>
+            <pb facs="37"/>
+            <pb facs="38"/>
+            <pb facs="39"/>
+            <pb facs="40"/>
+            <pb facs="41"/>
+            <pb facs="42"/>
+            <pb facs="43"/>
+            <pb facs="44"/>
+            <pb facs="45"/>
+            <pb facs="46"/>
+            <pb facs="47"/>
+            <pb facs="48"/>
+            <pb facs="49"/>
+            <pb facs="50"/>
+            <pb facs="51"/>
+            <pb facs="52"/>
+            <pb facs="53"/>
+            <pb facs="54"/>
+            <pb facs="55"/>
+            <pb facs="56"/>
+            <pb facs="57"/>
+            <pb facs="58"/>
+            <pb facs="59"/>
+            <pb facs="60"/>
+            <pb facs="61"/>
+            <pb facs="62"/>
+            <pb facs="63"/>
+            <pb facs="64"/>
+            <pb facs="65"/>
+            <pb facs="66"/>
+            <pb facs="67"/>
+            <pb facs="68"/>
+            <pb facs="69"/>
+            <pb facs="70"/>
+            <pb facs="71"/>
+            <pb facs="72"/>
+            <pb facs="73"/>
+            <pb facs="74"/>
+            <pb facs="75"/>
+            <pb facs="76"/>
+            <pb facs="77"/>
+            <pb facs="78"/>
+            <pb facs="79"/>
+            <pb facs="80"/>
+            <pb facs="81"/>
+            <pb facs="82"/>
+            Regentenſpiegel:
+            <lb/>
+            Dem hochgeachten/ edlen/ geſtrengen/ frommen/
+            <lb/>
+            veſten/ fürſichtigen und wolweiſen
+            <lb/>
+            Herꝛen/
+            <lb/>
+            H. Hans Heinrich Waſern/
+            <lb/>
+            wolverdienlich erwehltem Herꝛen Bur-
+            <lb break="no"/>
+            germeiſtern loblicher Statt Zürich:
+            <lb/>
+            Jn <hi rendition="#aq">LXXII.</hi> ſteigenden Viergedichten;
+            <lb/>
+            auß <hi rendition="#aq"><hi rendition="#g">AGAPETI</hi>, Diacons</hi> der groſſen Kirchen zu Con-
+            <lb break="no"/>
+            ſtantinopel/ an den frommen Keyſer <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">JUSTINIANUM</hi></hi> LXXII.</hi> lehr-
+            <lb break="no"/>
+            reichen Vermahnungs-capitlen; an des Herꝛen Ehren-nammens-
+            <lb break="no"/>
+            tage/ den 13. Ha&#x364;ümonats 1652. nach kurtz zu&#x366;vor/ den 28. tag
+            <lb/>
+            Brachmonats freybeſchehener Wahl/ wolmeinlich
+            <lb/>
+            auf- und fürgeſtellt
+            <lb/>
+            Von Johann-Wilhelm Simler/
+            <lb/>
+            Zuchtmeiſter im mehrern Hofe zum
+            <lb/>
+            Frauenmünſter:
+            <lb/>
+            alß ſchuldgeneigtwilligſtem Diener/
+            <lb/>
+            und Vettern.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">K</fw></hi>
+            <lb/>
+            <pb facs="83"/>
+            <pb facs="84"/>
+            Zuſchrifftsgedichte.
+            <lb/>
+            <hi rendition="#in">H</hi>Ochgeachter Herꝛ/ und Freund vom geblu&#x364;t- und vom
+            <lb/>
+            gemu&#x364;te/
+            <lb/>
+            ſeht mit gnadenaugen an/ nach der anerbornen gu&#x364;te/
+            <lb/>
+            mein ſo wolgemeintes Werklein/ diſe meine Viergedicht/
+            <lb/>
+            oder den Regentenſpiegel/ von der Oberherꝛen pflicht:
+            <lb/>
+            Zwaren nicht zu diſem end/ daß ihr meiner lehr bedo&#x364;rfet/
+            <lb/>
+            oder/ daß durch mein Gedicht eure pflicht werd eyngeſcha&#x364;rfet:
+            <lb/>
+            nein/ ſo iſt es nicht gemeinet/ (eur bekanter Tugendfleiß
+            <lb/>
+            nun und in der fru&#x364;hen jugend gibet wolverhaltens preiß)
+            <lb/>
+            ſonder wie ein Spiegel dem/ der geſa&#x364;ubert wird eynſchauen/
+            <lb/>
+            ſeine wolgeſtalte zeigt/ und erweket luſt für grauen:
+            <lb/>
+            Alſo der Regentenſpiegel/ mit beluſtigung dem Herꝛn
+            <lb/>
+            wider in geda&#x364;chtnuß bringe was er la&#x364;ngſt geſehen gern.
+            <lb/>
+            Hett' ich ko&#x364;nnen diſer zeit etwas angena&#x364;mers ſchreiben/
+            <lb/>
+            trauet mir/ es hette nicht in der feder mu&#x364;ſſen bleiben:
+            <lb/>
+            aber dreyer Ha&#x364;ubter Sterben/ und der ſtralend Donnertag/
+            <lb/>
+            mich ſo gar erſchreket haben/ daß ich ſchwerlich fu&#x364;hren mag
+            <lb/>
+            meine feder in der fauſt; die Dichtader wil nicht ſchweiſſen/
+            <lb/>
+            ſeit/ an obbemeldtem tag/ in den Thurn/ genennt von Geiſſen;
+            <lb/>
+            welcher unſre Statt gezieret; ſchoß ein ſchnelles Stralenfeür:
+            <lb/>
+            ach! es ſchoß in jenen Saamen/ deſſen würkung ungeheur
+            <lb/>
+            den ſo ſchweren Laſt erhebt/ und/ mit unerho&#x364;rtem knallen
+            <lb/>
+            ſo zerſchmettert/ daß hiervon na&#x364;chſte Ringmaur eyngefallen
+            <lb/>
+            beyderſeits zwey hundert ſchritte: auch die Neugenente Statt
+            <lb/>
+            von dem außgeworfnen zeuge ſchier den Reſt empfangen hat:
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">K 2</fw></hi>
+            <lb/>
+            <fw place="bottom" type="catch">Dan</fw>
+            <lb/>
+            <pb facs="85"/>
+            Dan es hagelt holtz und kalk/ klein- und Centnerſchwere ſteine/
+            <lb/>
+            die zerſchlugen Tach und Gmach/ und verfüllten ins gemeine
+            <lb/>
+            na&#x364;chſtgelegne ſcho&#x364;nſte Ga&#x364;rten: auch der ledig Dunſt <anchor xml:id="a1"/>vorauß<note type="annotation" targetEnd="a1"><p>In der Ausgabe C eindeutig zusammengeschrieben.</p></note>
+            <lb/>
+            vor der zeit den tag verfinſtert/ und entfenſtert manches hauß:
+            <lb/>
+            o&#x364;fnet was verſchloſſen war: auch die da&#x364;cher er entdecket/
+            <lb/>
+            und die wa&#x364;g' unwa&#x364;gſam ſchier mit verma&#x364;ngtem zeug verſteket:
+            <lb/>
+            Fenſterkloben/ Schloß und Rigel riß er auß und fil entzwey:
+            <lb/>
+            machte/ meilenwa&#x364;gs/ den Boden zittern obs Erdbidem ſey.
+            <lb/>
+            Wenig ha&#x364;uſer ungeſcha&#x364;ndt bliben in den beyden Sta&#x364;tten/
+            <lb/>
+            Ach! wie lehrte da die noht einen jeden eifrig ba&#x364;tten;
+            <lb/>
+            ja/ auch den/ der ſonſt zu&#x366;voren/ alß ein Heid/ zuflu&#x366;chen pflag:
+            <lb/>
+            jeder meint ſein hauß getroffen von dem ſtarken Wa&#x364;tter-
+            <lb break="no"/>
+            ſchlag.
+            <lb/>
+            Alle ſu&#x366;chten hin und her einen ſichern Ort zufinden/
+            <lb/>
+            auch der fra&#x364;cheſt wünſchet ihm underlaſſung aller ſünden:
+            <lb/>
+            dan es ſchin alß wolt vergehen diſes groſſe Rund der welt/
+            <lb/>
+            mit dem jenen was wir ſehen/ und zum ſelben wird gezellt.
+            <lb/>
+            Mancher klagte daß der Tag/ ach! der groſſe Tag ſey kommen
+            <lb/>
+            ihm zu fru&#x364;h und vor der bu&#x366;ß: zur erlo&#x364;ſung nur den frommen:
+            <lb/>
+            alles war erfüllt mit ſchreken/ und es zagt ein jederman/
+            <lb/>
+            wünſchet hertzlich daß er hette für das bo&#x364;ſe guts getahn.
+            <lb/>
+            Acht perſonen bliben todt; theils erſtiket/ theils erſchlagen;
+            <lb/>
+            einen/ na&#x364;chſt vor ſeinem end/ half ich ſelbſt zu behte tragen.
+            <lb/>
+            Diſem/ und zugleich den andern/ wünſchet ich auß hertzens-
+            <lb break="no"/>
+            grund/
+            <lb/>
+            daß der Scho&#x364;pfer ihnen gna&#x364;dig wolte ſeyn in letſter ſtund!
+            <lb/>
+            wie der wenigſt zweyfel iſt: Wolgelebet/ wolgeſtorben:
+            <lb/>
+            iſt ein alt Schrifftma&#x364;ſſig Wort/ ewig wahr und unver-
+            <lb break="no"/>
+            dorben.
+            <lb/>
+            Der verletzten zahl war gro&#x364;ſſer: aber gegem augenſchein/
+            <lb/>
+            iſt ſie/ durch des Ho&#x364;chſten gu&#x364;te/ ho&#x364;chſtverwunderlich und klein.
+            <lb/>
+            <fw place="bottom" type="catch">An-</fw>
+            <lb break="no"/>
+            <pb facs="86"/>
+            Andre ſtieß der Dunſt zuruk; etlich auch die ſta&#x364;gen nider/
+            <lb/>
+            ſchadlos/ von zerſchlagnem Tiſch/ warf er einen ins Gefider:
+            <lb/>
+            von mit holtz und ſtein umlegten die vernunft muß ſchweigen
+            <lb/>
+            ſtill/
+            <lb/>
+            dan es muß ie leben diſer welchen Gott erhalten wil.
+            <lb/>
+            Wunder iſts daß unſre Statt nicht in follen Brand zumalen
+            <lb/>
+            iſt gerahten durch ſo vil ungewohntes Donnerſtralen:
+            <lb/>
+            aber Gottes gnadengu&#x364;te zuverſchohnen ſich entſchloß/
+            <lb/>
+            wie ein wolkenbruch ein Regen über alles ſich ergoß.
+            <lb/>
+            Liebes Zürich/ ſinn daran/ und erzehls den Kindeskinden/
+            <lb/>
+            Bu&#x366;ß- und Glaubensfrüchte bring; haß und laß gewohnte ſün-
+            <lb break="no"/>
+            den;
+            <lb/>
+            daß der Herꝛ an deiner wurtzel mit der Axt nicht fahre für:
+            <lb/>
+            beßre dich/ und tuh zun ſachen bey noch ofner Gnadenthür!
+            <lb/>
+            Wo geraht ich aber hin? Andre werden es beſchreiben
+            <lb/>
+            nach der la&#x364;ng und nach der kunſt. Bey der Haubtſumm laß ichs
+            <lb/>
+            bleiben.
+            <lb/>
+            Diſes hab ich angemeldet/ alß urſachen die verwehrt/
+            <lb/>
+            daß ich Herꝛen Burgermeiſtern mit Lobverſen nicht geehrt
+            <lb/>
+            wie ich billich ſollen tuhn. Doch verhoff ich/ ſeine Gu&#x364;te
+            <lb/>
+            werd annemmen was ich gib' ohne falſch/ und von gemu&#x364;hte.
+            <lb/>
+            Gott erhalt in ſeinen gnaden unſer werthes Vatterland/
+            <lb/>
+            und verleih dem neüen Herꝛen was beſeligt ſeinen Stand!
+            <lb/>
+            E. E. W.
+            <lb/>
+            Schuldgeneigtwilligſter Diener/
+            <lb/>
+            und Vetter
+            <lb/>
+            Joh. Wilhelm Simler.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">K 3</fw></hi>
+            <lb/>
+            <pb facs="87"/>
+            <hi rendition="#aq"><hi rendition="#i">Ad Lectorem</hi>
+            <lb/>
+            <hi rendition="#g">PRO<anchor xml:id="a2"/>E<note type="annotation" targetEnd="a2"><p>Der Kreis darüber hat wahrscheinlich keine Bedeutung. In B und C steht er nicht</p></note>MII SIMLERIANI.</hi>
+            <lb/>
+            <hi rendition="#in">P</hi>Vlvere de Pyrio ſi vis deflere ruinam,
+            <lb/>
+            Et te deficiunt lachrymæ: lege Carmina Vatis
+            <lb/>
+            <hi rendition="#g">SIMLERI</hi>, lachrymas &amp; ſufficienter habebis.
+            <lb/>
+            <hi rendition="#g">FELIX VVYSSIUS,</hi> Abbatiſſanæ
+            <lb/>
+            Eccleſiæ Paſtor.
+            <lb/>
+            Ad præſtantiſſimum
+            <lb/>
+            <hi rendition="#i">cùm</hi>
+            <lb/>
+            Idéæ boni Principis, ex AGAPETI
+            <lb/>
+            ſcitè dictis Autorem;
+            <lb/>
+            <hi rendition="#i">tum</hi>
+            <lb/>
+            Euphemiarum Conſularium
+            <lb/>
+            Curatorem.
+            <lb/>
+            <hi rendition="#in">P</hi>Rincipis Idéam veterem, <hi rendition="#k"><hi rendition="#g">SIMLERE<anchor xml:id="a3"/>,<note type="annotation" targetEnd="a3"><p>Das Komma wird hier als Teil der Sinneinheit auch getaggt.</p></note></hi></hi> novando;
+            <lb/>
+            Cognati, calido pectore, limen adis;
+            <lb/>
+            O bene <hi rendition="#k"><hi rendition="#g">VVASERO</hi></hi> hæc <hi rendition="#k"><hi rendition="#g">AGAPETI</hi></hi> Dicta dicantur,
+            <lb/>
+            Optimi enim eſt <hi rendition="#k"><hi rendition="#g">CONSUL</hi></hi> Principis iſte Typus.
+            <lb/>
+            <hi rendition="#i">Tu quoque dum vulgas hæc inter <hi rendition="#g">NUBILA</hi> nata</hi>
+            <lb/>
+            <hi rendition="#i"><hi rendition="#k"><hi rendition="#g">JUBILA</hi></hi>, rem dignam <hi rendition="#g">CONSULE</hi>, TE<abbr>q&#x301;ʒ</abbr> facis.</hi><hi rendition="#g">CONSULE</hi>, TE<abbr>q&#x301;ʒ</abbr> facis.
+            <lb/>
+            <hi rendition="#i">Honoris c.f.</hi>
+            <lb/>
+            <hi rendition="#g">GEORGIUS MULLERUS<anchor xml:id="a4"/>;<note type="annotation" targetEnd="a4"><p>Das Semikolon wird hier als Teil der Sinneinheit auch getaggt.</p></note></hi>
+            <lb/>
+            Eccleſiæ Talvillenſis P.</hi>
+            <lb/>
+            <pb facs="88"/>
+            Regentenſpiegel.
+            <lb/>
+            <head><hi rendition="#aq"><num>I.</num></hi></head>
+            <lb/>
+            <hi rendition="#in">R</hi>Egenten ſeind von Gott mit ho&#x364;chſtem Stand geehret/
+            <lb/>
+            damit durch ſie ſein Lob hinwidrum werd vermehret:
+            <lb/>
+            drum ſey der Richter ſelb den Gſatzen underthan/
+            <lb/>
+            und richte nach dem Gſatz/ ſo folgt ihm jederman.
+            <lb/>
+            <head><hi rendition="#aq"><num>II.</num></hi></head>
+            <lb/>
+            Der Steürman in dem Schiff/ vor andern Schiffgenoſſen/
+            <lb/>
+            in ungeſtu&#x364;hmem Meer iſt wachtbar unverdroſſen:
+            <lb/>
+            nicht minder ein Regent arbeite mit verſtand/
+            <lb/>
+            daß ſein Regierungsſchiff zu keinen zeiten ſtrand.
+            <lb/>
+            <head><hi rendition="#aq"><num>III.</num></hi></head>
+            <lb/>
+            Den Scho&#x364;pfer und ſich ſelb in demu&#x366;ht recht erkennen/
+            <lb/>
+            anſtehet denen wol die ſich Regenten nennen:
+            <lb/>
+            dan welcher Gott vnd ſich erkennet wie er ſol/
+            <lb/>
+            der lebet und regiert auch anderſt nicht alß wol.
+            <lb/>
+            <head><hi rendition="#aq"><num>IV.</num></hi></head>
+            <lb/>
+            Geſchlecht iſt ſchlechter Ru&#x366;hm: wir alle ſeind auß erden/
+            <lb/>
+            und m<anchor xml:id="a5"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a5"><p>Wahrscheinlich kleines e, aber nicht ganz klar</p></note>ſſen widerum in erd verwandlet werden:
+            <lb/>
+            drum prange keiner mit. Der Tugendadel gilt/
+            <lb/>
+            und f<anchor xml:id="a6"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a6"><p>Wahrscheinlich kleines e, aber nicht ganz klar</p></note>hrt allein mit recht ero&#x364;fnet Ha&#x364;lm und Schilt.
+            <lb/>
+            <head><hi rendition="#aq"><num>V.</num></hi></head>
+            <lb/>
+            Die pflicht der Danckbarkeit vor andern dem gebüret
+            <lb/>
+            der mit verſtand und Stand vom Ho&#x364;chſten iſt gezieret:
+            <lb/>
+            dan diſe Tugend Gott an uns ſo wol gefallt/
+            <lb/>
+            daß mit mehr gaben er uns unſre pflicht bezallt.
+            <lb/>
+            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <lb/>
+            Das wo&#x364;llen und das tu&#x366;hn den Obern iſt gegeben/
+            <lb/>
+            mit diſem vorbehalt: in ihrem gantzen leben
+            <lb/>
+            zu wo&#x364;llen und zutu&#x366;hn was die Gemeine nützt/
+            <lb/>
+            und was nur diſer wil der ihren gwalt beſchützt.
+            <lb/>
+            <fw place="bottom" type="catch">Die</fw>
+            <lb/>
+            <pb facs="89"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>VII.</num></hi></head>
+            <lb/>
+            Die gu&#x364;ter diſer welt/ dem waſſer gleich/ verflieſſen/
+            <lb/>
+            von eim dem andern zu: nur deren wir genieſſen
+            <lb/>
+            die zu des na&#x364;chſten nutz wir brauchen in gebür/
+            <lb/>
+            dieweil der woltaht danck umkehret für und für.
+            <lb/>
+            <head><hi rendition="#aq"><num>VIII.</num></hi></head>
+            <lb/>
+            Verſtopf die ohren nicht vor denen die dich bitten
+            <lb/>
+            um hülf in ihrer noht/ die ſie anietz beſchritten:
+            <lb/>
+            damit der ho&#x364;chſt Regent ſein ohr ero&#x364;fne dir:
+            <lb/>
+            der gegen uns geſinnt wie gegen andern wir.
+            <lb/>
+            <head><hi rendition="#aq"><num>IX.</num></hi></head>
+            <lb/>
+            Daß im urtheilen ſich ein Richter nicht vergehe/
+            <lb/>
+            und allen underſcheid der ha&#x364;ndlen wol verſtehe/
+            <lb/>
+            ſo mu&#x366;ß durch Gotts Geſatz/ gleich einem Spiegel/ rein
+            <lb/>
+            von bo&#x364;ſen neigungen ſein hertz geſa&#x364;übert ſeyn.
+            <lb/>
+            <head><hi rendition="#aq"><num>X.</num></hi></head>
+            <lb/>
+            Wan ſich der Steürman ſelb in ſeiner Schiffahrt irret/
+            <lb/>
+            ſo wird das Schifferfolck mit Schiffsgefahr verwirꝛet:
+            <lb/>
+            alſo wan ein Regent in laſtern ſich vergeht/
+            <lb/>
+            ſein undergebne Gmein in ho&#x364;chſten gfahren ſteht.
+            <lb/>
+            <head><hi rendition="#aq"><num>XI.</num></hi></head>
+            <lb/>
+            Das gegenwertig ſich vera&#x364;nderlich befindet/
+            <lb/>
+            und ofter gar geſchwind von ſeiner ſtell verſchwindet:
+            <lb/>
+            darum mit veſtem mu&#x366;ht auf Gott allein vertrau/
+            <lb/>
+            und auf das irꝛdiſche dir keine hofnung bau.
+            <lb/>
+            <head><hi rendition="#aq"><num>XII.</num></hi></head>
+            <lb/>
+            Die Raben einig nur der todten ko&#x364;rper augen
+            <lb/>
+            außhakken/ und zu nichts alß kraß zuſchreyen/ taugen:
+            <lb/>
+            alſo die ſchmeichlerard die hertzensaugen bla&#x364;ndt/
+            <lb/>
+            in dem ſie bo&#x364;ſes lobt/ das gu&#x366;te ſchma&#x364;cht vnd ſcha&#x364;ndt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XIII.</num></hi></head>
+            <lb/>
+            Eins Obern mu&#x366;ht und ſinn im gu&#x366;ten ſey beſtendig/
+            <lb/>
+            ſo/ daß vom ſelben ihn kein zufal mach abwendig:
+            <lb/>
+            damit das unglück ihm den bodenſtoß nicht geb/
+            <lb/>
+            der wolſtand aber auch ihn nicht zu hoch erheb.
+            <lb/>
+            <fw place="bottom" type="catch">Wer</fw>
+            <lb/>
+            <pb facs="90"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XIV.</num></hi></head>
+            <lb/>
+            Wer menſchlichen betrug und eigne ſchwachheit kennet/
+            <lb/>
+            und denckt wie flügelſchnell ſein zeitlich leben rennet/
+            <lb/>
+            was bo&#x364;ſer neigung auch ſeim fleiſch eynpflantzet ſey/
+            <lb/>
+            der wird in ho&#x364;chſtem Stand verbleiben hoffart frey.
+            <lb/>
+            <head><hi rendition="#aq"><num>XV.</num></hi></head>
+            <lb/>
+            Pracht/ Reichtum/ Ehr und Gunſt im augenblick verſchwinden/
+            <lb/>
+            ſo/ daß von ihnen wir kein mal noch zeichen finden:
+            <lb/>
+            gerechtes Regiment wird immer außgebreit/
+            <lb/>
+            der frommen Obern wird vergeſſen keiner zeit.
+            <lb/>
+            <head><hi rendition="#aq"><num>XVI.</num></hi></head>
+            <lb/>
+            Daß nicht durch überfluß des reichen leib verderbe/
+            <lb/>
+            und durch die hungersnoht des armen gar erſterbe/
+            <lb/>
+            ſo ſol ein weiſer Herꝛ auf mitel ſeyn bedacht
+            <lb/>
+            wie etwas gleichheit werd in ihnen aufgebracht.
+            <lb/>
+            <head><hi rendition="#aq"><num>XVII.</num></hi></head>
+            <lb/>
+            Geſegnet iſt die zeit/ da weiſe leuht regieren/
+            <lb/>
+            und die Regenten ſich mit freyen Künſten zieren:
+            <lb/>
+            wie jener wol geredt. Nun diſe Gnadenzeit
+            <lb/>
+            iſt auch an uns erfüllt durch Gottes gu&#x364;tigkeit.
+            <lb/>
+            <head><hi rendition="#aq"><num>XVIII.</num></hi></head>
+            <lb/>
+            Rechtswegen herꝛſchet der/ der ſich kan überwinden/
+            <lb/>
+            und auf der wolluſtbahn ſich nimmer laſſet finden/
+            <lb/>
+            mit ma&#x364;ſſigkeit geziert/ mit grechtigkeit bekleidt:
+            <lb/>
+            ein ſolcher herꝛſchet auch in grawer ewigkeit.
+            <lb/>
+            <head><hi rendition="#aq"><num>XIX.</num></hi></head>
+            <lb/>
+            Sol dir ein ſtehter Ru&#x366;hm bey deiner Herꝛſchaft bleiben/
+            <lb/>
+            ſo mu&#x366;ß gu&#x366;tta&#x364;htigkeit den ſtrengen ernſt vertreiben:
+            <lb/>
+            dan ein erzwungen lob iſt eine heucheley/
+            <lb/>
+            ie ho&#x364;hers Ehrenwort/ ie gro&#x364;ſſre triegerey.
+            <lb/>
+            <head><hi rendition="#aq"><num>XX.</num></hi></head>
+            <lb/>
+            Ehrwürdig wird mit recht diß Regiment gepreiſet
+            <lb/>
+            das ſeine macht dem feind/ dem freund genad erweiſet:
+            <lb/>
+            dan zwüſchen Tyranney und ſolchem Regiment/
+            <lb/>
+            wie zwüſchen Wolf vnd Lamm wird underſcheid erkent.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">L</fw></hi>
+            <lb/>
+            <fw place="bottom" type="catch">Des</fw>
+            <lb/>
+            <pb facs="91"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XXI.</num></hi></head>
+            <lb/>
+            Des leibes weſen nach ein menſch dem andern gleichet/
+            <lb/>
+            ein Oberherꝛ iedoch die undern überꝛeichet/
+            <lb/>
+            und gleichet Gott im Stand: iſt aber ſtaub und erd/
+            <lb/>
+            drum ma&#x364;ſſig er den ſtoltz/ und nicht zu zornig werd.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXII.</num></hi></head>
+            <lb/>
+            Den Ra&#x364;hten/ die dem Reich zu nutzen rahten ko&#x364;nnen/
+            <lb/>
+            ſolt du geho&#x364;r und folg/ mit gu&#x366;tem willen go&#x364;nnen:
+            <lb/>
+            Die Schmeichelra&#x364;hte meid/ ſo zu gefallen dir/
+            <lb/>
+            und nicht dem Reich zu nutz/ mißrahten für und für.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXIII.</num></hi></head>
+            <lb/>
+            Den Dienern dich erzeig/ wie du verhofſt zugleiche
+            <lb/>
+            vom HERRN der Herꝛſchenden im erdenweiten Reiche:
+            <lb/>
+            dan wie den na&#x364;chſten wir erho&#x364;r- vnd ſehen an/
+            <lb/>
+            ſo wird mit gegenrecht vom HERREN uns getahn.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXIV.</num></hi></head>
+            <lb/>
+            Ein Spiegel/ den man rein und unbetruglich preiſet/
+            <lb/>
+            geleiches angeſicht des Sehers augen weiſet:
+            <lb/>
+            ſo ſtimmet Gotts Gericht mit unſern wercken eyn/
+            <lb/>
+            nach dem dieſelben ſeind/ wird unſre blohnung ſeyn.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXV.</num></hi></head>
+            <lb/>
+            Weil unbedachter Raht in wichtighohen dingen
+            <lb/>
+            die gro&#x364;ſſeſt urſach iſt/ daß ſelbe nicht gelingen/
+            <lb/>
+            ſo raht mit weil und fleiß/ und mit gebett zugleich/
+            <lb/>
+            ſetz aber bald zu werk was dienet deinem Reich.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXVI.</num></hi></head>
+            <lb/>
+            Du wirſt das Regiment am beſten denn verwalten/
+            <lb/>
+            wan du die aufſicht ſelb wirſt über alles halten
+            <lb/>
+            was zuverꝛichten iſt: dan Oberkeitlichs wort/
+            <lb/>
+            wie ring es immer ſcheint/ mit nachtruck gehet fort.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXVII.</num></hi></head>
+            <lb/>
+            Wan die Regenten ſelb nach ihren Gſatzen leben/
+            <lb/>
+            ſo werden ſelben ſie das beſt anſehen geben:
+            <lb/>
+            dan ieder undertahn bey diſem wird verſtehn/
+            <lb/>
+            daß kein verbra&#x364;cher werd geſetzter ſtraaf entgehn.
+            <lb/>
+            <fw place="bottom" type="catch">Selb</fw>
+            <lb/>
+            <pb facs="92"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XXVIII.</num></hi></head>
+            <lb/>
+            Selb ſünden/ oder auch den ſündern nicht abwehren/
+            <lb/>
+            iſt eines: aber der iſt wa&#x364;rt zweyfalter ehren/
+            <lb/>
+            der im Regentenſtand ſich ſelber ehrbar halt/
+            <lb/>
+            das gu&#x366;t mit blohnung und das bo&#x364;s mit ſtraaf bezahlt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXIX.</num></hi></head>
+            <lb/>
+            Bey bo&#x364;ſen wird man ſiech: mu&#x366;ß ſünden oder leiden:
+            <lb/>
+            drum ſol ein Oberherꝛ der bo&#x364;ſen gſellſchaft meiden/
+            <lb/>
+            zu frommen halten ſich: bey denen lehrnet man
+            <lb/>
+            den laſtern abbruch tu&#x366;hn/ der tugend hangen an.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXX.</num></hi></head>
+            <lb/>
+            Zu Ehrena&#x364;mtern die/ die ſich unehrbar halten/
+            <lb/>
+            befo&#x364;rder nicht/ dan das ſo ſie nicht recht verwalten/
+            <lb/>
+            in eim und anderm Stand/ erfordert Gott von dir/
+            <lb/>
+            der du ſie haſt erwehlt: drum wehl nach Eidsgebür.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXI.</num></hi></head>
+            <lb/>
+            O Richter/ richt geleich/ dem feinde wie dem freunde/
+            <lb/>
+            dem feinde nicht zu hart/ dem freunde nicht zu linde:
+            <lb/>
+            tu&#x366;h beiden widerſtand/ und weich vom rechten nicht/
+            <lb/>
+            ſo werden feind und freünd gu&#x366;theiſſen dein gericht.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXII.</num></hi></head>
+            <lb/>
+            Halt für den beſten freünd/ nicht den der alles preiſet
+            <lb/>
+            was wird von dir geredt: nein/ ſonder der ſich weiſet
+            <lb/>
+            in allem tu&#x366;hn getreü/ ſo/ daß zur unfalszeit
+            <lb/>
+            er ſich mit dir betru&#x364;bt/ im wolſtand mit-erfreüt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXIII.</num></hi></head>
+            <lb/>
+            Die laſt des Regiments nicht ſchrecke dein gemu&#x364;hte/
+            <lb/>
+            das wandelbare glück nicht a&#x364;ndre dein geblu&#x364;te:
+            <lb/>
+            Hab einen veſten mu&#x366;ht/ und ſey dir immer gleich/
+            <lb/>
+            im glück werd nicht zu ſtoltz/ im unglück nicht zu weich.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXIV.</num></hi></head>
+            <lb/>
+            Geleiche dich dem Gold/ warauß man vil formieret/
+            <lb/>
+            und bald auf diſe/ bald auf jene weiſe zieret/
+            <lb/>
+            noch bleibt es immer Gold/ und gleich im weſen gu&#x366;t:
+            <lb/>
+            alſo kein' Ehrenſtell vera&#x364;ndre deinen mu&#x366;ht.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">L 2</fw></hi>
+            <lb/>
+            <fw place="bottom" type="catch">Das</fw>
+            <lb/>
+            <pb facs="93"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXV.</num></hi></head>
+            <lb/>
+            Das band der Liebe macht ein Regiment beſtendig/
+            <lb/>
+            erzwungner ghorſam wird/ bey leichtem anlaß/ wendig:
+            <lb/>
+            darum alſo regier/ daß undertahnen dich/
+            <lb/>
+            na&#x364;chſt einer Kinderforcht/ auch lieben inniglich.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXVI.</num></hi></head>
+            <lb/>
+            Den Stand/ dem niemand darf geſatz vnd ordnung geben/
+            <lb/>
+            antreibe die vernunft zu gſatzgemeſſem leben:
+            <lb/>
+            er zo&#x364;rne wider ſich wie widern undertahn/
+            <lb/>
+            wan ſelber er verfehlt: ſo lobt ihn iederman.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXVII.</num></hi></head>
+            <lb/>
+            Biſt in der undern welt zu hoher Ehr erhaben/
+            <lb/>
+            ſo ſolt/ alß ebenbild/ dem Lehenherꝛn nachtraben/
+            <lb/>
+            und für die ho&#x364;heſt ehr es achten iederzeit/
+            <lb/>
+            wan underthanen du erzeigſt barmhertzigkeit.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXVIII.</num></hi></head>
+            <lb/>
+            Es ſollen über gold und edelgſtein auf erden
+            <lb/>
+            des wolthu&#x366;ns Scha&#x364;tz' anietz von uns geſamlet werden:
+            <lb/>
+            dan ſie beluſtigen/ auß hofnung jener freüd/
+            <lb/>
+            die immerwa&#x364;hrend iſt/ ohn einig hertzenleid.
+            <lb/>
+            <head><hi rendition="#aq"><num>XXXIX.</num></hi></head>
+            <lb/>
+            Ein Herꝛ ſol iederzeit hochachten die getreüen/
+            <lb/>
+            und/ über andre leuht/ mit gaaben ſie erfreüen:
+            <lb/>
+            dan alſo wird der fromm zu mehrer treü bewegt/
+            <lb/>
+            dem bo&#x364;ſen wird der wa&#x364;g zum übeltu&#x366;hn verlegt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XL.</num></hi></head>
+            <lb/>
+            Dem Vieh geleichet ſich wer tyranney veru&#x364;bet/
+            <lb/>
+            dem Scho&#x364;pfer aber der/ dem freündlichkeit geliebet:
+            <lb/>
+            Darum in ho&#x364;chſtem Stand das Recht vor augen hab/
+            <lb/>
+            und ſag der tyranney/ ſamt aller frechheit ab.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLI.</num></hi></head>
+            <lb/>
+            Der Richter hu&#x364;te ſich den freünde loß zuſprechen/
+            <lb/>
+            in ungerechter ſach/ am feinde ſich zurechen:
+            <lb/>
+            er laß dem feind und freünd geleiches Recht ergehn:
+            <lb/>
+            dan bo&#x364;s verbleibet bo&#x364;s/ von wem es gleich geſchehn.
+            <lb/>
+            <fw place="bottom" type="catch">Mit</fw>
+            <lb/>
+            <pb facs="94"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XLII.</num></hi></head>
+            <lb/>
+            Mit ſonderm fleiß anho&#x364;r die klagenden partheyen/
+            <lb/>
+            doch mehr die ſach betracht alß Redners plauderſchreyen/
+            <lb/>
+            ſo findeſt du das recht: und wie du bleibſt darbey/
+            <lb/>
+            alſo gibſt keinem zu daß er verfa&#x364;lſcher ſey.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLIII.</num></hi></head>
+            <lb/>
+            Wer mit gu&#x366;ttahten ko&#x364;nt der Sternen zahl erꝛeichen/
+            <lb/>
+            der mo&#x364;cht mit allen doch dem Scho&#x364;pfer nicht geleichen/
+            <lb/>
+            gleich wie auch keiner mag vorgehen eignem Schatt:
+            <lb/>
+            dan Gott/ was wir gethan/ vorhin gegeben hat.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLIV.</num></hi></head>
+            <lb/>
+            Des woltu&#x366;hns Scha&#x364;tze nicht/ gleich anderm Schatz der Erden/
+            <lb/>
+            durch die verzehrend zeit iemals erſcho&#x364;pfet werden:
+            <lb/>
+            durch geben werden ſie geſamlet mehr und mehr/
+            <lb/>
+            und am Vergeltungstag belohnt mit reicher Ehr.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLV.</num></hi></head>
+            <lb/>
+            Wer/ durch des Ho&#x364;chſten gnad/ zur Herꝛſchafft außerkohren/
+            <lb/>
+            und mehr zugeben alß zubitten/ iſt erbohren/
+            <lb/>
+            der gleiche ſeinem Herꝛn/ der ihn erhoben hat/
+            <lb/>
+            und laß der armen bitt bey ihme finden ſtatt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLVI.</num></hi></head>
+            <lb/>
+            Der Herꝛſcher iſt dem Folck/ wies aug dem leib/ gegeben/
+            <lb/>
+            zu ſonderbarem nutz in diſem blinden leben:
+            <lb/>
+            darum er auch auf ſie die fleiſſig' achtung hab/
+            <lb/>
+            daß ſie im gu&#x366;ten zu&#x366;- im bo&#x364;ſen nemmen ab.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLVII.</num></hi></head>
+            <lb/>
+            Ein Herꝛ lebt auſſer gfahr/ und immer unbetru&#x364;bet/
+            <lb/>
+            der unrecht vnd gewalt an keinem undern u&#x364;bet:
+            <lb/>
+            vilmehr lebt ſicher der/ der allen gu&#x366;ts erzeigt/
+            <lb/>
+            dan ihm mit gegenlieb ein ieder bleibt geneigt.
+            <lb/>
+            <head><hi rendition="#aq"><num>XLVIII.</num></hi></head>
+            <lb/>
+            Des Obern hoher Stand wil forcht vnd liebe haben/
+            <lb/>
+            und darzu&#x366; wird erheüſcht vermengter ernſt mit gaben:
+            <lb/>
+            zu fil gelindigkeit in die verachtung bringt/
+            <lb/>
+            und ein zu groſſer ernſt der undern Lieb verdringt.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">L 3</fw></hi>
+            <lb/>
+            <fw place="bottom" type="catch">Wer</fw>
+            <lb/>
+            <pb facs="95"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XLIX.</num></hi></head>
+            <lb/>
+            Wer ſelber tu&#x366;ht was er den undern wird gebieten/
+            <lb/>
+            der wird ſein eigen Gſatz beveſtnen und vernieten/
+            <lb/>
+            ſein Regiment wird auch anſehenlich gemacht:
+            <lb/>
+            ein ieder Oberherꝛ nemm diſes wol in acht.
+            <lb/>
+            <head><hi rendition="#aq"><num>L.</num></hi></head>
+            <lb/>
+            Du ſolſt der armen bitt/ ungmietet/ lieber ho&#x364;ren
+            <lb/>
+            alß deren die mit gſcha&#x364;nck dich ſu&#x366;chen zubeto&#x364;hren:
+            <lb/>
+            dan diſen wurdeſt du hierdurch verpflichtet ſeyn/
+            <lb/>
+            für jene ſtellt ſich Gott alß ein vergelter eyn.
+            <lb/>
+            <head><hi rendition="#aq"><num>LI.</num></hi></head>
+            <lb/>
+            Das helle Sonnenliecht/ mit ſeinen guldnen ſtralen/
+            <lb/>
+            erleüchtet und erwa&#x364;rmt diß groſſe Rund zumalen/
+            <lb/>
+            doch weichet es der nacht: ein Herꝛ/ den armen gneigt/
+            <lb/>
+            mit klarem warheitsliecht den ſchalck im finſtern zeigt.
+            <lb/>
+            <head><hi rendition="#aq"><num>LII.</num></hi></head>
+            <lb/>
+            Ein tugendreicher Fürſt ſein leben alſo fu&#x364;hret/
+            <lb/>
+            daß er ſein eigen Reich/ und nicht das Reich ihn zieret:
+            <lb/>
+            zu&#x366; ſeiner gnad geſtad der dürftig zuflucht nimt/
+            <lb/>
+            und ein erlo&#x364;ßter ihm ein Ehrenliedlein ſtimt.
+            <lb/>
+            <head><hi rendition="#aq"><num>LIII.</num></hi></head>
+            <lb/>
+            So fil ein Herꝛ an macht den andern wird vorgehen/
+            <lb/>
+            ſo fil bemu&#x364;h er ſich mit wolthu&#x366;n vorzuſtehen:
+            <lb/>
+            Dan mit gu&#x366;ttha&#x364;tigkeit wird ſeines Standes ehr/
+            <lb/>
+            durch armer leühten lob gefo&#x364;rdert mehr und mehr.
+            <lb/>
+            <head><hi rendition="#aq"><num>LIV.</num></hi></head>
+            <lb/>
+            Betrachtung dem Befehl vorgehe/ wies gebüret/
+            <lb/>
+            damit beſcheidenheit im ſelben werd verſpüret:
+            <lb/>
+            das ſchlipfricht glid/ die zung/ bald heil/ bald unheil bringt/
+            <lb/>
+            nach dem ſie wird geſtimt/ nach dem ſie auch erklingt.
+            <lb/>
+            <head><hi rendition="#aq"><num>LV.</num></hi></head>
+            <lb/>
+            Ein Herꝛ ſcharfſinnig ſey im urtheil hoher dingen/
+            <lb/>
+            und laſſe langſam ſich in eyferharꝛniſch bringen:
+            <lb/>
+            er zo&#x364;rn und zo&#x364;rne nicht; theils/ daß er bo&#x364;ſem wehr;
+            <lb/>
+            theils/ ihm geneigtes gmu&#x364;ht erkenne mehr und mehr!
+            <lb/>
+            <fw place="bottom" type="catch">Erwig</fw>
+            <lb/>
+            <pb facs="96"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>LVI.</num></hi></head>
+            <lb/>
+            Erwig im hertzensſchrein die ſitten und naturen
+            <lb/>
+            der freünden um dich her/ dieſelben zuerduren:
+            <lb/>
+            dieweil zu&#x366; diſer zeit fil ſo&#x364;lcher heüchler ſeind/
+            <lb/>
+            die dem leichttrauenden mehr ſchaden alß der feind.
+            <lb/>
+            <head><hi rendition="#aq"><num>LVII.</num></hi></head>
+            <lb/>
+            So du was nutzlichs ho&#x364;rſt/ ſo ho&#x364;r es auch von hertzen/
+            <lb/>
+            dan alſo wird dein Reich erhalten ſonder ſchertzen:
+            <lb/>
+            erwig in ieder ſach auch ſelber die gebür/
+            <lb/>
+            und was erꝛahten iſt/ das acht nicht hinderfür.
+            <lb/>
+            <head><hi rendition="#aq"><num>LVIII.</num></hi></head>
+            <lb/>
+            Ein wolverwahrtes Schloß mit gra&#x364;ben und mit mauren/
+            <lb/>
+            des feinds bela&#x364;gerung verhoffet außzudauren:
+            <lb/>
+            alſo ein miltreich Reich/ beveſtnet mit gebett/
+            <lb/>
+            ſich ſighaft widern feind beſchützet und erꝛett.
+            <lb/>
+            <head><hi rendition="#aq"><num>LIX.</num></hi></head>
+            <lb/>
+            Der Regimentsehr dich alſo gebrauch auf erde/
+            <lb/>
+            daß eine Leiter ſie der ho&#x364;chſten klarheit werde:
+            <lb/>
+            ein rechtes Vaterhertz den undertahnen hab/
+            <lb/>
+            mit dra&#x364;uwung mehr alß ſtraaf ſie halt von laſtern ab.
+            <lb/>
+            <head><hi rendition="#aq"><num>LX.</num></hi></head>
+            <lb/>
+            Der Gu&#x366;ttha&#x364;tmantel iſt ein Kleid das nicht veraltet/
+            <lb/>
+            der Rok der Liebe wa&#x364;rꝛt ſo lang ſie nicht erkaltet:
+            <lb/>
+            wer nun mit diſen ſich bekleidet hier in zeit/
+            <lb/>
+            dem wird hernach verehrt die him&#x342;liſch Herꝛligkeit.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXI.</num></hi></head>
+            <lb/>
+            Weil Gott den Zepter dir gegeben hat vor allen/
+            <lb/>
+            ſo fleiß dich auch vorauß demſelben zugefallen:
+            <lb/>
+            das bſchihet wan&#x303; wie dich du liebſt den undertahn/
+            <lb/>
+            und ihn alß Gottes Gſcho&#x364;pf mit gnaden ſiheſt an.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXII.</num></hi></head>
+            <lb/>
+            Ein Oberherꝛ voraus begehr der hülf von oben/
+            <lb/>
+            zu ſchutz dem undertahn/ und wider feindes toben:
+            <lb/>
+            ſonſt ſol ein ieder menſch/ der eigne wolfahrt ſu&#x366;cht/
+            <lb/>
+            zur hülf von oben her nur nemmen ſeine flucht.
+            <lb/>
+            <fw place="bottom" type="catch">Der</fw>
+            <lb/>
+            <pb facs="97"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>LXIII.</num></hi></head>
+            <lb/>
+            Der HERR zwar keines dings/ du aber wol des HERREN/
+            <lb/>
+            in ho&#x364;chſtem Stand bedarfſt: drum ſolt du gern gewerꝛen
+            <lb/>
+            die armen ihrer bitt/ und nicht ſeyn ſo genau/
+            <lb/>
+            von wegen würdiger ſie alle milt anſchau.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXIV.</num></hi></head>
+            <lb/>
+            Wer ſelb von Gott begehrt verzeyhung ſeiner ſünden/
+            <lb/>
+            der ſol verſu&#x364;hnlich ſich von denen laſſen finden
+            <lb/>
+            die ihn beleidiget: waraus man dan verſteht/
+            <lb/>
+            er ſey ein Gottesfreünd/ des zoren bald vergeht.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXV.</num></hi></head>
+            <lb/>
+            Wilſt in dem Regiment den Stand unſtra&#x364;flich fu&#x364;hren/
+            <lb/>
+            ſo laß das Folck an dir kein' ofne laſter ſpühren/
+            <lb/>
+            ja/ ſcheüh dich vor dir ſelb: dann ſo der underthan
+            <lb/>
+            dißfals zufo&#x364;rchten iſt; ſo biſts du weit voran.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXVI.</num></hi></head>
+            <lb/>
+            Wann ein geringer menſch ſtrafwürdig ſich vergehet/
+            <lb/>
+            ſo iſt es grob gefehlt; noch übler es anſtehet
+            <lb/>
+            der Regimentsperſon/ die bo&#x364;ſes nicht allein
+            <lb/>
+            ſol meiden/ ſonder auch des gu&#x366;ten ta&#x364;hter ſeyn.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXVII.</num></hi></head>
+            <lb/>
+            Der Menſchenfraß verzehrt den ſchlimmſten und den beſten:
+            <lb/>
+            darum ſol keiner ſich mit eitelkeiten meſten/
+            <lb/>
+            dan er mu&#x366;ß nacket fort ins finſterhole Grab/
+            <lb/>
+            und an dem groſſen Tag die Rechnung legen ab.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXVIII.</num></hi></head>
+            <lb/>
+            Der iſt mit recht ein Herꝛ/ der die vernunft bezwinget/
+            <lb/>
+            und nicht dem wolluſt dient/ noch fleiſches luſt verbringet:
+            <lb/>
+            darumb bewafne dich/ alß Gottes treüer Knecht/
+            <lb/>
+            mit ka&#x364;uſcher ma&#x364;ſſigkeit/ ſo bleibeſt Herꝛ mit recht.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXIX.</num></hi></head>
+            <lb/>
+            Gleich alß im Sonnenſchein der dunckel Schatt/ ohn fehlen/
+            <lb/>
+            eins iedern leibe folgt: ſo folgt die ſünd der ſeelen:
+            <lb/>
+            drum mag ſich am Gericht außla&#x364;ügnen keiner gar/
+            <lb/>
+            eins ieden werck wird ſelb ſich machen offenbar.
+            <lb/>
+            <fw place="bottom" type="catch">Diß</fw>
+            <lb/>
+            <pb facs="98"/>
+            <fw place="top" type="header">Regentenſpiegel.</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>LXX.</num></hi></head>
+            <lb/>
+            Diß Leben Schiffgeleich/ fahrt unvermerckt von hinnen/
+            <lb/>
+            und lauffet hafeneyn/ eh wir es werden innen:
+            <lb/>
+            darum ein ieder heüt nach jener anfurth ſtreb/
+            <lb/>
+            in deren er hernach auch ewig ſicher leb.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXXI.</num></hi></head>
+            <lb/>
+            Jſt einer gleich ein Herꝛ des beſten theils der Erden/
+            <lb/>
+            ſo poch er nicht darauf: Erd mu&#x366;ß er wider werden:
+            <lb/>
+            und wie er auß dem Staub geſtigen auf den Trohn/
+            <lb/>
+            ſo mu&#x366;ß er/ ſeiner zeit/ abſteigen auch darvon.
+            <lb/>
+            <head><hi rendition="#aq"><num>LXXII.</num></hi></head>
+            <lb/>
+            Wer eine Leiter ſteigt/ ſich na&#x364;hert ho&#x364;chſter ſproſſen:
+            <lb/>
+            drum ſteige der Regent im gu&#x366;ten unverdroſſen/
+            <lb/>
+            ſo hoch/ bis er erꝛeicht das oberſt Ko&#x364;nigreich/
+            <lb/>
+            und in demſelben herꝛſch dem Herꝛen Chriſto gleich.
+            <lb/>
+            Beſchließlicher Wunſch.
+            <lb/>
+            <hi rendition="#in">E</hi>S wünſchet Agapet dem Keyſer/ und zugleiche
+            <lb/>
+            des Keyſers Gmahelein/ erma&#x364;ldtes oberſt Reiche/
+            <lb/>
+            von dem ders geben kan: alß welcher über die/
+            <lb/>
+            die bherꝛſcht und herꝛſchend ſeind/ geherꝛſchet ie
+            <lb/>
+            und ie.
+            <lb/>
+            Dem neüerwehlten Herꝛn wünſch' ich anietz nicht minder/
+            <lb/>
+            und ſeiner Gmahelein; auch mit-gemeint die Kinder;
+            <lb/>
+            O aller Herꝛen HERR/ verſetz ſie; lebensſat;
+            <lb/>
+            auß diſem Threnentahl in ho&#x364;chſte Freüdenſtatt!
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">M</fw></hi>
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="catch">JO-</fw></hi>
+            <lb break="no"/>
+            <pb facs="99"/>
+            <pb facs="100"/>
+            <pb facs="101"/>
+         </div>
+      </body>
+   </text>
+</TEI>
