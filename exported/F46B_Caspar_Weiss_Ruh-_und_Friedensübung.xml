@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F46B_Caspar_Weiss_Ruh-_und_Friedensübung" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F46B Caspar Weiss Ruh- und Friedensübung</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F46B Caspar Weiss Ruh- und Friedensübung</title>
+            <idno type="Transkribus">10961340</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <hi rendition="#aq">ODE TROCHAICA,</hi>
+            <lb/>
+            Vber
+            <lb/>
+            Das guldene Bu&#x364;chlein
+            <lb/>
+            Von der ſeligen
+            <lb/>
+            Ru&#x366;h- oder Fridens-
+            <lb break="no"/>
+            u&#x364;bung.
+            <lb/>
+            <hi rendition="#in">W</hi>Ann ich mich zu&#x366; denen wende/
+            <lb/>
+            Die diß Bu&#x364;chlein eigentlich
+            <lb/>
+            Durchgela&#x364;ſen bis zum ende/
+            <lb/>
+            Werden ſie erkla&#x364;ren ſich/
+            <lb/>
+            Daß es/ zu&#x366; bequa&#x364;mer zeit/
+            <lb/>
+            Jn die Welt werd' außgebreit.
+            <lb/>
+            <head><num>2.</num></head>
+            <lb/>
+            Wünſchen werden ſie darneben/
+            <lb/>
+            Daß ſein angebottner Schatz/
+            <lb/>
+            Wo auch jmmer Menſchen leben/
+            <lb/>
+            Wider mo&#x364;ge finden platz:
+            <lb/>
+            Sonderlich im Teutſchen Land/
+            <lb/>
+            Bey dem ho&#x364;chſt- vnd minſten Stand!
+            <lb/>
+            <fw place="bottom" type="catch"><num>3.</num> Endt-</fw>
+            <lb break="no"/>
+            <pb facs="2"/>
+            <head><num>3.</num></head>
+            <lb/>
+            Endtlich werdens mit mir preiſen
+            <lb/>
+            Den Vrha&#x364;ber/ vnd zu&#x366;gleich
+            <lb/>
+            Den Tolmetſchen: Die vns weiſen
+            <lb/>
+            Zu&#x366; dem Friden Sa&#x364;gen-reich/
+            <lb/>
+            Ja zur Himmels-Frewd vnd Ru&#x366;h:
+            <lb/>
+            <hi rendition="#g">HERR/</hi> den Fortgang gib darzu&#x366;!
+            <lb/>
+            <head><num>4.</num></head>
+            <lb/>
+            Halleluja: Lobt den <hi rendition="#g">HERREN</hi>
+            <lb/>
+            Jhr/ die in dem Friden lebt:
+            <lb/>
+            Vnfrid weiche von euch ferꝛen/
+            <lb/>
+            Die jhr nach dem Friden ſtrebt:
+            <lb/>
+            Wider Satans liſt vnd gwalt/
+            <lb/>
+            <hi rendition="#g">HERR/</hi> im Friden vns erhalt!
+            <lb/>
+            J. W. S.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
