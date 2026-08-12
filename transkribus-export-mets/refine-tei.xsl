@@ -10,11 +10,14 @@
     <xsl:param name="filename" as="xs:string?" select="()"/>
 
     <!-- Keep unicode letters and digits (umlauts survive), drop everything the
-         shell, the file system or an xml:id (NCName) would choke on. Must stay
-         in sync with the tei_filename step of the workflow. -->
+         shell, the file system or an xml:id (NCName) would choke on. NFC first,
+         so a decomposed "u + combining diaeresis" becomes a single "ü" instead
+         of losing the accent when combining marks are dropped. Must stay in
+         sync with the tei_filename step of the workflow. -->
     <xsl:function name="local:sanitize" as="xs:string">
         <xsl:param name="title" as="xs:string?"/>
         <xsl:sequence select="normalize-space($title)
+            => normalize-unicode('NFC')
             => replace('\s+','_')
             => replace('[^\p{L}\p{N}._-]','')
             => replace('_+','_')
