@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="Es.a.A_Christen_Kampf" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Es.a.A Christen Kampf</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">Es.a.A Christen Kampf</title>
+            <idno type="Transkribus">3291083</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <hi rendition="#aq">Jnventor.
+            <lb/>
+            Con: Meÿer
+            <lb/>
+            fecit. et ex.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">CHRiSTEN KAMPF.</hi>
+            <lb/>
+            Der Menſch<anchor xml:id="a1"/><unclear>:</unclear><note type="annotation" targetEnd="a1"><p>Wahrscheinlich Doppelpunkt, aber Semikolon nicht auszuschliessen</p></note> wie Job bezeügt: im Streit mu&#x366;ß jmmer Leben:
+            <lb/>
+            Die hölliſch Wu&#x364;tereÿ thu&#x366;t jhme wider ſtreben<anchor xml:id="a2"/><unclear>/</unclear><note type="annotation" targetEnd="a2"><p>Es scheint ein Komma bzw. eine Virgel zu stehen, ist aber nicht gut erkennbar.</p></note>
+            <lb/>
+            Vnd nach vil ander Feind: worunder ſeind gezellt
+            <lb/>
+            Sein eigen Fleiſch: der Tod: die <anchor xml:id="a3"/><unclear>laſterhaffte</unclear><note type="annotation" targetEnd="a3"><p>Abstand nach klein r oft etwas grösser, siehe z.B. "Auſserwehlten", "vorauſs"</p></note> Wellt:
+            <lb/>
+            Anfechtung vilerleÿ: Verfolgung/ vnd Beſchwerden/
+            <lb/>
+            Vnd was der Sathan mehr erwecket hier auff Erden/
+            <lb/>
+            Alſs der von zorn entbrandt/ geleich dem Donner Keÿl/
+            <lb/>
+            Vns zu vertilgen gar abſchieſſet fewrig pfeil.
+            <lb/>
+            Wie aber ſolche Feind wir mo&#x364;gen <anchor xml:id="a4"/><unclear>v̈ber winden</unclear><note type="annotation" targetEnd="a4"><p>Der Bindestrich wurde wohl später von Hand eingezeichnet</p></note>/
+            <lb/>
+            Der Krieges Fürſt vns Lehrt: wie beÿ Matth<hi rendition="#aq">æ</hi>o zfinden:
+            <lb/>
+            Da/ wider Sathans Liſt/ vnd wider Sathans Macht/
+            <lb/>
+            Die Waaffen ſeines Worts Er in das Feld gebracht.
+            <lb/>
+            Dieſelben Waaffen auch der Heiden Lehrer preiſet/
+            <lb/>
+            Vnd ſie von Stuck zu Stuck den Auſserwehlten weiſet.
+            <lb/>
+            Er ſpricht: Die La&#x364;nden Eüch vmbgürtet mit Waarheit:
+            <lb/>
+            Es b'ſchirme Ewer Bruſt der Krebſs der Grechtigkeit:
+            <lb/>
+            An Fu&#x364;ſſen ſeit geſchu&#x364;cht in jehne Wellt zugehen:
+            <lb/>
+            (Die Lehr von Chriſto wir durch diſe Schuch verſtehen)
+            <lb/>
+            Jedoch/ zu&#x366;lo&#x364;ſchen gar des bo&#x364;ſen fewrig Pfeil/
+            <lb/>
+            Den Glaubens Schilt vorauſs ergreiffet in der eil:
+            <lb/>
+            Setzt auff den Helm des Heÿls/ vnd faſſet mit der Rechten
+            <lb/>
+            Das ſcharpfe Schwert des Geiſts: So werdt jhr Sighafft fechten/
+            <lb/>
+            Vnd/ nach vollbrachtem Streit/ in ho&#x364;chſter Herꝛlikeit/
+            <lb/>
+            Die ewig-wehrend Cron empfahen allbereit.
+            <lb/>
+            Der Menſch; wie ob gema&#x364;ldt; im Streit mu&#x366;ſſ jm&#x303;er Leben:
+            <lb/>
+            Der Sieg/ vnd Siegers Lohn vom Herꝛen wird gegeben.
+            <lb/>
+            Des ru&#x364;ffen wir zu jhm/ wir/ die wir wehrloſ ſeind:
+            <lb/>
+            O Herꝛ/ bewaaffne vns/ ſo weichet vnſer Feind.
+            <lb/>
+            J. W. S.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

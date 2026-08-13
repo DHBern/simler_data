@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Es.a.A Christen Kampf</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">Es.a.A Christen Kampf</title>
+               <idno type="Transkribus">3291083</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="75009450.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=QUQIRJTGTDFWKTHNJQZWYKRJ&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="374,2511 515,2511 515,2599 374,2599" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="437,2529 504,2529 504,2559 437,2559" rendition="Line" xml:id="facs_2_l"/>
+            <zone points="384,2546 466,2546 466,2582 384,2582" rendition="Line" xml:id="facs_2_l_7"/>
+            <zone points="397,2566 466,2566 466,2597 397,2597" rendition="Line" xml:id="facs_2_l_11"/>
+         </zone>
+         <zone points="323,2573 1868,2573 1868,2781 323,2781" rendition="TextRegion" xml:id="facs_2_r_7">
+            <zone points="930,2598 1267,2598 1267,2635 930,2635" rendition="Line" xml:id="facs_2_l_25"/>
+            <zone points="335,2618 700,2618 700,2651 335,2651" rendition="Line" xml:id="facs_2_l_9"/>
+            <zone points="337,2633 642,2633 642,2666 337,2666" rendition="Line" xml:id="facs_2_l_13"/>
+            <zone points="351,2648 630,2648 630,2679 351,2679" rendition="Line" xml:id="facs_2_l_17"/>
+            <zone points="355,2664 658,2664 658,2697 355,2697" rendition="Line" xml:id="facs_2_l_21"/>
+            <zone points="335,2680 659,2680 659,2710 335,2710" rendition="Line" xml:id="facs_2_l_26"/>
+            <zone points="337,2694 690,2694 690,2725 337,2725" rendition="Line" xml:id="facs_2_l_30"/>
+            <zone points="347,2707 684,2707 684,2739 347,2739" rendition="Line" xml:id="facs_2_l_34"/>
+            <zone points="356,2723 662,2723 662,2754 356,2754" rendition="Line" xml:id="facs_2_l_38"/>
+            <zone points="719,2616 1021,2616 1021,2650 719,2650" rendition="Line" xml:id="facs_2_l_10"/>
+            <zone points="723,2631 1058,2631 1058,2664 723,2664" rendition="Line" xml:id="facs_2_l_14"/>
+            <zone points="734,2648 1052,2648 1052,2680 734,2680" rendition="Line" xml:id="facs_2_l_18"/>
+            <zone points="735,2659 1042,2659 1042,2693 735,2693" rendition="Line" xml:id="facs_2_l_22"/>
+            <zone points="719,2675 1045,2675 1045,2709 719,2709" rendition="Line" xml:id="facs_2_l_27"/>
+            <zone points="724,2693 1053,2693 1053,2726 724,2726" rendition="Line" xml:id="facs_2_l_31"/>
+            <zone points="738,2706 1071,2706 1071,2739 738,2739" rendition="Line" xml:id="facs_2_l_35"/>
+            <zone points="737,2723 1071,2723 1071,2755 737,2755" rendition="Line" xml:id="facs_2_l_39"/>
+            <zone points="1081,2620 1386,2620 1386,2653 1081,2653" rendition="Line" xml:id="facs_2_l_4"/>
+            <zone points="1078,2635 1427,2635 1427,2668 1078,2668" rendition="Line" xml:id="facs_2_l_8"/>
+            <zone points="1098,2648 1396,2648 1396,2682 1098,2682" rendition="Line" xml:id="facs_2_l_12"/>
+            <zone points="1098,2664 1427,2664 1427,2696 1098,2696" rendition="Line" xml:id="facs_2_l_16"/>
+            <zone points="1088,2676 1465,2676 1465,2711 1088,2711" rendition="Line" xml:id="facs_2_l_20"/>
+            <zone points="1090,2693 1500,2693 1500,2727 1090,2727" rendition="Line" xml:id="facs_2_l_24"/>
+            <zone points="1105,2708 1445,2708 1445,2743 1105,2743" rendition="Line" xml:id="facs_2_l_28"/>
+            <zone points="1106,2727 1442,2727 1442,2759 1106,2759" rendition="Line" xml:id="facs_2_l_32"/>
+            <zone points="1471,2622 1845,2622 1845,2657 1471,2657" rendition="Line" xml:id="facs_2_l_6"/>
+            <zone points="1471,2636 1834,2636 1834,2670 1471,2670" rendition="Line" xml:id="facs_2_l_15"/>
+            <zone points="1470,2652 1841,2652 1841,2688 1470,2688" rendition="Line" xml:id="facs_2_l_19"/>
+            <zone points="1473,2668 1793,2668 1793,2703 1473,2703" rendition="Line" xml:id="facs_2_l_23"/>
+            <zone points="1701,2737 1826,2737 1826,2770 1701,2770" rendition="Line" xml:id="facs_2_l_29"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_l" n="N001"/><Antiqua>Jnventor.
+               <lb facs="#facs_2_l_7" n="N002"/>Con: Meÿer
+               <lb facs="#facs_2_l_11" n="N003"/>fecit. et ex.</Antiqua>
+            </ab>
+            <ab facs="#facs_2_r_7" type="">
+               <lb facs="#facs_2_l_25" n="N001"/><Antiqua>CHRiSTEN KAMPF.</Antiqua>
+               <lb facs="#facs_2_l_9" n="N002"/>Der Menſch<unclear reason="Wahrscheinlich\u0020Doppelpunkt,\u0020aber\u0020Semikolon\u0020nicht\u0020auszuschliessen" alternative="\u003b">:</unclear> wie Job bezeügt: im Streit muͦß jmmer Leben:
+               <lb facs="#facs_2_l_13" n="N003"/>Die hölliſch Wuͤtereÿ thuͦt jhme wider ſtreben<unclear reason="Es scheint ein Komma bzw. eine Virgel zu stehen, ist aber nicht gut erkennbar.">/</unclear>
+               <lb facs="#facs_2_l_17" n="N004"/>Vnd nach vil ander Feind: worunder ſeind gezellt
+               <lb facs="#facs_2_l_21" n="N005"/>Sein eigen Fleiſch: der Tod: die <unclear alternative="laſter haffte" reason="Abstand nach klein r oft etwas grösser, siehe z.B. &#34;Auſserwehlten&#34;, &#34;vorauſs&#34;">laſterhaffte</unclear> Wellt:
+               <lb facs="#facs_2_l_26" n="N006"/>Anfechtung vilerleÿ: Verfolgung/ vnd Beſchwerden/
+               <lb facs="#facs_2_l_30" n="N007"/>Vnd was der Sathan mehr erwecket hier auff Erden/
+               <lb facs="#facs_2_l_34" n="N008"/>Alſs der von zorn entbrandt/ geleich dem Donner Keÿl/
+               <lb facs="#facs_2_l_38" n="N009"/>Vns zu vertilgen gar abſchieſſet fewrig pfeil.
+               <lb facs="#facs_2_l_10" n="N010"/>Wie aber ſolche Feind wir moͤgen <unclear alternative="v̈ber-winden" reason="Der Bindestrich wurde wohl später von Hand eingezeichnet">v̈ber winden</unclear>/
+               <lb facs="#facs_2_l_14" n="N011"/>Der Krieges Fürſt vns Lehrt: wie beÿ Matth<Antiqua>æ</Antiqua>o zfinden:
+               <lb facs="#facs_2_l_18" n="N012"/>Da/ wider Sathans Liſt/ vnd wider Sathans Macht/
+               <lb facs="#facs_2_l_22" n="N013"/>Die Waaffen ſeines Worts Er in das Feld gebracht.
+               <lb facs="#facs_2_l_27" n="N014"/>Dieſelben Waaffen auch der Heiden Lehrer preiſet/
+               <lb facs="#facs_2_l_31" n="N015"/>Vnd ſie von Stuck zu Stuck den Auſserwehlten weiſet.
+               <lb facs="#facs_2_l_35" n="N016"/>Er ſpricht: Die Laͤnden Eüch vmbgürtet mit Waarheit:
+               <lb facs="#facs_2_l_39" n="N017"/>Es b'ſchirme Ewer Bruſt der Krebſs der Grechtigkeit:
+               <lb facs="#facs_2_l_4" n="N018"/>An Fuͤſſen ſeit geſchuͤcht in jehne Wellt zugehen:
+               <lb facs="#facs_2_l_8" n="N019"/>(Die Lehr von Chriſto wir durch diſe Schuch verſtehen)
+               <lb facs="#facs_2_l_12" n="N020"/>Jedoch/ zuͦloͤſchen gar des boͤſen fewrig Pfeil/
+               <lb facs="#facs_2_l_16" n="N021"/>Den Glaubens Schilt vorauſs ergreiffet in der eil:
+               <lb facs="#facs_2_l_20" n="N022"/>Setzt auff den Helm des Heÿls/ vnd faſſet mit der Rechten
+               <lb facs="#facs_2_l_24" n="N023"/>Das ſcharpfe Schwert des Geiſts: So werdt jhr Sighafft fechten/
+               <lb facs="#facs_2_l_28" n="N024"/>Vnd/ nach vollbrachtem Streit/ in hoͤchſter Herꝛlikeit/
+               <lb facs="#facs_2_l_32" n="N025"/>Die ewig-wehrend Cron empfahen allbereit.
+               <lb facs="#facs_2_l_6" n="N026"/>Der Menſch; wie ob gemaͤldt; im Streit muͦſſ jm̃er Leben:
+               <lb facs="#facs_2_l_15" n="N027"/>Der Sieg/ vnd Siegers Lohn vom Herꝛen wird gegeben.
+               <lb facs="#facs_2_l_19" n="N028"/>Des ruͤffen wir zu jhm/ wir/ die wir wehrloſ ſeind:
+               <lb facs="#facs_2_l_23" n="N029"/>O Herꝛ/ bewaaffne vns/ ſo weichet vnſer Feind.
+               <lb facs="#facs_2_l_29" n="N030"/>J. W. S.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
