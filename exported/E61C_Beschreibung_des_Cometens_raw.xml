@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">E61C Beschreibung des Cometens</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">E61C Beschreibung des Cometens</title>
+               <idno type="Transkribus">3966904</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="3508" lry="2479" xml:id="facs_2">
+         <graphic url="77461869.jpg" width="3508px" height="2479px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=NHIKFLVBOUYHULGRTLHAWINP&amp;fileType=view" width="3508px" height="2479px"/>
+         <zone points="576,1426 2233,1426 2233,2348 576,2348" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="913,1416 1889,1416 1889,1518 913,1518" rendition="Line" xml:id="facs_2_tr_1_tl_50"/>
+            <zone points="1020,1495 1781,1495 1781,1604 1020,1604" rendition="Line" xml:id="facs_2_tr_1_tl_51"/>
+            <zone points="1269,1574 1498,1574 1498,1658 1269,1658" rendition="Line" xml:id="facs_2_tr_1_tl_52"/>
+            <zone points="827,1607 1661,1607 1661,1758 827,1758" rendition="Line" xml:id="facs_2_tr_1_tl_53"/>
+            <zone points="839,1726 1805,1726 1805,1823 839,1823" rendition="Line" xml:id="facs_2_tr_1_tl_54"/>
+            <zone points="913,1807 2012,1807 2012,1931 913,1931" rendition="Line" xml:id="facs_2_tr_1_tl_55"/>
+            <zone points="908,1893 1882,1893 1882,2024 908,2024" rendition="Line" xml:id="facs_2_tr_1_tl_56"/>
+            <zone points="789,1973 1989,1973 1989,2092 789,2092" rendition="Line" xml:id="facs_2_tr_1_tl_57"/>
+            <zone points="815,2049 1810,2049 1810,2166 815,2166" rendition="Line" xml:id="facs_2_tr_1_tl_58"/>
+            <zone points="904,2138 1984,2138 1984,2241 904,2241" rendition="Line" xml:id="facs_2_tr_1_tl_60"/>
+            <zone points="941,2213 2026,2213 2026,2310 941,2310" rendition="Line" xml:id="facs_2_tr_1_tl_61"/>
+         </zone>
+         <zone points="565,2115 805,2115 805,2242 565,2242" rendition="TextRegion" xml:id="facs_2_r">
+            <zone points="578,2119 789,2119 789,2224 578,2224" rendition="Line" xml:id="facs_2_tr_1_tl_59"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_50" n="N001"/>Bedeütung der Cometen insgemein:
+               <lb facs="#facs_2_tr_1_tl_51" n="N002"/>ſamt beigefuͤgtem Troſt für die
+               <lb facs="#facs_2_tr_1_tl_52" n="N003"/>frommen.
+               <lb facs="#facs_2_tr_1_tl_53" n="N004"/>Cometen waren iederzeiten
+               <lb facs="#facs_2_tr_1_tl_54" n="N005"/><unclear alternative="z">Z</unclear>ornbotten Gottes/ und bedeüten
+               <lb facs="#facs_2_tr_1_tl_55" n="N006"/>Wind/ Theürung/ Peſt/ Krieg<unclear reason="Strich kaum zu erkennen">/</unclear> Waſſersnoht/
+               <lb facs="#facs_2_tr_1_tl_56" n="N007"/>Erdbidem/ Endrung/ Fürſtentodt.
+               <lb facs="#facs_2_tr_1_tl_57" n="N008"/>Solt aber drum der Fromm verzagen?
+               <lb facs="#facs_2_tr_1_tl_58" n="N009"/>Nein/ ſonder/ mit vertrauen ſagen:
+               <lb facs="#facs_2_tr_1_tl_60" n="N010"/>Wan Erd und Himmel braͤchen eÿn/
+               <lb facs="#facs_2_tr_1_tl_61" n="N011"/>wird Gott mein Port und Anker ſeÿn.
+            </ab>
+            <ab facs="#facs_2_r" type="">
+               <lb facs="#facs_2_tr_1_tl_59" n="N001"/><Antiqua>Pſalm. 46.</Antiqua>
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>
