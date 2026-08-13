@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F56C_Kinderlehr_Burckhardt" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F56C Kinderlehr Burckhardt</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F56C Kinderlehr Burckhardt</title>
+            <idno type="Transkribus">7527858</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3218061/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3218079"/>
+            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <lb/>
+            <hi rendition="#in">D</hi>Er Autor klar erweißt/ daß er nicht ſey erbohren
+            <lb/>
+            ihm ſelber nur allein; dieweil er außerkohren
+            <lb/>
+            zuſchreiben ſolch ein Bu&#x366;ch/ warauß ein ieder Chriſt
+            <lb/>
+            erlehrnet/ was zum heil zuwüſſen no&#x364;thig iſt.
+            <lb/>
+            Doch dienet es vorauß den jungen Catechiſten;
+            <lb/>
+            zu underweiſen recht den reinſten theil der Chriſten/
+            <lb/>
+            auß denen mit der zeit/ zu gut dem Vatterland/
+            <lb/>
+            erwachßt der Nehr- und Lehr- und Wehr- und jeder Stand.
+            <lb/>
+            Wer wolte dann nicht gern diß Bu&#x366;chs Vrhebern preiſen/
+            <lb/>
+            der zu der Himmels-<hi rendition="#b">Burck</hi> uns richtig wollen weiſen
+            <lb/>
+            den ſchmalen <hi rendition="#b">hart</hi>en Wa&#x364;g? o Ho&#x364;chſter/ gib daß wir
+            <lb/>
+            auf ſolchem wandlen fort/ bis wir gelangt zu Dir!
+            <lb/>
+            Aufgeſetzt/ von
+            <lb/>
+            Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

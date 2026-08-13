@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F53B_Klinggedichte_Felix_Weiss" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F53B Klinggedichte Felix Weiss</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F53B Klinggedichte Felix Weiss</title>
+            <idno type="Transkribus">7527926</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3746601/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3746622"/>
+            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <lb/>
+            Klinggedichte.
+            <lb/>
+            <hi rendition="#in">E</hi><hi rendition="#b">S ſchallet viler Nam&#x342; noch heut in aller Welt;</hi>
+            <lb/>
+            mit nicht geringem Ru&#x366;hm; die doch dem Menſchen-orden
+            <lb/>
+            la&#x364;ngſt gute nacht geſagt; zu ſtaub und gar nichts worden:
+            <lb/>
+            worunder ſonderlich <hi rendition="#b">Herꝛ Gwalther</hi> wird gezellt/
+            <lb/>
+            deß <hi rendition="#b">Feſtenbu&#x366;ch</hi> dem freund und feinde wol gefellt/
+            <lb/>
+            vom Oſten biß zum Weſt; vom Suden bis zum Norden;
+            <lb/>
+            weils weyßt den <hi rendition="#b">Lebenswa&#x364;g</hi>; entdeckt die Seelen-morden:
+            <lb/>
+            drumb des Erfinders lob noch heute widergellt.
+            <lb/>
+            <hi rendition="#b">Herꝛn Weyſſen</hi> edler Geiſt geleiche ſtaffel ſteiget/
+            <lb/>
+            in dem er Chriſtus Lehr und Leben nicht verſchweiget/
+            <lb/>
+            hiemit den <hi rendition="#b">Wa&#x364;g zum heil</hi> uns andern kla&#x364;rlich weyßt.
+            <lb/>
+            Fahrt fort auf diſer Bahn/ die ihr euch habt erkoren/
+            <lb/>
+            ſo wird/ auß <hi rendition="#b">Felix</hi>/ einſt ein <hi rendition="#b">Fenix</hi> neugeboren;
+            <lb/>
+            das iſt; wie jennes Nam; wird euer ſeyn gepreyßt.
+            <lb/>
+            Zu wol verdienten Ehren ſeinem groſſen Go&#x364;nner
+            <lb/>
+            ſetzte diſes hertz-wolmeinlich
+            <lb/>
+            Johan&#x303;-Wilhelm Simler.
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>

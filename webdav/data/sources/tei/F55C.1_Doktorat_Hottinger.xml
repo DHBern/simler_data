@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F55C.1_Doktorat_Hottinger" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F55C.1 Doktorat Hottinger</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F55C.1 Doktorat Hottinger</title>
+            <idno type="Transkribus">10034094</idno>
+            <idno type="URLIIIF">https://www.e-manuscripta.ch/i3f/v20/964764/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="965010"/>
+            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <lb/>
+            Neu-fallendes Wunſch- und Kling-gedichte/
+            <lb/>
+            nach Opitziſcher art:
+            <lb/>
+            Herꝛen Joh. Heinrich Hottingern/
+            <lb/>
+            Profeſſor der Freyen-Ku&#x364;nſten zu Zu&#x364;rich/ ꝛc.
+            <lb/>
+            als Churpfaltz
+            <lb/>
+            die Leſerey der H. Schrifft jhme auffgetragen/
+            <lb/>
+            und die lobliche <hi rendition="#aq">U</hi>niverſita&#x364;t zu Baſel jhne hieru&#x364;ber
+            <lb/>
+            zum Doctor gemachet;
+            <lb/>
+            Zu ſondern Ehren:
+            <lb/>
+            <hi rendition="#in">S</hi>Olt' ich/ groſſer Go&#x364;nner/ dan nichts von deiner Tugend ſinge&#x303;:
+            <lb/>
+            Weil geſamte Kaſtallinnen dich zu ehren ſind geneigt/
+            <lb/>
+            und Apollo ſich ſo gu&#x364;nſtig gegen dir anjetz erzeigt?
+            <lb/>
+            Solte meine ſtim&#x342; ohn ſtim&#x342; nicht zu deinem Lob erklingen/
+            <lb/>
+            da die * Ku&#x364;nſte-ſtatt am Rhein; die Belohnung dir zubringen;
+            <lb/>
+            ein ſo ſcho&#x364;nes Kra&#x364;ntzlein windet/ und jhr <hi rendition="#aq">Viva</hi> ſchreyt empor?
+            <lb/>
+            <hi rendition="#aq">Viva!</hi> er iſt Doctor worden; ſchrey ich mit der Muſen-chor!
+            <lb/>
+            Sein ſo hoch-begabter Geiſt kan ſich himmelhoch erſchwingen.
+            <lb/>
+            Churpfaltz ſeines Dienſts begehret: Zu&#x364;rich findet ſich geehrt:
+            <lb/>
+            Wer * <hi rendition="#b">in Gott</hi> mit jhm <hi rendition="#b">Ehr</hi> ſuchet/ deme wirds Gelu&#x364;k
+            <lb/>
+            beſchehrt.
+            <lb/>
+            <fw place="bottom" type="pageNum">A 3</fw>
+            <lb/>
+            <fw place="bottom" type="catch">Nun</fw>
+            <lb/>
+            
+            * Baſel
+            <lb/>
+            <hi rendition="#aq">Anagr.</hi>
+            <lb/>
+            Hottinger.
+            <lb/>
+            <pb facs="965011"/>
+            Nun ſo wu&#x364;nſch' ich/ ſchließlich/ jhm viel geſunder Tag' und Jahren
+            <lb/>
+            Zum zweyfachen Ehrenſtande/ ruhmlich jhme zugekennt:
+            <lb/>
+            Lehrer in der Gottes-Lehre werd er fo&#x364;rterhin genennt:
+            <lb/>
+            Seine Lehr und Ehr zu fo&#x364;rdern/ wo&#x364;ll der Ho&#x364;chſt den Wunſch
+            <lb/>
+            erwahren!
+            <lb/>
+            von
+            <lb/>
+            Joh. Wilhelm Simlern/ Dienern
+            <lb/>
+            am H. W. Gottes und Zuchtm. zum
+            <lb/>
+            Fr. M<anchor xml:id="a1"/>r<note type="annotation" targetEnd="a1"><p>Hochgestellt</p></note>. in Zu&#x364;rich ꝛc.
+            <lb/>
+            Hertz-wolmeinlich geſungen.
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>

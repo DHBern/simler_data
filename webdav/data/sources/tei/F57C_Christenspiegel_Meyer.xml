@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F57C_Christenspiegel_Meyer" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F57C Christenspiegel Meyer</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F57C Christenspiegel Meyer</title>
+            <idno type="Transkribus">7527924</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2427208/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="2427223"/>
+            Lob-gedicht
+            <lb/>
+            <anchor xml:id="a1"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a1"><p>Der Umlaut ist nicht zu erkennen, aber wahrscheinlich "e"</p></note>ber Herꝛen Conrad Meyers
+            <lb/>
+            Chriſten-ſpiegel.
+            <lb/>
+            <hi rendition="#in">N</hi><hi rendition="#aq">U</hi>n gibet abermal des <hi rendition="#b">Herꝛen Meyers</hi> fleiß
+            <lb/>
+            ein Werklein an das liecht/ dem billich ho&#x364;rt der preiß
+            <lb/>
+            daß es zu rechter zeit/ kunſtma&#x364;ſſig ſey gegeben:
+            <lb/>
+            <hi rendition="#b">Herꝛ'n Müllers</hi> Po<anchor xml:id="a2"/><unclear>e</unclear><note type="annotation" targetEnd="a2"><p>Die Pünktchen über dem e sind wahrscheinlich Flecken. In der Ausgabe C sind sie nicht vorhanden.</p></note>ſie mittheilet ihm das leben
+            <lb/>
+            und einen ſolchen glantz/ der auch im hertzen zeigt
+            <lb/>
+            die ſünden-maaſen/ und zur Chriſten-pflicht uns neigt.
+            <lb/>
+            Fahrt fort/ fahrt beide fort mit etzen und mit dichten/
+            <lb/>
+            und ſchlaget in den wind Neidhammels ſplitter-richten/
+            <lb/>
+            ſo machet ihr ihn ſtumm/ und krieget noch zu lohn
+            <lb/>
+            der Hochgelehrten gunſt; er aber ſpott und hohn:
+            <lb/>
+            es wird auch ieder drauf ein Lorberzweig erwerben/
+            <lb/>
+            und euer beider Namm der ſterbligkeit abſterben.
+            <lb/>
+            Zum Merkmahl beharꝛlicher Freundſchafft
+            <lb/>
+            aufgeſetzt
+            <lb/>
+            von
+            <lb/>
+            Joh. Wilhelm Simler.
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>

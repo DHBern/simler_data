@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F55C.2_Klingendes_Trostgedicht_Zwinger" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F55C.2 Klingendes Trostgedicht Zwinger</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F55C.2 Klingendes Trostgedicht Zwinger</title>
+            <idno type="Transkribus">7527925</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/8851888/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="8851962" n="73"/>
+            <fw place="top" type="pageNum">73</fw>
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">EPICEDIA.<hi rendition="#k"/></hi><hi rendition="#k"/></hi><hi rendition="#k"/><hi rendition="#g"/></hi><hi rendition="#g"/>
+            <lb/>
+            Klingendes Troſtgedicht.
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛ Zwinger zwang den Tod/ von dem er ſchin gezwungen
+            <lb/>
+            alß ihn derſelbige/ gleich andern/ weggerafft/
+            <lb/>
+            er aber von dem Tod/ durch wahren Glaubens krafft/
+            <lb/>
+            nach ritterlichem Kampff/ ins Leben durchgedrungen.
+            <lb/>
+            Sein' edle Seele ſich hat u&#x364;berſich geſchwungen
+            <lb/>
+            in jennes Ort/ wo ſie in ſta&#x364;ten Frewden lebt/
+            <lb/>
+            erwartend ihres Leibs/ des Scho&#x364;pffers Lob erhebt/
+            <lb/>
+            und ſtimmet mit/ wann wird das Heilig HErꝛ/ ꝛc. geſungen.
+            <lb/>
+            Jhr Hinderlaßne laßt nun euer Trauren fahren/
+            <lb/>
+            Herꝛ Zwinger wu&#x364;nſcht nicht mehr in diſer Welt zu ſeyn/
+            <lb/>
+            wo lauter Zwang und drang/ ſorg/ mu&#x364;h' und ſeelen-peyn:
+            <lb/>
+            des Troſtes Gott euch wo&#x364;ll vor weiterm Leid bewahren!
+            <lb/>
+            O/ daß ein gleicher Hirt der hinderlaſſnen Herd/
+            <lb/>
+            in ſta&#x364;ter Wolffsgefahr/ bald fu&#x364;rgeſetzet werd!
+            <lb/>
+            Johann Wilhelm Simler/
+            <lb/>
+            Diener am H. Wort Gottes/ vnd Zuchtm.
+            <lb/>
+            zum Fr. Mu&#x364;nſter in Zu&#x364;rich.
+            <lb/>
+            <hi rendition="#aq"><fw place="bottom" type="pageNum">K</fw></hi>
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>
