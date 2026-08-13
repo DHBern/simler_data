@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F62C.2_Ammann_Nähefelser_Fahrt" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F62C.2 Ammann Nähefelser Fahrt</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F62C.2 Ammann Nähefelser Fahrt</title>
+            <idno type="Transkribus">7707853</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4020066/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="4020084"/>
+            <head><hi rendition="#aq"><num>IV.</num></hi></head>
+            <lb/>
+            <hi rendition="#in">D</hi>Je Landtleuth mit der Fauſt; Herꝛ <hi rendition="#aq">Decan</hi> mit dem mund
+            <lb/>
+            Sich hielten ritterlich an ihrem ort und ſtund/
+            <lb/>
+            Sie/ fu&#x364;r die Region: Er/ fu&#x364;r d' Religion:
+            <lb/>
+            Dem Ho&#x364;chſten doch allein gebu&#x364;hrt die Sieges-Cron.
+            <lb/>
+            Zuſchuldigen Ehren/ ſetzte diſes
+            <lb/>
+            Joh. Wilhelm Simler.
+            <lb/>
+            <fw place="bottom" type="catch">Johan-</fw>
+            <lb break="no"/>
+         </div>
+      </body>
+   </text>
+</TEI>

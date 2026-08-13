@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="E61C_Beschreibung_des_Cometens" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">E61C Beschreibung des Cometens</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">E61C Beschreibung des Cometens</title>
+            <idno type="Transkribus">3966904</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11302570/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="11302571"/>
+            Bedeütung der Cometen insgemein:
+            <lb/>
+            ſamt beigefu&#x364;gtem Troſt für die
+            <lb/>
+            frommen.
+            <lb/>
+            Cometen waren iederzeiten
+            <lb/>
+            <unclear>Z</unclear>ornbotten Gottes/ und bedeüten
+            <lb/>
+            Wind/ Theürung/ Peſt/ Krieg<anchor xml:id="a1"/><unclear>/</unclear><note type="annotation" targetEnd="a1"><p>Strich kaum zu erkennen</p></note> Waſſersnoht/
+            <lb/>
+            Erdbidem/ Endrung/ Fürſtentodt.
+            <lb/>
+            Solt aber drum der Fromm verzagen?
+            <lb/>
+            Nein/ ſonder/ mit vertrauen ſagen:
+            <lb/>
+            Wan Erd und Himmel bra&#x364;chen eÿn/
+            <lb/>
+            wird Gott mein Port und Anker ſeÿn.
+            <lb/>
+            
+            <hi rendition="#aq">Pſalm. 46.</hi>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

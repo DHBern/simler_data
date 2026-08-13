@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F69D.1_Bodmer_Violblumen" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F69D+.1 Bodmer Violblumen</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F69D+.1 Bodmer Violblumen</title>
+            <idno type="Transkribus">7707775</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3854506/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3854565" n="56"/>
+            <fw place="top" type="pageNum">56</fw>
+            <lb/>
+            Kling- oder Lobgeticht/
+            <lb/>
+            Uber
+            <lb/>
+            Herꝛen Joh. Jacob Bodmers/
+            <lb/>
+            Zunftmeiſters/ Rahtsverwandten/
+            <lb/>
+            und Truckerherꝛen/
+            <lb/>
+            Wolriechende/ Geiſtliche
+            <lb/>
+            Violblumen.
+            <lb/>
+            <hi rendition="#in">R</hi>Echt/ ſo/ Herꝛ Bodmer/ ſo ko&#x364;nt Jhr zugleich abwarten
+            <lb/>
+            Der Edlen Truckerkunſt/ und dem Regentenſtand/
+            <lb/>
+            Wann Jhr/ was beyden nuzt/ <choice><sic>ergeiffet</sic><corr>ergreiffet</corr></choice> mit der hand/
+            <lb/>
+            Die Tichterfeder iſt gemeint/ im Muſengarten.
+            <lb/>
+            Jhr trachtet im Geſa&#x364;tz/ das Leben recht zuarten:
+            <lb/>
+            Jm Glauben gru&#x364;ndet Jhr: Beveſtnets mit Gebett:
+            <lb/>
+            Und ſucht Erlo&#x364;ſung nur auf Chriſti Marterſtett/
+            <lb/>
+            Der einig außgewezt all' unſre ſu&#x364;ndenſcharten.
+            <lb/>
+            O/ ſcho&#x364;nſte Violblum: Geruchs und Zierden foll!
+            <lb/>
+            Die ihren Herꝛen macht auch ſelber riechen wol/
+            <lb/>
+            So wol im Vatterland/ alß an entlegnen Orten:
+            <lb/>
+            Und/ neben dem was Er getichtet hat nach mehr/
+            <lb/>
+            Dem Chriſtenvolk zu gut/ fu&#x364;rauß zu Gottes Ehr:
+            <lb/>
+            Fu&#x364;hrt Jhn/ wie billich iſt/ den weg zur Ehrenpforten.
+            <lb/>
+            Zu ſchuldigen Ehren
+            <lb/>
+            freywilligſt aufgeſezt
+            <lb/>
+            Von J. W. Simler.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F62C.3_Übung_der_Gottseligkeit" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F62C.3 Übung der Gottseligkeit</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F62C.3 Übung der Gottseligkeit</title>
+            <idno type="Transkribus">10961360</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/22323321/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="22323329"/>
+            Wer in Gottſeligkeit, nach reiner lehr, ſich übet,
+            <lb/>
+            der bawet felſenfeſt, und ſicher vor dem fal:
+            <lb/>
+            Der aber bawt auf ſand, ja grundlos überal,
+            <lb/>
+            der falſchen lehrern folgt, und laſtern ſich ergibet.
+            <lb/>
+            <pb facs="22323330"/>
+            U&#x364;bung der Gottſeligkeit.
+            <lb/>
+            Gottſeligkeit
+            <lb/>
+            iſt zu allen
+            <lb/>
+            dingen
+            <lb/>
+            nutz.
+            <lb/>
+            Zürich
+            <lb/>
+            Beÿ Johann Jacob Bodmer.
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>

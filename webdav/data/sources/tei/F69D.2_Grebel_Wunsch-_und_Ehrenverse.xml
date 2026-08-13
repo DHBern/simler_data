@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F69D.2_Grebel_Wunsch-_und_Ehrenverse" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F69D+.2 Grebel Wunsch- und Ehrenverse</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F69D+.2 Grebel Wunsch- und Ehrenverse</title>
+            <idno type="Transkribus">7707794</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219080/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3219111" n="25"/>
+            <fw place="top" type="pageNum">25</fw>
+            <lb/>
+            <head><hi rendition="#aq"><num>XII.</num></hi></head>
+            <lb/>
+            Wunſch- und Ehrenverſe:
+            <lb/>
+            An Herꝛen Johann Conrad Grebel/
+            <lb/>
+            Vattern des Vatterlandes:
+            <lb/>
+            Uber wolverdienlich; nach eiferigſt/ in allen vier Pfarꝛkirchen/
+            <lb/>
+            vollendetem Gottesdienſte; erlangtes Burgermeiſterthum/
+            <lb/>
+            Donſtags/ den 23. Herbſtm. <hi rendition="#aq">M DC LXIX.</hi>
+            <lb/>
+            <hi rendition="#in">S</hi>O ſeyt/ Herꝛ Grebel/ Jhr/ Herꝛn Hirzeln zugeſellet
+            <lb/>
+            Jm Burgermeiſterthum: der Fu&#x364;nfzigſt wol Erwehlet
+            <lb/>
+            Mit Gott/ durch ſcho&#x364;nes Mehr. O mehr alß wolgethan!
+            <lb/>
+            Hets nur gekoſtet nicht den theuren <hi rendition="#b">Herꝛen Rahn/</hi>
+            <lb/>
+            Den ſo Sanftmu&#x364;htigen/ den ſo Liebreichen Vatter/
+            <lb/>
+            Zwar Alt/ und Lebensſatt. Nun aber Jhr Erſtatter
+            <lb/>
+            Seyt ſeiner Tugenden/ ſo gebt Jhr Hoffnungs-Troſt
+            <lb/>
+            Zunieſſen unter Euch Milch/ Honig/ Oel/ und Moſt/
+            <lb/>
+            Und andre Fridensfru&#x364;cht'; auch ſpa&#x364;ht- und fru&#x364;hen Regen/
+            <lb/>
+            Die jez und immerhin verleyh des Ho&#x364;chſten Segen!
+            <lb/>
+            Gott ſegne diſe Wahl von nun an/ fu&#x364;r und fu&#x364;r/
+            <lb/>
+            Wie deſſen ein Gemerk unla&#x364;ngſt verſpu&#x364;ret wir:
+            <lb/>
+            Und zwar/ wie ſolten wir nicht urchen gutes hoffen
+            <lb/>
+            Von deme/ den die Wahl ſo wu&#x364;rdig hat getroffen/
+            <lb/>
+            Daß Statt und Land ſie preißt/ und deren ſich befreut/
+            <lb/>
+            Weil ſeiner Alten Treu in Jhme ſich verneut.
+            <lb/>
+            Vom Edlen Stamme ru&#x364;hrt was guts im Apfel ſtecket:
+            <lb/>
+            Vom Adler keine Daub ward jemals außgehecket:
+            <lb/>
+            Thierko&#x364;nigs dapfre Zucht von Haſens art iſt fehr:
+            <lb/>
+            Alſo bſizt unſer Herꝛ der Edlen Ahnen Ehr.
+            <lb/>
+            Er ſelb/ o Vatterland/ vor vilen iſt gezieret
+            <lb/>
+            Mit ſcho&#x364;ner Wu&#x364;ſſenſchaft: Und/ was Er ſchon vollfu&#x364;hret/
+            <lb/>
+            Weißt Teutſch- und Welſches Land. Er iſt der Ehre wert:
+            <lb/>
+            Es <choice><corr/><sic>L</sic></choice>eben Hundert Jahr Er und ſein Mitgefehrt!
+            <lb/>
+            Von E. E. Weißheit
+            <lb/>
+            Untertha&#x364;nigſtem Diener
+            <lb/>
+            Joh. Wilhelm Simler/ dem Eltern.
+            <lb/>
+            <fw place="bottom" type="pageNum">D</fw>
+            <lb/>
+            <fw place="bottom" type="catch">So</fw>
+            <lb/>
+         </div>
+      </body>
+   </text>
+</TEI>
