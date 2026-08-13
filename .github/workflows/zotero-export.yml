@@ -1,0 +1,39 @@
+name: Export Zotero Library
+
+on:
+  schedule:
+    - cron: "0 2,14 * * *" # Runs at 02:00 and 14:00 UTC every day
+  workflow_dispatch: # Allows manual triggering of the workflow
+
+permissions: write-all
+
+jobs:
+  export_zotero:
+    runs-on: ubuntu-latest
+    env:
+      ZOTERO_GROUP_ID: "6591765"
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Fetch Zotero library as CSL-JSON and TEI
+        run: python scripts/export-zotero.py
+
+      - name: Configure Git
+        run: |
+          git config user.name "GitHub Actions Bot"
+          git config user.email "actions@github.com"
+
+      - name: Commit and push changes
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git add zotero/csl-json/library.json zotero/tei/library.xml
+          git commit -m "Export Zotero library (CSL-JSON + TEI)" || echo "No changes to commit"
+          git push
