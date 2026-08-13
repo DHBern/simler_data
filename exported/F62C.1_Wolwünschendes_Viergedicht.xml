@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F62C.1_Wolwünschendes_Viergedicht" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F62C.1 Wolwünschendes Viergedicht</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F62C.1 Wolwünschendes Viergedicht</title>
+            <idno type="Transkribus">10034095</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <hi rendition="#aq">ARA ET ARRHA VOTIVA,
+            <lb/>
+            <hi rendition="#i">Viro Reverendo &amp; Clarißimo,</hi>
+            <lb/>
+            DN. GEORGIO MULLERO,
+            <lb/>
+            Eccleſiæ Talvillanæ Paſtori fideliſſimo, Capituli ad lacum
+            <lb/>
+            Tigurinum Decano meritiſſimo;
+            <lb/>
+            SPONSO:
+            <lb/>
+            <hi rendition="#i">Et Lectißimæ Virgini,</hi>
+            <lb/>
+            ELISABETHÆ</hi> Kolerin/
+            <lb/>
+            <hi rendition="#aq"><hi rendition="#i">Viri Reverendi &amp; Clarißimi,</hi>
+            <lb/>
+            DN. JOHANNIS FELICIS COLERI,
+            <lb/>
+            p.m. Eccleſiæ Muranæ ad lacum Gryphæum
+            <lb/>
+            Miniſtri vigilantiſſimi, filiæ;
+            <lb/>
+            SPONSÆ:
+            <lb/>
+            <hi rendition="#i">Ab Amicis, Affinibus, &amp;c. Die Nuptiali, quæ est</hi> 9. <hi rendition="#i">Decembris,</hi> 1662. <hi rendition="#i">conſecrata.</hi></hi>
+            <lb/>
+            
+            Segenwu&#x364;nſchendes Viergeticht.
+            <lb/>
+            <hi rendition="#in">D</hi>Je Kolen ſind begehrt: Herꝛ Mu&#x364;ller wußt es wol/
+            <lb/>
+            drum hat er ſich bey zeit/ verſehn mit eignem Kol:
+            <lb/>
+            Wir wu&#x364;nſchen glu&#x364;k darzu! Wir wu&#x364;nſchen Mo&#x364;llerlein/
+            <lb/>
+            und; weilen die zu weiß; auch halbe Ko&#x364;llerlein!
+            <lb/>
+            Auß ſchuldiger wolmeinung von Johann Wilhelm Simler.
+            <lb/>
+            <pb facs="3"/>
+         </div>
+      </body>
+   </text>
+</TEI>
