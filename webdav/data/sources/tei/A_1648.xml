@@ -144,13 +144,13 @@
             <div n="2" xml:id="ii">
                <titlePage type="main">
                   <lb/>
-                  <docAuthor><hi rendition="#c"><hi rendition="#in">J</hi>ohann <hi rendition="#in"
-                           >W</hi>ilhelm <hi rendition="#in">S</hi>imlers</hi></docAuthor>
+                  <docAuthor rendition="#c"><hi rendition="#in">J</hi>ohann <hi rendition="#in"
+                           >W</hi>ilhelm <hi rendition="#in">S</hi>imlers</docAuthor>
                   <lb/>
                   <docTitle>
-                     <titlePart type="main"><hi rendition="#c">Teutſche<lb/>
+                     <titlePart type="main" rendition="#c">Teutſche<lb/>
                            <hi rendition="#b"><hi rendition="#in"
-                        >G</hi>edichte:</hi></hi></titlePart>
+                        >G</hi>edichte:</hi></titlePart>
                      <lb/>
                      <titlePart type="desc"><hi rendition="#c">darinnen</hi>
                         <lb/>
@@ -185,9 +185,9 @@
             <div n="2" xml:id="iii">
                <div n="3" type="dedication">
                   <list>
-                     <head><hi rendition="#c"><hi rendition="#b">Denen hochgeachten/ woled-</hi><lb
+                     <head rendition="#c"><hi rendition="#b">Denen hochgeachten/ woled-</hi><lb
                               break="no"/>len/ veſten/ frommen/ ehren-noht-<lb break="no"/>veſten/
-                           fürſichtigen/ weyſen<lb/> Herꝛen:</hi></head>
+                           fürſichtigen/ weyſen<lb/> Herꝛen:</head>
                      <lb/>
                      <item>Herꝛn Hans-Jacob Lewen/ des Rahts/ Statt-<lb break="no"/>haltern/ und
                         oberſten Le<anchor xml:id="a1"/>u<note type="annotation" targetEnd="a1">
@@ -219,9 +219,9 @@
                         Altſchützenmeiſtern:</item>
                   </list>
                   <lb/>
-                  <p><hi rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> Günneren;
+                  <p rendition="#right">Meinen allerſeits hochgeehrten Herꝛen<lb/> Günneren;
                         theils auch lieben Herꝛen<lb/> Vetteren/ Schwa&#x364;geren und
-                           Gefa&#x364;t-<lb break="no"/>teren.</hi></p>
+                           Gefa&#x364;t-<lb break="no"/>teren.</p>
                   <lb/>
                </div>
                <lb/>
@@ -375,7 +375,7 @@
                      <lb/>
                      <dateline>Zürich/ den 28. tag Brachm. 1648.</dateline>
                      <lb/>
-                     <signed><hi rendition="#right">Joh. Wilhelm Simler.</hi></signed>
+                     <signed rendition="#right">Joh. Wilhelm Simler.</signed>
                   </closer>
                   <lb/>
                </div>
@@ -389,7 +389,7 @@
                <lb/>
 
                <div n="3" type="preface">
-                  <head><hi rendition="#c #b">An den Leſer.</hi></head>
+                  <head rendition="#c #b">An den Leſer.</head>
                   <lb/>
                   <p><hi rendition="#in">D</hi>Jcht- und Singkunſtliebender Leſer. Wüß/ zum
                      bericht:<lb/> 1. Daß ich meine Gedichte/ oder vil mehr poetiſche Erſt-<lb
@@ -440,10 +440,10 @@
             <lb/>
 
             <div n="2" type="letter" xml:id="iv">
-               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac
+               <head rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac
                            Lite-<lb break="no"/> ratißimi Viri,</hi><lb/>
                      <hi rendition="#g">Dn. DANIELIS RHAGORII,</hi><lb/> Ducentum viri Bernenſis,
-                     bis præ-<lb break="no"/>fecti, Poëtæ coronati.</hi></head>
+                     bis præ-<lb break="no"/>fecti, Poëtæ coronati.</head>
                <lb/>
                <p><hi rendition="#aq"><hi rendition="#in">C</hi>Ommunicavit mihi vir
                      præſtantiſſimusmDn.<lb/> Veiraſſius varia tua Scripta Poëtica, quæ<lb/> cum
@@ -457,11 +457,11 @@
             <lb/>
 
             <div n="2" type="letter" xml:id="v">
-               <head><hi rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola V. rev. &amp;
+               <head rendition="#aq #c #b"><hi rendition="#i">Ex Epiſtola V. rev. &amp;
                         doctißimi</hi><lb/>
                      <hi rendition="#g"><hi rendition="#k">DN.</hi> GEORGII MULLERI,</hi><lb/>
                      Eccleſiæ Talvillanæ ad lacum Tig. Paſtoris<lb/> vigilantiſſimi; Poëtæ
-                     acutiſſimi.</hi></head>
+                     acutiſſimi.</head>
                <lb/>
                <p><hi rendition="#aq"><hi rendition="#in">V</hi><hi rendition="#i">Iſum ita fuit
                         humanitati tuæ, ut iſtas ſacrarum Odarum<lb/> epitomas lectioni meæ, non
@@ -513,9 +513,9 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="A.i">
-               <head><hi rendition="#aq #c #b">II.<lb/>
+               <head rendition="#aq #c #b">II.<lb/>
                      <hi rendition="#i">Summa totius Operis Carmine Hexa-<lb break="no"/>metro
-                        expreſſa: ubi ipſe Liber loquens<lb/> introducitur.</hi></hi></head>
+                        expreſſa: ubi ipſe Liber loquens<lb/> introducitur.</hi></head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">P</hi>Luribus lſaides cantor, rex,
@@ -577,8 +577,8 @@
                </lg>
                <lb/>
                <closer>
-                  <signed><hi rendition="#aq #right"><hi rendition="#k">JOH. CASPARUS SUIZERUS</hi>
-                        <abbr>f.</abbr></hi></signed>
+                  <signed rendition="#aq #right"><hi rendition="#k">JOH. CASPARUS SUIZERUS</hi>
+                        <abbr>f.</abbr></signed>
                </closer>
                <lb/>
             </div>
@@ -587,10 +587,10 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xvii">
-               <head><hi rendition="#aq #c #b">III.<lb/> In laudem Autoris, &amp;c.</hi></head>
+               <head rendition="#aq #c #b">III.<lb/> In laudem Autoris, &amp;c.</head>
                <lb/>
                <div n="3">
-                  <head><hi rendition="#aq #b #c">1.</hi></head>
+                  <head rendition="#aq #b #c">1.</head>
                   <lb/>
                   <lg type="poem">
                      <l><hi rendition="#aq"><hi rendition="#in">A</hi><hi rendition="#i">Ut prodeſſe
@@ -614,7 +614,7 @@
                <pb facs="4017128"/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c #b">2.</hi></head>
+                  <head rendition="#aq #c #b">2.</head>
                   <lb/>
                   <lg type="poem">
                      <l><hi rendition="#aq #i">Utile quisquis amas, ac audis ſuave
@@ -645,9 +645,9 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xviii">
-               <head><hi rendition="#aq #c #b">IV.<lb/>
+               <head rendition="#aq #c #b">IV.<lb/>
                      <hi rendition="#i">Ad Reverendum Doctißimúmq<abbr>ʒ</abbr><lb/> Virum</hi><lb/>
-                     D. GUILHELMUM SIMLERUM,<lb/> Libri Adornatorem.</hi></head>
+                     D. GUILHELMUM SIMLERUM,<lb/> Libri Adornatorem.</head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#aq"><hi rendition="#in">N</hi>îl faciunt nugæ; nec inania
@@ -688,11 +688,11 @@
             <pb facs="4017129"/>
 
             <div n="2" type="poem" xml:id="xix">
-               <head><hi rendition="#c #b"><hi rendition="#aq">V.</hi><lb/> Zu&#x366; ehren und
+               <head rendition="#c #b"><hi rendition="#aq">V.</hi><lb/> Zu&#x366; ehren und
                      lobwürdigem ru&#x366;hm<lb/> dem hochgelehrten Herꝛen<lb/> Johann Wilhelm
                      Simler/<lb/> Zuchtherꝛen im <hi rendition="#aq #i">Collegio Parthenico</hi>
                      zu&#x366;<lb/> Zürich/ über ſeine außgangne Poetiſche<lb/> Getichte und Geſa&#x364;nge.<lb/>
-                     <hi rendition="#aq #g">SONNET.</hi></hi></head>
+                     <hi rendition="#aq #g">SONNET.</hi></head>
                <lb/>
                <lg type="poem">
                   <lg n="1">
@@ -753,11 +753,11 @@
             <pb facs="4017130"/>
 
             <div n="2" type="poem" xml:id="xi">
-               <head><hi rendition="#c #b"><hi rendition="#aq">VI.<lb/> U</hi>ber Herꝛn Dichters
+               <head rendition="#c #b"><hi rendition="#aq">VI.<lb/> U</hi>ber Herꝛn Dichters
                      namen<lb/> Bu&#x366;chſtabwa&#x364;chſel<lb/> JOHANN WJLHELM SJMLER/<lb/> W/ in
                         <hi rendition="#aq">U</hi>/ und V/ aufgelo&#x364;ſet:<lb/> Nu mahl/ <hi
                         rendition="#aq">iô!</hi>/ vil reins mehl;<lb/> und<lb/>
-                  Lobſpruch.</hi></head>
+                  Lobſpruch.</head>
                <lb/>
                <!-- NE: Positionen sind noch zu codieren -->
                <lg type="poem">
@@ -797,8 +797,8 @@
                </lg>
                <lb/>
                <closer>
-                  <signed><hi rendition="#right">Geo&#x364;rg Müller Pfarꝛer zu&#x366;
-                        Tahlweil/<lb/> am Zürichſee.</hi>
+                  <signed rendition="#right">Geo&#x364;rg Müller Pfarꝛer zu&#x366;
+                        Tahlweil/<lb/> am Zürichſee.
                   </signed>
                </closer>
             </div>
@@ -809,7 +809,7 @@
             <pb facs="4017131"/>
 
             <div n="2" type="poem" xml:id="xiv">
-               <head><hi rendition="#aq #c #b">VII.</hi></head>
+               <head rendition="#aq #c #b">VII.</head>
                <lb/>
                <lg type="poem">
                   <l xml:id="l3a" next="#l3b"><hi rendition="#in">O</hi>B gleich der <hi
@@ -991,7 +991,7 @@
                </lg>
                <lb/>
                <closer>
-                  <signed><hi rendition="#right">Ehrenhold Falk von Traubenberg.</hi></signed>
+                  <signed rendition="#right">Ehrenhold Falk von Traubenberg.</signed>
                </closer>
             </div>
             <lb/>
@@ -1000,7 +1000,7 @@
             <lb/>
 
             <div n="2" type="poem" xml:id="xvi">
-               <head><hi rendition="#aq #c #b">VIII.</hi></head>
+               <head rendition="#aq #c #b">VIII.</head>
                <lb/>
                <lg type="poem">
                   <lg n="1">
@@ -1042,7 +1042,7 @@
                </lg>
                <lb/>
                <closer>
-                  <signed><hi rendition="#right">Johann Jakob Bodmer.</hi></signed>
+                  <signed rendition="#right">Johann Jakob Bodmer.</signed>
                </closer>
             </div>
             <lb/>
@@ -1059,10 +1059,10 @@
          <pb facs="4017134" n="[1]"/>
 
          <div n="1">
-            <head><hi rendition="#c #b">Vierverſe <lb/> über die Pſalmen <hi rendition="#in"
+            <head rendition="#c #b">Vierverſe <lb/> über die Pſalmen <hi rendition="#in"
                   >D</hi>avids/ <lb/> darinnen der Jnhalt eines jeden <lb/> Pſalms hauptbegrifflich
                   für- <lb break="no"/> geſtellt wird: <lb/> Abgetheilt in 5. bu&#x364;cher und ſo
-                  vil <lb/> geſangsweiſen.</hi></head>
+                  vil <lb/> geſangsweiſen.</head>
             <lb/>
 
             <pb facs="4017135" n="2"/>
@@ -1076,7 +1076,7 @@
 
             <div type="music">
                <div>
-                  <head><hi rendition="#aq #b #c">I. Cantus.</hi></head>
+                  <head rendition="#aq #b #c">I. Cantus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -1117,7 +1117,7 @@
                <lb/>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Altus.</hi></head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -1134,7 +1134,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -1162,7 +1162,7 @@
               
                 
                <div n="3">
-                  <head><hi rendition="#c #b">Jnhalt des erſten<lb/> Pſalms.</hi></head>
+                  <head rendition="#c #b">Jnhalt des erſten<lb/> Pſalms.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l11a" next="#l11b"><hi rendition="#in">W</hi>Er ſcha&#x364;lk und
@@ -1181,7 +1181,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">II.</hi></head>
+                  <head rendition="#aq #c">II.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die gwaltigen umſonſt ſich wider Chriſtum lehnen:</l>
@@ -1197,7 +1197,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">III.</hi></head>
+                  <head rendition="#aq #c">III.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l12a" next="#l12b">Der David ſetzt auff Gott ſein hoffnung vnd
@@ -1216,7 +1216,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">IV.</hi></head>
+                  <head rendition="#aq #c">IV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die fürſten Jſraels begeren zu&#x366; zerſto&#x364;ren</l>
@@ -1235,7 +1235,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">V.</hi></head>
+                  <head rendition="#aq #c">V.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die ſchmeichelra&#x364;hte Sauls des Davids elend mehren</l>
@@ -1263,7 +1263,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">VI.</hi></head>
+                  <head rendition="#aq #c">VI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Alß David krank und ſchwach zu&#x366; ſeel und leib gelegen</l>
@@ -1280,7 +1280,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">VII.</hi></head>
+                  <head rendition="#aq #c">VII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David von dem Saul der aufru&#x366;hr falſch gezigen/</l>
@@ -1298,7 +1298,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">VIII.</hi></head>
+                  <head rendition="#aq #c">VIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Dein hoher nam&#x342;/ o Herꝛ/ iſt ho&#x364;chlich zu&#x366; erheben/</l>
@@ -1314,7 +1314,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">IX.</hi></head>
+                  <head rendition="#aq #c">IX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der dankbar David hier des Herꝛen urtheil preiſet</l>
@@ -1329,7 +1329,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">X.</hi></head>
+                  <head rendition="#aq #c">X.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David ſich erklagt/ im namen aller armen/</l>
@@ -1359,7 +1359,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XI.</hi></head>
+                  <head rendition="#aq #c">XI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David hertzlich klagt/ daß ſeine glaubensgnoſſen</l>
@@ -1374,7 +1374,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XII.</hi></head>
+                  <head rendition="#aq #c">XII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Es bittet David hier für ſich und alle frommen/</l>
@@ -1389,7 +1389,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XIII.</hi></head>
+                  <head rendition="#aq #c">XIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der hülffloß David meint/ auch Gott hab ihn verlaſſen/</l>
@@ -1405,7 +1405,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XIV.</hi></head>
+                  <head rendition="#aq #c">XIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Saul und ſein hofgeſind in foller boßheit ſchweben/</l>
@@ -1420,7 +1420,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XV.</hi></head>
+                  <head rendition="#aq #c">XV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wer ewig wohnen wil in Gottes hoher hütten/</l>
@@ -1436,7 +1436,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XVI.</hi></head>
+                  <head rendition="#aq #c">XVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Ein gulden kleinod iſt was David hier gedichtet/</l>
@@ -1462,7 +1462,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XVII.</hi></head>
+                  <head rendition="#aq #c">XVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Weil David von dem Saul nicht mag verho&#x364;r erlangen/</l>
@@ -1478,7 +1478,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XVIII.</hi></head>
+                  <head rendition="#aq #c">XVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Ein herꝛlich lobgeſang ſtellt David vorzu&#x366;ſingen/</l>
@@ -1493,7 +1493,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XIX.</hi></head>
+                  <head rendition="#aq #c">XIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die himmel und das gſtirn dein ehr/ o Herꝛ/ verkünden/</l>
@@ -1512,7 +1512,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XX.</hi></head>
+                  <head rendition="#aq #c">XX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David ſich zu&#x366; Gott in kriegsgefahren wendet/</l>
@@ -1527,7 +1527,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXI.</hi></head>
+                  <head rendition="#aq #c">XXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l16a" next="#l16b">Was David jüngſt begert/ das hat ihm Gott
@@ -1547,7 +1547,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXII.</hi></head>
+                  <head rendition="#aq #c">XXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David/ ein prophet und vorbild unſers Herꝛen/</l>
@@ -1574,7 +1574,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXIII.</hi></head>
+                  <head rendition="#aq #c">XXIII.</head>
                   <l xml:id="l18a" prev="#l18b">(gleiche/</l>
                   <lb/>
                   <lg type="poem">
@@ -1591,7 +1591,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXIV.</hi></head>
+                  <head rendition="#aq #c">XXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Das gantze weltgeba&#x364;w des Herꝛen iſt und bleibet/</l>
@@ -1606,7 +1606,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXV.</hi></head>
+                  <head rendition="#aq #c">XXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu&#x366; dir/ o Herꝛ/ mein hertz erheb ich von der erden/</l>
@@ -1621,7 +1621,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXVI.</hi></head>
+                  <head rendition="#aq #c">XXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch wird verfolgt/ o Herꝛ/ und mag kein recht erlangen</l>
@@ -1644,7 +1644,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXVII.</hi></head>
+                  <head rendition="#aq #c">XXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ mein liecht und heil/ und meines lebens ſta&#x364;rke</l>
@@ -1669,7 +1669,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXVIII.</hi></head>
+                  <head rendition="#aq #c">XXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch ſchrey/ o Herꝛ/ zu&#x366; dir: verſtopff du nicht die ohren/</l>
@@ -1686,7 +1686,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXIX.</hi></head>
+                  <head rendition="#aq #c">XXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jhr/ die ihr eüch bedunkt gewaltig ſeyn auff erden/</l>
@@ -1704,7 +1704,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXX.</hi></head>
+                  <head rendition="#aq #c">XXX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Nach eyngenom&#x342;ner ſtatt hat David eyngeweyhet</l>
@@ -1719,7 +1719,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXI.</hi></head>
+                  <head rendition="#aq #c">XXXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David in der noht zu&#x366; Gott dem Herꝛen ſchreyet/</l>
@@ -1734,7 +1734,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXII.</hi></head>
+                  <head rendition="#aq #c">XXXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Recht ſelig iſt der menſch/ dem alle ſeine ſünden/</l>
@@ -1749,7 +1749,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXIII.</hi></head>
+                  <head rendition="#aq #c">XXXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der from&#x342; erfrewe ſich im Herꝛen mit lobſingen/</l>
@@ -1781,7 +1781,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXIV.</hi></head>
+                  <head rendition="#aq #c">XXXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David danket Gott/ dieweil er iſt entgangen</l>
@@ -1797,7 +1797,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXV.</hi></head>
+                  <head rendition="#aq #c">XXXV.</head>
                   <l xml:id="l23b" prev="#l23a">(gen.</l>
                   <lb/>
                   <lg type="poem">
@@ -1814,7 +1814,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXVI.</hi></head>
+                  <head rendition="#aq #c">XXXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Auß gottsvergeſſenheit entſpringt ein gottloß leben/</l>
@@ -1835,7 +1835,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXVII.</hi></head>
+                  <head rendition="#aq #c">XXXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Erzo&#x364;rn dich nicht/ wann gleich die bo&#x364;ſen oben ſchweben:</l>
@@ -1850,7 +1850,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXVIII.</hi></head>
+                  <head rendition="#aq #c">XXXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Ach lieber Herꝛ/ nicht ſtraff im zoren meine ſünden:</l>
@@ -1875,7 +1875,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XXXIX.</hi></head>
+                  <head rendition="#aq #c">XXXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wiewol ich krankner mir gedult hab fürgenommen/</l>
@@ -1894,7 +1894,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XL.</hi></head>
+                  <head rendition="#aq #c">XL.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l25a" next="#l25b">Jn krankheit haſt du mich/ mein Herꝛ und Gott/
@@ -1912,7 +1912,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLI.</hi></head>
+                  <head rendition="#aq #c">XLI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wer mit den kranknen wird beſcheidenlich verfahren/</l>
@@ -1933,8 +1933,8 @@
                </div>
                <lb/>
                <div>
-                  <p><hi rendition="#smaller #c">Ende des erſten bu&#x366;chs
-                     der<lb/>Pſalmen.</hi></p>
+                  <p rendition="#smaller #c">Ende des erſten bu&#x366;chs
+                     der<lb/>Pſalmen.</p>
                </div>
             </div>
 
@@ -1949,7 +1949,7 @@
                
                <div type="music">
                <div>
-                  <head><hi rendition="#aq #b #c">II. Cantus.</hi></head>
+                  <head rendition="#aq #b #c">II. Cantus.</head>
                   <lb/>
                   <lg>
             <figure type="notatedMusic"/>
@@ -1965,7 +1965,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+                  <head rendition="#aq #b #c">Tenor.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -1988,7 +1988,7 @@
                <lb/>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Altus.</hi></head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -2004,7 +2004,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -2029,8 +2029,8 @@
             
 
                <div n="3">
-                  <head><hi rendition="#b #c">Jnhalt des <hi rendition="#aq">XLII.</hi>
-                        Pſalmens.</hi></head>
+                  <head rendition="#b #c">Jnhalt des <hi rendition="#aq">XLII.</hi>
+                        Pſalmens.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et"><hi rendition="#in">G</hi>Leich wie der durſtig hirſch/ in
@@ -2047,7 +2047,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLIII.</hi></head>
+                  <head rendition="#aq #c">XLIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Richter aller welt/ nim&#x342; meine ſach auff dich/</l>
@@ -2062,7 +2062,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLIV.</hi></head>
+                  <head rendition="#aq #c">XLIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Du haſt/ o Herꝛ; wie uns die va&#x364;tter angezeigt;</l>
@@ -2077,7 +2077,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLV.</hi></head>
+                  <head rendition="#aq #c">XLV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Von Chriſto/ der die kirch ihm ewig hat vertrawt/</l>
@@ -2093,7 +2093,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLVI.</hi></head>
+                  <head rendition="#aq #c">XLVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Es mag/ ſo Gott mit uns/ uns nichts zu&#x366;wider ſeyn/</l>
@@ -2108,7 +2108,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLVII.</hi></head>
+                  <head rendition="#aq #c">XLVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Auf/ auf/ ihr vo&#x364;lker auf! empfahet mit geſang</l>
@@ -2136,7 +2136,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLVIII.</hi></head>
+                  <head rendition="#aq #c">XLVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Die ſcho&#x364;ne Gottes ſtatt/ des groſſen Ko&#x364;nigs
@@ -2154,7 +2154,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLIX.</hi></head>
+                  <head rendition="#aq #c">XLIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Dem vieh geleichet ſich wer ſeine hoffnung ſetzt</l>
@@ -2169,7 +2169,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">L.</hi></head>
+                  <head rendition="#aq #c">L.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der Herꝛ der herꝛlichkeit beru&#x364;fft für ſein
@@ -2188,7 +2188,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LI.</hi></head>
+                  <head rendition="#aq #c">LI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Gott/ nach deiner gnad/ mir ſünder gna&#x364;dig ſey:</l>
@@ -2204,7 +2204,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LII.</hi></head>
+                  <head rendition="#aq #c">LII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Was ru&#x364;hmſt du/ Doeg/ dich/ alß einer heldentaht</l>
@@ -2231,7 +2231,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LIII.</hi></head>
+                  <head rendition="#aq #c">LIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der David ab dem Saul und ſeinen ra&#x364;hten klagt</l>
@@ -2246,7 +2246,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LIV.</hi></head>
+                  <head rendition="#aq #c">LIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Auß der Ziphiter hand/ o Gott/ wollſt retten mich/</l>
@@ -2276,7 +2276,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LVI.</hi></head>
+                  <head rendition="#aq #c">LVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Gleich einer ſtummen daub mu&#x366;ß unbill ſchluken
@@ -2293,7 +2293,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LVII.</hi></head>
+                  <head rendition="#aq #c">LVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der David abermal/ auß ſteiffer zu&#x366;verſicht/</l>
@@ -2308,7 +2308,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LVIII.</hi></head>
+                  <head rendition="#aq #c">LVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Jhr ungerechte Ra&#x364;ht/ urtheilet ihr auch recht/</l>
@@ -2331,7 +2331,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LIX.</hi></head>
+                  <head rendition="#aq #c">LIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l31a" next="#l31b" rendition="#et">Von denen knechten Sauls/ o Gott
@@ -2349,7 +2349,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LX.</hi></head>
+                  <head rendition="#aq #c">LX.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Gott/ du hatteſt uns verſtoſſen vor der zeit:</l>
@@ -2364,7 +2364,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXI.</hi></head>
+                  <head rendition="#aq #c">LXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Es bittet Jſrael/ von David ſo gelehrt/</l>
@@ -2379,7 +2379,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXII.</hi></head>
+                  <head rendition="#aq #c">LXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Es wartet meine ſeel/ ſtillſchweigend nur auf Gott/</l>
@@ -2394,7 +2394,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXIII.</hi></head>
+                  <head rendition="#aq #c">LXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Jn diſer meiner flucht/ und in ſo dürꝛem land/</l>
@@ -2409,7 +2409,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXIV.</hi></head>
+                  <head rendition="#aq #c">LXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O lieber Gott/ behu&#x364;t vor falſchen zungen mich/</l>
@@ -2436,7 +2436,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXV.</hi></head>
+                  <head rendition="#aq #c">LXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der David danket Gott/ im namen ſeiner gmein/</l>
@@ -2451,7 +2451,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXVI.</hi></head>
+                  <head rendition="#aq #c">LXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der David alles volk zu&#x366; Gottes lob ermahnt/</l>
@@ -2466,7 +2466,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXVII.</hi></head>
+                  <head rendition="#aq #c">LXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Gott/ laß leuchten uns dein gnadenangeſicht/</l>
@@ -2482,7 +2482,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXVIII.</hi></head>
+                  <head rendition="#aq #c">LXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Mit einem lobgeſang/ von David angeſtim&#x342;t</l>
@@ -2498,7 +2498,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXIX.</hi></head>
+                  <head rendition="#aq #c">LXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der David/ und in ihm Meſſias ſich erklagt</l>
@@ -2523,7 +2523,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXX.</hi></head>
+                  <head rendition="#aq #c">LXX.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Gott/ kom&#x342; bald zu&#x366; hülff in meiner krankheit
@@ -2542,7 +2542,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXI.</hi></head>
+                  <head rendition="#aq #c">LXXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Mein felß und veſte burg/ mein hort und
@@ -2561,7 +2561,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXII.</hi></head>
+                  <head rendition="#aq #c">LXXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Gib dein gericht/ o Gott/ dem ko&#x364;nig/ meinem ſohn/</l>
@@ -2580,8 +2580,8 @@
                </div>
                <lb/>
                <div>
-                  <p><hi rendition="#smaller #c">Ende des andern bu&#x366;chs<lb/>der
-                     Pſalmen.</hi></p>
+                  <p rendition="#smaller #c">Ende des andern bu&#x366;chs<lb/>der
+                     Pſalmen.</p>
                </div>
             </div>
 
@@ -2599,7 +2599,7 @@
                
                <div type="music">
                   <div>
-                  <head><hi rendition="#aq #b #c">III. Cantus.</hi></head>
+                  <head rendition="#aq #b #c">III. Cantus.</head>
                   <lb/>
                   <lg>
             <figure type="notatedMusic"/>
@@ -2615,7 +2615,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+                  <head rendition="#aq #b #c">Tenor.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -2638,7 +2638,7 @@
                <lb/>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Altus.</hi></head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -2654,7 +2654,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -2684,8 +2684,8 @@
 
                 
                <div n="3">
-                  <head><hi rendition="#c #b">Jnhalt des <hi rendition="#aq">LXXIII.</hi>
-                        Pſalmens.</hi></head>
+                  <head rendition="#c #b">Jnhalt des <hi rendition="#aq">LXXIII.</hi>
+                        Pſalmens.</head>
                   <lb/>
                   <lg type="poem">
                      <l><hi rendition="#in">J</hi>Ch armer ha&#x364;tte ſchier ein a&#x364;rgernuß
@@ -2701,7 +2701,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXIV.</hi></head>
+                  <head rendition="#aq #c">LXXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Gott/ was wilt du doch/ ſo gar erzo&#x364;rnt/ verderben</l>
@@ -2717,7 +2717,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXV.</hi></head>
+                  <head rendition="#aq #c">LXXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David mit dem volk des Herꝛen namen preiſet/</l>
@@ -2733,7 +2733,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXVI.</hi></head>
+                  <head rendition="#aq #c">LXXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jn Juda iſt der Herꝛ bekant durch ſeinen tempel/</l>
@@ -2749,7 +2749,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXVII.</hi></head>
+                  <head rendition="#aq #c">LXXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Ein hochbetru&#x364;bte ſeel/ die mit verzweiflung ringet/</l>
@@ -2776,7 +2776,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXVIII.</hi></head>
+                  <head rendition="#aq #c">LXXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der dichter uns erzellt die wunder und gu&#x366;tthaten/</l>
@@ -2791,7 +2791,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXIX.</hi></head>
+                  <head rendition="#aq #c">LXXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Herꝛ/ der Heiden ſchar den tempel hat entehret/</l>
@@ -2808,7 +2808,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXX.</hi></head>
+                  <head rendition="#aq #c">LXXX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O du Hirt deines volks/ erwach uns zu&#x366; erho&#x364;ren!</l>
@@ -2823,7 +2823,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXI.</hi></head>
+                  <head rendition="#aq #c">LXXXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Lobſinget alle Gott/ und laßt die ſeiten klingen</l>
@@ -2841,7 +2841,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXII.</hi></head>
+                  <head rendition="#aq #c">LXXXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der oberſt Richter klagt ab ungerechtem richten</l>
@@ -2865,7 +2865,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXIII.</hi></head>
+                  <head rendition="#aq #c">LXXXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die Jſraeler ſich/ zu&#x366; Ezechias tagen/</l>
@@ -2882,7 +2882,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXIV.</hi></head>
+                  <head rendition="#aq #c">LXXXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wie lieblich doch/ o Herꝛ/ ſeind deines hauſes hütten?</l>
@@ -2897,7 +2897,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXV.</hi></head>
+                  <head rendition="#aq #c">LXXXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Herꝛ/ wir bitten um verzeihung unſrer ſünden/</l>
@@ -2913,7 +2913,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXVI.</hi></head>
+                  <head rendition="#aq #c">LXXXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l34a" next="#l34b">Herꝛ/ neig dein ohr zu&#x366; mir/ und laß mich
@@ -2932,7 +2932,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXVII.</hi></head>
+                  <head rendition="#aq #c">LXXXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Das erſterlo&#x364;ßte volk den newen tempel preiſet/</l>
@@ -2957,7 +2957,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXVIII.</hi></head>
+                  <head rendition="#aq #c">LXXXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu&#x366; dir/ o Herꝛ mein heil/ ich unaufho&#x364;rlich ſchreye/</l>
@@ -2972,7 +2972,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXXXIX.</hi></head>
+                  <head rendition="#aq #c">LXXXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l35a" next="#l35b">Von Gottes gnad und gu&#x364;t/ und
@@ -2993,8 +2993,8 @@
                </div>
                <lb/>
                <div>
-                  <p><hi rendition="#smaller #c">Ende des dritten bu&#x366;chs
-                     der<lb/>Pſalmen.</hi></p>
+                  <p rendition="#smaller #c">Ende des dritten bu&#x366;chs
+                     der<lb/>Pſalmen.</p>
                </div>
             </div>
 
@@ -3009,7 +3009,7 @@
             <div n="2" xml:id="n4">
                <div type="music">
                <div>
-                  <head><hi rendition="#aq #b #c">IV. Cantus.</hi></head>
+                  <head rendition="#aq #b #c">IV. Cantus.</head>
                   <lb/>
                   <lg>
             <figure type="notatedMusic"/>
@@ -3025,7 +3025,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+                  <head rendition="#aq #b #c">Tenor.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3052,7 +3052,7 @@
                <lb/>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Altus.</hi></head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3070,7 +3070,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3099,8 +3099,8 @@
 
 
                <div n="3">
-                  <head><hi rendition="#c #b">Jnhalt des <hi rendition="#aq">XC.</hi>
-                     Pſalmens.</hi></head>
+                  <head rendition="#c #b">Jnhalt des <hi rendition="#aq">XC.</hi>
+                     Pſalmens.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et"><hi rendition="#in">O</hi> Herꝛ/ o unſer Gott und
@@ -3116,7 +3116,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCI.</hi></head>
+                  <head rendition="#aq #c">XCI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Wer ihm zu&#x366; ſeinem ſchutz den Ho&#x364;chſten
@@ -3135,7 +3135,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCII.</hi></head>
+                  <head rendition="#aq #c">XCII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Das volk ermuntert ſich zu&#x366; einem lobgeſang/</l>
@@ -3151,7 +3151,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCIII.</hi></head>
+                  <head rendition="#aq #c">XCIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l38a" next="#l38b" rendition="#et">Die gla&#x364;ubig Judenſchafft
@@ -3170,7 +3170,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCIV.</hi></head>
+                  <head rendition="#aq #c">XCIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Gott der rache/ kom&#x342;: kom&#x342; doch
@@ -3196,7 +3196,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCV.</hi></head>
+                  <head rendition="#aq #c">XCV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Herbey/ o Jſrael/ und fro&#x364;lich dich erweiß/</l>
@@ -3212,7 +3212,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCVI.</hi></head>
+                  <head rendition="#aq #c">XCVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Beſingt mit newem lied des Heilands ſig und reych/</l>
@@ -3228,7 +3228,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCVII.</hi></head>
+                  <head rendition="#aq #c">XCVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Meſſi<hi rendition="#aq">æ</hi> ko&#x364;nigreych/ gericht
@@ -3245,7 +3245,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCVIII.</hi></head>
+                  <head rendition="#aq #c">XCVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Dem wundertha&#x364;tigen ein newes liedlein ſingt/</l>
@@ -3261,7 +3261,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XCIX.</hi></head>
+                  <head rendition="#aq #c">XCIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Der Herꝛ ein Ko&#x364;nig iſt/ der um und um regiert/</l>
@@ -3287,7 +3287,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">C.</hi></head>
+                  <head rendition="#aq #c">C.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Jhr vo&#x364;lker aller welt/ beſu&#x366;chet Gottes
@@ -3303,7 +3303,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CI.</hi></head>
+                  <head rendition="#aq #c">CI.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l39a" next="#l39b" rendition="#et">Von Gottes gnad und recht ſol
@@ -3321,7 +3321,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CII.</hi></head>
+                  <head rendition="#aq #c">CII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Es bittet Jſrael/ in ho&#x364;chſtbetru&#x364;btem
@@ -3337,7 +3337,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CIII.</hi></head>
+                  <head rendition="#aq #c">CIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O ſeel/ lob ewig den/ der deinem leib und dir</l>
@@ -3353,7 +3353,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CIV.</hi></head>
+                  <head rendition="#aq #c">CIV.</head>
                   <l xml:id="l40b" prev="#l40a">(den.</l>
                   <lb/>
                   <lg type="poem">
@@ -3378,7 +3378,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CV.</hi></head>
+                  <head rendition="#aq #c">CV.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O Jſrael/ erkenn/ bekenn und mach uns kund</l>
@@ -3396,7 +3396,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CVI.</hi></head>
+                  <head rendition="#aq #c">CVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Gelobet ſey der Herꝛ! So ſprich/ o Jſrael:</l>
@@ -3414,8 +3414,8 @@
                </div>
                <lb/>
                <div>
-                  <p><hi rendition="#c #smaller">Ende des vierten bu&#x366;chs<lb/>der
-                     Pſalmen.</hi></p>
+                  <p rendition="#c #smaller">Ende des vierten bu&#x366;chs<lb/>der
+                     Pſalmen.</p>
                </div>
             </div>
 
@@ -3430,7 +3430,7 @@
                
                <div type="music">
                <div>
-                  <head><hi rendition="#aq #b #c">V. Cantus.</hi></head>
+                  <head rendition="#aq #b #c">V. Cantus.</head>
                   <lb/>
                   <lg>
             <figure type="notatedMusic"/>
@@ -3446,7 +3446,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+                  <head rendition="#aq #b #c">Tenor.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3469,7 +3469,7 @@
                <lb/>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Altus.</hi></head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3485,7 +3485,7 @@
                </div>
 
                <div>
-                  <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg>
                      <figure type="notatedMusic"/>
@@ -3514,8 +3514,8 @@
 
 
                <div n="3">
-                  <head><hi rendition="#c #b">Jnhalt des <hi rendition="#aq">CVII.</hi>
-                        Pſalmens.</hi></head>
+                  <head rendition="#c #b">Jnhalt des <hi rendition="#aq">CVII.</hi>
+                        Pſalmens.</head>
                   <lb/>
                   <lg type="poem">
                      <l><hi rendition="#in">E</hi>Jn jeder ſeye doch zu&#x366; deſſen lob
@@ -3532,7 +3532,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CVIII.</hi></head>
+                  <head rendition="#aq #c">CVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Mein hertz/ der David ſpricht/ iſt fertig lob zu&#x366; ſingen/</l>
@@ -3547,7 +3547,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CIX.</hi></head>
+                  <head rendition="#aq #c">CIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David/ und in ihm ſein gegenbild erklagen</l>
@@ -3562,7 +3562,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CX.</hi></head>
+                  <head rendition="#aq #c">CX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Meſſias/ Gott und menſch/ vom Vatter hat empfangen</l>
@@ -3577,7 +3577,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXI.</hi></head>
+                  <head rendition="#aq #c">CXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David Gottes bund/ gebott und thaten preiſet/</l>
@@ -3592,7 +3592,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXII.</hi></head>
+                  <head rendition="#aq #c">CXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Ein from&#x342;-freygeber menſch für diß und jenes leben</l>
@@ -3617,7 +3617,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXIII.</hi></head>
+                  <head rendition="#aq #c">CXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jhr Gottesknechte lobt des hohen Gottes namen:</l>
@@ -3632,7 +3632,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXIV.</hi></head>
+                  <head rendition="#aq #c">CXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Es danket Jſrael/ daß auß Egyptenlande</l>
@@ -3647,7 +3647,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXV.</hi></head>
+                  <head rendition="#aq #c">CXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Nicht unſer ehr/ o Herꝛ/ die deine wolleſt retten</l>
@@ -3662,7 +3662,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXVI.</hi></head>
+                  <head rendition="#aq #c">CXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Es iſt mir lieb und gnu&#x366;g/ daß Gott erho&#x364;rt mein flehen/</l>
@@ -3677,7 +3677,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXVII.</hi></head>
+                  <head rendition="#aq #c">CXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der ko&#x364;niglich Prophet vermahnet alle Heiden/</l>
@@ -3704,7 +3704,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXVIII.</hi></head>
+                  <head rendition="#aq #c">CXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David jeden ſtand vermahnet Gott zu&#x366; preiſen/</l>
@@ -3719,7 +3719,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXIX.</hi></head>
+                  <head rendition="#aq #c">CXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der allerla&#x364;ngſte Pſalm; des Pſalters ſum&#x342; zu&#x366; nennen;</l>
@@ -3734,7 +3734,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXX.</hi></head>
+                  <head rendition="#aq #c">CXX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Herꝛ/ mein alter troſt/ von des verlümders pfeilen/</l>
@@ -3750,7 +3750,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXI.</hi></head>
+                  <head rendition="#aq #c">CXXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch finde nirgend hülff alß nur allein beym Herꝛen</l>
@@ -3768,7 +3768,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXII.</hi></head>
+                  <head rendition="#aq #c">CXXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der David frewet ſich des Gottesdienſts im tempel/</l>
@@ -3794,7 +3794,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXIII.</hi></head>
+                  <head rendition="#aq #c">CXXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l44a" next="#l44b">Wie knecht und ma&#x364;gde nur auff herꝛn und
@@ -3813,7 +3813,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXIV.</hi></head>
+                  <head rendition="#aq #c">CXXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Jſrael/ erkenn die wunderhülff des Herꝛen/</l>
@@ -3829,7 +3829,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXV.</hi></head>
+                  <head rendition="#aq #c">CXXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wie Sion veſt verbleibt/ ſo auch die Gott vertrawen:</l>
@@ -3847,7 +3847,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXVI.</hi></head>
+                  <head rendition="#aq #c">CXXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die ledigmachung uns/ auß Babel ho&#x364;chſt erfrewet:</l>
@@ -3862,7 +3862,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXVII.</hi></head>
+                  <head rendition="#aq #c">CXXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Fleiß/ arbeit/ mu&#x364;h und ſorg umſonſt wird angewendet</l>
@@ -3888,7 +3888,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXVIII.</hi></head>
+                  <head rendition="#aq #c">CXXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Glükſelig iſt der from&#x342; in ſeinem gantzen leben/</l>
@@ -3903,7 +3903,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXIX.</hi></head>
+                  <head rendition="#aq #c">CXXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Die feinde haben mich/ von jugend auf gedra&#x364;nget</l>
@@ -3918,7 +3918,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXX.</hi></head>
+                  <head rendition="#aq #c">CXXX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Auß tieffer ſeelennoht/ von wegen meiner ſünden/</l>
@@ -3934,7 +3934,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXI.</hi></head>
+                  <head rendition="#aq #c">CXXXI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch bin/ o Herꝛ/ nicht ſtoltz/ wie aber Saul mich ſchetzet/</l>
@@ -3949,7 +3949,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXII.</hi></head>
+                  <head rendition="#aq #c">CXXXII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Herꝛ/ ſpricht Jſrael/ fu&#x364;hr wider zu&#x366; gemu&#x364;hte</l>
@@ -3966,7 +3966,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXIII.</hi></head>
+                  <head rendition="#aq #c">CXXXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der bru&#x364;der einigkeit wie balſam wird geſchetzet</l>
@@ -3994,7 +3994,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXIV.</hi></head>
+                  <head rendition="#aq #c">CXXXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>So lobt den Herꝛen nun ihr Prieſter und Leviten/</l>
@@ -4009,7 +4009,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXV.</hi></head>
+                  <head rendition="#aq #c">CXXXV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jhr Prieſter ſamt dem volk lobt Gottes nam&#x342; und werke/</l>
@@ -4025,7 +4025,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXVI.</hi></head>
+                  <head rendition="#aq #c">CXXXVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Dem Herꝛen danke man/ dem der uns gu&#x366;ts beſchehret/</l>
@@ -4040,7 +4040,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXVII.</hi></head>
+                  <head rendition="#aq #c">CXXXVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>An flüſſen Babylons vergoſſen wir vil threnen/</l>
@@ -4055,7 +4055,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXVIII.</hi></head>
+                  <head rendition="#aq #c">CXXXVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch dank und trawe Gott<anchor xml:id="a43"/>/<note type="annotation"
@@ -4087,7 +4087,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXXXIX.</hi></head>
+                  <head rendition="#aq #c">CXXXIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Gott/ du kenneſt mich von auſſen und von innen/</l>
@@ -4106,7 +4106,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXL.</hi></head>
+                  <head rendition="#aq #c">CXL.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O Herꝛ/ mein heil und troſt/ du wo&#x364;lleſt mich erꝛetten</l>
@@ -4121,7 +4121,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLI.</hi></head>
+                  <head rendition="#aq #c">CXLI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Herꝛ/ eil zu&#x366; helffen mir/ dieweil ich aufſatz ſpüre</l>
@@ -4136,7 +4136,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLII.</hi></head>
+                  <head rendition="#aq #c">CXLII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Auß einer finſtern klufft; verꝛahten und umgeben</l>
@@ -4152,7 +4152,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLIII.</hi></head>
+                  <head rendition="#aq #c">CXLIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Herꝛ/ meine bitt erho&#x364;r/ und laß genade finden/</l>
@@ -4177,7 +4177,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLIV.</hi></head>
+                  <head rendition="#aq #c">CXLIV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Gelobt ſey Gott/ mein felß/ der wider meine feinde</l>
@@ -4192,7 +4192,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLV.</hi></head>
+                  <head rendition="#aq #c">CXLV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jch wil erho&#x364;hen dich/ und mit den frommen preiſen</l>
@@ -4207,7 +4207,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLVI.</hi></head>
+                  <head rendition="#aq #c">CXLVI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Nun lobet alle Gott: du auch/ o liebe ſeele:</l>
@@ -4225,7 +4225,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLVII.</hi></head>
+                  <head rendition="#aq #c">CXLVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Lobt Gott/ wie recht und gu&#x366;t/ von wegen viler gaben/</l>
@@ -4240,7 +4240,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLVIII.</hi></head>
+                  <head rendition="#aq #c">CXLVIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>O engeliſche ſchar/ ihr himmels legionen/</l>
@@ -4264,7 +4264,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CXLIX.</hi></head>
+                  <head rendition="#aq #c">CXLIX.</head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l50a" next="#l50b">Lobt Gott mit newem lied/ mit harff- und pauken
@@ -4283,7 +4283,7 @@
                </div>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">CL.</hi></head>
+                  <head rendition="#aq #c">CL.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Lobt Gott im heiligthum/ und in der himmels veſte/</l>
@@ -4298,8 +4298,8 @@
                </div>
                <lb/>
                <div>
-                  <p><hi rendition="#c #smaller">Ende der Vierverſen über die<lb/>Pſalmen
-                        Davids.</hi></p>
+                  <p rendition="#c #smaller">Ende der Vierverſen über die<lb/>Pſalmen
+                        Davids.</p>
                </div>
          </div>
 
@@ -4308,9 +4308,9 @@
          <pb facs="4017177" n="[43]"/>
 
          <div n="1">
-            <head><hi rendition="#b #c">Folgen <lb/> underſcheidenliche/ zu&#x366; vier <lb/>
+            <head rendition="#b #c">Folgen <lb/> underſcheidenliche/ zu&#x366; vier <lb/>
                   ſtimmen newaußgeſetzte/ und zu&#x366;- <lb break="no"/> gleich auf bekan&#x303;te
-                  weiſen gerichtete <lb/> Geſa&#x364;nge.</hi></head>
+                  weiſen gerichtete <lb/> Geſa&#x364;nge.</head>
             <lb/>
 
             <pb facs="4017178" n="44"/>
@@ -4323,7 +4323,7 @@
             <div n="2" xml:id="n20">
                <div type="music">
             <div>
-               <head><hi rendition="#aq #b #c">VI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">VI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -4339,7 +4339,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -4362,7 +4362,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -4378,7 +4378,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -4403,12 +4403,12 @@
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
             <lb/>
 
-               <head><hi rendition="#b #c">Geſang <lb/> über den verkürtzten Vnderꝛicht <lb/> warer
-                     Chriſtenlicher <lb/> Religion.</hi></head>
+               <head rendition="#b #c">Geſang <lb/> über den verkürtzten Vnderꝛicht <lb/> warer
+                     Chriſtenlicher <lb/> Religion.</head>
                <lb/>
-               <p>
-                  <hi rendition="#c #smaller">Jn der weis: Der ho&#x364;chſte troſt des menſchen
-                     iſt/ ꝛc.</hi>
+               <p rendition="#c #smaller">
+                  Jn der weis: Der ho&#x364;chſte troſt des menſchen
+                     iſt/ ꝛc.
                </p>
                <lb/>
 
@@ -4522,10 +4522,10 @@
                   <lb/>
 
                   <lg>
-                     <head><hi rendition="#b #c"><hi rendition="#aq">I. </hi> Vom Geſatz/ und fal
-                           <lb/> des menſchen.</hi></head>
+                     <head rendition="#b #c"><hi rendition="#aq">I. </hi> Vom Geſatz/ und fal
+                           <lb/> des menſchen.</head>
                      <lb/>
-                     <head><hi rendition="#b #c">Die heiligen zehen Gebotte.</hi></head>
+                     <head rendition="#b #c">Die heiligen zehen Gebotte.</head>
                      <lb/>
                      <lg n="6">
                         <head>6</head>
@@ -4642,10 +4642,10 @@
                   <lb/>
 
                   <lg>
-                     <head>
-                        <hi rendition="#c #b"><hi rendition="#aq">II.</hi> Von dem heiligen
+                     <head rendition="#c #b">
+                        <hi rendition="#aq">II.</hi> Von dem heiligen
                            Evangelio/ <lb/> und Erlo&#x364;ſung des men- <lb break="no"/>
-                           ſchen.</hi>
+                           ſchen.
                      </head>
                      <lb/>
                      <lg>
@@ -4689,8 +4689,8 @@
                      <lb/>
 
                      <lg>
-                        <head><hi rendition="#b #c">Die zwo&#x364;lf artikel des Chriſtenlichen<lb/>
-                              Glaubens.</hi></head>
+                        <head rendition="#b #c">Die zwo&#x364;lf artikel des Chriſtenlichen<lb/>
+                              Glaubens.</head>
                         <lb/>
 
                         <lg n="13">
@@ -4855,8 +4855,8 @@
                   <lb/>
 
                   <lg>
-                     <head><hi rendition="#c #b"><hi rendition="#aq">III.</hi> Von der
-                           Dankbarkeit.</hi></head>
+                     <head rendition="#c #b"><hi rendition="#aq">III.</hi> Von der
+                           Dankbarkeit.</head>
                      <lb/>
                      <lg>
                         <lg n="20">
@@ -4948,7 +4948,7 @@
                      <lb/>
 
                      <lg>
-                        <head><hi rendition="#c #b">Das heilig Vatter unſer.</hi></head>
+                        <head rendition="#c #b">Das heilig Vatter unſer.</head>
                         <lb/>
                         <lg n="24">
                            <head>24</head>
@@ -5004,8 +5004,8 @@
                   <lb/>
 
                   <lg>
-                     <head><hi rendition="#b #c"><hi rendition="#aq">IV.</hi> Von den heiligen
-                              Sacra<lb break="no"/> menten.</hi></head>
+                     <head rendition="#b #c"><hi rendition="#aq">IV.</hi> Von den heiligen
+                              Sacra<lb break="no"/> menten.</head>
                      <lb/>
 
                      <lg>
@@ -5068,7 +5068,7 @@
                      <lb/>
 
                      <lg>
-                        <head><hi rendition="#b #c">Von dem heiligen Tauff.</hi></head>
+                        <head rendition="#b #c">Von dem heiligen Tauff.</head>
                         <lb/>
                         <lg n="29">
                            <head>29</head>
@@ -5165,7 +5165,7 @@
                      <lb/>
 
                      <lg>
-                        <head><hi rendition="#c #b">Von dem heiligen Nachtmahl.</hi></head>
+                        <head rendition="#c #b">Von dem heiligen Nachtmahl.</head>
                         <lb/>
                         <lg n="33">
                            <head>33</head>
@@ -5296,7 +5296,7 @@
                <div type="music">
                   
                   <div>
-               <head><hi rendition="#aq #b #c">VII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">VII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -5317,7 +5317,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5341,7 +5341,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5358,7 +5358,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5386,10 +5386,10 @@
             <fw place="top" type="header">Geſang von</fw>
             <lb/>
 
-               <head><hi rendition="#b #c">Geſang <lb/> über unſers Herꝛen Jeſu Chriſti Geburt/<lb/>
-                     Leyden und Herꝛlichkeit.</hi></head>
+               <head rendition="#b #c">Geſang <lb/> über unſers Herꝛen Jeſu Chriſti Geburt/<lb/>
+                     Leyden und Herꝛlichkeit.</head>
                <lb/>
-               <p><hi rendition="#c #smaller">Jn der weis: Wach auff mein hertz/ ꝛc.</hi></p>
+               <p rendition="#c #smaller">Jn der weis: Wach auff mein hertz/ ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -5561,7 +5561,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">VIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">VIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -5577,7 +5577,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5600,7 +5600,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5616,7 +5616,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5640,16 +5640,16 @@
             <lb/>
             <fw place="top" type="header">Geiſtliches</fw>
 
-               <head><hi rendition="#b #c">Liebesgeſpra&#x364;ch <lb/> einer Chriſtgla&#x364;ubigen
-                     Seel mit ihrem <lb/> Herꝛen und Heiland Jeſu <lb/> Chriſto.</hi></head>
+               <head rendition="#b #c">Liebesgeſpra&#x364;ch <lb/> einer Chriſtgla&#x364;ubigen
+                     Seel mit ihrem <lb/> Herꝛen und Heiland Jeſu <lb/> Chriſto.</head>
                <lb/>
-               <p><hi rendition="#c #b">Jn der weis: <lb/> Einsmals mich ein luſt ankam/
-                  ꝛc.</hi></p>
+               <p rendition="#c #b">Jn der weis: <lb/> Einsmals mich ein luſt ankam/
+                  ꝛc.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">J</hi>Eſu/ warer Gottes Sohn/</l>
                      <lb/>
@@ -5666,7 +5666,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>War es gwalt vnd feyendſchafft?</l>
                      <lb/>
@@ -5683,7 +5683,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Nein/ o nein! noch liſt/ noch gwalt/</l>
                      <lb/>
@@ -5712,7 +5712,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>Was für dank nun ſol ich dir</l>
                      <lb/>
@@ -5729,7 +5729,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head rendition="#c">5.</head>
                      <lb/>
                      <l>Weil ich ſo geliebet dich/</l>
                      <lb/>
@@ -5746,7 +5746,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head><hi rendition="#c">6.</hi></head>
+                     <head rendition="#c">6.</head>
                      <lb/>
                      <l>Ja/ Herꝛ: aber gib du mir</l>
                      <lb/>
@@ -5777,7 +5777,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">IX. Cantus.</hi></head>
+               <head rendition="#aq #b #c">IX. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -5798,7 +5798,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5824,7 +5824,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5845,10 +5845,10 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis<anchor xml:id="a57"/>.<note type="annotation"
+               <head rendition="#aq #b #c">Baſis<anchor xml:id="a57"/>.<note type="annotation"
                         targetEnd="a57"><p>Der Punkt wurde handschriftlich zu einem Doppelpunkt
                            gemacht. Im göttingischen Vergleichsexemplar steht eindeutig ein
-                           Punkt.</p></note></hi></head>
+                           Punkt.</p></note></head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -5880,10 +5880,10 @@
             <fw place="top" type="header">Beicht- und</fw>
 
 
-               <head><hi rendition="#c #b">Beicht- und Bittgeſang eines bu&#x366;ß<lb break="no"/>
-                     und gnadbegirꝛigen.</hi></head>
+               <head rendition="#c #b">Beicht- und Bittgeſang eines bu&#x366;ß<lb break="no"/>
+                     und gnadbegirꝛigen.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn der weis des 137. Pſalmens.</hi></p>
+               <p rendition="#c #b #smaller">Jn der weis des 137. Pſalmens.</p>
                <lb/>
 
                <lb/>
@@ -6217,7 +6217,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">X. Cantus.</hi></head>
+               <head rendition="#aq #b #c">X. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -6233,7 +6233,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6257,7 +6257,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6274,7 +6274,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6300,10 +6300,10 @@
             <lb/>
 
 
-               <head><hi rendition="#b #c">Lobgeſang <lb/> für gna&#x364;dige erho&#x364;rung/ und
-                     verzeihung <lb/> der ſünden.</hi></head>
+               <head rendition="#b #c">Lobgeſang <lb/> für gna&#x364;dige erho&#x364;rung/ und
+                     verzeihung <lb/> der ſünden.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn der weis des 42. Pſalmens.</hi></p>
+               <p rendition="#c #b #smaller">Jn der weis des 42. Pſalmens.</p>
                <lb/>
 
                <lg type="poem">
@@ -6646,7 +6646,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -6662,7 +6662,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6685,7 +6685,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6701,7 +6701,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6727,15 +6727,15 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Morgengeſang.</hi></head>
+               <head rendition="#c #b">Morgengeſang.</head>
                <lb/>
-               <p><hi rendition="#c #b">in ſeiner eignen vorhergeſetz<lb break="no"/>ten
-                  weis.</hi></p>
+               <p rendition="#c #b">in ſeiner eignen vorhergeſetz<lb break="no"/>ten
+                  weis.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">A</hi>urora/ mit ihren verguldeten ſtralen/</l>
                      <lb/>
@@ -6748,7 +6748,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Sie weket das leichte geflügel der lüffte</l>
                      <lb/>
@@ -6761,7 +6761,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Die ſonne ſchon hinder den bergen fürbliket/</l>
                      <lb/>
@@ -6774,7 +6774,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>O Jeſu/ der grechtigkeit einige Sonne/</l>
                      <lb/>
@@ -6787,7 +6787,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head rendition="#c">5.</head>
                      <lb/>
                      <l>Jch danke dir/ daß ich ſo ſicher geſchlaffen/</l>
                      <lb/>
@@ -6810,7 +6810,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head><hi rendition="#c">6.</hi></head>
+                     <head rendition="#c">6.</head>
                      <lb/>
                      <l>Gib deinen ſo ſeligen lieblichen friden</l>
                      <lb/>
@@ -6828,7 +6828,7 @@
             <lb/>
 
             <div n="2" xml:id="n24">
-               <head><hi rendition="#c #b">Geiſtlicher Weker.</hi></head>
+               <head rendition="#c #b">Geiſtlicher Weker.</head>
                <lb/>
 
                <lg type="poem">
@@ -6873,7 +6873,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XII. Cantus</hi></head>
+               <head rendition="#aq #b #c">XII. Cantus</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -6900,7 +6900,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6933,7 +6933,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6959,7 +6959,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -6995,14 +6995,14 @@
             <lb/>
 
 
-               <head><hi rendition="#b #c">Abendgeſang.</hi></head>
+               <head rendition="#b #c">Abendgeſang.</head>
                <lb/>
-               <p><hi rendition="#b #c">Jn ſeiner eignen vorhergeſetzten<lb/> weis.</hi></p>
+               <p rendition="#b #c">Jn ſeiner eignen vorhergeſetzten<lb/> weis.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">H</hi>Jm&#x342;liſcher Gott/ und Vatter/ wir kinder</l>
                      <lb/>
@@ -7023,7 +7023,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Gna&#x364;diger Gott/ verzeih uns die ſünden</l>
                      <lb/>
@@ -7044,7 +7044,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Ma&#x364;chtiger Ko&#x364;nig/ wehr du dem Teufel/</l>
                      <lb/>
@@ -7074,7 +7074,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>Weilen auch für den him&#x342;liſchen bogen</l>
                      <lb/>
@@ -7111,7 +7111,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -7127,7 +7127,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7150,7 +7150,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7166,7 +7166,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7191,10 +7191,10 @@
             <fw place="top" type="header">Tiſchgeſang.</fw>
 
 
-               <head><hi rendition="#c #b">Bittgeſang vor dem <lb/> eſſen.</hi></head>
+               <head rendition="#c #b">Bittgeſang vor dem <lb/> eſſen.</head>
                <lb/>
-               <p><hi rendition="#c">Jn der weis: <lb/> Lobt Gott/ ihr Chriſten allzu&#x366;gleich/
-                     ꝛc.</hi></p>
+               <p rendition="#c">Jn der weis: <lb/> Lobt Gott/ ihr Chriſten allzu&#x366;gleich/
+                     ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -7379,7 +7379,7 @@
                <div type="music">
                
             <div>
-               <head><hi rendition="#aq #b #c">XIV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XIV. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -7397,7 +7397,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7422,7 +7422,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7441,7 +7441,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7466,9 +7466,9 @@
             <fw place="top" type="header">Tiſchgeſang.</fw>
             <lb/>
 
-               <head><hi rendition="#b #c">Lobgeſang nach dem<lb/> eſſen.</hi></head>
+               <head rendition="#b #c">Lobgeſang nach dem<lb/> eſſen.</head>
                <lb/>
-               <p><hi rendition="#c">Jn der weis des 103. Pſalms.</hi></p>
+               <p rendition="#c">Jn der weis des 103. Pſalms.</p>
                <lb/>
 
                <lg type="poem">
@@ -7634,7 +7634,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XV. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -7657,7 +7657,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7686,7 +7686,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7707,7 +7707,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -7737,10 +7737,10 @@
             <fw place="top" type="header">Erſtes</fw>
 
 
-               <head><hi rendition="#c #b">Geſang <lb/> von der geiſtlichen Ehe.</hi></head>
+               <head rendition="#c #b">Geſang <lb/> von der geiſtlichen Ehe.</head>
                <lb/>
-               <p><hi rendition="#b #c #smaller">Jn der weis: Wie ſcho&#x364;n leucht vns der/
-                     ꝛc.</hi></p>
+               <p rendition="#b #c #smaller">Jn der weis: Wie ſcho&#x364;n leucht vns der/
+                     ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -7772,7 +7772,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Ein Jeſus iſt er in der taht/</l>
                      <lb/>
@@ -7810,7 +7810,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>O Vatter/ Herꝛ der Ewigkeit/</l>
                      <lb/>
@@ -7839,7 +7839,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>Auß deiner va&#x364;tterlichen ſchoß</l>
                      <lb/>
@@ -7868,7 +7868,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head rendition="#c">5.</head>
                      <lb/>
                      <l>Jch bin ein armes ſcha&#x364;ffelein/</l>
                      <lb/>
@@ -7908,7 +7908,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head><hi rendition="#c">6.</hi></head>
+                     <head rendition="#c">6.</head>
                      <lb/>
                      <l>O Ko&#x364;nig/ Prieſter und Prophet/</l>
                      <lb/>
@@ -7937,7 +7937,7 @@
                   <lb/>
 
                   <lg n="7">
-                     <head><hi rendition="#c">7.</hi></head>
+                     <head rendition="#c">7.</head>
                      <lb/>
                      <l>Der heilig Geiſt kom&#x342; innerlich/</l>
                      <lb/>
@@ -7976,7 +7976,7 @@
                   <lb/>
 
                   <lg n="8">
-                     <head><hi rendition="#c">8.</hi></head>
+                     <head rendition="#c">8.</head>
                      <lb/>
                      <l>Dein go&#x364;ttlich wort und Sacrament;</l>
                      <lb/>
@@ -8005,7 +8005,7 @@
                   <lb/>
 
                   <lg n="9">
-                     <head><hi rendition="#c">9.</hi></head>
+                     <head rendition="#c">9.</head>
                      <lb/>
                      <l>Das gnadenwort die mahlzeit iſt;</l>
                      <lb/>
@@ -8046,7 +8046,7 @@
                   <lb/>
 
                   <lg n="10">
-                     <head><hi rendition="#c">10.</hi></head>
+                     <head rendition="#c">10.</head>
                      <lb/>
                      <l>Dort aber in des himmelsſal</l>
                      <lb/>
@@ -8075,7 +8075,7 @@
                   <lb/>
 
                   <lg n="11">
-                     <head><hi rendition="#c">11.</hi></head>
+                     <head rendition="#c">11.</head>
                      <lb/>
                      <l>Wem iſt nun diſe freud bereit?</l>
                      <lb/>
@@ -8113,7 +8113,7 @@
                   <lb/>
 
                   <lg n="12">
-                     <head><hi rendition="#c">12.</hi></head>
+                     <head rendition="#c">12.</head>
                      <lb/>
                      <l>Herꝛ/ deine liebe gibt mir eyn/</l>
                      <lb/>
@@ -8159,7 +8159,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XVI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XVI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -8177,7 +8177,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8201,7 +8201,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8219,7 +8219,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8249,11 +8249,11 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Von der ſtifftung/ und geheimnuß<lb/> des heiligen
-                     Eheſtands.</hi></head>
+               <head rendition="#c #b">Von der ſtifftung/ und geheimnuß<lb/> des heiligen
+                     Eheſtands.</head>
                <lb/>
-               <p><hi rendition="#b #c #smaller">Jn der weis: Herꝛ Chriſt der einig Gotts
-                  Sohn.</hi></p>
+               <p rendition="#b #c #smaller">Jn der weis: Herꝛ Chriſt der einig Gotts
+                  Sohn.</p>
                <lb/>
 
                <lg type="poem">
@@ -8591,7 +8591,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XVII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XVII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -8607,7 +8607,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8630,7 +8630,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8646,7 +8646,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8673,10 +8673,10 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Hochzeitgeſang <lb/> auß dem 128. Pſalmen Davids
-                     genommen/</hi></head>
+               <head rendition="#c #b">Hochzeitgeſang <lb/> auß dem 128. Pſalmen Davids
+                     genommen/</head>
                <lb/>
-               <p><hi rendition="#c #smaller">und in deſſelben weis zu&#x366; ſingen.</hi></p>
+               <p rendition="#c #smaller">und in deſſelben weis zu&#x366; ſingen.</p>
                <lb/>
 
                <lg type="poem">
@@ -8831,7 +8831,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XVIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XVIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -8845,7 +8845,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8866,7 +8866,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8880,7 +8880,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -8902,10 +8902,10 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Geſang <lb/> von einem tugendliebenden Ehweib: <lb/> auß
-                     den Sprüchen Salomons/ cap. 31/ <lb/> v. 10/ ꝛc. gezogen.</hi></head>
+               <head rendition="#c #b">Geſang <lb/> von einem tugendliebenden Ehweib: <lb/> auß
+                     den Sprüchen Salomons/ cap. 31/ <lb/> v. 10/ ꝛc. gezogen.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn der weis des 146. Pſalmens.</hi></p>
+               <p rendition="#c #b #smaller">Jn der weis des 146. Pſalmens.</p>
                <lb/>
 
                <lg type="poem">
@@ -9070,7 +9070,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XIX. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XIX. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -9086,7 +9086,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9109,7 +9109,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9125,7 +9125,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9148,12 +9148,12 @@
             <fw place="top" type="header">Das fünfft</fw>
 
 
-               <head><hi rendition="#c #b">Hochzeitlicher Segen<lb break="no"/>wunſch.</hi></head>
+               <head rendition="#c #b">Hochzeitlicher Segen<lb break="no"/>wunſch.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn der weis: Es iſt ein ſchnidte<anchor
+               <p rendition="#c #b #smaller">Jn der weis: Es iſt ein ſchnidte<anchor
                         xml:id="a65"/>r<note type="annotation" targetEnd="a65"><p>Auch in den
                            Vergleichsexemplaren schwer zu erkennen. Eventuell als Druckfehler
-                           markieren.</p></note>/ heißt <lb/> der tod.</hi></p>
+                           markieren.</p></note>/ heißt <lb/> der tod.</p>
                <lb/>
 
                <lg type="poem">
@@ -9314,7 +9314,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XX. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XX. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -9339,7 +9339,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9371,7 +9371,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9396,7 +9396,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9431,12 +9431,12 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Hochzeitgeſang. <lb/> Auf eines/ deme ſeine erſte
+               <head rendition="#c #b">Hochzeitgeſang. <lb/> Auf eines/ deme ſeine erſte
                      Jungfraw Hochzeite- <lb break="no"/> rin/ vor ehlicher eynſegnung im Herꝛen
                      entſchlaf- <lb break="no"/> fen/ andermalige verheurahtung/ und erſthaltende
-                     <lb/> Hochzeit.</hi></head>
+                     <lb/> Hochzeit.</head>
                <lb/>
-               <p><hi rendition="#c">Jn vorhergeſetzter weis.</hi></p>
+               <p rendition="#c">Jn vorhergeſetzter weis.</p>
                <lb/>
 
                <lg type="poem">
@@ -9648,15 +9648,15 @@
             <lb/>
 
             <div n="2" xml:id="n43">
-               <head><hi rendition="#b #c">Hochzeitgeſang.</hi></head>
+               <head rendition="#b #c">Hochzeitgeſang.</head>
                <lb/>
-               <p><hi rendition="#c #smaller">Jn der weis: <lb/>Aurora/ mit ihren verguldeten
-                     ſtralen.</hi></p>
+               <p rendition="#c #smaller">Jn der weis: <lb/>Aurora/ mit ihren verguldeten
+                     ſtralen.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">D</hi>Rey dinge vor allen dem Ho&#x364;chſten
                         gefallen/</l>
@@ -9673,7 +9673,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Des letſten/ und beſten ſich werden befleiſſen</l>
                      <lb/>
@@ -9689,7 +9689,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Hierüber ſo wünſchen wir ihnen vom Herꝛen</l>
                      <lb/>
@@ -9715,7 +9715,7 @@
                <div type="music">
                   
                <div>
-               <head><hi rendition="#aq #b #c">XXI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -9733,7 +9733,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9758,7 +9758,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9775,7 +9775,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9808,7 +9808,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -9826,7 +9826,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9854,7 +9854,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9872,7 +9872,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -9898,11 +9898,11 @@
             <fw place="top" type="header">Das neunte</fw>
 
 
-               <head>
-                  <hi rendition="#b #c">Hochzeitgeſang/ von dem jetzigen <lb/> elenden
-                     zu&#x366;ſtand.</hi></head>
+               <head rendition="#b #c">
+                  Hochzeitgeſang/ von dem jetzigen <lb/> elenden
+                     zu&#x366;ſtand.</head>
                <lb/>
-               <p><hi rendition="#b #c">Jn der weis des 137. Pſalmens.</hi></p>
+               <p rendition="#b #c">Jn der weis des 137. Pſalmens.</p>
                <lb/>
 
                <lg type="poem">
@@ -10070,7 +10070,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10087,7 +10087,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10112,7 +10112,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10130,7 +10130,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10159,7 +10159,7 @@
             <fw place="top" type="header">Traurgeſang</fw>
             <lb/>
 
-               <head><hi rendition="#c #b">Traurgeſang <lb/> über verlornen Friden.</hi></head>
+               <head rendition="#c #b">Traurgeſang <lb/> über verlornen Friden.</head>
                <lb/>
 
                <lg type="poem">
@@ -10340,7 +10340,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXIV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXIV. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10356,7 +10356,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10379,7 +10379,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10395,7 +10395,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10422,10 +10422,10 @@
             <fw place="top" type="header">Vermahnungsgeſang</fw>
 
 
-               <head><hi rendition="#c #b">Vermahnungsgeſang <lb/> zu&#x366; rechtma&#x364;ſſigem
-                     und hertzhafftem <lb/> ſtreit.</hi></head>
+               <head rendition="#c #b">Vermahnungsgeſang <lb/> zu&#x366; rechtma&#x364;ſſigem
+                     und hertzhafftem <lb/> ſtreit.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn ſeiner eignen vorhergeſetzten weis.</hi></p>
+               <p rendition="#c #b #smaller">Jn ſeiner eignen vorhergeſetzten weis.</p>
                <lb/>
 
                <lg type="poem">
@@ -10593,7 +10593,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXV. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10609,7 +10609,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10632,7 +10632,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10648,7 +10648,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10672,20 +10672,20 @@
             <lb/>
 
 
-               <head><hi rendition="#b #c">Geſang <lb/> von lieb- und lobwürdiger <lb/>
-                     einigkeit.</hi></head>
+               <head rendition="#b #c">Geſang <lb/> von lieb- und lobwürdiger <lb/>
+                     einigkeit.</head>
                <lb/>
-               <p><hi rendition="#c"><hi rendition="#b #smaller">Jn nachgeſetzten weiſen.</hi><lb/>
+               <p rendition="#c"><hi rendition="#b #smaller">Jn nachgeſetzten weiſen.</hi><lb/>
                      Aſteria/ auß hohem ſtam&#x303; erboren/ ꝛc.<lb/> Ach S<anchor xml:id="a74"
                         />y<note type="annotation" targetEnd="a74"><p>Das Trema wurde nachträglich
                            von Hand eingezeichnet. Im göttingischen Vergleichsexemplar steht das y
                            deutlich ohne Trema.</p></note>lvia/ du preiß der Scha&#x364;fferinnen/
-                     ꝛc.</hi></p>
+                     ꝛc.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">M</hi>Jt David wir die einigkeit erheben/</l>
                      <lb/>
@@ -10702,7 +10702,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Gleich wie der thaw den Hermonsberg benetzet/</l>
                      <lb/>
@@ -10719,7 +10719,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Die einigkeit macht groß geringe werke:</l>
                      <lb/>
@@ -10745,7 +10745,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>Die einigkeit den feinden forcht und ſchreken/</l>
                      <lb/>
@@ -10762,7 +10762,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head rendition="#c">5.</head>
                      <lb/>
                      <l>Wie o&#x364;fter hat ihr kleinvereinter hauffen</l>
                      <lb/>
@@ -10793,7 +10793,7 @@
                   
                   <div>
                      
-               <head><hi rendition="#aq #b #c">XXVI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXVI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10809,7 +10809,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10833,7 +10833,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10850,7 +10850,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10881,7 +10881,7 @@
                   
                   <div>
                      
-               <head><hi rendition="#aq #b #c">XXVII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXVII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10898,7 +10898,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10922,7 +10922,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10938,7 +10938,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -10972,7 +10972,7 @@
                   
                   <div>
                      
-               <head><hi rendition="#aq #b #c">XXVIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXVIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -10989,7 +10989,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11012,7 +11012,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11028,7 +11028,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11065,7 +11065,7 @@
                   
                   <div>
                      
-               <head><hi rendition="#aq #b #c">XXIX. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXIX. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -11081,7 +11081,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11104,7 +11104,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11120,7 +11120,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11154,7 +11154,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXX. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXX. Cantus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11170,7 +11170,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11195,7 +11195,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11212,7 +11212,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11242,15 +11242,15 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Fru&#x364;hlingsgeſang.</hi></head>
+               <head rendition="#c #b">Fru&#x364;hlingsgeſang.</head>
                <lb/>
-               <p><hi rendition="#c">Jn der weis: <lb/> Luſtig iſt man im Fru&#x364;hling im garten/
-                     ꝛc.</hi></p>
+               <p rendition="#c">Jn der weis: <lb/> Luſtig iſt man im Fru&#x364;hling im garten/
+                     ꝛc.</p>
                <lb/>
 
                <lg type="poem">
                   <lg n="1">
-                     <head><hi rendition="#c">1.</hi></head>
+                     <head rendition="#c">1.</head>
                      <lb/>
                      <l><hi rendition="#in">L</hi>Vſtig werden bekümmerte hertzen/</l>
                      <lb/>
@@ -11267,7 +11267,7 @@
                   <lb/>
 
                   <lg n="2">
-                     <head><hi rendition="#c">2.</hi></head>
+                     <head rendition="#c">2.</head>
                      <lb/>
                      <l>Jn den ga&#x364;rten wir ſehen entſprieſſen</l>
                      <lb/>
@@ -11284,7 +11284,7 @@
                   <lb/>
 
                   <lg n="3">
-                     <head><hi rendition="#c">3.</hi></head>
+                     <head rendition="#c">3.</head>
                      <lb/>
                      <l>Wir bereiten uns ſtr<supplied>a&#x364;</supplied>uſſer und meyen/</l>
                      <lb/>
@@ -11301,7 +11301,7 @@
                   <lb/>
 
                   <lg n="4">
-                     <head><hi rendition="#c">4.</hi></head>
+                     <head rendition="#c">4.</head>
                      <lb/>
                      <l>Junge ſaten uns ſchiereſt anlachen/</l>
                      <lb/>
@@ -11328,7 +11328,7 @@
                   <lb/>
 
                   <lg n="5">
-                     <head><hi rendition="#c">5.</hi></head>
+                     <head rendition="#c">5.</head>
                      <lb/>
                      <l>Alle matten und wiſen graßreiche/</l>
                      <lb/>
@@ -11345,7 +11345,7 @@
                   <lb/>
 
                   <lg n="6">
-                     <head><hi rendition="#c">6.</hi></head>
+                     <head rendition="#c">6.</head>
                      <lb/>
                      <l>Das gefiderte vo&#x364;lklein der lüffte/</l>
                      <lb/>
@@ -11362,7 +11362,7 @@
                   <lb/>
 
                   <lg n="7">
-                     <head><hi rendition="#c">7.</hi></head>
+                     <head rendition="#c">7.</head>
                      <lb/>
                      <l>Minder lieblich bedunket uns zwaren/</l>
                      <lb/>
@@ -11379,7 +11379,7 @@
                   <lb/>
 
                   <lg n="8">
-                     <head><hi rendition="#c">8.</hi></head>
+                     <head rendition="#c">8.</head>
                      <lb/>
                      <l>Die geſchnabelte feinde der ſchlangen/</l>
                      <lb/>
@@ -11406,7 +11406,7 @@
                   <lb/>
 
                   <lg n="9">
-                     <head><hi rendition="#c">9.</hi></head>
+                     <head rendition="#c">9.</head>
                      <lb/>
                      <l>Auff den weyern der a&#x364;nten geſchwader</l>
                      <lb/>
@@ -11423,7 +11423,7 @@
                   <lb/>
 
                   <lg n="10">
-                     <head><hi rendition="#c">10.</hi></head>
+                     <head rendition="#c">10.</head>
                      <lb/>
                      <l>Nun bedeutet der Fru&#x364;hling hieneben</l>
                      <lb/>
@@ -11447,11 +11447,11 @@
             <lb/>
 
             <div n="2" xml:id="n28">
-               <head><hi rendition="#c #b">Geſang <lb/> von des menſchlichen lebens
-                     nichtigkeit.</hi></head>
+               <head rendition="#c #b">Geſang <lb/> von des menſchlichen lebens
+                     nichtigkeit.</head>
                <lb/>
-               <p><hi rendition="#c #smaller">Jn der weis des 146. Pſalmens. <lb/> Oder. Der hat
-                     einen ſchatz erfunden/ ꝛc.</hi></p>
+               <p rendition="#c #smaller">Jn der weis des 146. Pſalmens. <lb/> Oder. Der hat
+                     einen ſchatz erfunden/ ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -11538,7 +11538,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXXI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -11554,7 +11554,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11577,7 +11577,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11598,7 +11598,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11622,10 +11622,10 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Das ander Sommergeſang.</hi></head>
+               <head rendition="#c #b">Das ander Sommergeſang.</head>
                <lb/>
-               <p><hi rendition="#c"><hi rendition="#b #smaller">Jn der weis:</hi><lb/> Der
-                     Fru&#x364;hling ſcho&#x364;n hertringen tu&#x366;ht/ ꝛc.</hi></p>
+               <p rendition="#c"><hi rendition="#b #smaller">Jn der weis:</hi><lb/> Der
+                     Fru&#x364;hling ſcho&#x364;n hertringen tu&#x366;ht/ ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -11798,7 +11798,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXXII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -11815,7 +11815,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11836,7 +11836,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11853,7 +11853,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -11876,9 +11876,9 @@
             <fw place="top" type="header">Das ander</fw>
             <lb/>
 
-               <head><hi rendition="#c #b">Das ander Herpſtgeſang.</hi></head>
+               <head rendition="#c #b">Das ander Herpſtgeſang.</head>
                <lb/>
-               <p><hi rendition="#c #b #smaller">Jn der weis: Bey mir mein hertz/ ꝛc.</hi></p>
+               <p rendition="#c #b #smaller">Jn der weis: Bey mir mein hertz/ ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -12070,7 +12070,7 @@
                <div type="music">
                   
             <div>
-               <head><hi rendition="#aq #b #c">XXXIII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXIII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -12090,7 +12090,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12118,7 +12118,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12138,7 +12138,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12168,10 +12168,10 @@
             <lb/>
 
 
-               <head><hi rendition="#c #b">Das ander Wintergeſang.</hi></head>
+               <head rendition="#c #b">Das ander Wintergeſang.</head>
                <lb/>
-               <p><hi rendition="#c">Jn der weis:<lb/> So wünſch ich ihr ein gu&#x366;te nacht/
-                     ꝛc.</hi></p>
+               <p rendition="#c">Jn der weis:<lb/> So wünſch ich ihr ein gu&#x366;te nacht/
+                     ꝛc.</p>
                <lb/>
 
                <lg type="poem">
@@ -12332,7 +12332,7 @@
                <div type="music">
                
                <div type="poem">
-               <head><hi rendition="#aq #b #c">XXXIV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXIV. Cantus.</head>
                <lb/>
                <lg type="poem">
             <figure type="notatedMusic"/>
@@ -12350,7 +12350,7 @@
             </div>
 
             <div type="poem">
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg type="poem">
                   <figure type="notatedMusic"/>
@@ -12375,7 +12375,7 @@
             <lb/>
 
             <div type="poem">
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg type="poem">
                   <figure type="notatedMusic"/>
@@ -12395,7 +12395,7 @@
             </div>
 
             <div type="poem">
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg type="poem">
                   <figure type="notatedMusic"/>
@@ -12429,7 +12429,7 @@
                <div type="music">
                   
                <div>
-               <head><hi rendition="#aq #b #c">XXXV. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXV. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -12445,7 +12445,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12468,7 +12468,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12484,7 +12484,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12513,7 +12513,7 @@
                <div type="music">
                   
                   <div>
-               <head><hi rendition="#aq #b #c">XXXVI. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXVI. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -12527,7 +12527,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12548,7 +12548,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus</hi></head>
+               <head rendition="#aq #b #c">Altus</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12562,7 +12562,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12589,7 +12589,7 @@
                <div type="music">
                   
                <div>
-               <head><hi rendition="#aq #b #c">XXXVII. Cantus.</hi></head>
+               <head rendition="#aq #b #c">XXXVII. Cantus.</head>
                <lb/>
                <lg>
             <figure type="notatedMusic"/>
@@ -12609,7 +12609,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Tenor.</hi></head>
+               <head rendition="#aq #b #c">Tenor.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12636,7 +12636,7 @@
             <lb/>
 
             <div>
-               <head><hi rendition="#aq #b #c">Altus.</hi></head>
+               <head rendition="#aq #b #c">Altus.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12656,7 +12656,7 @@
             </div>
 
             <div>
-               <head><hi rendition="#aq #b #c">Baſis.</hi></head>
+               <head rendition="#aq #b #c">Baſis.</head>
                <lb/>
                <lg>
                   <figure type="notatedMusic"/>
@@ -12683,7 +12683,7 @@
             <lb/>
 
             <div n="2" xml:id="n83">
-               <head><hi rendition="#c #b">Beſchluß <lb/> der <lb/> Geſa&#x364;ngen.</hi></head>
+               <head rendition="#c #b">Beſchluß <lb/> der <lb/> Geſa&#x364;ngen.</head>
                <lb/>
 
                <lg type="poem">
@@ -12732,14 +12732,14 @@
             <lb/>
 
             <div n="2" xml:id="n123">
-               <head><hi rendition="#b #c">Vber <lb/> unſers Herꝛen Jeſu Chriſti <lb/> Leyden/ Tod
-                     und Aufer<lb break="no"/>ſtehung.</hi></head>
+               <head rendition="#b #c">Vber <lb/> unſers Herꝛen Jeſu Chriſti <lb/> Leyden/ Tod
+                     und Aufer<lb break="no"/>ſtehung.</head>
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">I.</hi>
+                  <head rendition="#c"><hi rendition="#aq">I.</hi>
                         <lb/><hi rendition="#b">Eynritt Chriſti zu&#x366; Jeru<lb break="no"/>
-                           ſalem.</hi></hi></head>
+                           ſalem.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l><hi rendition="#in">D</hi>Er Himmelsko&#x364;nig wolt in Salem arm
@@ -12751,9 +12751,9 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">II.</hi>
+                  <head rendition="#c"><hi rendition="#aq">II.</hi>
                         <lb/><hi rendition="#b">Eynſatzung des heiligen <lb/>
-                     Abendmahls.</hi></hi></head>
+                     Abendmahls.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ; ſeins tods für uns ſtets eyngedenk zu&#x366; ſeyn<anchor
@@ -12768,8 +12768,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">III.</hi>
-                        <lb/><hi rendition="#b">Fu&#x364;ßwa&#x364;ſchung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">III.</hi>
+                        <lb/><hi rendition="#b">Fu&#x364;ßwa&#x364;ſchung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Den jüngern wa&#x364;ſcht der Herꝛ die fu&#x364;ſſe nach dem eſſen:</l>
@@ -12780,8 +12780,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">IV.</hi>
-                        <lb/><hi rendition="#b">Chriſti kampf am <lb/> Oelberg.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">IV.</hi>
+                        <lb/><hi rendition="#b">Chriſti kampf am <lb/> Oelberg.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ/ blu&#x366;tſchwitzend/ hat der hellen angſt erlidten/</l>
@@ -12803,8 +12803,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">V.</hi>
-                        <lb/><hi rendition="#b">Verꝛahtung und <lb/> band.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">V.</hi>
+                        <lb/><hi rendition="#b">Verꝛahtung und <lb/> band.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ ſich/ willig/ laßt verꝛahten/ fangen/ binden/</l>
@@ -12815,8 +12815,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">VI.</hi>
-                        <lb/><hi rendition="#b">Stand für Cajapha.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">VI.</hi>
+                        <lb/><hi rendition="#b">Stand für Cajapha.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ/ von Cajapha gefragt um lehr<anchor xml:id="a80"/><note
@@ -12830,13 +12830,13 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">VII.</hi>
+                  <head rendition="#c"><hi rendition="#aq">VII.</hi>
                         <lb/>
                         <hi rendition="#b"><anchor xml:id="a81"/>V<note type="annotation"
                               targetEnd="a81"><p>Das Trema wurde hier nachträglich von Hand
                                  eingezeichnet. Im göttingischen Vergleichsexemplar steht eindeutig
                                  keines.</p></note>berantwortung dem welt<lb break="no"/> lichen
-                           ſtab.</hi></hi></head>
+                           ſtab.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Von Prieſtern wird der Herꝛ Pilato zu&#x366;gefu&#x364;hrt:</l>
@@ -12850,8 +12850,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">VIII.</hi>
-                        <lb/><hi rendition="#b">Geißlung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">VIII.</hi>
+                        <lb/><hi rendition="#b">Geißlung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ gegeiſſelt wird; daß nicht der Satan dort/</l>
@@ -12862,8 +12862,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">IX.</hi>
-                        <lb/><hi rendition="#b">Kro&#x364;nung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">IX.</hi>
+                        <lb/><hi rendition="#b">Kro&#x364;nung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Mit do&#x364;rnen wird der Herꝛ gekro&#x364;net und verho&#x364;net;</l>
@@ -12883,8 +12883,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">X.</hi>
-                        <lb/><hi rendition="#b">Fürſtellung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">X.</hi>
+                        <lb/><hi rendition="#b">Fürſtellung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Pilatus Chriſtum zeigt zerꝛiſſen und zerſchlagen:</l>
@@ -12896,8 +12896,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XI.</hi>
-                        <lb/><hi rendition="#b">Pilati ha&#x364;ndwa&#x364;ſchung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XI.</hi>
+                        <lb/><hi rendition="#b">Pilati ha&#x364;ndwa&#x364;ſchung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Pilatus wa&#x364;ſcht die ha&#x364;nd: die Juden auf ſich laden</l>
@@ -12908,8 +12908,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XII.</hi>
-                        <lb/><hi rendition="#b">Judas verzweiffelter rew.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XII.</hi>
+                        <lb/><hi rendition="#b">Judas verzweiffelter rew.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Das ſchno&#x364;d verꝛa&#x364;htergelt trukt Jud<hi rendition="#aq">æ</hi>
@@ -12921,8 +12921,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XIII.</hi>
-                        <lb/><hi rendition="#b">Außfu&#x364;hrung Chriſti.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XIII.</hi>
+                        <lb/><hi rendition="#b">Außfu&#x364;hrung Chriſti.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Simon Chriſto hilfft das kreutz zur richtſtatt tragen:</l>
@@ -12933,8 +12933,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XIV.</hi>
-                        <lb/><hi rendition="#b">Erho&#x364;hung am kreutz.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XIV.</hi>
+                        <lb/><hi rendition="#b">Erho&#x364;hung am kreutz.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ; damit er uns zu&#x366; ho&#x364;chſter ehr mo&#x364;cht
@@ -12946,8 +12946,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XV.</hi>
-                        <lb/><hi rendition="#b">Verſcheidung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XV.</hi>
+                        <lb/><hi rendition="#b">Verſcheidung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Am hohen kreutzesſtam&#x342; beſchloß der Herꝛ ſein leben:</l>
@@ -12969,8 +12969,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XVI.</hi>
-                        <lb/><hi rendition="#b">Abnemmung von dem <lb/> kreutz.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XVI.</hi>
+                        <lb/><hi rendition="#b">Abnemmung von dem <lb/> kreutz.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Von denen/ die zu&#x366;vor zu&#x366; Chriſto heimlich kommen/</l>
@@ -12984,8 +12984,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XVII.</hi>
-                        <lb/><hi rendition="#b">Begra&#x364;bnuß.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XVII.</hi>
+                        <lb/><hi rendition="#b">Begra&#x364;bnuß.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Mit Chriſto/ der vom kre<anchor xml:id="a84"/>u<note type="annotation"
@@ -12999,8 +12999,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XVIII.</hi>
-                        <lb/><hi rendition="#b">Auferſtehung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XVIII.</hi>
+                        <lb/><hi rendition="#b">Auferſtehung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Nach überwundnem tod iſt Chriſtus auferſtanden/</l>
@@ -13011,8 +13011,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XIX.</hi>
-                        <lb/><hi rendition="#b">Erſte erſcheinung.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XIX.</hi>
+                        <lb/><hi rendition="#b">Erſte erſcheinung.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Maria bey der ſtim&#x342; den Herꝛen kon&#x342;t erkennen:</l>
@@ -13023,8 +13023,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XX.</hi>
-                        <lb/><hi rendition="#b">Reis gen Emaus.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XX.</hi>
+                        <lb/><hi rendition="#b">Reis gen Emaus.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Zwen Jünger auß der ſtatt gen Emaus traurig gehen:</l>
@@ -13035,9 +13035,9 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXI.</hi>
+                  <head rendition="#c"><hi rendition="#aq">XXI.</hi>
                         <lb/><hi rendition="#b">Andermalige erſcheinung den <lb/> Jüngern
-                           beſchehen.</hi></hi></head>
+                           beſchehen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Do Thomas Chriſtum ſicht/ glaubt er ſein auferſtehen:</l>
@@ -13057,8 +13057,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXII.</hi>
-                        <lb/><hi rendition="#b">Himmelfahrt.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXII.</hi>
+                        <lb/><hi rendition="#b">Himmelfahrt.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Der Herꝛ gen himmel fahrt: die Jünger ihm nachſehen:</l>
@@ -13069,8 +13069,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXIII.</hi>
-                        <lb/><hi rendition="#b">Sendung des heiligen <lb/> Geiſts.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXIII.</hi>
+                        <lb/><hi rendition="#b">Sendung des heiligen <lb/> Geiſts.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Den Jüngern Chriſtus ſelb den heilgen Geiſt verehrt:</l>
@@ -13081,9 +13081,9 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXIV.</hi>
+                  <head rendition="#c"><hi rendition="#aq">XXIV.</hi>
                         <lb/><hi rendition="#b">Ankündung des letſten <lb/>
-                     Gerichts.</hi></hi></head>
+                     Gerichts.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Thu&#x366;t bu&#x366;ß: es wird gewüß der Richter endlich kommen/</l>
@@ -13102,18 +13102,18 @@
             <lb/>
 
             <div n="2" xml:id="n124">
-               <head><hi rendition="#c"><hi rendition="#b">Werke der barmhertzigkeit/ und derſel-
+               <head rendition="#c"><hi rendition="#b">Werke der barmhertzigkeit/ und derſel-
                            <lb break="no"/> ben gnadenbelohnung/</hi> Jeſ.58.v.7. <lb/>
-                     Matth.25.v.35.</hi></head>
+                     Matth.25.v.35.</head>
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXV.</hi>
+                  <head rendition="#c"><hi rendition="#aq">XXV.</hi>
                         <lb/>
                         <hi rendition="#b"><anchor xml:id="a86"/>1.<note type="annotation"
                               targetEnd="a86"><p>Die arabischen Zahlen in diesem Gedicht beziehen
                                  sich auf die einzelnen Werke der Barmherzigkeit.</p></note>
-                           Hungerige ſpeiſen.</hi></hi></head>
+                           Hungerige ſpeiſen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Wirſt armen gu&#x366;tes tu&#x366;hn/ ſo wirſt es Gott erweiſen/</l>
@@ -13124,8 +13124,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXVI.</hi>
-                        <lb/><hi rendition="#b">2. Durſtige tra&#x364;nken.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXVI.</hi>
+                        <lb/><hi rendition="#b">2. Durſtige tra&#x364;nken.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Für einen kalten trunk/ dem durſtigen gegeben/</l>
@@ -13147,8 +13147,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXVII.</hi>
-                        <lb/><hi rendition="#b">3. Frembde beherbergen.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXVII.</hi>
+                        <lb/><hi rendition="#b">3. Frembde beherbergen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l xml:id="l99a" next="#l99b">Wer ſeines hauſes thür dem frembdling wird
@@ -13162,8 +13162,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXVIII.</hi>
-                        <lb/><hi rendition="#b">4. Nakende bekleiden.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXVIII.</hi>
+                        <lb/><hi rendition="#b">4. Nakende bekleiden.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Bedekſt des armen leib/ den andere berauben/</l>
@@ -13174,8 +13174,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXIX.</hi>
-                        <lb/><hi rendition="#b">5. Krankne beſu&#x366;chen.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXIX.</hi>
+                        <lb/><hi rendition="#b">5. Krankne beſu&#x366;chen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Beſu&#x366;chſt die kranknen gern in ihrem leid und ſchmertzen/</l>
@@ -13186,8 +13186,8 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXX.</hi>
-                        <lb/><hi rendition="#b">6. Gefangene tro&#x364;ſten.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XXX.</hi>
+                        <lb/><hi rendition="#b">6. Gefangene tro&#x364;ſten.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>Weil Chriſtus ſich für dich hat willig laſſen binden/</l>
@@ -13203,8 +13203,8 @@
             <lb/>
 
             <div n="2" xml:id="n125">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXI.</hi>
-                     <lb/><hi rendition="#b">Auf einen maulchriſten.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXI.</hi>
+                     <lb/><hi rendition="#b">Auf einen maulchriſten.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Ein tugendhaffter Heid; wiewol er glaubloß iſt;</l>
@@ -13215,8 +13215,8 @@
             </div>
 
             <div n="2" xml:id="n126">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXII.</hi>
-                     <lb/><hi rendition="#b">Ein warer Chriſt.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXII.</hi>
+                     <lb/><hi rendition="#b">Ein warer Chriſt.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Ein Chriſt im werk erſcheint des waren glaubens frucht;</l>
@@ -13236,8 +13236,8 @@
             <lb/>
 
             <div n="2" xml:id="n138">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXIII.</hi>
-                     <lb/><hi rendition="#b">Mu&#x366;ter- und kinderliebe.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXIII.</hi>
+                     <lb/><hi rendition="#b">Mu&#x366;ter- und kinderliebe.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Die kindermu&#x366;ter liebt/ und wird zu&#x366;gleich geliebet:</l>
@@ -13248,8 +13248,8 @@
             </div>
 
             <div n="2" xml:id="n139">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXIV.</hi>
-                     <lb/><hi rendition="#b">Krieg- und fridensfrüchte.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXIV.</hi>
+                     <lb/><hi rendition="#b">Krieg- und fridensfrüchte.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Der krieg die künſt entſchla&#x364;fft; die la&#x364;nder er verheeret:</l>
@@ -13260,8 +13260,8 @@
             </div>
 
             <div n="2" xml:id="n140">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXV.</hi>
-                     <lb/><hi rendition="#b">Wir lehrnen alle tag.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXV.</hi>
+                     <lb/><hi rendition="#b">Wir lehrnen alle tag.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Wir lehrnen alle tag/ und lehrnen doch nicht auß/</l>
@@ -13272,8 +13272,8 @@
             </div>
 
             <div n="2" xml:id="n141">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXVI.</hi>
-                     <lb/><hi rendition="#b">An den Tadelgern.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXVI.</hi>
+                     <lb/><hi rendition="#b">An den Tadelgern.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Was einer nicht verſteht das laß er ungetadelt/</l>
@@ -13286,8 +13286,8 @@
             </div>
 
             <div n="2" xml:id="n142">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXVII.</hi>
-                     <lb/><hi rendition="#b">Auf einen verleümder.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XXXVII.</hi>
+                     <lb/><hi rendition="#b">Auf einen verleümder.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Wer eines andern glimpf nur ſu&#x366;chet abzu&#x366;ſchneiden/</l>
@@ -13298,10 +13298,10 @@
             </div>
 
             <div n="2" xml:id="n143">
-               <head><hi rendition="#c"><hi rendition="#aq">XXXVIII.</hi>
+               <head rendition="#c"><hi rendition="#aq">XXXVIII.</hi>
                      <lb/><hi rendition="#b">Auf falſche fre<anchor xml:id="a88"/>u<note
                            type="annotation" targetEnd="a88"><p>Das Trema wurde hier nachträglich
-                              von Hand eingezeichnet.</p></note>nde.</hi></hi></head>
+                              von Hand eingezeichnet.</p></note>nde.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Wer gu&#x366;te worte gibt/ und nicht iſt freund von hertzen/</l>
@@ -13321,9 +13321,9 @@
             <lb/>
 
             <div n="2" xml:id="n144">
-                  <head><hi rendition="#c"><hi rendition="#aq">XXXIX.</hi>
+                  <head rendition="#c"><hi rendition="#aq">XXXIX.</hi>
                         <lb/><hi rendition="#b">An ein verguldtes hertz/ oder <lb/>
-                           Trinkgeſchirꝛ.</hi></hi></head>
+                           Trinkgeſchirꝛ.</hi></head>
                   <lb/>
                
                <div n="3">
@@ -13336,7 +13336,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XL.</hi></head>
+                  <head rendition="#aq #c">XL.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Wer ſchertz<anchor xml:id="a89"/><note type="annotation" targetEnd="a89"
@@ -13350,7 +13350,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLI.</hi></head>
+                  <head rendition="#aq #c">XLI.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Der wein entdekt ein jedes hertz/</l>
@@ -13361,7 +13361,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLII.</hi></head>
+                  <head rendition="#aq #c">XLII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Das edel ra&#x364;benſafft/ zur fro&#x364;lichkeit gegeben/</l>
@@ -13373,8 +13373,8 @@
             </div>
 
             <div n="2" xml:id="n145">
-               <head><hi rendition="#c"><hi rendition="#aq">XLIII.</hi>
-                     <lb/><hi rendition="#b">Wachtbarkeit.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">XLIII.</hi>
+                     <lb/><hi rendition="#b">Wachtbarkeit.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Die wachtbarkeit ein mittel iſt</l>
@@ -13385,12 +13385,12 @@
             </div>
 
             <div n="2" xml:id="n146">
-               <head><hi rendition="#c"><hi rendition="#aq">XLIV.</hi>
+               <head rendition="#c"><hi rendition="#aq">XLIV.</hi>
                      <lb/><hi rendition="#b">Auf gewüſſensloſe pfru&#x366;nden- <lb break="no"/>
                            la&#x364;<anchor xml:id="a90"/>u<note type="annotation" targetEnd="a90"
                               ><p>Das Trema wurde nachträglich von Hand eingezeichnet. Im
                               göttingischen Vergleichsexemplar steht das u deutlich ohne
-                           Trema.</p></note>fflinge.</hi></hi></head>
+                           Trema.</p></note>fflinge.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Lauff la&#x364;<anchor xml:id="a91"/>u<note type="annotation" targetEnd="a91"
@@ -13420,9 +13420,9 @@
             <lb/>
 
             <div n="2" xml:id="n147_1" next="#n147_2">
-               <head><hi rendition="#c"><hi rendition="#aq">XLV.</hi>
+               <head rendition="#c"><hi rendition="#aq">XLV.</hi>
                      <lb/><hi rendition="#b">Regieren iſt nicht wol<lb break="no"
-                  />leben.</hi></hi></head>
+                  />leben.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Damocles; ſchmeichlende; regieren nen&#x342;t/ wolleben:</l>
@@ -13440,9 +13440,9 @@
             </div>
 
             <div n="2" xml:id="B.1">
-                  <head><hi rendition="#c"><hi rendition="#aq">XLVI.</hi>
+                  <head rendition="#c"><hi rendition="#aq">XLVI.</hi>
                         <lb/><hi rendition="#b">Vber eine zunffthauß<lb break="no"
-                           />ſta&#x364;gen.</hi></hi></head>
+                           />ſta&#x364;gen.</hi></head>
                   <lb/>
                
                <div n="3">
@@ -13461,7 +13461,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">XLVII.</hi></head>
+                  <head rendition="#aq #c">XLVII.</head>
                   <lb/>
                   <lg type="poem">
                      <head>2</head>
@@ -13479,8 +13479,8 @@
             </div>
 
             <div n="2" xml:id="B.2">
-                  <head><hi rendition="#c"><hi rendition="#aq">XLVIII.</hi>
-                        <lb/><hi rendition="#b">Vber eine porten oder<lb/> thüren.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">XLVIII.</hi>
+                        <lb/><hi rendition="#b">Vber eine porten oder<lb/> thüren.</hi></head>
                   <lb/>
                
                <div n="3">
@@ -13511,7 +13511,7 @@
 
             <div n="2" xml:id="n147_2" prev="#n147_1">
                <div n="3">
-                  <head><hi rendition="#aq #c">XLIX.</hi></head>
+                  <head rendition="#aq #c">XLIX.</head>
                   <lb/>
                   <lg type="poem">
                      <head><anchor xml:id="a95"/>4<note type="annotation" targetEnd="a95"><p>Der Punkt
@@ -13529,7 +13529,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">L.</hi></head>
+                  <head rendition="#aq #c">L.</head>
                   <lb/>
                   <lg type="poem">
                      <head><anchor xml:id="a96"/>5<note type="annotation" targetEnd="a96"><p>Der Punkt
@@ -13549,9 +13549,9 @@
             </div>
 
             <div n="2" xml:id="n148">
-               <head>
-                  <hi rendition="#c"><hi rendition="#aq">LI.</hi>
-                     <lb/><hi rendition="#b">Auß dem Ovid.</hi></hi></head>
+               <head rendition="#c">
+                  <hi rendition="#aq">LI.</hi>
+                     <lb/><hi rendition="#b">Auß dem Ovid.</hi></head>
                <lb/>
                <lg type="poem">
                   <l rendition="#et">Der Phaeton begert die ſonn zu&#x366; fu&#x364;hren auf/</l>
@@ -13584,8 +13584,8 @@
 
             <div n="2" xml:id="n149">
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">LII.</hi>
-                        <lb/><hi rendition="#b">Vom Gewüſſen/ und vil <lb/> wüſſen.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">LII.</hi>
+                        <lb/><hi rendition="#b">Vom Gewüſſen/ und vil <lb/> wüſſen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l><anchor xml:id="a100"/>1<note type="annotation" targetEnd="a100"><p>Der
@@ -13611,7 +13611,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LIII.</hi></head>
+                  <head rendition="#aq #c">LIII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>2 Wer immer all ſein tu&#x366;hn allein auf ſchalkheit richtet/</l>
@@ -13635,8 +13635,8 @@
 
             <div n="2" xml:id="B.3">
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">LIV.</hi>
-                        <lb/><hi rendition="#b">Hinder den ofen.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">LIV.</hi>
+                        <lb/><hi rendition="#b">Hinder den ofen.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>1 Der forchtſam liebt den ofenſitz:</l>
@@ -13647,7 +13647,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LV.</hi></head>
+                  <head rendition="#aq #c">LV.</head>
                   <lb/>
                   <lg type="poem">
                      <l>2 Wie bald das wintergſtirn die ka&#x364;lte bringt auf erden;</l>
@@ -13664,11 +13664,11 @@
 
             <div n="2" xml:id="B.4">
                <div n="3">
-                  <head><hi rendition="#c"><hi rendition="#aq">LVI.</hi>
+                  <head rendition="#c"><hi rendition="#aq">LVI.</hi>
                         <lb/>
                         <hi rendition="#b"><anchor xml:id="a102"/>V<note type="annotation"
                               targetEnd="a102"><p>Wahrscheinlich handgezeichnetes
-                           Trema</p></note>ber eine kuchenthüren.</hi></hi></head>
+                           Trema</p></note>ber eine kuchenthüren.</hi></head>
                   <lb/>
                   <lg type="poem">
                      <l>1 Wer mit dem fewr<anchor xml:id="a103"/><note type="annotation"
@@ -13686,7 +13686,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LVII.</hi></head>
+                  <head rendition="#aq #c">LVII.</head>
                   <lb/>
                   <lg type="poem">
                      <l>2 Das kleineſt fünklein oft ein groſſes fewr anzündet/</l>
@@ -13714,8 +13714,8 @@
             <lb/>
 
             <div n="2" xml:id="n223">
-               <head><hi rendition="#c"><hi rendition="#aq">LVIII.</hi>
-                     <lb/><hi rendition="#b">Der Niemand.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">LVIII.</hi>
+                     <lb/><hi rendition="#b">Der Niemand.</hi></head>
                <lb/>
                <lg type="poem">
                   <l>Jch heiſſe Niemand; wie mich jung<anchor xml:id="a105"/><note type="annotation"
@@ -13737,8 +13737,8 @@
             <lb/>
 
             <div n="2" xml:id="n224">
-                  <head><hi rendition="#c"><hi rendition="#aq">LIX.</hi>
-                        <lb/><hi rendition="#b">Grabſchrifften.</hi></hi></head>
+                  <head rendition="#c"><hi rendition="#aq">LIX.</hi>
+                        <lb/><hi rendition="#b">Grabſchrifften.</hi></head>
                   <lb/>
                
                <div n="3">
@@ -13762,7 +13762,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LX.</hi></head>
+                  <head rendition="#aq #c">LX.</head>
                   <lb/>
                   <lg type="poem">
                      <head>2</head>
@@ -13785,7 +13785,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXI.</hi></head>
+                  <head rendition="#aq #c">LXI.</head>
                   <lb/>
                   <lg type="poem">
                      <head>3</head>
@@ -13807,7 +13807,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXII.</hi></head>
+                  <head rendition="#aq #c">LXII.</head>
                   <lb/>
                   <lg type="poem">
                      <head>4</head>
@@ -13836,7 +13836,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXIII.</hi></head>
+                  <head rendition="#aq #c">LXIII.</head>
                   <lb/>
                   <lg type="poem">
                      <head>5</head>
@@ -13852,7 +13852,7 @@
                <lb/>
 
                <div n="3">
-                  <head><hi rendition="#aq #c">LXIV.</hi></head>
+                  <head rendition="#aq #c">LXIV.</head>
                   <lb/>
                   <lg type="poem">
                      <head>6</head>
@@ -13872,8 +13872,8 @@
             </div>
 
             <div n="2">
-               <head><hi rendition="#c"><hi rendition="#aq">LXV.</hi>
-                     <lb/><hi rendition="#b">Klinggedicht.</hi></hi></head>
+               <head rendition="#c"><hi rendition="#aq">LXV.</hi>
+                     <lb/><hi rendition="#b">Klinggedicht.</hi></head>
                <lb/>
                <lg type="poem">
                   <head>7</head>
@@ -13927,8 +13927,8 @@
          <lb/>
 
          <div n="2" xml:id="n225">
-            <head><hi rendition="#c"><hi rendition="#aq">LXVI.</hi>
-                  <lb/><hi rendition="#b">Leben/ Nebel.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXVI.</hi>
+                  <lb/><hi rendition="#b">Leben/ Nebel.</hi></head>
             <lb/>
             <lg type="poem">
                <l>Was unſer <hi rendition="#larger">leben</hi> ſe<anchor xml:id="a119"/>y<note
@@ -13949,8 +13949,8 @@
          </div>
 
          <div n="2" xml:id="n226">
-            <head><hi rendition="#c"><hi rendition="#aq">LXVII.</hi>
-                  <lb/><hi rendition="#b">Nichts irꝛdiſches wa&#x364;rhafft.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXVII.</hi>
+                  <lb/><hi rendition="#b">Nichts irꝛdiſches wa&#x364;rhafft.</hi></head>
             <lb/>
             <lg type="poem">
                <l>Was nützet hochgeboren ſe<anchor xml:id="a121"/>y<note type="annotation"
@@ -13971,10 +13971,10 @@
          </div>
 
          <div n="2" xml:id="n227">
-            <head><hi rendition="#c"><hi rendition="#aq">LXVIII.</hi>
-                  <lb/><hi rendition="#b">Eitelkeit der welt.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXVIII.</hi>
+                  <lb/><hi rendition="#b">Eitelkeit der welt.</hi></head>
             <lb/>
-            <p><hi rendition="#b #c">Faſt auß dem Frantzo&#x364;ſiſchen.</hi></p>
+            <p rendition="#b #c">Faſt auß dem Frantzo&#x364;ſiſchen.</p>
             <lb/>
 
             <lg type="poem">
@@ -14013,8 +14013,8 @@
          <lb/>
 
          <div n="2" xml:id="n150">
-            <head><hi rendition="#c"><hi rendition="#aq">LXIX.</hi>
-                  <lb/><hi rendition="#b">Chriſtenkampff.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXIX.</hi>
+                  <lb/><hi rendition="#b">Chriſtenkampff.</hi></head>
             <lb/>
             <lg type="poem">
                <l xml:id="l104a" next="#l104b"><hi rendition="#in">D</hi>Er menſch; wie Job
@@ -14119,9 +14119,9 @@
          </div>
 
          <div n="2" xml:id="n211">
-            <head><hi rendition="#c"><hi rendition="#aq">LXX.</hi>
+            <head rendition="#c"><hi rendition="#aq">LXX.</hi>
                   <lb/><hi rendition="#b">Anbindgedicht/<lb/> auf den fro&#x364;lichen
-                     Ru&#x366;dolffstag.</hi></hi></head>
+                     Ru&#x366;dolffstag.</hi></head>
             <lb/>
             <lg type="poem">
                <l xml:id="l107a" next="#l107b"><hi rendition="#in">K</hi>om&#x342;/ kom&#x342;
@@ -14220,8 +14220,8 @@
          </div>
 
          <div n="2" xml:id="n212">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXI.</hi>
-                  <lb/><hi rendition="#b">Anbindgedicht/ auf <lb/> Dorothea tag.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXXI.</hi>
+                  <lb/><hi rendition="#b">Anbindgedicht/ auf <lb/> Dorothea tag.</hi></head>
             <lb/>
             <lg type="poem">
                <l><hi rendition="#in">E</hi>Jn kraut heißt Gottesgnad/ ſo wir gemeinlich
@@ -14298,9 +14298,9 @@
          <lb/>
 
          <div n="2" xml:id="n66">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXII.</hi>
+            <head rendition="#c"><hi rendition="#aq">LXXII.</hi>
                   <lb/><hi rendition="#b">Chriſtenliches Haußweſen: <lb/> auf eine Ehrenhochzeit;
-                     auß heiliger Schrifft <lb/> zu&#x366;ſamen gezogen.</hi></hi></head>
+                     auß heiliger Schrifft <lb/> zu&#x366;ſamen gezogen.</hi></head>
             <lb/>
             <lg type="poem">
                <lg>
@@ -14330,8 +14330,8 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#b #c">Wie der Ehſtand anzu&#x366;heben/ <lb/> daß er wol
-                        gerahte.</hi></head>
+                  <head rendition="#b #c">Wie der Ehſtand anzu&#x366;heben/ <lb/> daß er wol
+                        gerahte.</head>
                   <lb/>
                   <lg n="2">
                      <l rendition="#et">O du/ wer du auch ſeyſt/ der du frid/ fre<anchor
@@ -14405,7 +14405,7 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#c #b">Pflichten eines Ehmanns.</hi></head>
+                  <head rendition="#c #b">Pflichten eines Ehmanns.</head>
                   <lb/>
                   <lg n="4">
                      <l rendition="#et">Wie dann im ehſtand ſelb; damit das glük nicht weich;</l>
@@ -14434,7 +14434,7 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#b #c">Pflichten eines Ehweibs.</hi></head>
+                  <head rendition="#b #c">Pflichten eines Ehweibs.</head>
                   <lb/>
                   <lg n="5">
                      <l xml:id="l112a" next="#l112b" rendition="#et">Das weib/ der kirchen gleich
@@ -14482,12 +14482,12 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#c #b">Gemeine pflichten der Ehle<anchor xml:id="a166"
+                  <head rendition="#c #b">Gemeine pflichten der Ehle<anchor xml:id="a166"
                            />u<note type="annotation" targetEnd="a166"><p>Das Trema wurde
-                              nachträglich von Hand eingezeichnet.</p></note>hten. <lb/></hi></head>
+                              nachträglich von Hand eingezeichnet.</p></note>hten. <lb/></head>
                   <lb/>
                   <lg>
-                     <head><hi rendition="#c #b">Gegen ſich ſelbſten.</hi></head>
+                     <head rendition="#c #b">Gegen ſich ſelbſten.</head>
                      <lg n="6">
                         <l rendition="#et">Sie beyde/ mann<anchor xml:id="a167"/><note
                               type="annotation" targetEnd="a167"><p>Das Komma wurde nachträglich von
@@ -14528,10 +14528,10 @@
                   <lb/>
 
                   <lg>
-                     <head><hi rendition="#b #c">Gegen den eltern/ kindern<anchor xml:id="a173"
+                     <head rendition="#b #c">Gegen den eltern/ kindern<anchor xml:id="a173"
                               /><note type="annotation" targetEnd="a173"><p>Das Komma wurde
                                  nachträglich von Hand eingezeichnet.</p></note> und <lb/>
-                           dienſten.</hi></head>
+                           dienſten.</head>
                      <lb/>
                      <lg n="7">
                         <l rendition="#et">Ehele<anchor xml:id="a174"/>u<note type="annotation"
@@ -14581,8 +14581,8 @@
                   <lb/>
 
                   <lg>
-                     <head><hi rendition="#c #b">Gegen dem gantzen haußgeſind/ nachbaren/ <lb/> und
-                           Fürgeſetzten.</hi></head>
+                     <head rendition="#c #b">Gegen dem gantzen haußgeſind/ nachbaren/ <lb/> und
+                           Fürgeſetzten.</head>
                      <lb/>
                      <lg n="8">
                         <l rendition="#et">Dem gantzen haußgeſind dich ſtell zum beyſpil dar</l>
@@ -14622,8 +14622,8 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#b #c">Frucht und nutz ehlicher <lb/>
-                     from&#x342;keit.</hi></head>
+                  <head rendition="#b #c">Frucht und nutz ehlicher <lb/>
+                     from&#x342;keit.</head>
                   <lb/>
                   <lg n="9">
                      <l rendition="#et">Wer nun/ wie obgemeldt/ wird tretten in die eh/</l>
@@ -14655,7 +14655,7 @@
                <lb/>
 
                <lg>
-                  <head><hi rendition="#b #c">Wunſch für die newen <lb/> Ehleuthe.</hi></head>
+                  <head rendition="#b #c">Wunſch für die newen <lb/> Ehleuthe.</head>
                   <lb/>
                   <lg n="10">
                      <l xml:id="l114a" next="#l114b" rendition="#et">Nun ſchreit ich zu&#x366; dem wunſch für euch/
@@ -14694,9 +14694,9 @@
          </div>
 
          <div n="2" xml:id="n67">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXIII.</hi>
+            <head rendition="#c"><hi rendition="#aq">LXXIII.</hi>
                   <lb/><hi rendition="#b">Haußfrid/ <lb/>alß eine hochzeitliche Ehrengab <lb/>
-                     aufgeſtellt.</hi></hi></head>
+                     aufgeſtellt.</hi></head>
             <lb/>
             <lg type="poem">
                <l rendition="#et"><hi rendition="#in">G</hi>Lük zu&#x366; dem Bra&#x364;utigam! glük
@@ -14844,8 +14844,8 @@
          </div>
 
          <div n="2" xml:id="n68">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXIV.</hi>
-                  <lb/><hi rendition="#b">Hochzeitliches Klinggedicht.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXXIV.</hi>
+                  <lb/><hi rendition="#b">Hochzeitliches Klinggedicht.</hi></head>
             <lb/>
             <lg type="poem">
                <l xml:id="l117a" next="#l117b"><hi rendition="#in">D</hi>Em menſchen iſt zwar
@@ -14895,9 +14895,9 @@
          <lb/>
 
          <div n="2" xml:id="n69">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXV.</hi>
+            <head rendition="#c"><hi rendition="#aq">LXXV.</hi>
                   <lb/><hi rendition="#b">Liebgedicht/<lb/> auf eines ſeiner freunden Ehren<lb
-                        break="no"/> hochzeit.</hi></hi></head>
+                        break="no"/> hochzeit.</hi></head>
             <lb/>
             <lg type="poem">
                <l><hi rendition="#in">W</hi>Jewol ich nimmermehr vertrawe meinen ſinnen/</l>
@@ -15218,8 +15218,8 @@
          <lb/>
 
          <div n="2" xml:id="n247">
-            <head><hi rendition="#c"><hi rendition="#aq">LXXVI.</hi>
-                  <lb/><hi rendition="#b">Tiſchzucht.</hi></hi></head>
+            <head rendition="#c"><hi rendition="#aq">LXXVI.</hi>
+                  <lb/><hi rendition="#b">Tiſchzucht.</hi></head>
             <lb/>
 
             <lg type="poem">
@@ -15237,7 +15237,7 @@
                <lb/>
 
                <lg n="2">
-                  <head><hi rendition="#b #c">Zu&#x366;rüſtung des tiſches.</hi></head>
+                  <head rendition="#b #c">Zu&#x366;rüſtung des tiſches.</head>
                   <lb/>
                   <lg>
                      <l>So wa&#x364;ſch die ha&#x364;nde nun/ und dann/ zu&#x366; rechter zeite/</l>
@@ -15273,7 +15273,7 @@
                <lb/>
 
                <lg n="3">
-                  <head><hi rendition="#c #b">Das tiſchdienen oder aufwarten.</hi></head>
+                  <head rendition="#c #b">Das tiſchdienen oder aufwarten.</head>
                   <lb/>
                   <l>Wann dann die eltern ſich mit ſpeiß und trank erlaben/</l>
                   <lb/>
@@ -15334,7 +15334,7 @@
                <lb/>
 
                <lg n="4">
-                  <head><hi rendition="#c #b">Gebührende zucht über tiſch.</hi></head>
+                  <head rendition="#c #b">Gebührende zucht über tiſch.</head>
                   <lb/>
                   <l>Sitzſt aber ſelb zu&#x366; tiſch/ bey jungen oder alten/</l>
                   <lb/>
@@ -15499,7 +15499,7 @@
                <lb/>
 
                <lg n="5">
-                  <head><hi rendition="#c #b">Das aufnemmen des tiſches.</hi></head>
+                  <head rendition="#c #b">Das aufnemmen des tiſches.</head>
                   <lb/>
                   <l>Wann nun die mahlzeit jetzt ihr endſchafft hat bekom&#x342;en/</l>
                   <lb/>
@@ -15542,7 +15542,7 @@
                <lb/>
 
                <lg n="6">
-                  <head><hi rendition="#c #b">Vermahnung an die kinder.</hi></head>
+                  <head rendition="#c #b">Vermahnung an die kinder.</head>
                   <lb/>
                   <l>Sol nun/ o liebes kind! die Tiſcheszucht dich zieren/</l>
                   <lb/>
@@ -15560,8 +15560,8 @@
          <lb/>
 
          <div n="2" xml:id="n248">
-            <head><hi rendition="#b #c">Beſchreibung <lb/> des ungeſunden Geſund<lb break="no"
-                  />heittrinkens.</hi></head>
+            <head rendition="#b #c">Beſchreibung <lb/> des ungeſunden Geſund<lb break="no"
+                  />heittrinkens.</head>
             <lb/>
 
             <lg type="poem">
@@ -15581,8 +15581,8 @@
                <lb/>
 
                <lg n="2">
-                  <head><hi rendition="#b #c">Ru&#x366;hmloſe ſatzungen der Geſund<lb break="no"/>
-                        heitſa&#x364;uffer.</hi></head>
+                  <head rendition="#b #c">Ru&#x366;hmloſe ſatzungen der Geſund<lb break="no"/>
+                        heitſa&#x364;uffer.</head>
                   <lb/>
                   <l>Bey ſolchem freßmahl nun zu&#x366; oberſt wird geſetzet</l>
                   <lb/>
@@ -15648,7 +15648,7 @@
                <lb/>
 
                <lg n="3">
-                  <head><hi rendition="#b #c">Gemeiner Geſundheittrunk.</hi></head>
+                  <head rendition="#b #c">Gemeiner Geſundheittrunk.</head>
                   <lb/>
                   <l>Herꝛ Witzla&#x364;r iſt gezeug/ und weißt hiervon zu&#x366; ſingen:</l>
                   <lb/>
@@ -15717,7 +15717,7 @@
                <lb/>
 
                <lg n="4">
-                  <head><hi rendition="#b #c">Geſundheittrunk groſſer <lb/> Herꝛen.</hi></head>
+                  <head rendition="#b #c">Geſundheittrunk groſſer <lb/> Herꝛen.</head>
                   <lb/>
                   <lg>
                      <l>Des Fürſten Gſundheit gilt! jetz wird es recht angehen:</l>
@@ -15779,7 +15779,7 @@
                <lb/>
 
                <lg n="5">
-                  <head><hi rendition="#b #c">Newer Geſundheittrunk.</hi></head>
+                  <head rendition="#b #c">Newer Geſundheittrunk.</head>
                   <lb/>
                   <l>Secht! mit dergleichen ſchimpf/ und groben narꝛenpoſſen</l>
                   <lb/>
@@ -15802,8 +15802,8 @@
                <lb/>
 
                <lg n="6">
-                  <head><hi rendition="#b #c">Stantibus illis/ auf Sant <lb/> Johans
-                     ſegen.</hi></head>
+                  <head rendition="#b #c">Stantibus illis/ auf Sant <lb/> Johans
+                     ſegen.</head>
                   <lb/>
                   <l>– – – – – – – Wann ſie vom tiſche gehen/</l>
                   <lb/>
@@ -15843,9 +15843,9 @@
                <lb/>
 
                <lg n="7">
-                  <head><hi rendition="#b #c">Beſchließliche erinner- und abmahnung vom <lb/> leib-
+                  <head rendition="#b #c">Beſchließliche erinner- und abmahnung vom <lb/> leib-
                         und ſeelen-ſcha&#x364;dlichen Geſundheit- <lb break="no"/>
-                     trinken.</hi></head>
+                     trinken.</head>
                   <lb/>
                   <l>Wann nun durch füllerey/ und durch geſundheitſauffen/</l>
                   <lb/>
