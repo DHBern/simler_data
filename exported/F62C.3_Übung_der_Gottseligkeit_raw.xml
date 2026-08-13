@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F62C.3 Übung der Gottseligkeit</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F62C.3 Übung der Gottseligkeit</title>
+               <idno type="Transkribus">10961360</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="103712547.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=CERDXXJNPSXMOBEJENDCUORD&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="737,2487 2042,2487 2042,2789 737,2789" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="728,2429 1917,2429 1917,2583 728,2583" rendition="Line" xml:id="facs_2_tr_1_tl_1"/>
+            <zone points="838,2537 1982,2537 1982,2654 838,2654" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+            <zone points="803,2585 2040,2585 2040,2707 803,2707" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+            <zone points="752,2681 2042,2681 2042,2848 752,2848" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+         </zone>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_3">
+         <graphic url="p003.jpg" width="2479px" height="3508px"/>
+         <zone points="301,345 1814,345 1814,3069 301,3069" rendition="TextRegion" xml:id="facs_3_r">
+            <zone points="515,506 1497,506 1497,932 515,932" rendition="Line" xml:id="facs_3_l"/>
+            <zone points="760,987 974,987 974,1107 760,1107" rendition="Line" xml:id="facs_3_l_1"/>
+            <zone points="783,1046 978,1046 978,1168 783,1168" rendition="Line" xml:id="facs_3_l_2"/>
+            <zone points="793,1117 953,1117 953,1210 793,1210" rendition="Line" xml:id="facs_3_l_3"/>
+            <zone points="788,1213 904,1213 904,1256 788,1256" rendition="Line" xml:id="facs_3_l_4"/>
+            <zone points="780,2779 1178,2779 1178,2816 780,2816" rendition="Line" xml:id="facs_3_l_5"/>
+            <zone points="457,2875 1492,2875 1492,2920 457,2920" rendition="Line" xml:id="facs_3_l_6"/>
+         </zone>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_4">
+         <graphic url="p004.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_5">
+         <graphic url="p005.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_6">
+         <graphic url="p006.jpg" width="2479px" height="3508px"/>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_1" n="N001"/>Wer in Gottſeligkeit, nach reiner lehr, ſich übet,
+               <lb facs="#facs_2_tr_1_tl_2" n="N002"/>der bawet felſenfeſt, und ſicher vor dem fal:
+               <lb facs="#facs_2_tr_1_tl_3" n="N003"/>Der aber bawt auf ſand, ja grundlos überal,
+               <lb facs="#facs_2_tr_1_tl_4" n="N004"/>der falſchen lehrern folgt, und laſtern ſich ergibet.
+            </ab>
+            <pb facs="#facs_3" n="3" xml:id="img_0003"/>
+            <ab facs="#facs_3_r" type="">
+               <lb facs="#facs_3_l" n="N001"/>Uͤbung der Gottſeligkeit.
+               <lb facs="#facs_3_l_1" n="N002"/>Gottſeligkeit
+               <lb facs="#facs_3_l_2" n="N003"/>iſt zu allen
+               <lb facs="#facs_3_l_3" n="N004"/>dingen
+               <lb facs="#facs_3_l_4" n="N005"/>nutz.
+               <lb facs="#facs_3_l_5" n="N006"/>Zürich
+               <lb facs="#facs_3_l_6" n="N007"/>Beÿ Johann Jacob Bodmer.
+            </ab>
+            <pb facs="#facs_4" n="4" xml:id="img_0004"/>
+            <pb facs="#facs_5" n="5" xml:id="img_0005"/>
+            <pb facs="#facs_6" n="6" xml:id="img_0006"/>
+         </div>
+      </body>
+   </text>
+</TEI>
