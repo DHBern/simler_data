@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F64D+ Wild Seelenangst Christi</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F64D+ Wild Seelenangst Christi</title>
+               <idno type="Transkribus">7707852</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_1">
+         <graphic url="p001.jpg" width="2479px" height="3508px"/>
+      </surface>
+      <surface ulx="0" uly="0" lrx="2479" lry="3508" xml:id="facs_2">
+         <graphic url="94257752.jpg" width="2479px" height="3508px"/>
+         <graphic url="https://files.transkribus.eu/Get?id=EXZWTUZSHCEHWOOVUYQSGEDL&amp;fileType=view" width="2479px" height="3508px"/>
+         <zone points="522,190 2283,190 2283,2869 522,2869" rendition="TextRegion" xml:id="facs_2_tr_1">
+            <zone points="620,307 2189,307 2189,537 620,537" rendition="Line" xml:id="facs_2_tr_1_tl_2"/>
+            <zone points="1175,456 1606,456 1606,620 1175,620" rendition="Line" xml:id="facs_2_tr_1_tl_3"/>
+            <zone points="697,607 2097,607 2097,835 697,835" rendition="Line" xml:id="facs_2_tr_1_tl_4"/>
+            <zone points="800,787 2275,787 2275,1032 800,1032" rendition="Line" xml:id="facs_2_tr_1_tl_5"/>
+            <zone points="988,929 1427,929 1427,1067 988,1067" rendition="Line" xml:id="facs_2_tr_1_tl_6"/>
+            <zone points="627,925 2266,925 2266,1214 627,1214" rendition="Line" xml:id="facs_2_tr_1_tl_7"/>
+            <zone points="964,1135 1492,1135 1492,1282 964,1282" rendition="Line" xml:id="facs_2_tr_1_tl_8"/>
+            <zone points="508,1221 2268,1221 2268,1405 508,1405" rendition="Line" xml:id="facs_2_tr_1_tl_9"/>
+            <zone points="541,1374 2268,1374 2268,1569 541,1569" rendition="Line" xml:id="facs_2_tr_1_tl_10"/>
+            <zone points="984,1455 1330,1455 1330,1624 984,1624" rendition="Line" xml:id="facs_2_tr_1_tl_11"/>
+            <zone points="1080,1755 2229,1755 2229,1944 1080,1944" rendition="Line" xml:id="facs_2_tr_1_tl_12"/>
+            <zone points="927,1913 2279,1913 2279,2123 927,2123" rendition="Line" xml:id="facs_2_tr_1_tl_13"/>
+            <zone points="1295,2077 2176,2077 2176,2270 1295,2270" rendition="Line" xml:id="facs_2_tr_1_tl_14"/>
+            <zone points="2033,2658 2270,2658 2270,2881 2033,2881" rendition="Line" xml:id="facs_2_tr_1_tl_15"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <pb facs="#facs_2" n="2" xml:id="img_0002"/>
+            <ab facs="#facs_2_tr_1" type="">
+               <lb facs="#facs_2_tr_1_tl_2" n="N001"/><Antiqua>U</Antiqua>ber Herꝛen Abraham Wilden vortreff-
+               <lb facs="#facs_2_tr_1_tl_3" n="N002"/>liches Buͦch/
+               <lb facs="#facs_2_tr_1_tl_4" n="N003"/>von der Seelen-angſt Chriſti.
+               <lb facs="#facs_2_tr_1_tl_5" n="N004"/><Initial_letter>H</Initial_letter>Erꝛ Wild der Ewigkeit wird ruhmlich
+               <lb facs="#facs_2_tr_1_tl_6" n="N005"/>einverleibt/
+               <lb facs="#facs_2_tr_1_tl_7" n="N006"/>weil/ was uns ewig nutzt/ ruhmwürdig
+               <lb facs="#facs_2_tr_1_tl_8" n="N007"/>er beſchreibt:
+               <lb facs="#facs_2_tr_1_tl_9" n="N008"/>O daß man diſes Buͦch alltaͤglich wurde leſen/
+               <lb facs="#facs_2_tr_1_tl_10" n="N009"/>ſo wurd man aller Angſt/ durch Chriſtus Angſt
+               <lb facs="#facs_2_tr_1_tl_11" n="N010"/>geneſen.
+               <lb facs="#facs_2_tr_1_tl_12" n="N011"/>Zu ſondern Ehren ſetzte diß wenige
+               <lb facs="#facs_2_tr_1_tl_13" n="N012"/>Joh. Wilhelm Simler/ Elter/
+               <lb facs="#facs_2_tr_1_tl_14" n="N013"/>den 14. Meyen/ 1664.
+               <lb facs="#facs_2_tr_1_tl_15" n="N014"/><Catch_word>See-</Catch_word>
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>

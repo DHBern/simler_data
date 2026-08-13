@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F64D_Wild_Seelenangst_Christi" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">F64D+ Wild Seelenangst Christi</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">F64D+ Wild Seelenangst Christi</title>
+            <idno type="Transkribus">7707852</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            <pb facs="2"/>
+            <hi rendition="#aq">U</hi>ber Herꝛen Abraham Wilden vortreff-
+            <lb break="no"/>
+            liches Bu&#x366;ch/
+            <lb/>
+            von der Seelen-angſt Chriſti.
+            <lb/>
+            <hi rendition="#in">H</hi>Erꝛ Wild der Ewigkeit wird ruhmlich
+            <lb/>
+            einverleibt/
+            <lb/>
+            weil/ was uns ewig nutzt/ ruhmwürdig
+            <lb/>
+            er beſchreibt:
+            <lb/>
+            O daß man diſes Bu&#x366;ch allta&#x364;glich wurde leſen/
+            <lb/>
+            ſo wurd man aller Angſt/ durch Chriſtus Angſt
+            <lb/>
+            geneſen.
+            <lb/>
+            Zu ſondern Ehren ſetzte diß wenige
+            <lb/>
+            Joh. Wilhelm Simler/ Elter/
+            <lb/>
+            den 14. Meyen/ 1664.
+            <lb/>
+            <fw place="bottom" type="catch">See-</fw>
+            <lb break="no"/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
