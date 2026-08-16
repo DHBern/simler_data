@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="EN61C_H._Balthasar_Venators_verteutsches_Ehren-_und_Lobgeticht_für_die_im_1629_jahr_neuaufgerichte_Burgerbücherey_zu_Zürich" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">EN61C H. Balthasar Venators verteutsches Ehren- und Lobgeticht für die im 1629 jahr neuaufgerichte Burgerbücherey zu Zürich</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">EN61C H. Balthasar Venators verteutsches Ehren- und Lobgeticht für die im 1629 jahr neuaufgerichte Burgerbücherey zu Zürich</title>
+            <idno type="Transkribus">4579930</idno>
+            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729254/manifest</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="17729256"/>
+            <head>H. Balthaſar Venators
+            <lb/>
+            verteutſchtes
+            <lb/>
+            Ehren- und Lobgeticht/
+            <lb/>
+            fu&#x364;r die/ im 1629 jahr/ neuaufgerichte Burgerbu&#x364;cherey
+            <lb/>
+            zu Zu&#x364;rich.</head>
+            <lb/>
+            
+            <hi rendition="#aq">Inſcriptio Bibliothecæ
+            <lb/>
+            veteris,
+            <lb/>
+            à Ptolomæo Philadelpho
+            <lb/>
+            uſurpata.
+            <lb/>
+            
+            <lb/>
+            
+            <lb/>
+            Bibliotheca eſt Pharma-
+            <lb break="no"/>
+            copolium &amp; medicina ani-
+            <lb break="no"/>
+            mæ.</hi>
+            <lb/>
+            
+            Alte Vberſchrifft
+            <lb/>
+            einer Bibliothec/
+            <lb/>
+            ſo Ptolomæus Philadel-
+            <lb break="no"/>
+            phus gebraucht.
+            <lb/>
+            Die Bibliothec iſt eine Apo-
+            <lb break="no"/>
+            thec und zubereitung aller und
+            <lb/>
+            ieder Arzneyen/ und ein rech-
+            <lb break="no"/>
+            tes mittel zur geſundheit der
+            <lb/>
+            Seelen.
+            <lb/>
+            
+            <l><hi rendition="#in">D</hi>Je/ ſo an Heldenmuht/ dem Marſen gleich zuachten<choice><sic>/.</sic><corr>/</corr></choice></l>
+            <lb/>
+            <l><anchor xml:id="a1"/>u<note type="annotation" targetEnd="a1"><p>u teilweise unsichtbar</p></note>nd deren Fauſt geſchikt zu ſtu&#x364;rmen und zu ſchlachten/</l>
+            <lb/>
+            <l>die veſter Mauren Zirk umſchanzen u&#x364;berall/</l>
+            <lb/>
+            <l>und ſie durchlo&#x364;cheren mit Straalgeleichem knall:</l>
+            <lb/>
+            <l>Dieſelben pflegen auch/ nach ihrer art und willen/</l>
+            <lb/>
+            <l>mit allerley Gewehr Zeugha&#x364;uſer außzufu&#x364;llen:</l>
+            <lb/>
+            <l>Da ſihet man mit luſt pfeil/ ſchwerter und geſchoß;</l>
+            <lb/>
+            <l>verſtehe das/ ſo man zulezzen zu&#x364;ndet loß.</l>
+            <lb/>
+            <l>Hier finden leichte Rohr/ die in dem ſattel dienen/</l>
+            <lb/>
+            <l>und ſchwa&#x364;re waaffen die/ ſo ſich zu fuß erku&#x364;hnen;</l>
+            <lb/>
+            <l>Alſo ein ieder ihm/ zu ſeim gebrauch/ erwellt</l>
+            <lb/>
+            <l>was a&#x364;hnlich ſeiner Kunſt/ und ihme wolgefa&#x364;llt.</l>
+            <lb/>
+            <l>Zum Beyſpil dienet uns der Ort/ den ieder kennet/</l>
+            <lb/>
+            <l>der ſcho&#x364;n und lieblich Ort; die Bu&#x364;cherey genennet</l>
+            <lb/>
+            <l>der werthen Burgerſchaft; vor kurzem aufgericht;</l>
+            <lb/>
+            <l>da/ auf der Schafften ma&#x364;ng/ vil Bu&#x364;cher im geſicht/</l>
+            <lb/>
+            <l>von heiligem begriff/ in ſcho&#x364;ner ordnung ſtehen:</l>
+            <lb/>
+            <l>Auf mehr alß einem Pult gibt Moſes ſich zuſehen:</l>
+            <lb/>
+            <l>Hebreer/ Araber/ Chaldeer und Aſſur/</l>
+            <lb/>
+            <l>in ihrer Mundart hier/ ſich ho&#x364;ren laſſen pur:</l>
+            <lb/>
+            <l>Hier fleußt der Griechen Red/ und der Lateiner Wu&#x364;ſſen:</l>
+            <lb/>
+            <l>Hier kanſt in beyder Spraach die alten Va&#x364;tter gru&#x364;ſſen.</l>
+            <lb/>
+            <l>Was auß dem Rechten dem/ der die Geſa&#x364;zze treibt/</l>
+            <lb/>
+            <l>zuwu&#x364;ſſen no&#x364;htig ſey/ hier unvergeſſen bleibt.</l>
+            <lb/>
+            <l>Hier ſigt der Arzten kunſt; hier findet man zuleſen</l>
+            <lb/>
+            <l>was mitlen einer mo&#x364;g vom Weh und Tod geneſen.</l>
+            <lb/>
+            <l>Nach einem Reigen dir zuſchauen kommen vor</l>
+            <lb/>
+            <l>vil Ma&#x364;nner/ deren Lob geſtigen iſt empor/</l>
+            <lb/>
+            <l>die Himmel/ Erd und Meer ſo hoch und tieff ergru&#x364;ndet/</l>
+            <lb/>
+            <l>daß nichts verborgenes vor ihnen ſich befindet.</l>
+            <lb/>
+            <l>Wer aber ſagt es ganz? weil diſes Werk ſich mehrt/</l>
+            <lb/>
+            <l>und ſo von ſtund zu ſtund in gro&#x364;ſſers ſich verkehrt.</l>
+            <lb/>
+            <l>O Zu&#x364;rich/ unter deß/ mit angefangnem Werke</l>
+            <lb/>
+            <l>fahr immer eyfrig fort; der Nachwelt zum Gemerke;</l>
+            <lb/>
+            <l>daß/ deſſen yngedenk/ die Kindes-kinder ſich</l>
+            <lb/>
+            <l>verwundern deiner Gaab/ und ru&#x364;hmen ewig dich.</l>
+            <lb/>
+            <l>Das Lob der Dapferkeit/ ſo man im Krieg erwirbet/</l>
+            <lb/>
+            <l>dir zwaren nie gebrach; noch nicht; auch nicht erſtirbet:</l>
+            <lb/>
+            <l>Gott aber laſſe dir die Prob nicht ſelbs zutheil/</l>
+            <lb/>
+            <l>dann auch beym beſten Krieg iſt wenig nuz und heil.</l>
+            <lb/>
+            <l>Des Fridens Scha&#x364;zz und Ku&#x364;nſt/ und ſcho&#x364;ne nuzbarkeiten</l>
+            <lb/>
+            <l>in euere Gebiet und Kirchen ſich außbreiten!</l>
+            <lb/>
+            <l>Der wu&#x364;ſte Roſt verderb Spieß/ Schwerter und Rapier/</l>
+            <lb/>
+            <l>der Helmen heller Glanz ſich u&#x364;beral verlier.</l>
+            <lb/>
+            <l>Die Fahnen fliegen nicht/ der ſtaub ſie u&#x364;berdekke:</l>
+            <lb/>
+            <l>die ſcha&#x364;dlich Schabe ſich ins Kriegs-Gezellt verſtekke:</l>
+            <lb/>
+            <l>Hingegen o&#x364;ffne ſich manch ſcho&#x364;ne Bu&#x364;cherey/</l>
+            <lb/>
+            <l>da iedes ſtukk geziert und wolgebunden ſey.</l>
+            <lb/>
+            <l>Hier gru&#x366;ne nicht der Kranz/ den Mars mit fra&#x364;fel windet/</l>
+            <lb/>
+            <l>beſonder der allein/ den Phoebus ku&#x364;nſtlich bindet:</l>
+            <lb/>
+            <l>Das Oelblat werd hiereyn; alß Fridenskrey; geſezt:</l>
+            <lb/>
+            <l>Hier werd das Pindus-volk am ſchatten wol ergezt!</l>
+            <lb/>
+            <l>Wann diſes ſo geſcha&#x364;h/ wie gern wolt ich vergeſſen</l>
+            <lb/>
+            <l>des elends/ drinnen ich am Nekkerſtrom geſeſſen:</l>
+            <lb/>
+            <l>verda&#x364;uen wolt ich gar/ was meinem Vatterland</l>
+            <lb/>
+            <l>geraubet/ und gen Rom verſchikt des Feindes hand.</l>
+            <lb/>
+            <l>Ach! ſchwerer Bu&#x364;cherkarꝛ/ wie haſt du doch gekirꝛet?</l>
+            <lb/>
+            <l>Jhr Gu&#x364;terwa&#x364;gen/ Ach! wie habt ihr/ angeſchirꝛet/</l>
+            <lb/>
+            <l>ſo reichen Raub entfu&#x364;hrt? Doch ſtell ich eyn die Klag</l>
+            <lb/>
+            <l>die von des Ra&#x364;ubers hand nichts widerbringen mag.</l>
+            <lb/>
+            <l>Jch wu&#x364;nſche den verlurſt vilmehr erſezt zuſehen/</l>
+            <lb/>
+            <l>durch andrer Bu&#x364;cherey geſegnets auferſtehen.</l>
+            <lb/>
+            <l>Der waare Gottesdienſt/ glaub/ glehrte/ from&#x342;keit/ treu/</l>
+            <lb/>
+            <l>meim alten Zu&#x364;rich ſeind/ von langem her/ nicht neu:</l>
+            <lb/>
+            <l>Nun aber glaub ich veſt: [fals nicht iſt zuvernichten</l>
+            <lb/>
+            <l>was der Poeten vil/ in ihren Schrifften/ tichten]</l>
+            <lb/>
+            <l>Es ſey das Kunſtgebirg/ der Muſen Thron und Zellt;</l>
+            <lb/>
+            <l>wanns nicht zu Zu&#x364;rich iſt; an keinem ort der Welt.</l>
+            <lb/>
+            
+            Der Lehr- und Ehrliebenden Jugend in Zu&#x364;rich/
+            <lb/>
+            ab der Burgerbu&#x364;cherey daſelbſten/
+            <lb/>
+            fu&#x364;r das 1661. jahr/ verehrt.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
