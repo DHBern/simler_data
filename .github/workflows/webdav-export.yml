@@ -49,8 +49,17 @@ jobs:
 
             while read -r item; do
               [ -z "$item" ] && continue
-              local item_name
-              item_name=$(basename "$item")
+              # WebDAV hrefs are URIs: non-ASCII/reserved characters (e.g. ä,
+              # ö, ü) come back percent-encoded (RFC 3986). Keep the raw,
+              # still-encoded segment for building further request URLs
+              # (remote_path), and only decode for the local filename --
+              # otherwise the literal "%c3%bc" etc. gets written to disk, and
+              # if such a mangled name is ever re-uploaded, the next PROPFIND
+              # percent-encodes the literal "%" too, compounding the mangling
+              # on every round trip.
+              local item_name_raw item_name
+              item_name_raw=$(basename "$item")
+              item_name=$(python3 -c 'import sys, urllib.parse; print(urllib.parse.unquote(sys.argv[1]))' "$item_name_raw")
 
               # Wait 2 seconds
               sleep 2
@@ -58,12 +67,12 @@ jobs:
               # If item is a directory, recursively download it
               if [[ "$item" == */ ]]; then
                 mkdir -p "$local_path/$item_name"
-                download_files "$remote_path$item_name/" "$local_path/$item_name"
+                download_files "$remote_path$item_name_raw/" "$local_path/$item_name"
               else
                 # If item is a file, download it
                 curl -fsS --retry 3 --retry-delay 5 \
                   -u "$WEBDAV_USERNAME:$WEBDAV_PASSWORD" \
-                  --request GET "$WEBDAV_URL$remote_path$item_name" \
+                  --request GET "$WEBDAV_URL$remote_path$item_name_raw" \
                   -o "$local_path/$item_name"
               fi
             done <<< "$items"
