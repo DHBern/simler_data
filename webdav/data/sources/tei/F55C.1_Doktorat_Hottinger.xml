@@ -6,20 +6,68 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F55C.1 Doktorat Hottinger</title>
+            <title type="main">Stemmatologia Tigurina</title>
+            <title type="sub">Das ist Zürichisches Geschlechter Buch …</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/120345617">
+                  <surname>Dürsteler</surname>
+                  <forename>Erhard</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-manuscripta.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F55C.1 Doktorat Hottinger</title>
-            <idno type="Transkribus">10034094</idno>
-            <idno type="URLIIIF">https://www.e-manuscripta.ch/i3f/v20/964764/manifest</idno>
-            </bibl>
+            <bibl type="M">Dürsteler, Erhard: Uber Herren Joh. Heinrich Hottingers Doctorat. [Erlenbach] 1706.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Stemmatologia Tigurina</title>
+                  <title type="sub" level="m">Das ist Zürichisches Geschlechter Buch …</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/120345617">
+                        <surname>Dürsteler</surname>
+                        <forename>Erhard</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">237 Bl. : Ill. ; 31 x 19 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Erlenbach].</name>
+                  </publisher>
+                  <pubPlace>[Erlenbach]</pubPlace>
+                  <date type="publication">1706</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Ms E 18b</idno>
+                     <idno type="URLImages">https://doi.org/10.7891/e-manuscripta-19655</idno>
+                     <idno type="DOI">10.7891/e-manuscripta-19655</idno>
+                     <idno type="Transkribus">10034094</idno>
+                     <idno type="URLIIIF">https://www.e-manuscripta.ch/i3f/v20/964764/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

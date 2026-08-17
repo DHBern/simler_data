@@ -6,20 +6,68 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F54C.2 Begräbnis Genath</title>
+            <title type="main">Christliche Leich-predig, Von deme, wem wir beydes leben und sterben sollen</title>
+            <title type="sub">gehalten Sontags den 23. Apr. An. 1654 in der Pfarrkirchen des Münsters zu Basel, bey ... Bestattung des ... Johann Jacob Genathen, Burgers und Buchtruckers daselbsten ...</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/115378774">
+                  <surname>Grynäus</surname>
+                  <forename>Samuel</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Universitätsbibliothek Basel über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F54C.2 Begräbnis Genath</title>
-            <idno type="Transkribus">10034088</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/18154395/manifest</idno>
-            </bibl>
+            <bibl type="M">Grynäus, Samuel: Auf Herren Joh. Jakob Genathen […] Begräbnus. Basel 1654.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Christliche Leich-predig, Von deme, wem wir beydes leben und sterben sollen</title>
+                  <title type="sub" level="m">gehalten Sontags den 23. Apr. An. 1654 in der Pfarrkirchen des Münsters zu Basel, bey ... Bestattung des ... Johann Jacob Genathen, Burgers und Buchtruckers daselbsten ...</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/115378774">
+                        <surname>Grynäus</surname>
+                        <forename>Samuel</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">32 S.</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Basel/ bey Johann Jacob Genath, sel. Erben.</name>
+                  </publisher>
+                  <pubPlace>Basel</pubPlace>
+                  <date type="publication">1654</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Universitätsbibliothek Basel</repository>
+                  <idno>
+                     <idno type="shelfmark">KiAr G X 13:3</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-67330</idno>
+                     <idno type="DOI">10.3931/e-rara-67330</idno>
+                     <idno type="Transkribus">10034088</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/18154395/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

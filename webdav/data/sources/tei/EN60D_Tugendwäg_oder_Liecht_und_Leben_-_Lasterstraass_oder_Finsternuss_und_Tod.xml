@@ -6,20 +6,79 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">EN60D+ Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
+            <title type="main">Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/118733273">
+                  <surname>Meyer</surname>
+                  <forename>Conrad</forename>
+               </persName>
+            </author>
+            <author>
+               <persName ref="http://d-nb.info/gnd/119151693">
+                  <surname>Simler</surname>
+                  <forename>Johann Wilhelm</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">EN60D+ Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
-            <idno type="Transkribus">4580049</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729250/manifest</idno>
-            </bibl>
+            <bibl type="M">Meyer, Conrad: Tugendwäg, Lasterstrass. Zürich 1660.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Tugendwäg, oder Liecht und Leben - Lasterstraass, oder Finsternuss und Tod</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/118733273">
+                        <surname>Meyer</surname>
+                        <forename>Conrad</forename>
+                     </persName>
+                  </author>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/119151693">
+                        <surname>Simler</surname>
+                        <forename>Johann Wilhelm</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">2 Druckgrafiken : Radierung ; circa 16,5 x 13,5 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Bürgerbibliothek Zürich].</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1660</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">AZZ 17 : 18</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990054014940205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-65233</idno>
+                     <idno type="DOI">10.3931/e-rara-65233</idno>
+                     <idno type="Transkribus">4580049</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729250/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

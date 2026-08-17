@@ -6,20 +6,57 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F70D Das von Natur warme Bader-Bad</title>
+            <title type="main">Ehren- und Wunsch-Gesang, als von ihr ehrsam Weisheit Herrn Burgermeister Johann Conrad Grebel, auch anderen ... Herren, geist- und weltlichen Standes loblicher Stadt Zürich das von Natur warme Bader-Bad im 1670. Heil-Jahr gebraucht ward</title>
+            <title type="sub">in bekannter Gesang-Weise: so wünsch ich ihr ein gute Nacht tc</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F70D Das von Natur warme Bader-Bad</title>
-            <idno type="Transkribus">10961359</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11026718/manifest</idno>
-            </bibl>
+            <bibl type="M">Ehren- und Wunsch-Gesang, als von ihr ehrsam Weisheit Herrn Burgermeister Johann Conrad Grebel, auch anderen ... Herren, geist- und weltlichen Standes loblicher Stadt Zürich das von Natur warme Bader-Bad im 1670. Heil-Jahr gebraucht ward. [Zürich?] 1670.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Ehren- und Wunsch-Gesang, als von ihr ehrsam Weisheit Herrn Burgermeister Johann Conrad Grebel, auch anderen ... Herren, geist- und weltlichen Standes loblicher Stadt Zürich das von Natur warme Bader-Bad im 1670. Heil-Jahr gebraucht ward</title>
+                  <title type="sub" level="m">in bekannter Gesang-Weise: so wünsch ich ihr ein gute Nacht tc</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[4] S. ; 15 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Zürich?]/ [Verlag nicht ermittelbar].</name>
+                  </publisher>
+                  <pubPlace>[Zürich?]</pubPlace>
+                  <date type="publication">1670</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">181’974.40</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990061872380205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-35778</idno>
+                     <idno type="DOI">10.3931/e-rara-35778</idno>
+                     <idno type="Transkribus">10961359</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11026718/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

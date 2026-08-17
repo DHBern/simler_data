@@ -6,20 +6,55 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F42C Hochzeit-Gesang 134. Psalm</title>
+            <title type="main">Syncharmata In Nuptiarum festum, Pietate &amp; eruditione conspicui Viri, D. Joh. Henrici Ottii, Verbi Divini in Cætu Zumikonensi Ministri fidissimi ... Vt &amp; Lectißimæ Viriginis, Ursulæ Hegneræ .... Celebratum Vitoduri, die 19. Sept. Anno 1642</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F42C Hochzeit-Gesang 134. Psalm</title>
-            <idno type="Transkribus">7707774</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/27130909/manifest</idno>
-            </bibl>
+            <bibl type="M">Hochzeit-Gesang/ In der Melodey des 134. Psalmens (Gleich wie es stehet trefflich wol). [Ohne Ort] 1642.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Syncharmata In Nuptiarum festum, Pietate &amp; eruditione conspicui Viri, D. Joh. Henrici Ottii, Verbi Divini in Cætu Zumikonensi Ministri fidissimi ... Vt &amp; Lectißimæ Viriginis, Ursulæ Hegneræ .... Celebratum Vitoduri, die 19. Sept. Anno 1642</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">4 ungezählte Blätter ; 4°</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Ohne Ort]/ [ohne Drucker].</name>
+                  </publisher>
+                  <pubPlace>[Ohne Ort]</pubPlace>
+                  <date type="publication">1642</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Ms B 120</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990065049910205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-96768</idno>
+                     <idno type="DOI">10.3931/e-rara-96768</idno>
+                     <idno type="Transkribus">7707774</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/27130909/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="lat">Latein</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

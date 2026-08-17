@@ -7,19 +7,67 @@
       <fileDesc>
          <titleStmt>
             <title type="main">F44D+ Lavater Kriegsbüchlein</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/129810452">
+                  <surname>Lavater</surname>
+                  <forename>Hans Conrad</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F44D+ Lavater Kriegsbüchlein</title>
-            <idno type="Transkribus">7528172</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2891086/manifest</idno>
-            </bibl>
+            <bibl type="M">Lavater, Hans Conrad: Neugewundener Loorbeer-Krantz zu ehren dem Authori des wolgestellten Kriegsbüchlins. Zürich 1644.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Kriegs-Büchlein, das ist, Grundtliche Anleitung zum Kriegswesen</title>
+                  <title type="sub" level="m">namlich wie ein Vestung mit ihren Inner- und Ausserwercken angerichtet, mit aller erforderlichen Zugehörd versehen und verwahret werden solle : dessgleichen wie ein jeder hoher und niderer Kriegs-Beampteter in Zug und Wachten-übung der Waafen-formierung der Schlachtordnungen zu Ross und Fuss mit Scharmützen, Stürmen, Fechten, Schlagen und allen anderen Kriegshändlen und Thätlichkeiten nach Stands und Eydsgebür sich zu verhalten habe : mit beygefügter Dolmetschung und Erklärung der frömbden kriegischen, diser Zeit üblichen Nammen und Wörteren, und wie selbige beydes in Riss und Schrifft zu verstehen</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/129810452">
+                        <surname>Lavater</surname>
+                        <forename>Hans Conrad</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[8] Bl., 134 S., [1] Bl., 12 gest. Tafeln : Ill. ; 20 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Zürich/ bey Johann Jacob Bodmern, in Verlegung des Authors.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1644</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">KK 3610</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990036559960205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-9832</idno>
+                     <idno type="DOI">10.3931/e-rara-9832</idno>
+                     <idno type="Transkribus">7528172</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2891086/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F62C.2 Ammann Nähefelser Fahrt</title>
+            <title type="main">Nähefelser-Fahrt</title>
+            <title type="sub">in zehen erbaulichen Jahrzeit-Predigen zu schuldigem Danck dem Höhesten für den im Jahr 1388 gemeinen Landleuthen dess lobl. Eydgnössischen Bundorths Glarus wider ihre Feind bey und umb Nähefels verliehenen Wundersieg</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/116477601">
+                  <surname>Amman</surname>
+                  <forename>Johann Ludwig</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F62C.2 Ammann Nähefelser Fahrt</title>
-            <idno type="Transkribus">7707853</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4020066/manifest</idno>
-            </bibl>
+            <bibl type="M">Amman, Johann Ludwig: Uber Herrn Johann Ludwig Ammans Nähefelser-Fahrt-Predigen. Zürich 1662.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Nähefelser-Fahrt</title>
+                  <title type="sub" level="m">in zehen erbaulichen Jahrzeit-Predigen zu schuldigem Danck dem Höhesten für den im Jahr 1388 gemeinen Landleuthen dess lobl. Eydgnössischen Bundorths Glarus wider ihre Feind bey und umb Nähefels verliehenen Wundersieg</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/116477601">
+                        <surname>Amman</surname>
+                        <forename>Johann Ludwig</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[12] Bl., 133, [1] S., [3] Bl. ; 20 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Zürich/ bey Joh. Heinrich Hamberger, in Verlegung Melchior Stauffachers.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1662</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">7.63,17</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045966130205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-13175</idno>
+                     <idno type="DOI">10.3931/e-rara-13175</idno>
+                     <idno type="Transkribus">7707853</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4020066/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F69D+.1 Bodmer Violblumen</title>
+            <title type="main">Wolriechende geistliche Violblumen für eingründige Seelen</title>
+            <title type="sub">zur Betrachtung des Gesätzes, des Glaubens, des Gebetts und der Erlösung : um das christliche Frühlings- oder Osterfest : auss dem Lustgarten der heiligen Schrift in poetische Gefesse gesamlet</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/1037529359">
+                  <surname>Bodmer</surname>
+                  <forename>Johann Jakob</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F69D+.1 Bodmer Violblumen</title>
-            <idno type="Transkribus">7707775</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3854506/manifest</idno>
-            </bibl>
+            <bibl type="M">Bodmer, Johann Jakob: Kling- oder Lobgeticht / Uber Herren Joh. Jacob Bodmers Geistliche Violblumen. Zürich 1669.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Wolriechende geistliche Violblumen für eingründige Seelen</title>
+                  <title type="sub" level="m">zur Betrachtung des Gesätzes, des Glaubens, des Gebetts und der Erlösung : um das christliche Frühlings- oder Osterfest : auss dem Lustgarten der heiligen Schrift in poetische Gefesse gesamlet</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/1037529359">
+                        <surname>Bodmer</surname>
+                        <forename>Johann Jakob</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">56 S. ; 15 cm (8°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Zürich/ bey Joh. Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1669</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">6’326.60</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990060399690205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-12361</idno>
+                     <idno type="DOI">10.3931/e-rara-12361</idno>
+                     <idno type="Transkribus">7707775</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3854506/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

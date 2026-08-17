@@ -6,20 +6,79 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">EN52B Am Scheidwäg nit verfehl, die rechte Strass erwehl</title>
+            <title type="main">Am Scheidwäg nit verfehl, die rechte Strass erwehl</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/118733273">
+                  <surname>Meyer</surname>
+                  <forename>Conrad</forename>
+               </persName>
+            </author>
+            <author>
+               <persName ref="http://d-nb.info/gnd/119151693">
+                  <surname>Simler</surname>
+                  <forename>Johann Wilhelm</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">EN52B Am Scheidwäg nit verfehl, die rechte Strass erwehl </title>
-            <idno type="Transkribus">4579088</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729209/manifest</idno>
-            </bibl>
+            <bibl type="M">Meyer, Conrad: Am Scheidwäg nit verfehl, die rechte Strass erwehl. Zürich 1652.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Am Scheidwäg nit verfehl, die rechte Strass erwehl</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/118733273">
+                        <surname>Meyer</surname>
+                        <forename>Conrad</forename>
+                     </persName>
+                  </author>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/119151693">
+                        <surname>Simler</surname>
+                        <forename>Johann Wilhelm</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">1 Druckgrafik : Radierung ; 10,4 x 13,4 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Zürich/ ab der Bürgerbibliothek.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1652</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">AZZ 17 : 8</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990054006180205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-65223</idno>
+                     <idno type="DOI">10.3931/e-rara-65223</idno>
+                     <idno type="Transkribus">4579088</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729209/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

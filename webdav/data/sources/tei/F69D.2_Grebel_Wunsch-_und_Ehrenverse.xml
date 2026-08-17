@@ -6,20 +6,57 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F69D+.2 Grebel Wunsch- und Ehrenverse</title>
+            <title type="main">Musae Helveticae</title>
+            <title type="sub">oder Wunsch- und Freudgetichte, zu schuldigem Ehrenruhm dem hochgeachten, woledlen, gestrengen, frommen, fürsichtigen und hochweisen Herren, H. Joh. Conrad Grebel, alss selbiger nach der gnädigen Fürsehung Gottes, durch gesegnete Wahl des kleinen und grossen Rahts in den höchsten Ehrenthron des Burgermeisterthums loblicher Statt Zürich als Vatter des Vatterlands glüklich erhebt worden, den 23. Herbstm. M DC LXIX</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F69D+.2 Grebel Wunsch- und Ehrenverse</title>
-            <idno type="Transkribus">7707794</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219080/manifest</idno>
-            </bibl>
+            <bibl type="M">Wolgemeinte Wunsch- und Ehren-Verse: An J. E. W. Herren Johann Conrad Grebel. Zürich 1669.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Musae Helveticae</title>
+                  <title type="sub" level="m">oder Wunsch- und Freudgetichte, zu schuldigem Ehrenruhm dem hochgeachten, woledlen, gestrengen, frommen, fürsichtigen und hochweisen Herren, H. Joh. Conrad Grebel, alss selbiger nach der gnädigen Fürsehung Gottes, durch gesegnete Wahl des kleinen und grossen Rahts in den höchsten Ehrenthron des Burgermeisterthums loblicher Statt Zürich als Vatter des Vatterlands glüklich erhebt worden, den 23. Herbstm. M DC LXIX</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[2] Bl., 115, [1] S., 1 Taf. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Zürich/ bey Johann Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1669</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5’189.60</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045153260205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-10706</idno>
+                     <idno type="DOI">10.3931/e-rara-10706</idno>
+                     <idno type="Transkribus">7707794</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219080/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F51B.1 Viergedicht Johann Ardüser</title>
+            <title type="main">Architectura von Vestungen</title>
+            <title type="sub">wie ein jeder Platz auff ein neüe Art zubevestnen ...</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/121810356">
+                  <surname>Ardüser</surname>
+                  <forename>Johann</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F51B.1 Viergedicht Johann Ardüser</title>
-            <idno type="Transkribus">7528371</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3855479/manifest</idno>
-            </bibl>
+            <bibl type="M">Ardüser, Johann: Viergedicht oder Lob- und Inhaltsspruch über Herren Johann Ardüsers Hauptm. und Ingenieurs newaußgangenes Buch vom Vestungsbaw. Zürich 1651.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Architectura von Vestungen</title>
+                  <title type="sub" level="m">wie ein jeder Platz auff ein neüe Art zubevestnen ...</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/121810356">
+                        <surname>Ardüser</surname>
+                        <forename>Johann</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[2] S., 91 S., 26 Kupfertaf. : Ill. ; 23 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>In Zürich/ bey Joh. Heinrich Hamberger.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1651</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">6.39: a | G</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990066183150205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-12387</idno>
+                     <idno type="DOI">10.3931/e-rara-12387</idno>
+                     <idno type="Transkribus">7528371</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3855479/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F53B Klinggedichte Felix Weiss</title>
+            <title type="main">Sermonum festalium centuria in X decades divisa</title>
+            <title type="sub">= Hundert christliche Fäst-Predigen : darinnen die gnadreiche Empfänknus, Geburt, Beschneidung, Leiden, Sterben, Begräbnus, Auferständtnus und Himmelfahrt unsers Herren Jesu Christi, sambt der Sendung des heiligen Geists, dessgleichen die Lehr vom heiligen Abendmahl kurtz und grundlich erkläret werden</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/115583025">
+                  <surname>Wyss</surname>
+                  <forename>Felix</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F53B Klinggedichte Felix Weiss</title>
-            <idno type="Transkribus">7527926</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3746601/manifest</idno>
-            </bibl>
+            <bibl type="M">Wyss, Felix: Klinggedichte (auf Felix Weiss). Zürich 1650.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Sermonum festalium centuria in X decades divisa</title>
+                  <title type="sub" level="m">= Hundert christliche Fäst-Predigen : darinnen die gnadreiche Empfänknus, Geburt, Beschneidung, Leiden, Sterben, Begräbnus, Auferständtnus und Himmelfahrt unsers Herren Jesu Christi, sambt der Sendung des heiligen Geists, dessgleichen die Lehr vom heiligen Abendmahl kurtz und grundlich erkläret werden</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/115583025">
+                        <surname>Wyss</surname>
+                        <forename>Felix</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[8] Bl., 120, 96, 87, 244, 200, 79, 107, 176, [44] S. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zuo Zürich/ bey Joh. Heinrich Hamberger, in Verlegung Michael Schufelbergers.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1650</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5.169</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045069650205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-11967</idno>
+                     <idno type="DOI">10.3931/e-rara-11967</idno>
+                     <idno type="Transkribus">7527926</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3746601/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

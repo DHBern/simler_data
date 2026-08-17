@@ -6,20 +6,57 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F69Da-b Hirzel</title>
+            <title type="main">Glükwünschende Ruhm- und Ehrengetichte</title>
+            <title type="sub">gestelt an den hochgeachten, woledlen, gestrengen, frommen, ehren- und nohtvesten, fürnemmen, fürsichtigen und hochweisen Herren, Herren Joh. Caspar Hirzel, Gerichtsherren zu Kefikon ... : durch des allerhöchsten Fürsehung, und glükliche Wahl der Klein- und Grossen Rähten der Statt Zürich erwehlten Herren Burgermeistern</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F69Da-b Hirzel</title>
-            <idno type="Transkribus">7707776</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219010/manifest</idno>
-            </bibl>
+            <bibl type="M">Vorgeticht (auf Johann Caspar Hirzel). Zürich 1669.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Glükwünschende Ruhm- und Ehrengetichte</title>
+                  <title type="sub" level="m">gestelt an den hochgeachten, woledlen, gestrengen, frommen, ehren- und nohtvesten, fürnemmen, fürsichtigen und hochweisen Herren, Herren Joh. Caspar Hirzel, Gerichtsherren zu Kefikon ... : durch des allerhöchsten Fürsehung, und glükliche Wahl der Klein- und Grossen Rähten der Statt Zürich erwehlten Herren Burgermeistern</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[30] Bl., [1] Taf. : Ill. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getrukt zu Zürich/ bey Johann Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1669</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5’189.40</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045141880205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-10705</idno>
+                     <idno type="DOI">10.3931/e-rara-10705</idno>
+                     <idno type="Transkribus">7707776</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219010/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

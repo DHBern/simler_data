@@ -6,20 +6,36 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F46B Caspar Weiss Ruh- und Friedensübung</title>
+            <title type="main">Uber die von Herren Caspar Weissen/ etc. verteütschte Růh- oder Fridens-übung</title>
          </titleStmt>
          <publicationStmt>
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F46B Caspar Weiss Ruh- und Friedensübung</title>
-            <idno type="Transkribus">10961340</idno>
-            <idno type="URLIIIF"/>
-            </bibl>
+            <bibl type="M">Uber die von Herren Caspar Weissen/ etc. verteütschte Růh- oder Fridens-übung.</bibl>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>UB Erlangen-Nürnberg</repository>
+                  <idno>
+                     <idno type="shelfmark">H00/THL-XX 216 a</idno>
+                     <idno type="Transkribus">10961340</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

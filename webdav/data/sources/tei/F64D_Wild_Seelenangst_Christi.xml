@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F64D+ Wild Seelenangst Christi</title>
+            <title type="main">Seelen-Angst Christi</title>
+            <title type="sub">das ist grundtliche Erklärung, was von dem innerlichen Leiden unsers Herren und Heilands Jesu Christi zuhalten seye : worinn der evangelischen Kirchen Lehre von disem Artikel aussgesetzet, erläuteret, auss Gottes Wort, aussder alten Blätteren und dess gegentheils Schrifften bekräftiget ...</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/1089323042">
+                  <surname>Wild</surname>
+                  <forename>Abraham</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F64D+ Wild Seelenangst Christi</title>
-            <idno type="Transkribus">7707852</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2913401/manifest</idno>
-            </bibl>
+            <bibl type="M">Wild, Abraham: Uber Herren Abraham Wilden vortreffliches Buch/ von der Seelenangst Christi. Zürich 1664.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Seelen-Angst Christi</title>
+                  <title type="sub" level="m">das ist grundtliche Erklärung, was von dem innerlichen Leiden unsers Herren und Heilands Jesu Christi zuhalten seye : worinn der evangelischen Kirchen Lehre von disem Artikel aussgesetzet, erläuteret, auss Gottes Wort, aussder alten Blätteren und dess gegentheils Schrifften bekräftiget ...</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/1089323042">
+                        <surname>Wild</surname>
+                        <forename>Abraham</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[8] Bl., 176 S. ; 16 cm (8°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getrukt zu Zürich/ bey Johann Heinrich Hamberger, jn Verlegung Joh. Wilhelm Simlers Buchh.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1664</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">ZB 1043</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990036436230205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-9901</idno>
+                     <idno type="DOI">10.3931/e-rara-9901</idno>
+                     <idno type="Transkribus">7707852</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2913401/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

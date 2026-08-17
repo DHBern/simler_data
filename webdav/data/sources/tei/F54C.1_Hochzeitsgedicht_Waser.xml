@@ -6,20 +6,55 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F54C.1 Hochzeitsgedicht Waser</title>
+            <title type="main">Applausus vere cordiales in nuptias Magnific. ... viri d. Johannis Henrici Waseri, Inclytae Reipublicae Tigurinae consulis ... cum Nobilissima &amp; Lectissima Matrona D. Anna Clephea Kellera ...</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F54C.1 Hochzeitsgedicht Waser</title>
-            <idno type="Transkribus">10034093</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11624251/manifest</idno>
-            </bibl>
+            <bibl type="M">Hochzeitliches Ehren- und Wunsch-Gesang (auf Hans Heinrich Waser). [Zürich] 1654.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Applausus vere cordiales in nuptias Magnific. ... viri d. Johannis Henrici Waseri, Inclytae Reipublicae Tigurinae consulis ... cum Nobilissima &amp; Lectissima Matrona D. Anna Clephea Kellera ...</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">1 Einblattdruck : Radierung, Holzschnitt und Letterndruck ; Bild 9,2 x 14,8 cm, Platte 9,5 x 14,9 cm, Blatt 43,2 x 32,8 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Zürich].</name>
+                  </publisher>
+                  <pubPlace>[Zürich]</pubPlace>
+                  <date type="publication">1654</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">EDR II 1654 Waser II,1</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990103512490205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-38861</idno>
+                     <idno type="DOI">10.3931/e-rara-38861</idno>
+                     <idno type="Transkribus">10034093</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11624251/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

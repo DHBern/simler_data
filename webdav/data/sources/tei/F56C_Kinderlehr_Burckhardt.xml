@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F56C Kinderlehr Burckhardt</title>
+            <title type="main">vier Haubtpuncten der christlichen seligmachenden Religion</title>
+            <title type="sub">auf alle Sontag des gantzen Jahrs ordenlich abgetheilt, grundtlich nach der heiligen Schrifft erklärt und zur Erbawung gerichtet</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/123675987">
+                  <surname>Burkhard</surname>
+                  <forename>Hans Konrad</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F56C Kinderlehr Burckhardt</title>
-            <idno type="Transkribus">7527858</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3218061/manifest</idno>
-            </bibl>
+            <bibl type="M">Burkhard, Hans Konrad: Uber Herren Kunraht Burkharten Kinder-lehr. Zürich 1656.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">vier Haubtpuncten der christlichen seligmachenden Religion</title>
+                  <title type="sub" level="m">auf alle Sontag des gantzen Jahrs ordenlich abgetheilt, grundtlich nach der heiligen Schrifft erklärt und zur Erbawung gerichtet</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/123675987">
+                        <surname>Burkhard</surname>
+                        <forename>Hans Konrad</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[6] Bl., 586 [i.e. 584] S., [4] Bl. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Zürich/ bey Joh. Heinrich Hamberger, in Verlegung Michael Schaufelbergers.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1656</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5.164</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045063490205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-10701</idno>
+                     <idno type="DOI">10.3931/e-rara-10701</idno>
+                     <idno type="Transkribus">7527858</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3218061/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

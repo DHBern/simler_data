@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F62C.3 Übung der Gottseligkeit</title>
+            <title type="main">Praxis pietatis: Das ist/ Übung der Gottseligkeit</title>
+            <title type="sub">Darinn begriffen/ wie ein Christgläubiger mensch in waarer erkantnuß Gottes und seiner selbst zunemmen/ sein leben täglich in der forcht Gottes/ in waarem glauben/ andächtigm gebett/ und Christlichen werken/ mit rühigem gewüssen zubringen/ und nach follendetem lauff seliglich beschliessen kan : Samt beygefügten schönen geist- und trostreichen Gebetten</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/128755148">
+                  <surname>Bayly</surname>
+                  <forename>Lewis</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F62C.3 Übung der Gottseligkeit</title>
-            <idno type="Transkribus">10961360</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/22323321/manifest</idno>
-            </bibl>
+            <bibl type="M">Bayly, Lewis: Über die übung der Gottseligkeit. Zürich getruckt 1662.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Praxis pietatis: Das ist/ Übung der Gottseligkeit</title>
+                  <title type="sub" level="m">Darinn begriffen/ wie ein Christgläubiger mensch in waarer erkantnuß Gottes und seiner selbst zunemmen/ sein leben täglich in der forcht Gottes/ in waarem glauben/ andächtigm gebett/ und Christlichen werken/ mit rühigem gewüssen zubringen/ und nach follendetem lauff seliglich beschliessen kan : Samt beygefügten schönen geist- und trostreichen Gebetten</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/128755148">
+                        <surname>Bayly</surname>
+                        <forename>Lewis</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">2 ungezählte Seiten mit Bildtafeln, 8 ungezählte Blätter, 512 Seiten, 8 ungezählte Blätter, 134 Seiten, 2 ungezählte Blätter : Illustrationen ; 14 cm (12°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Zu Zürich getruckt/ Bey Johann Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich getruckt</pubPlace>
+                  <date type="publication">1662</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">AB 6662</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990035667030205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-79345</idno>
+                     <idno type="DOI">10.3931/e-rara-79345</idno>
+                     <idno type="Transkribus">10961360</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/22323321/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

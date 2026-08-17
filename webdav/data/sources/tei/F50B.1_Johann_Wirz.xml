@@ -6,20 +6,69 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F50B.1 Johann Wirz</title>
+            <title type="main">Spiegel der unermesslichen Gnad Gottes gegen den rewenden buossfertigen Sünderen</title>
+            <title type="sub">in XLV Predigen uber das XV. Capitel Lucae vom verlohrnen Schaaf, Pfenning und Sohn verfasset : sampt erbawlichen Fest- und Nachtmahls-Predigen voll Bericht, Lehr und Trosts</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/117412465">
+                  <surname>Wirz</surname>
+                  <forename>Johann</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F50B.1 Johann Wirz</title>
-            <idno type="Transkribus">7527929</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2917114/manifest</idno>
-            </bibl>
+            <bibl type="M">Wirz, Johann: Uber Herren Johannes Wirtzen / etc. Lehr- und trostreiche Predigen vom verlohrnen Sohn. Basel 1650.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Spiegel der unermesslichen Gnad Gottes gegen den rewenden buossfertigen Sünderen</title>
+                  <title type="sub" level="m">in XLV Predigen uber das XV. Capitel Lucae vom verlohrnen Schaaf, Pfenning und Sohn verfasset : sampt erbawlichen Fest- und Nachtmahls-Predigen voll Bericht, Lehr und Trosts</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/117412465">
+                        <surname>Wirz</surname>
+                        <forename>Johann</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">16, 1198 S., [15] Bl. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getruckt zu Basel/ bey Johann Jacob Genath, in Verlegung Michaël Schaufelbergers.</name>
+                  </publisher>
+                  <pubPlace>Basel</pubPlace>
+                  <date type="publication">1650</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">TT 487 | G</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990037079260205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-9907</idno>
+                     <idno type="DOI">10.3931/e-rara-9907</idno>
+                     <idno type="Transkribus">7527929</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2917114/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

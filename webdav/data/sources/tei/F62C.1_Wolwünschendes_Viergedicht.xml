@@ -6,20 +6,67 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F62C.1 Wolwünschendes Viergedicht</title>
+            <title type="main">Ara et arrha votiva, viro reverendo &amp; clarissimo dn. Georgio Mullero ..., sponso, et lectissimae virgini Elisabethae Kolerin ..., sponsae, ab amicis, affinibus &amp;c. die nuptialis, quae est 9. Decembris 1662, consecrata</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/115583025">
+                  <surname>Wyss</surname>
+                  <forename>Felix</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F62C.1 Wolwünschendes Viergedicht</title>
-            <idno type="Transkribus">10034095</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11273710/manifest</idno>
-            </bibl>
+            <bibl type="M">Wyss, Felix: Wolwünschendes Viergedicht/ Auf H. G. M. und J. E K. Ehrenhochzeit den 9. Decemb. 1662.. [Turici] 1662.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Ara et arrha votiva, viro reverendo &amp; clarissimo dn. Georgio Mullero ..., sponso, et lectissimae virgini Elisabethae Kolerin ..., sponsae, ab amicis, affinibus &amp;c. die nuptialis, quae est 9. Decembris 1662, consecrata</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/115583025">
+                        <surname>Wyss</surname>
+                        <forename>Felix</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">1 Einblattdruck ; 41 x 30 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Turici]/ [Verlag nicht ermittelbar].</name>
+                  </publisher>
+                  <pubPlace>[Turici]</pubPlace>
+                  <date type="publication">1662</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Gal Ch 55,29</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990064457880205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-36917</idno>
+                     <idno type="DOI">10.3931/e-rara-36917</idno>
+                     <idno type="Transkribus">10034095</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11273710/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="lat">Latein</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

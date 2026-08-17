@@ -6,22 +6,55 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">F59C.1 Regenten Kleinodt Rahn</title>
+            <title type="main">Plausus secundi, ad virum magnificentissimum, nobilissimum ac amplissimum d. Ioh. Henricum Rhonium, divino moderante nutu, ad d. XIII. Novembris, anno natae salutis M DC LV. illustris reipublicae Tigurinae consulem ...</title>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">F59C.1 Regenten Kleinodt Rahn</title>
-            <idno type="Transkribus">7707854</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2957856/manifest</idno>
-            </bibl>
+            <bibl type="M">Regenten Kleinodt (auf Hans Heinrich Rahn). Tiguri 1659.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Plausus secundi, ad virum magnificentissimum, nobilissimum ac amplissimum d. Ioh. Henricum Rhonium, divino moderante nutu, ad d. XIII. Novembris, anno natae salutis M DC LV. illustris reipublicae Tigurinae consulem ...</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[40] Bl., Taf. : Ill., Noten ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Tiguri/ typis Iohannis Iacobi Bodmeri.</name>
+                  </publisher>
+                  <pubPlace>Tiguri</pubPlace>
+                  <date type="publication">1659</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5’189.20</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045138890205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-10077</idno>
+                     <idno type="DOI">10.3931/e-rara-10077</idno>
+                     <idno type="Transkribus">7707854</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/2957856/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
          <langUsage>
+            <language ident="lat">Latein</language>
          </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>

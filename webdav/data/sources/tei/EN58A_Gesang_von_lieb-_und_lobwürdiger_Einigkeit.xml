@@ -6,20 +6,79 @@
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
+            <title type="main">Gesang von lieb- und lobwürdiger Einigkeit</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/1052817343">
+                  <surname>Simmler</surname>
+                  <forename>Rudolf</forename>
+               </persName>
+            </author>
+            <author>
+               <persName ref="http://d-nb.info/gnd/119151693">
+                  <surname>Simler</surname>
+                  <forename>Johann Wilhelm</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
-            <p/>
+            <p>Digitalisat: Zentralbibliothek Zürich über www.e-rara.ch, Creative Commons Gemeinfrei 1.0 International Lizenz (<ref target="https://creativecommons.org/publicdomain/mark/1.0/">https://creativecommons.org/publicdomain/mark/1.0/</ref>).</p>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">EN58A Gesang von lieb- und lobwürdiger Einigkeit</title>
-            <idno type="Transkribus">4579928</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729234/manifest</idno>
-            </bibl>
+            <bibl type="M">Simmler, Rudolf: Gesang von lieb- und lobwürdiger Einigkeit. [Zürich] 1658.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Gesang von lieb- und lobwürdiger Einigkeit</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/1052817343">
+                        <surname>Simmler</surname>
+                        <forename>Rudolf</forename>
+                     </persName>
+                  </author>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/119151693">
+                        <surname>Simler</surname>
+                        <forename>Johann Wilhelm</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">1 Druckgrafik : Radierung ; 11 x 20,1 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Zürich]/ [Stadtbibliothek Zürich].</name>
+                  </publisher>
+                  <pubPlace>[Zürich]</pubPlace>
+                  <date type="publication">1658</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">AZZ 17 : 14</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990054013760205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-65229</idno>
+                     <idno type="DOI">10.3931/e-rara-65229</idno>
+                     <idno type="Transkribus">4579928</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/17729234/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>
