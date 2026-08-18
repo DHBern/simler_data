@@ -7,19 +7,66 @@
       <fileDesc>
          <titleStmt>
             <title type="main">Johann Wilhelm Simlers Teutsche Gedichte (D 1688)</title>
+            <author>
+               <persName ref="http://d-nb.info/gnd/119151693">
+                  <surname>Simler</surname>
+                  <forename>Johann Wilhelm</forename>
+               </persName>
+            </author>
          </titleStmt>
          <publicationStmt>
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl>
-            <title type="main">D 1688</title>
-            <idno type="Transkribus">3289904</idno>
-            <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4076747/manifest</idno>    
-            </bibl>
+            <bibl type="M">Simler, Johann Wilhelm: Teutsche Gedichte. Zürich 1688.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Johann-Wilhelm Simlers Teutscher Getichten die vierte, von ihme selbsten und auss hinterlassenen Schrifften um einen Viertheil vermehrt- und verbesserte Aussfertigung</title>
+                  <author>
+                     <persName ref="http://d-nb.info/gnd/119151693">
+                        <surname>Simler</surname>
+                        <forename>Johann Wilhelm</forename>
+                     </persName>
+                  </author>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[8] Bl., 466 S., [3] Bl., 109, [1] S., [1] Bl. ; 17 cm (8°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getrukt zu Zürich/ in Verlegung Joh. Wilhelm Simlers, Bp., durch Johann Rudolph Simler.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1688</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Gal Ch 219</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990066473070205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-13401</idno>
+                     <idno type="DOI">10.3931/e-rara-13401</idno>
+                     <idno type="Transkribus">3289904</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/4076747/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
          </sourceDesc>
       </fileDesc>
       <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
       </profileDesc>
    </teiHeader>
    <text>
