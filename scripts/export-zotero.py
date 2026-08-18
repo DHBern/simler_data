@@ -7,7 +7,6 @@ needed. Output files are only (re)written after a full, successful fetch
 with a plausible (non-empty) result, so a failed or partial run cannot
 overwrite good data already committed to the repository.
 """
-import datetime
 import json
 import os
 import re
@@ -105,19 +104,16 @@ def build_tei():
     if len(list_bibl) == 0:
         raise RuntimeError("TEI fetch returned zero entries; refusing to overwrite existing export.")
 
-    today = datetime.datetime.now(datetime.timezone.utc).date().isoformat()
     tei = ET.Element(f"{{{TEI_NS}}}TEI")
     header = ET.SubElement(tei, f"{{{TEI_NS}}}teiHeader")
     file_desc = ET.SubElement(header, f"{{{TEI_NS}}}fileDesc")
     title_stmt = ET.SubElement(file_desc, f"{{{TEI_NS}}}titleStmt")
     ET.SubElement(title_stmt, f"{{{TEI_NS}}}title").text = "Simler Zotero group library (TEI export)"
     pub_stmt = ET.SubElement(file_desc, f"{{{TEI_NS}}}publicationStmt")
-    pub_p = ET.SubElement(pub_stmt, f"{{{TEI_NS}}}p")
-    pub_p.text = (
+    ET.SubElement(pub_stmt, f"{{{TEI_NS}}}p").text = (
         "Automatically exported from the Zotero group library "
-        f"https://www.zotero.org/groups/{GROUP_ID}/simler on "
+        f"https://www.zotero.org/groups/{GROUP_ID}/simler"
     )
-    ET.SubElement(pub_p, f"{{{TEI_NS}}}date", {"when": today}).text = today
     source_desc = ET.SubElement(file_desc, f"{{{TEI_NS}}}sourceDesc")
     ET.SubElement(source_desc, f"{{{TEI_NS}}}p").text = "Zotero API (items/top, format=tei)"
     text = ET.SubElement(tei, f"{{{TEI_NS}}}text")
