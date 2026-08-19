@@ -756,51 +756,74 @@
 
             <div n="2" type="poem" xml:id="xi">
                <head rendition="#c #b"><hi rendition="#aq">VI.<lb/> U</hi>ber Herꝛn Dichters
-                     namen<lb/> Bu&#x366;chſtabwa&#x364;chſel<lb/> JOHANN WJLHELM SJMLER/<lb/> W/ in
-                        <hi rendition="#aq">U</hi>/ und V/ aufgelo&#x364;ſet:<lb/> Nu mahl/ <hi
-                        rendition="#aq">iô!</hi>/ vil reins mehl;<lb/> und<lb/>
+                  namen<lb/> Bu&#x366;chſtabwa&#x364;chſel<lb/> JOHANN WJLHELM SJMLER/<lb/> W/ in
+                  <hi rendition="#aq">U</hi>/ und V/ aufgelo&#x364;ſet:<lb/> Nu mahl/ <hi
+                     rendition="#aq">iô!</hi>/ vil reins mehl;<lb/> und<lb/>
                   Lobſpruch.</head>
                <lb/>
-               <!-- NE: Positionen sind noch zu codieren -->
-               <lg type="poem">
-                  <l><hi rendition="#larger"><hi rendition="#in">H</hi>Erꝛ Simler</hi> eüer mehl
-                     Wird finden ſeinen preiſS</l>
+               <lg type="poem" rendition="#twocol">
+                  <l><hi rendition="#larger"><hi rendition="#in">H</hi>Erꝛ Simler</hi> eüer mehl</l>
                   <lb/>
-                  <l>beym <hi rendition="#larger">fruchtbereichte&#x303; volk</hi>/ dieweil
-                     mit ſonderm fleiß</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">W</hi>ird finden ſeinen preiſ<hi rendition="#acroFin">S</hi></l>
                   <lb/>
-                  <l>Jhr trachtet/ daß es rein; Ja ſimelweiſſe ſeJ</l>
+                  <l>beym <hi rendition="#larger">fruchtbereichte&#x303; volk</hi>/</l>
                   <lb/>
-                  <l>darunter nichts verma&#x364;ngt von tra&#x364;bern oder kley.</l>
+                  <l>dieweil mit ſonderm fleiß</l>
                   <lb/>
-                  <l>O ſcho&#x364;ne ſchreibensart Lehrꝛeicher reden blu&#x366;hM</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">J</hi>hr trachtet/ daß es rein;</l>
                   <lb/>
-                  <l xml:id="l2a" next="#l2b">wodurch zur ſonnen ſteigt der <hi rendition="#larger"
-                        >Teutſchen Sprache</hi></l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">J</hi>a ſimelweiſſe ſe<hi rendition="#acroFin">J</hi></l>
+                  <lb/>
+                  <l>darunter nichts verma&#x364;ngt</l>
+                  <lb/>
+                  <l>von tra&#x364;bern oder kley.</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">O</hi> ſcho&#x364;ne ſchreibensart</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>ehrꝛeicher reden blu&#x366;h<hi rendition="#acroFin">M</hi></l>
+                  <lb/>
+                  <l>wodurch zur ſonnen ſteigt</l>
+                  <lb/>
+                  <l xml:id="l2a" next="#l2b">der <hi rendition="#larger">Teutſchen Sprache</hi></l>
                   <lb/>
                   <l xml:id="l2b" prev="#l2a">(ru&#x366;hm.</l>
                   <lb/>
-                  <l>Hier eine quell ohn ſchlam&#x303;; Holdſeligkeit ohn grimM</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">H</hi>ier eine quell ohn ſchlam&#x303;;</l>
                   <lb/>
-                  <l>hier iſt nichts a&#x364;rgerlichs/ und daß ſich nicht gezim&#x303;.</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">H</hi>oldſeligkeit ohn grim<hi rendition="#acroFin">M</hi></l>
                   <lb/>
-                  <l>Arbeitet deſſen viel Es iſt rein ſimelmehL</l>
+                  <l>hier iſt nichts a&#x364;rgerlichs/</l>
                   <lb/>
-                  <l>die dichtling fallen wol/ und flieſſen ohne fehl.</l>
+                  <l>und daß ſich nicht gezim&#x303;.</l>
                   <lb/>
-                  <l>Nur immer friſch daran; Laßt ſparen uns kein mu&#x364;hE</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">A</hi>rbeitet deſſen viel</l>
                   <lb/>
-                  <l>damit die <hi rendition="#larger">Jndiſch Nuß</hi> auch diſer enden
-                     blu&#x364;he!</l>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">E</hi>s iſt rein ſimelmeh<hi rendition="#acroFin">L</hi></l>
                   <lb/>
-                  <l>Neidhart du tu&#x366;hſt uns nichts. Man wird der Teutſchen ehR</l>
+                  <l>die dichtling fallen wol/</l>
                   <lb/>
-                  <l>auß Pho&#x364;bus namenbu&#x366;ch außtilgen nimmermehr.</l>
+                  <l>und flieſſen ohne fehl.</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">N</hi>ur immer friſch daran;</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>aßt ſparen uns kein mu&#x364;h<hi rendition="#acroFin">E</hi></l>
+                  <lb/>
+                  <l>damit die <hi rendition="#larger">Jndiſch Nuß</hi></l>
+                  <lb/>
+                  <l>auch diſer enden blu&#x364;he!</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">N</hi>eidhart du tu&#x366;hſt uns nichts.</l>
+                  <lb/>
+                  <l rendition="#acrostic"><hi rendition="#acroInit">M</hi>an wird der Teutſchen eh<hi rendition="#acroFin">R</hi></l>
+                  <lb/>
+                  <l>auß Pho&#x364;bus namenbu&#x366;ch</l>
+                  <lb/>
+                  <l>außtilgen nimmermehr.</l>
                </lg>
                <lb/>
                <closer>
                   <signed rendition="#right">Geo&#x364;rg Müller Pfarꝛer zu&#x366;
-                        Tahlweil/<lb/> am Zürichſee.
+                     Tahlweil/<lb/> am Zürichſee.
                   </signed>
                </closer>
             </div>
