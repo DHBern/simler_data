@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xml:id="EN62Dplus"
+   type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Hohe Ehrentitel der Dreyen Haubtständen</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Hohe Ehrentitel der Dreyen Haubtständen.</bibl>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Aeg 468:32</idno>
+                     <idno type="Transkribus">4579932</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            Hohe Ehrentitel der Dreÿen Haubtſta&#x364;nden im Wahren Chriſtenthum.
+            <lb/>
+            
+            Oberkeiten ſind Go&#x364;tter.
+            <lb/>
+            Wol dem Regenten! wol!
+            <lb/>
+            der/ liebreich/ wie er ſol/
+            <lb/>
+            Gu&#x366;ts blohnt/ und Bo&#x364;ſes ſtraffet/
+            <lb/>
+            der Satzung ſelbs raht ſchaffet.
+            <lb/>
+            
+            <hi rendition="#aq">Pſalm LXXXII.6.7.
+            <lb/>
+            die ſind beÿde dem <hi rendition="#g">HERREN</hi> ein grewel.
+            <lb/>
+            Wer den gottloſen gerecht ſpricht, und den gerechten verdamt:
+            <lb/>
+            Prov XXXIII.8.
+            <lb/>
+            wie die menſchen, und wie einer auſs den tÿrannen fallen.
+            <lb/>
+            Kinder des Ho&#x364;chſten: Aber ihr werdet dennoch ſterben
+            <lb/>
+            Jch hab wol geſagt: Jhr ſeÿt go&#x364;tter, und ihr allſeÿt</hi>
+            <lb/>
+            
+            Lehrer/ Engel.
+            <lb/>
+            Wol deme/ welcher lehrt/
+            <lb/>
+            gantz rein und unverkehrt/
+            <lb/>
+            das Gſatz und Wort der Gnade/
+            <lb/>
+            geht lehrgema&#x364;ß im pfade.
+            <lb/>
+            
+            <hi rendition="#aq">Liſs. Apoc. das II. und III. Capitel.
+            <lb/>
+            S. Paulus ſpricht, I.Cor IX.27. Jch bezäme meinen
+            <lb/>
+            leib, und zwinge ihn under die knechtſchaft: auf daſs nicht
+            <lb/>
+            etwann ich, der ich anderen predige, ſelbs verwerfflich werde.
+            <lb/>
+            1.Pet v.2.
+            <lb/>
+            Weidet die herd Gottes die under eüch iſt, und habet ein auffſehen
+            <lb/>
+            nicht auſs zwang, ſonder freywillig: nicht um ſchandlichen gewin&#x303;s
+            <lb/>
+            willen, etc.</hi>
+            <lb/>
+            
+            Die Gemein/ Glider Chriſti.
+            <lb/>
+            Wol auch der gantzen Gmein
+            <lb/>
+            die Gott/ und zwar allein/
+            <lb/>
+            ob allen dingen liebet/
+            <lb/>
+            den Na&#x364;chſten nie betru&#x364;bet.
+            <lb/>
+            
+            <hi rendition="#aq">1.Cor.III.16.17.18.19.
+            <lb/>
+            Wüſſet ihr nicht, daſs ihr Gottes Tempel ſeÿt, und daß d</hi>er
+            <lb/>
+            <hi rendition="#aq">Geiſt Gottes in eüch wohnet? So jemand den Tempel Gottes
+            <lb/>
+            verderbet, den wird Gott auch verderben: dann der Tempel
+            <lb/>
+            Gottes iſt heilig, welcher ihr ſeÿt. Niemand verfu&#x364;hre ſich ſelbſt.
+            <lb/>
+            So jemand under eüch ſich in diſer welt bedunket weis ſeÿn, der werde ein
+            <lb/>
+            tohr, auf daſs er weis werde. Dann die weißheit diſer welt iſt beÿ Gott ein</hi>e
+            <lb/>
+            <hi rendition="#aq">tohrheit. etc.</hi>
+            <lb/>
+            
+            <hi rendition="#aq">Ab der Burgerbibliothec verehr: A°. 1662 Johr.</hi>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

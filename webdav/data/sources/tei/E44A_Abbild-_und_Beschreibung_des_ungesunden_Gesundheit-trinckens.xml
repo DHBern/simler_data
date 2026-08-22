@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+   xml:id="E44A"
+   type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Gesundheittrinken</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Gesundheittrinken.</bibl>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">Aeg 468 (Meyer, Konrad a I,8)</idno>
+                     <idno type="Transkribus">4580229</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            Abbild- vnd Beſchreibung
+            <lb/>
+            Des vngeſunden Geſundheit-trinckens/
+            <lb/>
+            der vollen vnd tollen Bacchus-Bru&#x364;deren.
+            <lb/>
+            JWS
+            <lb/>
+            Das edel Rebenſafft zu&#x366;r Fro&#x364;likeit gegeben, Du&#x364;rch miſſbrauch vnheÿl ſchafft vnd kürtzet vnſer Leben.
+            <lb/>
+            
+            <hi rendition="#aq">Con. Meÿer fecit et excudit.</hi>
+            <lb/>
+            
+            Luc.21<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Andernorts steht an dieser Stelle ein Punkt, der hier aber nicht sicher ist.</p></note>v.34. Hu&#x364;-
+            <lb break="no"/>
+            tet euch daß ewere
+            <lb/>
+            Hertzen nicht be-
+            <lb break="no"/>
+            ſchwert werden mit
+            <lb/>
+            Freſſen vnd S<supplied>a</supplied>uf-
+            <lb break="no"/>
+            fen/ ꝛc. vnd komme
+            <lb/>
+            der Tag des Herꝛen
+            <lb/>
+            ſchnell vb<supplied>e</supplied>r euch/
+            <lb/>
+            wie ein Falſtrick.
+            <lb/>
+            Eph.5.v.18.
+            <lb/>
+            Sauffet euch nicht
+            <lb/>
+            voll Weins/ darauß
+            <lb/>
+            ein vnordenlich we-
+            <lb break="no"/>
+            ſen (vnheyl) folget/
+            <lb/>
+            ſondern werdet voll
+            <lb/>
+            Geiſtes/ ꝛc.
+            <lb/>
+            Eſa.5.v.11. Wee
+            <lb/>
+            denen/ die des mor-
+            <lb break="no"/>
+            gens fru&#x364;h auff ſind/
+            <lb/>
+            des Sauffens ſich
+            <lb/>
+            zu befleiſſigen/ ꝛc.
+            <lb/>
+            vnd haben Harffen/
+            <lb/>
+            Paucken/ Pfeiffen
+            <lb/>
+            vnd Wein in jh-
+            <lb break="no"/>
+            rem wolleben/ ꝛc.
+            <lb/>
+            1.Cor.6.v.10.
+            <lb/>
+            Die Vertruncknen
+            <lb/>
+            werden das Reych
+            <lb/>
+            Gottes nicht erer-
+            <lb break="no"/>
+            ben.
+            <lb/>
+            
+            <hi rendition="#aq"><hi rendition="#i">S. Auguſtinus, in</hi>
+            <lb/>
+            <hi rendition="#i">Bpiſt. ad Comi-</hi>
+            <lb break="no"/>
+            <hi rendition="#i">tem; et ad Sacras</hi>
+            <lb/>
+            <hi rendition="#i">Virgines.</hi></hi>
+            <lb/>
+            Truncken<anchor xml:id="a2"/><unclear>h</unclear><note type="annotation" targetEnd="a2"><p>Eigentlich müsste h stehen. Ein Druckfehler mit "b" ist aber nicht ganz auszuschliessen.</p></note>eit
+            <lb/>
+            iſt ein Zundel der
+            <lb/>
+            Vnzucht: ein Mut-
+            <lb break="no"/>
+            ter aller Laſteren:
+            <lb/>
+            ein Wurtzel der
+            <lb/>
+            Schandt<anchor xml:id="a3"/><unclear>h</unclear><note type="annotation" targetEnd="a3"><p>Eigentlich müsste h stehen. Ein Druckfehler mit "b" ist aber nicht ganz auszuschliessen.</p></note>aten: ein
+            <lb/>
+            Tollmacherin des
+            <lb/>
+            Haupts: ein Ver-
+            <lb break="no"/>
+            kehrerin der Sin-
+            <lb break="no"/>
+            nen: ein Vngewit-
+            <lb break="no"/>
+            ter der Zungen:
+            <lb/>
+            ein Platzregen des
+            <lb/>
+            Leibs: ein Schiff-
+            <lb break="no"/>
+            bruch der Keuſch-
+            <lb break="no"/>
+            heit: ein Verlurſt
+            <lb/>
+            der Zeit: ein wil-
+            <lb break="no"/>
+            lige Vnſinnigkeit:
+            <lb/>
+            ein Mackel der Sit-
+            <lb break="no"/>
+            ten: ein Schandfle-
+            <lb break="no"/>
+            cken des Lebens:
+            <lb/>
+            ein Vndergang der
+            <lb/>
+            Ehrbarkeit: ein
+            <lb/>
+            Verderbnuß der
+            <lb/>
+            Seelen.
+            <lb/>
+            
+            Allhie wird/
+            <lb/>
+            nach dem bey-
+            <lb break="no"/>
+            ſpil der Lacede-
+            <lb break="no"/>
+            monier/ ein volle
+            <lb/>
+            Rott Geſund-
+            <lb break="no"/>
+            heit-ſa&#x364;uffer fu&#x364;r-
+            <lb break="no"/>
+            geſt<supplied>e</supplied>llt: auff da<supplied>ß</supplied>
+            <lb/>
+            derſelben wun-
+            <lb break="no"/>
+            derliche Geber-
+            <lb break="no"/>
+            den die Trun-
+            <lb break="no"/>
+            ckenheit/ alß vi-
+            <lb break="no"/>
+            ler Vblen Vr-
+            <lb break="no"/>
+            ſach/ vns erlei-
+            <lb break="no"/>
+            den.
+            <lb/>
+            Geſundheit-
+            <lb break="no"/>
+            trunck erfordert
+            <lb/>
+            1. Ein groß Ge-
+            <lb break="no"/>
+            ſchirꝛ.
+            <lb/>
+            2. Den aller be-
+            <lb break="no"/>
+            ſten Wein.
+            <lb/>
+            3. Ein geſchwin-
+            <lb break="no"/>
+            den Garauß.
+            <lb/>
+            Straaff der
+            <lb/>
+            Vbertretteren.
+            <lb/>
+            Gemeiner Ge-
+            <lb break="no"/>
+            ſundheit-trunck
+            <lb/>
+            der 12. Sauff-
+            <lb break="no"/>
+            bru&#x364;deren.
+            <lb/>
+            1. Allzeitvoll
+            <lb/>
+            2. Witzla&#x364;r.
+            <lb/>
+            3. Wackelfuß.
+            <lb/>
+            4. Vilſauff.
+            <lb/>
+            5. Praſſer.
+            <lb/>
+            6. Lu&#x364;fftſpringer.
+            <lb/>
+            7. Zeitungbrin-
+            <lb break="no"/>
+            ger.
+            <lb/>
+            8. Schnarcher.
+            <lb/>
+            9. Gutga&#x364;ber.
+            <lb/>
+            10. Dürꝛmund.
+            <lb/>
+            11. Großſpre-
+            <lb break="no"/>
+            cher.
+            <lb/>
+            12. Nachtvo-
+            <lb break="no"/>
+            gel.
+            <lb/>
+            Beym Gſund-
+            <lb break="no"/>
+            heit-trunck groſ-
+            <lb break="no"/>
+            ſer Herꝛen/ wil
+            <lb/>
+            der ein am Tiſch
+            <lb/>
+            ſtehen.
+            <lb/>
+            Der ander auff
+            <lb/>
+            dem Banck.
+            <lb/>
+            Der dritt wil
+            <lb/>
+            knewen.
+            <lb/>
+            Der viert trom-
+            <lb break="no"/>
+            peten.
+            <lb/>
+            
+            <hi rendition="#in">K</hi><hi rendition="#b">Om&#x303;t/ jung vnd alte kom&#x303;t! Jhr ſolt da wunder ſehen/</hi>
+            <lb/>
+            Wie doch/ bey Bacchus Fa&#x364;ſt/ die Gſundheit-tru&#x364;nck rumb gehen/
+            <lb/>
+            So gar daß ſie; da ſie ſeyn ſolten ein Artzney;
+            <lb/>
+            Wo nicht den Tod/ jedoch vil Kranckheit bringen bey.
+            <lb/>
+            Bey ſolchem Freßmahl nun zu oberſt wird geſetzet/
+            <lb/>
+            Wer ſich/ fu&#x364;r ander auß/ mit Reben-ſafft benetzet:
+            <lb/>
+            Doch kommen ſie in dem/ gemeinlich/ vberein/
+            <lb/>
+            Daß jhrer keiner nicht wil vnbeſoffen ſeyn:
+            <lb/>
+            Den Wein auch keiner bald/ das Waſſer alle ſparen:
+            <lb/>
+            Dann/ erſt in voller weis/ die Gſundheit-tru&#x364;nck rumb fahren;
+            <lb/>
+            Jn welchen/ ruhmlos zwar/ jedoch mit Ordnung auch/
+            <lb/>
+            Drey ſonderbare Stu&#x364;ck erfordert jhr Gebrauch.
+            <lb/>
+            Zu erſt/ ein groß Geſchirꝛ; weil groß vnd hoch erhaben
+            <lb/>
+            Der jenig/ welchen jetz jhr Vmbtrunck ſo&#x364;ll' erlaben.
+            <lb/>
+            So denne ſchencket man des Allerbeſten eyn;
+            <lb/>
+            Dieweil ſein Gu&#x364;te ſol der Tugend Zeichen ſeyn.
+            <lb/>
+            Wormit gemeinter Herꝛ/ fu&#x364;r ander/ ſey gezieret/
+            <lb/>
+            Da er offt/ Laſter-voll/ ſich ſelber nicht regieret:
+            <lb/>
+            Auch ſol ein gut Getra&#x364;nck zugleich andeuten frey/
+            <lb/>
+            Daß auch das Beſt im Hauß in ſeinen dienſten ſey.
+            <lb/>
+            Vnd endlich wil jhr Gſatz/ daß jeder/ ohn beſchwa&#x364;ren/
+            <lb/>
+            Diß Gſchirꝛ/ wie groß es ſey/ in eim Trunck ſo&#x364;lle la&#x364;ren/
+            <lb/>
+            Zur anzeig wie geſchwind zu dienen er geneigt
+            <lb/>
+            Dem Herꝛen/ dem hierdurch werd billich Ehr erzeigt.
+            <lb/>
+            So muß jhr jeder auch/ der diß Geſatz thut brechen/
+            <lb/>
+            Noch einen kehren vmb/ ohn alles widerſprechen:
+            <lb/>
+            Doch findt man deren wol/ die diſes wenig irꝛt/
+            <lb/>
+            Ob es gleich Sinn vnd Hirn verjrꝛet vnd verwirꝛt.
+            <lb/>
+            <hi rendition="#b">Herꝛ Witzla&#x364;r iſt Gezeug/ vnd weißt hiervon zu ſingen:</hi>
+            <lb/>
+            Dann/ alß Herꝛ Allzeitvoll jhm einen thate bringen
+            <lb/>
+            Auff aller Gſundheit hin/ vnd er jhn ſchicket fort
+            <lb/>
+            Zu Bruder Wackelfuß/ nur halber außgebort:
+            <lb/>
+            Da hieß man jhme bald/ gantz voll/ eynſchencken wider;
+            <lb/>
+            Vnd forthin jedem auch der einen ſtelle nider:
+            <lb/>
+            Doch war jhm diſes nicht ein ſonders-ſchwa&#x364;re Buß/
+            <lb/>
+            Garauſſend bracht er jhn dem alten Wackelfuß.
+            <lb/>
+            Jetz gilt es/ Vilſauff/ dir: du arger Feind dem Waſſer/
+            <lb/>
+            Dir gilt es Bruder mein/ den man ſonſt nennet Praſſer.
+            <lb/>
+            Nur flux/ es blanget mich zu lo&#x364;ſchen meinen Durſt/
+            <lb/>
+            Dann ich gezechet hab vom Schuncken vnd Braatwurſt.
+            <lb/>
+            Nunmehr iſt es an dir/ du leichter L<anchor xml:id="a4"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a4"><p>Wahrscheinlich ein kleines e, aber nicht eindeutig. In Druck A und B steht an dieser Stelle nichts, in C und D ein e.</p></note>fftenſpringer/
+            <lb/>
+            Jch nim&#x342; jhn von dir an/ vnd brings dem Zeitungbringer.
+            <lb/>
+            Es darff vexierens nicht/ was ich erzell/ iſt waar:
+            <lb/>
+            Geſegnet ſey dein Trunck: zum Schnarcher ich jetz fahr.
+            <lb/>
+            Ha! Jſt es dann an mir? So gilt es dir/ Gutga&#x364;ber.
+            <lb/>
+            Herꝛ Du&#x364;rꝛmund ich wil dich. Der Trunck erfriſch die La&#x364;ber!
+            <lb/>
+            Mein Herꝛ Großſprecher dir/ in demut/ bring ich Eins;
+            <lb/>
+            Du biſt ein Wundersmann; verbringeſt aber keins.
+            <lb/>
+            Nachtvogel deinen ich bey nahem hett vergeſſen.
+            <lb/>
+            Es iſt noch alle zeit: Laß nur deſt beſſer meſſen:
+            <lb/>
+            Dann/ weil der Trunck bey mir erꝛeicht ſein end vnd zil/
+            <lb/>
+            Des Fu&#x364;rſten Gſundheit ich hiemit anheben wil.
+            <lb/>
+            <hi rendition="#b">Deß Fu&#x364;rſten Gſundheit gilt! Jetz thut es recht angehen:</hi>
+            <lb/>
+            Es wil Herꝛ Allzeitvoll bey diſem Vmbtrunck ſtehen.
+            <lb/>
+            Herꝛ Witzla&#x364;r aber meint/ daß vil mehr Ehr darbey/
+            <lb/>
+            Wann auff dem Banck erho&#x364;cht man ſich erzeige frey.
+            <lb/>
+            Der Schnarcher widerſpricht/ vnd wil man ſ<anchor xml:id="a5"/><unclear>o</unclear><note type="annotation" targetEnd="a5"><p>Nicht zu erkennen, ob der Fleck über dem o etwas bedeutet. In allen vier Drucken von A bis D steht an dieser Stelle jedenfalls nichts.</p></note>lle knewen.
+            <lb/>
+            Der Praſſer ſie beredt: Es diene zum verdewen.
+            <lb/>
+            Vnd der Gutg<anchor xml:id="a6"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a6"><p>Wahrscheinlich steht über dem a ein kleines e. Die vier Drucke A bis D helfen nicht, denn dort steht stattdessen nur der Grundbuchstabe e.</p></note>ber ſagt: Jch aber haben wil/
+            <lb/>
+            Daß man zu diſem Trunck trompete vnd auffſpil.
+            <lb/>
+            
+            Die vbrigen
+            <lb/>
+            ſingen bis je-
+            <lb break="no"/>
+            der getruncken:
+            <lb/>
+            den reſt auff den
+            <lb/>
+            Nagel geſchu&#x364;tt/
+            <lb/>
+            vnd das Geſchirꝛ
+            <lb/>
+            vber die Kno&#x364;pff
+            <lb/>
+            gezogen.
+            <lb/>
+            Beyſpil/ wie
+            <lb/>
+            die Vberſehung
+            <lb/>
+            diſer Geſund-
+            <lb break="no"/>
+            heit/ alß ein
+            <lb/>
+            Verachtung ab-
+            <lb break="no"/>
+            geſtrafft wor-
+            <lb break="no"/>
+            den.
+            <lb/>
+            Newer Gſund-
+            <lb break="no"/>
+            heit-trunck auß
+            <lb/>
+            vilen Gla&#x364;ſern
+            <lb/>
+            ab einem Tel-
+            <lb break="no"/>
+            ler.
+            <lb/>
+            Beſihe Fabrici<anchor xml:id="a7"/><unclear>j</unclear><note type="annotation" targetEnd="a7"><p>Sieht eher nach j aus, obwohl der Bogen nicht unter die Zeile geht.</p></note>
+            <lb/>
+            Schlafftrunck/
+            <lb/>
+            fol. 24.25.26.
+            <lb/>
+            Nach vollende-
+            <lb break="no"/>
+            ter Za&#x364;ch trinckt
+            <lb/>
+            man auch noch
+            <lb/>
+            Sta&#x364;ndlingen:
+            <lb/>
+            Auff Sant Jo-
+            <lb break="no"/>
+            hans Segen:
+            <lb/>
+            Begert einen
+            <lb/>
+            Schlafftrunck.
+            <lb/>
+            Von anderen
+            <lb/>
+            Trinckmanieren
+            <lb/>
+            beſihe in Blaſij
+            <lb/>
+            Vilſauffs Diſp.
+            <lb/>
+            vom Sauffrecht
+            <lb/>
+            Beſchließliche
+            <lb/>
+            Erin&#x303;er- vnd Ab-
+            <lb break="no"/>
+            mahnung vom
+            <lb/>
+            Leib- und See-
+            <lb break="no"/>
+            len-ſcha&#x364;dlichen
+            <lb/>
+            Geſundheit-
+            <lb break="no"/>
+            trincken.
+            <lb/>
+            Eſa.5.v.22.
+            <lb/>
+            1.Cor.6.v.10.
+            <lb/>
+            Gal.5.v.21.
+            <lb/>
+            Wunſch.
+            <lb/>
+            
+            Von andern/ ins gemein/ ein Trinck-lied wird geſungen/
+            <lb/>
+            Bis jeder ſeinen Trunck/ auff ſeine weis/ verſchlungen/
+            <lb/>
+            Vnd auff das Na&#x364;gelein gela&#x364;ret das Geſchirꝛ/
+            <lb/>
+            Auch vber ſeine Kno&#x364;pff rabzogen mit Gekirꝛ.
+            <lb/>
+            <hi rendition="#b">Herꝛ Witzla&#x364;r abermal/ dem Bacchus-Gſatz zuwider/</hi>
+            <lb/>
+            Doch auß vergeßlichkeit/ den Vmbtrunck ſtellte nider/
+            <lb/>
+            Woru&#x364;ber ſich/ geſchwind/ erhub Vneinigkeit/
+            <lb/>
+            Ein Fluchen vnd Geza&#x364;nck/ vnd auch ein harber Streit:
+            <lb/>
+            Dann ſie vermeinten all: Es thu dem Fu&#x364;rſten reichen
+            <lb/>
+            Zu nicht geringer Schmach: Deß kamen ſie zu Streichen:
+            <lb/>
+            Doch ward jhr Zorn geſtillt/ vnd wider eyngeſchenckt
+            <lb/>
+            So vil/ daß jhn hernach ein grimmig Fieber krenckt:
+            <lb/>
+            <hi rendition="#b">Secht! Mit dergleichen Schimpff/ vnd groben Narꝛen-poſſen/</hi>
+            <lb/>
+            Seind ein halb dotzet Stund/ bey nahem gar verfloſſen/
+            <lb/>
+            Noch fangt der Vilſauff erſt ein newe Gſundheit an;
+            <lb/>
+            Vil Gla&#x364;ſer ſtellet er auff eines Tellers plan/
+            <lb/>
+            Die trinckt er alle zu/ dem na&#x364;chſten Bacchus-Gſellen/
+            <lb/>
+            Eins nach dem andern flux/ die la&#x364;ren er thut ſtellen
+            <lb/>
+            Nach erſter ordnung zwar/ doch vnder vberſich;
+            <lb/>
+            Sie thun es alle nach; Ein jeder meiſterlich.
+            <lb/>
+            Bey diſem bleibt es nicht/ ꝛc.
+            <lb/>
+            <hi rendition="#b">Vnd wann ſie vom Tiſch gehen/</hi>
+            <lb/>
+            So bleiben ſie noch lang beym lieben Tru&#x364;ncklein ſtehen:
+            <lb/>
+            Ja/ es verweilet ſich jhr Scheiden etlich Stund:
+            <lb/>
+            Das Abgenaden wa&#x364;hrt auff aller Kannen grund:
+            <lb/>
+            Vnd offtermal geſchicht/ daß vnden an der Stegen/
+            <lb/>
+            Noch einer trincken wil auff Sant Johanſen Segen:
+            <lb/>
+            Ein andrer fraget erſt: Wer iſt der gu<supplied>t</supplied> Geſell/
+            <lb/>
+            Der einen Schlafftrunck vns/ in ſ<supplied>ei</supplied>nem Hauß/ auffſtell?
+            <lb/>
+            So vil vom Gſundheit-trunck.
+            <lb/>
+            <hi rendition="#b">Von andern Trinck-manieren/</hi>
+            <lb/>
+            Die/ durch des Teufels liſt/ zu diſer zeit graſſieren/
+            <lb/>
+            Beſihe anderſtwo. Jch hab vom Gſchmack genug/
+            <lb/>
+            Vnd achten daß hiervon ich ſchweig mit beßrer fug.
+            <lb/>
+            <hi rendition="#b">Wann nun durch Fu&#x364;llerey/ vnd durch Geſundheit-ſauffen</hi>
+            <lb/>
+            Dem Feind erſchlagen wurd der minſte Krieges-hauffen/
+            <lb/>
+            Behu&#x364;t! o Herꝛ behu&#x364;t/ wie geb er Ferſengelt/
+            <lb/>
+            Er lieſſe hinderſich Troß/ Waffen vnd Gezelt!
+            <lb/>
+            Dann hinderm Bacchus-tiſch den Feind wil jeder freſſen/
+            <lb/>
+            Deß aber in dem Feld ſie allzumal vergeſſen:
+            <lb/>
+            Sie leben alle gern nur jmmerdar im Sauß/
+            <lb/>
+            Vnd lo&#x364;ſchen nicht wann br<anchor xml:id="a8"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a8"><p>In A, B und C steht ü, in D u&#x364;. Wahrscheinlich hier also auch u&#x364;, aber nicht eindeutig zu erkennen.</p></note>n&#x303;t des allerna&#x364;chſten Hauß:
+            <lb/>
+            Gedencken auch niemal/ zu jhrem groſſen Schaden/
+            <lb/>
+            Daß ſie/ durch Schwelgerey/ des <hi rendition="#g">HERREN</hi> Zorn auffladen/
+            <lb/>
+            Vnd daß/ gemeiniglich/ vnma&#x364;ſſig Speiß und Tranck
+            <lb/>
+            Mach jenen an dem Leib/ vnd den im Beutel kranck.
+            <lb/>
+            Dann ja Gott ſelber ſpricht: Wee! wee dem bo&#x364;ſen Hauffen/
+            <lb/>
+            Die ſtarcke Helden ſeind/ ja Helden Wein zu ſauffen!
+            <lb/>
+            Der Heiden Lehrer auch von den Weinſa&#x364;uffern ſpricht/
+            <lb/>
+            Daß ſie das Himmelreych ererben werden nicht.
+            <lb/>
+            <hi rendition="#b">Darumb ſo bitten ich/ vnd zwar nicht ohne trehen/</hi>
+            <lb/>
+            Es wo&#x364;lle meniglich Wein-ſauffens mu&#x364;ſſig gehen/
+            <lb/>
+            Zu diſer ſchweren Zeit/ da Zeichen vilerley/
+            <lb/>
+            Des nahen Ends der Welt ſeind ein gew<anchor xml:id="a9"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a9"><p>In Druck A, B und C steht ü, in D u&#x364;. Vermutlich hier auch kleines e, aber nicht klar zu erkennen.</p></note>ſſe Chrey.
+            <lb/>
+            Der Schaden Joſephs euch im Hertzen thu&#x366;ne krencken/
+            <lb/>
+            So wird der Fridens-Fu&#x364;rſt euch ſeinen Friden ſchencken:
+            <lb/>
+            Denſelben w<anchor xml:id="a10"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a10"><p>In Druck A, B und C steht ein ü, in D u&#x364;. Vermutlich hier auch ein kleines e darüber, aber nicht eindeutig zu erkennen.</p></note>nſchen ich der gantzen Chriſtenheit/
+            <lb/>
+            Zu letſt/ durch Chriſtum auch die waare Seligkeit.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
