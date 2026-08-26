@@ -4,9 +4,13 @@
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F42A_Lieb-gedicht" type="simler-framework">
    <teiHeader>
+      <!-- NE: Metadaten korrigieren -->
       <fileDesc>
          <titleStmt>
-            <title type="main">Epithalamia honoratissimis nuptiis, genere, pietata, virtuteque praestantissimi viri dn. Joh. Huldrici Bergeri ... sponsi, et lectissimae castissimaeque virginis Margarethae Schwyzerae ... sponsae, die 26. Sept. feliciter celebratis dicata</title>
+            <title type="main">Epithalamia honoratissimis nuptiis, genere, pietata, virtuteque
+               praestantissimi viri dn. Joh. Huldrici Bergeri ... sponsi, et lectissimae
+               castissimaeque virginis Margarethae Schwyzerae ... sponsae, die 26. Sept. feliciter
+               celebratis dicata</title>
             <author>
                <persName ref="http://d-nb.info/gnd/115583025">
                   <surname>Wyss</surname>
@@ -18,10 +22,14 @@
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl type="M">Wyss, Felix: Lieb-gedicht (auf Johann Ulrich Berger). [Zürich?] 1642.</bibl>
+            <bibl type="M">Wyss, Felix: Lieb-gedicht (auf Johann Ulrich Berger). [Zürich?]
+               1642.</bibl>
             <biblFull>
                <titleStmt>
-                  <title type="main" level="m">Epithalamia honoratissimis nuptiis, genere, pietata, virtuteque praestantissimi viri dn. Joh. Huldrici Bergeri ... sponsi, et lectissimae castissimaeque virginis Margarethae Schwyzerae ... sponsae, die 26. Sept. feliciter celebratis dicata</title>
+                  <title type="main" level="m">Epithalamia honoratissimis nuptiis, genere, pietata,
+                     virtuteque praestantissimi viri dn. Joh. Huldrici Bergeri ... sponsi, et
+                     lectissimae castissimaeque virginis Margarethae Schwyzerae ... sponsae, die 26.
+                     Sept. feliciter celebratis dicata</title>
                   <author>
                      <persName ref="http://d-nb.info/gnd/115583025">
                         <surname>Wyss</surname>
@@ -45,7 +53,8 @@
                   <repository>Zentralbibliothek Zürich</repository>
                   <idno>
                      <idno type="shelfmark">181’507.20</idno>
-                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990060090190205508</idno>
+                     <idno type="URLCatalogue"
+                        >https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990060090190205508</idno>
                      <idno type="URLImages">https://doi.org/10.3931/e-rara-12542</idno>
                      <idno type="DOI">10.3931/e-rara-12542</idno>
                      <idno type="Transkribus">7527954</idno>
@@ -65,278 +74,332 @@
             <language ident="lat">Latein</language>
          </langUsage>
          <textClass>
-            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main"
+               >Belletristik</classCode>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div>
+         <div type="poem" xml:id="n69">
             <pb facs="3921459"/>
             <head>Lieb-gedicht.</head>
             <lb/>
-            
-            <l><hi rendition="#in">W</hi>Jewol ich glaube nicht/ daß müglich meinen ſinnen</l>
+            <lg type="poem">
+               <lg n="1">
+                  <l><hi rendition="#in">W</hi>Jewol ich glaube nicht/ daß müglich meinen ſinnen</l>
+                  <lb/>
+                  <l>Zu&#x366; machen ein Gedicht: wie zwaren mein beginnen:</l>
+                  <lb/>
+                  <l rendition="#et">Das wolgefa&#x364;llig ſey dem new-verlobten Par/</l>
+                  <lb/>
+                  <l rendition="#et">Vnd angena&#x364;m dabey den Ehren-ga&#x364;ſten gar:</l>
+                  <lb/>
+                  <l>So ſoll jedoch mein Harpff nach mo&#x364;glichkeit erklingen/</l>
+                  <lb/>
+                  <l>Jch wil/ obgleich nicht ſcharpff/ von <hi rendition="#fr">Lieb</hi> der <hi
+                        rendition="#fr">Liebe</hi> ſingen;</l>
+                  <lb/>
+                  <l rendition="#et">Von <hi rendition="#fr">Liebe</hi> die da iſt das beſte diſer Welt/</l>
+                  <lb/>
+                  <l rendition="#et">Vnd die man jeder friſt für gu&#x366;t vnd go&#x364;ttlich helt.</l>
+                  <lb/>
+                  <l>Dann was in Schiffen thu&#x366;t der Stewrman&#x303; trew außrichten;</l>
+                  <lb/>
+                  <l>Vnd in den Sta&#x364;tten gu&#x366;t die Oberkeiten ſchlichten;</l>
+                  <lb/>
+                  <l rendition="#et">Vnd in <choice>
+                        <sic>w&#x366;</sic>
+                        <corr>w</corr>
+                     </choice>elt-weitem Thal das groſſe Liecht mag ſeyn:</l>
+                  <lb/>
+                  <l rendition="#et">Das iſt in jedem fahl die <hi rendition="#fr">Liebe</hi> nur allein.</l>
+                  <lb/>
+                  <l>Ein Schiff ohn Stewrman&#x303; ſich auß gfahr nicht kan erheben;</l>
+                  <lb/>
+                  <l>Ohn Ober'n ſta&#x364;tiglich die Sta&#x364;tt in ſorgen ſchweben;</l>
+                  <lb/>
+                  <l rendition="#et">Der groſſe Erden-kreyß ohn guld'nen Sonnen-ſchein</l>
+                  <lb/>
+                  <l rendition="#et">Erlanget keinen preyß/ vnd mu&#x366;ß vertunckelt ſeyn.</l>
+                  <lb/>
+                  <l>Wirſt von Geſcho&#x364;pfften du die heiſſe <hi rendition="#fr">Liebe</hi>
+                     trennen/</l>
+                  <lb/>
+                  <l>So machſt in einem Nu die Sonne von vns rennen.</l>
+                  <lb/>
+                  <l rendition="#et">Was thu&#x366;t die <hi rendition="#fr">Liebe</hi> nicht? Sy knüpffet vnd
+                     verbindt</l>
+                  <lb/>
+                  <l rendition="#et">Die Element/ vnd bricht was man am ſta&#x364;rckſten findt.</l>
+                  <lb/>
+                  <l>Alles was vber vns in hohen Lüfften ſchwebet;</l>
+                  <lb/>
+                  <l>Alles was neben vns in gantzer Welte lebet;</l>
+                  <lb/>
+                  <l rendition="#et">Alles was vnder vns das Waſſer auffenthalt;</l>
+                  <lb/>
+                  <l rendition="#et">Die <hi rendition="#fr">Lieb</hi> zu&#x366; gu&#x366;tem vns vermehret vnd
+                     erhalt.</l>
+               </lg>
+               <lb/>
+               <lg n="2">
+                  <l><hi rendition="#aq">Heſiodus</hi> vermeldt in ſeinen Reym-geſangen:</l>
+                  <lb/>
+                  <l>Die <hi rendition="#fr">Liebe</hi> mit der Welt zu&#x366;gleich hab
+                     angefangen.</l>
+                  <lb/>
+                  <l rendition="#et"><hi rendition="#aq">Parmenides</hi> der wil/ vnd ſchreibet offenbar/</l>
+                  <lb/>
+                  <l rendition="#et">Die <hi rendition="#fr">Liebe</hi> hab kein zil ſey vor der Go&#x364;ttern
+                     Schar.</l>
+                  <lb/>
+                  <l>Des <hi rendition="#aq">Phædrus</hi> Lieb-geſchrey erfüllet die
+                     gemu&#x364;ter/</l>
+                  <lb/>
+                  <l>Vnd ſagt: die <hi rendition="#fr">Liebe</hi> ſey der vrſprung ho&#x364;chſter
+                     Gu&#x364;ter.</l>
+                  <lb/>
+                  <l rendition="#et">Auch <hi rendition="#aq">Socrates</hi> der Weyß von ſich bezeuget frey:</l>
+                  <lb/>
+                  <l rendition="#et">Dem Lieb-geſpra&#x364;ch den preyß geb er bey Gaſterey.</l>
+                  <lb/>
+
+                  <fw place="bottom" type="catch">Diß</fw>
+                  <lb/>
+                  <pb facs="3921460"/>
+
+                  <l>Diß ſahen Go&#x364;ttlich ſeyn/ die ſo von Gott nichts wiſſen:</l>
+                  <lb/>
+                  <l>Wie ſolt hierauff allein ein Chriſt nicht ſeyn gefliſſen?</l>
+               </lg>
+               <lb/>
+               <lg n="3">
+                  <l rendition="#et">Herꝛ Bra&#x364;utigamb vermerckt/ was <hi rendition="#fr">Liebe</hi> heißt vnd
+                     iſt:</l>
+                  <lb/>
+                  <l rendition="#et">Dann jhn hierinnen ſterckt der weyß Mann/ ohne liſt.</l>
+                  <lb/>
+                  <l>Er heißt jhn fro&#x364;lich ſeyn mit ſeinem jungen Weibe/</l>
+                  <lb/>
+                  <l>Das/ wie ein Reeche fein/ jhm lange weyl vertreibe.</l>
+                  <lb/>
+                  <l rendition="#et">Mein! Was ho&#x364;r ich von dir? Redt diß ein weyſer Mann?</l>
+                  <lb/>
+                  <l rendition="#et">Wie! Stellet er vns für ein Hirtz vnd Reeche dann?</l>
+                  <lb/>
+                  <l>Ja freylich/ wol-bedacht wil Salomon anzeigen</l>
+                  <lb/>
+                  <l>Die groſſe <hi rendition="#fr">Liebes-macht</hi>/ dein Hertz zum Weib zu&#x366;
+                     neigen:</l>
+                  <lb/>
+                  <l rendition="#et">Daß/ wie des Hirſchen Brunſt vnd Liebe zu&#x366; dem Hind:</l>
+                  <lb/>
+                  <l rendition="#et">So auch dein Liebes-gunſt zu&#x366; deinem Weib ſich find.</l>
+                  <lb/>
+                  <l>Noch eines mir erlaub/ worauß geleichs erſcheinet:</l>
+                  <lb/>
+                  <l>Die keuſche Turteldaub auß liebe ſeuffzt vnd weinet:</l>
+                  <lb/>
+                  <l rendition="#et">Nach jhres Liebſten todt lebt ſy in einſamkeit/</l>
+                  <lb/>
+                  <l rendition="#et">Auff dürꝛem Aſt jhr noht ſy klagt jhr lebens-zeit.</l>
+                  <lb/>
+                  <l>Jm fahl ſy trincken ſol auß klaren Brunnen-flu&#x364;ſſen/</l>
+                  <lb/>
+                  <l>Weil ſy des trawrens voll/ tru&#x364;bt ſy die mit den fu&#x364;ſſen.</l>
+                  <lb/>
+                  <l rendition="#et">Vnd noch vil and're Thier bezeugen ſonnen-klar</l>
+                  <lb/>
+                  <l rendition="#et">Jhr Liebe; das allhier auch diß verbleibet waar.</l>
+                  <lb/>
+                  <l>Diß lehrt ſy die Natur: dann ſonſt ſy gar nicht wiſſen</l>
+                  <lb/>
+                  <l>Was <hi rendition="#fr">lieben</hi> heiſſe nur. Solt dann nicht ſeyn
+                     gefliſſen</l>
+                  <lb/>
+                  <l rendition="#et">Der Menſch zu&#x366; lehrnen auch/ was lieben heißt vnd iſt/</l>
+                  <lb/>
+                  <l rendition="#et">Dem an den Sinnen doch das minſte nicht gebriſt?</l>
+               </lg>
+               <lb/>
+               <lg n="4">
+                  <l>Wer einig die Figur des Menſchen wird betrachten</l>
+                  <lb/>
+                  <l>Auch in dem anblick nur/ wird <hi rendition="#fr">Liebens-werth</hi> jhn
+                     achten:</l>
+                  <lb/>
+                  <l rendition="#et">Dann jhn der ho&#x364;chſte Herꝛ nicht hat geſchaffen wild</l>
+                  <lb/>
+                  <l rendition="#et">Wie ander Thier: vil mehr nach ſeinem Eben-bild.</l>
+                  <lb/>
+                  <l>Des Menſchen gantzer Leib iſt voller <hi rendition="#fr"
+                     >Liebes-zeichen:</hi></l>
+                  <lb/>
+                  <l>Die Augen zu&#x366; der <hi rendition="#fr">Lieb</hi> dir wa&#x364;g vnd
+                     ſta&#x364;ge reichen.</l>
+                  <lb/>
+                  <l rendition="#et">Sinn- Frewd- vnd <hi rendition="#fr">Huldenreich</hi> erſchaffen iſt der
+                     Man&#x303;:</l>
+                  <lb/>
+                  <l rendition="#et">Das Weib den <hi rendition="#fr">Perlen</hi> gleich jhr Scho&#x364;ne zeigen
+                     kan.</l>
+                  <lb/>
+
+                  <fw place="bottom" type="catch">Vnd</fw>
+                  <lb/>
+                  <pb facs="3921461"/>
+
+                  <l>Vnd ſo du weiter mir wirſt mit gedult zu&#x366;ho&#x364;ren/</l>
+                  <lb/>
+                  <l>So wil ich Beyſpil dir von wahrer <hi rendition="#fr">Lieb</hi>
+                     eynfu&#x364;hren.</l>
+                  <lb/>
+                  <l rendition="#et">Der Ro&#x364;mer <hi rendition="#aq">Gracchus</hi> wolt/ auß <hi
+                        rendition="#fr">Lieb</hi> zu&#x366; ſeinem Weib/</l>
+                  <lb/>
+                  <l rendition="#et">Daß man verderben ſolt des Schlangen ma&#x364;n&#x303;lins Leib</l>
+                  <lb/>
+                  <l>Von dem gefangnen Par: weil er Bericht empfangen</l>
+                  <lb/>
+                  <l>Daß in demſelben Jahr/ wann s'Ma&#x364;n&#x303;lin wer entgangen/</l>
+                  <lb/>
+                  <l rendition="#et">Der Todt ſein liebes Weib jhm hette weggerafft:</l>
+                  <lb/>
+                  <l rendition="#et">Hingegen ſeinen Leib: O welch ein <hi rendition="#fr">Liebes-krafft</hi>!</l>
+               </lg>
+               <lb/>
+               <lg n="5">
+                  <l>Dergleichen Beyſpil vil wir finden bey den Heiden:</l>
+                  <lb/>
+                  <l>Dich aber ich nun wil auß Gottes Wort beſcheiden.</l>
+                  <lb/>
+                  <l rendition="#et">Der groſſe <hi rendition="#fr">Abraham</hi> vnd liebe Gottes-freund</l>
+                  <lb/>
+                  <l rendition="#et">Liebt ehlich ſein <hi rendition="#fr">Saram</hi>/ vnd that hiemit nicht
+                     ſünd.</l>
+                  <lb/>
+                  <l>Von <hi rendition="#fr">Jſaac</hi> liſet man/ daß er mit ſonderm ſchertzen</l>
+                  <lb/>
+                  <l>Sein Weib geſprochen an/ vnd gliebet hab von hertzen.</l>
+                  <lb/>
+                  <l rendition="#et">Was thate <hi rendition="#fr">Jacob</hi> nicht? Sein <hi rendition="#fr"
+                        >Liebe</hi> war ſo groß</l>
+                  <lb/>
+                  <l rendition="#et">Daß/ wie die Schrifft bericht/ kein Arbeit jhn verdroß:</l>
+                  <lb/>
+                  <l>Vmb <hi rendition="#fr">Rachel</hi> diente er die ſiben Jahr in ſtillen/</l>
+                  <lb/>
+                  <l>Vnd ander ſiben mehr dient er vmb jhren willen.</l>
+                  <lb/>
+                  <l rendition="#et">So groß war <hi rendition="#fr">Liebes-krafft</hi> bey Frommen jederzeit:</l>
+                  <lb/>
+                  <l rendition="#et">Wo ehlich <hi rendition="#fr">Liebe</hi> hafft/ mu&#x366;ß weichen zanck vnd
+                     ſtreit.</l>
+                  <lb/>
+                  <l>Sant <hi rendition="#aq">Paulus</hi> wil noch mehr: der Mann ſein Weib ſoll
+                     lieben</l>
+                  <lb/>
+                  <l>Wie ſeine Kirch der Herꝛ/ für die er gab das Leben:</l>
+                  <lb/>
+                  <l rendition="#et">Ja/ wie den eignen Leib den er nicht haſſen kan/</l>
+                  <lb/>
+                  <l rendition="#et">Soll <hi rendition="#fr">lieben</hi> er ſein Weib: das Weib zu&#x366;gleich den
+                     Man&#x303;.</l>
+               </lg>
+               <lb/>
+               <lg n="6">
+                  <l>So iſt nun auff der Erd ſo ſchweres nicht zu&#x366; finden/</l>
+                  <lb/>
+                  <l>Daß nicht die <hi rendition="#fr">Liebe</hi> werd' im nohtfall vberwinden.</l>
+                  <lb/>
+                  <l rendition="#et">Doch wüß hierbey auch das daß es nicht ſtande frey</l>
+                  <lb/>
+                  <l rendition="#et">Daß einer ohne maß der <hi rendition="#fr">Lieb'</hi> ergeben ſey:</l>
+                  <lb/>
+                  <l>Wie jener Weiber-mann/ von deme wird geleſen</l>
+                  <lb/>
+                  <l>Daß fehr von Hauß hindan niemalen er geweſen/</l>
+                  <lb/>
+                  <l rendition="#et">Er tru&#x364;ge dann zu&#x366;vor/ von ſeinem lieben Weib</l>
+                  <lb/>
+                  <l rendition="#et">Ein Go&#x364;ller (o ein tor!) an ſeinem eignen Leib.</l>
+                  <lb/>
+
+                  <fw place="bottom" type="catch">Es</fw>
+                  <lb/>
+                  <pb facs="3921462"/>
+
+                  <l>Es mu&#x366;ßt ein jedes auch/ die <hi rendition="#fr">Liebe</hi> zu&#x366;
+                     ergentzen/</l>
+                  <lb/>
+                  <l>Dem andern/ auß gebrauch/ ein jeden Trunck credentzen.</l>
+                  <lb/>
+                  <l rendition="#et">Solch' vnd dergleichen ſchimpff beſchachen ohn vernu<choice>
+                        <sic>u</sic>
+                        <corr>n</corr>
+                     </choice>fft:</l>
+                  <lb/>
+                  <l rendition="#et">Sy finden keinen glimpff allwo der Weyſen Zunfft.</l>
+                  <lb/>
+                  <l>Nein/ nein/ diß ſoll nicht ſeyn/ laßt blinde <hi rendition="#fr">Liebe</hi>
+                     bleiben/</l>
+                  <lb/>
+                  <l>Vnd <hi rendition="#fr">lieben</hi> nur allein wie <hi rendition="#aq"
+                        >Paulus</hi> thu&#x366;t fürſchreiben:</l>
+                  <lb/>
+                  <l rendition="#et"><hi rendition="#fr">Liebt</hi> was iſt <hi rendition="#fr">liebens-werth</hi>:
+                     die ma&#x364;ngel decken zu&#x366;:</l>
+                  <lb/>
+                  <l rendition="#et">Alß dann euch widerfa&#x364;hrt die <hi rendition="#fr">Gegen-lieb</hi> mit
+                     rhu&#x366;.</l>
+               </lg>
+               <lb/>
+               <lg n="7">
+                  <l>Was iſt es aber noht die <hi rendition="#fr">Liebe</hi> zu&#x366; gelieben</l>
+                  <lb/>
+                  <l>Dem/ deſſen Hertz von Gott auß <hi rendition="#fr">Liebe</hi> war
+                     getrieben/</l>
+                  <lb/>
+                  <l rendition="#et">Daß eine ſo&#x364;lche <hi rendition="#fr">Lieb</hi> zu&#x366; lieben er
+                     erwehlt</l>
+                  <lb/>
+                  <l rendition="#et">Die von Gemu&#x364;ht vnd Leib jhm billich wolgefellt?</l>
+                  <lb/>
+                  <l>Sy iſt <hi rendition="#fr">Abigail</hi>/ von wegen klu&#x366;ger Sinnen:</l>
+                  <lb/>
+                  <l>Sy iſt der <hi rendition="#fr">Hanna</hi> Gſpil: From&#x342; ſeyn iſt jhr
+                     beginnen:</l>
+                  <lb/>
+                  <l rendition="#et">Sy iſt <hi rendition="#fr">Suſanna</hi> künſch: An zucht der <hi
+                        rendition="#fr">Heſter</hi> gleich:</l>
+                  <lb/>
+                  <l rendition="#et">Sy iſt wie ich ſy wünſch/ ſpricht jhr Herꝛ <hi rendition="#fr"
+                     >Huldenreich</hi>.</l>
+                  <lb/>
+                  <l>Was ſoll man weiter nun für einen Wunſch erdencken?</l>
+                  <lb/>
+                  <l>Was ſoll man ſchließlich thu&#x366;n an diß Gedichte hencken?</l>
+                  <lb/>
+                  <l rendition="#et">Der Friden Euch verbleib/ O außerwehltes Par!</l>
+                  <lb/>
+                  <l rendition="#et">Der Streit beſteh in <hi rendition="#fr">Lieb</hi> bis in das letſte Jahr.</l>
+                  <lb/>
+                  <l>Der Friden in das Hauß den Sa&#x364;gen mu&#x364;ſſe bringen:</l>
+                  <lb/>
+                  <l>Der <hi rendition="#fr">Liebes-kampff</hi> darauß das Bo&#x364;ſe gar
+                     verdringen:</l>
+                  <lb/>
+                  <l rendition="#et">Bis daß jhr alle beyd gelangen an das ort/</l>
+                  <lb/>
+                  <l rendition="#et">Wo lauter lieb ohn leid: Diß iſt mein letſtes wort.</l>
+               </lg>
+            </lg>
+            <lb/>
+            <closer>
+               <signed rendition="#right">Johan&#x303; Wilhelm Simler.</signed><lb/>
+               <hi rendition="#c #g">ENDE.</hi></closer>
             <lb/>
-            <l>Zu&#x366; machen ein Gedicht: wie zwaren mein beginnen:</l>
-            <lb/>
-            <l>Das wolgefa&#x364;llig ſey dem new-verlobten Par/</l>
-            <lb/>
-            <l>Vnd angena&#x364;m dabey den Ehren-ga&#x364;ſten gar:</l>
-            <lb/>
-            <l>So ſoll jedoch mein Harpff nach mo&#x364;glichkeit erklingen/</l>
-            <lb/>
-            <l>Jch wil/ obgleich nicht ſcharpff/ von <anchor xml:id="a1"/>L<note type="annotation" targetEnd="a1"><p>Nicht Frakturschrift?</p></note>ieb der <anchor xml:id="a2"/>L<note type="annotation" targetEnd="a2"><p>Nicht Frakturschrift?</p></note>iebe ſingen;</l>
-            <lb/>
-            <l>Von <anchor xml:id="a3"/>L<note type="annotation" targetEnd="a3"><p>Nicht Frakturschrift?</p></note>iebe die da iſt das beſte diſer Welt/</l>
-            <lb/>
-            <l>Vnd die man jeder friſt für gu&#x366;t vnd go&#x364;ttlich helt.</l>
-            <lb/>
-            <l>Dann was in Schiffen thu&#x366;t der Stewrman&#x303; trew außrichten;</l>
-            <lb/>
-            <l>Vnd in den Sta&#x364;tten gu&#x366;t die Oberkeiten ſchlichten;</l>
-            <lb/>
-            <l>Vnd in <choice><sic>w&#x366;</sic><corr>w</corr></choice>elt-weitem Thal das groſſe Liecht mag ſeyn:</l>
-            <lb/>
-            <l>Das iſt in jedem fahl die <anchor xml:id="a4"/>L<note type="annotation" targetEnd="a4"><p>Nicht Frakturschrift?</p></note>iebe nur allein.</l>
-            <lb/>
-            <l>Ein Schiff ohn Stewrman&#x303; ſich auß gfahr nicht kan erheben;</l>
-            <lb/>
-            <l>Ohn Ober'n ſta&#x364;tiglich die Sta&#x364;tt in ſorgen ſchweben;</l>
-            <lb/>
-            <l>Der groſſe Erden-kreyß ohn guld'nen Sonnen-ſchein</l>
-            <lb/>
-            <l>Erlanget keinen preyß/ vnd mu&#x366;ß vertunckelt ſeyn.</l>
-            <lb/>
-            <l>Wirſt von Geſcho&#x364;pfften du die heiſſe <anchor xml:id="a5"/>L<note type="annotation" targetEnd="a5"><p>Nicht Frakturschrift?</p></note>iebe trennen/</l>
-            <lb/>
-            <l>So machſt in einem Nu die Sonne von vns rennen.</l>
-            <lb/>
-            <l>Was thu&#x366;t die <anchor xml:id="a6"/>L<note type="annotation" targetEnd="a6"><p>Nicht Frakturschrift?</p></note>iebe nicht? Sy knüpffet vnd verbindt</l>
-            <lb/>
-            <l>Die Element/ vnd bricht was man am ſta&#x364;rckſten findt.</l>
-            <lb/>
-            <l>Alles was vber vns in hohen Lüfften ſchwebet;</l>
-            <lb/>
-            <l>Alles was neben vns in gantzer Welte lebet;</l>
-            <lb/>
-            <l>Alles was vnder vns das Waſſer auffenthalt;</l>
-            <lb/>
-            <l>Die <anchor xml:id="a7"/>L<note type="annotation" targetEnd="a7"><p>Nicht Frakturschrift?</p></note>ieb zu&#x366; gu&#x366;tem vns vermehret vnd erhalt.</l>
-            <lb/>
-            <l><hi rendition="#aq">Heſiodus</hi> vermeldt in ſeinen Reym-geſangen:</l>
-            <lb/>
-            <l>Die <anchor xml:id="a8"/>L<note type="annotation" targetEnd="a8"><p>Nicht Frakturschrift?</p></note>iebe mit der Welt zu&#x366;gleich hab angefangen.</l>
-            <lb/>
-            <l><hi rendition="#aq">Parmenides</hi> der wil/ vnd ſchreibet offenbar/</l>
-            <lb/>
-            <l>Die <anchor xml:id="a9"/>L<note type="annotation" targetEnd="a9"><p>Nicht Frakturschrift?</p></note>iebe hab kein zil ſey vor der Go&#x364;ttern Schar.</l>
-            <lb/>
-            <l>Des <hi rendition="#aq">Phædrus</hi> Lieb-geſchrey erfüllet die gemu&#x364;ter/</l>
-            <lb/>
-            <l>Vnd ſagt: die <anchor xml:id="a10"/>L<note type="annotation" targetEnd="a10"><p>Nicht Frakturschrift?</p></note>iebe ſey der vrſprung ho&#x364;chſter Gu&#x364;ter.</l>
-            <lb/>
-            <l>Auch <hi rendition="#aq">Socrates</hi> der Weyß von ſich bezeuget frey:</l>
-            <lb/>
-            <l>Dem Lieb-geſpra&#x364;ch den preyß geb er bey Gaſterey.</l>
-            <lb/>
-            
-            <fw place="bottom" type="catch">Diß</fw>
-            <lb/>
-            <pb facs="3921460"/>
-            
-            <l>Diß ſahen Go&#x364;ttlich ſeyn/ die ſo von Gott nichts wiſſen:</l>
-            <lb/>
-            <l>Wie ſolt hierauff allein ein Chriſt nicht ſeyn gefliſſen?</l>
-            <lb/>
-            <l>Herꝛ Bra&#x364;utigamb vermerckt/ was <anchor xml:id="a11"/>L<note type="annotation" targetEnd="a11"><p>Nicht Frakturschrift?</p></note>iebe heißt vnd iſt:</l>
-            <lb/>
-            <l>Dann jhn hierinnen ſterckt der weyß Mann/ ohne liſt.</l>
-            <lb/>
-            <l>Er heißt jhn fro&#x364;lich ſeyn mit ſeinem jungen Weibe/</l>
-            <lb/>
-            <l>Das/ wie ein Reeche fein/ jhm lange weyl vertreibe.</l>
-            <lb/>
-            <l>Mein! Was ho&#x364;r ich von dir? Redt diß ein weyſer Mann?</l>
-            <lb/>
-            <l>Wie! Stellet er vns für ein Hirtz vnd Reeche dann?</l>
-            <lb/>
-            <l>Ja freylich/ wol-bedacht wil Salomon anzeigen</l>
-            <lb/>
-            <l>Die groſſe <anchor xml:id="a12"/>L<note type="annotation" targetEnd="a12"><p>Nicht Frakturschrift?</p></note>iebes-macht/ dein Hertz zum Weib zu&#x366; neigen:</l>
-            <lb/>
-            <l>Daß/ wie des Hirſchen Brunſt vnd Liebe zu&#x366; dem Hind:</l>
-            <lb/>
-            <l>So auch dein Liebes-gunſt zu&#x366; deinem Weib ſich find.</l>
-            <lb/>
-            <l>Noch eines mir erlaub/ worauß geleichs erſcheinet:</l>
-            <lb/>
-            <l>Die keuſche Turteldaub auß liebe ſeuffzt vnd weinet:</l>
-            <lb/>
-            <l>Nach jhres Liebſten todt lebt ſy in einſamkeit/</l>
-            <lb/>
-            <l>Auff dürꝛem Aſt jhr noht ſy klagt jhr lebens-zeit.</l>
-            <lb/>
-            <l>Jm fahl ſy trincken ſol auß klaren Brunnen-flu&#x364;ſſen/</l>
-            <lb/>
-            <l>Weil ſy des trawrens voll/ tru&#x364;bt ſy die mit den fu&#x364;ſſen.</l>
-            <lb/>
-            <l>Vnd noch vil and're Thier bezeugen ſonnen-klar</l>
-            <lb/>
-            <l>Jhr Liebe; das allhier auch diß verbleibet waar.</l>
-            <lb/>
-            <l>Diß lehrt ſy die Natur: dann ſonſt ſy gar nicht wiſſen</l>
-            <lb/>
-            <l>Was lieben heiſſe nur. Solt dann nicht ſeyn gefliſſen</l>
-            <lb/>
-            <l>Der Menſch zu&#x366; lehrnen auch/ was lieben heißt vnd iſt/</l>
-            <lb/>
-            <l>Dem an den Sinnen doch das minſte nicht gebriſt?</l>
-            <lb/>
-            <l>Wer einig die Figur des Menſchen wird betrachten</l>
-            <lb/>
-            <l>Auch in dem anblick nur/ wird <anchor xml:id="a13"/>L<note type="annotation" targetEnd="a13"><p>Nicht Frakturschrift?</p></note>iebens-werth jhn achten:</l>
-            <lb/>
-            <l>Dann jhn der ho&#x364;chſte Herꝛ nicht hat geſchaffen wild</l>
-            <lb/>
-            <l>Wie ander Thier: vil mehr nach ſeinem Eben-bild.</l>
-            <lb/>
-            <l>Des Menſchen gantzer Leib iſt voller <anchor xml:id="a14"/>L<note type="annotation" targetEnd="a14"><p>Nicht Frakturschrift?</p></note>iebes-zeichen:</l>
-            <lb/>
-            <l>Die Augen zu&#x366; der <anchor xml:id="a15"/>L<note type="annotation" targetEnd="a15"><p>Nicht Frakturschrift?</p></note>ieb dir wa&#x364;g vnd ſta&#x364;ge reichen.</l>
-            <lb/>
-            <l>Sinn- Frewd- vnd <anchor xml:id="a16"/>H<note type="annotation" targetEnd="a16"><p>Nicht Frakturschrift?</p></note>uldenreich erſchaffen iſt der Man&#x303;:</l>
-            <lb/>
-            <l>Das Weib den <anchor xml:id="a17"/>P<note type="annotation" targetEnd="a17"><p>Nicht Frakturschrift?</p></note>erlen gleich jhr Scho&#x364;ne zeigen kan.</l>
-            <lb/>
-            
-            <fw place="bottom" type="catch">Vnd</fw>
-            <lb/>
-            <pb facs="3921461"/>
-            
-            <l>Vnd ſo du weiter mir wirſt mit gedult zu&#x366;ho&#x364;ren/</l>
-            <lb/>
-            <l>So wil ich Beyſpil dir von wahrer <anchor xml:id="a18"/>L<note type="annotation" targetEnd="a18"><p>Nicht Frakturschrift?</p></note>ieb eynfu&#x364;hren.</l>
-            <lb/>
-            <l>Der Ro&#x364;mer <hi rendition="#aq">Gracchus</hi> wolt/ auß <anchor xml:id="a19"/>L<note type="annotation" targetEnd="a19"><p>Nicht Frakturschrift?</p></note>ieb zu&#x366; ſeinem Weib/</l>
-            <lb/>
-            <l>Daß man verderben ſolt des Schlangen ma&#x364;n&#x303;lins Leib</l>
-            <lb/>
-            <l>Von dem gefangnen Par: weil er Bericht empfangen</l>
-            <lb/>
-            <l>Daß in demſelben Jahr/ wann s'Ma&#x364;n&#x303;lin wer entgangen/</l>
-            <lb/>
-            <l>Der Todt ſein liebes Weib jhm hette weggerafft:</l>
-            <lb/>
-            <l>Hingegen ſeinen Leib: O welch ein <anchor xml:id="a20"/>L<note type="annotation" targetEnd="a20"><p>Nicht Frakturschrift?</p></note>iebes-krafft!</l>
-            <lb/>
-            <l>Dergleichen Beyſpil vil wir finden bey den Heiden:</l>
-            <lb/>
-            <l>Dich aber ich nun wil auß Gottes Wort beſcheiden.</l>
-            <lb/>
-            <l>Der groſſe A<anchor xml:id="a21"/>b<note type="annotation" targetEnd="a21"><p>Nicht Frakturschrift  oder fett?</p></note>raham vnd liebe Gottes-freund</l>
-            <lb/>
-            <l>Liebt ehlich ſein Saram/ vnd that hiemit nicht ſünd.</l>
-            <lb/>
-            <l>Von Jſaac liſet man/ daß er mit ſonderm ſchertzen</l>
-            <lb/>
-            <l>Sein Weib geſprochen an/ vnd gliebet hab von hertzen.</l>
-            <lb/>
-            <l>Was thate Jacob nicht? Sein <anchor xml:id="a22"/>L<note type="annotation" targetEnd="a22"><p>Nicht Frakturschrift?</p></note>ie<anchor xml:id="a23"/>b<note type="annotation" targetEnd="a23"><p>Nicht Frakturschrift?</p></note>e war ſo groß</l>
-            <lb/>
-            <l>Daß/ wie die Schrifft bericht/ kein Arbeit jhn verdroß:</l>
-            <lb/>
-            <l>Vmb Rachel diente er die ſiben Jahr in ſtillen/</l>
-            <lb/>
-            <l>Vnd ander ſiben mehr dient er vmb jhren willen.</l>
-            <lb/>
-            <l>So groß war <anchor xml:id="a24"/>L<note type="annotation" targetEnd="a24"><p>Nicht Frakturschrift?</p></note>iebes-krafft bey Frommen jederzeit:</l>
-            <lb/>
-            <l>Wo ehlich <anchor xml:id="a25"/>L<note type="annotation" targetEnd="a25"><p>Nicht Frakturschrift?</p></note>iebe hafft/ mu&#x366;ß weichen zanck vnd ſtreit.</l>
-            <lb/>
-            <l>Sant <hi rendition="#aq">Paulus</hi> wil noch mehr: der Mann ſein Weib ſoll lieben</l>
-            <lb/>
-            <l>Wie ſeine Kirch der Herꝛ/ für die er gab das Leben:</l>
-            <lb/>
-            <l>Ja/ wie den eignen Leib den er nicht haſſen kan/</l>
-            <lb/>
-            <l>Soll lie<anchor xml:id="a26"/>b<note type="annotation" targetEnd="a26"><p>Nicht Frakturschrift?</p></note>en er ſein Weib: das Weib zu&#x366;gleich den Man&#x303;.</l>
-            <lb/>
-            <l>So iſt nun auff der Erd ſo ſchweres nicht zu&#x366; finden/</l>
-            <lb/>
-            <l>Daß nicht die <anchor xml:id="a27"/>L<note type="annotation" targetEnd="a27"><p>Nicht Frakturschrift?</p></note>iebe werd' im nohtfall vberwinden.</l>
-            <lb/>
-            <l>Doch wüß hierbey auch das daß es nicht ſtande frey</l>
-            <lb/>
-            <l>Daß einer ohne maß der <anchor xml:id="a28"/>L<note type="annotation" targetEnd="a28"><p>Nicht Frakturschrift?</p></note>ieb' ergeben ſey:</l>
-            <lb/>
-            <l>Wie jener Weiber-mann/ von deme wird geleſen</l>
-            <lb/>
-            <l>Daß fehr von Hauß hindan niemalen er geweſen/</l>
-            <lb/>
-            <l>Er tru&#x364;ge dann zu&#x366;vor/ von ſeinem lieben Weib</l>
-            <lb/>
-            <l>Ein Go&#x364;ller (o ein tor!) an ſeinem eignen Leib.</l>
-            <lb/>
-            
-            <fw place="bottom" type="catch">Es</fw>
-            <lb/>
-            <pb facs="3921462"/>
-            
-            <l>Es mu&#x366;ßt ein jedes auch/ die <anchor xml:id="a29"/>L<note type="annotation" targetEnd="a29"><p>Nicht Frakturschrift?</p></note>iebe zu&#x366; ergentzen/</l>
-            <lb/>
-            <l>Dem andern/ auß gebrauch/ ein jeden Trunck credentzen.</l>
-            <lb/>
-            <l>Solch' vnd dergleichen ſchimpff beſchachen ohn vernu<choice><sic>u</sic><corr>n</corr></choice>fft:</l>
-            <lb/>
-            <l>Sy finden keinen glimpff allwo der Weyſen Zunfft.</l>
-            <lb/>
-            <l>Nein/ nein/ diß ſoll nicht ſeyn/ laßt blinde <anchor xml:id="a30"/>L<note type="annotation" targetEnd="a30"><p>Nicht Frakturschrift?</p></note>iebe bleiben/</l>
-            <lb/>
-            <l>Vnd lieben nur allein wie <hi rendition="#aq">Paulus</hi> thu&#x366;t fürſchreiben:</l>
-            <lb/>
-            <l><anchor xml:id="a31"/>L<note type="annotation" targetEnd="a31"><p>Nicht Frakturschrift?</p></note>iebt was iſt liebens-werth: die ma&#x364;ngel decken zu&#x366;:</l>
-            <lb/>
-            <l>Alß dann euch widerfa&#x364;hrt die Ge<anchor xml:id="a32"/>g<note type="annotation" targetEnd="a32"><p>Nicht Frakturschrift?</p></note>en-lieb mit rhu&#x366;.</l>
-            <lb/>
-            <l>Was iſt es aber noht die <anchor xml:id="a33"/>L<note type="annotation" targetEnd="a33"><p>Nicht Frakturschrift?</p></note>iebe zu&#x366; gelieben</l>
-            <lb/>
-            <l>Dem/ deſſen Hertz von Gott auß <anchor xml:id="a34"/>L<note type="annotation" targetEnd="a34"><p>Nicht Frakturschrift?</p></note>iebe war getrieben/</l>
-            <lb/>
-            <l>Daß eine ſo&#x364;lche <anchor xml:id="a35"/>L<note type="annotation" targetEnd="a35"><p>Nicht Frakturschrift?</p></note>ieb zu&#x366; lieben er erwehlt</l>
-            <lb/>
-            <l>Die von Gemu&#x364;ht vnd Leib jhm billich wolgefellt?</l>
-            <lb/>
-            <l>Sy iſt Abi<anchor xml:id="a36"/>g<note type="annotation" targetEnd="a36"><p>Nicht Frakturschrift?</p></note>ail/ von wegen klu&#x366;ger Sinnen:</l>
-            <lb/>
-            <l>Sy iſt der <anchor xml:id="a37"/>H<note type="annotation" targetEnd="a37"><p>Nicht Frakturschrift?</p></note>anna Gſpil: From&#x342; ſeyn iſt jhr beginnen:</l>
-            <lb/>
-            <l>Sy iſt Suſanna künſch: An zucht der <anchor xml:id="a38"/>H<note type="annotation" targetEnd="a38"><p>Nicht Frakturschrift?</p></note>eſter gleich:</l>
-            <lb/>
-            <l>Sy iſt wie ich ſy wünſch/ ſpricht jhr Herꝛ <anchor xml:id="a39"/>H<note type="annotation" targetEnd="a39"><p>Nicht Frakturschrift?</p></note>uldenreich.</l>
-            <lb/>
-            <l>Was ſoll man weiter nun für einen Wunſch erdencken?</l>
-            <lb/>
-            <l>Was ſoll man ſchließlich thu&#x366;n an diß Gedichte hencken?</l>
-            <lb/>
-            <l>Der Friden Euch verbleib/ O außerwehltes Par!</l>
-            <lb/>
-            <l>Der Streit beſteh in <anchor xml:id="a40"/>L<note type="annotation" targetEnd="a40"><p>Nicht Frakturschrift?</p></note>ieb bis in das letſte Jahr.</l>
-            <lb/>
-            <l>Der Friden in das Hauß den Sa&#x364;gen mu&#x364;ſſe bringen:</l>
-            <lb/>
-            <l>Der <anchor xml:id="a41"/>L<note type="annotation" targetEnd="a41"><p>Nicht Frakturschrift?</p></note>iebes-kampff darauß das Bo&#x364;ſe gar verdringen:</l>
-            <lb/>
-            <l>Bis daß jhr alle beyd gelangen an das ort/</l>
-            <lb/>
-            <l>Wo lauter lieb ohn leid: Diß iſt mein letſtes wort.</l>
-            <lb/>
-            
-            Johan&#x303; Wilhelm Simler.
-            <lb/>
-            <hi rendition="#g">E N D E.</hi>
-            <lb/>
-            
          </div>
       </body>
    </text>
