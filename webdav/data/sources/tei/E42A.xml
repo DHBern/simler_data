@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0"
+     xml:id="E42A"
+     type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Oeconomia, Oder Poetisch Gesang/ von Christlichem Hauszwesen. Neben freundlicher Glückwünschung ... Dem ... Herren Hans Heinrich Rahnen ... So dann auch der ... Jungfr. Elisabetha Holtzhalbin ...</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Oeconomia, Oder Poetisch Gesang/ von Christlichem Haußwesen. [Zürich] 1642.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Oeconomia, Oder Poetisch Gesang/ von Christlichem Hauszwesen. Neben freundlicher Glückwünschung ... Dem ... Herren Hans Heinrich Rahnen ... So dann auch der ... Jungfr. Elisabetha Holtzhalbin ...</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">1 Einblattdruck : Holzschnitt und Letterndruck ; Bild 37,1 x 28 cm, Blatt 42,4 x 33,1 cm</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Zürich].</name>
+                  </publisher>
+                  <pubPlace>[Zürich]</pubPlace>
+                  <date type="publication">1642</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">EDR 1642 Rahn Ia,1</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990102794410205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-38664</idno>
+                     <idno type="DOI">10.3931/e-rara-38664</idno>
+                     <idno type="Transkribus">17753495</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/11598494/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <p/>
+      </body>
+   </text>
+</TEI>
