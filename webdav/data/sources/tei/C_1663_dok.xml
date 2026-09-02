@@ -6356,11 +6356,13 @@
             <lb/>
             <fw place="top" type="header">Weihnacht-</fw>
             <lb break="no"/>
-            <num>14</num> Jn armuht: uns zumachen reich/
+            <lg n="14">
+            <l><num>14</num> Jn armuht: uns zumachen reich/</l>
             <lb/>
             <l>zumachen reich:</l>
             <lb/>
             <l>und ſeinen lieben Englen gleich:/:</l>
+            </lg>
             <lb/>
             <lg n="15">
             <l><num>15</num> Bey fro&#x364;mden: uns mit ſeiner hand/</l>
@@ -7101,11 +7103,12 @@
             <lb/>
             <fw place="top" type="header">Weihnacht-</fw>
             <lb break="no"/>
-            Marien Lobgeſang/
+            <div n="2" xml:id="n11">
+            <head>Marien Lobgeſang/</head>
             <lb/>
-            in der weiſe:
+            <p>in der weiſe:
             <lb/>
-            Mein ſeel erhebt den Herꝛen mein/ ꝛc.
+            Mein ſeel erhebt den Herꝛen mein/ ꝛc.</p>
             <lb/>
             
             <lg type="poem">
@@ -7200,6 +7203,8 @@
             </lg>
             </lg>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">G ij</fw>
             <lb/>
             <pb facs="4049283" n="84"/>
@@ -13456,13 +13461,13 @@
             <pb facs="4049392" n="193"/>
             <fw place="top" type="pageNum">193</fw>
             <lb/>
-            Vnterſchiedliche/ auf zeiten und
+            <head>Vnterſchiedliche/ auf zeiten und
             <lb/>
             anla&#x364;ſſe gerichtete Geſa&#x364;nge/ Glu&#x364;k-
             <lb break="no"/>
             wünſchungen/ Ehren- und
             <lb/>
-            Loblieder:
+            Loblieder:</head>
             <lb/>
             <fw place="bottom" type="pageNum">O</fw>
             <lb/>
@@ -13472,20 +13477,20 @@
             <fw place="top" type="header">Fr<anchor xml:id="a65"/>u&#x364;<note type="annotation" targetEnd="a65"><p>Sieht hier etwas aus wie ein übergeschriebenes o. Im Münchner Exemplar aber eindeutig e</p></note>hlingsgeſang.</fw>
             <lb/>
             
+            <div n="2" xml:id="n30">
             <head rendition="#aq"><num>XXXII.</num> Cantus.</head>
             <lb/>
-            Der Fru&#x364;hling foller luſt die berg und th<anchor xml:id="a66"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a66"><p>Das kleine "e" ist in keinem einzigen Exemplar eindeutig</p></note>ler kleidet/
+            <l>Der Fru&#x364;hling foller luſt die berg und th<anchor xml:id="a66"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a66"><p>Das kleine "e" ist in keinem einzigen Exemplar eindeutig</p></note>ler kleidet/</l>
             <lb/>
-            darvon ſich alles vieh in follen ſprüngen weidet:
+            <l>darvon ſich alles vieh in follen ſprüngen weidet:</l>
             <lb/>
-            das federvo&#x364;lklein ſingt: es hüp<anchor xml:id="a67"/>f<note type="annotation" targetEnd="a67"><p>In den Vergleichsexemplaren ist das f besser zu erkennen</p></note>t der Nymphen chor:
+            <l>das federvo&#x364;lklein ſingt: es hüp<anchor xml:id="a67"/>f<note type="annotation" targetEnd="a67"><p>In den Vergleichsexemplaren ist das f besser zu erkennen</p></note>t der Nymphen chor:</l>
             <lb/>
-            das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
+            <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            <div n="1">
             <lg type="poem">
             <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
             <lb/>
@@ -13496,6 +13501,7 @@
             <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
             </lg>
             <lb/>
+            
             <pb facs="4049394" n="195"/>
             <fw place="top" type="pageNum">195</fw>
             <lb/>
@@ -13504,25 +13510,26 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/ dar-
+            <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/ dar-</l>
             <lb break="no"/>
-            von ſich alles vieh in follen ſprüngen weidet:
+            <l>von ſich alles vieh in follen ſprüngen weidet:</l>
             <lb/>
-            das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:
+            <l>das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:</l>
             <lb/>
-            das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
+            <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/
+            <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
             <lb/>
-            darvon ſich alles vieh in follen ſprüngen weidet:
+            <l>darvon ſich alles vieh in follen ſprüngen weidet:</l>
             <lb/>
-            das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:
+            <l>das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:</l>
             <lb/>
-            das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.
+            <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
             <lb/>
+            
             <fw place="bottom" type="pageNum">O ij</fw>
             <lb/>
             <pb facs="4049395" n="196"/>
@@ -13533,25 +13540,26 @@
             
             <head rendition="#aq"><num>XXXIII.</num> Cantus.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
+            
             <pb facs="4049396" n="197"/>
             <fw place="top" type="pageNum">197</fw>
             <lb/>
@@ -13560,25 +13568,26 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
+            
             <fw place="bottom" type="pageNum">O iij</fw>
             <lb/>
             <pb facs="4049397" n="198"/>
@@ -13589,25 +13598,26 @@
             
             <head rendition="#aq"><num>XXXIV.</num> Cantus.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſa&#x364;et.
+            <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
             <lb/>
+            
             <pb facs="4049398" n="199"/>
             <fw place="top" type="pageNum">199</fw>
             <lb/>
@@ -13616,25 +13626,27 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſ<anchor xml:id="a68"/>a&#x364;<note type="annotation" targetEnd="a68"><p>Im Münchner Exemplar ist das übergeschriebene e klar</p></note>et.
+            <l>entſtehet/ den der Zephyr mit blumen beſ<anchor xml:id="a68"/>a&#x364;<note type="annotation" targetEnd="a68"><p>Im Münchner Exemplar ist das übergeschriebene e klar</p></note>et.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Luſtig werden bekümmerte hertzen/ wan die guldene
+            <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
-            ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:
+            <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
             <lb/>
-            da der leidige winter vergehet/ und der liebliche Fru&#x364;hling
+            <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
-            entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.
+            <l>entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.</l>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">O iiij</fw>
             <lb/>
             <pb facs="4049399" n="200"/>
@@ -13642,6 +13654,7 @@
             <lb/>
             <fw place="top" type="header">Das ander</fw>
             <lb/>
+            
             <div n="2" xml:id="n31">
             <head>Fru&#x364;hlingsgeſang.</head>
             <lb/>
@@ -13804,7 +13817,7 @@
             <lb/>
             <fw place="top" type="header">Sommergeſang.</fw>
             <lb/>
-            
+            <div n="2" xml:id="n32">
             <head rendition="#aq"><num>XXXVI.</num> Cantus.</head>
             <lb/>
             <lg>
@@ -13861,6 +13874,7 @@
             <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
             </lg>
             <lb/>
+            
             <fw place="bottom" type="catch">Wie</fw>
             <lb/>
             <pb facs="4049403" n="204"/>
@@ -13871,25 +13885,26 @@
             
             <head rendition="#aq"><num>XXXVI.</num> Cantus.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo komt iedoch mit nutzbarkeit der ſommer an ihr ſtatt:
+            <l>ſo komt iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
             <lb/>
-            Da wir Gott zubitten/ daß/ nach landes ſitten/ werden
+            <l>Da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
             <lb/>
-            da wir Gott zubitten/ daß/ nach landes ſitten/ werden
+            <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten/ die ſaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten/ die ſaten fru&#x364;h und ſpaht.</l>
             <lb/>
+            
             <pb facs="4049404" n="205"/>
             <fw place="top" type="pageNum">205</fw>
             <lb/>
@@ -13898,25 +13913,26 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
             <lb/>
-            da wir Gott zubitten/ daß/ nach landes ſitten/ werden
+            <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
             <lb/>
-            da wir Gott zubitten/ daß/ nach landes ſitten/ werden
+            <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
             <lb/>
+            
             <pb facs="4049405" n="206"/>
             <fw place="top" type="pageNum">206</fw>
             <lb/>
@@ -13925,25 +13941,26 @@
             
             <head rendition="#aq"><num>XXXVIII.</num> Cantus.</head>
             <lb/>
-            Wiewol der zeiten ſch<supplied>o&#x364;</supplied>nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſch<supplied>o&#x364;</supplied>nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
             <lb/>
-            da wir Gott zubitten/ daß nach landes ſitten/ werden
+            <l>da wir Gott zubitten/ daß nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
             <lb/>
-            da wir Gott zubitten/ daß/ nach landes ſitten/ werden
+            <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
             <lb/>
+            
             <pb facs="4049406" n="207"/>
             <fw place="top" type="pageNum">207</fw>
             <lb/>
@@ -13952,25 +13969,27 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;<supplied>t</supplied> iedoch mit nutzbarkeit der ſommer an ihr ſtatt:
+            <l>ſo kom&#x342;<supplied>t</supplied> iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
             <lb/>
-            da wir Gott zu bitten/ daß/ nach landes ſitten/ werden
+            <l>da wir Gott zu bitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/
+            <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
-            ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.
+            <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
             <lb/>
-            da wir Gott zu bitten/ daß/ n<choice><sic>o</sic><corr>a</corr></choice>ch landes ſitten/ werden
+            <l>da wir Gott zu bitten/ daß/ n<choice><sic>o</sic><corr>a</corr></choice>ch landes ſitten/ werden</l>
             <lb/>
-            abgeſchnidten die ſaaten fru&#x364;h und ſpaht.
+            <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
             <lb/>
+            </div>
+            
             <pb facs="4049407" n="208"/>
             <fw place="top" type="pageNum">208</fw>
             <lb/>
@@ -14128,7 +14147,7 @@
             <lb/>
             <fw place="top" type="header">Herbſtgeſang.</fw>
             <lb/>
-            
+            <div n="2" xml:id="n34">
             <head rendition="#aq"><num>XXXVIII.</num> Cantus.</head>
             <lb/>
             <lg>
@@ -14195,20 +14214,20 @@
             
             <head rendition="#aq"><num>XXXIX.</num> Cantus.</head>
             <lb/>
-            Die dritte zeit in iedem jahr/ nicht minder gar alß andre
+            <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
-            mich erfreut: ſie kommet aufgezogen wan ſtork
+            <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Die dritte zeit in iedem jahr/ nicht minder gar alß andre
+            <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
-            mich erfreut: ſie kommet aufgezogen wan ſtork
+            <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             <pb facs="4049412" n="213"/>
             <fw place="top" type="pageNum">213</fw>
@@ -14218,20 +14237,20 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Die dr<supplied>i</supplied>tte ze<supplied>i</supplied>t in iedem jahr/ nicht minder gar alß andre
+            <l>Die dr<supplied>i</supplied>tte ze<supplied>i</supplied>t in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
-            mich erfreut: ſie kommet aufgezogen wan ſtork
+            <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Die dritte zeit in iedem jahr/ nicht minder gar alß andre
+            <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
-            mich erfreut: ſie kommet aufgezogen wan ſtork
+            <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             <fw place="bottom" type="pageNum">P iij</fw>
             <lb/>
@@ -14241,22 +14260,22 @@
             <fw place="top" type="header">Andere weis über das</fw>
             <lb/>
             
-            <head rendition="#aq"><num>XL. </num>Cantus.</head>
+            <head rendition="#aq"><num>XL.</num> Cantus.</head>
             <lb/>
-            Die dritte zeit in iedem jahr/ nicht minder gar alß
+            <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
-            andre mich erfreut: ſie kommet aufgezogen/ wan ſtork
+            <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Die dr<choice><sic>Eindeutig "i" im Wiener Exemplar</sic><corr>i</corr></choice>tte zeit in iedem jahr/ nicht minder gar alß
+            <l>Die dr<choice><sic>Eindeutig "i" im Wiener Exemplar</sic><corr>i</corr></choice>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
-            andre mich erfreut: ſie kommet aufge<supplied>z</supplied>ogen/ wan ſtork
+            <l>andre mich erfreut: ſie kommet aufge<supplied>z</supplied>ogen/ wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             <pb facs="4049414" n="215"/>
             <fw place="top" type="pageNum">215</fw>
@@ -14266,21 +14285,23 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß
+            <l>Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
-            andre mich erfreut: ſie kommet aufgezogen/ wan ſtork
+            <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß
+            <l>Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
-            andre mich erfreut: ſie kommet aufgezogen<anchor xml:id="a73"/>/<note type="annotation" targetEnd="a73"><p>Die hier etwas ausgebleichte Virgel ist im Münchner Exemplar eindeutig</p></note> wan ſtork
+            <l>andre mich erfreut: ſie kommet aufgezogen<anchor xml:id="a73"/>/<note type="annotation" targetEnd="a73"><p>Die hier etwas ausgebleichte Virgel ist im Münchner Exemplar eindeutig</p></note> wan ſtork</l>
             <lb/>
-            und ſchwalb entflogen/ die ſonn der wag nicht weit.
+            <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">P iiij</fw>
             <lb/>
             <pb facs="4049415" n="216"/>
@@ -14288,6 +14309,7 @@
             <lb/>
             <fw place="top" type="header">Das ander</fw>
             <lb/>
+            
             <div n="2" xml:id="n35">
             <head>Das ander Herbſtgeſang.</head>
             <lb/>
@@ -14423,6 +14445,7 @@
             </lg>
             </div>
             <lb/>
+            
             <fw place="bottom" type="pageNum">P v</fw>
             <lb/>
             <pb facs="4049417" n="218"/>
@@ -14431,6 +14454,7 @@
             <fw place="top" type="header">Wintergeſang.</fw>
             <lb/>
             
+            <div n="2" xml:id="n36">
             <head rendition="#aq"><num>XLI.</num> Cantus.</head>
             <lb/>
             <lg type="poem">
@@ -14497,32 +14521,32 @@
             
             <head rendition="#aq"><num>XLII.</num> Cantus.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht/
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht/</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froßt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froßt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             <pb facs="4049420" n="221"/>
             <fw place="top" type="pageNum">221</fw>
@@ -14532,32 +14556,32 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             <pb facs="4049421" n="222"/>
             <fw place="top" type="pageNum">222</fw>
@@ -14567,32 +14591,32 @@
             
             <head rendition="#aq"><num>XLIII.</num> Cantus.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht/
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht/</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
             <pb facs="4049422" n="223"/>
             <fw place="top" type="pageNum">223</fw>
@@ -14602,38 +14626,41 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen aller dingen.
+            <l>ſich ſchlieſſen aller dingen.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Der kürtzeſt tag und la&#x364;ngſte nacht
+            <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
-            den grauen winter bringen:
+            <l>den grauen winter bringen:</l>
             <lb/>
-            die Nordenwinde ſich mit macht
+            <l>die Nordenwinde ſich mit macht</l>
             <lb/>
-            auß ihren kammern dringen:
+            <l>auß ihren kammern dringen:</l>
             <lb/>
-            die ſtro&#x364;hm und ſee vor froſt und ſchnee
+            <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
-            ſich ſchlieſſen allerdingen.
+            <l>ſich ſchlieſſen allerdingen.</l>
             <lb/>
+            </div>
+            
             <pb facs="4049423" n="224"/>
             <fw place="top" type="pageNum">224</fw>
             <lb/>
             <fw place="top" type="header">Das ander</fw>
             <lb/>
+            
             <div n="2" xml:id="n37">
             <head>Das ander Wintergeſang.</head>
             <lb/>
@@ -15397,6 +15424,7 @@
             </lg>
             </div>
             <lb/>
+            
             <fw place="bottom" type="catch">Ihr</fw>
             <lb/>
             <pb facs="4049437" n="238"/>
@@ -15405,6 +15433,7 @@
             <fw place="top" type="header">Friedens-</fw>
             <lb break="no"/>
             
+            <div n="2" xml:id="n41">
             <head rendition="#aq"><num>XLVII. </num>Cantus. C. D.</head>
             <lb/>
             <lg>
@@ -15469,24 +15498,24 @@
             
             <head rendition="#aq"><num>XLVIII.</num> Cantus.</head>
             <lb/>
-            Mit David wir die einigkeit erheben/
+            <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
-            die mitlerin zu ruherwünſchtem leben:
+            <l>die mitlerin zu ruherwünſchtem leben:</l>
             <lb/>
-            ſie riecht nach balſams arte/ den man auf Aron geußt/
+            <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
-            und der vom haubt in barte/ und auf die kleider fleußt.
+            <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Mit David wir die einigkeit erheben/
+            <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
-            die mitlerin zu ruherwünſchtem leben:
+            <l>die mitlerin zu ruherwünſchtem leben:</l>
             <lb/>
-            ſie riecht nach balſams arte/ den man auf Aron geußt/
+            <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
-            und der vom haubt in barte/ und auf die kleider fleußt.
+            <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
             <lb/>
             <pb facs="4049440" n="241"/>
             <fw place="top" type="pageNum">241</fw>
@@ -15496,25 +15525,27 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Mit David wir die einigkeit erheben/
+            <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
-            die mitlerin zu ruherwünſchtem leben:
+            <l>die mitlerin zu ruherwünſchtem leben:</l>
             <lb/>
-            ſie riecht nach balſams arte/ den man auf Aron geußt/
+            <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
-            und der vom haubt in barte/ und auf die kleider fleußt.
+            <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Mit David wir die einigkeit erheben
+            <l>Mit David wir die einigkeit erheben</l>
             <lb/>
-            die mitlerin zu ruherwünſchtem leben:
+            <l>die mitlerin zu ruherwünſchtem leben:</l>
             <lb/>
-            ſie riecht nach balſams arte/ den man auf Aron geußt/
+            <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
-            und der vom haubt in barte/ und auf die kleider fleußt.
+            <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">R</fw>
             <lb/>
             <fw place="bottom" type="catch">Mit</fw>
@@ -15524,18 +15555,19 @@
             <lb/>
             <fw place="top" type="header">Von lobwürdiger</fw>
             <lb/>
+            
             <div n="2" xml:id="n42">
-            Geſang
+            <head>Geſang
             <lb/>
             von lieb- und lobwürdiger
             <lb/>
-            Einigkeit.
+            Einigkeit.</head>
             <lb/>
-            Jn nachgeſetzten weiſen.
+            <p>Jn nachgeſetzten weiſen.
             <lb/>
             Aſteria auß hohem ſtam&#x342; erboren/ ꝛc.
             <lb/>
-            Ach Sylvia/ du preiß der Scha&#x364;fferinnen/ ꝛc.
+            Ach Sylvia/ du preiß der Scha&#x364;fferinnen/ ꝛc.</p>
             <lb/>
             
             <lg type="poem">
@@ -15666,6 +15698,7 @@
             </lg>
             </div>
             <lb/>
+            
             <fw place="bottom" type="pageNum">R ij</fw>
             <lb/>
             <fw place="bottom" type="catch">Drey</fw>
@@ -15676,6 +15709,7 @@
             <fw place="top" type="header">Allgemeines</fw>
             <lb/>
             
+            <div n="2" xml:id="n43">
             <head rendition="#aq"><num>XLIX.</num> Cantus.</head>
             <lb/>
             <lg>
@@ -15772,32 +15806,32 @@
             
             <head rendition="#aq"><num>L.</num> Cantus.</head>
             <lb/>
-            Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/
+            <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
-            deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine:
+            <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine:</l>
             <lb/>
-            Vil kla&#x364;rer alß die gulden ſonn/ der himmels-
+            <l>Vil kla&#x364;rer alß die gulden ſonn/ der himmels-</l>
             <lb break="no"/>
-            leuchtern ehrenkron/ ja aller ſternen ſcheine:
+            <l>leuchtern ehrenkron/ ja aller ſternen ſcheine:</l>
             <lb/>
-            lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/
+            <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
-            reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.
+            <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/
+            <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
-            deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?
+            <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?</l>
             <lb/>
-            Vil kla&#x364;rer alß die gulden ſonn/ der himmels-
+            <l>Vil kla&#x364;rer alß die gulden ſonn/ der himmels-</l>
             <lb break="no"/>
-            leuchtern ehrenkron/ ja aller ſternen ſcheine:
+            <l>leuchtern ehrenkron/ ja aller ſternen ſcheine:</l>
             <lb/>
-            lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/
+            <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
-            reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.
+            <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
             <lb/>
             <pb facs="4049446" n="247"/>
             <fw place="top" type="pageNum">247</fw>
@@ -15807,33 +15841,35 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/
+            <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
-            deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?
+            <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?</l>
             <lb/>
-            Vil kla&#x364;rer alß die gulden ſonn/ der himmels-
+            <l>Vil kla&#x364;rer alß die gulden ſonn/ der himmels-</l>
             <lb break="no"/>
-            leuchtern ehrenkron/ ja aller ſternen ſcheine:
+            <l>leuchtern ehrenkron/ ja aller ſternen ſcheine:</l>
             <lb/>
-            lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/
+            <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
-            reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.
+            <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/
+            <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
-            deſſen ſu&#x364;ſſer nam&#x342; mein ſeelenhort alleine:
+            <l>deſſen ſu&#x364;ſſer nam&#x342; mein ſeelenhort alleine:</l>
             <lb/>
-            Vil kla&#x364;rer alß die gulden ſonn/ der himmels-
+            <l>Vil kla&#x364;rer alß die gulden ſonn/ der himmels-</l>
             <lb break="no"/>
-            leuchtern ehrenkron/ ja aller ſternen ſcheine:
+            <l>leuchtern ehrenkron/ ja aller ſternen ſcheine:</l>
             <lb/>
-            lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/
+            <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
-            reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.
+            <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">R iiij</fw>
             <lb/>
             <pb facs="4049447" n="248"/>
@@ -15841,6 +15877,7 @@
             <lb/>
             <fw place="top" type="header">Das ander Hochzeitgeſang/</fw>
             <lb/>
+            
             <div n="2" xml:id="n44">
             <head>Geheimnußreiches Geſang/
             <lb/>
@@ -18785,6 +18822,7 @@
             <fw place="top" type="header">Das eilffte</fw>
             <lb/>
             
+            <div n="2" xml:id="n58">
             <head rendition="#aq"><num>LIX.</num> Cantus. C. D.</head>
             <lb/>
             <lg type="poem">
@@ -18905,6 +18943,8 @@
             </lg>
             </lg>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="catch">Gottes</fw>
             <lb/>
             <pb facs="4049501" n="302"/>
@@ -18913,6 +18953,7 @@
             <fw place="top" type="header">Das zwo&#x364;lffte Hochzeit- und</fw>
             <lb/>
             
+            <div n="2" xml:id="n59">
             <head rendition="#aq"><num>LX.</num> Cantus.</head>
             <lb/>
             <lg type="poem">
@@ -19045,24 +19086,24 @@
             
             <head rendition="#aq"><num>LX.</num> Cantus.</head>
             <lb/>
-            <hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach geb<anchor xml:id="a110"/>ü<note type="annotation" targetEnd="a110"><p>Im andern Zürcher Exemplar ist das Trema besser zu erkennen</p></note>r und würdigkeit/
+            <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach geb<anchor xml:id="a110"/>ü<note type="annotation" targetEnd="a110"><p>Im andern Zürcher Exemplar ist das Trema besser zu erkennen</p></note>r und würdigkeit/</l>
             <lb/>
-            durch die Verſe zu erho&#x364;hen/ jenen Stand/ da ſich bereit
+            <l>durch die Verſe zu erho&#x364;hen/ jenen Stand/ da ſich bereit</l>
             <lb/>
-            zwey/ wie heut/ vereint zuſammen/ künſch und rein/
+            <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
-            vor der Gmein/ in des Allerho&#x364;chſten Nammen.
+            <l>vor der Gmein/ in des Allerho&#x364;chſten Nammen.</l>
             <lb/>
             
             <head rendition="#aq">Tenor.</head>
             <lb/>
-            <hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/
+            <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
-            durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit
+            <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
             <lb/>
-            zwey/ wie heut/ vereint zuſammen/ künſch und rein/
+            <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
-            vor der Gmein/ in des Allerho&#x364;chſten Nammen.
+            <l>vor der Gmein/ in des Allerho&#x364;chſten Nammen.</l>
             <lb/>
             <pb facs="4049504" n="305"/>
             <fw place="top" type="pageNum">305</fw>
@@ -19072,25 +19113,27 @@
             
             <head rendition="#aq">Altus.</head>
             <lb/>
-            <hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/
+            <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
-            durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit
+            <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
             <lb/>
-            zwey/ wie heut/ vereint zuſammen/ künſch und rein/
+            <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
-            vor der Gmein/ in des Allerho&#x364;chſten nammen.
+            <l>vor der Gmein/ in des Allerho&#x364;chſten nammen.</l>
             <lb/>
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
-            <hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/
+            <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
-            durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit
+            <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
             <lb/>
-            zwey/ wie heut/ vereint zuſammen/ künſch und rein/
+            <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
-            vor der Gmein/ in des Allerho&#x364;chſten nammen.
+            <l>vor der Gmein/ in des Allerho&#x364;chſten nammen.</l>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="pageNum">X</fw>
             <lb/>
             <pb facs="4049505" n="306"/>
@@ -19098,7 +19141,9 @@
             <lb/>
             <fw place="top" type="header">Das dreyzehende Hochzeitgeſang.</fw>
             <lb/>
-            Jn der weiſe: Myncia du Glantz der Erden.
+            
+            <div n="2" xml:id="n60">
+            <p>Jn der weiſe: Myncia du Glantz der Erden.</p>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -19310,6 +19355,8 @@
             </lg>
             </lg>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="catch">Hoch-</fw>
             <lb break="no"/>
             <pb facs="4049508" n="309"/>
@@ -19318,7 +19365,7 @@
             <fw place="top" type="header">Hochzeitlicher Segen-wunſch.</fw>
             <lb/>
             <div n="2" xml:id="n61">
-            Hochzeitlicher Segen-wunſch/
+            <head>Hochzeitlicher Segen-wunſch/
             <lb/>
             Auß
             <lb/>
@@ -19328,17 +19375,17 @@
             <lb/>
             J. C. Schw. Hochzeiterin/
             <lb/>
-            vermiſchten Nammens-Buchſtaben gezogen.
+            vermiſchten Nammens-Buchſtaben gezogen.</head>
             <lb/>
-            Den 24. Tag Weinmonat/ 1642.
+            <p>Den 24. Tag Weinmonat/ 1642.
             <lb/>
             <hi rendition="#b">O Zierlich Frücht von gruenenden Zweyg-
             <lb break="no"/>
-            ſchoſſen!</hi>
-            <lb/>
-            Erkla&#x364;rung.
+            ſchoſſen!</hi></p>
             <lb/>
             <lg type="poem">
+            <head>Erkla&#x364;rung.</head>
+            <lb/>
             <l><hi rendition="#in">G</hi>Lük zu/ glük zu/ man ſchrey/ den Neu-verlobten
             <lb/>
             Hertzen/</l>
@@ -19428,6 +19475,7 @@
             </lg>
             </div>
             <lb/>
+            
             <fw place="bottom" type="catch">Hoch-</fw>
             <lb break="no"/>
             <pb facs="4049510" n="311"/>
@@ -19435,6 +19483,8 @@
             <lb/>
             <fw place="top" type="header">Hochzeitliches Fru&#x364;hlings-Geſang.</fw>
             <lb/>
+            
+            <div n="2" xml:id="n62">
             <head>Hochzeitliches Fru&#x364;hlings-Geſang.</head>
             <lb/>
             <p>Jn folgenden Melodeyen.
@@ -19732,6 +19782,7 @@
             <l><hi rendition="#b"><hi rendition="#aq">U</hi>nd ſegnen deinen Stand.</hi></l>
             </lg>
             <lb/>
+            <lg n="15">
             <l rendition="#larger"><hi rendition="#b"><num>15</num> Dein Weib gleich einer Ra&#x364;ben</hi></l>
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Jn deinem Hauß wird ſeyn/</hi></l>
@@ -19748,6 +19799,8 @@
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Gleich wie die Oelzweig friſch.</hi></l>
             <lb/>
+            </lg>
+            <lg n="16">
             <l rendition="#larger"><hi rendition="#b"><num>16</num> Das ſind die ſcho&#x364;nen Gaben</hi></l>
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Die Gott dem Menſchen gibt/</hi></l>
@@ -19764,6 +19817,8 @@
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Bey deinem leben gnad</hi></l>
             <lb/>
+            </lg>
+            <lg n="17">
             <l rendition="#larger"><hi rendition="#b"><num>17</num> Du wirſt auch endtlich ſehen</hi></l>
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Kinds-kinder/ und dazu/</hi></l>
@@ -19780,7 +19835,10 @@
             <lb/>
             <l>Den Wunſch zu machen wahr!</l>
             </lg>
+            </lg>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="catch">Pin-</fw>
             <lb break="no"/>
             <pb facs="4049515" n="316"/>
@@ -19788,6 +19846,8 @@
             <lb/>
             <fw place="top" type="header">Pindariſche Ode.</fw>
             <lb/>
+            
+            <div n="2" xml:id="n63">
             <head>Pindariſche Ode.
             <lb/>
             Auß dem 31. C<anchor xml:id="a115"/>a<note type="annotation" targetEnd="a115"><p>Zwischen "a" und "p" verschmierte Tinte</p></note>p. der Spr<anchor xml:id="a116"/>ü<note type="annotation" targetEnd="a116"><p>Auch in den Vergleichsexemplaren Wien und Zürich ist das "ü" nicht sauber gedruckt.</p></note>chwo&#x364;rter Salomons.</head>
@@ -19879,6 +19939,8 @@
             </lg>
             </lg>
             <lb/>
+            </div>
+            
             <div n="2" xml:id="n64.1">
             <head>Saliſches Fru&#x364;hlings-<hi rendition="#aq">SONNET</hi>, oder
             <lb/>
@@ -19957,6 +20019,7 @@
             </lg>
             </div>
             <lb/>
+            
             <div n="2" xml:id="n65.1">
             <head>Hochzeitliche
             <lb/>
@@ -20023,6 +20086,7 @@
             </div>
             <lb/>
             
+            <div n="2" xml:id="n65.2">
             <lg type="poem">
             <head><num>2.</num></head>
             <lb/>
@@ -20068,7 +20132,9 @@
             <l rendition="#et #larger"><hi rendition="#b">Den zweyen Verlobten zu ſonderer Ehr.</hi></l>
             </lg>
             <lb/>
+            </div>
             
+            <div n="2" xml:id="n65.3">
             <lg type="poem">
             <head><num>3.</num></head>
             <lb/>
@@ -20101,6 +20167,8 @@
             <hi rendition="#b">Euch mit bezier!</hi></l>
             </lg>
             <lb/>
+            </div>
+            
             <fw place="bottom" type="catch">Chriſten-</fw>
             <lb break="no"/>
             <pb facs="4049520" n="321"/>
@@ -20108,6 +20176,7 @@
             <lb/>
             <fw place="top" type="header">von Chriſtlichem Haußweſen.</fw>
             <lb/>
+            
             <div n="2" xml:id="n66">
             <head>Chriſtenliches Haußweſen:
             <lb/>
@@ -22381,7 +22450,6 @@
             <lb/>
             <l>und; weilen die zu weiß; auch halbe <hi rendition="#b">Ko&#x364;llerlein</hi>!</l>
             </lg>
-            </div>
             </div>
             <lb/>
             
@@ -27219,6 +27287,7 @@
             </lg>
             </div>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>34.</num> Die hoffnung und der Glaub mit diſer welt vergehen:</l>
             <lb/>
@@ -27226,6 +27295,7 @@
             </lg>
             </div>
             <lb/>
+            </div>
             <div n="2" xml:id="n133">
             <head><num>35.</num> Bedeutung der Cometen insgemein: ſamt
             <lb/>
@@ -27447,7 +27517,8 @@
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
-            <num>40.</num> Mute<anchor xml:id="a157"/>r<note type="annotation" targetEnd="a157"><p>Der "r" erscheint hochgestellt.</p></note>- und kinderliebe.
+            <div n="2" xml:id="n138">
+            <head><num>40.</num> Mute<anchor xml:id="a157"/>r<note type="annotation" targetEnd="a157"><p>Der "r" erscheint hochgestellt.</p></note>- und kinderliebe.</head>
             <lb/>
             <lg type="poem">
             <l>Die kindermuter liebt/ und wird zugleich geliebet:</l>
@@ -27455,6 +27526,7 @@
             <l>hiemit wird/ beiderſeits/ was Gott geliebt/ veru&#x364;bet.</l>
             </lg>
             <lb/>
+            </div>
             <div n="2" xml:id="n139">
             <head><num>41.</num> Krieg- und fridensfrüchte.</head>
             <lb/>
@@ -27485,7 +27557,8 @@
             </lg>
             </div>
             <lb/>
-            <num>44.</num> Auf einen verleü<anchor xml:id="a158"/>md<note type="annotation" targetEnd="a158"><p>Im Vergleichsexemplar Wien ist ein Abstand zwischen "m" und "d" weniger gut erkennbar.</p></note>er.
+            <div n="2" xml:id="n142">
+            <head><num>44.</num> Auf einen verleü<anchor xml:id="a158"/>md<note type="annotation" targetEnd="a158"><p>Im Vergleichsexemplar Wien ist ein Abstand zwischen "m" und "d" weniger gut erkennbar.</p></note>er.</head>
             <lb/>
             <lg type="poem">
             <l>Wer eines an<choice><sic>b</sic><corr>d</corr></choice>ern glimpf nur ſuchet abzuſchneiden/</l>
@@ -27493,6 +27566,7 @@
             <l>den ſol ein frommes hertz wie ſchlangengifft vermeiden.</l>
             </lg>
             <lb/>
+            </div>
             <div n="2" xml:id="n143">
             <head><num>45.</num> Auf falſche freunde.</head>
             <lb/>
@@ -27516,18 +27590,23 @@
             </lg>
             </div>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>47.</num> Wer ſchertz und ſchimpf nicht mag erleiden/</l>
             <lb/>
             <l>der ſol diß hertz von hertzen meiden.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>48.</num> Der wein entdekt ein iedes hertz/</l>
             <lb/>
             <l>ob ſey darinn ſchertz oder ſchmertz.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>49.</num> Das a&#x364;del ra&#x364;benſafft/ zur fro&#x364;lichkeit gegeben/</l>
             <lb/>
@@ -27535,6 +27614,7 @@
             </lg>
             </div>
             <lb/>
+            </div>
             <div n="2" xml:id="n145">
             <head><num>50.</num> Wachtbarkeit.</head>
             <lb/>
@@ -27581,6 +27661,7 @@
             </lg>
             </div>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>53.</num> O wol dem Regiment/ wo gleichheit gleich regieret/</l>
             <lb/>
@@ -27591,6 +27672,8 @@
             <l>zu vil geleichheit doch ungleichheit mit ſich fu&#x364;hret.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>54.</num> Ein ſprüchwort iſt: unrechter gwalt</l>
             <lb/>
@@ -27602,6 +27685,7 @@
             </lg>
             </div>
             <lb/>
+            </div>
             <div n="2" xml:id="n148">
             <head><num>55.</num> Auß dem Ovid.</head>
             <lb/>
@@ -27641,6 +27725,7 @@
             </lg>
             </div>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>57.</num> Wer immer all ſein tuhn allein auf ſchalkheit richtet/</l>
             <lb/>
@@ -27652,6 +27737,7 @@
             </lg>
             </div>
             <lb/>
+            </div>
             <fw place="bottom" type="pageNum">Ll</fw>
             <lb/>
             <fw place="bottom" type="catch">Chri-</fw>
@@ -27803,6 +27889,7 @@
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
+            <div n="2" xml:id="n153">
             <head><num>61.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johannes Wirtzen/ ꝛc. Lehr- und
             <lb/>
             troſtreiche Predigen vom verlohrnen
@@ -27825,6 +27912,7 @@
             <l rendition="#et"><hi rendition="#b">So warn ihn;</hi> deinen Sohn; ietz/ eh es wird zuſpaht.</l>
             </lg>
             <lb/>
+            </div>
             <div n="2" xml:id="n154">
             <head><num>62.</num> <hi rendition="#aq">U</hi>ber Herꝛn Jacob Vollenweiders/ ꝛc. ſchrifft-
             <lb break="no"/>
@@ -27979,11 +28067,12 @@
             </lg>
             </div>
             <lb/>
-            <num>66.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan&#x303; Ardüſers/ Haubtm<anchor xml:id="a167"/>.<note type="annotation" targetEnd="a167"><p>Der Punkt ist im Vergleichsexemplar Wien eindeutig erkennbar.</p></note> und
+            <div n="2" xml:id="n158">
+            <head><num>66.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan&#x303; Ardüſers/ Haubtm<anchor xml:id="a167"/>.<note type="annotation" targetEnd="a167"><p>Der Punkt ist im Vergleichsexemplar Wien eindeutig erkennbar.</p></note> und
             <lb/>
             Jngenieürs/ neüaußgangenes Bu&#x366;ch
             <lb/>
-            vom Veſtungsbau.
+            vom Veſtungsbau.</head>
             <lb/>
             <lg type="poem">
             <l>Was vil/ mit viler zahl/ und groſſer mu&#x364;h gewiſen</l>
@@ -27995,6 +28084,7 @@
             <l>einfa&#x364;ltig/ doch mit grund: kunſt halber hoch gepriſen.</l>
             </lg>
             <lb/>
+            </div>
             <div n="2" xml:id="n159">
             <head><num>67.</num> Stam&#x342;bu&#x366;chbeſitzers
             <lb/>
@@ -28153,7 +28243,7 @@
             </lg>
             </div>
             <lb/>
-            
+            <div n="2" xml:id="n164">
             <head><num>2.</num></head>
             <lb/>
             <head><num>72.</num> Trochaiſcher/ oder fallender
@@ -28170,6 +28260,7 @@
             <l>Alle werden nach dem tod/ ſternenho&#x364;her/ ewig ſchweben</l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><anchor xml:id="a171"/>Lob-<note type="annotation" targetEnd="a171"><p>Nummerierung fehlt.</p></note></fw>
             <lb/>
             <pb facs="4049720" n="521"/>
@@ -28234,7 +28325,8 @@
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
-            <num>75.</num> Ehrengeda&#x364;chtnuß
+            <div n="2" xml:id="n167">
+            <head><num>75.</num> Ehrengeda&#x364;chtnuß
             <lb/>
             des wolgeachten/ frommen/ ehrenveſten
             <lb/>
@@ -28260,7 +28352,7 @@
             <lb/>
             den 11. tag Horn. 1651.
             <lb/>
-            Klinggetichte.
+            Klinggetichte.</head>
             <lb/>
             <lg type="poem">
             <l>So ſol Herꝛ Hegner dan auch werden eyngeſchriben</l>
@@ -28294,6 +28386,7 @@
             <l>ſo/ daß er ihrer kraft/ der Schrifft gema&#x364;ß/ nachſtrebet<anchor xml:id="a175"/>!<note type="annotation" targetEnd="a175"><p>Ausrufezeichen hochgestellt</p></note></l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="pageNum">Ll v</fw>
             <lb/>
             <fw place="bottom" type="catch"><anchor xml:id="a176"/><hi rendition="#aq">U</hi>ber<note type="annotation" targetEnd="a176"><p>Die Nummerierung fehlt hier.</p></note></fw>
@@ -28323,7 +28416,8 @@
             </lg>
             </div>
             <lb/>
-            Ehren- und Lobgeticht/ fu&#x364;r die/ im 1629
+            <div n="2" xml:id="n170">
+            <head>Ehren- und Lobgeticht/ fu&#x364;r die/ im 1629
             <lb/>
             jahr/ neuaufgerichte Burgerbu&#x364;cherey
             <lb/>
@@ -28331,7 +28425,7 @@
             <lb/>
             <num><anchor xml:id="a177"/>79.<note type="annotation" targetEnd="a177"><p>Die Nummerierung springt von 77 zu 79.</p></note></num> Auß Herꝛen Balthaſar Venators Lateini-
             <lb break="no"/>
-            ſchem verteutſcht
+            ſchem verteutſcht</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">D</hi>Je/ ſo an Heldenmuht/ dem Marſen gleich zuachten/</l>
@@ -28485,6 +28579,7 @@
             <l rendition="#et"><hi rendition="#b">wanns nicht zu Zürich iſt; an keinem ort der Welt.</hi></l>
             </lg>
             <lb/>
+            </div>
             <div n="2" xml:id="n171">
             <head><num>80.</num> <hi rendition="#aq">U</hi>ber die Statt Zürich.</head>
             <lb/>
@@ -29202,42 +29297,54 @@
             </lg>
             </div>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>117.</num> Ein klu&#x366;ger ihm zum zwek in allen dingen ſezzet/</l>
             <lb/>
             <l>was nutz und ehrbar iſt/ und auch zugleich ergezzet.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>118.</num> Gethans und nicht gethans in allem wolbetracht/</l>
             <lb/>
             <l>habſt außerſehn das end/ die mittel nicht veracht.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>119.</num> Das Raht und Taht zugleich dir mo&#x364;g erſprießlich ſeyn/</l>
             <lb/>
             <l>ſo hab ein Daubenhertz und Schlangena&#x364;ügelein.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>120.</num> Dauben-Einfalt/ Schlangen-Liſt/</l>
             <lb/>
             <l>in der welt uns no&#x364;htig iſt.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>121.</num> Ein Daubenhertz/ und Schlangen-augen</l>
             <lb/>
             <l>im handel/ und im wandel taugen.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>122.</num> Künſchheit iſt der Jungfern prob/</l>
             <lb/>
             <l>ihres Nammens zierd und lob.</l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>123.</num> Wan</fw>
             <lb/>
             <pb facs="4049733" n="534"/>
@@ -29245,19 +29352,23 @@
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>123.</num> Wan Tugend bey der Scho&#x364;nheit ſitzt/</l>
             <lb/>
             <l>gleich einem Deamant ſie blitzt.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>124.</num> Was wol wil/ fangt bey zeiten an:</l>
             <lb/>
             <l>Die jugend zeigt den Tugend-man&#x303;.</l>
             </lg>
-            </div>
             <lb/>
+            </div>
+            </div>
             <div n="2" xml:id="n208">
             <head><num>125.</num> Sündenſold.</head>
             <lb/>
@@ -29271,6 +29382,7 @@
             <div n="2" xml:id="n209">
             <head><hi rendition="#aq">U</hi>ber die Ehe-pfennige.</head>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>126.</num> Liebſte/ nicht mehr dein:</l>
             <lb/>
@@ -29289,54 +29401,71 @@
             <l>mitvereint/ ohn ſcheiden.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>127.</num> Jn geheim/ und vor de<supplied>r</supplied> Gmein/</l>
             <lb/>
             <l>glob' ich dir getreu zuſeyn.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>128.</num> Hand in Hand verheiſſet Treu:</l>
             <lb/>
             <l>Gott erhalte die/ ohn Reu!</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>129.</num> Das Ehband knüpfet zwey zuſammen/</l>
             <lb/>
             <l>entzündt von einer Liebesflammen.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>130.</num> Ehſtiffter/ unſer Ehband ſegne/</l>
             <lb/>
             <l>im Ehkreutz uns mit Troſt begegne!</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>131.</num> Jn des Ehſtandſtiffters Namen/</l>
             <lb/>
             <l>werden zwey vereint zuſamen.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>132.</num> Entzündt von einer Liebesflammen</l>
             <lb/>
             <l>vereint euch/ in des Ho&#x364;chſten Nammen.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>133.</num> Stim&#x342;t Mund/ und Hand/ und Hertz zuſamen/</l>
             <lb/>
             <l>ſo gebe Gott ein kra&#x364;fftig Amen!</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>134.</num> Was Mund/ und Hand/ und Hertz verſpra&#x364;chen</l>
             <lb/>
             <l>ſol nichts/ alß ſpahter Tod zerbra&#x364;chen.</l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>135.</num> An</fw>
             <lb/>
             <pb facs="4049734" n="535"/>
@@ -29344,25 +29473,31 @@
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>135.</num> An des Ehſtandſtiffters Segen/</l>
             <lb/>
             <l>iſt uns unſer Heil gelegen.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>136.</num> Der Ehenſtiffter gnad verley</l>
             <lb/>
             <l>daß unſer Band geſegnet ſey<anchor xml:id="a193"/>!<note type="annotation" targetEnd="a193"><p>Ausrufezeichen tiefgestellt</p></note></l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>137.</num> Der Stiffter geb genad und ſegen/</l>
             <lb/>
             <l>daß unſrer Eh nichts ſey entgegen!</l>
             </lg>
-            </div>
             <lb/>
+            </div>
+            </div>
             <div n="2" xml:id="n210">
             <head><num>138.</num> <hi rendition="#aq">U</hi>ber die Geburtsfa&#x364;ſte und Nam-
             <lb break="no"/>
@@ -29668,6 +29803,7 @@
             </lg>
             <lb/>
             
+            <lg n="5">
             <head><num>5.</num></head>
             <lb/>
             <l>Zwing/ Apollo/ deine Sa&#x364;iten/</l>
@@ -29692,6 +29828,7 @@
             <l>in den balden Fru&#x364;hlings-tagen</l>
             <lb/>
             <l>die den Wintergreis verjagen.</l>
+            </lg>
             </lg>
             </div>
             <lb/>
@@ -29815,7 +29952,8 @@
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
-            <num>145.</num> Troſtklang
+            <div n="2" xml:id="n217">
+            <head><num>145.</num> Troſtklang
             <lb/>
             an das Adeliche Hauß Berg/
             <lb/>
@@ -29829,7 +29967,7 @@
             <lb/>
             den 29. Junij/ des 1659.
             <lb/>
-            Jahrs.
+            Jahrs.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">B</hi>Erg verberge ſeinen kummer/ über den ſo lieben <hi rendition="#b">Sohn</hi>/</l>
@@ -29867,6 +30005,7 @@
             <l>Freüet eüch/ daß eüer <hi rendition="#b">Sohn</hi>/ ſeligſt/ ſeinen Scho&#x364;pfer ehrt.</l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>146.</num> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
             <pb facs="4049741" n="542"/>
@@ -29926,18 +30065,22 @@
             </lg>
             </div>
             <lb/>
-            <num>148.</num> <hi rendition="#aq">U</hi>ber Herꝛen Peter Simlers/ weilund Pf.
+            <div n="2" xml:id="n220">
+            <head><num>148.</num> <hi rendition="#aq">U</hi>ber Herꝛen Peter Simlers/ weilund Pf.
             <lb/>
             zu Altorff/ geſchwinden/ ſeligen/ und merkwür-
             <lb break="no"/>
             digen Hinſcheid/
             <lb/>
-            den 21. Hornung/ <hi rendition="#g">1654</hi>.
+            den 21. Hornung/ <hi rendition="#g">1654</hi>.</head>
             <lb/>
-            Vom Predigſtu&#x366;l des HERREN Hand
+            <lg type="poem">
+            <lg n="1">
+            <l>Vom Predigſtu&#x366;l des HERREN Hand</l>
             <lb/>
-            mich fu&#x364;hret in das Vatterland.
+            <l>mich fu&#x364;hret in das Vatterland.</l>
             <lb/>
+            </lg>
             <fw place="bottom" type="catch">Vor</fw>
             <lb/>
             <pb facs="4049742" n="543"/>
@@ -29945,56 +30088,76 @@
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
-            Vor zweyen Stunden Predigt' ich/
+            <lg n="2">
+            <l>Vor zweyen Stunden Predigt' ich/</l>
             <lb/>
-            nun bin ich eine Todtenleich.
+            <l>nun bin ich eine Todtenleich.</l>
+            </lg>
             <lb/>
-            Zwo Stund/ nach letſt gehaltner Pred<supplied>i</supplied>g/
+            <lg n="3">
+            <l>Zwo Stund/ nach letſt gehaltner Pred<supplied>i</supplied>g/</l>
             <lb/>
-            ward meine Seel des Leibes ledig.
+            <l>ward meine Seel des Leibes ledig.</l>
+            </lg>
             <lb/>
-            Vom ort meins Bru&#x366;fs der Herꝛ zu ſich
+            <lg n="4">
+            <l>Vom ort meins Bru&#x366;fs der Herꝛ zu ſich</l>
             <lb/>
-            auß diſer zeit beru&#x364;fte mich<choice><sic>¡</sic><corr>!</corr></choice>
+            <l>auß diſer zeit beru&#x364;fte mich<choice><sic>¡</sic><corr>!</corr></choice></l>
+            </lg>
             <lb/>
-            Vom Guttſchlag ſchon beru&#x364;hrt/ den Gottsdienſt ich follendet/
+            <lg n="5">
+            <l>Vom Guttſchlag ſchon beru&#x364;hrt/ den Gottsdienſt ich follendet/</l>
             <lb/>
-            zwo Stund hernach zu Hauß/ mein Leben ſelig endet.
+            <l>zwo Stund hernach zu Hauß/ mein Leben ſelig endet.</l>
+            </lg>
             <lb/>
-            Vom Guttſchlag/ in der Kirch/ ich um die Rede kam/
+            <lg n="6">
+            <l>Vom Guttſchlag/ in der Kirch/ ich um die Rede kam/</l>
             <lb/>
-            ums Leben in dem Hauß. Der Ho&#x364;chſt mich zu ſich nam.
+            <l>ums Leben in dem Hauß. Der Ho&#x364;chſt mich zu ſich nam.</l>
+            </lg>
             <lb/>
-            Meins Lebens allerletſtes Wort/
+            <lg n="7">
+            <l>Meins Lebens allerletſtes Wort/</l>
             <lb/>
-            iſt Amen gſyn/ am Predigort.
+            <l>iſt Amen gſyn/ am Predigort.</l>
+            </lg>
             <lb/>
-            Wan Lieb' und Gegenliebe
+            <lg n="8">
+            <l>Wan Lieb' und Gegenliebe</l>
             <lb/>
-            des Pfarꝛers/ und der Gmein/
+            <l>des Pfarꝛers/ und der Gmein/</l>
             <lb/>
-            den bittern Tod vertriebe/
+            <l>den bittern Tod vertriebe/</l>
             <lb/>
-            nicht da leg mein Gebein:
+            <l>nicht da leg mein Gebein:</l>
             <lb/>
-            Jch were noch ihr Lehrer:
+            <l>Jch were noch ihr Lehrer:</l>
             <lb/>
-            Sie weren noch Zuho&#x364;rer/
+            <l>Sie weren noch Zuho&#x364;rer/</l>
             <lb/>
-            und wurdens fo&#x364;rter ſeyn.
+            <l>und wurdens fo&#x364;rter ſeyn.</l>
+            </lg>
+            </lg>
             <lb/>
-            <num>149.</num> Lob- und Leichgeticht/ auf H. H. J. Gw. ſ.
+            </div>
+            <div n="2" xml:id="n221">
+            <head><num>149.</num> Lob- und Leichgeticht/ auf H. H. J. Gw. ſ.
             <lb/>
-            A. Z. Fr. M. Ehrenbegra&#x364;bnuß.
+            A. Z. Fr. M. Ehrenbegra&#x364;bnuß.</head>
             <lb/>
-            Die Handgriff in der Kunſt Chimey/
+            <lg type="poem">
+            <l>Die Handgriff in der Kunſt Chimey/</l>
             <lb/>
-            die vo&#x364;rtheil in der wundartzney/
+            <l>die vo&#x364;rtheil in der wundartzney/</l>
             <lb/>
-            unſterblich meinen Nammen machen/
+            <l>unſterblich meinen Nammen machen/</l>
             <lb/>
-            bis daß zum Heil ich wird' erwachen.
+            <l>bis daß zum Heil ich wird' erwachen.</l>
+            </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>150.</num> Auf</fw>
             <lb/>
             <pb facs="4049743" n="544"/>
@@ -30002,6 +30165,7 @@
             <lb/>
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
+            
             <div n="2" xml:id="n222">
             <head><num>150.</num> Auf Herꝛen Haubtm. Joh. Hofm. ſ.
             <lb/>
@@ -30052,6 +30216,8 @@
             </lg>
             </div>
             <lb/>
+            <div n="2" xml:id="n224">
+            <div n="3">
             <lg type="poem">
             <l><num>152.</num> Es liget einer hier begraben</l>
             <lb/>
@@ -30062,6 +30228,8 @@
             <l rendition="#et">bey deme/ der kein' ohren hat.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>153.</num> Ein a&#x364;dle fromme ſeel iſt worden ko&#x364;rperloß/</l>
             <lb/>
@@ -30072,6 +30240,8 @@
             <l>wird bald im himmel ſeyn der ſeelen mitgenoß.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>354.</num> Es ſchlieſſet diſer ſtein</l>
             <lb/>
@@ -30082,6 +30252,7 @@
             <l>und Gottes lob erhebt.</l>
             </lg>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>155.</num> Fragſt</fw>
             <lb/>
             <pb facs="4049744" n="545"/>
@@ -30089,6 +30260,7 @@
             <lb/>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
+            <div n="3">
             <lg type="poem">
             <l><num>155.</num> Fragſt du/ o Wandersma<supplied>n</supplied>n! Wer liget hier begraben?</l>
             <lb/>
@@ -30099,6 +30271,8 @@
             <l>den Gott erwekken wird/ und ewiglich erlaben.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>156.</num> Hie ruhet auß ein frommes weib/</l>
             <lb/>
@@ -30109,6 +30283,8 @@
             <l>und/ ſelig/ Gottes lob erhebt.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>157.</num> Wie Cleopatra einſt (im werke zuerweiſen/</l>
             <lb/>
@@ -30139,6 +30315,8 @@
             <l>das perlein warte ſein im himmel wol verſchloſſen.</l>
             </lg>
             <lb/>
+            </div>
+            </div>
             <div n="2" xml:id="n225">
             <head><num>158.</num> Leben/ Nebel.</head>
             <lb/>
@@ -30198,6 +30376,8 @@
             </lg>
             </div>
             <lb/>
+            <div n="2" xml:id="n228">
+            <div n="3">
             <lg type="poem">
             <l><num>161.</num> So gwiß der Tod/ ſo ungewiß</l>
             <lb/>
@@ -30208,18 +30388,24 @@
             <l>der todesſtund an jedem ort.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>162.</num> Beym Tod gilt weder Bitt noch Beit:</l>
             <lb/>
             <l>darum auf ihn dich vorbereit.</l>
             </lg>
             <lb/>
+            </div>
+            <div n="3">
             <lg type="poem">
             <l><num>163.</num> Zum Tod ſol ieder ſich/ bey zeiten/ vorbereiten/</l>
             <lb/>
             <l>weil/ keinen augenblik/ er/ übers zil/ wird beiten.</l>
             </lg>
             <lb/>
+            </div>
+            </div>
             <div n="2" xml:id="n229">
             <head><num>164.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan Riſten/ den welt-
             <lb break="no"/>
