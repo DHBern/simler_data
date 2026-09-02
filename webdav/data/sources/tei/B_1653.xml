@@ -9371,7 +9371,8 @@
                <fw place="top" type="header">Das fünfft</fw>
                <lb/>
 
-               <head rendition="#c #b">Hochzeitlicher Segen<lb break="no"/>wunſch.</head>
+               <div type="poem">
+                  <head rendition="#c #b">Hochzeitlicher Segen<lb break="no"/>wunſch.</head>
                <lb/>
                <p rendition="#c">Jn der weis: Es iſt ein ſchnitder/ heißt <lb/> der tod.</p>
                <lb/>
@@ -9528,6 +9529,7 @@
                   </lg>
                   <lb/>
                </lg>
+               </div>
             </div>
 
             <fw place="bottom" type="sig">J iij</fw>
@@ -9665,7 +9667,8 @@
                <fw place="top" type="header">Das ſechßt</fw>
                <lb/>
 
-               <head rendition="#c #b">Hochzeitgeſang <lb/> Auf eines/ deme ſeine erſte Jungfrau
+               <div type="poem">
+                  <head rendition="#c #b">Hochzeitgeſang <lb/> Auf eines/ deme ſeine erſte Jungfrau
                      Hochzeite<lb break="no"/> rin/ vor ehlicher eynſegnung im Herꝛen entſchlaf<lb
                      break="no"/> fen/ andermalige verheurahtung/ und erſte <lb/> Hochzeit.</head>
                <lb/>
@@ -9871,6 +9874,7 @@
                   </lg>
                   <lb/>
                </lg>
+               </div>
             </div>
 
             <fw place="bottom" type="catch">Hoch-</fw>
@@ -11863,10 +11867,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXI. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -11882,10 +11886,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſch<anchor xml:id="a116"/>o&#x364;<note
                               type="annotation" targetEnd="a116"><p>kleines e auch in der SBB nicht
@@ -11909,10 +11913,10 @@
                   <fw place="top" type="header">Sommergeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgena-</l>
                         <lb break="no"/>
@@ -11929,10 +11933,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -12134,10 +12138,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXII. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr<anchor xml:id="a118"/><note
                               type="annotation" targetEnd="a118"><p>an dieser Stelle steht in den
@@ -12151,10 +12155,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
                         <lb/>
@@ -12171,10 +12175,10 @@
                   <fw place="top" type="header">Herbſtgeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
                         <lb/>
@@ -12185,10 +12189,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
                         <lb/>
@@ -12409,10 +12413,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXIII. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -12430,10 +12434,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -12458,10 +12462,10 @@
                   <fw place="top" type="header">Wintergeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der k<anchor xml:id="a121"/>ü<note type="annotation" targetEnd="a121"
                                  ><p>Trema in der SBB etwas deutlicher zu lesen</p></note>rtzeſt tag
@@ -12480,10 +12484,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -12679,10 +12683,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXIV. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
                         <lb/>
@@ -12696,10 +12700,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
                         <lb/>
@@ -12719,10 +12723,10 @@
                   <fw place="top" type="header">ander Fru&#x364;hlingsgeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
                         <lb/>
@@ -12736,10 +12740,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Lustig werden bekümmerte hertzen/ wan die guldene</l>
                         <lb/>
@@ -12766,10 +12770,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXV . Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -12782,10 +12786,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -12807,10 +12811,10 @@
                      aus.</p></note></fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -12823,10 +12827,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
                         <lb/>
@@ -12852,10 +12856,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXVI. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr<anchor xml:id="a124"/>/<note
                               type="annotation" targetEnd="a124"><p>Komma etwas deutlicher in der
@@ -12868,10 +12872,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr nicht minder gar alß</l>
                         <lb/>
@@ -12888,10 +12892,10 @@
                   <fw place="top" type="header">ander Herbſtgeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
                         <lb/>
@@ -12902,10 +12906,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
                         <lb/>
@@ -12929,10 +12933,10 @@
 
                <div type="music">
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">XXXVII. Cantus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -12949,10 +12953,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Tenor.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der k<anchor xml:id="a125"/>ü<note type="annotation" targetEnd="a125"
                                  ><p>ü in der SBB eindeutig</p></note>rtzeſt tag und la&#x364;ngſte
@@ -12977,10 +12981,10 @@
                   <fw place="top" type="header">ander Wintergeſang.</fw>
                   <lb/>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Altus.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -12997,10 +13001,10 @@
                      <lb/>
                   </div>
 
-                  <div type="poem">
+                  <div>
                      <head rendition="#aq">Baſis.</head>
                      <lb/>
-                     <lg type="poem">
+                     <lg>
                         <figure type="notatedMusic"/>
                         <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
                         <lb/>
@@ -20816,10 +20820,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">I. Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Drey dinge vor allen dem Ho&#x364;chſten gefallen:</l>
                            <lb/>
@@ -20832,10 +20836,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Drey dinge vor allen dem ho&#x364;chſten gefallen:</l>
                            <lb/>
@@ -20854,10 +20858,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Drey dinge vor allen dem ho&#x364;chſten gefallen:</l>
                            <lb/>
@@ -20870,10 +20874,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Drey dinge vor allen dem ho&#x364;chſten gefallen:</l>
                            <lb/>
@@ -21356,10 +21360,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">II. Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">U</hi>Nd wa&#x364;r das Kreütze noch ſo
                               ſchwa&#x364;r/ ſo endets mit der zeit:</l>
@@ -21375,10 +21379,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">U</hi>Nd wa&#x364;r das Kre<anchor xml:id="a228"
                                  />ü<note type="annotation" targetEnd="a228"><p>in der SBB ein
@@ -21403,10 +21407,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">U</hi>Nd wa&#x364;r das Kreütze noch ſo
                               ſchwa&#x364;r/ ſo endets mit der zeit/</l>
@@ -21423,10 +21427,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">U</hi>Nd wa&#x364;r das Kreütze noch ſo
                               ſchwa&#x364;r/ ſo endets mit der zeit/</l>
@@ -21456,10 +21460,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">III. Cantus. H. H.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">J</hi>Hr arme bedra&#x364;ngte/ begru&#x364;ſſet
                               den Friden/</l>
@@ -21473,10 +21477,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">J</hi>Hr arme bedra&#x364;ngte/ begru&#x364;ſſet
                               den Friden/</l>
@@ -21496,10 +21500,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">J</hi>Hr arme bedra&#x364;ngte/ begru&#x364;ſſet
                               den Friden/</l>
@@ -21516,10 +21520,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">J</hi>Hr arme bedra&#x364;ngte/ begru&#x364;ſſet
                               den Friden/</l>
@@ -21546,10 +21550,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">IV. Cantus. H. H.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">Z</hi>u&#x366; Baden underm heiſſen Stein/</l>
                            <lb/>
@@ -21568,10 +21572,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">Z</hi>u&#x366; Baden underm heiſſen Stein/</l>
                            <lb/>
@@ -21596,10 +21600,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">Z</hi>u&#x366; Baden underm heiſſen Stein/</l>
                            <lb/>
@@ -21620,10 +21624,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">Z</hi>u&#x366; Baden underm heiſſen Stein/</l>
                            <lb/>
@@ -21825,12 +21829,12 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">V. Cantus.</head>
                         <lb/>
                         <p rendition="#aq">Contrap:</p>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben</l>
                            <lb/>
@@ -21847,10 +21851,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben</l>
                            <lb/>
@@ -21873,10 +21877,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben</l>
                            <lb/>
@@ -21893,10 +21897,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben/</l>
                            <lb/>
@@ -21931,10 +21935,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">VI. Cantus. Vera&#x364;nderung.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben/</l>
                            <lb/>
@@ -21951,10 +21955,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben<anchor
                                  xml:id="a237"/>/<note type="annotation" targetEnd="a237"><p>Die
@@ -21980,10 +21984,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben/</l>
                            <lb/>
@@ -22000,10 +22004,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l><hi rendition="#in">A</hi>Ch/ was iſt der menſchen leben/</l>
                            <lb/>
@@ -22035,12 +22039,12 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">VII. Cantus.</head>
                         <lb/>
                         <p rendition="#aq">Contrap:</p>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/</l>
                            <lb/>
@@ -22051,10 +22055,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/</l>
                            <lb/>
@@ -22071,10 +22075,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/</l>
                            <lb/>
@@ -22085,10 +22089,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/ Jeruſalem/</l>
                            <lb/>
@@ -22112,10 +22116,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">VIII. Cantus. Vera&#x364;nderung.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/ Jeruſalem/</l>
                            <lb/>
@@ -22128,10 +22132,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/ Jeruſalem/</l>
                            <lb/>
@@ -22148,10 +22152,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/ Jeruſalem/</l>
                            <lb/>
@@ -22162,10 +22166,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Es freüe ſich Jeruſalem/ Jeruſalem/</l>
                            <lb/>
@@ -22533,10 +22537,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">IX. Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O Menſchenkind/ beda&#x364;nk mit mir/</l>
                            <lb/>
@@ -22559,10 +22563,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O Menſchenkind/ beda&#x364;nk mit mir/</l>
                            <lb/>
@@ -22592,10 +22596,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O Menſchenkind/ beda&#x364;nk mit mir/</l>
                            <lb/>
@@ -22618,10 +22622,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O Menſchenkind/ beda&#x364;nk mit mir/</l>
                            <lb/>
@@ -22649,10 +22653,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>in Adam uns vergifftet/</l>
                            <lb/>
@@ -22667,10 +22671,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>in Adam uns vergifftet/</l>
                            <lb/>
@@ -22689,10 +22693,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>in Adam uns vergifftet/</l>
                            <lb/>
@@ -22705,10 +22709,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>in Adam uns vergifftet/</l>
                            <lb/>
@@ -24720,13 +24724,13 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">X. Cantus.</head>
                         <lb/>
                         <head xml:id="h1a" next="#h1b" rendition="#c">Gott/ und ein
                            gu&#x366;t</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Der Herꝛ mein Liecht/ mein Heil und Lebensſta&#x364;rke/</l>
                            <lb/>
@@ -24747,10 +24751,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Der Herꝛ mein Liecht/ mein Heil und Lebensſta&#x364;rke/</l>
                            <lb/>
@@ -24778,12 +24782,12 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
                         <head xml:id="h1b" prev="#h1a" rendition="#c">Gewiſſen.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Der Herꝛ mein Liecht/ mein Heil und Lebensſt<anchor xml:id="a264"
                                  />a&#x364;<note type="annotation" targetEnd="a264"><p>kleines e in
@@ -24807,10 +24811,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Der Herꝛ mein Liecht/ mein Heil und Lebensſta&#x364;rke/</l>
                            <lb/>
@@ -24838,10 +24842,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ab denen die mich neiden: die auſſerſt noht/</l>
                            <lb/>
@@ -24866,10 +24870,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ab denen die mich n<anchor xml:id="a267"/>e<note type="annotation"
                                  targetEnd="a267"><p>das e ist in der SBB noch deutlich zu
@@ -24908,10 +24912,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ab denen die mich neiden: die auſſerſt noht/</l>
                            <lb/>
@@ -24932,10 +24936,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ab denen die mich neiden: die auſſerſt noht/</l>
                            <lb/>
@@ -24969,10 +24973,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">XI. Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O daß ich doch einmal/ o daß ich doch einmal</l>
                            <lb/>
@@ -24985,10 +24989,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O daß ich doch einmal/ o daß ich doch einmal</l>
                            <lb/>
@@ -25009,10 +25013,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O daß ich doch einmal/ o daß ich doch einmal</l>
                            <lb/>
@@ -25025,10 +25029,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>O daß ich doch einmal/ o daß ich doch einmal die Davidsharff</l>
                            <lb/>
@@ -25052,10 +25056,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>auch eine weis bequa&#x364;m/ auch eine weis bequa&#x364;m/</l>
                            <lb/>
@@ -25068,10 +25072,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>o daß dem ſcho&#x364;nen klang/ auch eine weis bequa&#x364;m/</l>
                            <lb/>
@@ -25095,10 +25099,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>auch eine weis bequa&#x364;m/ auch eine weis bequa&#x364;m/</l>
                            <lb/>
@@ -25112,10 +25116,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>auch eine weis bequa&#x364;m/ auch eine weis bequa&#x364;m/ von
                               ſa&#x364;ngern</l>
@@ -25146,10 +25150,10 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">XII. Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Ein k<anchor xml:id="a278"/>ü<note type="annotation" targetEnd="a278"
                                     ><p>Trema in der SBB besser zu sehen</p></note>nſches hertz/ ein
@@ -25169,10 +25173,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Ein künſches hertz/ ein künſches hertz mag mit geſang/</l>
                            <lb/>
@@ -25193,10 +25197,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Ein künſches hertz/ ein k<anchor xml:id="a280"/>ü<note
                                  type="annotation" targetEnd="a280"><p>Trema in der SBB etwas
@@ -25213,10 +25217,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Ein künſches hertz/ ein künſches hertz mag mit ge-</l>
                            <lb break="no"/>
@@ -25241,10 +25245,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>gleich zu&#x366;wider ſeyn die widerſinniſch Rott/ ſo mag es doch</l>
                            <lb/>
@@ -25259,10 +25263,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>gleich/ und ſolt ihm gleich die widerſinniſch Rott/ ſo mag es doch</l>
                            <lb/>
@@ -25283,10 +25287,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>und ſolt ihm gleich zu&#x366;wider ſeyn die widerſinniſch Rott/</l>
                            <lb/>
@@ -25301,10 +25305,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>und ſolt ihm gleich zu&#x366;wider ſeyn die widerſinniſch</l>
                            <lb/>
@@ -25339,13 +25343,13 @@
 
                   <div type="music">
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq"><choice>
                               <sic>XII.</sic>
                               <corr>XIII.</corr>
                            </choice>Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Danket/ danket/ danket/ ij ij ij danket/ danket</l>
                            <lb/>
@@ -25364,10 +25368,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Danket/ danket/ danket/ ij ij ij ij ij ij ij ij ij</l>
                            <lb/>
@@ -25389,10 +25393,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Danket/ danket/ danket ij ij ij ij ij ij danket/</l>
                            <lb/>
@@ -25409,10 +25413,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Danket/ danket/ danket/ ij ij ij ij ij ij</l>
                            <lb/>
@@ -25433,10 +25437,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ij der ehren: danket dem Herꝛen:</l>
                            <lb/>
@@ -25451,10 +25455,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ehren/ benedeyt den Ko&#x364;nge der ehren/ der ehren:</l>
                            <lb/>
@@ -25478,10 +25482,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Ko&#x364;nge der ehren/ ij der ehren:</l>
                            <lb/>
@@ -25497,10 +25501,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>benedeyt den K<anchor xml:id="a286"/>o&#x364;<note type="annotation"
                                  targetEnd="a286"><p>kleines e in der SBB ein wenig
@@ -25525,10 +25529,10 @@
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Cantus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ohne ſchertz ij ij anietz ohne ſchertz/ euer/ eüer/ ij ij</l>
                            <lb/>
@@ -25541,10 +25545,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Tenor.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ohne ſchertz ij ij anietz eüer/ eüer/ ij ij</l>
                            <lb/>
@@ -25563,10 +25567,10 @@
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Altus.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ohne ſchertz ij ij anietz ohne ſchertz/ eüer/ e<anchor xml:id="a288"
                                  />ü<note type="annotation" targetEnd="a288"><p>in der SBB steht das
@@ -25581,10 +25585,10 @@
                         <lb/>
                      </div>
 
-                     <div type="poem">
+                     <div>
                         <head rendition="#aq">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>ohne ſchertz/ opfert/ opfert anietz ohne ſchertz/ eüer/ eüer/ eü-</l>
                            <lb break="no"/>
