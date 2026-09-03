@@ -6965,7 +6965,7 @@
                     <!--"Mann" und "Weib" mit <label> oder <note type="speaker"> auszeichnen? [CF]-->
                     <lg type="poem">
                         <lg n="1">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Ey! Ey was hör ich doch vom Herren Bräutigam?</l>
                             <lb/>
@@ -6978,14 +6978,14 @@
                         <lb/>
 
                         <lg n="2">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l rendition="#et">Ey nein/ es wird nicht seyn!</l>
                         </lg>
                         <lb/>
 
                         <lg n="3">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Er hat sich ja verpflicht</l>
                             <lb/>
@@ -7000,7 +7000,7 @@
                         <lb/>
 
                         <lg n="4">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l rendition="#et">Sie sey und heisse gleich <hi rendition="#larger">
                                     Hartmännin</hi> oder lind/</l>
@@ -7028,14 +7028,14 @@
                         <pb n="346" facs="4049545"/>
 
                         <lg n="5">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Was dan für nutzbarkeit?</l>
                         </lg>
                         <lb/>
 
                         <lg n="6">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l rendition="#et">Nicht wenig/ und nicht klein:</l>
                             <lb/>
@@ -7130,14 +7130,14 @@
                         <lb/>
 
                         <lg n="7">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Ha! Ha! was hör ich da?</l>
                         </lg>
                         <lb/>
 
                         <lg n="8">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l rendition="#et">Die wahrheit in dem schimpff:</l>
                             <lb/>
@@ -7161,7 +7161,7 @@
                         <lb/>
 
                         <lg n="9">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Nun/ nun! Jst dem also? Jst <hi rendition="#larger"
                                     >Hart</hi> allein ihr Nam?</l>
@@ -7178,7 +7178,7 @@
                         <pb n="348" facs="4049547"/>
 
                         <lg n="10">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l rendition="#et">Ja freylich: dan/ wie uns vor disem auch gelehrt</l>
                             <lb/>
@@ -7191,7 +7191,7 @@
                         <lb/>
 
                         <lg n="11">
-                            <label rendition="#c">Mann.</label>
+                            <note rendition="#c" type="speaker">Mann.</note>
                             <lb/>
                             <l rendition="#et">Wolan/ so wünschen ich von dem getreuen Gott/</l>
                             <lb/>
@@ -7200,7 +7200,7 @@
                         <lb/>
 
                         <lg n="12">
-                            <label rendition="#c">Weib.</label>
+                            <note rendition="#c" type="speaker">Weib.</note>
                             <lb/>
                             <l>Jch wünsch’/ Er wolle sie in allweg benedeyen/</l>
                             <lb/>
