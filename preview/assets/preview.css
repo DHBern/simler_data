@@ -1,0 +1,374 @@
+/**
+ * The preview's own stylesheet.
+ *
+ * `fonts.css`, `tokens.css`, `renditions.css` and `tei.css` are the edition's
+ * text layer and belong to the rendering engine (see README). Everything below
+ * is the preview's own chrome, as plain CSS: no build step, and it opens
+ * straight from `file://`.
+ */
+
+@import './fonts.css';
+@import './tokens.css';
+@import './renditions.css';
+@import './tei.css';
+
+/* ── Base ─────────────────────────────────────────────────────────────────── */
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+  background-color: rgb(var(--c-paper));
+  color: rgb(var(--c-ink));
+  font-family: var(--f-text);
+  -webkit-text-size-adjust: 100%;
+}
+body { margin: 0; min-height: 100svh; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--f-display);
+  font-weight: 600;
+  line-height: 1.2;
+  text-wrap: balance;
+}
+
+a { color: rgb(var(--c-accent)); text-underline-offset: 0.2em; }
+
+:focus-visible { outline: 2px solid rgb(var(--c-accent)); outline-offset: 2px; }
+::selection { background-color: rgb(var(--c-accent) / 0.18); }
+
+/* Historical characters — ſ, aͤ, uͤ, ꝛ, ẽ — must not fall back to a box. */
+.tei-text, .tei-text * { font-variant-ligatures: common-ligatures; }
+
+/* The measure is the text's, so the page is the measure *plus* its padding —
+   `box-sizing: border-box` would otherwise take the padding out of the column. */
+main {
+  --pad: 1.25rem;
+  margin-inline: auto;
+  padding: 1.75rem var(--pad) 6rem;
+  max-width: calc(var(--measure) + 2 * var(--pad));
+}
+.tei-text { margin-inline: auto; max-width: var(--measure); }
+
+/* ── The control layer ────────────────────────────────────────────────────── */
+
+.ui-label {
+  font-family: var(--f-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(var(--c-ui-muted));
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--f-ui);
+  font-size: 0.8125rem;
+  line-height: 1;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgb(var(--c-ui-line));
+  border-radius: var(--r-ui);
+  background-color: rgb(var(--c-ui-surface));
+  color: rgb(var(--c-ui-ink));
+  cursor: pointer;
+  text-decoration: none;
+}
+.btn:hover { background-color: rgb(var(--c-ui-ink) / 0.05); }
+
+/* One control, every option visible, the current one filled: a reader has to see
+   which view they are in without clicking anything. */
+.segmented {
+  display: inline-flex;
+  border: 1px solid rgb(var(--c-ui-line));
+  border-radius: var(--r-ui);
+  overflow: hidden;
+  background-color: rgb(var(--c-ui-surface));
+}
+.segmented > button {
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+  line-height: 1;
+  padding: 0.4rem 0.6rem;
+  border: 0;
+  background: none;
+  color: rgb(var(--c-ui-ink));
+  white-space: nowrap;
+  cursor: pointer;
+}
+.segmented > * + * { box-shadow: inset 1px 0 0 rgb(var(--c-ui-line)); }
+.segmented > button:hover { background-color: rgb(var(--c-ui-ink) / 0.06); }
+.segmented > [aria-pressed='true'] {
+  background-color: rgb(var(--c-ui-accent));
+  color: rgb(var(--c-ui-onaccent));
+  font-weight: 600;
+}
+
+/* ── The bar ──────────────────────────────────────────────────────────────── */
+
+.topbar {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgb(var(--c-ui-bg) / 0.94);
+  backdrop-filter: blur(6px);
+  border-bottom: 1px solid rgb(var(--c-ui-line));
+}
+
+.bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding: 0.6rem 1.25rem;
+}
+.bar-home { font-family: var(--f-ui); font-size: 0.8125rem; text-decoration: none; }
+.bar-title {
+  flex: 1 1 14rem;
+  min-width: 0;
+  font-family: var(--f-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.bar-controls { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; }
+.ctrl { display: flex; align-items: center; gap: 0.4rem; }
+
+/* ── The facsimile rail ───────────────────────────────────────────────────── */
+
+:root { --facs-w: min(42vw, 34rem); }
+
+.facsimile { display: none; }
+@media (max-width: 63.999rem) {
+  [data-ctrl='facs'] { display: none; }
+}
+
+@media (min-width: 64rem) {
+  [data-facs='on'] body { padding-right: var(--facs-w); }
+  [data-facs='on'] .facsimile {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: var(--facs-w);
+    padding: 0.75rem;
+    border-left: 1px solid rgb(var(--c-ui-line));
+    background-color: rgb(var(--c-ui-bg));
+  }
+}
+
+.facs-frame {
+  position: relative;
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  border-radius: var(--r);
+  background-color: rgb(var(--c-ink) / 0.06);
+}
+
+/* Still image and viewer share one box — the rail gives the height, so the
+   3 / 4 page shape the shared rule assumes has to go. */
+.facs-image,
+.facsimile .osd-mount {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto;
+}
+.facs-image { object-fit: contain; }
+/* Once the first tiles are up the still image is redundant. */
+.facsimile[data-facs-ready] .facs-image { display: none; }
+
+.facs-tools { display: flex; gap: 0.25rem; }
+.facs-tools[hidden] { display: none; } /* beats `display: flex`, which [hidden] does not */
+.facs-tools .btn { padding: 0.3rem 0.55rem; }
+
+.facs-caption {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  margin: 0;
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+  color: rgb(var(--c-ui-muted));
+}
+
+/* ── The apparatus ────────────────────────────────────────────────────────── */
+
+.overview {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 2px solid rgb(var(--c-accent) / 0.4);
+  font-size: 0.95em;
+}
+.overview .ui-label { display: block; margin-bottom: 0.25rem; }
+
+.endnotes { margin-top: 3rem; padding-top: 1.25rem; }
+.endnotes ol { margin: 0.75rem 0 0; padding: 0; list-style: none; }
+.endnote {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.15rem 0.25rem;
+  font-family: var(--f-ui);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+.endnote-back {
+  flex: none;
+  font-weight: 600;
+  text-decoration: none;
+}
+.endnote-back:hover { text-decoration: underline; }
+.endnote-body { min-width: 0; }
+
+/* ── The anchored note panel ──────────────────────────────────────────────── */
+
+.popover-panel {
+  inset: auto;
+  width: min(26rem, calc(100vw - 2rem));
+  max-height: min(60vh, 30rem);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  padding: 0.85rem 1rem 0.9rem;
+  border: 1px solid rgb(var(--c-line));
+  border-radius: var(--r);
+  background-color: rgb(var(--c-panel));
+  color: rgb(var(--c-ink));
+  box-shadow: 0 6px 24px rgb(0 0 0 / 0.16);
+}
+.popover-panel::backdrop { background: transparent; }
+.popover-panel[hidden] { display: none; }
+
+.popover-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 0.75rem; }
+.popover-head p { margin: 0; }
+.popover-actions { display: flex; flex: none; gap: 0.1rem; }
+
+.popover-close {
+  display: grid;
+  place-items: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border: 0;
+  border-radius: var(--r-ui);
+  background: none;
+  color: rgb(var(--c-ui-muted));
+  font-family: var(--f-ui);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.popover-close:hover:not(:disabled) { background-color: rgb(var(--c-ui-ink) / 0.07); color: rgb(var(--c-ink)); }
+/* The first note has no previous one. Shown and inert, not removed: the panel's
+   controls must not move under the reader between notes. */
+.popover-close:disabled { opacity: 0.3; cursor: default; }
+
+/* A note is *about* the text, never part of it — hence the UI voice. */
+.popover-body { margin-top: 0.45rem; font-family: var(--f-ui); font-size: 0.875rem; line-height: 1.55; }
+.popover-body > :first-child { margin-top: 0; }
+.popover-body > :last-child { margin-bottom: 0; }
+
+.popover-foot { margin: 0.8rem 0 0; border-top: 1px solid rgb(var(--c-line)); padding-top: 0.7rem; }
+
+/* ── The search ───────────────────────────────────────────────────────────── */
+
+.search-form { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+.search-form input {
+  flex: 1 1 auto;
+  min-width: 0;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgb(var(--c-ui-line));
+  border-radius: var(--r-ui);
+  background-color: rgb(var(--c-panel));
+  color: rgb(var(--c-ink));
+  font: inherit;
+}
+.status { color: rgb(var(--c-muted)); }
+
+.results { margin: 0.5rem 0 0; padding: 0; list-style: none; }
+.results li { padding: 0.7rem 0; border-bottom: 1px solid rgb(var(--c-line)); }
+.results a { font-weight: 600; text-decoration: none; }
+.results a:hover { text-decoration: underline; }
+/* The excerpt is the *indexed* text, so it is set in the reading face: it is a
+   passage of the edition, normalised — `ſüſſe` shown as `süsse` — not chrome. */
+.results .excerpt {
+  margin: 0.25rem 0 0.15rem;
+  font-family: var(--f-text);
+  line-height: 1.5;
+}
+.results .excerpt mark {
+  background-color: rgb(var(--c-accent) / 0.2);
+  color: inherit;
+  border-radius: 2px;
+  padding: 0 0.1em;
+}
+.results .file { font-size: 0.8em; color: rgb(var(--c-muted)); }
+
+/* Which hit the reader is on. In the sticky bar, so ↑ ↓ stay under the cursor. */
+.hits {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.8rem;
+  padding: 0.5rem 1.25rem;
+  border-top: 1px solid rgb(var(--c-line));
+  background-color: rgb(var(--c-accent) / 0.07);
+  font-family: var(--f-ui);
+  font-size: 0.8125rem;
+}
+.hits[hidden] { display: none; }
+.hits > span:first-child { flex: 1 1 12rem; }
+.hits [data-hits-nav] { display: flex; gap: 0.25rem; }
+.hits [data-hits-nav][hidden] { display: none; }
+
+/* The entity card shares `.popover-panel`; only its own lines are here. */
+.card-label { margin: 0.1rem 0 0; font-family: var(--f-display); font-size: 1.05rem; font-weight: 600; }
+.card-note { margin: 0.3rem 0 0; color: rgb(var(--c-muted)); }
+.card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.8rem;
+  margin: 0.6rem 0 0;
+  font-size: 0.78rem;
+  color: rgb(var(--c-muted));
+}
+.card-meta a { color: rgb(var(--c-accent)); }
+.popover-body > p { margin: 0; }
+.popover-body > p[hidden] { display: none; }
+
+/* ── The index ────────────────────────────────────────────────────────────── */
+
+.index { max-width: 64rem; font-family: var(--f-ui); font-size: 0.875rem; }
+.index .lead { max-width: var(--measure); color: rgb(var(--c-muted)); line-height: 1.6; }
+.index table { width: 100%; border-collapse: collapse; }
+.index th, .index td {
+  padding: 0.4rem 0.6rem;
+  border-bottom: 1px solid rgb(var(--c-line));
+  text-align: left;
+  vertical-align: top;
+}
+.index th { font-size: 0.7rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted)); }
+.index .num { width: 5rem; text-align: right; font-variant-numeric: tabular-nums; }
+.index .file { color: rgb(var(--c-muted)); font-size: 0.8em; word-break: break-all; }
+.index tbody tr:hover { background-color: rgb(var(--c-ink) / 0.03); }
+/* The findings page: one table, a heading row per kind, so the columns align. */
+.index .group th { padding-top: 1.5rem; font-size: 0.875rem; letter-spacing: 0; text-transform: none; color: inherit; }
+
+.flag {
+  display: inline-block;
+  min-width: 1.4em;
+  padding: 0 0.35em;
+  border-radius: 999px;
+  background-color: rgb(var(--c-place) / 0.16);
+  color: rgb(var(--c-place));
+  text-align: center;
+}
+
+@media print {
+  .no-print { display: none !important; }
+  body { padding-right: 0; } /* the rail is gone; the text takes the page back */
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}

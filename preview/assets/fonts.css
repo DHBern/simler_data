@@ -1,0 +1,30 @@
+/**
+ * The mark-carrying fallback face (Cardo).
+ */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  size-adjust: 91%;
+  src: url('fonts/cardo-regular-marks.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Cardo';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  size-adjust: 91%;
+  src: url('fonts/cardo-italic-marks.woff2') format('woff2');
+}
+
+/* `@rendition="#b"` sets weight 600; 700 is the nearest cut Cardo has. */
+@font-face {
+  font-family: 'Cardo';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  size-adjust: 91%;
+  src: url('fonts/cardo-bold-marks.woff2') format('woff2');
+}
