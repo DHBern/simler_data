@@ -4,7 +4,6 @@
 
 import type { Plugin } from 'unified'
 
-import { BLOCK_ELEMENTS, INLINE_ELEMENTS, type TeiOptions } from './options'
 import {
   attr,
   children,
@@ -17,23 +16,15 @@ import {
 } from './xast'
 
 export interface WsTrimOptions {
-  removeWhitespaceOnlyText?: boolean
-  collapseWhitespace?: boolean
-  /** Extra inline element local-names, merged into {@link INLINE_ELEMENTS}. */
-  inlineElements?: string[]
+  /** Elements the ODD renders inline, and as blocks. */
+  inline: Set<string>
+  block: Set<string>
 }
 
 /**
  * TEI-aware whitespace normalisation.
  */
-export const wsTrim: Plugin<[WsTrimOptions?], Root, Root> = function (options = {}) {
-  const {
-    removeWhitespaceOnlyText = true,
-    collapseWhitespace = true,
-    inlineElements: extra = [],
-  } = options
-  const inline = new Set<string>([...INLINE_ELEMENTS, ...extra])
-  const block = new Set<string>(BLOCK_ELEMENTS)
+export const wsTrim: Plugin<[WsTrimOptions], Root, Root> = function ({ inline, block }) {
 
   const isBlock = (node: RootContent | undefined): boolean =>
     node !== undefined && isElement(node) && block.has(localName(node.name))
@@ -58,12 +49,10 @@ export const wsTrim: Plugin<[WsTrimOptions?], Root, Root> = function (options = 
 
     if (isText(node)) {
       let value = node.value ?? ''
-      if (removeWhitespaceOnlyText && /^\s+$/.test(value)) {
+      if (/^\s+$/.test(value)) {
         if (isIndentation(node, ancestors.at(-1))) return null
       }
-      if (collapseWhitespace) {
-        value = value.replace(/\s+/g, ' ')
-      }
+      value = value.replace(/\s+/g, ' ')
       return { ...node, value }
     }
 
@@ -80,31 +69,5 @@ export const wsTrim: Plugin<[WsTrimOptions?], Root, Root> = function (options = 
 
   return function transformer(tree: Root): Root {
     return (walk(tree, []) as Root | null) ?? tree
-  }
-}
-
-/** Build wsTrim options out of the resolved pipeline options. */
-export function wsTrimOptionsFrom(options: TeiOptions): WsTrimOptions {
-  return {
-    removeWhitespaceOnlyText: options.removeWhitespaceOnlyText,
-    collapseWhitespace: options.collapseWhitespace,
-    inlineElements: options.inlineElements,
-  }
-}
-
-/**
- * Drop `<teiHeader>`: its metadata is extracted at ingest time and rendered as
- * page furniture.
- */
-export const dropHeader: Plugin<[], Root, Root> = function () {
-  function walk(node: Nodes): Nodes {
-    if (!('children' in node) || !Array.isArray(node.children)) return node
-    const kept = children(node)
-      .filter((child) => !isElement(child, 'teiHeader'))
-      .map((child) => walk(child) as RootContent)
-    return { ...node, children: kept } as Nodes
-  }
-  return function transformer(tree: Root): Root {
-    return walk(tree) as Root
   }
 }

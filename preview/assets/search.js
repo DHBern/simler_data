@@ -101,7 +101,7 @@ function markQuery(root, query) {
   const nodes = []
   for (let node = walker.nextNode(); node; node = walker.nextNode()) {
     // A page-break label is chrome, not text — the index leaves it out too.
-    if (node.parentElement?.closest('.tei-pb')) continue
+    if (node.parentElement?.closest('.plaintext-omit')) continue
     // Both readings of a `<choice>` are in the DOM and the view hides one of
     // them; a hit in the hidden one must not be scrolled to.
     const visible = node.parentElement?.checkVisibility?.() ?? true

@@ -10,6 +10,7 @@ on:
     paths:
       - "webdav/data/sources/tei/**"
       - "gsheet/csv/**"
+      - "schema/**"
       - "preview/**"
       - ".github/workflows/tei-preview.yml"
   workflow_dispatch:

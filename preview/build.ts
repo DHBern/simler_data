@@ -6,8 +6,9 @@
  * `name…` filters by substring, so proofing one text is
  * `npm run build -- A_1648` rather than a full corpus run.
  *
- * The rendering itself is not implemented here: `lib/` is the edition's
- * pipeline, and this file only feeds it and writes what comes out.
+ * The rendering is not implemented here: the ODD (`schema/tei_simler.odd`)
+ * defines it and `lib/` carries it out; this file feeds both and writes what
+ * comes out, including the stylesheet the ODD compiles to.
  */
 
 import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
@@ -20,13 +21,16 @@ import { fromXml } from 'xast-util-from-xml'
 import { normalizeForSearch } from './assets/normalize.js'
 
 import { loadEntities, type Entity } from './lib/entities'
-import { handlers } from './lib/tei/handlers'
+import { readOdd } from './lib/odd/odd'
 import { imageRoot } from './lib/tei/iiif'
-import { renderTei } from './lib/tei/render'
-import { attr, children, findAll, findFirst, isElement, localName, plainText, type Nodes } from './lib/tei/xast'
+import { createProcessor, renderTei } from './lib/tei/render'
+import { attr, findAll, findFirst, plainText, type Nodes } from './lib/tei/xast'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 
+type Processor = ReturnType<typeof createProcessor>
+
 const here = dirname(fileURLToPath(import.meta.url))
+const ODD = resolve(here, '../schema/tei_simler.odd')
 
 interface Args {
   src: string
@@ -47,25 +51,6 @@ function parseArgs(argv: string[]): Args {
     else args.filters.push(argv[i].toLowerCase())
   }
   return args
-}
-
-/**
- * TEI elements in the text section that the handler map has no entry for.
- *
- * They still render — `handlers['*']` emits a transparent span rather than
- * swallowing them — but an editor using a new element deserves to be told that
- * the presentation layer does not know it yet. `<teiHeader>` is skipped, as
- * `dropHeader` skips it: metadata is not running text.
- */
-function unmapped(tree: Nodes, seen = new Set<string>()): Set<string> {
-  for (const child of children(tree)) {
-    if (!isElement(child)) continue
-    const name = localName(child.name)
-    if (name === 'teiHeader') continue
-    if (!(name in handlers)) seen.add(name)
-    unmapped(child, seen)
-  }
-  return seen
 }
 
 /** `a`, `a`, `b` → `b`, `2× a`: the same finding twenty times is one finding. */
@@ -113,7 +98,7 @@ function manifestOf(tree: Nodes): string | null {
   return null
 }
 
-function render(file: string, xml: string, registers: Record<string, Entity>): PreviewDoc {
+function render(file: string, xml: string, registers: Record<string, Entity>, processor: Processor): PreviewDoc {
   const out = file.replace(/\.xml$/i, '.html')
   const base: PreviewDoc = {
     file, out, title: file, html: '', text: '', notes: [],
@@ -132,8 +117,8 @@ function render(file: string, xml: string, registers: Record<string, Entity>): P
     return { ...base, warnings: [`XML nicht wohlgeformt: ${cause?.message ?? message}`] }
   }
 
-  const result = renderTei(xml)
-  const unknown = [...unmapped(tree)].sort()
+  const result = renderTei(xml, processor)
+  const pages = findAll(tree, 'pb').flatMap((pb) => attr(pb, 'facs') ?? [])
   const entities = entitiesIn(tree, registers)
   const facsRoot = imageRoot(manifestOf(tree))
   return {
@@ -142,16 +127,16 @@ function render(file: string, xml: string, registers: Record<string, Entity>): P
     html: result.html,
     text: result.text,
     notes: result.notes,
-    pages: result.pages,
+    pages,
     facsRoot,
     entities: entities.used,
     warnings: [
       ...tally(result.warnings),
-      ...(unknown.length ? [`Ohne Rendering-Regel, als Fliesstext ausgegeben: ${unknown.join(', ')}`] : []),
+      ...(result.unmapped.length ? [`Ohne Rendering-Regel, als Fliesstext ausgegeben: ${result.unmapped.join(', ')}`] : []),
       ...(entities.unknown.length
         ? [`rs/@key ohne Eintrag im Register: ${entities.unknown.join(', ')}`]
         : []),
-      ...(!facsRoot && result.pages.length
+      ...(!facsRoot && pages.length
         ? ['Kein <idno type="URLIIIF"> im Header — die Seite zeigt kein Faksimile']
         : []),
     ],
@@ -220,9 +205,13 @@ async function main() {
     console.warn('  Keine Registerdaten in gsheet/csv — Entitäten bleiben ohne Karte.')
   }
 
+  const odd = readOdd(await readFile(ODD, 'utf8'))
+  await writeFile(join(out, 'assets', 'odd.css'), odd.css)
+  const processor = createProcessor(odd)
+
   const docs: PreviewDoc[] = []
   for (const name of names) {
-    const doc = render(name, await readFile(join(src, name), 'utf8'), registers)
+    const doc = render(name, await readFile(join(src, name), 'utf8'), registers, processor)
     await writeFile(join(out, doc.out), documentPage(doc))
     docs.push(doc)
     for (const warning of doc.warnings) console.warn(`  ${name}: ${warning}`)

@@ -16,7 +16,6 @@
 import type { Plugin } from 'unified'
 import type { VFile } from 'vfile'
 
-import { BLOCK_ELEMENTS } from './options'
 import type { RenderState } from './teiToHast'
 import {
   attr,
@@ -29,8 +28,6 @@ import {
   type Root,
   type Text,
 } from './xast'
-
-const BLOCK = new Set<string>(BLOCK_ELEMENTS)
 
 /** Hyphen, soft hyphen, not sign, hyphen, non-breaking hyphen, double oblique. */
 const HYPHEN = /[-­¬‐‑⸗][ \t]*$/
@@ -47,7 +44,7 @@ interface LineEnd {
  * nothing is joined. Inline elements are looked into: the corpus has
  * `<hi>ge-</hi><lb break="no"/>` as well as bare text.
  */
-function lineEnd(list: ElementContent[], before: number, gap: Text[] = []): LineEnd | null {
+function lineEnd(list: ElementContent[], before: number, block: Set<string>, gap: Text[] = []): LineEnd | null {
   for (let i = before - 1; i >= 0; i--) {
     const node = list[i]
     if (isText(node)) {
@@ -58,17 +55,17 @@ function lineEnd(list: ElementContent[], before: number, gap: Text[] = []): Line
       return { text: node, gap }
     }
     if (isElement(node)) {
-      if (BLOCK.has(localName(node.name))) return null
+      if (block.has(localName(node.name))) return null
       const kids = children(node) as ElementContent[]
-      const inner = lineEnd(kids, kids.length, gap)
+      const inner = lineEnd(kids, kids.length, block, gap)
       if (inner) return inner
     }
   }
   return null
 }
 
-/** unified plugin: normalise the hyphen at every joined line end. */
-export const lineEndHyphens: Plugin<[], Root, Root> = function () {
+/** unified plugin: normalise the hyphen at every joined line end; `block` from the ODD. */
+export const lineEndHyphens: Plugin<[Set<string>], Root, Root> = function (block) {
   return function transformer(tree: Root, file?: VFile): Root {
     /** `<lb/>` with no `@break`, but a hyphen before it: `@break="no"` is missing. */
     let unmarked = 0
@@ -79,7 +76,7 @@ export const lineEndHyphens: Plugin<[], Root, Root> = function () {
 
       for (const [i, child] of list.entries()) {
         if (!isElement(child, 'lb')) continue
-        const end = lineEnd(list, i)
+        const end = lineEnd(list, i, block)
         if (!end || !HYPHEN.test(end.text.value ?? '')) continue
 
         if (attr(child, 'break') !== 'no') {

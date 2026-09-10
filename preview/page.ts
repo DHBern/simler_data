@@ -42,18 +42,18 @@ export const esc = (value: string): string => value.replace(/[&<>"']/g, (c) => E
 /**
  * The reading switches, and the `<html>` attribute each one drives.
  *
- * The values are exactly those `assets/tei.css` keys off — this table adds a
+ * The values are exactly those the ODD's views key off — this table adds a
  * control surface, never a rendering rule. A new switch is one row here plus
  * one selector there.
  */
 const SWITCHES = [
   {
-    attr: 'normalize',
+    attr: 'normalized',
     label: 'Normalisiert',
     title: 'Zeilenenden zusammenziehen, getrennte Wörter verbinden, corr/reg/expan statt sic/orig/abbr.',
     options: [['on', 'an'], ['off', 'aus']],
   },
-  { attr: 'entities', label: 'Entitäten', options: [['typed', 'an'], ['off', 'aus']] },
+  { attr: 'entities', label: 'Entitäten', options: [['on', 'an'], ['off', 'aus']] },
   { attr: 'notes', label: 'Anmerkungen', options: [['quiet', 'an'], ['off', 'aus']] },
   { attr: 'facs', label: 'Faksimile', options: [['on', 'an'], ['off', 'aus']] },
   { attr: 'size', label: 'Schrift', options: [['s', 'S'], ['m', 'M'], ['l', 'L'], ['xl', 'XL']] },
@@ -67,7 +67,7 @@ const SWITCHES = [
  * what an editor compares against the facsimile is what the print says.
  */
 const DEFAULTS: Record<string, string> = {
-  normalize: 'off',
+  normalized: 'off',
   entities: 'off',
   notes: 'quiet',
   facs: 'off',
@@ -108,8 +108,8 @@ const nav = (here = ''): string => NAV.filter(([href]) => href !== here)
  * The apparatus, as endnotes.
  */
 function endnotes(notes: RenderedNote[]): string {
-  const overview = notes.filter((n) => !n.ranged)
-  const anchored = notes.filter((n) => n.ranged)
+  const overview = notes.filter((n) => n.place === 'overview')
+  const anchored = notes.filter((n) => n.place === 'end')
 
   const aside = overview.length === 0 ? '' : `<aside class="overview" aria-label="Überblickskommentar">
       <span class="ui-label">Überblickskommentar</span>
@@ -265,7 +265,7 @@ export function documentPage(doc: PreviewDoc): string {
     ${HIT_BANNER}
   </div>
   <main id="main">
-    <div class="tei-text">${doc.html}</div>
+    ${doc.html}
     ${endnotes(doc.notes)}
   </main>
   ${NOTE_POPOVER}

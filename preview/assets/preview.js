@@ -179,7 +179,7 @@
       element.hidden = !value
     }
 
-    createPopover(cardPanel, '.rs[data-key]', function (trigger) {
+    createPopover(cardPanel, '.tei-rs[data-key]', function (trigger) {
       var entity = entities[trigger.dataset.key]
       if (!entity) return false // no register entry: nothing to show
       kind.textContent = entity.kind

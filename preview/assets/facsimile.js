@@ -20,8 +20,10 @@
   var tools = panel.querySelector('[data-facs-tools]')
   var caption = panel.querySelector('[data-facs-label]')
   var link = panel.querySelector('[data-facs-link]')
-  // The scroll anchors the pb handler already emits.
-  var marks = pages.map(function (facs) { return document.getElementById('pb-' + facs) })
+  // The page breaks in the text, found by the image they name.
+  var marks = pages.map(function (facs) {
+    return document.querySelector('.tei-pb[data-facs="' + CSS.escape(facs) + '"]')
+  })
 
   var base = function (facs) { return data.root + '/' + encodeURIComponent(facs) }
 
@@ -35,10 +37,8 @@
   function show(i) {
     if (i === index || !pages[i]) return
     index = i
-    // The page name the text itself prints — `[A vij r]`, `194`; the marker sets
-    // a bare dot where the print numbers nothing, and that is not a name.
-    var label = marks[i] ? (marks[i].textContent || '').trim() : ''
-    if (label === '·') label = ''
+    // The page name the print gives: `[A vij r]`, `194`.
+    var label = marks[i] ? marks[i].getAttribute('data-n') || '' : ''
     caption.textContent = (label ? label + ' · ' : '') + 'Bild ' + (i + 1) + ' von ' + pages.length
     if (link) link.href = data.library + '/' + encodeURIComponent(pages[i])
     // Scrolling crosses many pages; only the one the reader stops on is fetched.
