@@ -31,7 +31,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The switches and the two anchored panels |
-| `assets/facsimile.js` | The facsimile rail: OpenSeadragon over the IIIF images |
+| `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |
 | `assets/normalize.js` | Search normalisation — plain ESM |
 | `assets/search.js` | The search page, and marking the hits in a document |
 | `page.ts` | The HTML shell: top bar, apparatus; index, search and findings pages |

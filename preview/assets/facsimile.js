@@ -1,9 +1,9 @@
 /**
- * The facsimile rail.
+ * The facsimile drawer.
  *
  * Text and viewer follow each other: the page whose `<pb/>` last crossed the
  * reading line is the page in the viewer, and paging the viewer scrolls the text
- * to that `<pb/>`.
+ * to that `<pb/>`. Whether the drawer is open, and how wide, outlasts the page.
  */
 ;(function () {
   'use strict'
@@ -15,8 +15,10 @@
 
   var data = JSON.parse(island.textContent || '{}')
   var pages = data.pages || []
+  var frame = panel.querySelector('.facs-frame')
   var image = panel.querySelector('[data-facs-image]')
   var mount = panel.querySelector('[data-facs-mount]')
+  var handle = panel.querySelector('[data-facs-resize]')
   var tools = panel.querySelector('[data-facs-tools]')
   var caption = panel.querySelector('[data-facs-label]')
   var link = panel.querySelector('[data-facs-link]')
@@ -149,25 +151,57 @@
     })
   }
 
-  // ── On and off ───────────────────────────────────────────────────────────
-  // The switch is `data-facs` on <html>, owned by `preview.js`. Watching the
-  // attribute keeps the two apart: the rail costs nothing while it is off.
+  // ── Open, closed, how wide: `data-facs` and `--facs-w` on <html> ─────────
+
+  var load = function (key) { try { return localStorage.getItem('simler-preview:' + key) } catch (e) { return null } }
+  var save = function (key, value) { try { localStorage.setItem('simler-preview:' + key, value) } catch (e) { /* file:// */ } }
 
   function update() {
-    // Narrower than the rail's breakpoint the panel is not shown at all, and the
-    // viewer must not boot into a box with no size (preview.css).
-    var on = root.getAttribute('data-facs') === 'on' &&
-      window.getComputedStyle(panel).display !== 'none'
-    if (!on) {
+    // Closed, or too narrow a window (preview.css): no box to boot the viewer into.
+    if (window.getComputedStyle(frame).display === 'none') {
       window.removeEventListener('scroll', sync)
       return
     }
+    handle.setAttribute('aria-valuenow', String(Math.round(panel.offsetWidth / window.innerWidth * 100)))
     window.addEventListener('scroll', sync, { passive: true })
     show(atReadingLine())
     boot()
   }
 
-  new MutationObserver(update).observe(root, { attributeFilter: ['data-facs'] })
+  function open(value) {
+    root.setAttribute('data-facs', value)
+    save('facs', value)
+    update()
+  }
+
+  /** The stylesheet bounds the width; what is kept is what it allowed. */
+  function widen(px) {
+    root.style.setProperty('--facs-w', px + 'px')
+    save('facs-w', panel.offsetWidth)
+    update()
+  }
+
+  panel.addEventListener('click', function (event) {
+    var button = event.target.closest('[data-facs-toggle]')
+    if (!button) return
+    open(button.dataset.facsToggle)
+    // The clicked button is hidden now; focus moves to its counterpart.
+    panel.querySelector('[data-facs-toggle]:not([data-facs-toggle="' + button.dataset.facsToggle + '"])').focus()
+  })
+
+  handle.addEventListener('pointerdown', function (event) {
+    event.preventDefault()
+    handle.setPointerCapture(event.pointerId)
+  })
+  handle.addEventListener('pointermove', function (event) {
+    if (handle.hasPointerCapture(event.pointerId)) widen(window.innerWidth - event.clientX)
+  })
+  handle.addEventListener('keydown', function (event) {
+    var step = { ArrowLeft: 32, ArrowRight: -32 }[event.key]
+    if (step) widen(panel.offsetWidth + step)
+  })
+
+  if (load('facs-w')) root.style.setProperty('--facs-w', load('facs-w') + 'px')
+  open(load('facs') || 'off')
   window.addEventListener('resize', update)
-  update()
 })()

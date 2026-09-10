@@ -55,7 +55,6 @@ const SWITCHES = [
   },
   { attr: 'entities', label: 'Entitäten', options: [['on', 'an'], ['off', 'aus']] },
   { attr: 'notes', label: 'Anmerkungen', options: [['quiet', 'an'], ['off', 'aus']] },
-  { attr: 'facs', label: 'Faksimile', options: [['on', 'an'], ['off', 'aus']] },
   { attr: 'size', label: 'Schrift', options: [['s', 'S'], ['m', 'M'], ['l', 'L'], ['xl', 'XL']] },
   { attr: 'mode', label: 'Modus', options: [['light', 'hell'], ['dark', 'dunkel']] },
 ] as const
@@ -70,12 +69,11 @@ const DEFAULTS: Record<string, string> = {
   normalized: 'off',
   entities: 'off',
   notes: 'quiet',
-  facs: 'off',
   size: 'm',
 }
 
-function switches(hasFacs: boolean): string {
-  return SWITCHES.filter((group) => group.attr !== 'facs' || hasFacs).map((group) => {
+function switches(): string {
+  return SWITCHES.map((group) => {
     const buttons = group.options
       .map(([value, text]) => {
         const pressed = DEFAULTS[group.attr] === value ? ' aria-pressed="true"' : ''
@@ -193,13 +191,14 @@ function entityData(doc: PreviewDoc): string {
 }
 
 /**
- * The facsimile rail, beside the text.
+ * The facsimile drawer, beside the text: closed, a rail with the arrow that
+ * opens it; open, the page image, resizable at its left edge.
  *
  * The `<img>` is the baseline — one IIIF JPEG, right without any script, and
- * lazy, so a rail that is switched off costs e-rara nothing.
- * `assets/facsimile.js` upgrades it to OpenSeadragon when the switch is first
- * turned on, and keeps it on the page the reader has scrolled to. Emitted only
- * where the header names a IIIF manifest, and the switch with it.
+ * not loaded while the drawer is closed, so it costs e-rara nothing.
+ * `assets/facsimile.js` opens and sizes the drawer, upgrades the image to
+ * OpenSeadragon and keeps it on the page the reader has scrolled to. Emitted
+ * only where the header names a IIIF manifest.
  */
 function facsimile(doc: PreviewDoc): string {
   if (!doc.facsRoot || !doc.pages.length) return ''
@@ -209,8 +208,20 @@ function facsimile(doc: PreviewDoc): string {
   const paging = doc.pages.length > 1
     ? tool('osd-prev', 'Vorherige Seite', '\u2039') + tool('osd-next', 'Nächste Seite', '\u203a')
     : ''
+  const toggle = (to: 'on' | 'off', label: string, cls: string) =>
+    `<button type="button" class="${cls}" data-facs-toggle="${to}" aria-controls="facsimile"
+      aria-expanded="${to === 'off'}" aria-label="${label}" title="${label}"></button>`
 
   return `<aside id="facsimile" class="facsimile no-print" aria-label="Faksimile">
+    ${toggle('on', 'Faksimile einblenden', 'facs-toggle facs-open')}
+    <div class="facs-resize" data-facs-resize role="separator" aria-orientation="vertical"
+      aria-label="Breite des Faksimiles" tabindex="0"></div>
+    <p class="facs-caption">
+      ${toggle('off', 'Faksimile ausblenden', 'facs-toggle')}
+      <span data-facs-label>Bild 1 von ${doc.pages.length}</span>
+      ${lib ? `<a data-facs-link target="_blank" rel="noreferrer"
+        href="${esc(lib)}/${encodeURIComponent(doc.pages[0])}">Digitalisat ↗</a>` : ''}
+    </p>
     <div class="facs-frame">
       <img class="facs-image" data-facs-image loading="lazy" alt="Faksimile der aufgeschlagenen Seite"
         src="${esc(imageUrl(imageBase(doc.facsRoot, doc.pages[0])))}">
@@ -223,11 +234,6 @@ function facsimile(doc: PreviewDoc): string {
         ${paging}
       </div>
     </div>
-    <p class="facs-caption">
-      <span data-facs-label>Bild 1 von ${doc.pages.length}</span>
-      ${lib ? `<a data-facs-link target="_blank" rel="noreferrer"
-        href="${esc(lib)}/${encodeURIComponent(doc.pages[0])}">Digitalisat \u2197</a>` : ''}
-    </p>
     ${island('facs-data', { root: doc.facsRoot, pages: doc.pages, library: lib })}
   </aside>`
 }
@@ -248,8 +254,9 @@ const NOTE_POPOVER = `<aside id="note-popover" class="popover-panel no-print" po
   </aside>`
 
 export function documentPage(doc: PreviewDoc): string {
-  const attrs = Object.entries(DEFAULTS).map(([k, v]) => `data-${k}="${v}"`).join(' ')
-  const rail = facsimile(doc)
+  const drawer = facsimile(doc)
+  const attrs = Object.entries({ ...DEFAULTS, ...(drawer && { facs: 'off' }) })
+    .map(([k, v]) => `data-${k}="${v}"`).join(' ')
   return `<!doctype html>
 <html lang="de" ${attrs}>
 <head>
@@ -260,7 +267,7 @@ export function documentPage(doc: PreviewDoc): string {
     <header class="bar">
       ${nav()}
       <span class="bar-title" title="${esc(doc.file)}">${esc(doc.title)}</span>
-      <div class="bar-controls">${switches(rail !== '')}</div>
+      <div class="bar-controls">${switches()}</div>
     </header>
     ${HIT_BANNER}
   </div>
@@ -270,9 +277,9 @@ export function documentPage(doc: PreviewDoc): string {
   </main>
   ${NOTE_POPOVER}
   ${entityData(doc)}
-  ${rail}
+  ${drawer}
   <script src="assets/preview.js"></script>
-  ${rail ? '<script src="assets/facsimile.js"></script>' : ''}
+  ${drawer ? '<script src="assets/facsimile.js"></script>' : ''}
   <script type="module" src="assets/search.js"></script>
 </body>
 </html>

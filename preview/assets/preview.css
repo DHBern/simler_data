@@ -130,28 +130,75 @@ main {
 .bar-controls { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; }
 .ctrl { display: flex; align-items: center; gap: 0.4rem; }
 
-/* ── The facsimile rail ───────────────────────────────────────────────────── */
+/* ── The facsimile drawer ─────────────────────────────────────────────────── */
+/* Open with `data-facs='on'`, as wide as `--facs-w`, bounded so the text keeps room. */
 
-:root { --facs-w: min(42vw, 34rem); }
-
-.facsimile { display: none; }
-@media (max-width: 63.999rem) {
-  [data-ctrl='facs'] { display: none; }
+:root {
+  --facs-w: min(42vw, 34rem);
+  --facs: clamp(18rem, var(--facs-w), 100vw - 24rem);
+  --facs-rail: 2rem;
+  --facs-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 11 13 8l-2.5-3M6 8h7' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='2' y='2' width='2' height='12' rx='.5'/%3E%3C/svg%3E");
 }
 
+.facsimile { display: none; }
 @media (min-width: 64rem) {
-  [data-facs='on'] body { padding-right: var(--facs-w); }
-  [data-facs='on'] .facsimile {
+  [data-facs] body { padding-right: var(--facs-rail); }
+  [data-facs='on'] body { padding-right: var(--facs); }
+  .facsimile {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     position: fixed;
     inset: 0 0 0 auto;
-    width: var(--facs-w);
-    padding: 0.75rem;
+    width: var(--facs-rail);
     border-left: 1px solid rgb(var(--c-ui-line));
     background-color: rgb(var(--c-ui-bg));
   }
+  [data-facs='on'] .facsimile { width: var(--facs); padding: 0.75rem; }
+}
+[data-facs='off'] .facsimile > :not(.facs-open),
+[data-facs='on'] .facs-open { display: none; }
+
+.facs-toggle {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
+  border: 0;
+  border-radius: var(--r-ui);
+  background: none;
+  color: rgb(var(--c-ui-muted));
+  cursor: e-resize;
+}
+.facs-toggle::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: currentColor;
+  -webkit-mask: var(--facs-icon);
+  mask: var(--facs-icon);
+}
+.facs-toggle:hover { color: rgb(var(--c-ui-ink)); background-color: rgb(var(--c-ui-ink) / 0.07); }
+/* Closed, the whole rail opens it. */
+.facs-open { position: absolute; inset: 0; width: auto; height: auto; border-radius: 0; cursor: w-resize; }
+.facs-open::before { transform: scaleX(-1); }
+
+.facs-resize {
+  position: absolute;
+  inset: 0 auto 0 -4px;
+  z-index: 3;
+  width: 8px;
+  cursor: col-resize;
+  touch-action: none;
+  user-select: none;
+}
+.facs-resize:hover,
+.facs-resize:active,
+.facs-resize:focus-visible {
+  outline: none;
+  background: linear-gradient(rgb(var(--c-ui-accent)), rgb(var(--c-ui-accent))) center / 2px 100% no-repeat;
 }
 
 .facs-frame {
@@ -197,6 +244,7 @@ main {
 .facs-caption {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 0.2rem 0.8rem;
   margin: 0;
   font-family: var(--f-ui);
@@ -414,7 +462,7 @@ main {
 @media print {
   .no-print { display: none !important; }
   .tei-text mark.search-hit { background: none; box-shadow: none; }
-  body { padding-right: 0; } /* the rail is gone; the text takes the page back */
+  body { padding-right: 0 !important; } /* the drawer is gone; the text takes the page back */
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
