@@ -170,7 +170,6 @@
 
   function open(value) {
     root.setAttribute('data-facs', value)
-    save('facs', value)
     update()
   }
 
@@ -185,6 +184,7 @@
     var button = event.target.closest('[data-facs-toggle]')
     if (!button) return
     open(button.dataset.facsToggle)
+    save('facs-open', button.dataset.facsToggle)
     // The clicked button is hidden now; focus moves to its counterpart.
     panel.querySelector('[data-facs-toggle]:not([data-facs-toggle="' + button.dataset.facsToggle + '"])').focus()
   })
@@ -202,6 +202,6 @@
   })
 
   if (load('facs-w')) root.style.setProperty('--facs-w', load('facs-w') + 'px')
-  open(load('facs') || 'off')
+  open(load('facs-open') || 'on')
   window.addEventListener('resize', update)
 })()

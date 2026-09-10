@@ -12,7 +12,7 @@
  */
 
 import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
-import { dirname, join, resolve } from 'node:path'
+import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import * as pagefind from 'pagefind'
@@ -30,6 +30,10 @@ import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } fr
 type Processor = ReturnType<typeof createProcessor>
 
 const here = dirname(fileURLToPath(import.meta.url))
+/** The repository on GitHub, at the commit CI builds, else `main`. */
+const BLOB = process.env.GITHUB_SHA
+  ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/blob/${process.env.GITHUB_SHA}`
+  : 'https://github.com/DHBern/simler_data/blob/main'
 const ODD = resolve(here, '../schema/tei_simler.odd')
 
 interface Args {
@@ -217,7 +221,8 @@ async function main() {
     for (const warning of doc.warnings) console.warn(`  ${name}: ${warning}`)
   }
 
-  await writeFile(join(out, 'index.html'), indexPage(docs, 'webdav/data/sources/tei'))
+  const source = relative(resolve(here, '..'), src).replaceAll('\\', '/')
+  await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`))
   await writeFile(join(out, 'search.html'), searchPage(docs))
   await writeFile(join(out, 'findings.html'), findingsPage(docs))
   await buildIndex(docs, out)

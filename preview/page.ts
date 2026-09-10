@@ -101,10 +101,10 @@ function head(title: string): string {
   <link rel="stylesheet" href="assets/preview.css">`
 }
 
-/** The corpus pages, for the bar; the page we are on is left out. */
+/** The corpus pages, for the bar; the page we are on is marked. */
 const NAV = [['index.html', 'Übersicht'], ['search.html', 'Suche'], ['findings.html', 'Hinweise']]
-const nav = (here = ''): string => NAV.filter(([href]) => href !== here)
-  .map(([href, text]) => `<a class="bar-home" href="${href}">${text}</a>`).join('\n    ')
+const nav = (here = ''): string => NAV.map(([href, text]) =>
+  `<a class="bar-home" href="${href}"${href === here ? ' aria-current="page"' : ''}>${text}</a>`).join('\n    ')
 
 /**
  * The apparatus, as endnotes.
@@ -259,7 +259,7 @@ const NOTE_POPOVER = `<aside id="note-popover" class="popover-panel no-print" po
 
 export function documentPage(doc: PreviewDoc): string {
   const drawer = facsimile(doc)
-  const attrs = Object.entries({ ...DEFAULTS, ...(drawer && { facs: 'off' }) })
+  const attrs = Object.entries({ ...DEFAULTS, ...(drawer && { facs: 'on' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
   return `<!doctype html>
 <html lang="de" ${attrs}>
@@ -290,13 +290,16 @@ export function documentPage(doc: PreviewDoc): string {
 `
 }
 
-export function indexPage(docs: PreviewDoc[], source: string): string {
+/** `blob`: where GitHub shows the source files, or null. */
+export function indexPage(docs: PreviewDoc[], source: string, blob: string | null): string {
   const rows = docs.map((doc) => `<tr>
           <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
           <td class="num">${doc.pages.length || ''}</td>
           <td class="num">${doc.notes.length || ''}</td>
           <td class="num">${doc.warnings.length ? `<span class="flag">${doc.warnings.length}</span>` : ''}</td>
-          <td class="file">${esc(doc.file)}</td>
+          <td class="file">${blob
+            ? `<a href="${esc(blob)}/${encodeURIComponent(doc.file)}" target="_blank" rel="noreferrer">${esc(doc.file)}</a>`
+            : esc(doc.file)}</td>
         </tr>`).join('')
 
   return corpusPage('index.html', `Übersicht · ${docs.length} Dokumente`, `
