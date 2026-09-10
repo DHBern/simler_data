@@ -44,20 +44,22 @@ export const esc = (value: string): string => value.replace(/[&<>"']/g, (c) => E
  *
  * The values are exactly those the ODD's views key off — this table adds a
  * control surface, never a rendering rule. A new switch is one row here plus
- * one selector there.
+ * one selector there. Two values make a checkbox (off, on), more a slider;
+ * `auto` makes an icon button whose value, while unset, that media query decides.
  */
-const SWITCHES = [
+interface Switch { attr: string, label: string, values: string[], title?: string, auto?: string }
+const SWITCHES: Switch[] = [
   {
     attr: 'normalized',
     label: 'Normalisiert',
     title: 'Zeilenenden zusammenziehen, getrennte Wörter verbinden, corr/reg/expan statt sic/orig/abbr.',
-    options: [['on', 'an'], ['off', 'aus']],
+    values: ['off', 'on'],
   },
-  { attr: 'entities', label: 'Entitäten', options: [['on', 'an'], ['off', 'aus']] },
-  { attr: 'notes', label: 'Anmerkungen', options: [['quiet', 'an'], ['off', 'aus']] },
-  { attr: 'size', label: 'Schrift', options: [['s', 'S'], ['m', 'M'], ['l', 'L'], ['xl', 'XL']] },
-  { attr: 'mode', label: 'Modus', options: [['light', 'hell'], ['dark', 'dunkel']] },
-] as const
+  { attr: 'entities', label: 'Entitäten', values: ['off', 'on'] },
+  { attr: 'notes', label: 'Anmerkungen', values: ['off', 'quiet'] },
+  { attr: 'size', label: 'Schrift', values: ['s', 'm', 'l', 'xl'] },
+  { attr: 'mode', label: 'Dunkler Modus', values: ['light', 'dark'], auto: '(prefers-color-scheme: dark)' },
+]
 
 /**
  * Written onto `<html>`, so a preview is correct before any script runs.
@@ -73,17 +75,19 @@ const DEFAULTS: Record<string, string> = {
 }
 
 function switches(): string {
-  return SWITCHES.map((group) => {
-    const buttons = group.options
-      .map(([value, text]) => {
-        const pressed = DEFAULTS[group.attr] === value ? ' aria-pressed="true"' : ''
-        return `<button type="button" data-value="${value}"${pressed}>${esc(text)}</button>`
-      })
-      .join('')
-    const title = 'title' in group ? ` title="${esc(group.title)}"` : ''
-    return `<span class="ctrl" data-ctrl="${group.attr}"${title}>` +
-      `<span class="ui-label">${esc(group.label)}</span>` +
-      `<span class="segmented" data-switch="${group.attr}">${buttons}</span></span>`
+  return SWITCHES.map(({ attr, label, values, title, auto }) => {
+    const at = Math.max(0, values.indexOf(DEFAULTS[attr]))
+    const data = `data-switch="${attr}" data-values="${values.join(' ')}"`
+    const tip = title ? ` title="${esc(title)}"` : ''
+    if (auto) {
+      return `<button type="button" class="icon-btn" ${data} data-auto="${esc(auto)}" aria-pressed="false"
+        aria-label="${esc(label)}" title="${esc(label)}"></button>`
+    }
+    if (values.length > 2) {
+      return `<label class="ctrl"${tip}>${esc(label)}
+        <input type="range" min="0" max="${values.length - 1}" value="${at}" ${data}></label>`
+    }
+    return `<label class="ctrl"${tip}><input type="checkbox" ${data}${at ? ' checked' : ''}> ${esc(label)}</label>`
   }).join('')
 }
 
@@ -213,11 +217,11 @@ function facsimile(doc: PreviewDoc): string {
       aria-expanded="${to === 'off'}" aria-label="${label}" title="${label}"></button>`
 
   return `<aside id="facsimile" class="facsimile no-print" aria-label="Faksimile">
-    ${toggle('on', 'Faksimile einblenden', 'facs-toggle facs-open')}
+    ${toggle('on', 'Faksimile einblenden', 'icon-btn facs-toggle facs-open')}
     <div class="facs-resize" data-facs-resize role="separator" aria-orientation="vertical"
       aria-label="Breite des Faksimiles" tabindex="0"></div>
     <p class="facs-caption">
-      ${toggle('off', 'Faksimile ausblenden', 'facs-toggle')}
+      ${toggle('off', 'Faksimile ausblenden', 'icon-btn facs-toggle')}
       <span data-facs-label>Bild 1 von ${doc.pages.length}</span>
       ${lib ? `<a data-facs-link target="_blank" rel="noreferrer"
         href="${esc(lib)}/${encodeURIComponent(doc.pages[0])}">Digitalisat ↗</a>` : ''}
@@ -297,8 +301,7 @@ export function indexPage(docs: PreviewDoc[], source: string): string {
 
   return corpusPage('index.html', `Übersicht · ${docs.length} Dokumente`, `
     <p class="lead">
-      Automatisch aus <code>${esc(source)}</code> gerendert: die Textsektion, so wie sie die
-      Rendering-Pipeline der Präsentationsschicht sieht. Kein Ersatz für die Schema-Validierung.
+      Automatisch aus <code>${esc(source)}</code> gerendert.
     </p>
     <table>
       <thead>

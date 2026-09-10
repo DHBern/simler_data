@@ -70,33 +70,29 @@ main {
 }
 .btn:hover { background-color: rgb(var(--c-ui-ink) / 0.05); }
 
-/* One control, every option visible, the current one filled: a reader has to see
-   which view they are in without clicking anything. */
-.segmented {
-  display: inline-flex;
-  border: 1px solid rgb(var(--c-ui-line));
-  border-radius: var(--r-ui);
-  overflow: hidden;
-  background-color: rgb(var(--c-ui-surface));
-}
-.segmented > button {
-  font-family: var(--f-ui);
-  font-size: 0.75rem;
-  line-height: 1;
-  padding: 0.4rem 0.6rem;
+/* An icon as a button; `--icon` is its mask. */
+.icon-btn {
+  display: grid;
+  place-items: center;
+  flex: none;
+  width: 1.6rem;
+  height: 1.6rem;
+  padding: 0;
   border: 0;
+  border-radius: var(--r-ui);
   background: none;
-  color: rgb(var(--c-ui-ink));
-  white-space: nowrap;
+  color: rgb(var(--c-ui-muted));
   cursor: pointer;
 }
-.segmented > * + * { box-shadow: inset 1px 0 0 rgb(var(--c-ui-line)); }
-.segmented > button:hover { background-color: rgb(var(--c-ui-ink) / 0.06); }
-.segmented > [aria-pressed='true'] {
-  background-color: rgb(var(--c-ui-accent));
-  color: rgb(var(--c-ui-onaccent));
-  font-weight: 600;
+.icon-btn::before {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  background-color: currentColor;
+  -webkit-mask: var(--icon);
+  mask: var(--icon);
 }
+.icon-btn:hover { color: rgb(var(--c-ui-ink)); background-color: rgb(var(--c-ui-ink) / 0.07); }
 
 /* ── The bar ──────────────────────────────────────────────────────────────── */
 
@@ -127,8 +123,21 @@ main {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.bar-controls { display: flex; flex-wrap: wrap; gap: 0.4rem 0.9rem; }
-.ctrl { display: flex; align-items: center; gap: 0.4rem; }
+.bar-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 0.4rem 1rem; }
+.ctrl {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--f-ui);
+  font-size: 0.8125rem;
+  color: rgb(var(--c-ui-ink));
+  cursor: pointer;
+}
+.ctrl input { margin: 0; accent-color: rgb(var(--c-ui-accent)); cursor: pointer; }
+.ctrl [type='range'] { width: 4.5rem; }
+[data-switch='mode'] {
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cpath d='M8 1.75a6.25 6.25 0 0 1 0 12.5z'/%3E%3C/svg%3E");
+}
 
 /* ── The facsimile drawer ─────────────────────────────────────────────────── */
 /* Open with `data-facs='on'`, as wide as `--facs-w`, bounded so the text keeps room. */
@@ -137,7 +146,6 @@ main {
   --facs-w: min(42vw, 34rem);
   --facs: clamp(18rem, var(--facs-w), 100vw - 24rem);
   --facs-rail: 2rem;
-  --facs-icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 11 13 8l-2.5-3M6 8h7' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='2' y='2' width='2' height='12' rx='.5'/%3E%3C/svg%3E");
 }
 
 .facsimile { display: none; }
@@ -160,27 +168,9 @@ main {
 [data-facs='on'] .facs-open { display: none; }
 
 .facs-toggle {
-  display: grid;
-  place-items: center;
-  flex: none;
-  width: 1.6rem;
-  height: 1.6rem;
-  padding: 0;
-  border: 0;
-  border-radius: var(--r-ui);
-  background: none;
-  color: rgb(var(--c-ui-muted));
+  --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 11 13 8l-2.5-3M6 8h7' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='2' y='2' width='2' height='12' rx='.5'/%3E%3C/svg%3E");
   cursor: e-resize;
 }
-.facs-toggle::before {
-  content: '';
-  width: 1rem;
-  height: 1rem;
-  background-color: currentColor;
-  -webkit-mask: var(--facs-icon);
-  mask: var(--facs-icon);
-}
-.facs-toggle:hover { color: rgb(var(--c-ui-ink)); background-color: rgb(var(--c-ui-ink) / 0.07); }
 /* Closed, the whole rail opens it. */
 .facs-open { position: absolute; inset: 0; width: auto; height: auto; border-radius: 0; cursor: w-resize; }
 .facs-open::before { transform: scaleX(-1); }

@@ -50,6 +50,7 @@
 }
 
 [data-mode='dark'] {
+  color-scheme: dark;
   --c-paper: 26 25 23;
   --c-panel: 34 32 29;
   --c-ink: 236 231 221;
@@ -69,6 +70,7 @@
 /* Follow the OS until the reader says otherwise. */
 @media (prefers-color-scheme: dark) {
   :root:not([data-mode='light']) {
+    color-scheme: dark;
     --c-paper: 26 25 23;
     --c-panel: 34 32 29;
     --c-ink: 236 231 221;

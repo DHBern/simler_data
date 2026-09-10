@@ -11,8 +11,9 @@
   var root = document.documentElement
 
   // ── Reading switches ─────────────────────────────────────────────────────
-  // Each `[data-switch]` group drives one attribute on <html>; the stylesheet
-  // does the rest. The choice is kept across documents.
+  // Each `[data-switch]` control — checkbox, slider or button — picks one of its
+  // `data-values` for its attribute on <html>; the stylesheet does the rest.
+  // The choice is kept across documents.
 
   var store = {
     get: function (key) {
@@ -23,22 +24,33 @@
     },
   }
 
-  function apply(group, value) {
-    root.setAttribute('data-' + group.dataset.switch, value)
-    group.querySelectorAll('button').forEach(function (button) {
-      button.setAttribute('aria-pressed', String(button.dataset.value === value))
-    })
-  }
+  document.querySelectorAll('[data-switch]').forEach(function (control) {
+    var name = control.dataset.switch
+    var values = control.dataset.values.split(' ')
+    var type = control.type
 
-  document.querySelectorAll('[data-switch]').forEach(function (group) {
-    var saved = store.get(group.dataset.switch)
-    if (saved) apply(group, saved)
+    /** The index on <html>; unset, the media query in `data-auto` decides. */
+    function current() {
+      var i = values.indexOf(root.getAttribute('data-' + name))
+      return i >= 0 ? i : Number(!!control.dataset.auto && window.matchMedia(control.dataset.auto).matches)
+    }
 
-    group.addEventListener('click', function (event) {
-      var button = event.target.closest('button[data-value]')
-      if (!button) return
-      apply(group, button.dataset.value)
-      store.set(group.dataset.switch, button.dataset.value)
+    function set(i) {
+      root.setAttribute('data-' + name, values[i])
+      if (type === 'checkbox') control.checked = i > 0
+      else if (type === 'range') control.value = i
+      else control.setAttribute('aria-pressed', String(i > 0))
+    }
+
+    var saved = values.indexOf(store.get(name))
+    set(saved >= 0 ? saved : current())
+
+    control.addEventListener(type === 'button' ? 'click' : 'input', function () {
+      var i = type === 'checkbox' ? Number(control.checked)
+        : type === 'range' ? Number(control.value)
+        : (current() + 1) % values.length
+      set(i)
+      store.set(name, values[i])
     })
   })
 
