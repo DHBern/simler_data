@@ -1,0 +1,26 @@
+{
+  "name": "simler-preview",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "TEI → HTML previews of the Simler corpus",
+  "scripts": {
+    "build": "tsx build.ts",
+    "check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "openseadragon": "^6.1.0",
+    "rehype-stringify": "^10.0.1",
+    "unified": "^11.0.5",
+    "vfile": "^6.0.3",
+    "xast-util-from-xml": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/hast": "^3.0.4",
+    "@types/node": "^22.15.0",
+    "@types/xast": "^2.0.4",
+    "pagefind": "^1.5.2",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.3"
+  }
+}
