@@ -98,12 +98,14 @@ const BEHAVIOURS: Record<string, Behaviour> = {
     c.state.anchors.push(String(c.props.id))
     return h('span', c.props)
   },
-  /** A line break where the output already starts a line would be an empty line. */
+  /** A line break where the output already starts a line would be an empty line; a labelled one is its label, then the break. */
   break: (c) => {
-    if (str(c.params.type) === 'line' && c.atLineStart()) return null
+    const line = str(c.params.type) === 'line'
+    if (line && c.atLineStart()) return null
     if (!('label' in c.params)) return h('br', c.props)
     const label = str(c.params.label)
-    return h('span', c.props, label ? [text(label)] : [])
+    const span = h('span', c.props, label ? [text(label)] : [])
+    return line ? [span, h('br', { ...c.props, id: undefined })] : span
   },
   /**
    * Collected for the apparatus; in the text, a numbered marker when it goes to the end,
@@ -220,12 +222,16 @@ export function createRenderer(odd: Odd) {
       seq(v).flatMap((item) =>
         isPos(item) ? render(item.node, item.up, inside(tag), state, output) : String(item) ? [text(String(item))] : [],
       )
-    /** One model's rendering; after the first model of a sequence, without the element's id. */
-    const apply = (model: Model, again: boolean): ElementContent[] => {
+    /**
+     * The `k`th model of a sequence (or the model); a view's sequence overlays it part by part.
+     * After the first part rendered, without the element's id.
+     */
+    const apply = (model: Model, k: number, again: boolean): ElementContent[] => {
       const views: Record<string, Record<string, Value>> = {}
       const viewClasses: string[] = []
       for (const v of output ? [] : outputs[ln]) {
-        const m = select(models, pos, v)
+        const view = select(models, pos, v)
+        const m = view?.sequence?.[k] ?? view
         if (m?.behaviour === 'omit') viewClasses.push(`${v}-omit`)
         else if (m?.behaviour === model.behaviour) {
           viewClasses.push(...m.classes)
@@ -253,8 +259,10 @@ export function createRenderer(odd: Odd) {
       })
       return out == null ? [] : Array.isArray(out) ? out : [out]
     }
-    const parts = model.sequence?.filter((m) => !m.predicate || bool(m.predicate(pos))) ?? [model]
-    return parts.flatMap((m, k) => apply(m, k > 0))
+    let rendered = 0
+    return (model.sequence ?? [model]).flatMap((m, k) =>
+      model.sequence && m.predicate && !bool(m.predicate(pos)) ? [] : apply(m, k, rendered++ > 0),
+    )
   }
 
   return (tree: Nodes, state: RenderState, output?: string): ElementContent[] =>

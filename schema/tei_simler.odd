@@ -107,7 +107,8 @@
         rendered on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
         highlighting) are views over the base rendering that can be switched on and off: a view's
         model omits the element, restyles it, or gives the same behaviour other params — an
-        <val>alternate</val> shows the view's own default. The source appearance
+        <val>alternate</val> shows the view's own default; a view's <gi>modelSequence</gi> does so
+        model by model for the base sequence. The source appearance
         (<att>rendition</att>) is carried where the model sets <att>useSourceRendition</att>; a model
         that lays out the rendition itself does without. Colours, fonts and measures are the
         edition's design tokens (CSS custom properties).</p>
@@ -908,10 +909,23 @@
               </valList>
             </attDef>
           </attList>
-          <model behaviour="inline">
-            <outputRendition scope="before">content: '['; color: rgb(var(--c-muted));</outputRendition>
-            <outputRendition scope="after">content: ']'; color: rgb(var(--c-muted));</outputRendition>
-          </model>
+          <!-- The brackets are the edition's text, not the search's. -->
+          <modelSequence>
+            <model cssClass="supplied-bracket" behaviour="inline">
+              <param name="content" value="'['"/>
+              <outputRendition>color: rgb(var(--c-muted));</outputRendition>
+            </model>
+            <model behaviour="inline"/>
+            <model cssClass="supplied-bracket" behaviour="inline">
+              <param name="content" value="']'"/>
+              <outputRendition>color: rgb(var(--c-muted));</outputRendition>
+            </model>
+          </modelSequence>
+          <modelSequence output="plaintext">
+            <model behaviour="omit"/>
+            <model behaviour="inline"/>
+            <model behaviour="omit"/>
+          </modelSequence>
         </elementSpec>
 
         <elementSpec ident="unclear" module="core" mode="change">
@@ -1215,17 +1229,19 @@
               <datatype><dataRef key="teidata.pointer"/></datatype>
             </attDef>
           </attList>
-          <!-- a ruled marker across the column, `—— [16] ——`; inside a verse line or a heading it
-               stays in the line -->
+          <!-- a ruled marker across the column, `—— [16] ——`; inside a paragraph, a verse line or a
+               heading it stays in the line. `data-page` opens the page in the facsimile. -->
           <modelGrp>
             <outputRendition>display: flex; align-items: center; gap: 0.7em; margin: 1.4em 0; font-family: var(--f-ui); font-size: 0.68em; font-weight: 500; letter-spacing: 0.04em; color: rgb(var(--c-muted)); user-select: none; scroll-margin-top: 5rem;</outputRendition>
-            <model cssClass="pb-inline" predicate="ancestor::l or ancestor::head" behaviour="break">
+            <model cssClass="pb-inline" predicate="ancestor::p or ancestor::l or ancestor::head" behaviour="break">
               <param name="type" value="'page'"/>
+              <param name="data-page" value="@facs"/>
               <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition>display: inline; margin: 0 0.3em;</outputRendition>
             </model>
             <model cssClass="pb-rule" behaviour="break">
               <param name="type" value="'page'"/>
+              <param name="data-page" value="@facs"/>
               <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition scope="before">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
               <outputRendition scope="after">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
@@ -1297,23 +1313,32 @@
             </attDef>
           </attList>
           <!-- A line break is dropped where the output already starts a line (after a block). At a
-               hyphenated line end the print shows the break and the hyphen — the source's own,
-               where the transcription kept it, or a supplied one, in grey — while the reading text
-               joins the word, and runs prose lines on. -->
+               hyphenated line end the print shows the hyphen — the source's own, where the
+               transcription kept it, or a supplied one, in grey — and the break. The reading text
+               joins every line but the title page's, and keeps the space between the words; the
+               search text joins the hyphenated word and needs no space. -->
           <model cssClass="lb-hyphen" predicate="@break='no' and matches(preceding-sibling::node()[normalize-space()][1], '[-¬⸗&#xAD;&#x2010;&#x2011;]\s*$')" behaviour="break">
             <param name="type" value="'line'"/>
-            <param name="label" value="''"/>
-            <outputRendition scope="after">content: '-\A'; white-space: pre-wrap;</outputRendition>
+            <param name="label" value="'-'"/>
           </model>
           <model cssClass="lb-hyphen-supplied" predicate="@break='no'" behaviour="break">
             <param name="type" value="'line'"/>
-            <param name="label" value="''"/>
-            <outputRendition scope="after">content: '-\A'; white-space: pre-wrap; color: rgb(var(--c-muted));</outputRendition>
+            <param name="label" value="'-'"/>
+            <outputRendition>color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model behaviour="break">
+          <modelSequence>
+            <model behaviour="break">
+              <param name="type" value="'line'"/>
+            </model>
+            <model behaviour="text">
+              <param name="content" value="' '"/>
+            </model>
+          </modelSequence>
+          <model output="normalized" predicate="@break='no' or not(ancestor::titlePage)" behaviour="omit"/>
+          <model output="plaintext" predicate="@break='no'" behaviour="omit"/>
+          <model output="plaintext" behaviour="break">
             <param name="type" value="'line'"/>
           </model>
-          <model output="normalized" predicate="@break='no' or parent::p" behaviour="omit"/>
           <exemplum>
             <p>The line end of the last verse line follows the <emph>outermost</emph> closing element
               — here after <gi>div</gi>, as a sibling of it — not inside <gi>lg</gi> after the last

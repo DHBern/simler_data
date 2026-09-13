@@ -44,6 +44,12 @@ main {
   max-width: calc(var(--measure) + 2 * var(--pad));
 }
 .tei-text { margin-inline: auto; }
+/* The document's title, for the outline; the bar shows it too. */
+.doc-title {
+  margin: 0 0 1.5rem;
+  font: 500 0.95rem/1.35 var(--f-ui);
+  color: rgb(var(--c-ui-muted));
+}
 
 /* ── The control layer ────────────────────────────────────────────────────── */
 
@@ -287,6 +293,9 @@ main {
 .note-marker:is([aria-expanded='true'], .is-linked) { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
 .tei-rs[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 .tei-rs[data-key] { cursor: pointer; }
+/* A page break that opens its page in the facsimile. */
+[data-page][role='button'] { cursor: pointer; }
+[data-page][role='button']:hover { color: rgb(var(--c-ui-accent)); }
 
 .note-range {
   background-color: rgb(var(--c-accent) / 0.07);

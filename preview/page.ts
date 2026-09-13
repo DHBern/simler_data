@@ -276,6 +276,7 @@ export function documentPage(doc: PreviewDoc): string {
     ${HIT_BANNER}
   </div>
   <main id="main">
+    <h1 class="doc-title">${esc(doc.title)}</h1>
     ${doc.html}
     ${endnotes(doc.notes)}
   </main>

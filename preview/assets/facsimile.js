@@ -2,8 +2,9 @@
  * The facsimile drawer.
  *
  * Text and viewer follow each other: the page whose `<pb/>` last crossed the
- * reading line is the page in the viewer, and paging the viewer scrolls the text
- * to that `<pb/>`. Whether the drawer is open, and how wide, outlasts the page.
+ * reading line is the page in the viewer, and paging the viewer, or clicking a
+ * `<pb/>`, scrolls the text to that `<pb/>`. Whether the drawer is open, and how
+ * wide, outlasts the page.
  */
 ;(function () {
   'use strict'
@@ -24,7 +25,7 @@
   var link = panel.querySelector('[data-facs-link]')
   // The page breaks in the text, found by the image they name.
   var marks = pages.map(function (facs) {
-    return document.querySelector('.tei-pb[data-facs="' + CSS.escape(facs) + '"]')
+    return document.querySelector('[data-page="' + CSS.escape(facs) + '"]')
   })
 
   var base = function (facs) { return data.root + '/' + encodeURIComponent(facs) }
@@ -199,6 +200,28 @@
   handle.addEventListener('keydown', function (event) {
     var step = { ArrowLeft: 32, ArrowRight: -32 }[event.key]
     if (step) widen(panel.offsetWidth + step)
+  })
+
+  // A page break in the text opens the drawer at its page.
+  function turnTo(mark) {
+    open('on')
+    save('facs-open', 'on')
+    if (window.getComputedStyle(frame).display === 'none') return
+    window.scrollTo(0, window.scrollY + mark.getBoundingClientRect().top - window.innerHeight * 0.2)
+    driven = window.scrollY
+    show(marks.indexOf(mark))
+  }
+  marks.forEach(function (mark) {
+    if (!mark) return
+    mark.tabIndex = 0
+    mark.setAttribute('role', 'button')
+    mark.title = 'Seite im Faksimile zeigen'
+    mark.addEventListener('click', function () { turnTo(mark) })
+    mark.addEventListener('keydown', function (event) {
+      if (event.key !== 'Enter' && event.key !== ' ') return
+      event.preventDefault()
+      turnTo(mark)
+    })
   })
 
   if (load('facs-w')) root.style.setProperty('--facs-w', load('facs-w') + 'px')

@@ -43,7 +43,9 @@ python -m http.server -d dist 8080     # or: npx serve dist
 knows no TEI element by name. Each element takes the first `<model>` whose
 `@predicate` holds, and its `@behaviour` (`block`, `inline`, `heading`, `break`,
 `note`, `alternate`, …) decides the HTML; a `<modelSequence>` renders each of its
-models whose predicate holds, one after the other. `@rendition` styles the
+models whose predicate holds, one after the other (`supplied` as its brackets and
+its text). A `break` with a `label` is the label, then the break (the hyphen at a
+joined line end). `@rendition` styles the
 element only where its model has `@useSourceRendition="true"` (or inherits it
 from its `<modelGrp>`). Predicates see the text as encoded, even where the
 pipeline changed what renders (the hyphen at a joined line end). Params are
@@ -58,14 +60,18 @@ block for whitespace and line breaks follows from the model it takes where it
 stands. A note's `range` param names the element its commented range starts at;
 the range is resolved on the rendered page, across any element boundary. Range
 and marker share `data-note`: pointing at either lights up both, and clicking the
-range opens the note.
+range opens the note. A `data-page` param names the facsimile image of a page
+break: the drawer finds its pages by it, and clicking the break opens its page.
 
 Models with `@output` belong to that output and take precedence over the base
-models there. `plaintext` is rendered on its own and is what the search indexes.
-`normalized` and `entities` are the preview's switches: views over the one page,
-where a model may omit the element, restyle it, or give the same behaviour other
-params — an `alternate` (as for `choice`) renders every reading once and shows
-each view's own default. The `page` model of the root element says, in its
+models there. `plaintext` is rendered on its own and is what the search indexes;
+what it leaves out is not searched on the page either, where a hit may span
+`hi`, ranges and joined line ends. `normalized` (the reading text, which joins
+every line but the title page's) and `entities` are the preview's switches:
+views over the one page, where a model may omit the element, restyle it, or give
+the same behaviour other params — an `alternate` (as for `choice`) renders every
+reading once and shows each view's own default. A view's `<modelSequence>`
+overlays the page's sequence model by model. The `page` model of the root element says, in its
 params, what the page shows around the text: `title`, `manifest` (the IIIF
 manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 

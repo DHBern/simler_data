@@ -40,7 +40,7 @@ function queryWords(query) {
   return [...new Set(words)]
 }
 
-/** Where the words occur in one text node, in the node's own coordinates. */
+/** Where the words occur in one text, in its own coordinates. */
 function rangesIn(value, words) {
   const normalized = normalizeWithMap(value)
   const { text: haystack, map } = fold(normalized.text, normalized.map)
@@ -71,47 +71,73 @@ function rangesIn(value, words) {
   return merged
 }
 
-/** Replace one text node with the same text, the matches wrapped in `<mark>`. */
-function markNode(node, ranges) {
+/** Replace one text node with the same text, each piece wrapped in a `<mark>` of its hit. */
+function markNode(node, pieces) {
   const value = node.data
   const fragment = document.createDocumentFragment()
-  const marks = []
   let at = 0
-  for (const [start, end] of ranges) {
+  for (const [start, end, hit] of pieces) {
     if (start > at) fragment.append(value.slice(at, start))
     const mark = document.createElement('mark')
     mark.className = 'search-hit'
     mark.textContent = value.slice(start, end)
     fragment.append(mark)
-    marks.push(mark)
+    hit.push(mark)
     at = end
   }
   if (at < value.length) fragment.append(value.slice(at))
   node.replaceWith(fragment)
-  return marks
 }
 
-/** Mark every occurrence of `query` inside `root`, in document order. */
+/** An element that ends a word: anything but phrasing markup, or a block the renderer set as a span. */
+const BLOCK = ':not(span, a, mark), .pm-block'
+
+/**
+ * The visible text of `root` as runs a word can span: across `<hi>`, a range or a
+ * joined line end, but not across a block or a line break.
+ */
+function textRuns(root) {
+  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT | NodeFilter.SHOW_ELEMENT)
+  const runs = []
+  let run = null
+  for (let node = walker.nextNode(); node; node = walker.nextNode()) {
+    if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.tagName === 'BR' && node.checkVisibility() && !node.closest('.plaintext-omit')) run = null
+      continue
+    }
+    const parent = node.parentElement
+    // What the index leaves out (a page-break label, the brackets of a supplement) is not
+    // searched here either. Both readings of a `<choice>` are in the DOM; the view hides one.
+    if (parent.closest('.plaintext-omit') || !parent.checkVisibility()) continue
+    const block = parent.closest(BLOCK)
+    if (!run || run.block !== block) runs.push((run = { block, text: '', nodes: [] }))
+    run.nodes.push([node, run.text.length])
+    run.text += node.data
+  }
+  return runs
+}
+
+/** Mark every occurrence of `query` inside `root`; the hits in document order, each its marks. */
 function markQuery(root, query) {
   const words = queryWords(query)
   if (!words.length) return []
 
   // Collected first, because marking rewrites the tree the walker is walking.
-  const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT)
-  const nodes = []
-  for (let node = walker.nextNode(); node; node = walker.nextNode()) {
-    // A page-break label is chrome, not text — the index leaves it out too.
-    if (node.parentElement?.closest('.plaintext-omit')) continue
-    // Both readings of a `<choice>` are in the DOM and the view hides one of
-    // them; a hit in the hidden one must not be scrolled to.
-    const visible = node.parentElement?.checkVisibility?.() ?? true
-    if (node.data.trim() && visible) nodes.push(node)
+  const hits = []
+  const pieces = new Map()
+  for (const run of textRuns(root)) {
+    for (const [start, end] of rangesIn(run.text, words)) {
+      const hit = []
+      hits.push(hit)
+      for (const [node, offset] of run.nodes) {
+        const from = Math.max(start - offset, 0)
+        const to = Math.min(end - offset, node.data.length)
+        if (from < to) pieces.set(node, [...(pieces.get(node) ?? []), [from, to, hit]])
+      }
+    }
   }
-
-  return nodes.flatMap((node) => {
-    const ranges = rangesIn(node.data, words)
-    return ranges.length ? markNode(node, ranges) : []
-  })
+  for (const [node, list] of pieces) markNode(node, list)
+  return hits
 }
 
 /**
@@ -129,22 +155,22 @@ function setUpHighlight() {
   const label = banner.querySelector('[data-hits-text]')
   const nav = banner.querySelector('[data-hits-nav]')
   const clear = banner.querySelector('[data-hits-clear]')
-  const marks = markQuery(text, query)
+  const hits = markQuery(text, query)
   let at = 0
 
   function go(index) {
-    if (!marks.length) return
-    at = (index + marks.length) % marks.length
-    marks.forEach((mark, i) => mark.classList.toggle('is-current', i === at))
+    if (!hits.length) return
+    at = (index + hits.length) % hits.length
+    hits.forEach((hit, i) => hit.forEach((mark) => mark.classList.toggle('is-current', i === at)))
     label.textContent =
-      `Treffer ${at + 1} von ${marks.length} für „${query}“${label.dataset.keys ?? ''}`
+      `Treffer ${at + 1} von ${hits.length} für „${query}“${label.dataset.keys ?? ''}`
     const still = matchMedia('(prefers-reduced-motion: reduce)').matches
-    marks[at].scrollIntoView({ block: 'center', behavior: still ? 'auto' : 'smooth' })
+    hits[at][0].scrollIntoView({ block: 'center', behavior: still ? 'auto' : 'smooth' })
   }
 
-  if (marks.length) {
-    nav.hidden = marks.length < 2
-    if (marks.length > 1) label.dataset.keys = ' · n / N'
+  if (hits.length) {
+    nav.hidden = hits.length < 2
+    if (hits.length > 1) label.dataset.keys = ' · n / N'
     go(0)
   } else {
     // Not an error, and worth saying: the index stems, the page cannot. The hit
@@ -163,7 +189,7 @@ function setUpHighlight() {
   // The browser's own find keys, without the modifier: stepping through eight
   // hits should not mean returning to the bar for each one.
   document.addEventListener('keydown', (event) => {
-    if (banner.hidden || marks.length < 2 || event.metaKey || event.ctrlKey || event.altKey) return
+    if (banner.hidden || hits.length < 2 || event.metaKey || event.ctrlKey || event.altKey) return
     const active = document.activeElement
     if (active instanceof HTMLInputElement || active instanceof HTMLTextAreaElement) return
     if (event.key === 'n') go(at + 1)
