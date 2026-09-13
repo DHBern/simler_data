@@ -22,6 +22,10 @@ export interface Model {
   params: Record<string, XPath>
   /** Classes the rendered element carries for this model's CSS. */
   classes: string[]
+  /** Whether the element's `@rendition` styles it too. */
+  useSourceRendition: boolean
+  /** A `modelSequence`'s models: each whose predicate holds renders, one after the other. */
+  sequence?: Model[]
 }
 
 export interface Odd {
@@ -54,8 +58,10 @@ export function readOdd(xml: string): Odd {
   const odd: Odd = {
     models: {},
     flow: (node, up) => {
-      const behaviour = select(odd.models[localName(node.name)] ?? [], { node, up })?.behaviour ?? ''
-      return BLOCK.has(behaviour) ? 'block' : INLINE.has(behaviour) ? 'inline' : undefined
+      const m = select(odd.models[localName(node.name)] ?? [], { node, up })
+      // Within a sequence, `text` is literal content, not a container.
+      const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
+      return kinds.some((b) => BLOCK.has(b)) ? 'block' : kinds.every((b) => INLINE.has(b)) ? 'inline' : undefined
     },
     values: {},
     renditions: new Set(),
@@ -80,15 +86,14 @@ export function readOdd(xml: string): Odd {
     const view: string[] = []
 
     entries.forEach((entry, g) => {
-      const kind = localName(entry.name)
-      if (kind === 'modelSequence') throw new Error(`${ident}: modelSequence is not supported`)
-      const group = kind === 'modelGrp' ? entry : undefined
+      const group = localName(entry.name) === 'modelGrp' ? entry : undefined
       const sole = entries.length === 1
       const earlier = entries.slice(0, g).filter((e) => localName(e.name) === 'modelGrp').length
       const groupClass = group && !sole ? `${ident}-group${earlier ? earlier + 1 : ''}` : undefined
       if (group) css.push(...rules(group, sole ? `.tei-${ident}` : `.${groupClass}`))
 
-      for (const m of group ? elementChildren(group, 'model') : [entry]) {
+      /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
+      const read = (m: Element, outer?: Element): Model => {
         const where = `${ident}, model ${models.length + 1}`
         const compile = (expr: string) => {
           try {
@@ -97,25 +102,31 @@ export function readOdd(xml: string): Odd {
             throw new Error(`${where}: ${(error as Error).message}`)
           }
         }
+        const inherited = (name: string) => attr(m, name) ?? (outer && attr(outer, name)) ?? (group && attr(group, name))
         const predicate = attr(m, 'predicate')
-        const output = attr(m, 'output') ?? (group && attr(group, 'output'))
+        const output = inherited('output')
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
-        const bare = sole && !group && !predicate && !output
+        const bare = sole && !group && !outer && !predicate && !output
         const cls = styled && !bare ? own[0] ?? fail(`${where}: a styled model among others needs @cssClass`) : undefined
         if (styled) {
           const selector = bare ? `.tei-${ident}` : `.${cls}`
           ;(output ? view : css).push(...rules(m, output ? `[data-${output}='on'] ${selector}` : selector))
         }
         if (output) views.add(output)
-        models.push({
-          behaviour: attr(m, 'behaviour') ?? fail(`${where}: no @behaviour`),
+        const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
+        return {
+          behaviour: sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: no @behaviour`),
           predicate: predicate ? compile(predicate) : undefined,
           output: output || undefined,
           params: Object.fromEntries(elementChildren(m, 'param').map((p) => [attr(p, 'name')!, compile(attr(p, 'value') ?? "''")])),
           classes: [...new Set([...(groupClass ? [groupClass] : []), ...own, ...(cls ? [cls] : [])])],
-        })
+          useSourceRendition: inherited('useSourceRendition') === 'true',
+          sequence,
+        }
       }
+      const members = group ? elementChildren(group).filter((e) => /^model(Sequence)?$/.test(localName(e.name))) : [entry]
+      for (const m of members) models.push(read(m))
     })
     css.push(...view)
 

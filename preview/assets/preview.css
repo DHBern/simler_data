@@ -284,16 +284,19 @@ main {
 
 .note-marker:hover { text-decoration: underline; }
 /* The marker, or the reference, whose panel is open. */
-.note-marker[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
+.note-marker:is([aria-expanded='true'], .is-linked) { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
 .tei-rs[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 .tei-rs[data-key] { cursor: pointer; }
 
 .note-range {
   background-color: rgb(var(--c-accent) / 0.07);
   box-shadow: 0 1px 0 rgb(var(--c-accent) / 0.35);
+  cursor: pointer;
 }
+/* A commented range and its marker, while either is pointed at or the note is open. */
+.note-range.is-linked { background-color: rgb(var(--c-accent) / 0.2); }
 [data-notes='off'] :is(.note-marker, .endnotes, .overview) { display: none; }
-[data-notes='off'] .note-range { background-color: transparent; box-shadow: none; }
+[data-notes='off'] .note-range { background-color: transparent; box-shadow: none; cursor: auto; }
 
 /* `?q=`: the words the search matched, and the one the reader is on. */
 .tei-text mark.search-hit {

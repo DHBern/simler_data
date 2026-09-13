@@ -42,8 +42,13 @@ python -m http.server -d dist 8080     # or: npx serve dist
 `schema/tei_simler.odd` is the only source of truth for the rendering; the code
 knows no TEI element by name. Each element takes the first `<model>` whose
 `@predicate` holds, and its `@behaviour` (`block`, `inline`, `heading`, `break`,
-`note`, `alternate`, …) decides the HTML. Params are XPath: the nodes they select
-are rendered by their own models, anything else is text, so
+`note`, `alternate`, …) decides the HTML; a `<modelSequence>` renders each of its
+models whose predicate holds, one after the other. `@rendition` styles the
+element only where its model has `@useSourceRendition="true"` (or inherits it
+from its `<modelGrp>`). Predicates see the text as encoded, even where the
+pipeline changed what renders (the hyphen at a joined line end). Params are
+XPath: the nodes they select are rendered by their own models, anything else is
+text, so
 `<param name="content" value="corr"/>` renders the correction. Params named
 `--…` become CSS custom properties of the rendered element, `data-…` its
 attributes. `<outputRendition>` and `<tagsDecl>` compile to
@@ -51,7 +56,9 @@ attributes. `<outputRendition>` and `<tagsDecl>` compile to
 styled model among several must name its class with `@cssClass`. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
 stands. A note's `range` param names the element its commented range starts at;
-the range is resolved on the rendered page, across any element boundary.
+the range is resolved on the rendered page, across any element boundary. Range
+and marker share `data-note`: pointing at either lights up both, and clicking the
+range opens the note.
 
 Models with `@output` belong to that output and take precedence over the base
 models there. `plaintext` is rendered on its own and is what the search indexes.

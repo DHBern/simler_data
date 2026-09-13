@@ -95,8 +95,10 @@
         <gi>l</gi>.</p>
 
       <p>The Processing Model renders the edition. Each element takes the first <gi>model</gi> whose
-        <att>predicate</att> holds; a <gi>modelGrp</gi>'s <gi>outputRendition</gi> styles all of its
-        models; a styled model among several names its class with <att>cssClass</att>. Params are
+        <att>predicate</att> holds; a <gi>modelSequence</gi> renders each of its models whose
+        predicate holds, one after the other. A <gi>modelGrp</gi>'s <gi>outputRendition</gi> styles
+        all of its models; a styled model among several names its class with <att>cssClass</att>.
+        Predicates see the text as encoded. Params are
         XPath: the nodes they select are rendered by their own models, anything else as text;
         params named <val>--…</val> become CSS custom properties of the rendered element,
         <val>data-…</val> its attributes. Models with an <att>output</att> belong to that output
@@ -105,9 +107,10 @@
         rendered on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
         highlighting) are views over the base rendering that can be switched on and off: a view's
         model omits the element, restyles it, or gives the same behaviour other params — an
-        <val>alternate</val> shows the view's own default. Source appearance is carried wherever
-        <att>rendition</att> occurs. Colours, fonts and measures are the edition's design tokens
-        (CSS custom properties).</p>
+        <val>alternate</val> shows the view's own default. The source appearance
+        (<att>rendition</att>) is carried where the model sets <att>useSourceRendition</att>; a model
+        that lays out the rendition itself does without. Colours, fonts and measures are the
+        edition's design tokens (CSS custom properties).</p>
 
       <schemaSpec ident="tei_simler" start="TEI" prefix="tei_" targetLang="de" docLang="en">
 
@@ -553,13 +556,13 @@
               </valList>
             </attDef>
           </attList>
-          <model behaviour="block">
+          <model behaviour="block" useSourceRendition="true">
             <outputRendition>margin: 0.4em 0;</outputRendition>
           </model>
         </elementSpec>
         <elementSpec ident="docAuthor" module="textstructure" mode="change">
           <content><macroRef key="macro.simlerInline"/></content>
-          <model behaviour="block"/>
+          <model behaviour="block" useSourceRendition="true"/>
         </elementSpec>
         <elementSpec ident="docImprint" module="textstructure" mode="change">
           <content>
@@ -568,10 +571,10 @@
               <elementRef key="publisher"/><elementRef key="docDate"/><elementRef key="lb"/>
             </alternate>
           </content>
-          <model behaviour="block"/>
+          <model behaviour="block" useSourceRendition="true"/>
         </elementSpec>
         <elementSpec ident="docEdition" module="textstructure" mode="change">
-          <model behaviour="block"/>
+          <model behaviour="block" useSourceRendition="true"/>
         </elementSpec>
         <elementSpec ident="docDate" module="textstructure" mode="change">
           <content><macroRef key="macro.simlerInline"/></content>
@@ -607,10 +610,10 @@
             </attDef>
             <attDef ident="n" mode="change" usage="opt"/>
           </attList>
-          <model cssClass="lg-inner" predicate="ancestor::lg" behaviour="block">
+          <model cssClass="lg-inner" predicate="ancestor::lg" behaviour="block" useSourceRendition="true">
             <outputRendition>margin: 0.9em 0;</outputRendition>
           </model>
-          <model cssClass="lg-outer" behaviour="block">
+          <model cssClass="lg-outer" behaviour="block" useSourceRendition="true">
             <outputRendition>margin: 1.3em 0;</outputRendition>
           </model>
           <exemplum>
@@ -641,16 +644,16 @@
           </attList>
           <!-- A verse line hangs: an overlong line wraps indented, and @rendition indents are counted
                from the hanging edge. On a two-column page the grid cell is the line box. -->
-          <modelGrp>
+          <modelGrp useSourceRendition="true">
             <outputRendition>margin: 0; line-height: var(--lh-text); padding-left: 1.6em; text-indent: -1.6em;</outputRendition>
             <!-- On a two-column page the lines alternate between the columns. An acrostic line starts
                  behind its marginal letter, and so does an indented line in a column that has them;
-                 a closing letter keeps the line's end clear. -->
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')]" behaviour="block" cssClass="l-twocol">
+                 a closing letter keeps the line's end clear. The model lays out @rendition itself. -->
+            <model predicate="parent::lg[contains-token(@rendition, '#twocol')]" behaviour="block" cssClass="l-twocol" useSourceRendition="false">
               <param name="--acro" value="if (contains-token(@rendition, '#acrostic') or (contains-token(@rendition, '#et') or contains-token(@rendition, '#et2')) and (preceding-sibling::l[position() mod 2 = 0], following-sibling::l[position() mod 2 = 0])[contains-token(@rendition, '#acrostic')]) then 1 else 0"/>
               <param name="--fin" value="if (descendant::*[contains-token(@rendition, '#acroFin')]) then 1 else 0"/>
               <param name="--indent" value="if (contains-token(@rendition, '#et2')) then 2 else if (contains-token(@rendition, '#et')) then 1 else 0"/>
-              <outputRendition>min-width: 0; text-indent: 0; padding-left: calc(var(--acro) * var(--acro-body) + var(--indent) * var(--indent-step)); padding-right: calc(var(--fin) * (var(--acro-fin) + 0.1em));</outputRendition>
+              <outputRendition>min-width: 0; position: relative; text-indent: 0; padding-left: calc(var(--acro) * var(--acro-body) + var(--indent) * var(--indent-step)); padding-right: calc(var(--fin) * (var(--acro-fin) + 0.1em));</outputRendition>
             </model>
             <model predicate="contains-token(@rendition, '#et')" behaviour="block" cssClass="l-et">
               <outputRendition>text-indent: 0.4em;</outputRendition>
@@ -697,13 +700,13 @@
           </attList>
           <!-- An initial drops only at the head of running prose: not in verse, not nested, not
                among several initials (an author line "J(ohann) W(ilhelm) S(imler)"), not centred. -->
-          <model cssClass="hi-initial-inline" predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline">
+          <model cssClass="hi-initial-inline" predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline" useSourceRendition="true">
             <outputRendition>float: none; font-size: 1.15em; line-height: inherit;</outputRendition>
           </model>
           <!-- Fallback for an indent left on a hi: on a line of its own within a block, the hi is
                that line, since a span cannot be indented. -->
-          <model predicate="(contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block"/>
-          <model behaviour="inline"/>
+          <model predicate="(contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block" useSourceRendition="true"/>
+          <model behaviour="inline" useSourceRendition="true"/>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <head rendition="#c"><hi rendition="#b">Aller<lb/> Psalmen Davids Haubt<lb break="no"/>begriff/</hi></head>
@@ -726,7 +729,7 @@
           </attList>
           <!-- Only a division's head is a document heading, one level below its division; in an
                lg it is a stanza number, in a list or figure a caption. -->
-          <modelGrp>
+          <modelGrp useSourceRendition="true">
             <outputRendition>font-family: var(--f-display); font-weight: 600; text-wrap: balance;</outputRendition>
             <model cssClass="head-first" predicate="parent::div and not(preceding-sibling::*[not(self::lb)])" behaviour="heading">
               <param name="level" value="count(ancestor::div) + 1"/>
@@ -786,7 +789,7 @@
               <elementRef key="pb"/>
             </alternate>
           </content>
-          <model behaviour="paragraph">
+          <model behaviour="paragraph" useSourceRendition="true">
             <outputRendition>margin: 0.9em 0;</outputRendition>
           </model>
           <exemplum>
@@ -970,25 +973,25 @@
               </valList>
             </attDef>
           </attList>
-          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline">
+          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline" useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model cssClass="note-speaker" predicate="@type='speaker'" behaviour="inline">
+          <model cssClass="note-speaker" predicate="@type='speaker'" behaviour="inline" useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model cssClass="note-marginalia" predicate="@type='marginalia'" behaviour="block">
+          <model cssClass="note-marginalia" predicate="@type='marginalia'" behaviour="block" useSourceRendition="true">
             <outputRendition>max-width: 15em; margin: 0.3em 0 0.5em; padding-left: 0.6em; border-left: 2px solid rgb(var(--c-line)); font-size: 0.85em; line-height: 1.35; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model predicate="@type='remarkResponsibility'" behaviour="omit"/>
           <!-- a range comment: a numbered marker in the text, the note in the apparatus; the range
                runs from the anchor @targetEnd names to the marker -->
-          <model cssClass="note-anchored" predicate="@targetEnd" behaviour="note">
+          <model cssClass="note-anchored" predicate="@targetEnd" behaviour="note" useSourceRendition="true">
             <param name="place" value="'end'"/>
             <param name="range" value="@targetEnd"/>
             <outputRendition>font-family: var(--f-ui); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; padding: 0 0.12em; color: rgb(var(--c-accent)); text-decoration: none; scroll-margin-top: 6rem;</outputRendition>
           </model>
           <!-- a comment on the whole division: no marker, shown above the text -->
-          <model behaviour="note">
+          <model behaviour="note" useSourceRendition="true">
             <param name="place" value="'overview'"/>
           </model>
           <model output="plaintext" predicate="@targetEnd" behaviour="omit"/>
@@ -1067,23 +1070,23 @@
               <elementRef key="lb"/>
             </alternate>
           </content>
-          <model behaviour="block">
+          <model behaviour="block" useSourceRendition="true">
             <outputRendition>margin-top: 1.6em;</outputRendition>
           </model>
         </elementSpec>
         <elementSpec ident="salute" module="textstructure" mode="change">
           <content><macroRef key="macro.simlerInline"/></content>
-          <model behaviour="paragraph"/>
+          <model behaviour="paragraph" useSourceRendition="true"/>
         </elementSpec>
         <elementSpec ident="dateline" module="textstructure" mode="change">
           <content><macroRef key="macro.simlerInline"/></content>
-          <model behaviour="paragraph">
+          <model behaviour="paragraph" useSourceRendition="true">
             <outputRendition>margin: 0.3em 0;</outputRendition>
           </model>
         </elementSpec>
         <elementSpec ident="signed" module="textstructure" mode="change">
           <content><macroRef key="macro.simlerInline"/></content>
-          <model behaviour="paragraph">
+          <model behaviour="paragraph" useSourceRendition="true">
             <outputRendition>margin: 0.3em 0;</outputRendition>
           </model>
         </elementSpec>
@@ -1103,7 +1106,7 @@
               </valList>
             </attDef>
           </attList>
-          <model behaviour="inline">
+          <model behaviour="inline" useSourceRendition="true">
             <outputRendition>margin: 1.6em auto;</outputRendition>
           </model>
           <exemplum>
@@ -1180,7 +1183,7 @@
             </attDef>
           </attList>
           <!-- set where the print sets it, and kept out of the search index -->
-          <modelGrp>
+          <modelGrp useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.7em; letter-spacing: 0.04em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
             <model cssClass="fw-header" predicate="@type='header'" behaviour="block">
               <outputRendition>text-align: center;</outputRendition>
@@ -1294,10 +1297,10 @@
             </attDef>
           </attList>
           <!-- A line break is dropped where the output already starts a line (after a block). At a
-               hyphenated line end the print shows the break and the hyphen — the source's own
-               (@data-hyphen, set where the transcription kept it) or a supplied one, in grey —
-               while the reading text joins the word, and runs prose lines on. -->
-          <model cssClass="lb-hyphen" predicate="@break='no' and @data-hyphen" behaviour="break">
+               hyphenated line end the print shows the break and the hyphen — the source's own,
+               where the transcription kept it, or a supplied one, in grey — while the reading text
+               joins the word, and runs prose lines on. -->
+          <model cssClass="lb-hyphen" predicate="@break='no' and matches(preceding-sibling::node()[normalize-space()][1], '[-¬⸗&#xAD;&#x2010;&#x2011;]\s*$')" behaviour="break">
             <param name="type" value="'line'"/>
             <param name="label" value="''"/>
             <outputRendition scope="after">content: '-\A'; white-space: pre-wrap;</outputRendition>

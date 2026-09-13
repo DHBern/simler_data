@@ -3,7 +3,8 @@
  *
  * Top-down: each element takes the first model of the output being rendered
  * whose predicate holds, else the first such base model, and renders by its
- * behaviour, which decides what of its content to render. Rendering the page,
+ * behaviour, which decides what of its content to render; a sequence renders
+ * each of its models whose predicate holds. Rendering the page,
  * the models of views only add classes, an `omit`, or other params for the same
  * behaviour; the view's CSS keys on them.
  */
@@ -11,7 +12,7 @@
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
 import { select, type Model, type Odd } from '../odd/odd'
-import { isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
+import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
 
 export type { ElementContent }
@@ -164,7 +165,9 @@ const renditions = (node: Element) => (attr(node, 'rendition') ?? '').split(/\s+
 
 export function createRenderer(odd: Odd) {
   for (const [ident, models] of Object.entries(odd.models)) {
-    for (const m of models) if (!BEHAVIOURS[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
+    for (const m of models.flatMap((m) => m.sequence ?? [m])) {
+      if (!BEHAVIOURS[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
+    }
   }
   const outputs = Object.fromEntries(
     Object.entries(odd.models).map(([ident, ms]) => [ident, [...new Set(ms.flatMap((m) => (m.output ? [m.output] : [])))]]),
@@ -213,38 +216,45 @@ export function createRenderer(odd: Odd) {
     check(node, ln, state)
 
     const evaluate = (m: Model) => Object.fromEntries(Object.entries(m.params).map(([k, f]) => [k, f(pos)]))
-    const views: Record<string, Record<string, Value>> = {}
-    const viewClasses: string[] = []
-    for (const v of output ? [] : outputs[ln]) {
-      const m = select(models, pos, v)
-      if (m?.behaviour === 'omit') viewClasses.push(`${v}-omit`)
-      else if (m?.behaviour === model.behaviour) {
-        viewClasses.push(...m.classes)
-        views[v] = evaluate(m)
-      }
-    }
-    const params = evaluate(model)
-    const props = {
-      className: [`tei-${ln}`, ...model.classes, ...viewClasses, ...renditions(node).map((r) => `r-${r}`)],
-      ...attrMap(node),
-      ...paramProps(params),
-    }
     const value = (v: Value, tag?: string) =>
       seq(v).flatMap((item) =>
         isPos(item) ? render(item.node, item.up, inside(tag), state, output) : String(item) ? [text(String(item))] : [],
       )
-    const out = BEHAVIOURS[model.behaviour]({
-      pos,
-      props,
-      params,
-      views: output ? null : views,
-      phrasing,
-      content: (tag) => ('content' in params ? value(params.content, tag) : kids(tag)),
-      value,
-      state,
-      atLineStart: () => atLineStart(pos),
-    })
-    return out == null ? [] : Array.isArray(out) ? out : [out]
+    /** One model's rendering; after the first model of a sequence, without the element's id. */
+    const apply = (model: Model, again: boolean): ElementContent[] => {
+      const views: Record<string, Record<string, Value>> = {}
+      const viewClasses: string[] = []
+      for (const v of output ? [] : outputs[ln]) {
+        const m = select(models, pos, v)
+        if (m?.behaviour === 'omit') viewClasses.push(`${v}-omit`)
+        else if (m?.behaviour === model.behaviour) {
+          viewClasses.push(...m.classes)
+          views[v] = evaluate(m)
+        }
+      }
+      const params = evaluate(model)
+      const source = model.useSourceRendition ? renditions(node).map((r) => `r-${r}`) : []
+      const props = {
+        className: [`tei-${ln}`, ...model.classes, ...viewClasses, ...source],
+        ...attrMap(node),
+        ...(again && { id: undefined }),
+        ...paramProps(params),
+      }
+      const out = BEHAVIOURS[model.behaviour]({
+        pos,
+        props,
+        params,
+        views: output ? null : views,
+        phrasing,
+        content: (tag) => ('content' in params ? value(params.content, tag) : kids(tag)),
+        value,
+        state,
+        atLineStart: () => atLineStart(pos),
+      })
+      return out == null ? [] : Array.isArray(out) ? out : [out]
+    }
+    const parts = model.sequence?.filter((m) => !m.predicate || bool(m.predicate(pos))) ?? [model]
+    return parts.flatMap((m, k) => apply(m, k > 0))
   }
 
   return (tree: Nodes, state: RenderState, output?: string): ElementContent[] =>

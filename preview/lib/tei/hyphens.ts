@@ -4,8 +4,9 @@
  * `@break="no"` says the word continues across the line end. The reading text joins the
  * word, so an encoded hyphen must go; the diplomatic view restores the break and
  * needs exactly one hyphen, never none, never two. CSS can neither hide nor
- * supply a hyphen inside a text node, so it is removed here and the `<lb/>`
- * records that the print had one.
+ * supply a hyphen inside a text node, so it is removed from what renders; the
+ * ODD's predicates still see the text as encoded, and the `<lb/>`'s model sets
+ * the print's hyphen.
  *
  * **The hyphen need not touch the break.**
  *
@@ -88,10 +89,8 @@ export const lineEndHyphens: Plugin<[Odd['flow']], Root, Root> = function (flow)
             unmarked++ // an editorial finding, not something to guess at
             continue
           }
+          end.text.data = { ...end.text.data, source: end.text.value }
           end.text.value = end.text.value.replace(HYPHEN, '')
-          // Not an editorial addition, then: the stylesheet sets the hyphen in ink
-          // rather than in the muted colour it uses for one it supplies itself.
-          child.attributes = { ...child.attributes, 'data-hyphen': 'source' }
         }
         if (!joined) continue
 

@@ -4,6 +4,13 @@ import type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text }
 
 export type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text }
 
+declare module 'xast' {
+  interface TextData {
+    /** The text as encoded, where a transform changed what renders. */
+    source?: string
+  }
+}
+
 /** Strip a namespace prefix: `tei:head` → `head`. */
 export function localName(qname: string | null | undefined): string {
   if (!qname) return ''
@@ -55,10 +62,10 @@ export function findFirst(node: unknown, name: string): Element | undefined {
   return undefined
 }
 
-/** Flattened text content of a subtree. */
+/** Flattened text content of a subtree, as encoded. */
 export function textOf(node: unknown): string {
   if (!node) return ''
-  if (isText(node)) return node.value ?? ''
+  if (isText(node)) return node.data?.source ?? node.value ?? ''
   return children(node).map(textOf).join('')
 }
 
