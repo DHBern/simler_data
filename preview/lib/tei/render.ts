@@ -5,13 +5,13 @@
  *       .use(xastParse)       string → xast     (xast-util-from-xml)
  *       .use(wsTrim)          xast   → xast     TEI indentation is not text
  *       .use(lineEndHyphens)  xast   → xast     the hyphen at a joined line end
- *       .use(noteRanges)      xast   → xast     <anchor>…<note @targetEnd> → <noteRange>
  *       .use(teiToHast)       xast   → hast     the ODD's Processing Model; its
- *                                              `plaintext` output is the search text
+ *                                              `plaintext` output is the search text;
+ *                                              commented ranges resolved on the result
  *       .use(rehypeStringify) hast   → string
  *
- * Everything element-specific — which elements are blocks, how each renders —
- * comes from the ODD. What a render collects lives on the VFile.
+ * Everything element-specific — which elements are blocks where they stand, how
+ * each renders — comes from the ODD. What a render collects lives on the VFile.
  */
 
 import type { Root as HastRoot } from 'hast'
@@ -23,8 +23,8 @@ import { fromXml } from 'xast-util-from-xml'
 import type { Odd } from '../odd/odd'
 import { hastToSearchText } from '../search/text'
 import { lineEndHyphens } from './hyphens'
-import { noteRanges } from './noteRanges'
 import { wsTrim } from './plugins'
+import { resolveRanges } from './ranges'
 import { createRenderer, type CollectedNote, type RenderState } from './teiToHast'
 import type { Root as XastRoot } from './xast'
 
@@ -56,9 +56,15 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
   const render = createRenderer(odd)
   return (tree, file) => {
     // Notes and findings are the page's; this rendering's go nowhere.
-    const scratch: RenderState = { notes: [], warnings: [], unmapped: new Set() }
+    const scratch: RenderState = { notes: [], warnings: [], unmapped: new Set(), anchors: [] }
     file.data.text = hastToSearchText({ type: 'root', children: render(tree, scratch, PLAINTEXT) })
-    return { type: 'root', children: render(tree, file.data.teiState as RenderState) }
+
+    const state = file.data.teiState as RenderState
+    const root: HastRoot = { type: 'root', children: render(tree, state) }
+    // A range lies in the text, or within one note's body.
+    const bodies = state.notes.map((n): HastRoot => ({ type: 'root', children: n.body }))
+    state.warnings.push(...resolveRanges([root, ...bodies], state.anchors, `${PLAINTEXT}-omit`))
+    return root
   }
 }
 
@@ -66,9 +72,8 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
 export function createProcessor(odd: Odd) {
   return unified()
     .use(xastParse)
-    .use(wsTrim, { inline: odd.inlines, block: odd.blocks })
-    .use(lineEndHyphens, odd.blocks)
-    .use(noteRanges)
+    .use(wsTrim, odd.flow)
+    .use(lineEndHyphens, odd.flow)
     .use(teiToHast, odd)
     .use(rehypeStringify)
     .freeze()
@@ -76,7 +81,7 @@ export function createProcessor(odd: Odd) {
 
 export function renderTei(xml: string, processor: ReturnType<typeof createProcessor>): RenderResult {
   const file = new VFile({ value: xml })
-  const state: RenderState = { notes: [], warnings: [], unmapped: new Set() }
+  const state: RenderState = { notes: [], warnings: [], unmapped: new Set(), anchors: [] }
   file.data.teiState = state
   const hast = processor.runSync(processor.parse(file) as XastRoot, file) as HastRoot
   return {

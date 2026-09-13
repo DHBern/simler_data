@@ -10,9 +10,8 @@
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
-import { BLOCK, type Model, type Odd } from '../odd/odd'
-import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
-import { NOTE_RANGE } from './noteRanges'
+import { select, type Model, type Odd } from '../odd/odd'
+import { isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
 
 export type { ElementContent }
@@ -31,6 +30,8 @@ export interface RenderState {
   warnings: string[]
   /** Elements without a model, rendered as plain spans. */
   unmapped: Set<string>
+  /** The ids of the anchors rendered, for the ranges that start at them. */
+  anchors: string[]
 }
 
 interface Ctx {
@@ -91,7 +92,11 @@ const BEHAVIOURS: Record<string, Behaviour> = {
       className: ['pm-alt', ...outputs.map(([o, p]) => `${o}-${items(p.default).some((d) => same(d, r)) ? 'default' : 'alternate'}`)],
     }, c.value([r], 'span'))))
   },
-  anchor: (c) => (c.props.id ? h('span', c.props) : null),
+  anchor: (c) => {
+    if (!c.props.id) return null
+    c.state.anchors.push(String(c.props.id))
+    return h('span', c.props)
+  },
   /** A line break where the output already starts a line would be an empty line. */
   break: (c) => {
     if (str(c.params.type) === 'line' && c.atLineStart()) return null
@@ -99,21 +104,31 @@ const BEHAVIOURS: Record<string, Behaviour> = {
     const label = str(c.params.label)
     return h('span', c.props, label ? [text(label)] : [])
   },
-  /** Collected for the apparatus; in the text, a numbered marker when it goes to the end. */
+  /**
+   * Collected for the apparatus; in the text, a numbered marker when it goes to the end,
+   * which closes the range its `range` param names. Collected before its body is
+   * rendered, so that a note inside comes after it.
+   */
   note: (c) => {
-    const place = 'place' in c.params ? str(c.params.place) : 'end'
-    const body = c.content('div')
-    if (place !== 'end') {
-      c.state.notes.push({ place, body })
-      return null
+    const note: CollectedNote = { place: 'place' in c.params ? str(c.params.place) : 'end', body: [] }
+    c.state.notes.push(note)
+    if (note.place === 'end') {
+      note.number = c.state.notes.filter((n) => n.place === 'end').length
+      note.id = `note-${note.number}` // not `n<number>`: the corpus uses those as xml:id
     }
-    const number = c.state.notes.filter((n) => n.place === 'end').length + 1
-    const id = `note-${number}` // not `n<number>`: the corpus uses those as xml:id
-    c.state.notes.push({ place, id, number, body })
+    note.body = c.content('div')
+    if (note.place !== 'end') return null
     return h(
       'a',
-      { className: ['note-marker', ...classes(c.props)], id: `ref-${id}`, href: `#${id}`, role: 'doc-noteref', 'data-note': id },
-      [text(String(number))],
+      {
+        className: ['note-marker', ...classes(c.props)],
+        id: `ref-${note.id}`,
+        href: `#${note.id}`,
+        role: 'doc-noteref',
+        'data-note': note.id,
+        ...('range' in c.params && { 'data-range': str(c.params.range).replace(/^#/, '') }),
+      },
+      [text(String(note.number))],
     )
   },
 }
@@ -147,9 +162,6 @@ export function createRenderer(odd: Odd) {
   const outputs = Object.fromEntries(
     Object.entries(odd.models).map(([ident, ms]) => [ident, [...new Set(ms.flatMap((m) => (m.output ? [m.output] : [])))]]),
   )
-  const select = (models: Model[], pos: Pos, output?: string) =>
-    models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
-
   /** Nothing but whitespace, or an element its model sets as a block, before this element in its parent. */
   function atLineStart({ node, up }: Pos): boolean {
     const siblings = children(up.at(-1))
@@ -157,7 +169,7 @@ export function createRenderer(odd: Odd) {
       const s = siblings[i]
       if (isText(s)) {
         if (s.value?.trim()) return false
-      } else if (isElement(s)) return BLOCK.has(select(odd.models[localName(s.name)] ?? [], { node: s, up })?.behaviour ?? '')
+      } else if (isElement(s)) return odd.flow(s, up) === 'block'
     }
     return true
   }
@@ -183,7 +195,6 @@ export function createRenderer(odd: Odd) {
     const inside = (tag?: string) => (tag ? PHRASING.has(tag) : phrasing)
     const kids = (tag?: string) =>
       children(node).flatMap((child) => render(child as Nodes, [...up, node], inside(tag), state, output))
-    if (ln === NOTE_RANGE) return [h('span', { className: ['note-range'], 'data-note': attr(node, 'data-note') }, kids('span'))]
 
     const pos: Pos = { node, up }
     const models = odd.models[ln] ?? []

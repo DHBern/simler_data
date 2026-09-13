@@ -11,7 +11,7 @@
 import { fromXml } from 'xast-util-from-xml'
 
 import { attr, elementChildren, findFirst, localName, textOf, type Element } from '../tei/xast'
-import { compileXPath, type XPath } from './xpath'
+import { bool, compileXPath, type Pos, type XPath } from './xpath'
 
 export interface Model {
   behaviour: string
@@ -25,9 +25,8 @@ export interface Model {
 
 export interface Odd {
   models: Record<string, Model[]>
-  /** Elements whose every base model is block-level; elements with an inline one, whose spaces are text. */
-  blocks: Set<string>
-  inlines: Set<string>
+  /** Whether an element, where it stands, renders as a block or inline: by the base model it takes. */
+  flow: (node: Element, up: Element[]) => 'block' | 'inline' | undefined
   /** Suggested and closed values, by element and attribute. */
   values: Record<string, Record<string, Set<string>>>
   /** Rendition ids declared in `<tagsDecl>`. */
@@ -35,8 +34,12 @@ export interface Odd {
   css: string
 }
 
-export const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
+const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
 const INLINE = new Set(['inline', 'note', 'anchor', 'break', 'alternate'])
+
+/** The first model of `output` (unset: the base models) whose predicate holds. */
+export const select = (models: Model[], pos: Pos, output?: string) =>
+  models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
 
 const tokens = (el: Element | undefined, name: string) => (el ? attr(el, name) ?? '' : '').split(/\s+/).filter(Boolean)
 
@@ -47,7 +50,16 @@ const rules = (el: Element, selector: string) => elementChildren(el, 'outputRend
 
 export function readOdd(xml: string): Odd {
   const tree = fromXml(xml)
-  const odd: Odd = { models: {}, blocks: new Set(), inlines: new Set(), values: {}, renditions: new Set(), css: '' }
+  const odd: Odd = {
+    models: {},
+    flow: (node, up) => {
+      const behaviour = select(odd.models[localName(node.name)] ?? [], { node, up })?.behaviour ?? ''
+      return BLOCK.has(behaviour) ? 'block' : INLINE.has(behaviour) ? 'inline' : undefined
+    },
+    values: {},
+    renditions: new Set(),
+    css: '',
+  }
   const css = [
     '.pm-block { display: block; }', // a block set inside phrasing content renders as a span
     '.pm-alternate { display: none; }',
@@ -106,9 +118,6 @@ export function readOdd(xml: string): Odd {
     css.push(...view)
 
     if (models.length) odd.models[ident] = models
-    const base = models.filter((m) => !m.output && m.behaviour !== 'omit' && m.behaviour !== 'metadata')
-    if (base.length && base.every((m) => BLOCK.has(m.behaviour))) odd.blocks.add(ident)
-    if (base.some((m) => INLINE.has(m.behaviour))) odd.inlines.add(ident)
 
     for (const def of elementChildren(elementChildren(spec, 'attList')[0], 'attDef')) {
       const items = elementChildren(findFirst(def, 'valList'), 'valItem').map((v) => attr(v, 'ident')!)

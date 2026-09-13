@@ -46,8 +46,10 @@ knows no TEI element by name. Each element takes the first `<model>` whose
 are rendered by their own models, anything else is text, so
 `<param name="content" value="corr"/>` renders the correction.
 `<outputRendition>` and `<tagsDecl>` compile to `dist/assets/odd.css`; a
-`<modelGrp>`'s rendition styles all its models. Which elements count as blocks
-for whitespace and line breaks follows from their behaviours.
+`<modelGrp>`'s rendition styles all its models. Whether an element counts as a
+block for whitespace and line breaks follows from the model it takes where it
+stands. A note's `range` param names the element its commented range starts at;
+the range is resolved on the rendered page, across any element boundary.
 
 Models with `@output` belong to that output and take precedence over the base
 models there. `plaintext` is rendered on its own and is what the search indexes.

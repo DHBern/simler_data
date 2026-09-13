@@ -683,18 +683,18 @@
           <desc>A typographically distinct span of the source. <att>rendition</att> is required on
             <gi>hi</gi> (it is optional elsewhere) and points to one or more <gi>rendition</gi>
             declarations in <gi>tagsDecl</gi>; tokens combine (e.g. <val>#aq #b</val>). <gi>hi</gi>
-            may nest. Alignment (<val>#c</val>, <val>#right</val>) is recorded on the block, not on
-            <gi>hi</gi>; an indent (<val>#et</val>, <val>#et2</val>, <val>#et3</val>) on a
-            <gi>hi</gi> that stands on a line of its own indents that line.</desc>
+            may nest. The renditions of a line or block — alignment (<val>#c</val>,
+            <val>#right</val>) and indent (<val>#et</val>, <val>#et2</val>, <val>#et3</val>) — are
+            recorded on the block, not on <gi>hi</gi>.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
-          <constraintSpec ident="hi-alignment" scheme="schematron">
-            <desc>Alignment is a property of a line or block: it is recorded on the block element,
-              where it can take effect.</desc>
+          <constraintSpec ident="hi-block-rendition" scheme="schematron">
+            <desc>Alignment and indent are properties of a line or block: they are recorded on the
+              block element, where they take effect.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right')]">
-                <sch:report role="warning" test="true()">[S-HI] Alignment (#c, #right) belongs on
-                  the enclosing block (head, p, l, …), not on hi.</sch:report>
+                context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3')]">
+                <sch:report role="warning" test="true()">[S-HI] Alignment and indent (#c, #right,
+                  #et, #et2, #et3) belong on the enclosing block (head, p, l, …), not on hi.</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -706,8 +706,8 @@
           <model predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline">
             <outputRendition>float: none; font-size: 1.15em; line-height: inherit;</outputRendition>
           </model>
-          <!-- An indent is a line's: a hi that carries one on a line of its own within a block is
-               that line, since a span cannot be indented. (Alignment belongs on the block itself.) -->
+          <!-- Fallback for an indent left on a hi: on a line of its own within a block, the hi is
+               that line, since a span cannot be indented. -->
           <model predicate="(contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block"/>
           <model behaviour="inline"/>
           <exemplum>
@@ -986,9 +986,11 @@
             <outputRendition>max-width: 15em; margin: 0.3em 0 0.5em; padding-left: 0.6em; border-left: 2px solid rgb(var(--c-line)); font-size: 0.85em; line-height: 1.35; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model predicate="@type='remarkResponsibility'" behaviour="omit"/>
-          <!-- a range comment: a numbered marker in the text, the note in the apparatus -->
+          <!-- a range comment: a numbered marker in the text, the note in the apparatus; the range
+               runs from the anchor @targetEnd names to the marker -->
           <model predicate="@targetEnd" behaviour="note">
             <param name="place" value="'end'"/>
+            <param name="range" value="@targetEnd"/>
             <outputRendition>font-family: var(--f-ui); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; padding: 0 0.12em; color: rgb(var(--c-accent)); text-decoration: none; scroll-margin-top: 6rem;</outputRendition>
           </model>
           <!-- a comment on the whole division: no marker, shown above the text -->

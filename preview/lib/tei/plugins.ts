@@ -4,42 +4,37 @@
 
 import type { Plugin } from 'unified'
 
+import type { Odd } from '../odd/odd'
 import {
   attr,
   children,
   isElement,
   isText,
-  localName,
+  type Element,
   type Nodes,
   type Root,
   type RootContent,
 } from './xast'
 
-export interface WsTrimOptions {
-  /** Elements the ODD renders inline, and as blocks. */
-  inline: Set<string>
-  block: Set<string>
-}
-
 /**
- * TEI-aware whitespace normalisation.
+ * TEI-aware whitespace normalisation; `flow` from the ODD says which elements,
+ * where they stand, render as blocks or inline.
  */
-export const wsTrim: Plugin<[WsTrimOptions], Root, Root> = function ({ inline, block }) {
-
-  const isBlock = (node: RootContent | undefined): boolean =>
-    node !== undefined && isElement(node) && block.has(localName(node.name))
+export const wsTrim: Plugin<[Odd['flow']], Root, Root> = function (flow) {
 
   /** Is this whitespace-only node the file's indentation rather than a space? */
-  function isIndentation(node: Nodes, parent: Nodes | undefined): boolean {
+  function isIndentation(node: Nodes, ancestors: Nodes[]): boolean {
+    const parent = ancestors.at(-1)
     // Between the top-level nodes of the document there is no running text.
     if (!parent || !isElement(parent)) return true
+    const up = ancestors.filter((a): a is Element => isElement(a))
     // Inside an inline element every space is the text's own.
-    if (inline.has(localName(parent.name))) return false
+    if (flow(parent, up.slice(0, -1)) === 'inline') return false
 
     const siblings = children(parent)
     const at = siblings.indexOf(node as RootContent)
-    const before = at > 0 ? siblings[at - 1] : undefined
-    const after = at >= 0 ? siblings[at + 1] : undefined
+    const isBlock = (n: RootContent | undefined) => n !== undefined && isElement(n) && flow(n, up) === 'block'
+    const [before, after] = [siblings[at - 1], siblings[at + 1]]
     // At the edge of a block, or against one: indentation either way.
     return before === undefined || after === undefined || isBlock(before) || isBlock(after)
   }
@@ -50,7 +45,7 @@ export const wsTrim: Plugin<[WsTrimOptions], Root, Root> = function ({ inline, b
     if (isText(node)) {
       let value = node.value ?? ''
       if (/^\s+$/.test(value)) {
-        if (isIndentation(node, ancestors.at(-1))) return null
+        if (isIndentation(node, ancestors)) return null
       }
       value = value.replace(/\s+/g, ' ')
       return { ...node, value }

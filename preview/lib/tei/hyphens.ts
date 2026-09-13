@@ -17,13 +17,14 @@
 import type { Plugin } from 'unified'
 import type { VFile } from 'vfile'
 
+import type { Odd } from '../odd/odd'
 import type { RenderState } from './teiToHast'
 import {
   attr,
   children,
   isElement,
   isText,
-  localName,
+  type Element,
   type ElementContent,
   type Nodes,
   type Root,
@@ -40,45 +41,46 @@ interface LineEdge {
   gap: Text[]
 }
 
-/**
- * Where the printed line ends before `from` (`step` -1), or the next one starts
- * after it (`step` 1) — `null` where a block is in between, and so where nothing
- * is joined. Inline elements are looked into: the corpus has
- * `<hi>ge-</hi><lb break="no"/>` as well as bare text.
- */
-function lineEdge(list: ElementContent[], from: number, step: 1 | -1, block: Set<string>, gap: Text[] = []): LineEdge | null {
-  for (let i = from + step; i >= 0 && i < list.length; i += step) {
-    const node = list[i]
-    if (isText(node)) {
-      if (!node.value?.trim()) {
-        gap.push(node) // indentation left over from the source
-        continue
+/** unified plugin: normalise the hyphen at every joined line end; `flow` from the ODD. */
+export const lineEndHyphens: Plugin<[Odd['flow']], Root, Root> = function (flow) {
+  /**
+   * Where the printed line ends before `from` (`step` -1), or the next one starts
+   * after it (`step` 1) — `null` where a block is in between, and so where nothing
+   * is joined. Inline elements are looked into: the corpus has
+   * `<hi>ge-</hi><lb break="no"/>` as well as bare text.
+   */
+  function lineEdge(list: ElementContent[], from: number, step: 1 | -1, up: Element[], gap: Text[] = []): LineEdge | null {
+    for (let i = from + step; i >= 0 && i < list.length; i += step) {
+      const node = list[i]
+      if (isText(node)) {
+        if (!node.value?.trim()) {
+          gap.push(node) // indentation left over from the source
+          continue
+        }
+        return { text: node, gap }
       }
-      return { text: node, gap }
+      if (isElement(node)) {
+        if (flow(node, up) === 'block') return null
+        const kids = children(node) as ElementContent[]
+        const inner = lineEdge(kids, step > 0 ? -1 : kids.length, step, [...up, node], gap)
+        if (inner) return inner
+      }
     }
-    if (isElement(node)) {
-      if (block.has(localName(node.name))) return null
-      const kids = children(node) as ElementContent[]
-      const inner = lineEdge(kids, step > 0 ? -1 : kids.length, step, block, gap)
-      if (inner) return inner
-    }
+    return null
   }
-  return null
-}
 
-/** unified plugin: normalise the hyphen at every joined line end; `block` from the ODD. */
-export const lineEndHyphens: Plugin<[Set<string>], Root, Root> = function (block) {
   return function transformer(tree: Root, file?: VFile): Root {
     /** `<lb/>` with no `@break`, but a hyphen before it: `@break="no"` is missing. */
     let unmarked = 0
 
-    function walk(node: Nodes): void {
+    function walk(node: Nodes, up: Element[]): void {
       if (!('children' in node) || !Array.isArray(node.children)) return
       const list = node.children as ElementContent[]
+      const inner = isElement(node) ? [...up, node] : up
 
       for (const [i, child] of list.entries()) {
         if (!isElement(child, 'lb')) continue
-        const end = lineEdge(list, i, -1, block)
+        const end = lineEdge(list, i, -1, inner)
         const joined = attr(child, 'break') === 'no'
 
         if (end && HYPHEN.test(end.text.value ?? '')) {
@@ -93,15 +95,15 @@ export const lineEndHyphens: Plugin<[Set<string>], Root, Root> = function (block
         }
         if (!joined) continue
 
-        const start = lineEdge(list, i, 1, block)
+        const start = lineEdge(list, i, 1, inner)
         if (end) end.text.value = end.text.value.trimEnd()
         if (start) start.text.value = start.text.value.trimStart()
         for (const space of [...(end?.gap ?? []), ...(start?.gap ?? [])]) space.value = ''
       }
 
-      for (const child of children(node)) walk(child as Nodes)
+      for (const child of children(node)) walk(child as Nodes, inner)
     }
-    walk(tree)
+    walk(tree, [])
 
     // The word is left broken in two rather than joined on a guess: only
     // `@break="no"` says the print meant it to continue.
