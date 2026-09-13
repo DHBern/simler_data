@@ -66,7 +66,7 @@ range opens the note. A `data-page` param names the facsimile image of a page
 break: the drawer finds its pages by it, and clicking the break opens its page.
 
 Models with `@output` belong to that output and take precedence over the base
-models there. `plaintext` is rendered on its own and is what the search indexes;
+models there. `plain` is rendered on its own and is what the search indexes;
 what it leaves out is not searched on the page either, where a hit may span
 `hi`, ranges and joined line ends. `normalized` (the reading text, which joins
 every line but the title page's) and `entities` are the preview's switches:
@@ -80,4 +80,5 @@ manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 To change how something looks or renders, edit its `elementSpec` and rebuild.
 Predicates and params use an XPath subset (`lib/odd/xpath.ts`); anything outside
 it fails the build with the expression named. The ODD itself validates against
-`tei_odds.rng`.
+`tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on
+every run, against a pinned TEI release.

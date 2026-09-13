@@ -102,13 +102,13 @@ function textRuns(root) {
   let run = null
   for (let node = walker.nextNode(); node; node = walker.nextNode()) {
     if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.tagName === 'BR' && node.checkVisibility() && !node.closest('.plaintext-omit')) run = null
+      if (node.tagName === 'BR' && node.checkVisibility() && !node.closest('.plain-omit')) run = null
       continue
     }
     const parent = node.parentElement
     // What the index leaves out (a page-break label, the brackets of a supplement) is not
     // searched here either. Both readings of a `<choice>` are in the DOM; the view hides one.
-    if (parent.closest('.plaintext-omit') || !parent.checkVisibility()) continue
+    if (parent.closest('.plain-omit') || !parent.checkVisibility()) continue
     const block = parent.closest(BLOCK)
     if (!run || run.block !== block) runs.push((run = { block, text: '', nodes: [] }))
     run.nodes.push([node, run.text.length])

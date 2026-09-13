@@ -26,6 +26,17 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # The ODD is the schema and the rendering: it must itself be valid TEI. Its own job,
+  # so an invalid ODD shows as a failed check without holding back the preview.
+  odd:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          curl -fsSL -o jing.jar https://repo1.maven.org/maven2/org/relaxng/jing/20241231/jing-20241231.jar
+          curl -fsSL -o tei_odds.rng https://www.tei-c.org/Vault/P5/4.12.0/xml/tei/custom/schema/relaxng/tei_odds.rng
+      - run: java -jar jing.jar tei_odds.rng schema/tei_simler.odd
+
   render:
     # A failed export left the corpus untouched or half-written — nothing to render
     if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'

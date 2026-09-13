@@ -1,5 +1,5 @@
 /**
- * The search text: the ODD's `plaintext` rendering, flattened. What the index
+ * The search text: the ODD's `plain` rendering, flattened. What the index
  * leaves out is the ODD's to say; here only word boundaries are decided.
  */
 

@@ -6,7 +6,7 @@
  *       .use(wsTrim)          xast   → xast     TEI indentation is not text
  *       .use(lineEndHyphens)  xast   → xast     the hyphen at a joined line end
  *       .use(teiToHast)       xast   → hast     the ODD's Processing Model; its
- *                                              `plaintext` output is the search text;
+ *                                              `plain` output is the search text;
  *                                              commented ranges resolved on the result
  *       .use(rehypeStringify) hast   → string
  *
@@ -31,7 +31,7 @@ import { isElement, localName, type Element, type Root as XastRoot } from './xas
 /** What one render produces. */
 export interface RenderResult {
   html: string
-  /** The ODD's `plaintext` rendering, for the search index; not yet normalised. */
+  /** The ODD's `plain` rendering, for the search index; not yet normalised. */
   text: string
   /** Note bodies, already rendered to HTML, in document order. */
   notes: RenderedNote[]
@@ -47,7 +47,7 @@ export interface RenderedNote extends Omit<CollectedNote, 'body'> {
 }
 
 /** The output the search indexes. */
-const PLAINTEXT = 'plaintext'
+const PLAINTEXT = 'plain'
 /** The output whose params, on the root element, describe the page around the text. */
 const PAGE = 'page'
 
