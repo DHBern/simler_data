@@ -1,5 +1,6 @@
-/** Small shared helpers over the xast (XML AST) produced by `xast-util-from-xml`. */
+/** The xast (XML AST) the pipeline works on, and small helpers over it. */
 
+import { parseXml, XmlElement, XmlText, type XmlNode } from '@rgrove/parse-xml'
 import type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text } from 'xast'
 
 export type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text }
@@ -9,6 +10,23 @@ declare module 'xast' {
     /** The text as encoded, where a transform changed what renders. */
     source?: string
   }
+}
+
+/**
+ * XML → xast: elements and text, all the pipeline reads. Without source positions,
+ * which cost `xast-util-from-xml` more than the rest of a build. Attribute values
+ * are tokens and pointers, so a line break in one is not part of it.
+ */
+export function parse(xml: string): Root {
+  const tokens = (attributes: Record<string, string>) =>
+    Object.fromEntries(Object.entries(attributes).map(([k, v]) => [k, v.replace(/\s+/g, ' ').trim()]))
+  const convert = (node: XmlNode): ElementContent[] =>
+    node instanceof XmlElement
+      ? [{ type: 'element', name: node.name, attributes: tokens(node.attributes), children: node.children.flatMap(convert) }]
+      : node instanceof XmlText
+        ? [{ type: 'text', value: node.text }]
+        : []
+  return { type: 'root', children: parseXml(xml).children.flatMap(convert) }
 }
 
 /** Strip a namespace prefix: `tei:head` → `head`. */

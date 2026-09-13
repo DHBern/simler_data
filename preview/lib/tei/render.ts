@@ -1,8 +1,8 @@
 /**
  * The content pipeline: TEI in, HTML out, at build time.
  *
+ *     parse()                 string → xast     (build.ts, once per file)
  *     unified()
- *       .use(xastParse)       string → xast     (xast-util-from-xml)
  *       .use(wsTrim)          xast   → xast     TEI indentation is not text
  *       .use(lineEndHyphens)  xast   → xast     the hyphen at a joined line end
  *       .use(teiToHast)       xast   → hast     the ODD's Processing Model; its
@@ -18,7 +18,6 @@ import type { Root as HastRoot } from 'hast'
 import rehypeStringify from 'rehype-stringify'
 import { unified, type Plugin } from 'unified'
 import { VFile } from 'vfile'
-import { fromXml } from 'xast-util-from-xml'
 
 import { select, type Odd } from '../odd/odd'
 import { seq, str } from '../odd/xpath'
@@ -45,11 +44,6 @@ export interface RenderResult {
 
 export interface RenderedNote extends Omit<CollectedNote, 'body'> {
   html: string
-}
-
-const xastParse: Plugin<[], XastRoot> = function () {
-  const self = this as unknown as { parser: (doc: string) => XastRoot }
-  self.parser = (doc: string) => fromXml(doc)
 }
 
 /** The output the search indexes. */
@@ -81,7 +75,6 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
 /** The processor for one ODD; frozen, so a build creates it once. */
 export function createProcessor(odd: Odd) {
   return unified()
-    .use(xastParse)
     .use(wsTrim, odd.flow)
     .use(lineEndHyphens, odd.flow)
     .use(teiToHast, odd)
@@ -89,11 +82,11 @@ export function createProcessor(odd: Odd) {
     .freeze()
 }
 
-export function renderTei(xml: string, processor: ReturnType<typeof createProcessor>): RenderResult {
-  const file = new VFile({ value: xml })
+export function renderTei(tree: XastRoot, processor: ReturnType<typeof createProcessor>): RenderResult {
+  const file = new VFile()
   const state: RenderState = { notes: [], warnings: [], unmapped: new Set(), anchors: [] }
   file.data.teiState = state
-  const hast = processor.runSync(processor.parse(file) as XastRoot, file) as HastRoot
+  const hast = processor.runSync(tree, file) as HastRoot
   return {
     html: processor.stringify(hast, file),
     text: file.data.text as string,

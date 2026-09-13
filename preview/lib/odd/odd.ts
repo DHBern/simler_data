@@ -9,9 +9,7 @@
  * hides the element in that view.
  */
 
-import { fromXml } from 'xast-util-from-xml'
-
-import { attr, elementChildren, findFirst, localName, textOf, type Element } from '../tei/xast'
+import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast'
 import { bool, compileXPath, type Pos, type XPath } from './xpath'
 
 export interface Model {
@@ -54,14 +52,19 @@ const rule = (selector: string, r: Element) =>
 const rules = (el: Element, selector: string) => elementChildren(el, 'outputRendition').map((r) => rule(selector, r))
 
 export function readOdd(xml: string): Odd {
-  const tree = fromXml(xml)
+  const tree = parse(xml)
+  /** An element's answer, once: where it stands does not change. */
+  const flows = new WeakMap<Element, ReturnType<Odd['flow']>>()
   const odd: Odd = {
     models: {},
     flow: (node, up) => {
+      if (flows.has(node)) return flows.get(node)
       const m = select(odd.models[localName(node.name)] ?? [], { node, up })
       // Within a sequence, `text` is literal content, not a container.
       const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
-      return kinds.some((b) => BLOCK.has(b)) ? 'block' : kinds.every((b) => INLINE.has(b)) ? 'inline' : undefined
+      const flow = kinds.some((b) => BLOCK.has(b)) ? 'block' : kinds.every((b) => INLINE.has(b)) ? 'inline' : undefined
+      flows.set(node, flow)
+      return flow
     },
     values: {},
     renditions: new Set(),

@@ -136,9 +136,6 @@ const BEHAVIOURS: Record<string, Behaviour> = {
   },
 }
 
-/** TEI attributes the pages' scripts read, mirrored as `data-*`. */
-const MIRRORED = ['type', 'n', 'place', 'key', 'facs', 'corresp', 'reason', 'cert', 'unit', 'break', 'ref']
-
 function classes(props: Properties): string[] {
   return Array.isArray(props.className) ? props.className.map(String) : []
 }
@@ -150,14 +147,18 @@ function paramProps(params: Record<string, Value>): Properties {
   return { ...Object.fromEntries(named('data-').map(([k, v]) => [k, str(v)])), ...(style ? { style } : {}) }
 }
 
+/**
+ * The element's attributes: `xml:id` and `xml:lang` as HTML's, the others as `data-*`
+ * (`targetEnd` → `data-target-end`); `@rendition` is the model's to use.
+ */
 function attrMap(node: Element): Properties {
   const props: Properties = {}
   for (const [name, value] of Object.entries(node.attributes ?? {})) {
-    if (value == null) continue
+    if (value == null || name === 'rendition') continue
     if (name === 'xml:id') props.id = value
     else if (name === 'xml:lang') props.lang = value
     else if (name.startsWith('data-')) props[name] = value
-    else if (MIRRORED.includes(name)) props[`data-${name}`] = value
+    else if (!name.includes(':') && name !== 'xmlns') props[`data-${name.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)}`] = value
   }
   return props
 }

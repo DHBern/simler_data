@@ -49,17 +49,28 @@ function compare(op: string, a: Value, b: Value): boolean {
   )
 }
 
+/** Each parent's element and text children, and where each child stands among them; the tree is not changed after. */
+const lists = new WeakMap<object, (Element | Text)[]>()
+const index = new WeakMap<object, number>()
+const nodesOf = (parent: Element | Text): (Element | Text)[] => {
+  let list = lists.get(parent)
+  if (!list) {
+    list = children(parent).filter((node): node is Element | Text => isElement(node) || isText(node))
+    list.forEach((node, i) => index.set(node, i))
+    lists.set(parent, list)
+  }
+  return list
+}
 const kids = (p: Pos): Pos[] => {
   const up = [...p.up, p.node as Element]
-  return children(p.node)
-    .filter((node): node is Element | Text => isElement(node) || isText(node))
-    .map((node) => ({ node, up }))
+  return nodesOf(p.node).map((node) => ({ node, up }))
 }
 const parent = (p: Pos): Pos[] => (p.up.length ? [{ node: p.up.at(-1)!, up: p.up.slice(0, -1) }] : [])
 const siblings = (p: Pos, after: boolean): Pos[] => {
-  const all = parent(p).flatMap(kids)
-  const i = all.findIndex((s) => s.node === p.node)
-  return after ? all.slice(i + 1) : all.slice(0, i).reverse()
+  if (!p.up.length) return []
+  const list = nodesOf(p.up.at(-1)!)
+  const i = index.get(p.node)!
+  return (after ? list.slice(i + 1) : list.slice(0, i).reverse()).map((node) => ({ node, up: p.up }))
 }
 const descendants = (p: Pos): Pos[] => kids(p).flatMap((k) => [k, ...descendants(k)])
 const ancestors = (p: Pos): Pos[] => p.up.map((node, i) => ({ node, up: p.up.slice(0, i) })).reverse()

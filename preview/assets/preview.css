@@ -293,9 +293,11 @@ main {
 .note-marker:is([aria-expanded='true'], .is-linked) { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
 .tei-rs[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 .tei-rs[data-key] { cursor: pointer; }
-/* A page break that opens its page in the facsimile. */
-[data-page][role='button'] { cursor: pointer; }
-[data-page][role='button']:hover { color: rgb(var(--c-ui-accent)); }
+/* A page break that opens its page in the facsimile, where the window has room for it. */
+@media (min-width: 64rem) {
+  [data-page][role='button'] { cursor: pointer; }
+  [data-page][role='button']:hover { color: rgb(var(--c-ui-accent)); }
+}
 
 .note-range {
   background-color: rgb(var(--c-accent) / 0.07);

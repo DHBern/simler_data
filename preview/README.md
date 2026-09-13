@@ -27,7 +27,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | --- | --- |
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
 | `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
-| `lib/tei/` | The pipeline that applies it: whitespace, hyphens, note ranges, the PM walker |
+| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the PM walker |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The switches and the two anchored panels |
@@ -53,7 +53,9 @@ XPath: the nodes they select are rendered by their own models, anything else is
 text, so
 `<param name="content" value="corr"/>` renders the correction. Params named
 `--…` become CSS custom properties of the rendered element, `data-…` its
-attributes. `<outputRendition>` and `<tagsDecl>` compile to
+attributes. The element's own attributes are there too, as `data-*`
+(`targetEnd` → `data-target-end`), except `@rendition`; attribute values are
+read with their whitespace collapsed. `<outputRendition>` and `<tagsDecl>` compile to
 `dist/assets/odd.css`; a `<modelGrp>`'s rendition styles all its models, and a
 styled model among several must name its class with `@cssClass`. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
