@@ -10,7 +10,7 @@
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
-import type { Model, Odd } from '../odd/odd'
+import { BLOCK, type Model, type Odd } from '../odd/odd'
 import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
 import { NOTE_RANGE } from './noteRanges'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
@@ -150,14 +150,14 @@ export function createRenderer(odd: Odd) {
   const select = (models: Model[], pos: Pos, output?: string) =>
     models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
 
-  /** Nothing but whitespace, or a block, before this element in its parent. */
+  /** Nothing but whitespace, or an element its model sets as a block, before this element in its parent. */
   function atLineStart({ node, up }: Pos): boolean {
     const siblings = children(up.at(-1))
     for (let i = siblings.indexOf(node) - 1; i >= 0; i--) {
       const s = siblings[i]
       if (isText(s)) {
         if (s.value?.trim()) return false
-      } else if (isElement(s)) return odd.blocks.has(localName(s.name))
+      } else if (isElement(s)) return BLOCK.has(select(odd.models[localName(s.name)] ?? [], { node: s, up })?.behaviour ?? '')
     }
     return true
   }

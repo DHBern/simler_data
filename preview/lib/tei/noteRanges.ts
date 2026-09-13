@@ -15,10 +15,13 @@
  */
 
 import type { Plugin } from 'unified'
+import type { VFile } from 'vfile'
 
+import type { RenderState } from './teiToHast'
 import {
   attr,
   children,
+  findAll,
   isElement,
   type Element,
   type ElementContent,
@@ -28,13 +31,6 @@ import {
 
 /** Local name of the synthetic element this transform introduces. */
 export const NOTE_RANGE = 'noteRange'
-
-export interface NoteRangeReport {
-  /** `@targetEnd` values whose `<anchor>` was not found among the note's siblings. */
-  unresolved: string[]
-  /** Ranges successfully wrapped. */
-  resolved: number
-}
 
 function makeRange(id: string, content: ElementContent[]): Element {
   return {
@@ -53,7 +49,7 @@ function makeRange(id: string, content: ElementContent[]): Element {
  * Pairs that do not resolve are reported and left alone: the note still renders,
  * just without an underlined range.
  */
-function rewriteSiblings(list: ElementContent[], report: NoteRangeReport): ElementContent[] {
+function rewriteSiblings(list: ElementContent[], unresolved: string[]): ElementContent[] {
   // Right to left, so a splice never disturbs an index still to be examined.
   let i = list.length - 1
   while (i >= 0) {
@@ -78,16 +74,18 @@ function rewriteSiblings(list: ElementContent[], report: NoteRangeReport): Eleme
       }
     }
     if (anchorIndex === -1) {
-      report.unresolved.push(targetEnd)
+      unresolved.push(id)
       i--
       continue
     }
 
-    // Replace [anchor, …ranged…, note] with [noteRange(…ranged…), note].
-    const ranged = list.slice(anchorIndex + 1, i)
-    list.splice(anchorIndex, i - anchorIndex, makeRange(id, ranged))
-    report.resolved++
-    // The note now sits at anchorIndex + 1 and is done; resume before the range.
+    // Replace [anchor, …ranged…, note] with [noteRange(…ranged…), note]. Where several
+    // notes comment on one range, it ends before the first of them.
+    const first = list.findIndex(
+      (n, k) => k > anchorIndex && isElement(n, 'note') && attr(n, 'targetEnd')?.replace(/^#/, '') === id,
+    )
+    list.splice(anchorIndex, first - anchorIndex, makeRange(id, list.slice(anchorIndex + 1, first)))
+    // Its notes now follow the range and are done; resume before the range.
     i = anchorIndex - 1
   }
   return list
@@ -95,17 +93,24 @@ function rewriteSiblings(list: ElementContent[], report: NoteRangeReport): Eleme
 
 /** unified plugin: rewrite anchor/note pairs into `<noteRange>` wrappers. */
 export const noteRanges: Plugin<[], Root, Root> = function () {
-  return function transformer(tree: Root, file?: { data?: Record<string, unknown> }): Root {
-    const report: NoteRangeReport = { unresolved: [], resolved: 0 }
+  return function transformer(tree: Root, file?: VFile): Root {
+    const unresolved: string[] = []
 
     function walk(node: Nodes): void {
       if (!('children' in node) || !Array.isArray(node.children)) return
-      node.children = rewriteSiblings(node.children as ElementContent[], report)
+      node.children = rewriteSiblings(node.children as ElementContent[], unresolved)
       for (const child of children(node)) walk(child as Nodes)
     }
     walk(tree)
 
-    if (file) file.data = { ...file.data, noteRanges: report }
+    // What is left of the anchors after the walk is what no range consumed.
+    const targets = new Set(findAll(tree, 'note').map((n) => (attr(n, 'targetEnd') ?? '').replace(/^#/, '')))
+    const orphans = findAll(tree, 'anchor').flatMap((a) => attr(a, 'xml:id') ?? []).filter((id) => !targets.has(id))
+    const state = file?.data.teiState as RenderState | undefined
+    if (state && unresolved.length) {
+      state.warnings.push(`note/@targetEnd ohne <anchor> davor im selben Element: ${unresolved.join(', ')}`)
+    }
+    if (state && orphans.length) state.warnings.push(`<anchor> ohne <note targetEnd>: ${orphans.join(', ')}`)
     return tree
   }
 }

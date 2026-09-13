@@ -79,6 +79,8 @@ const FUNCTIONS: Record<string, (...args: Value[]) => Value> = {
   'contains-token': (a, t) => seq(a).some((i) => String(atom(i)).split(/\s+/).includes(str(t).trim())),
   'starts-with': (a, b) => str(a).startsWith(str(b)),
   'normalize-space': (a) => str(a).replace(/\s+/g, ' ').trim(),
+  translate: (a, from, to) =>
+    [...str(a)].map((c) => { const i = [...str(from)].indexOf(c); return i < 0 ? c : [...str(to)][i] ?? '' }).join(''),
   string: (a) => str(a),
   true: () => true,
   false: () => false,

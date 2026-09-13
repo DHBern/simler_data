@@ -25,7 +25,7 @@ export interface Model {
 
 export interface Odd {
   models: Record<string, Model[]>
-  /** Elements whose every base model is block-level, or inline. */
+  /** Elements whose every base model is block-level; elements with an inline one, whose spaces are text. */
   blocks: Set<string>
   inlines: Set<string>
   /** Suggested and closed values, by element and attribute. */
@@ -35,7 +35,7 @@ export interface Odd {
   css: string
 }
 
-const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
+export const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
 const INLINE = new Set(['inline', 'note', 'anchor', 'break', 'alternate'])
 
 const tokens = (el: Element | undefined, name: string) => (el ? attr(el, name) ?? '' : '').split(/\s+/).filter(Boolean)
@@ -108,7 +108,7 @@ export function readOdd(xml: string): Odd {
     if (models.length) odd.models[ident] = models
     const base = models.filter((m) => !m.output && m.behaviour !== 'omit' && m.behaviour !== 'metadata')
     if (base.length && base.every((m) => BLOCK.has(m.behaviour))) odd.blocks.add(ident)
-    if (base.length && base.every((m) => INLINE.has(m.behaviour))) odd.inlines.add(ident)
+    if (base.some((m) => INLINE.has(m.behaviour))) odd.inlines.add(ident)
 
     for (const def of elementChildren(elementChildren(spec, 'attList')[0], 'attDef')) {
       const items = elementChildren(findFirst(def, 'valList'), 'valItem').map((v) => attr(v, 'ident')!)

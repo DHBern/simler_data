@@ -490,7 +490,7 @@
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <div n="3" type="poem">
-                <head><hi rendition="#aq #c">III.</hi></head>
+                <head rendition="#c"><hi rendition="#aq">III.</hi></head>
                 <lb/>
                 <lg type="poem"><!-- ... --></lg>
               </div>
@@ -682,9 +682,22 @@
         <elementSpec ident="hi" module="core" mode="change">
           <desc>A typographically distinct span of the source. <att>rendition</att> is required on
             <gi>hi</gi> (it is optional elsewhere) and points to one or more <gi>rendition</gi>
-            declarations in <gi>tagsDecl</gi>; tokens combine (e.g. <val>#aq #c</val>). <gi>hi</gi>
-            may nest.</desc>
+            declarations in <gi>tagsDecl</gi>; tokens combine (e.g. <val>#aq #b</val>). <gi>hi</gi>
+            may nest. Alignment (<val>#c</val>, <val>#right</val>) is recorded on the block, not on
+            <gi>hi</gi>; an indent (<val>#et</val>, <val>#et2</val>, <val>#et3</val>) on a
+            <gi>hi</gi> that stands on a line of its own indents that line.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
+          <constraintSpec ident="hi-alignment" scheme="schematron">
+            <desc>Alignment is a property of a line or block: it is recorded on the block element,
+              where it can take effect.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right')]">
+                <sch:report role="warning" test="true()">[S-HI] Alignment (#c, #right) belongs on
+                  the enclosing block (head, p, l, …), not on hi.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="rendition" mode="change" usage="req"/>
           </attList>
@@ -693,10 +706,13 @@
           <model predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline">
             <outputRendition>float: none; font-size: 1.15em; line-height: inherit;</outputRendition>
           </model>
+          <!-- An indent is a line's: a hi that carries one on a line of its own within a block is
+               that line, since a span cannot be indented. (Alignment belongs on the block itself.) -->
+          <model predicate="(contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block"/>
           <model behaviour="inline"/>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <head><hi rendition="#b #c">Aller<lb/> Psalmen Davids Haubt<lb break="no"/>begriff/</hi></head>
+              <head rendition="#c"><hi rendition="#b">Aller<lb/> Psalmen Davids Haubt<lb break="no"/>begriff/</hi></head>
             </egXML>
           </exemplum>
         </elementSpec>
@@ -738,10 +754,10 @@
           </modelGrp>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <head>
+              <head rendition="#c">
                 <label>[1.]</label>
                 <lb/>
-                <hi rendition="#b #c">[Das erst bu&#x364;ch der Psalmen.]</hi>
+                <hi rendition="#b">[Das erst bu&#x364;ch der Psalmen.]</hi>
               </head>
             </egXML>
           </exemplum>
@@ -781,7 +797,7 @@
           </model>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <p><hi rendition="#smaller #c">Ende des ersten buchs der<lb/> Psalmen Davids.</hi></p>
+              <p rendition="#c"><hi rendition="#smaller">Ende des ersten buchs der<lb/> Psalmen Davids.</hi></p>
             </egXML>
           </exemplum>
         </elementSpec>
@@ -1206,12 +1222,12 @@
             <outputRendition>display: flex; align-items: center; gap: 0.7em; margin: 1.4em 0; font-family: var(--f-ui); font-size: 0.68em; font-weight: 500; letter-spacing: 0.04em; color: rgb(var(--c-muted)); user-select: none; scroll-margin-top: 5rem;</outputRendition>
             <model predicate="ancestor::l or ancestor::head" behaviour="break">
               <param name="type" value="'page'"/>
-              <param name="label" value="concat('[', (@n, '·')[1], ']')"/>
+              <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition>display: inline; margin: 0 0.3em;</outputRendition>
             </model>
             <model behaviour="break">
               <param name="type" value="'page'"/>
-              <param name="label" value="concat('[', (@n, '·')[1], ']')"/>
+              <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition scope="before">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
               <outputRendition scope="after">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
             </model>
@@ -1243,7 +1259,9 @@
                 <gi>front</gi>/<gi>body</gi>/<gi>back</gi>/<gi>titlePage</gi> closes.</item>
               <item>for a word hyphenated across the line, the visible hyphen is kept in the
                 transcription and <att>break</att>=<val>no</val> is set on the <gi>lb</gi> at that
-                line end.</item>
+                line end. Whitespace on either side of such an <gi>lb</gi> is not significant: the
+                word is joined whatever the indentation. A hyphen that ends a word (an ellipsis,
+                as in <mentioned>buß- und gnadbegierig</mentioned>) takes a plain <gi>lb</gi>.</item>
             </list>
             The Schematron constraint <ident>lb-line-end-placement</ident> checks that <gi>lb</gi> is
             not left as the last child of a line-bearing element.</desc>

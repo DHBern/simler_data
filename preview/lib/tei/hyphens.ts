@@ -10,7 +10,8 @@
  * **The hyphen need not touch the break.**
  *
  * **Only a hyphen that is actually joined is removed.**
- * 
+ *
+ * **Neither side of a joined break is a space**, however the source is indented.
  */
 
 import type { Plugin } from 'unified'
@@ -32,20 +33,21 @@ import {
 /** Hyphen, soft hyphen, not sign, hyphen, non-breaking hyphen, double oblique. */
 const HYPHEN = /[-­¬‐‑⸗][ \t]*$/
 
-interface LineEnd {
-  /** The text node the line ends in. */
+interface LineEdge {
+  /** The text node the line ends (or starts) in. */
   text: Text
   /** Whitespace-only nodes standing between it and the `<lb/>`. */
   gap: Text[]
 }
 
 /**
- * Where the printed line ends — `null` where a block ended it, and so where
- * nothing is joined. Inline elements are looked into: the corpus has
+ * Where the printed line ends before `from` (`step` -1), or the next one starts
+ * after it (`step` 1) — `null` where a block is in between, and so where nothing
+ * is joined. Inline elements are looked into: the corpus has
  * `<hi>ge-</hi><lb break="no"/>` as well as bare text.
  */
-function lineEnd(list: ElementContent[], before: number, block: Set<string>, gap: Text[] = []): LineEnd | null {
-  for (let i = before - 1; i >= 0; i--) {
+function lineEdge(list: ElementContent[], from: number, step: 1 | -1, block: Set<string>, gap: Text[] = []): LineEdge | null {
+  for (let i = from + step; i >= 0 && i < list.length; i += step) {
     const node = list[i]
     if (isText(node)) {
       if (!node.value?.trim()) {
@@ -57,7 +59,7 @@ function lineEnd(list: ElementContent[], before: number, block: Set<string>, gap
     if (isElement(node)) {
       if (block.has(localName(node.name))) return null
       const kids = children(node) as ElementContent[]
-      const inner = lineEnd(kids, kids.length, block, gap)
+      const inner = lineEdge(kids, step > 0 ? -1 : kids.length, step, block, gap)
       if (inner) return inner
     }
   }
@@ -76,18 +78,25 @@ export const lineEndHyphens: Plugin<[Set<string>], Root, Root> = function (block
 
       for (const [i, child] of list.entries()) {
         if (!isElement(child, 'lb')) continue
-        const end = lineEnd(list, i, block)
-        if (!end || !HYPHEN.test(end.text.value ?? '')) continue
+        const end = lineEdge(list, i, -1, block)
+        const joined = attr(child, 'break') === 'no'
 
-        if (attr(child, 'break') !== 'no') {
-          unmarked++ // an editorial finding, not something to guess at
-          continue
+        if (end && HYPHEN.test(end.text.value ?? '')) {
+          if (!joined) {
+            unmarked++ // an editorial finding, not something to guess at
+            continue
+          }
+          end.text.value = end.text.value.replace(HYPHEN, '')
+          // Not an editorial addition, then: the stylesheet sets the hyphen in ink
+          // rather than in the muted colour it uses for one it supplies itself.
+          child.attributes = { ...child.attributes, 'data-hyphen': 'source' }
         }
-        end.text.value = end.text.value.replace(HYPHEN, '')
-        for (const space of end.gap) space.value = ''
-        // Not an editorial addition, then: the stylesheet sets the hyphen in ink
-        // rather than in the muted colour it uses for one it supplies itself.
-        child.attributes = { ...child.attributes, 'data-hyphen': 'source' }
+        if (!joined) continue
+
+        const start = lineEdge(list, i, 1, block)
+        if (end) end.text.value = end.text.value.trimEnd()
+        if (start) start.text.value = start.text.value.trimStart()
+        for (const space of [...(end?.gap ?? []), ...(start?.gap ?? [])]) space.value = ''
       }
 
       for (const child of children(node)) walk(child as Nodes)
