@@ -71,7 +71,7 @@
         <!-- The Buchstabwechsel pages: an interleaved two-column setting (read row by row, so the
              lines alternate left and right) whose acrostic lines carry marginal letters, set in the
              line's padding. The line boxes are laid out by the l models. -->
-        <rendition xml:id="twocol" scheme="css">--acro-body: 1.45em; --acro-fin: 1.25em; display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.3em; align-items: baseline;</rendition>
+        <rendition xml:id="twocol" scheme="css">--acro-body: 1.45em; --acro-fin: 1.25em; --indent-step: 0.5em; display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.3em; align-items: baseline;</rendition>
         <rendition xml:id="acrostic" scheme="css">position: relative;</rendition>
         <rendition xml:id="acroInit" scheme="css">position: absolute; left: 0; font-weight: 600;</rendition>
         <rendition xml:id="acroFin" scheme="css">position: absolute; right: 0; font-weight: 600;</rendition>
@@ -96,10 +96,13 @@
 
       <p>The Processing Model renders the edition. Each element takes the first <gi>model</gi> whose
         <att>predicate</att> holds; a <gi>modelGrp</gi>'s <gi>outputRendition</gi> styles all of its
-        models. Params are XPath: the nodes they select are rendered by their own models, anything
-        else as text. Models with an <att>output</att> belong to that output and take precedence
-        over the base models there. <val>plaintext</val>, the text of the search index, is rendered
-        on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
+        models; a styled model among several names its class with <att>cssClass</att>. Params are
+        XPath: the nodes they select are rendered by their own models, anything else as text;
+        params named <val>--…</val> become CSS custom properties of the rendered element,
+        <val>data-…</val> its attributes. Models with an <att>output</att> belong to that output
+        and take precedence over the base models there. <val>page</val>, on <gi>TEI</gi>, names
+        what the page shows around the text. <val>plaintext</val>, the text of the search index, is
+        rendered on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
         highlighting) are views over the base rendering that can be switched on and off: a view's
         model omits the element, restyles it, or gives the same behaviour other params — an
         <val>alternate</val> shows the view's own default. Source appearance is carried wherever
@@ -200,6 +203,13 @@
             </attDef>
           </attList>
           <model behaviour="text"/>
+          <!-- what the page shows around the text: its title, the facsimile, the entities it names -->
+          <model output="page" behaviour="metadata">
+            <param name="title" value="normalize-space(teiHeader/fileDesc/titleStmt/title[1])"/>
+            <param name="manifest" value="normalize-space((descendant::idno[@type='URLIIIF'])[1])"/>
+            <param name="pages" value="descendant::pb/@facs"/>
+            <param name="entities" value="descendant::rs/@key"/>
+          </model>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <TEI type="simler-framework"><teiHeader><!-- ... --></teiHeader><text><!-- ... --></text></TEI>
@@ -483,7 +493,7 @@
             </attDef>
           </attList>
           <!-- a division directly after another one is set apart from it -->
-          <model predicate="preceding-sibling::*[not(self::lb)][1][self::div]" behaviour="section">
+          <model cssClass="div-after-div" predicate="preceding-sibling::*[not(self::lb)][1][self::div]" behaviour="section">
             <outputRendition>margin-top: 2rem;</outputRendition>
           </model>
           <model behaviour="section"/>
@@ -597,10 +607,10 @@
             </attDef>
             <attDef ident="n" mode="change" usage="opt"/>
           </attList>
-          <model predicate="ancestor::lg" behaviour="block">
+          <model cssClass="lg-inner" predicate="ancestor::lg" behaviour="block">
             <outputRendition>margin: 0.9em 0;</outputRendition>
           </model>
-          <model behaviour="block">
+          <model cssClass="lg-outer" behaviour="block">
             <outputRendition>margin: 1.3em 0;</outputRendition>
           </model>
           <exemplum>
@@ -633,38 +643,22 @@
                from the hanging edge. On a two-column page the grid cell is the line box. -->
           <modelGrp>
             <outputRendition>margin: 0; line-height: var(--lh-text); padding-left: 1.6em; text-indent: -1.6em;</outputRendition>
-            <model predicate="contains-token(@rendition, '#acrostic') and not(descendant::*[contains-token(@rendition, '#acroFin')])" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: var(--acro-body); text-indent: 0;</outputRendition>
+            <!-- On a two-column page the lines alternate between the columns. An acrostic line starts
+                 behind its marginal letter, and so does an indented line in a column that has them;
+                 a closing letter keeps the line's end clear. -->
+            <model predicate="parent::lg[contains-token(@rendition, '#twocol')]" behaviour="block" cssClass="l-twocol">
+              <param name="--acro" value="if (contains-token(@rendition, '#acrostic') or (contains-token(@rendition, '#et') or contains-token(@rendition, '#et2')) and (preceding-sibling::l[position() mod 2 = 0], following-sibling::l[position() mod 2 = 0])[contains-token(@rendition, '#acrostic')]) then 1 else 0"/>
+              <param name="--fin" value="if (descendant::*[contains-token(@rendition, '#acroFin')]) then 1 else 0"/>
+              <param name="--indent" value="if (contains-token(@rendition, '#et2')) then 2 else if (contains-token(@rendition, '#et')) then 1 else 0"/>
+              <outputRendition>min-width: 0; text-indent: 0; padding-left: calc(var(--acro) * var(--acro-body) + var(--indent) * var(--indent-step)); padding-right: calc(var(--fin) * (var(--acro-fin) + 0.1em));</outputRendition>
             </model>
-            <model predicate="contains-token(@rendition, '#acrostic')" behaviour="block">
-              <outputRendition>min-width: 0; padding: 0 calc(var(--acro-fin) + 0.1em) 0 var(--acro-body); text-indent: 0;</outputRendition>
-            </model>
-            <!-- the other lines of a column that carries marginal letters start behind them -->
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')] and count(preceding-sibling::l) mod 2 = 0 and ../l[count(preceding-sibling::l) mod 2 = 0][contains-token(@rendition, '#acrostic')] and contains-token(@rendition, '#et')" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: calc(var(--acro-body) + 0.5em); text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')] and count(preceding-sibling::l) mod 2 = 0 and ../l[count(preceding-sibling::l) mod 2 = 0][contains-token(@rendition, '#acrostic')] and contains-token(@rendition, '#et2')" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: calc(var(--acro-body) + 1em); text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')] and count(preceding-sibling::l) mod 2 = 1 and ../l[count(preceding-sibling::l) mod 2 = 1][contains-token(@rendition, '#acrostic')] and (contains-token(@rendition, '#et') or contains-token(@rendition, '#et2'))" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: 1.55em; text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')] and contains-token(@rendition, '#et')" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: 0.8em; text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')] and contains-token(@rendition, '#et2')" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: 1.55em; text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="parent::lg[contains-token(@rendition, '#twocol')]" behaviour="block">
-              <outputRendition>min-width: 0; padding-left: 0; text-indent: 0;</outputRendition>
-            </model>
-            <model predicate="contains-token(@rendition, '#et')" behaviour="block">
+            <model predicate="contains-token(@rendition, '#et')" behaviour="block" cssClass="l-et">
               <outputRendition>text-indent: 0.4em;</outputRendition>
             </model>
-            <model predicate="contains-token(@rendition, '#et2')" behaviour="block">
+            <model predicate="contains-token(@rendition, '#et2')" behaviour="block" cssClass="l-et2">
               <outputRendition>text-indent: 2.4em;</outputRendition>
             </model>
-            <model predicate="contains-token(@rendition, '#et3')" behaviour="block">
+            <model predicate="contains-token(@rendition, '#et3')" behaviour="block" cssClass="l-et3">
               <outputRendition>text-indent: 4.4em;</outputRendition>
             </model>
             <model behaviour="block"/>
@@ -703,7 +697,7 @@
           </attList>
           <!-- An initial drops only at the head of running prose: not in verse, not nested, not
                among several initials (an author line "J(ohann) W(ilhelm) S(imler)"), not centred. -->
-          <model predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline">
+          <model cssClass="hi-initial-inline" predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline">
             <outputRendition>float: none; font-size: 1.15em; line-height: inherit;</outputRendition>
           </model>
           <!-- Fallback for an indent left on a hi: on a line of its own within a block, the hi is
@@ -734,21 +728,21 @@
                lg it is a stanza number, in a list or figure a caption. -->
           <modelGrp>
             <outputRendition>font-family: var(--f-display); font-weight: 600; text-wrap: balance;</outputRendition>
-            <model predicate="parent::div and not(preceding-sibling::*[not(self::lb)])" behaviour="heading">
+            <model cssClass="head-first" predicate="parent::div and not(preceding-sibling::*[not(self::lb)])" behaviour="heading">
               <param name="level" value="count(ancestor::div) + 1"/>
               <outputRendition>margin: 0 0 0.7em;</outputRendition>
             </model>
-            <model predicate="parent::div" behaviour="heading">
+            <model cssClass="head-div" predicate="parent::div" behaviour="heading">
               <param name="level" value="count(ancestor::div) + 1"/>
               <outputRendition>margin: 1.6em 0 0.7em;</outputRendition>
             </model>
-            <model predicate="parent::lg" behaviour="paragraph">
+            <model cssClass="head-stanza" predicate="parent::lg" behaviour="paragraph">
               <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 500; letter-spacing: 0.06em; color: rgb(var(--c-muted)); margin: 0 0 0.25em;</outputRendition>
             </model>
-            <model predicate="parent::list or parent::figure" behaviour="paragraph">
+            <model cssClass="head-caption" predicate="parent::list or parent::figure" behaviour="paragraph">
               <outputRendition>margin: 0 0 0.3em;</outputRendition>
             </model>
-            <model behaviour="paragraph">
+            <model cssClass="head-other" behaviour="paragraph">
               <outputRendition>margin: 1.6em 0 0.7em;</outputRendition>
             </model>
           </modelGrp>
@@ -833,22 +827,22 @@
           </attList>
           <model behaviour="inline"/>
           <!-- entity highlighting, colour-coded by type -->
-          <model output="entities" predicate="@type='person'" behaviour="inline">
+          <model cssClass="entity-person" output="entities" predicate="@type='person'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-person)); text-decoration: underline solid; text-underline-offset: 0.22em;</outputRendition>
           </model>
-          <model output="entities" predicate="@type='place'" behaviour="inline">
+          <model cssClass="entity-place" output="entities" predicate="@type='place'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-place)); text-decoration: underline solid; text-underline-offset: 0.22em;</outputRendition>
           </model>
-          <model output="entities" predicate="@type='work'" behaviour="inline">
+          <model cssClass="entity-work" output="entities" predicate="@type='work'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-work)); text-decoration: underline dashed; text-underline-offset: 0.22em;</outputRendition>
           </model>
-          <model output="entities" predicate="@type='org'" behaviour="inline">
+          <model cssClass="entity-org" output="entities" predicate="@type='org'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-org)); text-decoration: underline solid; text-underline-offset: 0.22em;</outputRendition>
           </model>
-          <model output="entities" predicate="@type='institution'" behaviour="inline">
+          <model cssClass="entity-institution" output="entities" predicate="@type='institution'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-institution)); text-decoration: underline dotted; text-underline-offset: 0.22em;</outputRendition>
           </model>
-          <model output="entities" predicate="@type='bibl'" behaviour="inline">
+          <model cssClass="entity-bibl" output="entities" predicate="@type='bibl'" behaviour="inline">
             <outputRendition>color: rgb(var(--c-bibl)); text-decoration: underline dotted; text-underline-offset: 0.22em;</outputRendition>
           </model>
           <exemplum>
@@ -976,19 +970,19 @@
               </valList>
             </attDef>
           </attList>
-          <model predicate="@type='bibl'" behaviour="inline">
+          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline">
             <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model predicate="@type='speaker'" behaviour="inline">
+          <model cssClass="note-speaker" predicate="@type='speaker'" behaviour="inline">
             <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model predicate="@type='marginalia'" behaviour="block">
+          <model cssClass="note-marginalia" predicate="@type='marginalia'" behaviour="block">
             <outputRendition>max-width: 15em; margin: 0.3em 0 0.5em; padding-left: 0.6em; border-left: 2px solid rgb(var(--c-line)); font-size: 0.85em; line-height: 1.35; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model predicate="@type='remarkResponsibility'" behaviour="omit"/>
           <!-- a range comment: a numbered marker in the text, the note in the apparatus; the range
                runs from the anchor @targetEnd names to the marker -->
-          <model predicate="@targetEnd" behaviour="note">
+          <model cssClass="note-anchored" predicate="@targetEnd" behaviour="note">
             <param name="place" value="'end'"/>
             <param name="range" value="@targetEnd"/>
             <outputRendition>font-family: var(--f-ui); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; padding: 0 0.12em; color: rgb(var(--c-accent)); text-decoration: none; scroll-margin-top: 6rem;</outputRendition>
@@ -1044,7 +1038,7 @@
               <param name="content" value="'Notensatz'"/>
             </model>
           </modelGrp>
-          <model behaviour="block">
+          <model cssClass="figure-plain" behaviour="block">
             <outputRendition>margin: 1.2em 0; text-align: center;</outputRendition>
           </model>
           <model output="plaintext" predicate="@type='notatedMusic'" behaviour="omit"/>
@@ -1188,10 +1182,10 @@
           <!-- set where the print sets it, and kept out of the search index -->
           <modelGrp>
             <outputRendition>font-family: var(--f-ui); font-size: 0.7em; letter-spacing: 0.04em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
-            <model predicate="@type='header'" behaviour="block">
+            <model cssClass="fw-header" predicate="@type='header'" behaviour="block">
               <outputRendition>text-align: center;</outputRendition>
             </model>
-            <model predicate="@type='catch' or @type='pageNum'" behaviour="block">
+            <model cssClass="fw-right" predicate="@type='catch' or @type='pageNum'" behaviour="block">
               <outputRendition>text-align: right;</outputRendition>
             </model>
             <model behaviour="block"/>
@@ -1222,12 +1216,12 @@
                stays in the line -->
           <modelGrp>
             <outputRendition>display: flex; align-items: center; gap: 0.7em; margin: 1.4em 0; font-family: var(--f-ui); font-size: 0.68em; font-weight: 500; letter-spacing: 0.04em; color: rgb(var(--c-muted)); user-select: none; scroll-margin-top: 5rem;</outputRendition>
-            <model predicate="ancestor::l or ancestor::head" behaviour="break">
+            <model cssClass="pb-inline" predicate="ancestor::l or ancestor::head" behaviour="break">
               <param name="type" value="'page'"/>
               <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition>display: inline; margin: 0 0.3em;</outputRendition>
             </model>
-            <model behaviour="break">
+            <model cssClass="pb-rule" behaviour="break">
               <param name="type" value="'page'"/>
               <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
               <outputRendition scope="before">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
@@ -1303,12 +1297,12 @@
                hyphenated line end the print shows the break and the hyphen — the source's own
                (@data-hyphen, set where the transcription kept it) or a supplied one, in grey —
                while the reading text joins the word, and runs prose lines on. -->
-          <model predicate="@break='no' and @data-hyphen" behaviour="break">
+          <model cssClass="lb-hyphen" predicate="@break='no' and @data-hyphen" behaviour="break">
             <param name="type" value="'line'"/>
             <param name="label" value="''"/>
             <outputRendition scope="after">content: '-\A'; white-space: pre-wrap;</outputRendition>
           </model>
-          <model predicate="@break='no'" behaviour="break">
+          <model cssClass="lb-hyphen-supplied" predicate="@break='no'" behaviour="break">
             <param name="type" value="'line'"/>
             <param name="label" value="''"/>
             <outputRendition scope="after">content: '-\A'; white-space: pre-wrap; color: rgb(var(--c-muted));</outputRendition>

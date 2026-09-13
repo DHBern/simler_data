@@ -3,7 +3,8 @@
  * its `<tagsDecl>` and `<outputRendition>`s become the stylesheet.
  *
  * CSS selectors: a spec's only model (or model group) styles `.tei-<ident>`;
- * otherwise each styled model gets its `@cssClass`, or `<ident>-<n>`. Models
+ * otherwise a model group styles `.<ident>-group`, and a styled model its
+ * `@cssClass`, which it must have: a class the frontend can rely on. Models
  * with `@output` style a view, scoped to `[data-<output>='on']`; an `omit` there
  * hides the element in that view.
  */
@@ -83,7 +84,8 @@ export function readOdd(xml: string): Odd {
       if (kind === 'modelSequence') throw new Error(`${ident}: modelSequence is not supported`)
       const group = kind === 'modelGrp' ? entry : undefined
       const sole = entries.length === 1
-      const groupClass = group && !sole ? tokens(group, 'cssClass')[0] ?? `${ident}-g${g + 1}` : undefined
+      const earlier = entries.slice(0, g).filter((e) => localName(e.name) === 'modelGrp').length
+      const groupClass = group && !sole ? `${ident}-group${earlier ? earlier + 1 : ''}` : undefined
       if (group) css.push(...rules(group, sole ? `.tei-${ident}` : `.${groupClass}`))
 
       for (const m of group ? elementChildren(group, 'model') : [entry]) {
@@ -100,7 +102,7 @@ export function readOdd(xml: string): Odd {
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
         const bare = sole && !group && !predicate && !output
-        const cls = styled && !bare ? own[0] ?? `${ident}-${models.length + 1}` : undefined
+        const cls = styled && !bare ? own[0] ?? fail(`${where}: a styled model among others needs @cssClass`) : undefined
         if (styled) {
           const selector = bare ? `.tei-${ident}` : `.${cls}`
           ;(output ? view : css).push(...rules(m, output ? `[data-${output}='on'] ${selector}` : selector))

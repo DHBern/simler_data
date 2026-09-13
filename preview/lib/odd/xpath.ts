@@ -2,16 +2,17 @@
  * The XPath of Processing-Model predicates and params — a subset, compiled once
  * to closures over xast. Anything outside it throws when the ODD is read.
  *
- * Paths: `.`, `..`, `@name`, `name`, `*`, `node()`, the axes in AXES, `/` and
- * `[predicate]`. Operators: or, and, = != < <= > >=, + -, mod. Sequences
- * `(a, b)`, string and number literals, and the functions in FUNCTIONS.
+ * Paths: `.`, `..`, `@name`, `name`, `*`, `node()`, `text()`, the axes in AXES,
+ * `/`, `//`, absolute paths and `[predicate]`. Operators: or, and,
+ * = != < <= > >=, + -, mod, `if (…) then … else …`. Sequences `(a, b)`, string
+ * and number literals, and the functions in FUNCTIONS.
  */
 
-import { elementChildren, localName, textOf, type Element } from '../tei/xast'
+import { children, isElement, isText, localName, textOf, type Element, type Text } from '../tei/xast'
 
-/** An element and its ancestors, outermost first. */
+/** A node and its ancestor elements, outermost first. */
 export interface Pos {
-  node: Element
+  node: Element | Text
   up: Element[]
 }
 export type Item = Pos | string | number
@@ -49,8 +50,10 @@ function compare(op: string, a: Value, b: Value): boolean {
 }
 
 const kids = (p: Pos): Pos[] => {
-  const up = [...p.up, p.node]
-  return elementChildren(p.node).map((node) => ({ node, up }))
+  const up = [...p.up, p.node as Element]
+  return children(p.node)
+    .filter((node): node is Element | Text => isElement(node) || isText(node))
+    .map((node) => ({ node, up }))
 }
 const parent = (p: Pos): Pos[] => (p.up.length ? [{ node: p.up.at(-1)!, up: p.up.slice(0, -1) }] : [])
 const siblings = (p: Pos, after: boolean): Pos[] => {
@@ -59,19 +62,41 @@ const siblings = (p: Pos, after: boolean): Pos[] => {
   return after ? all.slice(i + 1) : all.slice(0, i).reverse()
 }
 const descendants = (p: Pos): Pos[] => kids(p).flatMap((k) => [k, ...descendants(k)])
+const ancestors = (p: Pos): Pos[] => p.up.map((node, i) => ({ node, up: p.up.slice(0, i) })).reverse()
+/** The document node above the outermost element, where an absolute path starts. */
+const documentOf = (p: Pos): Pos => ({ node: { type: 'root', children: [p.up[0] ?? p.node] } as unknown as Element, up: [] })
 
-/** Element axes, each in proximity order. */
+/** The axes, each in proximity order. */
 const AXES: Record<string, (p: Pos) => Pos[]> = {
   self: (p) => [p],
   child: kids,
   parent,
-  ancestor: (p) => p.up.map((node, i) => ({ node, up: p.up.slice(0, i) })).reverse(),
+  ancestor: ancestors,
+  'ancestor-or-self': (p) => [p, ...ancestors(p)],
   descendant: descendants,
+  'descendant-or-self': (p) => [p, ...descendants(p)],
   'preceding-sibling': (p) => siblings(p, false),
   'following-sibling': (p) => siblings(p, true),
+  preceding: (p) => [p, ...ancestors(p)].flatMap((a) => siblings(a, false).flatMap((s) => [...descendants(s).reverse(), s])),
+  following: (p) => [p, ...ancestors(p)].flatMap((a) => siblings(a, true).flatMap((s) => [s, ...descendants(s)])),
 }
 
+/** Position and size of the context in the predicate being evaluated. */
+let focus = { position: 1, size: 1 }
+
+/** Called without arguments, a function gets the context item. */
 const FUNCTIONS: Record<string, (...args: Value[]) => Value> = {
+  position: () => focus.position,
+  last: () => focus.size,
+  exists: (v) => seq(v).length > 0,
+  empty: (v) => seq(v).length === 0,
+  'local-name': (v) => {
+    const [item] = seq(v)
+    return isPos(item) && isElement(item.node) ? localName(item.node.name) : ''
+  },
+  'string-length': (a) => [...str(a)].length,
+  'ends-with': (a, b) => str(a).endsWith(str(b)),
+  matches: (a, re, flags) => new RegExp(str(re), flags === undefined ? '' : str(flags)).test(str(a)),
   not: (v) => !bool(v),
   count: (v) => seq(v).length,
   concat: (...vs) => vs.map(str).join(''),
@@ -119,14 +144,16 @@ export function compileXPath(expr: string): XPath {
 
   /** Keep the items a predicate admits: a number is a position, anything else a test. */
   const filter = (items: Item[], preds: Fn[], outer: Pos): Item[] =>
-    preds.reduce<Item[]>(
-      (list, pred) =>
-        list.filter((item, k) => {
-          const v = pred(isPos(item) ? item : outer)
-          return typeof v === 'number' ? v === k + 1 : bool(v)
-        }),
-      items,
-    )
+    preds.reduce<Item[]>((list, pred) => {
+      const saved = focus
+      const kept = list.filter((item, k) => {
+        focus = { position: k + 1, size: list.length }
+        const v = pred(isPos(item) ? item : outer)
+        return typeof v === 'number' ? v === k + 1 : bool(v)
+      })
+      focus = saved
+      return kept
+    }, items)
   const predicates = (): Fn[] => {
     const preds: Fn[] = []
     while (eat('[')) {
@@ -178,9 +205,10 @@ export function compileXPath(expr: string): XPath {
     return left
   }
 
-  /** A literal, a parenthesised sequence, a function call — or a location path. */
+  /** A literal, a parenthesised sequence, a conditional, a function call — or a location path. */
   function primary(): Fn {
     const tok = toks[i] ?? fail('unexpected end')
+    const call = tok.t === 'name' && toks[i + 1]?.v === '(' && tok.v !== 'node' && tok.v !== 'text'
     let base: Fn | undefined
     if (tok.t === 'str' || tok.t === 'num') {
       i++
@@ -191,23 +219,38 @@ export function compileXPath(expr: string): XPath {
       if (!is(')')) do items.push(or()); while (eat(','))
       expect(')')
       base = items.length === 1 ? items[0] : (p) => items.flatMap((f) => seq(f(p)))
-    } else if (tok.t === 'name' && toks[i + 1]?.v === '(' && tok.v !== 'node') {
+    } else if (call && tok.v === 'if') {
+      i += 2
+      const test = or()
+      expect(')')
+      if (!eat('then', 'name')) fail('expected "then"')
+      const yes = or()
+      if (!eat('else', 'name')) fail('expected "else"')
+      const no = or()
+      base = (p) => (bool(test(p)) ? yes(p) : no(p))
+    } else if (call) {
       const f = FUNCTIONS[tok.v] ?? fail(`unknown function ${tok.v}()`)
       i += 2
       const args: Fn[] = []
       if (!is(')')) do args.push(or()); while (eat(','))
       expect(')')
-      base = (p) => f(...args.map((a) => a(p)))
+      base = (p) => f(...(args.length ? args.map((a) => a(p)) : [[p]]))
     }
     if (!base) return path()
     const [inner, preds] = [base, predicates()]
     return preds.length ? (p) => filter(seq(inner(p)), preds, p) : inner
   }
 
+  /** Steps joined by `/`; `//` is `/descendant-or-self::node()/`, a leading `/` the document. */
   function path(): Fn {
-    const steps = [step()]
-    while (eat('/')) steps.push(step())
-    return (p) => steps.reduce<Item[]>((ctx, s) => ctx.flatMap((c) => (isPos(c) ? s(c) : [])), [p])
+    const absolute = is('/')
+    const steps: ((p: Pos) => Item[])[] = absolute ? [] : [step()]
+    while (eat('/')) {
+      if (eat('/')) steps.push(AXES['descendant-or-self'])
+      steps.push(step())
+    }
+    return (p) =>
+      steps.reduce<Item[]>((ctx, s) => ctx.flatMap((c) => (isPos(c) ? s(c) : [])), [absolute ? documentOf(p) : p])
   }
 
   function step(): (p: Pos) => Item[] {
@@ -216,7 +259,7 @@ export function compileXPath(expr: string): XPath {
     if (eat('@')) {
       const attr = name()
       return (p) => {
-        const v = p.node.attributes?.[attr]
+        const v = isElement(p.node) ? p.node.attributes?.[attr] : undefined
         return v == null ? [] : [v]
       }
     }
@@ -226,19 +269,17 @@ export function compileXPath(expr: string): XPath {
       i++
     }
     const move = AXES[axis] ?? fail(`unsupported axis ${axis}`)
-    let test = '*'
+    let test = (q: Pos['node']): boolean => isElement(q)
     if (!eat('*')) {
-      test = name()
-      if (test === 'node' && eat('(')) (expect(')'), (test = '*'))
+      const n = name()
+      const local = localName(n)
+      if ((n === 'node' || n === 'text') && eat('(')) {
+        expect(')')
+        test = n === 'node' ? () => true : (q) => isText(q)
+      } else test = (q) => isElement(q) && localName(q.name) === local
     }
-    const local = localName(test)
     const preds = predicates()
-    return (p) =>
-      filter(
-        move(p).filter((q) => local === '*' || localName(q.node.name) === local),
-        preds,
-        p,
-      )
+    return (p) => filter(move(p).filter((q) => test(q.node)), preds, p)
   }
 
   const root = or()

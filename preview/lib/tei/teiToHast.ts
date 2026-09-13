@@ -140,6 +140,13 @@ function classes(props: Properties): string[] {
   return Array.isArray(props.className) ? props.className.map(String) : []
 }
 
+/** Params named `--…` become CSS custom properties of the rendered element, `data-…` its attributes. */
+function paramProps(params: Record<string, Value>): Properties {
+  const named = (prefix: string) => Object.entries(params).filter(([k]) => k.startsWith(prefix))
+  const style = named('--').map(([k, v]) => `${k}: ${str(v)}`).join('; ')
+  return { ...Object.fromEntries(named('data-').map(([k, v]) => [k, str(v)])), ...(style ? { style } : {}) }
+}
+
 function attrMap(node: Element): Properties {
   const props: Properties = {}
   for (const [name, value] of Object.entries(node.attributes ?? {})) {
@@ -220,6 +227,7 @@ export function createRenderer(odd: Odd) {
     const props = {
       className: [`tei-${ln}`, ...model.classes, ...viewClasses, ...renditions(node).map((r) => `r-${r}`)],
       ...attrMap(node),
+      ...paramProps(params),
     }
     const value = (v: Value, tag?: string) =>
       seq(v).flatMap((item) =>

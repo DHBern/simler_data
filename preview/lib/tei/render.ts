@@ -20,13 +20,14 @@ import { unified, type Plugin } from 'unified'
 import { VFile } from 'vfile'
 import { fromXml } from 'xast-util-from-xml'
 
-import type { Odd } from '../odd/odd'
+import { select, type Odd } from '../odd/odd'
+import { seq, str } from '../odd/xpath'
 import { hastToSearchText } from '../search/text'
 import { lineEndHyphens } from './hyphens'
 import { wsTrim } from './plugins'
 import { resolveRanges } from './ranges'
 import { createRenderer, type CollectedNote, type RenderState } from './teiToHast'
-import type { Root as XastRoot } from './xast'
+import { isElement, localName, type Element, type Root as XastRoot } from './xast'
 
 /** What one render produces. */
 export interface RenderResult {
@@ -38,6 +39,8 @@ export interface RenderResult {
   warnings: string[]
   /** Elements the ODD has no model for. */
   unmapped: string[]
+  /** The params of the root element's `page` model, each as strings. */
+  page: Record<string, string[]>
 }
 
 export interface RenderedNote extends Omit<CollectedNote, 'body'> {
@@ -51,6 +54,8 @@ const xastParse: Plugin<[], XastRoot> = function () {
 
 /** The output the search indexes. */
 const PLAINTEXT = 'plaintext'
+/** The output whose params, on the root element, describe the page around the text. */
+const PAGE = 'page'
 
 const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
   const render = createRenderer(odd)
@@ -58,6 +63,11 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
     // Notes and findings are the page's; this rendering's go nowhere.
     const scratch: RenderState = { notes: [], warnings: [], unmapped: new Set(), anchors: [] }
     file.data.text = hastToSearchText({ type: 'root', children: render(tree, scratch, PLAINTEXT) })
+    const top = tree.children.find((n): n is Element => isElement(n))
+    const page = top && select(odd.models[localName(top.name)] ?? [], { node: top, up: [] }, PAGE)
+    file.data.page = Object.fromEntries(
+      Object.entries(page?.params ?? {}).map(([k, f]) => [k, seq(f({ node: top!, up: [] })).map((item) => str([item]))]),
+    )
 
     const state = file.data.teiState as RenderState
     const root: HastRoot = { type: 'root', children: render(tree, state) }
@@ -93,5 +103,6 @@ export function renderTei(xml: string, processor: ReturnType<typeof createProces
     })),
     warnings: state.warnings,
     unmapped: [...state.unmapped].sort(),
+    page: file.data.page as Record<string, string[]>,
   }
 }
