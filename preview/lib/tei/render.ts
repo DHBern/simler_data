@@ -6,7 +6,8 @@
  *       .use(wsTrim)          xast   → xast     TEI indentation is not text
  *       .use(lineEndHyphens)  xast   → xast     the hyphen at a joined line end
  *       .use(noteRanges)      xast   → xast     <anchor>…<note @targetEnd> → <noteRange>
- *       .use(teiToHast)       xast   → hast     the ODD's Processing Model
+ *       .use(teiToHast)       xast   → hast     the ODD's Processing Model; its
+ *                                              `plaintext` output is the search text
  *       .use(rehypeStringify) hast   → string
  *
  * Everything element-specific — which elements are blocks, how each renders —
@@ -30,7 +31,7 @@ import type { Root as XastRoot } from './xast'
 /** What one render produces. */
 export interface RenderResult {
   html: string
-  /** The same text as plain characters, for the search index; not yet normalised. */
+  /** The ODD's `plaintext` rendering, for the search index; not yet normalised. */
   text: string
   /** Note bodies, already rendered to HTML, in document order. */
   notes: RenderedNote[]
@@ -48,9 +49,17 @@ const xastParse: Plugin<[], XastRoot> = function () {
   self.parser = (doc: string) => fromXml(doc)
 }
 
+/** The output the search indexes. */
+const PLAINTEXT = 'plaintext'
+
 const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
   const render = createRenderer(odd)
-  return (tree, file) => ({ type: 'root', children: render(tree, file.data.teiState as RenderState) })
+  return (tree, file) => {
+    // Notes and findings are the page's; this rendering's go nowhere.
+    const scratch: RenderState = { notes: [], warnings: [], unmapped: new Set() }
+    file.data.text = hastToSearchText({ type: 'root', children: render(tree, scratch, PLAINTEXT) })
+    return { type: 'root', children: render(tree, file.data.teiState as RenderState) }
+  }
 }
 
 /** The processor for one ODD; frozen, so a build creates it once. */
@@ -72,7 +81,7 @@ export function renderTei(xml: string, processor: ReturnType<typeof createProces
   const hast = processor.runSync(processor.parse(file) as XastRoot, file) as HastRoot
   return {
     html: processor.stringify(hast, file),
-    text: hastToSearchText(hast),
+    text: file.data.text as string,
     notes: state.notes.map(({ body, ...rest }) => ({
       ...rest,
       html: processor.stringify({ type: 'root', children: body } as HastRoot, file),

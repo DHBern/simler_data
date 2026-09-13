@@ -96,11 +96,15 @@
 
       <p>The Processing Model renders the edition. Each element takes the first <gi>model</gi> whose
         <att>predicate</att> holds; a <gi>modelGrp</gi>'s <gi>outputRendition</gi> styles all of its
-        models. Models with an <att>output</att> name a view instead: <val>normalized</val> (the
-        reading text) and <val>entities</val> (entity highlighting) restyle the base rendering and can
-        be switched on and off; <val>plaintext</val> is the text of the search index. Source
-        appearance is carried wherever <att>rendition</att> occurs. Colours, fonts and measures are
-        the edition's design tokens (CSS custom properties).</p>
+        models. Params are XPath: the nodes they select are rendered by their own models, anything
+        else as text. Models with an <att>output</att> belong to that output and take precedence
+        over the base models there. <val>plaintext</val>, the text of the search index, is rendered
+        on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
+        highlighting) are views over the base rendering that can be switched on and off: a view's
+        model omits the element, restyles it, or gives the same behaviour other params — an
+        <val>alternate</val> shows the view's own default. Source appearance is carried wherever
+        <att>rendition</att> occurs. Colours, fonts and measures are the edition's design tokens
+        (CSS custom properties).</p>
 
       <schemaSpec ident="tei_simler" start="TEI" prefix="tei_" targetLang="de" docLang="en">
 
@@ -847,7 +851,19 @@
               <elementRef key="sic"/><elementRef key="corr"/>
             </alternate>
           </content>
+          <!-- the print, and in the reading text the correction; the search finds both -->
+          <model predicate="sic and corr" behaviour="alternate">
+            <param name="default" value="sic"/>
+            <param name="alternate" value="corr"/>
+          </model>
           <model behaviour="inline"/>
+          <model output="normalized" predicate="sic and corr" behaviour="alternate">
+            <param name="default" value="corr"/>
+            <param name="alternate" value="sic"/>
+          </model>
+          <model output="plaintext" predicate="sic and corr" behaviour="inline">
+            <param name="content" value="(sic, ' ', corr)"/>
+          </model>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <l>Wiewol ich krankner mir gedult hab <choice><sic>fu&#x364;rgenommen</sic><corr>fürgenommen</corr></choice>/</l>
@@ -858,22 +874,14 @@
           <desc>The reading actually present in the source, retained unchanged.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
           <model behaviour="inline"/>
-          <model output="normalized" predicate="parent::choice" behaviour="omit"/>
         </elementSpec>
         <elementSpec ident="corr" module="core" mode="change">
           <desc>The editorial correction of an obvious printing error.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
           <!-- an editorial correction is marked as one: dotted, never silent -->
-          <modelGrp>
+          <model behaviour="inline">
             <outputRendition>text-decoration: underline dotted rgb(var(--c-muted)); text-underline-offset: 0.22em;</outputRendition>
-            <model predicate="parent::choice" behaviour="inline">
-              <outputRendition>display: none;</outputRendition>
-            </model>
-            <model behaviour="inline"/>
-            <model output="normalized" predicate="parent::choice" behaviour="inline">
-              <outputRendition>display: inline;</outputRendition>
-            </model>
-          </modelGrp>
+          </model>
         </elementSpec>
 
         <elementSpec ident="supplied" module="transcr" mode="change">

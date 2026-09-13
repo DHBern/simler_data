@@ -42,11 +42,19 @@ python -m http.server -d dist 8080     # or: npx serve dist
 `schema/tei_simler.odd` is the only source of truth for the rendering; the code
 knows no TEI element by name. Each element takes the first `<model>` whose
 `@predicate` holds, and its `@behaviour` (`block`, `inline`, `heading`, `break`,
-`note`, …) decides the HTML. `<outputRendition>` and `<tagsDecl>` compile to
-`dist/assets/odd.css`; a `<modelGrp>`'s rendition styles all its models. Which
-elements count as blocks for whitespace and line breaks follows from their
-behaviours. Models with `@output` restyle a view instead: `normalized` and
-`entities` are the preview's switches, `plaintext` is what the search indexes.
+`note`, `alternate`, …) decides the HTML. Params are XPath: the nodes they select
+are rendered by their own models, anything else is text, so
+`<param name="content" value="corr"/>` renders the correction.
+`<outputRendition>` and `<tagsDecl>` compile to `dist/assets/odd.css`; a
+`<modelGrp>`'s rendition styles all its models. Which elements count as blocks
+for whitespace and line breaks follows from their behaviours.
+
+Models with `@output` belong to that output and take precedence over the base
+models there. `plaintext` is rendered on its own and is what the search indexes.
+`normalized` and `entities` are the preview's switches: views over the one page,
+where a model may omit the element, restyle it, or give the same behaviour other
+params — an `alternate` (as for `choice`) renders every reading once and shows
+each view's own default.
 
 To change how something looks or renders, edit its `elementSpec` and rebuild.
 Predicates and params use an XPath subset (`lib/odd/xpath.ts`); anything outside

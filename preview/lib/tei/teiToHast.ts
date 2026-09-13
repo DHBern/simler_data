@@ -1,15 +1,17 @@
 /**
  * The walker: xast (TEI) → hast (HTML), driven by the ODD's Processing Model.
  *
- * Top-down: each element takes the first base model whose predicate holds and
- * renders by its behaviour, which decides what of its content to render. The
- * models of views only add the classes their CSS keys on.
+ * Top-down: each element takes the first model of the output being rendered
+ * whose predicate holds, else the first such base model, and renders by its
+ * behaviour, which decides what of its content to render. Rendering the page,
+ * the models of views only add classes, an `omit`, or other params for the same
+ * behaviour; the view's CSS keys on them.
  */
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
 import type { Model, Odd } from '../odd/odd'
-import { bool, str, type Pos, type Value } from '../odd/xpath'
+import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
 import { NOTE_RANGE } from './noteRanges'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
 
@@ -35,10 +37,14 @@ interface Ctx {
   pos: Pos
   props: Properties
   params: Record<string, Value>
+  /** The params of each view whose model shares this behaviour; null for an output rendered on its own. */
+  views: Record<string, Record<string, Value>> | null
   /** Whether the output around this element takes phrasing content only. */
   phrasing: boolean
   /** The element's content — its `content` param, or its children rendered inside `tag`. */
   content: (tag?: string) => ElementContent[]
+  /** A param's value: the nodes it selects rendered by their own models, anything else as text. */
+  value: (v: Value, tag?: string) => ElementContent[]
   state: RenderState
   atLineStart: () => boolean
 }
@@ -50,6 +56,9 @@ export const text = (value: string): ElementContent => ({ type: 'text', value })
 
 /** HTML elements whose content must be phrasing: a block inside becomes a span. */
 const PHRASING = new Set(['p', 'span', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
+
+const items = (v: Value | undefined): Item[] => (v === undefined ? [] : seq(v))
+const same = (a: Item, b: Item) => (isPos(a) && isPos(b) ? a.node === b.node : a === b)
 
 const block =
   (tag: string): Behaviour =>
@@ -71,6 +80,17 @@ const BEHAVIOURS: Record<string, Behaviour> = {
   listItem: block('li'),
   cit: block('blockquote'),
   inline: (c) => h('span', c.props, c.content('span')),
+  /** Each reading once, marked as the default or not of the page and of each view; alone, the default. */
+  alternate: (c) => {
+    if (!c.views) return c.value(c.params.default)
+    const outputs = [['pm', c.params], ...Object.entries(c.views)] as const
+    const readings = outputs
+      .flatMap(([, p]) => [...items(p.default), ...items(p.alternate)])
+      .filter((r, i, all) => all.findIndex((s) => same(r, s)) === i)
+    return h('span', c.props, readings.map((r) => h('span', {
+      className: ['pm-alt', ...outputs.map(([o, p]) => `${o}-${items(p.default).some((d) => same(d, r)) ? 'default' : 'alternate'}`)],
+    }, c.value([r], 'span'))))
+  },
   anchor: (c) => (c.props.id ? h('span', c.props) : null),
   /** A line break where the output already starts a line would be an empty line. */
   break: (c) => {
@@ -124,7 +144,7 @@ export function createRenderer(odd: Odd) {
   for (const [ident, models] of Object.entries(odd.models)) {
     for (const m of models) if (!BEHAVIOURS[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
   }
-  const views = Object.fromEntries(
+  const outputs = Object.fromEntries(
     Object.entries(odd.models).map(([ident, ms]) => [ident, [...new Set(ms.flatMap((m) => (m.output ? [m.output] : [])))]]),
   )
   const select = (models: Model[], pos: Pos, output?: string) =>
@@ -154,48 +174,60 @@ export function createRenderer(odd: Odd) {
     }
   }
 
-  function render(node: Nodes, up: Element[], phrasing: boolean, state: RenderState): ElementContent[] {
+  /** `output` unset renders the page, with its views; set, that output alone. */
+  function render(node: Nodes, up: Element[], phrasing: boolean, state: RenderState, output?: string): ElementContent[] {
     if (isText(node)) return node.value ? [text(node.value)] : []
     if (!isElement(node)) return []
 
     const ln = localName(node.name)
-    const kids = (tag?: string) => {
-      const inner = [...up, node]
-      const p = tag ? PHRASING.has(tag) : phrasing
-      return children(node).flatMap((child) => render(child as Nodes, inner, p, state))
-    }
+    const inside = (tag?: string) => (tag ? PHRASING.has(tag) : phrasing)
+    const kids = (tag?: string) =>
+      children(node).flatMap((child) => render(child as Nodes, [...up, node], inside(tag), state, output))
     if (ln === NOTE_RANGE) return [h('span', { className: ['note-range'], 'data-note': attr(node, 'data-note') }, kids('span'))]
 
     const pos: Pos = { node, up }
     const models = odd.models[ln] ?? []
-    const model = select(models, pos)
+    const model = (output && select(models, pos, output)) || select(models, pos)
     if (!model) {
       state.unmapped.add(ln)
       return [h('span', { ...attrMap(node), className: [`tei-${ln}`, 'tei-unmapped'] }, kids('span'))]
     }
     check(node, ln, state)
 
-    const viewClasses = views[ln].flatMap((v) => {
+    const evaluate = (m: Model) => Object.fromEntries(Object.entries(m.params).map(([k, f]) => [k, f(pos)]))
+    const views: Record<string, Record<string, Value>> = {}
+    const viewClasses: string[] = []
+    for (const v of output ? [] : outputs[ln]) {
       const m = select(models, pos, v)
-      return !m ? [] : m.behaviour === 'omit' ? [`${v}-omit`] : m.classes
-    })
-    const params = Object.fromEntries(Object.entries(model.params).map(([k, f]) => [k, f(pos)]))
+      if (m?.behaviour === 'omit') viewClasses.push(`${v}-omit`)
+      else if (m?.behaviour === model.behaviour) {
+        viewClasses.push(...m.classes)
+        views[v] = evaluate(m)
+      }
+    }
+    const params = evaluate(model)
     const props = {
       className: [`tei-${ln}`, ...model.classes, ...viewClasses, ...renditions(node).map((r) => `r-${r}`)],
       ...attrMap(node),
     }
+    const value = (v: Value, tag?: string) =>
+      seq(v).flatMap((item) =>
+        isPos(item) ? render(item.node, item.up, inside(tag), state, output) : String(item) ? [text(String(item))] : [],
+      )
     const out = BEHAVIOURS[model.behaviour]({
       pos,
       props,
       params,
+      views: output ? null : views,
       phrasing,
-      content: (tag) => ('content' in params ? [text(str(params.content))] : kids(tag)),
+      content: (tag) => ('content' in params ? value(params.content, tag) : kids(tag)),
+      value,
       state,
       atLineStart: () => atLineStart(pos),
     })
     return out == null ? [] : Array.isArray(out) ? out : [out]
   }
 
-  return (tree: Nodes, state: RenderState): ElementContent[] =>
-    (tree.type === 'root' ? children(tree) : [tree]).flatMap((node) => render(node as Nodes, [], false, state))
+  return (tree: Nodes, state: RenderState, output?: string): ElementContent[] =>
+    (tree.type === 'root' ? children(tree) : [tree]).flatMap((node) => render(node as Nodes, [], false, state, output))
 }

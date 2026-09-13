@@ -36,7 +36,7 @@ export interface Odd {
 }
 
 const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
-const INLINE = new Set(['inline', 'note', 'anchor', 'break'])
+const INLINE = new Set(['inline', 'note', 'anchor', 'break', 'alternate'])
 
 const tokens = (el: Element | undefined, name: string) => (el ? attr(el, name) ?? '' : '').split(/\s+/).filter(Boolean)
 
@@ -48,7 +48,10 @@ const rules = (el: Element, selector: string) => elementChildren(el, 'outputRend
 export function readOdd(xml: string): Odd {
   const tree = fromXml(xml)
   const odd: Odd = { models: {}, blocks: new Set(), inlines: new Set(), values: {}, renditions: new Set(), css: '' }
-  const css = ['.pm-block { display: block; }'] // a block set inside phrasing content renders as a span
+  const css = [
+    '.pm-block { display: block; }', // a block set inside phrasing content renders as a span
+    '.pm-alternate { display: none; }',
+  ]
   const views = new Set<string>()
 
   for (const r of elementChildren(findFirst(tree, 'tagsDecl'), 'rendition')) {
@@ -113,7 +116,13 @@ export function readOdd(xml: string): Odd {
     }
   }
 
-  for (const v of views) css.push(`[data-${v}='on'] .${v}-omit { display: none; }`)
+  for (const v of views) {
+    css.push(
+      `[data-${v}='on'] .${v}-omit { display: none; }`,
+      `[data-${v}='on'] .pm-alt.${v}-default { display: inline; }`,
+      `[data-${v}='on'] .pm-alt.${v}-alternate { display: none; }`,
+    )
+  }
   odd.css = `/* Generated from tei_simler.odd — edit the ODD, not this file. */\n${css.join('\n')}\n`
   return odd
 }

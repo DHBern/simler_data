@@ -14,13 +14,13 @@ export interface Pos {
   node: Element
   up: Element[]
 }
-type Item = Pos | string | number
+export type Item = Pos | string | number
 export type Value = Item[] | string | number | boolean
 export type XPath = (pos: Pos) => Value
 
-const isPos = (item: unknown): item is Pos => typeof item === 'object' && item !== null && 'node' in item
+export const isPos = (item: unknown): item is Pos => typeof item === 'object' && item !== null && 'node' in item
 const atom = (item: Item): string | number => (isPos(item) ? textOf(item.node) : item)
-const seq = (v: Value): Item[] => (Array.isArray(v) ? v : [v as Item])
+export const seq = (v: Value): Item[] => (Array.isArray(v) ? v : [v as Item])
 const num = (v: Value): number => (typeof v === 'number' ? v : Number(str(v)))
 
 export const bool = (v: Value): boolean =>
