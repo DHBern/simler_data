@@ -44,6 +44,12 @@ main {
   max-width: calc(var(--measure) + 2 * var(--pad));
 }
 .tei-text { margin-inline: auto; }
+/* The document's title, for the outline; the bar shows it too. */
+.doc-title {
+  margin: 0 0 1.5rem;
+  font: 500 0.95rem/1.35 var(--f-ui);
+  color: rgb(var(--c-ui-muted));
+}
 
 /* ── The control layer ────────────────────────────────────────────────────── */
 
@@ -284,16 +290,24 @@ main {
 
 .note-marker:hover { text-decoration: underline; }
 /* The marker, or the reference, whose panel is open. */
-.note-marker[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
+.note-marker:is([aria-expanded='true'], .is-linked) { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
 .tei-rs[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 .tei-rs[data-key] { cursor: pointer; }
+/* A page break that opens its page in the facsimile, where the window has room for it. */
+@media (min-width: 64rem) {
+  [data-page][role='button'] { cursor: pointer; }
+  [data-page][role='button']:hover { color: rgb(var(--c-ui-accent)); }
+}
 
 .note-range {
   background-color: rgb(var(--c-accent) / 0.07);
   box-shadow: 0 1px 0 rgb(var(--c-accent) / 0.35);
+  cursor: pointer;
 }
+/* A commented range and its marker, while either is pointed at or the note is open. */
+.note-range.is-linked { background-color: rgb(var(--c-accent) / 0.2); }
 [data-notes='off'] :is(.note-marker, .endnotes, .overview) { display: none; }
-[data-notes='off'] .note-range { background-color: transparent; box-shadow: none; }
+[data-notes='off'] .note-range { background-color: transparent; box-shadow: none; cursor: auto; }
 
 /* `?q=`: the words the search matched, and the one the reader is on. */
 .tei-text mark.search-hit {

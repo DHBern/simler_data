@@ -16,7 +16,6 @@ import { dirname, join, relative, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import * as pagefind from 'pagefind'
-import { fromXml } from 'xast-util-from-xml'
 
 import { normalizeForSearch } from './assets/normalize.js'
 
@@ -24,7 +23,7 @@ import { loadEntities, type Entity } from './lib/entities'
 import { readOdd } from './lib/odd/odd'
 import { imageRoot } from './lib/tei/iiif'
 import { createProcessor, renderTei } from './lib/tei/render'
-import { attr, findAll, findFirst, plainText, type Nodes } from './lib/tei/xast'
+import { parse } from './lib/tei/xast'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 
 type Processor = ReturnType<typeof createProcessor>
@@ -68,14 +67,13 @@ function tally(warnings: string[]): string[] {
  * The entities this document names, with how often — the card's own page data.
  */
 function entitiesIn(
-  tree: Nodes,
+  keys: string[],
   registers: Record<string, Entity>,
 ): { used: Record<string, Entity & { count: number }>; unknown: string[] } {
   const used: Record<string, Entity & { count: number }> = {}
   const unknown = new Set<string>()
 
-  for (const rs of findAll(tree, 'rs')) {
-    const key = attr(rs, 'key')
+  for (const key of keys) {
     if (!key) continue
     if (used[key]) {
       used[key].count++
@@ -86,20 +84,6 @@ function entitiesIn(
     }
   }
   return { used, unknown: [...unknown].sort() }
-}
-
-/** `titleStmt/title`, the one piece of the header a preview needs. */
-function titleOf(tree: Nodes): string {
-  const titleStmt = findFirst(tree, 'titleStmt')
-  return titleStmt ? plainText(findFirst(titleStmt, 'title')) : ''
-}
-
-/** The IIIF manifest, `<idno type="URLIIIF">` — where the facsimiles live. */
-function manifestOf(tree: Nodes): string | null {
-  for (const idno of findAll(tree, 'idno')) {
-    if (attr(idno, 'type') === 'URLIIIF') return plainText(idno).trim() || null
-  }
-  return null
 }
 
 function render(file: string, xml: string, registers: Record<string, Entity>, processor: Processor): PreviewDoc {
@@ -113,21 +97,20 @@ function render(file: string, xml: string, registers: Record<string, Entity>, pr
   // page saying so, and the index flags it like any other finding.
   let tree
   try {
-    tree = fromXml(xml)
+    tree = parse(xml)
   } catch (error) {
-    // The parser's own message is generic; the position and the offending tag
-    // are in the cause, which is the only part an editor can act on.
-    const { cause, message } = error as Error & { cause?: Error }
-    return { ...base, warnings: [`XML nicht wohlgeformt: ${cause?.message ?? message}`] }
+    // The parser's message names the position and the offending tag.
+    return { ...base, warnings: [`XML nicht wohlgeformt: ${(error as Error).message}`] }
   }
 
-  const result = renderTei(xml, processor)
-  const pages = findAll(tree, 'pb').flatMap((pb) => attr(pb, 'facs') ?? [])
-  const entities = entitiesIn(tree, registers)
-  const facsRoot = imageRoot(manifestOf(tree))
+  // Where title, facsimile and entities come from is the ODD's `page` model.
+  const result = renderTei(tree, processor)
+  const { title = [], manifest = [], pages = [], entities: keys = [] } = result.page
+  const entities = entitiesIn(keys, registers)
+  const facsRoot = imageRoot(manifest[0])
   return {
     ...base,
-    title: titleOf(tree) || file,
+    title: title[0] || file,
     html: result.html,
     text: result.text,
     notes: result.notes,

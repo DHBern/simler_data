@@ -61,9 +61,27 @@
   // whose links cannot be reached.
 
   var MARGIN = 8
+  var popovers = []
 
-  /** `fill` returns false to decline — the click is then not intercepted. */
-  function createPopover(panel, selector, fill) {
+  document.addEventListener('click', function (event) {
+    var target = event.target
+    if (!target.closest) return
+    for (var i = 0; i < popovers.length; i++) if (popovers[i].inside(target)) return
+    // Every panel's first selector before any second: a marker or an entity before a commented range.
+    for (var rank = 0; rank < 2; rank++) {
+      for (var j = 0; j < popovers.length; j++) {
+        var selector = popovers[j].selectors[rank]
+        var trigger = selector && target.closest(selector)
+        if (trigger && popovers[j].open(trigger)) {
+          event.preventDefault()
+          return
+        }
+      }
+    }
+  })
+
+  /** `selectors` by rank; `fill` returns false to decline — the click is then not intercepted. */
+  function createPopover(panel, selectors, fill, closed) {
     // Safari < 17 has no popover API: a plain `hidden` toggle, so no top layer
     // and no light dismiss, but the panel still opens, reads and closes.
     var native = typeof panel.showPopover === 'function'
@@ -100,22 +118,28 @@
       return true
     }
 
-    function close() {
-      if (native) { if (isOpen()) panel.hidePopover() } else { panel.hidden = true }
+    function reset() {
       if (active) active.setAttribute('aria-expanded', 'false')
       active = null
+      if (closed) closed()
     }
 
-    document.addEventListener('click', function (event) {
-      var target = event.target
-      if (!target.closest) return
-      if (panel.contains(target)) {
+    function close() {
+      if (native) { if (isOpen()) panel.hidePopover() } else { panel.hidden = true }
+      reset()
+    }
+
+    var popover = {
+      selectors: selectors,
+      open: open,
+      /** A click in the panel is the panel's own. */
+      inside: function (target) {
+        if (!panel.contains(target)) return false
         if (target.closest('[data-popover-close]')) close()
-        return
-      }
-      var trigger = target.closest(selector)
-      if (trigger && open(trigger)) event.preventDefault()
-    })
+        return true
+      },
+    }
+    popovers.push(popover)
 
     // An open panel follows its trigger while the reader scrolls past.
     var follow = function () { if (active && isOpen()) place(active) }
@@ -124,26 +148,45 @@
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && isOpen()) close() })
     // Light dismiss bypasses `close()`, so the trigger is reset here too.
     panel.addEventListener('toggle', function (e) {
-      if (e.newState === 'closed' && active) {
-        active.setAttribute('aria-expanded', 'false')
-        active = null
-      }
+      if (e.newState === 'closed' && active) reset()
     })
 
-    return { open: open, current: function () { return active } }
+    return popover
   }
 
   // ── The Stellenkommentar tooltip ─────────────────────────────────────────
 
+  // A marker and its commented range share `data-note`: either one opens the note.
+  var MARKER = 'a.note-marker[data-note]'
+  var RANGE = '.note-range[data-note]'
   var notePanel = document.getElementById('note-popover')
-  var markers = [].slice.call(document.querySelectorAll('a.note-marker[data-note]'))
+  var markers = [].slice.call(document.querySelectorAll(MARKER))
   if (notePanel && markers.length) {
     var title = notePanel.querySelector('[data-note-title]')
     var body = notePanel.querySelector('[data-note-body]')
     var jump = notePanel.querySelector('[data-note-jump]')
+    /** The marker of the note shown. */
+    var shown = null
+    var lit = null
 
-    var notes = createPopover(notePanel, 'a.note-marker[data-note]', function (marker) {
-      var note = document.getElementById(marker.dataset.note)
+    /** The marker and range of one note light up together. */
+    function light(key) {
+      if (key === lit) return
+      document.querySelectorAll('.is-linked').forEach(function (el) { el.classList.remove('is-linked') })
+      if (key) document.querySelectorAll('[data-note="' + key + '"]').forEach(function (el) { el.classList.add('is-linked') })
+      lit = key
+    }
+    function point(event) {
+      var at = event.target.closest && (event.target.closest(MARKER) || event.target.closest(RANGE))
+      light(at ? at.dataset.note : shown && shown.dataset.note)
+    }
+    document.addEventListener('mouseover', point)
+    document.addEventListener('focusin', point)
+
+    var notes = createPopover(notePanel, [MARKER, RANGE], function (trigger) {
+      if (root.getAttribute('data-notes') === 'off') return false
+      var marker = markers.find(function (m) { return m.dataset.note === trigger.dataset.note })
+      var note = marker && document.getElementById(marker.dataset.note)
       var source = note && note.querySelector('.endnote-body')
       if (!source) return false // no endnote to read from: leave the marker its link
       var at = markers.indexOf(marker)
@@ -157,15 +200,19 @@
         button.disabled = to < 0 || to >= markers.length
         button.hidden = markers.length < 2
       })
+      shown = marker
+      light(marker.dataset.note)
       return true
+    }, function () {
+      shown = null
+      light(null)
     })
 
     notePanel.addEventListener('click', function (event) {
       var step = event.target.closest('[data-note-step]')
-      var current = notes.current()
-      if (!step || !current) return
+      if (!step || !shown) return
       // Bring the marker into view first: the panel is placed against it.
-      var next = markers[markers.indexOf(current) + Number(step.dataset.noteStep)]
+      var next = markers[markers.indexOf(shown) + Number(step.dataset.noteStep)]
       if (!next) return
       next.scrollIntoView({ block: 'center' })
       notes.open(next)
@@ -191,7 +238,7 @@
       element.hidden = !value
     }
 
-    createPopover(cardPanel, '.tei-rs[data-key]', function (trigger) {
+    createPopover(cardPanel, ['.tei-rs[data-key]'], function (trigger) {
       var entity = entities[trigger.dataset.key]
       if (!entity) return false // no register entry: nothing to show
       kind.textContent = entity.kind

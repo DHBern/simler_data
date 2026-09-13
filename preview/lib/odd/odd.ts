@@ -3,15 +3,14 @@
  * its `<tagsDecl>` and `<outputRendition>`s become the stylesheet.
  *
  * CSS selectors: a spec's only model (or model group) styles `.tei-<ident>`;
- * otherwise each styled model gets its `@cssClass`, or `<ident>-<n>`. Models
+ * otherwise a model group styles `.<ident>-group`, and a styled model its
+ * `@cssClass`, which it must have: a class the frontend can rely on. Models
  * with `@output` style a view, scoped to `[data-<output>='on']`; an `omit` there
  * hides the element in that view.
  */
 
-import { fromXml } from 'xast-util-from-xml'
-
-import { attr, elementChildren, findFirst, localName, textOf, type Element } from '../tei/xast'
-import { compileXPath, type XPath } from './xpath'
+import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast'
+import { bool, compileXPath, type Pos, type XPath } from './xpath'
 
 export interface Model {
   behaviour: string
@@ -21,13 +20,16 @@ export interface Model {
   params: Record<string, XPath>
   /** Classes the rendered element carries for this model's CSS. */
   classes: string[]
+  /** Whether the element's `@rendition` styles it too. */
+  useSourceRendition: boolean
+  /** A `modelSequence`'s models: each whose predicate holds renders, one after the other. */
+  sequence?: Model[]
 }
 
 export interface Odd {
   models: Record<string, Model[]>
-  /** Elements whose every base model is block-level, or inline. */
-  blocks: Set<string>
-  inlines: Set<string>
+  /** Whether an element, where it stands, renders as a block or inline: by the base model it takes. */
+  flow: (node: Element, up: Element[]) => 'block' | 'inline' | undefined
   /** Suggested and closed values, by element and attribute. */
   values: Record<string, Record<string, Set<string>>>
   /** Rendition ids declared in `<tagsDecl>`. */
@@ -36,7 +38,11 @@ export interface Odd {
 }
 
 const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
-const INLINE = new Set(['inline', 'note', 'anchor', 'break'])
+const INLINE = new Set(['inline', 'note', 'anchor', 'break', 'alternate'])
+
+/** The first model of `output` (unset: the base models) whose predicate holds. */
+export const select = (models: Model[], pos: Pos, output?: string) =>
+  models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
 
 const tokens = (el: Element | undefined, name: string) => (el ? attr(el, name) ?? '' : '').split(/\s+/).filter(Boolean)
 
@@ -46,9 +52,28 @@ const rule = (selector: string, r: Element) =>
 const rules = (el: Element, selector: string) => elementChildren(el, 'outputRendition').map((r) => rule(selector, r))
 
 export function readOdd(xml: string): Odd {
-  const tree = fromXml(xml)
-  const odd: Odd = { models: {}, blocks: new Set(), inlines: new Set(), values: {}, renditions: new Set(), css: '' }
-  const css = ['.pm-block { display: block; }'] // a block set inside phrasing content renders as a span
+  const tree = parse(xml)
+  /** An element's answer, once: where it stands does not change. */
+  const flows = new WeakMap<Element, ReturnType<Odd['flow']>>()
+  const odd: Odd = {
+    models: {},
+    flow: (node, up) => {
+      if (flows.has(node)) return flows.get(node)
+      const m = select(odd.models[localName(node.name)] ?? [], { node, up })
+      // Within a sequence, `text` is literal content, not a container.
+      const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
+      const flow = kinds.some((b) => BLOCK.has(b)) ? 'block' : kinds.every((b) => INLINE.has(b)) ? 'inline' : undefined
+      flows.set(node, flow)
+      return flow
+    },
+    values: {},
+    renditions: new Set(),
+    css: '',
+  }
+  const css = [
+    '.pm-block { display: block; }', // a block set inside phrasing content renders as a span
+    '.pm-alternate { display: none; }',
+  ]
   const views = new Set<string>()
 
   for (const r of elementChildren(findFirst(tree, 'tagsDecl'), 'rendition')) {
@@ -64,14 +89,14 @@ export function readOdd(xml: string): Odd {
     const view: string[] = []
 
     entries.forEach((entry, g) => {
-      const kind = localName(entry.name)
-      if (kind === 'modelSequence') throw new Error(`${ident}: modelSequence is not supported`)
-      const group = kind === 'modelGrp' ? entry : undefined
+      const group = localName(entry.name) === 'modelGrp' ? entry : undefined
       const sole = entries.length === 1
-      const groupClass = group && !sole ? tokens(group, 'cssClass')[0] ?? `${ident}-g${g + 1}` : undefined
+      const earlier = entries.slice(0, g).filter((e) => localName(e.name) === 'modelGrp').length
+      const groupClass = group && !sole ? `${ident}-group${earlier ? earlier + 1 : ''}` : undefined
       if (group) css.push(...rules(group, sole ? `.tei-${ident}` : `.${groupClass}`))
 
-      for (const m of group ? elementChildren(group, 'model') : [entry]) {
+      /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
+      const read = (m: Element, outer?: Element): Model => {
         const where = `${ident}, model ${models.length + 1}`
         const compile = (expr: string) => {
           try {
@@ -80,32 +105,35 @@ export function readOdd(xml: string): Odd {
             throw new Error(`${where}: ${(error as Error).message}`)
           }
         }
+        const inherited = (name: string) => attr(m, name) ?? (outer && attr(outer, name)) ?? (group && attr(group, name))
         const predicate = attr(m, 'predicate')
-        const output = attr(m, 'output') ?? (group && attr(group, 'output'))
+        const output = inherited('output')
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
-        const bare = sole && !group && !predicate && !output
-        const cls = styled && !bare ? own[0] ?? `${ident}-${models.length + 1}` : undefined
+        const bare = sole && !group && !outer && !predicate && !output
+        const cls = styled && !bare ? own[0] ?? fail(`${where}: a styled model among others needs @cssClass`) : undefined
         if (styled) {
           const selector = bare ? `.tei-${ident}` : `.${cls}`
           ;(output ? view : css).push(...rules(m, output ? `[data-${output}='on'] ${selector}` : selector))
         }
         if (output) views.add(output)
-        models.push({
-          behaviour: attr(m, 'behaviour') ?? fail(`${where}: no @behaviour`),
+        const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
+        return {
+          behaviour: sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: no @behaviour`),
           predicate: predicate ? compile(predicate) : undefined,
           output: output || undefined,
           params: Object.fromEntries(elementChildren(m, 'param').map((p) => [attr(p, 'name')!, compile(attr(p, 'value') ?? "''")])),
           classes: [...new Set([...(groupClass ? [groupClass] : []), ...own, ...(cls ? [cls] : [])])],
-        })
+          useSourceRendition: inherited('useSourceRendition') === 'true',
+          sequence,
+        }
       }
+      const members = group ? elementChildren(group).filter((e) => /^model(Sequence)?$/.test(localName(e.name))) : [entry]
+      for (const m of members) models.push(read(m))
     })
     css.push(...view)
 
     if (models.length) odd.models[ident] = models
-    const base = models.filter((m) => !m.output && m.behaviour !== 'omit' && m.behaviour !== 'metadata')
-    if (base.length && base.every((m) => BLOCK.has(m.behaviour))) odd.blocks.add(ident)
-    if (base.length && base.every((m) => INLINE.has(m.behaviour))) odd.inlines.add(ident)
 
     for (const def of elementChildren(elementChildren(spec, 'attList')[0], 'attDef')) {
       const items = elementChildren(findFirst(def, 'valList'), 'valItem').map((v) => attr(v, 'ident')!)
@@ -113,7 +141,13 @@ export function readOdd(xml: string): Odd {
     }
   }
 
-  for (const v of views) css.push(`[data-${v}='on'] .${v}-omit { display: none; }`)
+  for (const v of views) {
+    css.push(
+      `[data-${v}='on'] .${v}-omit { display: none; }`,
+      `[data-${v}='on'] .pm-alt.${v}-default { display: inline; }`,
+      `[data-${v}='on'] .pm-alt.${v}-alternate { display: none; }`,
+    )
+  }
   odd.css = `/* Generated from tei_simler.odd — edit the ODD, not this file. */\n${css.join('\n')}\n`
   return odd
 }
