@@ -9,6 +9,7 @@
  * hides the element in that view.
  */
 
+import { BEHAVIOURS } from '../tei/behaviours'
 import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast'
 import { bool, compileXPath, type Pos, type XPath } from './xpath'
 
@@ -37,9 +38,6 @@ export interface Odd {
   css: string
 }
 
-const BLOCK = new Set(['block', 'section', 'paragraph', 'heading', 'list', 'listItem', 'cit', 'text'])
-const INLINE = new Set(['inline', 'note', 'anchor', 'break', 'alternate'])
-
 /** The first model of `output` (unset: the base models) whose predicate holds. */
 export const select = (models: Model[], pos: Pos, output?: string) =>
   models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
@@ -54,16 +52,17 @@ const rules = (el: Element, selector: string) => elementChildren(el, 'outputRend
 export function readOdd(xml: string): Odd {
   const tree = parse(xml)
   /** An element's answer, once: where it stands does not change. */
-  const flows = new WeakMap<Element, ReturnType<Odd['flow']>>()
+  const cached = new WeakMap<Element, ReturnType<Odd['flow']>>()
   const odd: Odd = {
     models: {},
     flow: (node, up) => {
-      if (flows.has(node)) return flows.get(node)
+      if (cached.has(node)) return cached.get(node)
       const m = select(odd.models[localName(node.name)] ?? [], { node, up })
       // Within a sequence, `text` is literal content, not a container.
       const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
-      const flow = kinds.some((b) => BLOCK.has(b)) ? 'block' : kinds.every((b) => INLINE.has(b)) ? 'inline' : undefined
-      flows.set(node, flow)
+      const flows = kinds.map((b) => BEHAVIOURS[b]?.flow)
+      const flow = flows.includes('block') ? 'block' : flows.every((f) => f === 'inline') ? 'inline' : undefined
+      cached.set(node, flow)
       return flow
     },
     values: {},

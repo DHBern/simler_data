@@ -27,7 +27,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | --- | --- |
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
 | `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
-| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the PM walker |
+| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the behaviour table, the PM walker |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The switches and the two anchored panels |
@@ -42,9 +42,11 @@ python -m http.server -d dist 8080     # or: npx serve dist
 `schema/tei_simler.odd` is the only source of truth for the rendering; the code
 knows no TEI element by name. Each element takes the first `<model>` whose
 `@predicate` holds, and its `@behaviour` (`block`, `inline`, `heading`, `break`,
-`note`, `alternate`, …) decides the HTML; a `<modelSequence>` renders each of its
-models whose predicate holds, one after the other (`supplied` as its brackets and
-its text). A `break` with a `label` is the label, then the break (the hyphen at a
+`note`, `alternate`, …) decides the HTML. `lib/tei/behaviours.ts` gives each
+behaviour the element it wraps its content in and whether that renders as a block
+or inline; a behaviour that does more than wrap is written out in the walker.
+A `<modelSequence>` renders each of its models whose predicate holds, one after
+the other (`supplied` as its brackets and its text). A `break` with a `label` is the label, then the break (the hyphen at a
 joined line end). `@rendition` styles the
 element only where its model has `@useSourceRendition="true"` (or inherits it
 from its `<modelGrp>`). Predicates see the text as encoded, even where the
@@ -59,7 +61,7 @@ read with their whitespace collapsed. `<outputRendition>` and `<tagsDecl>` compi
 `dist/assets/odd.css`; a `<modelGrp>`'s rendition styles all its models, and a
 styled model among several must name its class with `@cssClass`. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
-stands. A note's `range` param names the element its commented range starts at;
+stands, and from its behaviour's flow. A note's `range` param names the element its commented range starts at;
 the range is resolved on the rendered page, across any element boundary. Range
 and marker share `data-note`: pointing at either lights up both, and clicking the
 range opens the note. A `data-page` param names the facsimile image of a page

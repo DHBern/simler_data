@@ -13,6 +13,7 @@ import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
 import { select, type Model, type Odd } from '../odd/odd'
 import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
+import { BEHAVIOURS, type Flow } from './behaviours'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
 
 export type { ElementContent }
@@ -62,26 +63,30 @@ const PHRASING = new Set(['p', 'span', 'a', 'h1', 'h2', 'h3', 'h4', 'h5', 'h6'])
 const items = (v: Value | undefined): Item[] => (v === undefined ? [] : seq(v))
 const same = (a: Item, b: Item) => (isPos(a) && isPos(b) ? a.node === b.node : a === b)
 
-const block =
-  (tag: string): Behaviour =>
+/** Wrap the content in the behaviour's tag; a block set inside phrasing content becomes a span. */
+const wrap =
+  (tag: string, flow?: Flow): Behaviour =>
   (c) => {
-    const [t, props] = c.phrasing ? ['span', { ...c.props, className: [...classes(c.props), 'pm-block'] }] : [tag, c.props]
+    const [t, props] =
+      flow === 'block' && c.phrasing
+        ? ['span', { ...c.props, className: [...classes(c.props), 'pm-block'] }]
+        : [tag, c.props]
     return h(t, props, c.content(t))
   }
 
-/** The PM behaviours this edition uses. */
-const BEHAVIOURS: Record<string, Behaviour> = {
+/** How each behaviour renders: the table's own for those that only wrap, written out for the rest. */
+const RENDER: Record<string, Behaviour> = {
+  ...Object.fromEntries(
+    Object.entries(BEHAVIOURS)
+      .filter(([, b]) => b.tag)
+      .map(([name, b]) => [name, wrap(b.tag!, b.flow)]),
+  ),
   omit: () => null,
   metadata: () => null,
   text: (c) => c.content(),
-  block: block('div'),
-  section: block('section'),
-  paragraph: block('p'),
-  heading: (c) => block(`h${Math.min(6, Math.max(1, Number(str(c.params.level)) || 1))}`)(c),
-  list: block('ul'),
-  listItem: block('li'),
-  cit: block('blockquote'),
-  inline: (c) => h('span', c.props, c.content('span')),
+  heading: (c) => wrap(`h${Math.min(6, Math.max(1, Number(str(c.params.level)) || 1))}`, 'block')(c),
+  link: (c) => h('a', { ...c.props, href: str(c.params.uri ?? '') }, c.content('a')),
+  graphic: (c) => h('img', { ...c.props, src: str(c.params.url ?? ''), alt: '' }),
   /** Each reading once, marked as the default or not of the page and of each view; alone, the default. */
   alternate: (c) => {
     if (!c.views) return c.value(c.params.default)
@@ -169,7 +174,7 @@ const renditions = (node: Element) => (attr(node, 'rendition') ?? '').split(/\s+
 export function createRenderer(odd: Odd) {
   for (const [ident, models] of Object.entries(odd.models)) {
     for (const m of models.flatMap((m) => m.sequence ?? [m])) {
-      if (!BEHAVIOURS[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
+      if (!RENDER[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
     }
   }
   const outputs = Object.fromEntries(
@@ -247,7 +252,7 @@ export function createRenderer(odd: Odd) {
         ...(again && { id: undefined }),
         ...paramProps(params),
       }
-      const out = BEHAVIOURS[model.behaviour]({
+      const out = RENDER[model.behaviour]({
         pos,
         props,
         params,
