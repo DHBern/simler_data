@@ -16,6 +16,8 @@ export interface BehaviourSpec {
   tag?: string
   /** Neither, for the behaviours that render nothing. */
   flow?: Flow
+  /** The params it reads, beyond `content` and the `--…` and `data-…` conventions. */
+  params?: string[]
 }
 
 export const BEHAVIOURS: Record<string, BehaviourSpec> = {
@@ -33,14 +35,15 @@ export const BEHAVIOURS: Record<string, BehaviourSpec> = {
   inline: { tag: 'span', flow: 'inline' },
   title: { tag: 'span', flow: 'inline' },
   glyph: { tag: 'span', flow: 'inline' },
-  heading: { flow: 'block' },
+  heading: { flow: 'block', params: ['level'] },
   text: { flow: 'block' },
-  note: { flow: 'inline' },
-  alternate: { flow: 'inline' },
-  break: { flow: 'inline' },
+  note: { flow: 'inline', params: ['place', 'range'] },
+  alternate: { flow: 'inline', params: ['default', 'alternate'] },
+  break: { flow: 'inline', params: ['type', 'label'] },
   anchor: { flow: 'inline' },
-  link: { flow: 'inline' },
-  graphic: { flow: 'inline' },
+  link: { flow: 'inline', params: ['uri'] },
+  graphic: { flow: 'inline', params: ['url'] },
+  /** What a `metadata` model collects is named by whoever reads it, so its params are not checked. */
   metadata: {},
   omit: {},
 }

@@ -36,7 +36,16 @@ export interface Odd {
   /** Rendition ids declared in `<tagsDecl>`. */
   renditions: Set<string>
   css: string
+  /** What is wrong in the ODD itself, each once: unreadable expressions, and what the checks below found. */
+  findings: Set<string>
 }
+
+/** A param a behaviour does not read is a typo — unless it is a custom property or an attribute. */
+const readsParam = (behaviour: string, name: string) =>
+  behaviour === 'metadata' ||
+  name === 'content' ||
+  /^(--|data-)/.test(name) ||
+  (BEHAVIOURS[behaviour]?.params ?? []).includes(name)
 
 /** The name of the page's own output: a model may mark itself for it, or leave `@output` off. */
 const WEB = 'web'
@@ -56,7 +65,7 @@ const rule = (selector: string, r: Element) =>
   `${selector}${attr(r, 'scope') ? `::${attr(r, 'scope')}` : ''} { ${textOf(r).trim()} }`
 const rules = (el: Element, selector: string) => elementChildren(el, 'outputRendition').map((r) => rule(selector, r))
 
-export function readOdd(xml: string): Odd {
+export function readOdd(xml: string, tokensCss = ''): Odd {
   const tree = parse(xml)
   /** An element's answer, once: where it stands does not change. */
   const cached = new WeakMap<Element, ReturnType<Odd['flow']>>()
@@ -75,7 +84,10 @@ export function readOdd(xml: string): Odd {
     values: {},
     renditions: new Set(),
     css: '',
+    findings: new Set(),
   }
+  /** Custom properties the models set, which the ODD's CSS may then read. */
+  const properties = new Set<string>()
   const css = [
     '.pm-block { display: block; }', // a block set inside phrasing content renders as a span
     '.pm-alternate { display: none; }',
@@ -103,12 +115,29 @@ export function readOdd(xml: string): Odd {
 
       /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
       const read = (m: Element, outer?: Element): Model => {
-        const where = `${ident}, model ${models.length + 1}`
-        const compile = (expr: string) => {
+        const where = `${ident}, Modell ${models.length + 1}`
+        /**
+         * An expression that cannot be read, or that fails where it is evaluated, counts as empty —
+         * what a failed evaluation gives anyway: the predicate is false, the param has no value.
+         * One document renders without it, rather than none at all.
+         */
+        const compile = (expr: string, what: string): XPath => {
+          const empty = (error: unknown) => {
+            odd.findings.add(`${where}: ${what} nicht auswertbar, gilt als leer — ${(error as Error).message}`)
+            return []
+          }
+          let evaluate: XPath
           try {
-            return compileXPath(expr)
+            evaluate = compileXPath(expr)
           } catch (error) {
-            throw new Error(`${where}: ${(error as Error).message}`)
+            return () => empty(error)
+          }
+          return (pos) => {
+            try {
+              return evaluate(pos)
+            } catch (error) {
+              return empty(error)
+            }
           }
         }
         const inherited = (name: string) => attr(m, name) ?? (outer && attr(outer, name)) ?? (group && attr(group, name))
@@ -117,18 +146,24 @@ export function readOdd(xml: string): Odd {
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
         const bare = sole && !group && !outer && !predicate && !output
-        const cls = styled && !bare ? own[0] ?? fail(`${where}: a styled model among others needs @cssClass`) : undefined
+        const cls = styled && !bare ? own[0] ?? fail(`${where}: ein gestaltetes Modell unter mehreren braucht @cssClass`) : undefined
         if (styled) {
           const selector = bare ? `.tei-${ident}` : `.${cls}`
           ;(output ? view : css).push(...rules(m, output ? `[data-${output}='on'] ${selector}` : selector))
         }
         if (output) views.add(output)
         const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
+        const behaviour = sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: kein @behaviour`)
+        const params = elementChildren(m, 'param').map((p) => ({ name: attr(p, 'name')!, value: attr(p, 'value') ?? "''" }))
+        for (const { name } of params) {
+          if (name.startsWith('--')) properties.add(name)
+          if (!readsParam(behaviour, name)) odd.findings.add(`${where}: "${behaviour}" liest den Parameter "${name}" nicht`)
+        }
         return {
-          behaviour: sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: no @behaviour`),
-          predicate: predicate ? compile(predicate) : undefined,
+          behaviour,
+          predicate: predicate ? compile(predicate, 'Prädikat') : undefined,
           output: output || undefined,
-          params: Object.fromEntries(elementChildren(m, 'param').map((p) => [attr(p, 'name')!, compile(attr(p, 'value') ?? "''")])),
+          params: Object.fromEntries(params.map(({ name, value }) => [name, compile(value, `Parameter "${name}"`)])),
           classes: [...new Set([...(groupClass ? [groupClass] : []), ...own, ...(cls ? [cls] : [])])],
           useSourceRendition: inherited('useSourceRendition') === 'true',
           sequence,
@@ -138,6 +173,15 @@ export function readOdd(xml: string): Odd {
       for (const m of members) models.push(read(m))
     })
     css.push(...view)
+
+    // A model is only reached while every earlier one of its output has a predicate.
+    const decides = new Map<string, number>()
+    models.forEach((m, i) => {
+      const output = m.output ?? ''
+      const earlier = decides.get(output)
+      if (earlier) odd.findings.add(`${ident}, Modell ${i + 1}: nie erreichbar, Modell ${earlier} entscheidet schon`)
+      else if (!m.predicate) decides.set(output, i + 1)
+    })
 
     if (models.length) odd.models[ident] = models
 
@@ -155,6 +199,12 @@ export function readOdd(xml: string): Odd {
     )
   }
   odd.css = `/* Generated from tei_simler.odd — edit the ODD, not this file. */\n${css.join('\n')}\n`
+
+  // A custom property the CSS reads is defined by the design tokens, by the CSS itself, or by a param.
+  const defined = new Set([...`${tokensCss}\n${odd.css}`.matchAll(/(--[\w-]+)\s*:/g)].map(([, name]) => name))
+  for (const [, name] of odd.css.matchAll(/var\((--[\w-]+)/g)) {
+    if (!defined.has(name) && !properties.has(name)) odd.findings.add(`CSS: ${name} ist nirgends definiert`)
+  }
   return odd
 }
 

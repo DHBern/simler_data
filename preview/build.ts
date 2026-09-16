@@ -192,7 +192,7 @@ async function main() {
     console.warn('  Keine Registerdaten in gsheet/csv — Entitäten bleiben ohne Karte.')
   }
 
-  const odd = readOdd(await readFile(ODD, 'utf8'))
+  const odd = readOdd(await readFile(ODD, 'utf8'), await readFile(join(here, 'assets', 'tokens.css'), 'utf8'))
   await writeFile(join(out, 'assets', 'odd.css'), odd.css)
   const processor = createProcessor(odd)
 
@@ -207,7 +207,7 @@ async function main() {
   const source = relative(resolve(here, '..'), src).replaceAll('\\', '/')
   await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`))
   await writeFile(join(out, 'search.html'), searchPage(docs))
-  await writeFile(join(out, 'findings.html'), findingsPage(docs))
+  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings]))
   await buildIndex(docs, out)
 
   const named = new Set(docs.flatMap((doc) => Object.keys(doc.entities)))
@@ -215,6 +215,14 @@ async function main() {
 
   const flagged = docs.filter((d) => d.warnings.length).length
   console.log(`${docs.length} Dokumente gerendert nach ${out} (${flagged} mit Hinweisen).`)
+
+  // The corpus is rendered whatever the ODD says; a flaw in the ODD still fails the run, since
+  // every page was rendered without what it asked for.
+  if (odd.findings.size) {
+    for (const finding of odd.findings) console.error(`  ODD: ${finding}`)
+    console.error(`ODD: ${odd.findings.size} Befund(e) — siehe findings.html.`)
+    process.exitCode = 1
+  }
   if (filters.length) console.log('Gefilterter Lauf: index.html führt nur diese Dokumente auf.')
 }
 

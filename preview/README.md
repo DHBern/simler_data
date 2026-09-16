@@ -38,7 +38,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | `assets/search.js` | The search page, and marking the hits in a document |
 | `page.ts` | The HTML shell: top bar, apparatus; index, search and findings pages |
 | `build.ts` | Walks the corpus and writes `dist/` |
-| `test/fixtures/` | One ODD and four TEI cases, one per Processing-Model feature, with what they must render |
+| `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
 
 ## The ODD renders the text
 
@@ -83,7 +83,12 @@ params, what the page shows around the text: `title`, `manifest` (the IIIF
 manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 
 To change how something looks or renders, edit its `elementSpec` and rebuild.
-Predicates and params use an XPath subset (`lib/odd/xpath.ts`); anything outside
-it fails the build with the expression named. The ODD itself validates against
+Predicates and params use an XPath subset (`lib/odd/xpath.ts`). An expression
+outside it, or one that fails where it is evaluated, counts as empty — the
+predicate is false and the next model decides, the param has no value — so the
+corpus still renders; the build names it, `findings.html` lists it under *ODD*,
+and the run ends non-zero. Reading the ODD also reports a param the behaviour does
+not read, a model an earlier one makes unreachable, and a CSS custom property that
+neither the design tokens nor the ODD itself defines. The ODD validates against
 `tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on
 every run, against a pinned TEI release.
