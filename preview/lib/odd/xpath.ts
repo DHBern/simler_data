@@ -129,6 +129,8 @@ const TOKEN = /\s*(?:'([^']*)'|"([^"]*)"|(\d+(?:\.\d+)?)|(::|\.\.|!=|<=|>=|[=<>(
 
 type Tok = { t: 'str' | 'num' | 'op' | 'name'; v: string }
 type Fn = (p: Pos) => Value
+/** A predicate, or the position a `[k]` asks for. */
+type Pred = Fn | number
 
 export function compileXPath(expr: string): XPath {
   const fail = (why: string): never => {
@@ -156,22 +158,42 @@ export function compileXPath(expr: string): XPath {
   const expect = (v: string) => eat(v) || fail(`expected "${v}"`)
   const name = () => (toks[i]?.t === 'name' ? toks[i++].v : fail('expected a name'))
 
-  /** Keep the items a predicate admits: a number is a position, anything else a test. */
-  const filter = (items: Item[], preds: Fn[], outer: Pos): Item[] =>
-    preds.reduce<Item[]>((list, pred) => {
+  /**
+   * Keep the items the predicates admit: a predicate that evaluates to a number is
+   * a position, anything else a test.
+   *
+   * A `[k]` written as a number tells the predicate before it where to stop:
+   * `preceding-sibling::*[not(self::lb)][1]` asks for the nearest match, so the
+   * scan ends there instead of testing every sibling in the document.
+   */
+  const filter = (items: Item[], preds: Pred[], outer: Pos): Item[] => {
+    let list = items
+    for (const [j, pred] of preds.entries()) {
+      if (typeof pred === 'number') {
+        list = list.slice(pred - 1, pred)
+        continue
+      }
+      const next = preds[j + 1]
+      const want = typeof next === 'number' ? next : Infinity
       const saved = focus
-      const kept = list.filter((item, k) => {
+      const kept: Item[] = []
+      for (let k = 0; k < list.length && kept.length < want; k++) {
         focus = { position: k + 1, size: list.length }
+        const item = list[k]
         const v = pred(isPos(item) ? item : outer)
-        return typeof v === 'number' ? v === k + 1 : bool(v)
-      })
+        if (typeof v === 'number' ? v === k + 1 : bool(v)) kept.push(item)
+      }
       focus = saved
-      return kept
-    }, items)
-  const predicates = (): Fn[] => {
-    const preds: Fn[] = []
+      list = kept
+    }
+    return list
+  }
+  const predicates = (): Pred[] => {
+    const preds: Pred[] = []
     while (eat('[')) {
-      preds.push(or())
+      // `[3]` as written, not an expression that happens to give 3: only this one can stop a scan.
+      const at = toks[i]?.t === 'num' && toks[i + 1]?.v === ']' ? Number(toks[i++].v) : undefined
+      preds.push(at ?? or())
       expect(']')
     }
     return preds

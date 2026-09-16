@@ -755,7 +755,7 @@
                lg it is a stanza number, in a list or figure a caption. -->
           <modelGrp useSourceRendition="true">
             <outputRendition>font-family: var(--f-display); font-weight: 600; text-wrap: balance;</outputRendition>
-            <model cssClass="head-first" predicate="parent::div and not(preceding-sibling::*[not(self::lb or self::pb or self::fw or self::cb or self::milestone or self::anchor)])" behaviour="heading">
+            <model cssClass="head-first" predicate="parent::div and not(preceding-sibling::*[not(self::lb or self::pb or self::fw or self::cb or self::milestone or self::anchor)][1])" behaviour="heading">
               <param name="level" value="count(ancestor::div) + 1"/>
               <outputRendition>margin: 0 0 0.7em;</outputRendition>
             </model>
