@@ -1,8 +1,9 @@
 /**
- * Reading the ODD: what a flaw in it costs. An expression the XPath subset cannot
- * read, or that fails where it is evaluated, must leave the rest of the ODD working
- * and turn up as a finding — never as a build that writes no pages at all. The
- * checks that need no corpus are here too.
+ * Reading the ODD: what a flaw in it costs, and what it says about itself. An
+ * expression the XPath subset cannot read, or that fails where it is evaluated,
+ * must leave the rest of the ODD working and turn up as a finding — never as a
+ * build that writes no pages at all. The checks that need no corpus are here too,
+ * and the two reports that read a rendering back against the ODD.
  *
  *     node --import tsx --test test/odd.test.ts
  */
@@ -10,7 +11,9 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
-import { readOdd, selectOutput } from '../lib/odd/odd'
+import { coverage, readOdd, selectOutput } from '../lib/odd/odd'
+import { createProcessor, renderTei } from '../lib/tei/render'
+import type { Decision } from '../lib/tei/teiToHast'
 import { findFirst, parse, type Element } from '../lib/tei/xast'
 
 /** The smallest ODD that carries `specs`. */
@@ -29,7 +32,7 @@ test('an unreadable predicate is false, and says so', () => {
     <model behaviour="paragraph"/>
   </elementSpec>`)
   assert.equal(selectOutput(odd.models.p, paragraph)?.behaviour, 'paragraph')
-  assert.match([...odd.findings].join('\n'), /p, Modell 1: Prädikat nicht auswertbar/)
+  assert.match([...odd.findings].join('\n'), /Modell p-1: Prädikat nicht auswertbar/)
 })
 
 test('a predicate that fails where it is evaluated is false too', () => {
@@ -39,7 +42,7 @@ test('a predicate that fails where it is evaluated is false too', () => {
   </elementSpec>`)
   assert.equal(odd.findings.size, 0) // it reads; only evaluating it fails
   assert.equal(selectOutput(odd.models.p, paragraph)?.behaviour, 'paragraph')
-  assert.match([...odd.findings].join('\n'), /p, Modell 1: Prädikat nicht auswertbar/)
+  assert.match([...odd.findings].join('\n'), /Modell p-1: Prädikat nicht auswertbar/)
 })
 
 test('an unreadable param has no value', () => {
@@ -62,7 +65,7 @@ test('a model behind one without a predicate can never be reached', () => {
     <model behaviour="paragraph"/>
     <model predicate="@rend" behaviour="block" cssClass="x"/>
   </elementSpec>`)
-  assert.match([...odd.findings].join('\n'), /p, Modell 2: nie erreichbar/)
+  assert.match([...odd.findings].join('\n'), /Modell p-2: nie erreichbar/)
 })
 
 test('a custom property is defined by the tokens, the CSS or a param', () => {
@@ -71,4 +74,43 @@ test('a custom property is defined by the tokens, the CSS or a param', () => {
   </elementSpec>`
   assert.match([...read(spec('--nowhere')).findings].join('\n'), /CSS: --nowhere ist nirgends definiert/)
   assert.equal(read(spec('--c-ink'), ':root { --c-ink: 0 0 0; }').findings.size, 0)
+})
+
+/** Two models for `p`, of which a plain one takes the second, and an element the corpus below has not. */
+const SPECS = `<elementSpec ident="p" mode="change">
+    <model predicate="@rend" behaviour="block" cssClass="x"><param name="data-rend" value="@rend"/></model>
+    <model behaviour="paragraph"/>
+  </elementSpec>
+  <elementSpec ident="TEI" mode="change"><model behaviour="text"/></elementSpec>
+  <elementSpec ident="text" mode="change"><model behaviour="text"/></elementSpec>
+  <elementSpec ident="body" mode="change"><model behaviour="text"/></elementSpec>
+  <elementSpec ident="lg" mode="change"><model behaviour="block"/></elementSpec>`
+
+/** A document through the whole pipeline, which is what the reports read back. */
+const render = (body: string, decisions = false) => {
+  const odd = read(SPECS)
+  const xml = `<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body>${body}</body></text></TEI>`
+  return { odd, result: renderTei(parse(xml), createProcessor(odd), decisions) }
+}
+
+test('coverage says what never ran and what was never handled', () => {
+  const { odd } = render('<p>Erster</p><quote>Zitat</quote>')
+  const gaps = coverage(odd).join('\n')
+  assert.match(gaps, /Modell p-1: greift nie/) // nothing here carries @rend
+  assert.match(gaps, /<lg>: im Korpus nicht vorgekommen/)
+  assert.match(gaps, /<quote>: kein Modell in der ODD/)
+  assert.doesNotMatch(gaps, /Modell p-2/) // it fired
+})
+
+test('the decisions name the model that won', () => {
+  const { result } = render('<p rend="c">Erster</p>', true)
+  const text = result.decisions!.children[0] as Decision
+  const [body] = text.children as [Decision]
+  const [p] = body.children as [Decision]
+  assert.equal(p.element, 'p')
+  assert.equal(p.model, 'p-1')
+  assert.equal(p.behaviour, 'block')
+  assert.deepEqual(p.classes, ['tei-p', 'x'])
+  assert.deepEqual(p.params, { 'data-rend': ['c'] })
+  assert.deepEqual(p.children, ['Erster'])
 })

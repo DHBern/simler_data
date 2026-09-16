@@ -25,7 +25,7 @@ import { hastToSearchText } from '../search/text'
 import { lineEndHyphens } from './hyphens'
 import { wsTrim } from './plugins'
 import { resolveRanges } from './ranges'
-import { createRenderer, type CollectedNote, type RenderState } from './teiToHast'
+import { createRenderer, type CollectedNote, type Decision, type RenderState } from './teiToHast'
 import { isElement, localName, type Element, type Root as XastRoot } from './xast'
 
 /** What one render produces. */
@@ -40,6 +40,8 @@ export interface RenderResult {
   unmapped: string[]
   /** The params of the root element's `page` model, each as strings. */
   page: Record<string, string[]>
+  /** What the ODD decided for each element, where the caller asked for it. */
+  decisions?: Decision
 }
 
 export interface RenderedNote extends Omit<CollectedNote, 'body'> {
@@ -59,6 +61,7 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
     file.data.text = hastToSearchText({ type: 'root', children: render(tree, scratch, PLAINTEXT) })
     const top = tree.children.find((n): n is Element => isElement(n))
     const page = top && select(odd.models[localName(top.name)] ?? [], { node: top, up: [] }, PAGE)
+    if (page) odd.reached.models.add(page.id)
     file.data.page = Object.fromEntries(
       Object.entries(page?.params ?? {}).map(([k, f]) => [k, seq(f({ node: top!, up: [] })).map((item) => str([item]))]),
     )
@@ -82,9 +85,16 @@ export function createProcessor(odd: Odd) {
     .freeze()
 }
 
-export function renderTei(tree: XastRoot, processor: ReturnType<typeof createProcessor>): RenderResult {
+export function renderTei(
+  tree: XastRoot,
+  processor: ReturnType<typeof createProcessor>,
+  decisions = false,
+): RenderResult {
   const file = new VFile()
   const state: RenderState = { notes: [], warnings: [], unmapped: new Set(), anchors: [] }
+  // The document's own decision is the one below this, which only holds it.
+  const collected: Decision = { element: '#document', model: null, behaviour: null, classes: [], children: [] }
+  if (decisions) state.open = collected
   file.data.teiState = state
   const hast = processor.runSync(tree, file) as HastRoot
   return {
@@ -97,5 +107,6 @@ export function renderTei(tree: XastRoot, processor: ReturnType<typeof createPro
     warnings: state.warnings,
     unmapped: [...state.unmapped].sort(),
     page: file.data.page as Record<string, string[]>,
+    decisions: collected.children.find((c): c is Decision => typeof c !== 'string'),
   }
 }

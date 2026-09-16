@@ -351,7 +351,7 @@ function splitFinding(warning: string): [string, string] {
 }
 
 /** Every finding in the corpus, grouped by kind and largest group first: a worklist. */
-export function findingsPage(docs: PreviewDoc[], odd: string[]): string {
+export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string[]): string {
   const groups = new Map<string, string[]>()
   for (const doc of docs) {
     for (const warning of doc.warnings) {
@@ -363,12 +363,12 @@ export function findingsPage(docs: PreviewDoc[], odd: string[]): string {
         </tr>`)
     }
   }
-  // What the ODD itself says wrong belongs to no document, and comes first: it affects every one of them.
-  const oddBody = odd.length ? `<tbody>
-      <tr class="group"><th colspan="3">ODD <span class="flag">${odd.length}</span></th></tr>
-      ${odd.map((finding) => `<tr><td colspan="3">${esc(finding)}</td></tr>`).join('')}
+  // What the ODD says belongs to no single document, and comes first: it affects every one of them.
+  const aboutOdd = (heading: string, findings: string[]) => findings.length ? `<tbody>
+      <tr class="group"><th colspan="3">${esc(heading)} <span class="flag">${findings.length}</span></th></tr>
+      ${findings.map((finding) => `<tr><td colspan="3">${esc(finding)}</td></tr>`).join('')}
     </tbody>` : ''
-  const body = oddBody + [...groups]
+  const body = aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage) + [...groups]
     .sort(([a, x], [b, y]) => y.length - x.length || a.localeCompare(b, 'de'))
     .map(([kind, rows]) => `<tbody>
         <tr class="group"><th colspan="3">${esc(kind)} <span class="flag">${rows.length}</span></th></tr>

@@ -20,9 +20,10 @@ import * as pagefind from 'pagefind'
 import { normalizeForSearch } from './assets/normalize.js'
 
 import { loadEntities, type Entity } from './lib/entities'
-import { readOdd } from './lib/odd/odd'
+import { coverage, readOdd } from './lib/odd/odd'
 import { imageRoot } from './lib/tei/iiif'
 import { createProcessor, renderTei } from './lib/tei/render'
+import type { Decision } from './lib/tei/teiToHast'
 import { parse } from './lib/tei/xast'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 
@@ -40,6 +41,8 @@ interface Args {
   out: string
   /** Substrings; a file is rendered when it matches any of them. Empty = all. */
   filters: string[]
+  /** Also write what the ODD decided for every element, as data. */
+  records: boolean
 }
 
 function parseArgs(argv: string[]): Args {
@@ -47,10 +50,12 @@ function parseArgs(argv: string[]): Args {
     src: resolve(here, '../webdav/data/sources/tei'),
     out: resolve(here, 'dist'),
     filters: [],
+    records: false,
   }
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === '--src') args.src = resolve(argv[++i])
     else if (argv[i] === '--out') args.out = resolve(argv[++i])
+    else if (argv[i] === '--records') args.records = true
     else args.filters.push(argv[i].toLowerCase())
   }
   return args
@@ -86,7 +91,13 @@ function entitiesIn(
   return { used, unknown: [...unknown].sort() }
 }
 
-function render(file: string, xml: string, registers: Record<string, Entity>, processor: Processor): PreviewDoc {
+function render(
+  file: string,
+  xml: string,
+  registers: Record<string, Entity>,
+  processor: Processor,
+  records: boolean,
+): PreviewDoc & { decisions?: Decision } {
   const out = file.replace(/\.xml$/i, '.html')
   const base: PreviewDoc = {
     file, out, title: file, html: '', text: '', notes: [],
@@ -104,12 +115,13 @@ function render(file: string, xml: string, registers: Record<string, Entity>, pr
   }
 
   // Where title, facsimile and entities come from is the ODD's `page` model.
-  const result = renderTei(tree, processor)
+  const result = renderTei(tree, processor, records)
   const { title = [], manifest = [], pages = [], entities: keys = [] } = result.page
   const entities = entitiesIn(keys, registers)
   const facsRoot = imageRoot(manifest[0])
   return {
     ...base,
+    decisions: result.decisions,
     title: title[0] || file,
     html: result.html,
     text: result.text,
@@ -161,7 +173,7 @@ async function buildIndex(docs: PreviewDoc[], out: string) {
 }
 
 async function main() {
-  const { src, out, filters } = parseArgs(process.argv.slice(2))
+  const { src, out, filters, records } = parseArgs(process.argv.slice(2))
 
   const names = (await readdir(src))
     .filter((name) => name.toLowerCase().endsWith('.xml'))
@@ -196,10 +208,17 @@ async function main() {
   await writeFile(join(out, 'assets', 'odd.css'), odd.css)
   const processor = createProcessor(odd)
 
+  if (records) await mkdir(join(out, 'records'), { recursive: true })
+
   const docs: PreviewDoc[] = []
   for (const name of names) {
-    const doc = render(name, await readFile(join(src, name), 'utf8'), registers, processor)
+    // The decisions are written and dropped; keeping 74 of these trees is not worth the memory.
+    const { decisions, ...doc } = render(name, await readFile(join(src, name), 'utf8'), registers, processor, records)
     await writeFile(join(out, doc.out), documentPage(doc))
+    if (decisions) {
+      const json = JSON.stringify({ document: name, output: 'web', root: decisions })
+      await writeFile(join(out, 'records', name.replace(/\.xml$/i, '.json')), json)
+    }
     docs.push(doc)
     for (const warning of doc.warnings) console.warn(`  ${name}: ${warning}`)
   }
@@ -207,7 +226,8 @@ async function main() {
   const source = relative(resolve(here, '..'), src).replaceAll('\\', '/')
   await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`))
   await writeFile(join(out, 'search.html'), searchPage(docs))
-  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings]))
+  const gaps = coverage(odd)
+  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps))
   await buildIndex(docs, out)
 
   const named = new Set(docs.flatMap((doc) => Object.keys(doc.entities)))
@@ -215,6 +235,8 @@ async function main() {
 
   const flagged = docs.filter((d) => d.warnings.length).length
   console.log(`${docs.length} Dokumente gerendert nach ${out} (${flagged} mit Hinweisen).`)
+  console.log(`ODD: ${odd.reached.models.size} Modelle haben gegriffen, ${gaps.length} Lücke(n) — siehe findings.html.`)
+  if (records) console.log(`Entscheidungen der ODD: ${out}/records.`)
 
   // The corpus is rendered whatever the ODD says; a flaw in the ODD still fails the run, since
   // every page was rendered without what it asked for.

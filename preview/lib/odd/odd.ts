@@ -14,6 +14,8 @@ import { attr, elementChildren, findFirst, localName, parse, textOf, type Elemen
 import { bool, compileXPath, type Pos, type XPath } from './xpath'
 
 export interface Model {
+  /** `<ident>-<n>`, by the model's place among its element's: what reports and records name it by. */
+  id: string
   behaviour: string
   predicate?: XPath
   /** The view this model restyles; undefined for the base rendering. */
@@ -38,6 +40,8 @@ export interface Odd {
   css: string
   /** What is wrong in the ODD itself, each once: unreadable expressions, and what the checks below found. */
   findings: Set<string>
+  /** What the rendering reached, filled as it runs: the models that fired, and the elements walked. */
+  reached: { models: Set<string>; elements: Set<string>; unmodelled: Set<string> }
 }
 
 /** A param a behaviour does not read is a typo — unless it is a custom property or an attribute. */
@@ -85,6 +89,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     renditions: new Set(),
     css: '',
     findings: new Set(),
+    reached: { models: new Set(), elements: new Set(), unmodelled: new Set() },
   }
   /** Custom properties the models set, which the ODD's CSS may then read. */
   const properties = new Set<string>()
@@ -115,7 +120,8 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
 
       /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
       const read = (m: Element, outer?: Element): Model => {
-        const where = `${ident}, Modell ${models.length + 1}`
+        const id = `${ident}-${models.length + 1}`
+        const where = `Modell ${id}`
         /**
          * An expression that cannot be read, or that fails where it is evaluated, counts as empty —
          * what a failed evaluation gives anyway: the predicate is false, the param has no value.
@@ -160,6 +166,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
           if (!readsParam(behaviour, name)) odd.findings.add(`${where}: "${behaviour}" liest den Parameter "${name}" nicht`)
         }
         return {
+          id,
           behaviour,
           predicate: predicate ? compile(predicate, 'Prädikat') : undefined,
           output: output || undefined,
@@ -175,13 +182,13 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     css.push(...view)
 
     // A model is only reached while every earlier one of its output has a predicate.
-    const decides = new Map<string, number>()
-    models.forEach((m, i) => {
+    const decides = new Map<string, string>()
+    for (const m of models) {
       const output = m.output ?? ''
       const earlier = decides.get(output)
-      if (earlier) odd.findings.add(`${ident}, Modell ${i + 1}: nie erreichbar, Modell ${earlier} entscheidet schon`)
-      else if (!m.predicate) decides.set(output, i + 1)
-    })
+      if (earlier) odd.findings.add(`Modell ${m.id}: nie erreichbar, ${earlier} entscheidet schon`)
+      else if (!m.predicate) decides.set(output, m.id)
+    }
 
     if (models.length) odd.models[ident] = models
 
@@ -210,4 +217,26 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
 
 function fail(message: string): never {
   throw new Error(message)
+}
+
+/**
+ * What the ODD says that never ran, and what the corpus holds that it never handled —
+ * read off what the rendering reached. Over every output at once: a model that fires
+ * in the search text earns its place as much as one that fires on the page.
+ */
+export function coverage(odd: Odd): string[] {
+  const { models, elements, unmodelled } = odd.reached
+  const out: string[] = []
+  for (const [ident, list] of Object.entries(odd.models)) {
+    if (!elements.has(ident)) out.push(`<${ident}>: im Korpus nicht vorgekommen, ${list.length} Modell(e) ungenutzt`)
+    else for (const m of list) if (!models.has(m.id)) out.push(`Modell ${m.id}: greift nie`)
+  }
+  for (const name of unmodelled) {
+    out.push(
+      odd.models[name]
+        ? `<${name}>: Modelle vorhanden, keines trifft zu`
+        : `<${name}>: kein Modell in der ODD`,
+    )
+  }
+  return out.sort((a, b) => a.localeCompare(b, 'de'))
 }

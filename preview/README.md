@@ -12,6 +12,7 @@ npm ci
 npm run build              # whole corpus to dist/
 npm run build -- A_1648    # only matching file names
 npm run build -- --src ../exported --out /tmp/preview
+npm run build -- --records # also: what the ODD decided, as data
 npm test                   # the conformance fixtures
 npm run check              # types
 ```
@@ -89,6 +90,17 @@ predicate is false and the next model decides, the param has no value — so the
 corpus still renders; the build names it, `findings.html` lists it under *ODD*,
 and the run ends non-zero. Reading the ODD also reports a param the behaviour does
 not read, a model an earlier one makes unreachable, and a CSS custom property that
-neither the design tokens nor the ODD itself defines. The ODD validates against
+neither the design tokens nor the ODD itself defines.
+
+Every build also reads the ODD back against the corpus: which of its models fired,
+which element it has models for that the corpus never has, and which element it has
+no model for. `findings.html` lists the gaps under *ODD-Abdeckung*. A model that
+never fires is a finding, not an error, so it does not fail the build. With
+`--records`, each document's decisions are written to `dist/records/<name>.json` —
+per element the model that won, its behaviour, classes and params, and the text as
+it renders. It is what another toolchain reads instead of re-implementing the
+Processing Model; the pages do not need it, so it is off by default.
+
+The ODD validates against
 `tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on
 every run, against a pinned TEI release.

@@ -27,6 +27,19 @@ export interface CollectedNote {
   body: ElementContent[]
 }
 
+/** One element as the Processing Model saw it: which model won, and what it made of it. */
+export interface Decision {
+  element: string
+  /** The model that won, `null` where the ODD has none for the element. */
+  model: string | null
+  behaviour: string | null
+  classes: string[]
+  /** The params as evaluated; for a sequence, those of its first part. */
+  params?: Record<string, string[]>
+  /** The decisions below this one, and the text as it renders. */
+  children: (Decision | string)[]
+}
+
 export interface RenderState {
   notes: CollectedNote[]
   warnings: string[]
@@ -34,6 +47,8 @@ export interface RenderState {
   unmapped: Set<string>
   /** The ids of the anchors rendered, for the ranges that start at them. */
   anchors: string[]
+  /** The decision being rendered, where they are collected at all; its content nests under it. */
+  open?: Decision
 }
 
 interface Ctx {
@@ -141,6 +156,19 @@ const RENDER: Record<string, Behaviour> = {
   },
 }
 
+/** Open this element's decision under the one it stands in. */
+function open(parent: Decision, element: string, model?: Model): Decision {
+  const decision: Decision = {
+    element,
+    model: model?.id ?? null,
+    behaviour: model?.behaviour ?? null,
+    classes: [],
+    children: [],
+  }
+  parent.children.push(decision)
+  return decision
+}
+
 function classes(props: Properties): string[] {
   return Array.isArray(props.className) ? props.className.map(String) : []
 }
@@ -206,7 +234,10 @@ export function createRenderer(odd: Odd) {
 
   /** `output` unset renders the page, with its views; set, that output alone. */
   function render(node: Nodes, up: Element[], phrasing: boolean, state: RenderState, output?: string): ElementContent[] {
-    if (isText(node)) return node.value ? [text(node.value)] : []
+    if (isText(node)) {
+      if (state.open && node.value) state.open.children.push(node.value)
+      return node.value ? [text(node.value)] : []
+    }
     if (!isElement(node)) return []
 
     const ln = localName(node.name)
@@ -217,9 +248,19 @@ export function createRenderer(odd: Odd) {
     const pos: Pos = { node, up }
     const models = odd.models[ln] ?? []
     const model = selectOutput(models, pos, output)
+    odd.reached.elements.add(ln)
+    if (model) odd.reached.models.add(model.id)
+    else odd.reached.unmodelled.add(ln)
+
+    // This element's own decision, which everything it renders nests under.
+    const parent = state.open
+    const decision = parent && open(parent, ln, model)
+    if (decision) state.open = decision
     if (!model) {
       state.unmapped.add(ln)
-      return [h('span', { ...attrMap(node), className: [`tei-${ln}`, 'tei-unmapped'] }, kids('span'))]
+      const span = h('span', { ...attrMap(node), className: [`tei-${ln}`, 'tei-unmapped'] }, kids('span'))
+      state.open = parent
+      return [span]
     }
     check(node, ln, state)
 
@@ -240,6 +281,7 @@ export function createRenderer(odd: Odd) {
       const viewClasses: string[] = []
       for (const v of output ? [] : outputs[ln]) {
         const view = select(models, pos, v)
+        if (view) odd.reached.models.add(view.id)
         const m = view?.sequence?.[k] ?? view
         if (m?.behaviour === 'omit') viewClasses.push(`${v}-omit`)
         else if (m?.behaviour === model.behaviour) {
@@ -255,6 +297,12 @@ export function createRenderer(odd: Odd) {
         ...(again && { id: undefined }),
         ...paramProps(params),
       }
+      if (decision && k === 0) {
+        decision.classes = classes(props)
+        if (Object.keys(params).length) {
+          decision.params = Object.fromEntries(Object.entries(params).map(([n, v]) => [n, seq(v).map((i) => str([i]))]))
+        }
+      }
       const out = RENDER[model.behaviour]({
         pos,
         props,
@@ -269,9 +317,11 @@ export function createRenderer(odd: Odd) {
       return out == null ? [] : Array.isArray(out) ? out : [out]
     }
     let rendered = 0
-    return (model.sequence ?? [model]).flatMap((m, k) =>
+    const out = (model.sequence ?? [model]).flatMap((m, k) =>
       model.sequence && m.predicate && !bool(m.predicate(pos)) ? [] : apply(m, k, rendered++ > 0),
     )
+    state.open = parent
+    return out
   }
 
   return (tree: Nodes, state: RenderState, output?: string): ElementContent[] =>
