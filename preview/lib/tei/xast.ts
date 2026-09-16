@@ -91,3 +91,33 @@ export function textOf(node: unknown): string {
 export function plainText(node: unknown): string {
   return textOf(node).replace(/\s+/g, ' ').trim()
 }
+
+/** What XML asks of a name: a letter or `_`, then letters, digits, marks, `.`, `-` and `_`. */
+const NCNAME = /^[\p{L}_][\p{L}\p{N}\p{M}._-]*$/u
+
+/**
+ * Ids this parser accepts but the rest of the toolchain does not: an id used twice,
+ * which makes two HTML elements answer to one link, and one that is no NCName, which
+ * libxml2 and Saxon refuse to parse at all.
+ */
+export function idFindings(tree: Root): string[] {
+  const seen = new Set<string>()
+  const twice = new Set<string>()
+  const invalid = new Set<string>()
+  const walk = (node: unknown): void => {
+    if (isElement(node)) {
+      const id = attr(node, 'xml:id')
+      if (id !== undefined) {
+        if (seen.has(id)) twice.add(id)
+        seen.add(id)
+        if (!NCNAME.test(id)) invalid.add(id)
+      }
+    }
+    for (const child of children(node)) walk(child)
+  }
+  walk(tree)
+  return [
+    ...[...twice].sort().map((id) => `xml:id zweimal vergeben, Verweise landen an der falschen Stelle: ${id}`),
+    ...[...invalid].sort().map((id) => `xml:id ist kein NCName, XML-Werkzeuge lehnen die Datei ab: ${id}`),
+  ]
+}

@@ -37,7 +37,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |
 | `assets/normalize.js` | Search normalisation — plain ESM |
 | `assets/search.js` | The search page, and marking the hits in a document |
-| `page.ts` | The HTML shell: top bar, apparatus; index, search and findings pages |
+| `page.ts` | The HTML shell: top bar, apparatus (the numbered notes, and a box per other place); index, search and findings pages |
 | `build.ts` | Walks the corpus and writes `dist/` |
 | `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
 
@@ -74,7 +74,10 @@ break: the drawer finds its pages by it, and clicking the break opens its page.
 Models with `@output` belong to that output and take precedence over the base
 models there. `plain` is rendered on its own and is what the search indexes;
 what it leaves out is not searched on the page either, where a hit may span
-`hi`, ranges and joined line ends. `normalized` (the reading text, which joins
+`hi`, ranges and joined line ends. Only that rendering decides what the index
+joins: a joined line end leaves neither hyphen nor word boundary behind, so the
+word is one; any other line end leaves both, so it is two, exactly as the page
+shows it. `normalized` (the reading text, which joins
 every line but the title page's) and `entities` are the preview's switches:
 views over the one page, where a model may omit the element, restyle it, or give
 the same behaviour other params — an `alternate` (as for `choice`) renders every

@@ -24,7 +24,7 @@ import { coverage, readOdd } from './lib/odd/odd'
 import { imageRoot } from './lib/tei/iiif'
 import { createProcessor, renderTei } from './lib/tei/render'
 import type { Decision } from './lib/tei/teiToHast'
-import { parse } from './lib/tei/xast'
+import { idFindings, parse } from './lib/tei/xast'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 
 type Processor = ReturnType<typeof createProcessor>
@@ -130,6 +130,7 @@ function render(
     facsRoot,
     entities: entities.used,
     warnings: [
+      ...idFindings(tree),
       ...tally(result.warnings),
       ...(result.unmapped.length ? [`Ohne Rendering-Regel, als Fliesstext ausgegeben: ${result.unmapped.join(', ')}`] : []),
       ...(entities.unknown.length

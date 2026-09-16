@@ -105,17 +105,24 @@ const NAV = [['index.html', 'Übersicht'], ['search.html', 'Suche'], ['findings.
 const nav = (here = ''): string => NAV.map(([href, text]) =>
   `<a class="bar-home" href="${href}"${href === here ? ' aria-current="page"' : ''}>${text}</a>`).join('\n    ')
 
+/** What the apparatus calls a place; one it has no name for keeps the ODD's. */
+const PLACES: Record<string, string> = { overview: 'Überblickskommentar' }
+
 /**
- * The apparatus, as endnotes.
+ * The apparatus: the notes that go to the end, numbered, and every other place in a box
+ * of its own — a place the ODD invents must not swallow the text.
  */
 function endnotes(notes: RenderedNote[]): string {
-  const overview = notes.filter((n) => n.place === 'overview')
   const anchored = notes.filter((n) => n.place === 'end')
+  const elsewhere = notes.filter((n) => n.place !== 'end')
 
-  const aside = overview.length === 0 ? '' : `<aside class="overview" aria-label="Überblickskommentar">
-      <span class="ui-label">Überblickskommentar</span>
-      ${overview.map((n) => `<div>${n.html}</div>`).join('')}
+  const aside = [...new Set(elsewhere.map((n) => n.place))].map((place) => {
+    const label = PLACES[place] ?? place
+    return `<aside class="overview" data-place="${esc(place)}" aria-label="${esc(label)}">
+      <span class="ui-label">${esc(label)}</span>
+      ${elsewhere.filter((n) => n.place === place).map((n) => `<div>${n.html}</div>`).join('')}
     </aside>`
+  }).join('')
 
   const items = anchored.map((n) => `<li class="endnote" id="${n.id}" role="doc-endnote">
           <a class="endnote-back" href="#ref-${n.id}" aria-label="Zurück zu Anmerkung ${n.number} im Text">${n.number}</a>

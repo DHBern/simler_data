@@ -28,10 +28,7 @@ export function hastToSearchText(tree: HastRoot | ElementContent): string {
   }
 
   walk(tree)
-  return parts
-    .join('')
-    // The print's hyphen against a line end: the word continues.
-    .replace(/[-­¬‐‑⸗][ \t]*\n+/g, '')
-    .replace(/\s+/g, ' ')
-    .trim()
+  // A hyphen at a line end stays: the tree has said whether the word continues — a joined
+  // line end leaves neither hyphen nor boundary behind, any other one leaves both.
+  return parts.join('').replace(/\s+/g, ' ').trim()
 }
