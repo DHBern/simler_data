@@ -12,6 +12,8 @@ npm ci
 npm run build              # whole corpus to dist/
 npm run build -- A_1648    # only matching file names
 npm run build -- --src ../exported --out /tmp/preview
+npm test                   # the conformance fixtures
+npm run check              # types
 ```
 
 `dist/index.html` is the index. The pages open from `file://` too, but the
@@ -36,6 +38,7 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | `assets/search.js` | The search page, and marking the hits in a document |
 | `page.ts` | The HTML shell: top bar, apparatus; index, search and findings pages |
 | `build.ts` | Walks the corpus and writes `dist/` |
+| `test/fixtures/` | One ODD and four TEI cases, one per Processing-Model feature, with what they must render |
 
 ## The ODD renders the text
 

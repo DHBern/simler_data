@@ -37,6 +37,9 @@ const COMPARE: Record<string, (a: string | number | boolean, b: string | number 
   '>=': (a, b) => a >= b,
 }
 
+/** The value comparisons, read as their general counterpart. */
+const VALUE_COMPARE: Record<string, string> = { eq: '=', ne: '!=', lt: '<', le: '<=', gt: '>', ge: '>=' }
+
 /** General comparison: true if any pair of items compares. */
 function compare(op: string, a: Value, b: Value): boolean {
   if (typeof a === 'boolean' || typeof b === 'boolean') return COMPARE[op](bool(a), bool(b))
@@ -192,7 +195,7 @@ export function compileXPath(expr: string): XPath {
   }
   function comparison(): Fn {
     const left = additive()
-    const op = Object.keys(COMPARE).find((o) => is(o))
+    const op = Object.keys(COMPARE).find((o) => is(o)) ?? VALUE_COMPARE[Object.keys(VALUE_COMPARE).find((o) => is(o, 'name'))!]
     if (!op) return left
     i++
     const right = additive()

@@ -11,7 +11,7 @@
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
-import { select, type Model, type Odd } from '../odd/odd'
+import { select, selectOutput, type Model, type Odd } from '../odd/odd'
 import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
 import { BEHAVIOURS, type Flow } from './behaviours'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
@@ -216,7 +216,7 @@ export function createRenderer(odd: Odd) {
 
     const pos: Pos = { node, up }
     const models = odd.models[ln] ?? []
-    const model = (output && select(models, pos, output)) || select(models, pos)
+    const model = selectOutput(models, pos, output)
     if (!model) {
       state.unmapped.add(ln)
       return [h('span', { ...attrMap(node), className: [`tei-${ln}`, 'tei-unmapped'] }, kids('span'))]
@@ -224,9 +224,12 @@ export function createRenderer(odd: Odd) {
     check(node, ln, state)
 
     const evaluate = (m: Model) => Object.fromEntries(Object.entries(m.params).map(([k, f]) => [k, f(pos)]))
+    /** A param selecting the element itself means its content: rendering it again would not end. */
     const value = (v: Value, tag?: string) =>
       seq(v).flatMap((item) =>
-        isPos(item) ? render(item.node, item.up, inside(tag), state, output) : String(item) ? [text(String(item))] : [],
+        !isPos(item) ? (String(item) ? [text(String(item))] : [])
+        : item.node === node ? kids(tag)
+        : render(item.node, item.up, inside(tag), state, output),
       )
     /**
      * The `k`th model of a sequence (or the model); a view's sequence overlays it part by part.

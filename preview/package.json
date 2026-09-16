@@ -6,7 +6,8 @@
   "description": "TEI → HTML previews of the Simler corpus",
   "scripts": {
     "build": "tsx build.ts",
-    "check": "tsc --noEmit"
+    "check": "tsc --noEmit",
+    "test": "node --import tsx --test test/*.test.ts"
   },
   "dependencies": {
     "@rgrove/parse-xml": "^4.2.3",

@@ -38,9 +38,16 @@ export interface Odd {
   css: string
 }
 
-/** The first model of `output` (unset: the base models) whose predicate holds. */
+/** The name of the page's own output: a model may mark itself for it, or leave `@output` off. */
+const WEB = 'web'
+
+/** The first model of `output` (unset: the models without one) whose predicate holds. */
 export const select = (models: Model[], pos: Pos, output?: string) =>
   models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
+
+/** What renders in `output`, the page when unset: that output's models, else the models without one. */
+export const selectOutput = (models: Model[], pos: Pos, output = WEB) =>
+  select(models, pos, output) ?? select(models, pos)
 
 const tokens = (el: Element | undefined, name: string) => (el ? attr(el, name) ?? '' : '').split(/\s+/).filter(Boolean)
 
@@ -57,7 +64,7 @@ export function readOdd(xml: string): Odd {
     models: {},
     flow: (node, up) => {
       if (cached.has(node)) return cached.get(node)
-      const m = select(odd.models[localName(node.name)] ?? [], { node, up })
+      const m = selectOutput(odd.models[localName(node.name)] ?? [], { node, up })
       // Within a sequence, `text` is literal content, not a container.
       const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
       const flows = kinds.map((b) => BEHAVIOURS[b]?.flow)
