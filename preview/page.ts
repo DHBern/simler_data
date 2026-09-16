@@ -3,6 +3,7 @@
  */
 
 import type { Entity } from './lib/entities'
+import type { View } from './lib/odd/odd'
 import { imageBase, imageUrl, libraryRoot } from './lib/tei/iiif'
 import type { RenderedNote } from './lib/tei/render'
 
@@ -40,26 +41,22 @@ const ESCAPES: Record<string, string> = {
 export const esc = (value: string): string => value.replace(/[&<>"']/g, (c) => ESCAPES[c])
 
 /**
- * The reading switches, and the `<html>` attribute each one drives.
+ * The controls that are the preview's own, not the ODD's: what to show of the
+ * apparatus, and how to read. The views come before them, from the ODD.
  *
- * The values are exactly those the ODD's views key off — this table adds a
- * control surface, never a rendering rule. A new switch is one row here plus
- * one selector there. Two values make a checkbox (off, on), more a slider;
- * `auto` makes an icon button whose value, while unset, that media query decides.
+ * Two values make a checkbox (off, on), more a slider; `auto` makes an icon button
+ * whose value, while unset, that media query decides.
  */
-interface Switch { attr: string, label: string, values: string[], title?: string, auto?: string }
-const SWITCHES: Switch[] = [
-  {
-    attr: 'normalized',
-    label: 'Normalisiert',
-    title: 'Zeilenenden zusammenziehen, getrennte Wörter verbinden, corr/reg/expan statt sic/orig/abbr.',
-    values: ['off', 'on'],
-  },
-  { attr: 'entities', label: 'Entitäten', values: ['off', 'on'] },
+interface Switch { attr: string, label: string, values: string[], title?: string, auto?: string, view?: boolean }
+const CONTROLS: Switch[] = [
   { attr: 'notes', label: 'Anmerkungen', values: ['off', 'quiet'] },
   { attr: 'size', label: 'Schrift', values: ['s', 'm', 'l', 'xl'] },
   { attr: 'mode', label: 'Dunkler Modus', values: ['light', 'dark'], auto: '(prefers-color-scheme: dark)' },
 ]
+
+/** A view of the ODD is a switch that is off to begin with; its CSS keys on the box as well. */
+const viewSwitch = ({ output, label, title }: View): Switch =>
+  ({ attr: output, label, title, values: ['off', 'on'], view: true })
 
 /**
  * Written onto `<html>`, so a preview is correct before any script runs.
@@ -67,16 +64,16 @@ const SWITCHES: Switch[] = [
  * The print is the default, not the reading text: this is a proofing tool, and
  * what an editor compares against the facsimile is what the print says.
  */
-const DEFAULTS: Record<string, string> = {
-  normalized: 'off',
-  entities: 'off',
+const defaults = (views: View[]): Record<string, string> => ({
+  ...Object.fromEntries(views.map((v) => [v.output, 'off'])),
   notes: 'quiet',
   size: 'm',
-}
+})
 
-function switches(): string {
-  return SWITCHES.map(({ attr, label, values, title, auto }) => {
-    const at = Math.max(0, values.indexOf(DEFAULTS[attr]))
+function switches(views: View[]): string {
+  const start = defaults(views)
+  return [...views.map(viewSwitch), ...CONTROLS].map(({ attr, label, values, title, auto, view }) => {
+    const at = Math.max(0, values.indexOf(start[attr]))
     const data = `data-switch="${attr}" data-values="${values.join(' ')}"`
     const tip = title ? ` title="${esc(title)}"` : ''
     if (auto) {
@@ -87,7 +84,9 @@ function switches(): string {
       return `<label class="ctrl"${tip}>${esc(label)}
         <input type="range" min="0" max="${values.length - 1}" value="${at}" ${data}></label>`
     }
-    return `<label class="ctrl"${tip}><input type="checkbox" ${data}${at ? ' checked' : ''}> ${esc(label)}</label>`
+    // The id is what the view's CSS looks for, so a view still switches with no script.
+    const id = view ? ` id="view-${attr}"` : ''
+    return `<label class="ctrl"${tip}><input type="checkbox"${id} ${data}${at ? ' checked' : ''}> ${esc(label)}</label>`
   }).join('')
 }
 
@@ -257,9 +256,9 @@ const NOTE_POPOVER = `<aside id="note-popover" class="popover-panel no-print" po
     <p class="popover-foot"><a class="btn" href="#" data-note-jump>Im Apparat anzeigen ↓</a></p>
   </aside>`
 
-export function documentPage(doc: PreviewDoc): string {
+export function documentPage(doc: PreviewDoc, views: View[]): string {
   const drawer = facsimile(doc)
-  const attrs = Object.entries({ ...DEFAULTS, ...(drawer && { facs: 'on' }) })
+  const attrs = Object.entries({ ...defaults(views), ...(drawer && { facs: 'on' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
   return `<!doctype html>
 <html lang="de" ${attrs}>
@@ -271,7 +270,7 @@ export function documentPage(doc: PreviewDoc): string {
     <header class="bar">
       ${nav()}
       <span class="bar-title" title="${esc(doc.file)}">${esc(doc.title)}</span>
-      <div class="bar-controls">${switches()}</div>
+      <div class="bar-controls">${switches(views)}</div>
     </header>
     ${HIT_BANNER}
   </div>

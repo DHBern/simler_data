@@ -76,6 +76,24 @@ test('a custom property is defined by the tokens, the CSS or a param', () => {
   assert.equal(read(spec('--c-ink'), ':root { --c-ink: 0 0 0; }').findings.size, 0)
 })
 
+test('the views are the outputs laid over the page, named by the ODD', () => {
+  const odd = read(`<elementSpec ident="p" mode="change">
+    <model behaviour="paragraph"/>
+    <model output="entities" behaviour="inline"/>
+    <model output="normalized" behaviour="inline">
+      <desc>Normalisiert</desc>
+      <desc>Lesetext.</desc>
+    </model>
+    <model output="plain" behaviour="omit"/>
+    <model output="web" behaviour="paragraph"/>
+  </elementSpec>`)
+  // `web`, `page` and `plain` render on their own; the rest are switches, in the ODD's order.
+  assert.deepEqual(odd.views, [
+    { output: 'entities', label: 'entities', title: undefined },
+    { output: 'normalized', label: 'Normalisiert', title: 'Lesetext.' },
+  ])
+})
+
 /** Two models for `p`, of which a plain one takes the second, and an element the corpus below has not. */
 const SPECS = `<elementSpec ident="p" mode="change">
     <model predicate="@rend" behaviour="block" cssClass="x"><param name="data-rend" value="@rend"/></model>

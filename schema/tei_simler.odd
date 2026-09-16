@@ -102,7 +102,9 @@
         XPath: the nodes they select are rendered by their own models, anything else as text;
         params named <val>--…</val> become CSS custom properties of the rendered element,
         <val>data-…</val> its attributes. Models with an <att>output</att> belong to that output
-        and take precedence over the base models there. <val>page</val>, on <gi>TEI</gi>, names
+        and take precedence over the base models there. The base rendering — the diplomatic text —
+        is what the models without an <att>output</att> give; <val>web</val> names it where a model
+        wants to say so, and is read here as the base. <val>page</val>, on <gi>TEI</gi>, names
         what the page shows around the text. <val>plain</val>, the text of the search index, is
         rendered on its own. <val>normalized</val> (the reading text) and <val>entities</val> (entity
         highlighting) are views over the base rendering that can be switched on and off: a view's
@@ -112,6 +114,14 @@
         (<att>rendition</att>) is carried where the model sets <att>useSourceRendition</att>; a model
         that lays out the rendition itself does without. Colours, fonts and measures are the
         edition's design tokens (CSS custom properties).</p>
+
+      <p>The output names other than <val>web</val> are this edition's own, not the TEI's, and so
+        are the two param prefixes. A Processing-Model tool that does not know them renders the
+        models without an <att>output</att> and leaves the rest out: the base layer alone, which is
+        the diplomatic text and a sound reading of the edition. The views are therefore named
+        plainly rather than behind a prefix, and nothing the base layer needs is hidden in one of
+        them. Within a view, the first <gi>desc</gi> of its models names it for the reading switch
+        and a second explains it, so the switches say what the ODD says.</p>
 
       <schemaSpec ident="tei_simler" start="TEI" prefix="tei_" targetLang="de" docLang="en">
 
@@ -856,6 +866,8 @@
           <model behaviour="inline"/>
           <!-- entity highlighting, colour-coded by type -->
           <model cssClass="entity-person" output="entities" predicate="@type='person'" behaviour="inline">
+            <desc>Entitäten</desc>
+            <desc>Personen, Orte, Werke, Institutionen und Bibelstellen farbig.</desc>
             <outputRendition>color: rgb(var(--c-person)); text-decoration: underline solid; text-underline-offset: 0.22em;</outputRendition>
           </model>
           <model cssClass="entity-place" output="entities" predicate="@type='place'" behaviour="inline">
@@ -896,6 +908,8 @@
           </model>
           <model behaviour="inline"/>
           <model output="normalized" predicate="sic and corr" behaviour="alternate">
+            <desc>Normalisiert</desc>
+            <desc>Zeilenenden zusammenziehen, getrennte Wörter verbinden, Korrektur statt Vorlage.</desc>
             <param name="default" value="corr"/>
             <param name="alternate" value="sic"/>
           </model>

@@ -42,6 +42,15 @@ export interface Odd {
   findings: Set<string>
   /** What the rendering reached, filled as it runs: the models that fired, and the elements walked. */
   reached: { models: Set<string>; elements: Set<string>; unmodelled: Set<string> }
+  /** The outputs laid over the page, each named by the first `<desc>` of its models: the reading switches. */
+  views: View[]
+}
+
+export interface View {
+  output: string
+  label: string
+  /** A second `<desc>`, where the ODD explains the view. */
+  title?: string
 }
 
 /** A param a behaviour does not read is a typo — unless it is a custom property or an attribute. */
@@ -53,6 +62,11 @@ const readsParam = (behaviour: string, name: string) =>
 
 /** The name of the page's own output: a model may mark itself for it, or leave `@output` off. */
 const WEB = 'web'
+/** Outputs that render on their own, rather than as a view over the page. */
+const ALONE = [WEB, 'page', 'plain']
+
+/** Where a view is on: the page says so, or its switch is checked — which needs no script. */
+const on = (output: string) => `:is([data-${output}='on'], :root:has(#view-${output}:checked))`
 
 /** The first model of `output` (unset: the models without one) whose predicate holds. */
 export const select = (models: Model[], pos: Pos, output?: string) =>
@@ -90,6 +104,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     css: '',
     findings: new Set(),
     reached: { models: new Set(), elements: new Set(), unmodelled: new Set() },
+    views: [],
   }
   /** Custom properties the models set, which the ODD's CSS may then read. */
   const properties = new Set<string>()
@@ -97,7 +112,8 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     '.pm-block { display: block; }', // a block set inside phrasing content renders as a span
     '.pm-alternate { display: none; }',
   ]
-  const views = new Set<string>()
+  /** Each output over the page, and the `<desc>`s of the first of its models that has any. */
+  const views = new Map<string, string[]>()
 
   for (const r of elementChildren(findFirst(tree, 'tagsDecl'), 'rendition')) {
     const id = attr(r, 'xml:id')!
@@ -153,11 +169,16 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
         const styled = elementChildren(m, 'outputRendition').length > 0
         const bare = sole && !group && !outer && !predicate && !output
         const cls = styled && !bare ? own[0] ?? fail(`${where}: ein gestaltetes Modell unter mehreren braucht @cssClass`) : undefined
+        // A `web` model belongs to the page itself, so its CSS is the page's, not a view's.
+        const overlay = output && !ALONE.includes(output) ? output : undefined
         if (styled) {
           const selector = bare ? `.tei-${ident}` : `.${cls}`
-          ;(output ? view : css).push(...rules(m, output ? `[data-${output}='on'] ${selector}` : selector))
+          ;(overlay ? view : css).push(...rules(m, overlay ? `${on(overlay)} ${selector}` : selector))
         }
-        if (output) views.add(output)
+        if (output && output !== WEB) {
+          const descs = elementChildren(m, 'desc').map((d) => textOf(d).replace(/\s+/g, ' ').trim())
+          if (!views.get(output)?.length) views.set(output, descs)
+        }
         const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
         const behaviour = sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: kein @behaviour`)
         const params = elementChildren(m, 'param').map((p) => ({ name: attr(p, 'name')!, value: attr(p, 'value') ?? "''" }))
@@ -198,13 +219,16 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     }
   }
 
-  for (const v of views) {
+  for (const v of views.keys()) {
     css.push(
-      `[data-${v}='on'] .${v}-omit { display: none; }`,
-      `[data-${v}='on'] .pm-alt.${v}-default { display: inline; }`,
-      `[data-${v}='on'] .pm-alt.${v}-alternate { display: none; }`,
+      `${on(v)} .${v}-omit { display: none; }`,
+      `${on(v)} .pm-alt.${v}-default { display: inline; }`,
+      `${on(v)} .pm-alt.${v}-alternate { display: none; }`,
     )
   }
+  odd.views = [...views]
+    .filter(([output]) => !ALONE.includes(output))
+    .map(([output, [label, title]]) => ({ output, label: label || output, title }))
   odd.css = `/* Generated from tei_simler.odd — edit the ODD, not this file. */\n${css.join('\n')}\n`
 
   // A custom property the CSS reads is defined by the design tokens, by the CSS itself, or by a param.

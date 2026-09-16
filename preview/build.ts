@@ -214,7 +214,7 @@ async function main() {
   for (const name of names) {
     // The decisions are written and dropped; keeping 74 of these trees is not worth the memory.
     const { decisions, ...doc } = render(name, await readFile(join(src, name), 'utf8'), registers, processor, records)
-    await writeFile(join(out, doc.out), documentPage(doc))
+    await writeFile(join(out, doc.out), documentPage(doc, odd.views))
     if (decisions) {
       const json = JSON.stringify({ document: name, output: 'web', root: decisions })
       await writeFile(join(out, 'records', name.replace(/\.xml$/i, '.json')), json)

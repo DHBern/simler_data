@@ -79,7 +79,12 @@ every line but the title page's) and `entities` are the preview's switches:
 views over the one page, where a model may omit the element, restyle it, or give
 the same behaviour other params — an `alternate` (as for `choice`) renders every
 reading once and shows each view's own default. A view's `<modelSequence>`
-overlays the page's sequence model by model. The `page` model of the root element says, in its
+overlays the page's sequence model by model. **The switches are the ODD's:** every
+output but `web`, `page` and `plain` becomes one, named by the first `<desc>` among
+its models and explained by a second; a new view is an ODD change, and nothing here
+knows their names. Each view's CSS keys on its switch as well as on the attribute
+the script sets, so the views work with JavaScript off. *Anmerkungen*, *Schrift* and
+*Dunkler Modus* are the preview's own controls, not renderings. The `page` model of the root element says, in its
 params, what the page shows around the text: `title`, `manifest` (the IIIF
 manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 
