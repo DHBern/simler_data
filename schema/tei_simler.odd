@@ -216,7 +216,7 @@
               </valList>
             </attDef>
           </attList>
-          <model behaviour="text"/>
+          <model behaviour="document"/>
           <!-- what the page shows around the text: its title, the facsimile, the entities it names -->
           <model output="page" behaviour="metadata">
             <param name="title" value="normalize-space(teiHeader/fileDesc/titleStmt/title[1])"/>
@@ -468,7 +468,7 @@
               <elementRef key="milestone"/><elementRef key="lb"/><elementRef key="pb"/>
             </alternate>
           </content>
-          <model behaviour="text"/>
+          <model behaviour="block"/>
         </elementSpec>
 
         <elementSpec ident="body" module="textstructure" mode="change">
@@ -481,7 +481,7 @@
               <elementRef key="milestone"/><elementRef key="fw"/>
             </alternate>
           </content>
-          <model behaviour="text"/>
+          <model behaviour="body"/>
         </elementSpec>
 
         <elementSpec ident="div" module="textstructure" mode="change">
