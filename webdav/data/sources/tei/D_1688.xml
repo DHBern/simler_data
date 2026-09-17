@@ -814,31 +814,59 @@
             <lb/>
             Warnung an die unteutſchen.</hi></head>
             <lb/>
-               <!-- NE: Positionen/Spalten codieren -->  
-            <lg type="poem"><l><hi rendition="#in">S</hi>eht/ wie der Teutſchen ruhM it flu&#x364;gel ſchnellem LoB</l>
+               
+            <lg type="poem" rendition="#twocol">
+            <l><hi rendition="#in">S</hi>eht/ wie der Teutſchen ruh</l>
             <lb/>
-               <l rendition="#et">ſich Him&#x342;elhoch erſchwingt: und Nydhart zo&#x364;rnt darob.</l>
+            <l rendition="#acrostic"><hi rendition="#acroInit">M</hi>it flu&#x364;gel ſchnellem Lo<hi rendition="#acroFin">B</hi></l>
             <lb/>
-            <l>Jn einem kurtzen nU nd blik erwachſet ſO</l>
+            <l rendition="#et">ſich Him&#x342;elhoch erſchwingt:</l>
             <lb/>
-               <l rendition="#et">Daß Tadelgern erſtaunt und weißt nicht wie und wo</l>
+            <l>und Nydhart zo&#x364;rnt darob.</l>
             <lb/>
-            <l>Mein armer<anchor xml:id="a18"/>GrimmefolL aß fahren deinen nyD</l>
+            <l>Jn einem kurtzen</l>
             <lb/>
-               <l rendition="#et">Das ſtachlich Bienenvolk zum zorn zureitzen myd.</l>
+            <l rendition="#acrostic"><hi rendition="#acroInit">nU</hi> nd blik erwachſet ſ<hi rendition="#acroFin">O</hi></l>
             <lb/>
-            <l>Lern ſchweigen; und das mauL eit im gebiß und zauM</l>
+            <l rendition="#et">Daß Tadelgern erſtaunt</l>
             <lb/>
-               <l rendition="#et">nicht tadlend was nicht taugt fu&#x364;r deinen albern gaum.</l>
+            <l>und weißt nicht wie und wo</l>
             <lb/>
-            <l>Es wachßt hier an dem ſeE y an dem  Zu&#x364;richſeE</l>
+            <l>Mein armer<anchor xml:id="a18"/>Grimmefol</l>
             <lb/>
-               <l rendition="#et">ſo gut alß irgend wo Uliſſes ſu&#x364;ſſer klee.</l>
+            <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>aß fahren deinen ny<hi rendition="#acroFin">D</hi></l>
             <lb/>
-            <l>Rott auß; ſo ſaen wiR eiß ab/ ſo pflantzen wiR:</l>
+            <l rendition="#et">Das ſtachlich Bienenvolk</l>
             <lb/>
-               <l rendition="#et">du Nyder tuhſt uns nichts; du tuhſt es einig dir.</l></lg>
-            <lb/></div>
+            <l>zum zorn zureitzen myd.</l>
+            <lb/>
+            <l>Lern ſchweigen; und das mau</l>
+            <lb/>
+            <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>eit im gebiß und zau<hi rendition="#acroFin">M</hi></l>
+            <lb/>
+            <l rendition="#et">nicht tadlend was nicht taugt</l>
+            <lb/>
+            <l>fu&#x364;r deinen albern gaum.</l>
+            <lb/>
+            <l>Es wachßt hier an dem ſe</l>
+            <lb/>
+            <l rendition="#acrostic"><hi rendition="#acroInit">E</hi>y an dem  Zu&#x364;richſe<hi rendition="#acroFin">E</hi></l>
+            <lb/>
+            <l rendition="#et">ſo gut alß irgend wo</l>
+            <lb/>
+            <l>Uliſſes ſu&#x364;ſſer klee.</l>
+            <lb/>
+            <l>Rott auß; ſo ſaen wi</l>
+            <lb/>
+            <l rendition="#acrostic"><hi rendition="#acroInit">R</hi>eiß ab/ ſo pflantzen wi<hi rendition="#acroFin">R:</hi></l>
+            <lb/>
+            <l rendition="#et">du Nyder tuhſt uns nichts;</l>
+            <lb/>
+            <l>du tuhſt es einig dir.</l>
+            </lg>
+            <lb/>
+            
+            </div>
                <milestone rendition="#hr" unit="section"/>
                <lb/>
             <div n="2"><head><label>[xiii.]</label><lb/>
@@ -4710,6 +4738,10 @@
             <lb/>
             <l>Pſalmen Davids.</l>
             <lb/>
+            </lg>
+            </div>
+            </div>
+            </div>
             <fw place="bottom" type="catch">Jnha&#x364;lte</fw>
 
             <lb/>
@@ -4724,9 +4756,6 @@
             <l>in gemeinen Reimſchlüſ-</l>
             <lb break="no"/>
             <l>ſen begriffen.</l>
-            </lg>
-            </div>
-            </div>
 
             <div type="poem-div">
             <head>
@@ -23670,7 +23699,7 @@
             <fw place="top" type="header">Hochzeitgedicht.</fw>
 
             <lb/>
-            <l>$D.2$ Die <hi rendition="#b">Lokerin</hi> hat Jhn verſtrickt<note place="right"><hi rendition="#aq">Anagr.</hi><lb/>Kolerin</note></l>
+            <l>$D.2$ Die <hi rendition="#b">Lokerin</hi> hat Jhn verſtrickt<note place="right" type="marginalia"><hi rendition="#aq">Anagr.</hi><lb/>Kolerin</note></l>
             <lb/>
             <l>So bald Er Sie/ Sie Jhn erblickt:</l>
             <lb/>
@@ -32825,7 +32854,7 @@
             <lb/>
             <l>Dann/ wer ſich der'n befleißt in ſeiner erſten Jugend/</l>
             <lb/>
-            <l>demſelben/ ſonder fehl der Scho&#x364;pffer hat bereit</l><note place="right">Fru&#x364;hling.</note>
+            <l>demſelben/ ſonder fehl der Scho&#x364;pffer hat bereit</l><note place="right" type="marginalia">Fru&#x364;hling.</note>
             <lb/>
                <l>ein Ehrenkron allhier/ und dort die Seligkeit.</l>
             <lb/>
@@ -32833,13 +32862,13 @@
             <lb/>
             <l>am ho&#x364;chſten fahrt daher/ auf ihren gu&#x364;ldnen Wagen:</l>
             <lb/>
-               <l>Jm andern Alter wir; als unſrer Sommers-Zeit;</l><note place="right">Som&#x303;er.</note>
+               <l>Jm andern Alter wir; als unſrer Sommers-Zeit;</l><note place="right" type="marginalia">Som&#x303;er.</note>
             <lb/>
             <l>Durch Arbeit und Gebett auch ſollen fahren weit.</l>
             <lb/>
             <l>Dem Herbſt und Abend wir angehndes Alter gleichen/</l>
             <lb/>
-               <l>ſo/ ſonder Wachßthum/ nie vorgehnde ließ entweichen:</l><note place="right">Herbſt.</note>
+               <l>ſo/ ſonder Wachßthum/ nie vorgehnde ließ entweichen:</l><note place="right" type="marginalia">Herbſt.</note>
             <lb/>
             <l>Drum ſamlet es die Frucht/ mit freuden/ reichlich eyn:</l>
             <lb/>
@@ -32847,7 +32876,7 @@
             <lb/>
             <l>Dem Winter und der Nacht iſt <supplied>a&#x364;</supplied>hnlich kaltes Alter/</l>
             <lb/>
-               <l>erfu&#x364;llet mit beſchwerd im finſteren Gehalter:</l><note place="right">Winter.</note>
+               <l>erfu&#x364;llet mit beſchwerd im finſteren Gehalter:</l><note place="right" type="marginalia">Winter.</note>
             <lb/>
             <l>Die zeit nun eilt zum End; das Alter zu dem Grab/</l>
             <lb/>
@@ -35349,7 +35378,7 @@
             <lb/>
             <l>im *Jahr/ als Wein und Korn ſo trefflich war gerahten/</l>
             <lb/>
-            <l>das Mu&#x364;tt und Eimer galt ſechs Batzen zur Ducaten.</l><note place="right">* 1668.</note>
+            <l>das Mu&#x364;tt und Eimer galt ſechs Batzen zur Ducaten.</l><note place="right" type="marginalia">* 1668.</note>
             </lg>
                <lb/>
             </div>
@@ -39148,29 +39177,29 @@
                <lg type="poem">
             <l><hi rendition="#b">Herꝛ Wo&#x364;llwein</hi> hat ihm ſelbs den beſſern theil er-
             <lb break="no"/>
-               wehlet/<note place="right" rendition="#smaller">Luc.10:42.</note></l>
+               wehlet/<note place="right" type="bibl" rendition="#smaller">Luc.10:42.</note></l>
             <lb/>
             <l>nachdem er immerdar mit ſonderm fleiß geſtellet:</l>
             <lb/>
-            <l>Er hat/ vom Geiſt entzu&#x364;ndt/ geſuchet ſeinen Luſt<note place="right" rendition="#smaller">2.Cor. 3:5.</note></l>
+            <l>Er hat/ vom Geiſt entzu&#x364;ndt/ geſuchet ſeinen Luſt<note place="right" type="bibl" rendition="#smaller">2.Cor. 3:5.</note></l>
             <lb/>
             <l>nicht an dem eiteln <hi rendition="#b">Nichts</hi>: nicht an dem <hi rendition="#b">Erden-
             <lb break="no"/>
-               wuſt</hi>/<note place="right" rendition="#smaller">Eccleſ.1:2.</note></l>
+               wuſt</hi>/<note place="right" type="bibl" rendition="#smaller">Eccleſ.1:2.</note></l>
             <lb/>
             <l>Nein freylich; ſonder nur an <hi rendition="#b">Gott</hi>/ dem reinſten weſen/</l>
             <lb/>
-                  <l>und an deſſelben<hi rendition="#b">Wort</hi>/ von dem die Seel geneſen:<note place="right" rendition="#smaller">Rom.1:16.</note></l>
+                  <l>und an deſſelben<hi rendition="#b">Wort</hi>/ von dem die Seel geneſen:<note place="right" type="bibl" rendition="#smaller">Rom.1:16.</note></l>
             <lb/>
-                  <l>der wahre Gottesdienſt/ die unverfelſchte Lehr<note place="right" rendition="#smaller">Jac.1:27.</note></l>
+                  <l>der wahre Gottesdienſt/ die unverfelſchte Lehr<note place="right" type="bibl" rendition="#smaller">Jac.1:27.</note></l>
             <lb/>
-                  <l>war ſeine Hertzens-freud/ auch ho&#x364;chſte zier und Ehr.<note place="right" rendition="#smaller">1.Sam.2:6.<lb/>7.</note></l>
+                  <l>war ſeine Hertzens-freud/ auch ho&#x364;chſte zier und Ehr.<note place="right" type="bibl" rendition="#smaller">1.Sam.2:6.<lb/>7.</note></l>
             <lb/>
             <l>Fu&#x364;r ſeinen Schatz und Schutz des Leibes und der See-
             <lb break="no"/>
-               len/<note place="right" rendition="#smaller">Deut.32:39</note></l>
+               len/<note place="right" type="bibl" rendition="#smaller">Deut.32:39</note></l>
             <lb/>
-                  <l>hat er gehalten den/ der heilen kan und quelen;<note place="right" rendition="#smaller">1.Sa.2:6,7.</note></l>
+                  <l>hat er gehalten den/ der heilen kan und quelen;<note place="right" type="bibl" rendition="#smaller">1.Sa.2:6,7.</note></l>
             <lb/>
             <fw place="bottom" type="catch">der</fw>
 
@@ -39182,11 +39211,11 @@
             <lb/>
             <fw place="top" type="header">Uberſchrifften.</fw>
             <lb/>
-                  <l>der fu&#x364;r gefahr behu&#x364;t/ und rettet auß der noht/<note place="right"><hi rendition="#aq #smaller">Pſal.131.</hi> un&#x303;
+                  <l>der fu&#x364;r gefahr behu&#x364;t/ und rettet auß der noht/<note place="right" type="bibl"><hi rendition="#aq #smaller">Pſal.131.</hi> un&#x303;
                      <lb/>
                      <hi rendition="#aq #smaller">91.v.14.15.</hi></note></l>
             <lb/>
-                  <l>als der von Raht und Taht ein groſſer ſtarker Gott/<note place="right" rendition="#aq #smaller">Pſal.86.8.</note></l>
+                  <l>als der von Raht und Taht ein groſſer ſtarker Gott/<note place="right" type="bibl" rendition="#aq #smaller">Pſal.86.8.</note></l>
             <lb/>
             <l>ja unvergleichlich iſt in Himmlen und Welt-enden:</l>
             <lb/>
@@ -39194,7 +39223,7 @@
             <lb/>
             <l>Er/ er/ <hi rendition="#b">Herꝛ Wo&#x364;llwein</hi> hat geſucht das ho&#x364;chſte
             <lb/>
-               Gut/<note place="right" rendition="#aq #smaller">Rom.8.28.</note></l>
+               Gut/<note place="right" type="bibl" rendition="#aq #smaller">Rom.8.28.</note></l>
             <lb/>
             <l>und bey dem zeitlichen gelebt ohn u&#x364;bermuth:</l>
             <lb/>
@@ -39202,7 +39231,7 @@
             <lb/>
             <l>durch Jeſum ſeinen Sohn dem Glauben ſchenkt zur
             <lb/>
-               Letze:<note place="right" rendition="#aq #smaller">1.Pet.19.</note></l>
+               Letze:<note place="right" type="bibl" rendition="#aq #smaller">1.Pet.19.</note></l>
             <lb/>
             <l>Er hats geſucht bey dem/ der Leib und Seel ernehrt/</l>
             <lb/>
@@ -39212,13 +39241,13 @@
             <lb/>
             <l>bey dem/ der alles gi<anchor xml:id="a498"/>b<note type="annotation" targetEnd="a498"><p>Wegen Defekts im Digitalisat etwas verschwommen.</p></note>t zu rechter zeit und ſtunden:</l>
             <lb/>
-                  <l>Dann a<supplied>u</supplied>ch an ih<supplied>m</supplied> hat Gott/ als eim erlo&#x364;ßten Sohn/<note place="right" rendition="#aq #smaller">Eph.1.5.6.</note></l>
+                  <l>Dann a<supplied>u</supplied>ch an ih<supplied>m</supplied> hat Gott/ als eim erlo&#x364;ßten Sohn/<note place="right" type="bibl" rendition="#aq #smaller">Eph.1.5.6.</note></l>
             <lb/>
             <l>bezeuget <anchor xml:id="a499"/>ſ<note type="annotation" targetEnd="a499"><p>Wegen Defektsim Digitalisat schwer sichtbar.</p></note>einen luſt/ von ſeinem Gnadenthrohn:</l>
             <lb/>
             <l>Er hat ihn/ <anchor xml:id="a500"/>ſ<note type="annotation" targetEnd="a500"><p>Wegen Defekts im Digitalisat schwer sichtbar.</p></note>einer Gnad; die er mit todes-ſchmertzen</l>
             <lb/>
-                  <l>am Creutz <supplied>er</supplied>worben Jhm; verſichert in dem Hertzen/<note place="right" rendition="#aq #smaller">Rom.8.15.
+                  <l>am Creutz <supplied>er</supplied>worben Jhm; verſichert in dem Hertzen/<note place="right" type="bibl" rendition="#aq #smaller">Rom.8.15.
                      <lb/>
                      16.</note></l>
             <lb/>
@@ -39226,7 +39255,7 @@
             <lb/>
             <l>der unſrer Kindſchafft Pfand und Erbes Sigel
             <lb/>
-               heißt.<note place="right" rendition="#aq #smaller">Eph.1.13.
+               heißt.<note place="right" type="bibl" rendition="#aq #smaller">Eph.1.13.
                   <lb/>
                   14.</note></l>
             <lb/>
@@ -39240,25 +39269,25 @@
             <lb/>
             <l>Hat nicht Gott Jhn erfu&#x364;llt mit ſeinen Himmels-ſcha&#x364;-
             <lb break="no"/>
-               tzen/<note place="right" rendition="#aq #smaller">Matt.6.20.</note></l>
+               tzen/<note place="right" type="bibl" rendition="#aq #smaller">Matt.6.20.</note></l>
             <lb/>
             <l>die ih<supplied>m</supplied> kein Diebe raubt/ noch Motte kan verletzen?</l>
             <lb/>
             <l>D<anchor xml:id="a503"/>e<note type="annotation" targetEnd="a503"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>n Glauben ich vermein' in wahrer Wu&#x364;ſſen-
             <lb break="no"/>
-               ſchafft/<note place="right" rendition="#aq #smaller">2.Pet.1.1.<lb/>Marc.16.16<anchor xml:id="a508"/><unclear reason="uncleanPrint">.</unclear><note type="annotation" targetEnd="a508"><p>Der Punkt, der üblicherweise am Ende stehen sollte, ist auch im Augsburger Exemplar nicht zu erkennen</p></note></note></l>
+               ſchafft/<note place="right" type="bibl" rendition="#aq #smaller">2.Pet.1.1.<lb/>Marc.16.16<anchor xml:id="a508"/><unclear reason="uncleanPrint">.</unclear><note type="annotation" targetEnd="a508"><p>Der Punkt, der üblicherweise am Ende stehen sollte, ist auch im Augsburger Exemplar nicht zu erkennen</p></note></note></l>
             <lb/>
-                  <l>und ſteiffer zuverſicht/ woran das Leben hafft:<note place="right" rendition="#aq #smaller">Joh.17.v.3.</note></l>
+                  <l>und ſteiffer zuverſicht/ woran das Leben hafft:<note place="right" type="bibl" rendition="#aq #smaller">Joh.17.v.3.</note></l>
             <lb/>
-                  <l>Jch <supplied>m</supplied>eine jenes Kleid der neuen Creature/<note place="right" rendition="#aq #smaller">Eph.4.24.</note></l>
+                  <l>Jch <supplied>m</supplied>eine jenes Kleid der neuen Creature/<note place="right" type="bibl" rendition="#aq #smaller">Eph.4.24.</note></l>
             <lb/>
-                  <l>und <anchor xml:id="a504"/>d<note type="annotation" targetEnd="a504"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>aß er theilhafft iſt der go&#x364;ttlichen Nature.<note place="right" rendition="#aq #smaller">Gal.6.15.</note></l>
+                  <l>und <anchor xml:id="a504"/>d<note type="annotation" targetEnd="a504"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>aß er theilhafft iſt der go&#x364;ttlichen Nature.<note place="right" type="bibl" rendition="#aq #smaller">Gal.6.15.</note></l>
             <lb/>
             <l>Diß alles/ ja ſich ſelbſt; <hi rendition="#aq">ô</hi> unergru&#x364;ndte Gnad!</l>
             <lb/>
             <l>h<anchor xml:id="a505"/>a<note type="annotation" targetEnd="a505"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>t ihm der Herꝛ geſchenkt in diſem Lebens-pfad/</l>
             <lb/>
-                  <l>dam<anchor xml:id="a506"/>i<note type="annotation" targetEnd="a506"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>t er fu&#x364;hlen mo&#x364;cht das rechte Gottesleben<note place="right" rendition="#aq #smaller">Gal.2.20.</note></l>
+                  <l>dam<anchor xml:id="a506"/>i<note type="annotation" targetEnd="a506"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>t er fu&#x364;hlen mo&#x364;cht das rechte Gottesleben<note place="right" type="bibl" rendition="#aq #smaller">Gal.2.20.</note></l>
             <lb/>
             <l>ja/ a<anchor xml:id="a507"/>u<note type="annotation" targetEnd="a507"><p>Verschwommen wegen Defekts im Digitalisat.</p></note>ch dem Leib zu gut/ begabte Gott darneben</l>
             <lb/>
@@ -39279,15 +39308,15 @@
             <lb/>
             <l>Dann/ wan&#x303; ihm Atropos den Faden wird abſchneiden/</l>
             <lb/>
-                  <l>ſo wird ſich ſeine Seel in ho&#x364;chſten Freuden weiden<note place="right" rendition="#aq #smaller">Apoc.7.17.</note></l>
+                  <l>ſo wird ſich ſeine Seel in ho&#x364;chſten Freuden weiden<note place="right" type="bibl" rendition="#aq #smaller">Apoc.7.17.</note></l>
             <lb/>
-                  <l>im rechten Vatterland/ biß jene Stim&#x342; erſchallt<note place="right" rendition="#aq #smaller">Joh.5.25.</note></l>
+                  <l>im rechten Vatterland/ biß jene Stim&#x342; erſchallt<note place="right" type="bibl" rendition="#aq #smaller">Joh.5.25.</note></l>
             <lb/>
             <l>die zu dem groſſen Gricht wird weken jung und alt:</l>
             <lb/>
             <l>Alßdann wird Leib und Seel vereinet ſich ergetzen</l>
             <lb/>
-                  <l>ohn mangel/ ohne leid/ mit himmeliſchen Scha&#x364;tzen:<note place="right" rendition="#aq #smaller">Apoc.7.16.</note></l>
+                  <l>ohn mangel/ ohne leid/ mit himmeliſchen Scha&#x364;tzen:<note place="right" type="bibl" rendition="#aq #smaller">Apoc.7.16.</note></l>
             <lb/>
             <l>Drum <hi rendition="#b">Herꝛ Wo&#x364;llwein</hi> ſtets zu ſterben iſt bereit/</l>
             <lb/>
@@ -39297,13 +39326,13 @@
             <lb/>
             ligen/</l>
             <lb/>
-                  <l>die Seel ins Vatters Schoß; nicht bleiben ſol verſchwigen.<note place="right" rendition="#aq #smaller">Eccl.12.7.</note></l>
+                  <l>die Seel ins Vatters Schoß; nicht bleiben ſol verſchwigen.<note place="right" type="bibl" rendition="#aq #smaller">Eccl.12.7.</note></l>
             <lb/>
             <l>Wann aber auch ſein Tod den ſeinen bringet leid/</l>
             <lb/>
             <l>ſo gibt ihr Hertz zum Troſt hieru&#x364;ber den Beſcheid:</l>
             <lb/>
-                  <l>Er hat nur Chriſtum hier gehalten fu&#x364;r ſein Leben/<note place="right" rendition="#aq #smaller">Phil.1.21.</note></l>
+                  <l>Er hat nur Chriſtum hier gehalten fu&#x364;r ſein Leben/<note place="right" type="bibl" rendition="#aq #smaller">Phil.1.21.</note></l>
             <lb/>
             <l>deß wird ihm durch den Tod der beſt Gewinn gegeben.</l>
             <lb/>
