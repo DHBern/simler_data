@@ -40,7 +40,8 @@
           retained). Verse is encoded with <gi>lg</gi> and <gi>l</gi>; front matter with
           <gi>front</gi>, <gi>titlePage</gi> and typed <gi>div</gi>. The appearance of the source is
           recorded on <att>rendition</att> using the pointer tokens declared in <gi>tagsDecl</gi>.</p>
-        <p>Obvious printing errors are corrected with <gi>choice</gi> (<gi>sic</gi>/<gi>corr</gi>);
+        <p>Obvious printing errors are corrected with <gi>choice</gi> (<gi>sic</gi>/<gi>corr</gi>), and
+          abbreviations may be expanded the same way (<gi>abbr</gi>/<gi>expan</gi>);
           unreadable passages with <gi>unclear</gi>; editorially supplied text with <gi>supplied</gi>.
           Named entities are tagged with <gi>rs</gi> carrying <att>type</att> and a typed
           <att>key</att>. Editorial comments are anchored with <gi>anchor</gi> pairs and held in
@@ -129,7 +130,7 @@
              MODULES — only those the Simler edition uses
              =================================================================== -->
         <moduleRef key="header" include="teiHeader fileDesc titleStmt editionStmt edition publicationStmt sourceDesc biblFull extent idno encodingDesc editorialDecl profileDesc langUsage language textClass classCode"/>
-        <moduleRef key="core" include="p lb pb head label hi l lg list item rs choice sic corr unclear milestone note num title author bibl name date pubPlace publisher ref cit quote abbr cb measure respStmt resp"/>
+        <moduleRef key="core" include="p lb pb head label hi l lg list item rs choice sic corr abbr expan unclear milestone note num title author bibl name date pubPlace publisher ref cit quote cb measure respStmt resp"/>
         <moduleRef key="textstructure" include="TEI text front body div titlePage titlePart docTitle docAuthor docImprint docDate docEdition closer signed salute dateline epigraph byline"/>
         <moduleRef key="namesdates" include="persName surname forename"/>
         <moduleRef key="msdescription" include="msDesc msIdentifier repository physDesc typeDesc"/>
@@ -894,27 +895,29 @@
 
         <!-- ===== editorial interventions: the print, or in the reading text the correction ===== -->
         <elementSpec ident="choice" module="core" mode="change">
-          <desc>Groups the source reading (<gi>sic</gi>) and its editorial correction
-            (<gi>corr</gi>), in either order.</desc>
+          <desc>Groups the source reading and the editors' one, in either order: a printing error
+            (<gi>sic</gi>) and its correction (<gi>corr</gi>), or an abbreviation (<gi>abbr</gi>)
+            and its expansion (<gi>expan</gi>).</desc>
           <content>
             <alternate minOccurs="1" maxOccurs="unbounded">
               <elementRef key="sic"/><elementRef key="corr"/>
+              <elementRef key="abbr"/><elementRef key="expan"/>
             </alternate>
           </content>
-          <!-- the print, and in the reading text the correction; the search finds both -->
-          <model predicate="sic and corr" behaviour="alternate">
-            <param name="default" value="sic"/>
-            <param name="alternate" value="corr"/>
+          <!-- the print, and in the reading text the editors' reading; the search finds both -->
+          <model predicate="sic and corr or abbr and expan" behaviour="alternate">
+            <param name="default" value="(sic, abbr)"/>
+            <param name="alternate" value="(corr, expan)"/>
           </model>
           <model behaviour="inline"/>
-          <model output="normalized" predicate="sic and corr" behaviour="alternate">
+          <model output="normalized" predicate="sic and corr or abbr and expan" behaviour="alternate">
             <desc>Normalisiert</desc>
-            <desc>Zeilenenden zusammenziehen, getrennte Wörter verbinden, Korrektur statt Vorlage.</desc>
-            <param name="default" value="corr"/>
-            <param name="alternate" value="sic"/>
+            <desc>Zeilenenden zusammenziehen, getrennte Wörter verbinden, Korrektur und Auflösung statt Vorlage.</desc>
+            <param name="default" value="(corr, expan)"/>
+            <param name="alternate" value="(sic, abbr)"/>
           </model>
-          <model output="plain" predicate="sic and corr" behaviour="inline">
-            <param name="content" value="(sic, ' ', corr)"/>
+          <model output="plain" predicate="sic and corr or abbr and expan" behaviour="inline">
+            <param name="content" value="(sic, abbr, ' ', corr, expan)"/>
           </model>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -991,7 +994,14 @@
           <desc>An abbreviation as it appears in the source.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
           <model behaviour="inline"/>
-          <model output="normalized" predicate="parent::choice" behaviour="omit"/>
+        </elementSpec>
+        <elementSpec ident="expan" module="core" mode="change">
+          <desc>The editorial expansion of an abbreviation, beside it in <gi>choice</gi>.</desc>
+          <content><macroRef key="macro.simlerInline"/></content>
+          <!-- an expansion is the editors', marked like a correction -->
+          <model behaviour="inline">
+            <outputRendition>text-decoration: underline dotted rgb(var(--c-muted)); text-underline-offset: 0.22em;</outputRendition>
+          </model>
         </elementSpec>
 
         <!-- ===================================================================
@@ -1062,8 +1072,12 @@
             <param name="range" value="@targetEnd"/>
             <outputRendition>font-family: var(--f-ui); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; padding: 0 0.12em; color: rgb(var(--c-accent)); text-decoration: none; scroll-margin-top: 6rem;</outputRendition>
           </model>
-          <!-- a comment on the whole division: no marker, shown above the text -->
-          <model behaviour="note" useSourceRendition="true">
+          <!-- printed in the source, in the margin: beside its line, never in the apparatus -->
+          <model cssClass="note-margin" predicate="@place" behaviour="inline" useSourceRendition="true">
+            <outputRendition>float: right; clear: right; max-width: 11em; margin-left: 1em; font-family: var(--f-ui); font-size: 0.75em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
+          </model>
+          <!-- a comment on the whole division: no marker, shown above the text; any other note is unmapped -->
+          <model predicate="@type='annotation'" behaviour="note" useSourceRendition="true">
             <param name="place" value="'overview'"/>
           </model>
           <model output="plain" predicate="@targetEnd" behaviour="omit"/>
