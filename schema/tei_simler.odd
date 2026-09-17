@@ -98,7 +98,9 @@
       <p>The Processing Model renders the edition. Each element takes the first <gi>model</gi> whose
         <att>predicate</att> holds; a <gi>modelSequence</gi> renders each of its models whose
         predicate holds, one after the other. A <gi>modelGrp</gi>'s <gi>outputRendition</gi> styles
-        all of its models; a styled model among several names its class with <att>cssClass</att>.
+        all of its models; having no predicate, a group decides like a model without one, so a
+        model behind it is never reached. A styled model among several names its class with
+        <att>cssClass</att>.
         Predicates see the text as encoded. Params are
         XPath: the nodes they select are rendered by their own models, anything else as text;
         params named <val>--…</val> become CSS custom properties of the rendered element,
@@ -1055,14 +1057,16 @@
               </valList>
             </attDef>
           </attList>
-          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline" useSourceRendition="true">
-            <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
-          </model>
           <model cssClass="note-speaker" predicate="@type='speaker'" behaviour="inline" useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model cssClass="note-marginalia" predicate="@type='marginalia'" behaviour="block" useSourceRendition="true">
-            <outputRendition>max-width: 15em; margin: 0.3em 0 0.5em; padding-left: 0.6em; border-left: 2px solid rgb(var(--c-line)); font-size: 0.85em; line-height: 1.35; color: rgb(var(--c-muted));</outputRendition>
+          <!-- printed in the margin, a Bible reference or a marginal note: beside its line, never in
+               the apparatus -->
+          <model cssClass="note-margin" predicate="@place='left' or @place='right' or @type='marginalia'" behaviour="inline" useSourceRendition="true">
+            <outputRendition>float: right; clear: right; max-width: 11em; margin-left: 1em; font-family: var(--f-ui); font-size: 0.85em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
+          </model>
+          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline" useSourceRendition="true">
+            <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model predicate="@type='remarkResponsibility'" behaviour="omit"/>
           <!-- a range comment: a numbered marker in the text, the note in the apparatus; the range
@@ -1071,10 +1075,6 @@
             <param name="place" value="'end'"/>
             <param name="range" value="@targetEnd"/>
             <outputRendition>font-family: var(--f-ui); font-size: 0.62em; font-weight: 600; vertical-align: super; line-height: 0; padding: 0 0.12em; color: rgb(var(--c-accent)); text-decoration: none; scroll-margin-top: 6rem;</outputRendition>
-          </model>
-          <!-- printed in the source, in the margin: beside its line, never in the apparatus -->
-          <model cssClass="note-margin" predicate="@place" behaviour="inline" useSourceRendition="true">
-            <outputRendition>float: right; clear: right; max-width: 11em; margin-left: 1em; font-family: var(--f-ui); font-size: 0.75em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <!-- a comment on the whole division: no marker, shown above the text; any other note is unmapped -->
           <model predicate="@type='annotation'" behaviour="note" useSourceRendition="true">
@@ -1118,15 +1118,13 @@
             </attDef>
           </attList>
           <!-- notated music is a placeholder until the MEI encoding exists -->
-          <modelGrp>
+          <model predicate="@type='notatedMusic' and @corresp" behaviour="block" cssClass="figure-music">
+            <param name="content" value="concat('Notensatz: ', @corresp)"/>
             <outputRendition>margin: 1.35rem 0; padding: 1.1rem 1rem; border: 1px dashed rgb(var(--c-line)); border-radius: var(--r); text-align: center; font-family: var(--f-ui); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
-            <model predicate="@type='notatedMusic' and @corresp" behaviour="block">
-              <param name="content" value="concat('Notensatz: ', @corresp)"/>
-            </model>
-            <model predicate="@type='notatedMusic'" behaviour="block">
-              <param name="content" value="'Notensatz'"/>
-            </model>
-          </modelGrp>
+          </model>
+          <model predicate="@type='notatedMusic'" behaviour="block" cssClass="figure-music">
+            <param name="content" value="'Notensatz'"/>
+          </model>
           <model cssClass="figure-plain" behaviour="block">
             <outputRendition>margin: 1.2em 0; text-align: center;</outputRendition>
           </model>
