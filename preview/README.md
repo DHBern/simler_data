@@ -170,7 +170,11 @@ attributes. The element's own attributes are there too, as `data-*`
 (`targetEnd` → `data-target-end`), except `@rendition`; attribute values are
 read with their whitespace collapsed. `<outputRendition>` and `<tagsDecl>` compile to
 `dist/assets/odd.css`; a `<modelGrp>`'s rendition styles all its models, and a
-styled model among several must name its class with `@cssClass`. Whether an element counts as a
+styled model among several must name its class with `@cssClass`. A `<modelGrp>` has
+no predicate, so it decides like a model without one: an element that reaches it
+takes one of its models or none, and a model behind it is never reached. 
+The ODD's `<availability>` travels into what is generated from it: the head of
+`odd.css`, the footer of the pages, and each `--records` file. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
 stands, and from its behaviour's flow. A note's `range` param names the element its commented range starts at;
 the range is resolved on the rendered page, across any element boundary. Range
@@ -204,7 +208,7 @@ outside it, or one that fails where it is evaluated, counts as empty — the
 predicate is false and the next model decides, the param has no value — so the
 corpus still renders; the build names it, `findings.html` lists it under *ODD*,
 and the run ends non-zero. Reading the ODD also reports a param the behaviour does
-not read, a model an earlier one makes unreachable, and a CSS custom property that
+not read, a model an earlier one or a group makes unreachable, and a CSS custom property that
 neither the design tokens nor the ODD itself defines.
 
 Every build also reads the ODD back against the corpus: which of its models fired,
@@ -218,8 +222,9 @@ Processing Model; the pages do not need it, so it is off by default.
 
 A source file that is not well-formed XML does not stop the others: its page says
 so, with the parser's line and column, the index flags it, and `findings.html` lists
-it first. It has no text, so it is missing from the search, and the run ends
-non-zero, as for a flaw in the ODD.
+it first. It has no text, so it is missing from the search. On CI it is a warning on
+the run's summary; the run still succeeds and publishes the rest, since only a flaw
+in the ODD fails it.
 
 The ODD validates against
 `tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on

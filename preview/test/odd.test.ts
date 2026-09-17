@@ -68,12 +68,38 @@ test('a model behind one without a predicate can never be reached', () => {
   assert.match([...odd.findings].join('\n'), /Modell p-2: nie erreichbar/)
 })
 
+test('a model group decides as a whole, even when none of its models holds', () => {
+  const odd = read(`<elementSpec ident="p" mode="change">
+    <modelGrp>
+      <model predicate="@rend" behaviour="block" cssClass="x"/>
+      <model predicate="@n" behaviour="block" cssClass="y"/>
+    </modelGrp>
+    <model behaviour="paragraph"/>
+  </elementSpec>`)
+  assert.equal(selectOutput(odd.models.p, paragraph), undefined)
+  assert.match([...odd.findings].join('\n'), /Modell p-3: nie erreichbar, die Gruppe ab p-1 entscheidet schon/)
+  assert.doesNotMatch([...odd.findings].join('\n'), /p-2/) // its own group does not hide it
+})
+
 test('a custom property is defined by the tokens, the CSS or a param', () => {
   const spec = (property: string) => `<elementSpec ident="p" mode="change">
     <model behaviour="paragraph"><outputRendition>color: var(${property});</outputRendition></model>
   </elementSpec>`
   assert.match([...read(spec('--nowhere')).findings].join('\n'), /CSS: --nowhere ist nirgends definiert/)
   assert.equal(read(spec('--c-ink'), ':root { --c-ink: 0 0 0; }').findings.size, 0)
+})
+
+test('the header\'s availability travels into the generated CSS', () => {
+  const odd = readOdd(`<TEI xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader><fileDesc><publicationStmt><publisher>X</publisher><availability>
+      <licence target="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0, not */ a comment end</licence>
+    </availability></publicationStmt></fileDesc></teiHeader>
+    <text><body><schemaSpec ident="t"/></body></text></TEI>`)
+  assert.deepEqual(odd.availability, {
+    text: 'CC BY 4.0, not */ a comment end',
+    licence: 'https://creativecommons.org/licenses/by/4.0/',
+  })
+  assert.match(odd.css, /^\/\*[^]*CC BY 4\.0, not \* \/ a comment end https:\/\/creativecommons\.org\/licenses\/by\/4\.0\/ \*\/\n/)
 })
 
 test('the views are the outputs laid over the page, named by the ODD', () => {

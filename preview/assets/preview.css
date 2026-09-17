@@ -50,6 +50,13 @@ main {
   font: 500 0.95rem/1.35 var(--f-ui);
   color: rgb(var(--c-ui-muted));
 }
+/* The ODD's terms, below everything else. */
+.terms {
+  margin-top: 3rem;
+  font: 0.75rem/1.5 var(--f-ui);
+  color: rgb(var(--c-ui-muted));
+}
+.terms a { color: inherit; }
 
 /* ── The control layer ────────────────────────────────────────────────────── */
 

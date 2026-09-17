@@ -10,7 +10,7 @@
  */
 
 import { BEHAVIOURS } from '../tei/behaviours.ts'
-import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast.ts'
+import { attr, elementChildren, findFirst, localName, parse, plainText, textOf, type Element } from '../tei/xast.ts'
 import { bool, compileXPath, type Pos, type XPath } from './xpath.ts'
 
 export interface Model {
@@ -27,6 +27,8 @@ export interface Model {
   useSourceRendition: boolean
   /** A `modelSequence`'s models: each whose predicate holds renders, one after the other. */
   sequence?: Model[]
+  /** The `modelGrp` the model belongs to, by the group's place in its spec. */
+  group?: number
 }
 
 export interface Odd {
@@ -44,6 +46,8 @@ export interface Odd {
   reached: { models: Set<string>; elements: Set<string>; unmodelled: Set<string> }
   /** The outputs laid over the page, each named by the first `<desc>` of its models: the reading switches. */
   views: View[]
+  /** The header's `<availability>`: the terms of the ODD, and so of everything generated from it. */
+  availability?: { text: string; licence?: string }
 }
 
 export interface View {
@@ -68,9 +72,19 @@ const ALONE = [WEB, 'page', 'plain']
 /** Where a view is on: the page says so, or its switch is checked — which needs no script. */
 const on = (output: string) => `:is([data-${output}='on'], :root:has(#view-${output}:checked))`
 
-/** The first model of `output` (unset: the models without one) whose predicate holds. */
-export const select = (models: Model[], pos: Pos, output?: string) =>
-  models.find((m) => m.output === output && (!m.predicate || bool(m.predicate(pos))))
+/**
+ * The first model of `output` (unset: the models without one) whose predicate holds. A `modelGrp`
+ * has no predicate, so once reached it decides: when none of its models holds, nothing does.
+ */
+export function select(models: Model[], pos: Pos, output?: string): Model | undefined {
+  let group: number | undefined
+  for (const m of models) {
+    if (m.output !== output) continue
+    if (group !== undefined && m.group !== group) return undefined
+    if (!m.predicate || bool(m.predicate(pos))) return m
+    group = m.group
+  }
+}
 
 /** What renders in `output`, the page when unset: that output's models, else the models without one. */
 export const selectOutput = (models: Model[], pos: Pos, output = WEB) =>
@@ -195,6 +209,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
           classes: [...new Set([...(groupClass ? [groupClass] : []), ...own, ...(cls ? [cls] : [])])],
           useSourceRendition: inherited('useSourceRendition') === 'true',
           sequence,
+          group: group && g,
         }
       }
       const members = group ? elementChildren(group).filter((e) => /^model(Sequence)?$/.test(localName(e.name))) : [entry]
@@ -202,13 +217,16 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     })
     css.push(...view)
 
-    // A model is only reached while every earlier one of its output has a predicate.
-    const decides = new Map<string, string>()
+    // A model is only reached while every earlier one of its output has a predicate, and no group
+    // but its own comes before it.
+    const decides = new Map<string, { by: string; group?: number }>()
     for (const m of models) {
       const output = m.output ?? ''
       const earlier = decides.get(output)
-      if (earlier) odd.findings.add(`Modell ${m.id}: nie erreichbar, ${earlier} entscheidet schon`)
-      else if (!m.predicate) decides.set(output, m.id)
+      if (earlier && (earlier.group === undefined || earlier.group !== m.group)) {
+        odd.findings.add(`Modell ${m.id}: nie erreichbar, ${earlier.by} entscheidet schon`)
+      } else if (!m.predicate) decides.set(output, { by: m.id })
+      else if (m.group !== undefined && !earlier) decides.set(output, { by: `die Gruppe ab ${m.id}`, group: m.group })
     }
 
     if (models.length) odd.models[ident] = models
@@ -229,7 +247,12 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
   odd.views = [...views]
     .filter(([output]) => !ALONE.includes(output))
     .map(([output, [label, title]]) => ({ output, label: label || output, title }))
-  odd.css = `/* Generated from the ODD — edit the ODD, not this file. */\n${css.join('\n')}\n`
+  const availability = findFirst(findFirst(tree, 'teiHeader'), 'availability')
+  const licence = findFirst(availability, 'licence')
+  if (availability) odd.availability = { text: plainText(availability), licence: licence && attr(licence, 'target') }
+  // A generated file travels without the ODD, so it carries the ODD's terms along.
+  const terms = [odd.availability?.text, odd.availability?.licence].filter(Boolean).join(' ').replaceAll('*/', '* /')
+  odd.css = `/* Generated from the ODD — edit the ODD, not this file.${terms && `\n   ${terms}`} */\n${css.join('\n')}\n`
 
   // A custom property the CSS reads is defined by the design tokens, by the CSS itself, or by a param.
   const defined = new Set([...`${tokensCss}\n${odd.css}`.matchAll(/(--[\w-]+)\s*:/g)].map(([, name]) => name))

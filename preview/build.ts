@@ -213,9 +213,9 @@ async function main() {
   for (const name of names) {
     // The decisions are written and dropped; keeping 74 of these trees is not worth the memory.
     const { decisions, ...doc } = render(name, await readFile(join(src, name), 'utf8'), registers, processor, records)
-    await writeFile(join(out, doc.out), documentPage(doc, odd.views))
+    await writeFile(join(out, doc.out), documentPage(doc, odd.views, odd.availability))
     if (decisions) {
-      const json = JSON.stringify({ document: name, output: 'web', root: decisions })
+      const json = JSON.stringify({ document: name, output: 'web', availability: odd.availability, root: decisions })
       await writeFile(join(out, 'records', name.replace(/\.xml$/i, '.json')), json)
     }
     docs.push(doc)
@@ -224,7 +224,7 @@ async function main() {
   }
 
   const source = relative(resolve(here, '..'), src).replaceAll('\\', '/')
-  await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`))
+  await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`, odd.availability))
   await writeFile(join(out, 'search.html'), searchPage(docs))
   const gaps = coverage(odd)
   await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps))
@@ -241,15 +241,18 @@ async function main() {
   if (records) console.log(`Entscheidungen der ODD: ${out}/records.`)
 
   // The corpus is rendered whatever the ODD says; a flaw in the ODD still fails the run, since
-  // every page was rendered without what it asked for. So does a document with no text to render.
+  // every page was rendered without what it asked for. A malformed document is the corpus's, not the
+  // ODD's: it is reported loudly, but the other pages are still published.
   if (odd.findings.size) {
     for (const finding of odd.findings) console.error(`  ODD: ${finding}`)
     console.error(`ODD: ${odd.findings.size} Befund(e) — siehe findings.html.`)
     process.exitCode = 1
   }
   if (malformed) {
-    console.error(`${malformed} Dokument(e) nicht wohlgeformt, ohne Text — siehe findings.html.`)
-    process.exitCode = 1
+    const message = `${malformed} Dokument(e) nicht wohlgeformt, ohne Text — siehe findings.html.`
+    console.error(message)
+    // Shown as a warning on the CI run's summary, without failing it.
+    if (process.env.GITHUB_ACTIONS) console.log(`::warning title=XML nicht wohlgeformt::${message}`)
   }
   if (filters.length) console.log('Gefilterter Lauf: index.html führt nur diese Dokumente auf.')
 }

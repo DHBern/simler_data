@@ -3,7 +3,9 @@
  */
 
 import type { Entity } from './entities'
-import { imageBase, imageUrl, type RenderedNote, type View } from './lib'
+import { imageBase, imageUrl, type Odd, type RenderedNote, type View } from './lib'
+
+type Availability = Odd['availability']
 
 /** One rendered document, as `build.ts` hands it over. */
 export interface PreviewDoc {
@@ -273,7 +275,14 @@ const NOTE_POPOVER = `<aside id="note-popover" class="popover-panel no-print" po
     <p class="popover-foot"><a class="btn" href="#" data-note-jump>Im Apparat anzeigen ↓</a></p>
   </aside>`
 
-export function documentPage(doc: PreviewDoc, views: View[]): string {
+/** The ODD's terms, which the pages generated from it carry. */
+function terms(availability?: Availability): string {
+  if (!availability) return ''
+  const { text, licence } = availability
+  return `<footer class="terms">${esc(text)}${licence ? ` <a href="${esc(licence)}" rel="license">${esc(licence)}</a>` : ''}</footer>`
+}
+
+export function documentPage(doc: PreviewDoc, views: View[], availability?: Availability): string {
   const drawer = facsimile(doc)
   const attrs = Object.entries({ ...defaults(views), ...(drawer && { facs: 'on' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
@@ -295,6 +304,7 @@ export function documentPage(doc: PreviewDoc, views: View[]): string {
     <h1 class="doc-title">${esc(doc.title)}</h1>
     ${doc.malformed ? malformedNotice(doc.malformed) : doc.html}
     ${endnotes(doc.notes)}
+    ${terms(availability)}
   </main>
   ${NOTE_POPOVER}
   ${entityData(doc)}
@@ -318,7 +328,7 @@ function malformedNotice(message: string): string {
 }
 
 /** `blob`: where GitHub shows the source files, or null. */
-export function indexPage(docs: PreviewDoc[], source: string, blob: string | null): string {
+export function indexPage(docs: PreviewDoc[], source: string, blob: string | null, availability?: Availability): string {
   const rows = docs.map((doc) => `<tr>
           <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
           <td class="num">${doc.pages.length || ''}</td>
@@ -342,7 +352,8 @@ export function indexPage(docs: PreviewDoc[], source: string, blob: string | nul
         </tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>`)
+    </table>
+    ${terms(availability)}`)
 }
 
 /**
