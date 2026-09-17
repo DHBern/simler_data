@@ -4,7 +4,7 @@
 
 import type { Plugin } from 'unified'
 
-import type { Odd } from '../odd/odd'
+import type { Odd } from '../odd/odd.ts'
 import {
   attr,
   children,
@@ -14,7 +14,7 @@ import {
   type Nodes,
   type Root,
   type RootContent,
-} from './xast'
+} from './xast.ts'
 
 /**
  * TEI-aware whitespace normalisation; `flow` from the ODD says which elements,

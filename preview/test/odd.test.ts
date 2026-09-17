@@ -11,10 +11,10 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
-import { coverage, readOdd, selectOutput } from '../lib/odd/odd'
-import { createProcessor, renderTei } from '../lib/tei/render'
-import type { Decision } from '../lib/tei/teiToHast'
-import { findFirst, parse, type Element } from '../lib/tei/xast'
+import {
+  coverage, createProcessor, findFirst, parse, readOdd, renderTei, selectOutput,
+  type Decision, type Element,
+} from '../lib'
 
 /** The smallest ODD that carries `specs`. */
 const read = (specs: string, tokensCss?: string) =>

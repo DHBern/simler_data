@@ -8,8 +8,8 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
+import { idFindings, parse } from '../lib'
 import { documentPage, type PreviewDoc } from '../page'
-import { idFindings, parse } from '../lib/tei/xast'
 
 test('an id used twice, or one no XML tool takes, is a finding', () => {
   const findings = idFindings(

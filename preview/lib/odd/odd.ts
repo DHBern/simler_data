@@ -9,9 +9,9 @@
  * hides the element in that view.
  */
 
-import { BEHAVIOURS } from '../tei/behaviours'
-import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast'
-import { bool, compileXPath, type Pos, type XPath } from './xpath'
+import { BEHAVIOURS } from '../tei/behaviours.ts'
+import { attr, elementChildren, findFirst, localName, parse, textOf, type Element } from '../tei/xast.ts'
+import { bool, compileXPath, type Pos, type XPath } from './xpath.ts'
 
 export interface Model {
   /** `<ident>-<n>`, by the model's place among its element's: what reports and records name it by. */
@@ -229,7 +229,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
   odd.views = [...views]
     .filter(([output]) => !ALONE.includes(output))
     .map(([output, [label, title]]) => ({ output, label: label || output, title }))
-  odd.css = `/* Generated from tei_simler.odd — edit the ODD, not this file. */\n${css.join('\n')}\n`
+  odd.css = `/* Generated from the ODD — edit the ODD, not this file. */\n${css.join('\n')}\n`
 
   // A custom property the CSS reads is defined by the design tokens, by the CSS itself, or by a param.
   const defined = new Set([...`${tokensCss}\n${odd.css}`.matchAll(/(--[\w-]+)\s*:/g)].map(([, name]) => name))

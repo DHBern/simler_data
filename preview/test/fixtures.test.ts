@@ -19,9 +19,7 @@ import { basename, dirname, join } from 'node:path'
 import { test } from 'node:test'
 import { fileURLToPath } from 'node:url'
 
-import { readOdd } from '../lib/odd/odd'
-import { createProcessor, renderTei, type RenderResult } from '../lib/tei/render'
-import { parse } from '../lib/tei/xast'
+import { createProcessor, parse, readOdd, renderTei, type RenderResult } from '../lib'
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), 'fixtures')
 const processor = createProcessor(readOdd(readFileSync(join(dir, 'pm.odd'), 'utf8')))

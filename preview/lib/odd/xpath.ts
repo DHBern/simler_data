@@ -8,7 +8,7 @@
  * and number literals, and the functions in FUNCTIONS.
  */
 
-import { children, isElement, isText, localName, textOf, type Element, type Text } from '../tei/xast'
+import { children, isElement, isText, localName, textOf, type Element, type Text } from '../tei/xast.ts'
 
 /** A node and its ancestor elements, outermost first. */
 export interface Pos {
@@ -111,6 +111,7 @@ const FUNCTIONS: Record<string, (...args: Value[]) => Value> = {
   'string-length': (a) => [...str(a)].length,
   'ends-with': (a, b) => str(a).endsWith(str(b)),
   matches: (a, re, flags) => new RegExp(str(re), flags === undefined ? '' : str(flags)).test(str(a)),
+  replace: (a, re, to) => str(a).replace(new RegExp(str(re), 'g'), str(to)),
   not: (v) => !bool(v),
   count: (v) => seq(v).length,
   concat: (...vs) => vs.map(str).join(''),

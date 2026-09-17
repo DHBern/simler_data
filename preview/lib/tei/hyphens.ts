@@ -18,8 +18,8 @@
 import type { Plugin } from 'unified'
 import type { VFile } from 'vfile'
 
-import type { Odd } from '../odd/odd'
-import type { RenderState } from './teiToHast'
+import type { Odd } from '../odd/odd.ts'
+import type { RenderState } from './teiToHast.ts'
 import {
   attr,
   children,
@@ -30,7 +30,7 @@ import {
   type Nodes,
   type Root,
   type Text,
-} from './xast'
+} from './xast.ts'
 
 /** Hyphen, soft hyphen, not sign, hyphen, non-breaking hyphen, double oblique. */
 const HYPHEN = /[-­¬‐‑⸗][ \t]*$/

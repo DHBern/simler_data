@@ -11,10 +11,10 @@
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
-import { select, selectOutput, type Model, type Odd } from '../odd/odd'
-import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath'
-import { BEHAVIOURS, type Flow } from './behaviours'
-import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast'
+import { select, selectOutput, type Model, type Odd } from '../odd/odd.ts'
+import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath.ts'
+import { BEHAVIOURS, type Flow } from './behaviours.ts'
+import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast.ts'
 
 export type { ElementContent }
 

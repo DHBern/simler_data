@@ -24,11 +24,46 @@ search and the typeface both need a server:
 python -m http.server -d dist 8080     # or: npx serve dist
 ```
 
+## How it works
+
+```mermaid
+flowchart TD
+  ODD["<b>schema/tei_simler.odd</b><br/>models · predicates · params · CSS"]
+  TEI["<b>TEI sources</b><br/>webdav/data/sources/tei/*.xml"]
+
+  ODD --> READ["<b>readOdd</b><br/>compile the XPath, generate odd.css,<br/>check the ODD itself"]
+  READ --> PROC["<b>createProcessor</b><br/>once per build"]
+  TEI --> PARSE["<b>parse</b><br/>check the ids"]
+
+  subgraph RENDER["renderTei — per document"]
+    direction TB
+    PREP["whitespace, joined line ends"] --> WALK["<b>walker</b><br/>each element takes the first model<br/>whose predicate holds"]
+    WALK --> PAGE["the page<br/>base models + views"]
+    WALK --> PLAIN["output plain<br/>the search text"]
+  end
+
+  PROC --> PREP
+  PARSE --> PREP
+  PAGE --> HTML["dist/*.html"]
+  PLAIN --> INDEX["Pagefind index"]
+  READ --> CSS["dist/assets/odd.css"]
+  READ -. "findings" .-> FIND["dist/findings.html"]
+  WALK -. "coverage, --records" .-> FIND
+```
+
+The ODD is the only place that says how anything renders; the code reads it and
+carries it out. Every element takes the first model whose predicate holds, and one
+walk of the tree gives the page (the base models, with the views laid over them as
+switches); a second walk gives the `plain` output, which is what the search indexes.
+What the ODD itself gets wrong, and which of its models never fire, is reported on
+the findings page next to what the documents get wrong.
+
 ## Layout
 
 | Path | Contents |
 | --- | --- |
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
+| `lib/` | The renderer, as the package `tei-odd-interpreter`: everything below is behind `lib/index.ts` |
 | `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
 | `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the behaviour table, the PM walker |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
@@ -37,9 +72,81 @@ python -m http.server -d dist 8080     # or: npx serve dist
 | `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |
 | `assets/normalize.js` | Search normalisation — plain ESM |
 | `assets/search.js` | The search page, and marking the hits in a document |
+| `entities.ts` | The project's registers (persons, places, works, institutions) from `gsheet/csv`, for the entity cards |
 | `page.ts` | The HTML shell: top bar, apparatus (the numbered notes, and a box per other place); index, search and findings pages |
 | `build.ts` | Walks the corpus and writes `dist/` |
 | `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
+
+## Using the renderer in a site (Astro, SvelteKit)
+
+`lib/` is the package `tei-odd-interpreter`. It ships TypeScript source and needs no build
+step: Vite, which Astro and SvelteKit build on, compiles it as part of the site with no
+configuration (checked with `vite build --ssr`). Plain Node needs a loader
+(`node --import tsx`).
+
+```sh
+npm add tei-odd-interpreter@file:../simler_data/preview/lib
+```
+
+Render at build time and on the server side only: read the ODD and create the
+processor **once**, then render each document with it. The ODD's CSS reads the design
+tokens (`var(--c-person)`, …), so a page needs both stylesheets.
+
+```ts
+// src/lib/edition.ts
+import { readFileSync } from 'node:fs'
+import { createProcessor, parse, readOdd, renderTei } from 'tei-odd-interpreter'
+
+const read = (path: string) => readFileSync(`../simler_data/${path}`, 'utf8')
+const tokens = read('preview/assets/tokens.css')
+export const odd = readOdd(read('schema/tei_simler.odd'), tokens)
+export const css = tokens + odd.css
+const processor = createProcessor(odd)
+export const render = (name: string) => renderTei(parse(read(`webdav/data/sources/tei/${name}.xml`)), processor)
+```
+
+**Astro** — `src/pages/[doc].astro`:
+
+```astro
+---
+import { css, render } from '../lib/edition'
+export const getStaticPaths = () => ['A_1648', 'B_1653'].map((doc) => ({ params: { doc } }))
+const { html, page } = render(Astro.params.doc)
+---
+<Fragment set:html={`<style>${css}</style>`} />
+<h1>{page.title?.[0]}</h1>
+<div set:html={html} />
+```
+
+**SvelteKit** — `src/routes/[doc]/+page.server.ts` and `+page.svelte`:
+
+```ts
+import { css, render } from '$lib/edition'
+export const prerender = true
+export const entries = () => [{ doc: 'A_1648' }, { doc: 'B_1653' }]
+export const load = ({ params }) => {
+  const { html, page } = render(params.doc)
+  return { html, title: page.title?.[0], css }
+}
+```
+
+```svelte
+<script>
+  let { data } = $props()
+</script>
+<svelte:head>{@html `<style>${data.css}</style>`}</svelte:head>
+<h1>{data.title}</h1>
+<div>{@html data.html}</div>
+```
+
+What `render` returns besides `html`: `text`, the search text for any index; `notes`,
+each with its `place`, its `number` and its body as HTML, for the apparatus; `page`,
+the `page` model's params (`title`, `manifest`, `pages`, `entities`); and `warnings`.
+The views need nothing but that CSS and an attribute: `data-normalized="on"` on an
+ancestor, or a checked `#view-normalized` checkbox, switches one on — `odd.views`
+names them and gives their labels. `page.ts` here is a working reference for the rest;
+the note popovers, entity cards and facsimile viewer are the preview's own
+`assets/*.js`, not part of the package.
 
 ## The ODD renders the text
 

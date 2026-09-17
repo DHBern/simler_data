@@ -1,0 +1,20 @@
+{
+  "name": "tei-odd-interpreter",
+  "version": "0.1.0",
+  "description": "Reads a TEI ODD and renders TEI by its Processing Model at build time, with no compile step",
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "@rgrove/parse-xml": "^4.2.3",
+    "@types/hast": "^3.0.4",
+    "@types/xast": "^2.0.4",
+    "rehype-stringify": "^10.0.1",
+    "unified": "^11.0.5",
+    "vfile": "^6.0.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

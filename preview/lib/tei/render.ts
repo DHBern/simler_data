@@ -19,14 +19,14 @@ import rehypeStringify from 'rehype-stringify'
 import { unified, type Plugin } from 'unified'
 import { VFile } from 'vfile'
 
-import { select, type Odd } from '../odd/odd'
-import { seq, str } from '../odd/xpath'
-import { hastToSearchText } from '../search/text'
-import { lineEndHyphens } from './hyphens'
-import { wsTrim } from './plugins'
-import { resolveRanges } from './ranges'
-import { createRenderer, type CollectedNote, type Decision, type RenderState } from './teiToHast'
-import { isElement, localName, type Element, type Root as XastRoot } from './xast'
+import { select, type Odd } from '../odd/odd.ts'
+import { seq, str } from '../odd/xpath.ts'
+import { hastToSearchText } from '../search/text.ts'
+import { lineEndHyphens } from './hyphens.ts'
+import { wsTrim } from './plugins.ts'
+import { resolveRanges } from './ranges.ts'
+import { createRenderer, type CollectedNote, type Decision, type RenderState } from './teiToHast.ts'
+import { isElement, localName, type Element, type Root as XastRoot } from './xast.ts'
 
 /** What one render produces. */
 export interface RenderResult {

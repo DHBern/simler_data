@@ -8,6 +8,9 @@
     // `assets/normalize.js` is plain ESM on purpose: Node and the browser share
     // one copy of the chain. Its JSDoc is what types it here.
     "allowJs": true,
+    // `lib/` is a package: its own imports name the file, so a consumer's plain Node
+    // with a TypeScript loader resolves them as well as a bundler does.
+    "allowImportingTsExtensions": true,
     "noEmit": true,
     "skipLibCheck": true,
     "types": ["node"]

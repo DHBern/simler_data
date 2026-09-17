@@ -13,7 +13,7 @@
 
 import type { Element, Root, Text } from 'hast'
 
-import { h } from './teiToHast'
+import { h } from './teiToHast.ts'
 
 type Parent = Root | Element
 

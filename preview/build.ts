@@ -19,12 +19,10 @@ import * as pagefind from 'pagefind'
 
 import { normalizeForSearch } from './assets/normalize.js'
 
-import { loadEntities, type Entity } from './lib/entities'
-import { coverage, readOdd } from './lib/odd/odd'
-import { imageRoot } from './lib/tei/iiif'
-import { createProcessor, renderTei } from './lib/tei/render'
-import type { Decision } from './lib/tei/teiToHast'
-import { idFindings, parse } from './lib/tei/xast'
+import { loadEntities, type Entity } from './entities'
+import {
+  coverage, createProcessor, idFindings, imageRoot, parse, readOdd, renderTei, type Decision,
+} from './lib'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 
 type Processor = ReturnType<typeof createProcessor>

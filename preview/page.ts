@@ -2,10 +2,8 @@
  * The HTML shell around a rendered text.
  */
 
-import type { Entity } from './lib/entities'
-import type { View } from './lib/odd/odd'
-import { imageBase, imageUrl, libraryRoot } from './lib/tei/iiif'
-import type { RenderedNote } from './lib/tei/render'
+import type { Entity } from './entities'
+import { imageBase, imageUrl, type RenderedNote, type View } from './lib'
 
 /** One rendered document, as `build.ts` hands it over. */
 export interface PreviewDoc {
@@ -98,6 +96,16 @@ function head(title: string): string {
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Inter:wght@400..600&display=swap">
   <link rel="stylesheet" href="assets/preview.css">`
+}
+
+/**
+ * Where the library itself shows a scan, for the link out. e-rara and
+ * e-manuscripta run the same software and share the path; anything else gets no
+ * link rather than a guessed one.
+ */
+function libraryRoot(root: string): string | null {
+  const host = /^https?:\/\/[^/]*(?:e-rara|e-manuscripta)\.ch/i.exec(root)
+  return host ? `${host[0]}/zuz/content/zoom` : null
 }
 
 /** The corpus pages, for the bar; the page we are on is marked. */
