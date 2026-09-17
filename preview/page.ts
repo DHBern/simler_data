@@ -23,8 +23,10 @@ export interface PreviewDoc {
   facsRoot: string | null
   /** The register entries this document names, keyed by `rs/@key`. */
   entities: Record<string, Entity & { count: number }>
-  /** What an editor should look at: unmapped elements, parse errors, ODD violations. */
+  /** What an editor should look at: unmapped elements, ids, register keys. */
   warnings: string[]
+  /** Why the file would not parse, where it would not: the page then has no text. */
+  malformed?: string
 }
 
 const ESCAPES: Record<string, string> = {
@@ -291,7 +293,7 @@ export function documentPage(doc: PreviewDoc, views: View[]): string {
   </div>
   <main id="main">
     <h1 class="doc-title">${esc(doc.title)}</h1>
-    ${doc.html}
+    ${doc.malformed ? malformedNotice(doc.malformed) : doc.html}
     ${endnotes(doc.notes)}
   </main>
   ${NOTE_POPOVER}
@@ -305,13 +307,24 @@ export function documentPage(doc: PreviewDoc, views: View[]): string {
 `
 }
 
+const MALFORMED_FLAG = '<span class="flag flag-error" title="XML nicht wohlgeformt">XML</span>'
+
+/** A document without text is not empty or untranscribed here, but unreadable. */
+function malformedNotice(message: string): string {
+  return `<div class="malformed">
+      <p>${MALFORMED_FLAG} Die Datei ist nicht wohlgeformt und wurde nicht gerendert.</p>
+      <pre>${esc(message)}</pre>
+    </div>`
+}
+
 /** `blob`: where GitHub shows the source files, or null. */
 export function indexPage(docs: PreviewDoc[], source: string, blob: string | null): string {
   const rows = docs.map((doc) => `<tr>
           <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
           <td class="num">${doc.pages.length || ''}</td>
           <td class="num">${doc.notes.length || ''}</td>
-          <td class="num">${doc.warnings.length ? `<span class="flag">${doc.warnings.length}</span>` : ''}</td>
+          <td class="num">${doc.malformed ? MALFORMED_FLAG
+            : doc.warnings.length ? `<span class="flag">${doc.warnings.length}</span>` : ''}</td>
           <td class="file">${blob
             ? `<a href="${esc(blob)}/${encodeURIComponent(doc.file)}" target="_blank" rel="noreferrer">${esc(doc.file)}</a>`
             : esc(doc.file)}</td>
@@ -366,29 +379,31 @@ function splitFinding(warning: string): [string, string] {
 
 /** Every finding in the corpus, grouped by kind and largest group first: a worklist. */
 export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string[]): string {
+  const row = (doc: PreviewDoc, detail: string) => `<tr>
+          <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
+          <td class="file">${esc(doc.file)}</td><td>${esc(detail)}</td>
+        </tr>`
   const groups = new Map<string, string[]>()
   for (const doc of docs) {
     for (const warning of doc.warnings) {
       const [kind, detail] = splitFinding(warning)
       if (!groups.has(kind)) groups.set(kind, [])
-      groups.get(kind)!.push(`<tr>
-          <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
-          <td class="file">${esc(doc.file)}</td><td>${esc(detail)}</td>
-        </tr>`)
+      groups.get(kind)!.push(row(doc, detail))
     }
   }
-  // What the ODD says belongs to no single document, and comes first: it affects every one of them.
-  const aboutOdd = (heading: string, findings: string[]) => findings.length ? `<tbody>
-      <tr class="group"><th colspan="3">${esc(heading)} <span class="flag">${findings.length}</span></th></tr>
-      ${findings.map((finding) => `<tr><td colspan="3">${esc(finding)}</td></tr>`).join('')}
+  const group = (heading: string, rows: string[], flag = 'flag') => rows.length ? `<tbody>
+      <tr class="group"><th colspan="3">${esc(heading)} <span class="${flag}">${rows.length}</span></th></tr>
+      ${rows.join('')}
     </tbody>` : ''
-  const body = aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage) + [...groups]
-    .sort(([a, x], [b, y]) => y.length - x.length || a.localeCompare(b, 'de'))
-    .map(([kind, rows]) => `<tbody>
-        <tr class="group"><th colspan="3">${esc(kind)} <span class="flag">${rows.length}</span></th></tr>
-        ${rows.join('')}
-      </tbody>`).join('')
-  const flagged = docs.filter((doc) => doc.warnings.length).length
+  const aboutOdd = (heading: string, findings: string[]) =>
+    group(heading, findings.map((finding) => `<tr><td colspan="3">${esc(finding)}</td></tr>`))
+  // A document that renders no text comes first, then the ODD, which affects every document.
+  const malformed = docs.filter((doc) => doc.malformed).map((doc) => row(doc, doc.malformed!))
+  const body = group('XML nicht wohlgeformt', malformed, 'flag flag-error')
+    + aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage) + [...groups]
+      .sort(([a, x], [b, y]) => y.length - x.length || a.localeCompare(b, 'de'))
+      .map(([kind, rows]) => group(kind, rows)).join('')
+  const flagged = docs.filter((doc) => doc.malformed || doc.warnings.length).length
 
   return corpusPage('findings.html', 'Hinweise zur Kodierung', `
     <p class="lead">

@@ -216,6 +216,11 @@ per element the model that won, its behaviour, classes and params, and the text 
 it renders. It is what another toolchain reads instead of re-implementing the
 Processing Model; the pages do not need it, so it is off by default.
 
+A source file that is not well-formed XML does not stop the others: its page says
+so, with the parser's line and column, the index flags it, and `findings.html` lists
+it first. It has no text, so it is missing from the search, and the run ends
+non-zero, as for a flaw in the ODD.
+
 The ODD validates against
 `tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on
 every run, against a pinned TEI release.

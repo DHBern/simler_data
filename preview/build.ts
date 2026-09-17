@@ -103,13 +103,13 @@ function render(
   }
 
   // A malformed file must not take the whole corpus run down with it: it gets a
-  // page saying so, and the index flags it like any other finding.
+  // page saying so, and fails the run once every other page is written.
   let tree
   try {
     tree = parse(xml)
   } catch (error) {
     // The parser's message names the position and the offending tag.
-    return { ...base, warnings: [`XML nicht wohlgeformt: ${(error as Error).message}`] }
+    return { ...base, malformed: (error as Error).message }
   }
 
   // Where title, facsimile and entities come from is the ODD's `page` model.
@@ -219,6 +219,7 @@ async function main() {
       await writeFile(join(out, 'records', name.replace(/\.xml$/i, '.json')), json)
     }
     docs.push(doc)
+    if (doc.malformed) console.error(`  ${name}: XML nicht wohlgeformt: ${doc.malformed}`)
     for (const warning of doc.warnings) console.warn(`  ${name}: ${warning}`)
   }
 
@@ -233,15 +234,21 @@ async function main() {
   console.log(`Register: ${Object.keys(registers).length} Einträge, ${named.size} im Korpus genannt.`)
 
   const flagged = docs.filter((d) => d.warnings.length).length
-  console.log(`${docs.length} Dokumente gerendert nach ${out} (${flagged} mit Hinweisen).`)
+  const malformed = docs.filter((d) => d.malformed).length
+  const unread = malformed ? `, ${malformed} nicht wohlgeformt` : ''
+  console.log(`${docs.length} Dokumente gerendert nach ${out} (${flagged} mit Hinweisen${unread}).`)
   console.log(`ODD: ${odd.reached.models.size} Modelle haben gegriffen, ${gaps.length} Lücke(n) — siehe findings.html.`)
   if (records) console.log(`Entscheidungen der ODD: ${out}/records.`)
 
   // The corpus is rendered whatever the ODD says; a flaw in the ODD still fails the run, since
-  // every page was rendered without what it asked for.
+  // every page was rendered without what it asked for. So does a document with no text to render.
   if (odd.findings.size) {
     for (const finding of odd.findings) console.error(`  ODD: ${finding}`)
     console.error(`ODD: ${odd.findings.size} Befund(e) — siehe findings.html.`)
+    process.exitCode = 1
+  }
+  if (malformed) {
+    console.error(`${malformed} Dokument(e) nicht wohlgeformt, ohne Text — siehe findings.html.`)
     process.exitCode = 1
   }
   if (filters.length) console.log('Gefilterter Lauf: index.html führt nur diese Dokumente auf.')
