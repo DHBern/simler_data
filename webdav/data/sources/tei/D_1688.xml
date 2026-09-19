@@ -1844,9 +1844,9 @@
             <head rendition="#b #c">Haubtbegriff des erſten <lb/> Pſalms.</head>
             <lb/>
             <lg type="poem">
-               <l><hi rendition="#in">W</hi>Er ſcha&#x364;lk' und ſpo&#x364;tter fleucht/ und Gottes wort</l>
+               <l xml:id="l27a" next="l27b"><hi rendition="#in">W</hi>Er ſcha&#x364;lk' und ſpo&#x364;tter fleucht/ und Gottes wort</l>
                <lb/>
-               <l>betrachtet/</l>
+               <l xml:id="l27b" prev="l27a">betrachtet/</l>
                <lb/>
                <l rendition="#et">der gru&#x364;net wie ein baum an einem waſſerfluß/</l>
                <lb/>
@@ -1893,9 +1893,9 @@
             <lg type="poem">
                <l>Die Fu&#x364;rſten Jſraels begehren zuzerſto&#x364;ren</l>
                <lb/>
-               <l rendition="#et">Des Davids wahl und reich: welchs ihnen er ver-</l>
+               <l xml:id="l28a" next="l28b" rendition="#et">Des Davids wahl und reich: welchs ihnen er ver-</l>
                <lb break="no"/>
-               <l>weißt/</l>
+               <l xml:id="l28b" prev="l28a">weißt/</l>
                <lb/>
                <l rendition="#et">vermahnet ſie zur buß/ und Gottes gu&#x364;te preißt/</l>
                <lb/>
@@ -1910,9 +1910,9 @@
             <lg type="poem">
                <l>Die ſchmeichelra&#x364;the Sauls des Davids elend mehre&#x342;</l>
                <lb/>
-               <l rendition="#et">durch vil verlu&#x364;mbdungen; welchs er dem Herꝛen</l>
+               <l xml:id="l29a" next="l29b" rendition="#et">durch vil verlu&#x364;mbdungen; welchs er dem Herꝛen</l>
                <lb/>
-               <l rendition="#et">klagt/</l>
+               <l xml:id="l29b" prev="l29a">klagt/</l>
                <lb/>
                <l rendition="#et">wu&#x364;nſcht ihren untergang/ und wartet unverzagt</l>
                <lb/>
@@ -1951,9 +1951,9 @@
             <lg type="poem">
                <l>Der David von dem Saul der aufruhr falſch gezigen/</l>
                <lb/>
-               <l rendition="#et">beym Herꝛen ſuchet ſchirm: ſein unſchuld ihm er-</l>
+               <l xml:id="l30a" next="l30b" rendition="#et">beym Herꝛen ſuchet ſchirm: ſein unſchuld ihm er-</l>
                <lb break="no"/>
-               <l rendition="#et">weißt:</l>
+               <l xml:id="l30b" prev="l30a">weißt:</l>
                <lb/>
                <l rendition="#et">weyſſaget wider Saul/ und Gotts gerichte preißt/</l>
                <lb/>
@@ -2189,9 +2189,9 @@
                <lb/>
                <l rendition="#et">dankt um erhaltnen ſig: erbiet<anchor xml:id="a44"/><unclear>e</unclear><note type="annotation" targetEnd="a44"><p>Könnte auch "c" sein, also ein Druckfehler</p></note>t ferꝛnern preiß/</l>
                <lb/>
-               <l>und glaubt/ es werd der feind/ durch Gottes zorn ver-</l>
+               <l xml:id="l31a" next="l31b">und glaubt/ es werd der feind/ durch Gottes zorn ver-</l>
                <lb break="no"/>
-               <l rendition="#et">zehret.</l>
+               <l xml:id="l31b" prev="l31a" rendition="#et">zehret.</l>
             </lg>
             <lb/>
          </div>
@@ -2278,9 +2278,9 @@
                <lb/>
                <l rendition="#et">von meiner Obrigkeit: drum ſuch' ich recht bey dir:</l>
                <lb/>
-               <l rendition="#et">bewa&#x364;hr mich durch und durch/ ſo wirſt recht ſpre-</l>
+               <l xml:id="l32a" next="l32b" rendition="#et">bewa&#x364;hr mich durch und durch/ ſo wirſt recht ſpre-</l>
                <lb break="no"/>
-               <l rendition="#et">chen mir/</l>
+               <l xml:id="l32b" prev="l32a">chen mir/</l>
                <lb/>
                <l>ich aber wil mit dank dir fo&#x364;rter ſteiff anhangen.</l>
             </lg>
@@ -2332,9 +2332,9 @@
             <lg type="poem">
                <l>Jhr/ die ihr euch bedunkt gewaltig ſeyn auff erden/</l>
                <lb/>
-               <l rendition="#et">bringt ehr/ und dienet dem/ des ſtimme braußt und</l>
+               <l xml:id="l33a" next="l33b" rendition="#et">bringt ehr/ und dienet dem/ des ſtimme braußt und</l>
                <lb/>
-               <l rendition="#et">ſchallt/</l>
+               <l xml:id="l33b" prev="l33a">ſchallt/</l>
                <lb/>
                <l rendition="#et">wan in der witterung der ſtarke donner knallt/</l>
                <lb/>
@@ -2396,9 +2396,9 @@
                <lb/>
                <l rendition="#et">weil durch ſein wort und Geiſt erſchaffen iſt was iſt:</l>
                <lb/>
-               <l rendition="#et">ſein wort/ genad und krafft verſchafft daß nichts</l>
+               <l xml:id="l34a" next="l34b" rendition="#et">ſein wort/ genad und krafft verſchafft daß nichts</l>
                <lb/>
-               <l rendition="#et">gebriſt:</l>
+               <l xml:id="l34b" prev="l34a">gebriſt:</l>
                <lb/>
                <l>bey ihm iſt raht und hu&#x364;lff: ohn ihn mag nichts gelingen.</l>
             </lg>
@@ -2457,9 +2457,9 @@
                <lb/>
                <l rendition="#et">des Herꝛen gu&#x364;tigkeit/ die bis an himmel ſchwebt:</l>
                <lb/>
-               <l>wu&#x364;nſcht; na&#x364;chſt der feinden ſtraf; der ſu&#x364;nd zuwie<anchor xml:id="a47"/>-<note type="annotation" targetEnd="a47"><p>Im augsburgischen Vergleichsexemplar eindeutig ein Trennstrich.</p></note></l>
+               <l xml:id="l35a" next="l35b">wu&#x364;nſcht; na&#x364;chſt der feinden ſtraf; der ſu&#x364;nd zuwie<anchor xml:id="a47"/>-<note type="annotation" targetEnd="a47"><p>Im augsburgischen Vergleichsexemplar eindeutig ein Trennstrich.</p></note></l>
                <lb/>
-               <l rendition="#et">derſtreben.</l>
+               <l xml:id="l35b" prev="l35a">derſtreben.</l>
             </lg>
             <lb/>
          </div>
@@ -2540,13 +2540,13 @@
             <lg type="poem">
                <l>Wer mit den kranknen wird beſcheidenlich verfahren/</l>
                <lb/>
-               <l rendition="#et">der wird auch/ wann er ſiech/ empfinden troſt und</l>
+               <l xml:id="l36a" next="l36b" rendition="#et">der wird auch/ wann er ſiech/ empfinden troſt und</l>
                <lb/>
-               <l rendition="#et">krafft:</l>
+               <l xml:id="l36b" prev="l36a">krafft:</l>
                <lb/>
-               <l rendition="#et">mich plagten feind' und freund'/ alß ich war la&#x364;ger-</l>
+               <l xml:id="l37a" next="l37b" rendition="#et">mich plagten feind' und freund'/ alß ich war la&#x364;ger-</l>
                <lb break="no"/>
-               <l rendition="#et">hafft/</l>
+               <l xml:id="l37b" prev="l37b">hafft/</l>
                <lb/>
                <l>ich aber ſprach/ Herꝛ/ hilff! Dein lob wil ich nicht ſparen.</l>
             </lg>
@@ -2566,36 +2566,42 @@
             <lb/>
             <fw place="top" type="header">Das ander Buch.</fw>
             <lb/>
+               
+   <div n="2" xml:id="n2">
 
-            <div type="poem-div">
-            <head><label>[2.]</label><lb/> <hi rendition="#aq"><num>II.</num> Cantus.</hi></head>
+      <div type="music">
+         <div>
+            <head rendition="#aq #b #c">II. Cantus.</head>
             <lb/>
-            <lg type="poem">
-            <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
-            <lb/>
-            <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
-            <lb/>
-            <l>So mein- verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
-            <lb/>
-            <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
+               <lb/>
+               <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+               <lb/>
+               <l>So mein- verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
+               <lb/>
+               <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="poem-div">
-            <head rendition="#aq">Tenor.</head>
+         <div>
+            <head rendition="#aq #b #c">Tenor.</head>
             <lb/>
-            <lg type="poem">
-            <l>Gleich wie der durſtig hirſch in langgewa&#x364;hrter flucht/</l>
-            <lb/>
-            <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
-            <lb/>
-            <l>So mein verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
-            <lb/>
-            <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
+            <lg>
+                <figure type="notatedMusic"/>
+                <l>Gleich wie der durſtig hirſch in langgewa&#x364;hrter flucht/</l>
+                <lb/>
+                <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+                <lb/>
+                <l>So mein verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
+                <lb/>
+                <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
+
             <pb facs="4076788" n="13"/>
 
             <fw place="top" type="pageNum">13</fw>
@@ -2603,134 +2609,141 @@
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
 
-            <div type="poem-div">
-            <head rendition="#aq">Altus.</head>
+         <div>
+            <head rendition="#aq #b #c">Altus.</head>
             <lb/>
-            <lg type="poem">
-            <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
-            <lb/>
-            <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
-            <lb/>
-            <l>So mein verfolgte ſ<anchor xml:id="a48"/><choice><sic>c</sic><corr>e</corr></choice><note type="annotation" targetEnd="a48"><p>Auch im augsburgischen Vergleichsexemplar ist eindeutig ein c zu lesen.</p></note>el nach Gottes wohnung a&#x364;chzet/</l>
-            <lb/>
-            <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
+               <lb/>
+               <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+               <lb/>
+               <l>So mein verfolgte ſ<anchor xml:id="a48"/><choice><sic>c</sic><corr>e</corr></choice><note type="annotation" targetEnd="a48"><p>Auch im augsburgischen Vergleichsexemplar ist eindeutig ein c zu lesen.</p></note>el nach Gottes wohnung a&#x364;chzet/</l>
+               <lb/>
+               <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="poem-div">
-            <head rendition="#aq">Baſis.</head>
+         <div>
+            <head rendition="#aq #b #c">Baſis.</head>
             <lb/>
-            <lg type="poem">
-            <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Gleich wie der durſtig hirſch/ in langgewa&#x364;hrter flucht/</l>
+               <lb/>
+               <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+               <lb/>
+               <l>So mein- verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
+               <lb/>
+               <l>zu deſſen dienſt und preiß/ den ſie mit gla<anchor xml:id="a49"/><choice><sic>n</sic><corr>u</corr></choice><note type="annotation" targetEnd="a49"><p>Auch im augsburgischen Vergleichsexemplar eindeutig ein n zu lesen.</p></note>ben ſucht.</l>
+            </lg>
             <lb/>
-            <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
-            <lb/>
-            <l>So mein- verfolgte ſeel nach Gottes wohnung a&#x364;chzet/</l>
-            <lb/>
-            <l>zu deſſen dienſt und preiß/ den ſie mit gla<anchor xml:id="a49"/><choice><sic>n</sic><corr>u</corr></choice><note type="annotation" targetEnd="a49"><p>Auch im augsburgischen Vergleichsexemplar eindeutig ein n zu lesen.</p></note>ben ſucht.</l>
-            <lb/>
+         </div>
+      </div>
+  
             <pb facs="4076789" n="14"/>
 
             <fw place="top" type="pageNum">14</fw>
             <lb/>
             <fw place="top" type="header">Das ander Buch</fw>
             <lb/>
+ 
+         <div n="3" type="poem">
+            <head rendition="#c #b">Haubtbegriff des <hi rendition="#aq">XLII.</hi> Pſalmens.</head>
+            <lb/>
+            <lg type="poem">
+               <l xml:id="l38a" next="l38b" rendition="#et"><hi rendition="#in">G</hi>Leich wie der durſtig hirſch/ in lang gewa&#x364;hrter</l>
+               <lb/>
+               <l xml:id="l38b" prev="l38a">flucht/</l>
+               <lb/>
+               <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+               <lb/>
+               <l>So mein verfolgte ſeel nach Gottes wohnung a&#x364;chtzet/</l>
+               <lb/>
+               <l rendition="#et">zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
             </lg>
-            <div type="stanza-div">
-            <head><num>Haubtbegriff des <hi rendition="#aq">XLII.</hi> Pſalmens.</num></head>
             <lb/>
-            <lg type="stanza">
-            <l><hi rendition="#in">G</hi>Leich wie der durſtig hirſch/ in lang gewa&#x364;hrter</l>
-            <lb/>
-            <l>flucht/</l>
-            <lb/>
-            <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
-            <lb/>
-            <l>So mein verfolgte ſeel nach Gottes wohnung a&#x364;chtzet/</l>
-            <lb/>
-            <l>zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
-            </lg>
-            <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O/ Richter aller welt/ nim&#x342; meine ſach auf dich/</l>
-            <lb/>
-            <l>und mich erꝛett vor dem/ der mich ohn recht verjaget:</l>
-            <lb/>
-            <l>laß wider kommen mich wo man dein lob fu&#x364;rtraget!</l>
-            <lb/>
-            <l>Getroſt/ o liebe ſeel! Gott wird erho&#x364;ren mich.</l>
+            <lg type="poem">
+               <l rendition="#et">O/ Richter aller welt/ nim&#x342; meine ſach auf dich/</l>
+               <lb/>
+               <l>und mich erꝛett vor dem/ der mich ohn recht verjaget:</l>
+               <lb/>
+               <l>laß wider kommen mich wo man dein lob fu&#x364;rtraget!</l>
+               <lb/>
+               <l rendition="#et">Getroſt/ o liebe ſeel! Gott wird erho&#x364;ren mich.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLIV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLIV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Du haſt/ o Herꝛ; wie uns die va&#x364;tter angezeigt;</l>
-            <lb/>
-            <l>den alten groſſe hu&#x364;lff/ und ſonſt vil guts erwiſen:</l>
-            <lb/>
-            <l>uns u&#x364;bergibeſt gar/ wie wol du wirſt gepriſen:</l>
-            <lb/>
-            <l>erwach und hilff uns doch: ſey nicht mehr ungeneigt!</l>
+            <lg type="poem">
+               <l rendition="#et">Du haſt/ o Herꝛ; wie uns die va&#x364;tter angezeigt;</l>
+               <lb/>
+               <l>den alten groſſe hu&#x364;lff/ und ſonſt vil guts erwiſen:</l>
+               <lb/>
+               <l>uns u&#x364;bergibeſt gar/ wie wol du wirſt gepriſen:</l>
+               <lb/>
+               <l rendition="#et">erwach und hilff uns doch: ſey nicht mehr ungeneigt!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Von Chriſto/ der die kirch ihm ewig hat vertraut/</l>
-            <lb/>
-            <l>ein lob- und hochzeitlied der dichter zierlich ſinget/</l>
-            <lb/>
-            <l>worinn er beider ſchmuk/ figu&#x364;rlich zwar/ fu&#x364;rbringet/</l>
-            <lb/>
-            <l>der gla&#x364;ubig alles doch zu ſeinem heil beſchaut.</l>
+            <lg type="poem">
+               <l rendition="#et">Von Chriſto/ der die kirch ihm ewig hat vertraut/</l>
+               <lb/>
+               <l>ein lob- und hochzeitlied der dichter zierlich ſinget/</l>
+               <lb/>
+               <l>worinn er beider ſchmuk/ figu&#x364;rlich zwar/ fu&#x364;rbringet/</l>
+               <lb/>
+               <l rendition="#c">der gla&#x364;ubig alles doch zu ſeinem heil beſchaut.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLVI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLVI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Es mag/ ſo Gott mit uns/ uns nichts zuwider ſeyn/</l>
-            <lb/>
-            <l>wir haben ſeine treu/ in no&#x364;hten ſelbſt erfahren:</l>
-            <lb/>
-            <l>laßt ſeiner werken uns/ von alter her gewahren/</l>
-            <lb/>
-            <l>und fo&#x364;rter hin mit dank vertrauen ihm allein.</l>
+            <lg type="poem">
+               <l>Es mag/ ſo Gott mit uns/ uns nichts zuwider ſeyn/</l>
+               <lb/>
+               <l>wir haben ſeine treu/ in no&#x364;hten ſelbſt erfahren:</l>
+               <lb/>
+               <l>laßt ſeiner werken uns/ von alter her gewahren/</l>
+               <lb/>
+               <l>und fo&#x364;rter hin mit dank vertrauen ihm allein.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLVII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLVII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Auf/ auf/ ihr vo&#x364;lker auf! empfahet mit geſang</l>
-            <lb/>
-            <l>den Ko&#x364;nig aller welt/ den auch die Fu&#x364;rſten ehren:</l>
-            <lb/>
-            <l>laßt ſeine bundeslad in ſeinem hauß einkehren!</l>
-            <lb/>
-            <l>Auf/ auf! der Herꝛ fahrt auf mit ſchall vnd hellem</l>
-            <lb/>
-            <l>klang.</l>
+            <lg type="poem">
+               <l rendition="#et">Auf/ auf/ ihr vo&#x364;lker auf! empfahet mit geſang</l>
+               <lb/>
+               <l>den Ko&#x364;nig aller welt/ den auch die Fu&#x364;rſten ehren:</l>
+               <lb/>
+               <l>laßt ſeine bundeslad in ſeinem hauß einkehren!</l>
+               <lb/>
+               <l xml:id="l39a" next="l39b" rendition="#et">Auf/ auf! der Herꝛ fahrt auf mit ſchall vnd hellem</l>
+               <lb/>
+               <l xml:id="l39b" prev="l39a">klang.</l>
             </lg>
             <lb/>
-            </div>
-            <fw place="bottom" type="catch" rendition="#aq"><num>XLVIII.</num></fw>
+         </div>
+      
+            <fw place="bottom" type="catch" rendition="#aq">XLVIII.</fw>
             <lb/>
             <pb facs="4076790" n="15"/>
 
@@ -2739,98 +2752,99 @@
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLVIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLVIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Die ſcho&#x364;ne Gottes ſtatt/ des groſſen Ko&#x364;nigs ſtatt/</l>
-            <lb/>
-            <l>ein vorbild ſeiner kirch/ auff Zion wol gelegen/</l>
-            <lb/>
-            <l>den Herꝛen macht verꝛu&#x364;hmt: dan/ alß ihr war entgegen</l>
-            <lb/>
-            <l>mit Moab Ammons bru&#x364;t/ er ſie beſchirmet hat.</l>
+            <lg type="poem">
+               <l rendition="#et">Die ſcho&#x364;ne Gottes ſtatt/ des groſſen Ko&#x364;nigs ſtatt/</l>
+               <lb/>
+               <l>ein vorbild ſeiner kirch/ auff Zion wol gelegen/</l>
+               <lb/>
+               <l>den Herꝛen macht verꝛu&#x364;hmt: dan/ alß ihr war entgegen</l>
+               <lb/>
+               <l rendition="#et">mit Moab Ammons bru&#x364;t/ er ſie beſchirmet hat.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XLIX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">XLIX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Dem vieh geleichet ſich wer ſeine hoffnung ſetzt</l>
-            <lb/>
-            <l>auf zeitlich ehr und gut/ die doch ſo bald zerꝛinnen/</l>
-            <lb/>
-            <l>und weder ſeine noch des bruders ſeel gewu&#x364;nnen:</l>
-            <lb/>
-            <l>ein frommer aber wird der armuht wol ergetzt.</l>
+            <lg type="poem">
+               <l rendition="#et">Dem vieh geleichet ſich wer ſeine hoffnung ſetzt</l>
+               <lb/>
+               <l>auf zeitlich ehr und gut/ die doch ſo bald zerꝛinnen/</l>
+               <lb/>
+               <l>und weder ſeine noch des bruders ſeel gewu&#x364;nnen:</l>
+               <lb/>
+               <l rendition="#et">ein frommer aber wird der armuht wol ergetzt.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>L.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">L.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der Herꝛ der herꝛlichkeit beru&#x364;fft fu&#x364;r ſein gericht</l>
-            <lb/>
-            <l>die leuhte diſer welt/ von ihren beiden enden:</l>
-            <lb/>
-            <l>er wil mit gnaden ſich allein zu denen wenden</l>
-            <lb/>
-            <l>die opfern lob und dank: viehopfer wil er nicht.</l>
+            <lg type="poem">
+               <l rendition="#et">Der Herꝛ der herꝛlichkeit beru&#x364;fft fu&#x364;r ſein gericht</l>
+               <lb/>
+               <l>die leuhte diſer welt/ von ihren beiden enden:</l>
+               <lb/>
+               <l>er wil mit gnaden ſich allein zu denen wenden</l>
+               <lb/>
+               <l rendition="#et">die opfern lob und dank: viehopfer wil er nicht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LI.</num></head>
+       <div n="3" type="poem">
+            <head rendition="#aq #c">LI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ nach deiner gnad/ mir ſu&#x364;nder gna&#x364;dig ſey:</l>
-            <lb/>
-            <l>ich geb<choice><sic>c</sic><corr>e</corr></choice> ſchuldig mich: die blutſchuld wo&#x364;lſt abwa&#x364;ſchen/</l>
-            <lb/>
-            <l>und meine bo&#x364;ſe brunſt/ durch deinen Geiſt außlo&#x364;ſchen:</l>
-            <lb/>
-            <l>Herꝛ/ deine kirch erhalt/ gib daß ich dankbar ſey!</l>
+            <lg type="poem">
+               <l rendition="#et">O Gott/ nach deiner gnad/ mir ſu&#x364;nder gna&#x364;dig ſey:</l>
+               <lb/>
+               <l>ich geb<choice><sic>c</sic><corr>e</corr></choice> ſchuldig mich: die blutſchuld wo&#x364;lſt abwa&#x364;ſchen/</l>
+               <lb/>
+               <l>und meine bo&#x364;ſe brunſt/ durch deinen Geiſt außlo&#x364;ſchen:</l>
+               <lb/>
+               <l rendition="#et">Herꝛ/ deine kirch erhalt/ gib daß ich dankbar ſey!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Was ruhmſt du/ Doeg/ dich/ alß einer heldentaht/</l>
-            <lb/>
-            <l>der lugen und des mords an Prieſtern Gotts veru&#x364;bet?</l>
-            <lb/>
-            <l>Gott wird <anchor xml:id="a50"/>auß wurtzlen<note type="annotation" targetEnd="a50"><p>Dass dieses Verb getrennt gedruckt wurde, könnte ein Fehler sein. In den Ausgaben A, B und C ist es einheitlich geschrieben.</p></note> dich: ich aber unbetru&#x364;bet</l>
-            <lb/>
-            <l>wird gru&#x364;nen in ſeim hauß: ihn preiſen fru&#x364;h und</l>
-            <lb/>
-            <l>ſpaht.</l>
+            <lg type="poem">
+               <l rendition="#et">Was ruhmſt du/ Doeg/ dich/ alß einer heldentaht/</l>
+               <lb/>
+               <l>der lugen und des mords an Prieſtern Gotts veru&#x364;bet?</l>
+               <lb/>
+               <l>Gott wird <anchor xml:id="a50"/>auß wurtzlen<note type="annotation" targetEnd="a50"><p>Dass dieses Verb getrennt gedruckt wurde, könnte ein Fehler sein. In den Ausgaben A, B und C ist es einheitlich geschrieben.</p></note> dich: ich aber unbetru&#x364;bet</l>
+               <lb/>
+               <l xml:id="l40a" next="l40b" rendition="#et">wird gru&#x364;nen in ſeim hauß: ihn preiſen fru&#x364;h und</l>
+               <lb/>
+               <l xml:id="l40b" prev="l40a">ſpaht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David ab dem Saul und ſeinen ra&#x364;hten klagt/</l>
-            <lb/>
-            <l>wie under ihnen ſey ein gottsvergeſſen leben:</l>
-            <lb/>
-            <l>weyſſagt von ihrer ſtraf: den frommen wird hieneben</l>
-            <lb/>
-            <l>ihr heil auß Zion her im Herꝛen zugeſagt.</l>
+            <lg type="poem">
+               <l rendition="#et">Der David ab dem Saul und ſeinen ra&#x364;hten klagt/</l>
+               <lb/>
+               <l>wie under ihnen ſey ein gottsvergeſſen leben:</l>
+               <lb/>
+               <l>weyſſagt von ihrer ſtraf: den frommen wird hieneben</l>
+               <lb/>
+               <l rendition="#et">ihr heil auß Zion her im Herꝛen zugeſagt.</l>
             </lg>
             <lb/>
-            </div>
-            <fw place="bottom" type="catch"><hi rendition="#aq"><num>LIV.</num></hi> Auß</fw>
+         </div>
+      
+            <fw place="bottom" type="catch"><hi rendition="#aq">LIV.</hi> Auß</fw>
             <lb/>
             <pb facs="4076791" n="16"/>
 
@@ -2839,98 +2853,99 @@
             <fw place="top" type="header">Das ander Buch</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LIV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LIV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Auß der Ziphiter hand/ o Gott/ wollſt retten mich/</l>
-            <lb/>
-            <l>die mich unſchuldigen dem ko&#x364;nig Saul verꝛahten:</l>
-            <lb/>
-            <l>ich weiß du wirſt es tuhn/ und ſie nach ihren tahten</l>
-            <lb/>
-            <l>abſtraffen ohne fehl/ und ich wil preiſen dich.</l>
+            <lg type="poem">
+               <l rendition="#et">Auß der Ziphiter hand/ o Gott/ wollſt retten mich/</l>
+               <lb/>
+               <l>die mich unſchuldigen dem ko&#x364;nig Saul verꝛahten:</l>
+               <lb/>
+               <l>ich weiß du wirſt es tuhn/ und ſie nach ihren tahten</l>
+               <lb/>
+               <l rendition="#et">abſtraffen ohne fehl/ und ich wil preiſen dich.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ erho&#x364;r mich doch: dan meine feinde mir</l>
-            <lb/>
-            <l>ſchon ligen auff dem halß. Was ſag ich von den feinde&#x342;?</l>
-            <lb/>
-            <l>Verꝛa&#x364;hter finden ſich auch unter meinen freunden:</l>
-            <lb/>
-            <l>Herꝛ/ ſtraff ſie/ und mir hilff/ wie ich vertraue dir.</l>
+            <lg type="poem">
+               <l rendition="#et">O Gott/ erho&#x364;r mich doch: dan meine feinde mir</l>
+               <lb/>
+               <l>ſchon ligen auff dem halß. Was ſag ich von den feinde&#x342;?</l>
+               <lb/>
+               <l>Verꝛa&#x364;hter finden ſich auch unter meinen freunden:</l>
+               <lb/>
+               <l rendition="#et">Herꝛ/ ſtraff ſie/ und mir hilff/ wie ich vertraue dir.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LVI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LVI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Gleich einer ſtummen daub muß unbill ſchluken ich/</l>
-            <lb/>
-            <l>ich finde nirgend ruh von wegen viler feinden:</l>
-            <lb/>
-            <l>zu grund/ o Herꝛ/ ſie ſtu&#x364;rtz: ſie wo&#x364;llen mich <choice><corr/><sic>verſchlinden</sic></choice>:</l>
-            <lb/>
-            <l>doch trau' ich deiner hu&#x364;lff/ des wil ich preiſen dich.</l>
+            <lg type="poem">
+               <l>Gleich einer ſtummen daub muß unbill ſchluken ich/</l>
+               <lb/>
+               <l>ich finde nirgend ruh von wegen viler feinden:</l>
+               <lb/>
+               <l>zu grund/ o Herꝛ/ ſie ſtu&#x364;rtz: ſie wo&#x364;llen mich <choice><corr/><sic>verſchlinden</sic></choice>:</l>
+               <lb/>
+               <l>doch trau' ich deiner hu&#x364;lff/ des wil ich preiſen dich.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LVII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LVII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David abermal/ auß ſteiffer zuverſicht/</l>
-            <lb/>
-            <l>hat Gottes hu&#x364;lff begert: weil Saul hineyn gegangen</l>
-            <lb/>
-            <l>wo er verkrochen ſich: und/ als er hu&#x364;lff empfangen/</l>
-            <lb/>
-            <l>hat er zu ſeiner bitt geſetzt ein lobgedicht.</l>
+            <lg type="poem">
+               <l rendition="#et">Der David abermal/ auß ſteiffer zuverſicht/</l>
+               <lb/>
+               <l>hat Gottes hu&#x364;lff begert: weil Saul hineyn gegangen</l>
+               <lb/>
+               <l>wo er verkrochen ſich: und/ als er hu&#x364;lff empfangen/</l>
+               <lb/>
+               <l rendition="#et">hat er zu ſeiner bitt geſetzt ein lobgedicht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LVIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LVIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Jhr ungerechte Ra&#x364;ht'/ urtheilet ihr auch recht/</l>
-            <lb/>
-            <l>wann/ unter rechtens ſchein/ ihr wider recht erkennet</l>
-            <lb/>
-            <l>ich ſey des ko&#x364;nigs feind/ und hab ſein reich zertrennet?</l>
-            <lb/>
-            <l>Es tilg euch Gottes rach/ und tro&#x364;ſte ſein geſchlecht!</l>
+            <lg type="poem">
+               <l rendition="#et">Jhr ungerechte Ra&#x364;ht'/ urtheilet ihr auch recht/</l>
+               <lb/>
+               <l>wann/ unter rechtens ſchein/ ihr wider recht erkennet</l>
+               <lb/>
+               <l>ich ſey des ko&#x364;nigs feind/ und hab ſein reich zertrennet?</l>
+               <lb/>
+               <l rendition="#et">Es tilg euch Gottes rach/ und tro&#x364;ſte ſein geſchlecht!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LIX.</num></head>
+        <div n="3" type="poem">
+            <head rendition="#aq #c">LIX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Von denen knechten Sauls/ o Gott/ wo&#x364;llſt retten</l>
-            <lb/>
-            <l>mich/</l>
-            <lb/>
-            <l>die mir mein hauß umſtellt/ zunemmen mir mein leben:</l>
-            <lb/>
-            <l>vertilg ſie nach und nach: ich aber wil hieneben/</l>
-            <lb/>
-            <l>o meine ſt<anchor xml:id="a51"/>a&#x364;<note type="annotation" targetEnd="a51"><p>Im augsburgischen Vergleichsexemplar ist das übergeschriebene e etwas deutlicher zu sehen.</p></note>rke/ dir lobſingen inniglich!</l>
+            <lg type="poem">
+               <l xml:id="l41a" next="l41b" rendition="#et">Von denen knechten Sauls/ o Gott/ wo&#x364;llſt retten</l>
+               <lb/>
+               <l xml:id="l41b" prev="l41a">mich/</l>
+               <lb/>
+               <l>die mir mein hauß umſtellt/ zunemmen mir mein leben:</l>
+               <lb/>
+               <l>vertilg ſie nach und nach: ich aber wil hieneben/</l>
+               <lb/>
+               <l rendition="#et">o meine ſt<anchor xml:id="a51"/>a&#x364;<note type="annotation" targetEnd="a51"><p>Im augsburgischen Vergleichsexemplar ist das übergeschriebene e etwas deutlicher zu sehen.</p></note>rke/ dir lobſingen inniglich!</l>
             </lg>
             <lb/>
-            </div>
-            <fw place="bottom" type="catch"><hi rendition="#aq"><num>LX.</num></hi> O Gott/</fw>
+         </div>
+      
+            <fw place="bottom" type="catch"><hi rendition="#aq">LX.</hi> O Gott/</fw>
             <lb/>
             <pb facs="4076792" n="17"/>
 
@@ -2939,181 +2954,184 @@
             <fw place="top" type="header">der Pſalmen</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ du hatteſt uns verſtoſſen vor der zeit:</l>
-            <lb/>
-            <l>nun aber haſt du uns/ nach deinem wort/ gegeben</l>
-            <lb/>
-            <l>ein zeichen deiner hu&#x364;lff/ durch die wir ſighafft leben:</l>
-            <lb/>
-            <l>hilff weiter/ dan mit dir wir dapfer ſeind im ſtreit!</l>
+            <lg type="poem">
+               <l rendition="#et">O Gott/ du hatteſt uns verſtoſſen vor der zeit:</l>
+               <lb/>
+               <l>nun aber haſt du uns/ nach deinem wort/ gegeben</l>
+               <lb/>
+               <l>ein zeichen deiner hu&#x364;lff/ durch die wir ſighafft leben:</l>
+               <lb/>
+               <l rendition="#et">hilff weiter/ dan mit dir wir dapfer ſeind im ſtreit!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Es bittet Jſrael/ von David ſo gelehrt/</l>
-            <lb/>
-            <l>fu&#x364;r ſeines ko&#x364;nigs ruh/ und fu&#x364;r gemeines weſen/</l>
-            <lb/>
-            <l>traut Gottes ſchutz und hofft dort ewig zugeneſen/</l>
-            <lb/>
-            <l>darum es ihm ein glu&#x364;bd der dankbarkeit verehrt.</l>
+            <lg type="poem">
+               <l rendition="#et">Es bittet Jſrael/ von David ſo gelehrt/</l>
+               <lb/>
+               <l>fu&#x364;r ſeines ko&#x364;nigs ruh/ und fu&#x364;r gemeines weſen/</l>
+               <lb/>
+               <l>traut Gottes ſchutz und hofft dort ewig zugeneſen/</l>
+               <lb/>
+               <l rendition="#et">darum es ihm ein glu&#x364;bd der dankbarkeit verehrt.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Es wartet meine ſeel/ ſtillſchweigend nur auf Gott/</l>
-            <lb/>
-            <l>er iſt allein mein felß/ mein hu&#x364;lff/ mein heil und leben:</l>
-            <lb/>
-            <l>dem fal faſt nahe ſeind die ſo mir widerſtreben:</l>
-            <lb/>
-            <l>reichthum und menſchenhu&#x364;lff ſeind eitelkeit und koht.</l>
+            <lg type="poem">
+               <l rendition="#et">Es wartet meine ſeel/ ſtillſchweigend nur auf Gott/</l>
+               <lb/>
+               <l>er iſt allein mein felß/ mein hu&#x364;lff/ mein heil und leben:</l>
+               <lb/>
+               <l>dem fal faſt nahe ſeind die ſo mir widerſtreben:</l>
+               <lb/>
+               <l rendition="#et">reichthum und menſchenhu&#x364;lff ſeind eitelkeit und koht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Jn diſer meiner flucht/ und in ſo du&#x364;rꝛem land/</l>
-            <lb/>
-            <l>noch Gottes heiligthum mich du&#x364;rſtet und verlanget:</l>
-            <lb/>
-            <l>deß gu&#x364;te mich erquikt: die ſeel an ihme hanget/</l>
-            <lb/>
-            <l>alß der die feinde ſtrafft: mich rettet ſeine hand.</l>
+            <lg type="poem">
+               <l rendition="#et">Jn diſer meiner flucht/ und in ſo du&#x364;rꝛem land/</l>
+               <lb/>
+               <l>noch Gottes heiligthum mich du&#x364;rſtet und verlanget:</l>
+               <lb/>
+               <l>deß gu&#x364;te mich erquikt: die ſeel an ihme hanget/</l>
+               <lb/>
+               <l rendition="#et">alß der die feinde ſtrafft: mich rettet ſeine hand.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXIV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXIV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O lieber Gott/ behu&#x364;t vor falſchen zungen mich/</l>
-            <lb/>
-            <l>die/ mich zuſcha&#x364;digen/ ſich in geheim verbunden!</l>
-            <lb/>
-            <l>Du wirſt mit einem pfeil ſie ſchieſſen und verwunden/</l>
-            <lb/>
-            <l>deß wird der from&#x342; in dir von hertzen freuen ſich.</l>
+            <lg type="poem">
+               <l rendition="#et">O lieber Gott/ behu&#x364;t vor falſchen zungen mich/</l>
+               <lb/>
+               <l>die/ mich zuſcha&#x364;digen/ ſich in geheim verbunden!</l>
+               <lb/>
+               <l>Du wirſt mit einem pfeil ſie ſchieſſen und verwunden/</l>
+               <lb/>
+               <l rendition="#et">deß wird der from&#x342; in dir von hertzen freuen ſich.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXV.</num></head>
+      <div n="3" type="poem">
+            <head rendition="#aq #c">LXV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David danket Gott/ im namen ſeiner gmein/</l>
-            <lb/>
-            <fw place="bottom" type="sig">C</fw>
-            <lb/>
-            <fw place="bottom" type="catch">fu&#x364;r</fw>
-            <lb/>
-            <pb facs="4076793" n="18"/>
-
-            <fw place="top" type="pageNum">18</fw>
-            <lb/>
-            <fw place="top" type="header">Das ander Buch</fw>
-            <lb/>
-            <l>fu&#x364;r die erho&#x364;rung und verzeihung aller ſu&#x364;nden/</l>
-            <lb/>
-            <l>fu&#x364;r reinen Gottes dienſt/ <choice><sic>n</sic><corr>u</corr></choice>nd rettung vor den feinden/</l>
-            <lb/>
-            <l>fu&#x364;r fruchtbarkeit des lands/ die er beſchehrt allein.</l>
+            <lg type="poem">
+               <l>Der David danket Gott/ im namen ſeiner gmein/</l>
+               <lb/>
+               
+               <fw place="bottom" type="sig">C</fw>
+               <lb/>
+               <fw place="bottom" type="catch">fu&#x364;r</fw>
+               <lb/>
+               <pb facs="4076793" n="18"/>
+   
+               <fw place="top" type="pageNum">18</fw>
+               <lb/>
+               <fw place="top" type="header">Das ander Buch</fw>
+               <lb/>
+               
+               <l>fu&#x364;r die erho&#x364;rung und verzeihung aller ſu&#x364;nden/</l>
+               <lb/>
+               <l>fu&#x364;r reinen Gottes dienſt/ <choice><sic>n</sic><corr>u</corr></choice>nd rettung vor den feinden/</l>
+               <lb/>
+               <l rendition="#et">fu&#x364;r fruchtbarkeit des lands/ die er beſchehrt allein.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXVI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXVI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David alles volk zu Gottes lob ermahnt/</l>
-            <lb/>
-            <l>und daß ſie deſſen werck <choice><sic>n</sic><corr>u</corr></choice>nd wunder wol betrachten/</l>
-            <lb/>
-            <l>auch ju&#x364;ngſt erzeigte hu&#x364;lff in keinen wa&#x364;g verachten:</l>
-            <lb/>
-            <l>dankopfer er verſpricht/ und machet ſie bekant.</l>
+            <lg type="poem">
+               <l rendition="#et">Der David alles volk zu Gottes lob ermahnt/</l>
+               <lb/>
+               <l>und daß ſie deſſen werck <choice><sic>n</sic><corr>u</corr></choice>nd wunder wol betrachten/</l>
+               <lb/>
+               <l>auch ju&#x364;ngſt erzeigte hu&#x364;lff in keinen wa&#x364;g verachten:</l>
+               <lb/>
+               <l rendition="#et">dankopfer er verſpricht/ und machet ſie bekant.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXVII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq">LXVII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ laß leuchten uns dein gnaden-angeſicht/</l>
-            <lb/>
-            <l>ſo wird dein nam&#x342; und reich weit außgebreitet werden:</l>
-            <lb/>
-            <l>es werden preiſen dich die vo&#x364;lker aller erden/</l>
-            <lb/>
-            <l>und deiner gu&#x364;tern ſatt/ auch ru&#x364;hmen dein gericht.</l>
+            <lg type="poem">
+               <l rendition="#et">O Gott/ laß leuchten uns dein gnaden-angeſicht/</l>
+               <lb/>
+               <l>ſo wird dein nam&#x342; und reich weit außgebreitet werden:</l>
+               <lb/>
+               <l>es werden preiſen dich die vo&#x364;lker aller erden/</l>
+               <lb/>
+               <l rendition="#et">und deiner gu&#x364;tern ſatt/ auch ru&#x364;hmen dein gericht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXVIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq">LXVIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Mit einem lobgeſang/ von David angeſtim&#x342;t</l>
-            <lb/>
-            <l>zu ehren Gottes macht/ die allen feind zerſtreuet/</l>
-            <lb/>
-            <l>ſich ob der bundeslad gantz Jſrael erfreuet:</l>
-            <lb/>
-            <l>welchs bey der himmelfahrt des Herꝛen auch gezim&#x342;t.</l>
+            <lg type="poem">
+               <l rendition="#et">Mit einem lobgeſang/ von David angeſtim&#x342;t</l>
+               <lb/>
+               <l>zu ehren Gottes macht/ die allen feind zerſtreuet/</l>
+               <lb/>
+               <l>ſich ob der bundeslad gantz Jſrael erfreuet:</l>
+               <lb/>
+               <l rendition="#et">welchs bey der himmelfahrt des Herꝛen auch gezim&#x342;t.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXIX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXIX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David/ und in ihm Meſſias ſich erklagt</l>
-            <lb/>
-            <l>ab a&#x364;uſſerſter gefahr vor feind- und falſchen freunden/</l>
-            <lb/>
-            <l>und daß er werde gſtraft von wegen fro&#x364;mder ſu&#x364;nden:</l>
-            <lb/>
-            <l>ſucht hu&#x364;lff/ gelobet dank/ und jener fluch vorſagt.</l>
+            <lg type="poem">
+               <l rendition="#et">Der David/ und in ihm Meſſias ſich erklagt</l>
+               <lb/>
+               <l>ab a&#x364;uſſerſter gefahr vor feind- und falſchen freunden/</l>
+               <lb/>
+               <l>und daß er werde gſtraft von wegen fro&#x364;mder ſu&#x364;nden:</l>
+               <lb/>
+               <l rendition="#et">ſucht hu&#x364;lff/ gelobet dank/ und jener fluch vorſagt.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ kom&#x342; bald zu hu&#x364;lff in meiner krankheit mir:</l>
-            <lb/>
-            <l>daß meine feinde gſch<anchor xml:id="a52"/>a&#x364;<note type="annotation" targetEnd="a52"><p>übergeschriebenes e im augsburgischen Vergleichsexemplar besser sichtbar.</p></note>ndt/ ſich u&#x364;ber mich nicht freuen;</l>
-            <lb/>
-            <l>den frommen wo&#x364;lleſt du dein heil und freud verneuen:</l>
-            <lb/>
-            <l>Ach/ eil zuhelffen mir: mein hoffnung ſteht zu dir!</l>
+            <lg type="poem">
+               <l rendition="#et">O Gott/ kom&#x342; bald zu hu&#x364;lff in meiner krankheit mir:</l>
+               <lb/>
+               <l>daß meine feinde gſch<anchor xml:id="a52"/>a&#x364;<note type="annotation" targetEnd="a52"><p>übergeschriebenes e im augsburgischen Vergleichsexemplar besser sichtbar.</p></note>ndt/ ſich u&#x364;ber mich nicht freuen;</l>
+               <lb/>
+               <l>den frommen wo&#x364;lleſt du dein heil und freud verneuen:</l>
+               <lb/>
+               <l rendition="#et">Ach/ eil zuhelffen mir: mein hoffnung ſteht zu dir!</l>
             </lg>
             <lb/>
-            </div>
-            <fw place="bottom" type="catch" rendition="#aq"><num>LXXI.</num></fw>
+         </div>
+
+            <fw place="bottom" type="catch" rendition="#aq">LXXI.</fw>
             <lb/>
             <pb facs="4076794" n="19"/>
 
@@ -3122,42 +3140,42 @@
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Mein felß und veſte burg/ mein hort und zuverſicht</l>
-            <lb/>
-            <l>von erſten tagen an/ im alter wo&#x364;llſt mich retten/</l>
-            <lb/>
-            <l>daß nicht mein kind und feind mich erſt zu boden tretten:</l>
-            <lb/>
-            <l>verſchimpff ſie/ Herꝛ/ und ich wil ru&#x364;hmen dein gericht.</l>
+            <lg type="poem">
+               <l rendition="#et">Mein felß und veſte burg/ mein hort und zuverſicht</l>
+               <lb/>
+               <l>von erſten tagen an/ im alter wo&#x364;llſt mich retten/</l>
+               <lb/>
+               <l>daß nicht mein kind und feind mich erſt zu boden tretten:</l>
+               <lb/>
+               <l rendition="#et">verſchimpff ſie/ Herꝛ/ und ich wil ru&#x364;hmen dein gericht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Gib dein gericht/ o Gott/ dem ko&#x364;nig/ meinem ſohn/</l>
-            <lb/>
-            <l>gib ihm gerechtigkeit/ damit er wol regiere/</l>
-            <lb/>
-            <l>dein volk auch unter ihm ein ru&#x364;hig leben fu&#x364;hre/</l>
-            <lb/>
-            <l>bis daß dein eigner Sohn beſitze ſeinen thron!</l>
-            <lb/>
-            <l>Ende des anderen buchs der</l>
-            <lb/>
-            <l>Pſalmen.</l>
+            <lg type="poem">
+               <l rendition="#et">Gib dein gericht/ o Gott/ dem ko&#x364;nig/ meinem ſohn/</l>
+               <lb/>
+               <l>gib ihm gerechtigkeit/ damit er wol regiere/</l>
+               <lb/>
+               <l>dein volk auch unter ihm ein ru&#x364;hig leben fu&#x364;hre/</l>
+               <lb/>
+               <l rendition="#et">bis daß dein eigner Sohn beſitze ſeinen thron!</l>
             </lg>
             <lb/>
+         </div>
+         <lb/>
+            <div>
+               <p rendition="#c"> Ende des anderen buchs der<lb/>Pſalmen.</p>
             </div>
-            </div>
+         </div>
+               
             <fw place="bottom" type="sig">C ij</fw>
-
             <lb/>
             <pb facs="4076795" n="20"/>
 
@@ -3165,36 +3183,42 @@
             <lb/>
             <fw place="top" type="header">Das dritte Buch</fw>
             <lb/>
+               
+   <div n="2" xml:id="n3">
 
-            <div type="poem-div">
-            <head><label>[3.]</label><lb/> <hi rendition="#aq"><num>III.</num> Cantus.</hi></head>
+      <div type="music">
+         <div>
+            <head rendition="#aq #c #b">III. Cantus.</head>
             <lb/>
-            <lg type="poem">
-            <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
-            <lb/>
-            <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
-            <lb/>
-            <l>als aber ich der ſach was beſſer nach gedacht/</l>
-            <lb/>
-            <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
+               <lb/>
+               <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
+               <lb/>
+               <l>als aber ich der ſach was beſſer nach gedacht/</l>
+               <lb/>
+               <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="poem-div">
-            <head rendition="#aq">Tenor.</head>
+         <div>
+            <head rendition="#aq #c #b">Tenor.</head>
             <lb/>
-            <lg type="poem">
-            <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
-            <lb/>
-            <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
-            <lb/>
-            <l>als aber ich der ſach was beſſer nach gedacht/</l>
-            <lb/>
-            <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
+               <lb/>
+               <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
+               <lb/>
+               <l>als aber ich der ſach was beſſer nach gedacht/</l>
+               <lb/>
+               <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
+         
             <pb facs="4076796" n="21"/>
 
             <fw place="top" type="pageNum">21</fw>
@@ -3202,35 +3226,40 @@
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
 
-            <div type="poem-div">
-            <head rendition="#aq">Altus.</head>
+         <div>
+            <head rendition="#aq #c #b">Altus.</head>
             <lb/>
-            <lg type="poem">
-            <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen</l>
-            <lb/>
-            <l>ab ungeleichem glu&#x364;k der bo&#x364;ſen und der frommen:</l>
-            <lb/>
-            <l>als aber ich der ſach was beſſer nachgedacht/</l>
-            <lb/>
-            <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen</l>
+               <lb/>
+               <l>ab ungeleichem glu&#x364;k der bo&#x364;ſen und der frommen:</l>
+               <lb/>
+               <l>als aber ich der ſach was beſſer nachgedacht/</l>
+               <lb/>
+               <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="poem-div">
-            <head rendition="#aq">Baſis.</head>
+         <div>
+            <head rendition="#aq #c #b">Baſis.</head>
             <lb/>
-            <lg type="poem">
-            <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
-            <lb/>
-            <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
-            <lb/>
-            <l>als aber ich der ſach was beſſer nachgedacht/</l>
-            <lb/>
-            <l>hat beider end bey mir verenderung gebracht.</l>
-            <lb/>
+            <lg>
+               <figure type="notatedMusic"/>
+               <l>Jch armer ha&#x364;tte ſchier ein a&#x364;rgernuß genommen/</l>
+               <lb/>
+               <l>ab ungeleichem glu&#x364;ck der bo&#x364;ſen und der frommen:</l>
+               <lb/>
+               <l>als aber ich der ſach was beſſer nachgedacht/</l>
+               <lb/>
+               <l>hat beider end bey mir verenderung gebracht.</l>
+               <lb/>
+            </lg>
+         </div>
+      </div>
+      
             <fw place="bottom" type="sig">C iij</fw>
-
             <lb/>
             <pb facs="4076797" n="22"/>
 
@@ -3238,182 +3267,185 @@
             <lb/>
             <fw place="top" type="header">Das dritt Buch</fw>
             <lb/>
+            
+         <div n="3" type="poem">
+            <head rendition="#c #b">Haubtbegriff des <hi rendition="#aq">LXXIII.</hi> Pſalmens.</head>
+            <lb/>
+            <lg type="poem">
+               <l><hi rendition="#in">J</hi>Ch armer ha&#x364;tte ſchier ein' a&#x364;rgernuß genommen</l>
+               <lb/>
+               <l>ab ungeleichem glu&#x364;k der bo&#x364;ſen und der frommen:</l>
+               <lb/>
+               <l rendition="#et">als aber ich der ſach was beſſer nachgedacht/</l>
+               <lb/>
+               <l rendition="#et">hat beider end bey mir vera&#x364;nderung gebracht.</l>
             </lg>
-            <div type="stanza-div">
-            <head><num>Haubtbegriff des <hi rendition="#aq">LXXIII.</hi> Pſalmens.</num></head>
             <lb/>
-            <lg type="stanza">
-            <l><hi rendition="#in">J</hi>Ch armer ha&#x364;tte ſchier ein' a&#x364;rgernuß genommen</l>
-            <lb/>
-            <l>ab ungeleichem glu&#x364;k der bo&#x364;ſen und der frommen:</l>
-            <lb/>
-            <l>als aber ich der ſach was beſſer nachgedacht/</l>
-            <lb/>
-            <l>hat beider end bey mir vera&#x364;nderung gebracht.</l>
-            </lg>
-            <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXIV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXIV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Gott/ was wilſt du doch/ ſo gar erzo&#x364;rnt/ verderben</l>
-            <lb/>
-            <l>die ſchaffe deiner weid/ und la&#x364;ngſt erlo&#x364;ßten erben?</l>
-            <lb/>
-            <l>Dein heiligthum iſt hin: der tempel o&#x364;d und la&#x364;r:</l>
-            <lb/>
-            <l>Wilſt du nicht retten uns/ ſo rett jedoch dein' ehr!</l>
+            <lg type="poem">
+               <l>O Gott/ was wilſt du doch/ ſo gar erzo&#x364;rnt/ verderben</l>
+               <lb/>
+               <l>die ſchaffe deiner weid/ und la&#x364;ngſt erlo&#x364;ßten erben?</l>
+               <lb/>
+               <l rendition="#et">Dein heiligthum iſt hin: der tempel o&#x364;d und la&#x364;r:</l>
+               <lb/>
+               <l rendition="#et">Wilſt du nicht retten uns/ ſo rett jedoch dein' ehr!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der David mit dem volk des Herꝛen namen preiſet/</l>
-            <lb/>
-            <l>und fu&#x364;r erlangtes reich ſich dankbar ihm erweiſet/</l>
-            <lb/>
-            <l>verſpricht gerechtigkeit/ und dra&#x364;uet allem pracht:</l>
-            <lb/>
-            <l>erho&#x364;h- und nidrigung beſteht in Gottes macht.</l>
+            <lg type="poem">
+               <l>Der David mit dem volk des Herꝛen namen preiſet/</l>
+               <lb/>
+               <l>und fu&#x364;r erlangtes reich ſich dankbar ihm erweiſet/</l>
+               <lb/>
+               <l>verſpricht gerechtigkeit/ und dra&#x364;uet allem pracht:</l>
+               <lb/>
+               <l>erho&#x364;h- und nidrigung beſteht in Gottes macht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXVI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXVI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Jn Juda iſt der Herꝛ bekant durch ſeinen tempel/</l>
-            <lb/>
-            <l>und daß er ſeiner macht und warheit eim exempel</l>
-            <lb/>
-            <l>an Aſſur fu&#x364;rgeſtellt: warum ihn Aſaph preißt/</l>
-            <lb/>
-            <l>und ſich zu ſeinem dienſt mit allem volk befleißt.</l>
+            <lg type="poem">
+               <l>Jn Juda iſt der Herꝛ bekant durch ſeinen tempel/</l>
+               <lb/>
+               <l>und daß er ſeiner macht und warheit eim exempel</l>
+               <lb/>
+               <l rendition="#et">an Aſſur fu&#x364;rgeſtellt: warum ihn Aſaph preißt/</l>
+               <lb/>
+               <l rendition="#et">und ſich zu ſeinem dienſt mit allem volk befleißt.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXVII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXVII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Ein hoch betru&#x364;bte ſeel/ die mit verzweiflung ringet/</l>
-            <lb/>
-            <l>empfindet widrum troſt/ ſo bald ſie ſich erſchwinget</l>
-            <lb/>
-            <l>fu&#x364;r Gottes gnadenthron/ und nimmet wol in acht</l>
-            <lb/>
-            <l>die wunder/ die der Ho&#x364;chſt erzeigt durch ſeine macht.</l>
+            <lg type="poem">
+               <l>Ein hoch betru&#x364;bte ſeel/ die mit verzweiflung ringet/</l>
+               <lb/>
+               <l>empfindet widrum troſt/ ſo bald ſie ſich erſchwinget</l>
+               <lb/>
+               <l rendition="#et">fu&#x364;r Gottes gnadenthron/ und nimmet wol in acht</l>
+               <lb/>
+               <l rendition="#et">die wunder/ die der Ho&#x364;chſt erzeigt durch ſeine macht.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXVIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXVIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der dichter uns erzellt die wunder- und guttahten/</l>
-            <lb/>
-            <l>Mit denen Gott der Herꝛ ſein altes volk berahten/</l>
-            <lb/>
-            <fw place="bottom" type="catch">von</fw>
-            <lb/>
-            <pb facs="4076798" n="23"/>
-
-            <fw place="top" type="pageNum">23</fw>
-            <lb/>
-            <fw place="top" type="header">der Pſalmen.</fw>
-            <lb/>
-            <l>von ihrem außzug an bis auf des Davids zeit:</l>
-            <lb/>
-            <l>auch wie er ſie geſtrafft um ihr' undankbarkeit.</l>
+            <lg type="poem">
+               <l>Der dichter uns erzellt die wunder- und guttahten/</l>
+               <lb/>
+               <l>Mit denen Gott der Herꝛ ſein altes volk berahten/</l>
+               <lb/>
+               
+               <fw place="bottom" type="catch">von</fw>
+               <lb/>
+               <pb facs="4076798" n="23"/>
+   
+               <fw place="top" type="pageNum">23</fw>
+               <lb/>
+               <fw place="top" type="header">der Pſalmen.</fw>
+               <lb/>
+               
+               <l rendition="#et">von ihrem außzug an bis auf des Davids zeit:</l>
+               <lb/>
+               <l rendition="#et">auch wie er ſie geſtrafft um ihr' undankbarkeit.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXIX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXIX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Herꝛ/ der Heiden ſchar den tempel hat entehret/</l>
-            <lb/>
-            <l>und deine knecht' erto&#x364;dt: dein Salem umgekehret:</l>
-            <lb/>
-            <l>rett uns gefangne leuht' und wend auch deinen grim&#x342;</l>
-            <lb/>
-            <l>von deinem volk auff ſie/ ſo lobt dich unſer ſtim&#x342;!</l>
+            <lg type="poem">
+               <l>O Herꝛ/ der Heiden ſchar den tempel hat entehret/</l>
+               <lb/>
+               <l>und deine knecht' erto&#x364;dt: dein Salem umgekehret:</l>
+               <lb/>
+               <l rendition="#et">rett uns gefangne leuht' und wend auch deinen grim&#x342;</l>
+               <lb/>
+               <l rendition="#et">von deinem volk auff ſie/ ſo lobt dich unſer ſtim&#x342;!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXX.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXX.</head>
             <lb/>
-            <lg type="stanza">
-            <l>O Hirte deines volks/ erwach uns zu erho&#x364;ren!</l>
-            <lb/>
-            <l>Ach/ bring uns wider heim; die feinde wo&#x364;llſt zerſto&#x364;ren!</l>
-            <lb/>
-            <l>Den weinſtock/ den du ſelb gezilet haſt zuvor/</l>
-            <lb/>
-            <l>zu deines nammens ehr nun widrum pflantz empor!</l>
+            <lg type="poem">
+               <l>O Hirte deines volks/ erwach uns zu erho&#x364;ren!</l>
+               <lb/>
+               <l>Ach/ bring uns wider heim; die feinde wo&#x364;llſt zerſto&#x364;ren!</l>
+               <lb/>
+               <l rendition="#et">Den weinſtock/ den du ſelb gezilet haſt zuvor/</l>
+               <lb/>
+               <l rendition="#et">zu deines nammens ehr nun widrum pflantz empor!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXI.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXI.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Lobſinget alle Gott/ und laßt die ſeiten klingen</l>
-            <lb/>
-            <l>am Lauberhu&#x364;ttenfeſt; wie brauch und recht mitbringen;</l>
-            <lb/>
-            <l>Dein Gott/ ſpricht<anchor xml:id="a53"/><note type="annotation" targetEnd="a53"><p>Der fehlende Lehrschlag ist offensichtlich ein Druckfehler.</p></note> Gott/ ich bin: o daß du ho&#x364;rteſt mich:</l>
-            <lb/>
-            <l>ich wolt mit weitzenfrucht und honig ſpeiſen dich!</l>
+            <lg type="poem">
+               <l>Lobſinget alle Gott/ und laßt die ſeiten klingen</l>
+               <lb/>
+               <l>am Lauberhu&#x364;ttenfeſt; wie brauch und recht mitbringen;</l>
+               <lb/>
+               <l rendition="#et">Dein Gott/ ſpricht<anchor xml:id="a53"/><note type="annotation" targetEnd="a53"><p>Der fehlende Lehrschlag ist offensichtlich ein Druckfehler.</p></note> Gott/ ich bin: o daß du ho&#x364;rteſt mich:</l>
+               <lb/>
+               <l rendition="#et">ich wolt mit weitzenfrucht und honig ſpeiſen dich!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Der oberſt Richter klagt ab ungerechtem richten</l>
-            <lb/>
-            <l>der richtern ohn verſtand: berichtet ſie der pflichten/</l>
-            <lb/>
-            <l>und demmet ihren ſtoltz mit ihrer ſterblichkeit:</l>
-            <lb/>
-            <l>O Richter aller welt/ richt auch zu diſer zeit!</l>
+            <lg type="poem">
+               <l>Der oberſt Richter klagt ab ungerechtem richten</l>
+               <lb/>
+               <l>der richtern ohn verſtand: berichtet ſie der pflichten/</l>
+               <lb/>
+               <l rendition="#et">und demmet ihren ſtoltz mit ihrer ſterblichkeit:</l>
+               <lb/>
+               <l rendition="#et">O Richter aller welt/ richt auch zu diſer zeit!</l>
             </lg>
             <lb/>
-            </div>
+         </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXIII.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXIII.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Die Jſraeler ſich/ zu Ezechias tagen/</l>
-            <lb/>
-            <l>ab ihrer feinden liſt/ und ſtetem aufſatz klagen/</l>
-            <lb/>
-            <l>und mahnen mit gebett zu hu&#x364;lff den ho&#x364;chſten Gott/</l>
-            <lb/>
-            <l>daß er/ wie etwan mehr/ die feinde ſtu&#x364;rtz in ſpott.</l>
+            <lg type="poem">
+               <l>Die Jſraeler ſich/ zu Ezechias tagen/</l>
+               <lb/>
+               <l>ab ihrer feinden liſt/ und ſtetem aufſatz klagen/</l>
+               <lb/>
+               <l rendition="#et">und mahnen mit gebett zu hu&#x364;lff den ho&#x364;chſten Gott/</l>
+               <lb/>
+               <l rendition="#et">daß er/ wie etwan mehr/ die feinde ſtu&#x364;rtz in ſpott.</l>
             </lg>
             <lb/>
-            </div>
+         </div>
+      
             <fw place="bottom" type="sig">C iiij</fw>
             <lb/>
-            <fw place="bottom" type="catch"><hi rendition="#aq"><num>LXXXV.</num></hi> Wie</fw>
+            <fw place="bottom" type="catch"><hi rendition="#aq">LXXXV.</hi> Wie</fw>
             <lb/>
             <pb facs="4076799" n="24"/>
 
@@ -3422,114 +3454,117 @@
             <fw place="top" type="header">Das dritt Buch</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXIV.</num></head>
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXIV.</head>
             <lb/>
-            <lg type="stanza">
-            <l>Wie lieblich doch/ o Herꝛ/ ſeind deines hauſes hu&#x364;tten?</l>
+            <lg type="poem">
+               <l>Wie lieblich doch/ o Herꝛ/ ſeind deines hauſes hu&#x364;tten?</l>
+               <lb/>
+               <l>Wol denen/ die darinn dich loben und erbitten!</l>
+               <lb/>
+               <l rendition="#et">Ach/ laß vertribnen mich nunmehr auch wider eyn/</l>
+               <lb/>
+               <l rendition="#et">ſo wil fu&#x364;r alles ich daſelbſt thu&#x364;rhu&#x364;ter ſeyn!</l>
+            </lg>
             <lb/>
-            <l>Wol denen/ die darinn dich loben und erbitten!</l>
+         </div>
+
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXV.</head>
             <lb/>
-            <l>Ach/ laß vertribnen mich nunmehr auch wider eyn/</l>
+            <lg type="poem">
+               <l>O Herꝛ/ wir bitten um verzeihung unſrer ſu&#x364;nden/</l>
+               <lb/>
+               <l>und um erledigung/ wie vor der zeit/ von feinden!</l>
+               <lb/>
+               <l rendition="#et">Wir warten deiner hu&#x364;lff/ und zukunfft na&#x364;chſter zeit/</l>
+               <lb/>
+               <l rendition="#et">foll gu&#x364;te/ warheit/ treu/ frid und gerechtigkeit.</l>
+            </lg>
             <lb/>
-            <l>ſo wil fu&#x364;r alles ich daſelbſt thu&#x364;rhu&#x364;ter ſeyn!</l>
+         </div>
+
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXVI.</head>
+            <lb/>
+            <lg type="poem">
+               <l xml:id="l42a" next="l42b">Herꝛ/ neig dein ohr zu mir/ und laß mich hu&#x364;lff empfin-</l>
+               <lb break="no"/>
+               <l xml:id="l42b" prev="l42a">den/</l>
+               <lb/>
+               <l xml:id="l43a" next="l43b">bewahr auch deinen knecht vor ſu&#x364;nden und vor fein-</l>
+               <lb break="no"/>
+               <l xml:id="l43b" prev="l43a">den:</l>
+               <lb/>
+               <l rendition="#et">dan du gena&#x364;dig dich erzeigeſt iederman&#x303;/</l>
+               <lb/>
+               <l rendition="#et">ja/ welcher dich wie ich in no&#x364;hten ruffet an.</l>
+            </lg>
+            <lb/>
+         </div>
+
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXVII.</head>
+            <lb/>
+            <lg type="poem">
+               <l>Das erſterlo&#x364;ßte volk den neuen tempel preiſet/</l>
+               <lb/>
+               <l>und deſſen fundament auff heilgen bergen weiſet:</l>
+               <lb/>
+               <l rendition="#et">frolockt/ dieweil der Ho&#x364;chſt zur wohnung ihn beſtellt/</l>
+               <lb/>
+               <l rendition="#et">und zu demſelben auch die Heiden außerwellt.</l>
+            </lg>
+            <lb/>
+         </div>
+
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXVIII.</head>
+            <lb/>
+            <lg type="poem">
+               <l>Zu dir/ o Herꝛ mein heil/ ich <anchor xml:id="a54"/>unauf ho&#x364;rlich<note type="annotation" targetEnd="a54"><p>Diese Getrenntschreibung ist wahrscheinlich ein Druckfehler: In A, B und C wird diese Stelle zusammengeschrieben</p></note> ſchreye/</l>
+               <lb/>
+               <l>von todes banden mich/ und ho&#x364;llen angſt befreye/</l>
+               <lb/>
+               
+               <fw place="bottom" type="catch">Wa<anchor xml:id="a55"/><unclear>-</unclear><note type="annotation" targetEnd="a55"><p>schaut man sich das Vergleichsexemplar an, so könnte die Möglichkeit bestehen, dass ein r vor dem Trennstrich gibt. Das Wort auf der folgenden Seite ist nämlich "Warum". Die Tinte ist aber auch im Vergleichsexemplar verschmiert.</p></note></fw>
+               <lb/>
+               <pb facs="4076800" n="25"/>
+   
+               <fw place="top" type="pageNum">25</fw>
+               <lb/>
+               <fw place="top" type="header">der Pſalmen.</fw>
+               <lb/>
+               
+               <l rendition="#et">Warum verſtoſſeſt du/ in deinem zoren/ mich?</l>
+               <lb/>
+               <l rendition="#et">Wird in der grube dan auch iemand preiſen dich?</l>
+            </lg>
+            <lb/>
+         </div>
+
+         <div n="3" type="poem">
+            <head rendition="#aq #c">LXXXIX.</head>
+            <lb/>
+            <lg type="poem">
+               <l xml:id="l44a" next="l44b">Von Gottes gnad und gu&#x364;t/ und veſtgeſchwornem</l>
+               <lb/>
+               <l xml:id="l44b" prev="l44a">bunde</l>
+               <lb/>
+               <l>der dichter ſingen wil/ ſo lang ſich regt ſein munde:</l>
+               <lb/>
+               <l rendition="#et">weiſſaget aber doch/ mit bitt und dank zugleich/</l>
+               <lb/>
+               <l rendition="#et">von tru&#x364;bſal die betrifft des Davids gſchlecht und reich.</l>
             </lg>
             <lb/>
             </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXV.</num></head>
             <lb/>
-            <lg type="stanza">
-            <l>O Herꝛ/ wir bitten um verzeihung unſrer ſu&#x364;nden/</l>
-            <lb/>
-            <l>und um erledigung/ wie vor der zeit/ von feinden!</l>
-            <lb/>
-            <l>Wir warten deiner hu&#x364;lff/ und zukunfft na&#x364;chſter zeit/</l>
-            <lb/>
-            <l>foll gu&#x364;te/ warheit/ treu/ frid und gerechtigkeit.</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXVI.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Herꝛ/ neig dein ohr zu mir/ und laß mich hu&#x364;lff empfin-</l>
-            <lb break="no"/>
-            <l>den/</l>
-            <lb/>
-            <l>bewahr auch deinen knecht vor ſu&#x364;nden und vor fein-</l>
-            <lb break="no"/>
-            <l>den:</l>
-            <lb/>
-            <l>dan du gena&#x364;dig dich erzeigeſt iederman&#x303;/</l>
-            <lb/>
-            <l>ja/ welcher dich wie ich in no&#x364;hten ruffet an.</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXVII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Das erſterlo&#x364;ßte volk den neuen tempel preiſet/</l>
-            <lb/>
-            <l>und deſſen fundament auff heilgen bergen weiſet:</l>
-            <lb/>
-            <l>frolockt/ dieweil der Ho&#x364;chſt zur wohnung ihn beſtellt/</l>
-            <lb/>
-            <l>und zu demſelben auch die Heiden außerwellt.</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXVIII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Zu dir/ o Herꝛ mein heil/ ich <anchor xml:id="a54"/>unauf ho&#x364;rlich<note type="annotation" targetEnd="a54"><p>Diese Getrenntschreibung ist wahrscheinlich ein Druckfehler: In A, B und C wird diese Stelle zusammengeschrieben</p></note> ſchreye/</l>
-            <lb/>
-            <l>von todes banden mich/ und ho&#x364;llen angſt befreye/</l>
-            <lb/>
-            <fw place="bottom" type="catch">Wa<anchor xml:id="a55"/><unclear>-</unclear><note type="annotation" targetEnd="a55"><p>schaut man sich das Vergleichsexemplar an, so könnte die Möglichkeit bestehen, dass ein r vor dem Trennstrich gibt. Das Wort auf der folgenden Seite ist nämlich "Warum". Die Tinte ist aber auch im Vergleichsexemplar verschmiert.</p></note></fw>
-            <lb/>
-            <pb facs="4076800" n="25"/>
-
-            <fw place="top" type="pageNum">25</fw>
-            <lb/>
-            <fw place="top" type="header">der Pſalmen.</fw>
-            <lb/>
-            <l>Warum verſtoſſeſt du/ in deinem zoren/ mich?</l>
-            <lb/>
-            <l>Wird in der grube dan auch iemand preiſen dich?</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>LXXXIX.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Von Gottes gnad und gu&#x364;t/ und veſtgeſchwornem</l>
-            <lb/>
-            <l>bunde</l>
-            <lb/>
-            <l>der dichter ſingen wil/ ſo lang ſich regt ſein munde:</l>
-            <lb/>
-            <l>weiſſaget aber doch/ mit bitt und dank zugleich/</l>
-            <lb/>
-            <l>von tru&#x364;bſal die betrifft des Davids gſchlecht und reich.</l>
-            <lb/>
-            <l>Ende des dritten buchs der</l>
-            <lb/>
-            <l>Pſalmen.</l>
-            </lg>
-            <lb/>
-            </div>
-            </div>
+         <div> 
+            <p rendition="#c">Ende des dritten buchs der<lb/>Pſalmen.</p>
+         </div>
+      </div>
+               
             <fw place="bottom" type="sig">C v</fw>
 
             <lb/>
@@ -3539,36 +3574,41 @@
             <lb/>
             <fw place="top" type="header">Das vierdte Buch</fw>
             <lb/>
+               
+      <div n="2" xml:id="n4">
+            <div type="music">
+               <div>
+                  <head rendition="#aq #c #b">IV. Cantus.</head>
+                  <lb/>
+                  <lg>
+                     <figure type="notatedMusic"/>
+                     <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
+                     <lb/>
+                     <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
+                     <lb/>
+                     <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
+                     <lb/>
+                     <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="poem-div">
-            <head><label>[4.]</label><lb/> <hi rendition="#aq"><num>IV.</num> Cantus.</hi></head>
-            <lb/>
-            <lg type="poem">
-            <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
-            <lb/>
-            <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
-            <lb/>
-            <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
-            <lb/>
-            <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="poem-div">
-            <head rendition="#aq">Tenor.</head>
-            <lb/>
-            <lg type="poem">
-            <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
-            <lb/>
-            <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
-            <lb/>
-            <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
-            <lb/>
-            <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div>
+                  <head rendition="#aq #c #b">Tenor.</head>
+                  <lb/>
+                  <lg>
+                     <figure type="notatedMusic"/>
+                     <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
+                     <lb/>
+                     <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
+                     <lb/>
+                     <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
+                     <lb/>
+                     <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
+                  </lg>
+                  <lb/>
+               </div>
+               
             <pb facs="4076802" n="27"/>
 
             <fw place="top" type="pageNum">27</fw>
@@ -3576,107 +3616,112 @@
             <fw place="top" type="header">der Pſalmen</fw>
             <lb/>
 
-            <div type="poem-div">
-            <head rendition="#aq">Altus.</head>
-            <lb/>
-            <lg type="poem">
-            <l>O Herꝛ/ o unſer Gott/ und zuflucht fu&#x364;r und fu&#x364;r/</l>
-            <lb/>
-            <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
-            <lb/>
-            <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſ<anchor xml:id="a56"/>u&#x364;<note type="annotation" targetEnd="a56"><p>Übergeschriebenes e im augsburgischen Vergleichsexemplar etwas besser sichtbar.</p></note>nden:</l>
-            <lb/>
-            <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div>
+                  <head rendition="#aq #b #c">Altus.</head>
+                  <lb/>
+                  <lg>
+                     <figure type="notatedMusic"/>
+                     <l>O Herꝛ/ o unſer Gott/ und zuflucht fu&#x364;r und fu&#x364;r/</l>
+                     <lb/>
+                     <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
+                     <lb/>
+                     <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſ<anchor xml:id="a56"/>u&#x364;<note type="annotation" targetEnd="a56"><p>Übergeschriebenes e im augsburgischen Vergleichsexemplar etwas besser sichtbar.</p></note>nden:</l>
+                     <lb/>
+                     <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="poem-div">
-            <head rendition="#aq">Baſis.</head>
+               <div>
+                  <head rendition="#aq #c #b">Baſis.</head>
+                  <lb/>
+                  <lg>
+                     <figure type="notatedMusic"/>
+                     <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
+                     <lb/>
+                     <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
+                     <lb/>
+                     <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
+                     <lb/>
+                     <l>lehr uns erkennen die/ und laß uns gnad empfinden</l>
+                  </lg>
+                  <lb/>
+               </div>
+               
+            <fw place="bottom" type="catch">Haubt-</fw>
             <lb/>
-            <lg type="poem">
-            <l>O Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
-            <lb/>
-            <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
-            <lb/>
-            <l>dieweil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;nden:</l>
-            <lb/>
-            <l>lehr uns erkennen die/ und laß uns gnad empfinden</l>
-            <lb/>
-            <fw place="bottom" type="catch"><num>Haubt-</num></fw>
-
-            <lb break="no"/>
             <pb facs="4076803" n="28"/>
 
             <fw place="top" type="pageNum">28</fw>
             <lb/>
             <fw place="top" type="header">Das vierdte Buch</fw>
             <lb/>
-            </lg>
-            <div type="stanza-div">
-            <head><num>Haubtbegriff des <hi rendition="#aq">XC.</hi> Pſalmens.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l><hi rendition="#in">O</hi> Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
-            <lb/>
-            <l>wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
-            <lb/>
-            <l>die weil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;n-</l>
-            <lb break="no"/>
-            <l>den:</l>
-            <lb/>
-            <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
-            </lg>
-            <lb/>
-            </div>
+            
+               <div n="3" type="poem">
+                  <head rendition="#b #c">Haubtbegriff des <hi rendition="#aq">XC.</hi> Pſalmens.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et"><hi rendition="#in">O</hi> Herꝛ/ o unſer Gott und zuflucht fu&#x364;r und fu&#x364;r/</l>
+                     <lb/>
+                     <l rendition="#et">wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor dir/</l>
+                     <lb/>
+                     <l xml:id="l45a" next="l45b">die weil wir dich erzo&#x364;rnt mit nicht geringen ſu&#x364;n-</l>
+                     <lb break="no"/>
+                     <l xml:id="l45b" prev="l45a">den:</l>
+                     <lb/>
+                     <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCI.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Wer ihm zu ſeinem ſchutz den Ho&#x364;chſten außerkießt/</l>
-            <lb/>
-            <l>denſelben weder peſt/ noch feindes pfeil erſchießt/</l>
-            <lb/>
-            <l>ihm ſchaden weder leu/ noch ſchlang/ noch wilde drache&#x303;/</l>
-            <lb/>
-            <l>dan Gottes engel ihn/ auß Gotts befehl verwachen.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCI.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Wer ihm zu ſeinem ſchutz den Ho&#x364;chſten außerkießt/</l>
+                     <lb/>
+                     <l rendition="#et">denſelben weder peſt/ noch feindes pfeil erſchießt/</l>
+                     <lb/>
+                     <l>ihm ſchaden weder leu/ noch ſchlang/ noch wilde drache&#x303;/</l>
+                     <lb/>
+                     <l>dan Gottes engel ihn/ auß Gotts befehl verwachen.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Das volk ermuntert ſich zu einem lobgeſang/</l>
-            <lb/>
-            <l>auf Gottes eignen tag/ durch ſtim&#x342; und ſeitenklang/</l>
-            <lb/>
-            <l>dieweil er ſeine feind' ob ihrem glu&#x364;k zerſtreuet/</l>
-            <lb/>
-            <l>die frommen aber ſchu&#x364;tzt/ geſegnet und erfreuet.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Das volk ermuntert ſich zu einem lobgeſang/</l>
+                     <lb/>
+                     <l rendition="#et">auf Gottes eignen tag/ durch ſtim&#x342; und ſeitenklang/</l>
+                     <lb/>
+                     <l>dieweil er ſeine feind' ob ihrem glu&#x364;k zerſtreuet/</l>
+                     <lb/>
+                     <l>die frommen aber ſchu&#x364;tzt/ geſegnet und erfreuet.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCIII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Die gla&#x364;ubig Judenſchafft des Herꝛen herꝛſchafft</l>
-            <lb/>
-            <l>preißt/</l>
-            <lb/>
-            <l>und ſeine groſſe macht uns in der ſcho&#x364;pffung weißt/</l>
-            <lb/>
-            <l>wie auch in dem daß er des wilden meeres wellen/</l>
-            <lb/>
-            <l>das iſt/ der feinden ſtoltz/ nach ſeinem wort/ kan fellen.</l>
-            </lg>
-            <lb/>
-            </div>
-            <fw place="bottom" type="catch" rendition="#aq"><num>XCIV.</num></fw>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCIII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l xml:id="l46a" next="l46b" rendition="#et">Die gla&#x364;ubig Judenſchafft des Herꝛen herꝛſchafft</l>
+                     <lb/>
+                     <l xml:id="l46b" prev="l46a">preißt/</l>
+                     <lb/>
+                     <l rendition="#et">und ſeine groſſe macht uns in der ſcho&#x364;pffung weißt/</l>
+                     <lb/>
+                     <l>wie auch in dem daß er des wilden meeres wellen/</l>
+                     <lb/>
+                     <l>das iſt/ der feinden ſtoltz/ nach ſeinem wort/ kan fellen.</l>
+                  </lg>
+                  <lb/>
+               </div>
+               
+            <fw place="bottom" type="catch" rendition="#aq">XCIV.</fw>
             <lb/>
             <pb facs="4076804" n="29"/>
 
@@ -3685,227 +3730,226 @@
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCIV.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>O Gott der rache/ kom&#x342;: kom&#x342; doch zurechen dich</l>
-            <lb/>
-            <l>an denen die der ſu&#x364;nd ſo trutzig ru&#x364;hmen ſich/</l>
-            <lb/>
-            <l>die deine vorſicht- und gerechtigkeit verneinen:</l>
-            <lb/>
-            <l>von ihrer tyranney erlo&#x364;ß/ o Herꝛ/ die deinen!</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCIV.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">O Gott der rache/ kom&#x342;: kom&#x342; doch zurechen dich</l>
+                     <lb/>
+                     <l rendition="#et">an denen die der ſu&#x364;nd ſo trutzig ru&#x364;hmen ſich/</l>
+                     <lb/>
+                     <l>die deine vorſicht- und gerechtigkeit verneinen:</l>
+                     <lb/>
+                     <l>von ihrer tyranney erlo&#x364;ß/ o Herꝛ/ die deinen!</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCV.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Herbey/ o Jſrael/ und fro&#x364;lich dich erweiß/</l>
-            <lb/>
-            <l>mit jauchzen und geſang/ zu Gottes lob und preiß:</l>
-            <lb/>
-            <l>ihm ſollen dienen wir: ihn ſollen wir anbetten/</l>
-            <lb/>
-            <l>und nicht/ den v<anchor xml:id="a57"/>a&#x364;<note type="annotation" targetEnd="a57"><p>Kleines e im Augsburger Exemplar etwas besser zu erkennen</p></note>ttern gleich/ von ſeinen wa&#x364;gen tretten!</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCV.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Herbey/ o Jſrael/ und fro&#x364;lich dich erweiß/</l>
+                     <lb/>
+                     <l rendition="#et">mit jauchzen und geſang/ zu Gottes lob und preiß:</l>
+                     <lb/>
+                     <l>ihm ſollen dienen wir: ihn ſollen wir anbetten/</l>
+                     <lb/>
+                     <l>und nicht/ den v<anchor xml:id="a57"/>a&#x364;<note type="annotation" targetEnd="a57"><p>Kleines e im Augsburger Exemplar etwas besser zu erkennen</p></note>ttern gleich/ von ſeinen wa&#x364;gen tretten!</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCVI.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Beſingt mit neuem lied des Heilands <anchor xml:id="a58"/>ſ<note type="annotation" targetEnd="a58"><p>Im augsburgischen Vergleichsexemplar eindeutig ein Schaft-s.</p></note>ig und reich/</l>
-            <lb/>
-            <l>von eim zum andern tag ſein ehr und heil zugleich:</l>
-            <lb/>
-            <l>ihr Heiden preiſet ihn/ und kom&#x342;t zu ihm mit gaben:</l>
-            <lb/>
-            <l>dan er mit grechtigkeit wird erd vnd himmel laben.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCVI.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Beſingt mit neuem lied des Heilands <anchor xml:id="a58"/>ſ<note type="annotation" targetEnd="a58"><p>Im augsburgischen Vergleichsexemplar eindeutig ein Schaft-s.</p></note>ig und reich/</l>
+                     <lb/>
+                     <l rendition="#et">von eim zum andern tag ſein ehr und heil zugleich:</l>
+                     <lb/>
+                     <l>ihr Heiden preiſet ihn/ und kom&#x342;t zu ihm mit gaben:</l>
+                     <lb/>
+                     <l>dan er mit grechtigkeit wird erd vnd himmel laben.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCVII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Meſſi<hi rendition="#aq">æ</hi> ko&#x364;nigreich/ gericht und grechtigkeit/</l>
-            <lb/>
-            <l>die go&#x364;tzendiener ſcha&#x364;ndt; die ſeinen hoch erfreut:</l>
-            <lb/>
-            <l>ſo fliehet dan das bo&#x364;ß/ ihr/ die den Herꝛen liebet/</l>
-            <lb/>
-            <l>preißt ſeine heiligkeit/ ſo bleibt ihr unbetru&#x364;bet.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCVII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Meſſi<hi rendition="#aq">æ</hi> ko&#x364;nigreich/ gericht und grechtigkeit/</l>
+                     <lb/>
+                     <l rendition="#et">die go&#x364;tzendiener ſcha&#x364;ndt; die ſeinen hoch erfreut:</l>
+                     <lb/>
+                     <l>ſo fliehet dan das bo&#x364;ß/ ihr/ die den Herꝛen liebet/</l>
+                     <lb/>
+                     <l>preißt ſeine heiligkeit/ ſo bleibt ihr unbetru&#x364;bet.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCVIII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Dem wundertha&#x364;tigen ein neues liedlein ſingt/</l>
-            <lb/>
-            <l>und dem heilwu&#x364;rkenden mit ſchall und ſeiten klingt<anchor xml:id="a59"/><supplied>;</supplied><note type="annotation" targetEnd="a59"><p>Im Vergleichsexemplar eindeutig ein Semikolon.</p></note></l>
-            <lb/>
-            <l>es jauchzen die geſcho&#x364;pff vor dem der kom&#x342;t zurichten</l>
-            <lb/>
-            <l>wie recht und billich iſt/ nach allen richterspflichten</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCVIII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Dem wundertha&#x364;tigen ein neues liedlein ſingt/</l>
+                     <lb/>
+                     <l rendition="#et">und dem heilwu&#x364;rkenden mit ſchall und ſeiten klingt<anchor xml:id="a59"/><supplied>;</supplied><note type="annotation" targetEnd="a59"><p>Im Vergleichsexemplar eindeutig ein Semikolon.</p></note></l>
+                     <lb/>
+                     <l>es jauchzen die geſcho&#x364;pff vor dem der kom&#x342;t zurichten</l>
+                     <lb/>
+                     <l>wie recht und billich iſt/ nach allen richterspflichten</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>XCIX.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Der Herꝛ ein Ko&#x364;nig iſt/ der um und um regiert/</l>
-            <lb/>
-            <l>der under ſeinem volk ein geiſtlich reich eynfu&#x364;hrt/</l>
-            <lb/>
-            <fw place="bottom" type="catch"><anchor xml:id="a60"/><supplied>foll</supplied><note type="annotation" targetEnd="a60"><p>Im Vergleichsexemplar eindeutiger zu sehen.</p></note></fw>
-            <lb/>
-            <pb facs="4076805" n="30"/>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">XCIX.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Der Herꝛ ein Ko&#x364;nig iſt/ der um und um regiert/</l>
+                     <lb/>
+                     <l rendition="#et">der under ſeinem volk ein geiſtlich reich eynfu&#x364;hrt/</l>
+                     <lb/>
+                     
+                     <fw place="bottom" type="catch"><anchor xml:id="a60"/><supplied>foll</supplied><note type="annotation" targetEnd="a60"><p>Im Vergleichsexemplar eindeutiger zu sehen.</p></note></fw>
+                     <lb/>
+                     <pb facs="4076805" n="30"/>
+         
+                     <fw place="top" type="pageNum">30</fw>
+                     <lb/>
+                     <fw place="top" type="header">Das vierdte Buch</fw>
+                     <lb/>
+                     
+                     <l>foll gnad/ gericht und recht: der ſeine diener rettet/</l>
+                     <lb/>
+                     <l>und gna&#x364;dig zu&#x364;chtiget: drum preißt ihn und anbettet.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <fw place="top" type="pageNum">30</fw>
-            <lb/>
-            <fw place="top" type="header">Das vierdte Buch</fw>
-            <lb/>
-            <l>foll gnad/ gericht und recht: der ſeine diener rettet/</l>
-            <lb/>
-            <l>und gna&#x364;dig zu&#x364;chtiget: drum preißt ihn und anbettet.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">C.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Jhr vo&#x364;lker aller welt/ beſuchet Gottes hauß</l>
+                     <lb/>
+                     <l rendition="#et">mit luſt und fro&#x364;lichkeit: erkennet auch fu&#x364;r auß</l>
+                     <lb/>
+                     <l>daß Gott iſt warer Gott/ der uns zu ſeinen ſchaaffen/</l>
+                     <lb/>
+                     <l>ohn uns erſchaffen hat/ und nicht wil ewig ſtraffen.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>C.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Jhr vo&#x364;lker aller welt/ beſuchet Gottes hauß</l>
-            <lb/>
-            <l>mit luſt und fro&#x364;lichkeit: erkennet auch fu&#x364;r auß</l>
-            <lb/>
-            <l>daß Gott iſt warer Gott/ der uns zu ſeinen ſchaaffen/</l>
-            <lb/>
-            <l>ohn uns erſchaffen hat/ und nicht wil ewig ſtraffen.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CI.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Von Gottes gnad und recht ſol mein geſa&#x303;g nur ſeyn/</l>
+                     <lb/>
+                     <l rendition="#et">wan&#x303; in mein ko&#x364;nigreich der Herꝛ mich ſetzet eyn:</l>
+                     <lb/>
+                     <l>fu&#x364;rſichtig/ redlich/ treu wil ich zuhauſe leben/</l>
+                     <lb/>
+                     <l>die bo&#x364;ſen reutten auß; die frommen hoch erheben.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CI.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Von Gottes gnad und recht ſol mein geſa&#x303;g nur ſeyn/</l>
-            <lb/>
-            <l>wan&#x303; in mein ko&#x364;nigreich der Herꝛ mich ſetzet eyn:</l>
-            <lb/>
-            <l>fu&#x364;rſichtig/ redlich/ treu wil ich zuhauſe leben/</l>
-            <lb/>
-            <l>die bo&#x364;ſen reutten auß; die frommen hoch erheben.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">Es bittet Jſrael/ in ho&#x364;chſtbetru&#x364;btem ſtand/</l>
+                     <lb/>
+                     <l rendition="#et">daß Gott ſie widerbring in ihres vatterland/</l>
+                     <lb/>
+                     <l>damit/ zu ſeiner ehr/ der tempel werd erbauet/</l>
+                     <lb/>
+                     <l>die Heidenſchafft bekehrt: wie ihme ſie vertrauet.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Es bittet Jſrael/ in ho&#x364;chſtbetru&#x364;btem ſtand/</l>
-            <lb/>
-            <l>daß Gott ſie widerbring in ihres vatterland/</l>
-            <lb/>
-            <l>damit/ zu ſeiner ehr/ der tempel werd erbauet/</l>
-            <lb/>
-            <l>die Heidenſchafft bekehrt: wie ihme ſie vertrauet.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CIII.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">O ſeel/ lob ewig den/ der deinem leib und dir</l>
+                     <lb/>
+                     <l rendition="#et">ſo gar vil guts erzeigt: ihn lobe was in mir:</l>
+                     <lb/>
+                     <l>ihr engel/ die ihr ſeyt des Herꝛen ſtarcke helden/</l>
+                     <lb/>
+                     <l>ihr heerzeug' und geſcho&#x364;pff des Herꝛſchers lob ſolt melde&#x303;.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CIII.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>O ſeel/ lob ewig den/ der deinem leib und dir</l>
-            <lb/>
-            <l>ſo gar vil guts erzeigt: ihn lobe was in mir:</l>
-            <lb/>
-            <l>ihr engel/ die ihr ſeyt des Herꝛen ſtarcke helden/</l>
-            <lb/>
-            <l>ihr heerzeug' und geſcho&#x364;pff des Herꝛſchers lob ſolt melde&#x303;.</l>
-            </lg>
-            <lb/>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CIV.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">O ſeel/ erheb doch den/ der alles macht und ziert/</l>
+                     <lb/>
+                     <l rendition="#et">und auch zu ſeiner ehr und unſerm nutz regiert:</l>
+                     <lb/>
+                     <l>mein lied und ſeitenſpil den Herꝛen ewig preiſe/</l>
+                     <lb/>
+                     <l>und ſey ihm angenem: die ſu&#x364;nder er verweiſe!</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CIV.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>O ſeel/ erheb doch den/ der alles macht und ziert/</l>
-            <lb/>
-            <l>und auch zu ſeiner ehr und unſerm nutz regiert:</l>
-            <lb/>
-            <l>mein lied und ſeitenſpil den Herꝛen ewig preiſe/</l>
-            <lb/>
-            <l>und ſey ihm angenem: die ſu&#x364;nder er verweiſe!</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CV.</num></head>
+            <fw place="bottom" type="catch" rendition="#aq">CV.</fw>
             <lb/>
             <pb facs="4076806" n="31"/>
+               
             <fw place="top" type="pageNum">31</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen/</fw>
             <lb/>
-            <lg type="stanza">
-            </lg>
-            </div>
+               
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CV.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l rendition="#et">O Jſrael/ erkenn/ und mach uns kund</l>
+                     <lb/>
+                     <l xml:id="l47a" next="l47b" rendition="#et">die werk' und urtheil Gott's/ nach ſeinem wort und</l>
+                     <lb/>
+                     <l xml:id="l47b" prev="l47a">bund/</l>
+                     <lb/>
+                     <l>von zeiten Abrahams bis daß er dir gegeben</l>
+                     <lb/>
+                     <l>das gut gelobte land/ ſeim gſatz gemaß zuleben.</l>
+                  </lg>
+                  <lb/>
+               </div>
 
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CV.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>O Jſrael/ erkenn/ und mach uns kund</l>
-            <lb/>
-            <l>die werk' und urtheil Gott's/ nach ſeinem wort und</l>
-            <lb/>
-            <l>bund/</l>
-            <lb/>
-            <l>von zeiten Abrahams bis daß er dir gegeben</l>
-            <lb/>
-            <l>das gut gelobte land/ ſeim gſatz gemaß zuleben.</l>
-            </lg>
-            <lb/>
-            </div>
-
-            <div type="stanza-div">
-            <head rendition="#aq"><num>CVI.</num></head>
-            <lb/>
-            <lg type="stanza">
-            <l>Gelobet ſey der Herꝛ! So ſprich/ o Jſrael:</l>
-            <lb/>
-            <l>bekenn/ wie vil er dir getahn an leib und ſeel!</l>
-            <lb/>
-            <l>Des guten iſt zu vil/ ich kan es nicht außſprechen:</l>
-            <lb/>
-            <l>Herꝛ/ uns gefangne lo&#x364;ß: den undank wo&#x364;llſt nicht rechen!</l>
-            <lb/>
-            <l>Ende des vierdten buchs</l>
-            <lb/>
-            <l>der Pſalmen.</l>
-            </lg>
-            <lb/>
-            </div>
-            </div>
+               <div n="3" type="poem">
+                  <head rendition="#aq #c">CVI.</head>
+                  <lb/>
+                  <lg type="poem">
+                     <l>Gelobet ſey der Herꝛ! So ſprich/ o Jſrael:</l>
+                     <lb/>
+                     <l>bekenn/ wie vil er dir getahn an leib und ſeel!</l>
+                     <lb/>
+                     <l>Des guten iſt zu vil/ ich kan es nicht außſprechen:</l>
+                     <lb/>
+                     <l>Herꝛ/ uns gefangne lo&#x364;ß: den undank wo&#x364;llſt nicht rechen!</l>
+                  </lg>
+                  <lb/>
+               </div>
+               <lb/>
+             <div>
+                 <p rendition="#c">Ende des vierdten buchs<lb/>der Pſalmen.</p>
+             </div>
+         </div>
 
             <div type="poem-div">
             <head rendition="#aq"><num>V.</num> Can-</head>
