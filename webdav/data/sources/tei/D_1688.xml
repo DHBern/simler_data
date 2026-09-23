@@ -1799,10 +1799,10 @@
                   <head rendition="#b #c">Haubtbegriff des erſten <lb/> Pſalms.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l27a" next="l27b"><hi rendition="#in">W</hi>Er ſcha&#x364;lk' und
+                     <l xml:id="l27a" next="#l27b"><hi rendition="#in">W</hi>Er ſcha&#x364;lk' und
                         ſpo&#x364;tter fleucht/ und Gottes wort</l>
                      <lb/>
-                     <l xml:id="l27b" prev="l27a">betrachtet/</l>
+                     <l xml:id="l27b" prev="#l27a">betrachtet/</l>
                      <lb/>
                      <l rendition="#et">der gru&#x364;net wie ein baum an einem waſſerfluß/</l>
                      <lb/>
@@ -1850,10 +1850,10 @@
                   <lg type="poem">
                      <l>Die Fu&#x364;rſten Jſraels begehren zuzerſto&#x364;ren</l>
                      <lb/>
-                     <l xml:id="l28a" next="l28b" rendition="#et">Des Davids wahl und reich: welchs
+                     <l xml:id="l28a" next="#l28b" rendition="#et">Des Davids wahl und reich: welchs
                         ihnen er ver-</l>
                      <lb break="no"/>
-                     <l xml:id="l28b" prev="l28a">weißt/</l>
+                     <l xml:id="l28b" prev="#l28a">weißt/</l>
                      <lb/>
                      <l rendition="#et">vermahnet ſie zur buß/ und Gottes gu&#x364;te preißt/</l>
                      <lb/>
@@ -1868,10 +1868,10 @@
                   <lg type="poem">
                      <l>Die ſchmeichelra&#x364;the Sauls des Davids elend mehre&#x342;</l>
                      <lb/>
-                     <l xml:id="l29a" next="l29b" rendition="#et">durch vil verlu&#x364;mbdungen;
+                     <l xml:id="l29a" next="#l29b" rendition="#et">durch vil verlu&#x364;mbdungen;
                         welchs er dem Herꝛen</l>
                      <lb/>
-                     <l xml:id="l29b" prev="l29a">klagt/</l>
+                     <l xml:id="l29b" prev="#l29a">klagt/</l>
                      <lb/>
                      <l rendition="#et">wu&#x364;nſcht ihren untergang/ und wartet unverzagt</l>
                      <lb/>
@@ -1912,10 +1912,10 @@
                   <lg type="poem">
                      <l>Der David von dem Saul der aufruhr falſch gezigen/</l>
                      <lb/>
-                     <l xml:id="l30a" next="l30b" rendition="#et">beym Herꝛen ſuchet ſchirm: ſein
+                     <l xml:id="l30a" next="#l30b" rendition="#et">beym Herꝛen ſuchet ſchirm: ſein
                         unſchuld ihm er-</l>
                      <lb break="no"/>
-                     <l xml:id="l30b" prev="l30a">weißt:</l>
+                     <l xml:id="l30b" prev="#l30a">weißt:</l>
                      <lb/>
                      <l rendition="#et">weyſſaget wider Saul/ und Gotts gerichte preißt/</l>
                      <lb/>
@@ -2101,7 +2101,7 @@
                   <lb/>
                </div>
 
-               <div n="3" type="stanza-div">
+               <div n="3" type="poem">
                   <head rendition="#aq #c">XVIII.</head>
                   <lb/>
                   <lg type="poem">
@@ -2157,14 +2157,12 @@
                      <lb/>
                      <l rendition="#et">darum er ſein gelu&#x364;bd erſtattet gleicher weiß/</l>
                      <lb/>
-                     <l rendition="#et">dankt um erhaltnen ſig: erbiet<anchor xml:id="a44"
-                           /><unclear>e</unclear><note type="annotation" targetEnd="a44"><p>Könnte
-                              auch "c" sein, also ein Druckfehler</p></note>t ferꝛnern preiß/</l>
+                     <l rendition="#et">dankt um erhaltnen ſig: erbiet<unclear reason="uncleanPrint">e</unclear>t ferꝛnern preiß/</l>
                      <lb/>
-                     <l xml:id="l31a" next="l31b">und glaubt/ es werd der feind/ durch Gottes zorn
+                     <l xml:id="l31a" next="#l31b">und glaubt/ es werd der feind/ durch Gottes zorn
                         ver-</l>
                      <lb break="no"/>
-                     <l xml:id="l31b" prev="l31a" rendition="#et">zehret.</l>
+                     <l xml:id="l31b" prev="#l31a" rendition="#et">zehret.</l>
                   </lg>
                   <lb/>
                </div>
@@ -2186,10 +2184,10 @@
 
                <div n="3" type="poem">
                   <head rendition="#aq #c">XXIII.</head>
-                  <l>(gleich/</l>
+                  <l xml:id="l32a" prev="#l32b">(gleich/</l>
                   <lb/>
                   <lg type="poem">
-                     <l>Der Herꝛ mich ſpeißt und tra&#x364;nkt an ſeel und leib zugleich/</l>
+                     <l xml:id="l32b" next="#l32a">Der Herꝛ mich ſpeißt und tra&#x364;nkt an ſeel und leib zugleich/</l>
                      <lb/>
 
                      <fw place="bottom" type="sig">B iiij</fw>
@@ -2257,10 +2255,10 @@
                      <lb/>
                      <l rendition="#et">von meiner Obrigkeit: drum ſuch' ich recht bey dir:</l>
                      <lb/>
-                     <l xml:id="l32a" next="l32b" rendition="#et">bewa&#x364;hr mich durch und
+                     <l xml:id="l33a" next="#l33b" rendition="#et">bewa&#x364;hr mich durch und
                         durch/ ſo wirſt recht ſpre-</l>
                      <lb break="no"/>
-                     <l xml:id="l32b" prev="l32a">chen mir/</l>
+                     <l xml:id="l33b" prev="#l33a">chen mir/</l>
                      <lb/>
                      <l>ich aber wil mit dank dir fo&#x364;rter ſteiff anhangen.</l>
                   </lg>
@@ -2319,10 +2317,10 @@
                   <lg type="poem">
                      <l>Jhr/ die ihr euch bedunkt gewaltig ſeyn auff erden/</l>
                      <lb/>
-                     <l xml:id="l33a" next="l33b" rendition="#et">bringt ehr/ und dienet dem/ des
+                     <l xml:id="l34a" next="#l34b" rendition="#et">bringt ehr/ und dienet dem/ des
                         ſtimme braußt und</l>
                      <lb/>
-                     <l xml:id="l33b" prev="l33a">ſchallt/</l>
+                     <l xml:id="l34b" prev="#l34a">ſchallt/</l>
                      <lb/>
                      <l rendition="#et">wan in der witterung der ſtarke donner knallt/</l>
                      <lb/>
@@ -2387,10 +2385,10 @@
                      <lb/>
                      <l rendition="#et">weil durch ſein wort und Geiſt erſchaffen iſt was iſt:</l>
                      <lb/>
-                     <l xml:id="l34a" next="l34b" rendition="#et">ſein wort/ genad und krafft
+                     <l xml:id="l35a" next="#l35b" rendition="#et">ſein wort/ genad und krafft
                         verſchafft daß nichts</l>
                      <lb/>
-                     <l xml:id="l34b" prev="l34a">gebriſt:</l>
+                     <l xml:id="l35b" prev="#l35a">gebriſt:</l>
                      <lb/>
                      <l>bey ihm iſt raht und hu&#x364;lff: ohn ihn mag nichts gelingen.</l>
                   </lg>
@@ -2449,12 +2447,12 @@
                      <lb/>
                      <l rendition="#et">des Herꝛen gu&#x364;tigkeit/ die bis an himmel ſchwebt:</l>
                      <lb/>
-                     <l xml:id="l35a" next="l35b">wu&#x364;nſcht; na&#x364;chſt der feinden ſtraf;
+                     <l xml:id="l36a" next="#l36b">wu&#x364;nſcht; na&#x364;chſt der feinden ſtraf;
                         der ſu&#x364;nd zuwie<anchor xml:id="a47"/>-<note type="annotation"
                            targetEnd="a47"><p>Im augsburgischen Vergleichsexemplar eindeutig ein
                               Trennstrich.</p></note></l>
                      <lb/>
-                     <l xml:id="l35b" prev="l35a">derſtreben.</l>
+                     <l xml:id="l36b" prev="#l36a">derſtreben.</l>
                   </lg>
                   <lb/>
                </div>
@@ -2538,15 +2536,15 @@
                   <lg type="poem">
                      <l>Wer mit den kranknen wird beſcheidenlich verfahren/</l>
                      <lb/>
-                     <l xml:id="l36a" next="l36b" rendition="#et">der wird auch/ wann er ſiech/
+                     <l xml:id="l37a" next="#l37b" rendition="#et">der wird auch/ wann er ſiech/
                         empfinden troſt und</l>
                      <lb/>
-                     <l xml:id="l36b" prev="l36a">krafft:</l>
+                     <l xml:id="l37b" prev="#l37a">krafft:</l>
                      <lb/>
-                     <l xml:id="l37a" next="l37b" rendition="#et">mich plagten feind' und freund'/
+                     <l xml:id="l38a" next="#l38b" rendition="#et">mich plagten feind' und freund'/
                         alß ich war la&#x364;ger-</l>
                      <lb break="no"/>
-                     <l xml:id="l37b" prev="l37b">hafft/</l>
+                     <l xml:id="l38b" prev="#l38b">hafft/</l>
                      <lb/>
                      <l>ich aber ſprach/ Herꝛ/ hilff! Dein lob wil ich nicht ſparen.</l>
                   </lg>
@@ -2664,13 +2662,15 @@
                      Pſalmens.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l38a" next="l38b" rendition="#et"><hi rendition="#in">G</hi>Leich
+                     <l xml:id="l39a" next="#l39b" rendition="#et"><hi rendition="#in">G</hi>Leich
                         wie der durſtig hirſch/ in lang gewa&#x364;hrter</l>
                      <lb/>
-                     <l xml:id="l38b" prev="l38a">flucht/</l>
+                     <l xml:id="l39b" prev="#l39a">flucht/</l>
                      <lb/>
-                     <l>nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;chzet:</l>
+                     <l xml:id="l40a" prev="#l40b">(zet:</l>
                      <lb/>
+                     <l xml:id="l40b" next="#l40a">nach friſcher waſſerquell mit du&#x364;rꝛer zungen la&#x364;ch-</l>
+                     <lb break="no"/>
                      <l>So mein verfolgte ſeel nach Gottes wohnung a&#x364;chtzet/</l>
                      <lb/>
                      <l rendition="#et">zu deſſen dienſt und preiß/ den ſie mit glauben ſucht.</l>
@@ -2748,10 +2748,10 @@
                      <lb/>
                      <l>laßt ſeine bundeslad in ſeinem hauß einkehren!</l>
                      <lb/>
-                     <l xml:id="l39a" next="l39b" rendition="#et">Auf/ auf! der Herꝛ fahrt auf mit
+                     <l xml:id="l41a" next="#l41b" rendition="#et">Auf/ auf! der Herꝛ fahrt auf mit
                         ſchall vnd hellem</l>
                      <lb/>
-                     <l xml:id="l39b" prev="l39a">klang.</l>
+                     <l xml:id="l41b" prev="#l41a">klang.</l>
                   </lg>
                   <lb/>
                </div>
@@ -2844,10 +2844,10 @@
                               Fehler sein. In den Ausgaben A, B und C ist es einheitlich
                               geschrieben.</p></note> dich: ich aber unbetru&#x364;bet</l>
                      <lb/>
-                     <l xml:id="l40a" next="l40b" rendition="#et">wird gru&#x364;nen in ſeim hauß:
+                     <l xml:id="l42a" next="#l42b" rendition="#et">wird gru&#x364;nen in ſeim hauß:
                         ihn preiſen fru&#x364;h und</l>
                      <lb/>
-                     <l xml:id="l40b" prev="l40a">ſpaht.</l>
+                     <l xml:id="l42b" prev="#l42a">ſpaht.</l>
                   </lg>
                   <lb/>
                </div>
@@ -2959,10 +2959,10 @@
                   <head rendition="#aq #c">LIX.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l41a" next="l41b" rendition="#et">Von denen knechten Sauls/ o Gott/
+                     <l xml:id="l43a" next="#l43b" rendition="#et">Von denen knechten Sauls/ o Gott/
                         wo&#x364;llſt retten</l>
                      <lb/>
-                     <l xml:id="l41b" prev="l41a">mich/</l>
+                     <l xml:id="l43b" prev="#l43a">mich/</l>
                      <lb/>
                      <l>die mir mein hauß umſtellt/ zunemmen mir mein leben:</l>
                      <lb/>
@@ -3548,15 +3548,15 @@
                   <head rendition="#aq #c">LXXXVI.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l42a" next="l42b">Herꝛ/ neig dein ohr zu mir/ und laß mich
+                     <l xml:id="l44a" next="#l44b">Herꝛ/ neig dein ohr zu mir/ und laß mich
                         hu&#x364;lff empfin-</l>
                      <lb break="no"/>
-                     <l xml:id="l42b" prev="l42a">den/</l>
+                     <l xml:id="l44b" prev="#l44a">den/</l>
                      <lb/>
-                     <l xml:id="l43a" next="l43b">bewahr auch deinen knecht vor ſu&#x364;nden und
+                     <l xml:id="l45a" next="#l45b">bewahr auch deinen knecht vor ſu&#x364;nden und
                         vor fein-</l>
                      <lb break="no"/>
-                     <l xml:id="l43b" prev="l43a">den:</l>
+                     <l xml:id="l45b" prev="#l45a">den:</l>
                      <lb/>
                      <l rendition="#et">dan du gena&#x364;dig dich erzeigeſt iederman&#x303;/</l>
                      <lb/>
@@ -3594,11 +3594,7 @@
                      <lb/>
 
                      <fw place="bottom" type="catch">Wa<anchor xml:id="a55"
-                           /><unclear>-</unclear><note type="annotation" targetEnd="a55"><p>schaut
-                              man sich das Vergleichsexemplar an, so könnte die Möglichkeit
-                              bestehen, dass ein r vor dem Trennstrich gibt. Das Wort auf der
-                              folgenden Seite ist nämlich "Warum". Die Tinte ist aber auch im
-                              Vergleichsexemplar verschmiert.</p></note></fw>
+                           /><unclear reason="uncleanPrint">-</unclear></fw>
                      <lb/>
                      <pb facs="4076800" n="25"/>
 
@@ -3618,10 +3614,10 @@
                   <head rendition="#aq #c">LXXXIX.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l44a" next="l44b">Von Gottes gnad und gu&#x364;t/ und
+                     <l xml:id="l46a" next="#l46b">Von Gottes gnad und gu&#x364;t/ und
                         veſtgeſchwornem</l>
                      <lb/>
-                     <l xml:id="l44b" prev="l44a">bunde</l>
+                     <l xml:id="l46b" prev="#l46a">bunde</l>
                      <lb/>
                      <l>der dichter ſingen wil/ ſo lang ſich regt ſein munde:</l>
                      <lb/>
@@ -3745,10 +3741,10 @@
                      <l rendition="#et">wie flu&#x364;chtig und wie bo&#x364;ß iſt unſre zeit vor
                         dir/</l>
                      <lb/>
-                     <l xml:id="l45a" next="l45b">die weil wir dich erzo&#x364;rnt mit nicht
+                     <l xml:id="l47a" next="#l47b">die weil wir dich erzo&#x364;rnt mit nicht
                         geringen ſu&#x364;n-</l>
                      <lb break="no"/>
-                     <l xml:id="l45b" prev="l45a">den:</l>
+                     <l xml:id="l47b" prev="#l47a">den:</l>
                      <lb/>
                      <l>lehr uns erkennen die/ und laß uns gnad empfinden.</l>
                   </lg>
@@ -3790,10 +3786,10 @@
                   <head rendition="#aq #c">XCIII.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l46a" next="l46b" rendition="#et">Die gla&#x364;ubig Judenſchafft
+                     <l xml:id="l48a" next="#l48b" rendition="#et">Die gla&#x364;ubig Judenſchafft
                         des Herꝛen herꝛſchafft</l>
                      <lb/>
-                     <l xml:id="l46b" prev="l46a">preißt/</l>
+                     <l xml:id="l48b" prev="#l48a">preißt/</l>
                      <lb/>
                      <l rendition="#et">und ſeine groſſe macht uns in der ſcho&#x364;pffung
                         weißt/</l>
@@ -4022,10 +4018,10 @@
                   <lg type="poem">
                      <l rendition="#et">O Jſrael/ erkenn/ und mach uns kund</l>
                      <lb/>
-                     <l xml:id="l47a" next="l47b" rendition="#et">die werk' und urtheil Gott's/ nach
+                     <l xml:id="l49a" next="#l49b" rendition="#et">die werk' und urtheil Gott's/ nach
                         ſeinem wort und</l>
                      <lb/>
-                     <l xml:id="l47b" prev="l47a">bund/</l>
+                     <l xml:id="l49b" prev="#l49a">bund/</l>
                      <lb/>
                      <l>von zeiten Abrahams bis daß er dir gegeben</l>
                      <lb/>
@@ -4126,10 +4122,7 @@
                      <lb/>
                      <lg>
                         <figure type="notatedMusic"/>
-                        <l>Ein jeder ſeye doch zu de<anchor xml:id="a61"/><unclear>ſ</unclear><note
-                              type="annotation" targetEnd="a61"><p>Hier ist ein f ziemlich eindeutig
-                                 zu lesen. Im augsburgischen Vergleichsexemplar steht aber ganz
-                                 eindeutig ein Schaft-s.</p></note>ſen lob gefliſſen/</l>
+                        <l>Ein jeder ſeye doch zu de<unclear reason="uncleanPrint">ſ</unclear>ſen lob gefliſſen/</l>
                         <lb/>
                         <l>der himmel/ erd und meer/ und alle ding regiert:</l>
                         <lb/>
@@ -4161,12 +4154,12 @@
                      <lb/>
                      <l rendition="#et">der himmel/ erd/ und meer/ und alle ding regiert:</l>
                      <lb/>
-                     <l xml:id="l48a" next="l48b">durch ihn wir ja dem feind und tode ſeind
+                     <l xml:id="l50a" next="#l50b">durch ihn wir ja dem feind und tode ſeind
                         entriſ-</l>
                      <lb break="no"/>
-                     <l xml:id="l48b" prev="l48a">ſen/</l>
+                     <l xml:id="l50b" prev="#l50a">ſen/</l>
                      <lb/>
-                     <l rendition="#et">auß hunger-waſſersnoht: auß irꝛ und banden
+                     <l>auß hunger-waſſersnoht: auß irꝛ und banden
                         gfu&#x364;hrt.</l>
                   </lg>
                   <lb/>
@@ -4409,10 +4402,10 @@
                      <lb/>
                      <l rendition="#et">der alles hat gemacht: er/ er/ o Jſrael/</l>
                      <lb/>
-                     <l xml:id="l49a" next="l49b">entſchla&#x364;fft und ſchlummert nicht;
+                     <l xml:id="l51a" next="#l51b">entſchla&#x364;fft und ſchlummert nicht;
                         behu&#x364;tet nah und</l>
                      <lb/>
-                     <l xml:id="l49b" prev="l49a">ferꝛen</l>
+                     <l xml:id="l51b" prev="#l51a">ferꝛen</l>
                      <lb/>
                      <l rendition="#et">vor allem u&#x364;bel dich am leib und an der ſeel.</l>
                   </lg>
@@ -4425,10 +4418,7 @@
                   <lg type="poem">
                      <l>Der David freuet ſich des Gottes dienſts im tempel/</l>
                      <lb/>
-                     <l rendition="#et">und erſten regiments: wu&#x364;nſcht heil und gl<anchor
-                           xml:id="a66"/><unclear>u&#x364;</unclear><note type="annotation"
-                           targetEnd="a66"><p>Das kleine e ist auch im Augsburger Exemplar nicht zu
-                              identifizieren</p></note>k darzu:</l>
+                     <l rendition="#et">und erſten regiments: wu&#x364;nſcht heil und gl<unclear reason="uncleanPrint">u&#x364;</unclear>k darzu:</l>
                      <lb/>
                      <l>vermahnet alles volk zu folgen ſeim exempel/</l>
                      <lb/>
@@ -4450,10 +4440,10 @@
                   <head rendition="#aq #c">CXXIII.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l50a" next="l50b">Wie knecht' und ma&#x364;gde nur auf herꝛ'n und
+                     <l xml:id="l52a" next="#l52b">Wie knecht' und ma&#x364;gde nur auf herꝛ'n und
                         frauen ſe-</l>
                      <lb break="no"/>
-                     <l xml:id="l50b" prev="l50a">hen/</l>
+                     <l xml:id="l52b" prev="#l52a">hen/</l>
                      <lb/>
                      <l rendition="#et">zu haben ihren ſchirm/ ſo ſehen wir auf Gott:</l>
                      <lb/>
@@ -4488,10 +4478,10 @@
                      <lb/>
                      <l rendition="#et">dan&#x303; er beſchirmet ſie/ wie berge/ rings umhar:</l>
                      <lb/>
-                     <l xml:id="l51a" next="l51b">Herꝛ/ tuh den frommen guts/ damit ſie nicht
+                     <l xml:id="l53a" next="#l53b">Herꝛ/ tuh den frommen guts/ damit ſie nicht
                         um-</l>
                      <lb break="no"/>
-                     <l xml:id="l51b" prev="l51a">ſchauen</l>
+                     <l xml:id="l53b" prev="#l53a">ſchauen</l>
                      <lb/>
                      <l rendition="#et">nach ungerechtigkeit; vertilg die ſcha&#x364;lcke gar!</l>
                   </lg>
@@ -4758,10 +4748,10 @@
                      <lb/>
                      <l>Du biſt an allem ort: wer mo&#x364;chte dir entru&#x364;nnen?</l>
                      <lb/>
-                     <l rendition="#et" xml:id="l52a" next="l52b">Nur deine feind' ich haß': auf
+                     <l rendition="#et" xml:id="l54a" next="#l54b">Nur deine feind' ich haß': auf
                         args mein hertz nicht</l>
                      <lb/>
-                     <l xml:id="l52b" prev="l52a">baut.</l>
+                     <l xml:id="l54b" prev="#l54a">baut.</l>
                   </lg>
                   <lb/>
                </div>
@@ -4875,10 +4865,10 @@
                      <lb/>
                      <l rendition="#et">ich wil bis in den tod lobſingen meinem Gott:</l>
                      <lb/>
-                     <l xml:id="l53a" next="l53b">die fu&#x364;rſt- und menſchen hu&#x364;lff
+                     <l xml:id="l55a" next="#l55b">die fu&#x364;rſt- und menſchen hu&#x364;lff
                         verſchwindt vnd ſchlaget</l>
                      <lb/>
-                     <l xml:id="l53b" prev="l53a">fehle/</l>
+                     <l xml:id="l55b" prev="#l55a">fehle/</l>
                      <lb/>
                      <l rendition="#et">wer aber Gott vertraut/ hat hu&#x364;lff in aller noht.</l>
                   </lg>
@@ -4930,8 +4920,8 @@
 
                      <l>lobt ihn ihr Element/ und ihr die ſie bewohnen/</l>
                      <lb/>
-                     <l rendition="#et">du Gottes volk <anchor xml:id="a74"/><unclear>vor
-                           auß</unclear><note type="annotation" targetEnd="a74"><p>In den Ausgaben
+                     <l rendition="#et">du Gottes volk <anchor xml:id="a74"/>vor
+                           auß<note type="annotation" targetEnd="a74"><p>In den Ausgaben
                               A, B und C ist dieses Wort als einheitlich gedruckt. Es ist unklar, ob
                               hier ein Druckfehler vorliegt oder die getrennte Schreibung im 17.
                               Jahrhundert zulässig war.</p></note> ſuch deines Heylands ehr.</l>
@@ -4943,10 +4933,10 @@
                   <head rendition="#aq #c">CXLIX.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l54a" next="l54b">Lobt Gott mit neuem lied/ mit harff- und pauken
+                     <l xml:id="l56a" next="#l56b">Lobt Gott mit neuem lied/ mit harff- und pauken
                         ſchla-</l>
                      <lb break="no"/>
-                     <l xml:id="l54b" prev="l54a">gen/</l>
+                     <l xml:id="l56b" prev="#l56a">gen/</l>
                      <lb/>
                      <l rendition="#et">daheim und offentlich/ mit mund und hertz zugleich/</l>
                      <lb/>
@@ -5099,11 +5089,7 @@
                   <lg type="poem">
                      <l>Jch preiß' und ſuche Gottes ſta&#x364;rke:</l>
                      <lb/>
-                     <l><anchor xml:id="a76"/><unclear>ſ</unclear><note type="annotation"
-                           targetEnd="a76"><p>Hier sollte auch ein Schaft-s stehen und ist auch
-                              wahrscheinlich so. Es kann allerdings nicht mit Sicherheit
-                              ausgeschlossen werden, dass ein f fälschlicherweise gedruckt wurde,
-                              auch nicht mithilfe des Vergleichsexemplars.</p></note>ein
+                     <l><unclear reason="uncleanPrint">ſ</unclear>ein
                         hu&#x364;lff ich wider'n feind vermerke.</l>
                   </lg>
                   <lb/>
@@ -5226,11 +5212,7 @@
                   <lg type="poem">
                      <l>Die himmel/ Herꝛ/ dein' ehr verku&#x364;nden:</l>
                      <lb/>
-                     <l>dein wort fu&#x364;rtrifft: verz<anchor xml:id="a78"
-                           /><unclear>e</unclear><note type="annotation" targetEnd="a78"><p>Es ist
-                              möglich, dass es sich um ein nicht gut erkennbares e handelt.
-                              Allerdings könnte hier ein fälschlicherweise gedrucktes c vorliegen.
-                              Im Vergleichexemplar (Augsburg) sieht es auch nach c aus.</p></note>ih
+                     <l>dein wort fu&#x364;rtrifft: verz<unclear reason="uncleanPrint">e</unclear>ih
                         die ſu&#x364;nden.</l>
                   </lg>
                   <lb/>
@@ -5493,7 +5475,7 @@
                   <head rendition="#aq #c">XLI.</head>
                   <lb/>
                   <lg type="poem">
-                     <l>W<anchor xml:id="a80"/><unclear>e</unclear><note type="annotation"
+                     <l>W<anchor xml:id="a80"/><unclear reason="uncleanPrint">e</unclear><note type="annotation"
                            targetEnd="a80"><p>Sinngemäss soll hier ein e vorliegen. Allerdings ist
                               es unklar, ob hier ein (nicht gut erkennbares) e oder ein
                               (fälschlicherweise gedrucktes) c zu sehen ist. Das Vergleichsexemplar

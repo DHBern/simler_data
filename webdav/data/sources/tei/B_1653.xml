@@ -14777,16 +14777,17 @@
                <lb/>
             </div>
 
-            <div n="2" xml:id="n67">
+            <div n="2" type="poem" xml:id="n67">
                <head rendition="#c #b"><hi rendition="#aq">LXXIII.</hi>
                   <lb/> Haußfrid/<lb/> alß eine hochzeitliche Ehrengab<lb/> aufgeſtellt.</head>
                <lb/>
                <lg type="poem">
                   <lg n="1">
-                     <l rendition="#et"><hi rendition="#in">G</hi>Lük zu&#x366; dem Bra&#x364;utigam! glük zu&#x366;
-                        der ſcho&#x364;nen Braut!</l>
+                     <l rendition="#et"><hi rendition="#in">G</hi>Lük zu&#x366; dem
+                        Bra&#x364;utigam! glük zu&#x366; der ſcho&#x364;nen Braut!</l>
                      <lb/>
-                     <l rendition="#et">ru&#x364;fft ieder der auf heut ihr Ehrenhochzeit ſchaut:</l>
+                     <l rendition="#et">ru&#x364;fft ieder der auf heut ihr Ehrenhochzeit
+                        ſchaut:</l>
                      <lb/>
                      <l>der diener Gottes wünſcht vil ſegen und gedeyen</l>
                      <lb/>
@@ -14806,9 +14807,10 @@
                      <lb/>
                      <l>O! ein nohtwendig ſtuk den ehſtand recht zu&#x366; fu&#x364;hren:</l>
                      <lb/>
-                     <l xml:id="l78a" next="#l78b">wers hat/ wird ſegens vil; wer nicht/ den flu&#x366;ch geſpü-</l>
+                     <l xml:id="l78a" next="#l78b">wers hat/ wird ſegens vil; wer nicht/ den
+                        flu&#x366;ch geſpü-</l>
                      <lb break="no"/>
-                     <l xml:id="l78b" prev="#l87a">ren.</l>
+                     <l xml:id="l78b" prev="#l78a">ren.</l>
                      <lb/>
                      <l rendition="#et">Dem Ho&#x364;chſten ſonderlich der Haußfrid wolgefallt/</l>
                      <lb/>
@@ -14819,7 +14821,7 @@
                      <l>es mu&#x364;ſſen ren&#x342;t und gült/ wa&#x364;rds halber/ ihme
                         weichen:</l>
                      <lb/>
-                     
+
                      <fw place="bottom" type="catch">die</fw>
                      <lb/>
                      <pb n="201" facs="30218220"/>
@@ -14828,8 +14830,9 @@
                      <lb/>
                      <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                      <lb/>
-                     
-                     <l rendition="#et">die gu&#x364;ter in gemein ohn ihn nur armu&#x366;t ſind/</l>
+
+                     <l rendition="#et">die gu&#x364;ter in gemein ohn ihn nur armu&#x366;t
+                        ſind/</l>
                      <lb/>
                      <l rendition="#et">bey dem Haußfriden ich den armen reich befind.</l>
                   </lg>
@@ -14889,7 +14892,7 @@
                      <lb/>
                      <l>der liebe Gottesfrid/ und einigkeit auf erden.</l>
                      <lb/>
-                     
+
                      <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>nd</fw>
                      <lb/>
                      <pb n="202" facs="30218221"/>
@@ -14898,9 +14901,9 @@
                      <lb/>
                      <fw place="top" type="header">Allerhand</fw>
                      <lb/>
-                     
-                     <l rendition="#et"><hi rendition="#aq">U</hi>nd Syrach ſonderlich von dreyen dingen
-                        ſpricht/</l>
+
+                     <l rendition="#et"><hi rendition="#aq">U</hi>nd Syrach ſonderlich von dreyen
+                        dingen ſpricht/</l>
                      <lb/>
                      <l rendition="#et">daß ſie gefallen dem/ der ins verborgen ſicht:</l>
                      <lb/>
@@ -14928,23 +14931,26 @@
                <lb/>
             </div>
 
-            <div n="2" xml:id="n68">
+            <div n="2" type="poem" xml:id="n68">
                <head rendition="#b #c"><hi rendition="#aq">LXXIV.</hi>
                   <lb/> Hochzeitliches Klinggedicht.</head>
                <lb/>
                <lg type="poem">
-                  <l><hi rendition="#in">D</hi>Em menſchen iſt zwar gu&#x366;t/ daß er kein weib
-                     be-</l>
+                  <l rendition="#et" xml:id="l79a" next="#l79b"><hi rendition="#in">D</hi>Em
+                     menſchen iſt zwar gu&#x366;t/ daß er kein weib be-</l>
                   <lb break="no"/>
-                  <l>ru&#x364;hre/</l>
+                  <l xml:id="l79b" prev="#l79a">ru&#x364;hre/</l>
                   <lb/>
-                  <l>wie dan Sanct Paulus ſpricht/ und doch nicht widerſpricht/</l>
+                  <l xml:id="l80b" prev="#l80a">(ſpricht/</l>
                   <lb/>
+                  <l xml:id="l80a" next="#l80b">wie dan Sanct Paulus ſpricht/ und doch nicht
+                     wider-</l>
+                  <lb break="no"/>
                   <l>wan/ nach beſchaffenheit/ ein ieder ſich verpflicht:</l>
                   <lb/>
                   <l>unno&#x364;htig daß hierum man alle gründ' eynfu&#x364;hre.</l>
                   <lb/>
-                  <l>Vom ehſtand leſen wir/ daß er von Gott harꝛu&#x364;hre/</l>
+                  <l rendition="#et">Vom ehſtand leſen wir/ daß er von Gott harꝛu&#x364;hre/</l>
                   <lb/>
                   <l>und allen ehrlich ſey: das ehbeth unbeflekt:</l>
                   <lb/>
@@ -14952,20 +14958,18 @@
                   <lb/>
                   <l>und lo&#x364;ſchet ſeine brunſt auch wider die gebühre.</l>
                   <lb/>
-                  <l>Darum ein ieder mann ſein eigen weib beſtell/</l>
+                  <l rendition="#et">Darum ein ieder mann ſein eigen weib beſtell/</l>
                   <lb/>
                   <l>darum ein iedes weib ein eignen mann erwell/</l>
                   <lb/>
                   <l>wie alte Gottesfreund'/ und ietzund auch zu&#x366;gleiche</l>
                   <lb/>
-                  <l>mit andern wolgetahn die neuen ehleuht hie:</l>
+                  <l rendition="#et">mit andern wolgetahn die neuen ehleuht hie:</l>
                   <lb/>
-                  <l>O daß von ihnen man m<anchor xml:id="a141"/>o&#x364;<note type="annotation"
-                        targetEnd="a141"><p>kleines e etwas deutlicher in der SBB</p></note>g
-                     ſprechen ie und ie:</l>
+                  <l>O daß von ihnen man mo&#x364;g ſprechen ie und ie:</l>
                   <lb/>
-                  <l><hi rendition="#b">Jn Gott</hi> er gehet <hi rendition="#b">her</hi>/ und ſie
-                     iſt <hi rendition="#b">Huldenreiche!</hi></l>
+                  <l><hi rendition="#larger">Jn Gott</hi> er gehet <hi rendition="#larger">her/</hi>
+                     und ſie iſt <hi rendition="#larger">Huldenreiche!</hi></l>
                </lg>
                <lb/>
             </div>
@@ -15005,9 +15009,10 @@
                      <l rendition="#et">und die man iederzeit für gu&#x366;t und go&#x364;ttlich
                         helt.</l>
                      <lb/>
-                     <l>Dan/ was des ſteurmanns treu in ſchiffen kan ver-</l>
+                     <l xml:id="l81a" next="#l81b">Dan/ was des ſteurmanns treu in ſchiffen kan
+                        ver-</l>
                      <lb break="no"/>
-                     <l>richten;</l>
+                     <l xml:id="l81b" prev="#l81a">richten;</l>
                      <lb/>
                      <l>und was zu&#x366; ſtatt und land die Obrigkeiten
                            ſchlichten<supplied>;</supplied></l>
@@ -15254,9 +15259,10 @@
                      <lb/>
                      <l>dem andern ſeinen trunk/ zum vorderſten/ credentzen.</l>
                      <lb/>
-                     <l rendition="#et">Solch/ und dergleichen ſchimpf geſchehen ohn ver-</l>
+                     <l rendition="#et" xml:id="l82a" next="#l82b">Solch/ und dergleichen ſchimpf
+                        geſchehen ohn ver-</l>
                      <lb break="no"/>
-                     <l>nunft/</l>
+                     <l xml:id="l82b" prev="#l82a">nunft/</l>
                      <lb/>
                      <l rendition="#et">und finden keinen platz bey weyſer leuhten zunft.</l>
                      <lb/>
@@ -15326,438 +15332,458 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
 
-            <div n="2" xml:id="n247">
-               <head><hi rendition="#aq">LXXVI.</hi>
+            <div n="2" type="poem" xml:id="n247">
+               <head rendition="#b #c"><hi rendition="#aq">LXXVI.</hi>
                   <lb/> Tiſchzucht.</head>
                <lb/>
+
                <lg type="poem">
-                  <l><hi rendition="#in">K</hi>Om&#x303;t her und ho&#x364;rt mir zu&#x366;/ ihr/
-                     die ihr auß der wiegen</l>
-                  <lb/>
-                  <l>vor ſiben jahren ſchon/ ohn mu&#x366;terhülff geſtigen/</l>
-                  <lb/>
-                  <l>ich lehre Tiſcheszucht/ ohn die von altem har</l>
-                  <lb/>
-                  <l>des lieben vatters tiſch dem kind verbotten war.</l>
-               </lg>
-            </div>
+                  <lg n="1">
+                     <l><hi rendition="#in">K</hi>Om&#x303;t her und ho&#x364;rt mir zu&#x366;/ ihr/
+                        die ihr auß der wiegen</l>
+                     <lb/>
+                     <l>vor ſiben jahren ſchon/ ohn mu&#x366;terhülff geſtigen/</l>
+                     <lb/>
+                     <l rendition="#et">ich lehre Tiſcheszucht/ ohn die von altem har</l>
+                     <lb/>
+                     <l rendition="#et">des lieben vatters tiſch dem kind verbotten war.</l>
+                  </lg>
 
-            <div type="poem">
-               <head><lb/> Zu&#x366;rüſtung des tiſches.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>So wa&#x364;ſch die ha&#x364;nde nun/ und dan/ zu&#x366; rechter zeite/</l>
-                  <lb/>
-                  <l>das tiſchtu&#x366;ch nach der ſchnu&#x366;r/ und eben überſpreite:</l>
-                  <lb/>
-                  <l>ſetz auch den blattenring; wo nicht; an deſſe ſtatt/</l>
-                  <lb/>
-                  <l>in mitten auf den tiſch das ſonnengleiche blat.</l>
-                  <lb/>
-                  <l>Nach rechter ordnung leg die teller und die zwehlen/</l>
-                  <lb/>
-                  <l>die meſſer auch darzu&#x366;: es ſol kein lo&#x364;ffel fehlen:</l>
-                  <lb/>
-                  <l>des ſaltzes nicht vergiß: des brots bis eyngeda&#x364;nk.</l>
-                  <lb/>
-                  <l>die ſideln ruk herbey: die gla&#x364;ſer ſauber ſchwa&#x364;nk.</l>
-                  <lb/>
-                  <l>Jſt nun/ nach landes ſitt/ der tiſch gerüſt zum eſſen/</l>
-                  <lb/>
-                  <l>ſo werde des geba&#x364;tts zum Herꝛen nicht vergeſſen:</l>
-                  <lb/>
-                  <l>die augen/ ha&#x364;nd' und hertz zu&#x366; ihm heb überſich/</l>
-                  <lb/>
-                  <l>und um den ſegen ihn demu&#x364;htiglich anſprich.</l>
-               </lg>
-            </div>
+                  <lg n="2">
+                     <head rendition="#b #c">Zu&#x366;rüſtung des tiſches.</head>
+                     <lb/>
+                     <l>So wa&#x364;ſch die ha&#x364;nde nun/ und dan/ zu&#x366; rechter zeite/</l>
+                     <lb/>
+                     <l>das tiſchtu&#x366;ch nach der ſchnu&#x366;r/ und eben überſpreite:</l>
+                     <lb/>
+                     <l rendition="#et">ſetz auch den blattenring; wo nicht; an deſſe ſtatt/</l>
+                     <lb/>
+                     <l rendition="#et">in mitten auf den tiſch das ſonnengleiche blat.</l>
+                     <lb/>
+                     <l>Nach rechter ordnung leg die teller und die zwehlen/</l>
+                     <lb/>
+                     <l>die meſſer auch darzu&#x366;: es ſol kein lo&#x364;ffel fehlen:</l>
+                     <lb/>
+                     <l rendition="#et">des ſaltzes nicht vergiß: des brots bis
+                        eyngeda&#x364;nk.</l>
+                     <lb/>
+                     <l rendition="#et">die ſideln ruk herbey: die gla&#x364;ſer ſauber
+                        ſchwa&#x364;nk.</l>
+                     <lb/>
+                     <l>Jſt nun/ nach landes ſitt/ der tiſch gerüſt zum eſſen/</l>
+                     <lb/>
+                     <l>ſo werde des geba&#x364;tts zum Herꝛen nicht vergeſſen:</l>
+                     <lb/>
+                     <l rendition="#et">die augen/ ha&#x364;nd' und hertz zu&#x366; ihm heb
+                        überſich/</l>
+                     <lb/>
+                     <l rendition="#et">und um den ſegen ihn demu&#x364;htiglich anſprich.</l>
+                  </lg>
 
-            <div type="poem">
-               <head><lb/> Das tiſchdienen oder aufwarten.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Wan dan die eltern ſich mit ſpeiß und trank erlaben/</l>
+                  <lg n="3">
+                     <head rendition="#b #c">Das tiſchdienen oder aufwarten.</head>
+                     <lb/>
+                     <l>Wan dan die eltern ſich mit ſpeiß und trank erlaben/</l>
+                     <lb/>
+                     <l>und das aufwarten dir fürauß befohlen haben/</l>
+                     <lb/>
+                     <l rendition="#et">ſo ſtell dich barhaubt dar/ auf keinen fu&#x366;ß
+                        allein:</l>
+                     <lb/>
+                     <l rendition="#et" xml:id="l83a" next="#l83b">kratz/ ſpey und hu&#x366;ſt
+                        beyſeits/ mags nicht vermitten</l>
+                     <lb/>
+                     <l xml:id="l83b" prev="#l83a">ſeyn.</l>
+                     <lb/>
+                     <l>Die ha&#x364;nde nicht verberg: gib achtung auf den mangel:</l>
+                     <lb/>
+                     <l>doch gaff den gaſt nicht an mit offnem maul im angel:</l>
+                     <lb/>
+                     <l rendition="#et">trag auf und ab die ſpeiß/ und niemand mit beſchmirꝛ:</l>
+                     <lb/>
+                     <l rendition="#et">nicht überfüll zu&#x366;vil der ga&#x364;ſten
+                           trinkgeſc<supplied>hi</supplied>rꝛ.</l>
+                     <lb/>
+                     <fw place="bottom" type="catch">Mit</fw>
+
+                     <lb/>
+                     <pb n="209" facs="30218228"/>
+
+                     <fw place="top" type="pageNum">209</fw>
+                     <lb/>
+                     <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
+
+                     <lb/>
+                     <l>Mit ehrenbietung mu&#x366;ſt die follen überꝛeichen/</l>
+                     <lb/>
+                     <l>die la&#x364;ren nemmen ab mit gleichen ehrenzeichen/</l>
+                     <lb/>
+                     <l rendition="#et">und ſauber ſchwa&#x364;nken auß in einem waſſer friſch;</l>
+                     <lb/>
+                     <l rendition="#et">auf einmal tragen nur zwo blatten über tiſch.</l>
+                     <lb/>
+                     <l>geleiche ſpeiſen ſolſt gar nicht zu&#x366;ſamen ſtellen/</l>
+                     <lb/>
+                     <l>und fleiſſig hu&#x364;ten dich die gla&#x364;ſer umzu&#x366;fellen:</l>
+                     <lb/>
+                     <l rendition="#et">auch ſolſt du über den/ der ſitzet oben an/</l>
+                     <lb/>
+                     <l rendition="#et">nichts tragen auf und ab; ſu&#x366;ch einen andern plan.</l>
+                     <lb/>
+                     <l>Vor deme der noch ißt die blatt ſo lang laß ſtehen</l>
+                     <lb/>
+                     <l>bis er ſie ruket weg/ und heiſſet dich mit gehen:</l>
+                     <lb/>
+                     <l rendition="#et">und wan er brots begert/ ſo bring ihm eilend mehr;</l>
+                     <lb/>
+                     <l rendition="#et">doch nicht in bloſſer hand; auf einem teller her.</l>
+                  </lg>
+
+                  <lg n="4">
+                     <head rendition="#b #c">Gebührende zucht über tiſch.</head>
+                     <lb/>
+                     <l>Sitzſt aber ſelb zu&#x366; tiſch/ bey jungen oder alten/</l>
+                     <lb/>
+                     <l>ſo ſolſt die fu&#x364;ſſe ſtill und eng zu&#x366;ſamen halten:</l>
+                     <lb/>
+                     <l rendition="#et">die elenbogen dir nicht ſollen ſtützen ſeyn:</l>
+                     <lb/>
+                     <l rendition="#et">leg auch die arme nicht bis zu&#x366; denſelben eyn.</l>
+                     <lb/>
+                     <l>Zum aufrecht ſitzen ſol ein junger ſich gewehnen/</l>
+                     <lb/>
+                     <l>und mit den achßlen ſich nicht ungebürlich lehnen:</l>
+                     <lb/>
+                     <l rendition="#et" xml:id="l84a" next="#l84b">kratz nicht auf bloſſem haubt:
+                        lang nicht zum bu&#x366;ſen</l>
+                     <lb/>
+                     <l xml:id="l84b" prev="#l84a">(eyn:</l>
+                     <lb/>
+                     <l rendition="#et">das naſengrüblen gar laß underwegen ſeyn.</l>
+                     <lb/>
+                     <l>Beyſeits dich wend ſo du mu&#x366;ſt hu&#x366;ſten/ ſchnützen/ nieſſen:</l>
+                     <lb/>
+                     <l>das riechen an der ſpeiß wird ma&#x364;nniglich verdrieſſen:</l>
+                     <lb/>
+                     <l rendition="#et">dieſelbe ſolſt du nicht beſchauen immerdar/</l>
+                     <lb/>
+                     <l rendition="#et">biß auch der letſt darinn/ und ſchnell von dannen fahr.</l>
+                     <lb/>
+                     <l>Die koſt verꝛa&#x364;uchen laß/ um etwas auch erkalten:</l>
+                     <lb/>
+                     <l>des ſtarken blaſens dich ſolſt über tiſch enthalten:</l>
+                     <lb/>
+                     <l rendition="#et">in eines andern ort auß keiner blatten iß/</l>
+                     <lb/>
+                     <l rendition="#et">vil minder auf den geitz/ und dich nicht überfriß.</l>
+                     <lb/>
+                     <fw place="bottom" type="sig">P</fw>
+                     <lb/>
+                     <fw place="bottom" type="catch">Es</fw>
+
+                     <lb/>
+                     <pb n="210" facs="30218229"/>
+
+                     <fw place="top" type="pageNum">210</fw>
+                     <lb/>
+                     <fw place="top" type="header">Allerhand</fw>
+
+                     <lb/>
+                     <l>Es ſol dein mund nicht eh den andern biſſen faſſen/</l>
+                     <lb/>
+                     <l>bis du durch deinen ſchlund den erſten abgelaſſen:</l>
+                     <lb/>
+                     <l rendition="#et">ſo trink auch nicht weil du noch etwas in dem mund/</l>
+                     <lb/>
+                     <l rendition="#et">vil minder red/ ja nichts/ ohn ſonders gu&#x366;ten
+                        grund.</l>
+                     <lb/>
+                     <l>Mit dreyen fingern faß die fürgeſetzten ſpeiſen:</l>
+                     <lb/>
+                     <l>das glaß mit einer hand: im trinken ſolſt nicht pfeiſen:</l>
+                     <lb/>
+                     <l rendition="#et">d<supplied>i</supplied>e beſte biſſelein mu&#x366;ſt nicht
+                        außklauben dir:</l>
+                     <lb/>
+                     <l rendition="#et">mit waſſer miſch den wein in deinem trinkgeſchirꝛ.</l>
+                     <lb/>
+                     <l>Zu&#x366;tadeln nicht geda&#x364;nk die ſpeiſen und getra&#x364;nke/</l>
+                     <lb/>
+                     <l>noch auch zu&#x364;ru&#x364;hmen die: das maul nicht drüber
+                        ha&#x364;nke:</l>
+                     <lb/>
+                     <l rendition="#et">das/ ſo du haſt gekoſt/ leg keinem andern für/</l>
+                     <lb/>
+                     <l rendition="#et">und wirf von dir nichts hin bis zu&#x366; der
+                        ſtubenthür.</l>
+                     <lb/>
+                     <l>Die ſpeiſen/ auſſert fiſch/ mu&#x366;ſt mit dem meſſer ſchneiden/</l>
+                     <lb/>
+                     <l>doch im eynſchieben mu&#x366;ſt das meſſer ga&#x364;ntzlich meiden/</l>
+                     <lb/>
+                     <l rendition="#et">daſſelb ſey ſonder ſchmutz/ wan du mit nimmeſt ſaltz;</l>
+                     <lb/>
+                     <l rendition="#et">beſchmier das tiſchtu&#x366;ch nicht mit ſoſſen oder
+                        ſchmaltz.</l>
+                     <lb/>
+                     <l>Die finger nicht beſchlek; doch mu&#x366;ſt ſie underzwüſchen;</l>
+                     <lb/>
+                     <l>wan du brot ſchneiden wilſt; mit deiner zwehlen wüſchen:</l>
+                     <lb/>
+                     <l rendition="#et">nim&#x342; nimmer von dem brot die rinden nur allein:</l>
+                     <lb/>
+                     <l rendition="#et">zerſchneid auch nicht zu&#x366; vil/ und laß das
+                        ho&#x364;len ſeyn.</l>
+                     <lb/>
+                     <l>Du ſolſt auß deinem mund nichts auf den teller legen:</l>
+                     <lb/>
+                     <l>nicht alles eſſen auf: auch keine blatten fegen/</l>
+                     <lb/>
+                     <l rendition="#et">das angebiſſen brot nicht widrum dunk hineyn;</l>
+                     <lb/>
+                     <l rendition="#et" xml:id="l85a" next="#l85b">noch wie der aff umgaff/ und
+                        ſchmatz nicht wie das</l>
+                     <lb/>
+                     <l xml:id="l85b" prev="#l85a">ſchwein.</l>
+                     <lb/>
+                     <l>Den wu&#x364;ſten hünden gleich/ die beine nicht benage</l>
+                     <lb/>
+                     <l>noch/ wegen ihres marks/ auf brot und teller ſchlage:</l>
+                     <lb/>
+                     <l rendition="#et">ſaug auch nicht laut daran: nim&#x342; aber von dem bein</l>
+                     <lb/>
+                     <l rendition="#et">das fleiſch und mark hinweg mit einem ma&#x364;ſſerlein.</l>
+                     <lb/>
+                     <fw place="bottom" type="catch">die</fw>
+
+                     <lb/>
+                     <pb n="211" facs="30218230"/>
+
+                     <fw place="top" type="pageNum">211</fw>
+                     <lb/>
+                     <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
+
+                     <lb/>
+                     <l>die bein' ero&#x364;ffne nicht: dieweil es übel ſtehet</l>
+                     <lb/>
+                     <l>wan darmit über tiſch ein junger menſch umgehet:</l>
+                     <lb/>
+                     <l rendition="#et">und/ was noch mehr iſt hart/ mit keinem meſſer brich/</l>
+                     <lb/>
+                     <l rendition="#et">vil minder beiß es auf mit za&#x364;nen grimmiglich.</l>
+                     <lb/>
+                     <l>Dunk deinen wein nicht auß/ und ſürffle nicht im trinken</l>
+                     <lb/>
+                     <l>ja/ ſchenk dir auch nicht eyn ohn deines vatters winken:</l>
+                     <lb/>
+                     <l rendition="#et">nichts auß dem ba&#x364;cher blaß/ und trink nicht gar
+                        zu&#x366; gach</l>
+                     <lb/>
+                     <l rendition="#et" xml:id="l86a" next="#l86b">mit zwehlen wüſch den mund darvor
+                        und auch dar-</l>
+                     <lb break="no"/>
+                     <l xml:id="l86b" prev="#l86a">nach.</l>
+                     <lb/>
+                     <l>Die zwehlen und das brot/ den teller und das meſſer</l>
+                     <lb/>
+                     <l>richt wie der meiſte theil/ und ein geſchikter eſſer:</l>
+                     <lb/>
+                     <l rendition="#et">in za&#x364;hnen grübel nicht mit eyſen oder ſtahl:</l>
+                     <lb/>
+                     <l rendition="#et">vermeid auch allen zorn bey einem freundemahl.</l>
+                     <lb/>
+                     <l>Mit urlaub/ und der erſt ſolſt von dem tiſch aufſtehen/</l>
+                     <lb/>
+                     <l>und/ nach dem ſa&#x364;genwunſch/ mit deinem teller gehen:</l>
+                     <lb/>
+                     <l rendition="#et">wa&#x364;ſch deine ha&#x364;nde rein; und um die ſpeiß und
+                        trank/</l>
+                     <lb/>
+                     <l rendition="#et">ſag Gott/ mit lauter ſtim&#x342;/ von hertzen lob und
+                        dank.</l>
+                  </lg>
+
+                  <lg n="5">
+                     <head rendition="#b #c">Das aufnemmen des tiſches.</head>
+                     <lb/>
+                     <l>Wan nun die mahlzeit ietzt ihr endſchafft hat bekom&#x342;en/</l>
+                     <lb/>
+                     <l>wan ihren abſcheid auch die ga&#x364;ſte gar genommen/</l>
+                     <lb/>
+                     <l rendition="#et">ſo nim&#x342; alßdan den tiſch/ nach ordnung/ widrum
+                        auf/</l>
+                     <lb/>
+                     <l rendition="#et">und nicht/ gleich einem berg/ das gſchirꝛ zu&#x366;ſamen
+                        hauf.</l>
+                     <lb/>
+                     <l>Die gla&#x364;ſer erſtlich nim&#x342;/ und faß ſie bey den
+                        fu&#x364;ſſen/</l>
+                     <lb/>
+                     <l>die ſtümplein ſolſt darauß in eine kannen gieſſen:</l>
+                     <lb/>
+                     <l rendition="#et">die noch nicht la&#x364;ren gſchirꝛ nicht auf einander
+                        ſtell/</l>
+                     <lb/>
+                     <l rendition="#et">zur überblibnen ſpeiß die gro&#x364;ſte blatt erwehl.</l>
+                     <lb/>
+                     <l>Das ſaltz beſonder tu&#x366;h; die lo&#x364;ffel all zu&#x366;ſamen</l>
+                     <lb/>
+                     <l>auf einen teller leg: die meſſer auch mit namen:</l>
+                     <lb/>
+                     <l rendition="#et">die kleinern ſtüklein brot im tiſchtu&#x366;ch trag
+                        hinweg:</l>
+                     <lb/>
+                     <l rendition="#et">das tu&#x366;ch im korb erſchütt/ und dan zu&#x366;ſamen
+                        leg.</l>
+                     <lb/>
+                  </lg>
+                  <fw place="bottom" type="sig">P ij</fw>
                   <lb/>
-                  <l>und das aufwarten dir fürauß befohlen haben/</l>
-                  <lb/>
-                  <l>ſo ſtell dich barhaubt dar/ auf keinen fu&#x366;ß allein:</l>
-                  <lb/>
-                  <l>kratz/ ſpey und hu&#x366;ſt beyſeits/ mags nicht vermitten</l>
-                  <lb/>
-                  <l>ſeyn.</l>
-                  <lb/>
-                  <l>Die ha&#x364;nde nicht verberg: gib achtung auf den mangel:</l>
-                  <lb/>
-                  <l>doch gaff den gaſt nicht an mit offnem maul im angel:</l>
-                  <lb/>
-                  <l>trag auf und ab die ſpeiß/ und niemand mit beſchmirꝛ:</l>
-                  <lb/>
-                  <l>nicht überfüll zu&#x366;vil der ga&#x364;ſten
-                     trinkgeſc<supplied>hi</supplied>rꝛ.</l>
-                  <lb/>
-                  <fw place="bottom" type="catch">Mit</fw>
+                  <fw place="bottom" type="catch">Ver-</fw>
 
                   <lb/>
-                  <pb n="209" facs="30218228"/>
+                  <pb n="212" facs="30218231"/>
 
-                  <fw place="top" type="pageNum">209</fw>
-                  <lb/>
-                  <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
-
-                  <lb/>
-                  <l>Mit ehrenbietung mu&#x366;ſt die follen überꝛeichen/</l>
-                  <lb/>
-                  <l>die la&#x364;ren nemmen ab mit gleichen ehrenzeichen/</l>
-                  <lb/>
-                  <l>und ſauber ſchwa&#x364;nken auß in einem waſſer friſch;</l>
-                  <lb/>
-                  <l>auf einmal tragen nur zwo blatten über tiſch.</l>
-                  <lb/>
-                  <l>geleiche ſpeiſen ſolſt gar nicht zu&#x366;ſamen ſtellen/</l>
-                  <lb/>
-                  <l>und fleiſſig hu&#x364;ten dich die gla&#x364;ſer umzu&#x366;fellen:</l>
-                  <lb/>
-                  <l>auch ſolſt du über den/ der ſitzet oben an/</l>
-                  <lb/>
-                  <l>nichts tragen auf und ab; ſu&#x366;ch einen andern plan.</l>
-                  <lb/>
-                  <l>Vor deme der noch ißt die blatt ſo lang laß ſtehen</l>
-                  <lb/>
-                  <l>bis er ſie ruket weg/ und heiſſet dich mit gehen:</l>
-                  <lb/>
-                  <l>und wan er brots begert/ ſo bring ihm eilend mehr;</l>
-                  <lb/>
-                  <l>doch nicht in bloſſer hand; auf einem teller her.</l>
-               </lg>
-            </div>
-
-            <div type="poem">
-               <head><lb/> Gebührende zucht über tiſch.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Sitzſt aber ſelb zu&#x366; tiſch/ bey jungen oder alten/</l>
-                  <lb/>
-                  <l>ſo ſolſt die fu&#x364;ſſe ſtill und eng zu&#x366;ſamen halten:</l>
-                  <lb/>
-                  <l>die elenbogen dir nicht ſollen ſtützen ſeyn:</l>
-                  <lb/>
-                  <l>leg auch die arme nicht bis zu&#x366; denſelben eyn.</l>
-                  <lb/>
-                  <l>Zum aufrecht ſitzen ſol ein junger ſich gewehnen/</l>
-                  <lb/>
-                  <l>und mit den achßlen ſich nicht ungebürlich lehnen:</l>
-                  <lb/>
-                  <l>kratz nicht auf bloſſem haubt: lang nicht zum bu&#x366;ſen eyn:</l>
-                  <lb/>
-                  <l>das naſengrüblen gar laß underwegen ſeyn.</l>
-                  <lb/>
-                  <l>Beyſeits dich wend ſo du mu&#x366;ſt hu&#x366;ſten/ ſchnützen/ nieſſen:</l>
-                  <lb/>
-                  <l>das riechen an der ſpeiß wird ma&#x364;nniglich verdrieſſen:</l>
-                  <lb/>
-                  <l>dieſelbe ſolſt du nicht beſchauen immerdar/</l>
-                  <lb/>
-                  <l>biß auch der letſt darinn/ und ſchnell von dannen fahr.</l>
-                  <lb/>
-                  <l>Die koſt verꝛa&#x364;uchen laß/ um etwas auch erkalten:</l>
-                  <lb/>
-                  <l>des ſtarken blaſens dich ſolſt über tiſch enthalten:</l>
-                  <lb/>
-                  <l>in eines andern ort auß keiner blatten iß/</l>
-                  <lb/>
-                  <l>vil minder auf den geitz/ und dich nicht überfriß.</l>
-                  <lb/>
-                  <fw place="bottom" type="sig">P</fw>
-                  <lb/>
-                  <fw place="bottom" type="catch">Es</fw>
-
-                  <lb/>
-                  <pb n="210" facs="30218229"/>
-
-                  <fw place="top" type="pageNum">210</fw>
+                  <fw place="top" type="pageNum">212</fw>
                   <lb/>
                   <fw place="top" type="header">Allerhand</fw>
 
-                  <lb/>
-                  <l>Es ſol dein mund nicht eh den andern biſſen faſſen/</l>
-                  <lb/>
-                  <l>bis du durch deinen ſchlund den erſten abgelaſſen:</l>
-                  <lb/>
-                  <l>ſo trink auch nicht weil du noch etwas in dem mund/</l>
-                  <lb/>
-                  <l>vil minder red/ ja nichts/ ohn ſonders gu&#x366;ten grund.</l>
-                  <lb/>
-                  <l>Mit dreyen fingern faß die fürgeſetzten ſpeiſen:</l>
-                  <lb/>
-                  <l>das glaß mit einer hand: im trinken ſolſt nicht pfeiſen:</l>
-                  <lb/>
-                  <l>d<supplied>i</supplied>e beſte biſſelein mu&#x366;ſt nicht außklauben dir:</l>
-                  <lb/>
-                  <l>mit waſſer miſch den wein in deinem trinkgeſchirꝛ.</l>
-                  <lb/>
-                  <l>Zu&#x366;tadeln nicht geda&#x364;nk die ſpeiſen und getra&#x364;nke/</l>
-                  <lb/>
-                  <l>noch auch zu&#x364;ru&#x364;hmen die: das maul nicht drüber ha&#x364;nke:</l>
-                  <lb/>
-                  <l>das/ ſo du haſt gekoſt/ leg keinem andern für/</l>
-                  <lb/>
-                  <l>und wirf von dir nichts hin bis zu&#x366; der ſtubenthür.</l>
-                  <lb/>
-                  <l>Die ſpeiſen/ auſſert fiſch/ mu&#x366;ſt mit dem meſſer ſchneiden/</l>
-                  <lb/>
-                  <l>doch im eynſchieben mu&#x366;ſt das meſſer ga&#x364;ntzlich meiden/</l>
-                  <lb/>
-                  <l>daſſelb ſey ſonder ſchmutz/ wan du mit nimmeſt ſaltz;</l>
-                  <lb/>
-                  <l>beſchmier das tiſchtu&#x366;ch nicht mit ſoſſen oder ſchmaltz.</l>
-                  <lb/>
-                  <l>Die finger nicht beſchlek; doch mu&#x366;ſt ſie underzwüſchen;</l>
-                  <lb/>
-                  <l>wan du brot ſchneiden wilſt; mit deiner zwehlen wüſchen:</l>
-                  <lb/>
-                  <l>nim&#x342; nimmer von dem brot die rinden nur allein:</l>
-                  <lb/>
-                  <l>zerſchneid auch nicht zu&#x366; vil/ und laß das ho&#x364;len ſeyn.</l>
-                  <lb/>
-                  <l>Du ſolſt auß deinem mund nichts auf den teller legen:</l>
-                  <lb/>
-                  <l>nicht alles eſſen auf: auch keine blatten fegen/</l>
-                  <lb/>
-                  <l>das angebiſſen brot nicht widrum dunk hineyn;</l>
-                  <lb/>
-                  <l>noch wie der aff umgaff/ und ſchmatz nicht wie das</l>
-                  <lb/>
-                  <l>ſchwein.</l>
-                  <lb/>
-                  <l>Den wu&#x364;ſten hünden gleich/ die beine nicht benage</l>
-                  <lb/>
-                  <l>noch/ wegen ihres marks/ auf brot und teller ſchlage:</l>
-                  <lb/>
-                  <l>ſaug auch nicht laut daran: nim&#x342; aber von dem bein</l>
-                  <lb/>
-                  <l>das fleiſch und mark hinweg mit einem ma&#x364;ſſerlein.</l>
-                  <lb/>
-                  <fw place="bottom" type="catch">die</fw>
-
-                  <lb/>
-                  <pb n="211" facs="30218230"/>
-
-                  <fw place="top" type="pageNum">211</fw>
-                  <lb/>
-                  <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
-
-                  <lb/>
-                  <l>die bein' ero&#x364;ffne nicht: dieweil es übel ſtehet</l>
-                  <lb/>
-                  <l>wan darmit über tiſch ein junger menſch umgehet:</l>
-                  <lb/>
-                  <l>und/ was noch mehr iſt hart/ mit keinem meſſer brich/</l>
-                  <lb/>
-                  <l>vil minder beiß es auf mit za&#x364;nen grimmiglich.</l>
-                  <lb/>
-                  <l>Dunk deinen wein nicht auß/ und ſürffle nicht im trinken</l>
-                  <lb/>
-                  <l>ja/ ſchenk dir auch nicht eyn ohn deines vatters winken:</l>
-                  <lb/>
-                  <l>nichts auß dem ba&#x364;cher blaß/ und trink nicht gar zu&#x366; gach</l>
-                  <lb/>
-                  <l>mit zwehlen wüſch den mund darvor und auch dar-</l>
-                  <lb break="no"/>
-                  <l>nac<supplied>h</supplied>.</l>
-                  <lb/>
-                  <l>Die zwehlen und das brot/ den teller und das meſſer</l>
-                  <lb/>
-                  <l>richt wie der meiſte theil/ und ein geſchikter eſſer:</l>
-                  <lb/>
-                  <l>in za&#x364;hnen grübel nicht mit eyſen oder ſtahl:</l>
-                  <lb/>
-                  <l>vermeid auch allen zorn bey einem freundemahl.</l>
-                  <lb/>
-                  <l>Mit urlaub/ und der erſt ſolſt von dem tiſch aufſtehen/</l>
-                  <lb/>
-                  <l>und/ nach dem ſa&#x364;genwunſch/ mit deinem teller gehen:</l>
-                  <lb/>
-                  <l>wa&#x364;ſch deine ha&#x364;nde rein; und um die ſpeiß und trank/</l>
-                  <lb/>
-                  <l>ſag Gott/ mit lauter ſtim&#x342;/ von hertzen lob und dank.</l>
+                  <lg n="6">
+                     <head rendition="#b #c">Vermahnung an die kinder.</head>
+                     <lb/>
+                     <l>Sol nun/ o liebes kind! die Tiſcheszucht dich zieren/</l>
+                     <lb/>
+                     <l>ſo mu&#x366;ſt hierneben auch ein frommes leben fu&#x364;hren:</l>
+                     <lb/>
+                     <l rendition="#et">den eltern/ lehrern/ und fürgſetzten in gemein</l>
+                     <lb/>
+                     <l rendition="#et">im Herꝛen/ williglich/ und ſtets gehorſam ſeyn.</l>
+                  </lg>
                </lg>
             </div>
 
-            <div type="poem">
-               <head><lb/> Das aufnemmen des tiſches.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Wan nun die mahlzeit ietzt ihr endſchafft hat bekom&#x342;en/</l>
-                  <lb/>
-                  <l>wan ihren abſcheid auch die ga&#x364;ſte gar genommen/</l>
-                  <lb/>
-                  <l>ſo nim&#x342; alßdan den tiſch/ nach ordnung/ widrum auf/</l>
-                  <lb/>
-                  <l>und nicht/ gleich einem berg/ das gſchirꝛ zu&#x366;ſamen hauf<anchor
-                        xml:id="a151"/>.<note type="annotation" targetEnd="a151"><p>einfacher Punkt
-                           in der SBB</p></note></l>
-                  <lb/>
-                  <l>Die gla&#x364;ſer erſtlich nim&#x342;/ und faß ſie bey den fu&#x364;ſſen/</l>
-                  <lb/>
-                  <l>die ſtümplein ſolſt darauß in eine kannen gieſſen:</l>
-                  <lb/>
-                  <l>die noch nicht la&#x364;ren gſchirꝛ nicht auf einander ſtell/</l>
-                  <lb/>
-                  <l>zur überblibnen ſpeiß die gro&#x364;ſte blatt erwehl.</l>
-                  <lb/>
-                  <l>Das ſaltz beſonder tu&#x366;h; die lo&#x364;ffel all zu&#x366;ſamen</l>
-                  <lb/>
-                  <l>auf einen teller leg: die meſſer auch mit namen:</l>
-                  <lb/>
-                  <l>die kleinern ſtüklein brot im tiſchtu&#x366;ch trag hinweg:</l>
-                  <lb/>
-                  <l>das tu&#x366;ch im korb erſchütt/ und dan zu&#x366;ſamen leg.</l>
-               </lg>
-               <lb/>
-            </div>
-            <fw place="bottom" type="sig"><anchor xml:id="a152"/>P ij<note type="annotation"
-                  targetEnd="a152"><p>P ij und Ver- etwas deutlicher in der SBB</p></note></fw>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
-            <fw place="bottom" type="catch"><anchor xml:id="a153"/>Ver-<note type="annotation"
-                  targetEnd="a153"><p>P ij und Ver- etwas deutlicher in der SBB</p></note></fw>
 
-            <lb/>
-            <pb n="212" facs="30218231"/>
-
-            <fw place="top" type="pageNum">212</fw>
-            <lb/>
-            <fw place="top" type="header">Allerhand</fw>
-
-            <div type="poem">
-               <head><lb/> Vermahnung an die kinder.</head>
+            <div n="2" type="poem" xml:id="n248">
+               <head rendition="#c #b">Beſchreibung<lb/> des ungeſunden Geſund-<lb break="no"/>
+                  heittrinkens.</head>
                <lb/>
-               <lg type="poem">
-                  <l>Sol nun/ o liebes kind! die Tiſcheszucht dich zieren/</l>
-                  <lb/>
-                  <l>ſo mu&#x366;ſt hierneben auch ein frommes leben fu&#x364;hren:</l>
-                  <lb/>
-                  <l>den eltern/ lehrern/ und fürgſetzten in gemein</l>
-                  <lb/>
-                  <l>im Herꝛen/ williglich/ und ſtets gehorſam ſeyn.</l>
-               </lg>
-            </div>
 
-            <div n="2" xml:id="n248">
-               <head>Beſchreibung <lb/> des ungeſunden Geſund- <lb break="no"/> heittrinkens.</head>
-               <lb/>
-               <lg type="poem">
+               <lg n="1">
                   <l><hi rendition="#in">K</hi>Om&#x342;t/ jung und alte kom&#x342;t! ihr ſolt da
                      wunder ſehen/</l>
                   <lb/>
                   <l>wie doch bey Bacchusfeſt Geſundheittrünk umgehen/</l>
                   <lb/>
-                  <l>ſo gar daß ſie; da ſie ſeyn ſolten ein<anchor xml:id="a154"/>'<note
-                        type="annotation" targetEnd="a154"><p>das hier etwas unklare Apostroph ist
-                           auch in der SBB</p></note> artzney;</l>
+                  <l rendition="#et">ſo gar daß ſie; da ſie ſeyn ſolten ein' artzney;</l>
                   <lb/>
-                  <l>wo nicht den tod/ iedoch vil krankheit bringen bey.</l>
+                  <l rendition="#et">wo nicht den tod/ iedoch vil krankheit bringen bey.</l>
                </lg>
-            </div>
 
-            <div type="poem">
-               <head><lb/> Ru&#x366;hmloſe ſatzungen der Geſund- <lb break="no"/>
-                  heitſa&#x364;uffer.</head>
-               <lb/>
-               <lg type="poem">
+               <lg n="2">
+                  <head rendition="#b #c">Ru&#x366;hmloſe ſatzungen der Geſund-<lb break="no"/>
+                     heitſa&#x364;uffer.</head>
+                  <lb/>
                   <l>Bey ſolchem fra&#x364;ßmahl nun zu&#x366; oberſt wird geſetzet</l>
                   <lb/>
                   <l>wer ſich/ für ander auß/ mit ra&#x364;benſafft benetzet:</l>
                   <lb/>
-                  <l>doch kommen ſie in dem/ gemeinlich/ überein/</l>
+                  <l rendition="#et">doch kommen ſie in dem/ gemeinlich/ überein/</l>
                   <lb/>
-                  <l>daß ihrer keiner nicht wil unbeſoffen ſeyn:</l>
+                  <l rendition="#et">daß ihrer keiner nicht wil unbeſoffen ſeyn:</l>
                   <lb/>
                   <l>den wein auch keiner bald/ das waſſer alle ſpahren:</l>
                   <lb/>
                   <l>dan/ erſt in foller weis/ Geſundheittrünk' umfahren:</l>
                   <lb/>
-                  <l>in welchen/ ru&#x366;hmlos zwar/ iedoch mit ordnung auch/</l>
+                  <l rendition="#et">in welchen/ ru&#x366;hmlos zwar/ iedoch mit ordnung auch/</l>
                   <lb/>
-                  <l>drey ſonderbare ſtük' erfordert ihr gebrauch.</l>
+                  <l rendition="#et">drey ſonderbare ſtük' erfordert ihr gebrauch.</l>
                   <lb/>
                   <l>Zu&#x366; erſt/ ein groß geſchirꝛ; weil groß und hoch erhaben</l>
                   <lb/>
                   <l>der jenig/ welchen ietz ihr umtrunk ſol erlaben.</l>
                   <lb/>
-                  <l>So denne ſchenket man des allerbeſten eyn:</l>
+                  <l rendition="#et">So denne ſchenket man des allerbeſten eyn:</l>
                   <lb/>
-                  <l>weil ſeine gu&#x364;te ſol der tugend zeichen ſeyn/</l>
+                  <l rendition="#et">weil ſeine gu&#x364;te ſol der tugend zeichen ſeyn/</l>
                   <lb/>
-                  <l>war-</l>
-                  <lb break="no"/>
+
+                  <fw place="bottom" type="catch">war-</fw>
+                  <lb/>
                   <pb n="213" facs="30218232"/>
 
                   <fw place="top" type="pageNum">213</fw>
                   <lb/>
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
+
                   <l>warmit gemeinter herꝛ/ für andre/ ſey gezieret:</l>
                   <lb/>
                   <l>der aber/ laſterfoll/ ſich ſelber nicht regieret:</l>
                   <lb/>
-                  <l>auch ſol ein gu&#x366;t getra&#x364;nk zu&#x366;gleich andeuten frey/</l>
+                  <l rendition="#et">auch ſol ein gu&#x366;t getra&#x364;nk zu&#x366;gleich andeuten
+                     frey/</l>
                   <lb/>
-                  <l>daß ja das beſt im hauß in ſeinen dienſten ſey.</l>
+                  <l rendition="#et">daß ja das beſt im hauß in ſeinen dienſten ſey.</l>
                   <lb/>
                   <l>Zu&#x366;letzt wil ihr geſatz/ daß ieder/ ohn beſchwa&#x364;ren/</l>
                   <lb/>
                   <l>diß gſchirꝛ/ wie groß es ſey/ in eim trunk ſolle la&#x364;ren/</l>
                   <lb/>
-                  <l>zur anzeig wie geſchwind zu&#x366; dienen er geneigt</l>
+                  <l rendition="#et">zur anzeig wie geſchwind zu&#x366; dienen er geneigt</l>
                   <lb/>
-                  <l>dem herꝛen/ dem hierdurch werd billich ehr erzeigt.</l>
+                  <l rendition="#et">dem herꝛen/ dem hierdurch werd billich ehr erzeigt.</l>
                   <lb/>
                   <l>So mu&#x366;ß ihr ieder auch/ die diß geſatze bra&#x364;chen/</l>
                   <lb/>
                   <l>noch einen kehren um/ ohn alles widerſpra&#x364;chen:</l>
                   <lb/>
-                  <l>doch findt man deren wol/ die diſes wenig irꝛt/</l>
+                  <l rendition="#et">doch findt man deren wol/ die diſes wenig irꝛt/</l>
                   <lb/>
-                  <l>ob es gleich ſinn und hirn verirꝛet und verwirꝛt.</l>
+                  <l rendition="#et">ob es gleich ſinn und hirn verirꝛet und verwirꝛt.</l>
                </lg>
-            </div>
 
-            <div type="poem">
-               <head><lb/> Gemeiner Geſundheittrunk.</head>
-               <lb/>
-               <lg type="poem">
+               <lg n="3">
+                  <head rendition="#b #c">Gemeiner Geſundheittrunk.</head>
+                  <lb/>
                   <l>Herꝛ Witzla&#x364;r iſt gezeug/ und weißt hiervon zu&#x366; ſingen:</l>
                   <lb/>
                   <l>dan/ alß Herꝛ Allzeitfoll ihm einen thate bringen</l>
                   <lb/>
-                  <l>auf aller gſundheit hin/ und er ihn ſchiket fort</l>
+                  <l rendition="#et">auf aller gſundheit hin/ und er ihn ſchiket fort</l>
                   <lb/>
-                  <l>zu&#x366; bru&#x366;der Wakelfu&#x366;ß/ nur halber außgebort:</l>
+                  <l rendition="#et">zu&#x366; bru&#x366;der Wakelfu&#x366;ß/ nur halber
+                     außgebort:</l>
                   <lb/>
                   <l>da hieß man ihme bald/ gantz foll/ eynſcha&#x364;nken wider;</l>
                   <lb/>
                   <l>und forthin iedem auch der einen ſtelle nider:</l>
                   <lb/>
-                  <l>doch war ihm diſes nicht ein ſondersſchwa&#x364;re bu&#x366;ß/</l>
+                  <l rendition="#et">doch war ihm diſes nicht ein ſondersſchwa&#x364;re
+                     bu&#x366;ß/</l>
                   <lb/>
-                  <l>garauſſend bracht er ihn dem alten Wakelfu&#x366;ß.</l>
+                  <l rendition="#et">garauſſend bracht er ihn dem alten Wakelfu&#x366;ß.</l>
                   <lb/>
                   <l>Jetz gilt es/ Vilſauff/ dir: du arger feind dem waſſer/</l>
                   <lb/>
                   <l>dir gilt es/ bru&#x366;der/ dir den man ſonſt nennet Praſſer.</l>
                   <lb/>
-                  <l>Nur flux/ es blanget mich zu&#x366; lo&#x364;ſchen meinen durſt/</l>
+                  <l rendition="#et">Nur flux/ es blanget mich zu&#x366; lo&#x364;ſchen meinen
+                     durſt/</l>
                   <lb/>
-                  <l>dan ich gezechet hab von einer reſſen wurſt.</l>
+                  <l rendition="#et">dan ich gezechet hab von einer reſſen wurſt.</l>
                   <lb/>
                   <l>Nunmehr iſt es an dir/ du leichter Luffteſpringer/</l>
                   <lb/>
                   <l>ich nim&#x342; ihn von dir an/ und brings dem Zeitungbringer.</l>
                   <lb/>
-                  <l>Es darf vexierens nicht/ was ich erzell' iſt war:</l>
+                  <l rendition="#et">Es darf vexierens nicht/ was ich erzell' iſt war:</l>
                   <lb/>
-                  <l>geſegnet ſey dein trunk: zum Schnarcher ich ietz fahr.</l>
+                  <l rendition="#et">geſegnet ſey dein trunk: zum Schnarcher ich ietz fahr.</l>
                   <lb/>
+
                   <fw place="bottom" type="sig">P iij</fw>
                   <lb/>
                   <fw place="bottom" type="catch">Ha!</fw>
@@ -15768,71 +15794,66 @@
                   <lb/>
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
+
                   <l>Ha! iſt es dan an mir? ſo gilt es dir/ Gu&#x366;tgeber.</l>
                   <lb/>
                   <l>Herꝛ Dürꝛmund/ ich wil dich. Der trunk erfriſch die leber!</l>
                   <lb/>
-                  <l>Mein herꝛ Großſpra&#x364;cher dir/ in demu&#x366;t/ bring ich eins;</l>
+                  <l rendition="#et">Mein herꝛ Großſpra&#x364;cher dir/ in demu&#x366;t/ bring ich
+                     eins;</l>
                   <lb/>
-                  <l>du biſt ein wundersmann; verbringeſt aber keins.</l>
+                  <l rendition="#et">du biſt ein wundersmann; verbringeſt aber keins.</l>
                   <lb/>
                   <l>Nachtvogel/ deinen ich bey nahem ha&#x364;tt vergeſſen.</l>
                   <lb/>
                   <l>Es iſt noch alle zeit: laß nur deſt beſſer meſſen:</l>
                   <lb/>
-                  <l>dan/ weil der trunk bey mir erꝛeicht ſein end und zil/</l>
+                  <l rendition="#et">dan/ weil der trunk bey mir erꝛeicht ſein end und zil/</l>
                   <lb/>
-                  <l>des Fürſten Gſundheit ich hiemit anheben wil.</l>
+                  <l rendition="#et">des Fürſten Gſundheit ich hiemit anheben wil.</l>
                </lg>
-            </div>
 
-            <div type="poem">
-               <head><lb/> Geſundheittrunk groſſer <lb/> Herꝛen.</head>
-               <lb/>
-               <lg type="poem">
+               <lg n="4">
+                  <head rendition="#b #c">Geſundheittrunk groſſer<lb/> Herꝛen.</head>
+                  <lb/>
                   <l>Des Fürſten Gſundheit gilt! ietz wird es recht angehen;</l>
                   <lb/>
-                  <l>es wil Herꝛ Allzeit<anchor xml:id="a155"/><note type="annotation"
-                        targetEnd="a155"><p>Allzeitfoll wird auf der vorhergehenden Seite
-                           zusammengeschrieben; der Abstand hier ist vielleicht ein
-                        Druckfehler</p></note> foll bey diſem umtrunk ſtehen:</l>
+                  <l>es wil Herꝛ Allzeit foll bey diſem umtrunk ſtehen:</l>
                   <lb/>
-                  <l>Herꝛ Witzla&#x364;r aber meint/ daß vilmehr ehr darbey/</l>
+                  <l rendition="#et">Herꝛ Witzla&#x364;r aber meint/ daß vilmehr ehr darbey/</l>
                   <lb/>
-                  <l>wan auf der bank erho&#x364;cht man ſich erzeige frey.</l>
+                  <l rendition="#et">wan auf der bank erho&#x364;cht man ſich erzeige frey.</l>
                   <lb/>
                   <l>Der Schnarcher widerſpricht/ und wil man ſolle kneuen:</l>
                   <lb/>
                   <l>der Praſſer ſie beredt: es diene zum verdeuen:</l>
                   <lb/>
-                  <l>und der Gu&#x366;tgeber ſagt: ich aber haben wil/</l>
+                  <l rendition="#et">und der Gu&#x366;tgeber ſagt: ich aber haben wil/</l>
                   <lb/>
-                  <l>daß man zu&#x366; diſem trunk trompet und wol aufſpil.</l>
+                  <l rendition="#et">daß man zu&#x366; diſem trunk trompet und wol aufſpil.</l>
                   <lb/>
                   <l>Von andern in gemein ein trinklied wird geſungen/</l>
                   <lb/>
                   <l>bis ieder ſeinen trunk/ auf ſeine weis/ verſchlungen/</l>
                   <lb/>
-                  <l>und auf das na&#x364;gelein gela&#x364;ret das geſchirꝛ/</l>
+                  <l rendition="#et">und auf das na&#x364;gelein gela&#x364;ret das geſchirꝛ/</l>
                   <lb/>
-                  <l>auch über ſeine kn<anchor xml:id="a156"/>o&#x364;<note type="annotation"
-                        targetEnd="a156"><p>das kleine e ist auch in der SBB nicht
-                        eindeutig</p></note>pf rabzogen mit gekirꝛ.</l>
+                  <l rendition="#et">auch über ſeine kno&#x364;pf rabzogen mit gekirꝛ.</l>
                   <lb/>
                   <l>Herꝛ Witzla&#x364;r abermal; dem Bacchusgſatz zu&#x366;wider;</l>
                   <lb/>
                   <l>doch auß vergeßlichkeit/ den umtrunk ſtellte nider/</l>
                   <lb/>
-                  <l>warüber ſich/ geſchwind/ erhu&#x366;b uneinigkeit/</l>
+                  <l rendition="#et">warüber ſich/ geſchwind/ erhu&#x366;b uneinigkeit/</l>
                   <lb/>
-                  <l>ein flu&#x366;chen und geza&#x364;nk<anchor xml:id="a157"/>/<note
-                        type="annotation" targetEnd="a157"><p>der Schrägstrich ist ähnlich schwach
-                           in der SBB</p></note> und auch ein harber ſtreit:</l>
+                  <l rendition="#et">ein flu&#x366;chen und geza&#x364;nk<supplied>/</supplied> und
+                     auch ein harber ſtreit:</l>
                   <lb/>
                   <l>dan ſie vermeinten all': es wurde diſes reichen</l>
                   <lb/>
                   <l>dem Fürſten ſelb zur ſchmach: deß kamen ſie zu&#x366; ſtreichen:</l>
                   <lb/>
+
                   <fw place="bottom" type="catch">doch</fw>
                   <lb/>
                   <pb n="215" facs="30218234"/>
@@ -15841,139 +15862,141 @@
                   <lb/>
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
-                  <l>doch ward ihr zorn geſtillt/ und wider eyngeſcha&#x364;nkt</l>
-                  <lb/>
-                  <l>ſo vil/ daß ihn hernach ein grimmig fieber kra&#x364;nkt.</l>
-               </lg>
-            </div>
 
-            <div type="poem">
-               <head><lb/> Neuer Geſundheittrunk.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Seht! mit dergleichen ſchimpf<anchor xml:id="a158"/>/<note type="annotation"
-                        targetEnd="a158"><p>Schrägstrich auch in der SBB etwas undeutlich</p></note>
-                     und groben narꝛenpoſſen</l>
+                  <l rendition="#et">doch ward ihr zorn geſtillt/ und wider eyngeſcha&#x364;nkt</l>
+                  <lb/>
+                  <l rendition="#et">ſo vil/ daß ihn hernach ein grimmig fieber kra&#x364;nkt.</l>
+               </lg>
+
+               <lg n="5">
+                  <head rendition="#b #c">Neuer Geſundheittrunk.</head>
+                  <lb/>
+                  <l>Seht! mit dergleichen ſchimpf<supplied>/</supplied> und groben narꝛenpoſſen</l>
                   <lb/>
                   <l>ſeind ein halb dotzet ſtund bey nahem gar verfloſſen/</l>
                   <lb/>
-                  <l>noch fangt der Vilſauff erſt ein andre Gſundheit an;</l>
+                  <l rendition="#et">noch fangt der Vilſauff erſt ein andre Gſundheit an;</l>
                   <lb/>
-                  <l>ſechs gla&#x364;ſer ſtellet er auf eines tellers plan/</l>
+                  <l rendition="#et">ſechs gla&#x364;ſer ſtellet er auf eines tellers plan/</l>
                   <lb/>
                   <l>die trinkt er alle zu&#x366;/ dem na&#x364;chſten Bacchusgſellen/</l>
                   <lb/>
                   <l>eins nach dem andern flux/ die la&#x364;ren mu&#x366;ß er ſtellen</l>
                   <lb/>
-                  <l>nach erſter ordnung zwar/ doch under überſich:</l>
+                  <l rendition="#et">nach erſter ordnung zwar/ doch under überſich:</l>
                   <lb/>
-                  <l>ſie thu&#x366;n es alle nach; ein ieder meiſterlich.</l>
+                  <l rendition="#et">ſie thu&#x366;n es alle nach; ein ieder meiſterlich.</l>
                   <lb/>
-                  <l>Bey diſem bleibt es nicht/ ꝛc.</l>
+                  <l>Bey diſem bleibt es nicht/ ꝛc.----</l>
                </lg>
-            </div>
 
-            <div type="poem">
-               <head><lb/> Sta&#x364;ndlingen/ auf Sant <lb/> Johans ſegen.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Wan ſie vom tiſche gehen/</l>
+               <lg n="6">
+                  <head rendition="#b #c">Sta&#x364;ndlingen/ auf Sant<lb/> Johans ſegen.</head>
+                  <lb/>
+                  <l>------Wan ſie vom tiſche gehen/</l>
                   <lb/>
                   <l>ſo bleiben ſie noch lang beym lieben trünklein ſtehen:</l>
                   <lb/>
-                  <l>ja/ es verweilt ſich oft ihr ſcheiden eine ſtund/</l>
+                  <l rendition="#et">ja/ es verweilt ſich oft ihr ſcheiden eine ſtund/</l>
                   <lb/>
-                  <l>das abgenaden wa&#x364;hrt auf aller kannen grund:</l>
+                  <l rendition="#et">das abgenaden wa&#x364;hrt auf aller kannen grund:</l>
                   <lb/>
                   <l>und oftermal geſchicht/ daß/ unden an der ſta&#x364;gen/</l>
                   <lb/>
                   <l>noch einer trinken wil auf Sant Johanſen ſa&#x364;gen:</l>
                   <lb/>
-                  <l>ein andrer fraget erſt: wer iſt der gu&#x366;t geſell/</l>
+                  <l rendition="#et">ein andrer fraget erſt: wer iſt der gu&#x366;t geſell/</l>
                   <lb/>
-                  <l>der einen ſchlaftrunk uns/ in ſeinem hauß/ aufſtell?</l>
+                  <l rendition="#et">der einen ſchlaftrunk uns/ in ſeinem hauß/ aufſtell?</l>
                   <lb/>
-                  <l>So vil vom Gſundheittrunk.</l>
+                  <l>So vil vom Gſundheittrunk.------</l>
                   <lb/>
-                  <l>Von andern ſauffereyen/</l>
+                  <l>------Von andern ſauffereyen/</l>
                   <lb/>
                   <l>die uns zu&#x366; ſeel und leib verhindern am gedeyen/</l>
                   <lb/>
-                  <l>dich anderſtwo umſih: der gſchmak iſt mir genu&#x366;g/</l>
+                  <l rendition="#et">dich anderſtwo umſih: der gſchmak iſt mir genu&#x366;g/</l>
                   <lb/>
-                  <l>und mein' auch/ daß hiervon ich habe ſchweigens fu&#x366;g.</l>
+                  <l rendition="#et">und mein' auch/ daß hiervon ich habe ſchweigens fu&#x366;g.</l>
+                  <lb/>
                </lg>
+
+               <fw place="bottom" type="sig">P iiij</fw>
                <lb/>
-            </div>
-            <fw place="bottom" type="sig">P iiij</fw>
-            <lb/>
-            <fw place="bottom" type="catch">Be-</fw>
+               <fw place="bottom" type="catch">Be-</fw>
 
-            <lb break="no"/>
-            <pb n="216" facs="30218235"/>
+               <lb break="no"/>
+               <pb n="216" facs="30218235"/>
 
-            <fw place="top" type="pageNum">216</fw>
-            <lb/>
-            <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
-
-            <div type="poem">
-               <head><lb/> Beſchließliche erinner- und abmahnung vom <lb/> leib- und
-                  ſeelen-ſcha&#x364;dlichen Geſundheit- <lb break="no"/> trinken.</head>
+               <fw place="top" type="pageNum">216</fw>
                <lb/>
-               <lg type="poem">
-                  <l>Wan nun durch füllerey/ und durch geſundheitſauffen/</l>
+               <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
+
+               <lg n="7">
+                  <head rendition="#b #c">Beſchließliche erinner- und abmahnung vom<lb/> leib- und
+                     ſeelen-ſcha&#x364;dlichen Geſundheit-<lb break="no"/> trinken.</head>
                   <lb/>
-                  <l>dem feind erſchlagen wurd der minſte kriegeshauffen/</l>
+                  <lg>
+                     <l>Wan nun durch füllerey/ und durch geſundheitſauffen/</l>
+                     <lb/>
+                     <l>dem feind erſchlagen wurd der minſte kriegeshauffen/</l>
+                     <lb/>
+                     <l rendition="#et">behu&#x364;t! o Herꝛ behu&#x364;t/ wie geb er
+                        ferſengelt/</l>
+                     <lb/>
+                     <l rendition="#et">er lieſſe hinderſich troß/ waffen und gezellt!</l>
+                     <lb/>
+                     <l>Dan hinderm Bacchustiſch den feind wil ieder freſſen/</l>
+                     <lb/>
+                     <l>deß aber in dem feld ſie allzu&#x366;mal vergeſſen:</l>
+                     <lb/>
+                     <l rendition="#et">ſie leben alle gern nur immerdar im ſauß/</l>
+                     <lb/>
+                     <l rendition="#et">und lo&#x364;ſchen nicht wan brün&#x303;t des
+                        allerna&#x364;chſten hauß:</l>
+                     <lb/>
+                     <l>geda&#x364;nken niemal auch/ zu&#x366; ihrem groſſen ſchaden/</l>
+                     <lb/>
+                     <l>daß ſie durch ſchwelgerey/ des Herꝛen zorn aufladen/</l>
+                     <lb/>
+                     <l rendition="#et">und daß/ gemeiniglich/ unma&#x364;ſſig ſpeiß und trank</l>
+                     <lb/>
+                     <l rendition="#et">mach jenen an dem leib/ und den im beutel krank.</l>
+                     <lb/>
+                     <l xml:id="l87a" next="#l87b">Dan ja Gott ſelber ſpricht: Weh! weh dem bo&#x364;ſen hauf-</l>
+                     <lb break="no"/>
+                     <l xml:id="l87b" prev="#l87a">fen/</l>
+                     <lb/>
+                     <l>die ſtarke helden ſeind/ ja helden wein zu&#x366; ſauffen!</l>
+                     <lb/>
+                     <l rendition="#et">Der Heidenlehrer auch von den weinſa&#x364;uffern
+                        ſpricht/</l>
+                     <lb/>
+                     <l rendition="#et">daß ſie das himmelreych ererben werden nicht.</l>
+                  </lg>
                   <lb/>
-                  <l>behu&#x364;t! o Herꝛ behu&#x364;t/ wie geb er ferſengelt/</l>
+                  <lg>
+                     <l>Darum ermahn' ich euch/ ich bitt'/ ich ſeufftz' und flehe/</l>
+                     <lb/>
+                     <l>daß iederma&#x364;nniglich weinſauffens mu&#x364;ſſig gehe/</l>
+                     <lb/>
+                     <l rendition="#et">zu&#x366; diſer ſchwa&#x364;ren zeit/ da zeichen
+                        vilerley/</l>
+                     <lb/>
+                     <l rendition="#et">des nahen ends der welt ſeind eine gwüſſe Chrey.</l>
+                     <lb/>
+                     <l>Der ſchaden Joſephs doch im hertzen euch bekra&#x364;nke/</l>
+                     <lb/>
+                     <l>damit der Fridensfürſt euch ſeinen friden ſcha&#x364;nke.</l>
+                     <lb/>
+                     <l rendition="#et">Denſelben wünſch' ich nun der gantzen Chriſtenheit/</l>
+                     <lb/>
+                     <l rendition="#et">durch Chriſtum endlich auch die ware ſeligkeit!</l>
+                  </lg>
                   <lb/>
-                  <l>er lieſſe hinderſich troß/ waffen und gezellt!</l>
+                  <l rendition="#g #c">ENDE.</l>
                   <lb/>
-                  <l>Dan hinderm Bacchustiſch den feind wil ieder freſſen/</l>
-                  <lb/>
-                  <l>deß aber in dem feld ſie allzu&#x366;mal vergeſſen:</l>
-                  <lb/>
-                  <l>ſie leben alle gern nur immerdar im ſauß/</l>
-                  <lb/>
-                  <l>und lo&#x364;ſchen nicht wan brün&#x303;t des allerna&#x364;chſten hauß:</l>
-                  <lb/>
-                  <l>geda&#x364;nken niemal auch/ zu&#x366; ihrem groſſen ſchaden/</l>
-                  <lb/>
-                  <l>daß ſie durch ſchwelgerey/ des Herꝛen zorn aufladen/</l>
-                  <lb/>
-                  <l>und daß/ gemeiniglich/ unma&#x364;ſſig ſpeiß und trank</l>
-                  <lb/>
-                  <l>mach jenen an dem leib/ und den im beutel krank.</l>
-                  <lb/>
-                  <l>Dan ja Gott ſelber ſpricht: Weh! weh dem bo&#x364;ſen hauf-</l>
-                  <lb break="no"/>
-                  <l>fen/</l>
-                  <lb/>
-                  <l>die ſtarke helden ſeind/ ja helden wein zu&#x366; ſauffen!</l>
-                  <lb/>
-                  <l>Der Heidenlehrer auch von den weinſa&#x364;uffern ſpricht/</l>
-                  <lb/>
-                  <l>daß ſie das himmelreych ererben werden nicht.</l>
-                  <lb/>
-                  <l>Darum ermahn' ich euch/ ich bitt'/ ich ſeufftz' und flehe/</l>
-                  <lb/>
-                  <l>daß iederma&#x364;nniglich weinſauffens mu&#x364;ſſig gehe/</l>
-                  <lb/>
-                  <l>zu&#x366; diſer ſchwa&#x364;ren zeit/ da zeichen vilerley/</l>
-                  <lb/>
-                  <l>des nahen ends der welt ſeind eine gwüſſe Chrey.</l>
-                  <lb/>
-                  <l>Der ſchaden Joſephs doch im hertzen euch bekra&#x364;nke/</l>
-                  <lb/>
-                  <l>damit der Fridensfürſt euch ſeinen friden ſcha&#x364;nke.</l>
-                  <lb/>
-                  <l>Denſelben wünſch' ich nun der gantzen Chriſtenheit/</l>
-                  <lb/>
-                  <l>durch Chriſtum endlich auch die ware ſeligkeit!</l>
-                  <lb/>
-                  <l rendition="#g">ENDE.</l>
                </lg>
-               <lb/>
             </div>
 
             <pb n="[217]" facs="30218236"/>
@@ -17868,7 +17891,8 @@
                      <lg type="poem">
                         <l rendition="#et">Des Herꝛen tod/ erſtehn und reich/</l>
                         <lb/>
-                        <l rendition="#et">iſt Davids ho&#x364;chſtes gu&#x366;t zu&#x366;gleich.</l>
+                        <l rendition="#et">iſt Davids ho&#x364;chſtes gu&#x366;t
+                           zu&#x366;gleich.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -18495,7 +18519,8 @@
                      <lg type="poem">
                         <l rendition="#et">Des Ho&#x364;chſten macht den feind zerſtra&#x364;üt:</l>
                         <lb/>
-                        <l rendition="#et">Die bundeslad ſein volk er<unclear>f</unclear>ra&#x364;üt.</l>
+                        <l rendition="#et">Die bundeslad ſein volk
+                           er<unclear>f</unclear>ra&#x364;üt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -18688,8 +18713,7 @@
                      <head rendition="#aq #c">LXXXV.</head>
                      <lb/>
                      <lg type="poem">
-                        <l>O Fridensfürſt/
-                           verzeih die ſünden:</l>
+                        <l>O Fridensfürſt/ verzeih die ſünden:</l>
                         <lb/>
                         <l>Laß deiner zu&#x366;kunft heil empfinden!</l>
                      </lg>
@@ -18951,10 +18975,10 @@
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CVII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CVII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Lobt/ ihr erlo&#x364;ßte/ Gottes gu&#x364;te/</l>
                         <lb/>
                         <l>daß ſeine vorſicht euch behu&#x364;te.</l>
@@ -18962,21 +18986,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CVIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CVIII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Jch wil lobſingen meinem Gott/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Jch wil lobſingen meinem Gott/</l>
                         <lb/>
-                        <l>Er helf: der menſchen hülf iſt ſpott.</l>
+                        <l rendition="#et">Er helf: der menſchen hülf iſt ſpott.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CIX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CIX.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Der David ab verlümdung klaget/</l>
                         <lb/>
                         <l>dra&#x364;ut ſtraf: ſu&#x366;cht hülf/ und Gott dankſaget.</l>
@@ -18984,21 +19008,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CX.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Meſſias/ wider allen gwalt/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Meſſias/ wider allen gwalt/</l>
                         <lb/>
-                        <l>ſein Prieſterthum und Reych behalt.</l>
+                        <l rendition="#et">ſein Prieſterthum und Reych behalt.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXI.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Gotts bund/ gebott'/ und werk' ich preiſe/</l>
                         <lb/>
                         <l>in ſeiner forcht die weyſheit weiſe.</l>
@@ -19006,21 +19030,22 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Der freyga&#x364;b-from&#x342; den ſa&#x364;gen ſpürt:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Der freyga&#x364;b-from&#x342; den ſa&#x364;gen
+                           ſpürt:</l>
                         <lb/>
-                        <l>Der gottloß eitel flu&#x366;ch gebirt.</l>
+                        <l rendition="#et">Der gottloß eitel flu&#x366;ch gebirt.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXIII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Lobt Gott/ der die verachten ehret/</l>
                         <lb/>
                         <l>und die unfruchtbarn fruchtbar mehret.</l>
@@ -19028,21 +19053,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXIV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXIV.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Beym außzug auß Egyptenland/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Beym außzug auß Egyptenland/</l>
                         <lb/>
-                        <l>lob Jſrael Gotts wunderhand.</l>
+                        <l rendition="#et">lob Jſrael Gotts wunderhand.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXV.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Go&#x364;tz/ Go&#x364;tzner/ Go&#x364;tzenſchmid ſeind gleiche/</l>
                         <lb/>
                         <l>und alle nichts: nur Gott hülfreiche.</l>
@@ -19050,31 +19075,30 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXVI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXVI.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Gott hilft auß noht: der menſch betriegt:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Gott hilft auß noht: der menſch betriegt:</l>
                         <lb/>
-                        <l>ſein lob in mir niemals erligt.</l>
+                        <l rendition="#et">ſein lob in mir niemals erligt.</l>
                         <lb/>
                         <fw place="bottom" type="catch">O ihr</fw>
                         <lb/>
                         <pb n="251" facs="30218270"/>
                         <l><anchor xml:id="a202"/></l>
                         <fw place="top" type="pageNum">251</fw>
-                        <l><note type="annotation" targetEnd="a202"><p>2 in der SBB relativ
-                                 deutlich, 5 und 1 nicht mehr als hier</p></note></l>
+                        <l/>
                      </lg>
                      <lb/>
                   </div>
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXVII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXVII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>O/ ihr beru&#x364;ffte Heiden/ preiſet</l>
                         <lb/>
                         <l>die gu&#x364;te/ ſo euch Gott erweiſet!</l>
@@ -19082,21 +19106,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXVIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXVIII.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Jhr Sta&#x364;nde/ lobet Gott zu&#x366;gleich/</l>
+                        <l rendition="#et">Jhr Sta&#x364;nde/ lobet Gott zu&#x366;gleich/</l>
                         <lb/>
-                        <l>der mich verworfnen gſetzt ins reych.</l>
+                        <l rendition="#et">der mich verworfnen gſetzt ins reych.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXIX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXIX.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Der la&#x364;ngſte Pſalm das Gſatz erhebet:</l>
                         <lb/>
                         <l>wol dem der nach demſelben lebet!</l>
@@ -19104,21 +19128,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXX.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>O Herꝛ/ Sauls ohrentrager ſtraff/</l>
+                     <lg type="poem">
+                        <l rendition="#et">O Herꝛ/ Sauls ohrentrager ſtraff/</l>
                         <lb/>
-                        <l>und mir vor ihnen rettung ſchaff.</l>
+                        <l rendition="#et">und mir vor ihnen rettung ſchaff.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXI.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Jch ſu&#x366;ch'/ und find'/ ohn miſſelingen/</l>
                         <lb/>
                         <l>mein hülf beym Scho&#x364;pfer allerdingen.</l>
@@ -19126,21 +19150,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Des gottesdienſts erfreü' ich mich:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Des gottesdienſts erfreü' ich mich:</l>
                         <lb/>
-                        <l>der Frid im reych vermehre ſich.</l>
+                        <l rendition="#et">der Frid im reych vermehre ſich.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXIII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Wie dienſt' auf Herꝛn und Frauen ſehen/</l>
                         <lb/>
                         <l>ſo ſehen wir auf Gotts beyſtehen.</l>
@@ -19148,21 +19172,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXIV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXIV.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Wo Gott nicht wa&#x364;r geſtanden bey/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Wo Gott nicht wa&#x364;r geſtanden bey/</l>
                         <lb/>
-                        <l>ſo wa&#x364;r ſein volk nicht bandefrey.</l>
+                        <l rendition="#et">ſo wa&#x364;r ſein volk nicht bandefrey.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXV.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Wie Sion mit gebirg umgeben/</l>
                         <lb/>
                         <l>ſo ſchützet Gott der frommen leben.</l>
@@ -19170,13 +19194,13 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXVI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXVI.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Die lediglaſſung ho&#x364;chſt erfreüt:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Die lediglaſſung ho&#x364;chſt erfreüt:</l>
                         <lb/>
-                        <l>Ach/ daß nicht wa&#x364;r ein theil zerſtra&#x364;üt.</l>
+                        <l rendition="#et">Ach/ daß nicht wa&#x364;r ein theil zerſtra&#x364;üt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -19189,10 +19213,10 @@
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXVII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXVII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Ohn Gottes ſa&#x364;gen nichts gelüket:</l>
                         <lb/>
                         <l>derſelb uns leibesfrucht zu&#x366;ſchiket.</l>
@@ -19200,21 +19224,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXVIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXVIII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Der from&#x342; ſich ſeiner arbeit nehrt/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Der from&#x342; ſich ſeiner arbeit nehrt/</l>
                         <lb/>
-                        <l>der Sa&#x364;gensherꝛ ſein hauß vermehrt.</l>
+                        <l rendition="#et">der Sa&#x364;gensherꝛ ſein hauß vermehrt.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXIX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXIX.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Der feind von jugend auf mich dra&#x364;nget/</l>
                         <lb/>
                         <l>doch weiter nicht alß Gott verha&#x364;nget.</l>
@@ -19222,21 +19246,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXX.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>O Herꝛ/ ich ru&#x364;ff getroſt zu&#x366; dir</l>
+                     <lg type="poem">
+                        <l rendition="#et">O Herꝛ/ ich ru&#x364;ff getroſt zu&#x366; dir</l>
                         <lb/>
-                        <l>auß tieffer angſt: verzeyh doch mir!</l>
+                        <l rendition="#et">auß tieffer angſt: verzeyh doch mir!</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXI.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Jch ſu&#x366;ch'/ auß ſtoltz/ kein Ko&#x364;nigreyche/</l>
                         <lb/>
                         <l>mehr eim entwehnten Kind ich gleiche.</l>
@@ -19244,21 +19268,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Geda&#x364;nk/ Herꝛ/ wie ſich David mu&#x364;ht</l>
+                     <lg type="poem">
+                        <l rendition="#et">Geda&#x364;nk/ Herꝛ/ wie ſich David mu&#x364;ht</l>
                         <lb/>
-                        <l>für deine Lad: ſein gſchlecht behu&#x364;t.</l>
+                        <l rendition="#et">für deine Lad: ſein gſchlecht behu&#x364;t.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXIII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Die bru&#x364;derliebe bringt zu&#x366;wegen</l>
                         <lb/>
                         <l>der menſchen gunſt/ und Gottes ſegen.</l>
@@ -19266,21 +19290,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXIV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXIV.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Jhr Prieſter und des Herꝛen knecht/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Jhr Prieſter und des Herꝛen knecht/</l>
                         <lb/>
-                        <l>lobt ihn und ſeinen ſa&#x364;gen ſpra&#x364;cht.</l>
+                        <l rendition="#et">lobt ihn und ſeinen ſa&#x364;gen ſpra&#x364;cht.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXV.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXV.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Lob Gott/ du Gottes eigenthumme:</l>
                         <lb/>
                         <l>der Go&#x364;tz iſt blind/ und ſtum&#x342;/ und dumme.</l>
@@ -19288,13 +19312,13 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXVI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXVI.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Dem Herꝛen dankt/ der gu&#x366;ts beſchehrt/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Dem Herꝛen dankt/ der gu&#x366;ts beſchehrt/</l>
                         <lb/>
-                        <l>der wunder würkt/ und alls ernehrt.</l>
+                        <l rendition="#et">der wunder würkt/ und alls ernehrt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -19307,10 +19331,10 @@
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXVII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXVII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Zu&#x366; Babel heülten wir für ſingen:</l>
                         <lb/>
                         <l>Gott wird die Salemsfeind' umbringen.</l>
@@ -19318,21 +19342,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXVIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXVIII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Jch preiſe Gotts gericht und gu&#x364;t/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Jch preiſe Gotts gericht und gu&#x364;t/</l>
                         <lb/>
-                        <l>der mich vor ſtoltzem feind behu&#x364;t.</l>
+                        <l rendition="#et">der mich vor ſtoltzem feind behu&#x364;t.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXXXIX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXXXIX.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>O Herꝛ/ wo mo&#x364;cht' ich vor dir bleiben?</l>
                         <lb/>
                         <l>Deins feindes feind wil ich mich ſchreiben.</l>
@@ -19340,21 +19364,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXL.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXL.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Von Saul/ und ſeiner falſchen rott/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Von Saul/ und ſeiner falſchen rott/</l>
                         <lb/>
-                        <l>o Herꝛ/ mich rett: ſie ſtürtz in ſpott.</l>
+                        <l rendition="#et">o Herꝛ/ mich rett: ſie ſtürtz in ſpott.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLI.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLI.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Herꝛ/ hilf: zu&#x366; hof ich aufſatz ſpühre:</l>
                         <lb/>
                         <l>des feindes glük mich nicht verfu&#x364;hre.</l>
@@ -19362,29 +19386,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLII<anchor xml:id="a203"/>.<note type="annotation"
-                           targetEnd="a203"><p>Es könnte scheinen, dass ein Doppelpunkt nach den
-                              römischen Zahlen vorhanden ist. Höchstwahrscheinlich handelt es sich
-                              aber beim oberen Punkt nur um einen Fleck.</p></note>
-                     </head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>O Herꝛ/ in diſer finſtern klufft/</l>
+                     <lg type="poem">
+                        <l rendition="#et">O Herꝛ/ in diſer finſtern klufft/</l>
                         <lb/>
-                        <l>mir mach vor meinen feinden lufft.</l>
+                        <l rendition="#et">mir mach vor meinen feinden lufft.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLIII<anchor xml:id="a204"/>.<note type="annotation"
-                           targetEnd="a204"><p>Es könnte scheinen, dass ein Doppelpunkt nach den
-                              römischen Zahlen vorhanden ist. Höchstwahrscheinlich handelt es sich
-                              aber beim oberen Punkt nur um einen Fleck.</p></note>
-                     </head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLIII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Ach Herꝛ/ zum gricht mich nicht verbinde:</l>
                         <lb/>
                         <l>Fu&#x364;hr mich zu&#x366; dir: tilg meinen feinde.</l>
@@ -19392,29 +19408,21 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLIV<anchor xml:id="a205"/>.<note type="annotation"
-                           targetEnd="a205"><p>Es könnte scheinen, dass ein Doppelpunkt nach den
-                              römischen Zahlen vorhanden ist. Höchstwahrscheinlich handelt es sich
-                              aber beim oberen Punkt nur um einen Fleck.</p></note>
-                     </head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLIV.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Gott lob/ der überwinden lehrt:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Gott lob/ der überwinden lehrt:</l>
                         <lb/>
-                        <l>Jm land ſich frid und ſa&#x364;gen mehrt.</l>
+                        <l rendition="#et">Jm land ſich frid und ſa&#x364;gen mehrt.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLV<anchor xml:id="a206"/>.<note type="annotation"
-                           targetEnd="a206"><p>Es könnte scheinen, dass ein Doppelpunkt nach den
-                              römischen Zahlen vorhanden ist. Höchstwahrscheinlich handelt es sich
-                              aber beim oberen Punkt nur um einen Fleck.</p></note>
-                     </head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLV.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Jch wil den Himmelsko&#x364;nig preiſen/</l>
                         <lb/>
                         <l>wie ihn ſein' eigne werk' erweiſen.</l>
@@ -19422,17 +19430,13 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLVI<anchor xml:id="a207"/>.<note type="annotation"
-                           targetEnd="a207"><p>Es könnte scheinen, dass ein Doppelpunkt nach den
-                              römischen Zahlen vorhanden ist. Höchstwahrscheinlich handelt es sich
-                              aber beim oberen Punkt nur um einen Fleck.</p></note>
-                     </head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLVI.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Lobt alle Gott: lob/ liebe ſeel:</l>
+                     <lg type="poem">
+                        <l rendition="#et">Lobt alle Gott: lob/ liebe ſeel:</l>
                         <lb/>
-                        <l>all' andre hülf dir ſchlaget fehl.</l>
+                        <l rendition="#et">all' andre hülf dir ſchlaget fehl.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -19445,10 +19449,10 @@
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLVII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLVII.</head>
                      <lb/>
-                     <lg type="stanza">
+                     <lg type="poem">
                         <l>Lobt Gott von wegen viler gaben/</l>
                         <lb/>
                         <l>ſo leuht und vieh von ihme haben.</l>
@@ -19456,19 +19460,19 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLVIII.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLVIII.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Der Scho&#x364;pfer himmels und der erd</l>
+                     <lg type="poem">
+                        <l rendition="#et">Der Scho&#x364;pfer himmels und der erd</l>
                         <lb/>
-                        <l>von aller gſcho&#x364;pft gelobet werd.</l>
+                        <l rendition="#et">von aller gſcho&#x364;pft gelobet werd.</l>
                      </lg>
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CXLIX.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CXLIX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Erwehltes folk/ lob Gott den Herꝛen</l>
@@ -19478,13 +19482,13 @@
                      <lb/>
                   </div>
 
-                  <div type="stanza-div">
-                     <head rendition="#aq">CL.</head>
+                  <div n="3" type="poem">
+                     <head rendition="#aq #c">CL.</head>
                      <lb/>
-                     <lg type="stanza">
-                        <l>Lobt Gottes macht und herꝛlichkeit/</l>
+                     <lg type="poem">
+                        <l rendition="#et">Lobt Gottes macht und herꝛlichkeit/</l>
                         <lb/>
-                        <l>mit muſicſpielen/ iederzeit.</l>
+                        <l rendition="#et">mit muſicſpielen/ iederzeit.</l>
                      </lg>
                   </div>
                </div>
@@ -19494,7 +19498,10 @@
                   <lb/>
                   <lg type="poem">
                      <l>Der gla&#x364;ubig nur nach Gott/ dem ho&#x364;chſten Gu&#x366;t/ ſich
-                        ſehnet/</l>
+                        ſeh-</l>
+                     <lb break="no"/>
+                     <l>(net/</l>
+                     <!-- xml:id vergeben -->
                      <lb/>
                      <l>im wol- und übelſtand zu&#x366; keinem andern flehnet.</l>
                   </lg>
