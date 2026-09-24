@@ -6806,48 +6806,45 @@
 
             <pb facs="4076834" n="59."/>
 
+   <div n="1">
             <fw place="top" type="pageNum">59.</fw>
             <lb/>
-            <l>Folgen allerhand</l>
+   
+            <head rendition="#b #c">Folgen allerhand<lb/>Feſt- und Unterweiſungs-<lb break="no"/>Geſa&#x364;nge.</head>
             <lb/>
-            <l>Feſt- und Unterweiſungs-</l>
-            <lb break="no"/>
-            <l>Geſa&#x364;nge.</l>
-            <lb/>
+   
             <pb facs="4076835" n="60"/>
 
             <fw place="top" type="pageNum">60</fw>
             <lb/>
             <fw place="top" type="header">Weihnacht-</fw>
             <lb break="no"/>
-            <l>Wei<anchor xml:id="a84"/>ch<note type="annotation" targetEnd="a84"><p>Die Schreibung
-                     „Weichnachtgeſang“, also mit ch statt h ist wahrscheinlich auf die Etymologie
-                     wīch („heilig“) zurückzuführen. Vgl. dafür DWDS. Im Schweizerischen Idiotikon
-                     sind die Wortformen Wīnacht und Wienacht belegt. Es ist interessant, dass die
-                     Form „Weihnacht-„ auf derselben Seite (Z. 2) zu finden
-               ist.</p></note>nachtgeſang:</l>
-            <lb/>
-         </div>
 
-         <div type="poem-div">
-            <head><label>[7.a.]</label><lb/>
-               <hi rendition="#aq"><num>VI.</num> Cantus.</hi></head>
-            <lb/>
-            <lg type="poem">
-               <l>Es freue ſich Jeruſalem/</l>
-               <lb/>
-               <l>Jeruſalem/ des Kindeleins zu Bethlehem/</l>
-               <lb/>
-               <l>des Kindeleins zu Bethlehem.</l>
-            </lg>
-            <lb/>
-         </div>
+      <div n="2" xml:id="n7">
+         
+         <head rendition="#c #b">Weichnachtgeſang:</head>
+         <lb/>         
 
-         <div type="poem-div">
-            <head rendition="#aq">Tenor.</head>
-            <lb/>
-            <lg type="poem">
-               <lg type="poem-subgroup">
+         <div type="music">
+            <div>
+               <head rendition="#aq #c #b">VI. Cantus.</head>
+               <lb/>
+               <lg>
+               <figure type="notatedMusic"/>
+                  <l>Es freue ſich Jeruſalem/</l>
+                  <lb/>
+                  <l>Jeruſalem/ des Kindeleins zu Bethlehem/</l>
+                  <lb/>
+                  <l>des Kindeleins zu Bethlehem.</l>
+               </lg>
+               <lb/>
+            </div>
+
+            <div>
+               <head rendition="#aq #c #b">Tenor.</head>
+               <lb/>
+               <lg>
+               <figure type="notatedMusic"/>
                   <l>Es freue ſich Jeruſalem/ Jeruſalem/</l>
                   <lb/>
                   <l>des Kindeleins zu Bethlehem/</l>
@@ -6855,40 +6852,46 @@
                   <l>des Kindeleins zu Bethlehem.</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>2</num>Zu Bethlehem/ in Davids Statt/</l>
+            </div>
+         </div>
+         
+   <div type="poem">
+      <lg type="poem">
+               <lg n="2">
+                  <head>2</head>
+                  <lb/>
+                  <l>Zu Bethlehem/ in Davids Statt/</l>
                   <lb/>
                   <l>in Davids Statt/</l>
                   <lb/>
                   <l>alß Rom die welt geſcha&#x364;tzet hatt:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>3</num>Der vilgewu&#x364;nſcht Herꝛ Jeſus Chriſt/</l>
+               <lg n="3">
+                  <head>3</head>
+                  <lb/>
+                  <l>Der vilgewu&#x364;nſcht Herꝛ Jeſus Chriſt/</l>
                   <lb/>
                   <l>Herꝛ Jeſus Chriſt/</l>
                   <lb/>
                   <l>zum Heiland uns geboren iſt:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>4</num>Vom heilgen Geiſt/ auß einer Magt/</l>
+               <lg n="4">
+                  <head>4</head>
+                  <lb/>
+                  <l>Vom heilgen Geiſt/ auß einer Magt/</l>
                   <lb/>
                   <l>auß einer Magt:</l>
                   <lb/>
                   <l>wie Gabriel es vorgeſagt:/:</l>
                </lg>
                <lb/>
-            </lg>
-         </div>
-         <fw place="bottom" type="catch"><num>5<anchor xml:id="a85"/>.<note type="annotation"
-                  targetEnd="a85"><p>Der Punkt nach der 5 gibt es auf der folgenden Seite
-                  nicht.</p></note></num> Ge-</fw>
+      </lg>
+   </div>
+      
+         <fw place="bottom" type="catch">5. Ge-</fw>
 
-         <lb break="no"/>
          <pb facs="4076836" n="61"/>
 
          <fw place="top" type="pageNum">61</fw>
@@ -6896,60 +6899,69 @@
          <fw place="top" type="header">Geſa&#x364;nge.</fw>
          <lb/>
 
-         <div type="poem-div">
-            <head rendition="#aq">Altus.</head>
+   <div type="music">
+      <div>
+         <head rendition="#aq #b #c">Altus.</head>
+         <lb/>
+         <lg>
+         <figure type="notatedMusic"/>
+            <l>Es freu&#x364;e ſich Jeruſalem/ Jeruſalem/</l>
             <lb/>
-            <lg type="poem">
-               <l>Es freu&#x364;e ſich Jeruſalem/ Jeruſalem/</l>
-               <lb/>
-               <l>des Kindeleins zu Bethlehem/</l>
-               <lb/>
-               <l>des Kindeleins zu Bethlehem.</l>
-            </lg>
+            <l>des Kindeleins zu Bethlehem/</l>
             <lb/>
-         </div>
+            <l>des Kindeleins zu Bethlehem.</l>
+         </lg>
+         <lb/>
+      </div>
 
-         <div type="poem-div">
-            <head rendition="#aq">Baſis.</head>
+      <div>
+         <head rendition="#aq #b #c">Baſis.</head>
+         <lb/>
+         <lg>
+            <figure type="notatedMusic"/>
+            <l>Es freu&#x364;e ſich Jeruſalem/ Jeruſalem/</l>
             <lb/>
-            <lg type="poem">
-               <lg type="poem-subgroup">
-                  <l>Es freu&#x364;e ſich Jeruſalem/ Jeruſalem/</l>
-                  <lb/>
-                  <l>des Kindeleins zu Bethlehem/</l>
-                  <lb/>
-                  <l>des Kindeleins zu Bethlehem.</l>
-               </lg>
-               <lb/>
+            <l>des Kindeleins zu Bethlehem/</l>
+            <lb/>
+            <l>des Kindeleins zu Bethlehem.</l>
+         </lg>
+         <lb/>
+      </div>
+   </div>
 
-               <lg type="poem-subgroup">
-                  <l><num>5</num>Geheimnußreiche Troſtgeſchicht!</l>
+   <div type="poem">
+      <lg type="poem">
+               <lg n="5">
+                  <head>5</head>
+                  <lb/>
+                  <l>Geheimnußreiche Troſtgeſchicht!</l>
                   <lb/>
                   <l>O Troſtgeſchicht!</l>
                   <lb/>
                   <l>die keine zung genug ausſpricht:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>6</num>Es hat uns Gott ſo wol gemeint/</l>
+               <lg  n="6">
+                  <head>6</head>
+                  <lb/>
+                  <l>Es hat uns Gott ſo wol gemeint/</l>
                   <lb/>
                   <l>ſo wol gemeint/</l>
                   <lb/>
                   <l>daß er ſich hat mit uns vereint:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>7</num>Der Scho&#x364;pfer kam vom Himmelreich/</l>
+               <lg n="7">
+                  <head>7</head>
+                  <lb/>
+                  <l>Der Scho&#x364;pfer kam vom Himmelreich/</l>
                   <lb/>
                   <l>vom Himmelreich:/:</l>
                   <lb/>
                   <l>uns/ ohn die ſu&#x364;nd/ zuwerden gleich:/:</l>
                   <lb/>
-                  <fw place="bottom" type="catch"><num>8<anchor xml:id="a86"/>.<note
-                           type="annotation" targetEnd="a86"><p>Der Punkt nach der 8 gibt es auf der
-                              folgenden Seite nicht.</p></note></num> Des</fw>
+                  
+                  <fw place="bottom" type="catch">8. Des</fw>
 
                   <lb/>
                   <pb facs="4076837" n="62"/>
@@ -6961,99 +6973,109 @@
                   <lb/>
                </lg>
 
-               <lg type="poem-subgroup">
-                  <l><num>8</num>Des Vatters Wort ward Fleiſch und Blut/</l>
+               <lg n="8">
+                  <head>8</head>
+                  <lb/>
+                  <l>Des Vatters Wort ward Fleiſch und Blut/</l>
                   <lb/>
                   <l>ward Fleiſch und Blut:</l>
                   <lb/>
                   <l>das Fleiſch/ durch Fleiſch zumachen gut:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>9</num>Des Weibes Saam ward eine Frucht/</l>
+               <lg n="9">
+                  <head>9</head>
+                  <lb/>
+                  <l>Des Weibes Saam ward eine Frucht/</l>
                   <lb/>
                   <l>ward eine Frucht</l>
                   <lb/>
                   <l>die heilen ſolt der Eva Sucht:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>10</num>Des Ho&#x364;chſten freyer Sohn ward Knecht/</l>
+               <lg n="10">
+                  <head>10</head>
+                  <lb/>
+                  <l>Des Ho&#x364;chſten freyer Sohn ward Knecht/</l>
                   <lb/>
                   <l>der Sohn ward Knecht:</l>
                   <lb/>
                   <l>uns frey zumachen und gerecht:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>11</num>Er ward geborn in einem Stal/</l>
+               <lg n="11">
+                  <head>11</head>
+                  <lb/>
+                  <l>Er ward geborn in einem Stal/</l>
                   <lb/>
                   <l>in einem Stal:</l>
                   <lb/>
                   <l>uns eynzuraumen ſeinen Sal:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>12</num>Zur Schatzungszeit: zuheben auf/</l>
+               <lg n="12">
+                  <head>12</head>
+                  <lb/>
+                  <l>Zur Schatzungszeit: zuheben auf/</l>
                   <lb/>
                   <l>zuheben auf</l>
                   <lb/>
                   <l>der erſten Eltern bo&#x364;ſen Kauff:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>13</num>Zu Mitternacht: damit ſein Glantz</l>
+               <lg n="13">
+                  <head>13</head>
+                  <lb/>
+                  <l>Zu Mitternacht: damit ſein Glantz</l>
                   <lb/>
                   <l>damit ſein Glantz</l>
                   <lb/>
                   <l>uns hier und dort erleu&#x364;chte gantz:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>14</num>Jn armuht: uns zumachen reich/</l>
+               <lg n="14">
+                  <head>14</head>
+                  <lb/>
+                  <l>Jn armuht: uns zumachen reich/</l>
                   <lb/>
                   <l>zumachen reich:</l>
                   <lb/>
                   <l>und ſeinen lieben Englen gleich:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>15</num>Bey fro&#x364;mden: uns mit ſeiner hand/</l>
+               <lg n="15">
+                  <head>15</head>
+                  <lb/>
+                  <l>Bey fro&#x364;mden: uns mit ſeiner hand/</l>
                   <lb/>
                   <l>mit ſeiner hand</l>
                   <lb/>
                   <l>zufu&#x364;hren in das Vatterland:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>16</num>Er ward verwunden wie ein Kind/</l>
+               <lg n="16">
+                  <head>16</head>
+                  <lb/>
+                  <l>Er ward verwunden wie ein Kind/</l>
                   <lb/>
                   <l>gleich wie ein Kind:</l>
                   <lb/>
-                  <l>uns zuentbinden aller ſ<anchor xml:id="a87"/>u&#x364;<note type="annotation"
-                        targetEnd="a87"><p>Übergeschriebenes e nicht erkennbar, auch nicht im
-                           Augsburger Exemplar.</p></note>nd:/:</l>
+                  <l>uns zuentbinden aller ſu&#x364;nd:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>17</num>Er ward gelegt ins Kripfelein/</l>
+               <lg n="17">
+                  <head>17</head>
+                  <lb/>
+                  <l>Er ward gelegt ins Kripfelein/</l>
                   <lb/>
                   <l>ins Kripfelein:</l>
                   <lb/>
                   <l>das Futer unſrer ſeel zuſeyn:/:</l>
                   <lb/>
-                  <fw place="bottom" type="catch"><num>18<anchor xml:id="a88"/>.<note
-                           type="annotation" targetEnd="a88"><p>Der Punkt nach der 18 gibt es auf
-                              der folgenden Seite nicht.</p></note></num> Den</fw>
+                  </lg>
+                  <lb/>
+      
+                  <fw place="bottom" type="catch">18. Den</fw>
 
                   <lb/>
                   <pb facs="4076838" n="63"/>
@@ -7061,84 +7083,91 @@
                   <fw place="top" type="pageNum">63</fw>
                   <lb/>
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
-
+                
+               <lg n="18">
+                  <head>18</head>
                   <lb/>
-               </lg>
-
-               <lg type="poem-subgroup">
-                  <l><num>18</num>Den armen Hirten ward vermeldt/</l>
+                  <l>Den armen Hirten ward vermeldt/</l>
                   <lb/>
                   <l>es ward vermeldt</l>
                   <lb/>
                   <l>der Hirt und Heiland aller welt:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>19</num>Deß freu&#x364;te ſich das Himmelheer/</l>
+               <lg n="19">
+                  <head>19</head>
+                  <lb/>
+                  <l>Deß freu&#x364;te ſich das Himmelheer/</l>
                   <lb/>
                   <l>das Himmelheer/</l>
                   <lb/>
                   <l>und ſang: Gott in der ho&#x364;h ſey Ehr:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>20</num>Der Frid auch ſey auff gantzer Erd/</l>
+               <lg n="20">
+                  <head>20</head>
+                  <lb/>
+                  <l>Der Frid auch ſey auff gantzer Erd/</l>
                   <lb/>
                   <l>auff gantzer Erd:</l>
                   <lb/>
                   <l>Der menſch Gott wolgefa&#x364;llig werd:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>21</num>Die Hirten/ nach des Engels wort/</l>
+               <lg n="21">
+                  <head>21</head>
+                  <lb/>
+                  <l>Die Hirten/ nach des Engels wort/</l>
                   <lb/>
                   <l>des Engels wort/</l>
                   <lb/>
                   <l>das Kindlein fanden an ſeim ort:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>22</num>Der Heiden Troſt/ der Juden Heil/</l>
+               <lg n="22">
+                  <head>22</head>
+                  <lb/>
+                  <l>Der Heiden Troſt/ der Juden Heil/</l>
                   <lb/>
                   <l>der Juden Heil;</l>
                   <lb/>
                   <l>kraft glaubens; ihnen ward zu theil:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>23</num>Deß gaben ſie Gott lob und preiß/</l>
+               <lg n="23">
+                  <head>23</head>
+                  <lb/>
+                  <l>Deß gaben ſie Gott lob und preiß/</l>
                   <lb/>
                   <l>Gott lob und preiß:</l>
                   <lb/>
                   <l>Maria horte zu mit fleiß:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>24</num>Den Weiſen zeigt ein neu&#x364;er Stern/</l>
+               <lg n="24">
+                  <head>24</head>
+                  <lb/>
+                  <l>Den Weiſen zeigt ein neu&#x364;er Stern/</l>
                   <lb/>
                   <l>ein neu&#x364;er Stern/</l>
                   <lb/>
                   <l>den neu&#x364;gebornen Ko&#x364;ng von fern:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>25</num>Die kamen ihn zu ba&#x364;tten an/</l>
+               <lg n="25">
+                  <head>25</head>
+                  <lb/>
+                  <l>Die kamen ihn zu ba&#x364;tten an/</l>
                   <lb/>
                   <l>zu ba&#x364;tten an:</l>
                   <lb/>
                   <l>und ſchankten ihm/ alß untertahn:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>26</num>Gold/ Weyhrauch/ und der Myrꝛhen Gab/</l>
+               <lg n="26">
+                  <head>26</head>
+                  <lb/>
+                  <l>Gold/ Weyhrauch/ und der Myrꝛhen Gab/</l>
                   <lb/>
                   <l>der Myrꝛhen Gab:</l>
                   <lb/>
@@ -7148,15 +7177,18 @@
                      </choice> ins Grab:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>27</num>Wir Chriſten ſollen gleiches tuhn/</l>
+               <lg n="27">
+                  <head>27</head>
+                  <lb/>
+                  <l>Wir Chriſten ſollen gleiches tuhn/</l>
                   <lb/>
                   <l>geleiches tuhn:</l>
                   <lb/>
                   <l>mit Gaben ehren Gottes Sohn:/:</l>
+                  </lg>
                   <lb/>
-                  <fw place="bottom" type="catch"><num>28</num> Gold</fw>
+      
+                  <fw place="bottom" type="catch">28 Gold</fw>
 
                   <lb/>
                   <pb facs="4076839" n="64"/>
@@ -7166,58 +7198,67 @@
                   <fw place="top" type="header">Weihn<supplied>a</supplied>cht-</fw>
 
                   <lb break="no"/>
-               </lg>
-
-               <lg type="poem-subgroup">
-                  <l><num>28</num>Gold/ Weyhrauch/ Myrꝛh es nicht ſeyn muß/</l>
+               
+               <lg n="28">
+                  <head>28</head>
+                  <lb/>
+                  <l>Gold/ Weyhrauch/ Myrꝛh es nicht ſeyn muß/</l>
                   <lb/>
                   <l>es nicht ſeyn muß:</l>
                   <lb/>
                   <l>Es ſey der Glaub/ Geba&#x364;tt und Buß:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>29</num>O Ho&#x364;chſter/ laß dein Wort und Liecht</l>
+               <lg n="29">
+                  <head>29</head>
+                  <lb/>
+                  <l>O Ho&#x364;chſter/ laß dein Wort und Liecht</l>
                   <lb/>
                   <l>dein Wort und Liecht:/:</l>
                   <lb/>
                   <l>uns weiter ſcheinen: lo&#x364;ſch es nicht:/:</l>
                </lg>
                <lb/>
-
-               <lg type="poem-subgroup">
-                  <l><num>30</num>O Jeſus/ Gott und Menſch zugleich/</l>
+               <lg n="30">
+                  <head>30</head>
+                  <lb/>
+                  <l>O Jeſus/ Gott und Menſch zugleich/</l>
                   <lb/>
                   <l>und Menſch zugleich/</l>
                </lg>
                <lb/>
             </lg>
          </div>
+            
          <fw place="bottom" type="catch">erhalt</fw>
          <lb/>
+         
+         <lb/>
+         <milestone rendition="#hr" unit="section"/>
+         <lb/>
 
-         <div type="poem-div">
-            <head><label>[8.]</label><lb/>
-               <hi rendition="#aq"><num>X.</num> Cantus.</hi></head>
-            <lb/>
-            <lg type="poem">
-               <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein ſingen:</l>
+         <div type="music">
+            <div>
+               <head rendition="#aq #c #b">X. Cantus.</head>
                <lb/>
-               <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
-               <lb/>
-               <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-               <lb/>
-               <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+               <lg>
+                  <figure type="notatedMusic"/>
+                  <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein ſingen:</l>
+                  <lb/>
+                  <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                  <lb/>
+                  <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                  <lb/>
+                  <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
             </lg>
             <lb/>
          </div>
 
-         <div type="poem-div">
-            <head rendition="#aq">Tenor.</head>
+         <div>
+            <head rendition="#aq #b #c">Tenor.</head>
             <lb/>
-            <lg type="poem">
-               <lg type="poem-subgroup">
+            <lg>
+               <figure type="notatedMusic"/>
                   <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein
                      ſingen:</l>
                   <lb/>
@@ -7226,7 +7267,11 @@
                   <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
                   <lb/>
                   <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                  </lg>
                   <lb/>
+         </div>
+         </div>
+         
                   <pb facs="4076840" n="65"/>
 
                   <fw place="top" type="pageNum">65</fw>
@@ -7234,12 +7279,17 @@
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
 
                   <lb/>
-                  <l>$7.a$ erhalt in uns dein Gnadenreich:/:</l>
+<div type="poem">
+   <lg type="poem">
+               <lg n="30">
+                  <l>erhalt in uns dein Gnadenreich:/:</l> 
                </lg>
                <lb/>
 
-               <lg type="poem-subgroup">
-                  <l><num>31</num>O Heilger Geiſt/ durch deine Krafft/</l>
+               <lg n="31">
+                  <head>31</head>
+                  <lb/>
+                  <l>O Heilger Geiſt/ durch deine Krafft/</l>
                   <lb/>
                   <l>durch deine Krafft/</l>
                   <lb/>
@@ -7247,8 +7297,10 @@
                </lg>
                <lb/>
 
-               <lg type="poem-subgroup">
-                  <l><num>32</num>O heilige Dreyeinigkeit/</l>
+               <lg n="32">
+                  <head>32</head>
+                  <lb/>
+                  <l>O heilige Dreyeinigkeit/</l>
                   <lb/>
                   <l>Dreyeinigkeit/</l>
                   <lb/>
@@ -7256,25 +7308,32 @@
                   <lb/>
                   <l>Dir ſeye dank/ zu allerzeit!</l>
                   <lb/>
-                  <l>$8$ <hi rendition="#aq">Altus.</hi></l>
-                  <lb/>
-                  <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
-                     liedlein ſingen:</l>
-                  <lb/>
-                  <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
-                  <lb/>
-                  <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-                  <lb/>
-                  <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
                </lg>
-               <lb/>
-            </lg>
-         </div>
+   </lg>
+</div>
+         <div type="music">
+            <div>
+                  <head rendition="#aq #c #b">Altus.</head>
+                  <lb/>
+                  <lg>
+                     <figure type="notatedMusic"/>
+                     <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
+                        liedlein ſingen:</l>
+                     <lb/>
+                     <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                     <lb/>
+                     <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                     <lb/>
+                     <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+               </lg>
+               <lb/>       
+            </div>
 
-         <div type="poem-div">
-            <head rendition="#aq">Baſis.</head>
+         <div>
+            <head rendition="#aq #c #b">Baſis.</head>
             <lb/>
-            <lg type="poem">
+            <lg>
+               <figure type="notatedMusic"/>
                <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein ſingen:</l>
                <lb/>
                <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
@@ -7285,6 +7344,8 @@
             </lg>
             <lb/>
          </div>
+   </div>
+         
          <fw place="bottom" type="sig">F</fw>
          <lb/>
          <fw place="bottom" type="catch"><supplied>Ge-</supplied></fw>
@@ -11196,7 +11257,7 @@
                   <lb/>
                   <l>HERR JESUS/ hilf/ zu diſer Freu&#x364;denrhu!</l>
                   <lb/>
-                  <l>$17$ <hi rendition="#aq">Altus.</hi></l>
+                  <l><hi rendition="#aq">Altus.</hi></l>
                   <lb/>
                   <l>Du/ der auf dem waſſer ſchwebte/ do nichts lebte; hochgelobter</l>
                   <lb/>
@@ -14725,6 +14786,8 @@
                <l>ſta&#x364;rket hertz und glider/ und alle ſinn erfreu&#x364;t.</l>
             </lg>
             <lb/>
+            </div>
+         
             <div type="stanza-div">
                <head><num>3.</num></head>
                <lb/>
@@ -14747,6 +14810,10 @@
                   <lb/>
                   <fw place="bottom" type="catch">Un-</fw>
                   <lb break="no"/>
+               </lg>
+                  </div>
+         </div>
+</div>
 
                   <!-- Teil III -->
 
@@ -14774,8 +14841,6 @@
                   <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
                </lg>
                <lb/>
-            </div>
-         </div>
 
          <div type="poem-div">
             <head rendition="#aq">Tenor.</head>
