@@ -2559,7 +2559,7 @@
             </div>
 
             <fw place="bottom" type="catch" rendition="#aq">II. Cantus.</fw>
-
+            <lb/>
             <pb facs="4076787" n="12"/>
 
             <fw place="top" type="pageNum">12</fw>
@@ -4972,7 +4972,6 @@
             </div>
 
             <fw place="bottom" type="catch">Jnha&#x364;lte</fw>
-
             <lb/>
             <pb facs="4076818" n="43."/>
 
@@ -6823,7 +6822,7 @@
                <fw place="top" type="pageNum">60</fw>
                <lb/>
                <fw place="top" type="header">Weihnacht-</fw>
-               <lb break="no"/>
+               <lb/>
 
                <div n="2" xml:id="n7">
                   <head rendition="#c #b">Weichnachtgeſang:</head>
@@ -6895,7 +6894,7 @@
                   </div>
 
                   <fw place="bottom" type="catch">5. Ge-</fw>
-
+                  <lb/>
                   <pb facs="4076836" n="61"/>
 
                   <fw place="top" type="pageNum">61</fw>
@@ -6966,17 +6965,15 @@
                            <lb/>
 
                            <fw place="bottom" type="catch">8. Des</fw>
-
                            <lb/>
                            <pb facs="4076837" n="62"/>
 
                            <fw place="top" type="pageNum">62</fw>
                            <lb/>
                            <fw place="top" type="header">Weihnacht</fw>
-
                            <lb/>
                         </lg>
-
+                        <lb/>
                         <lg n="8">
                            <head>8</head>
                            <lb/>
@@ -7080,13 +7077,13 @@
                         <lb/>
 
                         <fw place="bottom" type="catch">18. Den</fw>
-
                         <lb/>
                         <pb facs="4076838" n="63"/>
 
                         <fw place="top" type="pageNum">63</fw>
                         <lb/>
                         <fw place="top" type="header">Geſa&#x364;nge.</fw>
+                        <lb/>
 
                         <lg n="18">
                            <head>18</head>
@@ -7193,15 +7190,13 @@
                         <lb/>
 
                         <fw place="bottom" type="catch">28 Gold</fw>
-
                         <lb/>
                         <pb facs="4076839" n="64"/>
 
                         <fw place="top" type="pageNum">64</fw>
                         <lb/>
                         <fw place="top" type="header">Weihn<supplied>a</supplied>cht-</fw>
-
-                        <lb break="no"/>
+                        <lb/>
 
                         <lg n="28">
                            <head>28</head>
@@ -7241,39 +7236,41 @@
                   <milestone rendition="#hr" unit="section"/>
                   <lb/>
 
-                  <div type="music">
-                     <div>
-                        <head rendition="#aq #c #b">X. Cantus.</head>
-                        <lb/>
-                        <lg>
-                           <figure type="notatedMusic"/>
-                           <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein
-                              ſingen:</l>
+                  <div n="2" xml:id="n8">
+                     <div type="music">
+                        <div>
+                           <head rendition="#aq #c #b">X. Cantus.</head>
                            <lb/>
-                           <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
+                                 liedlein ſingen:</l>
+                              <lb/>
+                              <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                              <lb/>
+                              <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                              <lb/>
+                              <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                           </lg>
                            <lb/>
-                           <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-                           <lb/>
-                           <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
-                        </lg>
-                        <lb/>
-                     </div>
+                        </div>
 
-                     <div>
-                        <head rendition="#aq #b #c">Tenor.</head>
-                        <lb/>
-                        <lg>
-                           <figure type="notatedMusic"/>
-                           <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein liedlein
-                              ſingen:</l>
+                        <div>
+                           <head rendition="#aq #b #c">Tenor.</head>
                            <lb/>
-                           <l>ohn ſchimpf un&#x303; ſcherz/ von gheimnußreichen dingen/</l>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
+                                 liedlein ſingen:</l>
+                              <lb/>
+                              <l>ohn ſchimpf un&#x303; ſcherz/ von gheimnußreichen dingen/</l>
+                              <lb/>
+                              <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                              <lb/>
+                              <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                           </lg>
                            <lb/>
-                           <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-                           <lb/>
-                           <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
-                        </lg>
-                        <lb/>
+                        </div>
                      </div>
                   </div>
 
@@ -7282,483 +7279,495 @@
                   <fw place="top" type="pageNum">65</fw>
                   <lb/>
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
-
-                  <lb/>
-                  <div type="poem">
-                     <lg type="poem">
-                        <lg n="30">
-                           <l>erhalt in uns dein Gnadenreich:/:</l>
-                        </lg>
-                        <lb/>
-
-                        <lg n="31">
-                           <head>31</head>
-                           <lb/>
-                           <l>O Heilger Geiſt/ durch deine Krafft/</l>
-                           <lb/>
-                           <l>durch deine Krafft/</l>
-                           <lb/>
-                           <l>der Neu&#x364;geburt uns mach theilhafft:/:</l>
-                        </lg>
-                        <lb/>
-
-                        <lg n="32">
-                           <head>32</head>
-                           <lb/>
-                           <l>O heilige Dreyeinigkeit/</l>
-                           <lb/>
-                           <l>Dreyeinigkeit/</l>
-                           <lb/>
-                           <l>Dir ſeye dank/ zu allerzeit/</l>
-                           <lb/>
-                           <l>Dir ſeye dank/ zu allerzeit!</l>
-                           <lb/>
-                        </lg>
-                     </lg>
-                  </div>
-                  <div type="music">
-                     <div>
-                        <head rendition="#aq #c #b">Altus.</head>
-                        <lb/>
-                        <lg>
-                           <figure type="notatedMusic"/>
-                           <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
-                              liedlein ſingen:</l>
-                           <lb/>
-                           <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
-                           <lb/>
-                           <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-                           <lb/>
-                           <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
-                        </lg>
-                        <lb/>
-                     </div>
-
-                     <div>
-                        <head rendition="#aq #c #b">Baſis.</head>
-                        <lb/>
-                        <lg>
-                           <figure type="notatedMusic"/>
-                           <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
-                              liedlein ſingen:</l>
-                           <lb/>
-                           <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
-                           <lb/>
-                           <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
-                           <lb/>
-                           <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
-                        </lg>
-                        <lb/>
-                     </div>
-                  </div>
-               </div>
-
-               <fw place="bottom" type="sig">F</fw>
-               <lb/>
-               <fw place="bottom" type="catch"><supplied>Ge-</supplied></fw>
-
-               <lb break="no"/>
-               <pb facs="4076841" n="66"/>
-
-               <fw place="top" type="pageNum">66</fw>
-               <lb/>
-               <fw place="top" type="header">Weihnacht-</fw>
-
-               <div n="2" xml:id="n8">
-                  <div type="poem-div">
-                     <head><lb break="no"/> Geſang <lb/> über unſers Herꝛen Jeſus Chriſtus Geburt/
-                        <lb/> Leiden und Herꝛlichkeit.</head>
-                     <lb/>
-                     <lg type="poem">
-                        <lg type="poem-subgroup">
-                           <l>Jn der weis: Wach auf mein hertz/ ꝛc.</l>
-                           <lb/>
-                           <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/</l>
-                           <lb/>
-                           <l>hilff mir ein liedlein ſingen:</l>
-                           <lb/>
-                           <l>ohn ſchimpff und ſchertz/</l>
-                           <lb/>
-                           <l>von gheimnußreichen dingen/</l>
-                           <lb/>
-                           <l>die uns ein bott</l>
-                           <lb/>
-                           <l>von him&#x342;len mu&#x364;ßte bringen:</l>
-                           <lb/>
-                           <l>darum in Gott</l>
-                           <lb/>
-                           <l>wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>2</num>Freud u&#x364;ber fre<choice>
-                                 <sic>n</sic>
-                                 <corr>u</corr>
-                              </choice>d/</l>
-                           <lb/>
-                           <l><choice>
-                                 <sic>wird</sic>
-                                 <corr>wir</corr>
-                              </choice> ſeind nicht mehr verloren/</l>
-                           <lb/>
-                           <l>es weiche leid:</l>
-                           <lb/>
-                           <l>dan heut iſt uns geboren</l>
-                           <lb/>
-                           <l>Chriſtus der Herꝛ/</l>
-                           <lb/>
-                           <l>der Heiland außerkoren/</l>
-                           <lb/>
-                           <l>der von uns ferꝛ</l>
-                           <lb/>
-                           <l>abwendet Gottes zoren.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>3</num>Jn Davids ſtatt/</l>
-                           <lb/>
-                           <l>im ſtal/ ein Jungfrau reine</l>
-                           <lb/>
-                           <l>geboren hat</l>
-                           <lb/>
-                           <l>den Heiland den ich meine:</l>
-                           <lb/>
-                           <l>ein wunderkind/</l>
-                           <lb/>
-                           <l>ein kind/ deßgleichen keine</l>
-                           <lb/>
-                           <l>auff erden ſind/</l>
-                           <lb/>
-                           <l>in him&#x342;len es alleine.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>4</num>Ein Gottes Sohn/</l>
-                           <lb/>
-                           <fw place="bottom" type="catch">des</fw>
-                           <lb/>
-                           <pb facs="4076842" n="67"/>
-
-                           <fw place="top" type="pageNum">67</fw>
-                           <lb/>
-                           <fw place="top" type="header">Geſa&#x364;nge.</fw>
-                           <lb/>
-                           <l>des menſchen auch darneben:</l>
-                           <lb/>
-                           <l>doch in perſon</l>
-                           <lb/>
-                           <l>nur einer; merk es eben;</l>
-                           <lb/>
-                           <l>Gott vor der zeit/</l>
-                           <lb/>
-                           <l>menſch in der zeit/ gegeben</l>
-                           <lb/>
-                           <l>der Chriſtenheit</l>
-                           <lb/>
-                           <l>in kreu&#x364;tzes tod/ zum leben.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>5</num>Der ho&#x364;llen noth</l>
-                           <lb/>
-                           <l>fu&#x364;r uns er hat erlidten/</l>
-                           <lb/>
-                           <l>hat ho&#x364;ll und tod</l>
-                           <lb/>
-                           <l>durch ſeinen tod beſtritten:</l>
-                           <lb/>
-                           <l>nur wenig tag</l>
-                           <lb/>
-                           <l>im grab er lag/ am dritten;</l>
-                           <lb/>
-                           <l>nach eigner ſag;</l>
-                           <lb/>
-                           <l>iſt er darauß geſchritten.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>6</num>Er ſitzt nunmehr</l>
-                           <lb/>
-                           <l>zu ſeines Vatters rechten/</l>
-                           <lb/>
-                           <l>in ho&#x364;ch<anchor xml:id="a89"/><unclear>ſ</unclear><note
-                                 type="annotation" targetEnd="a89"><p>Wahrscheinlich Schaft-s.
-                                    Allerdings kann man ein fälschlicherweise gedrucktes f nicht
-                                    ausschliessen. Das Vergleichsexemplar (Augsburg) hilft
-                                    nicht.</p></note>ter ehr/</l>
-                           <lb/>
-                           <l>uns ſighafft zu verfechten/</l>
-                           <lb/>
-                           <l>wan wir vom feind;</l>
-                           <lb/>
-                           <l>uns in ſein garn zu flechten;</l>
-                           <lb/>
-                           <l>verklaget ſeind</l>
-                           <lb/>
-                           <l>mit andern ungerechten.</l>
-                        </lg>
-                        <lb/>
-
-                        <lg type="poem-subgroup">
-                           <l><num>7</num>Auf/ auf mein hertz/</l>
-                           <lb/>
-                           <l>hilff mein geſang vollenden:</l>
-                           <lb/>
-                           <l>es weiche ſchertz/</l>
-                           <lb/>
-                           <l>im glauben ſol es enden:</l>
-                           <lb/>
-                           <l>Herꝛ/ deinen Geiſt/</l>
-                           <lb/>
-                           <l>von mir nicht wo&#x364;llſt verwenden:</l>
-                           <lb/>
-                           <l>die zukunfft leiſt/</l>
-                           <lb/>
-                           <l>nim&#x342; mich zu deinen ha&#x364;nden!</l>
-                           <lb/>
-                           <fw place="bottom" type="sig">F ij</fw>
-
-                           <lb/>
-                           <pb facs="4076843" n="68"/>
-
-                           <fw place="top" type="pageNum">68</fw>
-                           <lb/>
-                           <fw place="top" type="header">Weihnacht-</fw>
-
-                           <lb break="no"/>
-                           <l><label>[9.]</label><lb/>
-                              <hi rendition="#aq">Cantus.</hi></l>
-                           <lb/>
-                           <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
-                           <lb/>
-                           <l>und won/ ſelber Gott zugleiche: Was doch mag</l>
-                           <lb/>
-                           <l>es immer ſeyn/ das dich aus des himmels ſchreyn/</l>
-                           <lb/>
-                           <l>trib von deinem reiche.</l>
-                        </lg>
-                        <lb/>
-                     </lg>
-                  </div>
-
-                  <div type="poem-div">
-                     <head rendition="#aq">Tenor.</head>
-                     <lb/>
-                     <lg type="poem">
-                        <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
-                        <lb/>
-                        <l>und won/ ſelber Gott zugleiche: Was doch mag</l>
-                        <lb/>
-                        <l>es immer ſeyn/ das dich aus des himmels ſchreyn</l>
-                        <lb/>
-                        <l>trib von deinem <supplied>reiche</supplied>?</l>
-                     </lg>
-                     <lb/>
-                  </div>
-                  <pb facs="4076844" n="69"/>
-
-                  <fw place="top" type="pageNum">69</fw>
-                  <lb/>
-                  <fw place="top" type="header">Geſa&#x364;nge.</fw>
                   <lb/>
 
-                  <div type="poem-div">
-                     <head rendition="#aq">Altus.</head>
-                     <lb/>
-                     <lg type="poem">
-                        <l>Jeſus waarer Gottes Sohn/ deines Vatters freud</l>
-                        <lb/>
-                        <l>und won/ ſelber Gott zugleiche: Was doch mag es</l>
-                        <lb/>
-                        <l>immer ſeyn/ das dich aus des himmels ſchreyn/</l>
-                        <lb/>
-                        <l>trib von deinem reiche.</l>
-                     </lg>
-                     <lb/>
+                  <div n="2" xml:id="n7">
+                     <div type="poem">
+                        <lg type="poem">
+                           <lg n="30">
+                              <l>erhalt in uns dein Gnadenreich:/:</l>
+                           </lg>
+                           <lb/>
+                           <lg n="31">
+                              <head>31</head>
+                              <lb/>
+                              <l>O Heilger Geiſt/ durch deine Krafft/</l>
+                              <lb/>
+                              <l>durch deine Krafft/</l>
+                              <lb/>
+                              <l>der Neu&#x364;geburt uns mach theilhafft:/:</l>
+                           </lg>
+                           <lb/>
+                           <lg n="32">
+                              <head>32</head>
+                              <lb/>
+                              <l>O heilige Dreyeinigkeit/</l>
+                              <lb/>
+                              <l>Dreyeinigkeit/</l>
+                              <lb/>
+                              <l>Dir ſeye dank/ zu allerzeit/</l>
+                              <lb/>
+                              <l>Dir ſeye dank/ zu allerzeit!</l>
+                              <lb/>
+                           </lg>
+                        </lg>
+                     </div>
                   </div>
 
-                  <div type="poem-div">
-                     <head rendition="#aq">Baſis.</head>
+                  <div n="2" xml:id="n8">
+                     <div type="music">
+                        <div>
+                           <head rendition="#aq #c #b">Altus.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
+                                 liedlein ſingen:</l>
+                              <lb/>
+                              <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                              <lb/>
+                              <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                              <lb/>
+                              <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+
+                        <div>
+                           <head rendition="#aq #c #b">Baſis.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/ hilff mir ein
+                                 liedlein ſingen:</l>
+                              <lb/>
+                              <l>ohn ſchimpf und ſcherz/ von gheimnußreichen dinge&#x303;/</l>
+                              <lb/>
+                              <l>die uns ein bott von himmlen mu&#x364;ßte bringen:</l>
+                              <lb/>
+                              <l>darum in Gott wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+                     </div>
+
+                     <fw place="bottom" type="sig">F</fw>
                      <lb/>
-                     <lg type="poem">
-                        <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
-                        <lb/>
-                        <l>und won/ ſelber Gott zugleiche: Was doch mag es</l>
-                        <lb/>
-                        <l>immer ſeyn/ das dich aus des himm<supplied>e</supplied>ls <choice>
-                              <sic>ſchreyn?</sic>
-                              <corr>ſchreyn</corr>
-                           </choice></l>
-                        <lb/>
-                        <l>trib von deinem reiche.</l>
-                     </lg>
+                     <fw place="bottom" type="catch"><supplied>Ge-</supplied></fw>
                      <lb/>
+                     <pb facs="4076841" n="66"/>
+
+                     <fw place="top" type="pageNum">66</fw>
+                     <lb/>
+                     <fw place="top" type="header">Weihnacht-</fw>
+                     <lb/>
+
+                     <div type="poem">
+                        <head rendition="#b #c">Geſang <lb/> über unſers Herꝛen Jeſus Chriſtus
+                           Geburt/ <lb/> Leiden und Herꝛlichkeit.</head>
+                        <lb/>
+                        <p rendition="#b #c #smaller">Jn der weis: Wach auf mein hertz/ ꝛc.</p>
+                        <lb/>
+
+                        <lg type="poem">
+                           <lg n="1">
+                              <l><hi rendition="#in">A</hi>Uf/ auf mein hertz/</l>
+                              <lb/>
+                              <l rendition="#et">hilff mir ein liedlein ſingen:</l>
+                              <lb/>
+                              <l>ohn ſchimpff und ſchertz/</l>
+                              <lb/>
+                              <l rendition="#et">von gheimnußreichen dingen/</l>
+                              <lb/>
+                              <l>die uns ein bott</l>
+                              <lb/>
+                              <l rendition="#et">von him&#x342;len mu&#x364;ßte bringen:</l>
+                              <lb/>
+                              <l>darum in Gott</l>
+                              <lb/>
+                              <l rendition="#et">wir fro&#x364;lich mo&#x364;gen ſpringen.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="2">
+                              <head>2</head>
+                              <l>Freud u&#x364;ber fre<choice>
+                                    <sic>n</sic>
+                                    <corr>u</corr>
+                                 </choice>d/</l>
+                              <lb/>
+                              <l rendition="#et"><choice>
+                                    <sic>wird</sic>
+                                    <corr>wir</corr>
+                                 </choice> ſeind nicht mehr verloren/</l>
+                              <lb/>
+                              <l>es weiche leid:</l>
+                              <lb/>
+                              <l rendition="#et">dan heut iſt uns geboren</l>
+                              <lb/>
+                              <l>Chriſtus der Herꝛ/</l>
+                              <lb/>
+                              <l rendition="#et">der Heiland außerkoren/</l>
+                              <lb/>
+                              <l>der von uns ferꝛ</l>
+                              <lb/>
+                              <l rendition="#et">abwendet Gottes zoren.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="3">
+                              <head>3</head>
+                              <l>Jn Davids ſtatt/</l>
+                              <lb/>
+                              <l rendition="#et">im ſtal/ ein Jungfrau reine</l>
+                              <lb/>
+                              <l>geboren hat</l>
+                              <lb/>
+                              <l rendition="#et">den Heiland den ich meine:</l>
+                              <lb/>
+                              <l>ein wunderkind/</l>
+                              <lb/>
+                              <l rendition="#et">ein kind/ deßgleichen keine</l>
+                              <lb/>
+                              <l>auff erden ſind/</l>
+                              <lb/>
+                              <l rendition="#et">in him&#x342;len es alleine.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="4">
+                              <head>4</head>
+                              <l>Ein Gottes Sohn/</l>
+                              <lb/>
+                              
+                              <fw place="bottom" type="catch">des</fw>
+                              <lb/>
+                              <pb facs="4076842" n="67"/>
+
+                              <fw place="top" type="pageNum">67</fw>
+                              <lb/>
+                              <fw place="top" type="header">Geſa&#x364;nge.</fw>
+                              <lb/>
+                              
+                              <l rendition="#et">des menſchen auch darneben:</l>
+                              <lb/>
+                              <l>doch in perſon</l>
+                              <lb/>
+                              <l rendition="#et">nur einer; merk es eben;</l>
+                              <lb/>
+                              <l>Gott vor der zeit/</l>
+                              <lb/>
+                              <l rendition="#et">menſch in der zeit/ gegeben</l>
+                              <lb/>
+                              <l>der Chriſtenheit</l>
+                              <lb/>
+                              <l rendition="#et">in kreu&#x364;tzes tod/ zum leben.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="5">
+                              <head>5</head>
+                              <l>Der ho&#x364;llen noth</l>
+                              <lb/>
+                              <l rendition="#et">fu&#x364;r uns er hat erlidten/</l>
+                              <lb/>
+                              <l>hat ho&#x364;ll und tod</l>
+                              <lb/>
+                              <l rendition="#et">durch ſeinen tod beſtritten:</l>
+                              <lb/>
+                              <l>nur wenig tag</l>
+                              <lb/>
+                              <l rendition="#et">im grab er lag/ am dritten;</l>
+                              <lb/>
+                              <l>nach eigner ſag;</l>
+                              <lb/>
+                              <l rendition="#et">iſt er darauß geſchritten.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="6">
+                              <head>6</head>
+                              <l>Er ſitzt nunmehr</l>
+                              <lb/>
+                              <l rendition="#et">zu ſeines Vatters rechten/</l>
+                              <lb/>
+                              <l>in ho&#x364;ch<unclear reason="uncleanPrint">ſ</unclear>ter ehr/</l>
+                              <lb/>
+                              <l rendition="#et">uns ſighafft zu verfechten/</l>
+                              <lb/>
+                              <l>wan wir vom feind;</l>
+                              <lb/>
+                              <l rendition="#et">uns in ſein garn zu flechten;</l>
+                              <lb/>
+                              <l>verklaget ſeind</l>
+                              <lb/>
+                              <l rendition="#et">mit andern ungerechten.</l>
+                           </lg>
+                           <lb/>
+                           <lg n="7">
+                              <head>7</head>
+                              <l>Auf/ auf mein hertz/</l>
+                              <lb/>
+                              <l rendition="#et">hilff mein geſang vollenden:</l>
+                              <lb/>
+                              <l>es weiche ſchertz/</l>
+                              <lb/>
+                              <l rendition="#et">im glauben ſol es enden:</l>
+                              <lb/>
+                              <l>Herꝛ/ deinen Geiſt/</l>
+                              <lb/>
+                              <l rendition="#et">von mir nicht wo&#x364;llſt verwenden:</l>
+                              <lb/>
+                              <l>die zukunfft leiſt/</l>
+                              <lb/>
+                              <l rendition="#et">nim&#x342; mich zu deinen ha&#x364;nden!</l>
+                           </lg>
+                           <lb/>
+                        </lg>
+                     </div>
                   </div>
-               </div>
-               <pb facs="4076845" n="70"/>
 
-               <fw place="top" type="pageNum">70</fw>
-               <lb/>
-               <fw place="top" type="header">Weihnacht-</fw>
+                  <fw place="bottom" type="sig">F ij</fw>
+                  <lb/>
+                  <pb facs="4076843" n="68"/>
 
-               <div n="2" xml:id="n9">
-                  <div type="poem-div">
-                     <head><lb break="no"/> Liebesgeſpra&#x364;ch <lb/> einer Chriſtgla&#x364;ubigen
-                        Seel mit ihrem <lb/> Herꝛen und Heiland Jeſus <lb/> Chriſtus.</head>
+                  <fw place="top" type="pageNum">68</fw>
+                  <lb/>
+                  <fw place="top" type="header">Weihnacht-</fw>
+                  <lb/>
+
+                  <div n="2" xml:id="n9">
+                     <div type="music">
+                        <div>
+                           <head rendition="#aq">Cantus.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
+                              <lb/>
+                              <l>und won/ ſelber Gott zugleiche: Was doch mag</l>
+                              <lb/>
+                              <l>es immer ſeyn/ das dich aus des himmels ſchreyn/</l>
+                              <lb/>
+                              <l>trib von deinem reiche.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+
+                        <div>
+                           <head rendition="#aq">Tenor.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
+                              <lb/>
+                              <l>und won/ ſelber Gott zugleiche: Was doch mag</l>
+                              <lb/>
+                              <l>es immer ſeyn/ das dich aus des himmels ſchreyn</l>
+                              <lb/>
+                              <l>trib von deinem <supplied>reiche</supplied>?</l>
+                           </lg>
+                           <lb/>
+                        </div>
+
+                        <pb facs="4076844" n="69"/>
+
+                        <fw place="top" type="pageNum">69</fw>
+                        <lb/>
+                        <fw place="top" type="header">Geſa&#x364;nge.</fw>
+                        <lb/>
+
+                        <div>
+                           <head rendition="#aq">Altus.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l>Jeſus waarer Gottes Sohn/ deines Vatters freud</l>
+                              <lb/>
+                              <l>und won/ ſelber Gott zugleiche: Was doch mag es</l>
+                              <lb/>
+                              <l>immer ſeyn/ das dich aus des himmels ſchreyn/</l>
+                              <lb/>
+                              <l>trib von deinem reiche.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+
+                        <div>
+                           <head rendition="#aq">Baſis.</head>
+                           <lb/>
+                           <lg>
+                              <figure type="notatedMusic"/>
+                              <l>Jeſus/ waarer Gottes Sohn/ deines Vatters freud</l>
+                              <lb/>
+                              <l>und won/ ſelber Gott zugleiche: Was doch mag es</l>
+                              <lb/>
+                              <l>immer ſeyn/ das dich aus des himm<supplied>e</supplied>ls <choice>
+                                    <sic>ſchreyn?</sic>
+                                    <corr>ſchreyn</corr>
+                                 </choice></l>
+                              <lb/>
+                              <l>trib von deinem reiche.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+                     </div>
+
+                     <pb facs="4076845" n="70"/>
+
+                     <fw place="top" type="pageNum">70</fw>
                      <lb/>
-                     <lg type="poem">
-                        <l>Jn der weis:</l>
+                     <fw place="top" type="header">Weihnacht-</fw>
+
+                     <div type="poem-div">
+                        <head><lb break="no"/> Liebesgeſpra&#x364;ch <lb/> einer
+                           Chriſtgla&#x364;ubigen Seel mit ihrem <lb/> Herꝛen und Heiland Jeſus
+                           <lb/> Chriſtus.</head>
                         <lb/>
-                        <l>Einsmals mich ein luſt ankam/ ꝛc.</l>
-                     </lg>
-                     <lb/>
-                     <div type="stanza-div">
-                        <head><num>1.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>Seel.<hi rendition="#in"> J</hi>Eſus/ warer Gottes Sohn/</l>
+                        <lg type="poem">
+                           <l>Jn der weis:</l>
                            <lb/>
-                           <l>deines Vatters freud und won/</l>
-                           <lb/>
-                           <l>ſelber Gott zugleiche:</l>
-                           <lb/>
-                           <l>Was doch mag es immer ſeyn</l>
-                           <lb/>
-                           <l>das dich auß des himmels ſchreyn</l>
-                           <lb/>
-                           <l>trib von deinem reiche?</l>
+                           <l>Einsmals mich ein luſt ankam/ ꝛc.</l>
                         </lg>
                         <lb/>
-                     </div>
+                        <div type="stanza-div">
+                           <head><num>1.</num></head>
+                           <lb/>
+                           <lg type="stanza">
+                              <l>Seel.<hi rendition="#in"> J</hi>Eſus/ warer Gottes Sohn/</l>
+                              <lb/>
+                              <l>deines Vatters freud und won/</l>
+                              <lb/>
+                              <l>ſelber Gott zugleiche:</l>
+                              <lb/>
+                              <l>Was doch mag es immer ſeyn</l>
+                              <lb/>
+                              <l>das dich auß des himmels ſchreyn</l>
+                              <lb/>
+                              <l>trib von deinem reiche?</l>
+                           </lg>
+                           <lb/>
+                        </div>
 
-                     <div type="stanza-div">
-                        <head><num>2.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>War es gwalt und feyendſchafft?</l>
+                        <div type="stanza-div">
+                           <head><num>2.</num></head>
                            <lb/>
-                           <l>War es eine gheime krafft</l>
+                           <lg type="stanza">
+                              <l>War es gwalt und feyendſchafft?</l>
+                              <lb/>
+                              <l>War es eine gheime krafft</l>
+                              <lb/>
+                              <l>die dich hat gezogen</l>
+                              <lb/>
+                              <l>auß des Vatters liebſter ſchoß/</l>
+                              <lb/>
+                              <l>auf die erden/ arm und bloß?</l>
+                              <lb/>
+                              <l>Hat dich liſt betrogen?</l>
+                           </lg>
                            <lb/>
-                           <l>die dich hat gezogen</l>
-                           <lb/>
-                           <l>auß des Vatters liebſter ſchoß/</l>
-                           <lb/>
-                           <l>auf die erden/ arm und bloß?</l>
-                           <lb/>
-                           <l>Hat dich liſt betrogen?</l>
-                        </lg>
-                        <lb/>
-                     </div>
+                        </div>
 
-                     <div type="stanza-div">
-                        <head><num>3.</num></head>
+                        <div type="stanza-div">
+                           <head><num>3.</num></head>
+                           <lb/>
+                           <lg type="stanza">
+                              <l>Chriſtus. Nein/ o nein! noch gwalt/ noch liſt/</l>
+                              <lb/>
+                              <l>noch ſo was dergleichen iſt/</l>
+                              <lb/>
+                              <l>brachte mich auff erden:</l>
+                              <lb/>
+                              <l>meine liebe nur allein:</l>
+                              <lb/>
+                              <l>daß ich mo&#x364;chte Heiland ſeyn/</l>
+                              <lb/>
+                              <l>hieſſe mich menſch werden.</l>
+                           </lg>
+                           <lb/>
+                        </div>
+                        <fw place="bottom" type="catch"><num>4.</num> Seel</fw>
                         <lb/>
-                        <lg type="stanza">
-                           <l>Chriſtus. Nein/ o nein! noch gwalt/ noch liſt/</l>
-                           <lb/>
-                           <l>noch ſo was dergleichen iſt/</l>
-                           <lb/>
-                           <l>brachte mich auff erden:</l>
-                           <lb/>
-                           <l>meine liebe nur allein:</l>
-                           <lb/>
-                           <l>daß ich mo&#x364;chte Heiland ſeyn/</l>
-                           <lb/>
-                           <l>hieſſe mich menſch werden.</l>
-                        </lg>
-                        <lb/>
-                     </div>
-                     <fw place="bottom" type="catch"><num>4.</num> Seel</fw>
-                     <lb/>
-                     <pb facs="4076846" n="71"/>
+                        <pb facs="4076846" n="71"/>
 
-                     <fw place="top" type="pageNum">71</fw>
-                     <lb/>
-                     <fw place="top" type="header">Geſa&#x364;nge.</fw>
-                     <lb/>
+                        <fw place="top" type="pageNum">71</fw>
+                        <lb/>
+                        <fw place="top" type="header">Geſa&#x364;nge.</fw>
+                        <lb/>
 
-                     <div type="stanza-div">
-                        <head><num>4.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>Seel. Was fu&#x364;r dank nun ſol ich di<supplied>r</supplied></l>
+                        <div type="stanza-div">
+                           <head><num>4.</num></head>
                            <lb/>
-                           <l>fu&#x364;r die liebe/ die du mir</l>
+                           <lg type="stanza">
+                              <l>Seel. Was fu&#x364;r dank nun ſol ich di<supplied>r</supplied></l>
+                              <lb/>
+                              <l>fu&#x364;r die liebe/ die du mir</l>
+                              <lb/>
+                              <l>haſt erzeigt/ erweiſen?</l>
+                              <lb/>
+                              <l>Wan ich ewig lobte dich/</l>
+                              <lb/>
+                              <l>wurde doch nicht gnugſam ich</l>
+                              <lb/>
+                              <l>deine liebe preiſen!</l>
+                           </lg>
                            <lb/>
-                           <l>haſt erzeigt/ erweiſen?</l>
-                           <lb/>
-                           <l>Wan ich ewig lobte dich/</l>
-                           <lb/>
-                           <l>wurde doch nicht gnugſam ich</l>
-                           <lb/>
-                           <l>deine liebe preiſen!</l>
-                        </lg>
-                        <lb/>
-                     </div>
+                        </div>
 
-                     <div type="stanza-div">
-                        <head><num>5.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>Chriſtus. Weil ich ſo geliebet dich/</l>
+                        <div type="stanza-div">
+                           <head><num>5.</num></head>
                            <lb/>
-                           <l>ſolſt hinwider lieben mich/</l>
+                           <lg type="stanza">
+                              <l>Chriſtus. Weil ich ſo geliebet dich/</l>
+                              <lb/>
+                              <l>ſolſt hinwider lieben mich/</l>
+                              <lb/>
+                              <l>mir allein vertrauen:</l>
+                              <lb/>
+                              <l>meines worts ein ta&#x364;hter ſeyn/</l>
+                              <lb/>
+                              <l>deines glaubens fru&#x364;chte fein</l>
+                              <lb/>
+                              <l>kla&#x364;rlich laſſen ſchauen.</l>
+                           </lg>
                            <lb/>
-                           <l>mir allein vertrauen:</l>
-                           <lb/>
-                           <l>meines worts ein ta&#x364;hter ſeyn/</l>
-                           <lb/>
-                           <l>deines glaubens fru&#x364;chte fein</l>
-                           <lb/>
-                           <l>kla&#x364;rlich laſſen ſchauen.</l>
-                        </lg>
-                        <lb/>
-                     </div>
+                        </div>
 
-                     <div type="stanza-div">
-                        <head><num>6.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>Seel. Ja/ Herꝛ: aber gib du mir</l>
+                        <div type="stanza-div">
+                           <head><num>6.</num></head>
                            <lb/>
-                           <l>deine gnad/ zu folgen dir/</l>
+                           <lg type="stanza">
+                              <l>Seel. Ja/ Herꝛ: aber gib du mir</l>
+                              <lb/>
+                              <l>deine gnad/ zu folgen dir/</l>
+                              <lb/>
+                              <l>hertzlich dich zu lieben:</l>
+                              <lb/>
+                              <l>meinen glauben mir vermehr/</l>
+                              <lb/>
+                              <l>daß er ſich zu deiner ehr/</l>
+                              <lb/>
+                              <l>mir z<choice>
+                                    <sic>n</sic>
+                                    <corr>u</corr>
+                                 </choice>m heil/ mo&#x364;g u&#x364;ben!</l>
+                           </lg>
                            <lb/>
-                           <l>hertzlich dich zu lieben:</l>
-                           <lb/>
-                           <l>meinen glauben mir vermehr/</l>
-                           <lb/>
-                           <l>daß er ſich zu deiner ehr/</l>
-                           <lb/>
-                           <l>mir z<choice>
-                                 <sic>n</sic>
-                                 <corr>u</corr>
-                              </choice>m heil/ mo&#x364;g u&#x364;ben!</l>
-                        </lg>
-                        <lb/>
-                     </div>
+                        </div>
 
-                     <div type="stanza-div">
-                        <head><num>7.</num></head>
-                        <lb/>
-                        <lg type="stanza">
-                           <l>Chriſtus. Jch/ dein liebſtes ſeelenpfand/</l>
+                        <div type="stanza-div">
+                           <head><num>7.</num></head>
                            <lb/>
-                           <l>ſta&#x364;rke deine glaubenshand/</l>
-                           <lb/>
-                           <l>veſter mich zu faſſen.</l>
-                           <lb/>
-                           <l>Seel. Hin/ o welt/ und was in dir/</l>
-                           <lb/>
-                           <l>Jeſus wil verbleiben mir/</l>
-                           <lb/>
-                           <l>nimmer mich verlaſſen.</l>
-                           <lb/>
-                        </lg>
+                           <lg type="stanza">
+                              <l>Chriſtus. Jch/ dein liebſtes ſeelenpfand/</l>
+                              <lb/>
+                              <l>ſta&#x364;rke deine glaubenshand/</l>
+                              <lb/>
+                              <l>veſter mich zu faſſen.</l>
+                              <lb/>
+                              <l>Seel. Hin/ o welt/ und was in dir/</l>
+                              <lb/>
+                              <l>Jeſus wil verbleiben mir/</l>
+                              <lb/>
+                              <l>nimmer mich verlaſſen.</l>
+                              <lb/>
+                           </lg>
+                        </div>
                      </div>
                   </div>
                   <fw place="bottom" type="sig">F jv</fw>
@@ -7905,8 +7914,7 @@
                   <fw place="top" type="pageNum">74</fw>
                   <lb/>
                   <fw place="top" type="header">Weihnacht-</fw>
-
-                  <lb break="no"/>
+                  <lb/>
 
                   <div n="2" xml:id="n11">
 
