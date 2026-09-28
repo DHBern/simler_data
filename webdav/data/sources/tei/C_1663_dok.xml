@@ -20,8 +20,8 @@
       </profileDesc>
    </teiHeader>
    <text>
-      <body>
-         <div>
+      <front>
+         <div n="1">
             <pb facs="4049161"/>
             <pb facs="4049162"/>
             <pb facs="4049163"/>
@@ -39,6 +39,7 @@
             <pb facs="4049175"/>
             <pb facs="4049176"/>
             <pb facs="4049178"/>
+            <titlePage type="main">
             Johann-Wilhelm
             <lb/>
             Simlers
@@ -82,8 +83,10 @@
             Jn verlegung Joh. Wilhelm Simlers/ Bu&#x366;chh.
             <lb/>
             <hi rendition="#aq">M DC. LXIII.</hi>
+            </titlePage>
             <lb/>
             <pb facs="4049179"/>
+            <div type="dedication" xml:id="iii">
             <list>
             <head rendition="#c"><hi rendition="#b">Denen Hochgeachten/ woledlen/ veſten/</hi>
             <lb/>
@@ -135,6 +138,7 @@
             <pb facs="4049180"/>
             <fw place="top" type="header">Zuſchrifft.</fw>
             <lb/>
+            <div>
             <p><hi rendition="#b"><hi rendition="#in">H</hi>Ochgeachte/ woledle/ veſte/ from-</hi>
             <lb break="no"/>
             me/ ehren-nohtveſte/ fu&#x364;rſichtige/ weyſe/
@@ -364,7 +368,10 @@
             <lb/>
             <signed>Joh. Wilhelm Simler</signed></closer>
             <lb/>
+            </div>
+            </div>
             <pb facs="4049184"/>
+            <div xml:id="iv">
             <head rendition="#aq"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
             <lb break="no"/>
             <hi rendition="#i">ſimi Viri</hi>,
@@ -391,6 +398,8 @@
             <lb/>
             Perge, quæſo, &amp;c.</p>
             <lb/>            
+            </div>
+            <div xml:id="v">
             <head rendition="#aq"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN</hi>. GEORGII MULLERI,</hi>
@@ -421,8 +430,9 @@
             <lb/>
             <fw place="bottom" type="catch" rendition="#aq"><num>I.</num> Ad</fw>
             <lb/>
+            </div>
             <pb facs="4049185"/>
-            
+            <div xml:id="vi">
             <head rendition="#aq"><num>I.</num>
             <lb/>
             Ad Authorem
@@ -445,7 +455,8 @@
             <lb/>
             Abbatiſsanæ Eccleſiæ Paſtor</signed></closer>
             <lb/>
-            
+            </div>
+            <div xml:id="vii">
             <head rendition="#aq"><num>II.</num>
             <lb/>
             loannes VVilelmus Simlerus.
@@ -468,7 +479,8 @@
             <lb/>
             honoris c. f.</signed></closer>
             <lb/>
-            
+            </div>
+            <div xml:id="viii">
             <head rendition="#aq"><num>III.</num>
             <lb/>
             <hi rendition="#g">IOANNES GVIELMVS SIMLERVS</hi>
@@ -497,8 +509,10 @@
             <lb/>
             <hi rendition="#i">profeſſor ordinarius.</hi></signed></closer>
             <lb/>
+            </div>
             
             <pb facs="4049186"/>
+            <div xml:id="ix">
             <head rendition="#aq"><num>IV.</num></head>
             <lb/>
             <lg type="poem">
@@ -553,10 +567,11 @@
             <lb/>
             V. D. M. &amp; Profeſſor Græco Latinus.</signed></closer>
             <lb/>
+            </div>
             <fw place="bottom" type="catch"><num>V.</num> <hi rendition="#k"><anchor xml:id="a10"/>'<note type="annotation" targetEnd="a10"><p>Auch im Vergleichsexemplar Wien und auf der Folgeseite ist dieses Zeichen vor dem "A" vorhanden.</p></note>AN</hi></fw><hi rendition="#k"><anchor xml:id="a11"/>'<note type="annotation" targetEnd="a11"><p>Auch im Vergleichsexemplar Wien und auf der Folgeseite ist dieses Zeichen vor dem "A" vorhanden.</p></note>AN</hi>
             <lb/>
             <pb facs="4049187"/>
-            
+            <div xml:id="x">
             <head rendition="#aq"><num>V.</num></head>
             <lb/>
             <hi rendition="#in">A</hi>N
@@ -587,8 +602,9 @@
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>VI.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
+            </div>
             <pb facs="4049188"/>
-            
+            <div xml:id="xi">
             <head><hi rendition="#aq"><num>VI.</num></hi>
             <lb/>
             <hi rendition="#b"><hi rendition="#aq">U</hi>ber Herꝛn Tichters namen</hi>
@@ -667,11 +683,11 @@
             <lb/>
             am Zürichſee.</signed></closer>
             <lb/>
-            
+            </div>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>VII.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
             <pb facs="4049189"/>
-            
+            <div xml:id="xii">
             <head rendition="#aq"><num>VII.</num>
             <lb/>
             über den glu&#x366;klichen fortgang erwünſch-
@@ -734,7 +750,8 @@
             <l>du tuhſt es einig dir.</l>
             </lg>
             <lb/>
-            
+            </div>
+            <div xml:id="xiii">
             <head>Der Tichter an ſein
             <lb/>
             Bu&#x366;ch.</head>
@@ -747,11 +764,11 @@
             <lb/>
             <l rendition="#et">daß der Tadler widerſpricht.</l>
             <lb/>
-            
+            </div>
             <fw place="bottom" type="catch" rendition="#aq"><num>VIII.</num></fw>
             <lb/>
             <pb facs="4049190"/>
-            
+            <div xml:id="xiv">
             <head rendition="#aq"><num>VIII.</num></head>
             <lb/>
             <l><hi rendition="#in">O</hi>B gleich der <hi rendition="#b">Tichter</hi> kunſt ſehr hoch bisher geſtigen/</l>
@@ -890,7 +907,8 @@
             <lb/>
             <closer><signed>Ehrenhold Falk von Traubenberg/</signed></closer>
             <lb/>
-            
+            </div>
+            <div xml:id="xv">
             <head rendition="#aq"><num>IX.</num>
             <lb/>
             An Herꝛen Ehrenhold Falken/
@@ -939,8 +957,9 @@
             <lb/>
             <fw place="bottom" type="catch">So</fw>
             <lb/>
+            </div>
             <pb facs="4049193"/>
-            
+            <div xml:id="xvi">
             <head rendition="#aq"><num>X.</num></head>
             <lb/>
             <l><hi rendition="#in">S</hi>O ſchikket Herꝛ Simler ſein Bu&#x366;che zureiſen/</l>
@@ -973,11 +992,12 @@
             <lb/>
             Johann Jakob Bodmer.
             <lb/>
-            
+            </div>
             <hi rendition="#aq"><fw place="bottom" type="catch"><num>XI.</num> <hi rendition="#i">In</hi></fw><hi rendition="#i">In</hi></hi>
             <lb/>
             
             <pb facs="4049194"/>
+            <div xml:id="xvii">
             <head rendition="#aq"><num>XI.</num>
             <lb/>
             <hi rendition="#i">In laudem Autoris, &amp;c.</hi></head>
@@ -1012,7 +1032,8 @@
             <lb/>
             Paſtor Dieticonenſis</signed></closer>
             <lb/>
-
+            </div>
+            <div xml:id="xviii">
             <head rendition="#aq"><num>XII.</num></head>
             <lb/>
             <lg type="poem">
@@ -1041,11 +1062,11 @@
             <lb/>
             Vitoduranorum Diaconus.</signed></closer>
             <lb/>
-            
+            </div>
             <fw place="bottom" type="catch" rendition="#aq"><num>XIII.</num></fw>
             <lb/>
             <pb facs="4049195"/>
-            
+            <div xml:id="xix">
             <head rendition="#aq"><num>XIII.</num></head>
             <lb/>
             Zu ehren und lobwürdigem ruhm
@@ -1098,8 +1119,9 @@
             <lb/>
             zu Gottſtatt und Thorberg.
             <lb/>
+            </div>
             <pb facs="4049196"/>
-            
+            <div xml:id="xx">
             <head><hi rendition="#aq"><num>XIV.</num></hi>
             <lb/>
             Haubtbegriff des gantzen Bu&#x366;chs/ auf
@@ -1297,7 +1319,8 @@
             <lb/>
             zu Weinfelden.
             <lb/>
-            
+            </div>
+            <div xml:id="xxi">
             <head rendition="#aq"><num>XV.</num>
             <lb/>
             <hi rendition="#aq"><hi rendition="#i">Omne trinum perfectum.</hi></hi></head>
@@ -1332,12 +1355,13 @@
             <lb break="no"/>
             natus Helv. Tig.</p>
             <lb/>
+            </div>
             <milestone unit="section" rendition="#hr"/>
             <lb/>
             <fw place="bottom" type="catch" rendition="#aq #i">VVilhel-</fw>
             <lb break="no"/>
             <pb facs="4049198"/>
-            
+            <div xml:id="xxii">
             <head rendition="#aq"><num>XVI.</num></head>
             <lb/>
             <lg>
@@ -1390,11 +1414,12 @@
             <lb/>
             <closer><signed rendition="#aq">Idem H. <hi rendition="#k">HERDERUS</hi>.</signed></closer>
             <lb/>
+            </div>
             
             <fw place="bottom" type="catch" rendition="#aq"><num>XVII.</num></fw>
             <lb/>
             <pb facs="4049199"/>
-            
+            <div xml:id="xxiii">
             <head rendition="#aq"><num>XVII.</num></head>
             <lb/>
             <l><hi rendition="#in">W</hi>Je in dem Orden/ der viel frucht und nutzen bringet/</l>
@@ -1457,6 +1482,11 @@
             <lb/>
             des Worts Gottes.
             <lb/>
+            </div>
+         </div>
+      </front>
+      <body>
+         <div n="1">
             <pb facs="4049200"/>
             <head rendition="#b #c"><anchor xml:id="a22"/>Aller<note type="annotation" targetEnd="a22"><p>Die Nummerierung "I" hier scheint nachträglich ergänzt worden zu sein. In den Vergleichsexemplaren Zürich und Wien ist die römische Ziffer nicht zu sehen.</p></note>
             <lb/>
