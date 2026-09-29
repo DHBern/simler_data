@@ -528,7 +528,7 @@
             <lb/>
             <l rendition="#et #aq #i">Excelſi quisquis facta ſtupenda canit.</l>
             <lb/>
-            <l rendition="#aq #i">Hoc quoque</l> Simlerum <hi rendition="#i">felicem nomine duco,</hi>
+            <l rendition="#aq"><hi rendition="#i">Hoc quoque</hi> Simlerum <hi rendition="#i">felicem nomine duco,</hi></l>
             <lb/>
             <l rendition="#et #aq #i">Quòd pubi noſtræ carmina ſancta ferat.</l>
             <lb/>
@@ -592,13 +592,13 @@
             <lb/>
             <lb/>
             <lb/>
-            <hi rendition="#aq">Honoris c. f.</hi>
+            <closer><salute rendition="#right"><hi rendition="#aq">Honoris c. f.</hi></salute>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#g">IOHANNES CASPARVS SVIZERVS,</hi></hi>
+            <signed rendition="#right"><hi rendition="#aq"><hi rendition="#g">IOHANNES CASPARVS SVIZERVS,</hi></hi>
             <lb/>
             <hi rendition="#aq">Collegii Neo. parth. lnſpector, &amp; Theolog.</hi>
             <lb/>
-            <hi rendition="#aq">Catechet. in Auditorio Hum. Prof.</hi>
+            <hi rendition="#aq">Catechet. in Auditorio Hum. Prof.</hi></signed></closer>
             <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>VI.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
@@ -926,9 +926,9 @@
             <lb/>
             <l rendition="#et">wie zuvor von dem Wein/ nunmehr ſo gar beſoffen/</l>
             <lb/>
-            <l rendition="#et">daß man nicht; ſeine Sprach/ Tracht/ ja ſein hertz und</l>
+            <l rendition="#et">daß man nicht; ſeine Sprach/ Tracht/ ja ſein hertz und
             <lb/>
-            muht/
+            muht/</l>
             <lb/>
             <l rendition="#et">Alt-Teutſch und Redlich mehr werd bleiben; kan verhof-
             <lb break="no"/>
@@ -1081,7 +1081,7 @@
             <lb/>
             <pb facs="4049195"/>
             <div xml:id="xix">
-            <head rendition="#aq"><num>XIII.</num></head>
+            <head><hi rendition="#aq"><num>XIII.</num></hi>
             <lb/>
             Zu ehren und lobwürdigem ruhm
             <lb/>
@@ -1095,7 +1095,7 @@
             <lb/>
             Poetiſche Getichte und Geſa&#x364;nge.
             <lb/>
-            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET</hi></hi></hi>.
+            <hi rendition="#aq"><hi rendition="#k"><hi rendition="#g">SONNET</hi></hi></hi>.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">D</hi>Er Ga&#x364;rtner wird gelobt/ der mu&#x364;h und fleiß nicht
@@ -1357,9 +1357,9 @@
             </lg>
             <lb/>
             
-            Johann Jacob Sta&#x364;ffen/ Pfarꝛer
+            <closer><signed rendition="#right">Johann Jacob Sta&#x364;ffen/ Pfarꝛer
             <lb/>
-            zu Weinfelden.
+            zu Weinfelden.</signed></closer>
             <lb/>
             </div>
             <div xml:id="xxi">
@@ -1524,9 +1524,9 @@
             <l rendition="#et">Biß ſeine Seele geht in dritten Himmel eyn.</l>
             </lg>
             <lb/>
-            Hans Ulrich Amman/ Diener
+            <closer><signed rendition="#right">Hans Ulrich Amman/ Diener
             <lb/>
-            des Worts Gottes.
+            des Worts Gottes.</signed></closer>
             <lb/>
             </div>
          </div>
@@ -2070,7 +2070,7 @@
             <fw place="bottom" type="catch" rendition="#aq"><num>XXVIII.</num></fw>
             <lb/>
             <pb facs="4049208"/>
-            9
+            <fw place="top" type="pageNum">9</fw>
             <lb/>
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
@@ -6212,6 +6212,7 @@
             <pb facs="4049258" n="59"/>
             <fw place="top" type="pageNum">59</fw>
             <lb/>
+            <div n="1">
             <head rendition="#b #c">Anda&#x364;chtige
             <lb/>
             Feſt- und unterweiſungs-
@@ -6387,7 +6388,6 @@
             <lb/>
             <l>ij des Kindeleins zu Bethlehem.</l>
             <lb/>
-            <div n="1">
             <div n="2" xml:id="n7">
             <head>Weihnachtgeſang:
             <lb/>
@@ -20494,7 +20494,7 @@
             </lg>
             </lg>
             <lb/>
-            Epheſ<anchor xml:id="a121"/><unclear>.</unclear><note type="annotation" targetEnd="a121"><p>In den Vergleichsexemplaren ist ein verblasster Punkt zu erkennen. Hier ist davon keine Spur</p></note>5.22.23. Tit.2.4.5. Coloſſ.3.18.
+            <note place="bottom" type="bibl" rendition="#et #smaller">Epheſ<anchor xml:id="a121"/><unclear>.</unclear><note type="annotation" targetEnd="a121"><p>In den Vergleichsexemplaren ist ein verblasster Punkt zu erkennen. Hier ist davon keine Spur</p></note>5.22.23. Tit.2.4.5. Coloſſ.3.18.</note>
             <lb/>
             <lg>
             <head rendition="#b #c">Gemeine pflichten der Eheleuhten.</head>
@@ -33189,36 +33189,6 @@
             <pb facs="4049821"/>
             <pb facs="4049822"/>
             <pb facs="4049823"/>
-            
-            <!--Es scheint sich im folgenden um eine Verdoppelung zu handeln, kann wohl gelöscht werden-->
-            <pb facs="664" n="142"/>
-            <fw place="top" type="pageNum">142</fw>
-            <lb/>
-            <fw place="top" type="header">Catechiſmus geſang.</fw>
-            <lb/>
-            
-            <head rendition="#aq"><num>XXI.</num> Cantus.</head>
-            <lb/>
-            Mein troſt anietz und iederzeit/ im leben und im ſterben/
-            <lb/>
-            iſt freüdenfolle ſeligkeit in him&#x342;len zu ererben:
-            <lb/>
-            wo ich bey Gott wird ewig ſeyn/ und ſolche gu&#x364;ter ſamlen<anchor xml:id="a230"/><unclear> </unclear><note type="annotation" targetEnd="a230"><p>Unklares Zeichen (vgl. S. 117)</p></note>eyn
-            <lb/>
-            die nimmermehr verderben.
-            <lb/>
-            
-            <head rendition="#aq">Tenor.</head>
-            <lb/>
-            Mein troſt anietz und iederzeit/ im leben und im ſterben/
-            <lb/>
-            iſt freüdenfolle ſeligkeit in him&#x342;len zu ererben:
-            <lb/>
-            wo ich bey Gott wird ewig ſeyn/ und ſolche gu&#x364;ter ſamlen eyn
-            <lb/>
-            die nimmermehr verderben.
-            <lb/>
-            
          </div>
       </body>
    </text>
