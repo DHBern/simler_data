@@ -15924,7 +15924,6 @@
                <fw place="bottom" type="sig">P iiij</fw>
                <lb/>
                <fw place="bottom" type="catch">Be-</fw>
-
                <lb break="no"/>
                <pb n="216" facs="30218235"/>
 
@@ -15934,7 +15933,7 @@
 
                <lg n="7">
                   <head rendition="#b #c">Beſchließliche erinner- und abmahnung vom<lb/> leib- und
-                     ſeelen-ſcha&#x364;dlichen Geſundheit-<lb break="no"/> trinken.</head>
+                     ſeelen-ſcha&#x364;dlichen Geſundheit-<lb break="no"/>trinken.</head>
                   <lb/>
                   <lg>
                      <l>Wan nun durch füllerey/ und durch geſundheitſauffen/</l>
@@ -15963,7 +15962,8 @@
                      <lb/>
                      <l rendition="#et">mach jenen an dem leib/ und den im beutel krank.</l>
                      <lb/>
-                     <l xml:id="l87a" next="#l87b">Dan ja Gott ſelber ſpricht: Weh! weh dem bo&#x364;ſen hauf-</l>
+                     <l xml:id="l87a" next="#l87b">Dan ja Gott ſelber ſpricht: Weh! weh dem
+                        bo&#x364;ſen hauf-</l>
                      <lb break="no"/>
                      <l xml:id="l87b" prev="#l87a">fen/</l>
                      <lb/>
@@ -15975,7 +15975,7 @@
                      <l rendition="#et">daß ſie das himmelreych ererben werden nicht.</l>
                   </lg>
                   <lb/>
-                  <lg>
+                  <lg n="8">
                      <l>Darum ermahn' ich euch/ ich bitt'/ ich ſeufftz' und flehe/</l>
                      <lb/>
                      <l>daß iederma&#x364;nniglich weinſauffens mu&#x364;ſſig gehe/</l>
@@ -15994,7 +15994,7 @@
                      <l rendition="#et">durch Chriſtum endlich auch die ware ſeligkeit!</l>
                   </lg>
                   <lb/>
-                  <l rendition="#g #c">ENDE.</l>
+                  <closer rendition="#g #c">ENDE.</closer>
                   <lb/>
                </lg>
             </div>
@@ -16002,426 +16002,438 @@
             <pb n="[217]" facs="30218236"/>
 
             <div n="1">
-               <l>Johann-Wilhelm</l>
-               <lb/>
-               <l>Simlers</l>
-               <lb/>
-               <l>Teutſcher Gedichten</l>
-               <lb/>
-               <l>Neüe Zu&#x366;gabe</l>
-               <lb/>
-               <l>von</l>
-               <lb/>
-               <l>allerhand Vberſchrifften</l>
-               <lb/>
-               <l>und Geſa&#x364;ngen.</l>
+               <head rendition="#b #c">Johann-Wilhelm<lb/> Simlers<lb/> Teutſcher Gedichten<lb/>
+                  Neüe Zu&#x366;gabe<lb/> von<lb/> allerhand Vberſchrifften<lb/> und
+                  Geſa&#x364;ngen.</head>
                <lb/>
                <pb n="[218]" facs="30218237"/>
                <pb n="[219]" facs="30218238"/>
-               <div type="poem">
-                  <head>Regentenſpiegel:</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Dem hochgeachten/ a&#x364;dlen/ geſtr<anchor xml:id="a159"/>a&#x364;<note
-                           type="annotation" targetEnd="a159"><p>kleines e etwas deutlicher in der
-                              SBB</p></note>ngen/</l>
-                     <lb/>
-                     <l>frommen/ veſten/ fürſichtigen und wol-</l>
-                     <lb break="no"/>
-                     <l>weiſen Herꝛen/</l>
-                     <lb/>
-                     <l>H. Hans Heinrich Waſern/</l>
-                     <lb/>
-                     <l>wolverdienlich erwehltem Herꝛen</l>
-                     <lb/>
-                     <l>Burgermeiſtern loblicher Statt</l>
-                     <lb/>
-                     <l>Zürich:</l>
-                     <lb/>
-                     <l>Jn <hi rendition="#aq">LXXII.</hi> ſteigenden Viergedichten;</l>
-                     <lb/>
-                     <l>auß <hi rendition="#aq"><hi rendition="#g">AGAPETI</hi>, Diacons</hi> der
-                        groſſen Kirchen</l>
-                     <lb/>
-                     <l>zu&#x366; Conſtantinopel/ an den frommen Keyſer <hi rendition="#aq"><hi
-                              rendition="#k">JUSTINIA-</hi>
-                           <lb break="no"/>
-                           <hi rendition="#k">NUM</hi></hi>
-                        <hi rendition="#aq">LXXII.</hi> lehrꝛeichen Vermahnungs-capitlen;</l>
-                     <lb/>
-                     <l>an des Herꝛen Ehren-nammenstage/ den 13. Ha&#x364;umon.</l>
-                     <lb/>
-                     <l>1652. nach kurtz zu&#x366;vor/ den 28. tag Brachmonats</l>
-                     <lb/>
-                     <l>freybeſchehener Wahl/ wolmeinlich auf-</l>
-                     <lb break="no"/>
-                     <l>und fürgeſtellt</l>
-                     <lb/>
-                     <l>Von Johann-Wilhelm Simler/</l>
-                     <lb/>
-                     <l>Zuchtmeiſter im mehrern Hofe</l>
-                     <lb/>
-                     <l>zum Frauenmünſter:</l>
-                     <lb/>
-                     <l>alß ſchuldgeneigtwilligſtem Diener/</l>
-                     <lb/>
-                     <l>und Vettern.</l>
-                  </lg>
-                  <lb/>
-               </div>
+               <!-- Head überarbeiten -->
+               <head rendition="#b #c">Regentenſpiegel:<lb/> Dem hochgeachten/ a&#x364;dlen/
+                  geſtra&#x364;ngen/<lb/> frommen/ veſten/ fürſichtigen und wol-<lb break="no"
+                  />weiſen Herꝛen/<lb/> H. Hans Heinrich Waſern/<lb/> wolverdienlich erwehltem
+                  Herꝛen<lb/> Burgermeiſtern loblicher Statt<lb/> Zürich:<lb/> Jn <hi
+                     rendition="#aq">LXXII.</hi> ſteigenden Viergedichten;<lb/> auß <hi
+                     rendition="#aq"><hi rendition="#g">AGAPETI</hi>, Diacons</hi> der groſſen
+                  Kirchen<lb/> zu&#x366; Conſtantinopel/ an den frommen Keyſer <hi rendition="#aq"
+                        ><hi rendition="#k">JUSTINIA-<lb break="no"/>NUM</hi> LXXII.</hi>
+                  lehrꝛeichen Vermahnungs-capitlen;<lb/> an des Herꝛen Ehren-nammenstage/ den 13.
+                  Ha&#x364;umon. <lb/> 1652. nach kurtz zu&#x366;vor/ den 28. tag Brachmonats<lb/>
+                  freybeſchehener Wahl/ wolmeinlich auf-<lb/> und fürgeſtellt<lb/> Von
+                  Johann-Wilhelm Simler/<lb/> Zuchtmeiſter im mehrern Hofe<lb/> zum
+                  Frauenmünſter:<lb/> alß ſchuldgeneigtwilligſtem Diener/<lb/> und Vettern.</head>
+               <lb/>
                <pb n="[220]" facs="30218239"/>
-               <div n="2" xml:id="n265.i">
-                  <head>Zu&#x366;ſchrifftsgedichte.</head>
+
+               <milestone unit="section" rendition="#hr"/>
+               <lb/>
+
+               <div n="2" type="poem" xml:id="n265.i">
+                  <head rendition="#b #c">Zu&#x366;ſchrifftsgedichte.</head>
                   <lb/>
                   <lg type="poem">
-                     <l><hi rendition="#in">H</hi>Ochgeachter Herꝛ/ und Freund vom geblu&#x364;t-
-                        und vom gemu&#x364;-</l>
-                     <lb break="no"/>
-                     <l>te/</l>
-                     <lb/>
-                     <l>ſeht mit gnadenaugen an/ nach der anerbornen gu&#x364;te/</l>
-                     <lb/>
-                     <l>mein ſo wolgemeintes Werklein/ diſe meine Viergedicht/</l>
-                     <lb/>
-                     <l>oder den Regentenſpiegel/ von der Oberherꝛen pflicht:</l>
-                     <lb/>
-                     <l>Zwaren nicht zu diſem end/ daß ihr meiner lehr bedo&#x364;rfet:</l>
-                     <lb/>
-                     <l>oder/ daß durch mein Gedicht eure pflicht werd eyngeſcha&#x364;rfet:</l>
-                     <lb/>
-                     <l>nein/ ſo iſt es nicht gemeinet/ (eur bekanter Tugendfleiß</l>
-                     <lb/>
-                     <l>nun und in der fru&#x364;hen jugend gibet wolverhaltens preiß)</l>
-                     <lb/>
-                     <l>ſonder wie ein Spiegel dem/ der geſa&#x364;ubert wird eynſchauen/</l>
-                     <lb/>
-                     <l>ſeine wolgeſtalte zeigt/ und erweket luſt fu&#x364;r grauen:</l>
-                     <lb/>
-                     <l>Alſo der Regentenſpiegel/ mit beluſtigung dem Herꝛn</l>
-                     <lb/>
-                     <l>wider in geda&#x364;chtnuß bringe was er la&#x364;ngſt geſehen gern.</l>
-                     <lb/>
-                     <l>Ha&#x364;tt' ich ko&#x364;nnen diſer zeit etwas angena&#x364;mers
-                        ſchreiben/</l>
-                     <lb/>
-                     <l>trauet mir/ es ha&#x364;tte nicht in der feder mu&#x364;ſſen bleiben:</l>
-                     <lb/>
-                     <l>aber dreyer Ha&#x364;ubter Sterben/ und der ſtralend Donnertag/</l>
-                     <lb/>
-                     <l>mich ſo gar erſchreket haben/ daß ich ſchwa&#x364;rlich fu&#x364;hren
-                        mag</l>
-                     <lb/>
-                     <l>meine feder in der fauſt; die Dichtader wil nicht ſchweiſſen/</l>
-                     <lb/>
-                     <l>ſeit/ an obbemeldtem tag/ in den Thurn/ genennt von Geiſſen;</l>
-                     <lb/>
-                     <l>welcher unſre Statt gezieret; ſchoß ein ſchnelles Stralenfeu&#x364;r:</l>
-                     <lb/>
-                     <l>ach! es zwikt in jenen Saamen/ deſſen wu&#x364;rkung ungeheur</l>
-                     <lb/>
-                     <l>den ſo ſchwa&#x364;ren Laſt erhebt/ und/ mit unerho&#x364;rtem knallen</l>
-                     <lb/>
-                     <l>ſo zerſchma&#x364;ttert/ daß hiervon na&#x364;chſte Ringmaur eyngefallen</l>
-                     <lb/>
-                     <l>beyderſeits zwey hundert ſchritte: auch die Neugenente Statt</l>
-                     <lb/>
-                     <l>von dem außgeworffnen zeuge ſchier den Reſt e<anchor xml:id="a160"/><unclear
-                           reason="uncleanPrint">mp</unclear><note type="annotation"
-                           targetEnd="a160"><p>unsicher, ob hier zwischen m und p ein Leerzeichen
-                              ist. In der SBB findet sich keines</p></note>fangen hat:</l>
-                     <lb/>
-                     <l>Dan es hagelt holtz und kalk/ klein- und Centnerſchwere ſteine/</l>
-                     <lb/>
-                     <l>die zerſchlugen Tach und Gmach/ und verfu&#x364;llten ins gemeine/</l>
-                     <lb/>
-                     <l>na&#x364;chſtgelegne ſcho&#x364;nſte Ga&#x364;rten: auch der ledig Dunſt
-                        vorauß</l>
-                     <lb/>
-                     <l>vor der zeit den tag verfinſtert/ und entfenſtert manches hauß:</l>
-                     <lb/>
-                     <l>o&#x364;fnet was verſchloſſen war: auch die da&#x364;cher er entdeket/</l>
-                     <lb/>
-                     <l>und die wa&#x364;g' unwa&#x364;gſam ſchier mit verma&#x364;ngtem zeug
-                        verſteket:</l>
-                     <lb/>
-                     <l>Fenſterkloben/ Schloß und Rigel riß er auß und vil entzwey:</l>
-                     <lb/>
-                     <l>machte/ meilenwa&#x364;gs/ den Boden zittern obs Erdbidem ſey.</l>
-                     <lb/>
-                     <fw place="bottom" type="catch">We-</fw>
-                     <lb break="no"/>
-                     <pb n="221" facs="30218240"/>
-                     <fw place="top" type="pageNum">221</fw>
-                     <lb/>
-                     <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
-                     <lb/>
-                     <l>Wenig ha&#x364;uſer ungeſch<anchor xml:id="a161"/>a&#x364;<note
-                           type="annotation" targetEnd="a161"><p>wahrsch. ein e, ist aber in der SBB
-                              noch weniger deutlich</p></note>ndt bliben in den beyden
-                        Sta&#x364;tten/</l>
-                     <lb/>
-                     <l>Ach<anchor xml:id="a162"/>!<note type="annotation" targetEnd="a162"><p>das
-                              Ausrufezeichen ist ein wenig deutlicher in der SBB</p></note> wie
-                        lehrte da die noht einen ieden eifrig ba&#x364;tten;</l>
-                     <lb/>
-                     <l>ja/ auch den/ der ſonſt zuvoren/ alß ein Heid/ zufluchen pflag:</l>
-                     <lb/>
-                     <l>ieder meint ſein hauß getroffen von dem ſtarken W<anchor xml:id="a163"
-                           />a&#x364;<note type="annotation" targetEnd="a163"><p>eindeutiges e in
-                              der SBB</p></note>tterſchlag.</l>
-                     <lb/>
-                     <l>Alle ſuchten hin und her einen ſichern Ort zufinden/</l>
-                     <lb/>
-                     <l>auch der fra&#x364;cheſt wu&#x364;nſchet ihm underlaſſung aller
-                           ſ<supplied>u</supplied>&#x364;nden:</l>
-                     <lb/>
-                     <l>dan es ſchin alß wolt vergehen diſes groſſe Rund der welt/</l>
-                     <lb/>
-                     <l>mit dem jenen was wir ſehen/ und zum ſelben wird gezellt.</l>
-                     <lb/>
-                     <l>Mancher klagte daß der Tag/ ach<anchor xml:id="a164"/>!<note
-                           type="annotation" targetEnd="a164"><p>das Ausrufezeichen ist ein wenig
-                              deutlicher in der SBB</p></note> der groſſe Tag ſey kommen:</l>
-                     <lb/>
-                     <l>ihm zu fru&#x364;h und vor der buß: zur erlo&#x364;ſung nur den frommen:</l>
-                     <lb/>
-                     <l>alles war erfu&#x364;llt mit ſchra&#x364;ken/ und es zagt ein iederman/</l>
-                     <lb/>
-                     <l>wu&#x364;nſchet hertzlich daß er ha&#x364;tte fu&#x364;r das bo&#x364;ſe
-                        guts getahn.</l>
-                     <lb/>
-                     <l>Acht perſonen bliben todt; theils erſtiket/ theils erſchlagen;</l>
-                     <lb/>
-                     <l>einen/ na&#x364;chſt vor ſeinem end/ half' ich ſelbſt zu behte tragen.</l>
-                     <lb/>
-                     <l>Diſem/ und zugleich den andern/ wu&#x364;nſchet ich auß hertzens-</l>
-                     <lb break="no"/>
-                     <l>grund/</l>
-                     <lb/>
-                     <l>daß der Scho&#x364;pfer ihnen gna&#x364;dig wolte ſeyn in letſter ſtund:</l>
-                     <lb/>
-                     <l>wie der wenigſt zweifel iſt: Wolgelebet/ wolgeſtorben:</l>
-                     <lb/>
-                     <l>iſt ein alt Schrifftma&#x364;ſſig Wort/ ewig wahr und unverdorben.</l>
-                     <lb/>
-                     <l>Der verletzten zahl war gro&#x364;ſſer: aber gegem augenſchein/</l>
-                     <lb/>
-                     <l>iſt ſie/ durch des Ho&#x364;chſten gu&#x364;te/ ho&#x364;chſtverwunderlich
-                        und klein.</l>
-                     <lb/>
-                     <l>Andre ſtieß der Dunſt zuruk; etlich' auch die ſta&#x364;gen nider/</l>
-                     <lb/>
-                     <l>ſchadlos/ von zerſchlagnem Tiſch/ warf er einen ins Gefider:</l>
-                     <lb/>
-                     <l>von mit holtz und ſtein umlegten die vernunft muß ſchweigen</l>
-                     <lb/>
-                     <l>ſtill/</l>
-                     <lb/>
-                     <l>dan es muß ie leben diſer welchen Gott erhalten will.</l>
-                     <lb/>
-                     <l>Wunder iſts daß unſre Statt nicht in follen Brand zumalen</l>
-                     <lb/>
-                     <l>iſt gerahten durch ſo vil ungewohntes Donnerſtralen:</l>
-                     <lb/>
-                     <l>aber Gottes gnadengu&#x364;te zuverſchohnen ſich entſchloß/</l>
-                     <lb/>
-                     <l>wie ein wolkenbruch ein Regen u&#x364;ber alles ſich ergoß.</l>
-                     <lb/>
-                     <l>Liebes Zu&#x364;rich/ ſinn daran/ und erzehls den Kindeskinden/</l>
-                     <lb/>
-                     <l>Buß- und Glaubensfru&#x364;chte bring; haß und laß gewohnte
-                           ſu&#x364;n<anchor xml:id="a165"/>-<note type="annotation"
-                           targetEnd="a165"><p>eindeutiger Bindestrich in der SBB</p></note></l>
-                     <lb/>
-                     <l>den;</l>
-                     <lb/>
-                     <l>daß der Herꝛ an deiner wurtzel mit der Axt nicht fahre fu&#x364;r:</l>
-                     <lb/>
-                     <l>beßre dich/ und tuh zun ſachen bey noch ofner Gnadenthu&#x364;r:</l>
-                     <lb/>
-                     <fw place="bottom" type="catch">W<anchor xml:id="a166"/>o<note
-                           type="annotation" targetEnd="a166"><p>in der SBB ein deutliches
-                           o</p></note></fw>
-                     <lb/>
-                     <pb n="222" facs="30218241"/>
-                     <fw place="top" type="pageNum">222</fw>
-                     <lb/>
-                     <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
-                     <lb/>
-                     <l>Wo geraht' ich aber hin? Andre werden es beſchreiben</l>
-                     <lb/>
-                     <l>nach <anchor xml:id="a167"/>d<note type="annotation" targetEnd="a167"><p>in
-                              der SBB eindeutig ein d</p></note>er la&#x364;ng und nach der kunſt.
-                        Bey der Haubtſumm laß ichs</l>
-                     <lb/>
-                     <l>bleiben.</l>
-                     <lb/>
-                     <l>Diſes hab ich angemeldet/ alß urſachen die verwehrt/</l>
-                     <lb/>
-                     <l>daß ich Herꝛen Burgermeiſtern mit Lobverſen nicht geehrt</l>
-                     <lb/>
-                     <l>wie ich billich ſollen tuhn. Doch verhoff' ich/ ſeine Gu&#x364;te</l>
-                     <lb/>
-                     <l>werd annemmen was ich gib' ohne falſch/ und von gemu&#x364;hte.</l>
-                     <lb/>
-                     <l>Gott erhalt in ſeinen gnaden unſer werthes Vatterland/</l>
-                     <lb/>
-                     <l>und verleih dem neuen Herꝛen was beſeligt ſeinen Stand!</l>
-                     <lb/>
-                     <l>E. E. W.</l>
-                     <lb/>
-                     <l>Schuldgeneigtwilligſter Diener/</l>
-                     <lb/>
-                     <l>und Vetter</l>
-                     <lb/>
-                     <l>Joh. Wilhelm Simler.</l>
+                     <lg n="1">
+                        <l xml:id="l88a" next="#l88b"><hi rendition="#in">H</hi>Ochgeachter Herꝛ/
+                           und Freund vom geblu&#x364;t- und vom gemu&#x364;-</l>
+                        <lb break="no"/>
+                        <l xml:id="l88b" prev="#l88a">te/</l>
+                        <lb/>
+                        <l>ſeht mit gnadenaugen an/ nach der anerbornen gu&#x364;te/</l>
+                        <lb/>
+                        <l rendition="#et">mein ſo wolgemeintes Werklein/ diſe meine
+                           Viergedicht/</l>
+                        <lb/>
+                        <l rendition="#et">oder den Regentenſpiegel/ von der Oberherꝛen pflicht:</l>
+                        <lb/>
+                        <l>Zwaren nicht zu diſem end/ daß ihr meiner lehr bedo&#x364;rfet:</l>
+                        <lb/>
+                        <l>oder/ daß durch mein Gedicht eure pflicht werd eyngeſcha&#x364;rfet:</l>
+                        <lb/>
+                        <l rendition="#et">nein/ ſo iſt es nicht gemeinet/ (eur bekanter
+                           Tugendfleiß</l>
+                        <lb/>
+                        <l rendition="#et">nun und in der fru&#x364;hen jugend gibet wolverhaltens
+                           preiß)</l>
+                        <lb/>
+                        <l>ſonder wie ein Spiegel dem/ der geſa&#x364;ubert wird eynſchauen/</l>
+                        <lb/>
+                        <l>ſeine wolgeſtalte zeigt/ und erweket luſt fu&#x364;r grauen:</l>
+                        <lb/>
+                        <l rendition="#et">Alſo der Regentenſpiegel/ mit beluſtigung dem Herꝛn</l>
+                        <lb/>
+                        <l rendition="#et">wider in geda&#x364;chtnuß bringe was er la&#x364;ngſt
+                           geſehen gern.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="2">
+                        <l>Ha&#x364;tt' ich ko&#x364;nnen diſer zeit etwas angena&#x364;mers
+                           ſchreiben/</l>
+                        <lb/>
+                        <l>trauet mir/ es ha&#x364;tte nicht in der feder mu&#x364;ſſen bleiben:</l>
+                        <lb/>
+                        <l rendition="#et">aber dreyer Ha&#x364;ubter Sterben/ und der ſtralend
+                           Donnertag/</l>
+                        <lb/>
+                        <l rendition="#et">mich ſo gar erſchreket haben/ daß ich ſchwa&#x364;rlich
+                           fu&#x364;hren mag</l>
+                        <lb/>
+                        <l>meine feder in der fauſt; die Dichtader wil nicht ſchweiſſen/</l>
+                        <lb/>
+                        <l>ſeit/ an obbemeldtem tag/ in den Thurn/ genennt von Geiſſen;</l>
+                        <lb/>
+                        <l rendition="#et">welcher unſre Statt gezieret; ſchoß ein ſchnelles
+                           Stralenfeu&#x364;r:</l>
+                        <lb/>
+                        <l rendition="#et">ach! es zwikt in jenen Saamen/ deſſen wu&#x364;rkung
+                           ungeheur</l>
+                        <lb/>
+                        <l>den ſo ſchwa&#x364;ren Laſt erhebt/ und/ mit unerho&#x364;rtem
+                           knallen</l>
+                        <lb/>
+                        <l>ſo zerſchma&#x364;ttert/ daß hiervon na&#x364;chſte Ringmaur
+                           eyngefallen</l>
+                        <lb/>
+                        <l rendition="#et">beyderſeits zwey hundert ſchritte: auch die Neugenente
+                           Statt</l>
+                        <lb/>
+                        <l rendition="#et">von dem außgeworffnen zeuge ſchier den Reſt empfangen
+                           hat:</l>
+                        <lb/>
+                        <l>Dan es hagelt holtz und kalk/ klein- und Centnerſchwere ſteine/</l>
+                        <lb/>
+                        <l>die zerſchlugen Tach und Gmach/ und verfu&#x364;llten ins gemeine/</l>
+                        <lb/>
+                        <l rendition="#et">na&#x364;chſtgelegne ſcho&#x364;nſte Ga&#x364;rten: auch
+                           der ledig Dunſt vorauß</l>
+                        <lb/>
+                        <l rendition="#et">vor der zeit den tag verfinſtert/ und entfenſtert manches
+                           hauß:</l>
+                        <lb/>
+                        <l>o&#x364;fnet was verſchloſſen war: auch die da&#x364;cher er
+                           entdeket/</l>
+                        <lb/>
+                        <l>und die wa&#x364;g' unwa&#x364;gſam ſchier mit verma&#x364;ngtem zeug
+                           verſteket:</l>
+                        <lb/>
+                        <l rendition="#et">Fenſterkloben/ Schloß und Rigel riß er auß und vil
+                           entzwey:</l>
+                        <lb/>
+                        <l rendition="#et">machte/ meilenwa&#x364;gs/ den Boden zittern obs Erdbidem
+                           ſey.</l>
+                        <lb/>
+
+                        <fw place="bottom" type="catch">We-</fw>
+                        <lb/>
+                        <pb n="221" facs="30218240"/>
+
+                        <fw place="top" type="pageNum">221</fw>
+                        <lb/>
+                        <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
+                        <lb/>
+
+                        <l>Wenig ha&#x364;uſer ungeſcha<supplied>&#x364;</supplied>ndt bliben in den
+                           beyden Sta&#x364;tten/</l>
+                        <lb/>
+                        <l>Ach<supplied>!</supplied> wie lehrte da die noht einen ieden eifrig
+                           ba&#x364;tten;</l>
+                        <lb/>
+                        <l rendition="#et">ja/ auch den/ der ſonſt zuvoren/ alß ein Heid/ zufluchen
+                           pflag:</l>
+                        <lb/>
+                        <l rendition="#et">ieder meint ſein hauß getroffen von dem ſtarken
+                           Wa&#x364;tterſchlag.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="3">
+                        <l>Alle ſuchten hin und her einen ſichern Ort zufinden/</l>
+                        <lb/>
+                        <l>auch der fra&#x364;cheſt wu&#x364;nſchet ihm underlaſſung aller
+                              ſ<supplied>u&#x364;</supplied>nden:</l>
+                        <lb/>
+                        <l rendition="#et">dan es ſchin alß wolt vergehen diſes groſſe Rund der
+                           welt/</l>
+                        <lb/>
+                        <l rendition="#et">mit dem jenen was wir ſehen/ und zum ſelben wird
+                           gezellt.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="4">
+                        <l>Mancher klagte daß der Tag/ ach! der groſſe Tag ſey kommen:</l>
+                        <lb/>
+                        <l>ihm zu fru&#x364;h und vor der buß: zur erlo&#x364;ſung nur den
+                           frommen:</l>
+                        <lb/>
+                        <l rendition="#et">alles war erfu&#x364;llt mit ſchra&#x364;ken/ und es zagt
+                           ein iederman/</l>
+                        <lb/>
+                        <l rendition="#et">wu&#x364;nſchet hertzlich daß er ha&#x364;tte fu&#x364;r
+                           das bo&#x364;ſe guts getahn.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="5">
+                        <l>Acht perſonen bliben todt; theils erſtiket/ theils erſchlagen;</l>
+                        <lb/>
+                        <l>einen/ na&#x364;chſt vor ſeinem end/ half' ich ſelbſt zu behte
+                           tragen.</l>
+                        <lb/>
+                        <l rendition="#et" xml:id="l89a" next="#l89b">Diſem/ und zugleich den
+                           andern/ wu&#x364;nſchet ich auß hertzens-</l>
+                        <lb break="no"/>
+                        <l xml:id="l89b" prev="#l89a">grund/</l>
+                        <lb/>
+                        <l rendition="#et">daß der Scho&#x364;pfer ihnen gna&#x364;dig wolte ſeyn in
+                           letſter ſtund:</l>
+                        <lb/>
+                        <l>wie der wenigſt zweifel iſt: Wolgelebet/ wolgeſtorben:</l>
+                        <lb/>
+                        <l>iſt ein alt Schrifftma&#x364;ſſig Wort/ ewig wahr und unverdorben.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="6">
+                        <l rendition="#et">Der verletzten zahl war gro&#x364;ſſer: aber gegem
+                           augenſchein/</l>
+                        <lb/>
+                        <l rendition="#et">iſt ſie/ durch des Ho&#x364;chſten gu&#x364;te/
+                           ho&#x364;chſtverwunderlich und klein.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="7">
+                        <l>Andre ſtieß der Dunſt zuruk; etlich' auch die ſta&#x364;gen nider/</l>
+                        <lb/>
+                        <l>ſchadlos/ von zerſchlagnem Tiſch/ warf er einen ins Gefider:</l>
+                        <lb/>
+                        <l rendition="#et" xml:id="l90a" next="#l90b">von mit holtz und ſtein
+                           umlegten die vernunft muß ſchweigen</l>
+                        <lb/>
+                        <l xml:id="l90b" prev="#l90a">ſtill/</l>
+                        <lb/>
+                        <l rendition="#et">dan es muß ie leben diſer welchen Gott erhalten will.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="8">
+                        <l>Wunder iſts daß unſre Statt nicht in follen Brand zumalen</l>
+                        <lb/>
+                        <l>iſt gerahten durch ſo vil ungewohntes Donnerſtralen:</l>
+                        <lb/>
+                        <l rendition="#et">aber Gottes gnadengu&#x364;te zuverſchohnen ſich
+                           entſchloß/</l>
+                        <lb/>
+                        <l rendition="#et">wie ein wolkenbruch ein Regen u&#x364;ber alles ſich
+                           ergoß.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="9">
+                        <l>Liebes Zu&#x364;rich/ ſinn daran/ und erzehls den Kindeskinden/</l>
+                        <lb/>
+                        <l xml:id="l91a" next="l91b">Buß- und Glaubensfru&#x364;chte bring; haß und
+                           laß gewohnte ſu&#x364;n-</l>
+                        <lb break="no"/>
+                        <l xml:id="l91b" prev="#l91a">den;</l>
+                        <lb/>
+                        <l rendition="#et">daß der Herꝛ an deiner wurtzel mit der Axt nicht fahre
+                           fu&#x364;r:</l>
+                        <lb/>
+                        <l rendition="#et">beßre dich/ und tuh zun ſachen bey noch ofner
+                           Gnadenthu&#x364;r:</l>
+                        <lb/>
+
+                        <fw place="bottom" type="catch">W<supplied>o</supplied></fw>
+                        <lb/>
+                        <pb n="222" facs="30218241"/>
+
+                        <fw place="top" type="pageNum">222</fw>
+                        <lb/>
+                        <fw place="top" type="header">Zuſchrifftsgedichte.</fw>
+                        <lb/>
+
+                        <l>Wo geraht' ich aber hin? Andre werden es beſchreiben</l>
+                        <lb/>
+                        <l xml:id="l92a" next="#l92b">nach <supplied>d</supplied>er la&#x364;ng und
+                           nach der kunſt. Bey der Haubtſumm laß ichs</l>
+                        <lb/>
+                        <l xml:id="l92b" prev="#l92a">bleiben.</l>
+                        <lb/>
+                        <l rendition="#et">Diſes hab ich angemeldet/ alß urſachen die verwehrt/</l>
+                        <lb/>
+                        <l rendition="#et">daß ich Herꝛen Burgermeiſtern mit Lobverſen nicht
+                           geehrt</l>
+                        <lb/>
+                        <l>wie ich billich ſollen tuhn. Doch verhoff' ich/ ſeine Gu&#x364;te</l>
+                        <lb/>
+                        <l>werd annemmen was ich gib' ohne falſch/ und von gemu&#x364;hte.</l>
+                     </lg>
+                     <lb/>
+                     <lg n="10">
+                        <l rendition="#et">Gott erhalt in ſeinen gnaden unſer werthes
+                           Vatterland/</l>
+                        <lb/>
+                        <l rendition="#et">und verleih dem neuen Herꝛen was beſeligt ſeinen
+                           Stand!</l>
+                     </lg>
+                     <lb/>
+                     <closer rendition="#et2"><salute>E. E. W.</salute>
+                        <lb/>
+                        <salute rendition="#et3 #c">Schuldgeneigtwilligſter Diener/ <lb/> und
+                           Vetter</salute>
+                        <lb/>
+                        <signed rendition="#right">Joh. Wilhelm Simler</signed>.</closer>
                   </lg>
                   <lb/>
                </div>
+
                <pb n="223" facs="30218242"/>
                <fw place="top" type="pageNum">223</fw>
-               <div n="2" xml:id="n265.ii">
-                  <head rendition="#aq #i">Ad Lectorem</head>
+
+               <div n="2" type="poem" xml:id="n265.ii">
+                  <head rendition="#b #c"><hi rendition="#aq #i">Ad Lectorem</hi><lb/> PROOEMII
+                     SIMLERIANI.</head>
                   <lb/>
                   <lg type="poem">
-                     <l rendition="#aq"><hi rendition="#g">PROOEMII SIMLERIANI.</hi>
-                        <lb/>
-                        <hi rendition="#in">P</hi>Ulvere de Pyrio ſi vis deflere ruinam, <lb/> Ette
-                        deficiunt lachrymæ: lege Carmina Vatis <lb/>
-                        <hi rendition="#g">SIMLERI</hi>, lachrymas &amp; ſufficienter habebis. <lb/>
-                        FELIX <hi rendition="#b">W</hi>YSSIVS, Abbatiſſanæ <lb/> Eccleſiæ
-                        Paſtor.</l>
+                     <l rendition="#aq"><hi rendition="#in">P</hi>Ulvere de Pyrio ſi vis deflere
+                        ruinam,</l>
+                     <lb/>
+                     <l rendition="#aq">Ette deficiunt lachrymæ: lege Carmina Vatis</l>
+                     <lb/>
+                     <l rendition="#aq"><hi rendition="#g #k">Simleri</hi>, lachrymas &amp;
+                        ſufficienter habebis.</l>
+                     <lb/>
+                     <closer rendition="#aq #right"><signed>FELIX <hi rendition="#k">Wyssivs,</hi>
+                           Abbatiſſanæ<lb/> Eccleſiæ Paſtor.</signed></closer>
                   </lg>
                </div>
-               <div n="2" xml:id="n265.iii">
-                  <head rendition="#aq">Ad præſtantiſſimum <lb/> Idéæ boni Principis, ex <hi
-                        rendition="#b"><hi rendition="#g">AGAPETI</hi></hi>
-                     <lb/> ſcitè dictis Autorem.</head>
+
+               <milestone unit="section" rendition="#hr"/>
+               <lb/>
+
+               <div n="2" type="poem" xml:id="n265.iii">
+                  <head rendition="#aq #b #c">Ad præſtantiſſimum<lb/> Idéæ boni Principis, ex <hi
+                        rendition="#g #larger">AGAPETI</hi><lb/> ſcitè dictis Autorem.</head>
                   <lb/>
                   <lg type="poem">
-                     <l rendition="#aq"><hi rendition="#in">P</hi>Rincipis Idéam veterem, <hi
-                           rendition="#g">SIMLERE</hi>, novando; <lb/> Cognati, calido pectore,
-                        limen adis; <lb/> O bene <hi rendition="#g">VVASERO</hi> hæc <hi
-                           rendition="#g">AGAPETI</hi> Dicta dicantur, <lb/> Optimi enim eſt <hi
-                           rendition="#g">CONSUL</hi> Principis iſte Typus. <lb/>
-                        <hi rendition="#i">Honoris c.f.</hi>
-                        <lb/> GEORGIVS MVLLERVS; <lb/> Eccleſiæ Talvillenſis P.</l>
+                     <l rendition="#aq"><hi rendition="#in">P</hi>Rincipis Idéam veterem,<hi
+                           rendition="#g #k">Simlere</hi>, novando;</l>
+                     <lb/>
+                     <l rendition="#aq #et">Cognati, calido pectore, limen adis;</l>
+                     <lb/>
+                     <l rendition="#aq">O bene <hi rendition="#g #k">VVasero</hi> hæc <hi
+                           rendition="#g #k">Agapeti</hi> Dicta dicantur,</l>
+                     <lb/>
+                     <l rendition="#aq #et">Optimi enim eſt <hi rendition="#g #k">Consul</hi>
+                        Principis iſte Typus.</l>
                   </lg>
                   <lb/>
+                  <closer rendition="#aq"><salute rendition="#i #c">Honoris c.f.</salute>
+                     <lb/>
+                     <signed rendition="#right">GEORGIVS MVLLERVS;<lb/> Eccleſiæ Talvillenſis
+                        P.</signed></closer>
+                  <lb/>
                </div>
+
                <pb n="224" facs="30218243"/>
                <fw place="top" type="pageNum">224</fw>
+
                <div n="2" xml:id="n265.iv">
-                  <head>S. CHRYS. ANΔPI- <lb break="no"/> ANT. HOMIL. VI.</head>
+                  <head rendition="#aq #b #c">S. CHRYS. ANΔPI-<lb break="no"/>ANT. HOMIL. VI.</head>
                   <lb/>
-                  <lg type="poem">
-                     <l><hi rendition="#in">Ω</hi>ΣΠΕΡ ΝΗΟΣ ΤΟΝ ΚYΒΕΡΝΗΤΗΝ ΕΑΝ</l>
-                     <lb/>
-                     <l>ΑΠΟΣΤΗΣΗΣ, ΚΑΤΕΠΟΝΤΙΣΑΣ ΤΟ</l>
-                     <lb/>
-                     <l>ΣΚΑΦΟΣ• ΟΥΤΩ ΤΩΝ ΠΟΛΕΩΝ ΤΟΥΣ</l>
-                     <lb/>
-                     <l>ΑΡXΟΝΤΑΣ ΕΑΝ ΑΝΕΛΗΣ, ΘΗΡΙΩΝ ΑΛΟ-</l>
-                     <lb break="no"/>
-                     <l>ΓΩΝ ΑΛΟΓΩΤΕΡΟΝ ΒΙΩΣΟΜΕΘΑ ΒΙΟΝ,</l>
-                     <lb/>
-                     <l>ΔΑΚΝΟΝΤΕΣ ΑΛΛΗΛΟΥΣ, ΚΑΙ ΚΑΤΕΣΘΙ-</l>
-                     <lb break="no"/>
-                     <l>ΟΝΤΕΣ ΤΟΝ ΠΕΝΕΣΤΕΡΟΝ Ο ΠΛΟYΣΙ</l>
-                     <lb/>
-                     <l>ΟΣ, ΤΟΝ ΑΣΘΕΝΕΣΤΕΡΟΝ Ο ΔΥΝΑΤΩ-</l>
-                     <lb break="no"/>
-                     <l>ΤΕΡΟΣ, ΤΟΝ ΕΠΙΕΙΚΕΣΤΕΡΟΝ Ο ΘΡΑΣΥ-</l>
-                     <lb break="no"/>
-                     <l>ΤΕΡΟΣ.</l>
-                     <lb/>
-                     <l rendition="#aq"><hi rendition="#in">Q</hi>UEMADMODUM NAVIS, SUO PRIVATA
-                        <lb/> NAVICULATORE, MERGITUR: ITA SUB- <lb break="no"/> LATO MAGISTRATU,
-                        INCULTA MAGIS ET <lb/> HORRIDA, QUAM EXPERTIUM RATIONIS <lb/> ET ORATIONIS
-                        FERARUM, TRADUCITUR <lb/> VITA, ALIIS ALIOS MORDENTIBUS, DIVITE <lb/>
-                        PAUPEREM, FORTIORI INFIRMIOREM, <lb/> ATROCI MANSUETUM, CONSUMENTE.</l>
-                  </lg>
+                  <p rendition="#aq"><hi rendition="#in">Ω</hi>ΣΠΕΡ ΝΗΟΣ ΤΟΝ ΚYΒΕΡΝΗΤΗΝ ΕΑΝ<lb/> ΑΠΟΣΤΗΣΗΣ,
+                     ΚΑΤΕΠΟΝΤΙΣΑΣ ΤΟ<lb/> ΣΚΑΦΟΣ• ΟΥΤΩ ΤΩΝ ΠΟΛΕΩΝ ΤΟΥΣ<lb/> ΑΡXΟΝΤΑΣ ΕΑΝ ΑΝΕΛΗΣ,
+                     ΘΗΡΙΩΝ ΑΛΟ- <lb break="no"/> ΓΩΝ ΑΛΟΓΩΤΕΡΟΝ ΒΙΩΣΟΜΕΘΑ ΒΙΟΝ, <lb/> ΔΑΚΝΟΝΤΕΣ
+                     ΑΛΛΗΛΟΥΣ, ΚΑΙ ΚΑΤΕΣΘΙ- <lb break="no"/> ΟΝΤΕΣ ΤΟΝ ΠΕΝΕΣΤΕΡΟΝ Ο ΠΛΟYΣΙ <lb/> ΟΣ,
+                     ΤΟΝ ΑΣΘΕΝΕΣΤΕΡΟΝ Ο ΔΥΝΑΤΩ- <lb break="no"/> ΤΕΡΟΣ, ΤΟΝ ΕΠΙΕΙΚΕΣΤΕΡΟΝ Ο ΘΡΑΣΥ-
+                        <lb break="no"/> ΤΕΡΟΣ.</p>
+                  <lb/>
+                  <p rendition="#aq"><hi rendition="#in">Q</hi>UEMADMODUM NAVIS, SUO PRIVATA <lb/>
+                     NAVICULATORE, MERGITUR: ITA SUB- <lb break="no"/> LATO MAGISTRATU, INCULTA
+                     MAGIS ET <lb/> HORRIDA, QUAM EXPERTIUM RATIONIS <lb/> ET ORATIONIS FERARUM,
+                     TRADUCITUR <lb/> VITA, ALIIS ALIOS MORDENTIBUS, DIVITE <lb/> PAUPEREM, FORTIORI
+                     INFIRMIOREM, <lb/> ATROCI MANSUETUM, CONSUMENTE.</p>
                   <lb/>
                </div>
+               
                <fw place="bottom" type="catch">Regen-</fw>
-               <lb break="no"/>
+               <lb/>
                <pb n="225" facs="30218244"/>
+               
                <fw place="top" type="pageNum">225</fw>
                <div n="2" xml:id="n265">
-                  <head>Regentenſpiegel.</head>
+                  
+                  <head rendition="#b #c">Regentenſpiegel.</head>
                   <lb/>
-                  <head rendition="#aq">I.</head>
+                  <head rendition="#aq #c">I.</head>
                   <lb/>
                   <lg type="poem">
-                     <l><hi rendition="#in">R</hi>Egenten ſeind von Gott mit ho&#x364;chſtem Stand
-                        geeh-</l>
+                     <l xml:id="l93a" next="#l93b"><hi rendition="#in">R</hi>Egenten ſeind von Gott
+                        mit ho&#x364;chſtem Stand geeh-</l>
                      <lb break="no"/>
-                     <l>ret/</l>
+                     <l xml:id="l93b" prev="#l93a">ret/</l>
                      <lb/>
                      <l>damit durch ſie ſein Lob hinwidrum werd vermehret:</l>
                      <lb/>
-                     <l>drum ſey der Richter ſelb den Gſatzen underthan/</l>
+                     <l rendition="#et">drum ſey der Richter ſelb den Gſatzen underthan/</l>
                      <lb/>
-                     <l>und richte nach dem Gſatz/ ſo folgt ihm iederman.</l>
+                     <l rendition="#et">und richte nach dem Gſatz/ ſo folgt ihm iederman.</l>
                   </lg>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">II.</head>
+                     <head rendition="#aq #c">II.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Der Steürmann in dem Schiff/ vor andern Schiffge-</l>
+                        <l xml:id="l94a" next="#l94b">Der Steürmann in dem Schiff/ vor andern
+                           Schiffge-</l>
                         <lb break="no"/>
-                        <l>noſſen/</l>
+                        <l xml:id="l94b" next="#l94a">noſſen/</l>
                         <lb/>
                         <l>in ungeſtu&#x364;hmem Meer iſt wachtbar unverdroſſen:</l>
                         <lb/>
-                        <l>nicht minder ein Regent arbeite mit verſtand/</l>
+                        <l rendition="#et">nicht minder ein Regent arbeite mit verſtand/</l>
                         <lb/>
-                        <l>daß ſein Regierungsſchiff zu&#x366; keinen zeiten ſtrand.</l>
+                        <l rendition="#et">daß ſein Regierungsſchiff zu&#x366; keinen zeiten
+                           ſtrand.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">III.</head>
+                     <head rendition="#aq #c">III.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Den Scho&#x364;pfer und ſich ſelb in demu&#x366;ht recht erkennen/</l>
                         <lb/>
                         <l>anſtehet denen wol die ſich Regenten nennen:</l>
                         <lb/>
-                        <l>dan welcher Gott und ſich erkennet wie er ſol/</l>
+                        <l rendition="#et">dan welcher Gott und ſich erkennet wie er ſol/</l>
                         <lb/>
-                        <l>der lebet und regiert auch anderſt nicht alß wol.</l>
+                        <l rendition="#et">der lebet und regiert auch anderſt nicht alß wol.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">IV.</head>
+                     <head rendition="#aq #c">IV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Geſchlecht iſt ſchlechter Ru&#x366;hm: wir alle ſeind auß erden/</l>
                         <lb/>
                         <l>und mu&#x364;ſſen widerum in erd verwandlet werden:</l>
                         <lb/>
-                        <l>drum prange keiner mit. Der Tugendadel gilt/</l>
+                        <l rendition="#et">drum prange keiner mit. Der Tugendadel gilt/</l>
                         <lb/>
-                        <l>und fu&#x364;hrt allein mit recht ero&#x364;fnet Ha&#x364;lm und</l>
+                        <l rendition="#et">und fu&#x364;hrt allein mit recht ero&#x364;fnet
+                           Ha&#x364;lm und</l>
                         <lb/>
                         <l>Schilt.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">V.</head>
+                     <head rendition="#aq #c">V.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Die pflicht der Dankbarkeit vor andern dem gebüret</l>
                         <lb/>
                         <l>der mit verſtand und Stand vom Ho&#x364;chſten iſt gezieret:</l>
                         <lb/>
-                        <l>dan diſe Tugend Gott an uns ſo wol gefallt/</l>
+                        <l rendition="#et">dan diſe Tugend Gott an uns ſo wol gefallt/</l>
                         <lb/>
-                        <l>daß mit mehr gaben er uns unſre pflicht bezallt.</l>
+                        <l rendition="#et">daß mit mehr gaben er uns unſre pflicht bezallt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -19266,7 +19278,8 @@
                   <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Johannes
                      Wirtzen/ ꝛc. <lb/> Lehr- und troſtreiche Predigen <lb/> vom verlohrnen
                      Sohn.</head>
-                  <head rendition=" #b #c"> <lb/>Johannes Wirtz:<lb/>verwa&#x364;chſelt:<lb/>So warn ihn ietz.</head>
+                  <head rendition=" #b #c">
+                     <lb/>Johannes Wirtz:<lb/>verwa&#x364;chſelt:<lb/>So warn ihn ietz.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu&#x366; ſo verkehrter zeit; bey ſo verderbter jugend/</l>
@@ -19276,7 +19289,7 @@
                      <l rendition="#et">der Dichter diſes Bu&#x366;chs dir gibet diſen raht;</l>
                      <lb/>
                      <l rendition="#et"><hi rendition="#larger">So warn ihn</hi>; deinen Sohn;
-                        <hi>ietz</hi>/ eh es wird zu&#x366;-</l>
+                           <hi>ietz</hi>/ eh es wird zu&#x366;-</l>
                      <lb break="no"/>
                      <l>ſpaht..</l>
                      <!-- xml:id vergeben -->
@@ -19284,16 +19297,17 @@
                   <lb/>
                </div>
                <div n="2" xml:id="n154">
-                  <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Jacob Vollenweider<anchor
-                        xml:id="a209"/>s<note type="annotation" targetEnd="a209"><p>der Strich über
-                           dem s ist ein abgebrochenes Zierelement, kein Apostroph</p></note>/ ꝛc.
-                     <lb/> ſchrifftma&#x364;ſſige widerlegung <lb/> des Gotthardiſchen <lb/>
-                     Augſpiegels.</head>
+                  <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Jacob
+                        Vollenweider<anchor xml:id="a209"/>s<note type="annotation" targetEnd="a209"
+                           ><p>der Strich über dem s ist ein abgebrochenes Zierelement, kein
+                           Apostroph</p></note>/ ꝛc. <lb/> ſchrifftma&#x364;ſſige widerlegung <lb/>
+                     des Gotthardiſchen <lb/> Augſpiegels.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">O lieber Leſer liß/ liß/ liß und widerliß/</l>
                      <lb/>
-                     <l rendition="#et">Liß diß und jenns; bewa&#x364;hrs; das gu&#x366;t darauß erliß:</l>
+                     <l rendition="#et">Liß diß und jenns; bewa&#x364;hrs; das gu&#x366;t darauß
+                        erliß:</l>
                      <lb/>
                      <l>Daſſelb in Gottes wort du wirſt gegründet finden:</l>
                      <lb/>
@@ -19311,8 +19325,9 @@
                <lb/>
                <fw place="top" type="header">Allerhand</fw>
                <div n="2" xml:id="n155">
-                  <head rendition="#c #b"><hi rendition="#aq">U</hi>ber die <lb/> von Herꝛen Caſpar Weiſſen/ ꝛc. <lb/>
-                     verteütſchte Ru&#x366;h- oder Fridens- <lb break="no"/> u&#x364;bung. <!-- xml:id vergeben --></head>
+                  <head rendition="#c #b"><hi rendition="#aq">U</hi>ber die <lb/> von Herꝛen Caſpar
+                     Weiſſen/ ꝛc. <lb/> verteütſchte Ru&#x366;h- oder Fridens- <lb break="no"/>
+                     u&#x364;bung. <!-- xml:id vergeben --></head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Wan ich mich zu&#x366; denen wende/</l>
@@ -19341,7 +19356,8 @@
                      <lb/>
                      <l rendition="#et">Endtlich werdens mit mir preiſen</l>
                      <lb/>
-                     <l rendition="#et">den <hi rendition="#aq">U</hi>rha&#x364;ber/ und zu&#x366;gleich</l>
+                     <l rendition="#et">den <hi rendition="#aq">U</hi>rha&#x364;ber/ und
+                        zu&#x366;gleich</l>
                      <lb/>
                      <l>den Verteütſchter: die uns weiſen</l>
                      <lb/>
@@ -19372,9 +19388,9 @@
                <lb/>
                <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                <div n="2" xml:id="n158">
-                  <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Johann Ardüſers/ <lb/> Haubtm.
-                     und Jngenieürs/ neü- <lb break="no"/> außgangenes Bu&#x366;ch vom<!-- xml:id vergeben --><lb/>
-                     Veſtungsbau.</head>
+                  <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Johann
+                     Ardüſers/ <lb/> Haubtm. und Jngenieürs/ neü- <lb break="no"/> außgangenes
+                     Bu&#x366;ch vom<!-- xml:id vergeben --><lb/> Veſtungsbau.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Was vil/ mit viler zahl/ und groſſer mu&#x364;h gewiſen</l>
@@ -19388,8 +19404,8 @@
                </div>
                <lb/>
                <div n="2" xml:id="n159">
-                  <head rendition="#b #c">Stam&#x342;bu&#x366;chbeſitzers <lb/> an alle <lb/> Ehren- Kunſt- und
-                     Gunſtfreünde <lb/> dienſtfreündlicher Gru&#x366;ß.</head>
+                  <head rendition="#b #c">Stam&#x342;bu&#x366;chbeſitzers <lb/> an alle <lb/> Ehren-
+                     Kunſt- und Gunſtfreünde <lb/> dienſtfreündlicher Gru&#x366;ß.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Jhr Ehrenfreünde ziert/ mit eüren Ehrennam&#x342;en/</l>
@@ -19408,8 +19424,8 @@
                      <lb/>
                      <l rendition="#et">ein ieder mahl und ſchreib den eignen ehren gma&#x364;ß/</l>
                      <lb/>
-                     <l rendition="#et">vermeide leichten ſchimpf/ und ſcha&#x364;rtze nicht zu&#x366;
-                        ra&#x364;ß.</l>
+                     <l rendition="#et">vermeide leichten ſchimpf/ und ſcha&#x364;rtze nicht
+                        zu&#x366; ra&#x364;ß.</l>
                      <lb/>
                      <l>Oreſt- und Pilades/ zwen freünde bis zum ſterben/</l>
                      <lb/>
@@ -19419,8 +19435,7 @@
                      <lb/>
                      <l>ſcheidt.</l>
                      <lb/>
-                     <l rendition="#et">Der H&#x364;heſt euch bewahr/ und
-                        meine Reis begleit!</l>
+                     <l rendition="#et">Der H&#x364;heſt euch bewahr/ und meine Reis begleit!</l>
                   </lg>
                   <lb/>
                </div>
@@ -19443,8 +19458,8 @@
                   </lg>
                </div>
                <div n="2" xml:id="n162">
-                  <head rendition="#b #c">Alexandriniſcher Vorwunſch/ <lb/> über wolangeſtellten/ und <lb/> kunſtlich
-                     follfu&#x364;hrten <lb/> Mejeriſchen Todtendantz.</head>
+                  <head rendition="#b #c">Alexandriniſcher Vorwunſch/ <lb/> über wolangeſtellten/
+                     und <lb/> kunſtlich follfu&#x364;hrten <lb/> Mejeriſchen Todtendantz.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Diß dreyfachgu&#x366;te Werk ſelbſelb den Meiſter ru&#x364;hmet/</l>
@@ -19453,9 +19468,11 @@
                      <lb break="no"/>
                      <l>met:</l>
                      <lb/>
-                     <l rendition="#et">die klu&#x366;ge Künſtlerhand; der flam&#x342;end Dichtergeiſt/</l>
+                     <l rendition="#et">die klu&#x366;ge Künſtlerhand; der flam&#x342;end
+                        Dichtergeiſt/</l>
                      <lb/>
-                     <l rendition="#et">und hohe Sa&#x364;ngerkunſt uns hier verſtum&#x342;en heißt.</l>
+                     <l rendition="#et">und hohe Sa&#x364;ngerkunſt uns hier verſtum&#x342;en
+                        heißt.</l>
                      <lb/>
                      <l>Wir wünſchen nur allein auß diſem zu&#x366; erlehrnen</l>
                      <lb/>

@@ -6824,7 +6824,7 @@
                <fw place="top" type="header">Weihnacht-</fw>
                <lb/>
 
-               <div n="2" xml:id="n7">
+               <div n="2" xml:id="n7_1" next="#n7_2">
                   <head rendition="#c #b">Weichnachtgeſang:</head>
                   <lb/>
 
@@ -7236,7 +7236,7 @@
                   <milestone rendition="#hr" unit="section"/>
                   <lb/>
 
-                  <div n="2" xml:id="n8">
+                  <div n="2" xml:id="n8_1" next="#n8_2">
                      <div type="music">
                         <div>
                            <head rendition="#aq #c #b">X. Cantus.</head>
@@ -7281,7 +7281,7 @@
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
                   <lb/>
 
-                  <div n="2" xml:id="n7">
+                  <div n="2" xml:id="n7_2" prev="#n7_1">
                      <div type="poem">
                         <lg type="poem">
                            <lg n="30">
@@ -7314,7 +7314,7 @@
                      </div>
                   </div>
 
-                  <div n="2" xml:id="n8">
+                  <div n="2" xml:id="n8_2" prev="#n8_1">
                      <div type="music">
                         <div>
                            <head rendition="#aq #c #b">Altus.</head>
