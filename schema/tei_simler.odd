@@ -53,8 +53,6 @@
       <tagsDecl>
         <!-- Source appearance, declared once and pointed to from @rendition. The CSS records how
              the passage looks in the SOURCE; custom properties are the edition's design tokens. -->
-        <!-- Antiqua within Fraktur. The two faces are matched on x-height, or the antiqua run reads
-             a size larger than the line it stands in. -->
         <rendition xml:id="aq" scheme="css">font-family: var(--f-antiqua); font-size-adjust: var(--x-text);</rendition>
         <rendition xml:id="fr" scheme="css">font-family: var(--f-text);</rendition><!-- Fraktur within Antiqua -->
         <rendition xml:id="b" scheme="css">font-weight: 600;</rendition>
@@ -70,7 +68,7 @@
         <rendition xml:id="et" scheme="css">text-indent: 2em;</rendition>
         <rendition xml:id="et2" scheme="css">text-indent: 4em;</rendition>
         <rendition xml:id="et3" scheme="css">text-indent: 6em;</rendition>
-        <rendition xml:id="hr" scheme="css">display: block; border-top: 1px solid rgb(var(--c-line)); width: 30%; margin: 1.2em auto;</rendition>
+        <rendition xml:id="hr" scheme="css">display: block; border-top: 1px solid rgb(var(--c-ink) / 0.45); width: 20%; margin: 1.2em auto;</rendition>
         <!-- The Buchstabwechsel pages: an interleaved two-column setting (read row by row, so the
              lines alternate left and right) whose acrostic lines carry marginal letters, set in the
              line's padding. The line boxes are laid out by the l models. -->
@@ -1066,7 +1064,7 @@
           <!-- printed in the margin, a Bible reference or a marginal note: beside its line, never in
                the apparatus -->
           <model cssClass="note-margin" predicate="@place='left' or @place='right' or @type='marginalia'" behaviour="inline" useSourceRendition="true">
-            <outputRendition>float: right; clear: right; max-width: 11em; margin-left: 1em; font-family: var(--f-ui); font-size: 0.85em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
+            <outputRendition>float: right; clear: right; max-width: min(11em, 35%); margin-left: 1em; font-family: var(--f-ui); font-size: 0.85em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline" useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
@@ -1281,7 +1279,7 @@
           </attList>
           <!-- set where the print sets it, and kept out of the search index -->
           <modelGrp useSourceRendition="true">
-            <outputRendition>font-family: var(--f-text); font-size: 0.7em; letter-spacing: 0.04em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
+            <outputRendition>font-family: var(--f-text); font-size: 0.7em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
             <model cssClass="fw-header" predicate="@type='header'" behaviour="block">
               <outputRendition>text-align: center;</outputRendition>
             </model>
@@ -1326,8 +1324,8 @@
               <param name="type" value="'page'"/>
               <param name="data-page" value="@facs"/>
               <param name="label" value="concat('[', translate((@n, '·')[1], '[]', ''), ']')"/>
-              <outputRendition scope="before">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
-              <outputRendition scope="after">content: ''; flex: 1; border-top: 1px solid rgb(var(--c-line));</outputRendition>
+              <outputRendition scope="before">content: ''; flex: 1; border-top: 1px dotted rgb(var(--c-line));</outputRendition>
+              <outputRendition scope="after">content: ''; flex: 1; border-top: 1px dotted rgb(var(--c-line));</outputRendition>
             </model>
           </modelGrp>
           <model output="plain" behaviour="omit"/>
