@@ -53,7 +53,9 @@
       <tagsDecl>
         <!-- Source appearance, declared once and pointed to from @rendition. The CSS records how
              the passage looks in the SOURCE; custom properties are the edition's design tokens. -->
-        <rendition xml:id="aq" scheme="css">font-family: var(--f-antiqua);</rendition><!-- Antiqua within Fraktur -->
+        <!-- Antiqua within Fraktur. The two faces are matched on x-height, or the antiqua run reads
+             a size larger than the line it stands in. -->
+        <rendition xml:id="aq" scheme="css">font-family: var(--f-antiqua); font-size-adjust: var(--x-text);</rendition>
         <rendition xml:id="fr" scheme="css">font-family: var(--f-text);</rendition><!-- Fraktur within Antiqua -->
         <rendition xml:id="b" scheme="css">font-weight: 600;</rendition>
         <rendition xml:id="i" scheme="css">font-style: italic;</rendition>
@@ -766,8 +768,9 @@
               <param name="level" value="count(ancestor::div) + 1"/>
               <outputRendition>margin: 1.6em 0 0.7em;</outputRendition>
             </model>
+            <!-- a stanza number is set like the verses it numbers -->
             <model cssClass="head-stanza" predicate="parent::lg" behaviour="paragraph">
-              <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 500; letter-spacing: 0.06em; color: rgb(var(--c-muted)); margin: 0 0 0.25em;</outputRendition>
+              <outputRendition>font-family: var(--f-text); font-weight: 400; margin: 0 0 0.25em;</outputRendition>
             </model>
             <model cssClass="head-caption" predicate="parent::list or parent::figure" behaviour="paragraph">
               <outputRendition>margin: 0 0 0.3em;</outputRendition>
@@ -1278,7 +1281,7 @@
           </attList>
           <!-- set where the print sets it, and kept out of the search index -->
           <modelGrp useSourceRendition="true">
-            <outputRendition>font-family: var(--f-ui); font-size: 0.7em; letter-spacing: 0.04em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
+            <outputRendition>font-family: var(--f-text); font-size: 0.7em; letter-spacing: 0.04em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
             <model cssClass="fw-header" predicate="@type='header'" behaviour="block">
               <outputRendition>text-align: center;</outputRendition>
             </model>

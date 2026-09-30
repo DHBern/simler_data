@@ -23,6 +23,11 @@
   --f-ui: var(--f-sans);
   --f-antiqua: var(--f-sans);
 
+  /* The x-height another face is scaled to (`font-size-adjust`), in em. Between the
+     text face's own 0.40 and the 0.49 that would match its capitals: matching only
+     the x-height leaves the capitals of the other face too small. */
+  --x-text: 0.44;
+
   --fs-text: 1.125rem;
   --lh-text: 1.62;
   --measure: 68ch;
