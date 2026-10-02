@@ -1280,6 +1280,13 @@
           <!-- set where the print sets it, and kept out of the search index -->
           <modelGrp useSourceRendition="true">
             <outputRendition>font-family: var(--f-text); font-size: 0.7em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
+            <!-- Forme work the print sets on one line is two fw in a row: the first floats, so the
+                 second shares its line — a page number beside its running head at the top, a
+                 signature beside its catchword at the bottom. -->
+            <model cssClass="fw-paired" predicate="following-sibling::*[1][self::fw]" behaviour="block">
+              <param name="--float" value="if (@place='bottom') then 'left' else 'right'"/>
+              <outputRendition>float: var(--float); margin: 0;</outputRendition>
+            </model>
             <model cssClass="fw-header" predicate="@type='header'" behaviour="block">
               <outputRendition>text-align: center;</outputRendition>
             </model>
