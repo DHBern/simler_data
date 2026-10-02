@@ -840,13 +840,14 @@
             </alternate>
           </content>
           <constraintSpec ident="rs-key" scheme="schematron">
-            <desc>A key names an entry of the register its <att>type</att> belongs to; <val>org</val>
-              is in the institutions, <val>bibl</val> in the works.</desc>
+            <desc>Each key names an entry of the register its <att>type</att> belongs to;
+              <val>org</val> is in the institutions, <val>bibl</val> in the works.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:rs">
                 <sch:let name="register" value="if (@type = 'org') then 'institution' else if (@type = 'bibl') then 'work' else string(@type)"/>
-                <sch:assert test="matches(@key, concat('^', $register, '_\d+$'))">[S-RK] "<sch:value-of
-                  select="@key"/>" is not a key of the <sch:value-of select="$register"/> register.</sch:assert>
+                <sch:assert test="every $key in tokenize(normalize-space(@key), ' ') satisfies matches($key, concat('^', $register, '_\d+$'))">[S-RK]
+                  "<sch:value-of select="@key"/>" is not a list of keys of the <sch:value-of
+                  select="$register"/> register.</sch:assert>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -863,7 +864,9 @@
             </attDef>
             <attDef ident="key" mode="change" usage="req">
               <desc>The entry in the register of <att>type</att>, as <val>{register}_{number}</val>
-                (e.g. <val>person_049</val>); see <ident>rs-key</ident>.</desc>
+                (e.g. <val>person_049</val>); a reference to several entries, such as
+                <q>zween treffliche Musikanten</q>, lists them, separated by spaces
+                (<val>person_012 person_310</val>); see <ident>rs-key</ident>.</desc>
               <datatype><dataRef key="teidata.text"/></datatype>
             </attDef>
           </attList>
