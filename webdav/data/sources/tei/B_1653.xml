@@ -16125,7 +16125,7 @@
                         <l xml:id="l94a" next="#l94b">Der Steürmann in dem Schiff/ vor andern
                            Schiffge-</l>
                         <lb break="no"/>
-                        <l xml:id="l94b" next="#l94a">noſſen/</l>
+                        <l xml:id="l94b" prev="#l94a">noſſen/</l>
                         <lb/>
                         <l>in ungeſtu&#x364;hmem Meer iſt wachtbar unverdroſſen:</l>
                         <lb/>
@@ -16160,10 +16160,10 @@
                         <lb/>
                         <l rendition="#et">drum prange keiner mit. Der Tugendadel gilt/</l>
                         <lb/>
-                        <l rendition="#et">und fu&#x364;hrt allein mit recht ero&#x364;fnet
+                        <l xml:id="l95a" next="#l95b" rendition="#et">und fu&#x364;hrt allein mit recht ero&#x364;fnet
                            Ha&#x364;lm und</l>
-                        <lb/>
-                        <l>Schilt.</l>
+                        <lb break="no"/>
+                        <l xml:id="l95b" prev="#l95a">Schilt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -16189,52 +16189,50 @@
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">VI.</head>
+                     <head rendition="#aq #c">VI.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Das w<anchor xml:id="a168"/>o&#x364;<note type="annotation"
-                              targetEnd="a168"><p>kleines e etwas deutlicher in der
-                           SBB</p></note>llen und das tu&#x366;hn den Obern iſt gegeben/</l>
+                        <l>Das wo&#x364;llen und das tu&#x366;hn den Obern iſt gegeben/</l>
                         <lb/>
                         <l>mit diſem vorbehalt: in ihrem gantzen leben</l>
                         <lb/>
-                        <l>zu&#x366; wo&#x364;llen und zu&#x366;tu&#x366;hn was die Gemeine
+                        <l rendition="#et">zu&#x366; wo&#x364;llen und zu&#x366;tu&#x366;hn was die Gemeine
                            nützt/</l>
                         <lb/>
-                        <l>und nur was diſer wil der ihren gwalt beſchützt.</l>
+                        <l rendition="#et">und nur was diſer wil der ihren gwalt beſchützt.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">VII.</head>
+                     <head rendition="#aq #c">VII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Die gu&#x364;ter diſer welt/ dem waſſer gleich/ verflieſſen/</l>
                         <lb/>
                         <l>von eim dem andern zu&#x366;: nur deren wir genieſſen</l>
                         <lb/>
-                        <l>die zu&#x366; des na&#x364;chſten nutz wir brauchen in gebür/</l>
+                        <l rendition="#et">die zu&#x366; des na&#x364;chſten nutz wir brauchen in gebür/</l>
                         <lb/>
-                        <l>dieweil der woltaht dank umkehret für und für.</l>
+                        <l rendition="#et">dieweil der woltaht dank umkehret für und für.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">VIII.</head>
+                     <head rendition="#aq #c">VIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Verſtopf die ohren nicht vor denen die dich bitten</l>
                         <lb/>
                         <l>um hülf in ihrer noht/ die ſie anietz beſchritten:</l>
                         <lb/>
-                        <l>damit der ho&#x364;chſt Regent ſein ohr ero&#x364;fne dir:</l>
+                        <l rendition="#et">damit der ho&#x364;chſt Regent ſein ohr ero&#x364;fne dir:</l>
                         <lb/>
-                        <l>der gegen uns geſinnt wie gegen andern wir.</l>
+                        <l rendition="#et">der gegen uns geſinnt wie gegen andern wir.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq"><anchor xml:id="a169"/>IV.<note type="annotation"
+                     <head rendition="#aq #c"><anchor xml:id="a169"/>IV.<note type="annotation"
                            targetEnd="a169"><p>IV statt IX steht auch in der SBB</p></note>
                      </head>
                      <lb/>
@@ -16243,39 +16241,39 @@
                         <lb/>
                         <l>und allen underſcheid der ha&#x364;ndlen wol verſtehe/</l>
                         <lb/>
-                        <l>ſo mu&#x366;ß durch Gotts Geſatz/ gleich einem Spiegel/</l>
+                        <l xml:id="l96a" next="#l96b" rendition="#et">ſo mu&#x366;ß durch Gotts Geſatz/ gleich einem Spiegel/</l>
+                        <lb break="no"/>
+                        <l xml:id="l96b" prev="#l96a">rein</l>
                         <lb/>
-                        <l>rein</l>
-                        <lb/>
-                        <l>von bo&#x364;ſen neigungen ſein hertz geſa&#x364;übert ſeyn.</l>
+                        <l rendition="#et">von bo&#x364;ſen neigungen ſein hertz geſa&#x364;übert ſeyn.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">X.</head>
+                     <head rendition="#aq #c">X.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Wan ſich der Steürman ſelb in ſeiner Schiffahrt irꝛet/</l>
                         <lb/>
                         <l>ſo wird das Schifferfolck mit Schiffsgefahr verwirꝛet:</l>
                         <lb/>
-                        <l>alſo wan ein Regent in laſtern ſich vergeht/</l>
+                        <l rendition="#et">alſo wan ein Regent in laſtern ſich vergeht/</l>
                         <lb/>
-                        <l>ſein undergebne Gmein in ho&#x364;chſten gfahren ſteht.</l>
+                        <l rendition="#et">ſein undergebne Gmein in ho&#x364;chſten gfahren ſteht.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XI.</head>
+                     <head rendition="#aq #c">XI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Das gegenwertig ſich vera&#x364;nderlich befindet/</l>
                         <lb/>
                         <l>und oft er gar geſchwind von ſeiner ſtell verſchwindet:</l>
                         <lb/>
-                        <l>darum mit veſtem mu&#x366;ht auf Gott allein vertrau/</l>
+                        <l rendition="#et">darum mit veſtem mu&#x366;ht auf Gott allein vertrau/</l>
                         <lb/>
-                        <l>und auf das irꝛdiſche dir keine hofnung bau.</l>
+                        <l rendition="#et">und auf das irꝛdiſche dir keine hofnung bau.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -16286,87 +16284,84 @@
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">XII.</head>
+                     <head rendition="#aq #c">XII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Die raben einig nur der todten ko&#x364;rper augen</l>
                         <lb/>
                         <l>außhakken/ und zu&#x366; nichts alß kraß zu&#x366;ſchreyen/ taugen:</l>
                         <lb/>
-                        <l>alſo die ſchmeichlerard die hertzensaugen
+                        <l rendition="#et">alſo die ſchmeichlerard die hertzensaugen
                            bl<supplied>a&#x364;</supplied>ndt/</l>
                         <lb/>
-                        <l>in dem ſie b<anchor xml:id="a170"/>o&#x364;<note type="annotation"
-                              targetEnd="a170"><p>kleines e etwas deutlicher in der
-                           SBB</p></note>ſes lobt/ das gu&#x366;te ſchma&#x364;cht und
+                        <l rendition="#et">in dem ſie b&#x364;ſes lobt/ das gu&#x366;te ſchma&#x364;cht und
                            ſcha&#x364;ndt.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XIII.</head>
+                     <head rendition="#aq #c">XIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Eins Obern mu&#x366;ht und ſinn im gu&#x366;ten ſey beſta&#x364;ndig/</l>
                         <lb/>
                         <l>ſo/ daß vom ſelben ihn kein zu&#x366;fal mach abwa&#x364;ndig:</l>
                         <lb/>
-                        <l>damit das unglük ihm den bodenſtoß nicht geb/</l>
+                        <l rendition="#et">damit das unglük ihm den bodenſtoß nicht geb/</l>
                         <lb/>
-                        <l>der wolſtand aber auch ihn nicht zu&#x366; hoch erheb.</l>
+                        <l rendition="#et">der wolſtand aber auch ihn nicht zu&#x366; hoch erheb.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XIV.</head>
+                     <head rendition="#aq #c">XIV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Wer menſchlichen betrug und eigne ſchwachheit kennet/</l>
                         <lb/>
                         <l>und da&#x364;nkt wie flügelſchnell ſein zeitlich leben rennet/</l>
                         <lb/>
-                        <l>was bo&#x364;ſer ne<anchor xml:id="a171"/>i<note type="annotation"
-                              targetEnd="a171"><p>i eindeutig in der SBB</p></note>gung auch ſeim
+                        <l rendition="#et">was bo&#x364;ſer negung auch ſeim
                            fleiſch eynpflantzet ſey/</l>
                         <lb/>
-                        <l>der wird in ho&#x364;chſtem Stand verbleiben hoffart-</l>
+                        <l xml:id="l97a" next="#l97b" rendition="#et">der wird in ho&#x364;chſtem Stand verbleiben hoffart-</l>
                         <lb break="no"/>
-                        <l>frey.</l>
+                        <l xml:id="l97b" prev="#l97a">frey.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XV.</head>
+                     <head rendition="#aq #c">XV.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Pracht/ Reichthum/ Ehr und Gunſt im augenblik ver-</l>
+                        <l xml:id="l98a" next="#l98b">Pracht/ Reichthum/ Ehr und Gunſt im augenblik ver-</l>
                         <lb break="no"/>
-                        <l>ſchwinden/</l>
+                        <l xml:id="l98b" prev="#l98a">ſchwinden/</l>
                         <lb/>
                         <l>ſo/ daß von ihnen wir kein mal noch zeichen finden:</l>
                         <lb/>
-                        <l>gerechtes Regiment wird immer außgebreit/</l>
+                        <l rendition="#et">gerechtes Regiment wird immer außgebreit/</l>
                         <lb/>
-                        <l>der frommen Obern wird vergeſſen keiner zeit.</l>
+                        <l rendition="#et">der frommen Obern wird vergeſſen keiner zeit.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XVI.</head>
+                     <head rendition="#aq #c">XVI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Daß nicht durch überfluß des reichen leib verderbe/</l>
                         <lb/>
                         <l>und durch die hungersnoht des armen gar erſterbe/</l>
                         <lb/>
-                        <l>ſo ſol ein weiſer Herꝛ auf mitel ſeyn bedacht</l>
+                        <l rendition="#et">ſo ſol ein weiſer Herꝛ auf mitel ſeyn bedacht</l>
                         <lb/>
-                        <l>wie etwas gleichheit werd in ihnen aufgebracht.</l>
+                        <l rendition="#et">wie etwas gleichheit werd in ihnen aufgebracht.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XVII.</head>
+                     <head rendition="#aq #c">XVII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Geſa&#x364;gnet iſt die zeit/ da weiſe leuht regieren/</l>
@@ -16380,28 +16375,28 @@
                         <fw place="top" type="pageNum">228</fw>
                         <fw place="top" type="header">Allerhand</fw>
                         <lb/>
-                        <l>wie jener wol geredt. Nun diſe Gnadenzeit</l>
+                        <l rendition="#et">wie jener wol geredt. Nun diſe Gnadenzeit</l>
                         <lb/>
-                        <l>iſt auch an uns erfüllt durch Gottes gu&#x364;tigkeit.</l>
+                        <l rendition="#et">iſt auch an uns erfüllt durch Gottes gu&#x364;tigkeit.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XVIII.</head>
+                     <head rendition="#aq #c">XVIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Rechtswegen herꝛſchet der/ der ſich kan überwinden/</l>
                         <lb/>
                         <l>und auf der wolluſtbahn ſich nimmer laſſet finden/</l>
                         <lb/>
-                        <l>mit ma&#x364;ſſigkeit geziert/ mit grechtigkeit bekleidt:</l>
+                        <l rendition="#et">mit ma&#x364;ſſigkeit geziert/ mit grechtigkeit bekleidt:</l>
                         <lb/>
-                        <l>ein ſolcher herꝛſchet auch in grauer ewigkeit.</l>
+                        <l rendition="#et">ein ſolcher herꝛſchet auch in grauer ewigkeit.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XIX.</head>
+                     <head rendition="#aq #c">XIX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Sol dir ein ſtehter Ru&#x366;hm bey deiner Herꝛſchaft bleiben/</l>
@@ -16409,46 +16404,46 @@
                         <l>ſo mu&#x366;ß gu&#x366;tta&#x364;htigkeit den ſtrengen ernſt
                            vertreiben:</l>
                         <lb/>
-                        <l>dan ein erzwungen lob iſt eine heucheley/</l>
+                        <l rendition="#et">dan ein erzwungen lob iſt eine heucheley/</l>
                         <lb/>
-                        <l>ie ho&#x364;hers Ehrenwort/ ie gro&#x364;ſſre triegerey.</l>
+                        <l rendition="#et">ie ho&#x364;hers Ehrenwort/ ie gro&#x364;ſſre triegerey.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XX.</head>
+                     <head rendition="#aq #c">XX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Ehrwu&#x364;rdig wird mit recht diß Regiment gepreiſet</l>
                         <lb/>
                         <l>das ſeine macht dem feind/ dem freund genad erweiſet:</l>
                         <lb/>
-                        <l>dan zwüſchen Tyranney und ſolchem Regiment/</l>
+                        <l rendition="#et">dan zwüſchen Tyranney und ſolchem Regiment/</l>
                         <lb/>
-                        <l>wie zwüſchen Wolf und Lamm wird underſcheid</l>
-                        <lb/>
-                        <l>erkent.</l>
+                        <l xml:id="l99a" next="#l99b" rendition="#et">wie zwüſchen Wolf und Lamm wird underſcheid</l>
+                        <lb break="no"/>
+                        <l xml:id="l99b" prev="#l99a">erkent.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXI.</head>
+                     <head rendition="#aq #c">XXI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Des leibes weſen nach ein menſch dem andern gleichet/</l>
                         <lb/>
                         <l>ein Oberherꝛ iedoch die undern überꝛeichet/</l>
                         <lb/>
-                        <l>und gleichet Gott im Stand: iſt aber ſtaub und</l>
+                        <l xml:id="l100a" next="#l100b" rendition="#et">und gleichet Gott im Stand: iſt aber ſtaub und</l>
+                        <lb break="no"/>
+                        <l xml:id="l100b" prev="#l100a">erd/</l>
                         <lb/>
-                        <l>erd/</l>
-                        <lb/>
-                        <l>drum ma&#x364;ſſig er den ſtoltz/ und nicht zu&#x366;zornig werd.</l>
+                        <l rendition="#et">drum ma&#x364;ſſig er den ſtoltz/ und nicht zu&#x366;zornig werd.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXII.</head>
+                     <head rendition="#aq #c">XXII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Den ra&#x364;hten/ die dem Reich zu&#x366; nutzen rahten
@@ -16459,11 +16454,11 @@
                            uneindeutig</p></note>r und folg/ mit gu&#x366;tem willen
                            go&#x364;nnen:</l>
                         <lb/>
-                        <l>Die Schmeichelra&#x364;hte meid/ ſo zu&#x366; gefallen dir/</l>
+                        <l rendition="#et">Die Schmeichelra&#x364;hte meid/ ſo zu&#x366; gefallen dir/</l>
                         <lb/>
-                        <l>und nicht dem Reich zu&#x366; nutz/ mißrahten für und</l>
-                        <lb/>
-                        <l>für.</l>
+                        <l xml:id="l101a" next="#l101b" rendition="#et">und nicht dem Reich zu&#x366; nutz/ mißrahten für und</l>
+                        <lb break="no"/>
+                        <l xml:id="l101b" prev="#l101a">für.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -16474,25 +16469,25 @@
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXIII.</head>
+                     <head rendition="#aq #c">XXIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Den Dienern dich erzeig/ wie du verhofſt zu&#x366;gleiche</l>
                         <lb/>
-                        <l>vom HERRN der Herꝛſchenden im erdenweiten Rei-</l>
+                        <l xml:id="l102a" next="#l102b">vom HERRN der Herꝛſchenden im erdenweiten Rei-</l>
                         <lb break="no"/>
-                        <l>che:</l>
+                        <l xml:id="l102b" prev="#l102a">che:</l>
                         <lb/>
-                        <l>dan wie den na&#x364;chſten wir erho&#x364;r- und ſehen an/</l>
+                        <l rendition="#et">dan wie den na&#x364;chſten wir erho&#x364;r- und ſehen an/</l>
                         <lb/>
-                        <l>ſo wird mit gegenrecht vom HERREN uns ge-</l>
+                        <l xml:id="l103a" next="#l103b" rendition="#et">ſo wird mit gegenrecht vom HERREN uns ge-</l>
                         <lb break="no"/>
-                        <l>tahn.</l>
+                        <l xml:id="l103b" prev="#l103a">tahn.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXIV.</head>
+                     <head rendition="#aq #c">XXIV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Ein Spiegel/ den man rein und unbetr<anchor xml:id="a173"/>ü<note
@@ -16501,58 +16496,56 @@
                         <lb/>
                         <l>geleiches angeſicht des Sehers augen weiſet:</l>
                         <lb/>
-                        <l>So ſtimmet Gotts Gericht mit unſern werken eyn/</l>
+                        <l rendition="#et">So ſtimmet Gotts Gericht mit unſern werken eyn/</l>
                         <lb/>
-                        <l>nach dem dieſelben ſeind/ wird unſre blohnung ſeyn.</l>
+                        <l rendition="#et">nach dem dieſelben ſeind/ wird unſre blohnung ſeyn.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXV.</head>
+                     <head rendition="#aq #c">XXV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Weil unbedachter Raht in wichtighohen dingen</l>
                         <lb/>
                         <l>die gro&#x364;ſſeſt urſach iſt/ daß ſelbe nicht gelingen/</l>
                         <lb/>
-                        <l>ſo raht mit weil und fleiß/ und mit gebett zu&#x366;gleich/</l>
+                        <l rendition="#et">ſo raht mit weil und fleiß/ und mit gebett zu&#x366;gleich/</l>
                         <lb/>
-                        <l>ſetz aber bald zu&#x366; werk was dienet deinem Reich.</l>
+                        <l rendition="#et">ſetz aber bald zu&#x366; werk was dienet deinem Reich.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXVI.</head>
+                     <head rendition="#aq #c">XXVI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Du wirſt das Regiment am beſten denn verwalten/</l>
                         <lb/>
                         <l>wan du die aufſicht ſelb wirſt über alles halten</l>
                         <lb/>
-                        <l>was z<anchor xml:id="a174"/>u&#x364;<note type="annotation"
-                              targetEnd="a174"><p>kleines e etwas deutlicher in der
-                           SBB</p></note>verꝛichten iſt: dan Oberkerkeitlichs wort/</l>
+                        <l rendition="#et">was zu&#x364;verꝛichten iſt: dan Oberkerkeitlichs wort/</l>
                         <lb/>
-                        <l>wie ring es immer ſcheint/ mit nachtruk gehet fort.</l>
+                        <l rendition="#et">wie ring es immer ſcheint/ mit nachtruk gehet fort.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXVII.</head>
+                     <head rendition="#aq #c">XXVII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Wan die Regenten ſelb nach ihren Gſatzen leben/</l>
                         <lb/>
                         <l>ſo werden ſelben ſie das beſt anſehen geben:</l>
                         <lb/>
-                        <l>dan ieder undertahn bey diſem wird verſtehn/</l>
+                        <l rendition="#et">dan ieder undertahn bey diſem wird verſtehn/</l>
                         <lb/>
-                        <l>daß kein verbrecher werd geſetzter ſtraf entgehn.</l>
+                        <l rendition="#et">daß kein verbrecher werd geſetzter ſtraf entgehn.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXVIII.</head>
+                     <head rendition="#aq #c">XXVIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Selb ſünden/ oder auch den ſündern nicht abwehren/</l>
@@ -16566,87 +16559,88 @@
                         <fw place="top" type="pageNum">230</fw>
                         <fw place="top" type="header">Allerhand</fw>
                         <lb/>
-                        <l>der im Regentenſtand ſich ſelber ehrbar halt/</l>
+                        <l rendition="#et">der im Regentenſtand ſich ſelber ehrbar halt/</l>
                         <lb/>
-                        <l>das gu&#x366;t mit blohnung und das bo&#x364;ß mit ſtraf be-</l>
+                        <l xml:id="l104a" next="#l104b" rendition="#et">das gu&#x366;t mit blohnung und das bo&#x364;ß mit ſtraf be-</l>
                         <lb break="no"/>
-                        <l>zahlt.</l>
+                        <l xml:id="l104b" prev="#l104a">zahlt.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXIX.</head>
+                     <head rendition="#aq #c">XXIX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Bey bo&#x364;ſen wird man ſiech: mu&#x366;ß ſünden oder leiden:</l>
                         <lb/>
                         <l>drum ſol ein Oberherꝛ der bo&#x364;ſen gſellſchaft meiden/</l>
                         <lb/>
-                        <l>zu&#x366; frommen halten ſich: bey denen lehrnet man</l>
+                        <l rendition="#et">zu&#x366; frommen halten ſich: bey denen lehrnet man</l>
                         <lb/>
-                        <l>den laſtern abbruch tu&#x366;hn/ der tugend hangen an.</l>
+                        <l rendition="#et">den laſtern abbruch tu&#x366;hn/ der tugend hangen an.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXX.</head>
+                     <head rendition="#aq #c">XXX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Zu&#x366; Ehrena&#x364;mtern die/ die ſich unehrbar halten/</l>
                         <lb/>
                         <l>befo&#x364;rder nicht/ dan das ſo ſie nicht recht verwalten/</l>
                         <lb/>
-                        <l>in eim und anderm Stand/ erfordert Gott von</l>
-                        <lb/>
-                        <l>dir/</l>
-                        <lb/>
-                        <l>der du ſie haſt erwehlt: drum wehl nach Eidsgebür.</l>
+                        <l xml:id="l105a" next="#l105b" rendition="#et">in eim und anderm Stand/ erfordert Gott von</l>
+                        <lb break="no"/>
+                        <l xml:id="l105b" prev="#l105a">dir/</l>
+                        <lb break="no"/>
+                        <l xml:id="l106b" prev="#l106a"> (bür-</l>
+                        <l xml:id="l106a" next="#106b" rendition="#et">der du ſie haſt erwehlt: drum wehl nach Eidsge.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXI.</head>
+                     <head rendition="#aq #c">XXXI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>O Richter/ richt geleich/ dem feinde wie dem freunde/</l>
                         <lb/>
                         <l>dem feinde nicht zu&#x366; hart/ dem freunde nicht zu&#x366; linde:</l>
                         <lb/>
-                        <l>tu&#x366;h beiden widerſtand/ und weich vom rechten</l>
+                        <l xml:id="l107a" next="#l107b" rendition="#et">tu&#x366;h beiden widerſtand/ und weich vom rechten</l>
+                        <lb break="no"/>
+                        <l xml:id="l107b" prev="#l107a">nicht/</l>
                         <lb/>
-                        <l>nicht/</l>
-                        <lb/>
-                        <l>ſo werden feind und freund gu&#x366;theiſſen dein gericht.</l>
+                        <l rendition="#et">ſo werden feind und freund gu&#x366;theiſſen dein gericht.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXII.</head>
+                     <head rendition="#aq #c">XXXII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Halt für den beſten freund; nicht den der alles preiſet</l>
                         <lb/>
                         <l>was wird von dir geredt; nein/ ſonder der ſich weiſet</l>
                         <lb/>
-                        <l>in allem tu&#x366;hn getreü/ ſo/ daß zur unfalszeit</l>
+                        <l rendition="#et">in allem tu&#x366;hn getreü/ ſo/ daß zur unfalszeit</l>
                         <lb/>
-                        <l>er ſich mit dir betru&#x364;bt/ im wolſtand mit-erfreüt.</l>
+                        <l rendition="#et">er ſich mit dir betru&#x364;bt/ im wolſtand mit-erfreüt.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXIII.</head>
+                     <head rendition="#aq #c">XXXIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Die laſt des Regiments nicht ſchreke dein gemu&#x364;hte/</l>
                         <lb/>
                         <l>das wandelbare glük nicht a&#x364;ndre dein geblu&#x364;te:</l>
                         <lb/>
-                        <l>Hab einen veſten mu&#x366;ht/ und ſey dir immer gleich/</l>
+                        <l rendition="#et">Hab einen veſten mu&#x366;ht/ und ſey dir immer gleich/</l>
                         <lb/>
-                        <l>im glük werd nicht zu&#x366; ſtoltz/ im unglük nicht zu&#x366;-</l>
+                        <l xml:id="l108a" next="#l108b" rendition="#et">im glük werd nicht zu&#x366; ſtoltz/ im unglük nicht zu&#x366;-</l>
                         <lb break="no"/>
-                        <l>weich.</l>
+                        <l xml:id="l108b" prev="#l108a">weich.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -16657,92 +16651,88 @@
                   <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXIV.</head>
+                     <head rendition="#aq #c">XXXIV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Geleiche dich dem Gold/ warauß man vil formieret/</l>
                         <lb/>
                         <l>und bald auf diſe/ bald auf jene weiſe zieret/</l>
                         <lb/>
-                        <l>noch bleibt es immer Gold/ und gleich im weſen gu&#x366;t:</l>
+                        <l rendition="#et">noch bleibt es immer Gold/ und gleich im weſen gu&#x366;t:</l>
                         <lb/>
-                        <l>alſo kein' Ehrenſtell vera&#x364;ndre deinen mu&#x366;ht.</l>
+                        <l rendition="#et">alſo kein' Ehrenſtell vera&#x364;ndre deinen mu&#x366;ht.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXV.</head>
+                     <head rendition="#aq #c">XXXV.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Das band der Liebe macht ein Regiment beſta&#x364;ndig/</l>
                         <lb/>
                         <l>erzwungner ghorſam wird/ bey leichtem anlaß/ wa&#x364;ndig:</l>
                         <lb/>
-                        <l>darum alſo regier/ daß undertahnen dich/</l>
+                        <l rendition="#et">darum alſo regier/ daß undertahnen dich/</l>
                         <lb/>
-                        <l>na&#x364;chſt einer Kinderforcht/ auch lieben inniglich.</l>
+                        <l rendition="#et">na&#x364;chſt einer Kinderforcht/ auch lieben inniglich.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXVI.</head>
+                     <head rendition="#aq #c">XXXVI.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Den Stand/ dem niemand darf geſatz und ordnung ge-</l>
+                        <l xml:id="l109a" next="#l109b">Den Stand/ dem niemand darf geſatz und ordnung ge-</l>
                         <lb break="no"/>
-                        <l>ben/</l>
+                        <l xml:id="l109b" prev="#l109a">ben/</l>
                         <lb/>
                         <l>antreibe die vernunft zu&#x366; gſatzgema&#x364;ſſem leben:</l>
                         <lb/>
-                        <l>er zo&#x364;rne wider ſich wie widern undertahn/</l>
+                        <l rendition="#et">er zo&#x364;rne wider ſich wie widern undertahn/</l>
                         <lb/>
-                        <l>wan ſelber er verfehlt: ſo lobt ihn iederman.</l>
+                        <l rendition="#et">wan ſelber er verfehlt: ſo lobt ihn iederman.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXVII.</head>
+                     <head rendition="#aq #c">XXXVII.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Biſt in der <anchor xml:id="a175"/>u<note type="annotation"
-                              targetEnd="a175"><p>in der SBB eindeutig ein u</p></note>ndern welt
-                           zu&#x366; hoher Ehr erhaben/</l>
+                        <l>Biſt in der undern welt zu&#x366; hoher Ehr erhaben/</l>
                         <lb/>
                         <l>ſo ſolſt/ alß ebenbild/ dem Lehenherꝛn nachtraben/</l>
                         <lb/>
-                        <l>und für die ho&#x364;heſt ehr es achten iederzeit/</l>
+                        <l rendition="#et">und für die ho&#x364;heſt ehr es achten iederzeit/</l>
                         <lb/>
-                        <l>wan underthanen du erzeigſt barmhertzigkeit.</l>
+                        <l rendition="#et">wan underthanen du erzeigſt barmhertzigkeit.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXVIII.</head>
+                     <head rendition="#aq #c">XXXVIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Es ſollen über gold und a&#x364;delgſtein auf erden</l>
                         <lb/>
                         <l>des woltu&#x366;hns Scha&#x364;tz' anietz von uns geſamlet werden:</l>
                         <lb/>
-                        <l>dan ſie beluſtigen/ auß hofnung jener freüd/</l>
+                        <l rendition="#et">dan ſie beluſtigen/ auß hofnung jener freüd/</l>
                         <lb/>
-                        <l>die immerwa&#x364;hrend iſt/ ohn einig hertzenleid.</l>
+                        <l rendition="#et">die immerwa&#x364;hrend iſt/ ohn einig hertzenleid.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XXXIX.</head>
+                     <head rendition="#aq #c">XXXIX.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Ein Herꝛ ſol iederzeit hochachten die getreuen/</l>
                         <lb/>
                         <l>und/ über andre leuht/ mit gaaben ſie erfreuen:</l>
                         <lb/>
-                        <l>dan alſo wird der fromm zu&#x366; mehrer treu bewegt/</l>
+                        <l rendition="#et">dan alſo wird der fromm zu&#x366; mehrer treu bewegt/</l>
                         <lb/>
-                        <l>dem bo&#x364;ſen wird der w<anchor xml:id="a176"/>a&#x364;<note
-                              type="annotation" targetEnd="a176"><p>eindeutig ein kleines e in der
-                                 SBB</p></note>g zum übeltu&#x366;hn verlegt.</l>
+                        <l rendition="#et">dem bo&#x364;ſen wird der w&#x364;g zum übeltu&#x366;hn verlegt.</l>
                      </lg>
                      <lb/>
                   </div>
@@ -16754,82 +16744,82 @@
                   <fw place="top" type="header">Allerhand</fw>
                   <lb/>
                   <div type="stanza-div">
-                     <head rendition="#aq">XL.</head>
+                     <head rendition="#aq #c">XL.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Dem Vieh geleichet ſich wer tyranney veru&#x364;bet/</l>
                         <lb/>
                         <l>dem Scho&#x364;pfer aber der/ dem freundlichkeit geliebet:</l>
                         <lb/>
-                        <l>Darum in ho&#x364;chſtem Stand das Recht vor augen</l>
+                        <l xml:id="l110a" next="#l110b" rendition="#et">Darum in ho&#x364;chſtem Stand das Recht vor augen</l>
+                        <lb break="no"/>
+                        <l xml:id="l110b" prev="#l110a">hab/</l>
                         <lb/>
-                        <l>hab/</l>
-                        <lb/>
-                        <l>und ſag der tyranney/ ſamt aller frechheit ab.</l>
+                        <l rendition="#et">und ſag der tyranney/ ſamt aller frechheit ab.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XLI.</head>
+                     <head rendition="#aq #c">XLI.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Der Richter hu&#x364;te ſich den freünde loß zu&#x366;ſprechen/</l>
                         <lb/>
                         <l>in ungerechter ſach/ am feinde ſich zu&#x366;rechen:</l>
                         <lb/>
-                        <l>er laß dem feind und freund geleiches Recht er-</l>
+                        <l xml:id="l111a" next="#l111b" rendition="#et">er laß dem feind und freund geleiches Recht er-</l>
                         <lb break="no"/>
-                        <l>gehn:</l>
+                        <l xml:id="l111b" prev="#l111a">gehn:</l>
                         <lb/>
-                        <l>dan bo&#x364;ß verbleibet bo&#x364;ß/ von wem es gleich geſchehn.</l>
+                        <l rendition="#et">dan bo&#x364;ß verbleibet bo&#x364;ß/ von wem es gleich geſchehn.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XLII.</head>
+                     <head rendition="#aq #c">XLII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Mit ſonderm fleiß anho&#x364;r die klagenden partheyen/</l>
                         <lb/>
-                        <l>doch mehr die ſach betracht alß Redners plauderſchrey-</l>
+                        <l xml:id="l112a" next="#l112b">doch mehr die ſach betracht alß Redners plauderſchrey-</l>
                         <lb break="no"/>
-                        <l>en/</l>
+                        <l xml:id="l112b" prev="#l112a">en/</l>
                         <lb/>
-                        <l>ſo findeſt du das recht: und wie du bleibſt darbey/</l>
+                        <l rendition="#et">ſo findeſt du das recht: und wie du bleibſt darbey/</l>
                         <lb/>
-                        <l>alſo gibſt keinem zu&#x366; daß er verfa&#x364;lſcher ſey.</l>
+                        <l rendition="#et">alſo gibſt keinem zu&#x366; daß er verfa&#x364;lſcher ſey.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XLIII.</head>
+                     <head rendition="#aq #c">XLIII.</head>
                      <lb/>
                      <lg type="stanza">
                         <l>Wer mit gu&#x366;ttahten ko&#x364;nt der Sternen zahl erꝛeichen/</l>
                         <lb/>
                         <l>der mo&#x364;cht mit allen doch dem Scho&#x364;pfer nicht geleichen/</l>
                         <lb/>
-                        <l>gleich wie auch keiner mag vorgehen eignem</l>
+                        <l xml:id="l113a" next="#l113b" rendition="#et">gleich wie auch keiner mag vorgehen eignem</l>
+                        <lb break="no"/>
+                        <l xml:id="l113b" prev="#l113a">Schatt:</l>
                         <lb/>
-                        <l>Schatt:</l>
-                        <lb/>
-                        <l>dan Gott/ was wir getahn/ vorhin gegeben hat.</l>
+                        <l rendition="#et">dan Gott/ was wir getahn/ vorhin gegeben hat.</l>
                      </lg>
                      <lb/>
                   </div>
                   <div type="stanza-div">
-                     <head rendition="#aq">XLIV.</head>
+                     <head rendition="#aq #c">XLIV.</head>
                      <lb/>
                      <lg type="stanza">
-                        <l>Des woltu&#x366;hns Scha&#x364;tze nicht/ gleich anderm Schatz der</l>
-                        <lb/>
-                        <l>Erden/</l>
+                        <l xml:id="l114a" next="#l114b">Des woltu&#x366;hns Scha&#x364;tze nicht/ gleich anderm Schatz der</l>
+                        <lb break="no"/>
+                        <l xml:id="l114b" prev="#l114a">Erden/</l>
                         <lb/>
                         <l>durch die verzehrend zeit iemals erſcho&#x364;pfet werden:</l>
                         <lb/>
-                        <l>durch geben werden ſie geſamlet mehr und mehr/</l>
+                        <l rendition="#et">durch geben werden ſie geſamlet mehr und mehr/</l>
                         <lb/>
-                        <l>und am Vergeltungstag belohnt mit reicher Ehr.</l>
+                        <l rendition="#et">und am Vergeltungstag belohnt mit reicher Ehr.</l>
                      </lg>
                      <lb/>
                   </div>
