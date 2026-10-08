@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="E42A"
+     xml:id="E42A_doc"
      type="simler-framework">
    <teiHeader>
       <fileDesc>
@@ -60,7 +60,7 @@
    </teiHeader>
    <text>
       <body>
-         <div>
+         <div xml:id="E42A">
             <pb facs="11598495"/>
             OECONOMIA,
             <lb/>

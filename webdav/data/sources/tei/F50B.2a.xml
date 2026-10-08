@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2a_Sterbensspiegel" type="simler-framework">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2a_doc" type="simler-framework">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -61,7 +61,7 @@
    </teiHeader>
    <text>
       <body>
-         <div>
+         <div xml:id="F50B.2a">
             <pb facs="3508815"/>
             <head><hi rendition="#aq"><num>II.</num></hi></head>
             <lb/>

@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F69D.2_Grebel_Wunsch-_und_Ehrenverse" type="simler-framework">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F69D.2_doc" type="simler-framework">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -61,7 +61,7 @@
    </teiHeader>
    <text>
       <body>
-         <div>
+         <div xml:id="F69D.2">
             <pb facs="3219111" n="25"/>
             <fw place="top" type="pageNum">25</fw>
             <lb/>

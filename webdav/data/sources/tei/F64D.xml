@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F64D_Wild_Seelenangst_Christi" type="simler-framework">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F64D_doc" type="simler-framework">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -73,7 +73,7 @@
    </teiHeader>
    <text>
       <body>
-         <div>
+         <div xml:id="F64D">
             <pb facs="2913425"/>
             <hi rendition="#aq">U</hi>ber Herꝛen Abraham Wilden vortreff-
             <lb break="no"/>
