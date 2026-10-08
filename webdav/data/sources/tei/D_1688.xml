@@ -1786,6 +1786,7 @@
 
                <fw place="top" type="pageNum">4</fw>
                <fw place="top" type="header">Das erſte Buch</fw>
+               <lb/>
 
                <div n="3" type="poem">
                   <head rendition="#b #c">Haubtbegriff des erſten <lb/> Pſalms.</head>
@@ -3566,6 +3567,7 @@
                      <fw place="bottom" type="catch">Wa<unclear reason="uncleanPrint"
                         >-</unclear></fw>
                      <lb/>
+
                      <pb facs="4076800" n="25"/>
 
                      <fw place="top" type="pageNum">25</fw>
@@ -3604,7 +3606,6 @@
             </div>
 
             <fw place="bottom" type="sig">C v</fw>
-
             <lb/>
             <pb facs="4076801" n="26"/>
 
@@ -6743,13 +6744,13 @@
                <pb facs="4076835" n="60"/>
 
                <fw place="top" type="pageNum">60</fw>
-               <lb/>
                <fw place="top" type="header">Weihnacht-</fw>
                <lb/>
 
                <div n="2" xml:id="n7_1" next="#n7_2">
                   <head rendition="#c #b">Weichnachtgeſang:</head>
                   <lb/>
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #c #b">VI. Cantus.</head>
@@ -6764,6 +6765,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #c #b">Tenor.</head>
                         <lb/>
@@ -6778,6 +6780,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -6812,16 +6815,15 @@
                         <lb/>
                      </lg>
                   </div>
-                  
+
                   <fw place="bottom" type="catch">5. Ge-</fw>
                   <lb/>
                   <pb facs="4076836" n="61"/>
 
                   <fw place="top" type="pageNum">61</fw>
-                  <lb/>
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
                   <lb/>
-                  
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Altus.</head>
@@ -6836,6 +6838,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -6850,6 +6853,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="5">
@@ -6880,18 +6884,17 @@
                            <l>vom Himmelreich:/:</l>
                            <lb/>
                            <l>uns/ ohn die ſu&#x364;nd/ zuwerden gleich:/:</l>
-                           </lg>
+                        </lg>
                         <lb/>
 
-                           <fw place="bottom" type="catch">8. Des</fw>
-                           <lb/>
-                           <pb facs="4076837" n="62"/>
+                        <fw place="bottom" type="catch">8. Des</fw>
+                        <lb/>
+                        <pb facs="4076837" n="62"/>
 
-                           <fw place="top" type="pageNum">62</fw>
-                           <lb/>
-                           <fw place="top" type="header">Weihnacht</fw>
-                           <lb/>
-                        
+                        <fw place="top" type="pageNum">62</fw>
+                        <fw place="top" type="header">Weihnacht</fw>
+                        <lb/>
+
                         <lg n="8">
                            <head>8</head>
                            <lb/>
@@ -6999,7 +7002,6 @@
                         <pb facs="4076838" n="63"/>
 
                         <fw place="top" type="pageNum">63</fw>
-                        <lb/>
                         <fw place="top" type="header">Geſa&#x364;nge.</fw>
                         <lb/>
 
@@ -7112,7 +7114,6 @@
                         <pb facs="4076839" n="64"/>
 
                         <fw place="top" type="pageNum">64</fw>
-                        <lb/>
                         <fw place="top" type="header">Weihn<supplied>a</supplied>cht-</fw>
                         <lb/>
 
@@ -7156,6 +7157,7 @@
                <lb/>
 
                <div n="2" xml:id="n8_1" next="#n8_2">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #c #b">X. Cantus.</head>
@@ -7173,6 +7175,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -7195,7 +7198,6 @@
                <pb facs="4076840" n="65"/>
 
                <fw place="top" type="pageNum">65</fw>
-               <lb/>
                <fw place="top" type="header">Geſa&#x364;nge.</fw>
                <lb/>
 
@@ -7237,6 +7239,7 @@
                <lb/>
 
                <div n="2" xml:id="n8_2" prev="#n8_1">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #c #b">Altus.</head>
@@ -7254,6 +7257,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #c #b">Baſis.</head>
                         <lb/>
@@ -7273,13 +7277,11 @@
                   </div>
 
                   <fw place="bottom" type="sig">F</fw>
-                  <lb/>
                   <fw place="bottom" type="catch"><supplied>Ge-</supplied></fw>
                   <lb/>
                   <pb facs="4076841" n="66"/>
 
                   <fw place="top" type="pageNum">66</fw>
-                  <lb/>
                   <fw place="top" type="header">Weihnacht-</fw>
                   <lb/>
 
@@ -7446,11 +7448,11 @@
                <pb facs="4076843" n="68"/>
 
                <fw place="top" type="pageNum">68</fw>
-               <lb/>
                <fw place="top" type="header">Weihnacht-</fw>
                <lb/>
 
                <div n="2" xml:id="n9">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -7467,6 +7469,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -7486,7 +7489,6 @@
                      <pb facs="4076844" n="69"/>
 
                      <fw place="top" type="pageNum">69</fw>
-                     <lb/>
                      <fw place="top" type="header">Geſa&#x364;nge.</fw>
                      <lb/>
 
@@ -7505,6 +7507,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -7528,7 +7531,6 @@
                   <pb facs="4076845" n="70"/>
 
                   <fw place="top" type="pageNum">70</fw>
-                  <lb/>
                   <fw place="top" type="header">Weihnacht-</fw>
                   <lb/>
 
@@ -7596,7 +7598,6 @@
                         <pb facs="4076846" n="71"/>
 
                         <fw place="top" type="pageNum">71</fw>
-                        <lb/>
                         <fw place="top" type="header">Geſa&#x364;nge.</fw>
                         <lb/>
 
@@ -7676,18 +7677,17 @@
                </div>
 
                <fw place="bottom" type="sig">F jv</fw>
-               <lb/>
                <fw place="bottom" type="catch">Herꝛ</fw>
                <lb/>
                <pb facs="4076847" n="72"/>
 
                <fw place="top" type="pageNum">72</fw>
-               <lb/>
                <fw place="top" type="header">Weihnacht-</fw>
                <lb/>
 
                <div n="2" xml:id="n10">
                   <!-- Simeon Lobgeſang. -->
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -7703,6 +7703,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -7718,6 +7719,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -7757,7 +7759,6 @@
                   <pb facs="4076848" n="73"/>
 
                   <fw place="top" type="pageNum">73</fw>
-                  <lb/>
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
                   <lb/>
 
@@ -7776,6 +7777,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -7794,6 +7796,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="3">
@@ -7822,17 +7825,16 @@
                </div>
 
                <fw place="bottom" type="sig">F v</fw>
-               <lb/>
                <fw place="bottom" type="catch">Wa-</fw>
                <lb/>
                <pb facs="4076849" n="74"/>
 
                <fw place="top" type="pageNum">74</fw>
-               <lb/>
                <fw place="top" type="header">Weihnacht-</fw>
                <lb/>
 
                <div n="2" xml:id="n11">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -7850,6 +7852,7 @@
                            <lb/>
                         </lg>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -7871,7 +7874,6 @@
                      <pb facs="4076850" n="75"/>
 
                      <fw place="top" type="pageNum">75</fw>
-                     <lb/>
                      <fw place="top" type="header">Geſa&#x364;ng.</fw>
                      <lb/>
 
@@ -7892,6 +7894,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -7916,7 +7919,6 @@
                   <pb facs="4076851" n="76"/>
 
                   <fw place="top" type="pageNum">76</fw>
-                  <lb/>
                   <fw place="top" type="header">Weihnacht-</fw>
                   <lb/>
 
@@ -7983,7 +7985,6 @@
                            <pb facs="4076852" n="77"/>
 
                            <fw place="top" type="pageNum">77</fw>
-                           <lb/>
                            <fw place="top" type="header">Geſa&#x364;nge.</fw>
                            <lb/>
 
@@ -8026,11 +8027,11 @@
                <pb facs="4076853" n="78"/>
 
                <fw place="top" type="pageNum">78</fw>
-               <lb/>
                <fw place="top" type="header">Neüjahresgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n12">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -8049,6 +8050,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -8070,7 +8072,6 @@
                      <pb facs="4076854" n="79"/>
 
                      <fw place="top" type="pageNum">79</fw>
-                     <lb/>
                      <fw place="top" type="header">Neüjahrsgeſang.</fw>
                      <lb/>
 
@@ -8091,6 +8092,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -8113,7 +8115,6 @@
                   <pb facs="4076855" n="80"/>
 
                   <fw place="top" type="pageNum">80</fw>
-                  <lb/>
                   <fw place="top" type="header">Neu&#x364;jahres-Geſang.</fw>
                   <lb/>
 
@@ -8192,7 +8193,6 @@
                         <pb facs="4076856" n="81"/>
 
                         <fw place="top" type="pageNum">81</fw>
-                        <lb/>
                         <fw place="top" type="header">Neujahrs-Geſang.</fw>
                         <lb/>
 
@@ -8276,13 +8276,11 @@
                         <lb/>
 
                         <fw place="bottom" type="sig">G</fw>
-                        <lb/>
                         <fw place="bottom" type="catch">Die</fw>
                         <lb/>
                         <pb facs="4076857" n="82"/>
 
                         <fw place="top" type="pageNum">82</fw>
-                        <lb/>
                         <fw place="top" type="header">Neüjahrsgeſang.</fw>
                         <lb/>
 
@@ -8368,7 +8366,6 @@
                         <pb facs="4076858" n="83"/>
 
                         <fw place="top" type="pageNum">83</fw>
-                        <lb/>
                         <fw place="top" type="header">Neüjahrsgeſang.</fw>
                         <lb/>
 
@@ -8405,17 +8402,16 @@
                </div>
 
                <fw place="bottom" type="sig">G ij</fw>
-               <lb/>
                <fw place="bottom" type="catch">O Men-</fw>
                <lb/>
                <pb facs="4076859" n="84"/>
 
                <fw place="top" type="pageNum">84</fw>
-               <lb/>
                <fw place="top" type="header">Vom leiden Chriſti.</fw>
                <lb/>
 
                <div n="2" xml:id="n13">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -8440,6 +8436,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -8470,7 +8467,6 @@
                      <pb facs="4076860" n="85"/>
 
                      <fw place="top" type="pageNum">85</fw>
-                     <lb/>
                      <fw place="top" type="header">Vom leiden Chriſti.</fw>
                      <lb/>
 
@@ -8497,6 +8493,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -8524,7 +8521,6 @@
                      <pb facs="4076861" n="86"/>
 
                      <fw place="top" type="pageNum">86</fw>
-                     <lb/>
                      <fw place="top" type="header">Vom leiden Chriſti.</fw>
                      <lb/>
 
@@ -8543,6 +8539,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -8562,7 +8559,6 @@
                      <pb facs="4076862" n="87"/>
 
                      <fw place="top" type="pageNum">87</fw>
-                     <lb/>
                      <fw place="top" type="header">Vom leiden Chriſti.</fw>
                      <lb/>
 
@@ -8581,6 +8577,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -8601,7 +8598,6 @@
                   <pb facs="4076863" n="88"/>
 
                   <fw place="top" type="pageNum">88</fw>
-                  <lb/>
                   <fw place="top" type="header">Vom leiden Chriſti.</fw>
                   <lb/>
 
@@ -8688,7 +8684,6 @@
                            <pb facs="4076864" n="89"/>
 
                            <fw place="top" type="pageNum">89</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -8760,13 +8755,11 @@
                            <lb/>
 
                            <fw place="bottom" type="sig">G v</fw>
-                           <lb/>
                            <fw place="bottom" type="catch">zu</fw>
                            <lb/>
                            <pb facs="4076865" n="90"/>
 
                            <fw place="top" type="pageNum">90</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -8847,7 +8840,6 @@
                            <pb facs="4076866" n="91"/>
 
                            <fw place="top" type="pageNum">91</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -8929,7 +8921,6 @@
                         <pb facs="4076867" n="92"/>
 
                         <fw place="top" type="pageNum">92</fw>
-                        <lb/>
                         <fw place="top" type="header">Vom leiden Chriſti.</fw>
                         <lb/>
 
@@ -9009,7 +9000,6 @@
                            <pb facs="4076868" n="93"/>
 
                            <fw place="top" type="pageNum">93</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9091,7 +9081,6 @@
                            <pb facs="4076869" n="94"/>
 
                            <fw place="top" type="pageNum">94</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9170,7 +9159,6 @@
                            <pb facs="4076870" n="95"/>
 
                            <fw place="top" type="pageNum">95</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9328,7 +9316,6 @@
                            <pb facs="4076872" n="97"/>
 
                            <fw place="top" type="pageNum">97</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9405,13 +9392,11 @@
                            <lb/>
 
                            <fw place="bottom" type="sig">H</fw>
-                           <lb/>
                            <fw place="bottom" type="catch">Pi-</fw>
                            <lb/>
                            <pb facs="4076873" n="98"/>
 
                            <fw place="top" type="pageNum">98</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9492,7 +9477,6 @@
                            <pb facs="4076874" n="99"/>
 
                            <fw place="top" type="pageNum">99</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9571,13 +9555,11 @@
                            <lb/>
 
                            <fw place="bottom" type="sig">H ij</fw>
-                           <lb/>
                            <fw place="bottom" type="catch">zu-</fw>
                            <lb/>
                            <pb facs="4076875" n="100"/>
 
                            <fw place="top" type="pageNum">100</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9658,7 +9640,6 @@
                            <pb facs="4076876" n="101"/>
 
                            <fw place="top" type="pageNum">101</fw>
-                           <lb/>
                            <fw place="top" type="header"><anchor xml:id="a95"/>Vonm<note
                                  type="annotation" targetEnd="a95"><p>Die Wortform „Vonm“ könnte
                                     sprachhistorisch angenommen werden, weicht allerdings von den
@@ -9822,7 +9803,6 @@
                            <pb facs="4076878" n="103"/>
 
                            <fw place="top" type="pageNum">103</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9902,13 +9882,11 @@
                            <lb/>
 
                            <fw place="bottom" type="sig">H jv</fw>
-                           <lb/>
                            <fw place="bottom" type="catch">es</fw>
                            <lb/>
                            <pb facs="4076879" n="104"/>
 
                            <fw place="top" type="pageNum">104</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -9989,7 +9967,6 @@
                            <pb facs="4076880" n="105"/>
 
                            <fw place="top" type="pageNum">105</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -10062,13 +10039,11 @@
                         <lb/>
 
                         <fw place="bottom" type="sig">H v</fw>
-                        <lb/>
                         <fw place="bottom" type="catch">47. Ach</fw>
                         <lb/>
                         <pb facs="4076881" n="106"/>
 
                         <fw place="top" type="pageNum">106</fw>
-                        <lb/>
                         <fw place="top" type="header">Vom leiden Chriſti.</fw>
                         <lb/>
 
@@ -10147,7 +10122,6 @@
                            <pb facs="4076882" n="107"/>
 
                            <fw place="top" type="pageNum">107</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -10225,7 +10199,6 @@
                         <pb facs="4076883" n="108"/>
 
                         <fw place="top" type="pageNum">108</fw>
-                        <lb/>
                         <fw place="top" type="header">Vom leiden Chriſti.</fw>
                         <lb/>
 
@@ -10303,7 +10276,6 @@
                            <pb facs="4076884" n="109"/>
 
                            <fw place="top" type="pageNum">109</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -10380,7 +10352,6 @@
                         <pb facs="4076885" n="110"/>
 
                         <fw place="top" type="pageNum">110</fw>
-                        <lb/>
                         <fw place="top" type="header">Vom leiden Chriſti.</fw>
                         <lb/>
 
@@ -10461,7 +10432,6 @@
                            <pb facs="4076886" n="111"/>
 
                            <fw place="top" type="pageNum">111</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
 
@@ -10541,11 +10511,11 @@
                <pb facs="4076887" n="112"/>
 
                <fw place="top" type="pageNum">112</fw>
-               <lb/>
                <fw place="top" type="header">Oſtergeſang</fw>
                <lb/>
 
                <div n="2" xml:id="n14">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -10560,6 +10530,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -10577,7 +10548,6 @@
                      <pb facs="4076888" n="113"/>
 
                      <fw place="top" type="pageNum">113</fw>
-                     <lb/>
                      <fw place="top" type="header">Oſtergeſang.</fw>
                      <lb/>
 
@@ -10594,6 +10564,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -10610,13 +10581,11 @@
                   </div>
 
                   <fw place="bottom" type="sig">J</fw>
-                  <lb/>
                   <fw place="bottom" type="catch">Sieg-</fw>
                   <lb/>
                   <pb facs="4076889" n="114"/>
 
                   <fw place="top" type="pageNum">114</fw>
-                  <lb/>
                   <fw place="top" type="header">Oſtergeſang.</fw>
                   <lb/>
 
@@ -10686,7 +10655,6 @@
                            <pb facs="4076890" n="115"/>
 
                            <fw place="top" type="pageNum">115</fw>
-                           <lb/>
                            <fw place="top" type="header">Oſtergeſang.</fw>
                            <lb/>
 
@@ -10764,17 +10732,16 @@
                </div>
 
                <fw place="bottom" type="sig">J ij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Auf/</fw>
                <lb/>
                <pb facs="4076891" n="116"/>
 
                <fw place="top" type="pageNum">116</fw>
-               <lb/>
                <fw place="top" type="header">Himmelfahrts-Geſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n15">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -10797,6 +10764,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -10820,7 +10788,6 @@
                      <pb facs="4076892" n="117"/>
 
                      <fw place="top" type="pageNum">117</fw>
-                     <lb/>
                      <fw place="top" type="header">Himmelfahrts-Geſang.</fw>
                      <lb/>
 
@@ -10844,6 +10811,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -10871,7 +10839,6 @@
                   <pb facs="4076893" n="118"/>
 
                   <fw place="top" type="pageNum">118</fw>
-                  <lb/>
                   <fw place="top" type="header">Himmelfahrts-Geſang.</fw>
                   <lb/>
 
@@ -10984,7 +10951,6 @@
                            <pb facs="4076894" n="119"/>
 
                            <fw place="top" type="pageNum">119</fw>
-                           <lb/>
                            <fw place="top" type="header">Himmel-fahrts-Geſang.</fw>
                            <lb/>
 
@@ -11036,19 +11002,18 @@
                </div>
 
                <fw place="bottom" type="sig">J iiij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Auf</fw>
                <lb/>
                <pb facs="4076895" n="120"/>
 
                <fw place="top" type="pageNum">120</fw>
-               <lb/>
                <fw place="top" type="header">Himmelfahrts-Geſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n16_1" next="#n16_2">
                   <!-- Ein ander Himmelfahrts-Geſang -->
                   <p rendition="#smaller">Sonst auch in der weis </p>
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -11072,6 +11037,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -11095,6 +11061,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -11122,9 +11089,9 @@
                   <pb facs="4076896" n="121"/>
 
                   <fw place="top" type="pageNum">121</fw>
-                  <lb/>
                   <fw place="top" type="header">Himmelfahrts-Geſang.</fw>
                   <lb/>
+
 
                   <div type="music">
                      <p rendition="#smaller">des 18. und 144. Pſalmens.</p>
@@ -11157,6 +11124,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -11180,6 +11148,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="3">
@@ -11209,7 +11178,6 @@
                         <pb facs="4076897" n="122"/>
 
                         <fw place="top" type="pageNum">122</fw>
-                        <lb/>
                         <fw place="top" type="header">Himmelfahrt- und</fw>
                         <lb/>
 
@@ -11238,6 +11206,7 @@
                <div n="2" xml:id="n17_1" next="#n17_2">
                   <head rendition="#b #c">Pfingſt-Geſang.</head>
                   <lb/>
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -11252,6 +11221,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -11271,11 +11241,11 @@
                <pb facs="4076898" n="123"/>
 
                <fw place="top" type="pageNum">123</fw>
-               <lb/>
                <fw place="top" type="header">Pfingſt-Geſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n16_2" prev="#n16_1">
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="5">
@@ -11300,7 +11270,9 @@
                      <lb/>
                   </div>
                </div>
+
                <div n="2" xml:id="n17_2" prev="#n17_1">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Altus.</head>
@@ -11315,6 +11287,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -11333,7 +11306,6 @@
                   <pb facs="4076899" n="124"/>
 
                   <fw place="top" type="pageNum">124</fw>
-                  <lb/>
                   <fw place="top" type="header">Pfingſtgeſang.</fw>
                   <lb/>
 
@@ -11415,7 +11387,6 @@
                         <pb facs="4076900" n="125"/>
 
                         <fw place="top" type="pageNum">125</fw>
-                        <lb/>
                         <fw place="top" type="header">Pfingſtgeſang.</fw>
                         <lb/>
 
@@ -11493,11 +11464,11 @@
                <pb facs="4076901" n="126"/>
 
                <fw place="top" type="pageNum">126</fw>
-               <lb/>
                <fw place="top" type="header">Vorbereitungs-Geſang/</fw>
                <lb/>
 
                <div n="2" xml:id="n18">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -11517,6 +11488,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -11539,7 +11511,6 @@
                      <pb facs="4076902" n="127"/>
 
                      <fw place="top" type="pageNum">127</fw>
-                     <lb/>
                      <fw place="top" type="header">Zu dem H. Abendmahl.</fw>
                      <lb/>
 
@@ -11585,7 +11556,6 @@
                   <pb facs="4076903" n="128"/>
 
                   <fw place="top" type="pageNum">128</fw>
-                  <lb/>
                   <fw place="top" type="header">Vom H. Nachtmahl.</fw>
                   <lb/>
 
@@ -11666,7 +11636,6 @@
                            <pb facs="4076904" n="129"/>
 
                            <fw place="top" type="pageNum">129</fw>
-                           <lb/>
                            <fw place="top" type="header">Vom H. Abendmahl</fw>
                            <lb/>
 
@@ -11743,13 +11712,11 @@
                </div>
 
                <fw place="bottom" type="sig">K</fw>
-               <lb/>
                <fw place="bottom" type="catch">Nun</fw>
                <lb/>
                <pb facs="4076905" n="130"/>
 
                <fw place="top" type="pageNum">130</fw>
-               <lb/>
                <fw place="top" type="header">Vom H. Abendmahl.</fw>
                <lb/>
 
@@ -11757,6 +11724,7 @@
                   <head rendition="#b #c">Danckgeſang/ nach genoßnem heili- <lb break="no"/> gem
                      Abendmahl.</head>
                   <lb/>
+
                   <div type="music">
                      <div>
                         <!-- Cantus -->
@@ -11772,6 +11740,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -11785,6 +11754,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -11866,7 +11836,6 @@
                   <pb facs="4076906" n="131"/>
 
                   <fw place="top" type="pageNum">131</fw>
-                  <lb/>
                   <fw place="top" type="header">Vom H. Abendmahl.</fw>
                   <lb/>
 
@@ -11883,6 +11852,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -11896,6 +11866,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="8">
@@ -11962,17 +11933,16 @@
                </div>
 
                <fw place="bottom" type="sig">K ij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Mein</fw>
                <lb/>
                <pb facs="4076907" n="132"/>
 
                <fw place="top" type="pageNum">132</fw>
-               <lb/>
                <fw place="top" type="header">Catechiſmusgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n20">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -11993,6 +11963,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
@@ -12009,6 +11980,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <head> Uber den verku&#x364;rzten Underꝛicht <lb/> warer <choice>
                            <sic>E</sic>
@@ -12048,7 +12020,6 @@
                   <pb facs="4076908" n="133"/>
 
                   <fw place="top" type="pageNum">133</fw>
-                  <lb/>
                   <fw place="top" type="header">Catechiſmusgeſang.</fw>
                   <lb/>
 
@@ -12068,6 +12039,7 @@
                         </lg>
                         <lb/>
                      </div>
+
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
@@ -12084,6 +12056,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -12166,13 +12139,11 @@
                      <lb/>
 
                      <fw place="bottom" type="sig">K iij</fw>
-                     <lb/>
                      <fw place="bottom" type="catch"><hi rendition="#aq">I.</hi> Vom</fw>
                      <lb/>
                      <pb facs="4076909" n="134"/>
 
                      <fw place="top" type="pageNum">134</fw>
-                     <lb/>
                      <fw place="top" type="header">Catechiſmusgeſang.</fw>
                      <lb/>
 
@@ -12258,7 +12229,6 @@
                            <pb facs="4076910" n="135"/>
 
                            <fw place="top" type="pageNum">135</fw>
-                           <lb/>
                            <fw place="top" type="header">Catechiſmusgeſang.</fw>
                            <lb/>
 
@@ -12345,7 +12315,6 @@
                               <pb facs="4076911" n="136"/>
 
                               <fw place="top" type="pageNum">136</fw>
-                              <lb/>
                               <fw place="top" type="header">Catechiſmusgeſang.</fw>
                               <lb/>
 
@@ -12432,7 +12401,6 @@
                               <pb facs="4076912" n="137"/>
 
                               <fw place="top" type="pageNum">137</fw>
-                              <lb/>
                               <fw place="top" type="header">Catechiſmusgeſang.</fw>
                               <lb/>
 
@@ -12527,13 +12495,11 @@
                               <lb/>
 
                               <fw place="bottom" type="sig">K v</fw>
-                              <lb/>
                               <fw place="bottom" type="catch">des</fw>
                               <lb/>
                               <pb facs="4076913" n="138"/>
 
                               <fw place="top" type="pageNum">138</fw>
-                              <lb/>
                               <fw place="top" type="header">Catechiſmusgeſang.</fw>
                               <lb/>
 
@@ -12627,16 +12593,16 @@
                         </lg>
                      </lg>
                      <lb/>
+
                      <fw place="bottom" type="catch"><supplied><hi rendition="#aq">IV.</hi>
                            Von</supplied></fw>
                      <lb/>
                      <pb facs="4076914" n="139"/>
 
                      <fw place="top" type="pageNum">139</fw>
-                     <lb/>
                      <fw place="top" type="header">Catechiſmusgeſang.</fw>
                      <lb/>
-                     
+
                      <lg>
                         <head rendition="#b #c">
                            <hi rendition="#aq">IV.</hi> Von den heiligen Sacr<supplied>a-</supplied>
@@ -12919,6 +12885,7 @@
                <lb/>
 
                <div n="2" xml:id="n21">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -12966,7 +12933,6 @@
                      <pb facs="4076918" n="143"/>
 
                      <fw place="top" type="pageNum">143</fw>
-                     <lb/>
                      <fw place="top" type="header">Bittgeſang.</fw>
                      <lb/>
 
@@ -13014,7 +12980,6 @@
                   <pb facs="4076919" n="144"/>
 
                   <fw place="top" type="pageNum">144</fw>
-                  <lb/>
                   <fw place="top" type="header">Beicht- und</fw>
                   <lb/>
 
@@ -13106,7 +13071,6 @@
                            <pb facs="4076920" n="145"/>
 
                            <fw place="top" type="pageNum">145</fw>
-                           <lb/>
                            <fw place="top" type="header">Bittgeſang.</fw>
                            <lb/>
 
@@ -13195,7 +13159,6 @@
                            <lb/>
 
                            <fw place="bottom" type="sig">L</fw>
-                           <lb/>
                            <fw place="bottom" type="catch">dan<anchor xml:id="a119"/>n<note
                                  type="annotation" targetEnd="a119"><p>Das zweite n fehlt auf der
                                     folgenden Seite.</p></note></fw>
@@ -13203,7 +13166,6 @@
                            <pb facs="4076921" n="146"/>
 
                            <fw place="top" type="pageNum">146</fw>
-                           <lb/>
                            <fw place="top" type="header">Beicht- und</fw>
                            <lb/>
 
@@ -13290,7 +13252,6 @@
                         <pb facs="4076922" n="147"/>
 
                         <fw place="top" type="pageNum">147</fw>
-                        <lb/>
                         <fw place="top" type="header">Bittgeſang.</fw>
                         <lb/>
 
@@ -13332,17 +13293,16 @@
                </div>
 
                <fw place="bottom" type="sig">L ij</fw>
-               <lb/>
                <fw type="catch" place="bottom">Fer-</fw>
                <lb/>
                <pb facs="4076923" n="148"/>
 
                <fw place="top" type="pageNum">148</fw>
-               <lb/>
                <fw place="top" type="header">Lobgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n22">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -13367,7 +13327,6 @@
                         </lg>
                         <lb/>
                      </div>
-
 
                      <div>
                         <head rendition="#aq #b #c">Tenor.</head>
@@ -13400,7 +13359,6 @@
                      <pb facs="4076924" n="149"/>
 
                      <fw place="top" type="pageNum">149</fw>
-                     <lb/>
                      <fw place="top" type="header">fu&#x364;r gna&#x364;dige erho&#x364;rung/
                         ꝛc.</fw>
                      <lb/>
@@ -13454,7 +13412,6 @@
                   <pb facs="4076925" n="150"/>
 
                   <fw place="top" type="pageNum">150</fw>
-                  <lb/>
                   <fw place="top" type="header">Lobgeſang.</fw>
                   <lb/>
 
@@ -13625,7 +13582,6 @@
                            <pb facs="4076926" n="151"/>
 
                            <fw place="top" type="pageNum">151</fw>
-                           <lb/>
                            <fw place="top" type="header">fu&#x364;r gna&#x364;dige Erho&#x364;rung/
                               ꝛc.</fw>
                            <lb/>
@@ -13780,17 +13736,16 @@
                </div>
 
                <fw place="bottom" type="sig">L iiij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Auro-</fw>
                <lb/>
                <pb facs="4076927" n="152"/>
 
                <fw place="top" type="pageNum">152</fw>
-               <lb/>
                <fw place="top" type="header">Morgengeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n23">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -13827,7 +13782,6 @@
                      <pb facs="4076928" n="153"/>
 
                      <fw place="top" type="pageNum">153</fw>
-                     <lb/>
                      <fw place="top" type="header">Morgengeſang.</fw>
                      <lb/>
 
@@ -13867,7 +13821,6 @@
                   <pb facs="4076929" n="154"/>
 
                   <fw place="top" type="pageNum">154</fw>
-                  <lb/>
                   <fw place="top" type="header">Morgengeſang.</fw>
                   <lb/>
 
@@ -13937,7 +13890,6 @@
                         <pb facs="4076930" n="155"/>
 
                         <fw place="top" type="pageNum">155</fw>
-                        <lb/>
                         <fw place="top" type="header">Morgengeſang.</fw>
                         <lb/>
 
@@ -13980,7 +13932,9 @@
                   </div>
                </div>
 
+               <lb/>
                <milestone rendition="#hr" unit="section"/>
+               <lb/>
 
                <div n="2" xml:id="n24">
                   <head rendition="#b #c">Geiſtlicher Weker.</head>
@@ -14016,11 +13970,11 @@
                <pb facs="4076931" n="156"/>
 
                <fw place="top" type="pageNum">156</fw>
-               <lb/>
                <fw place="top" type="header">Abendgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n25">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -14070,7 +14024,6 @@
                      <pb facs="4076932" n="157"/>
 
                      <fw place="top" type="pageNum">157</fw>
-                     <lb/>
                      <fw place="top" type="header">Abendgeſang.</fw>
                      <lb/>
 
@@ -14122,7 +14075,6 @@
                   <pb facs="4076933" n="158"/>
 
                   <fw place="top" type="pageNum">158</fw>
-                  <lb/>
                   <fw place="top" type="header">Abendgeſang.</fw>
                   <lb/>
 
@@ -14193,7 +14145,6 @@
                            <pb facs="4076934" n="159"/>
 
                            <fw place="top" type="pageNum">159</fw>
-                           <lb/>
                            <fw place="top" type="header">Abendgeſang.</fw>
                            <lb/>
 
@@ -14251,11 +14202,11 @@
                <pb facs="4076935" n="160"/>
 
                <fw place="top" type="pageNum">160</fw>
-               <lb/>
                <fw place="top" type="header">Tiſchgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n26">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -14292,7 +14243,6 @@
                      <pb facs="4076936" n="161"/>
 
                      <fw place="top" type="pageNum">161</fw>
-                     <lb/>
                      <fw place="top" type="header">Tiſchgeſang.</fw>
                      <lb/>
 
@@ -14330,13 +14280,11 @@
                   </div>
 
                   <fw place="bottom" type="sig">M</fw>
-                  <lb/>
                   <fw place="bottom" type="catch">Es</fw>
                   <lb/>
                   <pb facs="4076937" n="162"/>
 
                   <fw place="top" type="pageNum">162</fw>
-                  <lb/>
                   <fw place="top" type="header">Tiſchgeſang.</fw>
                   <lb/>
 
@@ -14428,7 +14376,6 @@
                               <sic>8</sic>
                               <corr>3</corr>
                            </choice></fw>
-                        <lb/>
                         <fw place="top" type="header">Tiſchgeſang.</fw>
                         <lb/>
 
@@ -14510,17 +14457,16 @@
                </div>
 
                <fw place="bottom" type="sig">M ij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Nun</fw>
                <lb/>
                <pb facs="4076939" n="164"/>
 
                <fw place="top" type="pageNum">164</fw>
-               <lb/>
                <fw place="top" type="header">Tiſchgeſang.</fw>
                <lb/>
 
                <div n="2" xml:id="n27">
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -14561,7 +14507,6 @@
                      <pb facs="4076940" n="165"/>
 
                      <fw place="top" type="pageNum">165</fw>
-                     <lb/>
                      <fw place="top" type="header">Tiſchgeſang.</fw>
                      <lb/>
 
@@ -14604,13 +14549,11 @@
                   </div>
 
                   <fw place="bottom" type="sig">M iij</fw>
-                  <lb/>
                   <fw place="bottom" type="catch">Lob-</fw>
                   <lb/>
                   <pb facs="4076941" n="166"/>
 
                   <fw place="top" type="pageNum">166</fw>
-                  <lb/>
                   <fw place="top" type="header">Tiſchgeſang.</fw>
                   <lb/>
 
@@ -14690,7 +14633,6 @@
                         <pb facs="4076942" n="167"/>
 
                         <fw place="top" type="pageNum">167</fw>
-                        <lb/>
                         <fw place="top" type="header">Tiſchgeſang.</fw>
                         <lb/>
 
@@ -14769,13 +14711,11 @@
                </div>
 
                <fw place="bottom" type="sig">M iiij</fw>
-               <lb/>
                <fw place="bottom" type="catch">Ach</fw>
                <lb/>
                <pb facs="4076943" n="168"/>
 
                <fw place="top" type="pageNum">168</fw>
-               <lb/>
                <fw place="top" type="header">Menſchlichen Lebens</fw>
                <lb/>
 
@@ -14817,6 +14757,7 @@
                         <lb/>
                      </div>
                   </div>
+
                   <div type="poem">
                      <lg type="poem">
                         <lg n="2">
@@ -14862,12 +14803,10 @@
                         <sic>3.</sic>
                         <corr>4.</corr>
                      </choice> Weil</fw>
-
                   <lb/>
                   <pb facs="4076944" n="169"/>
 
                   <fw place="top" type="pageNum">169</fw>
-                  <lb/>
                   <fw place="top" type="header">Nichtigkeit.</fw>
                   <lb/>
 
@@ -14950,13 +14889,11 @@
                </div>
 
                <fw place="bottom" type="sig">M v</fw>
-               <lb/>
                <fw place="bottom" type="catch">Und</fw>
                <lb/>
                <pb facs="4076945" n="170"/>
 
                <fw place="top" type="pageNum">170</fw>
-               <lb/>
                <fw place="top" type="header">Allerhand</fw>
                <lb/>
 
@@ -14967,6 +14904,7 @@
                   <p rendition="#c">Diſes kan auch geſungen werden <lb/>in der weiſe: <lb/>Wiewol
                      der zeiten/ ſcho&#x364;nſte zeit/ ꝛc.</p>
                   <lb/>
+
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -15035,7 +14973,6 @@
                   <pb facs="4076946" n="171"/>
 
                   <fw place="top" type="pageNum">171</fw>
-                  <lb/>
                   <fw place="top" type="header">Geſa&#x364;nge.</fw>
                   <lb/>
 
@@ -15109,7 +15046,6 @@
             <pb facs="4076947" n="172"/>
 
             <fw place="top" type="pageNum">172</fw>
-            <lb/>
             <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
             <lb/>
 
@@ -15120,1486 +15056,1727 @@
                      break="no"/>tete Geſa&#x364;nge/ Glu&#x364;ckwu&#x364;nſchungen/ Eh- <lb
                      break="no"/>ren- und Lob-Lieder.</head>
                <lb/>
-               
-               <l><label>[30.]</label><lb/>
-                  <hi rendition="#aq">Cantus.</hi></l>
-               <lb/>
-               <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
-               <lb/>
-               <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
-               <lb/>
-               <l>das federvo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
-               <lb/>
-               <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
-               <lb/>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
-                     <lb/>
-                     <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
-                     <lb/>
-                     <l>das fidervo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
-                     <lb/>
-                     <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076948" n="173"/>
+               <div n="2" xml:id="n30">
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler
+                              kleidet/</l>
+                           <lb/>
+                           <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
+                           <lb/>
+                           <l>das federvo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
+                           <lb/>
+                           <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+                        </lg>
+                        <lb/>
+                     </div>
 
-               <fw place="top" type="pageNum">173</fw>
-               <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
-               <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler
+                              kleidet/</l>
+                           <lb/>
+                           <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
+                           <lb/>
+                           <l>das fidervo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
+                           <lb/>
+                           <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+                        </lg>
+                        <lb/>
+                     </div>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
-                     <lb/>
-                     <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
-                     <lb/>
-                     <l>das federvo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
-                     <lb/>
-                     <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
-                  </lg>
-                  <lb/>
-               </div>
+                     <pb facs="4076948" n="173"/>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
+                     <fw place="top" type="pageNum">173</fw>
+                     <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
                      <lb/>
-                     <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
-                     <lb/>
-                     <l>das federvo&#x364;lklein ſingt: es hu&#x364;pf<supplied>t</supplied> der
-                        Nymphen Chor:</l>
-                     <lb/>
-                     <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
-                     <lb/>
-                     <fw place="bottom" type="catch">Luſtig</fw>
-                     <lb/>
-                     <pb facs="4076949" n="174"/>
 
-                     <fw place="top" type="pageNum">174</fw>
-                     <fw place="top" type="header">Ein ander</fw>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler
+                              kleidet/</l>
+                           <lb/>
+                           <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
+                           <lb/>
+                           <l>das federvo&#x364;lklein ſingt: es hu&#x364;pft der Nymphen Chor:</l>
+                           <lb/>
+                           <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+                        </lg>
+                        <lb/>
+                     </div>
 
-                     <lb/>
-                     <l><label>[31.a.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wan&#x303; die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
-                  </lg>
-                  <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler
+                              kleidet/</l>
+                           <lb/>
+                           <l>darvon ſich alles vieh in follen ſpru&#x364;ngen weidet:</l>
+                           <lb/>
+                           <l>das federvo&#x364;lklein ſingt: es hu&#x364;pf<supplied>t</supplied>
+                              der Nymphen Chor:</l>
+                           <lb/>
+                           <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
                </div>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wan die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076950" n="175"/>
-
-               <fw place="top" type="pageNum">175</fw>
-               <fw place="top" type="header">Fru&#x364;lingsgeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wan&#x303; die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
-                     <lb/>
-                     <fw place="bottom" type="catch">Luſtig</fw>
-                     <lb/>
-                     <pb facs="4076951" n="176"/>
-
-                     <fw place="top" type="pageNum">176</fw>
-                     <fw place="top" type="header">Andere weis über das</fw>
-
-                     <lb/>
-                     <l><label>[31.b.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
-                     <lb/>
-                     <l>ſonnen im Mertzen/ mit dem widder beginnet zuſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
-                     <lb/>
-                     <l>ſonnen im Mertzen/ mit dem widder beginnet zuſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.</l>
-                  </lg>
-                  <lb/>
-               </div>
                <fw place="bottom" type="catch">Luſtig</fw>
                <lb/>
-               <pb facs="4076952" n="177"/>
+               <pb facs="4076949" n="174"/>
 
-               <fw place="top" type="pageNum">177</fw>
-               <fw place="top" type="header">andere Fru&#x364;hlingsgeſang.</fw>
+               <fw place="top" type="pageNum">174</fw>
+               <fw place="top" type="header">Ein ander</fw>
                <lb/>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
+               <div n="2" xml:id="n31">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wan&#x303; die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wan die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <pb facs="4076950" n="175"/>
+
+                     <fw place="top" type="pageNum">175</fw>
+                     <fw place="top" type="header">Fru&#x364;lingsgeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wan&#x303; die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <fw place="bottom" type="catch">Luſtig</fw>
                   <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.</l>
-                  </lg>
+                  <pb facs="4076951" n="176"/>
+
+                  <fw place="top" type="pageNum">176</fw>
+                  <fw place="top" type="header">Andere weis über das</fw>
                   <lb/>
-               </div>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
+                           <lb/>
+                           <l>ſonnen im Mertzen/ mit dem widder beginnet zuſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
+                           <lb/>
+                           <l>ſonnen im Mertzen/ mit dem widder beginnet zuſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen
+                              beſ<supplied>a&#x364;</supplied>et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <fw place="bottom" type="catch">Luſtig</fw>
+                     <lb/>
+                     <pb facs="4076952" n="177"/>
+
+                     <fw place="top" type="pageNum">177</fw>
+                     <fw place="top" type="header">andere Fru&#x364;hlingsgeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen
+                              beſ<supplied>a&#x364;</supplied>et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
+                           <lb/>
+                           <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
+                           <lb/>
+                           <l>entſtehet/ den der Zephyr mit blumen
+                              beſ<supplied>a&#x364;</supplied>et.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <fw place="bottom" type="sig">N</fw>
+                  <fw place="bottom" type="catch">Fr<supplied>u&#x364;</supplied>h-</fw>
                   <lb/>
-                  <lg type="poem">
-                     <l>Luſtig werden beku&#x364;mmerte hertzen/ wann die guldene</l>
-                     <lb/>
-                     <l>ſonnen im mertzen/ mit dem wid<anchor xml:id="a138"/>d<note
-                           type="annotation" targetEnd="a138"><p>etwas unter der Zeile
-                           gedruckt.</p></note>er beginnet zuſchertzen:</l>
-                     <lb/>
-                     <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
-                     <lb/>
-                     <l>entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.</l>
-                  </lg>
+                  <pb facs="4076953" n="178"/>
+
+                  <fw place="top" type="pageNum">178</fw>
+                  <fw place="top" type="header">Das ander</fw>
                   <lb/>
-               </div>
-               <fw place="bottom" type="sig">N</fw>
-               <fw place="bottom" type="catch">Fr<supplied>u&#x364;</supplied>h-</fw>
 
-               <lb/>
-               <pb facs="4076953" n="178"/>
-
-               <fw place="top" type="pageNum">178</fw>
-               <fw place="top" type="header">Das ander</fw>
-
-               <div type="poem-div">
-                  <head><lb/> Fru&#x364;hlingsgeſang.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Jn der weis.</l>
-                        <lb/>
-                        <l>Luſtig iſt man im Fru&#x364;hling im garten/ <anchor xml:id="a139"
-                              />ꝛc.<note type="annotation" targetEnd="a139"><p>verschmierte Tinte.
-                                 Durch eien aufmerksame Betrachtung sind allerdings die gedruckten
-                                 Zeichen erkennbar.</p></note></l>
-                        <lb/>
-                        <l><hi rendition="#in">L</hi>Uſtig werden beku&#x364;mmerte hertzen/</l>
-                        <lb/>
-                        <l>wan die guldene ſonnen im mertzen/</l>
-                        <lb/>
-                        <l>mit dem widder beginnet zu ſchertzen/</l>
-                        <lb/>
-                        <l>da der leidige winter vergehet/</l>
-                        <lb/>
-                        <l>und der liebliche Fru&#x364;hling entſtehet/</l>
-                        <lb/>
-                        <l>den der Zephyr mit blumen beſa&#x364;et.</l>
-                     </lg>
+                  <div type="poem">
+                     <head rendition="#b #c"> Fru&#x364;hlingsgeſang.</head>
+                     <lb/>
+                     <p rendition="#c #smaller">Jn der weis.<lb/> Luſtig iſt man im Fru&#x364;hling
+                        im garten/ ꝛc.</p>
                      <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>2</num>Jn den ga&#x364;rten wir ſehen entſprieſſen</l>
+                     <lg type="poem">
+                        <lg n="1">
+                           <lb/>
+                           <l><hi rendition="#in">L</hi>Uſtig werden beku&#x364;mmerte hertzen/</l>
+                           <lb/>
+                           <l>wan die guldene ſonnen im mertzen/</l>
+                           <lb/>
+                           <l>mit dem widder beginnet zu ſchertzen/</l>
+                           <lb/>
+                           <l>da der leidige winter vergehet/</l>
+                           <lb/>
+                           <l>und der liebliche Fru&#x364;hling entſtehet/</l>
+                           <lb/>
+                           <l>den der Zephyr mit blumen beſa&#x364;et.</l>
+                        </lg>
                         <lb/>
-                        <l>Tulipanen/ Violen/ Narciſſen/</l>
-                        <lb/>
-                        <l>ohne mahlers hand ku&#x364;nſtlich geriſſen:</l>
-                        <lb/>
-                        <l>wir betaſten die Ko&#x364;nigeskronen/</l>
-                        <lb/>
-                        <l>Gilgen/ Tu&#x364;rkiſche Bu&#x364;ndt/ Anemonen/</l>
-                        <lb/>
-                        <l>keiner do&#x364;rnichten Roſen wir ſchohnen.</l>
-                     </lg>
-                     <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>3</num>Wir bereiten uns ſtra&#x364;uſſer und meyen/</l>
+                        <lg n="2">
+                           <head>2</head>
+                           <lb/>
+                           <l>Jn den ga&#x364;rten wir ſehen entſprieſſen</l>
+                           <lb/>
+                           <l>Tulipanen/ Violen/ Narciſſen/</l>
+                           <lb/>
+                           <l>ohne mahlers hand ku&#x364;nſtlich geriſſen:</l>
+                           <lb/>
+                           <l>wir betaſten die Ko&#x364;nigeskronen/</l>
+                           <lb/>
+                           <l>Gilgen/ Tu&#x364;rkiſche Bu&#x364;ndt/ Anemonen/</l>
+                           <lb/>
+                           <l>keiner do&#x364;rnichten Roſen wir ſchohnen.</l>
+                        </lg>
                         <lb/>
-                        <l>um die kra&#x364;ntze wir ſingen am reyen/</l>
-                        <lb/>
-                        <l>es erto&#x364;hnen die pfeiffen/ ſchalmeyen:</l>
-                        <lb/>
-                        <l>alle gſcho&#x364;pfte nach freunden nur ſtreben/</l>
-                        <lb/>
-                        <l>auſſert neulich geſchnittenen reben/</l>
-                        <lb/>
-                        <l>die den Fru&#x364;hling mit weinen anheben.</l>
-                     </lg>
-                     <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>4</num>Junge ſaten uns ſchiereſt anlachen/</l>
+                        <lg n="3">
+                           <head>3</head>
+                           <lb/>
+                           <l>Wir bereiten uns ſtra&#x364;uſſer und meyen/</l>
+                           <lb/>
+                           <l>um die kra&#x364;ntze wir ſingen am reyen/</l>
+                           <lb/>
+                           <l>es erto&#x364;hnen die pfeiffen/ ſchalmeyen:</l>
+                           <lb/>
+                           <l>alle gſcho&#x364;pfte nach freunden nur ſtreben/</l>
+                           <lb/>
+                           <l>auſſert neulich geſchnittenen reben/</l>
+                           <lb/>
+                           <l>die den Fru&#x364;hling mit weinen anheben.</l>
+                        </lg>
                         <lb/>
-                        <l>gute hofnung/ auß vilen urſachen/</l>
-                        <lb/>
-                        <l>zu der ko&#x364;nftigen ernde ſie machen:</l>
-                        <lb/>
-                        <l>alle ba&#x364;ume den roſen geleichen/</l>
-                        <lb/>
-                        <l>deren ſcho&#x364;ne mag nichtes erꝛeichen/</l>
-                        <lb/>
-                        <l>alles anders derſelben muß weichen.</l>
-                     </lg>
-                     <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>5</num>Alle matten und wiſen graßreiche/</l>
+                        <lg n="4">
+                           <head>4</head>
+                           <lb/>
+                           <l>Junge ſaten uns ſchiereſt anlachen/</l>
+                           <lb/>
+                           <l>gute hofnung/ auß vilen urſachen/</l>
+                           <lb/>
+                           <l>zu der ko&#x364;nftigen ernde ſie machen:</l>
+                           <lb/>
+                           <l>alle ba&#x364;ume den roſen geleichen/</l>
+                           <lb/>
+                           <l>deren ſcho&#x364;ne mag nichtes erꝛeichen/</l>
+                           <lb/>
+                           <l>alles anders derſelben muß weichen.</l>
+                        </lg>
                         <lb/>
-                        <l>alle bu&#x364;hel und berge zugleiche/</l>
-                        <lb/>
-                        <l>werden weiden dem nutzlichen viehe:</l>
-                        <lb/>
-                        <l>auf den gru&#x364;nen betaueten auen</l>
-                        <lb/>
-                        <fw place="bottom" type="catch">freu-</fw>
-                        <lb/>
-                        <pb facs="4076954" n="179"/>
 
-                        <fw place="top" type="pageNum">179</fw>
-                        <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
-                        <lb/>
-                        <l>freudigſpringende herden wir ſchauen/</l>
-                        <lb/>
-                        <l>die zuvoren in ſta&#x364;llen geſchrauen.</l>
-                     </lg>
-                     <lb/>
+                        <lg n="5">
+                           <head>5</head>
+                           <lb/>
+                           <l>Alle matten und wiſen graßreiche/</l>
+                           <lb/>
+                           <l>alle bu&#x364;hel und berge zugleiche/</l>
+                           <lb/>
+                           <l>werden weiden dem nutzlichen viehe:</l>
+                           <lb/>
+                           <l>auf den gru&#x364;nen betaueten auen</l>
+                           <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>6</num>Das gefiderte vo&#x364;lklein der
+                           <fw place="bottom" type="catch">freu-</fw>
+                           <lb/>
+                           <pb facs="4076954" n="179"/>
+
+                           <fw place="top" type="pageNum">179</fw>
+                           <fw place="top" type="header">Fru&#x364;hlingsgeſang.</fw>
+                           <lb/>
+
+                           <l>freudigſpringende herden wir ſchauen/</l>
+                           <lb/>
+                           <l>die zuvoren in ſta&#x364;llen geſchrauen.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="6">
+                           <head>6</head>
+                           <lb/>
+                           <l>Das gefiderte vo&#x364;lklein der
                               l<supplied>u&#x364;</supplied>ffte/</l>
-                        <lb/>
-                        <l>machet wider erklingen die klu&#x364;ffte/</l>
-                        <lb/>
-                        <l>alß ob Echo denſelbigen ru&#x364;ffte:</l>
-                        <lb/>
-                        <l>an die wolken die lerche ſich ſchwinget/</l>
-                        <lb/>
-                        <l>ihrem Scho&#x364;pfer zu ehren ſie ſinget:</l>
-                        <lb/>
-                        <l>zwitzergſchwa&#x364;tze die ſchwalbe fu&#x364;rbringet.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>7</num>Minder lieblich bedunket uns zwaren/</l>
-                        <lb/>
-                        <l>wan der gukguk/ gefraget von jahren/</l>
-                        <lb/>
-                        <l>ſeine tertzen hieru&#x364;ber laßt fahren:</l>
-                        <lb/>
-                        <l>wan die bienen ſo heiſerlich brummen/</l>
-                        <lb/>
-                        <l>wan ſie u&#x364;ber die blumen hinſummen/</l>
-                        <lb/>
-                        <l>doch erfreuet uns diſer ankommen.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>8</num>Die geſchnabelte feinde der ſchlangen/</l>
-                        <lb/>
-                        <l>in dem Fru&#x364;hling unfehlbar anlangen/</l>
-                        <lb/>
-                        <l>die koaxenden fro&#x364;ſchen ſie fangen/</l>
-                        <lb/>
-                        <l>mit denſelben die jungen zu ſpeiſen:</l>
-                        <lb/>
-                        <l>ihre junge ſich dankbar erweiſen/</l>
-                        <lb/>
-                        <l>deren beyſpil den kindern wir preiſen.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>9</num>Auff den weyern der a&#x364;nten geſchwader</l>
-                        <lb/>
-                        <l>ſich ergetzet mit vilem geplader/</l>
-                        <lb/>
-                        <l>und erꝛeget ein luſtig geſchnader:</l>
-                        <lb/>
-                        <l>in den ſeen es wimmelt von fiſchen/</l>
-                        <lb/>
-                        <l>die ſich aber geparet vermiſchen/</l>
-                        <lb/>
-                        <l>und mit ſchwu&#x364;mmen und ſpringen erfriſchen.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>10</num>Nun bedeutet der Fru&#x364;hling hieneben</l>
-                        <lb/>
-                        <l>jungen leuhten ihr blu&#x364;hendes leben/</l>
-                        <lb/>
-                        <l>das der tugend ſie ſollen ergeben.</l>
-                        <lb/>
-                        <l>doch ſo wo&#x364;llen wir ihnen nicht wehren</l>
-                        <lb/>
-                        <l>die gebu&#x364;rlichen freuden in ehren/</l>
-                        <lb/>
-                        <l>ſo die zeiten erlauben und lehren.</l>
-                        <lb/>
-                        <fw place="bottom" type="sig">N ij</fw>
-                        <fw place="bottom" type="catch">Der</fw>
-
-                        <lb/>
-                        <pb facs="4076955" n="180"/>
-
-                        <fw place="top" type="pageNum">180</fw>
-                        <fw place="top" type="header">Sommergeſang.</fw>
-
-                        <lb/>
-                        <l><label>[32.]</label><lb/>
-                           <hi rendition="#aq">Cantus.</hi></l>
-                        <lb/>
-                        <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
-                        <lb/>
-                        <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
-                        <lb/>
-                        <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
-                        <lb/>
-                        <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
-                     <lb/>
-                     <l>der hirt mit ſeiner herd ſucht hoher baumen ſchatten:</l>
-                     <lb/>
-                     <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
-                     <lb/>
-                     <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076956" n="181"/>
-
-               <fw place="top" type="pageNum">181</fw>
-               <fw place="top" type="header">Sommergeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
-                     <lb/>
-                     <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
-                     <lb/>
-                     <l>die b<supplied>a&#x364;</supplied>urin ſie erquikt: mit ſaur und
-                           ſ<supplied>u&#x364;</supplied>ſſer milch/</l>
-                     <lb/>
-                     <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ſchn<anchor xml:id="a140"/><unclear>i</unclear><note type="annotation"
-                           targetEnd="a140"><p>Defekt im Digitalisat. Im Vergleichsexemplar
-                              eindeutig ein i</p></note>dter in dem feld/ der ma&#x364;der in der
-                        matten:</l>
-                     <lb/>
-                     <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
-                     <lb/>
-                     <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
-                     <lb/>
-                     <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
-                     <lb/>
-                     <fw place="bottom" type="sig">N iij</fw>
-                     <fw place="bottom" type="catch">Wie-</fw>
-
-                     <lb/>
-                     <pb facs="4076957" n="182"/>
-
-                     <fw place="top" type="pageNum">182</fw>
-                     <fw place="top" type="header">Ein ander</fw>
-
-                     <lb/>
-                     <l><label>[33.a.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
-                     <lb/>
-                     <l>uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kommt jedoch mit Nutzbarkeit/</l>
-                     <lb/>
-                     <l>der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>Da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnitten die ſaaten fru&#x364;h und ſpaht.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
-                     <lb/>
-                     <l>uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kommt jedoch mit Nutzbarkeit/</l>
-                     <lb/>
-                     <l>der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnitten/ die ſaaten fru&#x364;h und ſpaht.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076958" n="183"/>
-
-               <fw place="top" type="pageNum">183</fw>
-               <fw place="top" type="header">Sommergeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
-                     <lb/>
-                     <l>uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kommt iedoch mit Nutzbarkeit/</l>
-                     <lb/>
-                     <l>der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnitten die ſaaten fru&#x364;h und ſpaht.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
-                     <lb/>
-                     <l>uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kommt jedoch mit Nutzbarkeit/</l>
-                     <lb/>
-                     <l>der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
-                     <lb/>
-                     <pb facs="4076959" n="184"/>
-
-                     <fw place="top" type="pageNum">184</fw>
-                     <fw place="top" type="header">Andere weis über das</fw>
-
-                     <lb/>
-                     <l><label>[33.b.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
-                        <lb/>
-                        <l>ſo kommt jedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
-                        <lb/>
-                        <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                        <lb/>
-                        <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>2</num>Es gibt der ſommer was er ſol/</l>
-                        <lb/>
-                        <l>durch Gottes gu&#x364;tigkeit:</l>
-                        <lb/>
-                        <l>korn/ ga&#x364;rſte&#x303;/ bonen/ hanf und ko&#x364;hl</l>
-                        <lb/>
-                        <l>und anderley getreid:</l>
-                        <lb/>
-                        <l>h<supplied>a&#x364;</supplied>u und graß darneben</l>
-                        <lb/>
-                        <l>kan er reichlich geben</l>
-                        <lb/>
-                        <l>allem vieh/ zu leben</l>
-                        <lb/>
-                        <l>im ſtall und auff der weid.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>3</num>Der ma&#x364;der auff der matten fellt</l>
-                        <lb/>
-                        <l>das noch taunaſſe graß:</l>
-                        <lb/>
-                        <l>die weidwerk werden eyngeſtellt/</l>
-                        <lb/>
-                        <l>deß mehret ſich der has:</l>
-                        <lb/>
-                        <l>berg und tahl erklingen/</l>
-                        <lb/>
-                        <l>alle grillen ſingen/</l>
-                        <lb/>
-                        <l>die ha&#x364;uſchreken ſpringen/</l>
-                        <lb/>
-                        <l>bienhonig fließt fu&#x364;rbaß.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>4</num>Wan Sirius mit ſeiner glut</l>
-                        <lb/>
-                        <l>die ſat entf<anchor xml:id="a141"/><unclear>a&#x364;</unclear><note
-                              type="annotation" targetEnd="a141"><p>Sowohl hier als auch im
-                                 Augsburger Exemplar kann ein übergeschriebenes e nicht mit
-                                 Sicherheit erkannt werden. in der Ausgabe c steht allerdings an
-                                 dieser Stelle ein übergeschriebenes e.</p></note>rwet gantz:</l>
-                        <lb/>
-                        <l>die Ceres ihr mit freud und muht</l>
-                        <lb/>
-                        <l>macht einen a&#x364;hrenkrantz:</l>
-                        <lb/>
-                        <l>bald es anhebt tagen/</l>
-                        <lb/>
-                        <l>vor dem ſonnen wagen/</l>
-                        <lb/>
-                        <l>pflegt ſie anzuſagen</l>
-                        <lb/>
-                        <l>den nutzbarn ſicheltantz.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
-               </div>
-               <fw place="bottom" type="catch"><num><anchor xml:id="a142"/>5.<note type="annotation"
-                        targetEnd="a142"><p>Die 5 ist im Augsburger Exemplar besser erkennbar,
-                           obwohl da auch nicht komplett eindeutig. Ausserdem gibt es auf der
-                           folgenden Zeile nach der 5 kein Punkt.</p></note></num> Die</fw>
-
-               <lb/>
-               <pb facs="4076960" n="185"/>
-
-               <fw place="top" type="pageNum">185</fw>
-               <fw place="top" type="header">ander Sommergeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
-                     <lb/>
-                     <l>ſo kommt iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
-                     <lb/>
-                     <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
-                     <lb/>
-                     <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
-                        <lb/>
-                        <l>ſo kommt jedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
-                        <lb/>
-                        <l>da wir Gott zubitten/ daß/ n<choice>
-                              <sic>o</sic>
-                              <corr>a</corr>
-                           </choice>ch landes ſitten/</l>
-                        <lb/>
-                        <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>5</num>Die wa&#x364;gen von der garben laſt/</l>
-                        <lb/>
-                        <l>und groſſer fu&#x364;dern ha&#x364;u:</l>
-                        <lb/>
-                        <l>wie ſeuffzen ho&#x364;rt <choice>
-                              <sic>m&#x303;</sic>
-                              <corr>m</corr>
-                           </choice>an kirꝛen faſt/</l>
-                        <lb/>
-                        <l>iſt doch ein fro&#x364;lich gſchrey:</l>
-                        <lb/>
-                        <l>man erfu&#x364;llt die ſcheuren/</l>
-                        <lb/>
-                        <l>die dem hunger ſteuren/</l>
-                        <lb/>
-                        <l>durch die hitz verleuren</l>
-                        <lb/>
-                        <l>die brunnen ſich vorbey.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>6</num>Darum beſcha&#x364;r von wollen dik</l>
-                        <lb/>
-                        <l>die ſchaaffe/ wer es kan:</l>
-                        <lb/>
-                        <l>berupf die ga&#x364;nß/ beſtreich und lik/</l>
-                        <lb/>
-                        <l>das beltzwerk leg hindan:</l>
-                        <lb/>
-                        <l>luſtig ſich erku&#x364;len/</l>
-                        <lb/>
-                        <l>und zugleich abſpu&#x364;len</l>
-                        <lb/>
-                        <l>junge leuht/ die fu&#x364;hlen</l>
-                        <lb/>
-                        <l>des ſommers hitz voran.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>7</num>Wie nun/ zu end der
-                           ſom&#x342;eꝛszei<supplied>t/</supplied></l>
-                        <lb/>
-                        <l>zum reiffen <choice>
-                              <sic>f</sic>
-                              <corr>ſ</corr>
-                           </choice>chiken ſich</l>
-                        <lb/>
-                        <l>die tra&#x364;ubel und das obs bereit/</l>
-                        <lb/>
-                        <l>ſo ſchik/ o ju&#x364;ngling dich:</l>
-                        <lb/>
-                        <l>reiff in r<choice>
-                              <sic>e</sic>
-                              <corr>e</corr>
-                           </choice>chten dingen/</l>
-                        <lb/>
-                        <l>gute fru&#x364;cht zubringen/</l>
-                        <lb/>
-                        <l>bo&#x364;ſe l<anchor xml:id="a143"/><unclear>u&#x364;</unclear><note
-                              type="annotation" targetEnd="a143"><p>Auch nicht im Vergleichsexemplar
-                                 kann das übergeschriebene Zeichen eindeutig als e erkannt werden.
-                                 in der Ausgabe C steht hier ein Trema, was ein übergeschriebenes e
-                                 wahrscheinlich macht.</p></note>ſt zuzwingen:</l>
-                        <lb/>
-                        <l>werd auch der omeiß gleich.</l>
-                        <lb/>
-                        <fw place="bottom" type="sig">N v</fw>
-                        <fw place="bottom" type="catch">Die</fw>
-
-                        <lb/>
-                        <pb facs="4076961" n="186"/>
-
-                        <fw place="top" type="pageNum">186</fw>
-                        <fw place="top" type="header">Herbſtgeſang.</fw>
-
-                        <lb/>
-                        <l><label>[34.]</label><lb/>
-                           <hi rendition="#aq">Cantus.</hi></l>
-                        <lb/>
-                        <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
-                        <lb/>
-                        <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz zuprangen:</l>
-                        <lb/>
-                        <l>dann/ nach geſtreuter ſaat/ er bringet u&#x364;ber tiſch</l>
-                        <lb/>
-                        <l>baumfru&#x364;cht und ra&#x364;benſaffte wilbra&#x364;t und gute
-                           fiſch.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
-                     <lb/>
-                     <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz zuprangen:</l>
-                     <lb/>
-                     <l>dann/ nach geſtreuter ſat/ er bringet u&#x364;ber tiſch</l>
-                     <lb/>
-                     <l>baumfru&#x364;cht und ra&#x364;benſafft/ wildbra&#x364;t und gute fiſch.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076962" n="187"/>
-
-               <fw place="top" type="pageNum">187</fw>
-               <fw place="top" type="header">Herbſtgeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
-                     <lb/>
-                     <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz zuprangen:</l>
-                     <lb/>
-                     <l>dann/ nach geſtreuter ſat/ er bringet u&#x364;ber tiſch</l>
-                     <lb/>
-                     <l>baumfru&#x364;cht und ra&#x364;benſafft/ wildbra&#x364;t und gute fiſch.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
-                     <lb/>
-                     <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz zuprangen:</l>
-                     <lb/>
-                     <l>dann nach geſtreuter ſaat/ er bringet u&#x364;ber tiſch</l>
-                     <lb/>
-                     <l>baumfrücht und ra&#x364;benſafft/ wildbra&#x364;t und gute fiſch.</l>
-                     <lb/>
-                     <pb facs="4076963" n="188"/>
-
-                     <fw place="top" type="pageNum">188</fw>
-                     <fw place="top" type="header">Ein ander</fw>
-
-                     <lb/>
-                     <l><label>[35.a.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Die dritte Zeit in jedem jahr/</l>
-                     <lb/>
-                     <l>nicht minder gar als andre mich erfreut:</l>
-                     <lb/>
-                     <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
-                     <lb/>
-                     <l>entflogen/ die ſonn der wag nicht weit.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die dritte Zeit in jedem jahr/</l>
-                     <lb/>
-                     <l>nicht minder gar als andre mich erfreut:</l>
-                     <lb/>
-                     <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
-                     <lb/>
-                     <l>entflogen/ die ſonn der wag nicht weit.</l>
-                     <lb/>
-                     <l rendition="#aq"><fw place="bottom" type="catch">Al-</fw></l>
-                     <lb break="no"/>
-                  </lg>
-               </div>
-               <pb facs="4076964" n="189"/>
-
-               <fw place="top" type="pageNum">189</fw>
-               <fw place="top" type="header">Herbſtgeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die dritte Zeit in jedem jahr/</l>
-                     <lb/>
-                     <l>nicht minder gar als andre mich erfreut:</l>
-                     <lb/>
-                     <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
-                     <lb/>
-                     <l>entflogen/ die ſonn der wag nicht weit.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die dritte Zeit in iedem jahr/</l>
-                     <lb/>
-                     <l>nicht minder gar alß andre mich erfreu&#x364;t:</l>
-                     <lb/>
-                     <l>ſie kommet aufgezogen/ wan ſtorck und ſchwalb</l>
-                     <lb/>
-                     <l>entflogen/ die ſonn der wag nicht weit.</l>
-                     <lb/>
-                     <fw place="bottom" type="catch">Die</fw>
-                     <lb/>
-                     <pb facs="4076965" n="190"/>
-
-                     <fw place="top" type="pageNum">190</fw>
-                     <fw place="top" type="header">Andere weis u&#x364;ber das</fw>
-
-                     <lb/>
-                     <l><label>[35.b.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Die dritte zeit in jedem jahr/ nicht minder gar alß</l>
-                     <lb/>
-                     <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
-                     <lb/>
-                     <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
-                        <lb/>
-                        <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
-                        <lb/>
-                        <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>2</num>Jetz bringt der gart</l>
-                        <lb/>
-                        <l>vil guter fru&#x364;cht/ die man gezu&#x364;cht</l>
-                        <lb/>
-                        <l>nach iedes landes art:</l>
-                        <lb/>
-                        <l>ko&#x364;l/ ru&#x364;ben und limonen/</l>
-                        <lb/>
-                        <l>pomrantzen und citronen/</l>
-                        <lb/>
-                        <l>und ku&#x364;tten ungeſpart.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>3</num>Der biren laſt</l>
-                        <lb/>
-                        <l>die a&#x364;ſte bukt/ und nidertrukt</l>
-                        <lb/>
-                        <l>bis zu der erden faſt:</l>
-                        <lb/>
-                        <l>die ſcho&#x364;nen <supplied>a&#x364;</supplied>pfel prangen/</l>
-                        <lb/>
-                        <l>mit ihren roten <choice>
-                              <sic>m</sic>
-                              <corr>w</corr>
-                           </choice>angen/</l>
-                        <lb/>
-                        <l>erquiken manchen gaſt.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>4</num>Reiff iſt die nuß/</l>
-                        <lb/>
-                        <l>un&#x303; fallt hinauß/ vom hu&#x364;lſenhauß/</l>
-                        <lb/>
-                        <l>der jugend ohn verdruß:</l>
-                        <lb/>
-                        <l>was bleibt wird abgeſchlagen/</l>
-                        <lb/>
-                        <l>aufgleſen/ heim getragen</l>
-                        <lb/>
-                        <l>zu mancherley genuß.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>5</num>Die pferſich ſind</l>
-                        <lb/>
-                        <l>ein kinderſpeiß/ geleicher wei<supplied>ß</supplied></l>
-                        <lb/>
-                        <l>die n<supplied>a&#x364;</supplied>ſpel teig und lind:</l>
-                        <lb/>
-                        <l>die zweßgen/ feigen/ ka&#x364;ſten/</l>
-                        <lb/>
-                        <l>und mandel ſeind der ga&#x364;ſten:</l>
-                        <lb/>
-                        <l>ziparten ißt das gſind.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
-               </div>
-               <fw place="bottom" type="catch"><num>6<anchor xml:id="a144"/>.<note type="annotation"
-                        targetEnd="a144"><p>Auf der folgenden Seite steht nach der 6 kein
-                        Punkt.</p></note></num> Jn-</fw>
-
-               <lb/>
-               <pb facs="4076966" n="191"/>
-
-               <fw place="top" type="pageNum">191</fw>
-               <fw place="top" type="header">ander Herbſtgeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
-                     <lb/>
-                     <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
-                     <lb/>
-                     <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Die dritte zeit in iedem jahr/ nicht minder gar als</l>
-                        <lb/>
-                        <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
-                        <lb/>
-                        <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>6</num>Jnſonderheit</l>
-                        <lb/>
-                        <l>die <supplied>a&#x364;</supplied>del frucht der ra&#x364;benzucht</l>
-                        <lb/>
-                        <l>wird flu&#x364;ſſig diſer z<supplied>e</supplied>it:</l>
-                        <lb/>
-                        <l>der arbeit niemand ſchohnet/</l>
-                        <lb/>
-                        <l>dieweil ſie treulich lohnet</l>
-                        <lb/>
-                        <l>mit luſt und nutzbarkeit.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>7</num>Die b<supplied>e</supplied>ſten fiſch/</l>
-                        <lb/>
-                        <l>den lachs vorab/ der fiſcherknab</l>
-                        <lb/>
-                        <l>bringt reichen leuhten friſch:</l>
-                        <lb/>
-                        <l>auß weyern/ ſeen/ flu&#x364;ſſen:</l>
-                        <lb/>
-                        <l>der mindern auch genieſſen</l>
-                        <lb/>
-                        <l>die armen u&#x364;ber tiſch.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>8</num>Der weidman ſich</l>
-                        <lb/>
-                        <l>im feld <supplied>e</supplied>rgetzt/ die haſen hetzt/</l>
-                        <lb/>
-                        <l>und lokt dem lerchenſtrich:</l>
-                        <lb/>
-                        <l>er ſuchet mit verlangen/</l>
-                        <lb/>
-                        <l>die ſchnepfe beyzufangen</l>
-                        <lb/>
-                        <l>in garnen liſtiglich.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>9</num>Der akkermann/</l>
-                        <lb/>
-                        <l>alß wol vernu&#x364;gt/ das ſelde pflu&#x364;gt/</l>
-                        <lb/>
-                        <l>und widrum ſ<supplied>a&#x364;</supplied>et an:</l>
-                        <lb/>
-                        <l>die du&#x364;rꝛen <supplied>a&#x364;</supplied>ſt er ſchneitelt:</l>
-                        <lb/>
-                        <l>ſein weibe r<supplied>a&#x364;</supplied>ſt und reitelt</l>
-                        <lb/>
-                        <l>den hanf/ ſo gut ſie kan.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>10</num>Die herbſtes zeit</l>
-                        <lb/>
-                        <l>in iedem jahr/ nicht minder gar</l>
-                        <lb/>
-                        <l>alß andre was bedeut:</l>
-                        <lb/>
-                        <l>Das ma&#x364;nnlich alter merke/</l>
-                        <lb/>
-                        <l>zu zeigen in dem werke</l>
-                        <lb/>
-                        <l>des glaubens fruchtbark<supplied>e</supplied>it.</l>
-                        <lb/>
-                        <fw place="bottom" type="catch">De<supplied>r</supplied></fw>
-
-                        <lb/>
-                        <pb facs="4076967" n="192"/>
-
-                        <fw place="top" type="pageNum">192</fw>
-                        <fw place="top" type="header">Wintergeſang.</fw>
-
-                        <lb/>
-                        <l><label>[36.]</label><lb/>
-                           <hi rendition="#aq">Cantus.</hi></l>
-                        <lb/>
-                        <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
-                        <lb/>
-                        <l>es hat ſie Boreas des bundten kleids beraubet/</l>
-                        <lb/>
-                        <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
-                        <lb/>
-                        <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
-                     <lb/>
-                     <l>es hat ſie Boreas des bundten kleids beraubet/</l>
-                     <lb/>
-                     <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
-                     <lb/>
-                     <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <fw place="bottom" type="catch">Der</fw>
-               <lb/>
-               <pb facs="4076968" n="193"/>
-
-               <fw place="top" type="pageNum">193</fw>
-               <fw place="top" type="header">Wintergeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
-                     <lb/>
-                     <l>es hat ſie Boreas des bundten kleids beraubet/</l>
-                     <lb/>
-                     <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
-                     <lb/>
-                     <l>er u&#x364;berzogen hat mit harniſch harte<choice>
-                           <corr/>
-                           <sic>n</sic>
-                        </choice> eyß.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
-                     <lb/>
-                     <l>es hat ſie Bo<supplied>r</supplied>eas des bundten kleids beraubet/</l>
-                     <lb/>
-                     <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
-                     <lb/>
-                     <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
-                     <lb/>
-                     <fw place="bottom" type="sig">O</fw>
-                     <fw place="bottom" type="catch">Der</fw>
-                     <lb/>
-                     <pb facs="4076969" n="194"/>
-                     <l>1<anchor xml:id="a145"/><unclear>9</unclear><note type="annotation"
-                           targetEnd="a145"><p>Wahrscheinlich wurde die 9 nicht vollständig
-                              gedruckt. Sieht im Augsburger Exemplar auch so aus.</p></note>4</l>
-                     <lb/>
-                     <fw place="top" type="header">Ein ander</fw>
-
-                     <lb/>
-                     <l><label>[37.a.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht/</l>
-                     <lb/>
-                     <l>den grauen winter bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht</l>
-                     <lb/>
-                     <l>auß ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
-                     <lb/>
-                     <l>den grauen winter bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht</l>
-                     <lb/>
-                     <l>auß ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                  </lg>
-                  <lb/>
-               </div>
-               <pb facs="4076970" n="195"/>
-
-               <fw place="top" type="pageNum">195</fw>
-               <fw place="top" type="header">Wintergeſang.</fw>
-               <lb/>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
-                     <lb/>
-                     <l>den grauen winter bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht</l>
-                     <lb/>
-                     <l>auß ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
-                     <lb/>
-                     <l>den grauen winter bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht</l>
-                     <lb/>
-                     <l>auß ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                     <lb/>
-                     <fw place="bottom" type="sig">O ij</fw>
-                     <fw place="bottom" type="catch">Der</fw>
-                     <lb/>
-                     <pb facs="4076971" n="196"/>
-
-                     <fw place="top" type="pageNum">196</fw>
-                     <fw place="top" type="header">Andere weis über das</fw>
-
-                     <lb/>
-                     <l><label>[37.b.]</label><lb/>
-                        <hi rendition="#aq">Cantus.</hi></l>
-                     <lb/>
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
-                        bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht auß ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                  </lg>
-                  <lb/>
-               </div>
-
-               <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
-                        bringen:</l>
-                     <lb/>
-                     <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
-                     <lb/>
-                     <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                     <lb/>
-                     <l>ſich ſchlieſſen allerdingen.</l>
-                  </lg>
-                  <lb/>
-                  <div type="stanza-div">
-                     <head><num>2.</num></head>
-                     <lb/>
-                     <lg type="stanza">
-                        <l>Der gru&#x364;ne wald iſt worden kal/</l>
-                        <lb/>
-                        <l>das bundte feld entkleidet:</l>
-                        <lb/>
-                        <l>kein zam- noch wildes thier zumal</l>
-                        <lb/>
-                        <l>an ſeiner ſtell ſich weidet:</l>
-                        <lb/>
-                        <l>das federheer</l>
-                        <lb/>
-                        <l>ſingt auch nicht mehr/</l>
-                        <lb/>
-                        <l>ein theil von uns wegſcheidet.</l>
-                        <lb/>
-                        <l><num>3</num>Das einſam turturtaubelin</l>
-                        <lb/>
-                        <l>nur ſeufftzend wird geho&#x364;ret:</l>
-                        <lb/>
-                        <l>die rabenſtim&#x303; iſt jetz gemein/</l>
-                        <lb/>
-                        <l>und uns das gho&#x364;r verſehret:</l>
-                        <lb/>
-                        <l>melancholey</l>
-                        <lb/>
-                        <l>wohnt allem bey/</l>
-                        <lb/>
-                        <l>und alle freud zerſto&#x364;ret.</l>
-                        <lb/>
-                        <l><num>4</num>Was lebt und ſchwebt den</l>
-                        <lb/>
-                        <l>winter ſcheucht/</l>
-                        <lb/>
-                        <l>und ſuchet ſich zu w<anchor xml:id="a146"
-                              /><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a146"
-                                 ><p>Es scheint, dass es ein Spur von einem übergeschriebenem e
-                                 gibt. Diese ist aber im Augsburger Exemplar nicht zu sehen. In der
-                                 Ausgabe C steht hier aber eindeutig ein übergeschriebenes
-                              e.</p></note>rmen:</l>
-                        <lb/>
-                        <l>der kriegsmann ſelber ſich ver-</l>
-                        <lb break="no"/>
-                        <l>kreucht/</l>
-                        <lb/>
-                        <l>und machet keine la&#x364;rmen:</l>
-                        <lb/>
-                        <l>das alter ietz</l>
-                        <lb/>
-                        <l>liebt ofenshitz/</l>
-                        <lb/>
-                        <l>von wegen kalter da&#x364;rmen.</l>
+                           <lb/>
+                           <l>machet wider erklingen die klu&#x364;ffte/</l>
+                           <lb/>
+                           <l>alß ob Echo denſelbigen ru&#x364;ffte:</l>
+                           <lb/>
+                           <l>an die wolken die lerche ſich ſchwinget/</l>
+                           <lb/>
+                           <l>ihrem Scho&#x364;pfer zu ehren ſie ſinget:</l>
+                           <lb/>
+                           <l>zwitzergſchwa&#x364;tze die ſchwalbe fu&#x364;rbringet.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="7">
+                           <head>7</head>
+                           <lb/>
+                           <l>Minder lieblich bedunket uns zwaren/</l>
+                           <lb/>
+                           <l>wan der gukguk/ gefraget von jahren/</l>
+                           <lb/>
+                           <l>ſeine tertzen hieru&#x364;ber laßt fahren:</l>
+                           <lb/>
+                           <l>wan die bienen ſo heiſerlich brummen/</l>
+                           <lb/>
+                           <l>wan ſie u&#x364;ber die blumen hinſummen/</l>
+                           <lb/>
+                           <l>doch erfreuet uns diſer ankommen.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="8">
+                           <head>8</head>
+                           <lb/>
+                           <l>Die geſchnabelte feinde der ſchlangen/</l>
+                           <lb/>
+                           <l>in dem Fru&#x364;hling unfehlbar anlangen/</l>
+                           <lb/>
+                           <l>die koaxenden fro&#x364;ſchen ſie fangen/</l>
+                           <lb/>
+                           <l>mit denſelben die jungen zu ſpeiſen:</l>
+                           <lb/>
+                           <l>ihre junge ſich dankbar erweiſen/</l>
+                           <lb/>
+                           <l>deren beyſpil den kindern wir preiſen.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="9">
+                           <head>9</head>
+                           <lb/>
+                           <l>Auff den weyern der a&#x364;nten geſchwader</l>
+                           <lb/>
+                           <l>ſich ergetzet mit vilem geplader/</l>
+                           <lb/>
+                           <l>und erꝛeget ein luſtig geſchnader:</l>
+                           <lb/>
+                           <l>in den ſeen es wimmelt von fiſchen/</l>
+                           <lb/>
+                           <l>die ſich aber geparet vermiſchen/</l>
+                           <lb/>
+                           <l>und mit ſchwu&#x364;mmen und ſpringen erfriſchen.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="10">
+                           <head>10</head>
+                           <lb/>
+                           <l>Nun bedeutet der Fru&#x364;hling hieneben</l>
+                           <lb/>
+                           <l>jungen leuhten ihr blu&#x364;hendes leben/</l>
+                           <lb/>
+                           <l>das der tugend ſie ſollen ergeben.</l>
+                           <lb/>
+                           <l>doch ſo wo&#x364;llen wir ihnen nicht wehren</l>
+                           <lb/>
+                           <l>die gebu&#x364;rlichen freuden in ehren/</l>
+                           <lb/>
+                           <l>ſo die zeiten erlauben und lehren.</l>
+                        </lg>
                      </lg>
                      <lb/>
                   </div>
                </div>
-               <fw place="bottom" type="catch"><num>5</num> Der</fw>
+
+               <fw place="bottom" type="sig">N ij</fw>
+               <fw place="bottom" type="catch">Der</fw>
                <lb/>
-               <pb facs="4076972" n="197"/>
+               <pb facs="4076955" n="180"/>
 
-               <fw place="top" type="pageNum">197</fw>
-               <fw place="top" type="header">ander Wintergeſang.</fw>
+               <fw place="top" type="pageNum">180</fw>
+               <fw place="top" type="header">Sommergeſang.</fw>
                <lb/>
 
-               <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
-                  <lb/>
-                  <lg type="poem">
-                     <lg type="poem-subgroup">
-                        <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
-                           bringen:</l>
+               <div n="2" xml:id="n32">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
                         <lb/>
-                        <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
+                           <lb/>
+                           <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
+                           <lb/>
+                           <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
+                           <lb/>
+                           <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
+                        </lg>
                         <lb/>
-                        <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
-                        <l>ſich ſchlieſſen allerdingen.</l>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
+                           <lb/>
+                           <l>der hirt mit ſeiner herd ſucht hoher baumen ſchatten:</l>
+                           <lb/>
+                           <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
+                           <lb/>
+                           <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
+                        </lg>
                         <lb/>
-                        <l rendition="#aq">Ba<choice>
-                              <sic>f</sic>
-                              <corr>ſ</corr>
-                           </choice>is.</l>
-                        <lb/>
-                        <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
-                           bringen:</l>
-                        <lb/>
-                        <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
-                        <lb/>
-                        <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
-                        <lb/>
-                        <l>ſich ſchlieſſen allerdingen.</l>
-                     </lg>
+                     </div>
+
+                     <pb facs="4076956" n="181"/>
+
+                     <fw place="top" type="pageNum">181</fw>
+                     <fw place="top" type="header">Sommergeſang.</fw>
                      <lb/>
 
-                     <lg type="poem-subgroup">
-                        <l><num>5</num>Der weidman&#x303; doch/ fu&#x364;r ſeinen ſpaß/</l>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
                         <lb/>
-                        <l>das hochgewilde hetzet: </l>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ſchnidter in dem feld/ der ma&#x364;der in der matten:</l>
+                           <lb/>
+                           <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
+                           <lb/>
+                           <l>die b<supplied>a&#x364;</supplied>urin ſie erquikt: mit ſaur und
+                                 ſ<supplied>u&#x364;</supplied>ſſer milch/</l>
+                           <lb/>
+                           <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
+                        </lg>
                         <lb/>
-                        <l>das eiß; wan es wie ſpiegelglaß;</l>
-                        <lb/>
-                        <l>die jugend auch ergetzet;</l>
-                        <lb/>
-                        <l>man metzget eyn</l>
-                        <lb/>
-                        <l>vil feißte ſchwein/</l>
-                        <lb/>
-                        <l>und ſich zum wurſtmahl ſetzet.</l>
-                     </lg>
-                     <lb/>
+                     </div>
 
-                     <lg type="poem-subgroup">
-                        <l><num>6</num>Der winter; alß des jahres</l>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
-                        <l>bauch;</l>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ſchn<unclear reason="uncleanPrint">i</unclear>dter in dem feld/
+                              der ma&#x364;der in der matten:</l>
+                           <lb/>
+                           <l>der hirt mit ſeiner herd ſucht hoher ba&#x364;umen ſchatten:</l>
+                           <lb/>
+                           <l>die ba&#x364;urin ſie erquikt mit ſaur und ſu&#x364;ſſer milch/</l>
+                           <lb/>
+                           <l>bekleidet ihres gſind/ ſich ſelbſten auch in zwilch.</l>
+                        </lg>
                         <lb/>
-                        <l>verzehrt was wir erworben</l>
-                        <lb/>
-                        <l>mit ſaurer arbeit zum gebrauch/</l>
-                        <lb/>
-                        <l>wan ietz die ſaat erſtorben:</l>
-                        <lb/>
-                        <l>wan u&#x364;beral</l>
-                        <lb/>
-                        <l>zu berg und thal</l>
-                        <lb/>
-                        <l>iſt alles wie verdorben.</l>
-                     </lg>
-                     <lb/>
-
-                     <lg type="poem-subgroup">
-                        <l><num>7</num>Alſo; dem winter gleich; die zeit</l>
-                        <lb/>
-                        <l>im alter uns verſchlinget:</l>
-                        <lb/>
-                        <l>doch iſt vom tode nicht befreyt</l>
-                        <lb/>
-                        <l>der jung/ wie hoch er ſpringet:</l>
-                        <lb/>
-                        <l>drum haltet wacht</l>
-                        <lb/>
-                        <l>bey tag und nacht/</l>
-                        <lb/>
-                        <l>und ſo zum leben dringet!</l>
-                        <lb/>
-                        <fw place="bottom" type="sig">O iij</fw>
-                        <fw place="bottom" type="catch">Zu</fw>
-
-                        <lb/>
-                        <pb facs="4076973" n="198"/>
-
-                        <fw place="top" type="pageNum">198</fw>
-                        <fw place="top" type="header">Badergeſang.</fw>
-
-                        <lb/>
-                        <l><label>[38.]</label><lb/>
-                           <hi rendition="#aq">Cantus.</hi></l>
-                        <lb/>
-                        <l>Zu Vrdorf/ und am Geiren-Rein/ auf Aeu&#x364;gſt/ und auf dem Riedt/</l>
-                        <lb/>
-                        <l>entſpringen gſunde Bru&#x364;nnelein/ durch Gottes ſondre gu&#x364;t:</l>
-                        <lb/>
-                        <l>ſo/ daß wir ko&#x364;nnen baden/ fu&#x364;r ein und andern</l>
-                        <lb/>
-                        <l>ſchaden/ auch in dem Zu&#x364;richbiet.</l>
-                     </lg>
-                     <lb/>
-                  </lg>
+                     </div>
+                  </div>
                </div>
 
+               <fw place="bottom" type="sig">N iij</fw>
+               <fw place="bottom" type="catch">Wie-</fw>
+               <lb/>
+               <pb facs="4076957" n="182"/>
+
+               <fw place="top" type="pageNum">182</fw>
+               <fw place="top" type="header">Ein ander</fw>
+               <lb/>
+
+               <div n="2" xml:id="n33">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
+                           <lb/>
+                           <l>uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt jedoch mit Nutzbarkeit/</l>
+                           <lb/>
+                           <l>der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>Da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnitten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
+                           <lb/>
+                           <l>uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt jedoch mit Nutzbarkeit/</l>
+                           <lb/>
+                           <l>der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnitten/ die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <pb facs="4076958" n="183"/>
+
+                     <fw place="top" type="pageNum">183</fw>
+                     <fw place="top" type="header">Sommergeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
+                           <lb/>
+                           <l>uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt iedoch mit Nutzbarkeit/</l>
+                           <lb/>
+                           <l>der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnitten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der Zeiten ſcho&#x364;nſte Zeit/</l>
+                           <lb/>
+                           <l>uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt jedoch mit Nutzbarkeit/</l>
+                           <lb/>
+                           <l>der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+                  <pb facs="4076959" n="184"/>
+
+                  <fw place="top" type="pageNum">184</fw>
+                  <fw place="top" type="header">Andere weis über das</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt jedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="2">
+                           <head>2</head>
+                           <lb/>
+                           <l>Es gibt der ſommer was er ſol/</l>
+                           <lb/>
+                           <l rendition="#et">durch Gottes gu&#x364;tigkeit:</l>
+                           <lb/>
+                           <l>korn/ ga&#x364;rſte&#x303;/ bonen/ hanf und ko&#x364;hl</l>
+                           <lb/>
+                           <l rendition="#et">und anderley getreid:</l>
+                           <lb/>
+                           <l rendition="#et2">h<supplied>a&#x364;</supplied>u und graß darneben</l>
+                           <lb/>
+                           <l rendition="#et2">kan er reichlich geben</l>
+                           <lb/>
+                           <l rendition="#et2">allem vieh/ zu leben</l>
+                           <lb/>
+                           <l rendition="#et">im ſtall und auff der weid.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="3">
+                           <head>3</head>
+                           <lb/>
+                           <l>Der ma&#x364;der auff der matten fellt</l>
+                           <lb/>
+                           <l rendition="#et">das noch taunaſſe graß:</l>
+                           <lb/>
+                           <l>die weidwerk werden eyngeſtellt/</l>
+                           <lb/>
+                           <l rendition="#et">deß mehret ſich der has:</l>
+                           <lb/>
+                           <l rendition="#et2">berg und tahl erklingen/</l>
+                           <lb/>
+                           <l rendition="#et2">alle grillen ſingen/</l>
+                           <lb/>
+                           <l rendition="#et2">die ha&#x364;uſchreken ſpringen/</l>
+                           <lb/>
+                           <l rendition="#et">bienhonig fließt fu&#x364;rbaß.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="4">
+                           <head>4</head>
+                           <lb/>
+                           <l>Wan Sirius mit ſeiner glut</l>
+                           <lb/>
+                           <l rendition="#et">die ſat entf<unclear reason="uncleanPrint"
+                                 >a&#x364;</unclear>rwet gantz:</l>
+                           <lb/>
+                           <l>die Ceres ihr mit freud und muht</l>
+                           <lb/>
+                           <l rendition="#et">macht einen a&#x364;hrenkrantz:</l>
+                           <lb/>
+                           <l rendition="#et2">bald es anhebt tagen/</l>
+                           <lb/>
+                           <l rendition="#et2">vor dem ſonnen wagen/</l>
+                           <lb/>
+                           <l rendition="#et2">pflegt ſie anzuſagen</l>
+                           <lb/>
+                           <l rendition="#et">den nutzbarn ſicheltantz.</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+
+                  <fw place="bottom" type="catch">5. Die</fw>
+                  <lb/>
+                  <pb facs="4076960" n="185"/>
+
+                  <fw place="top" type="pageNum">185</fw>
+                  <fw place="top" type="header">ander Sommergeſang.</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ nach landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
+                           <lb/>
+                           <l>ſo kommt jedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
+                           <lb/>
+                           <l>da wir Gott zubitten/ daß/ n<choice>
+                                 <sic>o</sic>
+                                 <corr>a</corr>
+                              </choice>ch landes ſitten/</l>
+                           <lb/>
+                           <l>werden abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="5">
+                           <head>5</head>
+                           <lb/>
+                           <l>Die wa&#x364;gen von der garben laſt/</l>
+                           <lb/>
+                           <l rendition="#et">und groſſer fu&#x364;dern ha&#x364;u:</l>
+                           <lb/>
+                           <l>wie ſeuffzen ho&#x364;rt <choice>
+                                 <sic>m&#x303;</sic>
+                                 <corr>m</corr>
+                              </choice>an kirꝛen faſt/</l>
+                           <lb/>
+                           <l rendition="#et">iſt doch ein fro&#x364;lich gſchrey:</l>
+                           <lb/>
+                           <l rendition="#et2">man erfu&#x364;llt die ſcheuren/</l>
+                           <lb/>
+                           <l rendition="#et2">die dem hunger ſteuren/</l>
+                           <lb/>
+                           <l rendition="#et2">durch die hitz verleuren</l>
+                           <lb/>
+                           <l rendition="#et">die brunnen ſich vorbey.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="6">
+                           <head>6</head>
+                           <lb/>
+                           <l>Darum beſcha&#x364;r von wollen dik</l>
+                           <lb/>
+                           <l rendition="#et">die ſchaaffe/ wer es kan:</l>
+                           <lb/>
+                           <l>berupf die ga&#x364;nß/ beſtreich und lik/</l>
+                           <lb/>
+                           <l rendition="#et">das beltzwerk leg hindan:</l>
+                           <lb/>
+                           <l rendition="#et2">luſtig ſich erku&#x364;len/</l>
+                           <lb/>
+                           <l rendition="#et2">und zugleich abſpu&#x364;len</l>
+                           <lb/>
+                           <l rendition="#et2">junge leuht/ die fu&#x364;hlen</l>
+                           <lb/>
+                           <l rendition="#et">des ſommers hitz voran.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="7">
+                           <head>7</head>
+                           <lb/>
+                           <l>Wie nun/ zu end der ſom&#x342;eꝛszei<supplied>t/</supplied></l>
+                           <lb/>
+                           <l rendition="#et">zum reiffen <choice>
+                                 <sic>f</sic>
+                                 <corr>ſ</corr>
+                              </choice>chiken ſich</l>
+                           <lb/>
+                           <l>die tra&#x364;ubel und das obs bereit/</l>
+                           <lb/>
+                           <l rendition="#et">ſo ſchik/ o ju&#x364;ngling dich:</l>
+                           <lb/>
+                           <l rendition="#et2">reiff in r<choice>
+                                 <sic>e</sic>
+                                 <corr>e</corr>
+                              </choice>chten dingen/</l>
+                           <lb/>
+                           <l rendition="#et2">gute fru&#x364;cht zubringen/</l>
+                           <lb/>
+                           <l rendition="#et2">bo&#x364;ſe l<unclear reason="uncleanPrint"
+                                 >u&#x364;</unclear>ſt zuzwingen:</l>
+                           <lb/>
+                           <l rendition="#et">werd auch der omeiß gleich.</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+               </div>
+
+               <fw place="bottom" type="sig">N v</fw>
+               <fw place="bottom" type="catch">Die</fw>
+               <lb/>
+               <pb facs="4076961" n="186"/>
+
+               <fw place="top" type="pageNum">186</fw>
+               <fw place="top" type="header">Herbſtgeſang.</fw>
+               <lb/>
+
+               <div n="2" xml:id="n34">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
+                           <lb/>
+                           <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz
+                              zuprangen:</l>
+                           <lb/>
+                           <l>dann/ nach geſtreuter ſaat/ er bringet u&#x364;ber tiſch</l>
+                           <lb/>
+                           <l>baumfru&#x364;cht und ra&#x364;benſaffte wilbra&#x364;t und gute
+                              fiſch.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
+                           <lb/>
+                           <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz
+                              zuprangen:</l>
+                           <lb/>
+                           <l>dann/ nach geſtreuter ſat/ er bringet u&#x364;ber tiſch</l>
+                           <lb/>
+                           <l>baumfru&#x364;cht und ra&#x364;benſafft/ wildbra&#x364;t und gute
+                              fiſch.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <pb facs="4076962" n="187"/>
+
+                     <fw place="top" type="pageNum">187</fw>
+                     <fw place="top" type="header">Herbſtgeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
+                           <lb/>
+                           <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz
+                              zuprangen:</l>
+                           <lb/>
+                           <l>dann/ nach geſtreuter ſat/ er bringet u&#x364;ber tiſch</l>
+                           <lb/>
+                           <l>baumfru&#x364;cht und ra&#x364;benſafft/ wildbra&#x364;t und gute
+                              fiſch.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die groſſe ſommerhitz iſt abermal vergangen/</l>
+                           <lb/>
+                           <l>und kom&#x342;t der ku&#x364;hlend herbſt mit vilem nutz
+                              zuprangen:</l>
+                           <lb/>
+                           <l>dann nach geſtreuter ſaat/ er bringet u&#x364;ber tiſch</l>
+                           <lb/>
+                           <l>baumfrücht und ra&#x364;benſafft/ wildbra&#x364;t und gute fiſch.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+
+               <pb facs="4076963" n="188"/>
+
+               <fw place="top" type="pageNum">188</fw>
+               <fw place="top" type="header">Ein ander</fw>
+               <lb/>
+
+               <div n="2" xml:id="n35">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte Zeit in jedem jahr/</l>
+                           <lb/>
+                           <l>nicht minder gar als andre mich erfreut:</l>
+                           <lb/>
+                           <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
+                           <lb/>
+                           <l>entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte Zeit in jedem jahr/</l>
+                           <lb/>
+                           <l>nicht minder gar als andre mich erfreut:</l>
+                           <lb/>
+                           <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
+                           <lb/>
+                           <l>entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <fw place="bottom" type="catch" rendition="#aq">Al-</fw>
+                     <lb/>
+                     <pb facs="4076964" n="189"/>
+
+                     <fw place="top" type="pageNum">189</fw>
+                     <fw place="top" type="header">Herbſtgeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte Zeit in jedem jahr/</l>
+                           <lb/>
+                           <l>nicht minder gar als andre mich erfreut:</l>
+                           <lb/>
+                           <l>ſie kommet aufgezogen/ wann ſtork und ſchwalb</l>
+                           <lb/>
+                           <l>entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte Zeit in iedem jahr/</l>
+                           <lb/>
+                           <l>nicht minder gar alß andre mich erfreu&#x364;t:</l>
+                           <lb/>
+                           <l>ſie kommet aufgezogen/ wan ſtorck und ſchwalb</l>
+                           <lb/>
+                           <l>entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <fw place="bottom" type="catch">Die</fw>
+                  <lb/>
+                  <pb facs="4076965" n="190"/>
+
+                  <fw place="top" type="pageNum">190</fw>
+                  <fw place="top" type="header">Andere weis u&#x364;ber das</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte zeit in jedem jahr/ nicht minder gar alß</l>
+                           <lb/>
+                           <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
+                           <lb/>
+                           <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
+                           <lb/>
+                           <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
+                           <lb/>
+                           <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="2">
+                           <head>2</head>
+                           <lb/>
+                           <l>Jetz bringt der gart</l>
+                           <lb/>
+                           <l rendition="#et">vil guter fru&#x364;cht/ die man gezu&#x364;cht</l>
+                           <lb/>
+                           <l>nach iedes landes art:</l>
+                           <lb/>
+                           <l rendition="#et">ko&#x364;l/ ru&#x364;ben und limonen/</l>
+                           <lb/>
+                           <l>pomrantzen und citronen/</l>
+                           <lb/>
+                           <l>und ku&#x364;tten ungeſpart.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="3">
+                           <head>3</head>
+                           <lb/>
+                           <l>Der biren laſt</l>
+                           <lb/>
+                           <l rendition="#et">die a&#x364;ſte bukt/ und nidertrukt</l>
+                           <lb/>
+                           <l>bis zu der erden faſt:</l>
+                           <lb/>
+                           <l rendition="#et">die ſcho&#x364;nen <supplied>a&#x364;</supplied>pfel
+                              prangen/</l>
+                           <lb/>
+                           <l>mit ihren roten <choice>
+                                 <sic>m</sic>
+                                 <corr>w</corr>
+                              </choice>angen/</l>
+                           <lb/>
+                           <l>erquiken manchen gaſt.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="4">
+                           <head>4</head>
+                           <lb/>
+                           <l>Reiff iſt die nuß/</l>
+                           <lb/>
+                           <l>un&#x303; fallt hinauß/ vom hu&#x364;lſenhauß/</l>
+                           <lb/>
+                           <l>der jugend ohn verdruß:</l>
+                           <lb/>
+                           <l rendition="#et">was bleibt wird abgeſchlagen/</l>
+                           <lb/>
+                           <l>aufgleſen/ heim getragen</l>
+                           <lb/>
+                           <l>zu mancherley genuß.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="5">
+                           <head>5</head>
+                           <lb/>
+                           <l>Die pferſich ſind</l>
+                           <lb/>
+                           <l rendition="#et">ein kinderſpeiß/ geleicher
+                              wei<supplied>ß</supplied></l>
+                           <lb/>
+                           <l>die n<supplied>a&#x364;</supplied>ſpel teig und lind:</l>
+                           <lb/>
+                           <l rendition="#et">die zweßgen/ feigen/ ka&#x364;ſten/</l>
+                           <lb/>
+                           <l>und mandel ſeind der ga&#x364;ſten:</l>
+                           <lb/>
+                           <l>ziparten ißt das gſind.</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+
+                  <fw place="bottom" type="catch">6<anchor xml:id="a144"/>.<note type="annotation"
+                        targetEnd="a144"><p>Auf der folgenden Seite steht nach der 6 kein
+                        Punkt.</p></note> Jn-</fw>
+                  <lb/>
+                  <pb facs="4076966" n="191"/>
+
+                  <fw place="top" type="pageNum">191</fw>
+                  <fw place="top" type="header">ander Herbſtgeſang.</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
+                           <lb/>
+                           <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
+                           <lb/>
+                           <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Die dritte zeit in iedem jahr/ nicht minder gar als</l>
+                           <lb/>
+                           <l>andre mich erfreut: ſie kommet aufgezogen/ wann ſtork</l>
+                           <lb/>
+                           <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="6">
+                           <head>6</head>
+                           <lb/>
+                           <l>Jnſonderheit</l>
+                           <lb/>
+                           <l rendition="#et">die <supplied>a&#x364;</supplied>del frucht der
+                              ra&#x364;benzucht</l>
+                           <lb/>
+                           <l>wird flu&#x364;ſſig diſer z<supplied>e</supplied>it:</l>
+                           <lb/>
+                           <l rendition="#et">der arbeit niemand ſchohnet/</l>
+                           <lb/>
+                           <l>dieweil ſie treulich lohnet</l>
+                           <lb/>
+                           <l>mit luſt und nutzbarkeit.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="7">
+                           <head>7</head>
+                           <lb/>
+                           <l>Die b<supplied>e</supplied>ſten fiſch/</l>
+                           <lb/>
+                           <l rendition="#et">den lachs vorab/ der fiſcherknab</l>
+                           <lb/>
+                           <l>bringt reichen leuhten friſch:</l>
+                           <lb/>
+                           <l rendition="#et">auß weyern/ ſeen/ flu&#x364;ſſen:</l>
+                           <lb/>
+                           <l>der mindern auch genieſſen</l>
+                           <lb/>
+                           <l>die armen u&#x364;ber tiſch.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="8">
+                           <head>8</head>
+                           <lb/>
+                           <l>Der weidman ſich</l>
+                           <lb/>
+                           <l rendition="#et">im feld <supplied>e</supplied>rgetzt/ die haſen
+                              hetzt/</l>
+                           <lb/>
+                           <l>und lokt dem lerchenſtrich:</l>
+                           <lb/>
+                           <l rendition="#et">er ſuchet mit verlangen/</l>
+                           <lb/>
+                           <l>die ſchnepfe beyzufangen</l>
+                           <lb/>
+                           <l>in garnen liſtiglich.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="9">
+                           <head>9</head>
+                           <lb/>
+                           <l>Der akkermann/</l>
+                           <lb/>
+                           <l>alß wol vernu&#x364;gt/ das ſelde pflu&#x364;gt/</l>
+                           <lb/>
+                           <l>und widrum ſ<supplied>a&#x364;</supplied>et an:</l>
+                           <lb/>
+                           <l rendition="#et">die du&#x364;rꝛen <supplied>a&#x364;</supplied>ſt er
+                              ſchneitelt:</l>
+                           <lb/>
+                           <l>ſein weibe r<supplied>a&#x364;</supplied>ſt und reitelt</l>
+                           <lb/>
+                           <l>den hanf/ ſo gut ſie kan.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="10">
+                           <head>10</head>
+                           <lb/>
+                           <l>Die herbſtes zeit</l>
+                           <lb/>
+                           <l rendition="#et">in iedem jahr/ nicht minder gar</l>
+                           <lb/>
+                           <l>alß andre was bedeut:</l>
+                           <lb/>
+                           <l rendition="#et">Das ma&#x364;nnlich alter merke/</l>
+                           <lb/>
+                           <l>zu zeigen in dem werke</l>
+                           <lb/>
+                           <l>des glaubens fruchtbark<supplied>e</supplied>it.</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+               </div>
+
+               <fw place="bottom" type="catch">De<supplied>r</supplied></fw>
+               <lb/>
+               <pb facs="4076967" n="192"/>
+
+               <fw place="top" type="pageNum">192</fw>
+               <fw place="top" type="header">Wintergeſang.</fw>
+               <lb/>
+
+               <div n="2" xml:id="n36">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
+                           <lb/>
+                           <l>es hat ſie Boreas des bundten kleids beraubet/</l>
+                           <lb/>
+                           <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
+                           <lb/>
+                           <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
+                           <lb/>
+                           <l>es hat ſie Boreas des bundten kleids beraubet/</l>
+                           <lb/>
+                           <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
+                           <lb/>
+                           <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <fw place="bottom" type="catch">Der</fw>
+                     <lb/>
+                     <pb facs="4076968" n="193"/>
+
+                     <fw place="top" type="pageNum">193</fw>
+                     <fw place="top" type="header">Wintergeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
+                           <lb/>
+                           <l>es hat ſie Boreas des bundten kleids beraubet/</l>
+                           <lb/>
+                           <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
+                           <lb/>
+                           <l>er u&#x364;berzogen hat mit harniſch harte<choice>
+                                 <corr/>
+                                 <sic>n</sic>
+                              </choice> eyß.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der felder pracht iſt hin/ die wa&#x364;lder ſeind entlaubet/</l>
+                           <lb/>
+                           <l>es hat ſie Bo<supplied>r</supplied>eas des bundten kleids
+                              beraubet/</l>
+                           <lb/>
+                           <l>und nur mit weiß bedekt/ die waſſer gleicher weiß</l>
+                           <lb/>
+                           <l>er u&#x364;berzogen hat mit harniſch hartem eyß.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+
+               <fw place="bottom" type="sig">O</fw>
+               <fw place="bottom" type="catch">Der</fw>
+               <lb/>
+               <pb facs="4076969" n="194"/>
+
+               <fw place="top" type="header">1<unclear reason="uncleanPrint">9</unclear>4</fw>
+               <fw place="top" type="header">Ein ander</fw>
+               <lb/>
+
+               <div n="2" xml:id="n37">
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht/</l>
+                           <lb/>
+                           <l>den grauen winter bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht</l>
+                           <lb/>
+                           <l>auß ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
+                           <lb/>
+                           <l>den grauen winter bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht</l>
+                           <lb/>
+                           <l>auß ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <pb facs="4076970" n="195"/>
+
+                     <fw place="top" type="pageNum">195</fw>
+                     <fw place="top" type="header">Wintergeſang.</fw>
+                     <lb/>
+
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
+                           <lb/>
+                           <l>den grauen winter bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht</l>
+                           <lb/>
+                           <l>auß ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht</l>
+                           <lb/>
+                           <l>den grauen winter bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht</l>
+                           <lb/>
+                           <l>auß ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <fw place="bottom" type="sig">O ij</fw>
+                  <fw place="bottom" type="catch">Der</fw>
+                  <lb/>
+                  <pb facs="4076971" n="196"/>
+
+                  <fw place="top" type="pageNum">196</fw>
+                  <fw place="top" type="header">Andere weis über das</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
+                              bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht auß ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
+                              bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="2">
+                           <head rendition="#c">2.</head>
+                           <lb/>
+                           <l>Der gru&#x364;ne wald iſt worden kal/</l>
+                           <lb/>
+                           <l rendition="#et">das bundte feld entkleidet:</l>
+                           <lb/>
+                           <l>kein zam- noch wildes thier zumal</l>
+                           <lb/>
+                           <l rendition="#et">an ſeiner ſtell ſich weidet:</l>
+                           <lb/>
+                           <l rendition="#et3">das federheer</l>
+                           <lb/>
+                           <l rendition="#et2">ſingt auch nicht mehr/</l>
+                           <lb/>
+                           <l rendition="#et">ein theil von uns wegſcheidet.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="3">
+                           <head>3</head>
+                           <lb/>
+                           <l>Das einſam turturtaubelin</l>
+                           <lb/>
+                           <l rendition="#et">nur ſeufftzend wird geho&#x364;ret:</l>
+                           <lb/>
+                           <l>die rabenſtim&#x303; iſt jetz gemein/</l>
+                           <lb/>
+                           <l rendition="#et">und uns das gho&#x364;r verſehret:</l>
+                           <lb/>
+                           <l rendition="#et3">melancholey</l>
+                           <lb/>
+                           <l rendition="#et3">wohnt allem bey/</l>
+                           <lb/>
+                           <l rendition="#et">und alle freud zerſto&#x364;ret.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="4">
+                           <head>4</head>
+                           <lb/>
+                           <l xml:id="l66a" next="#l66b">Was lebt und ſchwebt den</l>
+                           <lb/>
+                           <l xml:id="l66b" prev="#l66a">winter ſcheucht/</l>
+                           <lb/>
+                           <l rendition="#et">und ſuchet ſich zu w<anchor xml:id="a146"/><unclear
+                                 reason="uncleanPrint">a&#x364;</unclear><note type="annotation"
+                                 targetEnd="a146"><p>Es scheint, dass es ein Spur von einem
+                                    übergeschriebenem e gibt. Diese ist aber im Augsburger Exemplar
+                                    nicht zu sehen. In der Ausgabe C steht hier aber eindeutig ein
+                                    übergeschriebenes e.</p></note>rmen:</l>
+                           <lb/>
+                           <l xml:id="l67a" next="#l67b">der kriegsmann ſelber ſich ver-</l>
+                           <lb break="no"/>
+                           <l xml:id="l67b" prev="#l67a">kreucht/</l>
+                           <lb/>
+                           <l rendition="#et">und machet keine la&#x364;rmen:</l>
+                           <lb/>
+                           <l rendition="#et2">das alter ietz</l>
+                           <lb/>
+                           <l rendition="#et3">liebt ofenshitz/</l>
+                           <lb/>
+                           <l rendition="#et">von wegen kalter da&#x364;rmen.</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+
+                  <fw place="bottom" type="catch">5 Der</fw>
+                  <lb/>
+                  <pb facs="4076972" n="197"/>
+
+                  <fw place="top" type="pageNum">197</fw>
+                  <fw place="top" type="header">ander Wintergeſang.</fw>
+                  <lb/>
+
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
+                              bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+
+                     <div>
+                        <head rendition="#aq #b #c">Ba<choice>
+                              <sic>f</sic>
+                              <corr>ſ</corr>
+                           </choice>is.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Der ku&#x364;rtzeſt tag und la&#x364;ngſte nacht den grauen winter
+                              bringen:</l>
+                           <lb/>
+                           <l>die Nordenwinde ſich mit macht aus ihren kammern dringen:</l>
+                           <lb/>
+                           <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
+                           <lb/>
+                           <l>ſich ſchlieſſen allerdingen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+
+                  <div type="poem">
+                     <lg type="poem">
+                        <lg n="5">
+                           <head>5</head>
+                           <lb/>
+                           <l>Der weidman&#x303; doch/ fu&#x364;r ſeinen ſpaß/</l>
+                           <lb/>
+                           <l rendition="#et">das hochgewilde hetzet: </l>
+                           <lb/>
+                           <l>das eiß; wan es wie ſpiegelglaß;</l>
+                           <lb/>
+                           <l rendition="#et">die jugend auch ergetzet;</l>
+                           <lb/>
+                           <l rendition="#et3">man metzget eyn</l>
+                           <lb/>
+                           <l rendition="#et3">vil feißte ſchwein/</l>
+                           <lb/>
+                           <l rendition="#et">und ſich zum wurſtmahl ſetzet.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="6">
+                           <head>6</head>
+                           <lb/>
+                           <l xml:id="l68a" next="#l68b">Der winter; alß des jahres</l>
+                           <lb/>
+                           <l xml:id="l68b" prev="#l68a">bauch;</l>
+                           <lb/>
+                           <l rendition="#et">verzehrt was wir erworben</l>
+                           <lb/>
+                           <l>mit ſaurer arbeit zum gebrauch/</l>
+                           <lb/>
+                           <l rendition="#et">wan ietz die ſaat erſtorben:</l>
+                           <lb/>
+                           <l rendition="#et3">wan u&#x364;beral</l>
+                           <lb/>
+                           <l rendition="#et3">zu berg und thal</l>
+                           <lb/>
+                           <l rendition="#et">iſt alles wie verdorben.</l>
+                        </lg>
+                        <lb/>
+
+                        <lg n="7">
+                           <head>7</head>
+                           <lb/>
+                           <l>Alſo; dem winter gleich; die zeit</l>
+                           <lb/>
+                           <l rendition="#et">im alter uns verſchlinget:</l>
+                           <lb/>
+                           <l>doch iſt vom tode nicht befreyt</l>
+                           <lb/>
+                           <l rendition="#et">der jung/ wie hoch er ſpringet:</l>
+                           <lb/>
+                           <l rendition="#et3">drum haltet wacht</l>
+                           <lb/>
+                           <l rendition="#et3">bey tag und nacht/</l>
+                           <lb/>
+                           <l rendition="#et">und ſo zum leben dringet!</l>
+                        </lg>
+                     </lg>
+                     <lb/>
+                  </div>
+               </div>
+
+               <fw place="bottom" type="sig">O iij</fw>
+               <fw place="bottom" type="catch">Zu</fw>
+               <lb/>
+               <pb facs="4076973" n="198"/>
+
+               <fw place="top" type="pageNum">198</fw>
+               <fw place="top" type="header">Badergeſang.</fw>
+               <lb/>
+
+               <l><label>[38.]</label><lb/>
+                  <hi rendition="#aq #b #c">Cantus.</hi></l>
+               <lb/>
+               <l>Zu Vrdorf/ und am Geiren-Rein/ auf Aeu&#x364;gſt/ und auf dem Riedt/</l>
+               <lb/>
+               <l>entſpringen gſunde Bru&#x364;nnelein/ durch Gottes ſondre gu&#x364;t:</l>
+               <lb/>
+               <l>ſo/ daß wir ko&#x364;nnen baden/ fu&#x364;r ein und andern</l>
+               <lb/>
+               <l>ſchaden/ auch in dem Zu&#x364;richbiet.</l>
+
+
                <div type="poem-div">
-                  <head rendition="#aq">Tenor.</head>
+                  <head rendition="#aq #b #c">Tenor.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu Vrdorf/ und am Geiren-Rein/ auf Aeu&#x364;gſt/ und auf dem Riedt/</l>
@@ -16682,7 +16859,7 @@
                <lb/>
 
                <div type="poem-div">
-                  <head rendition="#aq">Altus.</head>
+                  <head rendition="#aq #b #c">Altus.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu Vrdorf/ und am Geiren Rein/ auf Aeu&#x364;gſt/ und auf dem Riedt/</l>
@@ -16700,7 +16877,7 @@
                </div>
 
                <div type="poem-div">
-                  <head rendition="#aq">Baſis.</head>
+                  <head rendition="#aq #b #c">Baſis.</head>
                   <lb/>
                   <lg type="poem">
                      <l>Zu Vrdorf und am Geiren-Rein/ auf Aeu&#x364;gſt/ und auf dem Riedt/</l>
