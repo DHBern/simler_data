@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><TEI xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">H63C Uber H. D. Hottingers Land- und Lust-Gut</title>
+         </titleStmt>
+         <publicationStmt>
+            <p>Johann Wilhelm Simlers Teutsche Gedichte</p>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">H63C Uber H. D. Hottingers Land- und Lust-Gut</title>
+               <idno type="Transkribus">17753655</idno>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <facsimile>
+      <surface ulx="0" uly="0" lrx="1208" lry="1612" xml:id="facs_1">
+         <graphic url="H63C%20Uber%20H.%20D.%20Hottingers%20Land-%20und%20Lust-Gut.png" width="1208px" height="1612px"/>
+         <graphic url="https://files.transkribus.eu/Get?fileType=view&amp;id=UCINVXDHMWZGFEHOSYBGTLJI" width="1208px" height="1612px"/>
+         <zone points="132,339 1156,339 1156,1603 132,1603" rendition="TextRegion" xml:id="facs_1_tr_1">
+            <zone points="330,302 852,302 852,402 330,402" rendition="Line" xml:id="facs_1_tr_1_tl_1"/>
+            <zone points="389,353 843,353 843,439 389,439" rendition="Line" xml:id="facs_1_tr_1_tl_2"/>
+            <zone points="174,417 1101,417 1101,554 174,554" rendition="Line" xml:id="facs_1_tr_1_tl_3"/>
+            <zone points="240,490 524,490 524,582 240,582" rendition="Line" xml:id="facs_1_tr_1_tl_4"/>
+            <zone points="188,530 1121,530 1121,641 188,641" rendition="Line" xml:id="facs_1_tr_1_tl_5"/>
+            <zone points="255,608 504,608 504,711 255,711" rendition="Line" xml:id="facs_1_tr_1_tl_6"/>
+            <zone points="770,787 1080,787 1080,930 770,930" rendition="Line" xml:id="facs_1_tr_1_tl_7"/>
+            <zone points="124,852 391,852 391,944 124,944" rendition="Line" xml:id="facs_1_tr_1_tl_8"/>
+            <zone points="151,919 381,919 381,1022 151,1022" rendition="Line" xml:id="facs_1_tr_1_tl_9"/>
+         </zone>
+      </surface>
+   </facsimile>
+   <text>
+      <body>
+         <div>
+            <pb facs="#facs_1" n="1" xml:id="img_0001"/>
+            <ab facs="#facs_1_tr_1" type="">
+               <lb facs="#facs_1_tr_1_tl_1" n="N001"/>Uber H. D. Hottingers
+               <lb facs="#facs_1_tr_1_tl_2" n="N002"/>Land- und Luſt-Gut.
+               <lb facs="#facs_1_tr_1_tl_3" n="N003"/>Jch heiſſe Fridenberg; mit Frid werd' ich
+               <lb facs="#facs_1_tr_1_tl_4" n="N004"/>umſchanzet/
+               <lb facs="#facs_1_tr_1_tl_5" n="N005"/>ſo wird ich mehr und mehr zum Nuz und Luſt ge-
+               <lb facs="#facs_1_tr_1_tl_6" n="N006"/>pflanzet!
+               <lb facs="#facs_1_tr_1_tl_7" n="N007"/>J. W. S.
+               <lb facs="#facs_1_tr_1_tl_8" n="N008"/>D[en] 11.ten Mertz/
+               <lb facs="#facs_1_tr_1_tl_9" n="N009"/>1663.
+            </ab>
+         </div>
+      </body>
+   </text>
+</TEI>

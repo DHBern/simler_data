@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="H63C_Uber_H._D._Hottingers_Land-_und_Lust-Gut" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">H63C Uber H. D. Hottingers Land- und Lust-Gut</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl>
+            <title type="main">H63C Uber H. D. Hottingers Land- und Lust-Gut</title>
+            <idno type="Transkribus">17753655</idno>
+            <idno type="URLIIIF"/>
+            </bibl>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="1"/>
+            Uber H. D. Hottingers
+            <lb/>
+            Land- und Luſt-Gut.
+            <lb/>
+            Jch heiſſe Fridenberg; mit Frid werd' ich
+            <lb/>
+            umſchanzet/
+            <lb/>
+            ſo wird ich mehr und mehr zum Nuz und Luſt ge-
+            <lb break="no"/>
+            pflanzet!
+            <lb/>
+            J. W. S.
+            <lb/>
+            D[en] 11.ten Mertz/
+            <lb/>
+            1663.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
