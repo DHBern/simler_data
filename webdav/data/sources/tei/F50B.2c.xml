@@ -2,7 +2,7 @@
 <?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
 	schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2ac_Sterbensspiegel" type="simler-framework">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2c_Sterbensspiegel" type="simler-framework">
    <teiHeader>
       <fileDesc>
          <titleStmt>
@@ -13,7 +13,7 @@
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl type="M">Alexandrinischer Vorwunsch über wolangestellten und kunstlich-vollführten Mejerischen Todtendanz. Zürich 1650.</bibl>
+            <bibl type="M">Jambischer oder steigender Vorsprung zu seligem Todtendantz. Zürich 1650.</bibl>
             <biblFull>
                <titleStmt>
                   <title type="main" level="m">Sterbensspiegel, das ist sonnenklare Vorstellung menschlicher Nichtigkeit durch alle Staend und Geschlechter</title>
@@ -62,68 +62,6 @@
    <text>
       <body>
          <div>
-            <pb facs="3508815"/>
-            <head><hi rendition="#aq"><num>II.</num></hi></head>
-            <lb/>
-            
-            <head><num>1.</num>
-            <lb/>
-            Alexandriniſcher Vorwunſch/
-            <lb/>
-            über
-            <lb/>
-            wolangeſtellten und kunſtlich-
-            <lb break="no"/>
-            vollfu&#x364;hrten
-            <lb/>
-            Mejeriſchen Todtendantz.</head>
-            <lb/>
-            
-            <l><hi rendition="#in">D</hi>Jß dreyfachgu&#x366;te Werk ſelbſelb den Meiſter ru&#x364;hmet/</l>
-            <lb/>
-            <l>nicht no&#x364;htig daß es werd mit fro&#x364;mdem ru&#x366;hm verblu&#x364;hmet:</l>
-            <lb/>
-            <l>die klu&#x366;ge Künſtlerhand; der flammend Dichtergeiſt/</l>
-            <lb/>
-            <l>und hohe Sa&#x364;ngerkunſt uns hier verſtummen heißt.</l>
-            <lb/>
-            <l>Wir wünſchen nur allein auß diſem zu erlehrnen</l>
-            <lb/>
-            <l>des Lebens Flüchtigkeit/ damit wir uns entfehrnen</l>
-            <lb/>
-            <l>von eitelm augenluſt; verwehnter ſicherheit;</l>
-            <lb/>
-            <l>vom gelt- und ehrengeitz; von ungerechtigkeit:</l>
-            <lb/>
-            <l>hingegen aber uns/ zu diſen wunderzeiten/</l>
-            <lb/>
-            <l>zur Wallfahrt auß der welt/ im glauben/ vorbereiten/</l>
-            <lb/>
-            <l>damit die Todtenpfort uns mo&#x364;g ein Eyngang ſeyn</l>
-            <lb/>
-            <l>ins rechtgelobte Land/ wo weder Tod noch pein!</l>
-            <lb/>
-            
-            <head><num>2.</num>
-            <lb/>
-            Trochaiſcher/ oder fallender
-            <lb/>
-            Ra&#x364;tzelvierling.</head>
-            <lb/>
-            
-            <l><hi rendition="#in">D</hi>Vrch den ungeſtalten Tod wird der ein beru&#x364;hmter leben.</l>
-            <lb/>
-            <l>Eines andern bundne Zung wird dem Tod die Rede geben.</l>
-            <lb/>
-            <l>Dritter wird uns halbertodt auß den tieffen Noten heben.</l>
-            <lb/>
-            <l>Alle werden nach dem tod/ ſternenho&#x364;her/ ewig ſchweben.</l>
-            <lb/>
-            
-            <fw place="bottom" type="pageNum">b</fw>
-            <lb/>
-            <fw place="bottom" type="catch">Jam-</fw>
-            <lb break="no"/>
             <pb facs="3508816"/>
             
             <head><num>3.</num>

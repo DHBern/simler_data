@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F69Da_Hirzel" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Glükwünschende Ruhm- und Ehrengetichte</title>
+            <title type="sub">gestelt an den hochgeachten, woledlen, gestrengen, frommen, ehren- und nohtvesten, fürnemmen, fürsichtigen und hochweisen Herren, Herren Joh. Caspar Hirzel, Gerichtsherren zu Kefikon ... : durch des allerhöchsten Fürsehung, und glükliche Wahl der Klein- und Grossen Rähten der Statt Zürich erwehlten Herren Burgermeistern</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Vorgeticht (auf Johann Caspar Hirzel). Zürich 1669.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Glükwünschende Ruhm- und Ehrengetichte</title>
+                  <title type="sub" level="m">gestelt an den hochgeachten, woledlen, gestrengen, frommen, ehren- und nohtvesten, fürnemmen, fürsichtigen und hochweisen Herren, Herren Joh. Caspar Hirzel, Gerichtsherren zu Kefikon ... : durch des allerhöchsten Fürsehung, und glükliche Wahl der Klein- und Grossen Rähten der Statt Zürich erwehlten Herren Burgermeistern</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[30] Bl., [1] Taf. : Ill. ; 21 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getrukt zu Zürich/ bey Johann Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1669</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">5’189.40</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990045141880205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-10705</idno>
+                     <idno type="DOI">10.3931/e-rara-10705</idno>
+                     <idno type="Transkribus">7707776</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3219010/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3219026" n="14"/>
+            <fw place="top" type="pageNum">14</fw>
+            <lb/>
+            
+            <head><hi rendition="#aq"><num>VIII.</num></hi>
+            <lb/>
+            <hi rendition="#aq"><num>I.</num></hi>
+            <lb/>
+            Vorgeticht an Jhr Ehrſ. W.</head>
+            <lb/>
+            
+            <l><hi rendition="#in">H</hi>Ochwolbegabter Herꝛ; von Eltern beſter Sitten/</l>
+            <lb/>
+            <l>Die auch der Weißheit Ban/ zu Ho&#x364;chſter Ehr/ geſchritten;</l>
+            <lb/>
+            <l>Des groſſen <hi rendition="#b">Hirtzels Sohn</hi>/ von ſcho&#x364;neſtem Geblu&#x364;t/</l>
+            <lb/>
+            <l>Dem Vatter a&#x364;hnlich ganz von Leib und von Gemu&#x364;ht.</l>
+            <lb/>
+            <l>Herꝛ/ unſer Landes Preis/ vom Vorfahrn unterwiſen/</l>
+            <lb/>
+            <l>Den unvergleichlich Jhr/ unlengſten/ ſelbſt gepriſen/</l>
+            <lb/>
+            <l>Und der/ nach ſanftem Tod/ zwar Sternenho&#x364;her ſchwebt;</l>
+            <lb/>
+            <l>Jedoch/ der Schriften halb/ bey uns auf Erden lebt;</l>
+            <lb/>
+            <l>Neuwolerwehlter Herꝛ/ Hochweiſer Burgermeiſter/</l>
+            <lb/>
+            <l>Solt nicht Jhr ſeyn begru&#x364;ßt/ durch die Poetengeiſter?</l>
+            <lb/>
+            <l>Ja freylich: Jch der minſt anjez anſtimmen wil</l>
+            <lb/>
+            <l>Ein Ehrenwunſchgeſang. Der Ho&#x364;chſt verhelff zum Zil!</l>
+            <lb/>
+            <l>Jhr aber/ werther Herꝛ/ laßt alles Euch gefallen</l>
+            <lb/>
+            <l>Was/ beſter meinung/ hier zu Ehren wird erſchallen</l>
+            <lb/>
+            <l>Von dem/ der Eurer Wahl/ nicht wenig ſich erfreut/</l>
+            <lb/>
+            <l>Weil die gemiltert hat vorgehnde Traurigkeit.</l>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

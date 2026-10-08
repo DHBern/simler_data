@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F44C.2c_Hochzeit_Schulthess" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Gamelia, oder Hochzeitliche Ehren- und Segen-Wünsch, dem frommen und ehrenvesten Herren Hans Heinrich Schulthessen ...</title>
+            <title type="sub">so dann der ... Jungfraw Susanna Hartmannin ...</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Pindarische Ode (Selig ist der Mann geschetzet). [Zürich] 1644.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Gamelia, oder Hochzeitliche Ehren- und Segen-Wünsch, dem frommen und ehrenvesten Herren Hans Heinrich Schulthessen ...</title>
+                  <title type="sub" level="m">so dann der ... Jungfraw Susanna Hartmannin ...</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[4] Bl. ; 20 cm (4º)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>[Zürich]/ [Verlag nicht ermittelbar].</name>
+                  </publisher>
+                  <pubPlace>[Zürich]</pubPlace>
+                  <date type="publication">1644</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">18.1509, 17</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990065529020205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-12385</idno>
+                     <idno type="DOI">10.3931/e-rara-12385</idno>
+                     <idno type="Transkribus">10034096</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3855443/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3855453"/>
+            
+            Pindariſche Ode.
+            <lb/>
+            Auß dem 31. Cap. der Sprüchwo&#x364;rter Salomons.
+            <lb/>
+            
+            Strophe.
+            <lb/>
+            <l>Selig iſt der Mann geſchetzet</l>
+            <lb/>
+            <l>Dem der Himmel hat beſchehrt</l>
+            <lb/>
+            <l>Eine Fraw die Gott verehrt/</l>
+            <lb/>
+            <l>Vnd hierneben jhn ergetzet.</l>
+            <lb/>
+            <l>Solche alles Edelgſtein</l>
+            <lb/>
+            <l>Vbertriffet in gemein.</l>
+            <lb/>
+            <l>Jhren kan jhr Mann vertrawen:</l>
+            <lb/>
+            <l>Dann ſie thu&#x366;t das Hauß erbawen;</l>
+            <lb/>
+            <l>Nahrung jhme mangelt nicht/</l>
+            <lb/>
+            <l>Freundtlich ſie ſich jhm erweiſet</l>
+            <lb/>
+            <l>Darumb man ſie billich preiſet</l>
+            <lb/>
+            <l>Mit Geſang vnd Lobgedicht.</l>
+            <lb/>
+            
+            Antiſtrophe.
+            <lb/>
+            <l>Sie verſorget jhr Geſinde/</l>
+            <lb/>
+            <l>Vnd vergißt der Armen nicht/</l>
+            <lb/>
+            <l>Jhre Kleider ſie zu&#x366;richt</l>
+            <lb/>
+            <l>Wider Regen/ Schnee vnd Winde.</l>
+            <lb/>
+            <l>Sie iſt jhres Mannes Cron/</l>
+            <lb/>
+            <l>Leüchtet kla&#x364;rer alß der Mon:</l>
+            <lb/>
+            <l>Jhre Kinder ſie verehren</l>
+            <lb/>
+            <l>Vnd Er thu&#x366;t jhr Lob vermehren.</l>
+            <lb/>
+            <l>Falſch iſt viler freündtlichkeit/</l>
+            <lb/>
+            <l>Leibes-ſcho&#x364;ne thu&#x366;t vergehen/</l>
+            <lb/>
+            <l>Billich aber ſol beſtehen</l>
+            <lb/>
+            <l>Frommer Weiber Lob allzeit.</l>
+            <lb/>
+            
+            Epodus.
+            <lb/>
+            <l>Wann dann/ Herꝛ Bra&#x364;utigam/ der Himmel eüch gegeben</l>
+            <lb/>
+            <l>Eine ſolche Braut/</l>
+            <lb/>
+            <l>Die auff Tugend ſchawt:</l>
+            <lb/>
+            <l>So werden/ billich/ jhr nicht <hi rendition="#b">hart</hi> mit jhro leben.</l>
+            <lb/>
+            <l>O daß jhr leben wol! O daß jhr leben lang</l>
+            <lb/>
+            <l>Hier auff Erden/</l>
+            <lb/>
+            <l>Ohn beſchwerden!</l>
+            <lb/>
+            <l>O daß es hier vnd dort eüch beyden wol ergang!</l>
+            <lb/>
+            
+            J.W.S.
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>

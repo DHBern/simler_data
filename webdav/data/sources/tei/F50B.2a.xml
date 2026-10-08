@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="../../schema/basisformat_customized.sch" type="application/xml"
+	schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="F50B.2a_Sterbensspiegel" type="simler-framework">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title type="main">Sterbensspiegel, das ist sonnenklare Vorstellung menschlicher Nichtigkeit durch alle Staend und Geschlechter</title>
+            <title type="sub">vermitlest 60. dienstlicher Kupferblaetteren, lehrreicher Uberschrifften und beweglicher zu vier Stimmen aussgesetzter Todtengesaengen</title>
+         </titleStmt>
+         <publicationStmt>
+            <p/>
+         </publicationStmt>
+         <sourceDesc>
+            <bibl type="M">Alexandrinischer Vorwunsch über wolangestellten und kunstlich-vollführten Mejerischen Todtendanz. Zürich 1650.</bibl>
+            <biblFull>
+               <titleStmt>
+                  <title type="main" level="m">Sterbensspiegel, das ist sonnenklare Vorstellung menschlicher Nichtigkeit durch alle Staend und Geschlechter</title>
+                  <title type="sub" level="m">vermitlest 60. dienstlicher Kupferblaetteren, lehrreicher Uberschrifften und beweglicher zu vier Stimmen aussgesetzter Todtengesaengen</title>
+               </titleStmt>
+               <extent>
+                  <measure type="pages">[10] Bl., 166 S., [1] Bl. : Ill. ; 20 cm (4°)</measure>
+               </extent>
+               <publicationStmt>
+                  <publisher>
+                     <name>Getrukt zu Zürich/ bey Johann Jacob Bodmer.</name>
+                  </publisher>
+                  <pubPlace>Zürich</pubPlace>
+                  <date type="publication">1650</date>
+               </publicationStmt>
+            </biblFull>
+            <msDesc xml:id="imagesource-1">
+               <msIdentifier>
+                  <repository>Zentralbibliothek Zürich</repository>
+                  <idno>
+                     <idno type="shelfmark">AWZ 490</idno>
+                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990049419330205508</idno>
+                     <idno type="URLImages">https://doi.org/10.3931/e-rara-11497</idno>
+                     <idno type="DOI">10.3931/e-rara-11497</idno>
+                     <idno type="Transkribus">7527928</idno>
+                     <idno type="URLIIIF">https://www.e-rara.ch/i3f/v20/3508804/manifest</idno>
+                  </idno>
+               </msIdentifier>
+               <physDesc>
+                  <typeDesc>
+                     <p>Fraktur</p>
+                  </typeDesc>
+               </physDesc>
+            </msDesc>
+         </sourceDesc>
+      </fileDesc>
+      <profileDesc>
+         <langUsage>
+            <language ident="deu">(Früh-)Neuhochdeutsch</language>
+         </langUsage>
+         <textClass>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+         </textClass>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div>
+            <pb facs="3508815"/>
+            <head><hi rendition="#aq"><num>II.</num></hi></head>
+            <lb/>
+            
+            <head><num>1.</num>
+            <lb/>
+            Alexandriniſcher Vorwunſch/
+            <lb/>
+            über
+            <lb/>
+            wolangeſtellten und kunſtlich-
+            <lb break="no"/>
+            vollfu&#x364;hrten
+            <lb/>
+            Mejeriſchen Todtendantz.</head>
+            <lb/>
+            
+            <l><hi rendition="#in">D</hi>Jß dreyfachgu&#x366;te Werk ſelbſelb den Meiſter ru&#x364;hmet/</l>
+            <lb/>
+            <l>nicht no&#x364;htig daß es werd mit fro&#x364;mdem ru&#x366;hm verblu&#x364;hmet:</l>
+            <lb/>
+            <l>die klu&#x366;ge Künſtlerhand; der flammend Dichtergeiſt/</l>
+            <lb/>
+            <l>und hohe Sa&#x364;ngerkunſt uns hier verſtummen heißt.</l>
+            <lb/>
+            <l>Wir wünſchen nur allein auß diſem zu erlehrnen</l>
+            <lb/>
+            <l>des Lebens Flüchtigkeit/ damit wir uns entfehrnen</l>
+            <lb/>
+            <l>von eitelm augenluſt; verwehnter ſicherheit;</l>
+            <lb/>
+            <l>vom gelt- und ehrengeitz; von ungerechtigkeit:</l>
+            <lb/>
+            <l>hingegen aber uns/ zu diſen wunderzeiten/</l>
+            <lb/>
+            <l>zur Wallfahrt auß der welt/ im glauben/ vorbereiten/</l>
+            <lb/>
+            <l>damit die Todtenpfort uns mo&#x364;g ein Eyngang ſeyn</l>
+            <lb/>
+            <l>ins rechtgelobte Land/ wo weder Tod noch pein!</l>
+            <lb/>
+            
+         </div>
+      </body>
+   </text>
+</TEI>
