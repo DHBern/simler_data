@@ -40,52 +40,56 @@
             <pb facs="4049176"/>
             <pb facs="4049178"/>
             <titlePage type="main">
-            Johann-Wilhelm
+            <docAuthor rendition="#c">Johann-Wilhelm
             <lb/>
-            Simlers
+            Simlers</docAuthor>
             <lb/>
-            <hi rendition="#b">Teutſcher Getich-</hi>
+            <docTitle><titlePart type="main" rendition="#c"><hi rendition="#b">Teutſcher Getich-</hi>
             <lb break="no"/>
             ten die Dritte/ von Jhme ſelbſten
             <lb/>
             um einen Drittheil vermehrt- und ver-
             <lb break="no"/>
-            beſſerte Außfertigung:
+            beſſerte Außfertigung:</titlePart>
             <lb/>
-            Jn ſich haltend
+            <titlePart type="desc">Jn ſich haltend
             <lb/>
-            <hi rendition="#aq"><num>I.</num></hi> Aller Pſalmen Davids Haubtbegriff: in 150.
+            <list><item><hi rendition="#aq"><num>I.</num></hi> Aller Pſalmen Davids Haubtbegriff: in 150.
             <lb/>
-            Viergetichten/ und ſo vilen Reimſchlüſſen:
+            Viergetichten/ und ſo vilen Reimſchlüſſen:</item>
             <lb/>
-            <hi rendition="#aq"><num>II</num></hi>. Feſt- und <hi rendition="#aq">U</hi>nterweiſungs-Geſa&#x364;nge:
+            <item><hi rendition="#aq"><num>II</num></hi>. Feſt- und <hi rendition="#aq">U</hi>nterweiſungs-Geſa&#x364;nge:</item>
             <lb/>
-            <hi rendition="#aq"><num>III.</num></hi> <hi rendition="#aq">U</hi>nterſchiedliche/ auf zeiten und anla&#x364;ſſe ge-
+            <item><hi rendition="#aq"><num>III.</num></hi> <hi rendition="#aq">U</hi>nterſchiedliche/ auf zeiten und anla&#x364;ſſe ge-
             <lb break="no"/>
             richtete Geſa&#x364;nge/ Glu&#x364;kwünſchungen/ Ehren-
             <lb break="no"/>
-            und Loblieder:
+            und Loblieder:</item>
             <lb/>
-            <hi rendition="#aq"><num>IV.</num></hi> Neuaußgeſezte/ mit geiſtlichen neüen Texten
+            <item><hi rendition="#aq"><num>IV.</num></hi> Neuaußgeſezte/ mit geiſtlichen neüen Texten
             <lb/>
             unterlegte Muſikſtükke: denen auch andre
             <lb/>
-            außerleſene/ beygefu&#x364;get worden.
+            außerleſene/ beygefu&#x364;get worden.</item>
             <lb/>
-            <hi rendition="#aq"><num>V.</num></hi> Allerhand erbauliche <hi rendition="#aq">U</hi>berſchrifften: Geburt-
+            <item><hi rendition="#aq"><num>V.</num></hi> Allerhand erbauliche <hi rendition="#aq">U</hi>berſchrifften: Geburt-
             <lb break="no"/>
             und Sterb-Getichte: Sinn-Sitten-Wahl-
             <lb break="no"/>
-            und Haußſprüche.
+            und Haußſprüche.</item></list></titlePart></docTitle>
             <lb/>
-            Getrukt zu Zürich/
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
-            Jn verlegung Joh. Wilhelm Simlers/ Bu&#x366;chh.
+            <docImprint>Getrukt zu <pubPlace>Zürich</pubPlace>/
             <lb/>
-            <hi rendition="#aq">M DC. LXIII.</hi>
+            Jn verlegung <publisher>Joh. Wilhelm Simlers</publisher>/ Bu&#x366;chh.
+            <lb/>
+            <docDate><hi rendition="#aq">M DC. LXIII.</hi></docDate></docImprint>
             </titlePage>
             <lb/>
             <pb facs="4049179"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div type="dedication" xml:id="iii">
             <list>
             <head rendition="#c"><hi rendition="#b">Denen Hochgeachten/ woledlen/ veſten/</hi>
@@ -369,8 +373,10 @@
             </div>
             </div>
             <pb facs="4049184"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="iv">
-            <head rendition="#aq"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
+            <head rendition="#aq #b #c"><hi rendition="#i">Ex Epiſtola Magnifici ſimul ac Literatiſ-</hi>
             <lb break="no"/>
             <hi rendition="#i">ſimi Viri</hi>,
             <lb/>
@@ -398,7 +404,7 @@
             <lb/>            
             </div>
             <div xml:id="v">
-            <head rendition="#aq"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
+            <head rendition="#aq #b #c"><hi rendition="#i">Ex Epiſtola V. rev. &amp; doctißimi</hi>
             <lb/>
             <hi rendition="#g"><hi rendition="#k">DN</hi>. GEORGII MULLERI,</hi>
             <lb/>
@@ -429,8 +435,10 @@
             <lb/>
             </div>
             <pb facs="4049185"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="vi">
-            <head rendition="#aq"><num>I.</num>
+            <head rendition="#aq #b #c"><num>I.</num>
             <lb/>
             Ad Authorem
             <lb/>
@@ -454,7 +462,7 @@
             <lb/>
             </div>
             <div xml:id="vii">
-            <head rendition="#aq"><num>II.</num>
+            <head rendition="#aq #b #c"><num>II.</num>
             <lb/>
             loannes VVilelmus Simlerus.
             <lb/>
@@ -478,7 +486,7 @@
             <lb/>
             </div>
             <div xml:id="viii">
-            <head rendition="#aq"><num>III.</num>
+            <head rendition="#aq #b #c"><num>III.</num>
             <lb/>
             <hi rendition="#g">IOANNES GVIELMVS SIMLERVS</hi>
             <lb/>
@@ -509,8 +517,10 @@
             </div>
             
             <pb facs="4049186"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="ix">
-            <head rendition="#aq"><num>IV.</num></head>
+            <head rendition="#aq #b #c"><num>IV.</num></head>
             <lb/>
             <lg type="poem">
             <l rendition="#aq #i"><hi rendition="#in">E</hi>St opus Angelicum laudes cantare Iehovæ,</l>
@@ -565,11 +575,13 @@
             V. D. M. &amp; Profeſſor Græco Latinus.</signed></closer>
             <lb/>
             </div>
-            <fw place="bottom" type="catch"><num>V.</num> <hi rendition="#k"><anchor xml:id="a10"/>'<note type="annotation" targetEnd="a10"><p>Auch im Vergleichsexemplar Wien und auf der Folgeseite ist dieses Zeichen vor dem "A" vorhanden.</p></note>AN</hi></fw><hi rendition="#k"><anchor xml:id="a11"/>'<note type="annotation" targetEnd="a11"><p>Auch im Vergleichsexemplar Wien und auf der Folgeseite ist dieses Zeichen vor dem "A" vorhanden.</p></note>AN</hi>
+            <fw place="bottom" type="catch"><num>V.</num> <hi rendition="#k"><anchor xml:id="a10"/>'<note type="annotation" targetEnd="a10"><p>Auch im Vergleichsexemplar Wien und auf der Folgeseite ist dieses Zeichen vor dem "A" vorhanden.</p></note>AN</hi></fw>
             <lb/>
             <pb facs="4049187"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="x">
-            <head rendition="#aq"><num>V.</num></head>
+            <head rendition="#aq #b #c"><num>V.</num></head>
             <lb/>
             <hi rendition="#in">A</hi>N
             <lb/>
@@ -601,8 +613,10 @@
             <lb/>
             </div>
             <pb facs="4049188"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xi">
-            <head><hi rendition="#aq"><num>VI.</num></hi>
+            <head rendition="#b #c"><hi rendition="#aq"><num>VI.</num></hi>
             <lb/>
             <hi rendition="#b"><hi rendition="#aq">U</hi>ber Herꝛn Tichters namen</hi>
             <lb/>
@@ -684,8 +698,10 @@
             <fw place="bottom" type="catch"><hi rendition="#aq"><num>VII.</num></hi> <hi rendition="#aq">U</hi>ber</fw>
             <lb/>
             <pb facs="4049189"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xii">
-            <head rendition="#aq"><num>VII.</num>
+            <head rendition="#b #c"><hi rendition="#aq"><num>VII.</num></hi>
             <lb/>
             über den glu&#x366;klichen fortgang erwünſch-
             <lb break="no"/>
@@ -720,9 +736,9 @@
             <lb/>
             <l rendition="#et2">zum zorn zureitzen myd.</l>
             <lb/>
-            <l>Lern ſchweigen;</l>
+            <l>Lern ſchweigen;
             <lb/>
-            <l>und das mau</l>
+            und das mau</l>
             <lb/>
             <l rendition="#acrostic"><hi rendition="#acroInit">L</hi><choice><corr/><sic>eit</sic></choice> im gebiß und zau<hi rendition="#acroFin">M</hi></l>
             <lb/>
@@ -749,7 +765,7 @@
             <lb/>
             </div>
             <div xml:id="xiii">
-            <head>Der Tichter an ſein
+            <head rendition="#b #c">Der Tichter an ſein
             <lb/>
             Bu&#x366;ch.</head>
             <lb/>
@@ -767,8 +783,10 @@
             <fw place="bottom" type="catch" rendition="#aq"><num>VIII.</num></fw>
             <lb/>
             <pb facs="4049190"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xiv">
-            <head rendition="#aq"><num>VIII.</num></head>
+            <head rendition="#aq #b #c"><num>VIII.</num></head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">O</hi>B gleich der <hi rendition="#b">Tichter</hi> kunſt ſehr hoch bisher geſtigen/</l>
@@ -909,8 +927,10 @@
             <closer><signed rendition="#right">Ehrenhold Falk von Traubenberg/</signed></closer>
             <lb/>
             </div>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xv">
-            <head rendition="#aq"><num>IX.</num>
+            <head rendition="#b #c"><hi rendition="#aq"><num>IX.</num></hi>
             <lb/>
             An Herꝛen Ehrenhold Falken/
             <lb/>
@@ -962,6 +982,8 @@
             <lb/>
             </div>
             <pb facs="4049193"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xvi">
             <head rendition="#aq"><num>X.</num></head>
             <lb/>
@@ -1004,17 +1026,19 @@
             <closer><signed rendition="#right">Johann Jakob Bodmer.</signed></closer>
             <lb/>
             </div>
-            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XI.</num> <hi rendition="#i">In</hi></fw><hi rendition="#i">In</hi></hi>
+            <hi rendition="#aq"><fw place="bottom" type="catch"><num>XI.</num> <hi rendition="#i">In</hi></fw></hi>
             <lb/>
             
             <pb facs="4049194"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xvii">
-            <head rendition="#aq"><num>XI.</num>
+            <head rendition="#aq #b #c"><num>XI.</num>
             <lb/>
             <hi rendition="#i">In laudem Autoris, &amp;c.</hi></head>
             <lb/>
             <lg type="poem">
-            <head rendition="#aq">1.</head>
+            <head rendition="#aq #c">1.</head>
             <lb/>
             <l rendition="#aq"><hi rendition="#in">A</hi>Ut prodeſſe vol<anchor xml:id="a14"/><unclear>u</unclear><note type="annotation" targetEnd="a14"><p>Auch in den Vergleichsexemplaren Wien und Zürich angedeutet.</p></note>nt, aut delectare Poëtæ,</l>
             <lb/>
@@ -1022,11 +1046,11 @@
             <lb/>
             <l rendition="#aq">Miſcet enim dextrè metrum, melos: utile, dulce,</l>
             <lb/>
-            <l rendition="#aq">Omne proin punctum nemo tuliſſe neget.</l>
+            <l rendition="#et #aq">Omne proin punctum nemo tuliſſe neget.</l>
             </lg>
             <lb/>
             <lg type="poem">
-            <head rendition="#aq">2.</head>
+            <head rendition="#aq #c">2.</head>
             <lb/>
             <l rendition="#aq">Vtile quisquis amas, ac audis ſuave libenter,</l>
             <lb/>
@@ -1044,6 +1068,8 @@
             Paſtor Dieticonenſis</signed></closer>
             <lb/>
             </div>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xviii">
             <head rendition="#aq"><num>XII.</num></head>
             <lb/>
@@ -1077,8 +1103,10 @@
             <fw place="bottom" type="catch" rendition="#aq"><num>XIII.</num></fw>
             <lb/>
             <pb facs="4049195"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xix">
-            <head><hi rendition="#aq"><num>XIII.</num></hi>
+            <head rendition="#b #c"><hi rendition="#aq"><num>XIII.</num></hi>
             <lb/>
             Zu ehren und lobwürdigem ruhm
             <lb/>
@@ -1136,8 +1164,10 @@
             <lb/>
             </div>
             <pb facs="4049196"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xx">
-            <head><hi rendition="#aq"><num>XIV.</num></hi>
+            <head rendition="#b #c"><hi rendition="#aq"><num>XIV.</num></hi>
             <lb/>
             Haubtbegriff des gantzen Bu&#x366;chs/ auf
             <lb/>
@@ -1360,7 +1390,7 @@
             <lb/>
             </div>
             <div xml:id="xxi">
-            <head rendition="#aq"><num>XV.</num>
+            <head rendition="#aq #b #c"><num>XV.</num>
             <lb/>
             <hi rendition="#aq"><hi rendition="#i">Omne trinum perfectum.</hi></hi></head>
             <lb/>
@@ -1397,13 +1427,13 @@
             natus Helv. Tig.</p>
             <lb/>
             </div>
-            <milestone unit="section" rendition="#hr"/>
-            <lb/>
             <fw place="bottom" type="catch" rendition="#aq #i">VVilhel-</fw>
             <lb/>
             <pb facs="4049198"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xxii">
-            <head rendition="#aq"><num>XVI.</num></head>
+            <head rendition="#aq #b #c"><num>XVI.</num></head>
             <lb/>
             <lg>
             <head rendition="#aq #i #c">VVilhelmus.</head>
@@ -1460,8 +1490,10 @@
             <fw place="bottom" type="catch" rendition="#aq"><num>XVII.</num></fw>
             <lb/>
             <pb facs="4049199"/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div xml:id="xxiii">
-            <head rendition="#aq"><num>XVII.</num></head>
+            <head rendition="#aq #b #c"><num>XVII.</num></head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">W</hi>Je in dem Orden/ der viel frucht und nutzen bringet/</l>
@@ -2057,7 +2089,7 @@
             <lb/>
             <fw place="bottom" type="catch" rendition="#aq"><num>XXVIII.</num></fw>
             <lb/>
-            <pb facs="4049208"/>
+            <pb facs="4049208" n="9"/>
             <fw place="top" type="pageNum">9</fw>
             <fw place="top" type="header">der Pſalmen.</fw>
             <lb/>
@@ -4371,7 +4403,8 @@
             <pb facs="4049242" n="43."/>
             <fw place="top" type="pageNum">43.</fw>
             <lb/>
-            <head>Jnha&#x364;lte
+            <div n="2" xml:id="n6">
+            <head rendition="#b #c">Jnha&#x364;lte
             <lb/>
             Aller Pſalmen Davids/
             <lb/>
@@ -4381,7 +4414,6 @@
             <lb/>
             <milestone unit="section" rendition="#hr"/>
             <lb/>
-            <div n="2" xml:id="n6">
             <div n="3">
             <head rendition="#b #c">Jnhalt des erſten
             <lb/>
@@ -6131,8 +6163,10 @@
             <l rendition="#et">mit muſicſpielen/ iederzeit.</l>
             </lg>
             </div>
-            </div>
             <lb/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
+            </div>
             <fw place="bottom" type="catch">An-</fw>
             <lb/>
             <pb facs="4049258" n="59"/>
@@ -6307,8 +6341,10 @@
             <lb/>
             <l>ij des Kindeleins zu Bethlehem.</l>
             <lb/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div n="2" xml:id="n7">
-            <head>Weihnachtgeſang:
+            <head rendition="#b #c">Weihnachtgeſang:
             <lb/>
             über unſers Herꝛen und Heilands Jeſus
             <lb/>
@@ -6373,6 +6409,8 @@
             <l>ij des Kindeleins zu Bethlehem.</l>
             <lb/>
             <l>ij des Kindeleins zu Bethlehem.</l>
+            <lb/>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             <l>daß er ſich hat mit uns vereint:/:</l>
             </lg>
@@ -6664,7 +6702,7 @@
             <fw place="top" type="header">Weihnacht-</fw>
             <lb/>
             <div n="2" xml:id="n8">
-            <head>Geſang
+            <head rendition="#b #c">Geſang
             <lb/>
             über unſers Herꝛen Jeſus Chriſtus Geburt/
             <lb/>
@@ -6866,7 +6904,7 @@
             <fw place="top" type="header">Weihnacht-</fw>
             <lb/>
             <div n="2" xml:id="n9">
-            <head>Liebesgeſpra&#x364;ch
+            <head rendition="#b #c">Liebesgeſpra&#x364;ch
             <lb/>
             einer Chriſtgla&#x364;ubigen Seel mit ihrem
             <lb/>
@@ -6883,7 +6921,7 @@
             <lg n="1">
             <head><num>1.</num></head>
             <lb/>
-            <l>Seel <hi rendition="#in">J</hi>Eſus/ warer Gottes Sohn/</l>
+            <note place="left" type="speaker">Seel</note> <l><hi rendition="#in">J</hi>Eſus/ warer Gottes Sohn/</l>
             <lb/>
             <l>deines Vatters freud und won/</l>
             <lb/>
@@ -6917,7 +6955,7 @@
             <lg n="3">
             <head><num>3.</num></head>
             <lb/>
-            <l>Chriſtus Nein/ o nein! noch gwalt/ noch liſt/</l>
+            <note place="left" type="speaker">Chriſtus</note> <l>Nein/ o nein! noch gwalt/ noch liſt/</l>
             <lb/>
             <l>noch ſo was dergleichen iſt/</l>
             <lb/>
@@ -6940,7 +6978,7 @@
             <lg n="4">
             <head><num>4.</num></head>
             <lb/>
-            <l>Seel Was für dank nun ſol ich dir</l>
+            <note place="left" type="speaker">Seel</note> <l>Was für dank nun ſol ich dir</l>
             <lb/>
             <l>für die liebe/ die du mir</l>
             <lb/>
@@ -6957,7 +6995,7 @@
             <lg n="5">
             <head><num>5.</num></head>
             <lb/>
-            <l>Chriſtus Weil ich ſo geliebet dich/</l>
+            <note place="left" type="speaker">Chriſtus</note> <l>Weil ich ſo geliebet dich/</l>
             <lb/>
             <l>ſolſt hinwider lieben mich/</l>
             <lb/>
@@ -6974,7 +7012,7 @@
             <lg n="6">
             <head><num>6.</num></head>
             <lb/>
-            <l>Seel Ja/ Herꝛ: aber gib du mir</l>
+            <note place="left" type="speaker">Seel</note> <l>Ja/ Herꝛ: aber gib du mir</l>
             <lb/>
             <l>deine gnad/ zu folgen dir/</l>
             <lb/>
@@ -6991,13 +7029,13 @@
             <lg n="7">
             <head><num>7.</num></head>
             <lb/>
-            <l>Chriſtus Jch/ dein liebſtes ſeelenpfand/</l>
+            <note place="left" type="speaker">Chriſtus</note> <l>Jch/ dein liebſtes ſeelenpfand/</l>
             <lb/>
             <l>ſta&#x364;rke deine glaubenshand/</l>
             <lb/>
             <l rendition="#et">veſter mich zu faſſen.</l>
             <lb/>
-            <l>Seel Hin/ o welt/ und was in dir/</l>
+            <note place="left" type="speaker">Seel</note> <l>Hin/ o welt/ und was in dir/</l>
             <lb/>
             <l>Jeſus wil verbleiben mir/</l>
             <lb/>
@@ -7029,7 +7067,7 @@
             <l>weil ich<anchor xml:id="a33"/><unclear> </unclear><note type="annotation" targetEnd="a33"><p>Unklares Zeichen (vgl. S. 181)</p></note>; was die va&#x364;tter nicht; ſihe mit dem Augenliecht.</l>
             <lb/>
             <div n="2" xml:id="n10">
-            <head>Simeons Lobgeſang.</head>
+            <head rendition="#b #c">Simeons Lobgeſang.</head>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -7078,11 +7116,15 @@
             
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Herꝛ nun laſſeſt in dem friden/ deinen diener fahren hin:</l>
             <lb/>
             <l>dan ich ho&#x364;chſt begirꝛig bin/ von der welt zuſeyn geſchiden:</l>
             <lb/>
             <l>weil ich; was die va&#x364;tter nicht; ſihe mit dem Augenliecht.</l>
+            </lg>
+            <lb/>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             <lg n="3">
             <l><num>3.</num> Was ich auff den armen habe</l>
@@ -7175,7 +7217,7 @@
             <fw place="top" type="header">Weihnacht-</fw>
             <lb/>
             <div n="2" xml:id="n11">
-            <head>Marien Lobgeſang/</head>
+            <head rendition="#b #c">Marien Lobgeſang/</head>
             <lb/>
             <p rendition="#c">in der weiſe:
             <lb/>
@@ -7274,6 +7316,8 @@
             </lg>
             <lb/>
             </div>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             
             <fw place="bottom" type="pageNum">G ij</fw>
             <lb/>
@@ -7344,7 +7388,7 @@
             <fw place="top" type="header">Neüjahresgesang.</fw>
             <lb/>
             <div n="2" xml:id="n12">
-            <head>Neüjahresgeſang/</head>
+            <head rendition="#b #c">Neüjahresgeſang/</head>
             <lb/>
             <p rendition="#c">in der weiſe:
             <lb/>
@@ -7618,6 +7662,8 @@
             </lg>
             </div>
             <lb/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <fw place="bottom" type="pageNum">G v</fw>
             <lb/>
             <pb facs="4049289" n="90"/>
@@ -7771,7 +7817,7 @@
             <fw place="top" type="header">Vom leiden Chriſti.</fw>
             <lb/>
             <div n="2" xml:id="n13">
-            <head>Vber unſers Herꝛen und Heilands
+            <head rendition="#b #c">Vber unſers Herꝛen und Heilands
             <lb/>
             Jeſus Chriſtus Leiden/ Tod/
             <lb/>
@@ -9586,7 +9632,7 @@
             <fw place="top" type="header">Oſtergeſang.</fw>
             <lb/>
             <div n="2" xml:id="n14">
-            <head>Sieggeſang/
+            <head rendition="#b #c">Sieggeſang/
             <lb/>
             über unſers Herꝛen und Heilands Jesus
             <lb/>
@@ -9784,7 +9830,7 @@
             <fw place="top" type="header">Himmelfahrtsgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n15">
-            <head>Triumphgeſang/
+            <head rendition="#b #c">Triumphgeſang/
             <lb/>
             über unſers Herꝛen und Heilands
             <lb/>
@@ -9958,7 +10004,7 @@
             <lb/>
             
             <div n="2" xml:id="n16">
-            <head>Ein ander Himmelfahrtsgeſang.</head>
+            <head rendition="#b #c">Ein ander Himmelfahrtsgeſang.</head>
             <lb/>
             <p rendition="#c">Jn der weis des 18. und des 144. Pſalmens.</p>
             <lb/>
@@ -10115,7 +10161,7 @@
             <fw place="top" type="header">Pfingſtgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n17">
-            <head>Bittgeſang/ zu dem H. Geiſt.</head>
+            <head rendition="#b #c">Bittgeſang/ zu dem H. Geiſt.</head>
             <lb/>
             <p rendition="#c">Jn der weiſe des 38. Pſalmens.
             <lb/>
@@ -10333,7 +10379,7 @@
             <fw place="top" type="header">Vom H. Abendmahl.</fw>
             <lb/>
             <div n="2" xml:id="n18">
-            <head>Anda&#x364;chtiges Vorbereitungsgeſang
+            <head rendition="#b #c">Anda&#x364;chtiges Vorbereitungsgeſang
             <lb/>
             zu dem H. Nachtmahl.</head>
             <lb/>
@@ -10528,7 +10574,7 @@
             <fw place="top" type="header">Vom H. Abendmahl.</fw>
             <lb/>
             <div n="2" xml:id="n19">
-            <head>Danckgeſang/ nach genoßnem heili-
+            <head rendition="#b #c">Danckgeſang/ nach genoßnem heili-
             <lb break="no"/>
             gem Abendmahl.</head>
             <lb/>
@@ -10724,7 +10770,7 @@
             <fw place="top" type="header">Catechiſmusgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n20">
-            <head><hi rendition="#aq">U</hi>ber den verkürtzten <hi rendition="#aq">U</hi>nderꝛicht
+            <head rendition="#b #c"><hi rendition="#aq">U</hi>ber den verkürtzten <hi rendition="#aq">U</hi>nderꝛicht
             <lb/>
             warer Chriſtenlicher
             <lb/>
@@ -11510,7 +11556,7 @@
             <fw place="top" type="header">Beicht- und</fw>
             <lb/>
             <div n="2" xml:id="n21">
-            <head>Beicht- und Bittgeſang eines buß-
+            <head rendition="#b #c">Beicht- und Bittgeſang eines buß-
             <lb break="no"/>
             und gnadbegirꝛigen.</head>
             <lb/>
@@ -11823,7 +11869,7 @@
             <fw place="top" type="header">Lobgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n22">
-            <head>Lobgeſang/
+            <head rendition="#b #c">Lobgeſang/
             <lb/>
             für gna&#x364;dige erho&#x364;rung/ und verzeihung
             <lb/>
@@ -12176,7 +12222,7 @@
             <fw place="top" type="header">Morgengeſang.</fw>
             <lb/>
             <div n="2" xml:id="n23">
-            <head>Morgengeſang.</head>
+            <head rendition="#b #c">Morgengeſang.</head>
             <lb/>
             <p rendition="#c">Jn ſeiner eignen vorhergeſetz-
             <lb break="no"/>
@@ -12284,7 +12330,7 @@
             <milestone unit="section" rendition="#hr"/>
             <lb/>
             <div n="2" xml:id="n24">
-            <head>Geiſtlicher Weker.</head>
+            <head rendition="#b #c">Geiſtlicher Weker.</head>
             <lb/>
             <lg type="poem">
             <l rendition="#et">Wacht auf vom ſündenſchlaf! Wacht auf
@@ -12304,6 +12350,8 @@
             wacht!</l>
             </lg>
             </div>
+            <lb/>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             <fw place="bottom" type="pageNum">M v</fw>
             <fw place="bottom" type="catch" rendition="#aq"><num>XXV.</num></fw>
@@ -12405,7 +12453,7 @@
             <fw place="top" type="header">Abendgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n25">
-            <head>Abendgeſang.</head>
+            <head rendition="#b #c">Abendgeſang.</head>
             <lb/>
             <p rendition="#c">Jn ſeiner eignen vorhergeſetzten
             <lb/>
@@ -12594,7 +12642,7 @@
             <fw place="top" type="header">Tiſchgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n26">
-            <head>Bittgeſang vor dem
+            <head rendition="#b #c">Bittgeſang vor dem
             <lb/>
             eſſen.</head>
             <lb/>
@@ -12801,7 +12849,7 @@
             <fw place="top" type="header">Tiſchgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n27">
-            <head>Lobgeſang nach dem
+            <head rendition="#b #c">Lobgeſang nach dem
             <lb/>
             eſſen.</head>
             <lb/>
@@ -13165,7 +13213,7 @@
             <fw place="top" type="header">Menſchlichen lebens</fw>
             <lb/>
             <div n="2" xml:id="n28">
-            <head>Geſang
+            <head rendition="#b #c">Geſang
             <lb/>
             von des menſchlichen lebens nich-
             <lb break="no"/>
@@ -13268,6 +13316,8 @@
             </lg>
             </div>
             <lb/>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <fw place="bottom" type="catch"><hi rendition="#aq">U</hi>nd</fw>
             <lb/>
             <pb facs="4049389" n="190"/>
@@ -13329,7 +13379,7 @@
             <fw place="top" type="header">Troſtgeſang im Kreutz.</fw>
             <lb/>
             <div n="2" xml:id="n29">
-            <head>Troſtgeſang/ wider alles kreutz Chriſt-
+            <head rendition="#b #c">Troſtgeſang/ wider alles kreutz Chriſt-
             <lb break="no"/>
             gla&#x364;ubiger Seelen.</head>
             <lb/>
@@ -13591,7 +13641,7 @@
             <lb/>
             
             <div n="2" xml:id="n31">
-            <head>Fru&#x364;hlingsgeſang.</head>
+            <head rendition="#b">Fru&#x364;hlingsgeſang.</head>
             <lb/>
             <p>Jn der weis.
             <lb/>
@@ -13923,7 +13973,7 @@
             <fw place="top" type="header">Das ander</fw>
             <lb/>
             <div n="2" xml:id="n33">
-            <head>Das ander Sommergeſang.</head>
+            <head rendition="#b #c">Das ander Sommergeſang.</head>
             <lb/>
             <p rendition="#c">Jn der weis.
             <lb/>
@@ -14229,7 +14279,7 @@
             <lb/>
             
             <div n="2" xml:id="n35">
-            <head>Das ander Herbſtgeſang.</head>
+            <head rendition="#b #c">Das ander Herbſtgeſang.</head>
             <lb/>
             <p rendition="#c">Jn der weis: Bey mir mein hertz/ ꝛc.</p>
             <lb/>
@@ -14572,7 +14622,7 @@
             <lb/>
             
             <div n="2" xml:id="n37">
-            <head>Das ander Wintergeſang.</head>
+            <head rendition="#b #c">Das ander Wintergeſang.</head>
             <lb/>
             <p rendition="#c">Jn der weis:
             <lb/>
@@ -14785,7 +14835,7 @@
             <fw place="top" type="header">Badergeſang.</fw>
             <lb/>
             <div n="2" xml:id="n38">
-            <head>Ein alt- und geiſtliches/ anietz um etwas
+            <head rendition="#b #c">Ein alt- und geiſtliches/ anietz um etwas
             <lb/>
             verendertes Badergeſang.</head>
             <lb/>
@@ -14992,7 +15042,7 @@
             <fw place="top" type="header">Vermahnungsgeſang.</fw>
             <lb/>
             <div n="2" xml:id="n39">
-            <head>Vermahnungsgeſang
+            <head rendition="#b #c">Vermahnungsgeſang
             <lb/>
             zu rechtma&#x364;ſſigem und hertzhafftem
             <lb/>
@@ -15177,7 +15227,7 @@
             <fw place="top" type="header">Traurgeſang</fw>
             <lb/>
             <div n="2" xml:id="n40">
-            <head>Traurgeſang über verlornen
+            <head rendition="#b #c">Traurgeſang über verlornen
             <lb/>
             Friden.</head>
             <lb/>
@@ -15445,7 +15495,7 @@
             <lb/>
             
             <div n="2" xml:id="n42">
-            <head>Geſang
+            <head rendition="#b #c">Geſang
             <lb/>
             von lieb- und lobwürdiger
             <lb/>
@@ -15493,9 +15543,9 @@
             </lg>
             <lb/>
             
+            <lg n="3">
             <head rendition="#c"><num>3<anchor xml:id="a79"/><unclear>.</unclear><note type="annotation" targetEnd="a79"><p>Unclean print</p></note><note type="annotation" targetEnd="a79"><p>Ist das ein Druckfehler? In den Vergleichsexemplaren Wien und Zürich steht eindeutig ein Punkt.</p></note></num></head>
             <lb/>
-            <lg n="3">
             <l>Die Einigkeit macht groß geringe werke;</l>
             <lb/>
             <l><hi rendition="#aq">U</hi>neinigkeit verderbet krafft und ſterke:</l>
@@ -15759,7 +15809,7 @@
             <lb/>
             
             <div n="2" xml:id="n44">
-            <head>Geheimnußreiches Geſang/
+            <head rendition="#b #c">Geheimnußreiches Geſang/
             <lb/>
             von der geiſtlichen Ehe.</head>
             <lb/>
@@ -16213,7 +16263,7 @@
             <fw place="top" type="header">Das dritte Hochzeitgeſang/</fw>
             <lb/>
             <div n="2" xml:id="n45">
-            <head>Von der ſtifftung/ und geheimnuß
+            <head rendition="#b #c">Von der ſtifftung/ und geheimnuß
             <lb/>
             des heiligen Eheſtands.</head>
             <lb/>
@@ -16543,7 +16593,7 @@
             <fw place="top" type="header">Das vierte Hochzeitgeſang/</fw>
             <lb/>
             <div n="2" xml:id="n46">
-            <head>Hochzeitgeſang/
+            <head rendition="#b #c">Hochzeitgeſang/
             <lb/>
             auß dem 128. Pſalmen Davids genommen/</head>
             <lb/>
@@ -16721,7 +16771,7 @@
             <fw place="top" type="header">Das fünffte Hochzeitgeſang/</fw>
             <lb/>
             <div n="2" xml:id="n47">
-            <head>Geſang
+            <head rendition="#b #c">Geſang
             <lb/>
             von einem tugendliebenden Ehweib:
             <lb/>
@@ -16903,7 +16953,7 @@
             <fw place="top" type="header">Das ſechßte Hochzeitgeſang/</fw>
             <lb/>
             <div n="2" xml:id="n48">
-            <head>Hochzeitlicher Segen-
+            <head rendition="#b #c">Hochzeitlicher Segen-
             <lb break="no"/>
             wunſch.</head>
             <lb/>
@@ -17117,7 +17167,7 @@
             <fw place="top" type="header">Das ſibende</fw>
             <lb/>
             <div n="2" xml:id="n49">
-            <head>Hochzeitgeſang.
+            <head rendition="#b #c">Hochzeitgeſang.
             <lb/>
             Auf eines/ deme ſeine erſte Jungfrau Hochzeite-
             <lb break="no"/>
@@ -17306,7 +17356,7 @@
             <fw place="top" type="header">Hochzeitlicher Fru&#x364;hlingswunſch.</fw>
             <lb/>
             <div n="2" xml:id="n50">
-            <head>Hochzeitlicher Fru&#x364;hlingswunſch.</head>
+            <head rendition="#b #c">Hochzeitlicher Fru&#x364;hlingswunſch.</head>
             <lb/>
             <p rendition="#c">Jn der weiſe:
             <lb/>
@@ -17471,7 +17521,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n51">
-            <head>Hochzeitliches
+            <head rendition="#b #c">Hochzeitliches
             <lb/>
             Roſen und- Fru&#x364;hlings-
             <lb break="no"/>
@@ -17499,9 +17549,9 @@
             </lg>
             <lb/>
             
+            <lg n="2">
             <head rendition="#c"><num><anchor xml:id="a101"/>2<note type="annotation" targetEnd="a101"><p>Bei der Nummerierung auf der Folgeseite wurde jeweils ein Punkt gesetzt.</p></note></num></head>
             <lb/>
-            <lg n="2">
             <l>Nach den zeiten ſie ſich richten/</l>
             <lb/>
             <l rendition="#et">und/ nach freyem geiſtes trieb:</l>
@@ -17721,7 +17771,7 @@
             <fw place="top" type="header">Hochzeitliches Ehrengeticht.</fw>
             <lb/>
             <div n="2" xml:id="n52">
-            <head>Ehren-Geticht/
+            <head rendition="#b #c">Ehren-Geticht/
             <lb/>
             Auf H. J. J. V. Pf. Z Gr. M.
             <lb/>
@@ -17931,7 +17981,7 @@
             <fw place="top" type="header">Hochzeitliches</fw>
             <lb/>
             <div n="2" xml:id="n53">
-            <head>Wolmeinendes Ehrengeticht/
+            <head rendition="#b #c">Wolmeinendes Ehrengeticht/
             <lb/>
             Auf
             <lb/>
@@ -18019,7 +18069,8 @@
             <lb/>
             <l rendition="#et">hochgeehrter Bra&#x364;utigam/</l>
             <lb/>
-            <l rendition="#et">wie außweiſet euer Nam:</l>
+            <l rendition="#et">wie außweiſet euer Nam:
+               <note place="right" type="marginalia"><anchor xml:id="a103"/>Felix.<note type="annotation" targetEnd="a103"><p>Im Vergleichsexemplar Zürich besser erkennbar.</p></note></note></l>
             <lb/>
             <l>well euch euers leids ergetzet</l>
             <lb/>
@@ -18048,9 +18099,6 @@
             </div>
             <lb/>
             <fw place="bottom" type="catch">Der</fw>
-            <lb/>
-            
-            <anchor xml:id="a103"/>Felix.<note type="annotation" targetEnd="a103"><p>Im Vergleichsexemplar Zürich besser erkennbar.</p></note>
             <lb/>
             <pb facs="4049487" n="288"/>
             <fw place="top" type="pageNum">288</fw>
@@ -18119,7 +18167,7 @@
             <fw place="top" type="header">Das achte</fw>
             <lb/>
             <div n="2" xml:id="n54">
-            <head>Hochzeitliches Ehren- und Wunſch-
+            <head rendition="#b #c">Hochzeitliches Ehren- und Wunſch-
             <lb break="no"/>
             geſang/
             <lb/>
@@ -18226,7 +18274,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n55">
-            <head>Allgemeiner Hochzeitlicher Segen-
+            <head rendition="#b #c">Allgemeiner Hochzeitlicher Segen-
             <lb break="no"/>
             wunſch:</head>
             <lb/>
@@ -18302,7 +18350,7 @@
             <fw place="top" type="header">Das neunte</fw>
             <lb/>
             <div n="2" xml:id="n56">
-            <head>Poetiſche Nachtracht/
+            <head rendition="#b #c">Poetiſche Nachtracht/
             <lb/>
             für
             <lb/>
@@ -18503,7 +18551,7 @@
             <fw place="top" type="header">Das zehende Hochzeitgeſang/</fw>
             <lb/>
             <div n="2" xml:id="n57">
-            <head>Hochzeitgeſang/ von dem ietzigen
+            <head rendition="#b #c">Hochzeitgeſang/ von dem ietzigen
             <lb/>
             elenden zuſtand.</head>
             <lb/>
@@ -19170,7 +19218,7 @@
             <fw place="top" type="header">Hochzeitlicher Segen-wunſch.</fw>
             <lb/>
             <div n="2" xml:id="n61">
-            <head>Hochzeitlicher Segen-wunſch/
+            <head rendition="#b #c">Hochzeitlicher Segen-wunſch/
             <lb/>
             Auß
             <lb/>
@@ -19287,7 +19335,7 @@
             <lb/>
             
             <div n="2" xml:id="n62">
-            <head>Hochzeitliches Fru&#x364;hlings-Geſang.</head>
+            <head rendition="#b #c">Hochzeitliches Fru&#x364;hlings-Geſang.</head>
             <lb/>
             <p rendition="#c">Jn folgenden Melodeyen.
             <lb/>
@@ -19555,7 +19603,7 @@
             </lg>
             <lb/>
             <lg n="14">
-            <l><num>14</num> Dann: <hi rendition="#b">Selig iſt gepreiſet</hi> Pſal.128.</l>
+            <l><num>14</num> Dann: <hi rendition="#b">Selig iſt gepreiſet</hi> <note place="right" type="bibl" rendition="#smaller">Pſal.128.</note></l>
             <lb/>
             <l rendition="#larger"><hi rendition="#b">Der Gott vor augen helt/</hi></l>
             <lb/>
@@ -19643,7 +19691,7 @@
             <lb/>
             
             <div n="2" xml:id="n63">
-            <head>Pindariſche Ode.
+            <head rendition="#b #c">Pindariſche Ode.
             <lb/>
             Auß dem 31. C<anchor xml:id="a115"/>a<note type="annotation" targetEnd="a115"><p>Zwischen "a" und "p" verschmierte Tinte</p></note>p. der Spr<anchor xml:id="a116"/>ü<note type="annotation" targetEnd="a116"><p>Auch in den Vergleichsexemplaren Wien und Zürich ist das "ü" nicht sauber gedruckt.</p></note>chwo&#x364;rter Salomons.</head>
             <lb/>
@@ -19736,7 +19784,7 @@
             </div>
             
             <div n="2" xml:id="n64.1">
-            <head>Saliſches Fru&#x364;hlings-<hi rendition="#aq">SONNET</hi>, oder
+            <head rendition="#b #c">Saliſches Fru&#x364;hlings-<hi rendition="#aq">SONNET</hi>, oder
             <lb/>
             Kling-Geticht:
             <lb/>
@@ -19814,7 +19862,7 @@
             <lb/>
             
             <div n="2" xml:id="n65.1">
-            <head>Hochzeitliche
+            <head rendition="#b #c">Hochzeitliche
             <lb/>
             Aufgaben/ und Beantwortungen/
             <lb/>
@@ -19968,7 +20016,7 @@
             <lb/>
             
             <div n="2" xml:id="n66">
-            <head>Chriſtenliches Haußweſen:
+            <head rendition="#b #c">Chriſtenliches Haußweſen:
             <lb/>
             Auf eine Ehrenhochzeit; auß heiliger Schrifft
             <lb/>
@@ -20262,7 +20310,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n67">
-            <head>Haußfrid/
+            <head rendition="#b #c">Haußfrid/
             <lb/>
             alß eine hochzeitliche Ehrengab
             <lb/>
@@ -20401,7 +20449,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n68">
-            <head>Hochzeitliches Klinggeticht.</head>
+            <head rendition="#b #c">Hochzeitliches Klinggeticht.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">D</hi>Em menſchen iſt zwar gut/ daß er kein weib beru&#x364;hre/</l>
@@ -20432,7 +20480,7 @@
             <lb/>
             <l>O daß von ihnen man mo&#x364;g ſprechen ie und ie:</l>
             <lb/>
-            <l><hi rendition="#b">Jn Gott </hi>er gehet <hi rendition="#b">her</hi>/ und ſie iſt <hi rendition="#b">Huldenreiche!</hi> Anagr.</l>
+            <l><hi rendition="#b">Jn Gott </hi>er gehet <hi rendition="#b">her</hi>/ und ſie iſt <hi rendition="#b">Huldenreiche!</hi> <note place="right" type="marginalia" rendition="#smaller">Anagr.</note></l>
             </lg>
             </div>
             <lb/>
@@ -20444,7 +20492,7 @@
             <fw place="top" type="header">Lob- und Liebesgeticht.</fw>
             <lb/>
             <div n="2" xml:id="n69">
-            <head>Liebesgeticht/
+            <head rendition="#b #c">Liebesgeticht/
             <lb/>
             auf eines ſeiner freunden Ehren-
             <lb break="no"/>
@@ -20755,7 +20803,7 @@
             <fw place="top" type="header">Hochzeitliche Aufgabe</fw>
             <lb/>
             <div n="2" xml:id="n70">
-            <head>Hochzeitliche Aufgabe/ Beantwor-
+            <head rendition="#b #c">Hochzeitliche Aufgabe/ Beantwor-
             <lb break="no"/>
             tung/ <hi rendition="#aq">U</hi>rteihl/ und wolgemeinter Beſchluß-
             <lb break="no"/>
@@ -20949,7 +20997,7 @@
             <fw place="top" type="header">Hochzeitliches Ehren-Lied/</fw>
             <lb/>
             <div n="2" xml:id="n71">
-            <head>Ehren-Lied/
+            <head rendition="#b #c">Ehren-Lied/
             <lb/>
             Auf
             <lb/>
@@ -21086,7 +21134,7 @@
             <fw place="top" type="header">Vermiſchtes Hochzeitgeticht.</fw>
             <lb/>
             <div n="2" xml:id="n72">
-            <head>Vermiſchtes Hochzeitgeticht/
+            <head rendition="#b #c">Vermiſchtes Hochzeitgeticht/
             <lb/>
             von ſteigenden und fallenden
             <lb/>
@@ -21265,7 +21313,7 @@
             <fw place="top" type="header">Vermiſchtes Hochzeitgeticht.</fw>
             <lb/>
             <div n="2" xml:id="n73">
-            <head>Hochzeit-Geſang.</head>
+            <head rendition="#b #c">Hochzeit-Geſang.</head>
             <lb/>
             <p rendition="#c">Jn der Melodey des 134. Pſalmens.</p>
             <lb/>
@@ -21426,7 +21474,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n74">
-            <head>An Herꝛen Hochzeitern
+            <head rendition="#b #c">An Herꝛen Hochzeitern
             <lb/>
             der jungen Geſellen
             <lb/>
@@ -21477,7 +21525,7 @@
             <fw place="top" type="header">Vermiſchtes Hochzeitgeticht.</fw>
             <lb/>
             <div n="2" xml:id="n75">
-            <head>Ehren-Geticht/
+            <head rendition="#b #c">Ehren-Geticht/
             <lb/>
             Auf
             <lb/>
@@ -21543,7 +21591,7 @@
             <fw place="top" type="header">Vermiſchtes Hochzeitgeticht.</fw>
             <lb/>
             <div n="2" xml:id="n76">
-            <head>Geſpra&#x364;ch
+            <head rendition="#b #c">Geſpra&#x364;ch
             <lb/>
             Eines Manns und Weibs:
             <lb/>
@@ -21783,7 +21831,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n77">
-            <head>Auf H. H. H. H. und J. E. W.
+            <head rendition="#b #c">Auf H. H. H. H. und J. E. W.
             <lb/>
             Ehrenhochzeit/ den 15. Chriſtm.
             <lb/>
@@ -21815,7 +21863,7 @@
             <fw place="top" type="header">Regenten Kleinodt.</fw>
             <lb/>
             <div n="2" xml:id="n78">
-            <head>Regenten Kleinodt/
+            <head rendition="#b #c">Regenten Kleinodt/
             <lb/>
             oder
             <lb/>
@@ -22190,7 +22238,7 @@
             </lg>
             <lb/>
             </lg>
-            <closer>Getrukt in dem Fridenwünſchenden
+            <closer rendition="#c">Getrukt in dem Fridenwünſchenden
             <lb/>
             Heiljahr:
             <lb/>
@@ -22199,8 +22247,10 @@
             re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.</closer>
             <lb/>
             </div>
+            <milestone unit="section" rendition="#hr"/>
+            <lb/>
             <div n="2" xml:id="n79">
-            <head>Wolwünſchendes Viergedicht/
+            <head rendition="#b #c">Wolwünſchendes Viergedicht/
             <lb/>
             Auf
             <lb/>
@@ -26416,10 +26466,11 @@
             <lb/>
             <fw place="bottom" type="pageNum">Kk iij</fw>
             <lb/>
-            <pb facs="4049701" n="503"/>
+            <pb facs="4049701" n="502"/>
             <pb facs="4049702" n="503"/>
             <fw place="top" type="pageNum">503</fw>
             <lb/>
+            <div n="1">
             <head rendition="#b #c">Allerhand erbauliche u&#x364;ber-
             <lb break="no"/>
             ſchrifften: Geburt- und Sterbgetichte:
@@ -26430,14 +26481,13 @@
             <lb/>
             <fw place="bottom" type="pageNum">Kk iiij</fw>
             <lb/>
-            <pb facs="4049703" n="505"/>
+            <pb facs="4049703" n="504"/>
             <pb facs="4049704" n="505"/>
             <fw place="top" type="pageNum">505</fw>
             <fw place="top" type="header">Allerhand <choice><sic>Uberſchriffen</sic><corr><hi rendition="#aq">U</hi>berſchrifften</corr></choice>.</fw>
             <lb/>
-            <div n="1">
             <div n="2" xml:id="n123">
-            <head><hi rendition="#aq">U</hi>ber unſers Herꝛen Jeſus Chriſtus Leiden/ Tod
+            <head rendition="#b #c"><hi rendition="#aq">U</hi>ber unſers Herꝛen Jeſus Chriſtus Leiden/ Tod
             <lb/>
             und Auferſtehung.</head>
             <lb/>               
@@ -26704,7 +26754,7 @@
             <milestone unit="section" rendition="#hr"/>
             <lb/>
             <div n="2" xml:id="n124">
-            <head><num>25.</num> Werke der barmhertzigkeit/ und derſel-
+            <head rendition="#b #c"><num>25.</num> Werke der barmhertzigkeit/ und derſel-
             <lb break="no"/>
             ben gnadenbelohnung/ Jeſ. 58.v.7.</head>
             <lb/>
@@ -26780,7 +26830,7 @@
             <milestone unit="section" rendition="#hr"/>
             <lb/>
             <div n="2" xml:id="n125">
-            <head><num>26.</num> Auf einen maulchriſten.</head>
+            <head rendition="#b #c"><num>26.</num> Auf einen maulchriſten.</head>
             <lb/>
             <lg type="poem">
             <l>Ein tugendhaffter Heid; wiewol er glaubloß iſt;</l>
@@ -26790,7 +26840,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n126">
-            <head><num>27.</num> Ein warer Chriſt.</head>
+            <head rendition="#b #c"><num>27.</num> Ein warer Chriſt.</head>
             <lb/>
             <lg type="poem">
             <l>Ein Chriſt im werk erſcheint des waren glaubens ſrucht;</l>
@@ -26800,7 +26850,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n127">
-            <head><num>28.</num> <hi rendition="#aq">U</hi>ber den Kupfer-Titul der u&#x364;bung der Gott-
+            <head rendition="#b #c"><num>28.</num> <hi rendition="#aq">U</hi>ber den Kupfer-Titul der u&#x364;bung der Gott-
             <lb break="no"/>
             ſeligkeit.</head>
             <lb/>
@@ -26816,7 +26866,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n128">
-            <head><num>29.</num> Des gla&#x364;ubigen einige zu-
+            <head rendition="#b #c"><num>29.</num> Des gla&#x364;ubigen einige zu-
             <lb break="no"/>
             flucht.</head>
             <lb/>
@@ -26834,7 +26884,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n129">
-            <head><num>30.</num> <hi rendition="#aq">U</hi>ber die u&#x364;bung der Gottſeligkeit.</head>
+            <head rendition="#b #c"><num>30.</num> <hi rendition="#aq">U</hi>ber die u&#x364;bung der Gottſeligkeit.</head>
             <lb/>
             <lg type="poem">
             <l>Wer/ in der Gottesforcht/ nach reiner lehr ſich u&#x364;bet/</l>
@@ -26848,7 +26898,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n130">
-            <head><num>31.</num> <hi rendition="#aq">U</hi>ber die Sonnenblum.</head>
+            <head rendition="#b #c"><num>31.</num> <hi rendition="#aq">U</hi>ber die Sonnenblum.</head>
             <lb/>
             <lg type="poem">
             <l>Wie/ nach der Sonnen/ ſich die Sonnenblumen richten/</l>
@@ -26862,7 +26912,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n131">
-            <head><num>32. </num><hi rendition="#aq">U</hi>ber die Abbildung der ſiben Tugenden/ und
+            <head rendition="#b #c"><num>32. </num><hi rendition="#aq">U</hi>ber die Abbildung der ſiben Tugenden/ und
             <lb/>
             ſiben laſteren/ beyſamen.</head>
             <lb/>
@@ -26898,7 +26948,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n133">
-            <head><num>35.</num> Bedeutung der Cometen insgemein: ſamt
+            <head rendition="#b #c"><num>35.</num> Bedeutung der Cometen insgemein: ſamt
             <lb/>
             beygefu&#x364;gtem Troſt fu&#x364;r die frommen: Bey anlaß des
             <lb/>
@@ -26932,7 +26982,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n134">
-            <head><num>36.</num> Beſchreibung der 12. Monaten/ nach ihren
+            <head rendition="#b #c"><num>36.</num> Beſchreibung der 12. Monaten/ nach ihren
             <lb/>
             Haubtwerken.</head>
             <lb/>               
@@ -27078,7 +27128,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n135">
-            <head><num>37.</num> <hi rendition="#aq"><hi rendition="#g">LUCRETIA.</hi></hi></head>
+            <head rendition="#b #c"><num>37.</num> <hi rendition="#aq"><hi rendition="#g">LUCRETIA.</hi></hi></head>
             <lb/>
             <lg type="poem">
             <l>Die künſche Heidin ihr das Leben kürtzet ab/</l>
@@ -27088,7 +27138,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n136">
-            <head><num>38.</num> <hi rendition="#aq"><hi rendition="#g">LUCRETIA CHRISTIANA.</hi></hi></head>
+            <head rendition="#b #c"><num>38.</num> <hi rendition="#aq"><hi rendition="#g">LUCRETIA CHRISTIANA.</hi></hi></head>
             <lb/>
             <lg type="poem">
             <l>Die künſche Chriſtin ihr das leben nimmet nicht:</l>
@@ -27098,7 +27148,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n137">
-            <head><num>39.</num> Luc. 7.</head>
+            <head rendition="#b #c"><num>39.</num> Luc. 7.</head>
             <lb/>
             <lg type="poem">
             <l>Die groſſe Sünderin bena&#x364;tzt mit heiſſen tra&#x364;hnen</l>
@@ -27116,7 +27166,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n138">
-            <head><num>40.</num> Mute<anchor xml:id="a157"/>r<note type="annotation" targetEnd="a157"><p>Der "r" erscheint hochgestellt.</p></note>- und kinderliebe.</head>
+            <head rendition="#b #c"><num>40.</num> Mute<anchor xml:id="a157"/>r<note type="annotation" targetEnd="a157"><p>Der "r" erscheint hochgestellt.</p></note>- und kinderliebe.</head>
             <lb/>
             <lg type="poem">
             <l>Die kindermuter liebt/ und wird zugleich geliebet:</l>
@@ -27126,7 +27176,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n139">
-            <head><num>41.</num> Krieg- und fridensfrüchte.</head>
+            <head rendition="#b #c"><num>41.</num> Krieg- und fridensfrüchte.</head>
             <lb/>
             <lg type="poem">
             <l>Der krieg die künſt' entſchla&#x364;fft; die la&#x364;nder er verheeret:</l>
@@ -27136,7 +27186,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n140">
-            <head><num>42.</num> Wir lehrnen alle tag.</head>
+            <head rendition="#b #c"><num>42.</num> Wir lehrnen alle tag.</head>
             <lb/>
             <lg type="poem">
             <l>Wir lehrnen alle tag/ und lehrnen doch nicht auß/</l>
@@ -27146,7 +27196,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n141">
-            <head><num>43.</num> An den Tadelgern.</head>
+            <head rendition="#b #c"><num>43.</num> An den Tadelgern.</head>
             <lb/>
             <lg type="poem">
             <l>Was einer nicht verſteht das laß er ungetadelt/</l>
@@ -27156,7 +27206,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n142">
-            <head><num>44.</num> Auf einen verleü<anchor xml:id="a158"/>md<note type="annotation" targetEnd="a158"><p>Im Vergleichsexemplar Wien ist ein Abstand zwischen "m" und "d" weniger gut erkennbar.</p></note>er.</head>
+            <head rendition="#b #c"><num>44.</num> Auf einen verleü<anchor xml:id="a158"/>md<note type="annotation" targetEnd="a158"><p>Im Vergleichsexemplar Wien ist ein Abstand zwischen "m" und "d" weniger gut erkennbar.</p></note>er.</head>
             <lb/>
             <lg type="poem">
             <l>Wer eines an<choice><sic>b</sic><corr>d</corr></choice>ern glimpf nur ſuchet abzuſchneiden/</l>
@@ -27166,7 +27216,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n143">
-            <head><num>45.</num> Auf falſche freunde.</head>
+            <head rendition="#b #c"><num>45.</num> Auf falſche freunde.</head>
             <lb/>
             <lg type="poem">
             <l>Wer gute worte gibt/ un<supplied>d</supplied> nicht iſt freund von hertzen/</l>
@@ -27214,7 +27264,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n145">
-            <head><num>50.</num> Wachtbarkeit.</head>
+            <head rendition="#b #c"><num>50.</num> Wachtbarkeit.</head>
             <lb/>
             <lg type="poem">
             <l>Die wachtbarkeit ein mittel iſt</l>
@@ -27224,7 +27274,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n146">
-            <head><num>51.</num> Auf gewüſſensloſe pfru&#x364;ndenla&#x364;ufflinge.</head>
+            <head rendition="#b #c"><num>51.</num> Auf gewüſſensloſe pfru&#x364;ndenla&#x364;ufflinge.</head>
             <lb/>
             <lg type="poem">
             <l>Lauff la&#x364;uffling/ lauff: es laufft der Satan vor dir hin/</l>
@@ -27284,7 +27334,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n148">
-            <head><num>55.</num> Auß dem Ovid.</head>
+            <head rendition="#b #c"><num>55.</num> Auß dem Ovid.</head>
             <lb/>
             <lg type="poem">
             <l rendition="#et">Der Phaeton begert die Sonn zu fu&#x364;hren auf/</l>
@@ -27343,7 +27393,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n150">
-            <head><num>58.</num> Chriſtenkampf.</head>
+            <head rendition="#b #c"><num>58.</num> Chriſtenkampf.</head>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -27437,7 +27487,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n152">
-            <head><num>60.</num> Klinggetichte/
+            <head rendition="#b #c"><num>60.</num> Klinggetichte/
             <lb/>
             <hi rendition="#aq">U</hi>ber Herꝛen Felix Weiſſen/ ꝛc. hundert Chriſt-
             <lb break="no"/>
@@ -27482,7 +27532,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n153">
-            <head><num>61.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johannes Wirtzen/ ꝛc. Lehr- und
+            <head rendition="#b #c"><num>61.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johannes Wirtzen/ ꝛc. Lehr- und
             <lb/>
             troſtreiche Predigen vom verlohrnen
             <lb/>
@@ -27506,7 +27556,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n154">
-            <head><num>62.</num> <hi rendition="#aq">U</hi>ber Herꝛn Jacob Vollenweiders/ ꝛc. ſchrifft-
+            <head rendition="#b #c"><num>62.</num> <hi rendition="#aq">U</hi>ber Herꝛn Jacob Vollenweiders/ ꝛc. ſchrifft-
             <lb break="no"/>
             ma&#x364;ſſige widerlegung des Gotthardiſchen
             <lb/>
@@ -27524,7 +27574,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n155">
-            <head><num>63.</num> <hi rendition="#aq">U</hi>ber die
+            <head rendition="#b #c"><num>63.</num> <hi rendition="#aq">U</hi>ber die
             <lb/>
             von Herꝛen Caſpar Weiſſen/ ꝛc. verteütſchte
             <lb/>
@@ -27596,7 +27646,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n156">
-            <head><num>64.</num> <hi rendition="#aq">U</hi>ber Herꝛn Johan&#x303; Ludwig Ammans/ geweß-
+            <head rendition="#b #c"><num>64.</num> <hi rendition="#aq">U</hi>ber Herꝛn Johan&#x303; Ludwig Ammans/ geweß-
             <lb break="no"/>
             ten Pfarꝛers und Decans der Evangeliſchen Kirchen
             <lb/>
@@ -27616,7 +27666,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n157">
-            <head><num>65.</num> <hi rendition="#aq">U</hi>ber Herꝛen Ku&#x366;nraht Burkharten/ Diacons
+            <head rendition="#b #c"><num>65.</num> <hi rendition="#aq">U</hi>ber Herꝛen Ku&#x366;nraht Burkharten/ Diacons
             <lb/>
             der Kirchen zu Zürich/ Kinder-lehr.</head>
             <lb/>
@@ -27657,7 +27707,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n158">
-            <head><num>66.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan&#x303; Ardüſers/ Haubtm<anchor xml:id="a167"/>.<note type="annotation" targetEnd="a167"><p>Der Punkt ist im Vergleichsexemplar Wien eindeutig erkennbar.</p></note> und
+            <head rendition="#b #c"><num>66.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan&#x303; Ardüſers/ Haubtm<anchor xml:id="a167"/>.<note type="annotation" targetEnd="a167"><p>Der Punkt ist im Vergleichsexemplar Wien eindeutig erkennbar.</p></note> und
             <lb/>
             Jngenieürs/ neüaußgangenes Bu&#x366;ch
             <lb/>
@@ -27675,7 +27725,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n159">
-            <head><num>67.</num> Stam&#x342;bu&#x366;chbeſitzers
+            <head rendition="#b #c"><num>67.</num> Stam&#x342;bu&#x366;chbeſitzers
             <lb/>
             an alle
             <lb/>
@@ -27717,7 +27767,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n160">
-            <head><num>68.</num> Jn eines Kunſtmahlers
+            <head rendition="#b #c"><num>68.</num> Jn eines Kunſtmahlers
             <lb/>
             Stam&#x342;bu&#x366;ch.</head>
             <lb/>
@@ -27729,7 +27779,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n161">
-            <head><num>69.</num> Ein anders.</head>
+            <head rendition="#b #c"><num>69.</num> Ein anders.</head>
             <lb/>
             <lg type="poem">
             <l>Die Tichtkunſt/ und die Mahlerey/</l>
@@ -27743,7 +27793,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n162">
-            <head><num>70.</num> Alexandriniſcher Vorwunſch/ über
+            <head rendition="#b #c"><num>70.</num> Alexandriniſcher Vorwunſch/ über
             <lb/>
             wol angeſtellten/ und kunſtlich follfu&#x364;hrten
             <lb/>
@@ -27784,7 +27834,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n163">
-            <head><num>71.</num> Jambiſcher/
+            <head rendition="#b #c"><num>71.</num> Jambiſcher/
             <lb/>
             oder
             <lb/>
@@ -27854,7 +27904,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n165">
-            <head><num>73.</num> Lob-geticht/
+            <head rendition="#b #c"><num>73.</num> Lob-geticht/
             <lb/>
             <hi rendition="#aq">U</hi>ber Herꝛen Conrad Meyers
             <lb/>
@@ -27894,7 +27944,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n166">
-            <head><num>74.</num> Hertz-ſpiegel.</head>
+            <head rendition="#b #c"><num>74.</num> Hertz-ſpiegel.</head>
             <lb/>
             <lg type="poem">
             <l>Der Hertzen-ſpiegel zeigt eim ieden ſeine ma&#x364;ngel:</l>
@@ -27910,7 +27960,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n167">
-            <head><num>75.</num> Ehrengeda&#x364;chtnuß
+            <head rendition="#b #c"><num>75.</num> Ehrengeda&#x364;chtnuß
             <lb/>
             des wolgeachten/ frommen/ ehrenveſten
             <lb/>
@@ -27979,7 +28029,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n168">
-            <head><num>76.</num> <hi rendition="#aq">U</hi>ber die Bu&#x364;cher ins gemein.</head>
+            <head rendition="#b #c"><num>76.</num> <hi rendition="#aq">U</hi>ber die Bu&#x364;cher ins gemein.</head>
             <lb/>
             <lg type="poem">
             <l>Die Bu&#x364;cher/ mehr alß wehr und waffen/</l>
@@ -27989,7 +28039,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n169">
-            <head><num>77.</num> <hi rendition="#aq">U</hi>ber die Bu&#x364;cherkiſten.</head>
+            <head rendition="#b #c"><num>77.</num> <hi rendition="#aq">U</hi>ber die Bu&#x364;cherkiſten.</head>
             <lb/>
             <lg type="poem">
             <l>Die Bu&#x364;cherkiſt iſt ein Gehalter</l>
@@ -28161,7 +28211,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n171">
-            <head><num>80.</num> <hi rendition="#aq">U</hi>ber die Statt Zürich.</head>
+            <head rendition="#b #c"><num>80.</num> <hi rendition="#aq">U</hi>ber die Statt Zürich.</head>
             <lb/>
             <lg type="poem">
             <l>Das kleiner Zürich iſt um Abrams zeit erſtanden/</l>
@@ -28187,7 +28237,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n172">
-            <head><num>81.</num> Lobſpruch.</head>
+            <head rendition="#b #c"><num>81.</num> Lobſpruch.</head>
             <lb/>
             <lg type="poem">
             <l>Das edel Zürich hat Genu&#x364;ge viler dingen/</l>
@@ -28197,7 +28247,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n173">
-            <head><num>82.</num> Wunſch.</head>
+            <head rendition="#b #c"><num>82.</num> Wunſch.</head>
             <lb/>
             <lg type="poem">
             <l>Werd a&#x364;lter in gerechtigkeit/</l>
@@ -28213,7 +28263,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n174">
-            <head><num>83.</num> <hi rendition="#aq">U</hi>nverdenkliche
+            <head rendition="#b #c"><num>83.</num> <hi rendition="#aq">U</hi>nverdenkliche
             <lb/>
             Limmatsſchweinung zu
             <lb/>
@@ -28292,10 +28342,12 @@
             <fw place="top" type="pageNum">527</fw>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften</fw>
             <lb/>
+            <div>
             <head rendition="#b #c"><num>84.</num> Gedanken über unterſchidliche Thier.</head>
+            </div>
             <lb/>
             <div n="2" xml:id="n175">
-            <head><hi rendition="#aq">U</hi>ber den Leüen.</head>
+            <head rendition="#b #c"><hi rendition="#aq">U</hi>ber den Leüen.</head>
             <lb/>
             <lg type="poem">
             <l>Thierko&#x364;nig nen&#x303;t man mich von ſta&#x364;rk' und tugend wegen/</l>
@@ -28309,7 +28361,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n176">
-            <head><num>85.</num> <hi rendition="#aq">U</hi>ber das Tigerthier.</head>
+            <head rendition="#b #c"><num>85.</num> <hi rendition="#aq">U</hi>ber das Tigerthier.</head>
             <lb/>
             <lg type="poem">
             <l>Das ſchnelle Thigerthier mit ſpieglen wird betrogen/</l>
@@ -28323,7 +28375,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n177">
-            <head><num>86.</num> <hi rendition="#aq">U</hi>ber das Trampelthier.</head>
+            <head rendition="#b #c"><num>86.</num> <hi rendition="#aq">U</hi>ber das Trampelthier.</head>
             <lb/>
             <lg type="poem">
             <l>Jch ungeſtaltes Thier; erſchaffen zum laſttragen/</l>
@@ -28337,7 +28389,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n178">
-            <head><num>87.</num> <hi rendition="#aq">U</hi>ber den Elefanten/ und ſchwa&#x364;-
+            <head rendition="#b #c"><num>87.</num> <hi rendition="#aq">U</hi>ber den Elefanten/ und ſchwa&#x364;-
             <lb break="no"/>
             res Rindervieh.</head>
             <lb/>
@@ -28353,7 +28405,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n179">
-            <head><num>88.</num> <hi rendition="#aq">U</hi>ber das Pferde.</head>
+            <head rendition="#b #c"><num>88.</num> <hi rendition="#aq">U</hi>ber das Pferde.</head>
             <lb/>
             <lg type="poem">
             <l>Ein zaumlos-junges pferd verwildet unberitten/</l>
@@ -28367,7 +28419,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n180">
-            <head><num>89.</num> <hi rendition="#aq">U</hi>ber den Eſel/ und das Maulthier.</head>
+            <head rendition="#b #c"><num>89.</num> <hi rendition="#aq">U</hi>ber den Eſel/ und das Maulthier.</head>
             <lb/>
             <lg type="poem">
             <l>Der Eſel/ unterm laſt/ nicht gehet ungeſchlagen;</l>
@@ -28387,7 +28439,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n181">
-            <head><num>90.</num> <hi rendition="#aq">U</hi>ber den Hirſchen.</head>
+            <head rendition="#b #c"><num>90.</num> <hi rendition="#aq">U</hi>ber den Hirſchen.</head>
             <lb/>
             <lg type="poem">
             <l>Der gho&#x364;rnte Schlangenfeind/ von ihrem biß entzündet/</l>
@@ -28401,7 +28453,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n182">
-            <head><num>91.</num> <hi rendition="#aq">U</hi>ber das Schaf.</head>
+            <head rendition="#b #c"><num>91.</num> <hi rendition="#aq">U</hi>ber das Schaf.</head>
             <lb/>
             <lg type="poem">
             <l>Das Schaf des menſchen leib in allweg nutzlich iſt:</l>
@@ -28415,7 +28467,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n183">
-            <head><num>92.</num> <hi rendition="#aq">U</hi>ber das Jgelein.</head>
+            <head rendition="#b #c"><num>92.</num> <hi rendition="#aq">U</hi>ber das Jgelein.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">G</hi>Leich wie das Jgelein/ wan es gefahr vermerket/</l>
@@ -28453,7 +28505,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n184">
-            <head><num>93.</num> <hi rendition="#aq">U</hi>ber Krotten und Schlangen.</head>
+            <head rendition="#b #c"><num>93.</num> <hi rendition="#aq">U</hi>ber Krotten und Schlangen.</head>
             <lb/>
             <lg type="poem">
             <l>Mit jennem Hirten dort diß ha&#x364;ßlich ungezeifer</l>
@@ -28473,7 +28525,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n185">
-            <head><num>94.</num> <hi rendition="#aq">U</hi>ber den Ba&#x364;ren/ und Affen.</head>
+            <head rendition="#b #c"><num>94.</num> <hi rendition="#aq">U</hi>ber den Ba&#x364;ren/ und Affen.</head>
             <lb/>
             <lg type="poem">
             <l>Der wu&#x364;terige Ba&#x364;r fürbildet die Tyrannen/</l>
@@ -28487,7 +28539,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n186">
-            <head><num>95.</num> <hi rendition="#aq">U</hi>ber den Wolf/ und über das
+            <head rendition="#b #c"><num>95.</num> <hi rendition="#aq">U</hi>ber den Wolf/ und über das
             <lb/>
             Schwein.</head>
             <lb/>
@@ -28503,7 +28555,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n187">
-            <head><num>96.</num> <hi rendition="#aq">U</hi>ber das Rindervieh.</head>
+            <head rendition="#b #c"><num>96.</num> <hi rendition="#aq">U</hi>ber das Rindervieh.</head>
             <lb/>
             <lg type="poem">
             <l>Gleich wie das Vieh am ſtrik zur ſchlachtung wird gefu&#x364;hret/</l>
@@ -28517,7 +28569,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n188">
-            <head><num>97.</num> <hi rendition="#aq">U</hi>ber den Eſel und Püffel.</head>
+            <head rendition="#b #c"><num>97.</num> <hi rendition="#aq">U</hi>ber den Eſel und Püffel.</head>
             <lb/>
             <lg type="poem">
             <l>Her Eſel unterm laſt nicht gehet ungeſchlagen:</l>
@@ -28531,7 +28583,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n189">
-            <head><num>98.</num> <hi rendition="#aq">U</hi>ber den Hund.</head>
+            <head rendition="#b #c"><num>98.</num> <hi rendition="#aq">U</hi>ber den Hund.</head>
             <lb/>
             <lg type="poem">
             <l>Des Hundes treü iſt groß; die wachtbarkeit darneben/</l>
@@ -28552,7 +28604,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n190">
-            <head><num>99.</num> <hi rendition="#aq">U</hi>ber die Katz.</head>
+            <head rendition="#b #c"><num>99.</num> <hi rendition="#aq">U</hi>ber die Katz.</head>
             <lb/>
             <lg type="poem">
             <l>Dem Katzenſchertz mit gfangner Mauß/</l>
@@ -28566,7 +28618,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n191">
-            <head><num>100.</num> Auf leichtargwohnende Leuhte.</head>
+            <head rendition="#b #c"><num>100.</num> Auf leichtargwohnende Leuhte.</head>
             <lb/>
             <lg type="poem">
             <l>Die Bürſtenbinderin vermeint</l>
@@ -28580,7 +28632,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n192">
-            <head><num>101.</num> <hi rendition="#aq">U</hi>ber der Muſen zuſamenkunfft auff
+            <head rendition="#b #c"><num>101.</num> <hi rendition="#aq">U</hi>ber der Muſen zuſamenkunfft auff
             <lb/>
             dem Kunſtgebirge.</head>
             <lb/>
@@ -28610,7 +28662,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n193">
-            <head><num>102.</num> <hi rendition="#aq">U</hi>ber der Zunfftbru&#x364;deren vertrauliche
+            <head rendition="#b #c"><num>102.</num> <hi rendition="#aq">U</hi>ber der Zunfftbru&#x364;deren vertrauliche
             <lb/>
             Geſpra&#x364;che.</head>
             <lb/>
@@ -28626,7 +28678,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n194">
-            <head><num>103.</num> Bachus-krieg.</head>
+            <head rendition="#b #c"><num>103.</num> Bachus-krieg.</head>
             <lb/>
             <lg type="poem">
             <l>Wer mit dem Bacchus kriegt/ und ſuchet zugewinnen/</l>
@@ -28642,7 +28694,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n195">
-            <head><num>104.</num> Wider die verſpo&#x364;tter Eliſ<hi rendition="#aq">æ</hi>.
+            <head rendition="#b #c"><num>104.</num> Wider die verſpo&#x364;tter Eliſ<hi rendition="#aq">æ</hi>.
             <lb/>
             2.Reg.2.</head>
             <lb/>
@@ -28654,7 +28706,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n196">
-            <head><num>105.</num> <hi rendition="#aq">U</hi>ber Herꝛen Joh. Heinrich Hottingers
+            <head rendition="#b #c"><num>105.</num> <hi rendition="#aq">U</hi>ber Herꝛen Joh. Heinrich Hottingers
             <lb/>
             Doctorat.</head>
             <lb/>
@@ -28702,7 +28754,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n197">
-            <head><num>106.</num> <hi rendition="#aq">U</hi>ber des obbemeldten Land- und
+            <head rendition="#b #c"><num>106.</num> <hi rendition="#aq">U</hi>ber des obbemeldten Land- und
             <lb/>
             Luſtgu&#x366;t.</head>
             <lb/>
@@ -28733,7 +28785,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n198">
-            <head><num>107.</num> Ein anders.</head>
+            <head rendition="#b #c"><num>107.</num> Ein anders.</head>
             <lb/>
             <lg type="poem">
             <l>Jch heiſſe <hi rendition="#b">Fridenberg</hi>/ mit Friden umgeſchantzet/</l>
@@ -28743,7 +28795,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n199">
-            <head><num>104.</num> <hi rendition="#aq">U</hi>ber eines andern guten Freundes Land-
+            <head rendition="#b #c"><num>104.</num> <hi rendition="#aq">U</hi>ber eines andern guten Freundes Land-
             <lb break="no"/>
             und Luſt-Gu&#x364;tlein.</head>
             <lb/>
@@ -28759,7 +28811,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n200">
-            <head><num>109.</num> Allja&#x364;hrlicher Metzger-Triumf/ wegen erzeigten
+            <head rendition="#b #c"><num>109.</num> Allja&#x364;hrlicher Metzger-Triumf/ wegen erzeigten
             <lb/>
             Treu und Dapferkeit in der Mordnacht.</head>
             <lb/>
@@ -28779,7 +28831,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n201">
-            <head><num>110.</num> 2.Sam.23.</head>
+            <head rendition="#b #c"><num>110.</num> 2.Sam.23.</head>
             <lb/>
             <lg type="poem">
             <l>Wie Davids Helden einſt; deſſelben gluſt zuſtillen;</l>
@@ -28793,7 +28845,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n202">
-            <head><num>111.</num> Eſr.5. und 6.</head>
+            <head rendition="#b #c"><num>111.</num> Eſr.5. und 6.</head>
             <lb/>
             <lg type="poem">
             <l>Der Tempelba<choice><sic>n</sic><corr>u</corr></choice> den Fortgang gwin&#x303;t/</l>
@@ -28813,7 +28865,7 @@
             <fw place="top" type="header"><choice><sic>Uberſchriffen</sic><corr><hi rendition="#aq">U</hi>berſchrifften</corr></choice>.</fw>
             <lb/>
             <div n="2" xml:id="n203">
-            <head><num>112.</num> Luc.7.</head>
+            <head rendition="#b #c"><num>112.</num> Luc.7.</head>
             <lb/>
             <lg type="poem">
             <l>Die groſſe Sünderin bena&#x364;tzt mit heiſſen tra&#x364;hnen</l>
@@ -28827,7 +28879,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n204">
-            <head><num>113.</num> Exod.17. und Num.20.</head>
+            <head rendition="#b #c"><num>113.</num> Exod.17. und Num.20.</head>
             <lb/>
             <lg type="poem">
             <l>Der Fels/ den Moſes ſchlu&#x366;g/ gab waſſer wie beliebt:</l>
@@ -28837,7 +28889,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n205">
-            <head><num>114.</num> Einbindzedelein.</head>
+            <head rendition="#b #c"><num>114.</num> Einbindzedelein.</head>
             <lb/>
             <lg type="poem">
             <l>O Gott/ durch deines Geiſtes trib</l>
@@ -28847,7 +28899,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n206">
-            <head><num>115.</num> <hi rendition="#aq">U</hi>ber die Abbildung der Gerechtigkeit.</head>
+            <head rendition="#b #c"><num>115.</num> <hi rendition="#aq">U</hi>ber die Abbildung der Gerechtigkeit.</head>
             <lb/>
             <lg type="poem">
             <l>Gib iedem was ihm gho&#x364;rt:</l>
@@ -28939,7 +28991,7 @@
             </div>
             </div>
             <div n="2" xml:id="n208">
-            <head><num>125.</num> Sündenſold.</head>
+            <head rendition="#b #c"><num>125.</num> Sündenſold.</head>
             <lb/>
             <lg type="poem">
             <l>Die Sünd gibt nur den Tod zum Sold/</l>
@@ -28949,7 +29001,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n209">
-            <head><hi rendition="#aq">U</hi>ber die Ehe-pfennige.</head>
+            <head rendition="#b #c"><hi rendition="#aq">U</hi>ber die Ehe-pfennige.</head>
             <lb/>
             <div n="3">
             <lg type="poem">
@@ -29067,7 +29119,7 @@
             </div>
             </div>
             <div n="2" xml:id="n210">
-            <head><num>138.</num> <hi rendition="#aq">U</hi>ber die Geburtsfa&#x364;ſte und Nam-
+            <head rendition="#b #c"><num>138.</num> <hi rendition="#aq">U</hi>ber die Geburtsfa&#x364;ſte und Nam-
             <lb break="no"/>
             menstage.</head>
             <lb/>
@@ -29158,7 +29210,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n211">
-            <head><num>139.</num> Anbindgedicht/
+            <head rendition="#b #c"><num>139.</num> Anbindgedicht/
             <lb/>
             auf den fro&#x364;lichen Ru&#x364;dolfstag.</head>
             <lb/>
@@ -29207,13 +29259,12 @@
             <lb/>
             <fw place="bottom" type="catch"><num>140.</num> An-</fw>
             <lb/>
-            <pb facs="4049736"/>
-            <choice><sic>In den Vergleichsexemplaren klar</sic><corr>5</corr></choice>37
-            <lb/>
+            <pb facs="4049736" n="537"/>
+            <fw place="top" type="pageNum"><choice><sic>In den Vergleichsexemplaren klar</sic><corr>5</corr></choice>37</fw>
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften</fw>
             <lb/>
             <div n="2" xml:id="n212">
-            <head><num>140.</num> Anbindgeticht/ auf
+            <head rendition="#b #c"><num>140.</num> Anbindgeticht/ auf
             <lb/>
             Dorothea tag.</head>
             <lb/>
@@ -29265,7 +29316,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n213">
-            <head><num>141.</num> <hi rendition="#aq"><hi rendition="#g">DOROTHEA</hi></hi>,
+            <head rendition="#b #c"><num>141.</num> <hi rendition="#aq"><hi rendition="#g">DOROTHEA</hi></hi>,
             <lb/>
             oder
             <lb/>
@@ -29395,10 +29446,12 @@
             </lg>
             </div>
             <lb/>
+            <div>
             <head rendition="#b #c">Grabſchrifften.</head>
+            </div>
             <lb/>
             <div n="2" xml:id="n214">
-            <head><num>142.</num> Klingendes Traur- und Troſtgeticht: über
+            <head rendition="#b #c"><num>142.</num> Klingendes Traur- und Troſtgeticht: über
             <lb/>
             Herꝛen D. Zwingers zu Baſel/ ſeliges
             <lb/>
@@ -29436,7 +29489,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n215">
-            <head><num>143.</num> Auf Herꝛen Joh. Jakob Genathen/ beru&#x364;hm-
+            <head rendition="#b #c"><num>143.</num> Auf Herꝛen Joh. Jakob Genathen/ beru&#x364;hm-
             <lb break="no"/>
             ten Trukker und Bu&#x366;chha&#x364;ndlers in Baſel/
             <lb/>
@@ -29460,7 +29513,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n216">
-            <head><num>144.</num> Sonnet/
+            <head rendition="#b #c"><num>144.</num> Sonnet/
             <lb/>
             oder
             <lb/>
@@ -29514,7 +29567,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n217">
-            <head><num>145.</num> Troſtklang
+            <head rendition="#b #c"><num>145.</num> Troſtklang
             <lb/>
             an das Adeliche Hauß Berg/
             <lb/>
@@ -29574,7 +29627,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n218">
-            <head><num>146.</num> <hi rendition="#aq">U</hi>ber Herꝛen Caſpar Heſſen/ des a&#x364;ltern/ be-
+            <head rendition="#b #c"><num>146.</num> <hi rendition="#aq">U</hi>ber Herꝛen Caſpar Heſſen/ des a&#x364;ltern/ be-
             <lb break="no"/>
             ru&#x364;hmten Handelsherꝛen in Zürich/ ſeligen Hin-
             <lb break="no"/>
@@ -29592,7 +29645,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n219">
-            <head><num>147.</num> Traur- und Troſtgeticht/
+            <head rendition="#b #c"><num>147.</num> Traur- und Troſtgeticht/
             <lb/>
             über
             <lb/>
@@ -29626,7 +29679,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n220">
-            <head><num>148.</num> <hi rendition="#aq">U</hi>ber Herꝛen Peter Simlers/ weilund Pf.
+            <head rendition="#b #c"><num>148.</num> <hi rendition="#aq">U</hi>ber Herꝛen Peter Simlers/ weilund Pf.
             <lb/>
             zu Altorff/ geſchwinden/ ſeligen/ und merkwür-
             <lb break="no"/>
@@ -29702,7 +29755,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n221">
-            <head><num>149.</num> Lob- und Leichgeticht/ auf H. H. J. Gw. ſ.
+            <head rendition="#b #c"><num>149.</num> Lob- und Leichgeticht/ auf H. H. J. Gw. ſ.
             <lb/>
             A. Z. Fr. M. Ehrenbegra&#x364;bnuß.</head>
             <lb/>
@@ -29725,7 +29778,7 @@
             <lb/>
             
             <div n="2" xml:id="n222">
-            <head><num>150.</num> Auf Herꝛen Haubtm. Joh. Hofm. ſ.
+            <head rendition="#b #c"><num>150.</num> Auf Herꝛen Haubtm. Joh. Hofm. ſ.
             <lb/>
             Ehrenbegra&#x364;bnuß.</head>
             <lb/>
@@ -29761,7 +29814,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n223">
-            <head><num>151.</num> Der Niemand.</head>
+            <head rendition="#b #c"><num>151.</num> Der Niemand.</head>
             <lb/>
             <lg type="poem">
             <l>Jch heiſſe Niemand; wie mich jung' und alte nennen;</l>
@@ -29875,7 +29928,7 @@
             </div>
             </div>
             <div n="2" xml:id="n225">
-            <head><num>158.</num> Leben/ Nebel.</head>
+            <head rendition="#b #c"><num>158.</num> Leben/ Nebel.</head>
             <lb/>
             <lg type="poem">
             <l>Was unſer Leben ſey/ und wie es werd vergehen/</l>
@@ -29889,7 +29942,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n226">
-            <head><num>159.</num> Nichts irꝛdiſches wa&#x364;hrhafft.</head>
+            <head rendition="#b #c"><num>159.</num> Nichts irꝛdiſches wa&#x364;hrhafft.</head>
             <lb/>
             <lg type="poem">
             <l>Was nutzet hochgeboren ſeyn? Es iſt ein ſchlechter ruhm:</l>
@@ -29910,7 +29963,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n227">
-            <head><num>160.</num> Eitelkeit der Welt. Auß dem Franzo&#x364;ſiſchen.</head>
+            <head rendition="#b #c"><num>160.</num> Eitelkeit der Welt. Auß dem Franzo&#x364;ſiſchen.</head>
             <lb/>
             <lg type="poem">
             <l>Gleich wie das ſchlüpfrig Eiß ſich/ ſpiegelhell/ erzeiget/</l>
@@ -29962,7 +30015,7 @@
             </div>
             </div>
             <div n="2" xml:id="n229">
-            <head><num>164.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan Riſten/ den welt-
+            <head rendition="#b #c"><num>164.</num> <hi rendition="#aq">U</hi>ber Herꝛen Johan Riſten/ den welt-
             <lb break="no"/>
             bekanten Tichter.</head>
             <lb/>
@@ -29977,10 +30030,12 @@
             </lg>
             </div>
             <lb/>
+            <div>
             <head rendition="#b #c">Sinn- und Sitten-bilder.</head>
+            </div>
             <lb/>
             <div n="2" xml:id="n230">
-            <head><num>165.</num> Jung gebogen/ recht gezogen.</head>
+            <head rendition="#b #c"><num>165.</num> Jung gebogen/ recht gezogen.</head>
             <lb/>
             <lg type="poem">
             <l>Die liebe Kinderlein den Zweiglinen nacharten/</l>
@@ -30008,7 +30063,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n231">
-            <head><num>166.</num> Junger ſuchs: Alter brauchs:</head>
+            <head rendition="#b #c"><num>166.</num> Junger ſuchs: Alter brauchs:</head>
             <lb/>
             <lg type="poem">
             <l>O/ du ſorgenfreyes Blut/ ſuch/ in friſcher jugend/</l>
@@ -30030,7 +30085,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n232">
-            <head><num>167.</num> Am Scheidwa&#x364;g nicht verfehl:
+            <head rendition="#b"><num>167.</num> Am Scheidwa&#x364;g nicht verfehl:
             <lb/>
             Die rechte Straß erwehl.</head>
             <lb/>
@@ -30056,7 +30111,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n233">
-            <head><num>168.</num> Ka&#x364;mpf wider dich/ ſo ſchlaheſt mich.</head>
+            <head rendition="#b #c"><num>168.</num> Ka&#x364;mpf wider dich/ ſo ſchlaheſt mich.</head>
             <lb/>
             <lg type="poem">
             <l>Diſes ungeheur* zuda&#x364;mpfen/<note place="right" type="marginalia">* Laſterthier</note></l>
@@ -30078,7 +30133,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n234">
-            <head><num>169.</num> Es bleib was hin iſt/ hin:
+            <head rendition="#b"><num>169.</num> Es bleib was hin iſt/ hin:
             <lb/>
             Verlurſt iſt oft Gwin.</head>
             <lb/>
@@ -30111,7 +30166,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n235">
-            <head><num>170.</num> Stirb/ eh du ſterbſt/ daß nicht verderbſt.</head>
+            <head rendition="#b #c"><num>170.</num> Stirb/ eh du ſterbſt/ daß nicht verderbſt.</head>
             <lb/>
             <lg type="poem">
             <l>So ungeleich gelebt/ ſo ungeleich geſtorben:</l>
@@ -30133,7 +30188,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n236">
-            <head><num>171.</num> Fünfer Sinnen rechter Sinn/
+            <head rendition="#b"><num>171.</num> Fünfer Sinnen rechter Sinn/
             <lb/>
             Bringet Leib und Seel Gewinn.</head>
             <lb/>
@@ -30197,7 +30252,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n237">
-            <head><num>172.</num> Nicht nur mit auſſern Waffen.</head>
+            <head rendition="#b #c"><num>172.</num> Nicht nur mit auſſern Waffen.</head>
             <lb/>
             <lg type="poem">
             <l>Durch Waffen und Geba&#x364;tt ward Amalek beſtritten/</l>
@@ -30211,7 +30266,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n238">
-            <head><num>173.</num> Allein von oben herab.</head>
+            <head rendition="#b #c"><num>173.</num> Allein von oben herab.</head>
             <lb/>
             <lg type="poem">
             <l>Getreue Lehrer ſeind gefu&#x366;llte Gſchirꝛ der Ehren;</l>
@@ -30225,7 +30280,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n239">
-            <head><num>174.</num> Vil wüſſen/ nichts wüſſen.</head>
+            <head rendition="#b #c"><num>174.</num> Vil wüſſen/ nichts wüſſen.</head>
             <lb/>
             <lg type="poem">
             <l>Wer/ was ihm Gott verdekt/ auß fürwitz wil ergründen/</l>
@@ -30239,7 +30294,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n240">
-            <head><num>175.</num> Was rechte baut/ die linke ſchleißt.</head>
+            <head rendition="#b #c"><num>175.</num> Was rechte baut/ die linke ſchleißt.</head>
             <lb/>
             <lg type="poem">
             <l>Wan die Regenten ſelb/ die Lehrer und Haußva&#x364;tter/</l>
@@ -30253,7 +30308,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n241">
-            <head><num>176.</num> Der geber ſamlet Scha&#x364;tze.</head>
+            <head rendition="#b #c"><num>176.</num> Der geber ſamlet Scha&#x364;tze.</head>
             <lb/>
             <lg type="poem">
             <l>Wer armen freudig gibt/ der ſamlet/ ſonder fehlen/</l>
@@ -30274,7 +30329,7 @@
             <fw place="top" type="header">Allerhand</fw>
             <lb/>
             <div n="2" xml:id="n242">
-            <head><num>177. </num>Mit Hofnungsflüglen.</head>
+            <head rendition="#b #c"><num>177. </num>Mit Hofnungsflüglen.</head>
             <lb/>
             <lg type="poem">
             <l>Auß a&#x364;üſſerſter gefahr/ zu waſſer und zu lande/</l>
@@ -30288,7 +30343,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n243">
-            <head><num>178.</num> Der Maſtung/ folgt die Schlachtung.</head>
+            <head rendition="#b #c"><num>178.</num> Der Maſtung/ folgt die Schlachtung.</head>
             <lb/>
             <lg type="poem">
             <l>Wer nur dem Leibe pflegt/ der ma&#x364;ſtet ſich zum ſchlachten/</l>
@@ -30302,7 +30357,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n244">
-            <head><num>179.</num> Geiſt- und Weltkinder ſchauen den Tod
+            <head rendition="#b #c"><num>179.</num> Geiſt- und Weltkinder ſchauen den Tod
             <lb/>
             ungleich an.</head>
             <lb/>
@@ -30318,7 +30373,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n245">
-            <head><num>180.</num> Geiſtlicher Wekher.</head>
+            <head rendition="#b #c"><num>180.</num> Geiſtlicher Wekher.</head>
             <lb/>
             <lg type="poem">
             <l>O menſch/ nicht ſchlaff im ſündenſchlam&#x303;/</l>
@@ -30332,7 +30387,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n246">
-            <head><num>181.</num> Tiſch-Segen/ auß dem Frantzo&#x364;ſiſchen.</head>
+            <head rendition="#b #c"><num>181.</num> Tiſch-Segen/ auß dem Frantzo&#x364;ſiſchen.</head>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -30400,7 +30455,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n247">
-            <head><num>182.</num> Tiſchzucht.</head>
+            <head rendition="#b #c"><num>182.</num> Tiſchzucht.</head>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -30682,7 +30737,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n248">
-            <head><num>183.</num> Beſchreibung
+            <head rendition="#b #c"><num>183.</num> Beſchreibung
             <lb/>
             des ungeſunden Geſund-
             <lb break="no"/>
@@ -30994,7 +31049,7 @@
             <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n249">
-            <head><num>184. </num>Cornet- und Fahnen- oder Wahl-
+            <head rendition="#b #c"><num>184. </num>Cornet- und Fahnen- oder Wahl-
             <lb break="no"/>
             Sprüche.</head>
             <lb/>
@@ -31015,10 +31070,12 @@
             </lg>
             </div>
             <lb/>
+            <div>
             <head rendition="#b #c"><num>185.</num> Haußſprüche.</head>
+            </div>
             <lb/>
             <div n="2" xml:id="n250">
-            <head>1. <hi rendition="#aq">U</hi>ber das Hauß zur Sonnenblu&#x366;men.</head>
+            <head rendition="#b #c">1. <hi rendition="#aq">U</hi>ber das Hauß zur Sonnenblu&#x366;men.</head>
             <lb/>
             <lg type="poem">
             <l>Das Hauß zur Sonnenblu&#x366;m ſo lange m<anchor xml:id="a215"/>u&#x364;<note type="annotation" targetEnd="a215"><p>Ist in den Vergleichsexemplaren Wien und Zürich klar ein hochgestelltes "e".</p></note>ß beſtehen/</l>
@@ -31028,7 +31085,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n251">
-            <head>2. <hi rendition="#aq">U</hi>ber die Haußthür.</head>
+            <head rendition="#b #c">2. <hi rendition="#aq">U</hi>ber die Haußthür.</head>
             <lb/>
             <lg type="poem">
             <l>Den Ein- und Außgang Gott bewahr</l>
@@ -31038,7 +31095,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n252">
-            <head>3. <hi rendition="#aq">U</hi>ber die Stubenthür.</head>
+            <head rendition="#b #c">3. <hi rendition="#aq">U</hi>ber die Stubenthür.</head>
             <lb/>
             <lg type="poem">
             <l>Die Stubenthür geht auf und zu:</l>
@@ -31048,7 +31105,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n253">
-            <head>4. <hi rendition="#aq">U</hi>ber die Kammerthu&#x364;r.</head>
+            <head rendition="#b #c">4. <hi rendition="#aq">U</hi>ber die Kammerthu&#x364;r.</head>
             <lb/>
             <lg type="poem">
             <l>Das Schlafgemach dient mu&#x364;dem Leib:</l>
@@ -31058,7 +31115,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n254">
-            <head>5. Jn die Schlafkammer.</head>
+            <head rendition="#b #c">5. Jn die Schlafkammer.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#b">Herꝛ</hi>/ wan ich ſchließ die augen zu/</l>
@@ -31072,7 +31129,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n255">
-            <head>6. Wekker.</head>
+            <head rendition="#b #c">6. Wekker.</head>
             <lb/>
             <lg type="poem">
             <l>Auf/ auf! die Sonne ſteiget auf/</l>
@@ -31092,7 +31149,7 @@
             <fw place="top" type="header">Allerhand <hi rendition="#aq">U</hi>berſchrifften.</fw>
             <lb/>
             <div n="2" xml:id="n256">
-            <head>7. <hi rendition="#aq">U</hi>ber eine Salthüren.</head>
+            <head rendition="#b #c">7. <hi rendition="#aq">U</hi>ber eine Salthüren.</head>
             <lb/>
             <lg type="poem">
             <l>Wer eifrig ſucht den Himmelſal/</l>
@@ -31102,7 +31159,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n257">
-            <head>8. <hi rendition="#aq">U</hi>ber die Kuchenthüren.</head>
+            <head rendition="#b #c">8. <hi rendition="#aq">U</hi>ber die Kuchenthüren.</head>
             <lb/>
             <lg type="poem">
             <l>Wird in die Kuch was guts beſchehrt/</l>
@@ -31116,7 +31173,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n258">
-            <head>9. <hi rendition="#aq">U</hi>ber die Speißkammer.</head>
+            <head rendition="#b #c">9. <hi rendition="#aq">U</hi>ber die Speißkammer.</head>
             <lb/>
             <lg type="poem">
             <l>Erfüllſt du mich/ zu rechter zeit/</l>
@@ -31126,7 +31183,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n259">
-            <head>10. <hi rendition="#aq">U</hi>ber die Kellerthüren.</head>
+            <head rendition="#b #c">10. <hi rendition="#aq">U</hi>ber die Kellerthüren.</head>
             <lb/>
             <lg type="poem">
             <l>Wein eyn/ witz auß: drum hu&#x364;te dich</l>
@@ -31136,7 +31193,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n260">
-            <head>11. Jn eine Schreibſtuben.</head>
+            <head rendition="#b #c">11. Jn eine Schreibſtuben.</head>
             <lb/>
             <lg type="poem">
             <l>Kein fleiß noch witz/ ohn Gott/ beſtehet/</l>
@@ -31146,7 +31203,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n261">
-            <head>12. <hi rendition="#aq">U</hi>ber die Gelt- und Silberlab.</head>
+            <head rendition="#b #c">12. <hi rendition="#aq">U</hi>ber die Gelt- und Silberlab.</head>
             <lb/>
             <lg type="poem">
             <l>Sucht/ und ſammelt Himmels-Scha&#x364;zze;</l>
@@ -31160,7 +31217,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n262">
-            <head>13. <hi rendition="#aq">U</hi>ber ein Bad-hauß.</head>
+            <head rendition="#b #c">13. <hi rendition="#aq">U</hi>ber ein Bad-hauß.</head>
             <lb/>
             <lg type="poem">
             <l>Wer baden wil in diſem hauß/</l>
@@ -31174,7 +31231,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n263">
-            <head>14. <hi rendition="#aq">U</hi>ber/ oder an das <choice><sic>Kamn</sic><corr>Kamin</corr></choice>.</head>
+            <head rendition="#b #c">14. <hi rendition="#aq">U</hi>ber/ oder an das <choice><sic>Kamn</sic><corr>Kamin</corr></choice>.</head>
             <lb/>
             <lg type="poem">
             <l>Bey tag und nacht verſorg das Feür.</l>
@@ -31184,7 +31241,7 @@
             </div>
             <lb/>
             <div n="2" xml:id="n264">
-            <head>15. <hi rendition="#aq">U</hi>ber eine Gartenthür.</head>
+            <head rendition="#b #c">15. <hi rendition="#aq">U</hi>ber eine Gartenthür.</head>
             <lb/>
             <lg type="poem">
             <l>Man ſihet/ ſeiner zeit/ hierinnen in dem Garten/</l>
@@ -31202,6 +31259,7 @@
             <pb facs="4049760" n="561"/>
             <fw place="top" type="pageNum">561</fw>
             <lb/>
+            <div>
             <head rendition="#b #c">Regentenſpiegel:</head>
             <lb/>
             <head rendition="#b #c">Dem hochgeachten/ woledlen/ geſtren-
@@ -31243,6 +31301,7 @@
             <head rendition="#b #c">alß ſchuldgeneigtwilligſtem Diener/
             <lb/>
             und Vettern.</head>
+            </div>
             <lb/>
             <fw place="bottom" type="pageNum">Oo</fw>
             <lb/>
@@ -31250,7 +31309,7 @@
             <fw place="top" type="pageNum">562</fw>
             <lb/>
             <div n="2" xml:id="n265.i">
-            <head>Zuſchrifftsgetichte.</head>
+            <head rendition="#b #c">Zuſchrifftsgetichte.</head>
             <lb/>
             <lg type="poem">
             <lg n="1">
@@ -31452,7 +31511,7 @@
             <fw place="top" type="pageNum">565</fw>
             <lb/>
             <div n="2" xml:id="n265.ii">
-            <head><hi rendition="#aq"><hi rendition="#i">Ad Lectorem</hi></hi>
+            <head rendition="#i #b #c"><hi rendition="#aq"><hi rendition="#i">Ad Lectorem</hi></hi>
             <lb/>
             <hi rendition="#aq">PROOEMII SIMLERIANI</hi>.</head>
             <lb/>
@@ -31470,7 +31529,7 @@
             <lb/>
             </div>
             <div n="2" xml:id="n265.iii">
-            <head><hi rendition="#aq">Ad præſtantiſſimum</hi>
+            <head rendition="#i #b #c"><hi rendition="#aq">Ad præſtantiſſimum</hi>
             <lb/>
             <hi rendition="#aq">ldéæ boni Principis, ex AGAPETI</hi>
             <lb/>
@@ -31486,7 +31545,7 @@
             <l rendition="#et #aq"><hi rendition="#aq">Optimi enim eſt <hi rendition="#k">CONSUL</hi> Principis iſte Typus.</hi></l>
             </lg>
             <lb/>
-            <p><hi rendition="#aq"><hi rendition="#i">Honoris c. f.</hi></hi></p>
+            <p rendition="#smaller"><hi rendition="#aq"><hi rendition="#i">Honoris c. f.</hi></hi></p>
             <lb/>
             <p rendition="#aq">GEORGIVS MVLLERVS<anchor xml:id="a219"/>.<note type="annotation" targetEnd="a219"><p>Auch in den Vergleichsexemplaren Wien und Zürich ist es schwierig, diesen Punkt von einem Komma zu unterscheiden.</p></note>
             <lb/>
@@ -31496,7 +31555,8 @@
             <pb facs="4049765" n="566"/>
             <fw place="top" type="pageNum">566</fw>
             <lb/>
-            <head>S. CHRYS. ANΔPIANT.
+            <div n="2" xml:id="n265.iv">
+            <head rendition="#i #b #c">S. CHRYS. ANΔPIANT.
             <lb/>
             HOMIL. VI.</head>
             <lb/>
@@ -31527,13 +31587,14 @@
             <lb break="no"/>
             SUMENTE.</p>
             <lb/>
+            </div>
             <fw place="bottom" type="catch">Re-</fw>
             <lb/>
             <pb facs="4049766" n="567"/>
             <fw place="top" type="pageNum">567</fw>
             <lb/>
             <div n="2" xml:id="n265">
-            <head>Regentenſpiegel.</head>
+            <head rendition="#b #c">Regentenſpiegel.</head>
             <lb/>
             <lg type="poem">
             <l><hi rendition="#in">R</hi>Egenten ſeind von Gott mit ho&#x364;chſtem Stand geehret/</l>
