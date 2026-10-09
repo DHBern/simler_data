@@ -73,19 +73,23 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F62C.3">
+         <div xml:id="F62C.3" type="poem">
             <pb facs="22323329"/>
+            <!-- TODO HiWi: Bildunterschrift des Kupfertitels; die Seite danach ist der Titel des Buchs (nicht von Simler). -->
+            <figure/>
+            <lg type="poem">
             <l>Wer in Gottſeligkeit, nach reiner lehr, ſich übet,</l>
             <lb/>
-            <l>der bawet felſenfeſt, und ſicher vor dem fal:</l>
+            <l rendition="#et">der bawet felſenfeſt, und ſicher vor dem fal:</l>
             <lb/>
-            <l>Der aber bawt auf ſand, ja grundlos überal,</l>
+            <l rendition="#et">Der aber bawt auf ſand, ja grundlos überal,</l>
             <lb/>
             <l>der falſchen lehrern folgt, und laſtern ſich ergibet.</l>
+            </lg>
             <lb/>
             
             <pb facs="22323330"/>
-            U&#x364;bung der Gottſeligkeit.
+            <p rendition="#c">U&#x364;bung der Gottſeligkeit.
             <lb/>
             Gottſeligkeit
             <lb/>
@@ -97,7 +101,7 @@
             <lb/>
             Zürich
             <lb/>
-            Beÿ Johann Jacob Bodmer.
+            Beÿ Johann Jacob Bodmer.</p>
             <lb/>
          </div>
       </body>

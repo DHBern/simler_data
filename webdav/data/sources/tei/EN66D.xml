@@ -83,36 +83,40 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN66D">
+         <div xml:id="EN66D" type="poem">
             <pb facs="17729280"/>
-            <head>Kinderſpiegel: worin&#x303; Segen und Flu&#x366;ch zu&#x366;erſehen.</head>
+            <head rendition="#c">Kinderſpiegel: worin&#x303; Segen und Flu&#x366;ch zu&#x366;erſehen.</head>
             <lb/>
             
-            <hi rendition="#aq">Gen.XXVII.6-29.</hi>
+            <note type="bibl"><hi rendition="#aq">Gen.XXVII.6-29.</hi></note>
             <lb/>
-            <hi rendition="#aq">II.Sam.XVIII.9.-18</hi>
+            <note type="bibl"><hi rendition="#aq">II.Sam.XVIII.9.-18</hi></note>
             <lb/>
-            <hi rendition="#aq">Con. Meyer fecit.</hi>
+            <figure>
+            <p><hi rendition="#aq">Con. Meyer fecit.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Schaut/ liebe Kinder/ ſchaut! wie Gott ghorſam&#x303;en lohnet/</l>
             <lb/>
             <l>und wie den widrigen ſo gar nicht wird verſchohnet/</l>
             <lb/>
-            <l>daß auch ein Abſalon; des Davids liebſter ſohn;</l>
+            <l rendition="#et">daß auch ein Abſalon; des Davids liebſter ſohn;</l>
             <lb/>
-            <l>ſein Leben laſſen mu&#x366;ß/ mit ſchmertzen/ ſpott und hohn:</l>
+            <l rendition="#et">ſein Leben laſſen mu&#x366;ß/ mit ſchmertzen/ ſpott und hohn:</l>
             <lb/>
             <l>Dem frommen Jacob wird der Segen zu&#x366;geſprochen/</l>
             <lb/>
             <l>den Eſau haben ſolt; und ſo das bo&#x364;s gerochen.</l>
             <lb/>
-            <l>Drum lehrnet ghorſam ſeÿn den Eltern/ und wer ſonſt/</l>
+            <l rendition="#et">Drum lehrnet ghorſam ſeÿn den Eltern/ und wer ſonſt/</l>
             <lb/>
-            <l>euch auferziehen ſol in rechter Zucht/ und Kunſt.</l>
+            <l rendition="#et">euch auferziehen ſol in rechter Zucht/ und Kunſt.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Exod.XX.12.
+            <note place="bottom" type="bibl"><hi rendition="#aq">Exod.XX.12.
             <lb/>
             Du ſolt deinen Vatter und deine Mu&#x366;tter ehren, auf daſs du lang lebeſt im Land, das dir
             <lb/>
@@ -138,12 +142,12 @@
             <lb/>
             rappen im thal die augen auſs, und
             <lb/>
-            die Adler zerꝛeÿſſind jn.</hi>
+            die Adler zerꝛeÿſſind jn.</hi></note>
             <lb/>
             
-            Einer Tu&#x366;gendliebenden Jugent in Zürich
+            <p>Einer Tu&#x366;gendliebenden Jugent in Zürich
             <lb/>
-            ab der Burgerbibliot: für das 1666. Jahr verehrt.
+            ab der Burgerbibliot: für das 1666. Jahr verehrt.</p>
             <lb/>
             
          </div>

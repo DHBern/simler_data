@@ -73,15 +73,18 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F64D">
+         <div xml:id="F64D" type="poem">
             <pb facs="2913425"/>
-            <hi rendition="#aq">U</hi>ber Herꝛen Abraham Wilden vortreff-
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq">U</hi>ber Herꝛen Abraham Wilden vortreff-
             <lb break="no"/>
             liches Bu&#x366;ch/
             <lb/>
-            von der Seelen-angſt Chriſti.
+            von der Seelen-angſt Chriſti.</head>
             <lb/>
             
+            <!-- TODO HiWi: V. 1, 2 und 4 sind im Druck umbrochen (Rest der Zeile eingerueckt darunter); im Export steht der Umbruch ohne lb im l. -->
+            <lg type="poem">
             <l><hi rendition="#in">H</hi>Erꝛ Wild der Ewigkeit wird ruhmlich
             <lb/>
             einverleibt/</l>
@@ -95,13 +98,16 @@
             <l>ſo wurd man aller Angſt/ durch Chriſtus Angſt
             <lb/>
             geneſen.</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zu ſondern Ehren ſetzte diß wenige
             <lb/>
-            Joh. Wilhelm Simler/ Elter/
+            <signed>Joh. Wilhelm Simler/ Elter/</signed>
             <lb/>
-            den 14. Meyen/ 1664.
+            <dateline>den 14. Meyen/ 1664.</dateline>
+            </closer>
             <lb/>
             
             <fw place="bottom" type="catch">See-</fw>

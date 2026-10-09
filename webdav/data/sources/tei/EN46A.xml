@@ -83,16 +83,20 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN46A">
+         <div xml:id="EN46A" type="poem">
             <pb facs="17729189"/>
-            j.
+            <figure>
+            <p>j.
             <lb/>
             <hi rendition="#aq">Con: Meÿer fecit et excu:
             <lb/>
-            1646</hi>
+            1646</hi></p>
+            </figure>
+            <!-- TODO HiWi: "1646" steht unter dem Plattenrand, also ausserhalb der Radierung (hi muesste geteilt werden); die Zeigehand vor "Discantus" ist nicht transkribiert. -->
             <lb/>
             
-            <head rendition="#aq">Diſcantus.</head>
+            <lg>
+            <head rendition="#aq #c">Diſcantus.</head>
             <lb/>
             <l>Luſtig werden beku&#x364;mmerte hertzen/</l>
             <lb/>
@@ -105,9 +109,11 @@
             <l>Vnd der liebliche Fru&#x364;hling entſtehet/</l>
             <lb/>
             <l>Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Altus.</head>
+            <lg>
+            <head rendition="#aq #c">Altus.</head>
             <lb/>
             <l>Luſtig werden beku&#x364;mmerte hertzen/</l>
             <lb/>
@@ -120,9 +126,11 @@
             <l>Vnd der liebliche Fru&#x364;hling entſtehet/</l>
             <lb/>
             <l>Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Tenor.</head>
+            <lg>
+            <head rendition="#aq #c">Tenor.</head>
             <lb/>
             <l>Luſtig werden beku&#x364;mmerte hertzen/</l>
             <lb/>
@@ -135,9 +143,11 @@
             <l>Vnd der liebliche Fru&#x364;hling entſtehet/</l>
             <lb/>
             <l>Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Baſis.</head>
+            <lg>
+            <head rendition="#aq #c">Baſis.</head>
             <lb/>
             <l>Luſtig werden beku&#x364;mmerte hertzen/</l>
             <lb/>
@@ -150,11 +160,15 @@
             <l>Vnd der liebliche Fru&#x364;hling entſtehet/</l>
             <lb/>
             <l>Den der Zefyr mit Blu&#x366;men beſa&#x364;yet.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <!-- TODO HiWi: Strophe 1 = Text der vier Stimmen oben; Notenbilder nicht kodiert. -->
+            <lg type="poem">
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
-            <l>Jn den Ga&#x364;rten wir ſehen entſprieſſen</l>
+            <l rendition="#et">Jn den Ga&#x364;rten wir ſehen entſprieſſen</l>
             <lb/>
             <l>Tulipanen/ Violen/ Narciſſen/</l>
             <lb/>
@@ -165,11 +179,13 @@
             <l>Gilgen/ Tu&#x364;rckiſche Bu&#x364;ndt/ Anemonen/</l>
             <lb/>
             <l>Keiner do&#x364;rnichten Roſen wir ſchonen.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
-            <l>Wir bereiten vns Stra&#x364;uſſer vnd Meyen/</l>
+            <l rendition="#et">Wir bereiten vns Stra&#x364;uſſer vnd Meyen/</l>
             <lb/>
             <l>Vmb die Kra&#x364;ntze wir ſingen am Reyen/</l>
             <lb/>
@@ -180,11 +196,13 @@
             <l>Auſſert newlich geſchnittenen Reben/</l>
             <lb/>
             <l>Die den Fru&#x364;hling mit weynen anheben.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
-            <l>Junge Saaten vns ſchiereſt anlachen/</l>
+            <l rendition="#et">Junge Saaten vns ſchiereſt anlachen/</l>
             <lb/>
             <l>Gute hoffnung/ auß vilen vrſachen/</l>
             <lb/>
@@ -195,11 +213,13 @@
             <l>Deren Scho&#x364;ne mag nichtes erꝛeichen/</l>
             <lb/>
             <l>Alles anders derſelben muß weichen.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
-            <l>Alle Matten vnd Wieſen Graßreiche/</l>
+            <l rendition="#et">Alle Matten vnd Wieſen Graßreiche/</l>
             <lb/>
             <l>Alle Bu&#x364;hel vnd Berge zugleiche/</l>
             <lb/>
@@ -210,11 +230,13 @@
             <l>Frewdig ſpringende Herden wir ſchawen/</l>
             <lb/>
             <l>Die zu&#x366;voren in Sta&#x364;llen geſchrawen.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
-            <l>Das gefidderte Vo&#x364;lcklein der Lu&#x364;ffte/</l>
+            <l rendition="#et">Das gefidderte Vo&#x364;lcklein der Lu&#x364;ffte/</l>
             <lb/>
             <l>Machet wider erklingen die klu&#x364;ffte/</l>
             <lb/>
@@ -225,11 +247,13 @@
             <l>Jhrem Scho&#x364;pffer zu ehren ſie ſinget/</l>
             <lb/>
             <l>Zwitzer gſchwa&#x364;tze die Schwalbe fu&#x364;rbringet.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
-            <l>Minder lieblich beduncket vns zwaren/</l>
+            <l rendition="#et">Minder lieblich beduncket vns zwaren/</l>
             <lb/>
             <l>Wann der Guckguck/ gefraget von jahren/</l>
             <lb/>
@@ -240,11 +264,13 @@
             <l>Wann ſie vber die Blumen hinſummen:</l>
             <lb/>
             <l>Doch erfrewet vns jhres ankommen.</l>
+            </lg>
             <lb/>
             
-            <head><num>8.</num></head>
+            <lg n="8">
+            <head rendition="#c"><num>8.</num></head>
             <lb/>
-            <l>Die geſchnabelten feinde der Schlangen/</l>
+            <l rendition="#et">Die geſchnabelten feinde der Schlangen/</l>
             <lb/>
             <l>Jn dem Fru&#x364;hling/ ohnfehlbar anlangen/</l>
             <lb/>
@@ -255,11 +281,13 @@
             <l>Jhre jungen ſich danckbar erweiſen/</l>
             <lb/>
             <l>Deren beyſpil den Kindern wir preiſen.</l>
+            </lg>
             <lb/>
             
-            <head><num>9.</num></head>
+            <lg n="9">
+            <head rendition="#c"><num>9.</num></head>
             <lb/>
-            <l>Jn den Weyern der Enten geſchwader/</l>
+            <l rendition="#et">Jn den Weyern der Enten geſchwader/</l>
             <lb/>
             <l>Sich ergetzet mit vilem geplader/</l>
             <lb/>
@@ -270,11 +298,13 @@
             <l>Die ſich aber geparet vermiſchen/</l>
             <lb/>
             <l>Vnd mit ſchwu&#x364;mmen vnd ſpringen erfriſchen.</l>
+            </lg>
             <lb/>
             
-            <head><num>10.</num></head>
+            <lg n="10">
+            <head rendition="#c"><num>10.</num></head>
             <lb/>
-            <l>Nun bedeutet der Fru&#x364;hling hieneben</l>
+            <l rendition="#et">Nun bedeutet der Fru&#x364;hling hieneben</l>
             <lb/>
             <l>Jungen Leuhten jhr blu&#x364;hendes Leben/</l>
             <lb/>
@@ -285,6 +315,8 @@
             <l>Die gebu&#x364;rlichen frewden/ in ehren/</l>
             <lb/>
             <l>So die zeiten erlauben vnd lehren.</l>
+            </lg>
+            </lg>
             <lb/>
             
          </div>

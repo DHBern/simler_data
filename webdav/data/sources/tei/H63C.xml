@@ -41,25 +41,30 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="H63C">
+         <div xml:id="H63C" type="poem">
             <pb facs="1"/>
-            Uber H. D. Hottingers
+            <head rendition="#c">Uber H. D. Hottingers
             <lb/>
-            Land- und Luſt-Gut.
+            Land- und Luſt-Gut.</head>
             <lb/>
-            Jch heiſſe Fridenberg; mit Frid werd' ich
+            <lg type="poem">
+            <!-- TODO HiWi: Handschrift; zwei Alexandriner, jeweils umbrochen (das l enthaelt das lb). -->
+            <l>Jch heiſſe Fridenberg; mit Frid werd' ich
             <lb/>
-            umſchanzet/
+            umſchanzet/</l>
             <lb/>
-            ſo wird ich mehr und mehr zum Nuz und Luſt ge-
+            <l>ſo wird ich mehr und mehr zum Nuz und Luſt ge-
             <lb break="no"/>
-            pflanzet!
+            pflanzet!</l>
+            </lg>
             <lb/>
-            J. W. S.
+            <closer>
+            <signed rendition="#right">J. W. S.</signed>
             <lb/>
-            D[en] 11.ten Mertz/
+            <dateline>D[en] 11.ten Mertz/
             <lb/>
-            1663.
+            1663.</dateline>
+            </closer>
             <lb/>
             
          </div>

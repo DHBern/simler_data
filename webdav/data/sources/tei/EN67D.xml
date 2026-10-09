@@ -85,20 +85,25 @@
       <body>
          <div xml:id="EN67D">
             <pb facs="17729284"/>
-            <head>Betrachtung Menſchlichen Alters/ nach anleitung der vier Tags- und Jahrs-Zeiten.</head>
+            <head rendition="#c">Betrachtung Menſchlichen Alters/ nach anleitung der vier Tags- und Jahrs-Zeiten.</head>
+            <!-- TODO HiWi: vier Medaillons, hier je ein div; die Bibeltexte stehen als Umschrift im Medaillon (figure). Einzuege der Vierzeiler unregelmaessig (Stichschrift), nicht kodiert. -->
             <lb/>
             
-            Morgen Zeit: Fru&#x364;hling/ oder Jugend.
+            <div>
+            <head rendition="#c">Morgen Zeit: Fru&#x364;hling/ oder Jugend.</head>
+            <figure>
             <lb/>
-            Wer Ru&#x366;tten ſpart/ der Haſſet ſeinen Sohn:
+            <p>Wer Ru&#x366;tten ſpart/ der Haſſet ſeinen Sohn:
             <lb/>
             Wer in aber lieb hat/ der zeuch in früe zur Zucht. <hi rendition="#aq">Prov.XIII.
             <lb/>
             24.</hi>
             <lb/>
-            Die forcht Gottes iſt ein Kron der Weÿßheit. <hi rendition="#aq">Sirach.I.16.</hi>
+            Die forcht Gottes iſt ein Kron der Weÿßheit. <hi rendition="#aq">Sirach.I.16.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Die fru&#x364;he Morgenzeit/ und Fru&#x364;hling reiz zu&#x366;r Tugend:</l>
             <lb/>
             <l>Dann/ wer ſich der'n befleißt in ſeiner erſten jugend/</l>
@@ -106,11 +111,15 @@
             <l>dem ſelben/ ſonder<choice><corr/><sic>/</sic></choice> fehl/ der Scho&#x364;pfer hat bereit</l>
             <lb/>
             <l>ein' Ehrenkron alhier/ und Dort die Seligkeit.</l>
+            </lg>
+            </div>
             <lb/>
             
-            Mittages Zeit: Sommer: oder Man&#x303;liches Alter.
+            <div>
+            <head rendition="#c">Mittages Zeit: Sommer: oder Man&#x303;liches Alter.</head>
+            <figure>
             <lb/>
-            Selig iſt der/ der den HERREN förchtet/ und auf
+            <p>Selig iſt der/ der den HERREN förchtet/ und auf
             <lb/>
             ſeinen wegen wandlet/ du wirſt dich nehren deiner händen arbeit:
             <lb/>
@@ -122,9 +131,11 @@
             <lb/>
             <hi rendition="#aq">C.M.
             <lb/>
-            fecit.</hi>
+            fecit.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Die ſcho&#x364;n Mitta&#x364;gig Sonn/ in langen Sommer Tagen/</l>
             <lb/>
             <l>am ho&#x364;chſten fahrt daher/ auff ihrem guldnen Wagen:</l>
@@ -132,13 +143,19 @@
             <l>Jm andern Alter wir; alß unſrer Sommers Zeit;</l>
             <lb/>
             <l>durch Arbeit und Gebett auch ſollen fahren weit.</l>
+            </lg>
+            </div>
             <lb/>
             
-            Abend: Herpſt: oder/ Grauwes Alter.
+            <div>
+            <head rendition="#c">Abend: Herpſt: oder/ Grauwes Alter.</head>
+            <figure>
             <lb/>
-            Jm Hauſe des gottloſen iſt der Flu&#x366;ch des HERREN/ Aber/ der gerechten Hauß wird geſegnet. <hi rendition="#aq">Pro.III.33.</hi>
+            <p>Jm Hauſe des gottloſen iſt der Flu&#x366;ch des HERREN/ Aber/ der gerechten Hauß wird geſegnet. <hi rendition="#aq">Pro.III.33.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Dem Herpſt und Abend wir angehndes Alter gleichen/</l>
             <lb/>
             <l>ſo/ ſonder Wachßthum/ nie vorgehnde ließ entweichen:</l>
@@ -146,19 +163,25 @@
             <l>Drum ſamlet es die Frucht/ mit freüden/ reichlich eÿn:</l>
             <lb/>
             <l>Der Tra&#x364;g und Gottloß wird im Alter Darbend ſeÿn.</l>
+            </lg>
+            </div>
             <lb/>
             
-            Nacht: Winter: oder Ho&#x364;chſtes Alter.
+            <div>
+            <head rendition="#c">Nacht: Winter: oder Ho&#x364;chſtes Alter.</head>
+            <figure>
             <lb/>
-            Es iſt dem Menſchen geſetzt/ ein mahl zu&#x366;
+            <p>Es iſt dem Menſchen geſetzt/ ein mahl zu&#x366;
             <lb/>
             Sterben: darnach aber das Gericht. <hi rendition="#aq">Heb:IX.15.</hi>
             <lb/>
             Theüwer iſt in den Augen deß HERRE der Tod ſeiner
             <lb/>
-            <unclear>Giderben</unclear> Leütten. <hi rendition="#aq">Pſalm CXVI.15.</hi>
+            <unclear>Giderben</unclear> Leütten. <hi rendition="#aq">Pſalm CXVI.15.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Dem Winter und der Nacht iſt a&#x364;hnlich kaltes Alter/</l>
             <lb/>
             <l>erfüllet mit beſchwerd im finſteren Gehalter:</l>
@@ -166,17 +189,19 @@
             <l>Die Zeit nun eilt zum End; das Alter zu&#x366; dem Grab/</l>
             <lb/>
             <l>und freüt ſich daß es ſol der Welt genaden ab!</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">SIt CVræ pVerIs, IV VenIqVe, VIroqVe, senIqVe
+            <p><hi rendition="#aq">SIt CVræ pVerIs, IV VenIqVe, VIroqVe, senIqVe
             <lb/>
-            Vlta pla: Vt poſsIt Mors pla et InDe seqVI.</hi>
+            Vlta pla: Vt poſsIt Mors pla et InDe seqVI.</hi></p>
             <lb/>
-            Einer Kunst und Tugend liebenden Jugend in Zürich
+            <p>Einer Kunst und Tugend liebenden Jugend in Zürich
             <lb/>
             ab der Burgerbüchereÿ daſelbſten/ für das
             <lb/>
-            1667. jahr/ verehrt.
+            1667. jahr/ verehrt.</p>
+            </div>
             <lb/>
             
          </div>

@@ -71,12 +71,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN62C">
+         <div xml:id="EN62C" type="poem">
             <pb facs="17729264"/>
-            <head>Neujahres-Gab/ für alle Sta&#x364;nde.</head>
+            <head rendition="#c">Neujahres-Gab/ für alle Sta&#x364;nde.</head>
             <lb/>
             
-            <hi rendition="#aq">Welcher Baum
+            <figure>
+            <p><hi rendition="#aq">Welcher Baum
             <lb/>
             nicht gute frucht
             <lb/>
@@ -87,10 +88,13 @@
             wen und etc.
             <lb/>
                
-            C. M. fecit.</hi>
+            C. M. fecit.</hi></p>
+            </figure>
             <lb/>
             
-            <head rendition="#aq">Cantus.</head>
+            <!-- TODO HiWi: Spruchband ("Welcher Baum ...") und Signatur stehen im rechten Bild. -->
+            <lg>
+            <head rendition="#aq #c">Cantus.</head>
             <lb/>
             <l>Nun danket Gott/ durch Jeſum Chriſt/</l>
             <lb/>
@@ -101,9 +105,11 @@
             <l>ins Neue Jahr ein ieder trett.</l>
             <lb/>
             <l>Hallelujah.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Altus.</head>
+            <lg>
+            <head rendition="#aq #c">Altus.</head>
             <lb/>
             <l>Nun danket Gott durch Jeſum Chriſt/</l>
             <lb/>
@@ -114,9 +120,11 @@
             <l>ins Neue Jahr ein ieder trett.</l>
             <lb/>
             <l>Hallelujah.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Tenor.</head>
+            <lg>
+            <head rendition="#aq #c">Tenor.</head>
             <lb/>
             <l>Nun danket Gott/ durch Jeſum Chriſt/</l>
             <lb/>
@@ -127,9 +135,11 @@
             <l>ins Neue Jahr ein ieder trett.</l>
             <lb/>
             <l>Hallelujah.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Baſis.</head>
+            <lg>
+            <head rendition="#aq #c">Baſis.</head>
             <lb/>
             <l>Nun danket Gott/ durch Jeſum Chriſt/</l>
             <lb/>
@@ -140,8 +150,11 @@
             <l>ins Neue Jahr ein ieder trett.</l>
             <lb/>
             <l>Hallelujah.</l>
+            </lg>
             <lb/>
             
+            <lg type="poem">
+            <lg n="1">
             <l><hi rendition="#in">N</hi>Vn dancket Gott/ durch Jeſum Chriſt/</l>
             <lb/>
             <l>fu&#x364;r wolverfloßne Jahresfriſt/</l>
@@ -149,9 +162,11 @@
             <l>mit neuem vorſatz und gebett/</l>
             <lb/>
             <l>ins Neue Jahr ein ieder trett. Hallelujah.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Die Obrigkeit geleiches Recht</l>
             <lb/>
@@ -160,9 +175,11 @@
             <l>ſey ſelb dem gſatz auch underthan/</l>
             <lb/>
             <l>mit gutem beyſpiel geh voran.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Der underthan zu aller zeit/</l>
             <lb/>
@@ -171,9 +188,11 @@
             <l>nach landes brauch und in gebühr/</l>
             <lb/>
             <l>und ſetze leib und gut zu ihr.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Befelchsleuth und gemeine knecht</l>
             <lb/>
@@ -182,9 +201,11 @@
             <l>vergnu&#x364;get an beſtim&#x303;tem ſold/</l>
             <lb/>
             <l>dem ungerechten gwalt abhold.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Der Prediger leb Lehrgema&#x364;ß/</l>
             <lb/>
@@ -193,9 +214,11 @@
             <l>ma&#x364;ng aber ernſt mit freundtlichkeit/</l>
             <lb/>
             <l>nach ieder ſach beſchaffenheit.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
             <l>Zuho&#x364;rer horchen auf die Lehr/</l>
             <lb/>
@@ -204,9 +227,11 @@
             <l>alß Gottes wort/ zu ihrem heil/</l>
             <lb/>
             <l>an Chriſtus Erb zuhaben theil.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
             <l>Schulmeiſter/ Eltern/ und wer ſonſt</l>
             <lb/>
@@ -215,9 +240,11 @@
             <l>erziehen ſol/ ſich auf das neu</l>
             <lb/>
             <l>befleiſſen unverdroßner treu.</l>
+            </lg>
             <lb/>
             
-            <head><num>8.</num></head>
+            <lg n="8">
+            <head rendition="#c"><num>8.</num></head>
             <lb/>
             <l>Jhr Kinder laßt euch ziehen wol</l>
             <lb/>
@@ -226,9 +253,11 @@
             <l>dan welcher nicht annim&#x303;t die zucht/</l>
             <lb/>
             <l>der wachſet auf zu bo&#x364;ſer frucht.</l>
+            </lg>
             <lb/>
             
-            <head><num>9.</num></head>
+            <lg n="9">
+            <head rendition="#c"><num>9.</num></head>
             <lb/>
             <l>Der Herꝛ/ der Meiſter und die Frau/</l>
             <lb/>
@@ -237,9 +266,11 @@
             <l>gedencken/ Gott im Himmelreich</l>
             <lb/>
             <l>ſey allerſamen Herꝛ zugleich.</l>
+            </lg>
             <lb/>
             
-            <head><num>10.</num></head>
+            <lg n="10">
+            <head rendition="#c"><num>10.</num></head>
             <lb/>
             <l>Die Dienſt/ und wer um lohn gedingt/</l>
             <lb/>
@@ -248,9 +279,11 @@
             <l>ohn allen falſch/ zu aller ſtund/</l>
             <lb/>
             <l>alß dientens Gott/ auß hertzens-grund.</l>
+            </lg>
             <lb/>
             
-            <head><num>11.</num></head>
+            <lg n="11">
+            <head rendition="#c"><num>11.</num></head>
             <lb/>
             <l>Ehleuhten liebe ſich verneu/</l>
             <lb/>
@@ -259,9 +292,11 @@
             <l>wie Chriſtus Lieb' und ſeiner Gmeind/</l>
             <lb/>
             <l>dann in der Eh zwey ein fleiſch ſeind.</l>
+            </lg>
             <lb/>
             
-            <head><num>12.</num></head>
+            <lg n="12">
+            <head rendition="#c"><num>12.</num></head>
             <lb/>
             <l>Die Jüngling und Jungfra&#x364;uelein</l>
             <lb/>
@@ -270,9 +305,11 @@
             <l>mit Gott/ und ihrer Eltern raht/</l>
             <lb/>
             <l>in Ehſtand kommens nie zuſpaht.</l>
+            </lg>
             <lb/>
             
-            <head><num>13.</num></head>
+            <lg n="13">
+            <head rendition="#c"><num>13.</num></head>
             <lb/>
             <l>Der Reich mit neuer Gab erquick</l>
             <lb/>
@@ -281,9 +318,11 @@
             <l>gedultig in die armuhtey/</l>
             <lb/>
             <l>verhoff das ewig Gut darbey.</l>
+            </lg>
             <lb/>
             
-            <head><num>14.</num></head>
+            <lg n="14">
+            <head rendition="#c"><num>14.</num></head>
             <lb/>
             <l>Der Handelsmann nicht wu&#x366;cher treib</l>
             <lb/>
@@ -292,9 +331,11 @@
             <l>ſeins Chriſtenthums/ geb aber hin</l>
             <lb/>
             <l>auf billichen und o&#x364;ftern gwin.</l>
+            </lg>
             <lb/>
             
-            <head><num>15.</num></head>
+            <lg n="15">
+            <head rendition="#c"><num>15.</num></head>
             <lb/>
             <l>Der Handtwercksmann zur Arbeit greiff</l>
             <lb/>
@@ -303,9 +344,11 @@
             <l>Des Segens/ den der Herꝛ beſchehrt/</l>
             <lb/>
             <l>alß der in fluch nicht wird verkehrt.</l>
+            </lg>
             <lb/>
             
-            <head><num>16.</num></head>
+            <lg n="16">
+            <head rendition="#c"><num>16.</num></head>
             <lb/>
             <l>Der Baur das Feld- und Rebwerck bau/</l>
             <lb/>
@@ -314,9 +357,11 @@
             <l>daß er ſein Arbeit ſegnen werd</l>
             <lb/>
             <l>mit wu&#x366;cher auß der ku&#x364;hlen erd.</l>
+            </lg>
             <lb/>
             
-            <head><num>17.</num></head>
+            <lg n="17">
+            <head rendition="#c"><num>17.</num></head>
             <lb/>
             <l>Jhr krancken und pra&#x364;ſthaffte leuht/</l>
             <lb/>
@@ -325,9 +370,11 @@
             <l>am leib und an der ſeel geplagt/</l>
             <lb/>
             <l>erlo&#x364;ſung hoft/ und nicht verzagt.</l>
+            </lg>
             <lb/>
             
-            <head><num>18.</num></head>
+            <lg n="18">
+            <head rendition="#c"><num>18.</num></head>
             <lb/>
             <l>Jhr ſünder/ ab dem Laſterweg/</l>
             <lb/>
@@ -336,9 +383,11 @@
             <l>und ſucht in Chriſto Gottes huld/</l>
             <lb/>
             <l>ſo ſeyt ihr quitt der ſtraaf und ſchuld.</l>
+            </lg>
             <lb/>
             
-            <head><num>19.</num></head>
+            <lg n="19">
+            <head rendition="#c"><num>19.</num></head>
             <lb/>
             <l>Diß nun zurichten in das werck/</l>
             <lb/>
@@ -347,11 +396,13 @@
             <l>hochheilige Dreyeinigkeit/</l>
             <lb/>
             <l>gelobet in- und nach der zeit.</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Einer Eheliebenden jungen Burgerſchafft zu Zu&#x364;rich/ ab der Burger-
+            <p>Einer Eheliebenden jungen Burgerſchafft zu Zu&#x364;rich/ ab der Burger-
             <lb break="no"/>
-            Bibliothek/ fu&#x364;r das 1662. Jahr verehrt.
+            Bibliothek/ fu&#x364;r das 1662. Jahr verehrt.</p>
             <lb/>
             
          </div>

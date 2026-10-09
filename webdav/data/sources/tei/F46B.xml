@@ -40,9 +40,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F46B">
+         <div xml:id="F46B" type="poem">
             <pb facs="1"/>
-            <hi rendition="#aq">ODE TROCHAICA,</hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq">ODE TROCHAICA,</hi>
             <lb/>
             Vber
             <lb/>
@@ -52,9 +53,11 @@
             <lb/>
             Ru&#x366;h- oder Fridens-
             <lb break="no"/>
-            u&#x364;bung.
+            u&#x364;bung.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg n="1">
             <l><hi rendition="#in">W</hi>Ann ich mich zu&#x366; denen wende/</l>
             <lb/>
             <l>Die diß Bu&#x364;chlein eigentlich</l>
@@ -66,11 +69,13 @@
             <l>Daß es/ zu&#x366; bequa&#x364;mer zeit/</l>
             <lb/>
             <l>Jn die Welt werd' außgebreit.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
-            <l>Wünſchen werden ſie darneben/</l>
+            <l rendition="#et">Wünſchen werden ſie darneben/</l>
             <lb/>
             <l>Daß ſein angebottner Schatz/</l>
             <lb/>
@@ -81,15 +86,17 @@
             <l>Sonderlich im Teutſchen Land/</l>
             <lb/>
             <l>Bey dem ho&#x364;chſt- vnd minſten Stand!</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="catch"><num>3.</num> Endt-</fw>
             <lb break="no"/>
             <pb facs="2"/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
-            <l>Endtlich werdens mit mir preiſen</l>
+            <l rendition="#et">Endtlich werdens mit mir preiſen</l>
             <lb/>
             <l>Den Vrha&#x364;ber/ vnd zu&#x366;gleich</l>
             <lb/>
@@ -100,11 +107,13 @@
             <l>Ja zur Himmels-Frewd vnd Ru&#x366;h:</l>
             <lb/>
             <l><hi rendition="#g">HERR/</hi> den Fortgang gib darzu&#x366;!</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
-            <l>Halleluja: Lobt den <hi rendition="#g">HERREN</hi></l>
+            <l rendition="#et">Halleluja: Lobt den <hi rendition="#g">HERREN</hi></l>
             <lb/>
             <l>Jhr/ die in dem Friden lebt:</l>
             <lb/>
@@ -115,9 +124,13 @@
             <l>Wider Satans liſt vnd gwalt/</l>
             <lb/>
             <l><hi rendition="#g">HERR/</hi> im Friden vns erhalt!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            J. W. S.
+            <closer rendition="#c">
+            <signed>J. W. S.</signed>
+            </closer>
             <lb/>
             
          </div>

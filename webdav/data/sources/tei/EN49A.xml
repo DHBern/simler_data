@@ -83,12 +83,15 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN49A">
+         <div xml:id="EN49A" type="poem">
             <pb facs="17729198"/>
-            <hi rendition="#aq">C. M. fe.</hi>
+            <figure>
+            <p><hi rendition="#aq">C. M. fe.</hi></p>
+            </figure>
             <lb/>
             
-            <head rendition="#aq">Cantus.</head>
+            <lg>
+            <head rendition="#aq #c">Cantus.</head>
             <lb/>
             <l>Der kürtzeſt tag vnd la&#x364;ngſte nacht</l>
             <lb/>
@@ -101,9 +104,11 @@
             <l>Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee</l>
             <lb/>
             <l>Sich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Altus.</head>
+            <lg>
+            <head rendition="#aq #c">Altus.</head>
             <lb/>
             <l>Der kürtzeſt tag vnd la&#x364;ngſte nacht</l>
             <lb/>
@@ -116,9 +121,11 @@
             <l>Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee</l>
             <lb/>
             <l>Sich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Tenor.</head>
+            <lg>
+            <head rendition="#aq #c">Tenor.</head>
             <lb/>
             <l>Der kürtzeſt tag vnd la&#x364;ngſte nacht</l>
             <lb/>
@@ -131,9 +138,11 @@
             <l>Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee</l>
             <lb/>
             <l>Sich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Baſis.</head>
+            <lg>
+            <head rendition="#aq #c">Baſis.</head>
             <lb/>
             <l>Der kürtzeſt tag vnd la&#x364;ngſte nacht</l>
             <lb/>
@@ -146,116 +155,132 @@
             <l>Die ſtro&#x364;m vnd ſee vor froſt vnd ſchnee</l>
             <lb/>
             <l>Sich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <!-- TODO HiWi: Strophe 1 = Text der vier Stimmen oben; Notenbilder nicht kodiert. -->
+            <lg type="poem">
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Der gru&#x364;ne Wald iſt worden kal/</l>
             <lb/>
-            <l>Das bundte Feld entkleidet:</l>
+            <l rendition="#et">Das bundte Feld entkleidet:</l>
             <lb/>
             <l>Kein zam- noch wildes thier zumal</l>
             <lb/>
-            <l>An ſeinem ort ſich weidet:</l>
+            <l rendition="#et">An ſeinem ort ſich weidet:</l>
             <lb/>
-            <l>Das Federheer</l>
+            <l rendition="#et2">Das Federheer</l>
             <lb/>
-            <l>Singt auch nicht mehr/</l>
+            <l rendition="#et2">Singt auch nicht mehr/</l>
             <lb/>
-            <l>Ein theil von vns wegſcheidet.</l>
+            <l rendition="#et">Ein theil von vns wegſcheidet.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Das einſam Turturta&#x364;ubelein</l>
             <lb/>
-            <l>Nur ſeufftzend wird geho&#x364;ret:</l>
+            <l rendition="#et">Nur ſeufftzend wird geho&#x364;ret:</l>
             <lb/>
             <l>Die Rabenſtim&#x303; iſt ietz gemein/</l>
             <lb/>
-            <l>Vnd vns das gho&#x364;r verſehret:</l>
+            <l rendition="#et">Vnd vns das gho&#x364;r verſehret:</l>
             <lb/>
-            <l>Melancholey</l>
+            <l rendition="#et2">Melancholey</l>
             <lb/>
-            <l>Wohnt allem bey/</l>
+            <l rendition="#et2">Wohnt allem bey/</l>
             <lb/>
-            <l>Vnd alle freud zerſto&#x364;ret.</l>
+            <l rendition="#et">Vnd alle freud zerſto&#x364;ret.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Was lebt vnd ſchwebt den Winter ſcheucht/</l>
             <lb/>
-            <l>Vnd ſu&#x366;chet ſich zu wa&#x364;rmen:</l>
+            <l rendition="#et">Vnd ſu&#x366;chet ſich zu wa&#x364;rmen:</l>
             <lb/>
             <l>Der Kriegsmann ſelber ſich verkreucht/</l>
             <lb/>
-            <l>Vnd machet keine la&#x364;rmen:</l>
+            <l rendition="#et">Vnd machet keine la&#x364;rmen:</l>
             <lb/>
-            <l>Das Alter jetz</l>
+            <l rendition="#et2">Das Alter jetz</l>
             <lb/>
-            <l>Liebt Ofens hitz/</l>
+            <l rendition="#et2">Liebt Ofens hitz/</l>
             <lb/>
-            <l>Von wegen kalter Da&#x364;rmen.</l>
+            <l rendition="#et">Von wegen kalter Da&#x364;rmen.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Der Weidmann doch/ für ſeinen ſpaß/</l>
             <lb/>
-            <l>Das Hochgewilde hetzet:</l>
+            <l rendition="#et">Das Hochgewilde hetzet:</l>
             <lb/>
             <l>Das Eiß/ wann es wie ſpiegelglaß/</l>
             <lb/>
-            <l>Die Jugend auch ergetzet:</l>
+            <l rendition="#et">Die Jugend auch ergetzet:</l>
             <lb/>
-            <l>Man metzget eyn</l>
+            <l rendition="#et2">Man metzget eyn</l>
             <lb/>
-            <l>Vil feißte Schwein/</l>
+            <l rendition="#et2">Vil feißte Schwein/</l>
             <lb/>
-            <l>Vnd ſich zum Wurſtmahl ſetzet.</l>
+            <l rendition="#et">Vnd ſich zum Wurſtmahl ſetzet.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
             <l>Der Winter/ alß des Jahres bauch/</l>
             <lb/>
-            <l>Verzehrt was wir erworben</l>
+            <l rendition="#et">Verzehrt was wir erworben</l>
             <lb/>
             <l>Mit ſaurer arbeit/ zum gebrauch</l>
             <lb/>
-            <l>Wann jetz die Saat erſtorben:</l>
+            <l rendition="#et">Wann jetz die Saat erſtorben:</l>
             <lb/>
-            <l>Wann vberal</l>
+            <l rendition="#et2">Wann vberal</l>
             <lb/>
-            <l>Zu Berg vnd Thal</l>
+            <l rendition="#et2">Zu Berg vnd Thal</l>
             <lb/>
             <l>Jſt alles wie verdorben.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
             <l>Alſo/ dem Winter gleich/ die Zeit</l>
             <lb/>
-            <l>Jm Alter vns verſchlinget:</l>
+            <l rendition="#et">Jm Alter vns verſchlinget:</l>
             <lb/>
             <l>Doch iſt vom Tode nicht befreyt</l>
             <lb/>
-            <l>Der jung/ wie hoch er ſpringet:</l>
+            <l rendition="#et">Der jung/ wie hoch er ſpringet:</l>
             <lb/>
-            <l>Drumb haltet wacht</l>
+            <l rendition="#et2">Drumb haltet wacht</l>
             <lb/>
-            <l>Bey tag vnd nacht/</l>
+            <l rendition="#et2">Bey tag vnd nacht/</l>
             <lb/>
-            <l>Vnd ſo zum leben dringet!</l>
+            <l rendition="#et">Vnd ſo zum leben dringet!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Mag auch geſungen werden in der melodey: So wünſch ich ihr ein gu&#x366;te nacht/ ꝛc.
+            <p>Mag auch geſungen werden in der melodey: So wünſch ich ihr ein gu&#x366;te nacht/ ꝛc.</p>
             <lb/>
             
-            Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-Bibliothek
+            <p>Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-Bibliothek
             <lb/>
-            für das 1649. Jahre/ verehrt.
+            für das 1649. Jahre/ verehrt.</p>
             <lb/>
             
          </div>

@@ -73,12 +73,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F69D.1">
+         <div xml:id="F69D.1" type="poem">
             <pb facs="3854565" n="56"/>
             <fw place="top" type="pageNum">56</fw>
             <lb/>
             
-            <head>Kling- oder Lobgeticht/
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c">Kling- oder Lobgeticht/
             <lb/>
             Uber
             <lb/>
@@ -93,40 +94,44 @@
             Violblumen.</head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">R</hi>Echt/ ſo/ Herꝛ Bodmer/ ſo ko&#x364;nt Jhr zugleich abwarten</l>
             <lb/>
-            <l>Der Edlen Truckerkunſt/ und dem Regentenſtand/</l>
+            <l rendition="#et">Der Edlen Truckerkunſt/ und dem Regentenſtand/</l>
             <lb/>
-            <l>Wann Jhr/ was beyden nuzt/ <choice><sic>ergeiffet</sic><corr>ergreiffet</corr></choice> mit der hand/</l>
+            <l rendition="#et">Wann Jhr/ was beyden nuzt/ <choice><sic>ergeiffet</sic><corr>ergreiffet</corr></choice> mit der hand/</l>
             <lb/>
             <l>Die Tichterfeder iſt gemeint/ im Muſengarten.</l>
             <lb/>
             <l>Jhr trachtet im Geſa&#x364;tz/ das Leben recht zuarten:</l>
             <lb/>
-            <l>Jm Glauben gru&#x364;ndet Jhr: Beveſtnets mit Gebett:</l>
+            <l rendition="#et">Jm Glauben gru&#x364;ndet Jhr: Beveſtnets mit Gebett:</l>
             <lb/>
-            <l>Und ſucht Erlo&#x364;ſung nur auf Chriſti Marterſtett/</l>
+            <l rendition="#et">Und ſucht Erlo&#x364;ſung nur auf Chriſti Marterſtett/</l>
             <lb/>
             <l>Der einig außgewezt all' unſre ſu&#x364;ndenſcharten.</l>
             <lb/>
-            <l>O/ ſcho&#x364;nſte Violblum: Geruchs und Zierden foll!</l>
+            <l rendition="#et">O/ ſcho&#x364;nſte Violblum: Geruchs und Zierden foll!</l>
             <lb/>
-            <l>Die ihren Herꝛen macht auch ſelber riechen wol/</l>
+            <l rendition="#et">Die ihren Herꝛen macht auch ſelber riechen wol/</l>
             <lb/>
             <l>So wol im Vatterland/ alß an entlegnen Orten:</l>
             <lb/>
-            <l>Und/ neben dem was Er getichtet hat nach mehr/</l>
+            <l rendition="#et">Und/ neben dem was Er getichtet hat nach mehr/</l>
             <lb/>
-            <l>Dem Chriſtenvolk zu gut/ fu&#x364;rauß zu Gottes Ehr:</l>
+            <l rendition="#et">Dem Chriſtenvolk zu gut/ fu&#x364;rauß zu Gottes Ehr:</l>
             <lb/>
             <l>Fu&#x364;hrt Jhn/ wie billich iſt/ den weg zur Ehrenpforten.</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zu ſchuldigen Ehren
             <lb/>
             freywilligſt aufgeſezt
             <lb/>
-            Von J. W. Simler.
+            <signed>Von J. W. Simler.</signed>
+            </closer>
             <lb/>
             
          </div>

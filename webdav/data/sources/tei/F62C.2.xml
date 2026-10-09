@@ -73,11 +73,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F62C.2">
+         <div xml:id="F62C.2" type="poem">
             <pb facs="4020084"/>
-            <head><hi rendition="#aq"><num>IV.</num></hi></head>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>IV.</num></hi></head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">D</hi>Je Landtleuth mit der Fauſt; Herꝛ <hi rendition="#aq">Decan</hi> mit dem mund</l>
             <lb/>
             <l>Sich hielten ritterlich an ihrem ort und ſtund/</l>
@@ -85,11 +87,14 @@
             <l>Sie/ fu&#x364;r die Region: Er/ fu&#x364;r d' Religion:</l>
             <lb/>
             <l>Dem Ho&#x364;chſten doch allein gebu&#x364;hrt die Sieges-Cron.</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zuſchuldigen Ehren/ ſetzte diſes
             <lb/>
-            Joh. Wilhelm Simler.
+            <signed>Joh. Wilhelm Simler.</signed>
+            </closer>
             <lb/>
             <fw place="bottom" type="catch">Johan-</fw>
             <lb break="no"/>

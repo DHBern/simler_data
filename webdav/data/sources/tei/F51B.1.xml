@@ -73,9 +73,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F51B.1">
+         <div xml:id="F51B.1" type="poem">
             <pb facs="3855493"/>
-            <head>Viergedicht/
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c">Viergedicht/
             <lb/>
             oder
             <lb/>
@@ -94,20 +95,25 @@
             Veſtungsbaw.</head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">W</hi>As vil/ mit viler zahl/ und groſſer mu&#x364;h gewiſen</l>
             <lb/>
-            <l>von jedem <hi rendition="#b">Veſtungsbaw</hi>: das zeigt <hi rendition="#b">Ardüſers Hand</hi><anchor xml:id="a1"/><unclear>;</unclear><note type="annotation" targetEnd="a1"><p>Wahrscheinlich Semikolon, aber nicht eindeutig</p></note></l>
+            <l rendition="#et">von jedem <hi rendition="#b">Veſtungsbaw</hi>: das zeigt <hi rendition="#b">Ardüſers Hand</hi><anchor xml:id="a1"/><unclear>;</unclear><note type="annotation" targetEnd="a1"><p>Wahrscheinlich Semikolon, aber nicht eindeutig</p></note></l>
             <lb/>
-            <l>in zweyfelhafftem Frid; dem wa&#x364;rthen Vatterland/</l>
+            <l rendition="#et">in zweyfelhafftem Frid; dem wa&#x364;rthen Vatterland/</l>
             <lb/>
             <l>einfa&#x364;ltig/ doch mit grund: Kunſthalber hochgepriſen.</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zu ſchuldigen ehren
             <lb/>
             ſchreibt ſolches
             <lb/>
-            Joh. Wilhelm Simler.
+            <signed>Joh. Wilhelm Simler.</signed>
+            </closer>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             
          </div>

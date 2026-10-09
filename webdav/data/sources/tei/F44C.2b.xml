@@ -61,12 +61,12 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F44C.2b">
+         <div xml:id="F44C.2b" type="poem">
             <pb facs="3855451"/>
             
-            <head>Hochzeitliches Fru&#x364;hlings-Geſang.</head>
+            <head rendition="#c">Hochzeitliches Fru&#x364;hlings-Geſang.</head>
             <lb/>
-            Jn folgenden Melodeyen.
+            <p rendition="#c">Jn folgenden Melodeyen.
             <lb/>
             Selig iſt der gepreiſet. Pſalm.128.
             <lb/>
@@ -74,9 +74,11 @@
             <lb/>
             Hertzlich thu&#x366;t mich erfrewen/ ꝛc.
             <lb/>
-            Wilhelm bin ich der Telle/ ꝛc.
+            Wilhelm bin ich der Telle/ ꝛc.</p>
             <lb/>
             
+            <lg type="poem">
+            <lg n="1">
             <l><hi rendition="#in">D</hi>Er kalte Winter endet/</l>
             <lb/>
             <l>Der Schnee verlaßt den Sitz/</l>
@@ -92,9 +94,11 @@
             <l>Erfrewlich vnſern Landen</l>
             <lb/>
             <l>Mit jhrer Luſtbarkeit.</l>
+            </lg>
             <lb/>
             
-            <num>2</num> Dann was durch Schnee vnd Eiſe
+            <lg n="2">
+            <l><num>2</num> Dann was durch Schnee vnd Eiſe</l>
             <lb/>
             <l>Der Winter hat erſteckt/</l>
             <lb/>
@@ -109,9 +113,11 @@
             <l>Jn den Luſtga&#x364;rten ſtehen/</l>
             <lb/>
             <l>Auch Ko&#x364;nigs-Cron voran.</l>
+            </lg>
             <lb/>
             
-            <num>3</num> Vil Violen/ Narciſſen/
+            <lg n="3">
+            <l><num>3</num> Vil Violen/ Narciſſen/</l>
             <lb/>
             <l>Vil Gilgen/ Meyen-reiß/</l>
             <lb/>
@@ -126,9 +132,11 @@
             <l>Anreitzet deſſen Sinne</l>
             <lb/>
             <l>Der jhren Gruch erfahrt.</l>
+            </lg>
             <lb/>
             
-            <num>4</num> Die bſchnidtnen Ra&#x364;ben rinnen
+            <lg n="4">
+            <l><num>4</num> Die bſchnidtnen Ra&#x364;ben rinnen</l>
             <lb/>
             <l>Vnd weynen erſtlich zwar/</l>
             <lb/>
@@ -143,9 +151,11 @@
             <l>Wohin doch mo&#x364;gen hupffen</l>
             <lb/>
             <l>Jhr Schoſſe grad vnd krumb.</l>
+            </lg>
             <lb/>
             
-            <num>5</num> Die Ba&#x364;ume ſich außbreiten
+            <lg n="5">
+            <l><num>5</num> Die Ba&#x364;ume ſich außbreiten</l>
             <lb/>
             <l>Mit jhren Aeſten hart/</l>
             <lb/>
@@ -160,9 +170,11 @@
             <l>Derſelben zu&#x366; genieſſen</l>
             <lb/>
             <l>Der Reich vnd Arme ſu&#x366;cht.</l>
+            </lg>
             <lb/>
             
-            <num>6</num> Die ſcho&#x364;n gemahlten Wiſen/
+            <lg n="6">
+            <l><num>6</num> Die ſcho&#x364;n gemahlten Wiſen/</l>
             <lb/>
             <l>Die zahmen Bühelein/</l>
             <lb/>
@@ -177,9 +189,11 @@
             <l>Vil frewden ſie vrꝛſachen</l>
             <lb/>
             <l>Wann jhre Frucht geraht.</l>
+            </lg>
             <lb/>
             
-            <num>7</num> Das leichte Volck der Lüfften/
+            <lg n="7">
+            <l><num>7</num> Das leichte Volck der Lüfften/</l>
             <lb/>
             <l>Das kriechend in dem Thal/</l>
             <lb/>
@@ -194,9 +208,11 @@
             <l>Sich ſehnen zu&#x366; erfriſchen</l>
             <lb/>
             <l>So bald der Winter fleücht.</l>
+            </lg>
             <lb/>
             
-            <num>8</num> Der Schwalbe kompt geflogen/
+            <lg n="8">
+            <l><num>8</num> Der Schwalbe kompt geflogen/</l>
             <lb/>
             <l>Der gſchnabelt Schlangen-Feind</l>
             <lb/>
@@ -211,13 +227,15 @@
             <l>Ein lieblich/ ſu&#x364;ß Getho&#x364;ne</l>
             <lb/>
             <l>Macht Nachtigalliſch Rott.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="catch"><num>9</num> Wir</fw>
             <lb/>
             <pb facs="3855452"/>
             
-            <num>9</num> Wir ſehen bey der Herde
+            <lg n="9">
+            <l><num>9</num> Wir ſehen bey der Herde</l>
             <lb/>
             <l>Den Stiere mu&#x366;htig ſeyn/</l>
             <lb/>
@@ -232,9 +250,11 @@
             <l>Das Kriechend ſich erweiſet</l>
             <lb/>
             <l>Gantz fro&#x364;lich in dem Sand.</l>
+            </lg>
             <lb/>
             
-            <num>10</num> Nach jhrer art ſich paren
+            <lg n="10">
+            <l><num>10</num> Nach jhrer art ſich paren</l>
             <lb/>
             <l>Die Thiere in gemein/</l>
             <lb/>
@@ -249,9 +269,11 @@
             <l>Nach dem zu&#x366;vor auß nichten</l>
             <lb/>
             <l>Die Welt war zu&#x366;bereit.</l>
+            </lg>
             <lb/>
             
-            <num>11</num> Do auch nach ſeinem Bilde
+            <lg n="11">
+            <l><num>11</num> Do auch nach ſeinem Bilde</l>
             <lb/>
             <l>Gott ſchu&#x366;ff den erſten Man&#x303;/</l>
             <lb/>
@@ -266,9 +288,11 @@
             <l>Von ſeinem Fleiſch vnd Beine</l>
             <lb/>
             <l>Der Herꝛ ein Weib zu&#x366;richt.</l>
+            </lg>
             <lb/>
             
-            <num>12</num> Daſſelb er jhm zu&#x366;fu&#x364;hret/
+            <lg n="12">
+            <l><num>12</num> Daſſelb er jhm zu&#x366;fu&#x364;hret/</l>
             <lb/>
             <l>Vnd beyde ſo vereint/</l>
             <lb/>
@@ -283,9 +307,11 @@
             <l>Ein Ma&#x364;nnin er ſie nennet:</l>
             <lb/>
             <l>Gott ſatzt den Ehſtand eyn.</l>
+            </lg>
             <lb/>
             
-            <num>13</num> Drumb meynen vil/ im Meyen/
+            <lg n="13">
+            <l><num>13</num> Drumb meynen vil/ im Meyen/</l>
             <lb/>
             <l>Vnd allerna&#x364;chſt zu&#x366;vor</l>
             <lb/>
@@ -300,9 +326,11 @@
             <l>Den Segen zu&#x366; bekommen/</l>
             <lb/>
             <l>Durch Gottes gu&#x364;tigkeit.</l>
+            </lg>
             <lb/>
             
-            <num>14</num> Dan&#x303;: Selig iſt gepreiſet Pſ.128.
+            <lg n="14">
+            <l><num>14</num> Dan&#x303;: Selig iſt gepreiſet Pſ.128.</l>
             <lb/>
             <l>Der Gott vor augen helt/</l>
             <lb/>
@@ -317,9 +345,11 @@
             <l>Gott wird dir glück beſchehren</l>
             <lb/>
             <l>Vnd ſegnen deinen Stand.</l>
+            </lg>
             <lb/>
             
-            <num>15</num> Dein Weib gleich einer Ra&#x364;ben
+            <lg n="15">
+            <l><num>15</num> Dein Weib gleich einer Ra&#x364;ben</l>
             <lb/>
             <l>Jn deinem Hauß wird ſeyn/</l>
             <lb/>
@@ -334,9 +364,11 @@
             <l>Nach einer reyen ſtehen</l>
             <lb/>
             <l>Gleich wie die Oelzweyg friſch.</l>
+            </lg>
             <lb/>
             
-            <num>16</num> Das ſind die ſcho&#x364;nen Gaben
+            <lg n="16">
+            <l><num>16</num> Das ſind die ſcho&#x364;nen Gaben</l>
             <lb/>
             <l>Die Gott den Menſchen gibt/</l>
             <lb/>
@@ -351,9 +383,11 @@
             <l>Jeruſalem verleyen</l>
             <lb/>
             <l>Bey deinem leben gnad.</l>
+            </lg>
             <lb/>
             
-            <num>17</num> Du wirſt auch endtlich ſehen
+            <lg n="17">
+            <l><num>17</num> Du wirſt auch endtlich ſehen</l>
             <lb/>
             <l>Kinds-kinder/ vnd dazu&#x366;</l>
             <lb/>
@@ -368,6 +402,8 @@
             <l>Dem Herꝛen wol gefalle</l>
             <lb/>
             <l>Den Wunſch zu&#x366; machen wahr!</l>
+            </lg>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="catch">Pin-</fw>

@@ -83,9 +83,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN69D">
+         <div xml:id="EN69D" type="poem">
             <pb facs="17729293"/>
-            <head>Treuhertziges Vermahnungsgeſang/ ſo wol für
+            <head rendition="#c">Treuhertziges Vermahnungsgeſang/ ſo wol für
             <lb/>
             die ſchon erwachſene/ alß auch für die noch minderja&#x364;hrige Jugend: Selbige
             <lb/>
@@ -94,158 +94,185 @@
             wa&#x364;g/ auf die ſichere Tugendbahn zubringen.</head>
             <lb/>
             
+            <!-- TODO HiWi: die vier numerierten Zweizeiler sind Beischriften unter den vier Bildern. -->
+            <lg>
+            <lg n="1">
             <head><num>1.</num></head>
             <lb/>
             <l>Nichts wehrter Sohn, gar bo&#x364;ſer art</l>
             <lb/>
             <l>ſein Erb erzwingt, von Heÿmat fahrt.</l>
+            </lg>
             <lb/>
             
+            <lg n="2">
             <head><num>2.</num></head>
             <lb/>
             <l>Leichtfehrtig er ſein Gu&#x366;t verzehrt:</l>
             <lb/>
             <l>Groß Armu&#x366;ht drauf beÿ ihm eÿnkehrt.</l>
+            </lg>
             <lb/>
             
+            <lg n="3">
             <head><num>3</num></head>
             <lb/>
             <l>Der Schweine Speiß; alß Hirt; ſich nehrt:</l>
             <lb/>
             <l>mit Reüen er zum Vatter kehrt.</l>
+            </lg>
             <lb/>
             
+            <lg n="4">
             <head><num>4.</num></head>
             <lb/>
             <l>Der Vatter nim&#x303;t Jhn wider an</l>
             <lb/>
             <l>alß hett er nie kein Sünd getahn.</l>
+            </lg>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Luce.XV.
+            <note type="bibl"><hi rendition="#aq">Luce.XV.
             <lb/>
-            v.ii.etc.</hi>
+            v.ii.etc.</hi></note>
             <lb/>
-            <hi rendition="#aq">Conrad Meÿer fecit.</hi>
+            <figure>
+            <p><hi rendition="#aq">Conrad Meÿer fecit.</hi></p>
+            </figure>
             <lb/>
             
-            <head><num>1.</num></head>
+            <lg type="poem">
+            <lg n="1">
+            <head rendition="#c"><num>1.</num></head>
             <lb/>
             <l><hi rendition="#in">F</hi>Riſch auf/ friſch auf/ ihr Knaben/</l>
             <lb/>
-            <l>ihr Jungfern auch zugleich/</l>
+            <l rendition="#et">ihr Jungfern auch zugleich/</l>
             <lb/>
-            <l>auff weitem Erdenreich:</l>
+            <l rendition="#et">auff weitem Erdenreich:</l>
             <lb/>
             <l>Friſch auf/ euch zuerlaben/</l>
             <lb/>
-            <l>ohn Kart- und Würffelſpil/</l>
+            <l rendition="#et">ohn Kart- und Würffelſpil/</l>
             <lb/>
             <l>ohn wetten/ flu&#x366;chen/ rauffen/</l>
             <lb/>
-            <l>auch nicht; wie ihrer vil;</l>
+            <l rendition="#et">auch nicht; wie ihrer vil;</l>
             <lb/>
             <l>mit unmaß/ freſſen/ ſauffen!</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Was nützen eitle Sachen?</l>
             <lb/>
-            <l>Was hilfft das bar gezellt</l>
+            <l rendition="#et">Was hilfft das bar gezellt</l>
             <lb/>
-            <l>mit ſpilen gſtolne Gelt?</l>
+            <l rendition="#et">mit ſpilen gſtolne Gelt?</l>
             <lb/>
             <l>Was Gſellſchafft viler Hachen?</l>
             <lb/>
-            <l>Was Wolluſt? Kleiderpracht?</l>
+            <l rendition="#et">Was Wolluſt? Kleiderpracht?</l>
             <lb/>
             <l>Was Mu&#x364;ſſiggang deßgleichen/</l>
             <lb/>
-            <l>wardurch ihr/ armgemacht/</l>
+            <l rendition="#et">wardurch ihr/ armgemacht/</l>
             <lb/>
             <l>mu&#x364;ßt etwan gar entweichen?</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Geht nicht ſo vil ſpatzieren</l>
             <lb/>
-            <l>zum Dantz- und Kegelplatz:</l>
+            <l rendition="#et">zum Dantz- und Kegelplatz:</l>
             <lb/>
-            <l>nicht folgt vermum&#x342;tem Schatz:</l>
+            <l rendition="#et">nicht folgt vermum&#x342;tem Schatz:</l>
             <lb/>
             <l>Laßt nichtes euch verfu&#x364;hren!</l>
             <lb/>
-            <l>Gewiß/ noch Bier/ noch Wein/</l>
+            <l rendition="#et">Gewiß/ noch Bier/ noch Wein/</l>
             <lb/>
             <l>auch nicht Taback/ noch ſpilen/</l>
             <lb/>
-            <l>noch bu&#x366;hlen wird es ſeyn/</l>
+            <l rendition="#et">noch bu&#x366;hlen wird es ſeyn/</l>
             <lb/>
             <l>warnach ihr ſoltet zilen.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Geht auf die Bahn der Tugend/</l>
             <lb/>
-            <l>der Gottesforcht und Lehr/</l>
+            <l rendition="#et">der Gottesforcht und Lehr/</l>
             <lb/>
-            <l>die bringet Nutz und Ehr</l>
+            <l rendition="#et">die bringet Nutz und Ehr</l>
             <lb/>
             <l>der Arbeitſammen Jugend.</l>
             <lb/>
-            <l>Wol dem/ und aber wol/</l>
+            <l rendition="#et">Wol dem/ und aber wol/</l>
             <lb/>
             <l>den Kunſt und Weisheit ſchmucket/</l>
             <lb/>
-            <l>Lehrt/ wie er's machen ſol</l>
+            <l rendition="#et">Lehrt/ wie er's machen ſol</l>
             <lb/>
             <l>wan noht und armu&#x366;ht trucket.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Jhr Jüngling/ und Jungfrauen/</l>
             <lb/>
-            <l>Jhr Kinder/ groß und klein/</l>
+            <l rendition="#et">Jhr Kinder/ groß und klein/</l>
             <lb/>
-            <l>wo&#x364;llt doch gefo&#x364;lgig ſeyn</l>
+            <l rendition="#et">wo&#x364;llt doch gefo&#x364;lgig ſeyn</l>
             <lb/>
             <l>wan&#x303; Eltern euch erbauen:</l>
             <lb/>
-            <l>Ergetzet euch hinfort</l>
+            <l rendition="#et">Ergetzet euch hinfort</l>
             <lb/>
             <l>in Vatterla&#x364;ndſchen Gſchichten/</l>
             <lb/>
-            <l>vorauß in Gottes Wort/</l>
+            <l rendition="#et">vorauß in Gottes Wort/</l>
             <lb/>
             <l>wie auch in Kinderbrichten!</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
             <l>Erſpieglet euch zugleiche/</l>
             <lb/>
-            <l>Hier/ am verlohrnen Sohn/</l>
+            <l rendition="#et">Hier/ am verlohrnen Sohn/</l>
             <lb/>
-            <l>und; zuvermeiden Hohn;</l>
+            <l rendition="#et">und; zuvermeiden Hohn;</l>
             <lb/>
             <l>von Laſtern jeder weiche:</l>
             <lb/>
-            <l>Su&#x366;cht ſeine Bu&#x366;ß und Reu/</l>
+            <l rendition="#et">Su&#x366;cht ſeine Bu&#x366;ß und Reu/</l>
             <lb/>
             <l>damit euch widerfahre</l>
             <lb/>
-            <l>geleiche Gnad und Treu:</l>
+            <l rendition="#et">geleiche Gnad und Treu:</l>
             <lb/>
             <l>Der Ho&#x364;heſt euch bewahre!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Der Kunſt- Zucht- und Tugendliebenden Jugend in Zu&#x364;rich/ Ab der Burgerbu&#x364;cherey daſelbſten/
+            <p>Der Kunſt- Zucht- und Tugendliebenden Jugend in Zu&#x364;rich/ Ab der Burgerbu&#x364;cherey daſelbſten/
             <lb/>
-            fu&#x364;r das 1669. Jahre/ verehrt.
+            fu&#x364;r das 1669. Jahre/ verehrt.</p>
             <lb/>
             
          </div>

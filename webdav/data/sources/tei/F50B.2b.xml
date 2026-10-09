@@ -61,16 +61,17 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F50B.2b">
+         <div xml:id="F50B.2b" type="poem">
             <pb facs="3508815"/>
             
-            <head><num>2.</num>
+            <head rendition="#c"><num>2.</num>
             <lb/>
             Trochaiſcher/ oder fallender
             <lb/>
             Ra&#x364;tzelvierling.</head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">D</hi>Vrch den ungeſtalten Tod wird der ein beru&#x364;hmter leben.</l>
             <lb/>
             <l>Eines andern bundne Zung wird dem Tod die Rede geben.</l>
@@ -78,6 +79,7 @@
             <l>Dritter wird uns halbertodt auß den tieffen Noten heben.</l>
             <lb/>
             <l>Alle werden nach dem tod/ ſternenho&#x364;her/ ewig ſchweben.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="pageNum">b</fw>

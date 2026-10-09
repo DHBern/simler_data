@@ -73,12 +73,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F51B.2">
+         <div xml:id="F51B.2" type="poem">
             <pb facs="4038438"/>
             <fw place="top" type="header" rendition="#aq #k #g #i">EPIGRAMMATA.</fw>
             <lb/>
             
-            <head><hi rendition="#aq"><num>V.</num></hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>V.</num></hi>
             <lb/>
             Ehren-gedechtnuß
             <lb/>
@@ -107,6 +108,8 @@
             Kling-gedichte.</head>
             <lb/>
             
+            <!-- TODO HiWi: Einzuege des Sonetts unregelmaessig (Initiale S), nicht kodiert. -->
+            <lg type="poem">
             <l><hi rendition="#in">S</hi>O ſoll Herꝛ <hi rendition="#b">Hegner</hi> dann auch werden eyngeſchriben</l>
             <lb/>
             <l>mit andern in das Bu&#x366;ch der grawen Ewigkeit?</l>
@@ -141,15 +144,18 @@
             <l>vom Jrꝛ- zum rechten Weg; von Sünd zur <hi rendition="#b">From&#x342;keit</hi> la&#x364;it/</l>
             <lb/>
             <l>ſo/ daß er jhrer <hi rendition="#b">Krafft</hi>/ der Schrifft gema&#x364;ß/ nachſtrebet!</l>
+            </lg>
             <lb/>
             
-            Zürich/ den 16. Hornungs
+            <closer rendition="#right">
+            <dateline>Zürich/ den 16. Hornungs
             <lb/>
-            1651.
+            1651.</dateline>
             <lb/>
-            <hi rendition="#b">Johann Wilhelm Simler<anchor xml:id="a1"/>/<note type="annotation" targetEnd="a1"><p>Die Virgel wird hier als Teil einer Sinneinheit mitgetaggt.</p></note></hi>
+            <signed><hi rendition="#b">Johann Wilhelm Simler<anchor xml:id="a1"/>/<note type="annotation" targetEnd="a1"><p>Die Virgel wird hier als Teil einer Sinneinheit mitgetaggt.</p></note></hi>
             <lb/>
-            Zuchtmeiſter im mehrern Hof.
+            Zuchtmeiſter im mehrern Hof.</signed>
+            </closer>
             <lb/>
          </div>
       </body>

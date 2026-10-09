@@ -83,40 +83,44 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN55C">
+         <div xml:id="EN55C" type="poem">
             <pb facs="17729223"/>
-            <head>6. Sinnenbild.
+            <head rendition="#c">6. Sinnenbild.
             <lb/>
             Stirb/ eh du ſterbſt/ daß nicht verderbſt.</head>
             <lb/>
             
-            <hi rendition="#aq">Co Meÿer
+            <figure>
+            <p><hi rendition="#aq">Co Meÿer
             <lb/>
             inve: et
             <lb/>
-            fecit.</hi>
+            fecit.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>So ungeleich gelebt/ ſo ungeleich geſtorben:</l>
             <lb/>
             <l>Der From&#x303; ergibt ſich gern/ weil Chriſtus Jhm erworben</l>
             <lb/>
-            <l>das Leben in dem Tod; die ewig Ehrenkron/</l>
+            <l rendition="#et">das Leben in dem Tod; die ewig Ehrenkron/</l>
             <lb/>
-            <l>in ho&#x364;chſter Seligkeit: Ô ſcho&#x364;nſter Gnadenlohn!</l>
+            <l rendition="#et">in ho&#x364;chſter Seligkeit: Ô ſcho&#x364;nſter Gnadenlohn!</l>
             <lb/>
             <l>Der Laſterfolle Wanſt wolt nie der Sünd abſterben/</l>
             <lb/>
             <l>deß ſtirbet er zu&#x366;letzt zum ewigen verderben:</l>
             <lb/>
-            <l>Jhm wird/ was er geliebt/ zur heiſſen Ho&#x364;llenglu&#x366;t.</l>
+            <l rendition="#et">Jhm wird/ was er geliebt/ zur heiſſen Ho&#x364;llenglu&#x366;t.</l>
             <lb/>
-            <l>Drum/ eh du ſterbeſt/ ſtirb; ſo bleibt dir ewigs Gu&#x366;t.</l>
+            <l rendition="#et">Drum/ eh du ſterbeſt/ ſtirb; ſo bleibt dir ewigs Gu&#x366;t.</l>
+            </lg>
             <lb/>
             
-            Einer Tugendliebenden Jugend in Zürich/ ab der
+            <p>Einer Tugendliebenden Jugend in Zürich/ ab der
             <lb/>
-            Burgerbibliot; für das 1655. Jahr verehrt.
+            Burgerbibliot; für das 1655. Jahr verehrt.</p>
             <lb/>
             
          </div>

@@ -61,12 +61,12 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F69Db">
+         <div xml:id="F69Db" type="poem">
             <pb facs="3219026" n="14"/>
             <fw place="top" type="pageNum">14</fw>
             <lb/>
             
-            <head><hi rendition="#aq"><num>II.</num></hi>
+            <head rendition="#c"><hi rendition="#aq"><num>II.</num></hi>
             <lb/>
             Leid- und Freudbezeugendes Ehren-
             <lb break="no"/>
@@ -75,17 +75,20 @@
             Mit David wir die Einigkeit erheben/ ꝛc.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg n="1">
             <l><hi rendition="#in">O</hi> Eitelkeit! Wie iſt des Menſchen Leben</l>
             <lb/>
             <l>Dem Todeszwang ſo ga&#x364;nzlich untergeben</l>
             <lb/>
-            <l>Daß wider Jhn kein mieten/</l>
+            <l rendition="#et">Daß wider Jhn kein mieten/</l>
             <lb/>
-            <l>Kein Gelt- noch Gabenſchatz/</l>
+            <l rendition="#et2">Kein Gelt- noch Gabenſchatz/</l>
             <lb/>
-            <l>Kein bitten/ noch gebieten/</l>
+            <l rendition="#et">Kein bitten/ noch gebieten/</l>
             <lb/>
-            <l>Noch Weißheit findet platz.</l>
+            <l rendition="#et2">Noch Weißheit findet platz.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="catch">Herꝛ</fw>
@@ -94,66 +97,77 @@
             <fw place="top" type="pageNum">15</fw>
             <lb/>
             
+            <lg n="2">
             <l>Herꝛ Waſer uns iſt deſſen ein Exempel/</l>
             <lb/>
             <l>Alß welcher war ein ſcho&#x364;ner Weißheit-Tempel/</l>
             <lb/>
-            <l>Und dennoch umgeſchliſſen</l>
+            <l rendition="#et">Und dennoch umgeſchliſſen</l>
             <lb/>
-            <l>Durch diſes Wu&#x364;rgers macht/</l>
+            <l rendition="#et2">Durch diſes Wu&#x364;rgers macht/</l>
             <lb/>
-            <l>Dem nie kein Menſch entriſſen</l>
+            <l rendition="#et">Dem nie kein Menſch entriſſen</l>
             <lb/>
-            <l>Wie hoch ers je gebracht.</l>
+            <l rendition="#et2">Wie hoch ers je gebracht.</l>
+            </lg>
             <lb/>
+            <lg n="3">
             <l>Erwehnter Herꝛ/ zwar alt und wolbetaget</l>
             <lb/>
             <l>Wird billich doch von Statt und Land beklaget:</l>
             <lb/>
-            <l>Jhn klagen die Gelehrten:</l>
+            <l rendition="#et">Jhn klagen die Gelehrten:</l>
             <lb/>
-            <l>Der Raht- und Richterſtul;</l>
+            <l rendition="#et2">Der Raht- und Richterſtul;</l>
             <lb/>
-            <l>Alß groſſen Schutzgefehrten;</l>
+            <l rendition="#et">Alß groſſen Schutzgefehrten;</l>
             <lb/>
-            <l>Jhn klagen Kirch und Schul.</l>
+            <l rendition="#et2">Jhn klagen Kirch und Schul.</l>
+            </lg>
             <lb/>
+            <lg n="4">
             <l>Was Groſſes wir an diſem Herꝛn verloren</l>
             <lb/>
             <l>Wird nicht geglaubt/ bis daß wir es zuvoren</l>
             <lb/>
-            <l>Mit ſchaden ſelbſt erfahren/</l>
+            <l rendition="#et">Mit ſchaden ſelbſt erfahren/</l>
             <lb/>
-            <l>Zu diſer Wunderzeit:</l>
+            <l rendition="#et2">Zu diſer Wunderzeit:</l>
             <lb/>
-            <l>Der Ho&#x364;chſt uns wo&#x364;ll bewahren</l>
+            <l rendition="#et">Der Ho&#x364;chſt uns wo&#x364;ll bewahren</l>
             <lb/>
-            <l>Vor Land- und Glaubensſtreit!</l>
+            <l rendition="#et2">Vor Land- und Glaubensſtreit!</l>
+            </lg>
             <lb/>
+            <lg n="5">
             <l>Frau Wittib; Sohn; Herꝛ'n Bru&#x364;der; Nechſtverwandte:</l>
             <lb/>
             <l>Jhr To&#x364;chter auch: Jhr Schwiegerſo&#x364;hn; Bekante:</l>
             <lb/>
-            <l>Klagt billich Euers Herꝛen;</l>
+            <l rendition="#et">Klagt billich Euers Herꝛen;</l>
             <lb/>
-            <l>Freunds; Bruders; Vatters End:</l>
+            <l rendition="#et2">Freunds; Bruders; Vatters End:</l>
             <lb/>
-            <l>Wer wil Euch diſes ſperꝛen/</l>
+            <l rendition="#et">Wer wil Euch diſes ſperꝛen/</l>
             <lb/>
-            <l>Ohn Gott? Jn Freud Ers wend!</l>
+            <l rendition="#et2">Ohn Gott? Jn Freud Ers wend!</l>
+            </lg>
             <lb/>
+            <lg n="6">
             <l>Jm Herꝛen jez uns wider wir erfreuen/</l>
             <lb/>
             <l>Dieweil Er uns ſo meint mit allen Treuen/</l>
             <lb/>
-            <l>Daß auf ſo groſſes Leide/</l>
+            <l rendition="#et">Daß auf ſo groſſes Leide/</l>
             <lb/>
-            <l>Jn Herꝛen Waſers Fall/</l>
+            <l rendition="#et2">Jn Herꝛen Waſers Fall/</l>
             <lb/>
-            <l>Er uns ergezt mit Freude</l>
+            <l rendition="#et">Er uns ergezt mit Freude</l>
             <lb/>
-            <l>Durch Herꝛen Hirtzels Wahl.</l>
+            <l rendition="#et2">Durch Herꝛen Hirtzels Wahl.</l>
+            </lg>
             <lb/>
+            <lg n="7">
             <l>Nicht minder iſts/ mit Waſern iſt verblichen</l>
             <lb/>
             <l>Vil Wu&#x364;ſſenſchaft: mit Jhm iſt auch gewichen</l>
@@ -165,39 +179,46 @@
             <fw place="top" type="pageNum">16</fw>
             <lb/>
             
-            <l>Jn aller ſchwerſten Sachen</l>
+            <l rendition="#et">Jn aller ſchwerſten Sachen</l>
             <lb/>
-            <l>Bericht und guter Raht:</l>
+            <l rendition="#et2">Bericht und guter Raht:</l>
             <lb/>
-            <l>Die/ billich/ Sorgen machen</l>
+            <l rendition="#et">Die/ billich/ Sorgen machen</l>
             <lb/>
-            <l>Fu&#x364;r den Gemeinen Staat.</l>
+            <l rendition="#et2">Fu&#x364;r den Gemeinen Staat.</l>
+            </lg>
             <lb/>
+            <lg n="8">
             <l>Doch wird uns auch im Hirtzel wol erſetzet</l>
             <lb/>
             <l>Was traurigeſt im Waſer abgeletzet:</l>
             <lb/>
-            <l>Deß mag ſich wider freuen</l>
+            <l rendition="#et">Deß mag ſich wider freuen</l>
             <lb/>
-            <l>Das gantze Vatterland:</l>
+            <l rendition="#et2">Das gantze Vatterland:</l>
             <lb/>
-            <l>Es kan die Freud verneuen</l>
+            <l rendition="#et">Es kan die Freud verneuen</l>
             <lb/>
-            <l>Jm ſelben jeder Stand!</l>
+            <l rendition="#et2">Jm ſelben jeder Stand!</l>
+            </lg>
             <lb/>
+            <lg n="9">
             <l>Der Ho&#x364;chſt Regent wo&#x364;ll diſem Herꝛen geben</l>
             <lb/>
             <l>Geſunde Tag'/ und Hirſchenlanges Leben;</l>
             <lb/>
-            <l>Deßgleichen dem Mitt-Herꝛen</l>
+            <l rendition="#et">Deßgleichen dem Mitt-Herꝛen</l>
             <lb/>
-            <l>Auf gleichem Ehrenthron!</l>
+            <l rendition="#et2">Auf gleichem Ehrenthron!</l>
             <lb/>
-            <l>GOTT wo&#x364;ll des Wunſchs gewerꝛen</l>
+            <l rendition="#et">GOTT wo&#x364;ll des Wunſchs gewerꝛen</l>
             <lb/>
-            <l>Herꝛn Hirtzeln: Herꝛen Rahn!</l>
+            <l rendition="#et2">Herꝛn Hirtzeln: Herꝛen Rahn!</l>
+            </lg>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Auß herzens innigkeit alſo wu&#x364;n-
             <lb break="no"/>
             ſchende wil ſeine Pflichtgebu&#x364;r hie-
@@ -208,11 +229,12 @@
             <lb/>
             Untertha&#x364;nigſter D.
             <lb/>
-            Johann Wilhelm Simler/
+            <signed>Johann Wilhelm Simler/
             <lb/>
             Zuchtmeiſter des Alten/ und <hi rendition="#aq">In-
             <lb break="no"/>
-            tendens</hi> des Neuen <hi rendition="#aq">Collegi</hi>ums.
+            tendens</hi> des Neuen <hi rendition="#aq">Collegi</hi>ums.</signed>
+            </closer>
             <lb/>
             
             <fw place="bottom" type="catch">Vor-</fw>

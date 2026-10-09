@@ -59,67 +59,80 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E54C">
+         <div xml:id="E54C" type="poem">
             <pb facs="11836671"/>
-            <head>Vnverdenkliche
+            <head rendition="#c">Vnverdenkliche
             <lb/>
-            <hi rendition="#b">Limmatsſchweinung</hi>
+            <hi rendition="#b #larger">Limmatsſchweinung</hi>
             <lb/>
             zu Zu&#x364;rich.</head>
             <lb/>
             
+            <milestone unit="section" rendition="#hr"/>
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">D</hi>Er Nachwelt ſeye diß getichtet zum nachſinnen/</l>
             <lb/>
             <l>was Wir die Trukker heut denkwürdiges beginnen/</l>
             <lb/>
-            <l>am erſten Fru&#x364;hlingstag/ im nachgeſetzten Jahr/</l>
+            <l rendition="#et">am erſten Fru&#x364;hlingstag/ im nachgeſetzten Jahr/</l>
             <lb/>
-            <l>do mangel nur an Gelt/ ſonſt alles wolfeil war/</l>
+            <l rendition="#et">do mangel nur an Gelt/ ſonſt alles wolfeil war/</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Jm ſchlanken Limmatfluß/ grad unterhalb der Brugken/</l>
             <lb/>
             <l>beyſeits dem Brunnenrad/ era&#x364;ugte ſich vaſt trukken</l>
             <lb/>
-            <l>bewußter Felſenſtein/ den man an diſer ſtatt</l>
+            <l rendition="#et">bewußter Felſenſtein/ den man an diſer ſtatt</l>
             <lb/>
-            <l>bey mannsgedenken nie ſo bloß geſehen hat.</l>
+            <l rendition="#et">bey mannsgedenken nie ſo bloß geſehen hat.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Was nun die dünne Flut (die ſonſten mit geliſpel/</l>
             <lb/>
             <l>Mit Tigerſchnellem lauff/ und vilem Wirbelwiſpel</l>
             <lb/>
-            <l>den Felſen überſchoß/ und klafftertieff verſtekt)</l>
+            <l rendition="#et">den Felſen überſchoß/ und klafftertieff verſtekt)</l>
             <lb/>
-            <l>werd deuten/ weißt nur Gott/ bis es die zeit entdekt.</l>
+            <l rendition="#et">werd deuten/ weißt nur Gott/ bis es die zeit entdekt.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Wann dann auß anlaß deß/ vil Handwerker bewogen/</l>
             <lb/>
             <l>mit ihrem Werkgezeug vor uns ſeind aufgezogen/</l>
             <lb/>
-            <l>die auf ermeldtem Stein ein recht Gedechtnuß ſtukk</l>
+            <l rendition="#et">die auf ermeldtem Stein ein recht Gedechtnuß ſtukk</l>
             <lb/>
-            <l>ihrs Handwerks außgemacht: ſo zeigen wirs im Trukk</l>
+            <l rendition="#et">ihrs Handwerks außgemacht: ſo zeigen wirs im Trukk</l>
             <lb/>
             
             <l>an eben diſem Ort: Wir ſetzen Wort und Zeilen/</l>
             <lb/>
             <l>Wir ſchlieſſen ein Patent/ und mit zur Preſſen eilen/</l>
             <lb/>
-            <l>von dannen zeigen Wir/ das ſcho&#x364;n getrukte Werk/</l>
+            <l rendition="#et">von dannen zeigen Wir/ das ſcho&#x364;n getrukte Werk/</l>
             <lb/>
-            <l>und geben unſrer Kunſt ein ewiges Gemerk.</l>
+            <l rendition="#et">und geben unſrer Kunſt ein ewiges Gemerk.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Der Schriftengieſſer ſich mit recht zu uns geſellet/</l>
             <lb/>
             <l>und alß ein Künſtler auch ſich offenlich darſtellet.</l>
             <lb/>
-            <l>Vil Burger ſchauten zu&#x366;/ vil Fro&#x364;mde gleicher weis.</l>
+            <l rendition="#et">Vil Burger ſchauten zu&#x366;/ vil Fro&#x364;mde gleicher weis.</l>
             <lb/>
-            <l>Der Ho&#x364;heſt all erhalt/ zu ſeines nammens preiß.</l>
+            <l rendition="#et">Der Ho&#x364;heſt all erhalt/ zu ſeines nammens preiß.</l>
+            </lg>
+            </lg>
             <lb/>
             
             <closer>Getrukt zu Zu&#x364;rich/

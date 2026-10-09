@@ -72,9 +72,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F44D">
+         <div xml:id="F44D" type="poem">
             <pb facs="2891107"/>
-            <head>New-gewundener Lorbeer-Krantz/
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c">New-gewundener Lorbeer-Krantz/
             <lb/>
             Dem Author des Kriegs-Bu&#x364;chleins/
             <lb/>
@@ -85,34 +86,44 @@
             vberſendet.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">N</hi>Vn mu&#x364;ſſen wir nicht mehr in fro&#x364;mbde La&#x364;nder reiſen/</l>
             <lb/>
             <l>Daß wir in Krieges-kunſt vns laſſen vnderweiſen:</l>
             <lb/>
-            <l>Wir lehrnen es allhier in diſem Bu&#x364;chlein klar/</l>
+            <l rendition="#et">Wir lehrnen es allhier in diſem Bu&#x364;chlein klar/</l>
             <lb/>
-            <l>Von einem der dem Mars gedienet etlich Jahr.</l>
+            <l rendition="#et">Von einem der dem Mars gedienet etlich Jahr.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Dann: <hi rendition="#b">Was ein Veſtung ſey/ mit allen jhren Wercken:</hi></l>
             <lb/>
             <l rendition="#b">Was ein Beſatzung ſey/ die Veſtung zu&#x366; verſta&#x364;rcken:</l>
             <lb/>
-            <l rendition="#b">Was der gebrauch der Wehr: vnd/ Wie ein Krieges-Held</l>
+            <l rendition="#b #et">Was der gebrauch der Wehr: vnd/ Wie ein Krieges-Held</l>
             <lb/>
-            <l rendition="#b">Sich zu&#x366; verhalten hab' im La&#x364;ger oder Feld:</l>
+            <l rendition="#b #et">Sich zu&#x366; verhalten hab' im La&#x364;ger oder Feld:</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Der Author vns erzellt/ vnd ſo für Augen ſtellet/</l>
             <lb/>
             <l>Alß hetten Wort vnd Werck zu&#x366;ſammen ſich geſellet:</l>
             <lb/>
-            <l>Darumb gebüret jhm/ zu&#x366; ſeinem ſondern Preiß/</l>
+            <l rendition="#et">Darumb gebüret jhm/ zu&#x366; ſeinem ſondern Preiß/</l>
             <lb/>
-            <l>Ein new-gewundner Krantz/ auff alte Ro&#x364;mer-weiß.</l>
+            <l rendition="#et">Ein new-gewundner Krantz/ auff alte Ro&#x364;mer-weiß.</l>
+            </lg>
+            </lg>
             <lb/>
             
-            J. W. S.
+            <closer rendition="#right">
+            <signed>J. W. S.</signed>
+            </closer>
             <lb/>
             
             <fw place="bottom" type="pageNum">)()( iij</fw>

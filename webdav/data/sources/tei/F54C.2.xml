@@ -72,17 +72,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F54C.2">
+         <div xml:id="F54C.2" type="poem">
             <pb facs="18154424" n="29"/>
             <fw place="top" type="pageNum">29</fw>
             <lb/>
-            <head>Auf
+            <head rendition="#c">Auf
             <lb/>
             Herꝛen Johann Jacob Genathen/ ꝛc.
             <lb/>
             Begra&#x364;bnuß.</head>
             <lb/>
             
+            <!-- TODO HiWi: vier Alexandriner, im Druck jeweils umbrochen; die l sind Druckzeilen (Verse = l 1+2, 3, 4+5, 6+7) und brauchen @next/@prev. -->
+            <lg type="poem">
             <l><hi rendition="#in">N</hi><hi rendition="#aq">U</hi>n iſts mit Jhm gethan; nun fahrt</l>
             <lb/>
             <l>Er hin im Friden;</l>
@@ -98,18 +100,21 @@
             <l>eins Tags alß ſonſt ein Jahr/ macht daß</l>
             <lb/>
             <l>Er ewig bleibt.</l>
+            </lg>
             <lb/>
             
-            Johann Willhelm Simler/
+            <closer rendition="#right">
+            <signed>Johann Willhelm Simler/
             <lb/>
             Zuchtmeiſter im mehrern
             <lb/>
-            Hof.
+            Hof.</signed>
+            </closer>
             <lb/>
             <fw place="bottom" type="pageNum">D iij</fw>
             <lb/>
             
-            Genath.
+            <note place="right" type="marginalia">Genath.</note>
             <lb/>
          </div>
       </body>

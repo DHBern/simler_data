@@ -43,21 +43,25 @@
       <body>
          <div xml:id="EN62D">
             <pb facs="1"/>
-            Hohe Ehrentitel der Dreÿen Haubtſta&#x364;nden im Wahren Chriſtenthum.
+            <head rendition="#c">Hohe Ehrentitel der Dreÿen Haubtſta&#x364;nden im Wahren Chriſtenthum.</head>
+            <!-- TODO HiWi: drei Bildfelder, hier je ein div. Die Zeilen der ersten Bibelstelle (Psalm LXXXII, Prov. XXXIII) stehen im Export in falscher Reihenfolge; Einzuege unregelmaessig, nicht kodiert. -->
             <lb/>
             
-            Oberkeiten ſind Go&#x364;tter.
+            <div>
+            <head rendition="#c">Oberkeiten ſind Go&#x364;tter.</head>
             <lb/>
-            Wol dem Regenten! wol!
+            <lg type="poem">
+            <l>Wol dem Regenten! wol!</l>
             <lb/>
-            der/ liebreich/ wie er ſol/
+            <l>der/ liebreich/ wie er ſol/</l>
             <lb/>
-            Gu&#x366;ts blohnt/ und Bo&#x364;ſes ſtraffet/
+            <l>Gu&#x366;ts blohnt/ und Bo&#x364;ſes ſtraffet/</l>
             <lb/>
-            der Satzung ſelbs raht ſchaffet.
+            <l>der Satzung ſelbs raht ſchaffet.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Pſalm LXXXII.6.7.
+            <note place="bottom" type="bibl"><hi rendition="#aq">Pſalm LXXXII.6.7.
             <lb/>
             die ſind beÿde dem <hi rendition="#g">HERREN</hi> ein grewel.
             <lb/>
@@ -69,21 +73,25 @@
             <lb/>
             Kinder des Ho&#x364;chſten: Aber ihr werdet dennoch ſterben
             <lb/>
-            Jch hab wol geſagt: Jhr ſeÿt go&#x364;tter, und ihr allſeÿt</hi>
+            Jch hab wol geſagt: Jhr ſeÿt go&#x364;tter, und ihr allſeÿt</hi></note>
+            </div>
             <lb/>
             
-            Lehrer/ Engel.
+            <div>
+            <head rendition="#c">Lehrer/ Engel.</head>
             <lb/>
-            Wol deme/ welcher lehrt/
+            <lg type="poem">
+            <l>Wol deme/ welcher lehrt/</l>
             <lb/>
-            gantz rein und unverkehrt/
+            <l>gantz rein und unverkehrt/</l>
             <lb/>
-            das Gſatz und Wort der Gnade/
+            <l>das Gſatz und Wort der Gnade/</l>
             <lb/>
-            geht lehrgema&#x364;ß im pfade.
+            <l>geht lehrgema&#x364;ß im pfade.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Liſs. Apoc. das II. und III. Capitel.
+            <note place="bottom" type="bibl"><hi rendition="#aq">Liſs. Apoc. das II. und III. Capitel.
             <lb/>
             S. Paulus ſpricht, I.Cor IX.27. Jch bezäme meinen
             <lb/>
@@ -97,21 +105,25 @@
             <lb/>
             nicht auſs zwang, ſonder freywillig: nicht um ſchandlichen gewin&#x303;s
             <lb/>
-            willen, etc.</hi>
+            willen, etc.</hi></note>
+            </div>
             <lb/>
             
-            Die Gemein/ Glider Chriſti.
+            <div>
+            <head rendition="#c">Die Gemein/ Glider Chriſti.</head>
             <lb/>
-            Wol auch der gantzen Gmein
+            <lg type="poem">
+            <l>Wol auch der gantzen Gmein</l>
             <lb/>
-            die Gott/ und zwar allein/
+            <l>die Gott/ und zwar allein/</l>
             <lb/>
-            ob allen dingen liebet/
+            <l>ob allen dingen liebet/</l>
             <lb/>
-            den Na&#x364;chſten nie betru&#x364;bet.
+            <l>den Na&#x364;chſten nie betru&#x364;bet.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">1.Cor.III.16.17.18.19.
+            <note place="bottom" type="bibl"><hi rendition="#aq">1.Cor.III.16.17.18.19.
             <lb/>
             Wüſſet ihr nicht, daſs ihr Gottes Tempel ſeÿt, und daß d</hi>er
             <lb/>
@@ -125,10 +137,11 @@
             <lb/>
             tohr, auf daſs er weis werde. Dann die weißheit diſer welt iſt beÿ Gott ein</hi>e
             <lb/>
-            <hi rendition="#aq">tohrheit. etc.</hi>
+            <hi rendition="#aq">tohrheit. etc.</hi></note>
             <lb/>
             
-            <hi rendition="#aq">Ab der Burgerbibliothec verehr: A°. 1662 Johr.</hi>
+            <p><hi rendition="#aq">Ab der Burgerbibliothec verehr: A°. 1662 Johr.</hi></p>
+            </div>
             <lb/>
             
          </div>

@@ -74,11 +74,12 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F59C.2">
+         <div xml:id="F59C.2" type="poem">
             <pb facs="3855211" n="49"/>
             <fw place="top" type="pageNum">49</fw>
             <lb/>
-            <num><hi rendition="#aq">I</hi>.</num> 
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><num><hi rendition="#aq">I</hi>.</num> 
             <lb/>
             <hi rendition="#aq"><hi rendition="#g">SONNET</hi></hi>,
             <lb/>
@@ -90,74 +91,78 @@
             <lb/>
             an das Adeliche hauß
             <lb/>
-            Berg.
+            Berg.</head>
             <lb/>
-            <hi rendition="#in">B</hi>Erg verberge ſeinen kummer/ über den ſo lie-
+            <lg type="poem">
+            <l><hi rendition="#in">B</hi>Erg verberge ſeinen kummer/ über den ſo lie-
             <lb break="no"/>
-            ben <hi rendition="#b">Sohn</hi>/
+            ben <hi rendition="#b">Sohn</hi>/</l>
             <lb/>
-            den des ſtrengen<hi rendition="#b"> Rheines Runs</hi>/ hingeriſ-
+            <l>den des ſtrengen<hi rendition="#b"> Rheines Runs</hi>/ hingeriſ-
             <lb break="no"/>
-            ſen und verzuket
+            ſen und verzuket</l>
             <lb/>
-            auß des Bru&#x366;ders hand und aug/ unter <hi rendition="#b">Baſel</hi> abge-
+            <l>auß des Bru&#x366;ders hand und aug/ unter <hi rendition="#b">Baſel</hi> abge-
             <lb break="no"/>
-            rucket:
+            rucket:</l>
             <lb/>
-            Dann der <hi rendition="#b">Leichnam</hi> iſt gefunden/ wo er war verſchar-
+            <l>Dann der <hi rendition="#b">Leichnam</hi> iſt gefunden/ wo er war verſchar-
             <lb break="no"/>
-            ret ſchon/
+            ret ſchon/</l>
             <lb/>
-            und anietz zum troſt euch Eltern; aber auch dem Neid
+            <l>und anietz zum troſt euch Eltern; aber auch dem Neid
             <lb/>
-            zu hohn;
+            zu hohn;</l>
             <lb/>
-            in die <hi rendition="#b">Bergerkirch</hi> verſetzt; adelma&#x364;ſſig außgeſchmu-
+            <l>in die <hi rendition="#b">Bergerkirch</hi> verſetzt; adelma&#x364;ſſig außgeſchmu-
             <lb break="no"/>
-            cket;
+            cket;</l>
             <lb/>
-            durch gelehrte <hi rendition="#b">Schrifft</hi> zugleich wird der Nachwelt
+            <l>durch gelehrte <hi rendition="#b">Schrifft</hi> zugleich wird der Nachwelt
             <lb/>
-            vorgetruket
+            vorgetruket</l>
             <lb/>
-            zu der nachfolg ſeine Tugend; Jhme zu verdientem 
+            <l>zu der nachfolg ſeine Tugend; Jhme zu verdientem 
             <lb/>
-            lohn.
+            lohn.</l>
             <lb/>
-            Alſo lebt er nach dem Tod: drum verberget eüern
+            <l>Alſo lebt er nach dem Tod: drum verberget eüern
             <lb/>
-            ſchmertzen/
+            ſchmertzen/</l>
             <lb/>
-            D  <fw place="bottom" type="catch">wüſchet</fw>
+            <fw place="bottom" type="sig">D</fw>  <fw place="bottom" type="catch">wüſchet</fw>
             <lb/>
             <pb facs="3855212" n="50"/>
             <fw place="top" type="pageNum">50</fw>
             <lb/>
-            wüſchet weg den Threnenbach; faſſet nicht ſo tieff zu
+            <l>wüſchet weg den Threnenbach; faſſet nicht ſo tieff zu
             <lb/>
-            hertzen/
+            hertzen/</l>
             <lb/>
-            daß ein Eſcher/ auß der Eſchen/ in die Eſchen wi-
+            <l>daß ein Eſcher/ auß der Eſchen/ in die Eſchen wi-
             <lb break="no"/>
-            derkehrt:
+            derkehrt:</l>
             <lb/>
-            Hat euch gleich des Ho&#x364;chſten hand; zwar empfindt-
+            <l>Hat euch gleich des Ho&#x364;chſten hand; zwar empfindt-
             <lb break="no"/>
-            lich gnu&#x366;g; getroffen/
+            lich gnu&#x366;g; getroffen/</l>
             <lb/>
-            ſo ligt eure Sta&#x364;rcke doch in der Still und in
+            <l>ſo ligt eure Sta&#x364;rcke doch in der Still und in
             <lb/>
-            dem Hoffen:
+            dem Hoffen:</l>
             <lb/>
-            Freuet euch/ daß euer Sohn/ ſeligſt/ ſeinen Scho&#x364;pfer
+            <l>Freuet euch/ daß euer Sohn/ ſeligſt/ ſeinen Scho&#x364;pfer
             <lb/>
-            ehrt.
+            ehrt.</l>
+            </lg>
             <lb/>
+            <closer rendition="#right">
             Auß Chriſtlichem mitleiden/ und zu wolwürdi-
             <lb break="no"/>
             gen Ehren ſetzt obiges freywilligſt
             <lb/>
-            Johann Wilhelm Simler.
+            <signed>Johann Wilhelm Simler.</signed>
+            </closer>
             <lb/>
          </div>
       </body>

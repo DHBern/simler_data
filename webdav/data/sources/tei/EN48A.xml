@@ -83,9 +83,11 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN48A">
+         <div xml:id="EN48A" type="poem">
             <pb facs="17729194"/>
-            <head rendition="#aq">Cantus.</head>
+            <figure/>
+            <lg>
+            <head rendition="#aq #c">Cantus.</head>
             <lb/>
             <l>Die dritte Zeit</l>
             <lb/>
@@ -98,9 +100,11 @@
             <l>Wan&#x303; Stork v<anchor xml:id="a1"/><unclear>n&#x303;</unclear><note type="annotation" targetEnd="a1"><p>Anstatt des Nasalstriches könnte hier ein Trema fälschlicherweise gedruckt worden sein.</p></note> Schwalm entwichen/</l>
             <lb/>
             <l>Die Sonn der Waag nicht weit.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Altus.</head>
+            <lg>
+            <head rendition="#aq #c">Altus.</head>
             <lb/>
             <l>Die dritte Zeit</l>
             <lb/>
@@ -113,9 +117,11 @@
             <l>Wan&#x303; Stork vn&#x303; Schwalm entwichen/</l>
             <lb/>
             <l>Die Sonn der Waag nicht weit.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Tenor.</head>
+            <lg>
+            <head rendition="#aq #c">Tenor.</head>
             <lb/>
             <l>Die dritte Zeit</l>
             <lb/>
@@ -128,9 +134,11 @@
             <l>Wan&#x303; Stork vn&#x303; Schwalm entwichen/</l>
             <lb/>
             <l>Die Sonn der Waag nicht weit.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Baſis.</head>
+            <lg>
+            <head rendition="#aq #c">Baſis.</head>
             <lb/>
             <l>Die dritte Zeit</l>
             <lb/>
@@ -143,11 +151,15 @@
             <l>Wan&#x303; Stork vn&#x303; Schwalm entwichen/</l>
             <lb/>
             <l>Die Sonn der Waag nicht weit.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <!-- TODO HiWi: Strophe 1 = Text der vier Stimmen oben; Notenbilder nicht kodiert. -->
+            <lg type="poem">
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
-            <l>Sie bringet mit</l>
+            <l rendition="#et">Sie bringet mit</l>
             <lb/>
             <l>Vil Garten-frücht/ Vnd andre Z<unclear>u&#x364;</unclear>cht/</l>
             <lb/>
@@ -158,11 +170,13 @@
             <l>Pomrantzen vnd Citronen/</l>
             <lb/>
             <l>Auch wolgeſchmakte Quitt.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
-            <l>Der Byren laſt</l>
+            <l rendition="#et">Der Byren laſt</l>
             <lb/>
             <l>Die a&#x364;ſte bukt/ Vnd nidertrukt</l>
             <lb/>
@@ -173,11 +187,13 @@
             <l>Mit jhren rohten Wangen/</l>
             <lb/>
             <l>Erquiken manchen Gaſt.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
-            <l>Man findet auch</l>
+            <l rendition="#et">Man findet auch</l>
             <lb/>
             <l>Auff diſes zil/ Baumnuſſen vil/</l>
             <lb/>
@@ -188,11 +204,13 @@
             <l>So findet man auch nüſſen</l>
             <lb/>
             <l>Am wilden Haſelſtrauch.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
-            <l>Die Pferſich ſind</l>
+            <l rendition="#et">Die Pferſich ſind</l>
             <lb/>
             <l>Ein Kinderſpeiß/ Geleicher weiß</l>
             <lb/>
@@ -203,11 +221,13 @@
             <l>Vnd Mandel ſeind der Ga&#x364;ſten:</l>
             <lb/>
             <l>Ziparten ißt das Gſind.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
-            <l>Jnſonderheit</l>
+            <l rendition="#et">Jnſonderheit</l>
             <lb/>
             <l>Die edel Frucht/ Der Ra&#x364;ben zucht</l>
             <lb/>
@@ -218,11 +238,13 @@
             <l>Dieweil ſie trewlich lohnet</l>
             <lb/>
             <l>Mit luſt vnd nutzbarkeit.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
-            <l>Die beſten Fiſch/</l>
+            <l rendition="#et">Die beſten Fiſch/</l>
             <lb/>
             <l>Den Lachß vorauß/ Man tra&#x364;gt zu&#x366; hauß</l>
             <lb/>
@@ -233,11 +255,13 @@
             <l>Der mindern auch genieſſen</l>
             <lb/>
             <l>Die Armen über Tiſch.</l>
+            </lg>
             <lb/>
             
-            <head><num>8.</num></head>
+            <lg n="8">
+            <head rendition="#c"><num>8.</num></head>
             <lb/>
-            <l>Der Wa&#x364;idmann ſich</l>
+            <l rendition="#et">Der Wa&#x364;idmann ſich</l>
             <lb/>
             <l>Jm Fa&#x364;ld ergetzt/ Die Haſen hetzt/</l>
             <lb/>
@@ -248,11 +272,13 @@
             <l>Die Schna&#x364;pfe beyzu&#x366;fangen</l>
             <lb/>
             <l>Jn Schlingen liſtiglich.</l>
+            </lg>
             <lb/>
             
-            <head><num>9.</num></head>
+            <lg n="9">
+            <head rendition="#c"><num>9.</num></head>
             <lb/>
-            <l>Der Akkermann/</l>
+            <l rendition="#et">Der Akkermann/</l>
             <lb/>
             <l>Alß wol vernu&#x364;gt/ Das Fa&#x364;lde pflu&#x364;gt/</l>
             <lb/>
@@ -263,11 +289,13 @@
             <l>Sein Weibe ra&#x364;tſcht vnd reitelt</l>
             <lb/>
             <l>Den Hanff/ ſo gu&#x366;t ſie kan.</l>
+            </lg>
             <lb/>
             
-            <head><num>10</num></head>
+            <lg n="10">
+            <head rendition="#c"><num>10</num></head>
             <lb/>
-            <l>Die Herpſtes-Zeit</l>
+            <l rendition="#et">Die Herpſtes-Zeit</l>
             <lb/>
             <l>Jn jedem Jahr/ Nicht minder zwar</l>
             <lb/>
@@ -278,14 +306,16 @@
             <l>Erzeigen ſol im werke</l>
             <lb/>
             <l>Des Glaubens Fruchtbarkeit.</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Mag auch geſungen werden in der melodey: Bey mir mein Hertz/ ꝛc.
+            <p>Mag auch geſungen werden in der melodey: Bey mir mein Hertz/ ꝛc.</p>
             <lb/>
             
-            Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-
+            <p>Einer Ehrliebenden jungen Burgerſchafft zu&#x366; Zürich/ ab der Burger-
             <lb break="no"/>
-            Bibliothek für das 1648. Jahre/ verehrt.
+            Bibliothek für das 1648. Jahre/ verehrt.</p>
             <lb/>
             
          </div>

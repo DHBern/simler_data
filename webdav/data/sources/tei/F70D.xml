@@ -61,9 +61,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F70D">
+         <div xml:id="F70D" type="poem">
             <pb facs="11026720"/>
-            <head>Ehren- und
+            <head rendition="#c">Ehren- und
             <lb/>
             Wunſch-geſang/
             <lb/>
@@ -96,55 +96,62 @@
             
             <pb facs="11026722"/>
             
-            <head><num>1.</num></head>
+            <lg n="1">
+            <head rendition="#c"><num>1.</num></head>
             <lb/>
+            <lg type="poem">
             <l><hi rendition="#in">H</hi>Eilwaſſer in dem Baderloch/</l>
             <lb/>
-            <l>Vom Legerberg gefloſſen:</l>
+            <l rendition="#et">Vom Legerberg gefloſſen:</l>
             <lb/>
             <l>Befreyt/ und doch/ mit ſanfftem Joch/</l>
             <lb/>
-            <l>Regiert von Eidgenoſſen:</l>
+            <l rendition="#et">Regiert von Eidgenoſſen:</l>
             <lb/>
-            <l>Ein Schwefel-quall/</l>
+            <l rendition="#et2">Ein Schwefel-quall/</l>
             <lb/>
-            <l>Jn tieffem Thal/</l>
+            <l rendition="#et2">Jn tieffem Thal/</l>
             <lb/>
-            <l>Und Bergen/ wie verſchloſſen.</l>
+            <l rendition="#et">Und Bergen/ wie verſchloſſen.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Durch die von Gott ertheilte Krafft</l>
             <lb/>
-            <l>Viel Leuth in dir geneſen:</l>
+            <l rendition="#et">Viel Leuth in dir geneſen:</l>
             <lb/>
             <l>Zuſeyn auch jetzt untadelhafft;</l>
             <lb/>
-            <l>Wie mehrmal du geweſen;</l>
+            <l rendition="#et">Wie mehrmal du geweſen;</l>
             <lb/>
-            <l>Auffnimm die Pfand</l>
+            <l rendition="#et2">Auffnimm die Pfand</l>
             <lb/>
-            <l>Vom Vatterland/</l>
+            <l rendition="#et2">Vom Vatterland/</l>
             <lb/>
-            <l>Auß vielen wol erleſen.</l>
+            <l rendition="#et">Auß vielen wol erleſen.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Es ſuchen nun auch dieſes mal;</l>
             <lb/>
-            <l>Jn dir geſund zu werden;</l>
+            <l rendition="#et">Jn dir geſund zu werden;</l>
             <lb/>
             <l>Die Erſten auß der Va&#x364;ttern Zahl/</l>
             <lb/>
-            <l>Die Hoffnung unſrer Erden/</l>
+            <l rendition="#et">Die Hoffnung unſrer Erden/</l>
             <lb/>
-            <l>Durch Freundlichkeit/</l>
+            <l rendition="#et2">Durch Freundlichkeit/</l>
             <lb/>
-            <l>Beſcheidenheit/</l>
+            <l rendition="#et2">Beſcheidenheit/</l>
             <lb/>
-            <l>Zu wenden Bads Beſchwerden.</l>
+            <l rendition="#et">Zu wenden Bads Beſchwerden.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="pageNum">)( ij</fw>
@@ -155,41 +162,46 @@
             <fw place="top" type="header">Bader-geſang.</fw>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Du wirſt erlangen Ehr und Danck/</l>
             <lb/>
-            <l>Mit fleiſſigem verpflegen</l>
+            <l rendition="#et">Mit fleiſſigem verpflegen</l>
             <lb/>
             <l>An denen uns; geſund und kranck;</l>
             <lb/>
-            <l>Nicht wenig iſt gelegen:</l>
+            <l rendition="#et">Nicht wenig iſt gelegen:</l>
             <lb/>
-            <l>Der Ho&#x364;chſte dich</l>
+            <l rendition="#et2">Der Ho&#x364;chſte dich</l>
             <lb/>
-            <l>Gantz kra&#x364;fftiglich</l>
+            <l rendition="#et2">Gantz kra&#x364;fftiglich</l>
             <lb/>
-            <l>Erfu&#x364;ll mit ſeinem Segen!</l>
+            <l rendition="#et">Erfu&#x364;ll mit ſeinem Segen!</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Schicks wider heim geſund un&#x303; friſch/</l>
             <lb/>
-            <l>Daß ſich die Wu&#x364;nſch' erwahren:</l>
+            <l rendition="#et">Daß ſich die Wu&#x364;nſch' erwahren:</l>
             <lb/>
             <l>Geſegnet bleib jhr Hauß und Tiſch/</l>
             <lb/>
-            <l>Befreyet von Gefahren!</l>
+            <l rendition="#et">Befreyet von Gefahren!</l>
             <lb/>
-            <l>Gott Sie erfrew</l>
+            <l rendition="#et2">Gott Sie erfrew</l>
             <lb/>
-            <l>Mit Gnad und Trew/</l>
+            <l rendition="#et2">Mit Gnad und Trew/</l>
             <lb/>
-            <l>Mit Frieden in den Thoren!</l>
+            <l rendition="#et">Mit Frieden in den Thoren!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            <hi rendition="#g">ENDE.</hi>
+            <closer rendition="#c"><hi rendition="#g">ENDE.</hi></closer>
             <lb/>
             
          </div>

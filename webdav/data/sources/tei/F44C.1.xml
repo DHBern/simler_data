@@ -59,62 +59,70 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F44C.1">
+         <div xml:id="F44C.1" type="poem">
             <pb facs="3645579"/>
-            <head rendition="#aq"><num>II.</num>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#aq #c"><num>II.</num>
             <lb/>
             Jambi<choice><sic>e</sic><corr>c</corr></choice>o-Trochaicum.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg n="1">
             <l><hi rendition="#in">D</hi>As arme Teutſche Land/ für ander' auß/ beklaget</l>
             <lb/>
             <l>Was von der letſten Zeit der Fridens-Fürſt weyſſaget:</l>
             <lb/>
-            <l>Dann es in der thaat erfahret</l>
+            <l rendition="#et">Dann es in der thaat erfahret</l>
             <lb/>
-            <l>Daß der liebe Frid geſparet/</l>
+            <l rendition="#et">Daß der liebe Frid geſparet/</l>
             <lb/>
-            <l>Krieg vnd kriegs-geſchrey zu&#x366;mal</l>
+            <l rendition="#et2">Krieg vnd kriegs-geſchrey zu&#x366;mal</l>
             <lb/>
-            <l>Hat erfüllet Berg vnd Thal:</l>
+            <l rendition="#et2">Hat erfüllet Berg vnd Thal:</l>
             <lb/>
-            <l rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
+            <l rendition="#b #et">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
             <lb/>
-            <l rendition="#b">Alß was der Mars vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Alß was der Mars vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
+            <lg n="2">
             <l>Es lautet alles nur von jam&#x342;er/ noht vnd klage/</l>
             <lb/>
             <l>Kein Zeitung heiſſet new/ die nichts von kriegen ſage:</l>
             <lb/>
-            <l>Manche Statt wirt eyngenommen/</l>
+            <l rendition="#et">Manche Statt wirt eyngenommen/</l>
             <lb/>
-            <l>Thu&#x366;t vmb jhre Freyheit kommen:</l>
+            <l rendition="#et">Thu&#x366;t vmb jhre Freyheit kommen:</l>
             <lb/>
-            <l>Ander vil zerſto&#x364;ret ſeind</l>
+            <l rendition="#et2">Ander vil zerſto&#x364;ret ſeind</l>
             <lb/>
-            <l>Von dem vngehaltnen Feind:</l>
+            <l rendition="#et2">Von dem vngehaltnen Feind:</l>
             <lb/>
-            <l rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
+            <l rendition="#b #et">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
             <lb/>
-            <l rendition="#b">Alß was der Mars vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Alß was der Mars vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
+            <lg n="3">
             <l>Die Burger man beſchwa&#x364;rt mit Contributionen/</l>
             <lb/>
             <l>Vnd thu&#x366;t in diſem fahl nicht einem Stand verſchonen:</l>
             <lb/>
-            <l>Geiſt- vnd Weltlich/ Arm vnd Reiche</l>
+            <l rendition="#et">Geiſt- vnd Weltlich/ Arm vnd Reiche</l>
             <lb/>
-            <l>Werden da ge<anchor xml:id="a1"/>a<note type="annotation" targetEnd="a1"><p>Die Punkte darüber haben wahrscheinlich nichts zu bedeuten. In Druck C und D steht kein Trema</p></note>chtet gleiche:</l>
+            <l rendition="#et">Werden da ge<anchor xml:id="a1"/>a<note type="annotation" targetEnd="a1"><p>Die Punkte darüber haben wahrscheinlich nichts zu bedeuten. In Druck C und D steht kein Trema</p></note>chtet gleiche:</l>
             <lb/>
-            <l>Wer nichts gibet/ mu&#x366;ß zu&#x366;hand</l>
+            <l rendition="#et2">Wer nichts gibet/ mu&#x366;ß zu&#x366;hand</l>
             <lb/>
-            <l>Ohne zehrung auß dem Land:</l>
+            <l rendition="#et2">Ohne zehrung auß dem Land:</l>
             <lb/>
-            <l rendition="#b">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
+            <l rendition="#b #et">Vnd weißt man bald ſchier anders nichts zu&#x366; ſchreiben</l>
             <lb/>
-            <l rendition="#b">Alß was der Mars vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Alß was der Mars vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="pageNum">)( 3</fw>
@@ -123,100 +131,113 @@
             <lb/>
             <pb facs="3645580"/>
             
+            <lg n="4">
             <l>Wie manche Feſtung wirt mit hartem Sturm berennet/</l>
             <lb/>
             <l>Vnd durch des Pulfers ſta&#x364;rck bezwungen vnd verbrennet!</l>
             <lb/>
-            <l>Himmels-gleiche Berg vnd Schroffen/</l>
+            <l rendition="#et">Himmels-gleiche Berg vnd Schroffen/</l>
             <lb/>
-            <l>Wider alles ſein verhoffen/</l>
+            <l rendition="#et">Wider alles ſein verhoffen/</l>
             <lb/>
-            <l>Der Feind vberſteigen thu&#x366;t/</l>
+            <l rendition="#et2">Der Feind vberſteigen thu&#x366;t/</l>
             <lb/>
-            <l>Zu&#x366; vergieſſen Menſchenblu&#x366;t:</l>
+            <l rendition="#et2">Zu&#x366; vergieſſen Menſchenblu&#x366;t:</l>
             <lb/>
-            <l rendition="#b">Vnd darff man nicht/ was mehr beſchicht beſchreiben/</l>
+            <l rendition="#b #et">Vnd darff man nicht/ was mehr beſchicht beſchreiben/</l>
             <lb/>
-            <l rendition="#b">Wo Mars im Land vnd ſeine Diener bleiben.</l>
+            <l rendition="#b #et">Wo Mars im Land vnd ſeine Diener bleiben.</l>
+            </lg>
             <lb/>
             
+            <lg n="5">
             <l><hi rendition="#in">D</hi>As Freye <hi rendition="#b">Schweitzerland</hi> hingegen weißt zu&#x366; ſagen</l>
             <lb/>
             <l>Daß durch des Ho&#x364;chſten gnad/ es nichtes hab' zu klagen:</l>
             <lb/>
-            <l>Darumb auch; wie ich verſtehen;</l>
+            <l rendition="#et">Darumb auch; wie ich verſtehen;</l>
             <lb/>
-            <l>Wird ein <hi rendition="#b">Schweitzer</hi> heut begehen</l>
+            <l rendition="#et">Wird ein <hi rendition="#b">Schweitzer</hi> heut begehen</l>
             <lb/>
-            <l>Seinen Ehren-Hochzeit-Tag/</l>
+            <l rendition="#et2">Seinen Ehren-Hochzeit-Tag/</l>
             <lb/>
-            <l>Ferꝛ von obbemeldter klag:</l>
+            <l rendition="#et2">Ferꝛ von obbemeldter klag:</l>
             <lb/>
-            <l rendition="#b">Dann er; Gott lob; bißhar nicht weißt zu&#x366; ſchreiben/</l>
+            <l rendition="#b #et">Dann er; Gott lob; bißhar nicht weißt zu&#x366; ſchreiben/</l>
             <lb/>
-            <l rendition="#b">Was Mars im Land vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Was Mars im Land vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
+            <lg n="6">
             <l>Von <hi rendition="#b">Zürich</hi> gieng er auß; man ſagt/ er ſey geloffen;</l>
             <lb/>
             <l>Nach <hi rendition="#b">Dieſſenhoff'n</hi> am <hi rendition="#b">Rhein</hi>/ allwo er angetroffen</l>
             <lb/>
-            <l>Ein rechtſchaffne <hi rendition="#b">Ka&#x364;llerinne</hi>/</l>
+            <l rendition="#et">Ein rechtſchaffne <hi rendition="#b">Ka&#x364;llerinne</hi>/</l>
             <lb/>
-            <l>Nach all ſeinem Mu&#x366;ht vnd Sinne/</l>
+            <l rendition="#et">Nach all ſeinem Mu&#x366;ht vnd Sinne/</l>
             <lb/>
-            <l>Die jhm ſeinen Durſt geſtillt</l>
+            <l rendition="#et2">Die jhm ſeinen Durſt geſtillt</l>
             <lb/>
-            <l>Mit dem Wein der Liebe milt:</l>
+            <l rendition="#et2">Mit dem Wein der Liebe milt:</l>
             <lb/>
-            <l rendition="#b">Die auch nicht weißt von jhrem Land zu&#x366; ſchreiben</l>
+            <l rendition="#b #et">Die auch nicht weißt von jhrem Land zu&#x366; ſchreiben</l>
             <lb/>
-            <l rendition="#b">Was Mars darinn vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Was Mars darinn vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
+            <lg n="7">
             <l>Dieweil es nun an dem/ daß jhr geheim verſprechen</l>
             <lb/>
             <l>Nach Chriſtenlichem brauch ſoll offentlich außbrechen/</l>
             <lb/>
-            <l>Ey! ſo laßt vns fro&#x364;lich ſingen/</l>
+            <l rendition="#et">Ey! ſo laßt vns fro&#x364;lich ſingen/</l>
             <lb/>
-            <l>Daß es auch zu&#x366; <hi rendition="#b">Baſadingen</hi></l>
+            <l rendition="#et">Daß es auch zu&#x366; <hi rendition="#b">Baſadingen</hi></l>
             <lb/>
-            <l>Vnd im gantzen Land erſchall'</l>
+            <l rendition="#et2">Vnd im gantzen Land erſchall'</l>
             <lb/>
-            <l>Mit dem ſta&#x364;ten Widerhall:</l>
+            <l rendition="#et2">Mit dem ſta&#x364;ten Widerhall:</l>
             <lb/>
-            <l rendition="#b">Daß keines wüß vom Vatterland zu&#x366; ſchreiben</l>
+            <l rendition="#b #et">Daß keines wüß vom Vatterland zu&#x366; ſchreiben</l>
             <lb/>
-            <l rendition="#b">Was Mars darinn vnd ſeine Diener treiben.</l>
+            <l rendition="#b #et">Was Mars darinn vnd ſeine Diener treiben.</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="catch">Wir</fw>
             <lb/>
             <pb facs="3645581"/>
             
+            <lg n="8">
             <l>Wir wünſchen allerſeits den reichen Gottes-Segen/</l>
             <lb/>
             <l>Woran im Stand der Eh das meiſte iſt gelegen;</l>
             <lb/>
-            <l>Daß er namlich mo&#x364;ge ſehen</l>
+            <l rendition="#et">Daß er namlich mo&#x364;ge ſehen</l>
             <lb/>
-            <l>Reyens-weiſe vor jhm ſtehen</l>
+            <l rendition="#et">Reyens-weiſe vor jhm ſtehen</l>
             <lb/>
-            <l>Seine Kinder vmb den Tiſch/</l>
+            <l rendition="#et2">Seine Kinder vmb den Tiſch/</l>
             <lb/>
-            <l>Wie die jungen o&#x364;lzweyg friſch:</l>
+            <l rendition="#et2">Wie die jungen o&#x364;lzweyg friſch:</l>
             <lb/>
-            <l rendition="#b">Die gleicher gſtalt niemalen ko&#x364;nnen ſchreiben</l>
+            <l rendition="#b #et">Die gleicher gſtalt niemalen ko&#x364;nnen ſchreiben</l>
             <lb/>
-            <l rendition="#b">Was Mars im Land vnd ſeine Diener treiben!</l>
+            <l rendition="#b #et">Was Mars im Land vnd ſeine Diener treiben!</l>
+            </lg>
+            </lg>
             <lb/>
                
+            <closer rendition="#right">
             <hi rendition="#i">Amoris teſtificandi causâ f.</hi>
             <lb/>
-            <hi rendition="#k">JOH. GULIELMUS SIMLERUS<anchor xml:id="a2"/><unclear>,</unclear><note type="annotation" targetEnd="a2"><p>Das Komma oder Semikolon wird hier als Teil der Sinneinheit auch getaggt.</p></note></hi>
+            <signed><hi rendition="#k">JOH. GULIELMUS SIMLERUS<anchor xml:id="a2"/><unclear>,</unclear><note type="annotation" targetEnd="a2"><p>Das Komma oder Semikolon wird hier als Teil der Sinneinheit auch getaggt.</p></note></hi>
             <lb/>
-            Collegij Parthenij Inſpector.
+            Collegij Parthenij Inſpector.</signed>
+            </closer>
             <lb/>
          </div>
       </body>

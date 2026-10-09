@@ -61,12 +61,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F69D.2">
+         <div xml:id="F69D.2" type="poem">
             <pb facs="3219111" n="25"/>
             <fw place="top" type="pageNum">25</fw>
             <lb/>
             
-            <head><hi rendition="#aq"><num>XII.</num></hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>XII.</num></hi>
             <lb/>
             Wunſch- und Ehrenverſe:
             <lb/>
@@ -81,60 +82,64 @@
             Donſtags/ den 23. Herbſtm. <hi rendition="#aq">M DC LXIX.</hi></head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">S</hi>O ſeyt/ Herꝛ Grebel/ Jhr/ Herꝛn Hirzeln zugeſellet</l>
             <lb/>
             <l>Jm Burgermeiſterthum: der Fu&#x364;nfzigſt wol Erwehlet</l>
             <lb/>
-            <l>Mit Gott/ durch ſcho&#x364;nes Mehr. O mehr alß wolgethan!</l>
+            <l rendition="#et">Mit Gott/ durch ſcho&#x364;nes Mehr. O mehr alß wolgethan!</l>
             <lb/>
-            <l>Hets nur gekoſtet nicht den theuren <hi rendition="#b">Herꝛen Rahn/</hi></l>
+            <l rendition="#et">Hets nur gekoſtet nicht den theuren <hi rendition="#b">Herꝛen Rahn/</hi></l>
             <lb/>
             <l>Den ſo Sanftmu&#x364;htigen/ den ſo Liebreichen Vatter/</l>
             <lb/>
             <l>Zwar Alt/ und Lebensſatt. Nun aber Jhr Erſtatter</l>
             <lb/>
-            <l>Seyt ſeiner Tugenden/ ſo gebt Jhr Hoffnungs-Troſt</l>
+            <l rendition="#et">Seyt ſeiner Tugenden/ ſo gebt Jhr Hoffnungs-Troſt</l>
             <lb/>
-            <l>Zunieſſen unter Euch Milch/ Honig/ Oel/ und Moſt/</l>
+            <l rendition="#et">Zunieſſen unter Euch Milch/ Honig/ Oel/ und Moſt/</l>
             <lb/>
             <l>Und andre Fridensfru&#x364;cht'; auch ſpa&#x364;ht- und fru&#x364;hen Regen/</l>
             <lb/>
             <l>Die jez und immerhin verleyh des Ho&#x364;chſten Segen!</l>
             <lb/>
-            <l>Gott ſegne diſe Wahl von nun an/ fu&#x364;r und fu&#x364;r/</l>
+            <l rendition="#et">Gott ſegne diſe Wahl von nun an/ fu&#x364;r und fu&#x364;r/</l>
             <lb/>
-            <l>Wie deſſen ein Gemerk unla&#x364;ngſt verſpu&#x364;ret wir:</l>
+            <l rendition="#et">Wie deſſen ein Gemerk unla&#x364;ngſt verſpu&#x364;ret wir:</l>
             <lb/>
             <l>Und zwar/ wie ſolten wir nicht urchen gutes hoffen</l>
             <lb/>
             <l>Von deme/ den die Wahl ſo wu&#x364;rdig hat getroffen/</l>
             <lb/>
-            <l>Daß Statt und Land ſie preißt/ und deren ſich befreut/</l>
+            <l rendition="#et">Daß Statt und Land ſie preißt/ und deren ſich befreut/</l>
             <lb/>
-            <l>Weil ſeiner Alten Treu in Jhme ſich verneut.</l>
+            <l rendition="#et">Weil ſeiner Alten Treu in Jhme ſich verneut.</l>
             <lb/>
             <l>Vom Edlen Stamme ru&#x364;hrt was guts im Apfel ſtecket:</l>
             <lb/>
             <l>Vom Adler keine Daub ward jemals außgehecket:</l>
             <lb/>
-            <l>Thierko&#x364;nigs dapfre Zucht von Haſens art iſt fehr:</l>
+            <l rendition="#et">Thierko&#x364;nigs dapfre Zucht von Haſens art iſt fehr:</l>
             <lb/>
-            <l>Alſo bſizt unſer Herꝛ der Edlen Ahnen Ehr.</l>
+            <l rendition="#et">Alſo bſizt unſer Herꝛ der Edlen Ahnen Ehr.</l>
             <lb/>
             <l>Er ſelb/ o Vatterland/ vor vilen iſt gezieret</l>
             <lb/>
             <l>Mit ſcho&#x364;ner Wu&#x364;ſſenſchaft: Und/ was Er ſchon vollfu&#x364;hret/</l>
             <lb/>
-            <l>Weißt Teutſch- und Welſches Land. Er iſt der Ehre wert:</l>
+            <l rendition="#et">Weißt Teutſch- und Welſches Land. Er iſt der Ehre wert:</l>
             <lb/>
-            <l>Es <choice><corr/><sic>L</sic></choice>eben Hundert Jahr Er und ſein Mitgefehrt!</l>
+            <l rendition="#et">Es <choice><corr/><sic>L</sic></choice>eben Hundert Jahr Er und ſein Mitgefehrt!</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Von E. E. Weißheit
             <lb/>
             Untertha&#x364;nigſtem Diener
             <lb/>
-            Joh. Wilhelm Simler/ dem Eltern.
+            <signed>Joh. Wilhelm Simler/ dem Eltern.</signed>
+            </closer>
             <lb/>
             
             <fw place="bottom" type="pageNum">D</fw>

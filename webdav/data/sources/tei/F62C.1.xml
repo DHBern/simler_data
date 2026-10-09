@@ -71,8 +71,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F62C.1">
+         <div xml:id="F62C.1" type="poem">
             <pb facs="11273712"/>
+            <!-- TODO HiWi: Titel des Flugblatts (mehrere Autoren); Simlers Beitrag ist das Viergedicht. Das fuenfte l ("Auß ſchuldiger wolmeinung ...") ist kein Vers, sondern die Unterschrift (closer/signed). -->
             <hi rendition="#aq">ARA ET ARRHA VOTIVA,
             <lb/>
             <hi rendition="#i">Viro Reverendo &amp; Clarißimo,</hi>
@@ -102,8 +103,9 @@
             <hi rendition="#i">Ab Amicis, Affinibus, &amp;c. Die Nuptiali, quæ est</hi> 9. <hi rendition="#i">Decembris,</hi> 1662. <hi rendition="#i">conſecrata.</hi></hi>
             <lb/>
             
-            <head>Segenwu&#x364;nſchendes Viergeticht.</head>
+            <head rendition="#c">Segenwu&#x364;nſchendes Viergeticht.</head>
             <lb/>
+            <lg type="poem">
             <l><hi rendition="#in">D</hi>Je Kolen ſind begehrt: Herꝛ Mu&#x364;ller wußt es wol/</l>
             <lb/>
             <l>drum hat er ſich bey zeit/ verſehn mit eignem Kol:</l>
@@ -111,6 +113,7 @@
             <l>Wir wu&#x364;nſchen glu&#x364;k darzu! Wir wu&#x364;nſchen Mo&#x364;llerlein/</l>
             <lb/>
             <l>und; weilen die zu weiß; auch halbe Ko&#x364;llerlein!</l>
+            </lg>
             <lb/>
             <l>Auß ſchuldiger wolmeinung von Johann Wilhelm Simler.</l>
             <lb/>

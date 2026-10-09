@@ -61,10 +61,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F50B.2c">
+         <div xml:id="F50B.2c" type="poem">
             <pb facs="3508816"/>
             
-            <head><num>3.</num>
+            <head rendition="#c"><num>3.</num>
             <lb/>
             Jambiſcher/
             <lb/>
@@ -74,49 +74,54 @@
             <lb/>
             zu ſeligem
             <lb/>
-            Todtendantz.</head>
+            <hi rendition="#larger">Todtendantz.</hi></head>
             <lb/>
             
+            <!-- TODO HiWi: Einzug von V. 1 (Initiale O) im Scan nicht eindeutig; C_1663_dok (n163) hat #et2. -->
+            <lg type="poem">
             <l><hi rendition="#in">O</hi>Hn underſcheid</l>
             <lb/>
             <l>der Menſchenma&#x364;der ſchneidet/</l>
             <lb/>
-            <l>ſey/ wem es wolle/ leid:</l>
+            <l rendition="#et">ſey/ wem es wolle/ leid:</l>
             <lb/>
-            <l>Darum vermeid</l>
+            <l rendition="#et2">Darum vermeid</l>
             <lb/>
             <l>was traurigeſt abſcheidet</l>
             <lb/>
-            <l>von ho&#x364;chſter Himmelfreüd.</l>
+            <l rendition="#et">von ho&#x364;chſter Himmelfreüd.</l>
             <lb/>
-            <l>Stirb/ eh du ſterbſt/</l>
+            <l rendition="#et2">Stirb/ eh du ſterbſt/</l>
             <lb/>
-            <l>daß nicht verderbſt;</l>
+            <l rendition="#et2">daß nicht verderbſt;</l>
             <lb/>
-            <l>genad erwerbſt;</l>
+            <l rendition="#et2">genad erwerbſt;</l>
             <lb/>
-            <l>nicht ewig ſerbſ<anchor xml:id="a1"/><unclear>t</unclear><note type="annotation" targetEnd="a1"><p>Unklar, ob das Zeichen nach "t" von der Rückseite stammt oder aus Versehen beim Drucken passiert ist. In C steht jedenfalls kein Semikolon.</p></note></l>
+            <l rendition="#et2">nicht ewig ſerbſ<anchor xml:id="a1"/><unclear>t</unclear><note type="annotation" targetEnd="a1"><p>Unklar, ob das Zeichen nach "t" von der Rückseite stammt oder aus Versehen beim Drucken passiert ist. In C steht jedenfalls kein Semikolon.</p></note></l>
             <lb/>
-            <l>im ho&#x364;llenreich/</l>
+            <l rendition="#et3">im ho&#x364;llenreich/</l>
             <lb/>
-            <l>im ſchwefelteich/</l>
+            <l rendition="#et3">im ſchwefelteich/</l>
             <lb/>
             <l>wo ſchmertzen ſonder ende/</l>
             <lb/>
-            <l>wo trauren ſonder troſt.</l>
+            <l rendition="#et">wo trauren ſonder troſt.</l>
             <lb/>
             <l>O Herꝛ/ in deine ha&#x364;nde</l>
             <lb/>
-            <l>nim&#x342; die ſo ſind erloßt!</l>
+            <l rendition="#et">nim&#x342; die ſo ſind erloßt!</l>
+            </lg>
             <lb/>
             
+            <closer>
             Zu ſchuldigen ehren/ und bezeugung
             <lb/>
             offener freundſchafft und dienſte
             <lb/>
             ſpielt ſolches
             <lb/>
-            Johan&#x303; Wilhelm Simler.
+            <signed rendition="#right">Johan&#x303; Wilhelm Simler.</signed>
+            </closer>
             <lb/>
             
             <hi rendition="#aq"><fw place="bottom" type="catch">IN</fw></hi>

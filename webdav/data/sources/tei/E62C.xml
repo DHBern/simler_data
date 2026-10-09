@@ -73,9 +73,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E62C">
+         <div xml:id="E62C" type="poem">
             <pb facs="11273814"/>
-            <head>Ehren-Lied/
+            <head rendition="#c">Ehren-Lied/
             <lb/>
             auf
             <lb/>
@@ -92,12 +92,16 @@
             in Zu&#x364;rich gehalten.</head>
             <lb/>
             
-            Jn bekanter Weiſe.
+            <milestone unit="section" rendition="#hr"/>
+            <p rendition="#c">Jn bekanter Weiſe.
             <lb/>
-            Fertig iſt mein hertz zuſingen/ ꝛc.
+            Fertig iſt mein hertz zuſingen/ ꝛc.</p>
             <lb/>
             
-            <head><num>1.</num></head>
+            <!-- TODO HiWi: Einzug V. 1-4 von Strophe 1 durch die Initiale O verschoben; die Strophen 2-6 haben das Muster 0-et-0-et-et2-et2-0-0. -->
+            <lg type="poem">
+            <lg n="1">
+            <head rendition="#c"><num>1.</num></head>
             <lb/>
             <l><hi rendition="#in">O</hi>Hnverſehens/ in der eile/</l>
             <lb/>
@@ -107,111 +111,123 @@
             <lb/>
             <l>wer es worden auch zulang:</l>
             <lb/>
-            <l>dann ich der Holtzhalben Gſchlecht/</l>
+            <l rendition="#et2">dann ich der Holtzhalben Gſchlecht/</l>
             <lb/>
-            <l>und der Mu&#x364;lleren/ mit Recht;</l>
+            <l rendition="#et2">und der Mu&#x364;lleren/ mit Recht;</l>
             <lb/>
             <l>die nicht vilen andern weichen;</l>
             <lb/>
             <l>hette wo&#x364;llen drinn außſtreichen.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Beiderſeits ſich finden Helden;</l>
             <lb/>
-            <l>Mu&#x364;llerſeits vom Ritterſtand:</l>
+            <l rendition="#et">Mu&#x364;llerſeits vom Ritterſtand:</l>
             <lb/>
             <l>alß die Chronikbu&#x364;cher melden/</l>
             <lb/>
-            <l>grundtlich/ ſonder allen tand:</l>
+            <l rendition="#et">grundtlich/ ſonder allen tand:</l>
             <lb/>
-            <l>Gottfrid/ Jakob: andre mehr/</l>
+            <l rendition="#et2">Gottfrid/ Jakob: andre mehr/</l>
             <lb/>
-            <l>auch die Burgermeiſter-Ehr</l>
+            <l rendition="#et2">auch die Burgermeiſter-Ehr</l>
             <lb/>
             <l>kehret eyn bey beiden Gſchlechtern/</l>
             <lb/>
             <l>alß des Vatterlands Verfechtern.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Andrer viler Ehrenſtellen/</l>
             <lb/>
-            <l>innerlands/ und anderweit;</l>
+            <l rendition="#et">innerlands/ und anderweit;</l>
             <lb/>
             <l>die nicht no&#x364;htig zuerzellen<unclear>;</unclear></l>
             <lb/>
-            <l>zugeſchweigen diſer zeit:</l>
+            <l rendition="#et">zugeſchweigen diſer zeit:</l>
             <lb/>
-            <l>drinnen ſie ſich ſo erzeigt/</l>
+            <l rendition="#et2">drinnen ſie ſich ſo erzeigt/</l>
             <lb/>
-            <l>daß man Jhnen bleibt geneigt;</l>
+            <l rendition="#et2">daß man Jhnen bleibt geneigt;</l>
             <lb/>
             <l>guter hofnung/ ſich den Alten</l>
             <lb/>
             <l>junge werden gleich verhalten.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Jhr/ Herꝛ Obman&#x303;/ ſeyt Urheber/</l>
             <lb/>
-            <l>und mit Euch noch andre Drey/</l>
+            <l rendition="#et">und mit Euch noch andre Drey/</l>
             <lb/>
             <l>doch ſeyt Jhr der Erſt Angeber</l>
             <lb/>
-            <l>unſrer Burgerbu&#x364;cherey/</l>
+            <l rendition="#et">unſrer Burgerbu&#x364;cherey/</l>
             <lb/>
-            <l>Die/ von ho&#x364;chſter Nutzbarkeit/</l>
+            <l rendition="#et2">Die/ von ho&#x364;chſter Nutzbarkeit/</l>
             <lb/>
-            <l>iſt beru&#x364;hmet weit und breit:</l>
+            <l rendition="#et2">iſt beru&#x364;hmet weit und breit:</l>
             <lb/>
             <l>Billich Euch die Nachwelt preiſet/</l>
             <lb/>
             <l>und den Euern Dank erweiſet.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Deſſen habt Jhr euch zu freuen/</l>
             <lb/>
-            <l>Herꝛ Hochzeiter/ Jungfrau Braut/</l>
+            <l rendition="#et">Herꝛ Hochzeiter/ Jungfrau Braut/</l>
             <lb/>
             <l>die/ Jhr Euch/ in ho&#x364;chſten treuen/</l>
             <lb/>
-            <l>Chriſtlich-ehlich habt vertraut:</l>
+            <l rendition="#et">Chriſtlich-ehlich habt vertraut:</l>
             <lb/>
-            <l>wandelt in der Eltern pfad/</l>
+            <l rendition="#et2">wandelt in der Eltern pfad/</l>
             <lb/>
-            <l>bis an ſelberwu&#x364;nſchtes Gſtad:</l>
+            <l rendition="#et2">bis an ſelberwu&#x364;nſchtes Gſtad:</l>
             <lb/>
             <l>dann Jhr ſeyt von ſolchen Leuhten/</l>
             <lb/>
             <l>die den Wa&#x364;g der Ehren ſchreiten.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
             <l>Alles/ was zu diſem Leben</l>
             <lb/>
-            <l>no&#x364;htig iſt/ das wu&#x364;nſchen wir!</l>
+            <l rendition="#et">no&#x364;htig iſt/ das wu&#x364;nſchen wir!</l>
             <lb/>
             <l>Scho&#x364;ne Leibesfrucht darneben</l>
             <lb/>
-            <l>Euch nacharten fu&#x364;r und fu&#x364;r!</l>
+            <l rendition="#et">Euch nacharten fu&#x364;r und fu&#x364;r!</l>
             <lb/>
-            <l>Gott erhalt Euch gſund und ſtark/</l>
+            <l rendition="#et2">Gott erhalt Euch gſund und ſtark/</l>
             <lb/>
-            <l>bring Euch/ lebensſatt/ in Sark:</l>
+            <l rendition="#et2">bring Euch/ lebensſatt/ in Sark:</l>
             <lb/>
             <l>und/ auß diſem Weltgetu&#x364;mmel/</l>
             <lb/>
             <l>endlich in den ho&#x364;chſten Himmel!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Zu gefa&#x364;lligen Ehren/ ſezte diß wenige J.W.S.
+            <closer rendition="#c">Zu gefa&#x364;lligen Ehren/ ſezte diß wenige <signed>J.W.S.</signed></closer>
             <lb/>
          </div>
       </body>

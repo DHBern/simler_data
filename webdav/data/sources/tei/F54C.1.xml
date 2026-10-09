@@ -59,8 +59,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F54C.1">
+         <div xml:id="F54C.1" type="poem">
             <pb facs="11624252"/>
+            <!-- TODO HiWi: Flugblatt mit Beitraegen mehrerer Autoren; Titel und das lateinische Gedicht V. (Simler, "GRATULATIO VOTIVA") stehen in einem hi, das den head einschliesst - noch nicht gegliedert. Einzuege des deutschen Gesangs nicht kodiert (drei Spalten). -->
             <hi rendition="#aq">APPLAUSUS VERE CORDIALES:
             <lb/>
             IN NUPTIAS
@@ -109,8 +110,10 @@
             Illis â <hi rendition="#k">DOMINO</hi> proſpera cuncta precans.</hi>
             <lb/>
             
-            <num>2.</num> Wolwünſchendes Beſchluß-Geſang. Jn der Weiſe: Den newverlobten wünſchen wir/ ꝛc.
+            <head rendition="#c"><num>2.</num> Wolwünſchendes Beſchluß-Geſang. Jn der Weiſe: Den newverlobten wünſchen wir/ ꝛc.</head>
             <lb/>
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">D</hi>Er David ſeligpreiſet den/ der Gott von hertzen ehret/</l>
             <lb/>
             <l>und ſeiner wa&#x364;gen ſich befleißt/ die Er ſo treülich lehret:</l>
@@ -123,8 +126,10 @@
             <lb/>
             
             <note type="bibl">Pſal.128.v.1.2.ꝛc.</note>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Der weiſe Ko&#x364;nig Salomon kan nicht genug erheben</l>
             <lb/>
             <l>ein Tugenda&#x364;del frommes Weib: Der Mann dem ſie gegeben</l>
@@ -135,8 +140,10 @@
             <lb/>
             
             <note type="bibl">Prov.31.10.ꝛc.</note>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Des klugen Sirachs kluger Sohn von ſolchem Weib bezeüget:</l>
             <lb/>
             <l>Sie ſey des Frommen guter Theil: (Erfahrung nicht betreuget)</l>
@@ -149,8 +156,10 @@
             <lb/>
             
             <note type="bibl">Sirach.26.v.1.2.16.17.ꝛc.</note>
+            </lg>
             <lb/>
             
+            <lg>
             <l>O wol deßhalben! ſprechen wir: wol dem/ dem Gott auf Erden</l>
             <lb/>
             <l>beſchehret ſolche <hi rendition="#b">Ha&#x364;lferin/</hi> zu ringern die Beſchwerden</l>
@@ -158,7 +167,9 @@
             <l>in ſorgenfollem Stand vorauß; wie <hi rendition="#b">Herꝛen Waſers</hi> iſt;</l>
             <lb/>
             <l>bey diſer bitterbo&#x364;ſen Welt/ die foller trug und liſt!</l>
+            </lg>
             <lb/>
+            <lg>
             <l>Herꝛ Bra&#x364;utigam wird heut getro&#x364;ſt um vor geliebte JAHEL:</l>
             <lb/>
             <l>Fraw Braut des Witwenſtands ergetzt mit diſem Ehgemahel!</l>
@@ -168,13 +179,17 @@
             <l>So wünſcht die werthe Burgerſchafft und gantzes Vatter-
             <lb break="no"/>
             land!</l>
+            </lg>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Auß vetterlicher dienſtbegirꝛigkeit
             <lb/>
-            von Johann-Wilhelm Simlern
+            <signed>von Johann-Wilhelm Simlern</signed>
             <lb/>
             hertzlich geſungen.
+            </closer>
             <lb/>
             
          </div>

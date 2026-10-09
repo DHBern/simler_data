@@ -73,24 +73,26 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F63Dplus">
+         <div xml:id="F63Dplus" type="poem">
             <pb facs="4011829"/>
             <fw place="top" type="pageNum">17</fw>
             <lb/>
             <fw place="top" type="header">Bey Schintznacht in dem Bern-Gebieth.</fw>
             <lb/>
             
-            <head><hi rendition="#aq"><num>I.</num></hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>I.</num></hi>
             <lb/>
             Vber
             <lb/>
             das newe Geſund-Bad bey Schintznacht.
             <lb/>
-            Herꝛen Johann Wilhelm Simlers
+            <hi rendition="#larger">Herꝛen Johann Wilhelm Simlers</hi>
             <lb/>
             Viergedicht.</head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">V</hi>Jel Ba&#x364;der werden vns geru&#x364;hmt von vnſern Alten:</l>
             <lb/>
             <l>Fürtrefflich wir das Bad/ zu na&#x364;chſt bey Schintznacht halten/</l>
@@ -98,6 +100,8 @@
             <l>Dieweilen es ſich ru&#x364;hmt durch eigne gute Proben:</l>
             <lb/>
             <l>Für aller Ba&#x364;deren Krafft ſoll'n wir den Scho&#x364;pffer loben.</l>
+            </lg>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             
             <fw place="bottom" type="pageNum">C</fw>

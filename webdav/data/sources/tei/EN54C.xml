@@ -83,16 +83,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN54C">
+         <div xml:id="EN54C" type="poem">
             <pb facs="17729219"/>
-            <head>5. Sinnen-bild.
+            <head rendition="#c">5. Sinnen-bild.
             <lb/>
             Es bleib/ was hin iſt/ hin: Verlurſt iſt oft Gewin.</head>
             <lb/>
             
-            <hi rendition="#aq">C. Meÿer f.</hi>
+            <figure>
+            <p><hi rendition="#aq">C. Meÿer f.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Fort/ fort den Bergen zu&#x366;/ wo rettung iſt zu&#x366;finden/</l>
             <lb/>
             <l>laß alles hinder dir; du aber bleib nicht hinden;</l>
@@ -108,22 +111,24 @@
             <l>Nur ein mal ſeine hand gelegt an Tugendpflu&#x366;g</l>
             <lb/>
             <l>iſt zu&#x366; der Seligkeit beÿ weitem nicht genu&#x366;g.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Genes.XIX.cap.
+            <!-- TODO HiWi: Einzuege unregelmaessig (Stichschrift), nicht kodiert. -->
+            <note place="bottom" type="bibl"><hi rendition="#aq">Genes.XIX.cap.
             <lb/>
             Luc.XVII.32.
             <lb/>
             2.Pet.II.7.
             <lb/>
-            Luc.IX.62.</hi>
+            Luc.IX.62.</hi></note>
             <lb/>
             
-            Einer Tugendliebenden Jugend in Zürich
+            <p>Einer Tugendliebenden Jugend in Zürich
             <lb/>
             ab der Burgerbibliothec/ für das 1654.
             <lb/>
-            Jahr verehrt.
+            Jahr verehrt.</p>
             <lb/>
             
          </div>

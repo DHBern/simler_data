@@ -71,15 +71,16 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F57C">
+         <div xml:id="F57C" type="poem">
             <pb facs="2427223"/>
-            <head>Lob-gedicht
+            <head rendition="#c">Lob-gedicht
             <lb/>
             <anchor xml:id="a1"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a1"><p>Der Umlaut ist nicht zu erkennen, aber wahrscheinlich "e"</p></note>ber Herꝛen Conrad Meyers
             <lb/>
             Chriſten-ſpiegel.</head>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">N</hi><hi rendition="#aq">U</hi>n gibet abermal des <hi rendition="#b">Herꝛen Meyers</hi> fleiß</l>
             <lb/>
             <l>ein Werklein an das liecht/ dem billich ho&#x364;rt der preiß</l>
@@ -88,30 +89,33 @@
             <lb/>
             <l><hi rendition="#b">Herꝛ'n Müllers</hi> Po<anchor xml:id="a2"/><unclear>e</unclear><note type="annotation" targetEnd="a2"><p>Die Pünktchen über dem e sind wahrscheinlich Flecken. In der Ausgabe C sind sie nicht vorhanden.</p></note>ſie mittheilet ihm das leben</l>
             <lb/>
-            <l>und einen ſolchen glantz/ der auch im hertzen zeigt</l>
+            <l rendition="#et">und einen ſolchen glantz/ der auch im hertzen zeigt</l>
             <lb/>
-            <l>die ſünden-maaſen/ und zur Chriſten-pflicht uns neigt.</l>
+            <l rendition="#et">die ſünden-maaſen/ und zur Chriſten-pflicht uns neigt.</l>
             <lb/>
             <l>Fahrt fort/ fahrt beide fort mit etzen und mit dichten/</l>
             <lb/>
             <l>und ſchlaget in den wind Neidhammels ſplitter-richten/</l>
             <lb/>
-            <l>ſo machet ihr ihn ſtumm/ und krieget noch zu lohn</l>
+            <l rendition="#et">ſo machet ihr ihn ſtumm/ und krieget noch zu lohn</l>
             <lb/>
-            <l>der Hochgelehrten gunſt; er aber ſpott und hohn:</l>
+            <l rendition="#et">der Hochgelehrten gunſt; er aber ſpott und hohn:</l>
             <lb/>
             <l>es wird auch ieder drauf ein Lorberzweig erwerben/</l>
             <lb/>
             <l>und euer beider Namm der ſterbligkeit abſterben.</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zum Merkmahl beharꝛlicher Freundſchafft
             <lb/>
             aufgeſetzt
             <lb/>
             von
             <lb/>
-            Joh. Wilhelm Simler.
+            <signed>Joh. Wilhelm Simler.</signed>
+            </closer>
             <lb/>
          </div>
       </body>

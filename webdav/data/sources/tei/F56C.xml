@@ -73,38 +73,42 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F56C">
+         <div xml:id="F56C" type="poem">
             <pb facs="3218079"/>
-            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <head rendition="#c"><hi rendition="#aq"><num>VI.</num></hi></head>
             <lb/>
+            <lg type="poem">
             <l><hi rendition="#in">D</hi>Er Autor klar erweißt/ daß er nicht ſey erbohren</l>
             <lb/>
             <l>ihm ſelber nur allein; dieweil er außerkohren</l>
             <lb/>
-            <l>zuſchreiben ſolch ein Bu&#x366;ch/ warauß ein ieder Chriſt</l>
+            <l rendition="#et">zuſchreiben ſolch ein Bu&#x366;ch/ warauß ein ieder Chriſt</l>
             <lb/>
-            <l>erlehrnet/ was zum heil zuwüſſen no&#x364;thig iſt.</l>
+            <l rendition="#et">erlehrnet/ was zum heil zuwüſſen no&#x364;thig iſt.</l>
             <lb/>
             <l>Doch dienet es vorauß den jungen Catechiſten;</l>
             <lb/>
             <l>zu underweiſen recht den reinſten theil der Chriſten/</l>
             <lb/>
-            <l>auß denen mit der zeit/ zu gut dem Vatterland/</l>
+            <l rendition="#et">auß denen mit der zeit/ zu gut dem Vatterland/</l>
             <lb/>
-            <l>erwachßt der Nehr- und Lehr- und Wehr- und jeder Stand.</l>
+            <l rendition="#et">erwachßt der Nehr- und Lehr- und Wehr- und jeder Stand.</l>
             <lb/>
             <l>Wer wolte dann nicht gern diß Bu&#x366;chs Vrhebern preiſen/</l>
             <lb/>
             <l>der zu der Himmels-<hi rendition="#b">Burck</hi> uns richtig wollen weiſen</l>
             <lb/>
-            <l>den ſchmalen <hi rendition="#b">hart</hi>en Wa&#x364;g? o Ho&#x364;chſter/ gib daß wir</l>
+            <l rendition="#et">den ſchmalen <hi rendition="#b">hart</hi>en Wa&#x364;g? o Ho&#x364;chſter/ gib daß wir</l>
             <lb/>
-            <l>auf ſolchem wandlen fort/ bis wir gelangt zu Dir!</l>
+            <l rendition="#et">auf ſolchem wandlen fort/ bis wir gelangt zu Dir!</l>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Aufgeſetzt/ von
             <lb/>
-            Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.
+            <signed>Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.</signed>
+            </closer>
             <lb/>
             
          </div>

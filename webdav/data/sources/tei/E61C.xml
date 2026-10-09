@@ -59,30 +59,34 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E61C">
+         <div xml:id="E61C" type="poem">
             <pb facs="11302571"/>
-            <head>Bedeütung der Cometen insgemein:
+            <figure/>
+            <!-- TODO HiWi: nicht transkribiert - gestochener Titel "Abbild- und Beschreibung des Cometens welcher, durch ober- und nider-Teütschland, etc: im Jenner, 1661. gesehen worden.", die Sternkarte (Figur) und die zwei Randtexte links ("Neben stehender Comet ...") und rechts ("Das Corpus haben sie ..."). -->
+            <head rendition="#c">Bedeütung der Cometen insgemein:
             <lb/>
             ſamt beigefu&#x364;gtem Troſt für die
             <lb/>
             frommen.</head>
             <lb/>
             
+            <lg type="poem">
             <l>Cometen waren iederzeiten</l>
             <lb/>
             <l><unclear>Z</unclear>ornbotten Gottes/ und bedeüten</l>
             <lb/>
-            <l>Wind/ Theürung/ Peſt/ Krieg<anchor xml:id="a1"/><unclear>/</unclear><note type="annotation" targetEnd="a1"><p>Strich kaum zu erkennen</p></note> Waſſersnoht/</l>
+            <l rendition="#et">Wind/ Theürung/ Peſt/ Krieg<anchor xml:id="a1"/><unclear>/</unclear><note type="annotation" targetEnd="a1"><p>Strich kaum zu erkennen</p></note> Waſſersnoht/</l>
             <lb/>
-            <l>Erdbidem/ Endrung/ Fürſtentodt.</l>
+            <l rendition="#et">Erdbidem/ Endrung/ Fürſtentodt.</l>
             <lb/>
             <l>Solt aber drum der Fromm verzagen?</l>
             <lb/>
             <l>Nein/ ſonder/ mit vertrauen ſagen:</l>
             <lb/>
-            <l>Wan Erd und Himmel bra&#x364;chen eÿn/</l>
+            <l rendition="#et">Wan Erd und Himmel bra&#x364;chen eÿn/</l>
             <lb/>
-            <l>wird Gott mein Port und Anker ſeÿn.</l>
+            <l rendition="#et">wird Gott mein Port und Anker ſeÿn.</l>
+            </lg>
             <lb/>
             
             <note type="bibl" rendition="#aq">Pſalm. 46.</note>

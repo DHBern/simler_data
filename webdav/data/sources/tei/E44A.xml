@@ -41,23 +41,27 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E44A">
+         <div xml:id="E44A" type="poem">
             <pb facs="1"/>
-            Abbild- vnd Beſchreibung
+            <head rendition="#c">Abbild- vnd Beſchreibung
             <lb/>
             Des vngeſunden Geſundheit-trinckens/
             <lb/>
-            der vollen vnd tollen Bacchus-Bru&#x364;deren.
+            der vollen vnd tollen Bacchus-Bru&#x364;deren.</head>
             <lb/>
+            <!-- TODO HiWi: "JWS" ist im Scan nicht an dieser Stelle zu sehen (vermutlich in der Radierung). -->
             JWS
             <lb/>
-            Das edel Rebenſafft zu&#x366;r Fro&#x364;likeit gegeben, Du&#x364;rch miſſbrauch vnheÿl ſchafft vnd kürtzet vnſer Leben.
+            <figure>
+            <p>Das edel Rebenſafft zu&#x366;r Fro&#x364;likeit gegeben, Du&#x364;rch miſſbrauch vnheÿl ſchafft vnd kürtzet vnſer Leben.</p>
             <lb/>
             
-            <hi rendition="#aq">Con. Meÿer fecit et excudit.</hi>
+            <p><hi rendition="#aq">Con. Meÿer fecit et excudit.</hi></p>
+            </figure>
             <lb/>
             
-            Luc.21<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Andernorts steht an dieser Stelle ein Punkt, der hier aber nicht sicher ist.</p></note>v.34. Hu&#x364;-
+            <!-- TODO HiWi: die Randtexte stehen im Export blockweise; links und rechts der Radierung (Bibelstellen, Augustinus) sowie am linken Rand und zwischen den Spalten (Inhaltsangaben). Noch nicht in einzelne Noten getrennt. -->
+            <note place="left">Luc.21<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Andernorts steht an dieser Stelle ein Punkt, der hier aber nicht sicher ist.</p></note>v.34. Hu&#x364;-
             <lb break="no"/>
             tet euch daß ewere
             <lb/>
@@ -115,10 +119,10 @@
             <lb/>
             Gottes nicht erer-
             <lb break="no"/>
-            ben.
+            ben.</note>
             <lb/>
             
-            <hi rendition="#aq"><hi rendition="#i">S. Auguſtinus, in</hi>
+            <note place="right"><hi rendition="#aq"><hi rendition="#i">S. Auguſtinus, in</hi>
             <lb/>
             <hi rendition="#i">Bpiſt. ad Comi-</hi>
             <lb break="no"/>
@@ -172,10 +176,10 @@
             <lb/>
             Verderbnuß der
             <lb/>
-            Seelen.
+            Seelen.</note>
             <lb/>
             
-            Allhie wird/
+            <note place="left" type="marginalia">Allhie wird/
             <lb/>
             nach dem bey-
             <lb break="no"/>
@@ -281,131 +285,132 @@
             <lb/>
             Der viert trom-
             <lb break="no"/>
-            peten.
+            peten.</note>
             <lb/>
             
-            <hi rendition="#in">K</hi><hi rendition="#b">Om&#x303;t/ jung vnd alte kom&#x303;t! Jhr ſolt da wunder ſehen/</hi>
+            <lg type="poem">
+            <l><hi rendition="#in">K</hi><hi rendition="#b">Om&#x303;t/ jung vnd alte kom&#x303;t! Jhr ſolt da wunder ſehen/</hi></l>
             <lb/>
-            Wie doch/ bey Bacchus Fa&#x364;ſt/ die Gſundheit-tru&#x364;nck rumb gehen/
+            <l>Wie doch/ bey Bacchus Fa&#x364;ſt/ die Gſundheit-tru&#x364;nck rumb gehen/</l>
             <lb/>
-            So gar daß ſie; da ſie ſeyn ſolten ein Artzney;
+            <l rendition="#et">So gar daß ſie; da ſie ſeyn ſolten ein Artzney;</l>
             <lb/>
-            Wo nicht den Tod/ jedoch vil Kranckheit bringen bey.
+            <l rendition="#et">Wo nicht den Tod/ jedoch vil Kranckheit bringen bey.</l>
             <lb/>
-            Bey ſolchem Freßmahl nun zu oberſt wird geſetzet/
+            <l>Bey ſolchem Freßmahl nun zu oberſt wird geſetzet/</l>
             <lb/>
-            Wer ſich/ fu&#x364;r ander auß/ mit Reben-ſafft benetzet:
+            <l>Wer ſich/ fu&#x364;r ander auß/ mit Reben-ſafft benetzet:</l>
             <lb/>
-            Doch kommen ſie in dem/ gemeinlich/ vberein/
+            <l rendition="#et">Doch kommen ſie in dem/ gemeinlich/ vberein/</l>
             <lb/>
-            Daß jhrer keiner nicht wil vnbeſoffen ſeyn:
+            <l rendition="#et">Daß jhrer keiner nicht wil vnbeſoffen ſeyn:</l>
             <lb/>
-            Den Wein auch keiner bald/ das Waſſer alle ſparen:
+            <l>Den Wein auch keiner bald/ das Waſſer alle ſparen:</l>
             <lb/>
-            Dann/ erſt in voller weis/ die Gſundheit-tru&#x364;nck rumb fahren;
+            <l>Dann/ erſt in voller weis/ die Gſundheit-tru&#x364;nck rumb fahren;</l>
             <lb/>
-            Jn welchen/ ruhmlos zwar/ jedoch mit Ordnung auch/
+            <l rendition="#et">Jn welchen/ ruhmlos zwar/ jedoch mit Ordnung auch/</l>
             <lb/>
-            Drey ſonderbare Stu&#x364;ck erfordert jhr Gebrauch.
+            <l rendition="#et">Drey ſonderbare Stu&#x364;ck erfordert jhr Gebrauch.</l>
             <lb/>
-            Zu erſt/ ein groß Geſchirꝛ; weil groß vnd hoch erhaben
+            <l>Zu erſt/ ein groß Geſchirꝛ; weil groß vnd hoch erhaben</l>
             <lb/>
-            Der jenig/ welchen jetz jhr Vmbtrunck ſo&#x364;ll' erlaben.
+            <l>Der jenig/ welchen jetz jhr Vmbtrunck ſo&#x364;ll' erlaben.</l>
             <lb/>
-            So denne ſchencket man des Allerbeſten eyn;
+            <l rendition="#et">So denne ſchencket man des Allerbeſten eyn;</l>
             <lb/>
-            Dieweil ſein Gu&#x364;te ſol der Tugend Zeichen ſeyn.
+            <l rendition="#et">Dieweil ſein Gu&#x364;te ſol der Tugend Zeichen ſeyn.</l>
             <lb/>
-            Wormit gemeinter Herꝛ/ fu&#x364;r ander/ ſey gezieret/
+            <l>Wormit gemeinter Herꝛ/ fu&#x364;r ander/ ſey gezieret/</l>
             <lb/>
-            Da er offt/ Laſter-voll/ ſich ſelber nicht regieret:
+            <l>Da er offt/ Laſter-voll/ ſich ſelber nicht regieret:</l>
             <lb/>
-            Auch ſol ein gut Getra&#x364;nck zugleich andeuten frey/
+            <l rendition="#et">Auch ſol ein gut Getra&#x364;nck zugleich andeuten frey/</l>
             <lb/>
-            Daß auch das Beſt im Hauß in ſeinen dienſten ſey.
+            <l rendition="#et">Daß auch das Beſt im Hauß in ſeinen dienſten ſey.</l>
             <lb/>
-            Vnd endlich wil jhr Gſatz/ daß jeder/ ohn beſchwa&#x364;ren/
+            <l>Vnd endlich wil jhr Gſatz/ daß jeder/ ohn beſchwa&#x364;ren/</l>
             <lb/>
-            Diß Gſchirꝛ/ wie groß es ſey/ in eim Trunck ſo&#x364;lle la&#x364;ren/
+            <l>Diß Gſchirꝛ/ wie groß es ſey/ in eim Trunck ſo&#x364;lle la&#x364;ren/</l>
             <lb/>
-            Zur anzeig wie geſchwind zu dienen er geneigt
+            <l rendition="#et">Zur anzeig wie geſchwind zu dienen er geneigt</l>
             <lb/>
-            Dem Herꝛen/ dem hierdurch werd billich Ehr erzeigt.
+            <l rendition="#et">Dem Herꝛen/ dem hierdurch werd billich Ehr erzeigt.</l>
             <lb/>
-            So muß jhr jeder auch/ der diß Geſatz thut brechen/
+            <l>So muß jhr jeder auch/ der diß Geſatz thut brechen/</l>
             <lb/>
-            Noch einen kehren vmb/ ohn alles widerſprechen:
+            <l>Noch einen kehren vmb/ ohn alles widerſprechen:</l>
             <lb/>
-            Doch findt man deren wol/ die diſes wenig irꝛt/
+            <l rendition="#et">Doch findt man deren wol/ die diſes wenig irꝛt/</l>
             <lb/>
-            Ob es gleich Sinn vnd Hirn verjrꝛet vnd verwirꝛt.
+            <l rendition="#et">Ob es gleich Sinn vnd Hirn verjrꝛet vnd verwirꝛt.</l>
             <lb/>
-            <hi rendition="#b">Herꝛ Witzla&#x364;r iſt Gezeug/ vnd weißt hiervon zu ſingen:</hi>
+            <l><hi rendition="#b">Herꝛ Witzla&#x364;r iſt Gezeug/ vnd weißt hiervon zu ſingen:</hi></l>
             <lb/>
-            Dann/ alß Herꝛ Allzeitvoll jhm einen thate bringen
+            <l>Dann/ alß Herꝛ Allzeitvoll jhm einen thate bringen</l>
             <lb/>
-            Auff aller Gſundheit hin/ vnd er jhn ſchicket fort
+            <l rendition="#et">Auff aller Gſundheit hin/ vnd er jhn ſchicket fort</l>
             <lb/>
-            Zu Bruder Wackelfuß/ nur halber außgebort:
+            <l rendition="#et">Zu Bruder Wackelfuß/ nur halber außgebort:</l>
             <lb/>
-            Da hieß man jhme bald/ gantz voll/ eynſchencken wider;
+            <l>Da hieß man jhme bald/ gantz voll/ eynſchencken wider;</l>
             <lb/>
-            Vnd forthin jedem auch der einen ſtelle nider:
+            <l>Vnd forthin jedem auch der einen ſtelle nider:</l>
             <lb/>
-            Doch war jhm diſes nicht ein ſonders-ſchwa&#x364;re Buß/
+            <l rendition="#et">Doch war jhm diſes nicht ein ſonders-ſchwa&#x364;re Buß/</l>
             <lb/>
-            Garauſſend bracht er jhn dem alten Wackelfuß.
+            <l rendition="#et">Garauſſend bracht er jhn dem alten Wackelfuß.</l>
             <lb/>
-            Jetz gilt es/ Vilſauff/ dir: du arger Feind dem Waſſer/
+            <l>Jetz gilt es/ Vilſauff/ dir: du arger Feind dem Waſſer/</l>
             <lb/>
-            Dir gilt es Bruder mein/ den man ſonſt nennet Praſſer.
+            <l>Dir gilt es Bruder mein/ den man ſonſt nennet Praſſer.</l>
             <lb/>
-            Nur flux/ es blanget mich zu lo&#x364;ſchen meinen Durſt/
+            <l rendition="#et">Nur flux/ es blanget mich zu lo&#x364;ſchen meinen Durſt/</l>
             <lb/>
-            Dann ich gezechet hab vom Schuncken vnd Braatwurſt.
+            <l rendition="#et">Dann ich gezechet hab vom Schuncken vnd Braatwurſt.</l>
             <lb/>
-            Nunmehr iſt es an dir/ du leichter L<anchor xml:id="a4"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a4"><p>Wahrscheinlich ein kleines e, aber nicht eindeutig. In Druck A und B steht an dieser Stelle nichts, in C und D ein e.</p></note>fftenſpringer/
+            <l>Nunmehr iſt es an dir/ du leichter L<anchor xml:id="a4"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a4"><p>Wahrscheinlich ein kleines e, aber nicht eindeutig. In Druck A und B steht an dieser Stelle nichts, in C und D ein e.</p></note>fftenſpringer/</l>
             <lb/>
-            Jch nim&#x342; jhn von dir an/ vnd brings dem Zeitungbringer.
+            <l>Jch nim&#x342; jhn von dir an/ vnd brings dem Zeitungbringer.</l>
             <lb/>
-            Es darff vexierens nicht/ was ich erzell/ iſt waar:
+            <l rendition="#et">Es darff vexierens nicht/ was ich erzell/ iſt waar:</l>
             <lb/>
-            Geſegnet ſey dein Trunck: zum Schnarcher ich jetz fahr.
+            <l rendition="#et">Geſegnet ſey dein Trunck: zum Schnarcher ich jetz fahr.</l>
             <lb/>
-            Ha! Jſt es dann an mir? So gilt es dir/ Gutga&#x364;ber.
+            <l>Ha! Jſt es dann an mir? So gilt es dir/ Gutga&#x364;ber.</l>
             <lb/>
-            Herꝛ Du&#x364;rꝛmund ich wil dich. Der Trunck erfriſch die La&#x364;ber!
+            <l>Herꝛ Du&#x364;rꝛmund ich wil dich. Der Trunck erfriſch die La&#x364;ber!</l>
             <lb/>
-            Mein Herꝛ Großſprecher dir/ in demut/ bring ich Eins;
+            <l rendition="#et">Mein Herꝛ Großſprecher dir/ in demut/ bring ich Eins;</l>
             <lb/>
-            Du biſt ein Wundersmann; verbringeſt aber keins.
+            <l rendition="#et">Du biſt ein Wundersmann; verbringeſt aber keins.</l>
             <lb/>
-            Nachtvogel deinen ich bey nahem hett vergeſſen.
+            <l>Nachtvogel deinen ich bey nahem hett vergeſſen.</l>
             <lb/>
-            Es iſt noch alle zeit: Laß nur deſt beſſer meſſen:
+            <l>Es iſt noch alle zeit: Laß nur deſt beſſer meſſen:</l>
             <lb/>
-            Dann/ weil der Trunck bey mir erꝛeicht ſein end vnd zil/
+            <l rendition="#et">Dann/ weil der Trunck bey mir erꝛeicht ſein end vnd zil/</l>
             <lb/>
-            Des Fu&#x364;rſten Gſundheit ich hiemit anheben wil.
+            <l rendition="#et">Des Fu&#x364;rſten Gſundheit ich hiemit anheben wil.</l>
             <lb/>
-            <hi rendition="#b">Deß Fu&#x364;rſten Gſundheit gilt! Jetz thut es recht angehen:</hi>
+            <l><hi rendition="#b">Deß Fu&#x364;rſten Gſundheit gilt! Jetz thut es recht angehen:</hi></l>
             <lb/>
-            Es wil Herꝛ Allzeitvoll bey diſem Vmbtrunck ſtehen.
+            <l>Es wil Herꝛ Allzeitvoll bey diſem Vmbtrunck ſtehen.</l>
             <lb/>
-            Herꝛ Witzla&#x364;r aber meint/ daß vil mehr Ehr darbey/
+            <l rendition="#et">Herꝛ Witzla&#x364;r aber meint/ daß vil mehr Ehr darbey/</l>
             <lb/>
-            Wann auff dem Banck erho&#x364;cht man ſich erzeige frey.
+            <l rendition="#et">Wann auff dem Banck erho&#x364;cht man ſich erzeige frey.</l>
             <lb/>
-            Der Schnarcher widerſpricht/ vnd wil man ſ<anchor xml:id="a5"/><unclear>o</unclear><note type="annotation" targetEnd="a5"><p>Nicht zu erkennen, ob der Fleck über dem o etwas bedeutet. In allen vier Drucken von A bis D steht an dieser Stelle jedenfalls nichts.</p></note>lle knewen.
+            <l>Der Schnarcher widerſpricht/ vnd wil man ſ<anchor xml:id="a5"/><unclear>o</unclear><note type="annotation" targetEnd="a5"><p>Nicht zu erkennen, ob der Fleck über dem o etwas bedeutet. In allen vier Drucken von A bis D steht an dieser Stelle jedenfalls nichts.</p></note>lle knewen.</l>
             <lb/>
-            Der Praſſer ſie beredt: Es diene zum verdewen.
+            <l>Der Praſſer ſie beredt: Es diene zum verdewen.</l>
             <lb/>
-            Vnd der Gutg<anchor xml:id="a6"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a6"><p>Wahrscheinlich steht über dem a ein kleines e. Die vier Drucke A bis D helfen nicht, denn dort steht stattdessen nur der Grundbuchstabe e.</p></note>ber ſagt: Jch aber haben wil/
+            <l rendition="#et">Vnd der Gutg<anchor xml:id="a6"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a6"><p>Wahrscheinlich steht über dem a ein kleines e. Die vier Drucke A bis D helfen nicht, denn dort steht stattdessen nur der Grundbuchstabe e.</p></note>ber ſagt: Jch aber haben wil/</l>
             <lb/>
-            Daß man zu diſem Trunck trompete vnd auffſpil.
+            <l rendition="#et">Daß man zu diſem Trunck trompete vnd auffſpil.</l>
             <lb/>
             
-            Die vbrigen
+            <note place="left" type="marginalia">Die vbrigen
             <lb/>
             ſingen bis je-
             <lb break="no"/>
@@ -497,124 +502,126 @@
             <lb/>
             Gal.5.v.21.
             <lb/>
-            Wunſch.
+            Wunſch.</note>
             <lb/>
             
-            Von andern/ ins gemein/ ein Trinck-lied wird geſungen/
+            <l>Von andern/ ins gemein/ ein Trinck-lied wird geſungen/</l>
             <lb/>
-            Bis jeder ſeinen Trunck/ auff ſeine weis/ verſchlungen/
+            <l>Bis jeder ſeinen Trunck/ auff ſeine weis/ verſchlungen/</l>
             <lb/>
-            Vnd auff das Na&#x364;gelein gela&#x364;ret das Geſchirꝛ/
+            <l rendition="#et">Vnd auff das Na&#x364;gelein gela&#x364;ret das Geſchirꝛ/</l>
             <lb/>
-            Auch vber ſeine Kno&#x364;pff rabzogen mit Gekirꝛ.
+            <l rendition="#et">Auch vber ſeine Kno&#x364;pff rabzogen mit Gekirꝛ.</l>
             <lb/>
-            <hi rendition="#b">Herꝛ Witzla&#x364;r abermal/ dem Bacchus-Gſatz zuwider/</hi>
+            <l><hi rendition="#b">Herꝛ Witzla&#x364;r abermal/ dem Bacchus-Gſatz zuwider/</hi></l>
             <lb/>
-            Doch auß vergeßlichkeit/ den Vmbtrunck ſtellte nider/
+            <l>Doch auß vergeßlichkeit/ den Vmbtrunck ſtellte nider/</l>
             <lb/>
-            Woru&#x364;ber ſich/ geſchwind/ erhub Vneinigkeit/
+            <l rendition="#et">Woru&#x364;ber ſich/ geſchwind/ erhub Vneinigkeit/</l>
             <lb/>
-            Ein Fluchen vnd Geza&#x364;nck/ vnd auch ein harber Streit:
+            <l rendition="#et">Ein Fluchen vnd Geza&#x364;nck/ vnd auch ein harber Streit:</l>
             <lb/>
-            Dann ſie vermeinten all: Es thu dem Fu&#x364;rſten reichen
+            <l>Dann ſie vermeinten all: Es thu dem Fu&#x364;rſten reichen</l>
             <lb/>
-            Zu nicht geringer Schmach: Deß kamen ſie zu Streichen:
+            <l>Zu nicht geringer Schmach: Deß kamen ſie zu Streichen:</l>
             <lb/>
-            Doch ward jhr Zorn geſtillt/ vnd wider eyngeſchenckt
+            <l rendition="#et">Doch ward jhr Zorn geſtillt/ vnd wider eyngeſchenckt</l>
             <lb/>
-            So vil/ daß jhn hernach ein grimmig Fieber krenckt:
+            <l rendition="#et">So vil/ daß jhn hernach ein grimmig Fieber krenckt:</l>
             <lb/>
-            <hi rendition="#b">Secht! Mit dergleichen Schimpff/ vnd groben Narꝛen-poſſen/</hi>
+            <l><hi rendition="#b">Secht! Mit dergleichen Schimpff/ vnd groben Narꝛen-poſſen/</hi></l>
             <lb/>
-            Seind ein halb dotzet Stund/ bey nahem gar verfloſſen/
+            <l>Seind ein halb dotzet Stund/ bey nahem gar verfloſſen/</l>
             <lb/>
-            Noch fangt der Vilſauff erſt ein newe Gſundheit an;
+            <l rendition="#et">Noch fangt der Vilſauff erſt ein newe Gſundheit an;</l>
             <lb/>
-            Vil Gla&#x364;ſer ſtellet er auff eines Tellers plan/
+            <l rendition="#et">Vil Gla&#x364;ſer ſtellet er auff eines Tellers plan/</l>
             <lb/>
-            Die trinckt er alle zu/ dem na&#x364;chſten Bacchus-Gſellen/
+            <l>Die trinckt er alle zu/ dem na&#x364;chſten Bacchus-Gſellen/</l>
             <lb/>
-            Eins nach dem andern flux/ die la&#x364;ren er thut ſtellen
+            <l>Eins nach dem andern flux/ die la&#x364;ren er thut ſtellen</l>
             <lb/>
-            Nach erſter ordnung zwar/ doch vnder vberſich;
+            <l rendition="#et">Nach erſter ordnung zwar/ doch vnder vberſich;</l>
             <lb/>
-            Sie thun es alle nach; Ein jeder meiſterlich.
+            <l rendition="#et">Sie thun es alle nach; Ein jeder meiſterlich.</l>
             <lb/>
-            Bey diſem bleibt es nicht/ ꝛc.
+            <!-- TODO HiWi: zwei Verse sind im Druck in zwei Halbzeilen gesetzt ("Bey diſem bleibt es nicht/ ꝛc. - Vnd wann ſie vom Tiſch gehen/" und "So vil vom Gſundheit-trunck. - Von andern Trinck-manieren/"): hier zwei l, brauchen @part. -->
+            <l>Bey diſem bleibt es nicht/ ꝛc.</l>
             <lb/>
-            <hi rendition="#b">Vnd wann ſie vom Tiſch gehen/</hi>
+            <l><hi rendition="#b">Vnd wann ſie vom Tiſch gehen/</hi></l>
             <lb/>
-            So bleiben ſie noch lang beym lieben Tru&#x364;ncklein ſtehen:
+            <l>So bleiben ſie noch lang beym lieben Tru&#x364;ncklein ſtehen:</l>
             <lb/>
-            Ja/ es verweilet ſich jhr Scheiden etlich Stund:
+            <l rendition="#et">Ja/ es verweilet ſich jhr Scheiden etlich Stund:</l>
             <lb/>
-            Das Abgenaden wa&#x364;hrt auff aller Kannen grund:
+            <l rendition="#et">Das Abgenaden wa&#x364;hrt auff aller Kannen grund:</l>
             <lb/>
-            Vnd offtermal geſchicht/ daß vnden an der Stegen/
+            <l>Vnd offtermal geſchicht/ daß vnden an der Stegen/</l>
             <lb/>
-            Noch einer trincken wil auff Sant Johanſen Segen:
+            <l>Noch einer trincken wil auff Sant Johanſen Segen:</l>
             <lb/>
-            Ein andrer fraget erſt: Wer iſt der gu<supplied>t</supplied> Geſell/
+            <l rendition="#et">Ein andrer fraget erſt: Wer iſt der gu<supplied>t</supplied> Geſell/</l>
             <lb/>
-            Der einen Schlafftrunck vns/ in ſ<supplied>ei</supplied>nem Hauß/ auffſtell?
+            <l rendition="#et">Der einen Schlafftrunck vns/ in ſ<supplied>ei</supplied>nem Hauß/ auffſtell?</l>
             <lb/>
-            So vil vom Gſundheit-trunck.
+            <l>So vil vom Gſundheit-trunck.</l>
             <lb/>
-            <hi rendition="#b">Von andern Trinck-manieren/</hi>
+            <l><hi rendition="#b">Von andern Trinck-manieren/</hi></l>
             <lb/>
-            Die/ durch des Teufels liſt/ zu diſer zeit graſſieren/
+            <l>Die/ durch des Teufels liſt/ zu diſer zeit graſſieren/</l>
             <lb/>
-            Beſihe anderſtwo. Jch hab vom Gſchmack genug/
+            <l rendition="#et">Beſihe anderſtwo. Jch hab vom Gſchmack genug/</l>
             <lb/>
-            Vnd achten daß hiervon ich ſchweig mit beßrer fug.
+            <l rendition="#et">Vnd achten daß hiervon ich ſchweig mit beßrer fug.</l>
             <lb/>
-            <hi rendition="#b">Wann nun durch Fu&#x364;llerey/ vnd durch Geſundheit-ſauffen</hi>
+            <l><hi rendition="#b">Wann nun durch Fu&#x364;llerey/ vnd durch Geſundheit-ſauffen</hi></l>
             <lb/>
-            Dem Feind erſchlagen wurd der minſte Krieges-hauffen/
+            <l>Dem Feind erſchlagen wurd der minſte Krieges-hauffen/</l>
             <lb/>
-            Behu&#x364;t! o Herꝛ behu&#x364;t/ wie geb er Ferſengelt/
+            <l rendition="#et">Behu&#x364;t! o Herꝛ behu&#x364;t/ wie geb er Ferſengelt/</l>
             <lb/>
-            Er lieſſe hinderſich Troß/ Waffen vnd Gezelt!
+            <l rendition="#et">Er lieſſe hinderſich Troß/ Waffen vnd Gezelt!</l>
             <lb/>
-            Dann hinderm Bacchus-tiſch den Feind wil jeder freſſen/
+            <l>Dann hinderm Bacchus-tiſch den Feind wil jeder freſſen/</l>
             <lb/>
-            Deß aber in dem Feld ſie allzumal vergeſſen:
+            <l>Deß aber in dem Feld ſie allzumal vergeſſen:</l>
             <lb/>
-            Sie leben alle gern nur jmmerdar im Sauß/
+            <l rendition="#et">Sie leben alle gern nur jmmerdar im Sauß/</l>
             <lb/>
-            Vnd lo&#x364;ſchen nicht wann br<anchor xml:id="a8"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a8"><p>In A, B und C steht ü, in D u&#x364;. Wahrscheinlich hier also auch u&#x364;, aber nicht eindeutig zu erkennen.</p></note>n&#x303;t des allerna&#x364;chſten Hauß:
+            <l rendition="#et">Vnd lo&#x364;ſchen nicht wann br<anchor xml:id="a8"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a8"><p>In A, B und C steht ü, in D u&#x364;. Wahrscheinlich hier also auch u&#x364;, aber nicht eindeutig zu erkennen.</p></note>n&#x303;t des allerna&#x364;chſten Hauß:</l>
             <lb/>
-            Gedencken auch niemal/ zu jhrem groſſen Schaden/
+            <l>Gedencken auch niemal/ zu jhrem groſſen Schaden/</l>
             <lb/>
-            Daß ſie/ durch Schwelgerey/ des <hi rendition="#g">HERREN</hi> Zorn auffladen/
+            <l>Daß ſie/ durch Schwelgerey/ des <hi rendition="#g">HERREN</hi> Zorn auffladen/</l>
             <lb/>
-            Vnd daß/ gemeiniglich/ vnma&#x364;ſſig Speiß und Tranck
+            <l rendition="#et">Vnd daß/ gemeiniglich/ vnma&#x364;ſſig Speiß und Tranck</l>
             <lb/>
-            Mach jenen an dem Leib/ vnd den im Beutel kranck.
+            <l rendition="#et">Mach jenen an dem Leib/ vnd den im Beutel kranck.</l>
             <lb/>
-            Dann ja Gott ſelber ſpricht: Wee! wee dem bo&#x364;ſen Hauffen/
+            <l>Dann ja Gott ſelber ſpricht: Wee! wee dem bo&#x364;ſen Hauffen/</l>
             <lb/>
-            Die ſtarcke Helden ſeind/ ja Helden Wein zu ſauffen!
+            <l>Die ſtarcke Helden ſeind/ ja Helden Wein zu ſauffen!</l>
             <lb/>
-            Der Heiden Lehrer auch von den Weinſa&#x364;uffern ſpricht/
+            <l rendition="#et">Der Heiden Lehrer auch von den Weinſa&#x364;uffern ſpricht/</l>
             <lb/>
-            Daß ſie das Himmelreych ererben werden nicht.
+            <l rendition="#et">Daß ſie das Himmelreych ererben werden nicht.</l>
             <lb/>
-            <hi rendition="#b">Darumb ſo bitten ich/ vnd zwar nicht ohne trehen/</hi>
+            <l><hi rendition="#b">Darumb ſo bitten ich/ vnd zwar nicht ohne trehen/</hi></l>
             <lb/>
-            Es wo&#x364;lle meniglich Wein-ſauffens mu&#x364;ſſig gehen/
+            <l>Es wo&#x364;lle meniglich Wein-ſauffens mu&#x364;ſſig gehen/</l>
             <lb/>
-            Zu diſer ſchweren Zeit/ da Zeichen vilerley/
+            <l rendition="#et">Zu diſer ſchweren Zeit/ da Zeichen vilerley/</l>
             <lb/>
-            Des nahen Ends der Welt ſeind ein gew<anchor xml:id="a9"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a9"><p>In Druck A, B und C steht ü, in D u&#x364;. Vermutlich hier auch kleines e, aber nicht klar zu erkennen.</p></note>ſſe Chrey.
+            <l rendition="#et">Des nahen Ends der Welt ſeind ein gew<anchor xml:id="a9"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a9"><p>In Druck A, B und C steht ü, in D u&#x364;. Vermutlich hier auch kleines e, aber nicht klar zu erkennen.</p></note>ſſe Chrey.</l>
             <lb/>
-            Der Schaden Joſephs euch im Hertzen thu&#x366;ne krencken/
+            <l>Der Schaden Joſephs euch im Hertzen thu&#x366;ne krencken/</l>
             <lb/>
-            So wird der Fridens-Fu&#x364;rſt euch ſeinen Friden ſchencken:
+            <l>So wird der Fridens-Fu&#x364;rſt euch ſeinen Friden ſchencken:</l>
             <lb/>
-            Denſelben w<anchor xml:id="a10"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a10"><p>In Druck A, B und C steht ein ü, in D u&#x364;. Vermutlich hier auch ein kleines e darüber, aber nicht eindeutig zu erkennen.</p></note>nſchen ich der gantzen Chriſtenheit/
+            <l rendition="#et">Denſelben w<anchor xml:id="a10"/><unclear>u&#x364;</unclear><note type="annotation" targetEnd="a10"><p>In Druck A, B und C steht ein ü, in D u&#x364;. Vermutlich hier auch ein kleines e darüber, aber nicht eindeutig zu erkennen.</p></note>nſchen ich der gantzen Chriſtenheit/</l>
             <lb/>
-            Zu letſt/ durch Chriſtum auch die waare Seligkeit.
+            <l rendition="#et">Zu letſt/ durch Chriſtum auch die waare Seligkeit.</l>
+            </lg>
             <lb/>
             
          </div>

@@ -61,9 +61,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F44C.2a">
+         <div xml:id="F44C.2a" type="poem">
             <pb facs="3855448"/>
-            <head><hi rendition="#aq"><num>II.</num></hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>II.</num></hi>
             <lb/>
             Geſpra&#x364;ch
             <lb/>
@@ -74,7 +75,9 @@
             Heutiger Ehe-verlobnuß.</head>
             <lb/>
             
-            Mann.
+            <!-- TODO HiWi: Dialog in Vierzeilern, deren Verse zwischen den Sprechern geteilt sind (Halbverse, @part); Einzuege nicht kodiert. Die Randnoten stehen im Export am Seitenende, nicht bei ihrem Vers: "Ex mala muliere fructus boni" und "Beſihe den Anhang" bei V. 9-12, "Sobolis procreatio" bei V. 15-17, die zehn lateinischen Stichworte der Seite 2 bei den Versen dort, "Purgatorij post mortem excluſio" bei V. 58-61, "Anagr." bei V. 72, "Vide Encomium mulieris probæ C.G." bei V. 76-78. -->
+            <lg type="poem">
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Ey! Ey was ho&#x364;r ich doch vom Herꝛen Bra&#x364;utigam?</l>
             <lb/>
@@ -85,12 +88,12 @@
             <l>Da mancher vber Meer vnd niemal widerkam.</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Ey nein/ es wird nicht ſeyn!</l>
             <lb/>
             
-            Mann.
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Er hat ſich ja verpflicht</l>
             <lb/>
@@ -101,7 +104,7 @@
             <l>Jſt ſie nun <hi rendition="#b">Hart</hi> dem <hi rendition="#b">Mann!</hi> mag er ſie lieben nicht.</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Sie ſey vnd heiſſe gleich <hi rendition="#b">Hartma&#x364;nnin</hi> oder lind/</l>
             <lb/>
@@ -120,12 +123,12 @@
             <l>Worinn dergleichen wir geleſen vor der zeit.</l>
             <lb/>
             
-            Mann.
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Was dann für nutzbarkeit?</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Nicht wenig/ vnd nicht klein:</l>
             <lb/>
@@ -141,26 +144,26 @@
             <fw place="bottom" type="catch">So</fw>
             <lb/>
             
-            <hi rendition="#aq"><hi rendition="#i">Ex mala mu-</hi>
+            <note place="right" type="marginalia"><hi rendition="#aq"><hi rendition="#i">Ex mala mu-</hi>
             <lb break="no"/>
             <hi rendition="#i">liere fructus</hi>
             <lb/>
-            <hi rendition="#i">boni.</hi></hi>
+            <hi rendition="#i">boni.</hi></hi></note>
             <lb/>
-            Beſihe den An-
+            <note place="right" type="marginalia">Beſihe den An-
             <lb break="no"/>
             hang des Hauß-
             <lb break="no"/>
             frids am 298.
             <lb/>
-            blat.
+            blat.</note>
             <lb/>
-            <hi rendition="#aq"><hi rendition="#i">Sobolis pro-</hi>
+            <note place="right" type="marginalia"><hi rendition="#aq"><hi rendition="#i">Sobolis pro-</hi>
             <lb break="no"/>
-            <hi rendition="#i">creatio.</hi></hi>
+            <hi rendition="#i">creatio.</hi></hi></note>
             <lb/>
             <pb facs="3855449"/>
-            <hi rendition="#aq"><hi rendition="#i">Luxus evita-</hi>
+            <note place="right" type="marginalia"><hi rendition="#aq"><hi rendition="#i">Luxus evita-</hi>
             <lb break="no"/>
             <hi rendition="#i">tio.</hi>
             <lb/>
@@ -200,7 +203,7 @@
             <lb/>
             <hi rendition="#i">ad mortem</hi>
             <lb/>
-            <hi rendition="#i">preparatio.</hi></hi>
+            <hi rendition="#i">preparatio.</hi></hi></note>
             <lb/>
             
             <l>So haltet offt den Mann ein <hi rendition="#b">hart-</hi> vnd bo&#x364;ſes Weib</l>
@@ -289,12 +292,12 @@
             <l>Vom Fa&#x364;gfewr ſeyen frey/ ohn Meß vnd ohne Gelt.</l>
             <lb/>
             
-            Mann.
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Ha! Ha! was ho&#x364;r ich da?</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Die waarheit in dem ſchimpff:</l>
             <lb/>
@@ -313,7 +316,7 @@
             <l>Was <hi rendition="#b">hartes</hi> jmmer jhm im Ehſtand widerfahrt.</l>
             <lb/>
             
-            Mann.
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Nun/ nun! Jſt dem alſo? Jſt <hi rendition="#b">Hart</hi> allein ihr <hi rendition="#b">Nam?</hi></l>
             <lb/>
@@ -324,7 +327,7 @@
             <l>So hat/ was liebens wa&#x364;rth/ erwehlt Herꝛ Bra&#x364;utigam.</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Ja freylich: dann/ wie vns vor diſem auch gelehrt</l>
             <lb/>
@@ -335,18 +338,19 @@
             <l>Worzu&#x366; ſie jhme dann vom Herꝛen iſt beſchehrt.</l>
             <lb/>
             
-            Mann.
+            <note rendition="#c" type="speaker">Mann.</note>
             <lb/>
             <l>Wolan/ ſo wünſchen ich von dem getrewen Gott/</l>
             <lb/>
             <l>Er wolle diſem Par vil Heyl vnd Glück verleyen!</l>
             <lb/>
             
-            Weib.
+            <note rendition="#c" type="speaker">Weib.</note>
             <lb/>
             <l>Jch wünſch/ Er wolle ſie in allweg benedeyen/</l>
             <lb/>
             <l>Vnd bhu&#x364;ten gna&#x364;diglich vor vnfahl/ leid vnd noht!</l>
+            </lg>
             <lb/>
             
             <fw place="bottom" type="pageNum">A iij</fw>
@@ -354,7 +358,7 @@
             <fw place="bottom" type="catch">Hoch-</fw>
             <lb break="no"/>
             
-            <hi rendition="#aq"><hi rendition="#i">Purgatorij</hi>
+            <note place="right" type="marginalia"><hi rendition="#aq"><hi rendition="#i">Purgatorij</hi>
             <lb/>
             <hi rendition="#i">post mortem</hi>
             <lb/>
@@ -366,7 +370,7 @@
             <lb break="no"/>
             <hi rendition="#i">mium mulie-</hi>
             <lb break="no"/>
-            <hi rendition="#i">ris probæ C.G.</hi></hi>
+            <hi rendition="#i">ris probæ C.G.</hi></hi></note>
             <lb/>
          </div>
       </body>

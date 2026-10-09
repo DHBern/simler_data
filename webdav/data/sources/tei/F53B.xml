@@ -73,47 +73,55 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F53B">
+         <div xml:id="F53B" type="poem">
             <pb facs="3746622"/>
-            <head><hi rendition="#aq"><num>VI.</num></hi></head>
+            <head rendition="#c"><hi rendition="#aq"><num>VI.</num></hi></head>
             <lb/>
-            Klinggedichte.
+            <head rendition="#c">Klinggedichte.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">E</hi><hi rendition="#b">S ſchallet viler Nam&#x342; noch heut in aller Welt;</hi></l>
             <lb/>
             <l>mit nicht geringem Ru&#x366;hm; die doch dem Menſchen-orden</l>
             <lb/>
             <l>la&#x364;ngſt gute nacht geſagt; zu ſtaub und gar nichts worden:</l>
             <lb/>
-            <l>worunder ſonderlich <hi rendition="#b">Herꝛ Gwalther</hi> wird gezellt/</l>
+            <l rendition="#et">worunder ſonderlich <hi rendition="#b">Herꝛ Gwalther</hi> wird gezellt/</l>
             <lb/>
-            <l>deß <hi rendition="#b">Feſtenbu&#x366;ch</hi> dem freund und feinde wol gefellt/</l>
+            <l rendition="#et">deß <hi rendition="#b">Feſtenbu&#x366;ch</hi> dem freund und feinde wol gefellt/</l>
             <lb/>
             <l>vom Oſten biß zum Weſt; vom Suden bis zum Norden;</l>
             <lb/>
             <l>weils weyßt den <hi rendition="#b">Lebenswa&#x364;g</hi>; entdeckt die Seelen-morden:</l>
             <lb/>
-            <l>drumb des Erfinders lob noch heute widergellt.</l>
+            <l rendition="#et">drumb des Erfinders lob noch heute widergellt.</l>
+            </lg>
             <lb/>
+            <lg>
             <l><hi rendition="#b">Herꝛn Weyſſen</hi> edler Geiſt geleiche ſtaffel ſteiget/</l>
             <lb/>
             <l>in dem er Chriſtus Lehr und Leben nicht verſchweiget/</l>
             <lb/>
-            <l>hiemit den <hi rendition="#b">Wa&#x364;g zum heil</hi> uns andern kla&#x364;rlich weyßt.</l>
+            <l rendition="#et">hiemit den <hi rendition="#b">Wa&#x364;g zum heil</hi> uns andern kla&#x364;rlich weyßt.</l>
             <lb/>
             <l>Fahrt fort auf diſer Bahn/ die ihr euch habt erkoren/</l>
             <lb/>
             <l>ſo wird/ auß <hi rendition="#b">Felix</hi>/ einſt ein <hi rendition="#b">Fenix</hi> neugeboren;</l>
             <lb/>
-            <l>das iſt; wie jennes Nam; wird euer ſeyn gepreyßt.</l>
+            <l rendition="#et">das iſt; wie jennes Nam; wird euer ſeyn gepreyßt.</l>
+            </lg>
+            </lg>
             <lb/>
             
+            <closer rendition="#right">
             Zu wol verdienten Ehren ſeinem groſſen Go&#x364;nner
             <lb/>
             ſetzte diſes hertz-wolmeinlich
             <lb/>
-            Johan&#x303;-Wilhelm Simler.
+            <signed>Johan&#x303;-Wilhelm Simler.</signed>
+            </closer>
             <lb/>
          </div>
       </body>

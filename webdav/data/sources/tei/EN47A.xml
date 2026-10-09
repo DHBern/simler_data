@@ -83,12 +83,15 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN47A">
+         <div xml:id="EN47A" type="poem">
             <pb facs="17762293"/>
-            <hi rendition="#aq">C. Meÿer fecit, et ex:</hi>
+            <figure>
+            <p><hi rendition="#aq">C. Meÿer fecit, et ex:</hi></p>
+            </figure>
             <lb/>
             
-            <head rendition="#aq #k #g">CANTUS.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">CANTUS.</head>
             <lb/>
             <l>Wiewol der zeiten ſcho&#x364;nſte Zeit</l>
             <lb/>
@@ -105,9 +108,11 @@
             <l>Werden abgeſchnidten</l>
             <lb/>
             <l>Die Saaten/ fru&#x364;h vnd ſpaat.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">TENOR.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">TENOR.</head>
             <lb/>
             <l>Wiewol der zeiten ſcho&#x364;nſte Zeit</l>
             <lb/>
@@ -124,9 +129,11 @@
             <l>Werden abgeſchnidten</l>
             <lb/>
             <l>Die Saaten/ fru&#x364;h vnd ſpaat.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">ALTUS.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">ALTUS.</head>
             <lb/>
             <l>Wiewol der zeiten ſcho&#x364;nſte Zeit</l>
             <lb/>
@@ -143,9 +150,11 @@
             <l>Werden abgeſchnidten</l>
             <lb/>
             <l>Die Saaten/ fru&#x364;h vnd ſpaat.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">BASIS.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">BASIS.</head>
             <lb/>
             <l>Wiewol der zeiten ſcho&#x364;nſte Zeit</l>
             <lb/>
@@ -162,11 +171,15 @@
             <l>Werden abgeſchnidten</l>
             <lb/>
             <l>Die Saaten/ fru&#x364;h vnd ſpaat.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <!-- TODO HiWi: Strophe 1 = Text der vier Stimmen oben (Cantus-Basis); Notenbilder nicht kodiert. -->
+            <lg type="poem">
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
-            <l>Es gibt der Sommer/ was er ſol/</l>
+            <l rendition="#et">Es gibt der Sommer/ was er ſol/</l>
             <lb/>
             <l>Durch Gottes gu&#x364;tigkeit:/:</l>
             <lb/>
@@ -181,11 +194,13 @@
             <l>Allem Vieh/ zu&#x366; leben</l>
             <lb/>
             <l>Jm Stall/ vnd auff der Weyd.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
-            <l>Der Ma&#x364;der auff der Matten fellt</l>
+            <l rendition="#et">Der Ma&#x364;der auff der Matten fellt</l>
             <lb/>
             <l>Das noch Taw-naſſe Graß<anchor xml:id="a4"/>:<note type="annotation" targetEnd="a4"><p>Dieser Doppelpunkt weicht typographisch von den anderen ab.</p></note>/:</l>
             <lb/>
@@ -200,11 +215,13 @@
             <l>Die Ho&#x364;wſchra&#x364;cken ſpringen/</l>
             <lb/>
             <l>Bien-honig fließt fürbaß.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
-            <l>Wann Sirius mit ſeiner Glu&#x366;t</l>
+            <l rendition="#et">Wann Sirius mit ſeiner Glu&#x366;t</l>
             <lb/>
             <l>Die Saat entfa&#x364;rwet gantz<anchor xml:id="a5"/>:<note type="annotation" targetEnd="a5"><p>Dieser Doppelpunkt weicht typographisch von den anderen ab.</p></note>/:</l>
             <lb/>
@@ -219,11 +236,13 @@
             <l>Thu&#x366;t ſie vmbhinſagen</l>
             <lb/>
             <l>Zum rauchen Sichel-dantz.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
-            <l>Die Wa&#x364;gen von der Garben laſt/</l>
+            <l rendition="#et">Die Wa&#x364;gen von der Garben laſt/</l>
             <lb/>
             <l>Vnd groſſer Fu&#x366;dern Ho&#x364;w:/:</l>
             <lb/>
@@ -238,11 +257,13 @@
             <l>Durch die Hitz verleuren</l>
             <lb/>
             <l>Die Bronnen ſich vorbey.</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
-            <l>Darumb beſcha&#x364;r von Wollen dick</l>
+            <l rendition="#et">Darumb beſcha&#x364;r von Wollen dick</l>
             <lb/>
             <l>Die Schaaffe/ wer es kan:/:</l>
             <lb/>
@@ -257,11 +278,13 @@
             <l>Junge leuht/ die fühlen</l>
             <lb/>
             <l>Des Sommers Hitz voran.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
-            <l>Wie nun/ zu&#x366; end der Sommers zeit/</l>
+            <l rendition="#et">Wie nun/ zu&#x366; end der Sommers zeit/</l>
             <lb/>
             <l>Zum reyffen ſchicken ſich:/:</l>
             <lb/>
@@ -276,9 +299,11 @@
             <l>Thu&#x366; die Laſter zwingen/</l>
             <lb/>
             <l>Werd auch der Omeiß gleich.</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Mag auch geſungen werden in der melodey: Der Fru&#x364;hling ſcho&#x364;n hardringen thu&#x366;t/ ꝛc.
+            <p rendition="#c">Mag auch geſungen werden in der melodey: Der Fru&#x364;hling ſcho&#x364;n hardringen thu&#x366;t/ ꝛc.</p>
             <lb/>
             
          </div>

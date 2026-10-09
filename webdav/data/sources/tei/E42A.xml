@@ -60,9 +60,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E42A">
+         <div xml:id="E42A" type="poem">
             <pb facs="11598495"/>
-            OECONOMIA,
+            <head rendition="#c">OECONOMIA,
             <lb/>
             Oder Poetiſch Geſang/ von Chriſtlichem Haußweſen:
             <lb/>
@@ -96,10 +96,11 @@
             <lb/>
             Auff dero Hochzeitlich Ehren- vnd Frewdenfeſt/ gehalten auff Felicitas den VII. Merzens/
             <lb/>
-            M CD XLII.
+            M CD XLII.</head>
             <lb/>
             
-            Poetiſch Ge-
+            <!-- TODO HiWi: Randnoten (Inhaltsangaben und Bibelstellen) stehen im Export blockweise vor den Versen; sie gehoeren zu einzelnen Strophen und sind noch nicht getrennt. Die Strophennummern "2." bis "10." stehen im l (num). -->
+            <note place="left" type="marginalia">Poetiſch Ge-
             <lb break="no"/>
             ſang vom Chri-
             <lb break="no"/>
@@ -175,91 +176,102 @@
             <lb/>
             Tit.2.4.5.
             <lb/>
-            Coloſs.3.18.
+            Coloſs.3.18.</note>
             <lb/>
             
-            <hi rendition="#in">O</hi> Daß ich jetzund ein Davids Harpff beka&#x364;m/
+            <lg type="poem">
+            <lg n="1">
+            <l><hi rendition="#in">O</hi> Daß ich jetzund ein Davids Harpff beka&#x364;m/</l>
             <lb/>
-            Vnd ich gleich jhme ko&#x364;nt ſo zierlich ſie tractieren/
+            <l>Vnd ich gleich jhme ko&#x364;nt ſo zierlich ſie tractieren/</l>
             <lb/>
-            Daß jhrem ſcho&#x364;nen klang ein Melodey bequa&#x364;m
+            <l>Daß jhrem ſcho&#x364;nen klang ein Melodey bequa&#x364;m</l>
             <lb/>
-            Doch mengklich folgen tha&#x364;t! O him&#x303;liſch Musicieren!
+            <l>Doch mengklich folgen tha&#x364;t! O him&#x303;liſch Musicieren!</l>
             <lb/>
-            Doch weil es nicht kan seyn; wiewol mir angena&#x364;m;
+            <l>Doch weil es nicht kan seyn; wiewol mir angena&#x364;m;</l>
             <lb/>
-            Wil auff ein ander art diß Ehrenfeſt ich zieren:
+            <l>Wil auff ein ander art diß Ehrenfeſt ich zieren:</l>
             <lb/>
-            Ich wil mit ſtummem mund auch ſingen scho&#x364;n vnd klar/
+            <l rendition="#et">Ich wil mit ſtummem mund auch ſingen scho&#x364;n vnd klar/</l>
             <lb/>
-            Daß meine stim&#x303; ohn ſtim&#x303; ſol werden offenbar.
+            <l rendition="#et">Daß meine stim&#x303; ohn ſtim&#x303; ſol werden offenbar.</l>
+            </lg>
             <lb/>
-            2. O du/ wer du auch ſeyſt/ der du frid/ frewd vnd rhu&#x366;
+            <lg n="2">
+            <l>2. O du/ wer du auch ſeyſt/ der du frid/ frewd vnd rhu&#x366;</l>
             <lb/>
-            Jm Eheſtand haben wilt/ geſpo&#x364;tt nicht wo&#x364;lleſt treiben:
+            <l>Jm Eheſtand haben wilt/ geſpo&#x364;tt nicht wo&#x364;lleſt treiben:</l>
             <lb/>
-            Vil mehr in Gottes-forcht die ſach angreiffen thu&#x366;/
+            <l>Vil mehr in Gottes-forcht die ſach angreiffen thu&#x366;/</l>
             <lb/>
-            Wann in den ſinne dir genommen haſt zu weiben:
+            <l>Wann in den ſinne dir genommen haſt zu weiben:</l>
             <lb/>
-            Gott bitte daß er dir in gnaden fu&#x364;hre zu&#x366;
+            <l>Gott bitte daß er dir in gnaden fu&#x364;hre zu&#x366;</l>
             <lb/>
-            Ein wolgezogen Weib/ wie Syrach thu&#x366;t beſchreiben.
+            <l>Ein wolgezogen Weib/ wie Syrach thu&#x366;t beſchreiben.</l>
             <lb/>
-            Die Gu&#x364;ter/ Hauß vnd Hof/ vnd was dergleichen mehr/
+            <l rendition="#et">Die Gu&#x364;ter/ Hauß vnd Hof/ vnd was dergleichen mehr/</l>
             <lb/>
-            Von Eltern man ererbt; ein from&#x342; Weib bſchert der Herꝛ.
+            <l rendition="#et">Von Eltern man ererbt; ein from&#x342; Weib bſchert der Herꝛ.</l>
+            </lg>
             <lb/>
-            3. Nechſt Gott/ in diſer ſach zu fragen dich nicht ſcha&#x364;m
+            <lg n="3">
+            <l>3. Nechſt Gott/ in diſer ſach zu fragen dich nicht ſcha&#x364;m</l>
             <lb/>
-            Die lieben Eltern dein/ vnd folge jhrem rahte/
+            <l>Die lieben Eltern dein/ vnd folge jhrem rahte/</l>
             <lb/>
-            Dir wol gefallen laß was jhnen angena&#x364;m/
+            <l>Dir wol gefallen laß was jhnen angena&#x364;m/</l>
             <lb/>
-            So wird zu deinem nutz gereichen raht vnd thate.
+            <l>So wird zu deinem nutz gereichen raht vnd thate.</l>
             <lb/>
-            Erwart der rechten zeit/ nicht jede iſt bequa&#x364;m/
+            <l>Erwart der rechten zeit/ nicht jede iſt bequa&#x364;m/</l>
             <lb/>
-            Das Alter mit verſtand iſt weder z'fru&#x364;h noch z'ſpahte.
+            <l>Das Alter mit verſtand iſt weder z'fru&#x364;h noch z'ſpahte.</l>
             <lb/>
-            Deins gleichen dir erliß: vor kupplerey dich hu&#x364;t:
+            <l rendition="#et">Deins gleichen dir erliß: vor kupplerey dich hu&#x364;t:</l>
             <lb/>
-            Wilt daß gelinge dir/ nicht frey zunah ins blu&#x366;&#x364;t.
+            <l rendition="#et">Wilt daß gelinge dir/ nicht frey zunah ins blu&#x366;&#x364;t.</l>
+            </lg>
             <lb/>
-            4. Wie dann im Eheſtand ſelb/ damit das Glu&#x364;ck nicht weich/
+            <lg n="4">
+            <l>4. Wie dann im Eheſtand ſelb/ damit das Glu&#x364;ck nicht weich/</l>
             <lb/>
-            Der Mann ſich halten ſo&#x364;ll/ S. Paulus ſo thut lehren:
+            <l>Der Mann ſich halten ſo&#x364;ll/ S. Paulus ſo thut lehren:</l>
             <lb/>
-            Wie Chriſtus ſeine Kirch/ wie deinen Leib/ zugleich
+            <l>Wie Chriſtus ſeine Kirch/ wie deinen Leib/ zugleich</l>
             <lb/>
-            Solt lieben dein Eheweib/ in zu&#x364;chten vnd in ehren.
+            <l>Solt lieben dein Eheweib/ in zu&#x364;chten vnd in ehren.</l>
             <lb/>
-            Mit Chriſto ſie beſchirm/ fu&#x364;r ſie dein blu&#x366;t darꝛeich/
+            <l>Mit Chriſto ſie beſchirm/ fu&#x364;r ſie dein blu&#x366;t darꝛeich/</l>
             <lb/>
-            Wie deinen Leibe ſie thu&#x366; zieren vnd ernehren.
+            <l>Wie deinen Leibe ſie thu&#x366; zieren vnd ernehren.</l>
             <lb/>
-            Auch ſol die liebe dem vernu&#x364;nfftig decken zu&#x366;
+            <l rendition="#et">Auch ſol die liebe dem vernu&#x364;nfftig decken zu&#x366;</l>
             <lb/>
-            Die ma&#x364;ngel deines Weibs: das ſchaffet frid vnd rhu&#x366;.
+            <l rendition="#et">Die ma&#x364;ngel deines Weibs: das ſchaffet frid vnd rhu&#x366;.</l>
+            </lg>
             <lb/>
-            5. Das Weib/ der Kirchen gleich die nur auff Chriſtum ſicht/
+            <lg n="5">
+            <l>5. Das Weib/ der Kirchen gleich die nur auff Chriſtum ſicht/</l>
             <lb/>
-            Vnd nach deſſelben Wort anſtellet jhre ſachen/
+            <l>Vnd nach deſſelben Wort anſtellet jhre ſachen/</l>
             <lb/>
-            Sol jhrem Mann allein [wie Paulus weiter ſpricht]
+            <l>Sol jhrem Mann allein [wie Paulus weiter ſpricht]</l>
             <lb/>
-            Jn aller freundlichkeit ſich vndertha&#x364;nig machen:
+            <l>Jn aller freundlichkeit ſich vndertha&#x364;nig machen:</l>
             <lb/>
-            Er iſt jhr Haupt vnd Herꝛ/ darumb nach jhrer pflicht
+            <l>Er iſt jhr Haupt vnd Herꝛ/ darumb nach jhrer pflicht</l>
             <lb/>
-            Sie jhne ehren ſol/ ſein Ehr vnd Gu&#x366;t verwachen:
+            <l>Sie jhne ehren ſol/ ſein Ehr vnd Gu&#x366;t verwachen:</l>
             <lb/>
-            Das machet angena&#x364;m: ja/ ich red ohne ſpott/
+            <l rendition="#et">Das machet angena&#x364;m: ja/ ich red ohne ſpott/</l>
             <lb/>
-            Jn jhrem Ehemann ſie auch ehret jhren Gott. 
+            <l rendition="#et">Jn jhrem Ehemann ſie auch ehret jhren Gott.</l> 
+            </lg>
             <lb/>
             
-            Gmeine Pflich-
+            <note place="left" type="marginalia">Gmeine Pflich-
             <lb break="no"/>
             ten der Eheleu-
             <lb break="no"/>
@@ -359,90 +371,103 @@
             <lb/>
             neuwen Ehe-
             <lb break="no"/>
-            leuth.
+            leuth.</note>
             <lb/>
             
-            6. Sie beyde/ Mann vnd Weib/ wie ich geſchriben find/
+            <lg n="6">
+            <l>6. Sie beyde/ Mann vnd Weib/ wie ich geſchriben find/</l>
             <lb/>
-            Sol eins das ander jhm allein gefallen laſſen:
+            <l>Sol eins das ander jhm allein gefallen laſſen:</l>
             <lb/>
-            Ein fro&#x364;mbde liebe zim&#x342;t ja keinem Gottes-kind
+            <l>Ein fro&#x364;mbde liebe zim&#x342;t ja keinem Gottes-kind</l>
             <lb/>
-            Das angetretten iſt des Himmels reine ſtraſſen:
+            <l>Das angetretten iſt des Himmels reine ſtraſſen:</l>
             <lb/>
-            Dann Ehebruch vnd Hu&#x366;rey ein ſolcher grewel ſind/
+            <l>Dann Ehebruch vnd Hu&#x366;rey ein ſolcher grewel ſind/</l>
             <lb/>
-            Die Gott in ewigkeit wird ſtraffen ohne maſſen.
+            <l>Die Gott in ewigkeit wird ſtraffen ohne maſſen.</l>
             <lb/>
-            Vnd weil zwey in der Ehe nur ſind ein fleiſch vnd blu&#x366;t/
+            <l rendition="#et">Vnd weil zwey in der Ehe nur ſind ein fleiſch vnd blu&#x366;t/</l>
             <lb/>
-            Je eins dem andern ſol erfreuwen ſeinen mu&#x364;&#x366;ht.
+            <l rendition="#et">Je eins dem andern ſol erfreuwen ſeinen mu&#x364;&#x366;ht.</l>
+            </lg>
             <lb/>
-            7. Eheleuthe ſollen auch; wie Eltern; ehren recht
+            <lg n="7">
+            <l>7. Eheleuthe ſollen auch; wie Eltern; ehren recht</l>
             <lb/>
-            Den Schwa&#x364;her beyderſseits/ die Schwigere deßgleichen:
+            <l>Den Schwa&#x364;her beyderſseits/ die Schwigere deßgleichen:</l>
             <lb/>
-            So anderſt mit der zeit allhie ein gleiches Recht
+            <l>So anderſt mit der zeit allhie ein gleiches Recht</l>
             <lb/>
-            An jhren Kindern ſie bega&#x364;ren zu&#x366; erꝛeychen:
+            <l>An jhren Kindern ſie bega&#x364;ren zu&#x366; erꝛeychen:</l>
             <lb/>
-            Dieſelben ziehind ſie von beyderley Geſchlecht
+            <l>Dieſelben ziehind ſie von beyderley Geſchlecht</l>
             <lb/>
-            Zur Arbeit/ Gottes-forcht/ mit worten vnd mit ſtreichen/
+            <l>Zur Arbeit/ Gottes-forcht/ mit worten vnd mit ſtreichen/</l>
             <lb/>
-            Doch mit beſcheidenheit: wie auch die Dienſte dein
+            <l rendition="#et">Doch mit beſcheidenheit: wie auch die Dienſte dein</l>
             <lb/>
-            Nicht halt zu hart/ gedenck daß ſie auch Chriſten ſein.
+            <l rendition="#et">Nicht halt zu hart/ gedenck daß ſie auch Chriſten ſein.</l>
+            </lg>
             <lb/>
-            8. Dem gantzen Haußgeſind dich ſtell zum beyſpil dar
+            <lg n="8">
+            <l>8. Dem gantzen Haußgeſind dich ſtell zum beyſpil dar</l>
             <lb/>
-            Der Gottes-forcht/ es ſey dein Hauſe wie ein Tempel
+            <l>Der Gottes-forcht/ es ſey dein Hauſe wie ein Tempel</l>
             <lb/>
-            Gezieret/ daß geſchwind ein jeder Menſch gewar
+            <l>Gezieret/ daß geſchwind ein jeder Menſch gewar</l>
             <lb/>
-            Des Glaub- vnd Lebens halb an euch ein gu&#x366;t Exempel.
+            <l>Des Glaub- vnd Lebens halb an euch ein gu&#x366;t Exempel.</l>
             <lb/>
-            Mit Nachbarn dich betrag: zu&#x366; Ehren nichts erſpar/
+            <l>Mit Nachbarn dich betrag: zu&#x366; Ehren nichts erſpar/</l>
             <lb/>
-            Ja/ wanns dein Pflu&#x366;g erehrt/ erwirbt Gewa&#x364;rb vnd Grempel.
+            <l>Ja/ wanns dein Pflu&#x366;g erehrt/ erwirbt Gewa&#x364;rb vnd Grempel.</l>
             <lb/>
-            Mit jenem Hauptman dort von dir auch werd geehrt
+            <l rendition="#et">Mit jenem Hauptman dort von dir auch werd geehrt</l>
             <lb/>
-            Die Oberkeit/ vnd wer in Kirch- vnd Schu&#x366;len lehrt.
+            <l rendition="#et">Die Oberkeit/ vnd wer in Kirch- vnd Schu&#x366;len lehrt.</l>
+            </lg>
             <lb/>
-            9. Wer nun/ wie obgemeldt/ wird tretten in die Ehe/
+            <lg n="9">
+            <l>9. Wer nun/ wie obgemeldt/ wird tretten in die Ehe/</l>
             <lb/>
-            Vnd/ was die pflichte ſein erho&#x364;uſcht/in s'wercke ſetzen:
+            <l>Vnd/ was die pflichte ſein erho&#x364;uſcht/in s'wercke ſetzen:</l>
             <lb/>
-            Dem wird mit Segen vil das wenig Ach vnd Wehe/
+            <l>Dem wird mit Segen vil das wenig Ach vnd Wehe/</l>
             <lb/>
-            Der liebe Gott allhie/ mit frewden dort/ erſetzen.
+            <l>Der liebe Gott allhie/ mit frewden dort/ erſetzen.</l>
             <lb/>
-            Vnd/ wie an einem Hauß ein Ra&#x364;b gepflantzet/ ehe
+            <l>Vnd/ wie an einem Hauß ein Ra&#x364;b gepflantzet/ ehe</l>
             <lb/>
-            Alß jehne fruchtbar wird/ die alle Wetter letzen:
+            <l>Alß jehne fruchtbar wird/ die alle Wetter letzen:</l>
             <lb/>
-            So wird ſein Weibe ſeyn: die Kind vmb ſeinen Tiſch
+            <l rendition="#et">So wird ſein Weibe ſeyn: die Kind vmb ſeinen Tiſch</l>
             <lb/>
-            Mit luſt er ſehen wird gleich wie die o&#x364;lzweyg friſch.
+            <l rendition="#et">Mit luſt er ſehen wird gleich wie die o&#x364;lzweyg friſch.</l>
+            </lg>
             <lb/>
-            10. Nun ſchreit ich zu&#x366; dem Wunſch fu&#x364;r euch/ Herꝛ Bra&#x364;utigam/
+            <lg n="10">
+            <l>10. Nun ſchreit ich zu&#x366; dem Wunſch fu&#x364;r euch/ Herꝛ Bra&#x364;utigam/</l>
             <lb/>
-            Vnd ewer Edle Braut/ euch ehelich heut verpflichtet:
+            <l>Vnd ewer Edle Braut/ euch ehelich heut verpflichtet:</l>
             <lb/>
-            Gott wo&#x364;lle/ ja er wird euch ſegnen wunneſam:
+            <l>Gott wo&#x364;lle/ ja er wird euch ſegnen wunneſam:</l>
             <lb/>
-            Der anfang ewer Ehe/ nach ſeinem Wort gerichtet/
+            <l>Der anfang ewer Ehe/ nach ſeinem Wort gerichtet/</l>
             <lb/>
-            Den Segen euch verheißt: und/ ſo ihr tugendſam
+            <l>Den Segen euch verheißt: und/ ſo ihr tugendſam</l>
             <lb/>
-            Beyſammen leben werd/ wird es nicht ſeyn erdichtet.
+            <l>Beyſammen leben werd/ wird es nicht ſeyn erdichtet.</l>
             <lb/>
-            Heut iſt Felicitas in dem Calender zwar:
+            <l rendition="#et">Heut iſt Felicitas in dem Calender zwar:</l>
             <lb/>
-            Felicitas von Gott/ verbleib euch jmmerdar!
+            <l rendition="#et">Felicitas von Gott/ verbleib euch jmmerdar!</l>
+            </lg>
+            </lg>
             <lb/>
-            Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.
+            <closer>
+            <signed rendition="#right">Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.</signed>
+            </closer>
             <lb/>
             
          </div>

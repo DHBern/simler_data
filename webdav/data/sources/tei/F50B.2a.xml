@@ -61,12 +61,13 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F50B.2a">
+         <div xml:id="F50B.2a" type="poem">
             <pb facs="3508815"/>
             <head><hi rendition="#aq"><num>II.</num></hi></head>
             <lb/>
             
-            <head><num>1.</num>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><num>1.</num>
             <lb/>
             Alexandriniſcher Vorwunſch/
             <lb/>
@@ -76,32 +77,38 @@
             <lb break="no"/>
             vollfu&#x364;hrten
             <lb/>
-            Mejeriſchen Todtendantz.</head>
+            <hi rendition="#larger">Mejeriſchen Todtendantz.</hi></head>
             <lb/>
             
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">D</hi>Jß dreyfachgu&#x366;te Werk ſelbſelb den Meiſter ru&#x364;hmet/</l>
             <lb/>
             <l>nicht no&#x364;htig daß es werd mit fro&#x364;mdem ru&#x366;hm verblu&#x364;hmet:</l>
             <lb/>
-            <l>die klu&#x366;ge Künſtlerhand; der flammend Dichtergeiſt/</l>
+            <l rendition="#et">die klu&#x366;ge Künſtlerhand; der flammend Dichtergeiſt/</l>
             <lb/>
-            <l>und hohe Sa&#x364;ngerkunſt uns hier verſtummen heißt.</l>
+            <l rendition="#et">und hohe Sa&#x364;ngerkunſt uns hier verſtummen heißt.</l>
+            </lg>
             <lb/>
+            <lg>
             <l>Wir wünſchen nur allein auß diſem zu erlehrnen</l>
             <lb/>
             <l>des Lebens Flüchtigkeit/ damit wir uns entfehrnen</l>
             <lb/>
-            <l>von eitelm augenluſt; verwehnter ſicherheit;</l>
+            <l rendition="#et">von eitelm augenluſt; verwehnter ſicherheit;</l>
             <lb/>
-            <l>vom gelt- und ehrengeitz; von ungerechtigkeit:</l>
+            <l rendition="#et">vom gelt- und ehrengeitz; von ungerechtigkeit:</l>
             <lb/>
             <l>hingegen aber uns/ zu diſen wunderzeiten/</l>
             <lb/>
             <l>zur Wallfahrt auß der welt/ im glauben/ vorbereiten/</l>
             <lb/>
-            <l>damit die Todtenpfort uns mo&#x364;g ein Eyngang ſeyn</l>
+            <l rendition="#et">damit die Todtenpfort uns mo&#x364;g ein Eyngang ſeyn</l>
             <lb/>
-            <l>ins rechtgelobte Land/ wo weder Tod noch pein!</l>
+            <l rendition="#et">ins rechtgelobte Land/ wo weder Tod noch pein!</l>
+            </lg>
+            </lg>
             <lb/>
             
          </div>

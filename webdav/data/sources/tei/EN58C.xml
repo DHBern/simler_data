@@ -83,12 +83,14 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN58C">
+         <div xml:id="EN58C" type="poem">
             <pb facs="17729239"/>
-            <head>Niemand veracht/ dich ſelb betracht.</head>
+            <head rendition="#c">Niemand veracht/ dich ſelb betracht.</head>
             <lb/>
             
-            Der Hertzen ſpiegel zeigt
+            <!-- TODO HiWi: die beiden Vierzeiler unter dem Bild ("Wir alle ſind nicht Engel ..." und "Erneüwerung der hertzen ...") sind NICHT transkribiert, ebenso die Umschrift des Spiegels ("Was ſiheſtu aber den ſplitter ... Luc. VI."). Transkribiert ist nur der Text im Spiegel. -->
+            <figure>
+            <p>Der Hertzen ſpiegel zeigt
             <lb/>
             eim jeden ſeine Mängel:
             <lb/>
@@ -96,12 +98,13 @@
             <lb/>
             der findet keinen
             <lb/>
-            Engel.
+            Engel.</p>
+            </figure>
             <lb/>
             
-            Ab der Burgerbibliothec verehr A°. 1658 Jahr.
+            <p>Ab der Burgerbibliothec verehr A°. 1658 Jahr.</p>
             <lb/>
-            <hi rendition="#aq">Conrad Meÿer invenit fecit et excu.</hi>
+            <p><hi rendition="#aq">Conrad Meÿer invenit fecit et excu.</hi></p>
             <lb/>
             
          </div>

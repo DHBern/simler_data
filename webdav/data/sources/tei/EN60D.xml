@@ -85,15 +85,20 @@
       <body>
          <div xml:id="EN60D">
             <pb facs="17729251"/>
+            <!-- TODO HiWi: zwei Bildtafeln, hier je ein div. "Wenig findend ..." und "Aber Vil lauffend ..." sind Bildunterschriften (kein Vers); die Bibeltexte in den hi-Bloecken stehen links, rechts und unter den Gedichten und sind noch nicht gegliedert. -->
+            <div>
             <head>Tugendwa&#x364;g/ oder/ Liecht und Leben.</head>
             <lb/>
-            <hi rendition="#aq">C. Meÿer fecit.
+            <figure>
+            <p><hi rendition="#aq">C. Meÿer fecit.
             <lb/>
-            1660.</hi>
+            1660.</hi></p>
+            </figure>
             <lb/>
             
             <l><hi rendition="#aq">Wenig findend den Engen Tugend-wäg zum Himel.</hi></l>
             <lb/>
+            <lg type="poem">
             <l>Der Tugendwa&#x364;g iſt ruch und ſchmal/</l>
             <lb/>
             <l>fu&#x364;hrt aber in den Himmelſal.</l>
@@ -101,6 +106,7 @@
             <l>Jhr Eltern wÿſt hierzu&#x366; die Ju&#x366;gend:</l>
             <lb/>
             <l>Kein wa&#x364;g unwa&#x364;gſam iſt der Tugend.</l>
+            </lg>
             <lb/>
             
             <hi rendition="#aq">IESUS Chriſtus
@@ -168,19 +174,24 @@
             Herrlichkeit: II.Cor:IIII</hi>
             <lb/>
             
+            </div>
+            <div>
             <head>Laſterſtraaß/ oder/ Finſternuß und Tod.</head>
             <lb/>
             
-            Dich ſelbs
+            <figure>
+            <p>Dich ſelbs
             <lb/>
             Betrachte.
             <lb/>
-            <hi rendition="#aq">Niemand verachte.</hi>
+            <hi rendition="#aq">Niemand verachte.</hi></p>
+            </figure>
             <lb/>
             
             <hi rendition="#aq">Aber Vil lauffend die Weÿte Laſterſtraaß zu&#x366;r Höllen.</hi>
             <lb/>
             
+            <lg type="poem">
             <l>Die breit gepflaſtert Laſterſtraaß/</l>
             <lb/>
             <l>iſt ein anreitzlich Teüfels-Aaß/</l>
@@ -188,6 +199,7 @@
             <l>an welchem vil erworgen mu&#x364;ſſen/</l>
             <lb/>
             <l>und ewig in der Ho&#x364;llen bu&#x364;ſſen.</l>
+            </lg>
             <lb/>
             
             <hi rendition="#aq"><anchor xml:id="a3"/>Sir.XXI.10.<note type="annotation" targetEnd="a3"><p>Text müsste der Bibelstelle gemäss Sir.XXI.10 lauten, obwohl es aussieht wie 11</p></note>)
@@ -245,6 +257,7 @@
             in allen ſeinen Werken.</hi>
             <lb/>
             
+            </div>
          </div>
       </body>
    </text>

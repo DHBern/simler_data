@@ -83,165 +83,170 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN45A">
+         <div xml:id="EN45A" type="poem">
             <pb facs="17729185"/>
             <head>Tiſchzucht.</head>
+            <!-- TODO HiWi: der Titel steht in der Kartusche der Radierung. -->
             <lb/>
-            <hi rendition="#aq">Con. Meÿer fecit et excudit. A<anchor xml:id="a1"/>°<note type="annotation" targetEnd="a1"><p>Unter dem kleinen o könnte ein Punkt stehen.</p></note> 1645.</hi>
+            <figure>
+            <p><hi rendition="#aq">Con. Meÿer fecit et excudit. A<anchor xml:id="a1"/>°<note type="annotation" targetEnd="a1"><p>Unter dem kleinen o könnte ein Punkt stehen.</p></note> 1645.</hi></p>
+            </figure>
             <lb/>
             
-            1. Von Zu-
+            <!-- TODO HiWi: die fuenf Randtitel stehen im Export nicht an ihrer Stelle; sie gehoeren zu V. 5 ("1."), V. 17 ("2."), V. 37 ("3."), V. 97 ("4.") und V. 109 ("Vermahnung"). -->
+            <note place="left" type="marginalia">1. Von Zu-
             <lb break="no"/>
             rüſtung
             <lb/>
-            des Tiſches.
+            des Tiſches.</note>
             <lb/>
             
-            2. Vom
+            <note place="left" type="marginalia">2. Vom
             <lb/>
             Tiſch die-
             <lb break="no"/>
             nen oder
             <lb/>
-            aufwarten.
+            aufwarten.</note>
             <lb/>
             
-            3. Von ge-
+            <note place="left" type="marginalia">3. Von ge-
             <lb break="no"/>
             bürender
             <lb/>
             Zucht über
             <lb/>
-            Tiſch ꝛc.
+            Tiſch ꝛc.</note>
             <lb/>
             
+            <lg type="poem">
             <l><hi rendition="#in">K</hi>Ommt her und ho&#x364;rt mir zu/ ihr die ihr auß der Wiegen</l>
             <lb/>
             <l>Vor ſiben jahren ſchon/ ohn Mutter Hu&#x364;lff/ geſtigen/</l>
             <lb/>
-            <l>Jch lehre Tiſches-Zucht/ ohn die von altem har/</l>
+            <l rendition="#et">Jch lehre Tiſches-Zucht/ ohn die von altem har/</l>
             <lb/>
-            <l>Des lieben Vatters Tiſch dem Kind verbotten war.</l>
+            <l rendition="#et">Des lieben Vatters Tiſch dem Kind verbotten war.</l>
             <lb/>
             
             <l>So wa&#x364;ſche nun die Ha&#x364;nd'/ und dann zu rechter zeite</l>
             <lb/>
             <l>Das Tiſchtuch nach der ſchnur/ und eben u&#x364;berſpreite:</l>
             <lb/>
-            <l>Setz' auch den Blatten-Ring; wo nicht; an deſſen ſtatt</l>
+            <l rendition="#et">Setz' auch den Blatten-Ring; wo nicht; an deſſen ſtatt</l>
             <lb/>
-            <l>Jn mitten auf dem Tiſch das Sonnengleiche Blatt.</l>
+            <l rendition="#et">Jn mitten auf dem Tiſch das Sonnengleiche Blatt.</l>
             <lb/>
             
             <l>Nach Ordnung lege dar die Ta&#x364;ller und die Zwa&#x364;hlen/</l>
             <lb/>
             <l>Die Meſſer auch darzu: es ſol kein Lo&#x364;ffel fehlen:</l>
             <lb/>
-            <l>Des Salzes nicht vergiß: des Brots biß eingeda&#x364;nck:</l>
+            <l rendition="#et">Des Salzes nicht vergiß: des Brots biß eingeda&#x364;nck:</l>
             <lb/>
-            <l>Die Siedeln rucke bey: die Gla&#x364;ſſer ſauber ſchwa&#x364;nck.</l>
+            <l rendition="#et">Die Siedeln rucke bey: die Gla&#x364;ſſer ſauber ſchwa&#x364;nck.</l>
             <lb/>
             
             <l>Jſt nun nach Landes Sitt/ der Tiſch geru&#x364;ſt zum eſſen/</l>
             <lb/>
             <l>So werde des Geba&#x364;tts zum Herꝛen nicht vergeſſen:</l>
             <lb/>
-            <l>Die Augen/ Hertz und Ha&#x364;nd' erhebe u&#x364;berſich/</l>
+            <l rendition="#et">Die Augen/ Hertz und Ha&#x364;nd' erhebe u&#x364;berſich/</l>
             <lb/>
-            <l>Und um den Sa&#x364;gen ſein/ demu&#x364;htig/ ihn anſprich.</l>
+            <l rendition="#et">Und um den Sa&#x364;gen ſein/ demu&#x364;htig/ ihn anſprich.</l>
             <lb/>
             
             <l>Wann dann die Eltern ſich mit Speiß und Tranck erlaben/</l>
             <lb/>
             <l>Und das aufwarten dir fu&#x364;rauß befohlen haben/</l>
             <lb/>
-            <l>So ſtehe barhaupt da/ auf beiden Fu&#x364;ſſen dein:</l>
+            <l rendition="#et">So ſtehe barhaupt da/ auf beiden Fu&#x364;ſſen dein:</l>
             <lb/>
-            <l>Kratz / ſpew und huſte nicht dann nur beyſeits allein.</l>
+            <l rendition="#et">Kratz / ſpew und huſte nicht dann nur beyſeits allein.</l>
             <lb/>
             
             <l>Die Ha&#x364;nde nicht verberg: gib achtung auf den Mangel:</l>
             <lb/>
             <l>Doch gaffe niemand an/ mit offnem Maul im Angel:</l>
             <lb/>
-            <l>Trag auf und ab die Speiß/ und niemand mit beſchmirꝛ:</l>
+            <l rendition="#et">Trag auf und ab die Speiß/ und niemand mit beſchmirꝛ:</l>
             <lb/>
-            <l>Nicht u&#x364;berfu&#x364;lle gar der Ga&#x364;ſten Trinckgeſchirꝛ:</l>
+            <l rendition="#et">Nicht u&#x364;berfu&#x364;lle gar der Ga&#x364;ſten Trinckgeſchirꝛ:</l>
             <lb/>
             
             <l>Mit Ehrenbietung thu die vollen u&#x364;berꝛeichen:</l>
             <lb/>
             <l>Die la&#x364;ren auch empfach mit gleichen Ehrenzeichen/</l>
             <lb/>
-            <l>Und ſchwa&#x364;ncke widerum in einem Waſſer friſch:</l>
+            <l rendition="#et">Und ſchwa&#x364;ncke widerum in einem Waſſer friſch:</l>
             <lb/>
-            <l>Auf einmal trage nur zwo Blatten u&#x364;ber Tiſch.</l>
+            <l rendition="#et">Auf einmal trage nur zwo Blatten u&#x364;ber Tiſch.</l>
             <lb/>
             
             <l>Die gleichen Speiſen du nicht ſolt zuſammen ſtellen/</l>
             <lb/>
             <l>Und fleiſſig hu&#x364;ten dich die Gla&#x364;ſſer umzufellen:</l>
             <lb/>
-            <l>Auch ſolſt du u&#x364;ber den/ der oben ſitzet an/</l>
+            <l rendition="#et">Auch ſolſt du u&#x364;ber den/ der oben ſitzet an/</l>
             <lb/>
-            <l>Nichts tragen auf und ab/ ſuch' einen andern plan.</l>
+            <l rendition="#et">Nichts tragen auf und ab/ ſuch' einen andern plan.</l>
             <lb/>
             
             <l>Vor deme der noch ißt/ die Blatten laſſe ſtehen</l>
             <lb/>
             <l>Bis er ſie rucket weg/ und heiſſet dich mit gehen:</l>
             <lb/>
-            <l>Und wann er Brots bega&#x364;rt/ ſo bringe du noch mehr/</l>
+            <l rendition="#et">Und wann er Brots bega&#x364;rt/ ſo bringe du noch mehr/</l>
             <lb/>
-            <l>Doch nicht in bloſſer Hand/ auf einem Ta&#x364;ller her.</l>
+            <l rendition="#et">Doch nicht in bloſſer Hand/ auf einem Ta&#x364;ller her.</l>
             <lb/>
             
             <l>Sitzſt aber ſelb zu Tiſch/ bey jungen oder Alten/</l>
             <lb/>
             <l>So ſolſt du deine Fu&#x364;ß ſtill und zuſammen halten:</l>
             <lb/>
-            <l>Die Ellenbogen dir nicht ſollen ſtu&#x364;tzen ſeyn:</l>
+            <l rendition="#et">Die Ellenbogen dir nicht ſollen ſtu&#x364;tzen ſeyn:</l>
             <lb/>
-            <l>Die Arme lege nicht biß zu denſelben eyn.</l>
+            <l rendition="#et">Die Arme lege nicht biß zu denſelben eyn.</l>
             <lb/>
             
             <l>Mit aufgerichtem leib zuſitzen dich gewehne/</l>
             <lb/>
             <l>Und mit den Achßlen dich nicht ungebu&#x364;rlich lehne:</l>
             <lb/>
-            <l>Nicht kratz' auf bloſſem Haupt: nicht in dem Buſem dein:</l>
+            <l rendition="#et">Nicht kratz' auf bloſſem Haupt: nicht in dem Buſem dein:</l>
             <lb/>
-            <l>Das Naſengru&#x364;blen gar laß underwegen ſeyn.</l>
+            <l rendition="#et">Das Naſengru&#x364;blen gar laß underwegen ſeyn.</l>
             <lb/>
             
             <l>Beyſeits abwende dich im ſchneutzen/ huſten/ nieſſen:</l>
             <lb/>
             <l>Das riechen an der Speiß thut ma&#x364;nniglich verdrieſſen:</l>
             <lb/>
-            <l>Dieſelbe du nicht ſolſt beſchauen immerdar/</l>
+            <l rendition="#et">Dieſelbe du nicht ſolſt beſchauen immerdar/</l>
             <lb/>
-            <l>Sey auch der letſt darinn/ und ſchnell von dannen fahr.</l>
+            <l rendition="#et">Sey auch der letſt darinn/ und ſchnell von dannen fahr.</l>
             <lb/>
             
             <l>Die Koſt verꝛiechen laß'/ um etwas auch erkalten:</l>
             <lb/>
             <l>Des ſtarcken blaſens dich ſolſt u&#x364;ber Tiſch enthalten.</l>
             <lb/>
-            <l>Jn keines andern Ort auß gmeiner Blatten iß:</l>
+            <l rendition="#et">Jn keines andern Ort auß gmeiner Blatten iß:</l>
             <lb/>
-            <l>Vil minder auf den Geitz/ und dich nicht u&#x364;berfriß.</l>
+            <l rendition="#et">Vil minder auf den Geitz/ und dich nicht u&#x364;berfriß.</l>
             <lb/>
             
             <l>Den andern Biſſen ſolſt mit deinem Mund nicht faſſen/</l>
             <lb/>
             <l>Du habeſt dann zuvor den erſten abgelaſſen:</l>
             <lb/>
-            <l>Auch trincke nicht/ wann du noch etwas in dem Mund/</l>
+            <l rendition="#et">Auch trincke nicht/ wann du noch etwas in dem Mund/</l>
             <lb/>
-            <l>Nicht rede dannzumal/ und gar nichts ohne grund.</l>
+            <l rendition="#et">Nicht rede dannzumal/ und gar nichts ohne grund.</l>
             <lb/>
             
-            4. Von dem
+            <note place="left" type="marginalia">4. Von dem
             <lb/>
             aufheben
             <lb/>
@@ -249,143 +254,144 @@
             <lb break="no"/>
             nemmen
             <lb/>
-            des Tiſches
+            des Tiſches</note>
             <lb/>
             
-            Vermah-
+            <note place="left" type="marginalia">Vermah-
             <lb break="no"/>
             nung an die
             <lb/>
-            Kinder.
+            Kinder.</note>
             <lb/>
             
             <l>Mit dreyen Fingern nur angreiffe du die Speiſen/</l>
             <lb/>
             <l>Das Glaß mit einer Hand: im trincken thu nicht pfeiſen:</l>
             <lb/>
-            <l>Die beſten Bißlein auch nicht ſolſt außklauben dir:</l>
+            <l rendition="#et">Die beſten Bißlein auch nicht ſolſt außklauben dir:</l>
             <lb/>
-            <l>Den Wein vermiſche wol mit Waſſer im Geſchirꝛ:</l>
+            <l rendition="#et">Den Wein vermiſche wol mit Waſſer im Geſchirꝛ:</l>
             <lb/>
             
             <l>Die Speiſen und Getra&#x364;nck zutadeln nicht gedencke:</l>
             <lb/>
             <l>Ja gar zuru&#x364;hmen nicht: das Maul nicht d'ru&#x364;ber hencke:</l>
             <lb/>
-            <l>Was du gekoſtet haſt/ keim andern lege fu&#x364;r/</l>
+            <l rendition="#et">Was du gekoſtet haſt/ keim andern lege fu&#x364;r/</l>
             <lb/>
-            <l>Und werffe nichts von dir biß zu der Stubenthu&#x364;r.</l>
+            <l rendition="#et">Und werffe nichts von dir biß zu der Stubenthu&#x364;r.</l>
             <lb/>
             
             <l>Gar alles (ohne Fiſch) mit gutem Meſſer ſchneide:</l>
             <lb/>
             <l>Jn dem einſchieben doch das Meſſer ga&#x364;ntzlich meide:</l>
             <lb/>
-            <l>Daſſelbig ſey ohn Schmutz/ wann du mit nimmeſt Saltz:</l>
+            <l rendition="#et">Daſſelbig ſey ohn Schmutz/ wann du mit nimmeſt Saltz:</l>
             <lb/>
-            <l>Das Tiſchtuch nicht beſchmirꝛ mit Soſſen oder Schmaltz.</l>
+            <l rendition="#et">Das Tiſchtuch nicht beſchmirꝛ mit Soſſen oder Schmaltz.</l>
             <lb/>
             
             <l>Die Finger lecke nicht/ doch thu ſie underzwu&#x364;ſchen/</l>
             <lb/>
             <l>Wann du Brot ſchneiden wilſt/ mit deiner Zwa&#x364;hlen wu&#x364;ſchen:</l>
             <lb/>
-            <l>Die Rinden von dem Brot nicht nimme weg allein:</l>
+            <l rendition="#et">Die Rinden von dem Brot nicht nimme weg allein:</l>
             <lb/>
-            <l>Zerſchneide nicht zu vil: das ho&#x364;len laſſe <anchor xml:id="a2"/><unclear>ſ</unclear><note type="annotation" targetEnd="a2"><p>Sinngemäss soll hier ein Schaft-s stehen. Hier könnte aber ein fälschlicherweise gedrucktes f vorliegen.</p></note>eyn.</l>
+            <l rendition="#et">Zerſchneide nicht zu vil: das ho&#x364;len laſſe <anchor xml:id="a2"/><unclear>ſ</unclear><note type="annotation" targetEnd="a2"><p>Sinngemäss soll hier ein Schaft-s stehen. Hier könnte aber ein fälschlicherweise gedrucktes f vorliegen.</p></note>eyn.</l>
             <lb/>
             
             <l>Nichts wider auß dem Mund ſolſt auf den Ta&#x364;ller legen:</l>
             <lb/>
             <l>Nicht alles eſſen auf: mit Brot kein Blatten fegen:</l>
             <lb/>
-            <l>Das angebiſſen auch nicht duncke wider ein:</l>
+            <l rendition="#et">Das angebiſſen auch nicht duncke wider ein:</l>
             <lb/>
-            <l>Nicht wie der Aff umgaff: nicht ſchmatze wie das Schwein:</l>
+            <l rendition="#et">Nicht wie der Aff umgaff: nicht ſchmatze wie das Schwein:</l>
             <lb/>
             
             <l>Die Bein/ den Hunden gleich/ mit Za&#x364;hnen nicht benage/</l>
             <lb/>
             <l>Noch/ wegen ihres Marcks/ auf Brot und Ta&#x364;ller ſchlage:</l>
             <lb/>
-            <l>Nicht ſauge laut daran: nimm' aber von dem Bein</l>
+            <l rendition="#et">Nicht ſauge laut daran: nimm' aber von dem Bein</l>
             <lb/>
-            <l>Das Fleiſch und Marck hinweg mit einem Meſſerlein:</l>
+            <l rendition="#et">Das Fleiſch und Marck hinweg mit einem Meſſerlein:</l>
             <lb/>
             
             <l>Die Bein ero&#x364;ffne nicht: dieweil es u&#x364;bel ſtehet</l>
             <lb/>
             <l>Wann damit u&#x364;ber Tiſch ein junger Menſch umgehet:</l>
             <lb/>
-            <l>Und was noch mehr iſt hart/ mit keinem Meſſer brich/</l>
+            <l rendition="#et">Und was noch mehr iſt hart/ mit keinem Meſſer brich/</l>
             <lb/>
-            <l>Vil minder beiß' es auf mit Za&#x364;hnen grimmiglich.</l>
+            <l rendition="#et">Vil minder beiß' es auf mit Za&#x364;hnen grimmiglich.</l>
             <lb/>
             
             <l>Den Wein außdu&#x364;nckle nicht/ und ſu&#x364;rffle nicht im trincken:</l>
             <lb/>
             <l>Ja/ ſchencke dir nicht ein ohn deines Vatters wincken:</l>
             <lb/>
-            <l>Blaaß' auß dem Ba&#x364;cher nichts/ und trincke nicht zu gach/</l>
+            <l rendition="#et">Blaaß' auß dem Ba&#x364;cher nichts/ und trincke nicht zu gach/</l>
             <lb/>
-            <l>Auch wu&#x364;ſche deinen Mund mit Zwa&#x364;hlen vor und nach.</l>
+            <l rendition="#et">Auch wu&#x364;ſche deinen Mund mit Zwa&#x364;hlen vor und nach.</l>
             <lb/>
             
             <l>Die Zwa&#x364;hlen und das Brot/ den Ta&#x364;ller und das Meſſer</l>
             <lb/>
             <l>Richt wie der meiſte Theil/ und ein geſchickter Eſſer:</l>
             <lb/>
-            <l>Jn Za&#x364;hnen gru&#x364;ble nicht mit Eiſen oder Stahl:</l>
+            <l rendition="#et">Jn Za&#x364;hnen gru&#x364;ble nicht mit Eiſen oder Stahl:</l>
             <lb/>
-            <l>Nichts zo&#x364;rne was es ſey/ bey einem Freunden-Mahl.</l>
+            <l rendition="#et">Nichts zo&#x364;rne was es ſey/ bey einem Freunden-Mahl.</l>
             <lb/>
             
             <l>Am erſten von dem Tiſch mit Urlaub ſolſt aufſtehen/</l>
             <lb/>
             <l>Und nach dem Sa&#x364;gen-Wunſch/ fein zu&#x364;chtig darvon gehen:</l>
             <lb/>
-            <l>Rein wa&#x364;ſche deine Ha&#x364;nd'/ und um die Speiß und Tranck/</l>
+            <l rendition="#et">Rein wa&#x364;ſche deine Ha&#x364;nd'/ und um die Speiß und Tranck/</l>
             <lb/>
-            <l>Mit Ernſt und lauter Stimm Gott ſage lob und danck.</l>
+            <l rendition="#et">Mit Ernſt und lauter Stimm Gott ſage lob und danck.</l>
             <lb/>
             
             <l>Wann nun die Mahlzeit jetz ihr Endſchafft hat bekommen/</l>
             <lb/>
             <l>Wann ihren Abſcheid auch die Ehrenga&#x364;ſt genommen/</l>
             <lb/>
-            <l>So hebe du den Tiſch/ nach Ordnung wider auf/</l>
+            <l rendition="#et">So hebe du den Tiſch/ nach Ordnung wider auf/</l>
             <lb/>
-            <l>Und nicht/ wie einen Berg/ das Gſchirꝛ zuſammen hauff:</l>
+            <l rendition="#et">Und nicht/ wie einen Berg/ das Gſchirꝛ zuſammen hauff:</l>
             <lb/>
             
             <l>Die Gla&#x364;ſſer erſtlich nimm/ und zwaren bey den Fu&#x364;ſſen:</l>
             <lb/>
             <l>Die Stu&#x364;mplein ſolſt darauß in keine Kannen gieſſen:</l>
             <lb/>
-            <l>Die noch nicht la&#x364;ren Gſchirꝛ nicht auf einandern ſtell/</l>
+            <l rendition="#et">Die noch nicht la&#x364;ren Gſchirꝛ nicht auf einandern ſtell/</l>
             <lb/>
-            <l>Zur u&#x364;berblibnen Speiß die gro&#x364;ſte Blatte erwehl.</l>
+            <l rendition="#et">Zur u&#x364;berblibnen Speiß die gro&#x364;ſte Blatte erwehl.</l>
             <lb/>
             
             <l>Das Saltz beſonder thu: die Lo&#x364;ffel all zuſammen</l>
             <lb/>
             <l>Auf einen Ta&#x364;ller leg: die Meſſer auch mit nammen:</l>
             <lb/>
-            <l>Die kleinen ſtu&#x364;cklein Brot im Tiſcht<anchor xml:id="a3"/><unclear>u</unclear><note type="annotation" targetEnd="a3"><p>Hier könnte auch "n" stehen, also ein Druckfehler</p></note>ch trage weg:</l>
+            <l rendition="#et">Die kleinen ſtu&#x364;cklein Brot im Tiſcht<anchor xml:id="a3"/><unclear>u</unclear><note type="annotation" targetEnd="a3"><p>Hier könnte auch "n" stehen, also ein Druckfehler</p></note>ch trage weg:</l>
             <lb/>
-            <l>Das Tuch im Korb erſchu&#x364;tt'/ und dann zuſammen leg/ ꝛc.</l>
+            <l rendition="#et">Das Tuch im Korb erſchu&#x364;tt'/ und dann zuſammen leg/ ꝛc.</l>
             <lb/>
             
             <l>So vil von Tiſches Zucht. Sol aber ſie dich zieren/</l>
             <lb/>
             <l>So ſolſt hierneben auch ein <choice><sic>ſ</sic><corr>f</corr></choice>rommes leben fu&#x364;hren:</l>
             <lb/>
-            <l>Den Eltern und zugleich den Fu&#x364;rgeſetzten dein</l>
+            <l rendition="#et">Den Eltern und zugleich den Fu&#x364;rgeſetzten dein</l>
             <lb/>
-            <l>Jm Herꝛen/ williglich und ſtets gehorſam ſeyn.</l>
+            <l rendition="#et">Jm Herꝛen/ williglich und ſtets gehorſam ſeyn.</l>
+            </lg>
             <lb/>
             
-            Zufinden bey Johannes Meyer/ in Zu&#x364;rich.
+            <p rendition="#c">Zufinden bey Johannes Meyer/ in Zu&#x364;rich.</p>
             <lb/>
             
          </div>

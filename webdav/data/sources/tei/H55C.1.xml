@@ -41,9 +41,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="H55C.1">
+         <div xml:id="H55C.1" type="poem">
             <pb facs="1"/>
-            Neü-fallendes Wunſch- und Kling-gedichte/
+            <!-- TODO HiWi: Handschrift (Vorlage zu F55C.1); "NB. Diß Exemplar giltet" am Seitenfuss ist nicht transkribiert. -->
+            <head rendition="#c">Neü-fallendes Wunſch- und Kling-gedichte/
             <lb/>
             nach Opitziſcher art:
             <lb/>
@@ -59,47 +60,55 @@
             <lb break="no"/>
             ber zum Doctor gemachet;
             <lb/>
-            zu&#x366; ſondern Ehren:
+            zu&#x366; ſondern Ehren:</head>
             <lb/>
-            Solt' ich/ groſſer Go&#x364;nner/ dan nichts von deiner Tugend ſinge[n]:
+            <lg type="poem">
+            <lg>
+            <l>Solt' ich/ groſſer Go&#x364;nner/ dan nichts von deiner Tugend ſinge[n]:</l>
             <lb/>
-            Weil geſamte Kaſtalinnen dich zu&#x366; ehren ſind geneigt/
+            <l rendition="#et">Weil geſamte Kaſtalinnen dich zu&#x366; ehren ſind geneigt/</l>
             <lb/>
-            und Apollo ſich ſo günſtig gegen dir anjetz erzeigt?
+            <l rendition="#et">und Apollo ſich ſo günſtig gegen dir anjetz erzeigt?</l>
             <lb/>
-            Solte meine ſtim&#x303; ohn ſtim&#x303; nicht zu&#x366; deinem Lob erklingen/
+            <l>Solte meine ſtim&#x303; ohn ſtim&#x303; nicht zu&#x366; deinem Lob erklingen/</l>
             <lb/>
-            da die *Künſte-ſtatt am Rhein; die Belohnung dir zu&#x366;bringen;
+            <l>da die *Künſte-ſtatt am Rhein; die Belohnung dir zu&#x366;bringen;</l>
             <lb/>
-            ein ſo ſcho&#x364;nes Kra&#x364;ntzlein windet/ und ihr Viva ſchreit empor?
+            <l rendition="#et">ein ſo ſcho&#x364;nes Kra&#x364;ntzlein windet/ und ihr Viva ſchreit empor?</l>
             <lb/>
-            Viva! er iſt Doctor worden; ſchreÿ ich mit der Muſen-chor!
+            <l rendition="#et">Viva! er iſt Doctor worden; ſchreÿ ich mit der Muſen-chor!</l>
             <lb/>
-            Sein ſo hochbegabter geiſt kan ſich himmelhoch erſchwingen.
+            <l>Sein ſo hochbegabter geiſt kan ſich himmelhoch erſchwingen.</l>
             <lb/>
-            Churpfaltz seines Diensts begehret: Zürich findet ſich geehrt:
+            <l rendition="#et">Churpfaltz seines Diensts begehret: Zürich findet ſich geehrt:</l>
             <lb/>
-            Wer *in Gott mit ihm Ehr ſu&#x366;chet/ deme wirds Gelük beſchehrt.
+            <l rendition="#et">Wer *in Gott mit ihm Ehr ſu&#x366;chet/ deme wirds Gelük beſchehrt.</l>
+            </lg>
             <lb/>
-            Nun ſo wünſch' ich/ ſchließlich/ ihm vil geſunder tag' und jahren
+            <lg>
+            <l>Nun ſo wünſch' ich/ ſchließlich/ ihm vil geſunder tag' und jahren</l>
             <lb/>
-            Zum zweÿfachen Ehrenſtande/ ru&#x366;hmlich ihme zu&#x366;gekennt:
+            <l rendition="#et">Zum zweÿfachen Ehrenſtande/ ru&#x366;hmlich ihme zu&#x366;gekennt:</l>
             <lb/>
-            Lehrer in der Gottes-lehre werd er fo&#x364;rterhin genennt:
+            <l rendition="#et">Lehrer in der Gottes-lehre werd er fo&#x364;rterhin genennt:</l>
             <lb/>
-            Seine Lehr und Ehr zu&#x366;fo&#x364;rdern/ wo&#x364;ll der Ho&#x364;chſt den Wunſch erwahre[n]!
+            <l>Seine Lehr und Ehr zu&#x366;fo&#x364;rdern/ wo&#x364;ll der Ho&#x364;chſt den Wunſch erwahre[n]!</l>
+            </lg>
+            </lg>
             <lb/>
-            *Baſel.
+            <note place="right">*Baſel.</note>
             <lb/>
-            *Anagr. Hottinger.
+            <note place="right">*Anagr. Hottinger.</note>
             <lb/>
-            Von Joh. Wilhelm Simlern/
+            <closer rendition="#right">
+            <signed>Von Joh. Wilhelm Simlern/
             <lb/>
             Dienern am H. W. G[ottes]. und
             <lb/>
-            Zuchtm. zum Fr. Mr. in Zürich<unclear>/</unclear>
+            Zuchtm. zum Fr. Mr. in Zürich<unclear>/</unclear></signed>
             <lb/>
             Hertz-wolmeinlich geſungen.
+            </closer>
             <lb/>
             
          </div>

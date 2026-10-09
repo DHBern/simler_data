@@ -83,22 +83,26 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN58A">
+         <div xml:id="EN58A" type="poem">
             <pb facs="17729235"/>
-            <head>Geſang von lieb- und lobwu&#x364;rdiger Einigkeit.</head>
+            <head rendition="#c">Geſang von lieb- und lobwu&#x364;rdiger Einigkeit.</head>
             <lb/>
             
-            <hi rendition="#aq">CONCORDIA
+            <milestone unit="section" rendition="#hr"/>
+            <figure>
+            <p><hi rendition="#aq">CONCORDIA
             <lb/>
             CŒLESTIS HARMO-
             <lb break="no"/>
             NIA.</hi>
             <lb/>
             
-            RS. fecit.
+            RS. fecit.</p>
+            </figure>
             <lb/>
             
-            <hi rendition="#aq"><hi rendition="#i">B. Auguſtinus</hi>
+            <!-- TODO HiWi: die lateinischen Zitate stehen links und rechts der Radierung; das fw "mu-" ist kein Kustos, sondern die Worttrennung zu "muſicis" in der rechten Spalte. -->
+            <note place="left"><hi rendition="#aq"><hi rendition="#i">B. Auguſtinus</hi>
             <lb/>
             <hi rendition="#i">Lib. de Civita-</hi>
             <lb break="no"/>
@@ -165,10 +169,10 @@
             <lb/>
             harmonia à
             <lb/>
-            <fw place="bottom" type="catch">mu-</fw></hi>
+            <fw place="bottom" type="catch">mu-</fw></hi></note>
             <lb break="no"/>
             
-            <hi rendition="#aq">muſicis dicitur
+            <note place="right"><hi rendition="#aq">muſicis dicitur
             <lb/>
             in cantu, eam
             <lb/>
@@ -234,13 +238,16 @@
             <lb break="no"/>
             q&#x301;ue præſtante,
             <lb/>
-            poteſt.</hi>
+            poteſt.</hi></note>
             <lb/>
             
-            Noch eines; na&#x364;chſt der Bu&#x366;ß; iſt no&#x364;htig diſer zeit/ Zum ſchirm des Vatterlands: die heilig' Einigkeit.
+            <milestone unit="section" rendition="#hr"/>
+            <p>Noch eines; na&#x364;chſt der Bu&#x366;ß; iſt no&#x364;htig diſer zeit/ Zum ſchirm des Vatterlands: die heilig' Einigkeit.</p>
+            <milestone unit="section" rendition="#hr"/>
             <lb/>
             
-            <head rendition="#aq">Cantus.</head>
+            <lg>
+            <head rendition="#aq #c">Cantus.</head>
             <lb/>
             <l>Mit David wir die Einigkeit erheben</l>
             <lb/>
@@ -251,9 +258,11 @@
             <l>auf Aron geußt/ und der vom haubt in</l>
             <lb/>
             <l>barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Altus.</head>
+            <lg>
+            <head rendition="#aq #c">Altus.</head>
             <lb/>
             <l>Mit David wir die Einigkeit erheben</l>
             <lb/>
@@ -264,9 +273,11 @@
             <l>auf Aron geußt/ und der vom haubt in</l>
             <lb/>
             <l>barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Tenor.</head>
+            <lg>
+            <head rendition="#aq #c">Tenor.</head>
             <lb/>
             <l>Mit David wir die Einigkeit erheben</l>
             <lb/>
@@ -277,9 +288,11 @@
             <l>auf Aron geußt/ und der vom haubt in</l>
             <lb/>
             <l>barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq">Baſis.</head>
+            <lg>
+            <head rendition="#aq #c">Baſis.</head>
             <lb/>
             <l>Mit David wir die Einigkeit erheben</l>
             <lb/>
@@ -290,105 +303,121 @@
             <l>auf Aron geußt/ und der vom haubt in</l>
             <lb/>
             <l>barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             
-            <head><num>2.</num></head>
+            <!-- TODO HiWi: Strophe 1 = Text der vier Stimmen oben; Notenbilder nicht kodiert. -->
+            <lg type="poem">
+            <lg n="2">
+            <head rendition="#c"><num>2.</num></head>
             <lb/>
             <l>Gleich wie der thau den Hermonsberg benetzet/</l>
             <lb/>
             <l>von dem er ſich auf Sions hu&#x364;gel ſetzet:</l>
             <lb/>
-            <l>warvon ſie fruchtbar werden</l>
+            <l rendition="#et">warvon ſie fruchtbar werden</l>
             <lb/>
-            <l>und grunen rechter zeit:</l>
+            <l rendition="#et2">und grunen rechter zeit:</l>
             <lb/>
-            <l>ſo ſegnet Gott auf erden</l>
+            <l rendition="#et">ſo ſegnet Gott auf erden</l>
             <lb/>
-            <l>die lieblich' Einigkeit.</l>
+            <l rendition="#et2">die lieblich' Einigkeit.</l>
+            </lg>
             <lb/>
             
-            <head><num>3.</num></head>
+            <lg n="3">
+            <head rendition="#c"><num>3.</num></head>
             <lb/>
             <l>Die Einigkeit macht groß geringe werke:</l>
             <lb/>
             <l>Uneinigkeit verderbet kraft und ſterke:</l>
             <lb/>
-            <l>ja/ wo einandern ku&#x364;ſſen</l>
+            <l rendition="#et">ja/ wo einandern ku&#x364;ſſen</l>
             <lb/>
-            <l>Frid und Gerechtigkeit/</l>
+            <l rendition="#et2">Frid und Gerechtigkeit/</l>
             <lb/>
-            <l>ſie/ ſchantzenweis/ umſchlieſſen</l>
+            <l rendition="#et">ſie/ ſchantzenweis/ umſchlieſſen</l>
             <lb/>
-            <l>die ſta&#x364;tte/ land und leuht.</l>
+            <l rendition="#et2">die ſta&#x364;tte/ land und leuht.</l>
+            </lg>
             <lb/>
             
-            <head><num>4.</num></head>
+            <lg n="4">
+            <head rendition="#c"><num>4.</num></head>
             <lb/>
             <l>Die Einigkeit den feinden forcht und ſchreken/</l>
             <lb/>
             <l>den freunden troſt in gfahren kan erweken:</l>
             <lb/>
-            <l>alß Einigkeit verbunden</l>
+            <l rendition="#et">alß Einigkeit verbunden</l>
             <lb/>
-            <l>die werthe Eidgnoſchaft/</l>
+            <l rendition="#et2">die werthe Eidgnoſchaft/</l>
             <lb/>
-            <l>der feind oft hat empfunden</l>
+            <l rendition="#et">der feind oft hat empfunden</l>
             <lb/>
-            <l>ihr wundergroſſe kraft.</l>
+            <l rendition="#et2">ihr wundergroſſe kraft.</l>
+            </lg>
             <lb/>
             
-            <head><num>5.</num></head>
+            <lg n="5">
+            <head rendition="#c"><num>5.</num></head>
             <lb/>
             <l>Wie o&#x364;fter hat ihr kleinvereinter hauffen</l>
             <lb/>
             <l>feldſtarke heer vom feind gemacht entlauffen?</l>
             <lb/>
-            <l>Gott wo&#x364;lle daß ihr bunde</l>
+            <l rendition="#et">Gott wo&#x364;lle daß ihr bunde</l>
             <lb/>
-            <l>verneuert veſt beſteh!</l>
+            <l rendition="#et2">verneuert veſt beſteh!</l>
             <lb/>
-            <l>Uneinigkeit zu grunde</l>
+            <l rendition="#et">Uneinigkeit zu grunde</l>
             <lb/>
-            <l>mit ihrem ſtiffter geh!</l>
+            <l rendition="#et2">mit ihrem ſtiffter geh!</l>
+            </lg>
             <lb/>
             
-            <head><num>6.</num></head>
+            <lg n="6">
+            <head rendition="#c"><num>6.</num></head>
             <lb/>
             <l>Daß aber Frid im Lande mo&#x364;g bekleiben/</l>
             <lb/>
             <l>muß ieder in beruffes ſchranken bleiben/</l>
             <lb/>
-            <l>auf Gott in allem ſehen/</l>
+            <l rendition="#et">auf Gott in allem ſehen/</l>
             <lb/>
-            <l>dem na&#x364;chſten dienſtlich ſeyn:</l>
+            <l rendition="#et2">dem na&#x364;chſten dienſtlich ſeyn:</l>
             <lb/>
-            <l>landſittlich ſich begehen</l>
+            <l rendition="#et">landſittlich ſich begehen</l>
             <lb/>
-            <l>mit allen in gemein.</l>
+            <l rendition="#et2">mit allen in gemein.</l>
+            </lg>
             <lb/>
             
-            <head><num>7.</num></head>
+            <lg n="7">
+            <head rendition="#c"><num>7.</num></head>
             <lb/>
             <l>O Ho&#x364;chſter/ ſchenk den werthen Friden wider/</l>
             <lb/>
             <l>ſo ſtim&#x342;t man an die dank- und freudenlieder:</l>
             <lb/>
-            <l>gib/ daß ſich arme nehren</l>
+            <l rendition="#et">gib/ daß ſich arme nehren</l>
             <lb/>
-            <l>mit reichem u&#x364;berfluß:</l>
+            <l rendition="#et2">mit reichem u&#x364;berfluß:</l>
             <lb/>
-            <l>die ku&#x364;nſte ſich vermehren</l>
+            <l rendition="#et">die ku&#x364;nſte ſich vermehren</l>
             <lb/>
-            <l>durch gaaben und genuß!</l>
+            <l rendition="#et2">durch gaaben und genuß!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Einer kunſt- und tugendliebenden Jugend in Zu&#x364;rich/ ab der Burger-Bibliothek zur neuen Jahrſchenke verehrt/
+            <p rendition="#c">Einer kunſt- und tugendliebenden Jugend in Zu&#x364;rich/ ab der Burger-Bibliothek zur neuen Jahrſchenke verehrt/
             <lb/>
             Jm Jahr des Herꝛen:
             <lb/>
             Es <hi rendition="#aq">I</hi>ſt an re<hi rendition="#aq">C</hi>hter E<hi rendition="#aq">I</hi>n<hi rendition="#aq">I</hi>gke<hi rendition="#aq">I</hi>t
             <lb/>
-            N<hi rendition="#aq">I</hi>t gr<hi rendition="#aq">I</hi>nger <hi rendition="#aq">M</hi>ange<hi rendition="#aq">L</hi> <hi rendition="#aq">DI</hi>ſer ze<hi rendition="#aq">I</hi>t.
+            N<hi rendition="#aq">I</hi>t gr<hi rendition="#aq">I</hi>nger <hi rendition="#aq">M</hi>ange<hi rendition="#aq">L</hi> <hi rendition="#aq">DI</hi>ſer ze<hi rendition="#aq">I</hi>t.</p>
             <lb/>
             
          </div>

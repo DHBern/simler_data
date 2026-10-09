@@ -72,16 +72,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F55C.2">
+         <div xml:id="F55C.2" type="poem">
             <pb facs="8851962" n="73"/>
             <fw place="top" type="pageNum">73</fw>
             <lb/>
-            <hi rendition="#aq #k #g">EPICEDIA.</hi>
+            <fw place="top" type="header"><hi rendition="#aq #k #g">EPICEDIA.</hi></fw>
             <lb/>
             
-            <head>Klingendes Troſtgedicht.</head>
+            <!-- TODO HiWi: V. 2-3 neben der Initiale H; der zweite Vierzeiler hat das Muster 0-et-et-0. -->
+            <head rendition="#c">Klingendes Troſtgedicht.</head>
             <lb/>
             
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">H</hi>Erꝛ Zwinger zwang den Tod/ von dem er ſchin gezwungen</l>
             <lb/>
             <l>alß ihn derſelbige/ gleich andern/ weggerafft/</l>
@@ -92,30 +95,36 @@
             <lb/>
             <l>Sein' edle Seele ſich hat u&#x364;berſich geſchwungen</l>
             <lb/>
-            <l>in jennes Ort/ wo ſie in ſta&#x364;ten Frewden lebt/</l>
+            <l rendition="#et">in jennes Ort/ wo ſie in ſta&#x364;ten Frewden lebt/</l>
             <lb/>
-            <l>erwartend ihres Leibs/ des Scho&#x364;pffers Lob erhebt/</l>
+            <l rendition="#et">erwartend ihres Leibs/ des Scho&#x364;pffers Lob erhebt/</l>
             <lb/>
             <l>und ſtimmet mit/ wann wird das Heilig HErꝛ/ ꝛc. geſungen.</l>
+            </lg>
             <lb/>
+            <lg>
             <l>Jhr Hinderlaßne laßt nun euer Trauren fahren/</l>
             <lb/>
-            <l>Herꝛ Zwinger wu&#x364;nſcht nicht mehr in diſer Welt zu ſeyn/</l>
+            <l rendition="#et">Herꝛ Zwinger wu&#x364;nſcht nicht mehr in diſer Welt zu ſeyn/</l>
             <lb/>
-            <l>wo lauter Zwang und drang/ ſorg/ mu&#x364;h' und ſeelen-peyn:</l>
+            <l rendition="#et">wo lauter Zwang und drang/ ſorg/ mu&#x364;h' und ſeelen-peyn:</l>
             <lb/>
             <l>des Troſtes Gott euch wo&#x364;ll vor weiterm Leid bewahren!</l>
             <lb/>
-            <l>O/ daß ein gleicher Hirt der hinderlaſſnen Herd/</l>
+            <l rendition="#et">O/ daß ein gleicher Hirt der hinderlaſſnen Herd/</l>
             <lb/>
-            <l>in ſta&#x364;ter Wolffsgefahr/ bald fu&#x364;rgeſetzet werd!</l>
+            <l rendition="#et">in ſta&#x364;ter Wolffsgefahr/ bald fu&#x364;rgeſetzet werd!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Johann Wilhelm Simler/
+            <closer rendition="#c">
+            <signed>Johann Wilhelm Simler/
             <lb/>
             Diener am H. Wort Gottes/ vnd Zuchtm.
             <lb/>
-            zum Fr. Mu&#x364;nſter in Zu&#x364;rich.
+            zum Fr. Mu&#x364;nſter in Zu&#x364;rich.</signed>
+            </closer>
             <lb/>
             
             <fw place="bottom" type="pageNum" rendition="#aq">K</fw>

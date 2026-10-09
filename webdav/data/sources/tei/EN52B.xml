@@ -83,16 +83,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN52B">
+         <div xml:id="EN52B" type="poem">
             <pb facs="17729210"/>
-            <head>3. Sinnenbild.
+            <head rendition="#c">3. Sinnenbild.
             <lb/>
             Am Scheidwa&#x364;g nit verfehl/ die rechte Straß erwehl.</head>
             <lb/>
             
-            <hi rendition="#aq">Con: Meÿer fecit</hi>
+            <figure>
+            <p><hi rendition="#aq">Con: Meÿer fecit</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>O/ es wo&#x364;ll/ es wo&#x364;ll der Himmel! daß/ zu&#x366; diſer Zweÿfelzeit/</l>
             <lb/>
             <l>die bald heüratreiffe Jugend von dem Scheidewa&#x364;g nicht weit/</l>
@@ -108,13 +111,14 @@
             <l>Aber jenner Wolluſtwa&#x364;g/ wie gebahnet er gepreiſet/</l>
             <lb/>
             <l>mit dem Schla&#x364;mmer in den Teich/ ach! in Sch<anchor xml:id="a1"/>w<note type="annotation" targetEnd="a1"><p>Nachträglich über der Zeile eingefügt</p></note>a&#x364;felteich verweiſet.</l>
+            </lg>
             <lb/>
             
-            Einer Tugendliebenden Jugend in
+            <p>Einer Tugendliebenden Jugend in
             <lb/>
             Zürich/ ab der Bu&#x366;rgerbibliothec
             <lb/>
-            für das 1652. Jahr/ verehrt.
+            für das 1652. Jahr/ verehrt.</p>
             <lb/>
             
          </div>

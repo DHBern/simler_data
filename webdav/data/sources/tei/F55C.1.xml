@@ -72,9 +72,10 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="F55C.1">
+         <div xml:id="F55C.1" type="poem">
             <pb facs="965010"/>
-            <head><hi rendition="#aq"><num>VI.</num></hi>
+            <milestone unit="section" rendition="#hr"/>
+            <head rendition="#c"><hi rendition="#aq"><num>VI.</num></hi>
             <lb/>
             Neu-fallendes Wunſch- und Kling-gedichte/
             <lb/>
@@ -95,6 +96,8 @@
             Zu ſondern Ehren:</head>
             <lb/>
             
+            <!-- TODO HiWi: Einzuege unregelmaessig, nicht kodiert; die beiden Randnoten ("* Baſel" zu V. 5, "Anagr. Hottinger." zu V. 10) stehen im Export nach dem Kustos. -->
+            <lg type="poem">
             <l><hi rendition="#in">S</hi>Olt' ich/ groſſer Go&#x364;nner/ dan nichts von deiner Tugend ſinge&#x303;:</l>
             <lb/>
             <l>Weil geſamte Kaſtallinnen dich zu ehren ſind geneigt/</l>
@@ -123,11 +126,11 @@
             <fw place="bottom" type="catch">Nun</fw>
             <lb/>
             
-            * Baſel
+            <note place="right">* Baſel</note>
             <lb/>
-            <hi rendition="#aq">Anagr.</hi>
+            <note place="right"><hi rendition="#aq">Anagr.</hi>
             <lb/>
-            Hottinger.
+            Hottinger.</note>
             <lb/>
             <pb facs="965011"/>
             
@@ -140,17 +143,20 @@
             <l>Seine Lehr und Ehr zu fo&#x364;rdern/ wo&#x364;ll der Ho&#x364;chſt den Wunſch
             <lb/>
             erwahren!</l>
+            </lg>
+            <closer>
             <lb/>
             
             von
             <lb/>
-            Joh. Wilhelm Simlern/ Dienern
+            <signed rendition="#right">Joh. Wilhelm Simlern/ Dienern
             <lb/>
             am H. W. Gottes und Zuchtm. zum
             <lb/>
-            Fr. M<anchor xml:id="a1"/>r<note type="annotation" targetEnd="a1"><p>Hochgestellt</p></note>. in Zu&#x364;rich ꝛc.
+            Fr. M<anchor xml:id="a1"/>r<note type="annotation" targetEnd="a1"><p>Hochgestellt</p></note>. in Zu&#x364;rich ꝛc.</signed>
             <lb/>
             Hertz-wolmeinlich geſungen.
+            </closer>
             <lb/>
          </div>
       </body>

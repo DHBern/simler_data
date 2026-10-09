@@ -83,40 +83,44 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN51B">
+         <div xml:id="EN51B" type="poem">
             <pb facs="17729206"/>
-            <head>2. Sinnenbild.
+            <head rendition="#c">2. Sinnenbild.
             <lb/>
             Junger ſu&#x366;chs: Alter brauchs.</head>
             <lb/>
             
-            <hi rendition="#aq">Con. Meÿer fecit.</hi>
+            <figure>
+            <p><hi rendition="#aq">Con. Meÿer fecit.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>O/ du ſorgenfreÿes Blu&#x366;t/ ſu&#x366;ch/ in friſcher jugend/</l>
             <lb/>
             <l>durch die Sinn- und Handarbeit was dich fuhrt zur Tugend;</l>
             <lb/>
-            <l>was im grawen alter dich nehr- und ehren ſol:</l>
+            <l rendition="#et">was im grawen alter dich nehr- und ehren ſol:</l>
             <lb/>
-            <l>wie in diſem Sinnenbild/ vorgebildet wol!</l>
+            <l rendition="#et">wie in diſem Sinnenbild/ vorgebildet wol!</l>
             <lb/>
             <l>Durch den ſchno&#x364;den Mu&#x364;ſſiggang Fleiſch und Geiſt erſchwachet/</l>
             <lb/>
             <l>reicher armet/ und der arm a&#x364;rmer wird gemachet:</l>
             <lb/>
-            <l>beide bleiben ehrenloſs. Darum liebe Leüth/</l>
+            <l rendition="#et">beide bleiben ehrenloſs. Darum liebe Leüth/</l>
             <lb/>
-            <l>ſu&#x366;chet jung/ und brauchet alt zu&#x366;gelaſſne Beüth.</l>
+            <l rendition="#et">ſu&#x366;chet jung/ und brauchet alt zu&#x366;gelaſſne Beüth.</l>
+            </lg>
             <lb/>
             
-            Einer Kunſt- und Ehrliebenden Jugend
+            <p>Einer Kunſt- und Ehrliebenden Jugend
             <lb/>
             in Zürich/ ab der Burgerbibliothec da-
             <lb break="no"/>
             ſelbſten/ für das 1651. oder erſte nach
             <lb/>
-            dem Erdbidemjahr/ verehrt.
+            dem Erdbidemjahr/ verehrt.</p>
             <lb/>
             
          </div>

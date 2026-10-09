@@ -71,9 +71,9 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN59C">
+         <div xml:id="EN59C" type="poem">
             <pb facs="17729243"/>
-            <head>Regenten-Kleinodt:
+            <head rendition="#c">Regenten-Kleinodt:
             <lb/>
             Oder/
             <lb/>
@@ -106,7 +106,9 @@
             mitgetheilt.</head>
             <lb/>
             
-            <head rendition="#aq #k #g">CANTUS.</head>
+            <milestone unit="section" rendition="#hr"/>
+            <lg>
+            <head rendition="#aq #k #g #c">CANTUS.</head>
             <lb/>
             <l>Herꝛſcher auf dem ho&#x364;chſten thron/</l>
             <lb/>
@@ -119,9 +121,11 @@
             <l>dein volk mit beſcheidenheit/</l>
             <lb/>
             <l>richt/ regier/ verfechte.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">TENOR.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">TENOR.</head>
             <lb/>
             <l>Herꝛſcher auf dem ho&#x364;chſten thron/</l>
             <lb/>
@@ -134,9 +138,11 @@
             <l>dein volk mit beſcheidenheit/</l>
             <lb/>
             <l>richt/ regier/ verfechte.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">ALTUS.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">ALTUS.</head>
             <lb/>
             <l>Herꝛſcher auf dem ho&#x364;chſten thron/</l>
             <lb/>
@@ -149,9 +155,11 @@
             <l>dein volk mit beſcheidenheit/</l>
             <lb/>
             <l>richt/ regier/ verfechte.</l>
+            </lg>
             <lb/>
             
-            <head rendition="#aq #k #g">BASIS.</head>
+            <lg>
+            <head rendition="#aq #k #g #c">BASIS.</head>
             <lb/>
             <l>Herꝛſcher auf dem ho&#x364;chſten thron/</l>
             <lb/>
@@ -164,14 +172,17 @@
             <l>dein volk mit beſcheidenheit/</l>
             <lb/>
             <l>richt/ regier/ verfechte.</l>
+            </lg>
             <lb/>
             
-            Diſer Pſalm mag auch geſungen werden in der Geſangweiſe:
+            <milestone unit="section" rendition="#hr"/>
+            <p rendition="#c">Diſer Pſalm mag auch geſungen werden in der Geſangweiſe:
             <lb/>
-            Jeſus/ waarer Gottes Sohn/ ꝛc.
+            Jeſus/ waarer Gottes Sohn/ ꝛc.</p>
             <lb/>
             
-            David bittet
+            <!-- TODO HiWi: die 13 Randtitel stehen im Export nicht an ihrer Stelle; sie gehoeren (Strophe.Vers) zu 1.1, 2.4, 2.6, 3.2, 4.1, 5.1, 7.1, 9.1, 10.1, 11.1, 12.1, 12.4 und 13.4. Strophe 1 = Text der vier Stimmen. -->
+            <note place="left" type="marginalia">David bittet
             <lb/>
             fu&#x364;r Salom<anchor xml:id="a1"/>o<note type="annotation" targetEnd="a1"><p>Teilweise fehlende Tinte.</p></note>n:
             <lb/>
@@ -191,30 +202,30 @@
             <lb break="no"/>
             genten/ wie ſie
             <lb/>
-            regieren ſollen.
+            regieren ſollen.</note>
             <lb/>
             
-            Fru&#x364;cht eines
+            <note place="left" type="marginalia">Fru&#x364;cht eines
             <lb/>
             rechten Regi-
             <lb break="no"/>
-            ments.
+            ments.</note>
             <lb/>
-            1. Frid und Ge-
+            <note place="left" type="marginalia">1. Frid und Ge-
             <lb break="no"/>
-            rechtigkeit.
+            rechtigkeit.</note>
             <lb/>
-            2. Schutz der
+            <note place="left" type="marginalia">2. Schutz der
             <lb/>
-            armen.
+            armen.</note>
             <lb/>
-            3. Waarer
+            <note place="left" type="marginalia">3. Waarer
             <lb/>
             glaub und Got-
             <lb break="no"/>
-            tesforcht.
+            tesforcht.</note>
             <lb/>
-            4. Gemeiner
+            <note place="left" type="marginalia">4. Gemeiner
             <lb/>
             wolſtand und
             <lb/>
@@ -222,80 +233,91 @@
             <lb/>
             aller ma&#x364;ng-
             <lb break="no"/>
-            len.
+            len.</note>
             <lb/>
             
+            <lg type="poem">
+            <lg>
             <l><hi rendition="#in">H</hi>Erꝛſcher auf dem ho&#x364;chſten thron/</l>
             <lb/>
             <l>gib dem Ko&#x364;nig/ Ko&#x364;nigs-ſohn</l>
             <lb/>
-            <l>dein gericht und rechte:</l>
+            <l rendition="#et">dein gericht und rechte:</l>
             <lb/>
             <l>daß er/ nach der billichkeit/</l>
             <lb/>
             <l>dein volk mit beſcheidenheit/</l>
             <lb/>
-            <l>richt/ regier/ verfechte.</l>
+            <l rendition="#et">richt/ regier/ verfechte.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Daß er/ nach gewiſſen/ richt/</l>
             <lb/>
             <l>reich- und armer ha&#x364;ndel ſchlicht/</l>
             <lb/>
-            <l>ohn perſon anſehen:</l>
+            <l rendition="#et">ohn perſon anſehen:</l>
             <lb/>
             <l>alßdann werden u&#x364;beral/</l>
             <lb/>
             <l>ſo zu berge/ ſo zu thal/</l>
             <lb/>
-            <l>Frid und Recht aufgehen.</l>
+            <l rendition="#et">Frid und Recht aufgehen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Diſer Ko&#x364;nig/ from&#x342; und frey/</l>
             <lb/>
             <l>wird den armen ſtehen bey</l>
             <lb/>
-            <l>wider gwalt auf erden:</l>
+            <l rendition="#et">wider gwalt auf erden:</l>
             <lb/>
             <l>la&#x364;ſterer und bo&#x364;ſewicht</l>
             <lb/>
             <l>werden/ durch ſein ſtreng gericht/</l>
             <lb/>
-            <l>gantz vertilget werden.</l>
+            <l rendition="#et">gantz vertilget werden.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Jederman mit forchten ihn</l>
             <lb/>
             <l>wird verehren fo&#x364;rterhin</l>
             <lb/>
-            <l>von geſchlecht zu gſchlechte:</l>
+            <l rendition="#et">von geſchlecht zu gſchlechte:</l>
             <lb/>
             <l>ihme wird man ghorſam ſeyn/</l>
             <lb/>
             <l>weil der Mond- und Sonnenſchein</l>
             <lb/>
-            <l>halten ihre Rechte.</l>
+            <l rendition="#et">halten ihre Rechte.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Einem Regen er geleicht/</l>
             <lb/>
             <l>der von oben ab befeucht</l>
             <lb/>
-            <l>abgema&#x364;yte wiſen:</l>
+            <l rendition="#et">abgema&#x364;yte wiſen:</l>
             <lb/>
             <l>und den tropfen/ die das graß</l>
             <lb/>
             <l>machen friſch und lieblich naß/</l>
             <lb/>
-            <l>wird er gleich gepriſen.</l>
+            <l rendition="#et">wird er gleich gepriſen.</l>
+            </lg>
             <lb/>
             
-            5. Mehrung
+            <note place="left" type="marginalia">5. Mehrung
             <lb/>
-            des Reychs.
+            des Reychs.</note>
             <lb/>
             
-            Widera&#x364;ferung
+            <note place="left" type="marginalia">Widera&#x364;ferung
             <lb/>
             der eigenſchaf-
             <lb break="no"/>
@@ -307,10 +329,10 @@
             <lb break="no"/>
             meldte Fru&#x364;cht
             <lb/>
-            entſpringen.
+            entſpringen.</note>
             <lb/>
             
-            Belohnung ei-
+            <note place="left" type="marginalia">Belohnung ei-
             <lb break="no"/>
             nes trewen Re-
             <lb break="no"/>
@@ -324,85 +346,95 @@
             <lb/>
             3. Gunſt und
             <lb/>
-            ehre.
+            ehre.</note>
             <lb/>
             
+            <lg>
             <l>Nun/ zu diſes Ko&#x364;nigs zeit/</l>
             <lb/>
             <l>wird der grechte/ ſonder ſtreit/</l>
             <lb/>
-            <l>in dem wolſtand gru&#x364;nen:</l>
+            <l rendition="#et">in dem wolſtand gru&#x364;nen:</l>
             <lb/>
             <l>eitel Frid ſo lang wird ſeyn</l>
             <lb/>
             <l>alß verbleibt des Mondes ſchein</l>
             <lb/>
-            <l>an der Himmels-bu&#x364;hnen.</l>
+            <l rendition="#et">an der Himmels-bu&#x364;hnen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Er wird herꝛſchen nah und fehr/</l>
             <lb/>
             <l>ja/ von eim zum andern Meer/</l>
             <lb/>
-            <l>bis ans end der Erden:</l>
+            <l rendition="#et">bis ans end der Erden:</l>
             <lb/>
             <l>fremde vo&#x364;lker/ freund und feind/</l>
             <lb/>
             <l>underta&#x364;hnig ihm geſchwind</l>
             <lb/>
-            <l>zfu&#x364;ſſen fallen werden.</l>
+            <l rendition="#et">zfu&#x364;ſſen fallen werden.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Meer- und Jnslen-ko&#x364;nig ſich</l>
             <lb/>
             <l>mit geſcha&#x364;nke williglich</l>
             <lb/>
-            <l>freyga&#x364;b ihm erzeigen:</l>
+            <l rendition="#et">freyga&#x364;b ihm erzeigen:</l>
             <lb/>
             <l>alle ko&#x364;nig in gemein/</l>
             <lb/>
             <l>ſamt den Heiden/ ihn allein</l>
             <lb/>
-            <l>ba&#x364;tten an mit neigen.</l>
+            <l rendition="#et">ba&#x364;tten an mit neigen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Dann den arm-verlaßnen mann</l>
             <lb/>
             <l>wird er retten/ und fortan</l>
             <lb/>
-            <l>ſchonen des geringen:</l>
+            <l rendition="#et">ſchonen des geringen:</l>
             <lb/>
             <l>vor gewalt und liſt in hut</l>
             <lb/>
             <l>arme nemmen/ und ihr blut</l>
             <lb/>
-            <l>vorziehn allen dingen.</l>
+            <l rendition="#et">vorziehn allen dingen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Er wird leben/ und zugleich</l>
             <lb/>
             <l>wird ihm das Arabiſch Reych</l>
             <lb/>
-            <l>gold-geſcha&#x364;nke bringen:</l>
+            <l rendition="#et">gold-geſcha&#x364;nke bringen:</l>
             <lb/>
             <l>ieder auch/ fu&#x364;r ſeinen theil/</l>
             <lb/>
             <l>Gottes ſa&#x364;gen/ glu&#x364;k und heil</l>
             <lb/>
-            <l>wu&#x364;nſchen mit lobſingen<anchor xml:id="a2"/>.<note type="annotation" targetEnd="a2"><p>Tintenabdruck über dem Punkt.</p></note></l>
+            <l rendition="#et">wu&#x364;nſchen mit lobſingen<anchor xml:id="a2"/>.<note type="annotation" targetEnd="a2"><p>Tintenabdruck über dem Punkt.</p></note></l>
+            </lg>
             <lb/>
             
-            4. Fruchtbar-
+            <note place="left" type="marginalia">4. Fruchtbar-
             <lb break="no"/>
-            keit des Lands.
+            keit des Lands.</note>
             <lb/>
             
-            5. Mehrung
+            <note place="left" type="marginalia">5. Mehrung
             <lb/>
-            des Volks.
+            des Volks.</note>
             <lb/>
             
-            6. Ehrlicher
+            <note place="left" type="marginalia">6. Ehrlicher
             <lb/>
             Nam&#x303;/ und lob-
             <lb break="no"/>
@@ -410,10 +442,10 @@
             <lb break="no"/>
             nuß under allen
             <lb/>
-            vo&#x364;lkern.
+            vo&#x364;lkern.</note>
             <lb/>
             
-            Untertahnen
+            <note place="left" type="marginalia">Untertahnen
             <lb/>
             ſollen Gott lo-
             <lb break="no"/>
@@ -425,68 +457,77 @@
             <lb break="no"/>
             ten und Oberen
             <lb/>
-            gibt.
+            gibt.</note>
             <lb/>
             
+            <lg>
             <l>Wirfft man auß/ auf du&#x364;rꝛer heid/</l>
             <lb/>
             <l>eine handfol vom getreid/</l>
             <lb/>
-            <l>wirds vil fru&#x364;chte geben:</l>
+            <l rendition="#et">wirds vil fru&#x364;chte geben:</l>
             <lb/>
             <l>die/ wie ba&#x364;um auf Libanon/</l>
             <lb/>
             <l>von dem wind beweget ſchon/</l>
             <lb/>
-            <l>ein gera&#x364;uſch erheben.</l>
+            <l rendition="#et">ein gera&#x364;uſch erheben.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Wolbewohnte Sta&#x364;tte man/</l>
             <lb/>
             <l>gru&#x364;nend wie das graß voran/</l>
             <lb/>
-            <l>fo&#x364;rterhin wird ſehen:</l>
+            <l rendition="#et">fo&#x364;rterhin wird ſehen:</l>
             <lb/>
             <l>Diſes Ko&#x364;nigs Nam&#x342; ſo lang/</l>
             <lb/>
             <l>alß die Sonn behalt den gang/</l>
             <lb/>
-            <l>bleibet ohn vergehen.</l>
+            <l rendition="#et">bleibet ohn vergehen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Alle vo&#x364;lker werden ſich</l>
             <lb/>
             <l>in ihm ſa&#x364;gnen ewiglich/</l>
             <lb/>
-            <l>und ihn ſelig preiſen:</l>
+            <l rendition="#et">und ihn ſelig preiſen:</l>
             <lb/>
             <l>Jſraels Gott in der Gmein/</l>
             <lb/>
             <l>weil er wunder wu&#x364;rkt allein/</l>
             <lb/>
-            <l>ſol man ehr beweiſen.</l>
+            <l rendition="#et">ſol man ehr beweiſen.</l>
+            </lg>
             <lb/>
             
+            <lg>
             <l>Hochgelobet immer werd</l>
             <lb/>
             <l>ſein ſo werther Nam&#x342; auf Erd</l>
             <lb/>
-            <l>von uns allenſamen:</l>
+            <l rendition="#et">von uns allenſamen:</l>
             <lb/>
             <l>Alles land von ſeiner Ehr</l>
             <lb/>
             <l>werd erfu&#x364;llet mehr/ und mehr/</l>
             <lb/>
-            <l>ietz und ewig/ Amen!</l>
+            <l rendition="#et">ietz und ewig/ Amen!</l>
+            </lg>
+            </lg>
             <lb/>
             
-            Getrukt in dem Fridenwu&#x364;nſchenden
+            <p rendition="#c">Getrukt in dem Fridenwu&#x364;nſchenden
             <lb/>
             Heiljahr:
             <lb/>
             Herꝛ Rahn <hi rendition="#aq">V</hi>ns <hi rendition="#aq">L</hi>ange ze<hi rendition="#aq">I</hi>t <hi rendition="#aq">IM</hi> Fr<hi rendition="#aq">ID</hi>en
             <lb/>
-            re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.
+            re<hi rendition="#aq">C</hi>ht reg<hi rendition="#aq">I</hi>er.</p>
             <lb/>
             
          </div>

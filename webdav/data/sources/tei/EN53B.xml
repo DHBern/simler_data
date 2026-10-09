@@ -83,16 +83,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="EN53B">
+         <div xml:id="EN53B" type="poem">
             <pb facs="17729214"/>
-            <head>4. Sinnenbild.
+            <head rendition="#c">4. Sinnenbild.
             <lb/>
             Ka&#x364;mpf wider Dich/ So ſchlaheſt Mich.</head>
             <lb/>
             
-            <hi rendition="#aq">Conrad Meÿer, Pictor, fecit.</hi>
+            <figure>
+            <p><hi rendition="#aq">Conrad Meÿer, Pictor, fecit.</hi></p>
+            </figure>
             <lb/>
             
+            <lg type="poem">
             <l>Diſes Ungeheür* zu&#x366; da&#x364;mpfen/</l>
             <lb/>
             <l>jeder wider ſich mu&#x366;ß ka&#x364;mpfen/</l>
@@ -108,25 +111,27 @@
             <l>ſonſten wider ihn ertho&#x364;nt:</l>
             <lb/>
             <l>Wer nicht ka&#x364;mpft wird nicht gekro&#x364;nt.</l>
+            </lg>
             <lb/>
             
-            <hi rendition="#aq">Eph.6.v.11.
+            <!-- TODO HiWi: Einzuege unregelmaessig (Stichschrift), nicht kodiert. Die Bibelstellen stehen am linken Rand bei V. 4, 6 und 8; "*Laſterthier" am rechten Rand bei V. 1 ("Ungeheür*"). -->
+            <note place="left" type="bibl"><hi rendition="#aq">Eph.6.v.11.
             <lb/>
             Coloſs.3.v.5
             <lb/>
-            2.Tim.2.v.5</hi>
+            2.Tim.2.v.5</hi></note>
             <lb/>
             
-            <hi rendition="#aq">*Laſterthier</hi>
+            <note place="right"><hi rendition="#aq">*Laſterthier</hi></note>
             <lb/>
             
-            Einer Tugendliebenden Jugend in Zürich
+            <p>Einer Tugendliebenden Jugend in Zürich
             <lb/>
             ab der Burgerbibliothec/ für das
             <lb/>
             1653. oder erſte nach dem ſchro&#x364;klichen
             <lb/>
-            Donner-jahr/ verehrt.
+            Donner-jahr/ verehrt.</p>
             <lb/>
             
          </div>
