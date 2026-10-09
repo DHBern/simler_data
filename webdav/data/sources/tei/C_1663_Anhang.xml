@@ -33,7 +33,7 @@
                 <div n="2" type="poem" xml:id="A.i">
                     <head>
                         <label>[A.i.]</label><lb/>
-                        <hi rendition="#aq #c #i">Summa totius Operis Carmine Hexa<lb break="no"/>
+                        <hi rendition="#aq #i #c">Summa totius Operis Carmine Hexa<lb break="no"/>
                             metro expreſſa: ubi ipſe Liber loquens<lb/>introducitur.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -325,7 +325,7 @@
                         <hi rendition="#c">An die Statt <rs type="place" key="place_001"
                                 >Zu&#x364;rich</rs>:</hi>
                         <lb/>
-                        <hi rendition="#c #b">Vber Deroſelben beru&#x364;hmte drey <lb/>
+                        <hi rendition="#b #c">Vber Deroſelben beru&#x364;hmte drey <lb/>
                             hochdeutſche Tichter/ <lb/> Hn. <rs type="person" key="person_001">J. W.
                                 S.</rs> Hr. <rs type="person" key="person_004">J. J. B.</rs> und
                             <lb/> Hr. <rs type="person" key="person_194">J. U. B.</rs></hi></head>
@@ -368,7 +368,7 @@
                                         key="institution_003">Deutſchgeſinneten <lb/>
                                         Roſengſellſchaffteren</rs></rs></hi>
                             <lb/>
-                            <hi rendition="#right #b">Der <rs type="person" key="person_026"
+                            <hi rendition="#b #right">Der <rs type="person" key="person_026"
                                     >Sanfftmu&#x364;htige</rs>.</hi></salute>
                     </closer>
                     <lb/>
@@ -1365,7 +1365,7 @@
                         <lb/>
                         <l rendition="#et">Gott wo&#x364;lle Wunſches gwerꝛen</l>
                         <lb/>
-                        <l rendition="#et2 #larger">Herꝛ'n <rs type="person"
+                        <l rendition="#larger #et2">Herꝛ'n <rs type="person"
                                     key="person_206">Hirtzlen</rs>: Herꝛen <rs type="person"
                                     key="person_010"><choice>
                                         <corr/>
@@ -1643,7 +1643,7 @@
                 <pb facs="4077099" n="324"/>
                 <div n="2" xml:id="D.17">
                     <!-- Der Titel steht hier auf zwei Seiten -->
-                    <head><label>[D.17.]</label><lb/><hi rendition="#c #b">Freudiger Troſtgeſang/
+                    <head><label>[D.17.]</label><lb/><hi rendition="#b #c">Freudiger Troſtgeſang/
                             <lb/>Der in Gott ſelig verſtorbnen Frau <rs type="person"
                                 key="person_208">Oberſtin</rs>: <pb facs="4077100" n="325"/> Auß dem
                             himmliſchen Freuden-Sahl/ an Jhre
@@ -2423,7 +2423,7 @@
                 </div>
                 <pb facs="4077260" n="13"/>
                 <div n="2" xml:id="D.55">
-                    <head><label>[D.55.]</label><lb/><hi rendition="#c #b">65. Einigkeit beider
+                    <head><label>[D.55.]</label><lb/><hi rendition="#b #c">65. Einigkeit beider
                             Sta&#x364;nden.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -2627,7 +2627,7 @@
                         <lb/>
                         <l rendition="#aq">Vulpecula fraus eſt, vis eſt innata Leoni;</l>
                         <lb/>
-                        <l rendition="#et #aq">Vtraque ſed juſtis eſt aliena
+                        <l rendition="#aq #et">Vtraque ſed juſtis eſt aliena
                                 viris.</l>
                         <lb/>
                         <l>Der Fuchß argliſtig iſt: gwalth<supplied>a&#x364;</supplied>tig iſt der
@@ -2854,7 +2854,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.70">
-                    <head><label>[D.70.]</label><lb/><hi rendition="#c #b">97. Jn
+                    <head><label>[D.70.]</label><lb/><hi rendition="#b #c">97. Jn
                                 ei<supplied>n</supplied> Fenſterwaapen/ H. G. Mr. H.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -2895,7 +2895,7 @@
                         <lb/>
                         <l rendition="#et">Dir diene zur Artzney das bitter und das ſu&#x364;ß.</l>
                         <lb/>
-                        <l rendition="#et2 #larger">Ab Augen ab Hertz/</l>
+                        <l rendition="#larger #et2">Ab Augen ab Hertz/</l>
                         <lb/>
                         <l rendition="#et2"><hi rendition="#larger">Man redet im Schertz.</hi> - -
                             Aber</l>
@@ -3358,9 +3358,10 @@
                             <!-- evtl. erstes Gedicht mit  [1] nummerieren -->
                             <l>Helffen Warnungs-Zeichen nicht/ ſo erfolgend Straffgericht.</l>
                         </lg>
+                        <lb/>
                     </div>
                     <div n="3">
-                        <head rendition="#c #b"><lb/>2. Waſſergu&#x364;ſenen.</head>
+                        <head rendition="#b #c"><lb/>2. Waſſergu&#x364;ſenen.</head>
                         <lb/>
                         <lg type="poem">
                             <l>Der Su&#x364;nden u&#x364;berfluß</l>
@@ -3370,7 +3371,7 @@
                         <lb/>
                     </div>
                     <div n="3">
-                        <head rendition="#c #b"><lb/>3. Peſtilentz und Hungersnoht.</head>
+                        <head rendition="#b #c"><lb/>3. Peſtilentz und Hungersnoht.</head>
                         <lb/>
                         <lg type="poem">
                             <l>Vergiffter Lufft und Hungersnoth</l>
@@ -3380,7 +3381,7 @@
                         <lb/>
                     </div>
                     <div n="3">
-                        <head rendition="#c #b"><lb/>4. Erdbidem.</head>
+                        <head rendition="#b #c"><lb/>4. Erdbidem.</head>
                         <lb/>
                         <lg type="poem">
                             <l>Die Erde/ von der Su&#x364;nd beſchwert/</l>
@@ -3507,7 +3508,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.91">
-                    <head><label>[D.91.]</label><lb/><hi rendition="#c #b">135. Uber das Lobl. Ort/
+                    <head><label>[D.91.]</label><lb/><hi rendition="#b #c">135. Uber das Lobl. Ort/
                             und Fleken <rs type="place" key="place_054">Glarus</rs>.</hi></head>
                     <lb/>
                     <cb type="start"/>
@@ -3652,7 +3653,7 @@
                 </div>
                 <pb facs="4077283" n="36"/>
                 <div n="2" xml:id="D.97">
-                    <head><label>[D.97.]</label><lb/><hi rendition="#c #b">141. Muſter eines
+                    <head><label>[D.97.]</label><lb/><hi rendition="#b #c">141. Muſter eines
                             Baderwunſches.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3679,7 +3680,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.98">
-                    <head><label>[D.98.]</label><lb/><hi rendition="#c #b">142. Uber das halbwarme
+                    <head><label>[D.98.]</label><lb/><hi rendition="#b #c">142. Uber das halbwarme
                                 <rs type="place" key="place_065">Schintznacher-Bad</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3717,7 +3718,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.100">
-                    <head><label>[D.100.]</label><lb/><hi rendition="#c #b">144. Uber das <rs
+                    <head><label>[D.100.]</label><lb/><hi rendition="#b #c">144. Uber das <rs
                                 type="place" key="place_067">Wengi Bad</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3812,7 +3813,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.104">
-                    <head><label>[D.104.]</label><lb/><hi rendition="#c #b">148. Uber abermaligen
+                    <head><label>[D.104.]</label><lb/><hi rendition="#b #c">148. Uber abermaligen
                             Podagrams-Gaſt/ <lb/> den 26. Augſtm. 1671.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3829,7 +3830,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.105">
-                    <head><label>[D.105.]</label><lb/><hi rendition="#c #b"
+                    <head><label>[D.105.]</label><lb/><hi rendition="#b #c"
                             >1<supplied>4</supplied>9. Uber die Chimey.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -3857,7 +3858,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.107">
-                    <head><label>[D.107.]</label><lb/><hi rendition="#c #b">167. Vergleichung der
+                    <head><label>[D.107.]</label><lb/><hi rendition="#b #c">167. Vergleichung der
                             Cartha&#x364;uſer-Mo&#x364;nchen/ <lb/> mit den Holbru&#x364;deren oder
                             See-vo&#x364;glen.</hi></head>
                     <lb/>
@@ -3901,7 +3902,7 @@
                     </div>
                 </div>
                 <div n="2" xml:id="D.109">
-                    <head><label>[D.109.]</label><lb/><hi rendition="#c #b">169. Uber die ſtechende
+                    <head><label>[D.109.]</label><lb/><hi rendition="#b #c">169. Uber die ſtechende
                             Bader-Fleugen.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -4206,7 +4207,7 @@
                 </div>
                 <pb facs="4077295" n="48"/>
                 <div n="2" xml:id="D.116">
-                    <head><label>[D.116.]</label><lb/><hi rendition="#c #b">212. Kurtzes
+                    <head><label>[D.116.]</label><lb/><hi rendition="#b #c">212. Kurtzes
                             Anbind-Brieflin.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -4330,7 +4331,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.119">
-                    <head><label>[D.119.]</label><lb/><hi rendition="#c #b">215. Ein anders/ auf <rs
+                    <head><label>[D.119.]</label><lb/><hi rendition="#b #c">215. Ein anders/ auf <rs
                                 type="person" key="person_228">Caſpars</rs>-Tag.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -4351,7 +4352,7 @@
                 </div>
                 <pb facs="4077298" n="51"/>
                 <div n="2" xml:id="D.120">
-                    <head><label>[D.120.]</label><lb/><hi rendition="#c #b">218. Ein anders/ auf
+                    <head><label>[D.120.]</label><lb/><hi rendition="#b #c">218. Ein anders/ auf
                             Dorothea-Tag.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -4401,7 +4402,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.121">
-                    <head><label>[D.121.]</label><lb/><hi rendition="#c #b">219. Gemeines
+                    <head><label>[D.121.]</label><lb/><hi rendition="#b #c">219. Gemeines
                             Anbindgeticht auf Suſan&#x303;a Tag.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -4509,7 +4510,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.125">
-                    <head><label>[D.125.]</label><lb/><hi rendition="#c #b">224. Ein
+                    <head><label>[D.125.]</label><lb/><hi rendition="#b #c">224. Ein
                         anders.</hi></head>
                     <lb/>
                     <cb type="start"/>
@@ -4683,7 +4684,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.130">
-                    <head><label>[D.130.]</label><lb/><hi rendition="#c #b">229. Anbind-gedicht auf
+                    <head><label>[D.130.]</label><lb/><hi rendition="#b #c">229. Anbind-gedicht auf
                             Herꝛen Obm. <rs type="person" key="person_010">J. H. R.</rs>
                             <lb/> Ehren- und Nammens-Tag.</hi></head>
                     <lb/>
@@ -4887,7 +4888,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.133">
-                    <head><label>[D.133.]</label><lb/><hi rendition="#c #b">232. Auf
+                    <head><label>[D.133.]</label><lb/><hi rendition="#b #c">232. Auf
                             Ku&#x366;nrath-Tag.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5194,6 +5195,7 @@
                             <lb/>
                             <l>Drum wird Er nach dem Tod gepriſen.</l>
                         </lg>
+                        <lb/>
                     </div>
                 </div>
                 <div n="2" xml:id="D.139">
@@ -5241,7 +5243,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.141">
-                    <head><label>[D.141.]</label><lb/><hi rendition="#c #b">245. Hn. <rs
+                    <head><label>[D.141.]</label><lb/><hi rendition="#b #c">245. Hn. <rs
                                 type="person" key="person_233">Huldr. Zwingli.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5253,7 +5255,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.142">
-                    <head><label>[D.142.]</label><lb/><hi rendition="#c #b">246. Hrn. <rs
+                    <head><label>[D.142.]</label><lb/><hi rendition="#b #c">246. Hrn. <rs
                                 type="person" key="person_234">Heinr. Bullingers.</rs>
                         S.</hi></head>
                     <lb/>
@@ -5267,7 +5269,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.143">
-                    <head><label>[D.143.]</label><lb/><hi rendition="#c #b">247. Hrn. <rs
+                    <head><label>[D.143.]</label><lb/><hi rendition="#b #c">247. Hrn. <rs
                                 type="person" key="person_175">J. Rod. Gwalthers.</rs>
                         S.</hi></head>
                     <lb/>
@@ -5280,7 +5282,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.144">
-                    <head><label>[D.144.]</label><lb/><hi rendition="#c #b">248. Hrn. <rs
+                    <head><label>[D.144.]</label><lb/><hi rendition="#b #c">248. Hrn. <rs
                                 type="person" key="person_236">Joh. Jacob Breitingers.</rs>
                         S.</hi></head>
                     <lb/>
@@ -5297,7 +5299,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.145">
-                    <head><label>[D.145.]</label><lb/><hi rendition="#c #b">249. Hrn. <rs
+                    <head><label>[D.145.]</label><lb/><hi rendition="#b #c">249. Hrn. <rs
                                 type="person" key="person_237">Jacob Jrmingers.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5310,7 +5312,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.146">
-                    <head><label>[D.146.]</label><lb/><hi rendition="#c #b">250. Der Herꝛen
+                    <head><label>[D.146.]</label><lb/><hi rendition="#b #c">250. Der Herꝛen
                             Lavateren ins gemein.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5322,7 +5324,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.147">
-                    <head><label>[D.147.]</label><lb/><hi rendition="#c #b">251.
+                    <head><label>[D.147.]</label><lb/><hi rendition="#b #c">251.
                                 Ve<supplied>r</supplied>waltern der <rs type="institution"
                                 key="institution_009">Stifft/ Z. <rs type="org"
                                     key="institution_009">Gr. M.</rs></rs>
@@ -5338,7 +5340,7 @@
                 </div>
                 <pb facs="4077311" n="64"/>
                 <div n="2" xml:id="D.148">
-                    <head><label>[D.148.]</label><lb/><hi rendition="#c #b">252. Hrn. <rs
+                    <head><label>[D.148.]</label><lb/><hi rendition="#b #c">252. Hrn. <rs
                                 type="person" key="person_238">Jacob Frieſen</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5350,7 +5352,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.149">
-                    <head><label>[D.149.]</label><lb/><hi rendition="#c #b">253. Hrn. D. und
+                    <head><label>[D.149.]</label><lb/><hi rendition="#b #c">253. Hrn. D. und
                             Statt-Artzets <rs type="person" key="person_239">Joh. <lb/> Rud.
                                 Geigers</rs> S.</hi></head>
                     <lb/>
@@ -5362,7 +5364,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.150">
-                    <head><label>[D.150.]</label><lb/><hi rendition="#c #b">254. Hrn. <rs
+                    <head><label>[D.150.]</label><lb/><hi rendition="#b #c">254. Hrn. <rs
                                 type="person" key="person_240">C. Maurers</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5374,7 +5376,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.151">
-                    <head><label>[D.151.]</label><lb/><hi rendition="#c #b">255. Hrn. <rs
+                    <head><label>[D.151.]</label><lb/><hi rendition="#b #c">255. Hrn. <rs
                                 type="person" key="person_241">C. Suters</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5387,7 +5389,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.152">
-                    <head><label>[D.152.]</label><lb/><hi rendition="#c #b">256. Hrn. <rs
+                    <head><label>[D.152.]</label><lb/><hi rendition="#b #c">256. Hrn. <rs
                                 type="person" key="person_014">Fel. Weißen</rs> S. Pf. Z. <rs
                                 type="institution" key="institution_010"><rs type="org"
                                     key="institution_010">Fr. M.</rs></rs></hi></head>
@@ -5417,7 +5419,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.154">
-                    <head><label>[D.154.]</label><lb/><hi rendition="#c #b">258. Hrn. <rs
+                    <head><label>[D.154.]</label><lb/><hi rendition="#b #c">258. Hrn. <rs
                                 type="person" key="person_243">H. C. Wirtzen</rs> S. Pf. Z. <rs
                                 type="org" key="institution_015">Pr.</rs></hi></head>
                     <lb/>
@@ -5430,7 +5432,7 @@
                     <lb/>
                 </div>
                 <div>
-                    <head rendition="#c #b">
+                    <head rendition="#b #c">
                         Nachruhm Etlicher Weltbekannten Herꝛen <lb/>
                             <hi rendition="#aq">Profeſſorum</hi> der <rs type="org"
                                 key="institution_005">Schul Zu&#x364;rich</rs>: <lb/> als
@@ -5470,7 +5472,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.157">
-                    <head><label>[D.157.]</label><lb/><hi rendition="#c #b">260. Hrn. <rs
+                    <head><label>[D.157.]</label><lb/><hi rendition="#b #c">260. Hrn. <rs
                                 type="person" key="person_245">R. <hi rendition="#aq"
                                     >Hoſpiniani.</hi></rs> S.</hi></head>
                     <lb/>
@@ -5484,7 +5486,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.158">
-                    <head><label>[D.158.]</label><lb/><hi rendition="#c #b">261. Hrn <rs
+                    <head><label>[D.158.]</label><lb/><hi rendition="#b #c">261. Hrn <rs
                                 type="person" key="person_246">H. Erni.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5497,7 +5499,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.159">
-                    <head><label>[D.159.]</label><lb/><hi rendition="#c #b">262. Hrn. <rs
+                    <head><label>[D.159.]</label><lb/><hi rendition="#b #c">262. Hrn. <rs
                                 type="person" key="person_247">P. Tommans.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5511,7 +5513,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.160">
-                    <head><label>[D.160.]</label><lb/><hi rendition="#c #b">263. Hrn. <rs
+                    <head><label>[D.160.]</label><lb/><hi rendition="#b #c">263. Hrn. <rs
                                 type="person" key="person_248">R. Stukki.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5523,7 +5525,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.161">
-                    <head><label>[D.161.]</label><lb/><hi rendition="#c #b">264. Hrn. <rs
+                    <head><label>[D.161.]</label><lb/><hi rendition="#b #c">264. Hrn. <rs
                                 type="person" key="person_249">H. Zeller.</rs> S.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5535,7 +5537,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.162">
-                    <head><label>[D.162.]</label><lb/><hi rendition="#c #b">265. Hrn. <rs
+                    <head><label>[D.162.]</label><lb/><hi rendition="#b #c">265. Hrn. <rs
                                 type="person" key="person_006">J. H. Hottinger</rs>.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -5604,7 +5606,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.166">
-                    <head><label>[D.166.]</label><lb/><hi rendition="#c #b">268. Der betrübten
+                    <head><label>[D.166.]</label><lb/><hi rendition="#b #c">268. Der betrübten
                             nachgelaßnen Fr. <rs type="person" key="person_251">Wittib</rs>. <lb/>
                             Klagred.</hi></head>
                     <lb/>
@@ -5659,7 +5661,7 @@
                 </div>
                 <pb facs="4077314" n="67"/>
                 <div n="2" xml:id="D.169">
-                    <head><label>[D.169.]</label><lb/><hi rendition="#c #b">273. Grabſchrifft/ <lb/>
+                    <head><label>[D.169.]</label><lb/><hi rendition="#b #c">273. Grabſchrifft/ <lb/>
                             Uber Hrn. Pf. <rs type="person" key="person_254">Geßner</rs> ſel. zu <rs
                                 type="place" key="place_069">Baſſerſtorff</rs>.</hi></head>
                     <lb/>
@@ -6043,7 +6045,7 @@
                 <pb facs="4077322" n="75"/>
                 <div n="2">
                     <div n="3" xml:id="D.174">
-                        <head><label>[D.174.]</label><lb/><hi rendition="#c #b">296.
+                        <head><label>[D.174.]</label><lb/><hi rendition="#b #c">296.
                                 Tugendwa&#x364;g/ oder/ Liecht und Leben.</hi></head>
                         <lb/>
                         <lg type="poem">
@@ -6059,7 +6061,7 @@
                         <lb/>
                     </div>
                     <div n="3">
-                        <head rendition="#c #b">Laſterſtraß/ oder/ Finſternuß und
+                        <head rendition="#b #c">Laſterſtraß/ oder/ Finſternuß und
                             Tod.</head>
                         <lb/>
                         <lg type="poem">
@@ -6077,7 +6079,7 @@
                 </div>
                 <pb facs="4077325" n="78"/>
                 <div n="2" xml:id="D.175">
-                    <head><label>[D.175.]</label><lb/><hi rendition="#c #b">306. Getreue Arbeit
+                    <head><label>[D.175.]</label><lb/><hi rendition="#b #c">306. Getreue Arbeit
                             fruchtet.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6121,7 +6123,7 @@
                 </div>
                 <pb facs="4077333" n="86"/>
                 <div>
-                    <head rendition="#c #b">317. Haußſprüche/</head>
+                    <head rendition="#b #c">317. Haußſprüche/</head>
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.177">
@@ -6151,6 +6153,7 @@
                     <head><label>[D.178.]</label><lb/><hi rendition="#c"><hi rendition="#b">5.
                                 Offenverſe in der H. E. Chorherꝛen Geſell</hi>
                             <lb break="no"/> ſchafft-Stuben.</hi></head>
+                    <lb/>
                     <div n="3">
                         <head rendition="#c">
                             (1) <lb/>
@@ -6396,7 +6399,7 @@
                 </div>
                 <pb facs="4077338" n="91"/>
                 <div n="2" xml:id="D.180">
-                    <head><label>[D.180.]</label><lb/><hi rendition="#c #b">14. Uber eine Werkſtatt/
+                    <head><label>[D.180.]</label><lb/><hi rendition="#b #c">14. Uber eine Werkſtatt/
                             oder <lb/> Kramladen.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6411,7 +6414,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.181">
-                    <head><label>[D.181.]</label><lb/><hi rendition="#c #b">Ein anders.</hi></head>
+                    <head><label>[D.181.]</label><lb/><hi rendition="#b #c">Ein anders.</hi></head>
                     <lb/>
                     <lg type="poem">
                         <l>Wilſt du nicht unglu&#x364;k haben/</l>
@@ -6421,7 +6424,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.182">
-                    <head><label>[D.182.]</label><lb/><hi rendition="#c #b">An ein
+                    <head><label>[D.182.]</label><lb/><hi rendition="#b #c">An ein
                         Camin.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6441,7 +6444,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.183">
-                    <head><label>[D.183.]</label><lb/><hi rendition="#c #b">17. Uber eine
+                    <head><label>[D.183.]</label><lb/><hi rendition="#b #c">17. Uber eine
                                 Sta&#x364;ge<supplied>n</supplied></hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6571,7 +6574,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.188">
-                    <head><label>[D.188.]</label><lb/><hi rendition="#c #b">22. Uber eine
+                    <head><label>[D.188.]</label><lb/><hi rendition="#b #c">22. Uber eine
                             Badſtanden.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6594,7 +6597,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.190">
-                    <head><label>[D.190.]</label><lb/><hi rendition="#c #b">24. Uber das zwerche
+                    <head><label>[D.190.]</label><lb/><hi rendition="#b #c">24. Uber das zwerche
                             Standenbrett.</hi></head>
                     <lb/>
                     <lg type="poem">
@@ -6619,7 +6622,7 @@
                     <lb/>
                 </div>
                 <div n="2" xml:id="D.192">
-                    <head><label>[D.192.]</label><lb/><hi rendition="#c #b">26. Uber ein Vexier-oder
+                    <head><label>[D.192.]</label><lb/><hi rendition="#b #c">26. Uber ein Vexier-oder
                             Würffelba&#x364;cherlein.</hi></head>
                     <lb/>
                     <lg type="poem">
