@@ -11,6 +11,13 @@
         Jägerstr. 22/23, 10117 Berlin. 
     Licence: Distributed under the Creative Commons Attribution-NonCommercial 3.0 Unported License 
         (CC by-NC; http://creativecommons.org/licenses/by-nc/3.0/de/). -->
+
+    <!-- Simler: a customized copy of the DTABf Schematron 1.1.0
+         (http://www.deutschestextarchiv.de/basisformat.sch). Every change to the original is
+         marked with a comment that starts with "Simler:": two places where rules of the original
+         are switched off (pb/@facs), and the patterns added at the end, whose codes start with
+         "S-" and which mirror the constraints of schema/tei_simler.odd. Everything else is the
+         original, unchanged. -->
     
     <ns prefix="tei" uri="http://www.tei-c.org/ns/1.0"/>
     <ns prefix="xs" uri="http://www.w3.org/2001/XMLSchema"/>
@@ -118,6 +125,10 @@
         </rule>
     </pattern>
 
+    <!-- Simler: E0015, E0014 and E0016 switched off. The DTABf expects pb/@facs to be "#f0001",
+         "#f0002", … in steps of one; here pb/@facs is the e-rara page id (e.g. 4049200), and only
+         pb carries @facs. Its own checks (numeric, unique, ascending) are in
+         sonstige_transformationen/check-structure.py (report 12). -->
     <!--<pattern id="facsInsideFirstPagebreak">
         <rule context="tei:pb[1][not(preceding::tei:pb)]">
             <assert test="@facs[matches(., '^#f0001$')]" role="ERROR">
@@ -198,6 +209,8 @@
     </pattern>
 
     <pattern id="pbElement">
+        <!-- Simler: E0008 switched off, for the same reason: pb/@facs is the e-rara page id, not
+             "#f" with four digits. -->
         <!--<rule context="tei:pb">
             <assert test="@facs[matches(., '#f[0-9]{4}')] and @facs[matches(., '^#f0*([1-9][0-9]*)$')]" role="ERROR">
                 [E0008] Wrong format of @facs-value in element "<name/>"; should be "#f" followed by 4 digits (0-9) starting with 
@@ -433,6 +446,8 @@
             </report>
         </rule>
     </pattern>
+    <!-- Simler: one hi for one stretch, no token repeated from an ancestor (schema/tei_simler.odd,
+         hi-nesting; applied by sonstige_transformationen/simplify-markup.py). -->
     <pattern id="hiNesting">
         <rule context="tei:hi[@rendition][ancestor::tei:text]">
             <report test="parent::tei:hi and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1" role="WARNING">
@@ -458,6 +473,17 @@
         <rule context="tei:text//tei:l | tei:text//tei:head | tei:text//tei:p">
             <report test="node()[1][self::text()][matches(., '^[ &#9;]+([^\s]|$)')] or node()[last()][self::text()][matches(., '[^\s][ &#9;]+$')]" role="WARNING">
                 [S-WS] A space directly after &lt;<name/>&gt; or before &lt;/<name/>&gt;: leave it out.
+            </report>
+        </rule>
+    </pattern>
+
+    <!-- Simler: no div/@type="poem-div" (schema/tei_simler.odd, div-type). The value is not in the
+         DTA base format, and in D it stood on 757 divs of every kind (a voice part, a title, a
+         poem, a group); verlauf §35. -->
+    <pattern id="divType">
+        <rule context="tei:div[@type = 'poem-div']">
+            <report test="true()" role="WARNING">
+                [S-DIVT] div/@type="poem-div" is not used: leave the type out (a group or a voice part needs none; a single poem is type="poem").
             </report>
         </rule>
     </pattern>
