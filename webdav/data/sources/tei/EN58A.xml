@@ -101,7 +101,7 @@
             <lb/>
             
             <!-- TODO HiWi: die lateinischen Zitate stehen links und rechts der Radierung. -->
-            <note place="left"><hi rendition="#aq"><hi rendition="#i">B. Auguſtinus</hi>
+            <note place="left" rendition="#aq"><hi rendition="#i">B. Auguſtinus</hi>
             <lb/>
             <hi rendition="#i">Lib. de Civita-</hi><lb
             break="no"/><hi rendition="#i">te Dei, cap.</hi> 21.
@@ -153,10 +153,10 @@
             <lb/>
             harmonia à
             <lb/>
-            mu-</hi></note>
+            mu-</note>
             <lb break="no"/>
             
-            <note place="right"><hi rendition="#aq">muſicis dicitur
+            <note place="right" rendition="#aq">muſicis dicitur
             <lb/>
             in cantu, eam
             <lb/>
@@ -212,7 +212,7 @@
             feroci, opibus-<lb
             break="no"/>q&#x301;ue præſtante,
             <lb/>
-            poteſt.</hi></note>
+            poteſt.</note>
             <lb/>
             
             <milestone unit="section" rendition="#hr"/>
