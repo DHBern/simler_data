@@ -156,13 +156,32 @@
         <!-- @rendition: pointer tokens declared in tagsDecl. As in tei_simplePrint the value space is
              not closed: new appearance tokens are added by declaring them in tagsDecl. -->
         <classSpec type="atts" ident="att.global.rendition" mode="change">
+          <constraintSpec ident="rendition-order" scheme="schematron">
+            <desc>The tokens of <att>rendition</att> are a set; they are written once, separated by
+              single spaces, in the order in which <gi>tagsDecl</gi> declares them, so that the
+              same appearance is always the same value. The list below is that order;
+              <ident>sonstige_transformationen/normalize-rendition-order.py</ident> checks that the
+              two agree and applies the order.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@rendition]">
+                <sch:let name="order" value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#in', '#sup', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
+                <sch:let name="t" value="tokenize(normalize-space(@rendition), ' ')"/>
+                <sch:report role="warning"
+                  test="string(@rendition) ne string-join(for $o in $order return $t[. = $o], ' ')">[S-REN]
+                  @rendition="<sch:value-of select="@rendition"/>" should read "<sch:value-of
+                  select="string-join(for $o in $order return $t[. = $o], ' ')"/>": its tokens in
+                  the order of tagsDecl, single-spaced (a token tagsDecl does not declare is
+                  dropped from the suggestion).</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="rend" mode="delete"/>
             <attDef ident="style" mode="delete"/>
             <attDef ident="rendition" mode="change" usage="opt">
               <desc>One or more pointers to <gi>rendition</gi> elements in <gi>tagsDecl</gi>,
                 recording the appearance of the source passage (e.g. <val>#aq</val>,
-                <val>#et #aq</val>).</desc>
+                <val>#aq #et</val>), in the order of <gi>tagsDecl</gi>.</desc>
               <datatype minOccurs="1" maxOccurs="unbounded">
                 <dataRef key="teidata.pointer"/>
               </datatype>
@@ -489,7 +508,9 @@
 
         <elementSpec ident="div" module="textstructure" mode="change">
           <desc>A structural division — a book, a group of poems, or an individual poem. <att>type</att>
-            classifies the division; <att>n</att> records its level/running number.</desc>
+            classifies the division where the DTA base format has a value for it (<val>poem</val>,
+            <val>music</val>, <val>dedication</val>, …); a group of poems or a voice part has no
+            type. <att>n</att> records its level/running number.</desc>
           <content>
             <alternate minOccurs="0" maxOccurs="unbounded">
               <textNode/>
@@ -503,11 +524,22 @@
               <elementRef key="num"/>
             </alternate>
           </content>
+          <constraintSpec ident="div-type" scheme="schematron">
+            <desc>No <val>poem-div</val>: a group of poems or a voice part needs no type, and the DTA
+              base format does not know the value.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:div[@type = 'poem-div']">
+                <sch:report role="warning" test="true()">[S-DIVT] div/@type="poem-div" is not used:
+                  leave the type out (a group or a voice part needs none; a single poem is
+                  type="poem").</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="opt">
               <valList type="semi" mode="replace">
                 <valItem ident="poem"><desc>an individual poem</desc></valItem>
-                <valItem ident="poem-div"><desc>a group of poems</desc></valItem>
                 <valItem ident="stanza-div"><desc>a stanza of a strophic poem</desc></valItem>
                 <valItem ident="dedication"><desc>a dedication</desc></valItem>
                 <valItem ident="frontispiece"><desc>a frontispiece</desc></valItem>
@@ -611,8 +643,11 @@
              VERSE
              =================================================================== -->
         <elementSpec ident="lg" module="core" mode="change">
-          <desc>A group of verse lines — in the Simler edition typically a poem
-            (<att>type</att>=<val>poem</val>) or a sub-group/stanza.</desc>
+          <desc>A group of verse lines. The <gi>lg</gi> that holds a whole poem is
+            <att>type</att>=<val>poem</val>, one per poem; an <gi>lg</gi> inside an <gi>lg</gi> (a
+            stanza, which holds <gi>l</gi>, or a section, which holds <gi>lg</gi>) has no
+            <att>type</att>: the nesting says what it is. A voice part on a music page that carries
+            the poem's text keeps <val>poem</val>; an underlay copy stays untyped.</desc>
           <content>
             <alternate minOccurs="1" maxOccurs="unbounded">
               <elementRef key="l"/><elementRef key="lg"/><elementRef key="head"/>
@@ -622,12 +657,27 @@
               <elementRef key="pb"/>
             </alternate>
           </content>
+          <constraintSpec ident="lg-type" scheme="schematron">
+            <desc>One <val>poem</val> per poem, no <att>type</att> below it
+              (sonstige_transformationen/normalize-lg-type.py; verlauf §28).</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lg[@type]">
+                <sch:report role="warning" test="ancestor::tei:lg">[S-LGN] An lg inside an lg has
+                  no @type (here "<sch:value-of select="@type"/>"): a stanza or a section is told by
+                  its nesting.</sch:report>
+                <sch:report role="warning" test="not(ancestor::tei:lg) and @type ne 'poem'">[S-LGV]
+                  @type="<sch:value-of select="@type"/>": the lg that holds a whole poem is
+                  type="poem". A stanza standing outside its poem's lg needs that lg round it.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="opt">
               <valList type="semi" mode="replace">
-                <valItem ident="poem"><desc>a poem</desc></valItem>
-                <valItem ident="poem-subgroup"><desc>a sub-group of a poem</desc></valItem>
-                <valItem ident="stanza"><desc>a stanza</desc></valItem>
+                <valItem ident="poem"><desc>the lg that holds a whole poem</desc></valItem>
+                <valItem ident="stanza"><desc>deprecated: a stanza in a <val>stanza-div</val>, outside
+                  its poem's lg (B, D); to be restructured into an untyped lg inside the
+                  poem's lg</desc></valItem>
               </valList>
             </attDef>
             <attDef ident="n" mode="change" usage="opt"/>
@@ -661,6 +711,19 @@
               <elementRef key="lb"/><elementRef key="pb"/>
             </alternate>
           </content>
+          <constraintSpec ident="line-inner-space" scheme="schematron">
+            <desc>No space or tab directly inside the start or end tag of a verse, a heading or a
+              paragraph (<gi>l</gi>, <gi>head</gi>, <gi>p</gi>): it is not part of the text. A line
+              break with indentation there is formatting and stays.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:text//tei:l | tei:text//tei:head | tei:text//tei:p">
+                <sch:report role="warning" test="node()[1][self::text()][matches(., '^[ &#9;]+([^\s]|$)')] or node()[last()][self::text()][matches(., '[^\s][ &#9;]+$')]">[S-WS]
+                  A space directly after &lt;<sch:name/>&gt; or before &lt;/<sch:name/>&gt;:
+                  leave it out.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="n" mode="change" usage="opt"/>
             <attDef ident="next" mode="change" usage="opt">
@@ -722,6 +785,53 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <constraintSpec ident="hi-spanning-rendition" scheme="schematron">
+            <desc>A <gi>hi</gi> that covers the whole content of a block describes the block: its
+              <att>rendition</att> goes on the block, merged with the block's own tokens (in
+              <gi>tagsDecl</gi> order), and the <gi>hi</gi> goes. Only empty milestones may stand
+              beside it. Positional renditions (initials, superscript, acrostics) stay on
+              <gi>hi</gi>.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:hi[@rendition][ancestor::tei:text]">
+                <sch:report role="warning" test="parent::tei:*[local-name() = ('head', 'p', 'ab', 'signed', 'salute', 'closer', 'opener', 'dateline', 'byline', 'postscript', 'argument', 'epigraph', 'trailer', 'docTitle', 'titlePart', 'docAuthor', 'docEdition', 'docImprint', 'l', 'lg', 'label', 'speaker', 'stage', 'item', 'cell', 'note', 'fw')] and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1 and node() and not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))">[S-HIB]
+                  This hi covers the whole &lt;<sch:value-of select="local-name(..)"/>&gt;: its
+                  rendition belongs on the &lt;<sch:value-of select="local-name(..)"/>&gt;
+                  (merged with the block's own, in tagsDecl order), and the hi can go.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <constraintSpec ident="hi-adjacent" scheme="schematron">
+            <desc>Two <gi>hi</gi> with the same <att>rendition</att> that only line ends separate are
+              one <gi>hi</gi> across them: always across a joined line end (the word goes on), and
+              across a plain one inside a block whose lines stay together (<gi>head</gi>,
+              <gi>l</gi>, <gi>p</gi>, <gi>signed</gi>, …). A single letter, and positional
+              renditions (initials, superscript, acrostics), are marked by themselves.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))]">
+                <sch:report role="warning" test="let $n := following-sibling::*[not(self::tei:lb)][1] return $n[self::tei:hi][count(@*) = 1][@rendition = current()/@rendition] and exists(following-sibling::tei:lb[. &lt;&lt; $n]) and not(following-sibling::node()[. &lt;&lt; $n][self::comment() or self::processing-instruction() or self::text()[normalize-space()] or self::*[not(self::tei:lb)] or self::tei:lb[*]]) and string-length(normalize-space(.)) gt 1 and string-length(normalize-space($n)) gt 1 and (every $b in following-sibling::tei:lb[. &lt;&lt; $n] satisfies $b/@break = 'no' or ancestor::*[not(self::tei:hi)][1][local-name() = ('head', 'l', 'p', 'signed', 'closer', 'salute', 'dateline', 'byline', 'trailer', 'titlePart', 'docTitle', 'docAuthor', 'docImprint', 'docEdition', 'label', 'item')])">[S-HIA]
+                  The next hi has the same rendition and only line ends stand between: one hi
+                  across them.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
+          <constraintSpec ident="hi-nesting" scheme="schematron">
+            <desc>One <gi>hi</gi> carries all the renditions of a stretch: a <gi>hi</gi> that is the
+              whole content of its parent <gi>hi</gi> is merged into it, and a <gi>hi</gi> does not
+              repeat a token that an ancestor already has.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:hi[@rendition][ancestor::tei:text]">
+                <sch:report role="warning" test="parent::tei:hi and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1">[S-HIN]
+                  This hi is the whole content of its parent hi: one hi with both renditions
+                  (<sch:value-of select="../@rendition"/> <sch:value-of select="@rendition"/>).</sch:report>
+                <sch:report role="warning" test="some $t in tokenize(normalize-space(@rendition), ' ') satisfies $t = (for $a in ancestor::*[@rendition] return tokenize(normalize-space($a/@rendition), ' '))">[S-HIR]
+                  A token of this hi (<sch:value-of select="@rendition"/>) is already on an
+                  ancestor: leave it out.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="rendition" mode="change" usage="req"/>
           </attList>
@@ -736,7 +846,7 @@
           <model behaviour="inline" useSourceRendition="true"/>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <head rendition="#c"><hi rendition="#b">Aller<lb/> Psalmen Davids Haubt<lb break="no"/>begriff/</hi></head>
+              <head rendition="#c">Der <hi rendition="#aq">LXXII.</hi> Pſalm/ des geiſtreichen Poeten/</head>
             </egXML>
           </exemplum>
         </elementSpec>
@@ -901,15 +1011,26 @@
 
         <!-- ===== editorial interventions: the print, or in the reading text the correction ===== -->
         <elementSpec ident="choice" module="core" mode="change">
-          <desc>Groups the source reading and the editors' one, in either order: a printing error
-            (<gi>sic</gi>) and its correction (<gi>corr</gi>), or an abbreviation (<gi>abbr</gi>)
-            and its expansion (<gi>expan</gi>).</desc>
+          <desc>Groups the source reading and the editors' one, the source first, as in the DTA
+            base format: a printing error (<gi>sic</gi>) and its correction (<gi>corr</gi>), or an
+            abbreviation (<gi>abbr</gi>) and its expansion (<gi>expan</gi>).</desc>
           <content>
             <alternate minOccurs="1" maxOccurs="unbounded">
               <elementRef key="sic"/><elementRef key="corr"/>
               <elementRef key="abbr"/><elementRef key="expan"/>
             </alternate>
           </content>
+          <constraintSpec ident="choice-order" scheme="schematron">
+            <desc>The source reading comes first: <gi>sic</gi> before <gi>corr</gi>,
+              <gi>abbr</gi> before <gi>expan</gi>.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:choice">
+                <sch:report role="warning" test="tei:corr[following-sibling::tei:sic] or tei:expan[following-sibling::tei:abbr]">[S-CHO]
+                  In choice the source reading comes first: sic before corr, abbr before
+                  expan.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <!-- the print, and in the reading text the editors' reading; the search finds both -->
           <model predicate="sic and corr or abbr and expan" behaviour="alternate">
             <param name="default" value="(sic, abbr)"/>
@@ -1354,42 +1475,80 @@
             <list>
               <item><gi>lb</gi> is never implicit: every line end is marked explicitly, including the
                 end of the first line of a block.</item>
-              <item>when a line end coincides with the end of one or more elements, the <gi>lb</gi> is
-                placed <emph>after the outermost closing tag</emph>, as a following sibling of that
-                element — <emph>not</emph> as the last child inside it. In particular the line end of
-                the last verse line of a poem follows the closing <gi>lg</gi> (and, where the
-                <gi>lg</gi> is the last child of its <gi>div</gi>, the closing <gi>div</gi>), never
-                the last <gi>l</gi>.</item>
+              <item>when a line end coincides with the end of one or more elements, the <gi>lb</gi>
+                follows the element that <emph>holds</emph> the line (<gi>l</gi>, <gi>p</gi>,
+                <gi>head</gi>, <gi>closer</gi>, <gi>fw</gi>, …) and stays <emph>inside</emph> every
+                further ancestor: the line belongs to its unit, so its end does too. The line end of a
+                stanza's last verse follows that stanza's <gi>lg</gi>, never its last <gi>l</gi>; in
+                nested groups it stays inside the enclosing <gi>lg</gi>, and it never follows a
+                closing <gi>div</gi>. A <gi>note</gi> set on its verse's line does not move it; a
+                <gi>note</gi> printed on a line of its own ends with its own <gi>lb</gi>.</item>
               <item>only <gi>pb</gi>, <gi>cb</gi> and <gi>space</gi> stand without a following
                 <gi>lb</gi>; and no <gi>lb</gi> is set immediately before
                 <gi>front</gi>/<gi>body</gi>/<gi>back</gi>/<gi>titlePage</gi> closes.</item>
               <item>for a word hyphenated across the line, the visible hyphen is kept in the
                 transcription and <att>break</att>=<val>no</val> is set on the <gi>lb</gi> at that
-                line end. Whitespace on either side of such an <gi>lb</gi> is not significant: the
-                word is joined whatever the indentation. A hyphen that ends a word (an ellipsis,
-                as in <mentioned>buß- und gnadbegierig</mentioned>) takes a plain <gi>lb</gi>.</item>
+                line end, and no whitespace stands beside it ([S-LBW]). A hyphen that ends a word (an ellipsis,
+                as in <mentioned>buß- und gnadbegierig</mentioned>) takes a plain <gi>lb</gi>. No
+                whitespace stands next to a joined line end in the text; where the XML line breaks
+                with the printed one, the break stands inside the tag
+                (<code>er-&lt;lb</code>⏎<code>break="no"/>weißt</code>).</item>
             </list>
-            The Schematron constraint <ident>lb-line-end-placement</ident> checks that <gi>lb</gi> is
-            not left as the last child of a line-bearing element.</desc>
+            The Schematron constraint <ident>lb-line-end-placement</ident> checks this placement;
+            <ident>sonstige_transformationen/homogenize-closing-lb.py</ident> applies it.</desc>
           <content><empty/></content>
           <constraintSpec ident="lb-line-end-placement" scheme="schematron">
-            <desc>Enforces the DTABf rule that a line break marks a line END placed after the
-              outermost closing element: an <gi>lb</gi> may not be left as the last (significant)
-              child of a line-bearing element such as <gi>lg</gi>, <gi>l</gi> or <gi>div</gi> — it
-              should be moved to follow that element's closing tag.</desc>
+            <desc>The line end of the last line of an element follows the element that holds the
+              line and stays inside every further ancestor: a stanza's last verse is followed by
+              <code>&lt;/lg>&lt;lb/></code>; nested groups and divisions close after that
+              <gi>lb</gi>. A joined line end (<att>break</att>=<val>no</val>) stands where its word
+              breaks and is not concerned. A line followed by a new <gi>div</gi> or <gi>lg</gi>
+              must have its line end marked at all ([S-LBM]).</desc>
             <constraint>
-              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                context="tei:lb[not(following-sibling::*) and not(following-sibling::text()[normalize-space()])]">
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lb[not(@break='no')]">
+                <sch:let name="last" value="not(following-sibling::node()[self::* or self::text()[normalize-space()]])"/>
+                <sch:let name="prev" value="preceding-sibling::node()[self::* or self::text()[normalize-space()]][1]"/>
                 <sch:report role="warning"
-                  test="parent::tei:l or parent::tei:lg or parent::tei:div or parent::tei:head
+                  test="$last and not($prev[self::tei:lg]) and (parent::tei:l or parent::tei:head
                       or parent::tei:p or parent::tei:list or parent::tei:item or parent::tei:hi
                       or parent::tei:closer or parent::tei:salute or parent::tei:signed
                       or parent::tei:dateline or parent::tei:titlePart or parent::tei:figure
-                      or parent::tei:fw or parent::tei:body or parent::tei:front">
-                  [S-LB] A line break (lb) marks a line END and must follow the outermost closing
-                  element; here it is the last child of &lt;<sch:value-of select="local-name(parent::*)"/>&gt;.
-                  Move the lb to immediately after the closing &lt;/<sch:value-of select="local-name(parent::*)"/>&gt; tag.
-                </sch:report>
+                      or parent::tei:fw or parent::tei:body or parent::tei:front)">[S-LB]
+                  A line break (lb) marks a line END and follows the element that holds the line;
+                  here it is the last child of &lt;<sch:value-of select="local-name(parent::*)"/>&gt;.
+                  Move it to immediately after &lt;/<sch:value-of select="local-name(parent::*)"/>&gt;.</sch:report>
+                <sch:report role="warning"
+                  test="$last and parent::tei:lg and preceding-sibling::node()[self::* or self::text()[normalize-space()]][not(self::tei:note)][1][self::tei:l]">[S-LBV]
+                  The line end of a stanza's last verse follows the stanza: move this lb to
+                  immediately after &lt;/lg&gt;.</sch:report>
+                <sch:report role="warning" test="$prev[not(self::tei:lb)]/descendant::node()[self::* or self::text()[normalize-space()]][last()][self::tei:lb[not(@break='no')]]">[S-LB2]
+                  The line before this lb already ends with an lb inside the preceding
+                  &lt;<sch:value-of select="local-name($prev)"/>&gt;: nothing is printed between the
+                  two, so this one is a doubling (or an empty line, which is not encoded).</sch:report>
+                <sch:report role="warning" test="$prev[self::tei:div]">[S-LBD]
+                  The line end of a unit's last line belongs to the unit: move this lb before
+                  &lt;/div&gt;.</sch:report>
+                <sch:report role="warning"
+                  test="$prev[self::tei:lg][node()[self::* or self::text()[normalize-space()]][not(self::tei:note[preceding-sibling::node()[self::* or self::text()[normalize-space()]][1][self::tei:l]])][last()][not(self::tei:l or self::tei:lb)]]">[S-LBG]
+                  This lb ends the last line of the preceding &lt;lg&gt;, a line held by its last
+                  child &lt;<sch:value-of select="local-name($prev/*[last()])"/>&gt;: move the lb inside, directly after
+                  &lt;/<sch:value-of select="local-name($prev/*[last()])"/>&gt;.</sch:report>
+              </sch:rule>
+              <!-- A line end that is missing altogether: the line is followed by a new unit or
+                   group, so it certainly ends. Elements whose last line already ends inside them,
+                   and those with no printed text (an editorial marker such as $D.18$), are not
+                   concerned; before pb, fw, milestone or cb the line end may follow the page
+                   furniture, so those are not checked. -->
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="(tei:l | tei:p | tei:head | tei:closer)[not(ancestor::tei:note)]">
+                <sch:let name="next" value="following::node()[self::* or self::text()[normalize-space()]][1]"/>
+                <sch:let name="end" value="(descendant::node()[self::* or self::text()[normalize-space()]])[last()]"/>
+                <sch:report role="warning"
+                  test="$next[self::tei:div or self::tei:lg] and not($end[self::tei:lb])
+                      and replace(replace(string(.), '\$[^$]*\$', ''), '[\s\p{Z}]', '') ne ''">[S-LBM]
+                  The line of this &lt;<sch:value-of select="local-name()"/>&gt; ends before a new
+                  &lt;<sch:value-of select="local-name($next)"/>&gt;, but its line end is not marked:
+                  add an lb after it (after the stanza's &lt;/lg&gt; for a verse).</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -1403,6 +1562,15 @@
                   A joined line end opens its element.</sch:report>
                 <sch:report role="warning" test="preceding-sibling::*[1][self::tei:fw[@type='catch']]">[S-LBC]
                   The line of a catchword ends with a plain lb.</sch:report>
+                <sch:report role="warning" test="(preceding-sibling::node()[1][self::text()][matches(., '\s$')] or following-sibling::node()[1][self::text()][matches(., '^\s')]) and (not(parent::tei:lg or parent::tei:div or parent::tei:body or parent::tei:front or parent::tei:back) or preceding-sibling::node()[1][self::text()[normalize-space()]] or following-sibling::node()[1][self::text()[normalize-space()]]) and preceding-sibling::node()[not(self::text()[not(normalize-space())])][1][self::text() or self::tei:hi or self::tei:supplied or self::tei:choice or self::tei:sic or self::tei:corr or self::tei:orig or self::tei:reg or self::tei:abbr or self::tei:expan or self::tei:unclear or self::tei:rs or self::tei:num or self::tei:foreign or self::tei:g] and following-sibling::node()[not(self::text()[not(normalize-space())])][1][self::text() or self::tei:hi or self::tei:supplied or self::tei:choice or self::tei:sic or self::tei:corr or self::tei:orig or self::tei:reg or self::tei:abbr or self::tei:expan or self::tei:unclear or self::tei:rs or self::tei:num or self::tei:foreign or self::tei:g]">[S-LBW]
+                  Whitespace next to a joined line end splits the word in plain text: write
+                  er-&lt;lb break="no"/&gt;weißt (a line break may stand inside the tag:
+                  &lt;lb⏎ break="no"/&gt;). If the two words are separate, the line end is a
+                  plain lb instead. Next to page furniture, an anchor or another verse this is not
+                  checked.</sch:report>
+                <sch:report role="warning" test="matches(string-join(following-sibling::node()[position() le 2] ! string(), ''), '^\s*und([\s/.,:;!?]|$)', 'i')">[S-LBU]
+                  The next word is "und": the hyphen ends a word (Geburt- und Sterb-Getichte), so the
+                  line end is a plain lb.</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -1444,28 +1612,57 @@
             <param name="type" value="'line'"/>
           </model>
           <exemplum>
-            <p>The line end of the last verse line follows the <emph>outermost</emph> closing element
-              — here after <gi>div</gi>, as a sibling of it — not inside <gi>lg</gi> after the last
-              <gi>l</gi>:</p>
+            <p>The line end of a stanza's last verse follows its <gi>lg</gi>; the enclosing
+              <gi>lg</gi> and <gi>div</gi> close after it:</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
-              <div type="poem">
+              <div n="2">
                 <lg type="poem">
-                  <l>Die gwaltigen umsonst sich wider Christum lehnen:</l>
+                  <lg n="1">
+                    <l>Die gwaltigen umsonst sich wider Christum lehnen:</l>
+                    <lb/>
+                    <l rendition="#et">dann Gottes rahtschluß muß fortgehen immerzu/</l>
+                  </lg>
                   <lb/>
-                  <l rendition="#et">dann Gottes rahtschluß muß fortgehen immerzu/</l>
                 </lg>
               </div>
-              <lb/>
             </egXML>
           </exemplum>
           <exemplum>
-            <p>Counter-example — <emph>incorrect</emph>: the final <gi>lb</gi> must not be the last
-              child of <gi>lg</gi>:</p>
+            <p>A prose unit: the line end follows <gi>p</gi>, inside the <gi>div</gi>:</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <div>
+                <p rendition="#c #smaller">Ende des erſten Buchs der <lb/> Pſalmen.</p>
+                <lb/>
+              </div>
+            </egXML>
+          </exemplum>
+          <exemplum>
+            <p>Incorrect: the line end inside the stanza, after the last <gi>l</gi> ([S-LBV]):</p>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
               <lg type="poem">
                 <l>dann Gottes rahtschluß muß fortgehen immerzu/</l>
                 <lb/>
               </lg>
+            </egXML>
+          </exemplum>
+          <exemplum>
+            <p>Incorrect: the line end after the enclosing group ([S-LBG]):</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <lg type="poem">
+                <lg n="1">
+                  <l>dann Gottes rahtschluß muß fortgehen immerzu/</l>
+                </lg>
+              </lg>
+              <lb/>
+            </egXML>
+          </exemplum>
+          <exemplum>
+            <p>Incorrect: the line end after the <gi>div</gi> ([S-LBD]):</p>
+            <egXML xmlns="http://www.tei-c.org/ns/Examples">
+              <div>
+                <p rendition="#c #smaller">Ende des erſten Buchs der <lb/> Pſalmen.</p>
+              </div>
+              <lb/>
             </egXML>
           </exemplum>
           <exemplum>
