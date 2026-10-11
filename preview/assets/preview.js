@@ -15,15 +15,6 @@
   // `data-values` for its attribute on <html>; the stylesheet does the rest.
   // The choice is kept across documents.
 
-  var store = {
-    get: function (key) {
-      try { return localStorage.getItem('simler-preview:' + key) } catch (e) { return null }
-    },
-    set: function (key, value) {
-      try { localStorage.setItem('simler-preview:' + key, value) } catch (e) { /* file:// */ }
-    },
-  }
-
   document.querySelectorAll('[data-switch]').forEach(function (control) {
     var name = control.dataset.switch
     var values = control.dataset.values.split(' ')
@@ -42,7 +33,7 @@
       else control.setAttribute('aria-pressed', String(i > 0))
     }
 
-    var saved = values.indexOf(store.get(name))
+    var saved = values.indexOf(previewStore.get(name))
     set(saved >= 0 ? saved : current())
 
     control.addEventListener(type === 'button' ? 'click' : 'input', function () {
@@ -50,7 +41,7 @@
         : type === 'range' ? Number(control.value)
         : (current() + 1) % values.length
       set(i)
-      store.set(name, values[i])
+      previewStore.set(name, values[i])
     })
   })
 
@@ -239,18 +230,23 @@
     }
 
     createPopover(cardPanel, ['.tei-rs[data-key]'], function (trigger) {
-      var entity = entities[trigger.dataset.key]
-      if (!entity) return false // no register entry: nothing to show
-      kind.textContent = entity.kind
-      label.textContent = entity.label
-      line(detail, entity.detail)
-      line(note, entity.note)
+      // A key may list several entries; the card shows them side by side.
+      var found = trigger.dataset.key.split(/\s+/).map(function (key) { return entities[key] }).filter(Boolean)
+      if (!found.length) return false // no register entry: nothing to show
+      var all = function (name) { return found.map(function (entity) { return entity[name] }).filter(Boolean).join(' · ') }
+      kind.textContent = found[0].kind
+      label.textContent = all('label')
+      line(detail, all('detail'))
+      line(note, all('note'))
 
       meta.replaceChildren()
-      var count = document.createElement('span')
-      count.textContent = entity.count === 1 ? '1 Nennung' : entity.count + ' Nennungen'
-      meta.append(count)
-      entity.links.forEach(function (link) {
+      // How often is per entry, so it says something only for one.
+      if (found.length === 1) {
+        var count = document.createElement('span')
+        count.textContent = found[0].count === 1 ? '1 Nennung' : found[0].count + ' Nennungen'
+        meta.append(count)
+      }
+      found.flatMap(function (entity) { return entity.links }).forEach(function (link) {
         var a = document.createElement('a')
         a.href = link.href
         a.rel = 'noreferrer'
@@ -259,6 +255,23 @@
         meta.append(a)
       })
       return true
+    })
+  }
+  // ── The way into a synopsis ──────────────────────────────────────────────
+  // A poem that has been aligned gets a link to its synopsis, from the island
+  // `build.ts` writes: the ids this document actually contains.
+
+  var links = document.querySelector('script[data-synopses]')
+  if (links) {
+    var hrefs = JSON.parse(links.textContent)
+    Object.keys(hrefs).forEach(function (id) {
+      var section = document.getElementById(id)
+      if (!section) return
+      var link = document.createElement('a')
+      link.className = 'synopsis-link no-print'
+      link.href = hrefs[id]
+      link.textContent = 'Synopse'
+      section.prepend(link)
     })
   }
 })()

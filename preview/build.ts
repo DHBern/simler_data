@@ -12,7 +12,7 @@
  */
 
 import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
-import { dirname, join, relative, resolve } from 'node:path'
+import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 import * as pagefind from 'pagefind'
@@ -23,7 +23,9 @@ import { loadEntities, type Entity } from './entities'
 import {
   coverage, createProcessor, idFindings, imageRoot, parse, readOdd, renderTei, type Decision,
 } from './lib'
+import { loadSynopses, numberLines } from './alignments'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
+import { synopsesPage, synopsisHref, synopsisPage } from './synopsis'
 
 type Processor = ReturnType<typeof createProcessor>
 
@@ -33,6 +35,13 @@ const BLOB = process.env.GITHUB_SHA
   ? `${process.env.GITHUB_SERVER_URL}/${process.env.GITHUB_REPOSITORY}/blob/${process.env.GITHUB_SHA}`
   : 'https://github.com/DHBern/simler_data/blob/main'
 const ODD = resolve(here, '../schema/tei_simler.odd')
+/** The alignments the synopsis pages are built from; absent until a poem is aligned. */
+const ALIGNMENTS = resolve(here, '../alignment/documents')
+/** Where each imported line stands in the print, written beside the import files. */
+const LINES = resolve(here, '../alignment/import/lines')
+
+/** A repository path as the pages print it, whichever separator the OS uses. */
+const posix = (path: string): string => path.split(sep).join('/')
 
 interface Args {
   src: string
@@ -68,6 +77,7 @@ function tally(warnings: string[]): string[] {
 
 /**
  * The entities this document names, with how often — the card's own page data.
+ * A key may list several entries (`person_012 person_310`): each counts.
  */
 function entitiesIn(
   keys: string[],
@@ -76,7 +86,7 @@ function entitiesIn(
   const used: Record<string, Entity & { count: number }> = {}
   const unknown = new Set<string>()
 
-  for (const key of keys) {
+  for (const key of keys.flatMap((list) => list.split(/\s+/))) {
     if (!key) continue
     if (used[key]) {
       used[key].count++
@@ -209,11 +219,18 @@ async function main() {
 
   if (records) await mkdir(join(out, 'records'), { recursive: true })
 
+  const synopses = await loadSynopses(ALIGNMENTS, LINES)
+  const aligned = synopses.map((synopsis) => synopsis.id)
+
   const docs: PreviewDoc[] = []
   for (const name of names) {
     // The decisions are written and dropped; keeping 74 of these trees is not worth the memory.
     const { decisions, ...doc } = render(name, await readFile(join(src, name), 'utf8'), registers, processor, records)
-    await writeFile(join(out, doc.out), documentPage(doc, odd.views, odd.availability))
+    // Only the poems standing in this document, so the page carries no list of the rest.
+    const here = aligned.filter((id) => doc.html.includes(`id="${id}"`))
+    if (here.length) doc.html = numberLines(doc.html, new Set(here))
+    await writeFile(join(out, doc.out), documentPage(doc, odd.views, odd.availability,
+      Object.fromEntries(here.map((id) => [id, synopsisHref(id)]))))
     if (decisions) {
       const json = JSON.stringify({ document: name, output: 'web', availability: odd.availability, root: decisions })
       await writeFile(join(out, 'records', name.replace(/\.xml$/i, '.json')), json)
@@ -223,12 +240,18 @@ async function main() {
     for (const warning of doc.warnings) console.warn(`  ${name}: ${warning}`)
   }
 
-  const source = relative(resolve(here, '..'), src).replaceAll('\\', '/')
+  const source = posix(relative(resolve(here, '..'), src))
   await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`, odd.availability))
   await writeFile(join(out, 'search.html'), searchPage(docs))
+  await writeFile(join(out, 'synopsen.html'), synopsesPage(synopses))
+  for (const synopsis of synopses) {
+    await writeFile(join(out, synopsisHref(synopsis.id)), synopsisPage(synopsis))
+  }
   const gaps = coverage(odd)
   await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps))
   await buildIndex(docs, out)
+
+  console.log(`Synopsen: ${synopses.length} aus ${posix(relative(resolve(here, '..'), ALIGNMENTS))}.`)
 
   const named = new Set(docs.flatMap((doc) => Object.keys(doc.entities)))
   console.log(`Register: ${Object.keys(registers).length} Einträge, ${named.size} im Korpus genannt.`)

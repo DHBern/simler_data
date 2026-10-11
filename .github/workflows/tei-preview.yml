@@ -12,6 +12,8 @@ on:
       - "gsheet/csv/**"
       - "schema/**"
       - "preview/**"
+      - "alignment/documents/**"
+      - "alignment/import/lines/**"
       - ".github/workflows/tei-preview.yml"
   workflow_dispatch:
 

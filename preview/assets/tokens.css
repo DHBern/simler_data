@@ -40,6 +40,9 @@
   --c-org: 36 92 138;
   --c-bibl: 122 47 95;
   --c-institution: 74 107 42;
+
+  /* Where a witness reads nothing: an omission is not a degree of variance. */
+  --c-gap: 150 95 20;
 }
 
 /* ── Stil 1 · Papier ─────────────────────────────────────────────────────── */
@@ -70,6 +73,7 @@
   --c-org: 132 175 219;
   --c-bibl: 214 149 186;
   --c-institution: 160 195 118;
+  --c-gap: 214 168 106;
 }
 
 /* Follow the OS until the reader says otherwise. */
@@ -90,6 +94,7 @@
     --c-org: 132 175 219;
     --c-bibl: 214 149 186;
     --c-institution: 160 195 118;
+    --c-gap: 214 168 106;
   }
 }
 

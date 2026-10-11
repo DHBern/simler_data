@@ -1,3 +1,12 @@
 node_modules/
+__pycache__/
 
 preview/dist/
+
+# Generated from the TEI by alignment/import.xsl in a few seconds; only the
+# worklist and the line maps are kept, because the preview build reads them.
+alignment/import/*/
+!alignment/import/lines/
+alignment/auto/
+# alignment/documents/ is generated too (documents.py), but committed: CI builds
+# the synopses from it, and the online editor opens the poems there.

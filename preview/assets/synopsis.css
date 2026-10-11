@@ -1,0 +1,301 @@
+/* The synopsis pages. Loaded only by them; `preview.css` carries the chrome
+   they share with the reading pages, and `tokens.css` the design tokens. */
+
+/* ── Synopses ─────────────────────────────────────────────────────────────── */
+
+/* The text is read across the columns, so the page takes the width it needs. */
+.index:has(.synopsis) { max-width: none; }
+
+/* Columns of equal width, so the text wraps inside them and the table needs no
+   scroller of its own: a scroll container would capture the sticky header,
+   which then hangs over the first row instead of the top of the window. */
+.synopsis { width: 100%; table-layout: fixed; border-collapse: collapse; }
+.synopsis th, .synopsis td {
+  padding: 0.3rem 0.7rem;
+  border-bottom: 1px solid rgb(var(--c-line));
+  text-align: left;
+  vertical-align: top;
+}
+/* The reading text keeps the reading face; the numbers stay in the UI face. */
+.synopsis td { font-family: var(--f-text); font-size: 1rem; line-height: 1.5; }
+.synopsis .num {
+  width: 3rem;
+  font-family: var(--f-ui);
+  font-size: 0.7rem;
+  color: rgb(var(--c-muted));
+}
+.synopsis thead th {
+  position: sticky;
+  top: 2.5rem; /* under the bar, which is sticky itself */
+  background-color: rgb(var(--c-paper));
+  font-size: 0.75rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* Too narrow for the columns: the table scrolls sideways, and the header goes
+   back to the top of that scroller, where it cannot cover anything. */
+@media (max-width: 60rem) {
+  .synopsis-wrap { overflow-x: auto; }
+  .synopsis { table-layout: auto; min-width: 48rem; }
+  .synopsis thead th { top: 0; }
+  .synopsis tr.unit th { top: 1.6rem; }
+}
+.synopsis tbody tr:hover { background-color: rgb(var(--c-ink) / 0.03); }
+.synopsis .is-head td { font-weight: 600; }
+/* A witness without text here, and one LERA showed as repeating an earlier segment. */
+.synopsis .gap::after { content: '—'; color: rgb(var(--c-muted) / 0.6); }
+.synopsis .copy { color: rgb(var(--c-muted)); }
+
+/* The number of a segment is a link to it: quiet until it is wanted. */
+.synopsis .num a { color: inherit; text-decoration: none; }
+.synopsis .num a:hover { text-decoration: underline; }
+.synopsis .num a.copied::after { content: ' kopiert'; color: rgb(var(--c-accent)); }
+
+/* Which poem of a bundle a row belongs to, in view while that poem is. Tinted
+   across the full width, so it reads as a divider and not as an empty row. */
+[data-synopsis]:not([data-units]) .synopsis tr.unit,
+[data-synopsis]:not([data-units]) .syn-units { display: none; }
+.synopsis tr.unit th {
+  position: sticky;
+  top: 4.1rem; /* under the bar and the column heads, both sticky themselves */
+  padding: 0.3rem 0.7rem;
+  /* Opaque, so rows pass behind it, with the tint laid over the paper. */
+  background-color: rgb(var(--c-paper));
+  background-image: linear-gradient(rgb(var(--c-ink) / 0.05), rgb(var(--c-ink) / 0.05));
+  font-family: var(--f-ui);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0; /* the page's other th are small caps; a band is a label */
+  text-align: left;
+  text-transform: none;
+  color: rgb(var(--c-muted));
+}
+.unit-n { display: inline-block; min-width: 2.5rem; font-variant-numeric: tabular-nums; }
+.unit-meta { margin-left: 0.6rem; }
+
+/* Where each poem of the bundle begins. */
+.syn-units {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.9rem;
+  margin: 0 0 1rem;
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+}
+.syn-units a {
+  max-width: 12rem;
+  overflow: hidden;
+  color: rgb(var(--c-muted));
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.syn-units a:hover { color: rgb(var(--c-ink)); text-decoration: underline; }
+.syn-units b { color: rgb(var(--c-ink)); font-weight: 600; }
+
+/* A word that varies is marked faintly; the characters that differ from the
+   other witnesses carry the colour, shaded by how far the witnesses are apart.
+   So a spelling shows as one or two letters and another word as the whole of
+   it. Bold would shift the metrics of a diplomatic text, so only the colour
+   marks them. */
+.var { background-color: rgb(var(--c-accent) / 0.07); border-radius: 3px; }
+.var b { font-weight: inherit; border-radius: 2px; background-color: rgb(var(--c-accent) / 0.25); }
+.var[data-degree='2'] b { background-color: rgb(var(--c-accent) / 0.38); }
+.var[data-degree='3'] b { background-color: rgb(var(--c-accent) / 0.5); }
+.var.is-linked { background-color: rgb(var(--c-accent) / 0.3); }
+
+/* ── The strip: where the variance is, and where the reader is in it ─────── */
+
+.syn-strip {
+  position: fixed;
+  top: 3.5rem;
+  right: 0.35rem;
+  bottom: 1rem;
+  width: 1.1rem;
+  cursor: pointer;
+  touch-action: none;
+}
+.syn-strip i {
+  position: absolute;
+  right: 0.35rem;
+  height: 2px;
+  border-radius: 1px;
+  background-color: rgb(var(--c-accent));
+}
+/* As long and as dark as the widest disagreement in that segment. */
+.syn-strip i[data-level='0'] { width: 0.15rem; opacity: 0.12; }
+.syn-strip i[data-level='1'] { width: 0.3rem; opacity: 0.35; }
+.syn-strip i[data-level='2'] { width: 0.45rem; opacity: 0.6; }
+.syn-strip i[data-level='3'] { width: 0.6rem; opacity: 0.85; }
+/* Where a poem of a bundle begins, across the whole strip. */
+.syn-strip i.tick {
+  right: 0;
+  width: 1.1rem;
+  height: 1px;
+  background-color: rgb(var(--c-ink));
+  opacity: 0.3;
+}
+/* What is on screen. */
+.syn-here {
+  position: absolute;
+  inset-inline: 0;
+  border: 1px solid rgb(var(--c-ink) / 0.45);
+  border-radius: 2px;
+  background-color: rgb(var(--c-ink) / 0.06);
+}
+/* The spellings are switched off: so are their lines. */
+[data-variants='words'] .syn-strip i[data-varies='spelling'] { opacity: 0.12; width: 0.15rem; }
+@media (max-width: 60rem) {
+  .syn-strip { display: none; }
+}
+
+/* ── The reading options ──────────────────────────────────────────────────── */
+
+.syn-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 1.25rem;
+  margin: 1rem 0;
+  padding: 0.5rem 0;
+  border-block: 1px solid rgb(var(--c-line));
+}
+.syn-witnesses { gap: 0.6rem; }
+.syn-witnesses label { display: inline-flex; align-items: center; gap: 0.25rem; }
+.syn-bar select { font: inherit; color: inherit; background-color: transparent; }
+.syn-count { color: rgb(var(--c-muted)); font-size: 0.8rem; }
+
+/* Spelling only, or nothing at all: the marks go, the words stay. */
+[data-variants='words'] .var[data-kind='spelling'], [data-variants='off'] .var,
+[data-variants='words'] .var[data-kind='spelling'] b, [data-variants='off'] .var b { background-color: transparent; }
+
+/* Only the segments that differ — by the measure the reader chose. Headings go
+   with the rest: one that reads the same in every witness is not a difference,
+   and the map keeps the poem's divisions in view. */
+[data-varying] tbody tr[data-varies='none'],
+[data-varying][data-variants='words'] tbody tr[data-varies='spelling'] { display: none; }
+
+/* A row the strip or a link points at. */
+.synopsis tbody tr { scroll-margin-top: 4rem; }
+.synopsis tbody tr:target { background-color: rgb(var(--c-accent) / 0.12); }
+
+/* A band whose poem the filter has emptied has nothing left to head. The two
+   rules restate the filter above, since `:has` tests the markup, not what the
+   rules did to it. */
+[data-varying] tbody:not(:has(tr[data-varies='word']:not(.app))):not(:has(tr[data-varies='spelling']:not(.app))) tr.unit,
+[data-varying][data-variants='words'] tbody:not(:has(tr[data-varies='word']:not(.app))) tr.unit { display: none; }
+
+/* A hidden witness: its column goes, header and cells alike. */
+[data-hide~='1'] [data-w='1'], [data-hide~='2'] [data-w='2'], [data-hide~='3'] [data-w='3'],
+[data-hide~='4'] [data-w='4'], [data-hide~='5'] [data-w='5'], [data-hide~='6'] [data-w='6'] { display: none; }
+
+/* A base witness reads as text; the others show only where they depart from it.
+   What they share is not dropped but reduced to a dot, so two departures cannot
+   run into one word and the reader still sees where in the line they fall. */
+[data-base] td[data-w] .same { font-size: 0; }
+[data-base] td[data-w] .same::after {
+  content: ' · ';
+  font-size: 0.8rem;
+  color: rgb(var(--c-muted) / 0.7);
+}
+[data-base='1'] td[data-w='1'] .same, [data-base='2'] td[data-w='2'] .same,
+[data-base='3'] td[data-w='3'] .same, [data-base='4'] td[data-w='4'] .same,
+[data-base='5'] td[data-w='5'] .same, [data-base='6'] td[data-w='6'] .same { font-size: inherit; }
+[data-base='1'] td[data-w='1'] .same::after, [data-base='2'] td[data-w='2'] .same::after,
+[data-base='3'] td[data-w='3'] .same::after, [data-base='4'] td[data-w='4'] .same::after,
+[data-base='5'] td[data-w='5'] .same::after, [data-base='6'] td[data-w='6'] .same::after { content: none; }
+
+[data-base] tr.no-base .same { font-size: inherit; }
+[data-base] tr.no-base .same::after { content: none; }
+
+/* The apparatus of a segment, under its row. */
+.synopsis tr.app { display: none; }
+[data-apparatus] .synopsis tr.app { display: table-row; }
+.app-list {
+  margin: 0;
+  padding-left: 1.2rem;
+  font-family: var(--f-ui);
+  font-size: 0.8rem;
+  color: rgb(var(--c-muted));
+}
+.app-list li { padding: 0.1rem 0; }
+.app-list span { margin-right: 0.9rem; white-space: nowrap; }
+/* A classification; a machine's, not yet confirmed, stays visibly provisional. */
+.app-rel { margin-left: 0.4rem; font-variant: small-caps; color: rgb(var(--c-ink)); }
+.app-rel[data-by] { color: rgb(var(--c-muted)); border-bottom: 1px dotted rgb(var(--c-muted)); }
+.app-rel small { font-variant: normal; font-size: 0.85em; }
+.app-list i { font-style: normal; font-weight: 600; color: rgb(var(--c-ink)); }
+/* The apparatus answers to the same choices as the table, and a row whose
+   readings are all switched off goes with them rather than standing empty. */
+[data-variants='words'] .app-list li[data-kind='spelling'],
+[data-variants='words'] .synopsis tr.app[data-kind='spelling'],
+[data-variants='off'] .synopsis tr.app[data-kind] { display: none; }
+.app-list li.is-linked { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
+
+/* The way from a reading back to the line it was taken from: out of the way
+   until the row is under the pointer. */
+.line-link {
+  margin-left: 0.3rem;
+  font-family: var(--f-ui);
+  font-size: 0.7rem;
+  color: rgb(var(--c-muted));
+  text-decoration: none;
+  opacity: 0;
+}
+.synopsis tr:hover .line-link, .line-link:focus { opacity: 1; }
+.syn-legend, .syn-source {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1rem 1rem;
+  margin: 0.75rem 0 0;
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+  line-height: 1.7;
+  color: rgb(var(--c-muted));
+}
+.syn-source { display: block; } /* a sentence, not a row of swatches */
+.syn-legend .var { padding: 0 0.15rem; }
+.syn-legend .line-link { opacity: 1; }
+
+/* And on the witness page, the line a synopsis points at: clear of the bar,
+   which would otherwise stand over the line the reader was sent to. */
+.tei-l { scroll-margin-top: 5rem; }
+.tei-l:target { background-color: rgb(var(--c-accent) / 0.16); }
+
+/* Coloured by how many witnesses part (the default), or by what kind of change
+   it is. The legend's swatches are `.var` too, so one rule colours both. */
+[data-colour='change'] .var b { background-color: rgb(var(--c-accent) / 0.3); }
+[data-colour='change'] .var[data-change='om'] b { background-color: rgb(var(--c-gap) / 0.35); }
+[data-colour='change'] .var[data-change='om'] { background-color: rgb(var(--c-gap) / 0.08); }
+/* Only the keys of the mode in force. */
+.syn-keys { display: none; }
+[data-colour='variance'] .syn-keys[data-for='variance'],
+[data-colour='change'] .syn-keys[data-for='change'] { display: contents; }
+
+/* The swatches are marks like any other, so one rule colours both. */
+.syn-swatch { display: inline-flex; align-items: baseline; gap: 0.3rem; white-space: nowrap; }
+.syn-swatch .var { font-family: var(--f-text); }
+
+/* Every distinct set of readings, most frequent first. */
+.syn-register {
+  margin: 1rem 0 0;
+  font-family: var(--f-ui);
+  font-size: 0.8rem;
+  color: rgb(var(--c-muted));
+}
+.syn-register summary { cursor: pointer; }
+.syn-register ol {
+  columns: 22rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none; /* the order is by frequency, and a number would not say it */
+}
+.syn-register li { break-inside: avoid; padding: 0.1rem 0; }
+.syn-register b { font-family: var(--f-text); font-weight: 400; color: rgb(var(--c-ink)); }
+.syn-register .sep, .syn-register .count { color: rgb(var(--c-muted) / 0.7); }
+.syn-register .places { margin-left: 0.4rem; }
+.syn-register .places a { color: rgb(var(--c-muted)); text-decoration: none; }
+.syn-register .places a:hover { text-decoration: underline; }
+/* The register answers to the same choice as the table. */
+[data-variants='words'] .syn-register li[data-kind='spelling'] { display: none; }
+

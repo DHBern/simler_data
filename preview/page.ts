@@ -3,6 +3,7 @@
  */
 
 import type { Entity } from './entities'
+
 import { imageBase, imageUrl, type Odd, type RenderedNote, type View } from './lib'
 
 type Availability = Odd['availability']
@@ -92,14 +93,14 @@ function switches(views: View[]): string {
   }).join('')
 }
 
-function head(title: string): string {
+function head(title: string, styles = ''): string {
   return `<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="noindex">
   <title>${esc(title)} · Simler-Vorschau</title>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Inter:wght@400..600&display=swap">
-  <link rel="stylesheet" href="assets/preview.css">`
+  <link rel="stylesheet" href="assets/preview.css">${styles}`
 }
 
 /**
@@ -113,7 +114,8 @@ function libraryRoot(root: string): string | null {
 }
 
 /** The corpus pages, for the bar; the page we are on is marked. */
-const NAV = [['index.html', 'Übersicht'], ['search.html', 'Suche'], ['findings.html', 'Hinweise']]
+const NAV = [['index.html', 'Übersicht'], ['search.html', 'Suche'],
+  ['synopsen.html', 'Synopsen'], ['findings.html', 'Hinweise']]
 const nav = (here = ''): string => NAV.map(([href, text]) =>
   `<a class="bar-home" href="${href}"${href === here ? ' aria-current="page"' : ''}>${text}</a>`).join('\n    ')
 
@@ -282,7 +284,8 @@ function terms(availability?: Availability): string {
   return `<footer class="terms">${esc(text)}${licence ? ` <a href="${esc(licence)}" rel="license">${esc(licence)}</a>` : ''}</footer>`
 }
 
-export function documentPage(doc: PreviewDoc, views: View[], availability?: Availability): string {
+export function documentPage(doc: PreviewDoc, views: View[], availability?: Availability,
+                             synopses: Record<string, string> = {}): string {
   const drawer = facsimile(doc)
   const attrs = Object.entries({ ...defaults(views), ...(drawer && { facs: 'on' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
@@ -308,7 +311,9 @@ export function documentPage(doc: PreviewDoc, views: View[], availability?: Avai
   </main>
   ${NOTE_POPOVER}
   ${entityData(doc)}
+  ${Object.keys(synopses).length ? island('synopses', synopses) : ''}
   ${drawer}
+  <script src="assets/store.js"></script>
   <script src="assets/preview.js"></script>
   ${drawer ? '<script src="assets/facsimile.js"></script>' : ''}
   <script type="module" src="assets/search.js"></script>
@@ -377,7 +382,7 @@ export function searchPage(docs: PreviewDoc[]): string {
     <p class="status" data-search-status aria-live="polite"></p>
     <ol class="results" data-search-results></ol>
     <noscript><p class="lead">Die Suche läuft im Browser und braucht JavaScript.</p></noscript>`,
-    '<script type="module" src="assets/search.js"></script>')
+    { script: '<script type="module" src="assets/search.js"></script>' })
 }
 
 /** `2× kind: a, b` → [`kind`, `2× a, b`]: what the finding is, and where it applies. */
@@ -425,11 +430,12 @@ export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string
 }
 
 /** The frame the corpus pages share: bar, title, one column. */
-function corpusPage(here: string, title: string, main: string, script = ''): string {
+export function corpusPage(here: string, title: string, main: string,
+                           extra: { styles?: string, script?: string } = {}): string {
   return `<!doctype html>
 <html lang="de" data-size="m">
 <head>
-  ${head(title)}
+  ${head(title, extra.styles ?? '')}
 </head>
 <body>
   <div class="topbar no-print"><header class="bar">
@@ -438,7 +444,7 @@ function corpusPage(here: string, title: string, main: string, script = ''): str
   </header></div>
   <main id="main" class="index">${main}
   </main>
-  ${script}
+  ${extra.script ?? ''}
 </body>
 </html>
 `

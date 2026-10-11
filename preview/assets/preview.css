@@ -302,8 +302,13 @@ main {
 .tei-rs[data-key] { cursor: pointer; }
 /* A page break that opens its page in the facsimile, where the window has room for it. */
 @media (min-width: 64rem) {
-  [data-page][role='button'] { cursor: pointer; }
-  [data-page][role='button']:hover { color: rgb(var(--c-ui-accent)); }
+  /* The label carries the accent, so the break looks clickable before it is hovered;
+     the rules stay quiet, since every page has one. */
+  [data-page][role='button'] { color: rgb(var(--c-ui-accent)); cursor: pointer; }
+  [data-page][role='button']:is(:hover, :focus-visible)::before,
+  [data-page][role='button']:is(:hover, :focus-visible)::after {
+    border-top-color: rgb(var(--c-ui-accent) / 0.5);
+  }
 }
 
 .note-range {
@@ -475,6 +480,15 @@ main {
 .flag-error { background-color: rgb(var(--c-ink)); color: rgb(var(--c-paper)); }
 .malformed { font-family: var(--f-ui); font-size: 0.875rem; }
 .malformed pre { overflow-x: auto; padding: 0.75rem; background-color: rgb(var(--c-ink) / 0.05); }
+
+/* On a witness page: the way into the synopsis of the poem standing there. */
+.synopsis-link {
+  float: right;
+  margin-left: 1rem;
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+  color: rgb(var(--c-muted));
+}
 
 @media print {
   .no-print { display: none !important; }
