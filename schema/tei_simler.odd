@@ -8,8 +8,13 @@
         <author>Simler Project Team</author>
       </titleStmt>
       <publicationStmt>
-        <p>Distributed with the Simler data repository; the schema and the rendering of the edition are
-          both derived from this file.</p>
+        <publisher>Simler Project Team</publisher>
+        <availability status="free">
+          <licence target="https://creativecommons.org/licenses/by/4.0/">The transcriptions of the Simler
+            edition, this ODD and the schema and rendering generated from it: Simler Project Team,
+            licensed under CC BY 4.0.</licence>
+          <p>The facsimiles are the holding libraries', on the terms e-rara.ch states for each.</p>
+        </availability>
       </publicationStmt>
       <sourceDesc>
         <p>This ODD was created from scratch as a slim, project-focused replacement for the
@@ -517,6 +522,7 @@
               <elementRef key="div"/><elementRef key="head"/><elementRef key="lg"/><elementRef key="l"/>
               <elementRef key="p"/><elementRef key="list"/><elementRef key="label"/>
               <elementRef key="closer"/><elementRef key="epigraph"/><elementRef key="figure"/>
+              <elementRef key="titlePage"/>
               <elementRef key="note"/><elementRef key="fw"/><elementRef key="cb"/>
               <elementRef key="anchor"/><elementRef key="milestone"/><elementRef key="lb"/>
               <elementRef key="pb"/><elementRef key="hi"/><elementRef key="rs"/>
@@ -567,7 +573,8 @@
 
         <!-- ===== title page ===== -->
         <elementSpec ident="titlePage" module="textstructure" mode="change">
-          <desc>A title page transcribed within <gi>front</gi>.</desc>
+          <desc>A title page: in <gi>front</gi>, or in the <gi>div</gi> of a part of the book that has
+            its own title page.</desc>
           <content>
             <alternate minOccurs="0" maxOccurs="unbounded">
               <elementRef key="docTitle"/><elementRef key="titlePart"/><elementRef key="docAuthor"/>
@@ -651,7 +658,7 @@
           <content>
             <alternate minOccurs="1" maxOccurs="unbounded">
               <elementRef key="l"/><elementRef key="lg"/><elementRef key="head"/>
-              <elementRef key="label"/><elementRef key="p"/><elementRef key="note"/>
+              <elementRef key="label"/><elementRef key="p"/><elementRef key="closer"/><elementRef key="note"/>
               <elementRef key="fw"/><elementRef key="figure"/><elementRef key="anchor"/>
               <elementRef key="cb"/><elementRef key="milestone"/><elementRef key="lb"/>
               <elementRef key="pb"/>
@@ -1270,8 +1277,8 @@
              CLOSERS (subscriptions, datelines, signatures)
              =================================================================== -->
         <elementSpec ident="closer" module="textstructure" mode="change">
-          <desc>The closing matter of a division (e.g. a dedication): salutation, dateline and
-            signature.</desc>
+          <desc>The closing matter of a division (e.g. a dedication) or of a poem, inside its
+            <gi>lg</gi> as in the DTA base format: salutation, dateline and signature.</desc>
           <content>
             <alternate minOccurs="0" maxOccurs="unbounded">
               <textNode/><elementRef key="salute"/><elementRef key="dateline"/>
