@@ -127,8 +127,7 @@
 
     <!-- Simler: E0015, E0014 and E0016 switched off. The DTABf expects pb/@facs to be "#f0001",
          "#f0002", … in steps of one; here pb/@facs is the e-rara page id (e.g. 4049200), and only
-         pb carries @facs. Its own checks (numeric, unique, ascending) are in
-         sonstige_transformationen/check-structure.py (report 12). -->
+         pb carries @facs. -->
     <!--<pattern id="facsInsideFirstPagebreak">
         <rule context="tei:pb[1][not(preceding::tei:pb)]">
             <assert test="@facs[matches(., '^#f0001$')]" role="ERROR">
@@ -347,8 +346,7 @@
     </pattern>
     
     <!-- Simler: the line end of an element's last line follows the element that holds the
-         line and stays inside every further ancestor (schema/tei_simler.odd, lb-line-end-placement;
-         applied by sonstige_transformationen/homogenize-closing-lb.py). -->
+         line and stays inside every further ancestor (schema/tei_simler.odd, lb-line-end-placement. -->
     <pattern id="lbLineEnd">
         <rule context="tei:lb[not(@break='no')]">
             <let name="last" value="not(following-sibling::node()[self::* or self::text()[normalize-space()]])"/>
@@ -384,8 +382,7 @@
     </pattern>
     
     <!-- Simler: the tokens of @rendition in the order of the ODD's tagsDecl, single-spaced
-         (schema/tei_simler.odd, rendition-order; applied by
-         sonstige_transformationen/normalize-rendition-order.py). -->
+         (schema/tei_simler.odd, rendition-order. -->
     <pattern id="renditionOrder">
         <rule context="tei:*[@rendition]">
             <let name="order" value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#in', '#sup', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
@@ -397,7 +394,7 @@
     </pattern>
     
     <!-- Simler: lg/@type — one type="poem" per poem, no @type below it (schema/tei_simler.odd,
-         lg-type; applied by sonstige_transformationen/normalize-lg-type.py). -->
+         lg-type. -->
     <pattern id="lgType">
         <rule context="tei:lg[@type]">
             <report test="ancestor::tei:lg" role="WARNING">
@@ -410,8 +407,7 @@
     </pattern>
     
     <!-- Simler: no whitespace next to a joined line end in the text; "und" after it means an
-         elliptical hyphen and a plain lb (schema/tei_simler.odd, lb-joined; applied by
-         sonstige_transformationen/normalize-lbno-whitespace.py). -->
+         elliptical hyphen and a plain lb (schema/tei_simler.odd, lb-joined. -->
     <pattern id="lbJoined">
         <rule context="tei:lb[@break='no']">
             <report test="not(preceding-sibling::node()[normalize-space() or self::*])" role="WARNING">
@@ -430,8 +426,7 @@
     </pattern>
     
     <!-- Simler: renditions of a block are recorded on the block (schema/tei_simler.odd,
-         hi-block-rendition and hi-spanning-rendition; applied by
-         sonstige_transformationen/hoist-block-rendition.ps1 and hoist-spanning-rendition.ps1). -->
+         hi-block-rendition and hi-spanning-rendition. -->
     <pattern id="hiBlockRendition">
         <rule context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3')]">
             <report test="true()" role="WARNING">
@@ -447,7 +442,7 @@
         </rule>
     </pattern>
     <!-- Simler: one hi for one stretch, no token repeated from an ancestor (schema/tei_simler.odd,
-         hi-nesting; applied by sonstige_transformationen/simplify-markup.py). -->
+         hi-nesting). -->
     <pattern id="hiNesting">
         <rule context="tei:hi[@rendition][ancestor::tei:text]">
             <report test="parent::tei:hi and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1" role="WARNING">
@@ -459,9 +454,18 @@
         </rule>
     </pattern>
 
+    <!-- Simler: two hi with the same rendition that only line ends separate are one hi
+         (schema/tei_simler.odd, hi-adjacent). -->
+    <pattern id="hiAdjacent">
+        <rule context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))]">
+            <report test="let $n := following-sibling::*[not(self::tei:lb)][1] return $n[self::tei:hi][count(@*) = 1][@rendition = current()/@rendition] and exists(following-sibling::tei:lb[. &lt;&lt; $n]) and not(following-sibling::node()[. &lt;&lt; $n][self::comment() or self::processing-instruction() or self::text()[normalize-space()] or self::*[not(self::tei:lb)] or self::tei:lb[*]]) and string-length(normalize-space(.)) gt 1 and string-length(normalize-space($n)) gt 1 and (every $b in following-sibling::tei:lb[. &lt;&lt; $n] satisfies $b/@break = 'no' or ancestor::*[not(self::tei:hi)][1][local-name() = ('head', 'l', 'p', 'signed', 'closer', 'salute', 'dateline', 'byline', 'trailer', 'titlePart', 'docTitle', 'docAuthor', 'docImprint', 'docEdition', 'label', 'item')])" role="WARNING">
+                [S-HIA] The next hi has the same rendition and only line ends stand between: one hi across them.
+            </report>
+        </rule>
+    </pattern>
+
     <!-- Simler: the source reading first in choice; no space directly inside l/head/p
-         (schema/tei_simler.odd, choice-order and line-inner-space; applied by
-         sonstige_transformationen/simplify-markup.py). -->
+         (schema/tei_simler.odd, choice-order and line-inner-space). -->
     <pattern id="choiceOrder">
         <rule context="tei:choice">
             <report test="tei:corr[following-sibling::tei:sic] or tei:expan[following-sibling::tei:abbr]" role="WARNING">
