@@ -125,7 +125,9 @@
 
         <!-- xml-model PIs (schema associations) -->
         <xsl:text>&#xa;</xsl:text>
-        <xsl:processing-instruction name="xml-model">href="../../schema/basisformat_all_customized.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+        <xsl:processing-instruction name="xml-model">href="../../schema/tei_simler.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"</xsl:processing-instruction>
+        <xsl:text>&#xa;</xsl:text>
+        <xsl:processing-instruction name="xml-model">href="../../schema/tei_simler.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:processing-instruction>
         <xsl:text>&#xa;</xsl:text>
         <xsl:processing-instruction name="xml-model">href="../../schema/basisformat_customized.sch" type="application/xml"&#xa;&#x9;schematypens="http://purl.oclc.org/dsdl/schematron"</xsl:processing-instruction>
         <xsl:text>&#xa;</xsl:text>
