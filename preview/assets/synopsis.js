@@ -35,6 +35,30 @@
     var places = all('.synopsis [data-cat], .syn-register [data-cat]')
     var entries = all('.app-list [data-cat]') // one per place: what the counts count
     var rows = all('.synopsis tbody tr[id]')
+    var columns = all('[data-syn-witness]', controls)
+    var spans = {} // apparatus id → its marked readings, for comparing the columns shown
+    all('.synopsis .var').forEach(function (s) { (spans[s.dataset.group] = spans[s.dataset.group] || []).push(s) })
+
+    // The places whose readings agree among the witnesses shown: each column's
+    // `data-alike` lists the columns reading as it does, and a witness that
+    // reads nothing at the place has no mark, so it is in no such list.
+    var shownColumns = function () {
+      return columns.filter(function (c) { return c.checked }).map(function (c) { return c.dataset.synWitness })
+    }
+    var agreeing = function (shown) {
+      var agree = {}
+      if (shown.length === columns.length) return agree
+      Object.keys(spans).forEach(function (group) {
+        var row = spans[group][0].closest('tr')
+        var present = all('td[data-w]:not(.gap)', row).map(function (td) { return td.dataset.w })
+          .filter(function (w) { return shown.indexOf(w) >= 0 })
+        var seen = spans[group].filter(function (s) { return shown.indexOf(s.closest('td').dataset.w) >= 0 })
+        var alike = seen.length ? seen[0].dataset.alike.split(' ') : []
+        agree[group] = present.length < 2 || !seen.length ||
+          present.every(function (w) { return alike.indexOf(w) >= 0 })
+      })
+      return agree
+    }
 
     // A model's types taken back: its places count as open again, as before it
     // was asked, in the chips, the colours and the apparatus.
@@ -56,10 +80,12 @@
     // A place is shown when its category is chosen and its readings still differ
     // under the filters: bit m of `data-gone` says they agree under filter set m.
     var refresh = function () {
-      var shown = chips.filter(function (c) { return c.checked }).map(function (c) { return c.dataset.synCat })
+      var chosen = chips.filter(function (c) { return c.checked }).map(function (c) { return c.dataset.synCat })
       var mask = filters.reduce(function (m, f) { return f.checked ? m | 1 << f.dataset.synIgnore : m }, 0)
-      var gone = function (el) { return (el.dataset.gone >> mask & 1) === 1 }
-      places.forEach(function (el) { el.toggleAttribute('data-off', shown.indexOf(el.dataset.cat) < 0 || gone(el)) })
+      var shown = shownColumns()
+      var agree = agreeing(shown)
+      var gone = function (el) { return (el.dataset.gone >> mask & 1) === 1 || agree[el.dataset.group] === true }
+      places.forEach(function (el) { el.toggleAttribute('data-off', chosen.indexOf(el.dataset.cat) < 0 || gone(el)) })
 
       // Each count says what the filters leave of its category, chosen or not.
       chips.forEach(function (chip) {
@@ -68,17 +94,18 @@
         chip.parentNode.querySelector('.n').textContent = n
       })
 
-      // A row with nothing left to show is quiet, unless a witness has no text
-      // in it and omissions are shown; an apparatus row with nothing left goes.
-      var gaps = shown.indexOf('omission') >= 0
+      // A row with nothing left to show is quiet, unless a witness shown has no
+      // text in it and omissions are shown; an apparatus row with nothing left goes.
+      var gaps = chosen.indexOf('omission') >= 0
       rows.forEach(function (row) {
-        var quiet = !row.querySelector('.var:not([data-off])') && !(gaps && row.querySelector('td.gap'))
+        var gap = all('td.gap', row).some(function (td) { return shown.indexOf(td.dataset.w) >= 0 })
+        var quiet = !row.querySelector('.var:not([data-off])') && !(gaps && gap)
         row.classList.toggle('quiet', quiet)
         if (lines[row.id]) lines[row.id].classList.toggle('quiet', quiet)
         var app = row.nextElementSibling
         if (app && app.classList.contains('app')) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
       })
-      previewStore.set('syn-show', shown.join(' '))
+      previewStore.set('syn-show', chosen.join(' '))
       previewStore.set('syn-ignore', filters.filter(function (f) { return f.checked })
         .map(function (f) { return f.dataset.synIgnore }).join(' '))
     }
@@ -176,11 +203,25 @@
       apply(control)
       control.addEventListener('change', function () {
         apply(control)
+        if (control.dataset.synWitness) refresh() // the marks follow the witnesses shown
         changed()
       })
     })
     refresh()
     tally(0, differing().length)
+  }
+
+  // The overview, sorted by any of its counts, the largest first; by poem, as built.
+  var sort = document.querySelector('[data-syn-sort]')
+  if (sort) {
+    var body = document.querySelector('[data-syn-rows]')
+    var built = [].slice.call(body.rows)
+    sort.addEventListener('change', function () {
+      var key = sort.value
+      var order = built.slice()
+      if (key) order.sort(function (a, b) { return b.getAttribute(key) - a.getAttribute(key) })
+      order.forEach(function (row) { body.appendChild(row) })
+    })
   }
 
   // The strip beside the table: each line sits where its row does, a marker

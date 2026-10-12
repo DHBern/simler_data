@@ -116,8 +116,7 @@ const swatch = (attrs: string, label: string) =>
  */
 function synopsisControls(synopsis: Synopsis): string {
   const { witnesses, units, segments, doubtful, proposed } = synopsis
-  const counts = new Map<Category, number>()
-  for (const e of segments.flatMap((s) => s.apparatus)) counts.set(e.category, (counts.get(e.category) ?? 0) + 1)
+  const counts = tally(segments.flatMap((s) => s.apparatus))
   const modes = colours(witnesses)
   const machine = segments.some((s) => s.apparatus.some((e) => e.relation?.by === 'model'))
 
@@ -129,6 +128,7 @@ function synopsisControls(synopsis: Synopsis): string {
     `<label><input type="checkbox" data-syn-witness="${i + 1}" checked> ${esc(w.siglum)}</label>`
 
   return `<form class="syn-bar no-print" data-syn-controls>
+      ${mixBar(counts, true)}
       <div class="syn-row">
         <span class="syn-label">Varianten</span>
         ${CATEGORIES.map(chip).join('')}
@@ -179,6 +179,7 @@ function synopsisControls(synopsis: Synopsis): string {
 function readingRegister(groups: Group[]): string {
   if (!groups.length) return ''
   const places = groups.reduce((n, group) => n + group.places.length, 0)
+  const sections = CATEGORIES.map((c) => [c, groups.filter((g) => g.category === c)] as const).filter(([, gs]) => gs.length)
   const item = (group: Group) => {
     const forms = group.forms.map((form) =>
       form ? `<b>${esc(form)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')
@@ -191,7 +192,98 @@ function readingRegister(groups: Group[]): string {
   }
   return `<details class="syn-register">
       <summary>Lesarten: ${groups.length} verschiedene an ${places} Stellen</summary>
-      <ol>${groups.map(item).join('')}</ol>
+      ${sections.map(([c, gs]) => `<h4>${CATEGORY_LABELS[c][0]} <span class="count">${gs.length}</span></h4>
+      <ol>${gs.map(item).join('')}</ol>`).join('')}
+    </details>`
+}
+
+/** Places per category. */
+function tally(entries: Entry[]): Map<Category, number> {
+  const counts = new Map<Category, number>()
+  for (const e of entries) counts.set(e.category, (counts.get(e.category) ?? 0) + 1)
+  return counts
+}
+
+/**
+ * A poem's variants as one bar split by category, in the type colours. On a
+ * synopsis each part is a preset: a click shows that category alone.
+ */
+function mixBar(counts: Map<Category, number>, presets = false): string {
+  const part = (c: Category) => {
+    const n = counts.get(c)
+    if (!n) return ''
+    const label = esc(`${CATEGORY_LABELS[c][0]} ${n}`)
+    return presets
+      ? `<button type="button" data-cat="${c}" data-syn-preset="${c}" style="flex-grow:${n}" title="${label} — nur diese zeigen"></button>`
+      : `<i data-cat="${c}" style="flex-grow:${n}" title="${label}"></i>`
+  }
+  return counts.size ? `<span class="syn-mix">${CATEGORIES.map(part).join('')}</span>` : ''
+}
+
+/**
+ * Witness against witness: at how many places two read otherwise, counting
+ * only what is neither spelling nor punctuation — which edition stands closest
+ * to which. Two witnesses need no table: that is the poem's count.
+ */
+function pairMatrix(witnesses: Witness[], entries: Entry[]): string {
+  if (witnesses.length < 3) return ''
+  const sigla = witnesses.map((w) => w.siglum)
+  const apart = (a: string, b: string) => entries.filter((e) => a in e.readings && b in e.readings && !e.alike[a].includes(b))
+  const counts = sigla.map((a) => sigla.map((b) => {
+    const all = a === b ? [] : apart(a, b)
+    return [all.filter((e) => !SPELLING.includes(e.category)).length, all.length]
+  }))
+  const most = Math.max(1, ...counts.flat().map(([n]) => n))
+  const cell = ([n, all]: number[], a: string, b: string) => a === b ? '<td></td>'
+    : `<td style="--k:${(n / most).toFixed(2)}" title="${esc(`${a} gegen ${b}: ${n} sachliche von ${all} Stellen`)}">${n}</td>`
+  return `<details class="syn-pairs">
+      <summary>Textzeugen paarweise: sachliche Abweichungen</summary>
+      <table>
+        <tr><th></th>${sigla.map((s) => `<th>${esc(s)}</th>`).join('')}</tr>
+        ${sigla.map((a, i) => `<tr><th>${esc(a)}</th>${sigla.map((b, j) => cell(counts[i][j], a, b)).join('')}</tr>`).join('')}
+      </table>
+    </details>`
+}
+
+/**
+ * How much a poem varies, and where: its segments in at most 60 bins, each as
+ * high as the widest disagreement in it — the strip's scale, in small.
+ */
+function sparkline(segments: Segment[]): string {
+  const bins = Math.min(60, segments.length)
+  const level = (i: number) => Math.max(0, ...segments
+    .slice(Math.floor(i * segments.length / bins), Math.floor((i + 1) * segments.length / bins))
+    .flatMap((s) => Object.values(s.departures)))
+  const bars = Array.from({ length: bins }, (_, i) => level(i))
+    .map((l, i) => l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : '').join('')
+  return `<svg class="syn-spark" viewBox="0 0 ${bins} 3" preserveAspectRatio="none" aria-hidden="true">${bars}</svg>`
+}
+
+/**
+ * The reading sets that recur from poem to poem, most frequent first: the
+ * printers' habits across the corpus (`vnd | und`), with where they occur.
+ */
+function corpusRegister(synopses: Synopsis[]): string {
+  const sets = new Map<string, { forms: string[], category: Category, places: number, poems: string[] }>()
+  for (const s of synopses) {
+    for (const g of s.groups) {
+      const key = [...g.forms].sort().join('\u0001')
+      const set = sets.get(key) ?? { forms: g.forms, category: g.category, places: 0, poems: [] }
+      set.places += g.places.length
+      set.poems.push(s.id)
+      sets.set(key, set)
+    }
+  }
+  const recurring = [...sets.values()].filter((s) => s.poems.length > 1).sort((a, b) => b.places - a.places)
+  if (!recurring.length) return ''
+  const item = (s: (typeof recurring)[number]) => `<li data-cat="${s.category}">
+        ${s.forms.map((f) => f ? `<b>${esc(f)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')}
+        <span class="count">×${s.places} in ${s.poems.length} Gedichten</span>
+        <span class="places">${s.poems.slice(0, 8).map((id) => `<a href="${esc(synopsisHref(id))}">${esc(id)}</a>`).join(' ')}${s.poems.length > 8 ? ' …' : ''}</span>
+      </li>`
+  return `<details class="syn-register">
+      <summary>Wiederkehrende Lesarten: ${recurring.length} Sätze in mehr als einem Gedicht, die häufigsten zuerst</summary>
+      <ol>${recurring.slice(0, 200).map(item).join('')}</ol>
     </details>`
 }
 
@@ -364,6 +456,7 @@ export function synopsisPage(synopsis: Synopsis): string {
       </table>
       </div>
       ${readingRegister(groups)}
+      ${pairMatrix(witnesses, segments.flatMap((s) => s.apparatus))}
     </div>
     <p class="syn-source">
       ${provenance.tool ? `Ausgerichtet mit ${esc(provenance.tool)}` : `Ausgerichtet in LERA`}, Verfahren
@@ -377,15 +470,24 @@ export function synopsisPage(synopsis: Synopsis): string {
 
 /** What is aligned so far, and what it cost: the worklist's public side. */
 export function synopsesPage(synopses: Synopsis[]): string {
-  const rows = synopses.map((s) => `<tr>
+  const rows = synopses.map((s) => {
+    const counts = tally(s.segments.flatMap((segment) => segment.apparatus))
+    // What the sort reads: every count, by its name.
+    const keys = CATEGORIES.map((c) => ` data-${c}="${counts.get(c) ?? 0}"`).join('')
+    return `<tr data-variants="${s.variants}" data-doubtful="${s.doubtful}" data-segments="${s.segments.length}"${keys}>
           <td><a href="${esc(synopsisHref(s.id))}">${esc(s.title)}</a></td>
           <td class="file">${esc(s.id)}</td>
           <td>${basisTag(s.provenance)}${s.provenance.checked ? ' <b class="basis" data-basis="person">geprüft</b>' : ''}</td>
           <td>${s.witnesses.map((w) => esc(w.siglum)).join(', ')}</td>
           <td class="num">${s.segments.length}</td>
           <td class="num">${s.variants}</td>
+          <td>${mixBar(counts)}</td>
+          <td>${sparkline(s.segments)}</td>
           <td class="num">${s.doubtful || ''}</td>
-        </tr>`).join('')
+        </tr>`
+  }).join('')
+  const sorts = [['', 'Gedicht'], ['data-variants', 'Varianten'], ['data-doubtful', 'zweifelhaft'], ['data-segments', 'Segmente'],
+    ...CATEGORIES.map((c) => [`data-${c}`, CATEGORY_LABELS[c][0]])]
 
   return corpusPage('synopsen.html', `Synopsen · ${synopses.length}`, `
     <p class="lead">
@@ -393,13 +495,17 @@ export function synopsesPage(synopses: Synopsis[]): string {
       und hebt die Abweichungen hervor. <i>Grundlage</i> sagt, wer ausgerichtet hat — TextAlign
       oder LERA, beide automatisch — und ob eine Person die Ausrichtung geprüft hat;
       <i>zweifelhaft</i> zählt die Segmente, deren Ausrichtung noch jemand prüfen sollte.
+      <i>Arten</i> teilt die Varianten nach Kategorie, <i>Verlauf</i> zeigt, wo im Gedicht sie stehen.
     </p>
-    ${synopses.length ? `<table>
+    ${synopses.length ? `<p class="no-print"><label class="ctrl">Sortieren nach
+      <select data-syn-sort>${sorts.map(([key, label]) => `<option value="${key}">${label}</option>`).join('')}</select></label></p>
+    <table class="syn-poems">
       <thead>
         <tr><th>Gedicht</th><th>ID</th><th>Grundlage</th><th>Textzeugen</th>
-          <th class="num">Segmente</th><th class="num">Varianten</th><th class="num">zweifelhaft</th></tr>
+          <th class="num">Segmente</th><th class="num">Varianten</th><th>Arten</th><th>Verlauf</th><th class="num">zweifelhaft</th></tr>
       </thead>
-      <tbody>${rows}</tbody>
-    </table>` : '<p class="lead">Noch keine Ausrichtung vorhanden.</p>'}`,
-    { styles: '<link rel="stylesheet" href="assets/synopsis.css">' }) // the tags of the Grundlage column
+      <tbody data-syn-rows>${rows}</tbody>
+    </table>
+    ${corpusRegister(synopses)}` : '<p class="lead">Noch keine Ausrichtung vorhanden.</p>'}`,
+    { styles: '<link rel="stylesheet" href="assets/synopsis.css">', script: '<script src="assets/synopsis.js"></script>' })
 }

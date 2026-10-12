@@ -388,6 +388,32 @@ test('the page says first what it rests on: who aligned it, who checked it, who 
   assert.match(synopsesPage([checked]), /TextAlign<\/b> <b class="basis" data-basis="person">geprüft<\/b><\/td>/)
 })
 
+test("a poem's variants are summed up by category, and by pair of witnesses", async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7', C: 'tei/C_1663_dok.xml#n7' }, [
+    { cells: { A: ['vnd', 'figur'], B: ['und', 'figur'], C: ['und', 'geſtalt'] }, relations: { 0: rule('orthographic', 'u/v, i/j') } },
+    { cells: { A: ['vnd'], B: ['und'], C: ['und'] }, relations: { 0: rule('orthographic', 'u/v, i/j') } },
+  ])
+  const dir = await mkdtemp(join(tmpdir(), 'mix-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const [synopsis] = await loadSynopses(dir)
+  const page = synopsisPage(synopsis)
+  // One bar, a part per category, each a preset for that category alone.
+  assert.match(page, /<span class="syn-mix"><button type="button" data-cat="spelling" data-syn-preset="spelling" style="flex-grow:2" title="Schreibung 2 — nur diese zeigen"><\/button><button type="button" data-cat="open"[^>]*flex-grow:1/)
+  // The register under the categories' names.
+  assert.match(page, /<h4>Schreibung <span class="count">1<\/span><\/h4>\s*<ol><li data-cat="spelling"[^>]*><b>vnd<\/b>/)
+  // `vnd`/`und` is spelling, so A and B are 0 apart in substance; `figur`/`geſtalt` puts C 1 from both.
+  assert.match(page, /<tr><th>A<\/th><td><\/td><td style="--k:0\.00" title="A gegen B: 0 sachliche von 2 Stellen">0<\/td><td style="--k:1\.00" title="A gegen C: 1 sachliche von 3 Stellen">1<\/td><\/tr>/)
+  assert.doesNotMatch(synopsisPage((await load())[0]), /syn-pairs/) // two witnesses: the poem's own count
+
+  // The overview: a bar and a sparkline per poem, every count to sort by, and the sets that recur.
+  const overview = synopsesPage([synopsis, { ...synopsis, id: 'n8' }])
+  assert.match(overview, /<tr data-variants="3" data-doubtful="0" data-segments="2" data-punctuation="0" data-spelling="2"[^>]*>/)
+  assert.match(overview, /<option value="data-lexical">Wortlaut<\/option>/)
+  assert.match(overview, /<svg class="syn-spark" viewBox="0 0 2 3"[^>]*><rect x="0" y="1" width="0.8" height="2"\/><rect x="1" y="2"/)
+  assert.match(overview, /<summary>Wiederkehrende Lesarten: 2 Sätze[\s\S]*?<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>/)
+  assert.doesNotMatch(synopsesPage([synopsis]), /Wiederkehrende/) // one poem recurs in nothing
+})
+
 test('the page says which export it was built from', async () => {
   const page = synopsisPage((await load())[0])
   assert.match(page, /Ausgerichtet in LERA, Verfahren\s+<code>cgsa<\/code>, zuletzt geändert am 29\.09\.2026;/)

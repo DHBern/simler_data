@@ -3,8 +3,8 @@
   "rows": 6860,
   "complete": 6134,
   "alone": 466,
-  "doubtful": 235,
-  "places": 5039,
+  "doubtful": 223,
+  "places": 4855,
   "alike": 20462,
   "unrelated": 107,
   "proposals": 23,
@@ -13,30 +13,30 @@
  },
  "rows": {
   "alone": 405,
-  "fine": 6220,
-  "doubtful": 235
+  "fine": 6232,
+  "doubtful": 223
  },
  "types": {
-  "grammatical model": 55,
-  "lexical model": 254,
-  "omission": 699,
-  "open": 6,
-  "orthographic model": 568,
-  "orthographic rule": 2063,
+  "grammatical model": 54,
+  "lexical model": 253,
+  "omission": 523,
+  "open": 5,
+  "orthographic model": 404,
+  "orthographic rule": 2216,
   "other model": 4,
-  "punctuation model": 6,
-  "punctuation rule": 470,
+  "punctuation model": 4,
+  "punctuation rule": 474,
   "repetition model": 1,
-  "spelling model": 232,
-  "spelling rule": 634,
+  "spelling model": 231,
+  "spelling rule": 639,
   "transposition model": 3,
   "transposition rule": 1,
   "uncertain model": 43
  },
  "confidence": {
   "0.9": 44,
-  "0.95": 893,
-  "1": 229
+  "0.95": 725,
+  "1": 228
  },
  "poems": {
   "B.1": {
@@ -92,7 +92,7 @@
    "complete": 10,
    "alone": 3,
    "doubtful": 5,
-   "places": 295,
+   "places": 294,
    "alike": 26,
    "unrelated": 2,
    "proposals": 1,
@@ -121,7 +121,7 @@
    "complete": 2,
    "alone": 0,
    "doubtful": 0,
-   "places": 12,
+   "places": 11,
    "alike": 6,
    "unrelated": 0,
    "proposals": 0,
@@ -205,7 +205,7 @@
    "complete": 78,
    "alone": 1,
    "doubtful": 1,
-   "places": 38,
+   "places": 35,
    "alike": 78,
    "unrelated": 0,
    "proposals": 0,
@@ -220,7 +220,7 @@
    "complete": 72,
    "alone": 0,
    "doubtful": 0,
-   "places": 83,
+   "places": 80,
    "alike": 208,
    "unrelated": 2,
    "proposals": 0,
@@ -285,17 +285,12 @@
    "rows": 795,
    "complete": 733,
    "alone": 2,
-   "doubtful": 1,
-   "places": 494,
+   "doubtful": 0,
+   "places": 467,
    "alike": 2259,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s260": [
-     "“Hierzwüſchen” is paired with “Hier” in column 1",
-     "“Hier” is paired with “Hierzwuͤſchen” in column 1"
-    ]
-   }
+   "doubts": {}
   },
   "n132": {
    "rows": 6,
@@ -342,7 +337,7 @@
    "complete": 50,
    "alone": 9,
    "doubtful": 0,
-   "places": 27,
+   "places": 25,
    "alike": 50,
    "unrelated": 0,
    "proposals": 0,
@@ -482,7 +477,7 @@
    "complete": 62,
    "alone": 1,
    "doubtful": 1,
-   "places": 22,
+   "places": 21,
    "alike": 61,
    "unrelated": 0,
    "proposals": 0,
@@ -497,7 +492,7 @@
    "complete": 29,
    "alone": 0,
    "doubtful": 0,
-   "places": 25,
+   "places": 24,
    "alike": 85,
    "unrelated": 0,
    "proposals": 0,
@@ -563,7 +558,7 @@
    "complete": 13,
    "alone": 1,
    "doubtful": 0,
-   "places": 6,
+   "places": 5,
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
@@ -585,7 +580,7 @@
    "complete": 13,
    "alone": 1,
    "doubtful": 0,
-   "places": 13,
+   "places": 12,
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
@@ -791,7 +786,7 @@
    "complete": 44,
    "alone": 17,
    "doubtful": 1,
-   "places": 14,
+   "places": 12,
    "alike": 44,
    "unrelated": 0,
    "proposals": 0,
@@ -827,17 +822,14 @@
    "rows": 156,
    "complete": 156,
    "alone": 0,
-   "doubtful": 3,
-   "places": 146,
+   "doubtful": 2,
+   "places": 138,
    "alike": 929,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
-    ],
-    "s2": [
-     "“langgewaͤhrter” is paired with “lang” in column 7"
     ],
     "s73": [
      "“kein” is paired with “nirgend” in column 3",
@@ -850,7 +842,7 @@
    "complete": 260,
    "alone": 34,
    "doubtful": 3,
-   "places": 217,
+   "places": 207,
    "alike": 1551,
    "unrelated": 3,
    "proposals": 2,
@@ -871,7 +863,7 @@
    "complete": 98,
    "alone": 13,
    "doubtful": 0,
-   "places": 84,
+   "places": 81,
    "alike": 588,
    "unrelated": 2,
    "proposals": 0,
@@ -908,7 +900,7 @@
    "complete": 21,
    "alone": 0,
    "doubtful": 1,
-   "places": 29,
+   "places": 26,
    "alike": 63,
    "unrelated": 0,
    "proposals": 0,
@@ -923,7 +915,7 @@
    "complete": 114,
    "alone": 13,
    "doubtful": 0,
-   "places": 85,
+   "places": 83,
    "alike": 684,
    "unrelated": 0,
    "proposals": 0,
@@ -949,7 +941,7 @@
    "complete": 40,
    "alone": 7,
    "doubtful": 7,
-   "places": 48,
+   "places": 46,
    "alike": 110,
    "unrelated": 13,
    "proposals": 5,
@@ -983,7 +975,7 @@
    "complete": 5,
    "alone": 0,
    "doubtful": 1,
-   "places": 9,
+   "places": 7,
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
@@ -1031,7 +1023,7 @@
    "complete": 26,
    "alone": 0,
    "doubtful": 4,
-   "places": 35,
+   "places": 34,
    "alike": 165,
    "unrelated": 0,
    "proposals": 0,
@@ -1055,7 +1047,7 @@
    "complete": 9,
    "alone": 0,
    "doubtful": 0,
-   "places": 19,
+   "places": 18,
    "alike": 8,
    "unrelated": 0,
    "proposals": 0,
@@ -1088,7 +1080,7 @@
    "complete": 9,
    "alone": 0,
    "doubtful": 1,
-   "places": 10,
+   "places": 9,
    "alike": 8,
    "unrelated": 0,
    "proposals": 0,
@@ -1191,16 +1183,12 @@
    "rows": 6,
    "complete": 5,
    "alone": 1,
-   "doubtful": 1,
-   "places": 9,
+   "doubtful": 0,
+   "places": 8,
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s6": [
-     "“tods” is paired with “todsgedaͤchtnus” in column 2"
-    ]
-   }
+   "doubts": {}
   },
   "n245": {
    "rows": 6,
@@ -1218,7 +1206,7 @@
    "complete": 113,
    "alone": 2,
    "doubtful": 2,
-   "places": 98,
+   "places": 97,
    "alike": 337,
    "unrelated": 0,
    "proposals": 0,
@@ -1236,7 +1224,7 @@
    "complete": 119,
    "alone": 4,
    "doubtful": 3,
-   "places": 137,
+   "places": 131,
    "alike": 351,
    "unrelated": 0,
    "proposals": 0,
@@ -1259,7 +1247,7 @@
    "complete": 34,
    "alone": 0,
    "doubtful": 1,
-   "places": 39,
+   "places": 38,
    "alike": 222,
    "unrelated": 0,
    "proposals": 0,
@@ -1312,7 +1300,7 @@
    "complete": 4,
    "alone": 1,
    "doubtful": 1,
-   "places": 4,
+   "places": 3,
    "alike": 4,
    "unrelated": 0,
    "proposals": 0,
@@ -1327,7 +1315,7 @@
    "complete": 5,
    "alone": 2,
    "doubtful": 2,
-   "places": 8,
+   "places": 7,
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
@@ -1361,7 +1349,7 @@
    "complete": 291,
    "alone": 78,
    "doubtful": 10,
-   "places": 149,
+   "places": 146,
    "alike": 289,
    "unrelated": 2,
    "proposals": 0,
@@ -1403,7 +1391,7 @@
    "complete": 50,
    "alone": 7,
    "doubtful": 0,
-   "places": 38,
+   "places": 37,
    "alike": 300,
    "unrelated": 0,
    "proposals": 0,
@@ -1469,17 +1457,14 @@
    "rows": 86,
    "complete": 86,
    "alone": 0,
-   "doubtful": 2,
-   "places": 80,
+   "doubtful": 1,
+   "places": 76,
    "alike": 512,
    "unrelated": 0,
    "proposals": 1,
    "doubts": {
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
-    ],
-    "s22": [
-     "“hochbetruͤbte” is paired with “hoch” in column 2"
     ]
    }
   },
@@ -1499,7 +1484,7 @@
    "complete": 62,
    "alone": 9,
    "doubtful": 0,
-   "places": 17,
+   "places": 16,
    "alike": 62,
    "unrelated": 0,
    "proposals": 0,
@@ -1510,7 +1495,7 @@
    "complete": 58,
    "alone": 0,
    "doubtful": 0,
-   "places": 17,
+   "places": 15,
    "alike": 58,
    "unrelated": 0,
    "proposals": 0,
@@ -1521,7 +1506,7 @@
    "complete": 48,
    "alone": 16,
    "doubtful": 1,
-   "places": 14,
+   "places": 13,
    "alike": 48,
    "unrelated": 0,
    "proposals": 0,
@@ -1535,23 +1520,19 @@
    "rows": 52,
    "complete": 52,
    "alone": 0,
-   "doubtful": 1,
-   "places": 20,
+   "doubtful": 0,
+   "places": 18,
    "alike": 52,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s21": [
-     "“heim” is paired with “heimgetragen/” in column 6"
-    ]
-   }
+   "doubts": {}
   },
   "n35": {
    "rows": 70,
    "complete": 54,
    "alone": 16,
-   "doubtful": 5,
-   "places": 17,
+   "doubtful": 4,
+   "places": 16,
    "alike": 54,
    "unrelated": 0,
    "proposals": 0,
@@ -1567,9 +1548,6 @@
     ],
     "s7": [
      "D is missing where C has 6 words"
-    ],
-    "s27": [
-     "“heimgetragen” is paired with “heim” in column 2"
     ]
    }
   },
@@ -1607,7 +1585,7 @@
    "complete": 42,
    "alone": 1,
    "doubtful": 10,
-   "places": 62,
+   "places": 61,
    "alike": 128,
    "unrelated": 9,
    "proposals": 1,
@@ -1653,7 +1631,7 @@
    "complete": 40,
    "alone": 5,
    "doubtful": 3,
-   "places": 39,
+   "places": 35,
    "alike": 270,
    "unrelated": 0,
    "proposals": 0,
@@ -1674,17 +1652,14 @@
    "rows": 87,
    "complete": 86,
    "alone": 0,
-   "doubtful": 2,
-   "places": 89,
+   "doubtful": 1,
+   "places": 83,
    "alike": 515,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
-    ],
-    "s54": [
-     "“fürauß” is paired with “fuͤr” in column 7"
     ]
    }
   },
@@ -1693,7 +1668,7 @@
    "complete": 50,
    "alone": 5,
    "doubtful": 0,
-   "places": 43,
+   "places": 42,
    "alike": 313,
    "unrelated": 3,
    "proposals": 0,
@@ -1704,7 +1679,7 @@
    "complete": 32,
    "alone": 28,
    "doubtful": 33,
-   "places": 172,
+   "places": 171,
    "alike": 399,
    "unrelated": 20,
    "proposals": 4,
@@ -1893,7 +1868,7 @@
    "complete": 146,
    "alone": 1,
    "doubtful": 2,
-   "places": 102,
+   "places": 99,
    "alike": 872,
    "unrelated": 2,
    "proposals": 0,
@@ -1911,7 +1886,7 @@
    "complete": 108,
    "alone": 14,
    "doubtful": 1,
-   "places": 74,
+   "places": 70,
    "alike": 636,
    "unrelated": 4,
    "proposals": 0,
@@ -1928,7 +1903,7 @@
    "complete": 40,
    "alone": 4,
    "doubtful": 2,
-   "places": 32,
+   "places": 31,
    "alike": 267,
    "unrelated": 1,
    "proposals": 0,
@@ -1962,7 +1937,7 @@
    "complete": 43,
    "alone": 6,
    "doubtful": 1,
-   "places": 39,
+   "places": 37,
    "alike": 279,
    "unrelated": 0,
    "proposals": 0,
@@ -1977,7 +1952,7 @@
    "complete": 60,
    "alone": 6,
    "doubtful": 6,
-   "places": 44,
+   "places": 41,
    "alike": 396,
    "unrelated": 0,
    "proposals": 0,
@@ -2006,8 +1981,8 @@
    "rows": 221,
    "complete": 220,
    "alone": 0,
-   "doubtful": 5,
-   "places": 235,
+   "doubtful": 4,
+   "places": 215,
    "alike": 1313,
    "unrelated": 0,
    "proposals": 1,
@@ -2015,14 +1990,11 @@
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
     ],
-    "s27": [
-     "“from͂-freygeber” is paired with “from͂” in column 2"
-    ],
     "s103": [
      "“unſerm” is paired with “eignem” in column 4"
     ],
     "s115": [
-     "“ohne” is paired with “ſonder” in column 8"
+     "“ohne” is paired with “ſonder” in column 7"
     ],
     "s221": [
      "C is missing where A has 7 words"
@@ -2033,38 +2005,30 @@
    "rows": 62,
    "complete": 62,
    "alone": 0,
-   "doubtful": 1,
-   "places": 34,
+   "doubtful": 0,
+   "places": 30,
    "alike": 184,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s48": [
-     "“Guͦt” is paired with “Gutkrautſamen;” in column 1"
-    ]
-   }
+   "doubts": {}
   },
   "n51": {
    "rows": 84,
    "complete": 82,
    "alone": 2,
-   "doubtful": 1,
-   "places": 20,
+   "doubtful": 0,
+   "places": 19,
    "alike": 82,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s3": [
-     "“REchtbeſchaffne” is paired with “REcht” in column 1"
-    ]
-   }
+   "doubts": {}
   },
   "n57": {
    "rows": 57,
    "complete": 50,
    "alone": 7,
    "doubtful": 1,
-   "places": 46,
+   "places": 45,
    "alike": 150,
    "unrelated": 0,
    "proposals": 0,
@@ -2078,19 +2042,12 @@
    "rows": 451,
    "complete": 450,
    "alone": 1,
-   "doubtful": 2,
-   "places": 238,
+   "doubtful": 0,
+   "places": 223,
    "alike": 1348,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s11": [
-     "“reychszerſtoͤrer” is paired with “reichs” in column 4"
-    ],
-    "s108": [
-     "“Gottsvergeſſenheit.” is paired with “Gotts” in column 3"
-    ]
-   }
+   "doubts": {}
   },
   "n65.3": {
    "rows": 14,
@@ -2124,7 +2081,7 @@
    "complete": 81,
    "alone": 0,
    "doubtful": 0,
-   "places": 78,
+   "places": 76,
    "alike": 244,
    "unrelated": 0,
    "proposals": 0,
@@ -2146,7 +2103,7 @@
    "complete": 15,
    "alone": 0,
    "doubtful": 0,
-   "places": 19,
+   "places": 18,
    "alike": 46,
    "unrelated": 0,
    "proposals": 0,
@@ -2386,7 +2343,7 @@
    "complete": 100,
    "alone": 2,
    "doubtful": 0,
-   "places": 40,
+   "places": 39,
    "alike": 100,
    "unrelated": 0,
    "proposals": 0,
@@ -2408,7 +2365,7 @@
    "complete": 5,
    "alone": 0,
    "doubtful": 0,
-   "places": 3,
+   "places": 2,
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
@@ -2419,7 +2376,7 @@
    "complete": 39,
    "alone": 0,
    "doubtful": 3,
-   "places": 37,
+   "places": 36,
    "alike": 241,
    "unrelated": 0,
    "proposals": 1,
@@ -2485,7 +2442,7 @@
    "complete": 29,
    "alone": 0,
    "doubtful": 0,
-   "places": 16,
+   "places": 15,
    "alike": 87,
    "unrelated": 0,
    "proposals": 0,
@@ -2496,7 +2453,7 @@
    "complete": 61,
    "alone": 0,
    "doubtful": 0,
-   "places": 51,
+   "places": 47,
    "alike": 181,
    "unrelated": 2,
    "proposals": 0,
@@ -2507,7 +2464,7 @@
    "complete": 15,
    "alone": 0,
    "doubtful": 0,
-   "places": 18,
+   "places": 17,
    "alike": 45,
    "unrelated": 0,
    "proposals": 0,
@@ -2518,7 +2475,7 @@
    "complete": 15,
    "alone": 0,
    "doubtful": 0,
-   "places": 15,
+   "places": 14,
    "alike": 42,
    "unrelated": 1,
    "proposals": 0,
@@ -2544,7 +2501,7 @@
    "complete": 9,
    "alone": 0,
    "doubtful": 1,
-   "places": 18,
+   "places": 16,
    "alike": 24,
    "unrelated": 2,
    "proposals": 0,

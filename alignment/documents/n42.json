@@ -4228,16 +4228,9 @@
           "spans": {"A": [119, 120], "B": [119, 120], "C": [117, 118], "D": [523, 524], "N": [283, 284]}
         },
         {
-          "spans": {"A": [121, 122], "B": [121, 122], "C": [119, 120], "D": [525, 526], "N": [285, 286]},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Differences in diacritics (u vs uͤ) and word division (Sionshügel vs Sions huͤgel)."
-          }
+          "spans": {"A": [121, 122], "B": [121, 122], "C": [119, 120], "D": [525, 526], "N": [285, 288]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
-        {"spans": {"N": [287, 288]}},
         {
           "spans": {"A": [123, 124], "B": [123, 124], "C": [121, 122], "D": [527, 528], "N": [289, 290]}
         }

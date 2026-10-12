@@ -318,14 +318,34 @@
 [data-colour='change'] .var[data-change='om'] b { background-color: rgb(var(--c-gap) / 0.35); }
 [data-colour='change'] .var[data-change='om'] { background-color: rgb(var(--c-gap) / 0.08); }
 
-.var[data-cat='punctuation'] { --hue: var(--c-org); }
-.var[data-cat='spelling'] { --hue: var(--c-accent); }
-.var[data-cat='grammatical'] { --hue: var(--c-institution); }
-.var[data-cat='lexical'] { --hue: var(--c-bibl); }
-.var[data-cat='order'] { --hue: var(--c-work); }
-.var[data-cat='omission'] { --hue: var(--c-gap); }
-.var[data-cat='other'] { --hue: var(--c-place); }
-.var[data-cat='open'] { --hue: var(--c-muted); }
+/* A colour per category: the marks, the legend, the mix bars. */
+[data-cat='punctuation'] { --hue: var(--c-org); }
+[data-cat='spelling'] { --hue: var(--c-accent); }
+[data-cat='grammatical'] { --hue: var(--c-institution); }
+[data-cat='lexical'] { --hue: var(--c-bibl); }
+[data-cat='order'] { --hue: var(--c-work); }
+[data-cat='omission'] { --hue: var(--c-gap); }
+[data-cat='other'] { --hue: var(--c-place); }
+[data-cat='open'] { --hue: var(--c-muted); }
+
+/* A poem's variants as one bar, a part per category. */
+.syn-mix { display: flex; gap: 1px; min-width: 6rem; height: 0.55rem; border-radius: 2px; overflow: hidden; }
+.syn-mix > * { display: block; flex-basis: 0; min-width: 2px; padding: 0; border: 0; background-color: rgb(var(--hue) / 0.7); }
+.syn-bar .syn-mix { margin-bottom: 0.4rem; }
+.syn-mix button { cursor: pointer; }
+.syn-mix button:hover { background-color: rgb(var(--hue)); }
+
+/* The overview: where in each poem it varies, on the strip's scale. */
+.syn-spark { display: block; width: 6rem; height: 0.9rem; fill: rgb(var(--c-accent) / 0.75); }
+.syn-poems td { vertical-align: middle; }
+.syn-poems .file { white-space: nowrap; }
+
+/* Witness against witness, shaded by how far apart. */
+.syn-pairs { margin-top: 1rem; font-family: var(--f-ui); font-size: 0.8rem; }
+.syn-pairs summary { cursor: pointer; color: rgb(var(--c-muted)); }
+.syn-pairs table { width: auto; margin-top: 0.4rem; border-collapse: collapse; }
+.syn-pairs th, .syn-pairs td { padding: 0.15rem 0.6rem; text-align: right; }
+.syn-pairs td { background-color: rgb(var(--c-accent) / calc(var(--k, 0) * 0.45)); }
 [data-colour='type'] .var { background-color: rgb(var(--hue) / 0.12); }
 [data-colour='type'] .var b { background-color: rgb(var(--hue) / 0.5); }
 /* Not classified yet is no colour of its own: grey, and lighter. */
@@ -388,6 +408,7 @@
   color: rgb(var(--c-muted));
 }
 .syn-register summary { cursor: pointer; }
+.syn-register h4 { margin: 0.8rem 0 0.2rem; font-size: 0.8rem; font-weight: 600; color: rgb(var(--hue, var(--c-muted))); }
 .syn-register ol {
   columns: 22rem;
   margin: 0.6rem 0 0;
