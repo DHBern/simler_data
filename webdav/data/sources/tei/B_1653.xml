@@ -5857,7 +5857,7 @@
                            ru&#x364;ffen</l>
                         <lb/>
                         <l>und geſchrey: gib was ich bitt/ und mir gena&#x364;dig ſey: ver-</l>
-                        <lb/>
+                        <lb break="no"/>
                         <l>nim&#x342; mein wort/ und merk auf die gedanken: dich bett ich an/
                            be-</l>
                         <lb break="no"/>
@@ -14093,7 +14093,7 @@
                   <l xml:id="l71a" next="#l71b">Hans <hi rendition="#larger">Ru&#x366;dolf</hi> ietz
                      genen&#x342;t; ein Ros in Teutſcher zun-</l>
                   <lb break="no"/>
-                  <l xml:id="l71b" prev="#71a">gen;</l>
+                  <l xml:id="l71b" prev="#l71a">gen;</l>
                   <lb/>
                   <l rendition="#et">von farben und geruch den menſchen angena&#x364;m:</l>
                   <lb/>
@@ -15975,7 +15975,7 @@
                      <lg n="9">
                         <l>Liebes Zu&#x364;rich/ ſinn daran/ und erzehls den Kindeskinden/</l>
                         <lb/>
-                        <l xml:id="l91a" next="l91b">Buß- und Glaubensfru&#x364;chte bring; haß und
+                        <l xml:id="l91a" next="#l91b">Buß- und Glaubensfru&#x364;chte bring; haß und
                            laß gewohnte ſu&#x364;n-</l>
                         <lb break="no"/>
                         <l xml:id="l91b" prev="#l91a">den;</l>
@@ -16612,7 +16612,7 @@
                         <l xml:id="l105b" prev="#l105a">dir/</l>
                         <lb break="no"/>
                         <l xml:id="l106b" prev="#l106a">(bür-</l>
-                        <l xml:id="l106a" next="#106b" rendition="#et">der du ſie haſt erwehlt: drum
+                        <l xml:id="l106a" next="#l106b" rendition="#et">der du ſie haſt erwehlt: drum
                            wehl nach Eidsge.</l>
                      </lg>
                      <lb/>
@@ -17361,10 +17361,10 @@
                      <l rendition="#et">die bherꝛſcht und herꝛſchend ſeind/ geherꝛſchet ie und
                         ie.</l>
                      <lb/>
-                     <l xml:id="l128a" next="#128b">Dem neüerwehlten Herꝛn wünſch' ich anietz nicht
+                     <l xml:id="l128a" next="#l128b">Dem neüerwehlten Herꝛn wünſch' ich anietz nicht
                         min-</l>
                      <lb break="no"/>
-                     <l xml:id="l128b" prev="#128a">der/</l>
+                     <l xml:id="l128b" prev="#l128a">der/</l>
                      <lb/>
                      <l>und ſeiner Gmahelein; auch mit-gemeint die Kinder;</l>
                      <lb/>
@@ -18395,7 +18395,7 @@
                      </lg>
                      <lb/>
                   </div>
-                  <div nn="3" type="poem">
+                  <div n="3" type="poem">
                      <head rendition="#aq #c">XCVI.</head>
                      <lb/>
                      <lg type="poem">
@@ -19034,7 +19034,7 @@
                      <l rendition="#et">der Dichter diſes Bu&#x366;chs dir gibet diſen raht;</l>
                      <lb/>
                      <l xml:id="l130a" next="#l130b" rendition="#et"><hi rendition="#larger">So warn ihn</hi>; deinen Sohn;
-                           <hi>ietz</hi>/ eh es wird zu&#x366;-</l>
+                           <hi rendition="#larger">ietz</hi>/ eh es wird zu&#x366;-</l>
                      <lb break="no"/>
                      <l xml:id="l130b" prev="#l130a">ſpaht..</l>
                   </lg>
@@ -19069,9 +19069,7 @@
                <div n="2" xml:id="n155">
                   <head rendition="#b #c"><hi rendition="#aq">U</hi>ber die 
                      <lb/> von Herꝛen Caſpar Weiſſen/ ꝛc.<lb/>
-                     <l xml:id="l132a" next="#l132b"/> verteütſchte Ru&#x366;h- oder Fridens- 
-                     <lb break="no"/>
-                     <l xml:id="l132b" prev="#l132a">u&#x364;bung.</l></head>
+                     verteütſchte Ru&#x366;h- oder Fridens-<lb break="no"/>u&#x364;bung.</head>
                   <lb/>
                   <lg type="poem">
                      <l rendition="#et">Wan ich mich zu&#x366; denen wende/</l>
@@ -19132,9 +19130,7 @@
                <fw place="top" type="header"><hi rendition="#aq">U</hi>berſchrifften.</fw>
                <div n="2" xml:id="n158">
                   <head rendition="#b #c"><hi rendition="#aq">U</hi>ber <lb/> Herꝛen Johann
-                     Ardüſers/ <lb xml:id="l133a" next="#l133b"/> Haubtm. und Jngenieürs/ neü- 
-                     <lb break="no"/> 
-                     <l xml:id="l133b" prev="#l133a">außgangenes</l>
+                     Ardüſers/ <lb/> Haubtm. und Jngenieürs/ neü-<lb break="no"/>außgangenes
                      Bu&#x366;ch vom<lb/> Veſtungsbau.</head>
                   <lb/>
                   <lg type="poem">
@@ -19285,9 +19281,9 @@
                   <head rendition="#b #c">2. <lb/> Trochaiſcher/ oder fallender <lb/> Ra&#x364;tzelfierling.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l138a" next="#l128b">Durch den ungeſtalten Tod wird der ein beru&#x364;hmter</l>
+                     <l xml:id="l138a" next="#l138b">Durch den ungeſtalten Tod wird der ein beru&#x364;hmter</l>
                      <lb/>
-                     <l xml:id="l138b" prev="#l128a">leben:</l>
+                     <l xml:id="l138b" prev="#l138a">leben:</l>
                      <lb/>
                      <l xml:id="l139a" next="#l139b">Eines andern bundne zung wird dem Tod die Rede ge-</l>
                      <lb break="no"/>
@@ -20232,7 +20228,7 @@
                <fw place="top" type="header">Allerhand</fw>
                <lb/>
 
-               <div n="2" xml:id="n43">
+               <div n="2" xml:id="n43.b">
 
                   <div type="music">
 
@@ -24487,7 +24483,7 @@
                <fw place="top" type="header">Allerhand</fw>
                <lb/>
 
-               <div n="2" xml:id="n83">
+               <div n="2" xml:id="n83.b">
 
                   <div type="music">
 

@@ -62,7 +62,7 @@
             <lb/>
             
             <!-- TODO HiWi: die Randtexte stehen im Export blockweise; links und rechts der Radierung (Bibelstellen, Augustinus) sowie am linken Rand und zwischen den Spalten (Inhaltsangaben). Noch nicht in einzelne Noten getrennt. -->
-            <note place="left">Luc.21<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Andernorts steht an dieser Stelle ein Punkt, der hier aber nicht sicher ist.</p></note>v.34. Hu&#x364;-<lb
+            <note place="left" type="bibl">Luc.21<anchor xml:id="a1"/><unclear>.</unclear><note type="annotation" targetEnd="a1"><p>Andernorts steht an dieser Stelle ein Punkt, der hier aber nicht sicher ist.</p></note>v.34. Hu&#x364;-<lb
             break="no"/>tet euch daß ewere
             <lb/>
             Hertzen nicht be-<lb
@@ -116,7 +116,7 @@
             break="no"/>ben.</note>
             <lb/>
             
-            <note place="right"><hi rendition="#aq"><hi rendition="#i">S. Auguſtinus, in</hi>
+            <note place="right" type="marginalia"><hi rendition="#aq"><hi rendition="#i">S. Auguſtinus, in</hi>
             <lb/>
             <hi rendition="#i">Bpiſt. ad Comi-<lb
             break="no"/>tem; et ad Sacras</hi>
