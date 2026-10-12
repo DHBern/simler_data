@@ -68,12 +68,16 @@ the findings page next to what the documents get wrong.
 | `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the behaviour table, the PM walker |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
-| `assets/preview.js` | The switches and the two anchored panels |
+| `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis |
+| `assets/store.js` | What a reader chose, kept across pages; the one thing the two scripts share |
+| `assets/synopsis.css`, `synopsis.js` | The synopsis pages, loaded by them alone |
 | `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |
 | `assets/normalize.js` | Search normalisation — plain ESM |
 | `assets/search.js` | The search page, and marking the hits in a document |
 | `entities.ts` | The project's registers (persons, places, works, institutions) from `gsheet/csv`, for the entity cards |
-| `page.ts` | The HTML shell: top bar, apparatus (the numbered notes, and a box per other place); index, search and findings pages |
+| `alignments.ts` | The alignments from `../alignment/documents`, as the synopsis pages show them: Alignment JSON 1.0, whose apparatus it derives |
+| `page.ts` | The HTML shell: top bar, apparatus (the numbered notes, and a box per other place); document, index, search and findings pages |
+| `synopsis.ts` | The synopsis pages; it knows nothing of the ODD, and `page.ts` knows nothing of alignments |
 | `build.ts` | Walks the corpus and writes `dist/` |
 | `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
 
@@ -158,7 +162,12 @@ behaviour the element it wraps its content in and whether that renders as a bloc
 or inline; a behaviour that does more than wrap is written out in the walker.
 A `<modelSequence>` renders each of its models whose predicate holds, one after
 the other (`supplied` as its brackets and its text). A `break` with a `label` is the label, then the break (the hyphen at a
-joined line end). `@rendition` styles the
+joined line end). A `line` break with a `label` *is* a joined line end: the hyphen
+encoded before it and the whitespace around it do not render; the word goes on past
+what the search text leaves out, so one hyphenated across a page is joined after the
+catchword, the page break and the running head. A hyphen at any other
+line end stays, and the ODD's Schematron warns about it unless it is an ellipsis
+(*Ehren- und*), a catchword's or a turnover's. `@rendition` styles the
 element only where its model has `@useSourceRendition="true"` (or inherits it
 from its `<modelGrp>`). Predicates see the text as encoded, even where the
 pipeline changed what renders (the hyphen at a joined line end). Params are
@@ -180,7 +189,10 @@ stands, and from its behaviour's flow. A note's `range` param names the element 
 the range is resolved on the rendered page, across any element boundary. Range
 and marker share `data-note`: pointing at either lights up both, and clicking the
 range opens the note. A `data-page` param names the facsimile image of a page
-break: the drawer finds its pages by it, and clicking the break opens its page.
+break: the drawer finds its pages by it, and clicking the break opens its page. A
+`data-margin` param (`left` or `right`) puts the element in the page's margin, on
+that side and beside its line, where the window leaves room for a margin beside the
+text; elsewhere, as on a phone or beside the open facsimile, it stays in the line.
 
 Models with `@output` belong to that output and take precedence over the base
 models there. `plain` is rendered on its own and is what the search indexes;
@@ -228,4 +240,6 @@ in the ODD fails it.
 
 The ODD validates against
 `tei_odds.rng`: the `odd` job of the TEI Preview workflow checks it with `jing` on
-every run, against a pinned TEI release.
+every run, against a pinned TEI release. The Schema to WebDAV workflow compiles it to
+`tei_simler.rng` and `tei_simler.sch` whenever it changes, and puts them into
+`/schema/` on the WebDAV, where the editors validate.
