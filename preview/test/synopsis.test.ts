@@ -7,32 +7,35 @@
  */
 
 import assert from 'node:assert/strict'
-import { existsSync, readFileSync } from 'node:fs'
 import { mkdir, mkdtemp, writeFile } from 'node:fs/promises'
 import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
 
-import { CATEGORIES, FILTERS, loadSynopses, numberLines, ruleRelation, wordForm } from '../alignments'
+import { CATEGORIES, FILTERS, loadSynopses, numberLines } from '../alignments'
 import { synopsesPage, synopsisPage } from '../synopsis'
 
 /**
- * An Alignment JSON document, as `alignment/documents.py` writes them. A row
+ * An Alignment JSON document, as `alignment/pipeline.py` writes them. A row
  * gives each witness its readings column by column (`''`: a gap there), or
- * null where the witness has no text.
+ * null where the witness has no text, and the relations of its columns.
  */
 interface Row {
   cells: Record<string, string[] | null>
   head?: boolean
   copy?: Record<string, string>
   refs?: Record<string, string[]>
+  relations?: Record<number, object>
 }
+
+/** A type the pipeline's rule step wrote. */
+const rule = (type: string, name: string) => ({ type, by: 'rule', rule: name })
 
 function alignment(sources: Record<string, string>, rows: Row[], meta: object = {}) {
   const witnesses = Object.entries(sources).map(([siglum, source]) => ({ siglum, name: siglum, source, tokens: [] as { t: string }[] }))
   const segments = rows.map((row, i) => {
     const cells: Record<string, object> = {}
-    const columns: { spans: Record<string, [number, number]> }[] = []
+    const columns: { spans: Record<string, [number, number]>, relation?: object }[] = []
     for (const w of witnesses) {
       const readings = row.cells[w.siglum]
       if (!readings) {
@@ -48,6 +51,7 @@ function alignment(sources: Record<string, string>, rows: Row[], meta: object = 
       })
       cells[w.siglum] = { span: [start, w.tokens.length], ...(row.copy?.[w.siglum] ? { copy_of: row.copy[w.siglum] } : {}) }
     }
+    for (const [c, relation] of Object.entries(row.relations ?? {})) columns[Number(c)].relation = relation
     const roles = row.head ? Object.fromEntries(Object.keys(sources).filter((s) => row.cells[s]).map((s) => [s, 'head'])) : {}
     return { id: `s${i + 1}`, number: i + 1, roles, cells, columns, ...(row.refs ? { refs: row.refs } : {}) }
   })
@@ -58,7 +62,8 @@ const EXPORT = alignment({ A: 'tei/A_1648.xml#n69', F42A: 'tei/F42A.xml#n69' }, 
   { cells: { A: ['Liebgedicht'], F42A: null }, head: true },
   { cells: { A: ['ich', 'nimmermehr'], F42A: ['ich', 'glaube'] }, copy: { F42A: 's1' },
     refs: { A: ['A-l0001'], F42A: ['F42A-l0001'] } },
-  { cells: { A: ['auff', 'Gott'], F42A: ['auf', 'Gott'] }, refs: { A: ['A-l0002'], F42A: ['F42A-l0002'] } },
+  { cells: { A: ['auff', 'Gott'], F42A: ['auf', 'Gott'] }, refs: { A: ['A-l0002'], F42A: ['F42A-l0002'] },
+    relations: { 0: rule('spelling', 'doubled letters') } },
 ], {
   created_at: '2026-09-28T19:00:00.000+02:00', updated_at: '2026-09-29T02:10:44.000+02:00',
   align_algorithm: 'cgsa',
@@ -124,7 +129,7 @@ test('the overview lists what is aligned, and says so when nothing is', async ()
   assert.match(synopsesPage([]), /Noch keine Ausrichtung/)
 })
 
-test('a place the rules decide gets their type; one they do not is open', async () => {
+test("a place keeps the type the pipeline's rules gave it; one nobody typed is open", async () => {
   const [synopsis] = await load()
   const [, wording, spelling] = synopsis.segments
 
@@ -155,7 +160,8 @@ test('a witness that reads nothing is a difference, and a row without one is qui
 
 test('the filters a reader can add are recorded per place, as a bit per filter set', async () => {
   const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7', C: 'tei/C_1663_dok.xml#n7' }, [
-    { cells: { A: ['Liebe', 'ſinnen/', 'figur'], B: ['liebe', 'ſinnen', 'figur'], C: ['liebe', 'ſinnen', 'geſtalt'] } },
+    { cells: { A: ['Liebe', 'ſinnen/', 'figur'], B: ['liebe', 'ſinnen', 'figur'], C: ['liebe', 'ſinnen', 'geſtalt'] },
+      relations: { 0: rule('orthographic', 'case'), 1: rule('punctuation', 'punctuation') } },
   ])
   const dir = await mkdtemp(join(tmpdir(), 'filters-'))
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
@@ -334,14 +340,52 @@ test('a document aligned by TextAlign says so, and a witness without a source is
   assert.match(page, /<th data-w="1"><a href="A_1648\.html#n7">A<\/a><\/th>\s*<th data-w="2">B<\/th>/)
 })
 
-test('rows a model proposes are not shown until a person accepts them', async () => {
-  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' }, [{ cells: { A: ['ein'], B: ['eyn'] } }])
+test("a model's other pairing of the lines is marked on its rows, not shown in their place", async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' },
+    [{ cells: { A: ['ein'], B: ['eyn'] } }, { cells: { A: ['vers'], B: ['vers'] } }])
+  const proposals = [{ rows: ['s1', 's2'], segments: [{ ...doc.segments[0], id: 's1-1', columns: [] }],
+    by: 'model', model: 'm', rationale: 'one verse' }]
   const dir = await mkdtemp(join(tmpdir(), 'proposed-'))
-  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
-  const plain = synopsisPage((await loadSynopses(dir))[0])
-  const proposals = [{ rows: ['s1'], segments: [{ ...doc.segments[0], id: 's1-1', columns: [] }], by: 'model', model: 'm' }]
   await writeFile(join(dir, 'n7.json'), JSON.stringify({ ...doc, proposals }), 'utf8')
-  assert.equal(synopsisPage((await loadSynopses(dir))[0]), plain)
+  const [synopsis] = await loadSynopses(dir)
+  assert.deepEqual(synopsis.segments.map((s) => s.proposal?.rows), [[1, 2], [1, 2]])
+  const page = synopsisPage(synopsis)
+  assert.equal((page.match(/<tr id="seg-/g) ?? []).length, 2) // the rows as they are
+  assert.match(page, /data-syn-link>1<\/a><span class="pairing" title="Das Modell m schlägt vor, die Zeilen der Segmente 1–2 anders zu paaren: one verse\./)
+  assert.match(page, /Für 2 schlägt ein Modell eine andere Zeilenpaarung vor\./)
+})
+
+test('the rows the alignment editor doubts are marked, with its reasons', async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' },
+    [{ cells: { A: ['ein'], B: ['eyn'] } }, { cells: { A: ['vers'], B: ['vers'] } }])
+  const dir = await mkdtemp(join(tmpdir(), 'doubts-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const estimate = join(await mkdtemp(join(tmpdir(), 'estimate-')), 'estimate.json') // beside documents/, not in it
+  await writeFile(estimate, JSON.stringify({ poems: { n7: { doubts: { s2: ['B is missing'] } } } }), 'utf8')
+  const [synopsis] = await loadSynopses(dir, '', estimate)
+  assert.deepEqual(synopsis.segments.map((s) => s.doubts), [[], ['B is missing']])
+  const page = synopsisPage(synopsis)
+  assert.match(page, /data-syn-link>2<\/a><span class="doubt" title="Ausrichtung zweifelhaft: B is missing">\?<\/span>/)
+  assert.match(page, /1 Segment ist zweifelhaft ausgerichtet\./)
+  assert.match(page, /<i data-row="2" data-level="0" class="quiet doubt"/)
+  assert.match(synopsesPage([synopsis]), /<td class="num">1<\/td>\s*<\/tr>/) // the overview's column
+  // Without a measurement nothing is marked, and nothing fails.
+  assert.equal((await loadSynopses(dir, '', join(dir, 'none.json')))[0].doubtful, 0)
+})
+
+test('the page says first what it rests on: who aligned it, who checked it, who typed it', async () => {
+  const [synopsis] = await load()
+  assert.match(synopsisPage(synopsis), /<p class="syn-basis"><b class="basis" data-basis="lera">LERA<\/b> automatisch ausgerichtet \(<code>cgsa<\/code>\) · noch von niemandem geprüft · Typen: 1 von Regeln<\/p>/)
+  assert.match(synopsesPage([synopsis]), /<td><b class="basis" data-basis="lera">LERA<\/b><\/td>/)
+  // A place a person typed is a row a person worked on.
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' },
+    [{ cells: { A: ['ein'], B: ['eyn'] }, relations: { 0: { type: 'spelling' } } }, { cells: { A: ['vers'], B: ['vers'] } }],
+    { aligned_by: { tool: 'textalign', algorithm: 'dekker' } })
+  const dir = await mkdtemp(join(tmpdir(), 'basis-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const [checked] = await loadSynopses(dir)
+  assert.match(synopsisPage(checked), /data-basis="textalign">TextAlign<\/b> automatisch ausgerichtet \(<code>dekker<\/code>\) · <b class="basis" data-basis="person">von Hand geprüft<\/b> 1 von 2 Segmenten · Typen: 1 bestätigt/)
+  assert.match(synopsesPage([checked]), /TextAlign<\/b> <b class="basis" data-basis="person">geprüft<\/b><\/td>/)
 })
 
 test('the page says which export it was built from', async () => {
@@ -423,22 +467,8 @@ test("a document's classifications reach the apparatus, a model's as provisional
   const page = synopsisPage(synopsis)
   assert.match(page, /<span class="app-rel">Wortlaut<\/span>/) // a person's: the edition's judgement
   assert.match(page, /<span class="app-rel" data-by="model" title="Modell 82 %, nicht bestätigt · m · doubled f">Schreibung <small>Modell 82 %<\/small><\/span>/)
-})
-
-// TextAlign's own cases for its rule cascade, when a checkout is beside this one
-// (or at $TEXTALIGN): the preview's copy of the cascade must agree with them.
-const cases = join(process.env.TEXTALIGN ?? join(import.meta.dirname, '..', '..', '..', 'text-alignment'),
-  'editor', 'test', 'fixtures', 'rule-cases.json')
-
-test("a spelling is what TextAlign's rule cascade calls one", { skip: !existsSync(cases) && 'no TextAlign checkout' }, () => {
-  const fixture = JSON.parse(readFileSync(cases, 'utf8'))
-  for (const [text, form] of Object.entries(fixture.word_forms)) assert.equal(wordForm(text), form, text)
-  // The same type and rule, case by case.
-  for (const { readings, expected } of fixture.cases) assert.deepEqual(ruleRelation(readings), expected, readings.join(' | '))
-  // Readings share a word form exactly where a step of the cascade settles them.
-  for (const { readings, expected } of fixture.cases) {
-    if (new Set(readings).size < 2 || readings.some((r: string) => !r.trim())) continue // no variant, or an omission
-    const cascade = expected && !['word order', 'repeated word'].includes(expected.rule)
-    assert.equal(new Set(readings.map(wordForm)).size === 1, Boolean(cascade), readings.join(' | '))
-  }
+  // The reader can take the model's types back; the place says it is the model's.
+  assert.match(page, /<input type="checkbox" data-syn-model checked> Modellvorschläge/)
+  assert.match(page, /<span class="var" data-group="1-3" data-cat="spelling" data-gone="\d+" data-by="model" data-state="proposed"/)
+  assert.doesNotMatch(synopsisPage((await load())[0]), /data-syn-model/) // no model, no switch
 })

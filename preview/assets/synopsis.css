@@ -50,6 +50,17 @@
 .synopsis .num a { color: inherit; text-decoration: none; }
 .synopsis .num a:hover { text-decoration: underline; }
 .synopsis .num a.copied::after { content: ' kopiert'; color: rgb(var(--c-accent)); }
+/* What is left to check in a row: the editor's doubt, a model's other pairing of the lines. */
+.doubt, .pairing {
+  margin-left: 0.25rem;
+  padding: 0 0.2rem;
+  border-radius: 2px;
+  background-color: rgb(var(--c-gap) / 0.18);
+  color: rgb(var(--c-gap));
+  font-family: var(--f-ui);
+  font-weight: 600;
+  cursor: help;
+}
 
 /* Which poem of a bundle a row belongs to, in view while that poem is. Tinted
    across the full width, so it reads as a divider and not as an empty row. */
@@ -145,6 +156,8 @@
 }
 /* A segment with nothing left to show, by the reader's choice. */
 .syn-strip i.quiet:not(.tick) { opacity: 0.12; width: 0.15rem; }
+/* One left to check: a mark at the strip's left edge, whatever its variance. */
+.syn-strip i.doubt { box-shadow: -0.55rem 0 0 rgb(var(--c-gap)); }
 @media (max-width: 60rem) {
   .syn-strip { display: none; }
 }
@@ -246,6 +259,8 @@
 .app-rel { margin-left: 0.4rem; color: rgb(var(--c-ink)); }
 .app-rel[data-by] { color: rgb(var(--c-muted)); border-bottom: 1px dotted rgb(var(--c-muted)); }
 .app-rel small { font-size: 0.85em; }
+/* The reader took the model's types back. */
+[data-no-model] .app-rel[data-by='model'] { display: none; }
 .app-list i { font-style: normal; font-weight: 600; color: rgb(var(--c-ink)); }
 .app-list li.is-linked { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 
@@ -274,6 +289,20 @@
 .syn-legend { margin: 0 0 1rem; padding: 0.25rem 0 0.5rem 8.5rem; border-bottom: 1px solid rgb(var(--c-line)); }
 @media (max-width: 40rem) { .syn-legend { padding-left: 0; } }
 .syn-source { display: block; } /* a sentence, not a row of swatches */
+
+/* Who aligned a poem and whether a person checked it — the colours of the workflow diagram. */
+.syn-basis { margin: -0.5rem 0 1rem; font-size: 0.85rem; color: rgb(var(--c-muted)); }
+.basis {
+  padding: 0.05rem 0.4rem;
+  border-radius: 2px;
+  font-family: var(--f-ui);
+  font-size: 0.8rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.basis[data-basis='textalign'] { background-color: rgb(var(--c-org) / 0.14); color: rgb(var(--c-org)); }
+.basis[data-basis='lera'] { background-color: rgb(var(--c-muted) / 0.16); color: rgb(var(--c-ink)); }
+.basis[data-basis='person'] { background-color: rgb(var(--c-gap) / 0.18); color: rgb(var(--c-gap)); }
 .syn-legend .var { padding: 0 0.15rem; }
 .syn-legend .line-link { opacity: 1; }
 

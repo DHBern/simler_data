@@ -9728,7 +9728,14 @@
         {"spans": {"A": [15, 16], "B": [15, 16], "C": [13, 14], "F42A": [3, 4]}},
         {
           "spans": {"A": [17, 20], "B": [17, 20], "C": [15, 18], "F42A": [5, 12]},
-          "ext": {"lera": "4-1"}
+          "ext": {"lera": "4-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ between 'vertrawe' (trust) and 'glaube nicht' (do not believe), which are different words/wordings."
+          }
         },
         {"spans": {"A": [21, 22], "B": [21, 22], "C": [19, 20], "F42A": [13, 14]}},
         {"spans": {"A": [23, 24], "B": [23, 24], "C": [21, 22], "F42A": [15, 16]}},
@@ -9839,12 +9846,20 @@
       "columns": [
         {
           "spans": {"A": [25, 38], "B": [25, 38], "C": [23, 36], "F42A": [16, 29]},
-          "ext": {"lera": "5-1"}
+          "ext": {"lera": "5-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference between the main variants (A, B, C) is the use of the long s (ſ) versus short s (s) in 'zuͦ' vs 'zu' and 'muͤglich' vs 'müglich', which are orthographic variations. F42A is a misaligned or unrelated reading."
+          }
         },
         {"spans": {"A": [39, 40], "B": [39, 40], "C": [37, 38], "F42A": [30, 31]}},
         {
           "spans": {"A": [40, 41], "B": [40, 41], "C": [38, 39], "F42A": [31, 32]},
-          "ext": {"lera": "5-2"}
+          "ext": {"lera": "5-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -10060,9 +10075,23 @@
       "columns": [
         {"spans": {"A": [41, 42], "B": [41, 42], "C": [39, 40]}},
         {"spans": {"A": [43, 44], "B": [43, 44], "C": [41, 42]}},
-        {"spans": {"A": [45, 46], "B": [45, 46], "C": [43, 44]}, "ext": {"lera": "8-1"}},
+        {
+          "spans": {"A": [45, 46], "B": [45, 46], "C": [43, 44]},
+          "ext": {"lera": "8-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference between 'gedicht' and 'geticht' (d/t variation)"
+          }
+        },
         {"spans": {"A": [47, 48], "B": [47, 48], "C": [45, 46]}},
-        {"spans": {"A": [49, 50], "B": [49, 50], "C": [47, 48]}, "ext": {"lera": "8-2"}},
+        {
+          "spans": {"A": [49, 50], "B": [49, 50], "C": [47, 48]},
+          "ext": {"lera": "8-2"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [51, 52], "B": [51, 52], "C": [49, 50]}}
       ],
       "ext": {
@@ -10148,7 +10177,11 @@
       "columns": [
         {"spans": {"A": [52, 53], "B": [52, 53], "C": [50, 51]}},
         {"spans": {"A": [54, 55], "B": [54, 55], "C": [52, 53]}},
-        {"spans": {"A": [56, 57], "B": [56, 57], "C": [54, 55]}, "ext": {"lera": "9-1"}},
+        {
+          "spans": {"A": [56, 57], "B": [56, 57], "C": [54, 55]},
+          "ext": {"lera": "9-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
         {"spans": {"A": [58, 59], "B": [58, 59], "C": [56, 57]}},
         {"spans": {"A": [60, 61], "B": [60, 61], "C": [58, 59]}}
       ],
@@ -10191,12 +10224,20 @@
       "columns": [
         {
           "spans": {"A": [61, 66], "B": [61, 66], "C": [59, 64], "F42A": [54, 59]},
-          "ext": {"lera": "10-1"}
+          "ext": {"lera": "10-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [67, 68], "B": [67, 68], "C": [65, 66], "F42A": [60, 61]}},
         {
           "spans": {"A": [69, 70], "B": [69, 70], "C": [67, 68], "F42A": [62, 63]},
-          "ext": {"lera": "10-2"}
+          "ext": {"lera": "10-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (harf/ vs Harpff) and long s (ff vs f) constitutes an orthographic variation."
+          }
         },
         {"spans": {"A": [71, 72], "B": [71, 72], "C": [69, 70], "F42A": [64, 65]}},
         {"spans": {"A": [73, 74], "B": [73, 74], "C": [71, 72], "F42A": [66, 67]}},
@@ -10337,7 +10378,11 @@
         {"spans": {"A": [87, 88], "B": [87, 88], "C": [85, 86]}},
         {"spans": {"A": [89, 90], "B": [89, 90], "C": [87, 88]}},
         {"spans": {"A": [91, 92], "B": [91, 92], "C": [89, 90]}},
-        {"spans": {"A": [93, 94], "B": [93, 94], "C": [91, 92]}, "ext": {"lera": "11-1"}},
+        {
+          "spans": {"A": [93, 94], "B": [93, 94], "C": [91, 92]},
+          "ext": {"lera": "11-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
         {"spans": {"A": [95, 96], "B": [95, 96], "C": [93, 94]}}
       ],
       "ext": {
@@ -10502,7 +10547,8 @@
       "columns": [
         {
           "spans": {"A": [96, 99], "B": [96, 99], "C": [94, 97], "F42A": [88, 91]},
-          "ext": {"lera": "13-1"}
+          "ext": {"lera": "13-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [100, 101], "B": [100, 101], "C": [98, 99], "F42A": [92, 93]}},
         {"spans": {"A": [102, 103], "B": [102, 103], "C": [100, 101], "F42A": [94, 95]}},
@@ -10510,12 +10556,20 @@
         {"spans": {"A": [106, 107], "B": [106, 107], "C": [104, 105], "F42A": [98, 99]}},
         {
           "spans": {"A": [108, 111], "B": [108, 111], "C": [106, 109], "F42A": [100, 101]},
-          "ext": {"lera": "13-2"}
+          "ext": {"lera": "13-2"},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is between the neuter singular nominative/accusative 'beſt' and the neuter singular nominative/accusative with ending 'beſte' (or potentially a different grammatical form depending on interpretation, but clearly a morphological variation of the same word)."
+          }
         },
         {"spans": {"A": [112, 113], "B": [112, 113], "C": [110, 111], "F42A": [102, 103]}},
         {
           "spans": {"A": [114, 115], "B": [114, 115], "C": [112, 113], "F42A": [104, 105]},
-          "ext": {"lera": "13-3"}
+          "ext": {"lera": "13-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [115, 116], "B": [115, 116], "C": [113, 114], "F42A": [105, 106]}}
       ],
@@ -10650,18 +10704,27 @@
       "columns": [
         {
           "spans": {"A": [116, 117], "B": [116, 117], "C": [114, 115], "F42A": [106, 107]},
-          "ext": {"lera": "14-1"}
+          "ext": {"lera": "14-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [118, 119], "B": [118, 119], "C": [116, 117], "F42A": [108, 109]}},
         {"spans": {"A": [120, 121], "B": [120, 121], "C": [118, 119], "F42A": [110, 111]}},
         {
           "spans": {"A": [122, 123], "B": [122, 123], "C": [120, 121], "F42A": [112, 115]},
-          "ext": {"lera": "14-2"}
+          "ext": {"lera": "14-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings 'jederzeit' (every time) and 'jeder friſt' (every term/period) are different words with distinct lexical meanings, despite similar context."
+          }
         },
         {"spans": {"A": [124, 125], "B": [124, 125], "C": [122, 123], "F42A": [116, 117]}},
         {
           "spans": {"A": [126, 129], "B": [126, 129], "C": [124, 127], "F42A": [118, 121]},
-          "ext": {"lera": "14-3"}
+          "ext": {"lera": "14-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [130, 131], "B": [130, 131], "C": [128, 129], "F42A": [122, 123]}},
         {"spans": {"A": [132, 133], "B": [132, 133], "C": [130, 131], "F42A": [124, 125]}}
@@ -10898,16 +10961,28 @@
         "F42A": {"missing": true}
       },
       "columns": [
-        {"spans": {"A": [133, 134], "B": [133, 134], "C": [131, 132]}, "ext": {"lera": "17-1"}},
+        {
+          "spans": {"A": [133, 134], "B": [133, 134], "C": [131, 132]},
+          "ext": {"lera": "17-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [134, 135], "B": [134, 135], "C": [132, 133]}},
         {"spans": {"A": [136, 137], "B": [136, 137], "C": [134, 135]}},
         {"spans": {"A": [138, 139], "B": [138, 139], "C": [136, 137]}},
         {"spans": {"A": [140, 141], "B": [140, 141], "C": [138, 139]}},
-        {"spans": {"A": [142, 143], "B": [142, 143], "C": [140, 141]}, "ext": {"lera": "17-2"}},
+        {
+          "spans": {"A": [142, 143], "B": [142, 143], "C": [140, 141]},
+          "ext": {"lera": "17-2"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [144, 145], "B": [144, 145], "C": [142, 143]}},
         {"spans": {"A": [146, 147], "B": [146, 147], "C": [144, 145]}},
         {"spans": {"A": [148, 149], "B": [148, 149], "C": [146, 147]}},
-        {"spans": {"A": [150, 151], "B": [150, 151], "C": [148, 149]}, "ext": {"lera": "17-3"}},
+        {
+          "spans": {"A": [150, 151], "B": [150, 151], "C": [148, 149]},
+          "ext": {"lera": "17-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
+        },
         {"spans": {"A": [151, 152], "B": [151, 152], "C": [149, 150]}}
       ],
       "ext": {
@@ -11019,7 +11094,11 @@
       "columns": [
         {"spans": {"A": [152, 153], "B": [152, 153], "C": [150, 151]}},
         {"spans": {"A": [154, 155], "B": [154, 155], "C": [152, 153]}},
-        {"spans": {"A": [156, 157], "B": [156, 157], "C": [154, 155]}, "ext": {"lera": "18-1"}},
+        {
+          "spans": {"A": [156, 157], "B": [156, 157], "C": [154, 155]},
+          "ext": {"lera": "18-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
         {"spans": {"A": [158, 159], "B": [158, 159], "C": [156, 157]}},
         {"spans": {"A": [160, 161], "B": [160, 161], "C": [158, 159]}},
         {"spans": {"A": [162, 163], "B": [162, 163], "C": [160, 161]}},
@@ -11123,18 +11202,33 @@
       "columns": [
         {
           "spans": {"A": [169, 170], "B": [169, 170], "C": [167, 168], "F42A": [157, 158]},
-          "ext": {"lera": "19-1"}
+          "ext": {"lera": "19-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'auch' (also) and 'Vnd' (and) are different words with different meanings."
+          }
         },
         {"spans": {"A": [171, 172], "B": [171, 172], "C": [169, 170], "F42A": [159, 160]}},
         {
           "spans": {"A": [173, 180], "B": [173, 180], "C": [171, 178], "F42A": [161, 164]},
-          "ext": {"lera": "19-2"}
+          "ext": {"lera": "19-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The phrase 'dem Rund der welt' (the round of the world) is replaced by 'wͦelt-weitem Thal' (world-wide valley), which constitutes a change in wording and imagery."
+          }
         },
         {"spans": {"A": [181, 182], "B": [181, 182], "C": [179, 180], "F42A": [165, 166]}},
         {"spans": {"A": [183, 184], "B": [183, 184], "C": [181, 182], "F42A": [167, 168]}},
         {
           "spans": {"A": [185, 186], "B": [185, 186], "C": [183, 184], "F42A": [169, 170]},
-          "ext": {"lera": "19-3"}
+          "ext": {"lera": "19-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [187, 188], "B": [187, 188], "C": [185, 186], "F42A": [171, 172]}},
         {"spans": {"A": [189, 190], "B": [189, 190], "C": [187, 188], "F42A": [173, 174]}}
@@ -11281,19 +11375,22 @@
       "columns": [
         {
           "spans": {"A": [190, 191], "B": [190, 191], "C": [188, 189], "F42A": [174, 175]},
-          "ext": {"lera": "20-1"}
+          "ext": {"lera": "20-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [192, 193], "B": [192, 193], "C": [190, 191], "F42A": [176, 177]}},
         {"spans": {"A": [194, 195], "B": [194, 195], "C": [192, 193], "F42A": [178, 179]}},
         {
           "spans": {"A": [196, 197], "B": [196, 197], "C": [194, 195], "F42A": [180, 181]},
-          "ext": {"lera": "20-2"}
+          "ext": {"lera": "20-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [198, 199], "B": [198, 199], "C": [196, 197], "F42A": [182, 183]}},
         {"spans": {"A": [200, 201], "B": [200, 201], "C": [198, 199], "F42A": [184, 185]}},
         {
           "spans": {"A": [202, 203], "B": [202, 203], "C": [200, 201], "F42A": [186, 187]},
-          "ext": {"lera": "20-3"}
+          "ext": {"lera": "20-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [204, 205], "B": [204, 205], "C": [202, 203], "F42A": [188, 189]}},
         {"spans": {"A": [206, 207], "B": [206, 207], "C": [204, 205], "F42A": [190, 191]}}
@@ -11535,7 +11632,11 @@
         {"spans": {"A": [226, 227], "B": [226, 227], "C": [224, 225]}},
         {"spans": {"A": [228, 229], "B": [228, 229], "C": [226, 227]}},
         {"spans": {"A": [230, 231], "B": [230, 231], "C": [228, 229]}},
-        {"spans": {"A": [232, 233], "B": [232, 233], "C": [230, 231]}, "ext": {"lera": "22-1"}},
+        {
+          "spans": {"A": [232, 233], "B": [232, 233], "C": [230, 231]},
+          "ext": {"lera": "22-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [234, 235], "B": [234, 235], "C": [232, 233]}},
         {"spans": {"A": [236, 237], "B": [236, 237], "C": [234, 235]}},
         {"spans": {"A": [238, 239], "B": [238, 239], "C": [236, 237]}},
@@ -11721,7 +11822,11 @@
         {"spans": {"A": [258, 259], "B": [258, 259], "C": [256, 257]}},
         {"spans": {"A": [260, 261], "B": [260, 261], "C": [258, 259]}},
         {"spans": {"A": [262, 263], "B": [262, 263], "C": [260, 261]}},
-        {"spans": {"A": [264, 265], "B": [264, 265], "C": [262, 263]}, "ext": {"lera": "24-1"}},
+        {
+          "spans": {"A": [264, 265], "B": [264, 265], "C": [262, 263]},
+          "ext": {"lera": "24-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
         {"spans": {"A": [266, 267], "B": [266, 267], "C": [264, 265]}},
         {"spans": {"A": [268, 269], "B": [268, 269], "C": [266, 267]}}
       ],
@@ -12025,14 +12130,16 @@
         {"spans": {"A": [271, 272], "B": [271, 272], "C": [269, 270], "F42A": [251, 252]}},
         {
           "spans": {"A": [273, 274], "B": [273, 274], "C": [271, 272], "F42A": [253, 254]},
-          "ext": {"lera": "29-1"}
+          "ext": {"lera": "29-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [275, 276], "B": [275, 276], "C": [273, 274], "F42A": [255, 256]}},
         {"spans": {"A": [277, 278], "B": [277, 278], "C": [275, 276], "F42A": [257, 258]}},
         {"spans": {"A": [279, 280], "B": [279, 280], "C": [277, 278], "F42A": [259, 260]}},
         {
           "spans": {"A": [281, 282], "B": [281, 282], "C": [279, 280], "F42A": [261, 262]},
-          "ext": {"lera": "29-2"}
+          "ext": {"lera": "29-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [283, 284], "B": [283, 284], "C": [281, 282], "F42A": [263, 264]}}
       ],
@@ -12153,24 +12260,34 @@
       "columns": [
         {
           "spans": {"A": [284, 285], "B": [284, 285], "C": [282, 283], "F42A": [264, 265]},
-          "ext": {"lera": "30-1"}
+          "ext": {"lera": "30-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [286, 287], "B": [286, 287], "C": [284, 285], "F42A": [266, 267]}},
         {"spans": {"A": [288, 289], "B": [288, 289], "C": [286, 287], "F42A": [268, 269]}},
         {"spans": {"A": [290, 291], "B": [290, 291], "C": [288, 289], "F42A": [270, 271]}},
         {
           "spans": {"A": [292, 293], "B": [292, 293], "C": [290, 291], "F42A": [272, 273]},
-          "ext": {"lera": "30-2"}
+          "ext": {"lera": "30-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (nun vs Nu) and long s (ſonne vs Sonne) are orthographic variants."
+          }
         },
         {"spans": {"A": [294, 295], "B": [294, 295], "C": [292, 293], "F42A": [274, 275]}},
         {
           "spans": {"A": [296, 297], "B": [296, 297], "C": [294, 295], "F42A": [276, 277]},
-          "ext": {"lera": "30-3"}
+          "ext": {"lera": "30-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [298, 299], "B": [298, 299], "C": [296, 297], "F42A": [278, 279]}},
         {
           "spans": {"A": [300, 301], "B": [300, 301], "C": [298, 299], "F42A": [280, 281]},
-          "ext": {"lera": "30-4"}
+          "ext": {"lera": "30-4"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [302, 303], "B": [302, 303], "C": [300, 301], "F42A": [282, 283]}}
       ],
@@ -12313,17 +12430,32 @@
         {"spans": {"A": [303, 304], "B": [303, 304], "C": [301, 302], "F42A": [283, 284]}},
         {
           "spans": {"A": [305, 306], "B": [305, 306], "C": [303, 304], "F42A": [285, 286]},
-          "ext": {"lera": "31-1"}
+          "ext": {"lera": "31-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are limited to the use of the long s (ſ) versus short s (s) and the presence or absence of the diaeresis (uͦ vs u), which are graphic variants of the same word form."
+          }
         },
         {"spans": {"A": [307, 308], "B": [307, 308], "C": [305, 306], "F42A": [287, 288]}},
         {
           "spans": {"A": [309, 310], "B": [309, 310], "C": [307, 308], "F42A": [289, 290]},
-          "ext": {"lera": "31-2"}
+          "ext": {"lera": "31-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [311, 312], "B": [311, 312], "C": [309, 310], "F42A": [291, 292]}},
         {
           "spans": {"A": [313, 318], "B": [313, 318], "C": [311, 316], "F42A": [293, 298]},
-          "ext": {"lera": "31-3"}
+          "ext": {"lera": "31-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are limited to capitalization (Sie/Sy), long s (knüpfet/knüpffet), and u/v (und/vnd)."
+          }
         },
         {"spans": {"A": [319, 320], "B": [319, 320], "C": [317, 318], "F42A": [299, 300]}}
       ],
@@ -12457,18 +12589,27 @@
       "columns": [
         {
           "spans": {"A": [320, 323], "B": [320, 323], "C": [318, 321], "F42A": [300, 303]},
-          "ext": {"lera": "32-1"}
+          "ext": {"lera": "32-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [323, 324], "B": [323, 324], "C": [321, 322], "F42A": [303, 304]}},
         {
           "spans": {"A": [325, 326], "B": [325, 326], "C": [323, 324], "F42A": [305, 306]},
-          "ext": {"lera": "32-2"}
+          "ext": {"lera": "32-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [327, 328], "B": [327, 328], "C": [325, 326], "F42A": [307, 308]}},
         {"spans": {"A": [329, 330], "B": [329, 330], "C": [327, 328], "F42A": [309, 310]}},
         {
           "spans": {"A": [331, 336], "B": [331, 336], "C": [329, 334], "F42A": [311, 318]},
-          "ext": {"lera": "32-3"}
+          "ext": {"lera": "32-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the subject ('jeder' vs 'man') and the predicate structure ('stark befindt' vs 'am stärcksten findt'), representing different wordings."
+          }
         },
         {"spans": {"A": [336, 337], "B": [336, 337], "C": [334, 335], "F42A": [318, 319]}}
       ],
@@ -12600,12 +12741,26 @@
       "columns": [
         {
           "spans": {"A": [337, 344], "B": [337, 344], "C": [335, 342], "F42A": [319, 326]},
-          "ext": {"lera": "33-1"}
+          "ext": {"lera": "33-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice ('Was immer' vs 'Alles was') and adjective ('dünnen' vs 'hohen'), which constitutes a lexical difference."
+          }
         },
         {"spans": {"A": [345, 346], "B": [345, 346], "C": [343, 344], "F42A": [327, 328]}},
         {
           "spans": {"A": [347, 350], "B": [347, 350], "C": [345, 348], "F42A": [329, 332]},
-          "ext": {"lera": "33-2"}
+          "ext": {"lera": "33-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The adjective 'dünnen' (thin) is replaced by 'hohen' (high), which are different words with different meanings."
+          }
         },
         {"spans": {"A": [351, 352], "B": [351, 352], "C": [349, 350], "F42A": [333, 334]}}
       ],
@@ -12731,12 +12886,26 @@
       "columns": [
         {
           "spans": {"A": [352, 357], "B": [352, 357], "C": [350, 355], "F42A": [334, 337]},
-          "ext": {"lera": "34-1"}
+          "ext": {"lera": "34-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Edition F42A contains the additional word 'Alles' and uses different wording ('in gantzer Welte' vs 'um und neben uns auf diker erde'), constituting a lexical difference."
+          }
         },
         {"spans": {"A": [358, 359], "B": [358, 359], "C": [356, 357], "F42A": [338, 339]}},
         {
           "spans": {"A": [360, 367], "B": [360, 367], "C": [358, 365], "F42A": [340, 347]},
-          "ext": {"lera": "34-2"}
+          "ext": {"lera": "34-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'auf diker erde' vs 'in gantzer Welte'."
+          }
         },
         {"spans": {"A": [368, 369], "B": [368, 369], "C": [366, 367], "F42A": [348, 349]}}
       ],
@@ -12914,7 +13083,17 @@
         {"spans": {"A": [370, 371], "B": [370, 371]}, "ext": {"lera": "36-1"}},
         {"spans": {"A": [372, 373], "B": [372, 373], "C": [369, 370]}},
         {"spans": {"A": [374, 375], "B": [374, 375], "C": [371, 372]}},
-        {"spans": {"A": [376, 377], "B": [376, 377], "C": [373, 374]}, "ext": {"lera": "36-2"}},
+        {
+          "spans": {"A": [376, 377], "B": [376, 377], "C": [373, 374]},
+          "ext": {"lera": "36-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference between 'under' and 'unter' is a graphic variant (u/v) of the same word."
+          }
+        },
         {"spans": {"A": [378, 379], "B": [378, 379], "C": [375, 376]}},
         {"spans": {"A": [380, 381], "B": [380, 381], "C": [377, 378]}},
         {"spans": {"A": [382, 383], "B": [382, 383], "C": [379, 380]}},
@@ -13017,7 +13196,14 @@
       "columns": [
         {
           "spans": {"A": [385, 398], "B": [385, 398], "C": [382, 395], "F42A": [362, 375]},
-          "ext": {"lera": "37-1"}
+          "ext": {"lera": "37-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'die heiſſe liebe' vs 'Die Lieb' and 'vermehret vnd' is present in one but not the others."
+          }
         },
         {"spans": {"A": [399, 400], "B": [399, 400], "C": [396, 397], "F42A": [376, 377]}}
       ],
@@ -13140,13 +13326,21 @@
         {"spans": {"A": [400, 401], "B": [400, 401], "C": [397, 398], "F42A": [377, 378]}},
         {
           "spans": {"A": [402, 403], "B": [402, 403], "C": [399, 400], "F42A": [379, 380]},
-          "ext": {"lera": "38-1"}
+          "ext": {"lera": "38-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "erwehnt and vermeldt are different verbs with distinct meanings (mentions vs. reports)."
+          }
         },
         {"spans": {"A": [404, 405], "B": [404, 405], "C": [401, 402], "F42A": [381, 382]}},
         {"spans": {"A": [406, 407], "B": [406, 407], "C": [403, 404], "F42A": [383, 384]}},
         {
           "spans": {"A": [408, 409], "B": [408, 409], "C": [405, 406], "F42A": [385, 386]},
-          "ext": {"lera": "38-2"}
+          "ext": {"lera": "38-2"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [409, 410], "B": [409, 410], "C": [406, 407], "F42A": [386, 387]}}
       ],
@@ -13199,13 +13393,15 @@
       "columns": [
         {
           "spans": {"A": [410, 413], "B": [410, 413], "C": [407, 410], "F42A": [387, 390]},
-          "ext": {"lera": "39-1"}
+          "ext": {"lera": "39-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [414, 415], "B": [414, 415], "C": [411, 412], "F42A": [391, 392]}},
         {"spans": {"A": [416, 417], "B": [416, 417], "C": [413, 414], "F42A": [393, 394]}},
         {
           "spans": {"A": [418, 421], "B": [418, 421], "C": [415, 418], "F42A": [395, 398]},
-          "ext": {"lera": "39-2"}
+          "ext": {"lera": "39-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [422, 423], "B": [422, 423], "C": [419, 420], "F42A": [399, 400]}},
         {"spans": {"A": [424, 425], "B": [424, 425], "C": [421, 422], "F42A": [401, 402]}}
@@ -13330,13 +13526,15 @@
         {"spans": {"A": [429, 430], "B": [429, 430], "C": [426, 427], "F42A": [406, 407]}},
         {
           "spans": {"A": [431, 432], "B": [431, 432], "C": [428, 429], "F42A": [408, 409]},
-          "ext": {"lera": "40-1"}
+          "ext": {"lera": "40-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [433, 434], "B": [433, 434], "C": [430, 431], "F42A": [410, 411]}},
         {"spans": {"A": [435, 436], "B": [435, 436], "C": [432, 433], "F42A": [412, 413]}},
         {
           "spans": {"A": [436, 437], "B": [436, 437], "C": [433, 434], "F42A": [413, 414]},
-          "ext": {"lera": "40-2"}
+          "ext": {"lera": "40-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -13438,7 +13636,11 @@
       },
       "columns": [
         {"spans": {"A": [437, 438], "B": [437, 438], "C": [434, 435]}},
-        {"spans": {"A": [439, 440], "B": [439, 440], "C": [436, 437]}, "ext": {"lera": "41-1"}},
+        {
+          "spans": {"A": [439, 440], "B": [439, 440], "C": [436, 437]},
+          "ext": {"lera": "41-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
         {"spans": {"A": [441, 442], "B": [441, 442], "C": [438, 439]}},
         {"spans": {"A": [443, 444], "B": [443, 444], "C": [440, 441]}},
         {"spans": {"A": [445, 446], "B": [445, 446], "C": [442, 443]}},
@@ -13613,13 +13815,21 @@
         {"spans": {"A": [458, 459], "B": [458, 459], "C": [455, 456], "F42A": [435, 436]}},
         {
           "spans": {"A": [460, 461], "B": [460, 461], "C": [457, 458], "F42A": [437, 438]},
-          "ext": {"lera": "43-1"}
+          "ext": {"lera": "43-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [462, 463], "B": [462, 463], "C": [459, 460], "F42A": [439, 440]}},
         {"spans": {"A": [464, 465], "B": [464, 465], "C": [461, 462], "F42A": [441, 442]}},
         {
           "spans": {"A": [466, 467], "B": [466, 467], "C": [463, 464], "F42A": [443, 444]},
-          "ext": {"lera": "43-2"}
+          "ext": {"lera": "43-2"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the number of 't's (gemuͤhter vs gemuͤter) representing a spelling variation of the same word."
+          }
         },
         {"spans": {"A": [467, 468], "B": [467, 468], "C": [464, 465], "F42A": [444, 445]}}
       ],
@@ -13724,24 +13934,28 @@
       "columns": [
         {
           "spans": {"A": [468, 469], "B": [468, 469], "C": [465, 466], "F42A": [445, 446]},
-          "ext": {"lera": "44-1"}
+          "ext": {"lera": "44-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [470, 471], "B": [470, 471], "C": [467, 468], "F42A": [447, 448]}},
         {"spans": {"A": [472, 473], "B": [472, 473], "C": [469, 470], "F42A": [449, 450]}},
         {
           "spans": {"A": [474, 475], "B": [474, 475], "C": [471, 472], "F42A": [451, 452]},
-          "ext": {"lera": "44-2"}
+          "ext": {"lera": "44-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [476, 477], "B": [476, 477], "C": [473, 474], "F42A": [453, 454]}},
         {"spans": {"A": [478, 479], "B": [478, 479], "C": [475, 476], "F42A": [455, 456]}},
         {
           "spans": {"A": [480, 481], "B": [480, 481], "C": [477, 478], "F42A": [457, 458]},
-          "ext": {"lera": "44-3"}
+          "ext": {"lera": "44-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [482, 483], "B": [482, 483], "C": [479, 480], "F42A": [459, 460]}},
         {
           "spans": {"A": [484, 485], "B": [484, 485], "C": [481, 482], "F42A": [461, 462]},
-          "ext": {"lera": "44-4"}
+          "ext": {"lera": "44-4"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [485, 486], "B": [485, 486], "C": [482, 483], "F42A": [462, 463]}}
       ],
@@ -13883,7 +14097,14 @@
         {"spans": {"A": [491, 492], "B": [491, 492], "C": [488, 489], "F42A": [467, 468]}},
         {
           "spans": {"A": [493, 500], "B": [493, 500], "C": [490, 497], "F42A": [469, 476]},
-          "ext": {"lera": "45-2"}
+          "ext": {"lera": "45-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'bezeuget rund und frey' vs 'von ſich bezeuget frey'."
+          }
         },
         {"spans": {"A": [501, 502], "B": [501, 502], "C": [498, 499], "F42A": [477, 478]}}
       ],
@@ -14010,12 +14231,14 @@
       "columns": [
         {
           "spans": {"A": [502, 513], "B": [502, 513], "C": [499, 510], "F42A": [478, 489]},
-          "ext": {"lera": "46-1"}
+          "ext": {"lera": "46-1"},
+          "relation": {"type": "transposition", "by": "rule", "rule": "word order"}
         },
         {"spans": {"A": [514, 515], "B": [514, 515], "C": [511, 512], "F42A": [490, 491]}},
         {
           "spans": {"A": [516, 517], "B": [516, 517], "C": [513, 514], "F42A": [492, 493]},
-          "ext": {"lera": "46-2"}
+          "ext": {"lera": "46-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [517, 518], "B": [517, 518], "C": [514, 515], "F42A": [493, 494]}}
       ],
@@ -14138,12 +14361,14 @@
         {"spans": {"A": [520, 521], "B": [520, 521], "C": [517, 518], "F42A": [496, 497]}},
         {
           "spans": {"A": [522, 523], "B": [522, 523], "C": [519, 520], "F42A": [498, 499]},
-          "ext": {"lera": "47-1"}
+          "ext": {"lera": "47-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [524, 525], "B": [524, 525], "C": [521, 522], "F42A": [500, 501]}},
         {
           "spans": {"A": [526, 527], "B": [526, 527], "C": [523, 524], "F42A": [501, 504]},
-          "ext": {"lera": "47-2"}
+          "ext": {"lera": "47-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [528, 529], "B": [528, 529], "C": [525, 526], "F42A": [505, 506]}},
         {"spans": {"A": [530, 531], "B": [530, 531], "C": [527, 528], "F42A": [507, 508]}},
@@ -14151,7 +14376,14 @@
         {"spans": {"A": [534, 535], "B": [534, 535], "C": [531, 532], "F42A": [511, 512]}},
         {
           "spans": {"A": [536, 537], "B": [536, 537], "C": [533, 534], "F42A": [513, 514]},
-          "ext": {"lera": "47-3"}
+          "ext": {"lera": "47-3"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the representation of the umlaut (u with diaeresis vs. i) for the same grammatical form."
+          }
         },
         {"spans": {"A": [537, 538], "B": [537, 538], "C": [534, 535], "F42A": [514, 515]}}
       ],
@@ -14292,7 +14524,14 @@
       "columns": [
         {
           "spans": {"A": [538, 543], "B": [538, 543], "C": [535, 540], "F42A": [515, 522]},
-          "ext": {"lera": "48-1"}
+          "ext": {"lera": "48-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Edition F42A contains the word 'allein' and uses the stem 'solt' instead of 'solte', whereas the other editions use 'solte' and lack 'allein'. This constitutes a difference in wording/lexicon."
+          }
         },
         {"spans": {"A": [544, 545], "B": [544, 545], "C": [541, 542], "F42A": [523, 524]}},
         {"spans": {"A": [546, 547], "B": [546, 547], "C": [543, 544], "F42A": [525, 526]}},
@@ -14427,17 +14666,26 @@
         {"spans": {"A": [555, 556], "B": [555, 556], "C": [552, 553], "F42A": [532, 533]}},
         {
           "spans": {"A": [557, 560], "B": [557, 560], "C": [554, 557], "F42A": [534, 537]},
-          "ext": {"lera": "49-1"}
+          "ext": {"lera": "49-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the spelling of 'vermerckt' (ck/k) and 'Braͤutigamb' (final b vs m), which are orthographic variants of the same words."
+          }
         },
         {"spans": {"A": [561, 562], "B": [561, 562], "C": [558, 559], "F42A": [538, 539]}},
         {
           "spans": {"A": [563, 564], "B": [563, 564], "C": [560, 561], "F42A": [540, 541]},
-          "ext": {"lera": "49-2"}
+          "ext": {"lera": "49-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [565, 566], "B": [565, 566], "C": [562, 563], "F42A": [542, 543]}},
         {
           "spans": {"A": [567, 568], "B": [567, 568], "C": [564, 565], "F42A": [544, 545]},
-          "ext": {"lera": "49-3"}
+          "ext": {"lera": "49-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [569, 570], "B": [569, 570], "C": [566, 567], "F42A": [546, 547]}}
       ],
@@ -14564,12 +14812,26 @@
       "columns": [
         {
           "spans": {"A": [570, 573], "B": [570, 573], "C": [567, 570], "F42A": [547, 554]},
-          "ext": {"lera": "50-1"}
+          "ext": {"lera": "50-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference in the aligned segment is the long s vs. short s (ihm / jhn) and capitalization (dann / Dann), which are orthographic variations."
+          }
         },
         {"spans": {"A": [574, 575], "B": [574, 575], "C": [571, 572], "F42A": [555, 556]}},
         {
           "spans": {"A": [576, 583], "B": [576, 583], "C": [573, 580], "F42A": [557, 562]},
-          "ext": {"lera": "50-2"}
+          "ext": {"lera": "50-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference in the aligned segment is 'ohne' vs 'sonder', which are different words (prepositions) with similar meaning but distinct lexical forms."
+          }
         },
         {"spans": {"A": [584, 585], "B": [584, 585], "C": [581, 582], "F42A": [563, 564]}}
       ],
@@ -14700,7 +14962,8 @@
         {"spans": {"A": [587, 588], "B": [587, 588], "C": [584, 585], "F42A": [566, 567]}},
         {
           "spans": {"A": [589, 590], "B": [589, 590], "C": [586, 587], "F42A": [568, 569]},
-          "ext": {"lera": "51-1"}
+          "ext": {"lera": "51-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [591, 592], "B": [591, 592], "C": [588, 589], "F42A": [570, 571]}},
         {"spans": {"A": [593, 594], "B": [593, 594], "C": [590, 591], "F42A": [572, 573]}},
@@ -14709,7 +14972,8 @@
         {"spans": {"A": [599, 600], "B": [599, 600], "C": [596, 597], "F42A": [578, 579]}},
         {
           "spans": {"A": [601, 602], "B": [601, 602], "C": [598, 599], "F42A": [580, 581]},
-          "ext": {"lera": "51-2"}
+          "ext": {"lera": "51-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [602, 603], "B": [602, 603], "C": [599, 600], "F42A": [581, 582]}}
       ],
@@ -14833,27 +15097,44 @@
       "columns": [
         {
           "spans": {"A": [603, 604], "B": [603, 604], "C": [600, 601], "F42A": [582, 583]},
-          "ext": {"lera": "52-1"}
+          "ext": {"lera": "52-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [604, 605], "B": [604, 605], "C": [601, 602], "F42A": [583, 584]}},
         {
           "spans": {"A": [606, 607], "B": [606, 607], "C": [603, 604], "F42A": [585, 588]},
-          "ext": {"lera": "52-2"}
+          "ext": {"lera": "52-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'einem' (dative article) is replaced by 'wie ein' (conjunction + nominative article), changing the wording and grammatical structure of the phrase."
+          }
         },
         {"spans": {"A": [608, 609], "B": [608, 609], "C": [605, 606], "F42A": [589, 590]}},
         {
           "spans": {"A": [610, 611], "B": [610, 611], "C": [607, 608], "F42A": [591, 592]},
-          "ext": {"lera": "52-3"}
+          "ext": {"lera": "52-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The word 'gleich' (like/equal) is replaced by 'fein' (fine) in reading F42A, which is a different word with a different meaning."
+          }
         },
         {"spans": {"A": [611, 612], "B": [611, 612], "C": [608, 609], "F42A": [592, 593]}},
         {
           "spans": {"A": [613, 614], "B": [613, 614], "C": [610, 611], "F42A": [594, 595]},
-          "ext": {"lera": "52-4"}
+          "ext": {"lera": "52-4"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [615, 616], "B": [615, 616], "C": [612, 613], "F42A": [596, 597]}},
         {
           "spans": {"A": [617, 618], "B": [617, 618], "C": [614, 615], "F42A": [598, 599]},
-          "ext": {"lera": "52-5"}
+          "ext": {"lera": "52-5"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [619, 620], "B": [619, 620], "C": [616, 617], "F42A": [600, 601]}}
       ],
@@ -14994,24 +15275,46 @@
       "columns": [
         {
           "spans": {"A": [620, 621], "B": [620, 621], "C": [617, 618], "F42A": [601, 602]},
-          "ext": {"lera": "53-1"}
+          "ext": {"lera": "53-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The interjection 'Ey' in editions A, B, and C is replaced by the word 'Mein' in edition F42A, representing a change in wording."
+          }
         },
         {"spans": {"A": [621, 622], "B": [621, 622], "C": [618, 619], "F42A": [602, 603]}},
         {
           "spans": {"A": [623, 626], "B": [623, 626], "C": [620, 623], "F42A": [604, 605]},
-          "ext": {"lera": "53-2"}
+          "ext": {"lera": "53-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (lowercase 'w' vs uppercase 'W')"
+          }
         },
         {"spans": {"A": [627, 628], "B": [627, 628], "C": [624, 625], "F42A": [606, 607]}},
         {"spans": {"A": [629, 630], "B": [629, 630], "C": [626, 627], "F42A": [608, 609]}},
         {
           "spans": {"A": [631, 634], "B": [631, 634], "C": [628, 631], "F42A": [610, 615]},
-          "ext": {"lera": "53-3"}
+          "ext": {"lera": "53-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'da! redt' vs 'von dir? Redt'."
+          }
         },
         {"spans": {"A": [635, 636], "B": [635, 636], "C": [632, 633], "F42A": [616, 617]}},
         {"spans": {"A": [637, 638], "B": [637, 638], "C": [634, 635], "F42A": [618, 619]}},
         {
           "spans": {"A": [639, 642], "B": [639, 642], "C": [636, 639], "F42A": [620, 623]},
-          "ext": {"lera": "53-4"}
+          "ext": {"lera": "53-4"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [642, 643], "B": [642, 643], "C": [639, 640], "F42A": [623, 624]}}
       ],
@@ -15230,13 +15533,21 @@
         {"spans": {"A": [645, 646], "B": [645, 646], "C": [642, 643]}},
         {"spans": {"A": [647, 648], "B": [647, 648], "C": [644, 645]}},
         {"spans": {"A": [649, 650], "B": [649, 650], "C": [646, 647]}},
-        {"spans": {"A": [651, 652], "B": [651, 652], "C": [648, 649]}, "ext": {"lera": "55-1"}},
+        {
+          "spans": {"A": [651, 652], "B": [651, 652], "C": [648, 649]},
+          "ext": {"lera": "55-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [653, 654], "B": [653, 654], "C": [650, 651]}},
         {"spans": {"A": [655, 656], "B": [655, 656], "C": [652, 653]}},
         {"spans": {"A": [657, 658], "B": [657, 658], "C": [654, 655]}},
         {"spans": {"A": [659, 660], "B": [659, 660], "C": [656, 657]}},
         {"spans": {"A": [661, 662], "B": [661, 662], "C": [658, 659]}},
-        {"spans": {"A": [662, 663], "B": [662, 663], "C": [659, 660]}, "ext": {"lera": "55-2"}}
+        {
+          "spans": {"A": [662, 663], "B": [662, 663], "C": [659, 660]},
+          "ext": {"lera": "55-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -15349,17 +15660,32 @@
         {"spans": {"A": [663, 664], "B": [663, 664], "C": [660, 661], "F42A": [643, 644]}},
         {
           "spans": {"A": [665, 666], "B": [665, 666], "C": [662, 663], "F42A": [645, 646]},
-          "ext": {"lera": "56-1"}
+          "ext": {"lera": "56-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [666, 667], "B": [666, 667], "C": [663, 664], "F42A": [646, 647]}},
         {
           "spans": {"A": [668, 671], "B": [668, 671], "C": [665, 668], "F42A": [648, 649]},
-          "ext": {"lera": "56-2"}
+          "ext": {"lera": "56-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference is hyphenation (wolbedacht vs wol-bedacht)."
+          }
         },
         {"spans": {"A": [672, 673], "B": [672, 673], "C": [669, 670], "F42A": [650, 651]}},
         {
           "spans": {"A": [674, 675], "B": [674, 675], "C": [671, 672], "F42A": [652, 653]},
-          "ext": {"lera": "56-3"}
+          "ext": {"lera": "56-3"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings 'damit' and 'Salomon' are not aligned variants of the same position; they are different words in different syntactic roles within the sentence structure."
+          }
         },
         {"spans": {"A": [676, 677], "B": [676, 677], "C": [673, 674], "F42A": [654, 655]}}
       ],
@@ -15478,18 +15804,27 @@
       "columns": [
         {
           "spans": {"A": [677, 686], "B": [677, 686], "C": [674, 683], "F42A": [655, 660]},
-          "ext": {"lera": "57-1"}
+          "ext": {"lera": "57-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading in F42A uses the compound noun 'Liebes-macht' (love-power) whereas the others use the phrase 'macht der liebe' (power of love). This is a change in wording/wording structure."
+          }
         },
         {"spans": {"A": [686, 687], "B": [686, 687], "C": [683, 684], "F42A": [660, 661]}},
         {"spans": {"A": [688, 689], "B": [688, 689], "C": [685, 686], "F42A": [662, 663]}},
         {
           "spans": {"A": [690, 691], "B": [690, 691], "C": [687, 688], "F42A": [664, 665]},
-          "ext": {"lera": "57-2"}
+          "ext": {"lera": "57-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [692, 693], "B": [692, 693], "C": [689, 690], "F42A": [666, 667]}},
         {
           "spans": {"A": [694, 697], "B": [694, 697], "C": [691, 694], "F42A": [668, 671]},
-          "ext": {"lera": "57-3"}
+          "ext": {"lera": "57-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [698, 699], "B": [698, 699], "C": [695, 696], "F42A": [672, 673]}}
       ],
@@ -15639,19 +15974,22 @@
       "columns": [
         {
           "spans": {"A": [699, 700], "B": [699, 700], "C": [696, 697], "F42A": [673, 674]},
-          "ext": {"lera": "58-1"}
+          "ext": {"lera": "58-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [700, 701], "B": [700, 701], "C": [697, 698], "F42A": [674, 675]}},
         {"spans": {"A": [702, 703], "B": [702, 703], "C": [699, 700], "F42A": [676, 677]}},
         {"spans": {"A": [704, 705], "B": [704, 705], "C": [701, 702], "F42A": [678, 679]}},
         {
           "spans": {"A": [706, 715], "B": [706, 715], "C": [703, 712], "F42A": [680, 689]},
-          "ext": {"lera": "58-2"}
+          "ext": {"lera": "58-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [716, 717], "B": [716, 717], "C": [713, 714], "F42A": [690, 691]}},
         {
           "spans": {"A": [718, 719], "B": [718, 719], "C": [715, 716], "F42A": [692, 693]},
-          "ext": {"lera": "58-3"}
+          "ext": {"lera": "58-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         }
       ],
       "ext": {
@@ -15796,12 +16134,26 @@
       "columns": [
         {
           "spans": {"A": [719, 730], "B": [719, 730], "C": [716, 727], "F42A": [693, 706]},
-          "ext": {"lera": "59-1"}
+          "ext": {"lera": "59-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ significantly in wording: 'alſo zu deinem weib' vs 'So auch dein Liebes-gunſt zu deinem Weib'."
+          }
         },
         {"spans": {"A": [731, 732], "B": [731, 732], "C": [728, 729], "F42A": [707, 708]}},
         {
           "spans": {"A": [733, 734], "B": [733, 734], "C": [730, 731], "F42A": [709, 710]},
-          "ext": {"lera": "59-2"}
+          "ext": {"lera": "59-2"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the presence or absence of the prefix 'be-', which is a spelling variation of the same verb form (reflexive 'finden' vs 'befinden') without changing the grammatical function or meaning significantly in this context."
+          }
         },
         {"spans": {"A": [734, 735], "B": [734, 735], "C": [731, 732], "F42A": [710, 711]}}
       ],
@@ -15927,13 +16279,21 @@
         {"spans": {"A": [739, 740], "B": [739, 740], "C": [736, 737], "F42A": [715, 716]}},
         {
           "spans": {"A": [741, 744], "B": [741, 744], "C": [738, 741], "F42A": [717, 720]},
-          "ext": {"lera": "60-1"}
+          "ext": {"lera": "60-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the substitution of the verb 'verzeih' (forgive) with 'erlaub' (allow) in edition F42A, which constitutes a lexical change. The variation between 'worauß' and 'warauß' is a minor spelling/orthographic difference, but the verb change is the dominant feature."
+          }
         },
         {"spans": {"A": [745, 746], "B": [745, 746], "C": [742, 743], "F42A": [721, 722]}},
         {"spans": {"A": [747, 748], "B": [747, 748], "C": [744, 745], "F42A": [723, 724]}},
         {
           "spans": {"A": [748, 749], "B": [748, 749], "C": [745, 746], "F42A": [724, 725]},
-          "ext": {"lera": "60-2"}
+          "ext": {"lera": "60-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -16049,18 +16409,27 @@
       "columns": [
         {
           "spans": {"A": [749, 750], "B": [749, 750], "C": [746, 747], "F42A": [725, 726]},
-          "ext": {"lera": "61-1"}
+          "ext": {"lera": "61-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [751, 752], "B": [751, 752], "C": [748, 749], "F42A": [727, 728]}},
         {
           "spans": {"A": [753, 754], "B": [753, 754], "C": [750, 751], "F42A": [729, 730]},
-          "ext": {"lera": "61-2"}
+          "ext": {"lera": "61-2"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Turturtaub vs Turteldaub involves a difference in the spelling of the root (Turtur vs Turtel), representing a variant spelling of the same word."
+          }
         },
         {"spans": {"A": [755, 756], "B": [755, 756], "C": [752, 753], "F42A": [731, 732]}},
         {"spans": {"A": [757, 758], "B": [757, 758], "C": [754, 755], "F42A": [733, 734]}},
         {
           "spans": {"A": [758, 763], "B": [758, 763], "C": [755, 760], "F42A": [735, 738]},
-          "ext": {"lera": "61-3"}
+          "ext": {"lera": "61-3"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [764, 765], "B": [764, 765], "C": [761, 762], "F42A": [739, 740]}}
       ],
@@ -16192,7 +16561,14 @@
       "columns": [
         {
           "spans": {"A": [765, 774], "B": [765, 774], "C": [762, 771], "F42A": [740, 751]},
-          "ext": {"lera": "62-1"}
+          "ext": {"lera": "62-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'mannes tod' vs 'jhres Liebſten todt' and 'ſie' vs 'ſy'."
+          }
         },
         {"spans": {"A": [775, 776], "B": [775, 776], "C": [772, 773], "F42A": [752, 753]}},
         {"spans": {"A": [777, 778], "B": [777, 778], "C": [774, 775]}, "ext": {"lera": "62-2"}},
@@ -16438,19 +16814,28 @@
       "columns": [
         {
           "spans": {"A": [793, 794], "B": [793, 794], "C": [790, 791], "F42A": [772, 773]},
-          "ext": {"lera": "64-1"}
+          "ext": {"lera": "64-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [795, 796], "B": [795, 796], "C": [792, 793], "F42A": [774, 775]}},
         {
           "spans": {"A": [797, 800], "B": [797, 800], "C": [794, 797], "F42A": [776, 779]},
-          "ext": {"lera": "64-2"}
+          "ext": {"lera": "64-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are i/j (ſie/ſy) and long s/ck (trinken/trincken), which are graphic variants."
+          }
         },
         {"spans": {"A": [801, 802], "B": [801, 802], "C": [798, 799], "F42A": [780, 781]}},
         {"spans": {"A": [803, 804], "B": [803, 804], "C": [800, 801], "F42A": [782, 783]}},
         {"spans": {"A": [805, 806], "B": [805, 806], "C": [802, 803], "F42A": [784, 785]}},
         {
           "spans": {"A": [807, 808], "B": [807, 808], "C": [804, 805], "F42A": [786, 787]},
-          "ext": {"lera": "64-3"}
+          "ext": {"lera": "64-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [808, 809], "B": [808, 809], "C": [805, 806], "F42A": [787, 788]}}
       ],
@@ -16576,19 +16961,34 @@
       "columns": [
         {
           "spans": {"A": [809, 816], "B": [809, 816], "C": [806, 813], "F42A": [788, 797]},
-          "ext": {"lera": "65-1"}
+          "ext": {"lera": "65-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'auß traurigkeit' vs 'Weil ſy des trawrens voll'."
+          }
         },
         {"spans": {"A": [816, 817], "B": [816, 817], "C": [813, 814], "F42A": [797, 798]}},
         {
           "spans": {"A": [818, 819], "B": [818, 819], "C": [815, 816], "F42A": [799, 804]},
-          "ext": {"lera": "65-2"}
+          "ext": {"lera": "65-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading in F42A uses 'sy' (she) and omits 'dieſelben' (the same/them), whereas the other editions use 'dieſelben' as the object. This represents a difference in wording/word choice."
+          }
         },
         {"spans": {"A": [820, 821], "B": [820, 821], "C": [817, 818], "F42A": [805, 806]}},
         {"spans": {"A": [822, 823], "B": [822, 823], "C": [819, 820], "F42A": [807, 808]}},
         {"spans": {"A": [824, 825], "B": [824, 825], "C": [821, 822], "F42A": [809, 810]}},
         {
           "spans": {"A": [825, 826], "B": [825, 826], "C": [822, 823], "F42A": [810, 811]},
-          "ext": {"lera": "65-3"}
+          "ext": {"lera": "65-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -16726,18 +17126,21 @@
       "columns": [
         {
           "spans": {"A": [826, 827], "B": [826, 827], "C": [823, 824], "F42A": [811, 812]},
-          "ext": {"lera": "66-1"}
+          "ext": {"lera": "66-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [828, 829], "B": [828, 829], "C": [825, 826], "F42A": [813, 814]}},
         {"spans": {"A": [830, 831], "B": [830, 831], "C": [827, 828], "F42A": [815, 816]}},
         {
           "spans": {"A": [832, 835], "B": [832, 835], "C": [829, 832], "F42A": [817, 820]},
-          "ext": {"lera": "66-2"}
+          "ext": {"lera": "66-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [836, 837], "B": [836, 837], "C": [833, 834], "F42A": [821, 822]}},
         {
           "spans": {"A": [838, 839], "B": [838, 839], "C": [835, 836], "F42A": [823, 824]},
-          "ext": {"lera": "66-3"}
+          "ext": {"lera": "66-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -16939,7 +17342,14 @@
       "columns": [
         {
           "spans": {"A": [854, 871], "B": [854, 871], "C": [851, 868], "F42A": [824, 839]},
-          "ext": {"lera": "68-1"}
+          "ext": {"lera": "68-1"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings provided do not align; A, B, and C are variations of one sentence, while F42A is a completely different sentence."
+          }
         }
       ],
       "ext": {
@@ -17001,12 +17411,20 @@
         {"spans": {"A": [873, 874], "B": [873, 874], "C": [870, 871], "F42A": [841, 842]}},
         {
           "spans": {"A": [875, 876], "B": [875, 876], "C": [872, 873], "F42A": [843, 844]},
-          "ext": {"lera": "69-1"}
+          "ext": {"lera": "69-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference between long s (ſ) and y (y) in the same word form."
+          }
         },
         {"spans": {"A": [877, 878], "B": [877, 878], "C": [874, 875], "F42A": [845, 846]}},
         {
           "spans": {"A": [879, 880], "B": [879, 880], "C": [876, 877], "F42A": [847, 848]},
-          "ext": {"lera": "69-2"}
+          "ext": {"lera": "69-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [880, 881], "B": [880, 881], "C": [877, 878], "F42A": [848, 849]}},
         {
@@ -17016,7 +17434,14 @@
         {"spans": {"A": [888, 889], "B": [888, 889], "C": [885, 886], "F42A": [858, 859]}},
         {
           "spans": {"A": [890, 891], "B": [890, 891], "C": [887, 888], "F42A": [860, 861]},
-          "ext": {"lera": "69-4"}
+          "ext": {"lera": "69-4"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the representation of the umlaut (u with diaeresis vs. i) for the same grammatical form."
+          }
         }
       ],
       "ext": {
@@ -17164,18 +17589,27 @@
       "columns": [
         {
           "spans": {"A": [891, 892], "B": [891, 892], "C": [888, 889], "F42A": [861, 862]},
-          "ext": {"lera": "70-1"}
+          "ext": {"lera": "70-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [893, 894], "B": [893, 894], "C": [890, 891], "F42A": [863, 864]}},
         {
           "spans": {"A": [894, 901], "B": [894, 901], "C": [891, 898], "F42A": [865, 868]},
-          "ext": {"lera": "70-2"}
+          "ext": {"lera": "70-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'heiſſe nur' in F42A replaces 'und ſey' in the other editions, involving a change in word choice and structure."
+          }
         },
         {"spans": {"A": [901, 902], "B": [901, 902], "C": [898, 899], "F42A": [868, 869]}},
         {"spans": {"A": [903, 904], "B": [903, 904], "C": [900, 901], "F42A": [870, 871]}},
         {
           "spans": {"A": [905, 906], "B": [905, 906], "C": [902, 903], "F42A": [872, 873]},
-          "ext": {"lera": "70-3"}
+          "ext": {"lera": "70-3"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [907, 908], "B": [907, 908], "C": [904, 905], "F42A": [874, 875]}},
         {"spans": {"A": [909, 910], "B": [909, 910], "C": [906, 907], "F42A": [876, 877]}},
@@ -17323,7 +17757,8 @@
       "columns": [
         {
           "spans": {"A": [912, 917], "B": [912, 917], "C": [909, 914], "F42A": [879, 884]},
-          "ext": {"lera": "71-1"}
+          "ext": {"lera": "71-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [918, 919], "B": [918, 919], "C": [915, 916], "F42A": [885, 886]}},
         {"spans": {"A": [920, 921], "B": [920, 921], "C": [917, 918], "F42A": [887, 888]}},
@@ -17332,7 +17767,8 @@
         {"spans": {"A": [926, 927], "B": [926, 927], "C": [923, 924], "F42A": [893, 894]}},
         {
           "spans": {"A": [928, 929], "B": [928, 929], "C": [925, 926], "F42A": [895, 896]},
-          "ext": {"lera": "71-2"}
+          "ext": {"lera": "71-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [930, 931], "B": [930, 931], "C": [927, 928], "F42A": [897, 898]}}
       ],
@@ -17473,19 +17909,28 @@
       "columns": [
         {
           "spans": {"A": [931, 932], "B": [931, 932], "C": [928, 929], "F42A": [898, 899]},
-          "ext": {"lera": "72-1"}
+          "ext": {"lera": "72-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [933, 934], "B": [933, 934], "C": [930, 931], "F42A": [900, 901]}},
         {"spans": {"A": [935, 936], "B": [935, 936], "C": [932, 933], "F42A": [902, 903]}},
         {
           "spans": {"A": [937, 938], "B": [937, 938], "C": [934, 935], "F42A": [904, 905]},
-          "ext": {"lera": "72-2"}
+          "ext": {"lera": "72-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [939, 940], "B": [939, 940], "C": [936, 937], "F42A": [906, 907]}},
         {"spans": {"A": [941, 942], "B": [941, 942], "C": [938, 939], "F42A": [908, 909]}},
         {
           "spans": {"A": [943, 944], "B": [943, 944], "C": [940, 941], "F42A": [910, 911]},
-          "ext": {"lera": "72-3"}
+          "ext": {"lera": "72-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ between 'wenigst' (least) and 'minste' (smallest/least), which are distinct words with different etymologies and forms, not just orthographic variants of the same word."
+          }
         },
         {"spans": {"A": [945, 946], "B": [945, 946], "C": [942, 943], "F42A": [912, 913]}},
         {"spans": {"A": [947, 948], "B": [947, 948], "C": [944, 945], "F42A": [914, 915]}}
@@ -17618,12 +18063,20 @@
         {"spans": {"A": [952, 953], "B": [952, 953], "C": [949, 950], "F42A": [919, 920]}},
         {
           "spans": {"A": [954, 955], "B": [954, 955], "C": [951, 952], "F42A": [921, 922]},
-          "ext": {"lera": "73-1"}
+          "ext": {"lera": "73-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "geſtalt and Figur are different words with similar meanings"
+          }
         },
         {"spans": {"A": [956, 957], "B": [956, 957], "C": [953, 954], "F42A": [923, 924]}},
         {
           "spans": {"A": [958, 959], "B": [958, 959], "C": [955, 956], "F42A": [925, 926]},
-          "ext": {"lera": "73-2"}
+          "ext": {"lera": "73-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [960, 961], "B": [960, 961], "C": [957, 958], "F42A": [927, 928]}},
         {"spans": {"A": [962, 963], "B": [962, 963], "C": [959, 960], "F42A": [929, 930]}},
@@ -17745,19 +18198,28 @@
       "columns": [
         {
           "spans": {"A": [964, 965], "B": [964, 965], "C": [961, 962], "F42A": [930, 931]},
-          "ext": {"lera": "74-1"}
+          "ext": {"lera": "74-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [966, 967], "B": [966, 967], "C": [963, 964], "F42A": [932, 933]}},
         {"spans": {"A": [968, 969], "B": [968, 969], "C": [965, 966], "F42A": [934, 935]}},
         {
           "spans": {"A": [970, 971], "B": [970, 971], "C": [967, 968], "F42A": [936, 937]},
-          "ext": {"lera": "74-2"}
+          "ext": {"lera": "74-2"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [972, 973], "B": [972, 973], "C": [969, 970], "F42A": [938, 939]}},
         {"spans": {"A": [974, 975], "B": [974, 975], "C": [971, 972], "F42A": [940, 941]}},
         {
           "spans": {"A": [976, 979], "B": [976, 979], "C": [973, 976], "F42A": [942, 945]},
-          "ext": {"lera": "74-3"}
+          "ext": {"lera": "74-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'liebwürdig' (adjective) is replaced by 'Liebens-werth' (adjective/noun) and the object 'ihn' is moved to the end, changing the wording and structure."
+          }
         },
         {"spans": {"A": [980, 981], "B": [980, 981], "C": [977, 978], "F42A": [946, 947]}}
       ],
@@ -17900,13 +18362,27 @@
         {"spans": {"A": [985, 986], "B": [985, 986], "C": [982, 983], "F42A": [951, 952]}},
         {
           "spans": {"A": [987, 990], "B": [987, 990], "C": [984, 987], "F42A": [953, 956]},
-          "ext": {"lera": "75-2"}
+          "ext": {"lera": "75-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ in the subject noun: 'Schoͤpfer' (Creator) vs 'hoͤchſte Herꝛ' (highest Lord)."
+          }
         },
         {"spans": {"A": [991, 992], "B": [991, 992], "C": [988, 989], "F42A": [957, 958]}},
         {"spans": {"A": [993, 994], "B": [993, 994], "C": [990, 991], "F42A": [959, 960]}},
         {
           "spans": {"A": [995, 996], "B": [995, 996], "C": [992, 993], "F42A": [961, 962]},
-          "ext": {"lera": "75-3"}
+          "ext": {"lera": "75-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the long s (ſ) vs short s (s) in the prefix 'ge-'."
+          }
         },
         {"spans": {"A": [997, 998], "B": [997, 998], "C": [994, 995], "F42A": [963, 964]}}
       ],
@@ -18036,7 +18512,14 @@
       "columns": [
         {
           "spans": {"A": [998, 1003], "B": [998, 1003], "C": [995, 1000], "F42A": [964, 969]},
-          "ext": {"lera": "76-1"}
+          "ext": {"lera": "76-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are in capitalization (wie/Wie, thier/Thier) and spelling (andre/ander), which fall under orthographic variations."
+          }
         },
         {"spans": {"A": [1003, 1004], "B": [1003, 1004], "C": [1000, 1001], "F42A": [969, 970]}},
         {"spans": {"A": [1005, 1006], "B": [1005, 1006], "C": [1002, 1003], "F42A": [971, 972]}},
@@ -18045,7 +18528,8 @@
         {"spans": {"A": [1011, 1012], "B": [1011, 1012], "C": [1008, 1009], "F42A": [977, 978]}},
         {
           "spans": {"A": [1013, 1014], "B": [1013, 1014], "C": [1010, 1011], "F42A": [979, 980]},
-          "ext": {"lera": "76-2"}
+          "ext": {"lera": "76-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1014, 1015], "B": [1014, 1015], "C": [1011, 1012], "F42A": [980, 981]}}
       ],
@@ -18171,17 +18655,26 @@
         {"spans": {"A": [1015, 1016], "B": [1015, 1016], "C": [1012, 1013], "F42A": [981, 982]}},
         {
           "spans": {"A": [1017, 1018], "B": [1017, 1018], "C": [1014, 1015], "F42A": [983, 984]},
-          "ext": {"lera": "77-1"}
+          "ext": {"lera": "77-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1019, 1020], "B": [1019, 1020], "C": [1016, 1017], "F42A": [985, 986]}},
         {
           "spans": {"A": [1021, 1022], "B": [1021, 1022], "C": [1018, 1019], "F42A": [987, 988]},
-          "ext": {"lera": "77-2"}
+          "ext": {"lera": "77-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1023, 1024], "B": [1023, 1024], "C": [1020, 1021], "F42A": [989, 990]}},
         {
           "spans": {"A": [1025, 1028], "B": [1025, 1028], "C": [1022, 1025], "F42A": [991, 994]},
-          "ext": {"lera": "77-3"}
+          "ext": {"lera": "77-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the capitalization of 'Liebeszeichen' (lowercase vs. uppercase) and the hyphenation in one variant, which are orthographic variations. The spelling difference 'foller' vs 'voller' is likely a typo in the prompt's reading list for F42A, but the provided readings A, B, and C "
+          }
         },
         {"spans": {"A": [1028, 1029], "B": [1028, 1029], "C": [1025, 1026], "F42A": [994, 995]}}
       ],
@@ -18299,12 +18792,20 @@
       "columns": [
         {
           "spans": {"A": [1029, 1042], "B": [1029, 1042], "C": [1026, 1039], "F42A": [995, 1012]},
-          "ext": {"lera": "78-1"}
+          "ext": {"lera": "78-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The third reading (F42A) contains entirely different wording ('zu der Lieb dir waeg vnd staeg') compared to the first three ('zur gegenliebe'), indicating a lexical difference."
+          }
         },
         {"spans": {"A": [1043, 1044], "B": [1043, 1044], "C": [1040, 1041], "F42A": [1013, 1014]}},
         {
           "spans": {"A": [1044, 1045], "B": [1044, 1045], "C": [1041, 1042], "F42A": [1014, 1015]},
-          "ext": {"lera": "78-2"}
+          "ext": {"lera": "78-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -18428,19 +18929,34 @@
       "columns": [
         {
           "spans": {"A": [1045, 1046], "B": [1045, 1046], "C": [1042, 1043], "F42A": [1015, 1016]},
-          "ext": {"lera": "79-1"}
+          "ext": {"lera": "79-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference in the aligned segment is the capitalization of the first word (ſinn vs Sinn), which falls under orthographic variation (case)."
+          }
         },
         {"spans": {"A": [1046, 1047], "B": [1046, 1047], "C": [1043, 1044], "F42A": [1016, 1017]}},
         {
           "spans": {"A": [1048, 1053], "B": [1048, 1053], "C": [1045, 1048], "F42A": [1018, 1023]},
-          "ext": {"lera": "79-2"}
+          "ext": {"lera": "79-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are limited to case (Sinn/Frewd/Huldenreich vs lowercase), u/v (vnd/und), and hyphenation/spacing (Sinn- Frewd- vs sinn-freud-)."
+          }
         },
         {"spans": {"A": [1054, 1055], "B": [1054, 1055], "C": [1049, 1050], "F42A": [1024, 1025]}},
         {"spans": {"A": [1056, 1057], "B": [1056, 1057], "C": [1051, 1052], "F42A": [1026, 1027]}},
         {"spans": {"A": [1058, 1059], "B": [1058, 1059], "C": [1053, 1054], "F42A": [1028, 1029]}},
         {
           "spans": {"A": [1060, 1061], "B": [1060, 1061], "C": [1055, 1056], "F42A": [1030, 1031]},
-          "ext": {"lera": "79-3"}
+          "ext": {"lera": "79-3"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [1061, 1062], "B": [1061, 1062], "C": [1056, 1057], "F42A": [1031, 1032]}}
       ],
@@ -18571,17 +19087,26 @@
       "columns": [
         {
           "spans": {"A": [1062, 1065], "B": [1062, 1065], "C": [1057, 1060], "F42A": [1032, 1035]},
-          "ext": {"lera": "80-1"}
+          "ext": {"lera": "80-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1066, 1067], "B": [1066, 1067], "C": [1061, 1062], "F42A": [1036, 1037]}},
         {
           "spans": {"A": [1068, 1069], "B": [1068, 1069], "C": [1063, 1064], "F42A": [1038, 1039]},
-          "ext": {"lera": "80-2"}
+          "ext": {"lera": "80-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1070, 1071], "B": [1070, 1071], "C": [1065, 1066], "F42A": [1040, 1041]}},
         {
           "spans": {"A": [1071, 1076], "B": [1071, 1076], "C": [1066, 1071], "F42A": [1042, 1045]},
-          "ext": {"lera": "80-3"}
+          "ext": {"lera": "80-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'jhr' (your) is an additional word not present in the other editions, which simply have 'die' (the). This constitutes a difference in wording/lexicon."
+          }
         },
         {"spans": {"A": [1077, 1078], "B": [1077, 1078], "C": [1072, 1073], "F42A": [1046, 1047]}},
         {"spans": {"A": [1079, 1080], "B": [1079, 1080], "C": [1074, 1075], "F42A": [1048, 1049]}}
@@ -18722,7 +19247,14 @@
       "columns": [
         {
           "spans": {"A": [1080, 1095], "B": [1080, 1095], "C": [1075, 1090], "F42A": [1049, 1066]},
-          "ext": {"lera": "81-1"}
+          "ext": {"lera": "81-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'Wann aber' vs 'Vnd ſo du' and 'wilt verhoͤren' vs 'wirſt ... zuͦhoͤren'."
+          }
         },
         {"spans": {"A": [1095, 1096], "B": [1095, 1096], "C": [1090, 1091], "F42A": [1066, 1067]}}
       ],
@@ -18846,19 +19378,28 @@
       "columns": [
         {
           "spans": {"A": [1096, 1097], "B": [1096, 1097], "C": [1091, 1092], "F42A": [1067, 1068]},
-          "ext": {"lera": "82-1"}
+          "ext": {"lera": "82-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [1098, 1099], "B": [1098, 1099], "C": [1093, 1094], "F42A": [1069, 1070]}},
         {"spans": {"A": [1100, 1101], "B": [1100, 1101], "C": [1095, 1096], "F42A": [1071, 1072]}},
         {
           "spans": {"A": [1102, 1103], "B": [1102, 1103], "C": [1097, 1098], "F42A": [1073, 1074]},
-          "ext": {"lera": "82-2"}
+          "ext": {"lera": "82-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1104, 1105], "B": [1104, 1105], "C": [1099, 1100], "F42A": [1075, 1076]}},
         {"spans": {"A": [1106, 1107], "B": [1106, 1107], "C": [1101, 1102], "F42A": [1077, 1078]}},
         {
           "spans": {"A": [1108, 1113], "B": [1108, 1113], "C": [1103, 1108], "F42A": [1079, 1084]},
-          "ext": {"lera": "82-3"}
+          "ext": {"lera": "82-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the use of the long s (ſ) versus short s (s) in 'wahrer' (wahrer vs warer) and the capitalization of 'Lieb'. The apostrophe in C is a punctuation variant of the same word form, but the s/ſ difference is a clear orthographic variant."
+          }
         },
         {"spans": {"A": [1113, 1114], "B": [1113, 1114], "C": [1108, 1109], "F42A": [1084, 1085]}}
       ],
@@ -19004,12 +19545,20 @@
         {"spans": {"A": [1122, 1123], "B": [1122, 1123], "C": [1117, 1118], "F42A": [1091, 1092]}},
         {
           "spans": {"A": [1123, 1124], "B": [1123, 1124], "C": [1118, 1119], "F42A": [1092, 1093]},
-          "ext": {"lera": "83-3"}
+          "ext": {"lera": "83-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1125, 1126], "B": [1125, 1126], "C": [1120, 1121], "F42A": [1094, 1095]}},
         {
           "spans": {"A": [1127, 1134], "B": [1127, 1134], "C": [1122, 1129], "F42A": [1096, 1103]},
-          "ext": {"lera": "83-4"}
+          "ext": {"lera": "83-4"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The third reading adds the possessive pronoun 'seinem' and capitalizes 'Weib', changing the wording and specificity compared to the other readings which use the bare noun 'weib'."
+          }
         }
       ],
       "ext": {
@@ -19157,7 +19706,8 @@
       "columns": [
         {
           "spans": {"A": [1134, 1135], "B": [1134, 1135], "C": [1129, 1130], "F42A": [1103, 1104]},
-          "ext": {"lera": "84-1"}
+          "ext": {"lera": "84-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1136, 1137], "B": [1136, 1137], "C": [1131, 1132], "F42A": [1105, 1106]}},
         {"spans": {"A": [1138, 1139], "B": [1138, 1139], "C": [1133, 1134], "F42A": [1107, 1108]}},
@@ -19165,7 +19715,14 @@
         {"spans": {"A": [1142, 1143], "B": [1142, 1143], "C": [1137, 1138], "F42A": [1111, 1112]}},
         {
           "spans": {"A": [1144, 1147], "B": [1144, 1147], "C": [1139, 1142], "F42A": [1113, 1118]},
-          "ext": {"lera": "84-2"}
+          "ext": {"lera": "84-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences in word division (compound vs. separated), case (lowercase vs. uppercase), and diacritics (aͤ vs. a, ß vs. s)."
+          }
         }
       ],
       "ext": {
@@ -19275,20 +19832,23 @@
       "columns": [
         {
           "spans": {"A": [1147, 1148], "B": [1147, 1148], "C": [1142, 1143], "F42A": [1118, 1119]},
-          "ext": {"lera": "85-1"}
+          "ext": {"lera": "85-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1149, 1150], "B": [1149, 1150], "C": [1144, 1145], "F42A": [1120, 1121]}},
         {"spans": {"A": [1151, 1152], "B": [1151, 1152], "C": [1146, 1147], "F42A": [1122, 1123]}},
         {
           "spans": {"A": [1153, 1154], "B": [1153, 1154], "C": [1148, 1149], "F42A": [1124, 1125]},
-          "ext": {"lera": "85-2"}
+          "ext": {"lera": "85-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1154, 1155], "B": [1154, 1155], "C": [1149, 1150], "F42A": [1125, 1126]}},
         {"spans": {"A": [1156, 1157], "B": [1156, 1157], "C": [1151, 1152], "F42A": [1127, 1128]}},
         {"spans": {"A": [1158, 1159], "B": [1158, 1159], "C": [1153, 1154], "F42A": [1129, 1130]}},
         {
           "spans": {"A": [1160, 1161], "B": [1160, 1161], "C": [1155, 1156], "F42A": [1131, 1132]},
-          "ext": {"lera": "85-3"}
+          "ext": {"lera": "85-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1162, 1163], "B": [1162, 1163], "C": [1157, 1158], "F42A": [1133, 1134]}},
         {
@@ -19421,7 +19981,14 @@
       "columns": [
         {
           "spans": {"A": [1164, 1177], "B": [1164, 1177], "C": [1159, 1172], "F42A": [1134, 1147]},
-          "ext": {"lera": "86-1"}
+          "ext": {"lera": "86-1"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings differ in multiple ways (orthography, grammar, and lexical content), and the fourth reading (F42A) contains entirely different wording ('in demſelben Jahr', 's'Maͤñlin') that does not align with the others, making a single classification impossible."
+          }
         },
         {"spans": {"A": [1178, 1179], "B": [1178, 1179], "C": [1173, 1174], "F42A": [1148, 1149]}}
       ],
@@ -19543,7 +20110,14 @@
       "columns": [
         {
           "spans": {"A": [1179, 1196], "B": [1179, 1196], "C": [1174, 1191], "F42A": [1149, 1164]},
-          "ext": {"lera": "87-1"}
+          "ext": {"lera": "87-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading F42A uses 'weggerafft' (carried away) and adds 'jhm' (to him), whereas the other readings use 'gerafft' (seized) without the dative object. This constitutes a difference in wording/word choice."
+          }
         }
       ],
       "ext": {
@@ -19661,17 +20235,26 @@
       "columns": [
         {
           "spans": {"A": [1196, 1197], "B": [1196, 1197], "C": [1191, 1192], "F42A": [1164, 1165]},
-          "ext": {"lera": "88-1"}
+          "ext": {"lera": "88-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1198, 1199], "B": [1198, 1199], "C": [1193, 1194], "F42A": [1166, 1167]}},
         {
           "spans": {"A": [1200, 1201], "B": [1200, 1201], "C": [1195, 1196], "F42A": [1168, 1169]},
-          "ext": {"lera": "88-2"}
+          "ext": {"lera": "88-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1202, 1203], "B": [1202, 1203], "C": [1197, 1198], "F42A": [1170, 1171]}},
         {
           "spans": {"A": [1204, 1207], "B": [1204, 1209], "C": [1199, 1204], "F42A": [1172, 1177]},
-          "ext": {"lera": "88-3"}
+          "ext": {"lera": "88-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference in the last reading is the addition of the phrase 'welch ein', which changes the wording."
+          }
         },
         {"spans": {"A": [1207, 1208], "B": [1209, 1210], "C": [1204, 1205], "F42A": [1177, 1178]}}
       ],
@@ -19792,13 +20375,27 @@
         {"spans": {"A": [1208, 1209], "B": [1210, 1211], "C": [1205, 1206], "F42A": [1178, 1179]}},
         {
           "spans": {"A": [1210, 1213], "B": [1212, 1215], "C": [1207, 1210], "F42A": [1180, 1187]},
-          "ext": {"lera": "89-1"}
+          "ext": {"lera": "89-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the core content of the clause: 'für jenes koͤnigs leben' (for that king's life) vs 'ſeine Kirch der Herꝛ' (his church the Lord). This is a substitution of words/wording."
+          }
         },
         {"spans": {"A": [1213, 1214], "B": [1215, 1216], "C": [1210, 1211], "F42A": [1187, 1188]}},
         {"spans": {"A": [1215, 1216], "B": [1217, 1218], "C": [1212, 1213], "F42A": [1189, 1190]}},
         {
           "spans": {"A": [1217, 1222], "B": [1219, 1224], "C": [1214, 1219], "F42A": [1191, 1200]},
-          "ext": {"lera": "89-2"}
+          "ext": {"lera": "89-2"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings involve a simple orthographic variant (jenes/jennes) in A/B/C, but F42A contains a completely different wording ('die er gab das Leben') that does not align with the others, making the set unclassifiable as a single type."
+          }
         }
       ],
       "ext": {
@@ -20188,7 +20785,14 @@
         {"spans": {"A": [1265, 1266], "B": [1268, 1269], "C": [1263, 1264], "F42A": [1200, 1201]}},
         {
           "spans": {"A": [1267, 1270], "B": [1270, 1273], "C": [1265, 1268], "F42A": [1202, 1205]},
-          "ext": {"lera": "93-1"}
+          "ext": {"lera": "93-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The word 'mehr' (more) is replaced by 'vil' (many), which are different words with distinct meanings."
+          }
         },
         {"spans": {"A": [1271, 1272], "B": [1274, 1275], "C": [1269, 1270], "F42A": [1206, 1207]}},
         {"spans": {"A": [1273, 1274], "B": [1276, 1277], "C": [1271, 1272], "F42A": [1208, 1209]}},
@@ -20303,7 +20907,14 @@
       "columns": [
         {
           "spans": {"A": [1280, 1281], "B": [1283, 1284], "C": [1278, 1279], "F42A": [1215, 1216]},
-          "ext": {"lera": "94-1"}
+          "ext": {"lera": "94-1"},
+          "relation": {
+            "type": "transposition",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The word order of 'nun' and 'Dich' is swapped between the editions."
+          }
         },
         {"spans": {"A": [1282, 1283], "B": [1285, 1286], "C": [1280, 1281], "F42A": [1217, 1218]}},
         {
@@ -20313,13 +20924,21 @@
         {"spans": {"A": [1286, 1287], "B": [1289, 1290], "C": [1284, 1285], "F42A": [1219, 1220]}},
         {
           "spans": {"A": [1288, 1289], "B": [1291, 1292], "C": [1286, 1287], "F42A": [1221, 1224]},
-          "ext": {"lera": "94-3"}
+          "ext": {"lera": "94-3"},
+          "relation": {
+            "type": "transposition",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The word order of 'dich' and 'nun' is swapped between the readings."
+          }
         },
         {"spans": {"A": [1290, 1291], "B": [1293, 1294], "C": [1288, 1289], "F42A": [1225, 1226]}},
         {"spans": {"A": [1292, 1293], "B": [1295, 1296], "C": [1290, 1291], "F42A": [1227, 1228]}},
         {
           "spans": {"A": [1294, 1297], "B": [1297, 1300], "C": [1292, 1295], "F42A": [1229, 1232]},
-          "ext": {"lera": "94-4"}
+          "ext": {"lera": "94-4"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         }
       ],
       "ext": {
@@ -20468,7 +21087,8 @@
         {"spans": {"A": [1311, 1312], "B": [1314, 1315], "C": [1309, 1310]}},
         {
           "spans": {"A": [1313, 1314], "B": [1316, 1317], "C": [1311, 1312]},
-          "ext": {"lera": "95-1"}
+          "ext": {"lera": "95-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [1314, 1315], "B": [1317, 1318], "C": [1312, 1313]}}
       ],
@@ -20573,7 +21193,8 @@
         {"spans": {"A": [1317, 1318], "B": [1320, 1321], "C": [1315, 1316]}},
         {
           "spans": {"A": [1319, 1320], "B": [1322, 1323], "C": [1317, 1318]},
-          "ext": {"lera": "96-1"}
+          "ext": {"lera": "96-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [1320, 1321], "B": [1323, 1324], "C": [1318, 1319]}},
         {"spans": {"A": [1322, 1323], "B": [1325, 1326], "C": [1320, 1321]}},
@@ -20584,7 +21205,14 @@
         {"spans": {"A": [1332, 1333], "B": [1335, 1336], "C": [1330, 1331]}},
         {
           "spans": {"A": [1334, 1335], "B": [1337, 1338], "C": [1332, 1333]},
-          "ext": {"lera": "96-2"}
+          "ext": {"lera": "96-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the representation of the umlaut (diaeresis) on the vowel u (uͦh vs u)."
+          }
         },
         {"spans": {"A": [1335, 1336], "B": [1338, 1339], "C": [1333, 1334]}}
       ],
@@ -20775,7 +21403,8 @@
       "columns": [
         {
           "spans": {"A": [1347, 1348], "B": [1350, 1351], "C": [1345, 1346]},
-          "ext": {"lera": "98-1"}
+          "ext": {"lera": "98-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [1349, 1350], "B": [1352, 1353], "C": [1347, 1348]}},
         {"spans": {"A": [1351, 1352], "B": [1354, 1355], "C": [1349, 1350]}},
@@ -20991,7 +21620,8 @@
         {"spans": {"A": [1383, 1384], "B": [1386, 1387], "C": [1381, 1382]}},
         {
           "spans": {"A": [1385, 1386], "B": [1388, 1389], "C": [1383, 1384]},
-          "ext": {"lera": "100-1"}
+          "ext": {"lera": "100-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1387, 1388], "B": [1390, 1391], "C": [1385, 1386]}},
         {"spans": {"A": [1389, 1390], "B": [1392, 1393], "C": [1387, 1388]}},
@@ -21185,7 +21815,14 @@
       "columns": [
         {
           "spans": {"A": [1398, 1405], "B": [1401, 1408], "C": [1396, 1403], "F42A": [1260, 1267]},
-          "ext": {"lera": "103-1"}
+          "ext": {"lera": "103-1"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings contain multiple distinct types of variation (orthographic, grammatical, and lexical) that cannot be classified as a single relation type."
+          }
         },
         {"spans": {"A": [1405, 1406], "B": [1408, 1409], "C": [1403, 1404], "F42A": [1267, 1268]}},
         {"spans": {"A": [1407, 1408], "B": [1410, 1411], "C": [1405, 1406], "F42A": [1269, 1270]}},
@@ -21197,7 +21834,14 @@
         {"spans": {"A": [1412, 1413], "B": [1415, 1416], "C": [1410, 1411], "F42A": [1273, 1274]}},
         {
           "spans": {"A": [1414, 1415], "B": [1417, 1418], "C": [1412, 1413], "F42A": [1275, 1276]},
-          "ext": {"lera": "103-3"}
+          "ext": {"lera": "103-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the word used: 'künstlichem' (artificial/cunning) vs 'sonderm' (special/particular). These are different adjectives with different meanings."
+          }
         },
         {"spans": {"A": [1416, 1417], "B": [1419, 1420], "C": [1414, 1415], "F42A": [1277, 1278]}},
         {
@@ -21346,13 +21990,21 @@
       "columns": [
         {
           "spans": {"A": [1418, 1421], "B": [1421, 1424], "C": [1416, 1419], "F42A": [1278, 1281]},
-          "ext": {"lera": "104-1"}
+          "ext": {"lera": "104-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [1422, 1423], "B": [1425, 1426], "C": [1420, 1421], "F42A": [1282, 1283]}},
         {"spans": {"A": [1424, 1425], "B": [1427, 1428], "C": [1422, 1423], "F42A": [1284, 1285]}},
         {
           "spans": {"A": [1426, 1431], "B": [1429, 1434], "C": [1424, 1429], "F42A": [1286, 1291]},
-          "ext": {"lera": "104-2"}
+          "ext": {"lera": "104-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'gliebet' is a different word (likely a corruption or variant of 'geliebet') compared to 'lieb', and 'hab' is a different grammatical form of 'gehabt', but the primary difference in the specific pair provided is the substitution of 'lieb' with 'gliebet'."
+          }
         },
         {"spans": {"A": [1432, 1433], "B": [1435, 1436], "C": [1430, 1431], "F42A": [1292, 1293]}},
         {"spans": {"A": [1434, 1435], "B": [1437, 1438], "C": [1432, 1433], "F42A": [1294, 1295]}}
@@ -21487,7 +22139,14 @@
         {"spans": {"A": [1435, 1436], "B": [1438, 1439], "C": [1433, 1434], "F42A": [1295, 1296]}},
         {
           "spans": {"A": [1437, 1440], "B": [1440, 1443], "C": [1435, 1438], "F42A": [1297, 1300]},
-          "ext": {"lera": "105-1"}
+          "ext": {"lera": "105-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The differences are 'th' vs 't' (long s/initial t variation or archaic spelling) and 'Jacob' vs 'Jakob' (u/v or o/u variation), which are graphic/orthographic variants of the same words."
+          }
         },
         {"spans": {"A": [1441, 1442], "B": [1444, 1445], "C": [1439, 1440], "F42A": [1301, 1302]}},
         {
@@ -21630,7 +22289,8 @@
       "columns": [
         {
           "spans": {"A": [1453, 1454], "B": [1456, 1457], "C": [1451, 1452], "F42A": [1312, 1313]},
-          "ext": {"lera": "106-1"}
+          "ext": {"lera": "106-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1454, 1455], "B": [1457, 1458], "C": [1452, 1453], "F42A": [1313, 1314]}},
         {"spans": {"A": [1456, 1457], "B": [1459, 1460], "C": [1454, 1455], "F42A": [1315, 1316]}},
@@ -21640,7 +22300,8 @@
         {"spans": {"A": [1464, 1465], "B": [1467, 1468], "C": [1462, 1463], "F42A": [1323, 1324]}},
         {
           "spans": {"A": [1466, 1469], "B": [1469, 1472], "C": [1464, 1467], "F42A": [1325, 1328]},
-          "ext": {"lera": "106-2"}
+          "ext": {"lera": "106-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [1470, 1471], "B": [1473, 1474], "C": [1468, 1469], "F42A": [1329, 1330]}}
       ],
@@ -21772,19 +22433,34 @@
       "columns": [
         {
           "spans": {"A": [1471, 1472], "B": [1474, 1475], "C": [1469, 1470], "F42A": [1330, 1331]},
-          "ext": {"lera": "107-1"}
+          "ext": {"lera": "107-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (um vs Vmb) and long s (mb vs mb is same, but Vmb is capitalized form of um/vmb)."
+          }
         },
         {"spans": {"A": [1473, 1474], "B": [1476, 1477], "C": [1471, 1472], "F42A": [1332, 1333]}},
         {
           "spans": {"A": [1475, 1476], "B": [1478, 1479], "C": [1473, 1474], "F42A": [1334, 1335]},
-          "ext": {"lera": "107-2"}
+          "ext": {"lera": "107-2"},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "dienet (present tense) vs diente (past tense)"
+          }
         },
         {"spans": {"A": [1477, 1478], "B": [1480, 1481], "C": [1475, 1476], "F42A": [1336, 1337]}},
         {"spans": {"A": [1479, 1480], "B": [1482, 1483], "C": [1477, 1478], "F42A": [1338, 1339]}},
         {"spans": {"A": [1481, 1482], "B": [1484, 1485], "C": [1479, 1480], "F42A": [1340, 1341]}},
         {
           "spans": {"A": [1483, 1484], "B": [1486, 1487], "C": [1481, 1482], "F42A": [1342, 1343]},
-          "ext": {"lera": "107-3"}
+          "ext": {"lera": "107-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1485, 1486], "B": [1488, 1489], "C": [1483, 1484], "F42A": [1344, 1345]}},
         {"spans": {"A": [1487, 1488], "B": [1490, 1491], "C": [1485, 1486], "F42A": [1346, 1347]}}
@@ -22070,12 +22746,14 @@
         {"spans": {"A": [1509, 1510], "B": [1512, 1513], "C": [1507, 1508], "F42A": [1368, 1369]}},
         {
           "spans": {"A": [1511, 1512], "B": [1514, 1515], "C": [1509, 1510], "F42A": [1370, 1371]},
-          "ext": {"lera": "110-1"}
+          "ext": {"lera": "110-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1513, 1514], "B": [1516, 1517], "C": [1511, 1512], "F42A": [1372, 1373]}},
         {
           "spans": {"A": [1515, 1518], "B": [1518, 1521], "C": [1513, 1516], "F42A": [1374, 1377]},
-          "ext": {"lera": "110-2"}
+          "ext": {"lera": "110-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [1518, 1519], "B": [1521, 1522], "C": [1516, 1517], "F42A": [1377, 1378]}}
       ],
@@ -22193,17 +22871,26 @@
       "columns": [
         {
           "spans": {"A": [1519, 1526], "B": [1522, 1529], "C": [1517, 1524], "F42A": [1378, 1385]},
-          "ext": {"lera": "111-1"}
+          "ext": {"lera": "111-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The third reading substitutes 'ehlich Liebe hafft' for 'liebe ſich befindt', changing the wording and verb."
+          }
         },
         {"spans": {"A": [1526, 1527], "B": [1529, 1530], "C": [1524, 1525], "F42A": [1385, 1386]}},
         {
           "spans": {"A": [1528, 1529], "B": [1531, 1532], "C": [1526, 1527], "F42A": [1387, 1388]},
-          "ext": {"lera": "111-2"}
+          "ext": {"lera": "111-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [1530, 1531], "B": [1533, 1534], "C": [1528, 1529], "F42A": [1389, 1390]}},
         {
           "spans": {"A": [1532, 1535], "B": [1535, 1538], "C": [1530, 1533], "F42A": [1391, 1394]},
-          "ext": {"lera": "111-3"}
+          "ext": {"lera": "111-3"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [1536, 1537], "B": [1539, 1540], "C": [1534, 1535], "F42A": [1395, 1396]}}
       ],
@@ -22341,17 +23028,38 @@
       "columns": [
         {
           "spans": {"A": [1537, 1538], "B": [1540, 1541], "C": [1535, 1536], "F42A": [1396, 1397]},
-          "ext": {"lera": "112-1"}
+          "ext": {"lera": "112-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the final consonant cluster (ct vs t) for the same word 'Sanct/Sant'."
+          }
         },
         {"spans": {"A": [1539, 1540], "B": [1542, 1543], "C": [1537, 1538], "F42A": [1398, 1399]}},
         {
           "spans": {"A": [1541, 1546], "B": [1544, 1549], "C": [1539, 1544], "F42A": [1400, 1409]},
-          "ext": {"lera": "112-2"}
+          "ext": {"lera": "112-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording and structure ('heißt den mann' vs 'wil noch mehr: der Mann'), indicating a lexical or phrasing difference rather than a simple orthographic or punctuation variant."
+          }
         },
         {"spans": {"A": [1547, 1548], "B": [1550, 1551], "C": [1545, 1546], "F42A": [1410, 1411]}},
         {
           "spans": {"A": [1549, 1552], "B": [1552, 1555], "C": [1547, 1550], "F42A": [1412, 1415]},
-          "ext": {"lera": "112-3"}
+          "ext": {"lera": "112-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'ehweib alſo' (wife thus) vs 'Weib ſoll' (wife shall), involving different words and grammatical structures."
+          }
         },
         {"spans": {"A": [1553, 1554], "B": [1556, 1557], "C": [1551, 1552], "F42A": [1416, 1417]}}
       ],
@@ -22486,10 +23194,20 @@
       "columns": [
         {
           "spans": {"A": [1554, 1557], "B": [1557, 1560], "C": [1552, 1555], "F42A": [1417, 1418]},
-          "ext": {"lera": "113-1"}
+          "ext": {"lera": "113-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is solely the capitalization of the first letter (wie vs Wie)."
+          }
         },
         {"spans": {"A": [1558, 1559], "B": [1561, 1562], "C": [1556, 1557], "F42A": [1419, 1420]}},
-        {"spans": {"A": [1560, 1561], "B": [1563, 1564], "C": [1558, 1559], "F42A": [1421, 1422]}},
+        {
+          "spans": {"A": [1560, 1561], "B": [1563, 1564], "C": [1558, 1559], "F42A": [1421, 1422]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"F42A": [1423, 1426]}, "ext": {"lera": "113-2"}},
         {"spans": {"F42A": [1426, 1427]}},
         {"spans": {"A": [1562, 1563], "B": [1565, 1566], "C": [1560, 1561], "F42A": [1428, 1429]}},
@@ -22499,7 +23217,8 @@
         {"spans": {"A": [1570, 1571], "B": [1573, 1574], "C": [1568, 1569], "F42A": [1436, 1437]}},
         {
           "spans": {"A": [1572, 1573], "B": [1575, 1576], "C": [1570, 1571], "F42A": [1438, 1439]},
-          "ext": {"lera": "113-3"}
+          "ext": {"lera": "113-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         }
       ],
       "ext": {
@@ -22641,7 +23360,8 @@
       "columns": [
         {
           "spans": {"A": [1573, 1574], "B": [1576, 1577], "C": [1571, 1572], "F42A": [1439, 1440]},
-          "ext": {"lera": "114-1"}
+          "ext": {"lera": "114-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1574, 1575], "B": [1577, 1578], "C": [1572, 1573], "F42A": [1440, 1441]}},
         {"spans": {"A": [1576, 1577], "B": [1579, 1580], "C": [1574, 1575], "F42A": [1442, 1443]}},
@@ -22649,7 +23369,8 @@
         {"spans": {"A": [1580, 1581], "B": [1583, 1584], "C": [1578, 1579], "F42A": [1446, 1447]}},
         {
           "spans": {"A": [1582, 1583], "B": [1585, 1586], "C": [1580, 1581], "F42A": [1448, 1449]},
-          "ext": {"lera": "114-2"}
+          "ext": {"lera": "114-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1584, 1585], "B": [1587, 1588], "C": [1582, 1583], "F42A": [1450, 1451]}},
         {"spans": {"A": [1586, 1587], "B": [1589, 1590], "C": [1584, 1585], "F42A": [1452, 1453]}},
@@ -22658,7 +23379,8 @@
         {"spans": {"A": [1592, 1593], "B": [1595, 1596], "C": [1590, 1591], "F42A": [1458, 1459]}},
         {
           "spans": {"A": [1593, 1594], "B": [1596, 1597], "C": [1591, 1592], "F42A": [1459, 1460]},
-          "ext": {"lera": "114-3"}
+          "ext": {"lera": "114-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -22801,7 +23523,14 @@
       "columns": [
         {
           "spans": {"A": [1594, 1611], "B": [1597, 1614], "C": [1592, 1609], "F42A": [1460, 1479]},
-          "ext": {"lera": "115-1"}
+          "ext": {"lera": "115-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference between the aligned readings (A/C vs B) is the use of the long s (ſ) versus the short s (s) in 'mann' vs 'mañ' (where ñ represents a long s or similar variant in this context, or simply a graphic variation of the final consonant). The F42A reading is a different sentence struc"
+          }
         },
         {"spans": {"A": [1611, 1612], "B": [1614, 1615], "C": [1609, 1610], "F42A": [1479, 1480]}}
       ],
@@ -22931,22 +23660,38 @@
         {"spans": {"A": [1616, 1617], "B": [1619, 1620], "C": [1614, 1615], "F42A": [1484, 1485]}},
         {
           "spans": {"A": [1618, 1619], "B": [1621, 1622], "C": [1616, 1617], "F42A": [1486, 1487]},
-          "ext": {"lera": "116-1"}
+          "ext": {"lera": "116-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [1620, 1621], "B": [1623, 1624], "C": [1618, 1619], "F42A": [1488, 1489]}},
         {
           "spans": {"A": [1622, 1623], "B": [1625, 1626], "C": [1620, 1621], "F42A": [1490, 1491]},
-          "ext": {"lera": "116-2"}
+          "ext": {"lera": "116-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings 'welt' (world) and 'Erd' (earth) are different words with distinct meanings, although they are often used synonymously in this context."
+          }
         },
         {"spans": {"A": [1624, 1625], "B": [1627, 1628], "C": [1622, 1623], "F42A": [1492, 1493]}},
         {
           "spans": {"A": [1626, 1627], "B": [1629, 1630], "C": [1624, 1625], "F42A": [1494, 1495]},
-          "ext": {"lera": "116-3"}
+          "ext": {"lera": "116-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference is the use of the long s (ſ) versus the short s (s) in the word 'schweres'."
+          }
         },
         {"spans": {"A": [1628, 1629], "B": [1631, 1632], "C": [1626, 1627], "F42A": [1496, 1497]}},
         {
           "spans": {"A": [1630, 1631], "B": [1633, 1634], "C": [1628, 1629], "F42A": [1498, 1501]},
-          "ext": {"lera": "116-4"}
+          "ext": {"lera": "116-4"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [1631, 1632], "B": [1634, 1635], "C": [1629, 1630], "F42A": [1501, 1502]}}
       ],
@@ -23090,12 +23835,26 @@
       "columns": [
         {
           "spans": {"A": [1632, 1635], "B": [1635, 1638], "C": [1630, 1633], "F42A": [1502, 1505]},
-          "ext": {"lera": "117-1"}
+          "ext": {"lera": "117-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording and structure ('das durch die liebe wir nicht moͤgen überwinden' vs 'Daß nicht die Liebe werd' im nohtfall vberwinden'), involving different words and syntax."
+          }
         },
         {"spans": {"A": [1636, 1637], "B": [1639, 1640], "C": [1634, 1635], "F42A": [1506, 1507]}},
         {
           "spans": {"A": [1638, 1647], "B": [1641, 1650], "C": [1636, 1645], "F42A": [1508, 1517]},
-          "ext": {"lera": "117-2"}
+          "ext": {"lera": "117-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the capitalization of 'liebe' vs 'Liebe'."
+          }
         }
       ],
       "ext": {
@@ -23221,20 +23980,35 @@
       "columns": [
         {
           "spans": {"A": [1647, 1648], "B": [1650, 1651], "C": [1645, 1646], "F42A": [1517, 1518]},
-          "ext": {"lera": "118-1"}
+          "ext": {"lera": "118-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1649, 1650], "B": [1652, 1653], "C": [1647, 1648], "F42A": [1519, 1520]}},
         {"spans": {"A": [1651, 1652], "B": [1654, 1655], "C": [1649, 1650], "F42A": [1521, 1522]}},
         {
           "spans": {"A": [1653, 1654], "B": [1656, 1657], "C": [1651, 1652], "F42A": [1523, 1526]},
-          "ext": {"lera": "118-2"}
+          "ext": {"lera": "118-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference in the aligned readings is the use of the long s (zuͦgleich) versus the short s (zugleich), which is an orthographic variation. The additional text in F42A is not part of the specific aligned variant pair provided."
+          }
         },
         {"spans": {"A": [1655, 1656], "B": [1658, 1659], "C": [1653, 1654], "F42A": [1527, 1528]}},
         {"spans": {"A": [1657, 1658], "B": [1660, 1661], "C": [1655, 1656], "F42A": [1529, 1530]}},
         {"spans": {"A": [1659, 1660], "B": [1662, 1663], "C": [1657, 1658], "F42A": [1531, 1532]}},
         {
           "spans": {"A": [1661, 1664], "B": [1664, 1667], "C": [1659, 1662], "F42A": [1533, 1536]},
-          "ext": {"lera": "118-3"}
+          "ext": {"lera": "118-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the verb form (stehe vs. stände) and the adverb (wol vs. frey), representing different word choices."
+          }
         }
       ],
       "ext": {
@@ -23366,7 +24140,14 @@
       "columns": [
         {
           "spans": {"A": [1664, 1665], "B": [1667, 1668], "C": [1662, 1663], "F42A": [1536, 1537]},
-          "ext": {"lera": "119-1"}
+          "ext": {"lera": "119-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the conjunction used ('wann'/'wan' vs 'Daß') and the wording of the predicate ('liebet' vs 'der Lieb' ergeben sey'), indicating a change in wording rather than just spelling or punctuation."
+          }
         },
         {"spans": {"A": [1666, 1667], "B": [1669, 1670], "C": [1664, 1665], "F42A": [1538, 1539]}},
         {"spans": {"A": [1667, 1668]}, "ext": {"lera": "119-2"}},
@@ -23374,7 +24155,14 @@
         {"spans": {"A": [1671, 1672], "B": [1673, 1674], "C": [1668, 1669], "F42A": [1542, 1543]}},
         {
           "spans": {"A": [1672, 1683], "B": [1674, 1685], "C": [1669, 1680], "F42A": [1544, 1551]},
-          "ext": {"lera": "119-3"}
+          "ext": {"lera": "119-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'mehr liebet alß er ſol' vs 'der Lieb' ergeben ſey'."
+          }
         },
         {"spans": {"A": [1683, 1684], "B": [1685, 1686], "C": [1680, 1681], "F42A": [1551, 1552]}}
       ],
@@ -23510,12 +24298,20 @@
       "columns": [
         {
           "spans": {"A": [1684, 1685], "B": [1686, 1687], "C": [1681, 1682], "F42A": [1552, 1553]},
-          "ext": {"lera": "120-1"}
+          "ext": {"lera": "120-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1686, 1687], "B": [1688, 1689], "C": [1683, 1684], "F42A": [1554, 1555]}},
         {
           "spans": {"A": [1688, 1689], "B": [1690, 1691], "C": [1685, 1686], "F42A": [1556, 1557]},
-          "ext": {"lera": "120-2"}
+          "ext": {"lera": "120-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences in capitalization, hyphenation, and the use of the long s (ſ) vs. short s (s) or the abbreviation mark (ꝛ) for 'r'."
+          }
         },
         {"spans": {"A": [1689, 1690], "B": [1691, 1692], "C": [1686, 1687], "F42A": [1557, 1558]}},
         {"spans": {"A": [1691, 1692], "B": [1693, 1694], "C": [1688, 1689], "F42A": [1559, 1560]}},
@@ -23523,7 +24319,14 @@
         {"spans": {"A": [1695, 1696], "B": [1697, 1698], "C": [1692, 1693], "F42A": [1563, 1564]}},
         {
           "spans": {"A": [1697, 1698], "B": [1699, 1700], "C": [1694, 1695], "F42A": [1565, 1566]},
-          "ext": {"lera": "120-3"}
+          "ext": {"lera": "120-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ between the verbs 'geſchriben' (written) and 'geleſen' (read), which are distinct words with different meanings."
+          }
         }
       ],
       "ext": {
@@ -23788,14 +24591,22 @@
       "columns": [
         {
           "spans": {"A": [1715, 1722], "B": [1717, 1724], "C": [1712, 1719], "F42A": [1581, 1588]},
-          "ext": {"lera": "123-1"}
+          "ext": {"lera": "123-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the adverb (zuͦgleich vs zuͦvor) and the verb form (truge vs truͦge/truͤge), representing different wordings."
+          }
         },
         {"spans": {"A": [1723, 1724], "B": [1725, 1726], "C": [1720, 1721], "F42A": [1589, 1590]}},
         {"spans": {"A": [1725, 1726], "B": [1727, 1728], "C": [1722, 1723], "F42A": [1591, 1592]}},
         {"spans": {"A": [1727, 1728], "B": [1729, 1730], "C": [1724, 1725], "F42A": [1593, 1594]}},
         {
           "spans": {"A": [1729, 1730], "B": [1731, 1732], "C": [1726, 1727], "F42A": [1595, 1596]},
-          "ext": {"lera": "123-2"}
+          "ext": {"lera": "123-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         }
       ],
       "ext": {
@@ -23912,22 +24723,34 @@
       "columns": [
         {
           "spans": {"A": [1730, 1733], "B": [1732, 1735], "C": [1727, 1730], "F42A": [1596, 1599]},
-          "ext": {"lera": "124-1"}
+          "ext": {"lera": "124-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1734, 1735], "B": [1736, 1737], "C": [1731, 1732], "F42A": [1600, 1601]}},
         {"spans": {"A": [1736, 1737], "B": [1738, 1739], "C": [1733, 1734], "F42A": [1602, 1603]}},
         {
           "spans": {"A": [1738, 1739], "B": [1740, 1741], "C": [1735, 1736], "F42A": [1604, 1605]},
-          "ext": {"lera": "124-2"}
+          "ext": {"lera": "124-2"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference between 'tohr' and 'tor' involves the presence or absence of the letter 'h', which is a spelling variation (likely reflecting dialectal or phonetic spelling differences) rather than a change in word identity or grammar."
+          }
         },
-        {"spans": {"A": [1739, 1740], "B": [1741, 1742], "C": [1736, 1737], "F42A": [1605, 1606]}},
+        {
+          "spans": {"A": [1739, 1740], "B": [1741, 1742], "C": [1736, 1737], "F42A": [1605, 1606]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"C": [1738, 1739]}},
         {"spans": {"A": [1741, 1742], "B": [1743, 1744], "C": [1740, 1741], "F42A": [1607, 1608]}},
         {"spans": {"A": [1743, 1744], "B": [1745, 1746], "C": [1742, 1743], "F42A": [1609, 1610]}},
         {"spans": {"A": [1745, 1746], "B": [1747, 1748], "C": [1744, 1745], "F42A": [1611, 1612]}},
         {
           "spans": {"A": [1747, 1748], "B": [1749, 1750], "C": [1746, 1747], "F42A": [1613, 1614]},
-          "ext": {"lera": "124-3"}
+          "ext": {"lera": "124-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         }
       ],
       "ext": {
@@ -24068,17 +24891,32 @@
       "columns": [
         {
           "spans": {"A": [1748, 1755], "B": [1750, 1757], "C": [1747, 1754], "F42A": [1614, 1621]},
-          "ext": {"lera": "125-1"}
+          "ext": {"lera": "125-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the substitution of the demonstrative pronoun 'ihr' (your) with the indefinite article 'ein' (a/an) in reading F42A, which changes the meaning. The other variations (muͦßt/mußt, jedes/iedes) are orthographic or spelling variants, but the lexical change dominates the classif"
+          }
         },
         {"spans": {"A": [1756, 1757], "B": [1758, 1759], "C": [1755, 1756], "F42A": [1622, 1623]}},
         {
           "spans": {"A": [1757, 1758], "B": [1759, 1760], "C": [1756, 1757], "F42A": [1623, 1624]},
-          "ext": {"lera": "125-2"}
+          "ext": {"lera": "125-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1759, 1760], "B": [1761, 1762], "C": [1758, 1759], "F42A": [1625, 1626]}},
         {
           "spans": {"A": [1761, 1766], "B": [1763, 1768], "C": [1760, 1765], "F42A": [1627, 1632]},
-          "ext": {"lera": "125-3"}
+          "ext": {"lera": "125-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are limited to capitalization (liebe/Liebe), long s vs short s (zuͦ/zu), and long s vs z (ergaͤntzen/ergentzen)."
+          }
         }
       ],
       "ext": {
@@ -24220,17 +25058,32 @@
       "columns": [
         {
           "spans": {"A": [1766, 1767], "B": [1768, 1769], "C": [1765, 1766], "F42A": [1632, 1633]},
-          "ext": {"lera": "126-1"}
+          "ext": {"lera": "126-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1768, 1769], "B": [1770, 1771], "C": [1767, 1768], "F42A": [1634, 1635]}},
         {
           "spans": {"A": [1770, 1773], "B": [1772, 1775], "C": [1769, 1772], "F42A": [1635, 1640]},
-          "ext": {"lera": "126-2"}
+          "ext": {"lera": "126-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'seinen trunk' vs 'auß gebrauch ein jeden Trunck'."
+          }
         },
         {"spans": {"A": [1773, 1774], "B": [1775, 1776], "C": [1772, 1773], "F42A": [1640, 1641]}},
         {
           "spans": {"A": [1775, 1778], "B": [1777, 1780], "C": [1774, 1777], "F42A": [1642, 1647]},
-          "ext": {"lera": "126-3"}
+          "ext": {"lera": "126-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading in F42A replaces 'zum vorderſten' with 'auß gebrauch, ein jeden', which constitutes a change in wording/lexicon rather than a simple orthographic or grammatical variant."
+          }
         },
         {"spans": {"A": [1779, 1780], "B": [1781, 1782], "C": [1778, 1779], "F42A": [1648, 1649]}}
       ],
@@ -24556,7 +25409,8 @@
         {"spans": {"A": [1801, 1802], "B": [1803, 1804], "C": [1800, 1801]}},
         {
           "spans": {"A": [1803, 1804], "B": [1805, 1806], "C": [1802, 1803]},
-          "ext": {"lera": "130-1"}
+          "ext": {"lera": "130-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [1805, 1806], "B": [1807, 1808], "C": [1804, 1805]}},
         {"spans": {"A": [1807, 1808], "B": [1809, 1810], "C": [1806, 1807]}}
@@ -24653,19 +25507,28 @@
         {"spans": {"A": [1810, 1811], "B": [1812, 1813], "C": [1809, 1810], "F42A": [1679, 1680]}},
         {
           "spans": {"A": [1812, 1815], "B": [1814, 1817], "C": [1811, 1814], "F42A": [1681, 1684]},
-          "ext": {"lera": "131-1"}
+          "ext": {"lera": "131-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is between 'sol' (archaic/short form) and 'soll' (standard form), which is a spelling variation of the same word."
+          }
         },
         {"spans": {"A": [1816, 1817], "B": [1818, 1819], "C": [1815, 1816], "F42A": [1685, 1686]}},
         {"spans": {"A": [1818, 1819], "B": [1820, 1821], "C": [1817, 1818], "F42A": [1687, 1688]}},
         {
           "spans": {"A": [1819, 1820], "B": [1821, 1822], "C": [1818, 1819], "F42A": [1688, 1689]},
-          "ext": {"lera": "131-2"}
+          "ext": {"lera": "131-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1821, 1822], "B": [1823, 1824], "C": [1820, 1821], "F42A": [1690, 1691]}},
         {"spans": {"A": [1823, 1824], "B": [1825, 1826], "C": [1822, 1823], "F42A": [1692, 1693]}},
         {
           "spans": {"A": [1825, 1826], "B": [1827, 1828], "C": [1824, 1825], "F42A": [1694, 1695]},
-          "ext": {"lera": "131-3"}
+          "ext": {"lera": "131-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1827, 1828], "B": [1829, 1830], "C": [1826, 1827], "F42A": [1696, 1697]}}
       ],
@@ -24974,18 +25837,39 @@
       "columns": [
         {
           "spans": {"A": [1847, 1850], "B": [1849, 1852], "C": [1846, 1849], "F42A": [1712, 1713]},
-          "ext": {"lera": "134-1"}
+          "ext": {"lera": "134-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference is only in capitalization (lowercase 'l' vs uppercase 'L')."
+          }
         },
         {"spans": {"A": [1851, 1852], "B": [1853, 1854], "C": [1850, 1851], "F42A": [1714, 1715]}},
         {
           "spans": {"A": [1853, 1856], "B": [1855, 1858], "C": [1852, 1855], "F42A": [1716, 1719]},
-          "ext": {"lera": "134-2"}
+          "ext": {"lera": "134-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading in F42A includes the verb 'iſt' (is) and changes 'deckt' to 'decken', whereas the other readings lack 'iſt' and use 'deket'. The presence of an extra word constitutes a lexical difference."
+          }
         },
         {"spans": {"A": [1857, 1858], "B": [1859, 1860], "C": [1856, 1857], "F42A": [1720, 1721]}},
         {"spans": {"A": [1859, 1860], "B": [1861, 1862], "C": [1858, 1859], "F42A": [1722, 1723]}},
         {
           "spans": {"A": [1861, 1864], "B": [1863, 1866], "C": [1860, 1863], "F42A": [1724, 1727]},
-          "ext": {"lera": "134-3"}
+          "ext": {"lera": "134-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the use of the long s (ſ) in 'deket' versus the short s (s) in 'decken' (deket/decken), which is an orthographic variation. The difference between 'zuͦ' and 'zu' is also orthographic (superscript o vs. none)."
+          }
         },
         {"spans": {"A": [1864, 1865], "B": [1866, 1867], "C": [1863, 1864], "F42A": [1727, 1728]}}
       ],
@@ -25177,12 +26061,20 @@
         {"spans": {"A": [1871, 1872], "B": [1873, 1874], "C": [1870, 1871]}},
         {
           "spans": {"A": [1873, 1874], "B": [1875, 1876], "C": [1872, 1873]},
-          "ext": {"lera": "136-1"}
+          "ext": {"lera": "136-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1875, 1876], "B": [1877, 1878], "C": [1874, 1875]}},
         {
           "spans": {"A": [1877, 1878], "B": [1879, 1880], "C": [1876, 1877]},
-          "ext": {"lera": "136-2"}
+          "ext": {"lera": "136-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the representation of the umlaut (diaeresis) on the vowel u (uͦh vs u)."
+          }
         },
         {"spans": {"A": [1878, 1879], "B": [1880, 1881], "C": [1877, 1878]}}
       ],
@@ -25281,7 +26173,8 @@
         {"spans": {"A": [1889, 1890], "B": [1891, 1892], "C": [1888, 1889], "F42A": [1753, 1754]}},
         {
           "spans": {"A": [1891, 1894], "B": [1893, 1896], "C": [1890, 1893], "F42A": [1755, 1758]},
-          "ext": {"lera": "137-1"}
+          "ext": {"lera": "137-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
         },
         {"spans": {"A": [1895, 1896], "B": [1897, 1898], "C": [1894, 1895], "F42A": [1759, 1760]}}
       ],
@@ -25396,7 +26289,14 @@
       "columns": [
         {
           "spans": {"A": [1896, 1901], "B": [1898, 1903], "C": [1895, 1900], "F42A": [1760, 1765]},
-          "ext": {"lera": "138-1"}
+          "ext": {"lera": "138-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences in capitalization (dem/Dem, hertz/Hertz) and punctuation (comma after Dem) are orthographic/punctuation variants; 'deſſe' vs 'deſſen' is a minor spelling/orthographic variation in the same form."
+          }
         },
         {"spans": {"A": [1902, 1903], "B": [1904, 1905], "C": [1901, 1902], "F42A": [1766, 1767]}},
         {"spans": {"A": [1904, 1905], "B": [1906, 1907], "C": [1903, 1904], "F42A": [1768, 1769]}},
@@ -25407,12 +26307,20 @@
         {"spans": {"A": [1907, 1908], "B": [1909, 1910], "C": [1906, 1907], "F42A": [1770, 1771]}},
         {
           "spans": {"A": [1909, 1910], "B": [1911, 1912], "C": [1908, 1909], "F42A": [1772, 1773]},
-          "ext": {"lera": "138-3"}
+          "ext": {"lera": "138-3"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1911, 1912], "B": [1913, 1914], "C": [1910, 1911], "F42A": [1774, 1775]}},
         {
           "spans": {"A": [1913, 1914], "B": [1915, 1916], "C": [1912, 1913], "F42A": [1776, 1777]},
-          "ext": {"lera": "138-4"}
+          "ext": {"lera": "138-4"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference between long s (ſ) and short s (s) in the same word."
+          }
         },
         {"spans": {"A": [1914, 1915], "B": [1916, 1917], "C": [1913, 1914], "F42A": [1777, 1778]}}
       ],
@@ -25558,12 +26466,20 @@
       "columns": [
         {
           "spans": {"A": [1915, 1916], "B": [1917, 1918], "C": [1914, 1915], "F42A": [1778, 1779]},
-          "ext": {"lera": "139-1"}
+          "ext": {"lera": "139-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1917, 1918], "B": [1919, 1920], "C": [1916, 1917], "F42A": [1780, 1781]}},
         {
           "spans": {"A": [1919, 1930], "B": [1921, 1932], "C": [1918, 1929], "F42A": [1782, 1793]},
-          "ext": {"lera": "139-2"}
+          "ext": {"lera": "139-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice ('außerwehlt' vs 'erwehlt') and wording ('zu lieben' is present in one but not the others), which constitutes a lexical difference."
+          }
         }
       ],
       "ext": {
@@ -25679,12 +26595,14 @@
       "columns": [
         {
           "spans": {"A": [1930, 1931], "B": [1932, 1933], "C": [1929, 1930], "F42A": [1793, 1794]},
-          "ext": {"lera": "140-1"}
+          "ext": {"lera": "140-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [1932, 1933], "B": [1934, 1935], "C": [1931, 1932], "F42A": [1795, 1796]}},
         {
           "spans": {"A": [1934, 1941], "B": [1936, 1943], "C": [1933, 1940], "F42A": [1797, 1804]},
-          "ext": {"lera": "140-2"}
+          "ext": {"lera": "140-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
         },
         {"spans": {"A": [1942, 1943], "B": [1944, 1945], "C": [1941, 1942], "F42A": [1805, 1806]}},
         {
@@ -25694,7 +26612,8 @@
         {"spans": {"A": [1945, 1946], "B": [1947, 1948], "C": [1944, 1945], "F42A": [1807, 1808]}},
         {
           "spans": {"A": [1946, 1947], "B": [1948, 1949], "C": [1945, 1946], "F42A": [1808, 1809]},
-          "ext": {"lera": "140-4"}
+          "ext": {"lera": "140-4"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -25830,14 +26749,22 @@
       "columns": [
         {
           "spans": {"A": [1947, 1950], "B": [1949, 1952], "C": [1946, 1949], "F42A": [1809, 1812]},
-          "ext": {"lera": "141-1"}
+          "ext": {"lera": "141-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the verb: 'gleicht' (resembles) vs 'ist' (is). These are different words with different meanings."
+          }
         },
         {"spans": {"A": [1951, 1952], "B": [1953, 1954], "C": [1950, 1951], "F42A": [1813, 1814]}},
         {"spans": {"A": [1953, 1954], "B": [1955, 1956], "C": [1952, 1953], "F42A": [1815, 1816]}},
         {"spans": {"A": [1955, 1956], "B": [1957, 1958], "C": [1954, 1955], "F42A": [1817, 1818]}},
         {
           "spans": {"A": [1957, 1960], "B": [1959, 1962], "C": [1956, 1959], "F42A": [1819, 1822]},
-          "ext": {"lera": "141-2"}
+          "ext": {"lera": "141-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
         },
         {"spans": {"A": [1960, 1961], "B": [1962, 1963], "C": [1959, 1960], "F42A": [1822, 1823]}}
       ],
@@ -25957,7 +26884,14 @@
         {"spans": {"A": [1963, 1964], "B": [1965, 1966], "C": [1962, 1963], "F42A": [1829, 1830]}},
         {
           "spans": {"A": [1965, 1972], "B": [1967, 1974], "C": [1964, 1971], "F42A": [1831, 1840]},
-          "ext": {"lera": "142-2"}
+          "ext": {"lera": "142-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'fromkeit' (noun) vs 'From ſeyn' (phrase) and 'einiges' vs 'Gſpil'."
+          }
         },
         {"spans": {"A": [1973, 1974], "B": [1975, 1976], "C": [1972, 1973], "F42A": [1841, 1842]}}
       ],
@@ -26077,12 +27011,26 @@
       "columns": [
         {
           "spans": {"A": [1974, 1977], "B": [1976, 1979], "C": [1973, 1976], "F42A": [1842, 1845]},
-          "ext": {"lera": "143-1"}
+          "ext": {"lera": "143-1"},
+          "relation": {
+            "type": "transposition",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The words 'Sy ist' and 'Sußanna' are reordered relative to 'künſch' in the variant reading."
+          }
         },
         {"spans": {"A": [1978, 1979], "B": [1980, 1981], "C": [1977, 1978], "F42A": [1846, 1847]}},
         {
           "spans": {"A": [1980, 1983], "B": [1982, 1985], "C": [1979, 1982], "F42A": [1848, 1851]},
-          "ext": {"lera": "143-2"}
+          "ext": {"lera": "143-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the capitalization of the first letter of the word 'an' (lowercase in A/B/C, uppercase in F42A)."
+          }
         },
         {"spans": {"A": [1984, 1985], "B": [1986, 1987], "C": [1983, 1984], "F42A": [1852, 1853]}},
         {"spans": {"A": [1986, 1987], "B": [1988, 1989], "C": [1985, 1986], "F42A": [1854, 1855]}},
@@ -26221,12 +27169,26 @@
         {"spans": {"A": [1991, 1992], "B": [1993, 1994], "C": [1990, 1991], "F42A": [1862, 1863]}},
         {
           "spans": {"A": [1993, 2002], "B": [1995, 2004], "C": [1992, 2001], "F42A": [1864, 1875]},
-          "ext": {"lera": "144-2"}
+          "ext": {"lera": "144-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'nach hertzens wunſch' vs 'wie ich ſy wünſch' and 'an hulden reich' vs 'Huldenreich'."
+          }
         },
         {"spans": {"A": [2003, 2004], "B": [2005, 2006], "C": [2002, 2003], "F42A": [1876, 1877]}},
         {
           "spans": {"A": [2005, 2010], "B": [2007, 2012], "C": [2004, 2009], "F42A": [1878, 1879]},
-          "ext": {"lera": "144-3"}
+          "ext": {"lera": "144-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference is word division (an hulden / Hulden) and capitalization."
+          }
         },
         {"spans": {"A": [2010, 2011], "B": [2012, 2013], "C": [2009, 2010], "F42A": [1879, 1880]}}
       ],
@@ -26381,7 +27343,8 @@
         {"spans": {"A": [2011, 2012], "B": [2013, 2014], "C": [2010, 2011], "F42A": [1880, 1881]}},
         {
           "spans": {"A": [2013, 2014], "B": [2015, 2016], "C": [2012, 2013], "F42A": [1882, 1883]},
-          "ext": {"lera": "145-1"}
+          "ext": {"lera": "145-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [2015, 2016], "B": [2017, 2018], "C": [2014, 2015], "F42A": [1884, 1885]}},
         {"spans": {"A": [2017, 2018], "B": [2019, 2020], "C": [2016, 2017], "F42A": [1886, 1887]}},
@@ -26390,7 +27353,14 @@
         {"spans": {"A": [2023, 2024], "B": [2025, 2026], "C": [2022, 2023], "F42A": [1892, 1893]}},
         {
           "spans": {"A": [2025, 2028], "B": [2027, 2030], "C": [2024, 2027], "F42A": [1894, 1897]},
-          "ext": {"lera": "145-2"}
+          "ext": {"lera": "145-2"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The variants differ in the spelling of the verb 'erdenken' (erdencken, erdaͤnken) and the capitalization of 'Wunsch', which are orthographic/spelling variations of the same word forms."
+          }
         },
         {"spans": {"A": [2028, 2029], "B": [2030, 2031], "C": [2027, 2028], "F42A": [1897, 1898]}}
       ],
@@ -26520,7 +27490,8 @@
         {"spans": {"A": [2029, 2030], "B": [2031, 2032], "C": [2028, 2029], "F42A": [1898, 1899]}},
         {
           "spans": {"A": [2031, 2032], "B": [2033, 2034], "C": [2030, 2031], "F42A": [1900, 1901]},
-          "ext": {"lera": "146-1"}
+          "ext": {"lera": "146-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
         },
         {"spans": {"A": [2033, 2034], "B": [2035, 2036], "C": [2032, 2033], "F42A": [1902, 1903]}},
         {
@@ -26530,13 +27501,27 @@
         {"spans": {"A": [2036, 2037], "B": [2038, 2039], "C": [2035, 2036], "F42A": [1904, 1905]}},
         {
           "spans": {"A": [2037, 2040], "B": [2039, 2042], "C": [2036, 2039], "F42A": [1906, 1907]},
-          "ext": {"lera": "146-3"}
+          "ext": {"lera": "146-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'thuͦn' (to do) in F42A replaces the verb 'henken' (to hang) or 'haͤnken' found in the other editions, representing a different word/wording."
+          }
         },
         {"spans": {"A": [2041, 2042], "B": [2043, 2044], "C": [2040, 2041], "F42A": [1908, 1909]}},
         {"spans": {"A": [2043, 2044], "B": [2045, 2046], "C": [2042, 2043], "F42A": [1910, 1911]}},
         {
           "spans": {"A": [2045, 2048], "B": [2047, 2050], "C": [2044, 2047], "F42A": [1912, 1915]},
-          "ext": {"lera": "146-4"}
+          "ext": {"lera": "146-4"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the presence of the diaeresis (haͤnken vs henken) and long s (hencken vs henken), which are graphic variations of the same word."
+          }
         },
         {"spans": {"A": [2048, 2049], "B": [2050, 2051], "C": [2047, 2048], "F42A": [1915, 1916]}}
       ],
@@ -26682,12 +27667,26 @@
         {"spans": {"A": [2049, 2050], "B": [2051, 2052], "C": [2048, 2049], "F42A": [1916, 1917]}},
         {
           "spans": {"A": [2051, 2056], "B": [2053, 2058], "C": [2050, 2055], "F42A": [1918, 1921]},
-          "ext": {"lera": "147-1"}
+          "ext": {"lera": "147-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'Friden Euch' in F42A uses a different word ('Friden' vs 'frid') and a different grammatical construction (accusative object vs dative prepositional phrase 'bey euch') compared to the other editions."
+          }
         },
         {"spans": {"A": [2057, 2058], "B": [2059, 2060], "C": [2056, 2057], "F42A": [1922, 1923]}},
         {
           "spans": {"A": [2059, 2064], "B": [2061, 2066], "C": [2058, 2063], "F42A": [1924, 1929]},
-          "ext": {"lera": "147-2"}
+          "ext": {"lera": "147-2"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the long s (ſ) vs short s (s) in 'außerwehltes' vs 'außerweltes'. The capitalization difference in 'Par' is also orthographic."
+          }
         },
         {"spans": {"A": [2064, 2065], "B": [2066, 2067], "C": [2063, 2064], "F42A": [1929, 1930]}}
       ],
@@ -26815,7 +27814,14 @@
       "columns": [
         {
           "spans": {"A": [2065, 2074], "B": [2067, 2076], "C": [2064, 2073], "F42A": [1930, 1939]},
-          "ext": {"lera": "148-1"}
+          "ext": {"lera": "148-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice and structure: 'sey der Streit' (let the strife be) vs 'Der Streit besteh' (the strife consists), and 'in liebe' vs 'in Lieb'."
+          }
         },
         {"spans": {"A": [2075, 2076], "B": [2077, 2078], "C": [2074, 2075], "F42A": [1940, 1941]}},
         {"spans": {"A": [2077, 2078], "B": [2079, 2080], "C": [2076, 2077], "F42A": [1942, 1943]}},
@@ -26823,7 +27829,8 @@
         {"spans": {"A": [2081, 2082], "B": [2083, 2084], "C": [2080, 2081], "F42A": [1946, 1947]}},
         {
           "spans": {"A": [2083, 2084], "B": [2085, 2086], "C": [2082, 2083], "F42A": [1948, 1949]},
-          "ext": {"lera": "148-2"}
+          "ext": {"lera": "148-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         }
       ],
       "ext": {
@@ -26959,17 +27966,38 @@
       "columns": [
         {
           "spans": {"A": [2084, 2087], "B": [2086, 2089], "C": [2083, 2086], "F42A": [1949, 1952]},
-          "ext": {"lera": "149-1"}
+          "ext": {"lera": "149-1"},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in case (accusative 'Frid' vs. dative 'Friden') and number (singular vs. plural), which constitutes a grammatical variation."
+          }
         },
         {"spans": {"A": [2088, 2089], "B": [2090, 2091], "C": [2087, 2088], "F42A": [1953, 1954]}},
         {
           "spans": {"A": [2090, 2093], "B": [2092, 2095], "C": [2089, 2092], "F42A": [1955, 1958]},
-          "ext": {"lera": "149-2"}
+          "ext": {"lera": "149-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the prepositional phrase: 'in ewer/euer hauß' (in your house) vs 'in das Hauß' (into the house). This involves a change from a possessive pronoun to a definite article and a change in the prepositional case/meaning, which constitutes a lexical difference in wording."
+          }
         },
         {"spans": {"A": [2094, 2095], "B": [2096, 2097], "C": [2093, 2094], "F42A": [1959, 1960]}},
         {
           "spans": {"A": [2096, 2097], "B": [2098, 2099], "C": [2095, 2096], "F42A": [1961, 1962]},
-          "ext": {"lera": "149-3"}
+          "ext": {"lera": "149-3"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the use of a long s (ſ) versus a short s (S) at the beginning of the word, which is a graphic variation of the same letter."
+          }
         },
         {"spans": {"A": [2098, 2099], "B": [2100, 2101], "C": [2097, 2098], "F42A": [1963, 1964]}},
         {"spans": {"A": [2100, 2101], "B": [2102, 2103], "C": [2099, 2100], "F42A": [1965, 1966]}}
@@ -27099,12 +28127,26 @@
       "columns": [
         {
           "spans": {"A": [2101, 2108], "B": [2103, 2110], "C": [2100, 2107], "F42A": [1966, 1971]},
-          "ext": {"lera": "150-1"}
+          "ext": {"lera": "150-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice (muß vs. none, boß vs. Boſe, verdringen vs. verdringen) and structure, not just spelling or punctuation."
+          }
         },
         {"spans": {"A": [2109, 2110], "B": [2111, 2112], "C": [2108, 2109], "F42A": [1972, 1973]}},
         {
           "spans": {"A": [2111, 2114], "B": [2113, 2116], "C": [2110, 2113], "F42A": [1974, 1977]},
-          "ext": {"lera": "150-2"}
+          "ext": {"lera": "150-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'boͤß darauß' (the evil out of it) vs 'Boͤſe gar' (the evil completely). 'gar' is a different word than 'darauß', and 'Boͤſe' is a different form/word than 'boͤß'."
+          }
         },
         {"spans": {"A": [2115, 2116], "B": [2117, 2118], "C": [2114, 2115], "F42A": [1978, 1979]}}
       ],
@@ -27221,9 +28263,23 @@
         "F42A": {"span": [1979, 1996]}
       },
       "columns": [
-        {"spans": {"A": [2116, 2117], "F42A": [1979, 1980]}, "ext": {"lera": "151-1"}},
+        {
+          "spans": {"A": [2116, 2117], "F42A": [1979, 1980]},
+          "ext": {"lera": "151-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
         {"spans": {"A": [2118, 2119], "F42A": [1981, 1982]}},
-        {"spans": {"A": [2120, 2123], "F42A": [1983, 1988]}, "ext": {"lera": "151-2"}},
+        {
+          "spans": {"A": [2120, 2123], "F42A": [1983, 1988]},
+          "ext": {"lera": "151-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the specific words used to describe the subject ('lebensſatt' vs 'alle beyd'), which constitutes a lexical variation."
+          }
+        },
         {"spans": {"A": [2124, 2125], "F42A": [1989, 1990]}},
         {"spans": {"A": [2126, 2127], "F42A": [1991, 1992]}},
         {"spans": {"A": [2128, 2129], "F42A": [1993, 1994]}},
@@ -27389,25 +28445,35 @@
       "columns": [
         {
           "spans": {"A": [2131, 2132], "B": [2133, 2134], "C": [2130, 2131], "F42A": [1996, 1997]},
-          "ext": {"lera": "153-1"}
+          "ext": {"lera": "153-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [2133, 2134], "B": [2135, 2136], "C": [2132, 2133], "F42A": [1998, 1999]}},
         {
           "spans": {"A": [2135, 2136], "B": [2137, 2138], "C": [2134, 2135], "F42A": [2000, 2001]},
-          "ext": {"lera": "153-2"}
+          "ext": {"lera": "153-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
         },
         {"spans": {"A": [2137, 2138], "B": [2139, 2140], "C": [2136, 2137], "F42A": [2002, 2003]}},
         {"spans": {"A": [2139, 2140], "B": [2141, 2142], "C": [2138, 2139], "F42A": [2004, 2005]}},
         {
           "spans": {"A": [2140, 2145], "B": [2142, 2147], "C": [2139, 2144], "F42A": [2005, 2010]},
-          "ext": {"lera": "153-3"}
+          "ext": {"lera": "153-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'So wünſcht' vs 'Diß iſt' and the presence/absence of the verb 'wünſcht' vs 'iſt'."
+          }
         },
         {"spans": {"A": [2146, 2147], "B": [2148, 2149], "C": [2145, 2146], "F42A": [2011, 2012]}},
         {"spans": {"A": [2148, 2149], "B": [2150, 2151], "C": [2147, 2148], "F42A": [2013, 2014]}},
         {"spans": {"A": [2150, 2151], "B": [2152, 2153], "C": [2149, 2150], "F42A": [2015, 2016]}},
         {
           "spans": {"A": [2151, 2152], "B": [2153, 2154], "C": [2150, 2151], "F42A": [2016, 2017]},
-          "ext": {"lera": "153-4"}
+          "ext": {"lera": "153-4"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {

@@ -39,6 +39,8 @@ const ODD = resolve(here, '../schema/tei_simler.odd')
 const ALIGNMENTS = resolve(here, '../alignment/documents')
 /** Where each imported line stands in the print, written beside the import files. */
 const LINES = resolve(here, '../alignment/import/lines')
+/** Which rows are in doubt: `alignment/pipeline.py` measures it last. */
+const ESTIMATE = resolve(here, '../alignment/estimate.json')
 
 /** A repository path as the pages print it, whichever separator the OS uses. */
 const posix = (path: string): string => path.split(sep).join('/')
@@ -219,7 +221,7 @@ async function main() {
 
   if (records) await mkdir(join(out, 'records'), { recursive: true })
 
-  const synopses = await loadSynopses(ALIGNMENTS, LINES)
+  const synopses = await loadSynopses(ALIGNMENTS, LINES, ESTIMATE)
   const aligned = synopses.map((synopsis) => synopsis.id)
 
   const docs: PreviewDoc[] = []

@@ -35,6 +35,21 @@
     var places = all('.synopsis [data-cat], .syn-register [data-cat]')
     var entries = all('.app-list [data-cat]') // one per place: what the counts count
     var rows = all('.synopsis tbody tr[id]')
+
+    // A model's types taken back: its places count as open again, as before it
+    // was asked, in the chips, the colours and the apparatus.
+    var model = controls.querySelector('[data-syn-model]')
+    var machine = all('[data-by="model"][data-cat]')
+    machine.forEach(function (el) { el.dataset.typed = el.dataset.cat + ' ' + (el.dataset.state || '') })
+    var typed = function () {
+      machine.forEach(function (el) {
+        var was = el.dataset.typed.split(' ')
+        el.dataset.cat = model.checked ? was[0] : 'open'
+        if (was[1]) el.dataset.state = model.checked ? was[1] : 'open'
+      })
+      synopsis.toggleAttribute('data-no-model', !model.checked)
+      previewStore.set('syn-model', model.checked ? 'on' : 'off')
+    }
     var lines = {}
     all('[data-syn-strip] i').forEach(function (line) { lines['seg-' + line.dataset.row] = line })
 
@@ -136,6 +151,11 @@
     chips.concat(filters).forEach(function (control) {
       control.addEventListener('change', function () { refresh(); changed() })
     })
+    if (model) {
+      model.checked = previewStore.get('syn-model') !== 'off'
+      typed()
+      model.addEventListener('change', function () { typed(); refresh(); changed() })
+    }
     all('[data-syn-preset]', controls).forEach(function (button) {
       button.addEventListener('click', function () {
         var chosen = button.dataset.synPreset.split(' ')

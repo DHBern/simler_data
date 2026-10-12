@@ -1,10 +1,11 @@
 /**
  * The alignments, read as the synopsis page shows them.
  *
- * Input is Alignment JSON 1.0 as `alignment/documents.py` writes it, whether a
+ * Input is Alignment JSON 1.0 as `alignment/pipeline.py` writes it, whether a
  * person corrected the alignment, LERA made it or TextAlign did: witnesses with
- * their tokens, rows with a column per aligned place. The apparatus is derived
- * here, as TextAlign derives it.
+ * their tokens, rows with a column per aligned place, each place typed by a
+ * person, the rules or a model. The apparatus is derived here, as TextAlign
+ * derives it; which rows are in doubt comes from `alignment/estimate.json`.
  */
 
 import { readdir, readFile } from 'node:fs/promises'
@@ -48,7 +49,7 @@ export interface Entry {
   group: string
   /** Siglum → its reading; a witness that omits reads the empty string. */
   readings: Record<string, string>
-  /** The readings are one word in different spellings, not different words. */
+  /** Its type is punctuation or spelling — one word, written otherwise — or no reading holds a letter. */
   spelling: boolean
   /** How far apart the witnesses are here: 1 to 3, as LERA grades its scale. */
   degree: number
@@ -59,7 +60,7 @@ export interface Entry {
   /** What the other readings are marked against, and what that one is marked against. */
   reference: string
   other: string
-  /** The document's classification, or else the rules': `by: "rule"`. */
+  /** The document's classification: a person's, or the rules' or a model's (`by`). */
   relation?: Relation
   category: Category
   /** How far it is settled: what the *nach Stand* colouring shows. */
@@ -87,6 +88,10 @@ export interface Segment {
   differs: boolean
   /** Siglum → how far it stands from the others here, as the map shades it. */
   departures: Record<string, number>
+  /** Why the alignment editor doubts this row (`estimate.json`); empty where it does not. */
+  doubts: string[]
+  /** A model proposes to pair the lines of this row and its neighbours otherwise. */
+  proposal?: Proposal
   /** Which poem of a bundle this segment belongs to: an index into `units`. */
   unit: number
 }
@@ -103,6 +108,14 @@ export interface Unit {
   variants: number
 }
 
+/** A model's proposal of how the lines of some rows pair, until a person accepts or rejects it. */
+export interface Proposal {
+  /** The numbers of the rows it would replace. */
+  rows: number[]
+  model: string
+  rationale: string
+}
+
 export interface Witness {
   siglum: string
   /** The witness page and poem anchor this column came from; '' when the document does not say. */
@@ -116,6 +129,13 @@ export interface Provenance {
   algorithm: string
   /** The tool that aligned it, with its version (`meta.aligned_by`); '' for LERA's */
   tool: string
+  /** Who aligned it: TextAlign here (`meta.aligned_by`), or LERA (an export). */
+  basis: 'TextAlign' | 'LERA'
+  /**
+   * The rows a person has worked on in the editor: reviewed, a column aligned
+   * by hand, a place typed. A repeated cell does not count: LERA's exports have them.
+   */
+  checked: number
 }
 
 /** One set of readings, wherever in the poem the witnesses part that way. */
@@ -127,6 +147,7 @@ export interface Group {
   /** As the first place's entry: the same readings fold alike everywhere. */
   category: Category
   gone: number
+  by?: string
 }
 
 /**
@@ -140,7 +161,7 @@ function readingGroups(segments: Segment[]): Group[] {
     for (const entry of segment.apparatus) {
       const forms = [...new Set(Object.values(entry.readings).map((text) => text.trim()))]
       const key = [...forms].sort().join('\u0001')
-      const group = groups.get(key) ?? { forms, places: [], category: entry.category, gone: entry.gone }
+      const group = groups.get(key) ?? { forms, places: [], category: entry.category, gone: entry.gone, by: entry.relation?.by }
       if (group.places.at(-1) !== segment.n) group.places.push(segment.n)
       groups.set(key, group)
     }
@@ -161,55 +182,12 @@ export interface Synopsis {
   groups: Group[]
   /** Apparatus entries over the whole poem. */
   variants: number
+  /** Rows the alignment editor doubts, and rows a model proposes to pair otherwise. */
+  doubtful: number
+  proposed: number
   /** Line id → where that line stands among the `l` of the poem in the edition. */
   lines: Record<string, number>
   provenance: Provenance
-}
-
-const SPELLINGS = [['ck', 'k'], ['th', 't'], ['dt', 't'], ['tz', 'z'], ['ß', 's'], ['y', 'i'], ['aw', 'au'], ['ew', 'eu']]
-const undouble = (text: string): string => text.replace(/(\p{L})\1+/gu, '$1')
-
-/**
- * TextAlign's rule cascade, finest first: each step adds to those before it, and
- * the first under which all readings agree names the type. A copy of
- * `textalign/io/variant_rules.py`, as the preview builds without TextAlign;
- * `test/synopsis.test.ts` holds it to TextAlign's own cases.
- */
-const RULES: { name: string, type: string, apply: (text: string) => string }[] = [
-  { name: 'word division', type: 'orthographic', apply: (t) => t.replaceAll(' ', '') },
-  { name: 'punctuation', type: 'punctuation', apply: (t) => t.replace(/[^\p{L}\p{N}\p{M}\s]/gu, '') },
-  { name: 'case', type: 'orthographic', apply: (t) => t.toLowerCase() },
-  { name: 'diacritics', type: 'orthographic', apply: (t) => t.normalize('NFD').replace(/\p{Mn}/gu, '') },
-  { name: 'long s, r rotunda', type: 'orthographic', apply: (t) => t.replaceAll('ſ', 's').replaceAll('ꝛ', 'r') },
-  { name: 'u/v, i/j', type: 'orthographic', apply: (t) => t.replaceAll('v', 'u').replaceAll('j', 'i') },
-  { name: 'doubled letters', type: 'spelling', apply: undouble },
-  { name: 'spelling variants', type: 'spelling', apply: (t) => undouble(SPELLINGS.reduce((x, [a, b]) => x.replaceAll(a, b), t)) },
-]
-
-/**
- * A reading under the whole cascade: two readings with the same form are one
- * word spelt otherwise (`vnd vertrawen`/`und vertrauen`, `zuͦ erligen`/`zuͦerligen`,
- * `Herꝛ`/`Herr`). Inflection survives it — `gelangen` and `gelanget` stay two.
- */
-export const wordForm = (text: string): string => RULES.reduce((t, rule) => rule.apply(t), text)
-
-/**
- * The type the rules give a variant place, and the rule that decided it; null
- * where they decide nothing, and for an omission, which they leave alone.
- */
-export function ruleRelation(readings: string[]): { type: string, rule: string } | null {
-  const texts = readings.map((text) => text.replace(/\s+/g, ' ').trim())
-  if (texts.length < 2 || texts.some((t) => !t) || new Set(texts).size === 1) return null
-  let forms = texts
-  for (const rule of RULES) {
-    forms = forms.map(rule.apply)
-    if (new Set(forms).size === 1) return { type: rule.type, rule: rule.name }
-  }
-  const words = texts.map((t) => t.split(' ').map(wordForm).filter(Boolean))
-  const agree = (key: (w: string[]) => string) => new Set(words.map(key)).size === 1
-  if (words.every((w) => w.length > 1) && agree((w) => [...w].sort().join(' '))) return { type: 'transposition', rule: 'word order' }
-  if (agree((w) => w.filter((x, k) => x !== w[k - 1]).join(' '))) return { type: 'repetition', rule: 'repeated word' }
-  return null
 }
 
 /**
@@ -286,7 +264,7 @@ export function charDiff(a: string, b: string): { text: string, differs: boolean
  * weighs on nothing in it. `under[m]` compares a reading under the document's
  * filters and the reader's filter set `m`, so `under[0]` is the document's own.
  */
-function entry(group: string, readings: Record<string, string>, stored: Relation | undefined,
+function entry(group: string, readings: Record<string, string>, relation: Relation | undefined,
                under: ((text: string) => string)[]): Entry {
   const sigla = Object.keys(readings)
   const values = Object.values(readings).map((text) => text.trim())
@@ -294,15 +272,14 @@ function entry(group: string, readings: Record<string, string>, stored: Relation
   // Every reading is marked against the one most of them share, and that one
   // against the first reading that differs, so it too shows what is distinctive.
   const reference = Object.entries(readings).find(([siglum]) => !apart.includes(siglum))?.[1].trim() ?? values[0] ?? ''
-  // A person's or a model's classification stands; the rules fill in the rest.
-  const found = stored ? null : ruleRelation(values)
-  const relation = stored ?? (found ? { type: found.type, by: 'rule', rule: found.rule } : undefined)
   const omission = values.includes('')
+  const category: Category = relation ? CATEGORY[relation.type] ?? 'other' : omission ? 'omission' : 'open'
   const form = (siglum: string) => under[0](readings[siglum])
   return {
     group,
     readings,
-    spelling: new Set(values.map(wordForm)).size === 1,
+    // A virgule against nothing is an omission, and still no other word.
+    spelling: category === 'spelling' || category === 'punctuation' || values.every((v) => !/[\p{L}\p{N}]/u.test(v)),
     // Two readings among four witnesses is a lesser difference than four.
     degree: Math.min(3, Math.max(1, new Set(values).size - 1)),
     departing: apart,
@@ -310,7 +287,7 @@ function entry(group: string, readings: Record<string, string>, stored: Relation
     reference,
     other: values.find((text) => text !== reference) ?? '',
     ...(relation ? { relation } : {}),
-    category: relation ? CATEGORY[relation.type] ?? 'other' : omission ? 'omission' : 'open',
+    category,
     state: !relation ? 'open' : relation.by ? 'proposed' : relation.significant ? 'significant' : 'confirmed',
     gone: under.reduce((mask, compare, m) => new Set(values.map(compare)).size < 2 ? mask | 1 << m : mask, 0),
     alike: Object.fromEntries(sigla.map((s) => [s, sigla.filter((t) => form(t) === form(s))])),
@@ -410,7 +387,7 @@ export function numberLines(html: string, poems: Set<string>): string {
 
 /* ── Alignment JSON ───────────────────────────────────────────────────────────
  *
- * The format both routes converge on (`alignment/workflow.md` §4). It records
+ * The format both routes converge on (`alignment/decisions.md` §4). It records
  * the alignment itself — witnesses with their tokens, segments with a column
  * per aligned place — and leaves the apparatus to be *derived*, which is what
  * lets an editor's own filters and regularisations decide what counts as a
@@ -446,7 +423,7 @@ const span = (tokens: { t: string }[], at?: [number, number]): string =>
 
 /** One row of a document, read into the shape the pages render. */
 function readSegment(doc: any, raw: any, index: number, sigla: string[],
-                  tokens: Record<string, { t: string }[]>, numbers: Map<string, number>): Segment {
+                  tokens: Record<string, { t: string }[]>, numbers: Map<string, number>, doubts: string[]): Segment {
   const filters: string[] = doc.settings?.filters ?? []
   const rules = raw.regularizations ?? doc.settings?.regularizations ?? []
   const under = Array.from({ length: 1 << FILTERS.length }, (_, m) =>
@@ -500,18 +477,28 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
     apparatus,
     differs: apparatus.length > 0 || missing.length > 0,
     departures: departures(apparatus, sigla, missing),
+    doubts,
     unit: 0,
   }
 }
 
-/** An alignment document, read as the synopsis pages show it. */
-function readDocument(id: string, doc: any, lines: Record<string, number>): Synopsis {
+/**
+ * An alignment document, read as the synopsis pages show it; `doubts` is the
+ * editor's, per row id, as `estimate.py` recorded it.
+ */
+function readDocument(id: string, doc: any, lines: Record<string, number>, doubts: Record<string, string[]>): Synopsis {
   const sigla: string[] = doc.witnesses.map((w: any) => w.siglum)
   const tokens = Object.fromEntries(doc.witnesses.map((w: any) => [w.siglum, w.tokens]))
   const numbers = new Map<string, number>(
     doc.segments.map((s: any, i: number) => [s.id, s.number ?? i + 1]))
-  const segments = doc.segments.map((raw: any, i: number) =>
-    readSegment(doc, raw, i, sigla, tokens, numbers))
+  const segments: Segment[] = doc.segments.map((raw: any, i: number) =>
+    readSegment(doc, raw, i, sigla, tokens, numbers, doubts[raw.id] ?? []))
+  // A proposal is shown on every row it would replace; a person's own is the editor's business.
+  for (const p of doc.proposals ?? []) {
+    if (p.by !== 'model') continue
+    const proposal = { rows: p.rows.map((row: string) => numbers.get(row)!), model: p.model ?? '', rationale: p.rationale ?? '' }
+    for (const n of proposal.rows) segments.find((s) => s.n === n)!.proposal = proposal
+  }
   const units = divide(segments)
   const by = doc.meta?.aligned_by
 
@@ -523,12 +510,17 @@ function readDocument(id: string, doc: any, lines: Record<string, number>): Syno
     units,
     groups: readingGroups(segments),
     variants: segments.reduce((n: number, s: Segment) => n + s.apparatus.length, 0),
+    doubtful: segments.filter((s) => s.doubts.length).length,
+    proposed: segments.filter((s) => s.proposal).length,
     lines,
     provenance: {
       created: day(doc.meta?.created_at ?? ''),
       updated: day(doc.meta?.updated_at ?? ''),
       algorithm: by ? [by.algorithm, by.normalizer].filter(Boolean).join(', ') : doc.meta?.align_algorithm ?? '',
       tool: by ? `${by.tool === 'textalign' ? 'TextAlign' : by.tool} ${by.version ?? ''}`.trim() : '',
+      basis: by ? 'TextAlign' : 'LERA',
+      checked: doc.segments.filter((s: any) => 'review' in s ||
+        s.columns.some((c: any) => c.origin === 'manual' || (c.relation && !c.relation.by))).length,
     },
   }
 }
@@ -536,14 +528,19 @@ function readDocument(id: string, doc: any, lines: Record<string, number>): Syno
 /**
  * Every alignment in `dir`, by poem id. A directory that is not there is not an
  * error: the preview is built from the TEI alone until someone aligns a poem.
+ * Nor is a missing `estimate`: the rows are then simply not marked.
  */
-export async function loadSynopses(dir: string, imports = ''): Promise<Synopsis[]> {
+export async function loadSynopses(dir: string, imports = '', estimate = ''): Promise<Synopsis[]> {
   let names: string[]
   try {
     names = (await readdir(dir)).filter((name) => name.endsWith('.json'))
   } catch {
     return []
   }
+  let measured: Record<string, { doubts?: Record<string, string[]> }> = {}
+  try {
+    measured = estimate ? JSON.parse(await readFile(estimate, 'utf8')).poems ?? {} : {}
+  } catch { /* not measured yet */ }
 
   const synopses: Synopsis[] = []
   for (const name of names.sort((a, b) => a.localeCompare(b, 'de'))) {
@@ -553,11 +550,11 @@ export async function loadSynopses(dir: string, imports = ''): Promise<Synopsis[
     const id = basename(name, '.json')
     if (id.endsWith('.auto')) continue
     const lines = imports ? await lineMap(imports, id) : {}
-    // `documents.py` writes every alignment in this one format; anything else is stale.
+    // `pipeline.py` writes every alignment in this one format; anything else is stale.
     if (data.format !== 'alignment-json') {
-      throw new Error(`${name} is not Alignment JSON; regenerate it: python alignment/documents.py`)
+      throw new Error(`${name} is not Alignment JSON; regenerate it: python alignment/pipeline.py`)
     }
-    synopses.push(readDocument(id, data, lines))
+    synopses.push(readDocument(id, data, lines, measured[id]?.doubts ?? {}))
   }
   return synopses
 }

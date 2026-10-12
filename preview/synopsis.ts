@@ -61,7 +61,8 @@ function synopsisStrip(synopsis: Synopsis): string {
   const line = (segment: Segment, i: number) => {
     const level = Math.max(0, ...Object.values(segment.departures))
     const at = (i / segments.length * 100).toFixed(3)
-    const classes = [units.length > 1 && segment.head && 'tick', !segment.differs && 'quiet'].filter(Boolean).join(' ')
+    const classes = [units.length > 1 && segment.head && 'tick', !segment.differs && 'quiet',
+      (segment.doubts.length || segment.proposal) && 'doubt'].filter(Boolean).join(' ')
     return `<i data-row="${segment.n}" data-level="${level}"${classes ? ` class="${classes}"` : ''} style="top:${at}%"></i>`
   }
   return `<div class="syn-strip no-print" data-syn-strip title="Das ganze Gedicht: je Segment eine Linie, je länger desto mehr weichen die Textzeugen ab. Klicken oder ziehen führt dorthin.">
@@ -114,10 +115,11 @@ const swatch = (attrs: string, label: string) =>
  * the page shows everything, coloured by variance.
  */
 function synopsisControls(synopsis: Synopsis): string {
-  const { witnesses, units, segments } = synopsis
+  const { witnesses, units, segments, doubtful, proposed } = synopsis
   const counts = new Map<Category, number>()
   for (const e of segments.flatMap((s) => s.apparatus)) counts.set(e.category, (counts.get(e.category) ?? 0) + 1)
   const modes = colours(witnesses)
+  const machine = segments.some((s) => s.apparatus.some((e) => e.relation?.by === 'model'))
 
   const chip = (c: Category) => `<label class="syn-chip" title="${esc(CATEGORY_LABELS[c][1])}" data-n="${counts.get(c) ?? 0}">` +
     `<input type="checkbox" data-syn-cat="${c}" checked> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
@@ -148,6 +150,8 @@ function synopsisControls(synopsis: Synopsis): string {
         </label>
         <label class="ctrl"><input type="checkbox" data-syn="varying"> nur Abweichungen</label>
         <label class="ctrl"><input type="checkbox" data-syn="apparatus"> Apparat</label>
+        ${machine ? '<label class="ctrl" title="Typen, die ein Sprachmodell vorgeschlagen und noch niemand bestätigt hat; ' +
+          'ohne sie zählen diese Stellen als offen"><input type="checkbox" data-syn-model checked> Modellvorschläge</label>' : ''}
         ${units.length > 1 ? '<label class="ctrl" title="Wo im Band ein Gedicht anfängt, und was es enthält">' +
           '<input type="checkbox" data-syn="units"> Gedichte</label>' : ''}
         <span class="ctrl syn-witnesses"><span class="syn-label">Textzeugen</span> ${witnesses.map(witness).join('')}</span>
@@ -160,6 +164,8 @@ function synopsisControls(synopsis: Synopsis): string {
       <span class="syn-swatch"><b>—</b> kein Text</span>
       <span class="syn-swatch"><span class="copy">grau</span> wiederholt ein früheres Segment</span>
       <span class="syn-swatch"><span class="line-link">↗</span> zur Zeile in der Ausgabe</span>
+      ${doubtful ? '<span class="syn-swatch"><span class="doubt">?</span> Ausrichtung zweifelhaft</span>' : ''}
+      ${proposed ? '<span class="syn-swatch"><span class="pairing">⇄</span> andere Zeilenpaarung vorgeschlagen</span>' : ''}
     </p>`
 }
 
@@ -178,7 +184,7 @@ function readingRegister(groups: Group[]): string {
       form ? `<b>${esc(form)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')
     const where = group.places.slice(0, 12).map((n) =>
       `<a href="#seg-${n}">${n}</a>`).join(' ')
-    return `<li data-cat="${group.category}" data-gone="${group.gone}">${forms}
+    return `<li data-cat="${group.category}" data-gone="${group.gone}"${group.by === 'model' ? ' data-by="model"' : ''}>${forms}
         <span class="count">×${group.places.length}</span>
         <span class="places">${where}${group.places.length > 12 ? ' …' : ''}</span>
       </li>`
@@ -235,11 +241,47 @@ function lemmatised(e: Entry): string {
 /** The source line ids a row holds, all witnesses', for its number's title. */
 const marks = (segment: Segment): string => Object.values(segment.refs).flat().join(', ')
 
-/** What the script reads to show, hide and count a place. */
-const placeAttrs = (e: Entry) => `data-cat="${e.category}" data-gone="${e.gone}"`
+/** Who aligned a poem, as a tag: the same on the page and in the overview. */
+const basisTag = ({ basis }: Synopsis['provenance']) =>
+  `<b class="basis" data-basis="${basis === 'LERA' ? 'lera' : 'textalign'}">${basis}</b>`
+
+/**
+ * What the page rests on, said before anything else: who aligned it, whether a
+ * person has checked it, and who gave the types — a machine's work looks no
+ * different from a person's on the page, so this line is what tells them apart.
+ */
+function basisLine(synopsis: Synopsis): string {
+  const { provenance, segments } = synopsis
+  const entries = segments.flatMap((s) => s.apparatus)
+  const count = (by?: string) => entries.filter((e) => e.relation && e.relation.by === by).length
+  const how = `automatisch ausgerichtet${provenance.algorithm ? ` (<code>${esc(provenance.algorithm)}</code>)` : ''}`
+  const checked = provenance.checked
+    ? `<b class="basis" data-basis="person">von Hand geprüft</b> ${provenance.checked} von ${segments.length} Segmenten`
+    : 'noch von niemandem geprüft'
+  const types = [[count('rule'), 'von Regeln'], [count('model'), 'vom Modell vorgeschlagen'], [count(), 'bestätigt']]
+    .filter(([n]) => n).map(([n, who]) => `${n} ${who}`).join(', ')
+  return `<p class="syn-basis">${basisTag(provenance)} ${how} · ${checked}${types ? ` · Typen: ${types}` : ''}</p>`
+}
+
+/** What the script reads to show, hide and count a place; a model's type it can take back. */
+const placeAttrs = (e: Entry) =>
+  `data-cat="${e.category}" data-gone="${e.gone}"${e.relation?.by === 'model' ? ' data-by="model"' : ''}`
+
+/**
+ * What is left to check in a row: the alignment editor's doubts, and a model's
+ * proposal to pair the lines otherwise — both settled in the editor, not here.
+ */
+function rowMarks(segment: Segment): string {
+  const { doubts, proposal } = segment
+  const [first, last] = [proposal?.rows[0], proposal?.rows.at(-1)]
+  return (doubts.length ? `<span class="doubt" title="${esc(`Ausrichtung zweifelhaft: ${doubts.join('; ')}`)}">?</span>` : '') +
+    (proposal ? `<span class="pairing" title="${esc(`Das Modell ${proposal.model} schlägt vor, die Zeilen ` +
+      `${first === last ? `von Segment ${first}` : `der Segmente ${first}–${last}`} anders zu paaren` +
+      `${proposal.rationale ? `: ${proposal.rationale}` : ''}. Annehmen oder verwerfen im Alignment-Editor.`)}">⇄</span>` : '')
+}
 
 export function synopsisPage(synopsis: Synopsis): string {
-  const { id, title, witnesses, segments, units, groups, variants, lines, provenance } = synopsis
+  const { id, title, witnesses, segments, units, groups, variants, doubtful, proposed, lines, provenance } = synopsis
   const entries = new Map(segments.flatMap((s) => s.apparatus.map((e) => [e.group, e])))
   const column = new Map(witnesses.map((w, i) => [w.siglum, i + 1]))
 
@@ -283,7 +325,7 @@ export function synopsisPage(synopsis: Synopsis): string {
     const classes = [segment.head && 'is-head', !segment.differs && 'quiet'].filter(Boolean).join(' ')
     return `<tr id="seg-${segment.n}"${classes ? ` class="${classes}"` : ''}>
         <td class="num"${marks(segment) ? ` title="${esc(marks(segment))}"` : ''}><a
-          href="#seg-${segment.n}" data-syn-link>${segment.n}</a></td>
+          href="#seg-${segment.n}" data-syn-link>${segment.n}</a>${rowMarks(segment)}</td>
         ${witnesses.map((w, i) => cell(segment, w, i + 1)).join('')}
       </tr>${apparatus(segment)}`
   }
@@ -302,7 +344,10 @@ export function synopsisPage(synopsis: Synopsis): string {
   return corpusPage('', `${title} · Synopse`, `
     <p class="lead">
       ${witnesses.length} Textzeugen, ${segments.length} Segmente, ${variants} Varianten.
+      ${doubtful ? `${doubtful} ${doubtful === 1 ? 'Segment ist' : 'Segmente sind'} zweifelhaft ausgerichtet.` : ''}
+      ${proposed ? `Für ${proposed} schlägt ein Modell eine andere Zeilenpaarung vor.` : ''}
     </p>
+    ${basisLine(synopsis)}
     <div data-synopsis data-colour="variance">
       ${synopsisControls(synopsis)}
       ${unitList(units)}
@@ -335,21 +380,26 @@ export function synopsesPage(synopses: Synopsis[]): string {
   const rows = synopses.map((s) => `<tr>
           <td><a href="${esc(synopsisHref(s.id))}">${esc(s.title)}</a></td>
           <td class="file">${esc(s.id)}</td>
+          <td>${basisTag(s.provenance)}${s.provenance.checked ? ' <b class="basis" data-basis="person">geprüft</b>' : ''}</td>
           <td>${s.witnesses.map((w) => esc(w.siglum)).join(', ')}</td>
           <td class="num">${s.segments.length}</td>
           <td class="num">${s.variants}</td>
+          <td class="num">${s.doubtful || ''}</td>
         </tr>`).join('')
 
   return corpusPage('synopsen.html', `Synopsen · ${synopses.length}`, `
     <p class="lead">
-      Gedichte, die in mehreren Ausgaben stehen, ausgerichtet von Hand in LERA oder mit TextAlign.
-      Jede Synopse stellt die Fassungen nebeneinander und hebt die Abweichungen hervor.
+      Gedichte, die in mehreren Ausgaben stehen. Jede Synopse stellt die Fassungen nebeneinander
+      und hebt die Abweichungen hervor. <i>Grundlage</i> sagt, wer ausgerichtet hat — TextAlign
+      oder LERA, beide automatisch — und ob eine Person die Ausrichtung geprüft hat;
+      <i>zweifelhaft</i> zählt die Segmente, deren Ausrichtung noch jemand prüfen sollte.
     </p>
     ${synopses.length ? `<table>
       <thead>
-        <tr><th>Gedicht</th><th>ID</th><th>Textzeugen</th>
-          <th class="num">Segmente</th><th class="num">Varianten</th></tr>
+        <tr><th>Gedicht</th><th>ID</th><th>Grundlage</th><th>Textzeugen</th>
+          <th class="num">Segmente</th><th class="num">Varianten</th><th class="num">zweifelhaft</th></tr>
       </thead>
       <tbody>${rows}</tbody>
-    </table>` : '<p class="lead">Noch keine Ausrichtung vorhanden.</p>'}`)
+    </table>` : '<p class="lead">Noch keine Ausrichtung vorhanden.</p>'}`,
+    { styles: '<link rel="stylesheet" href="assets/synopsis.css">' }) // the tags of the Grundlage column
 }

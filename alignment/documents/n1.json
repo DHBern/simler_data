@@ -5549,7 +5549,11 @@
       "cells": {"A": {"span": [7, 24]}, "B": {"span": [7, 24]}},
       "columns": [
         {"spans": {"A": [7, 8], "B": [7, 8]}},
-        {"spans": {"A": [9, 10], "B": [9, 10]}, "ext": {"lera": "2-1"}},
+        {
+          "spans": {"A": [9, 10], "B": [9, 10]},
+          "ext": {"lera": "2-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [11, 12], "B": [11, 12]}},
         {"spans": {"A": [13, 14], "B": [13, 14]}},
         {"spans": {"A": [15, 16], "B": [15, 16]}},
@@ -6104,11 +6108,19 @@
         {"spans": {"A": [127, 128], "B": [127, 128]}},
         {"spans": {"A": [129, 130], "B": [129, 130]}},
         {"spans": {"A": [131, 132], "B": [131, 132]}},
-        {"spans": {"A": [133, 134], "B": [133, 134]}, "ext": {"lera": "12-1"}},
+        {
+          "spans": {"A": [133, 134], "B": [133, 134]},
+          "ext": {"lera": "12-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [135, 136], "B": [135, 136]}},
         {"spans": {"A": [137, 138], "B": [137, 138]}},
         {"spans": {"A": [139, 140], "B": [139, 140]}},
-        {"spans": {"A": [141, 144], "B": [141, 144]}, "ext": {"lera": "12-2"}},
+        {
+          "spans": {"A": [141, 144], "B": [141, 144]},
+          "ext": {"lera": "12-2"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [144, 145], "B": [144, 145]}}
       ],
       "ext": {
@@ -6328,7 +6340,11 @@
         {"spans": {"A": [189, 190], "B": [189, 190]}},
         {"spans": {"A": [191, 192], "B": [191, 192]}},
         {"spans": {"A": [193, 194], "B": [193, 194]}},
-        {"spans": {"A": [195, 196], "B": [195, 196]}, "ext": {"lera": "15-1"}},
+        {
+          "spans": {"A": [195, 196], "B": [195, 196]},
+          "ext": {"lera": "15-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [196, 197], "B": [196, 197]}}
       ],
       "ext": {
@@ -6582,7 +6598,11 @@
         {"spans": {"A": [245, 246], "B": [245, 246]}},
         {"spans": {"A": [247, 248], "B": [247, 248]}},
         {"spans": {"A": [249, 250], "B": [249, 250]}},
-        {"spans": {"A": [251, 252], "B": [251, 252]}, "ext": {"lera": "20-1"}},
+        {
+          "spans": {"A": [251, 252], "B": [251, 252]},
+          "ext": {"lera": "20-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
         {"spans": {"A": [252, 253], "B": [252, 253]}},
         {"spans": {"A": [254, 255], "B": [254, 255]}},
         {"spans": {"A": [256, 257], "B": [256, 257]}},
@@ -6848,7 +6868,11 @@
       "roles": {},
       "cells": {"A": {"span": [299, 316]}, "B": {"span": [299, 316]}},
       "columns": [
-        {"spans": {"A": [299, 300], "B": [299, 300]}, "ext": {"lera": "25-1"}},
+        {
+          "spans": {"A": [299, 300], "B": [299, 300]},
+          "ext": {"lera": "25-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [301, 302], "B": [301, 302]}},
         {"spans": {"A": [303, 304], "B": [303, 304]}},
         {"spans": {"A": [305, 306], "B": [305, 306]}},
@@ -7013,9 +7037,17 @@
       "columns": [
         {"spans": {"A": [336, 337], "B": [337, 338]}},
         {"spans": {"A": [338, 339], "B": [339, 340]}},
-        {"spans": {"A": [340, 341], "B": [341, 342]}, "ext": {"lera": "28-1"}},
+        {
+          "spans": {"A": [340, 341], "B": [341, 342]},
+          "ext": {"lera": "28-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [342, 343], "B": [343, 344]}},
-        {"spans": {"A": [344, 345], "B": [345, 346]}, "ext": {"lera": "28-2"}},
+        {
+          "spans": {"A": [344, 345], "B": [345, 346]},
+          "ext": {"lera": "28-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
         {"spans": {"A": [346, 347], "B": [347, 348]}},
         {"spans": {"A": [348, 349], "B": [349, 350]}},
         {"spans": {"A": [350, 351], "B": [351, 352]}},
@@ -7318,7 +7350,11 @@
         {"spans": {"A": [407, 408], "B": [408, 409]}},
         {"spans": {"A": [409, 410], "B": [410, 411]}},
         {"spans": {"A": [411, 412], "B": [412, 413]}},
-        {"spans": {"A": [413, 414], "B": [414, 415]}, "ext": {"lera": "33-1"}},
+        {
+          "spans": {"A": [413, 414], "B": [414, 415]},
+          "ext": {"lera": "33-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [415, 416], "B": [416, 417]}},
         {"spans": {"A": [417, 418], "B": [418, 419]}},
         {"spans": {"A": [419, 420], "B": [420, 421]}}
@@ -7450,7 +7486,11 @@
         {"spans": {"A": [441, 442], "B": [442, 443]}},
         {"spans": {"A": [443, 444], "B": [444, 445]}},
         {"spans": {"A": [445, 446], "B": [446, 447]}},
-        {"spans": {"A": [447, 450], "B": [448, 449]}, "ext": {"lera": "35-1"}},
+        {
+          "spans": {"A": [447, 450], "B": [448, 449]},
+          "ext": {"lera": "35-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
         {"spans": {"A": [450, 451], "B": [449, 450]}}
       ],
       "ext": {
@@ -7540,7 +7580,11 @@
         {"spans": {"A": [460, 461], "B": [459, 460]}},
         {"spans": {"A": [462, 463], "B": [461, 462]}},
         {"spans": {"A": [464, 465], "B": [463, 464]}},
-        {"spans": {"A": [466, 469], "B": [465, 466]}, "ext": {"lera": "37-1"}},
+        {
+          "spans": {"A": [466, 469], "B": [465, 466]},
+          "ext": {"lera": "37-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
         {"spans": {"A": [469, 470], "B": [466, 467]}}
       ],
       "ext": {
@@ -7950,9 +7994,23 @@
         {"spans": {"A": [548, 549], "B": [545, 546]}},
         {"spans": {"A": [550, 551], "B": [547, 548]}},
         {"spans": {"A": [552, 553], "B": [549, 550]}},
-        {"spans": {"A": [554, 555], "B": [551, 552]}, "ext": {"lera": "44-1"}},
+        {
+          "spans": {"A": [554, 555], "B": [551, 552]},
+          "ext": {"lera": "44-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "Difference between 'au' and 'au' with 'b' vs 'b' is not the case; it is 'haupt' vs 'haubt', which is a spelling variation of the same word."
+          }
+        },
         {"spans": {"A": [556, 557], "B": [553, 554]}},
-        {"spans": {"A": [557, 558], "B": [554, 555]}, "ext": {"lera": "44-2"}}
+        {
+          "spans": {"A": [557, 558], "B": [554, 555]},
+          "ext": {"lera": "44-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -8108,7 +8166,11 @@
         {"spans": {"A": [580, 581], "B": [577, 578]}},
         {"spans": {"A": [582, 583], "B": [579, 580]}},
         {"spans": {"A": [584, 585], "B": [581, 582]}},
-        {"spans": {"A": [586, 587], "B": [583, 584]}, "ext": {"lera": "47-1"}},
+        {
+          "spans": {"A": [586, 587], "B": [583, 584]},
+          "ext": {"lera": "47-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [588, 589], "B": [585, 586]}},
         {"spans": {"A": [590, 591], "B": [587, 588]}}
       ],
@@ -8170,7 +8232,17 @@
       "roles": {},
       "cells": {"A": {"span": [591, 606]}, "B": {"span": [588, 603]}},
       "columns": [
-        {"spans": {"A": [591, 592], "B": [588, 589]}, "ext": {"lera": "48-1"}},
+        {
+          "spans": {"A": [591, 592], "B": [588, 589]},
+          "ext": {"lera": "48-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference between 'ab' and 'ob' is a single letter substitution (a/o), which is a graphic/orthographic variation, not a change in word identity or grammar."
+          }
+        },
         {"spans": {"A": [593, 594], "B": [590, 591]}},
         {"spans": {"A": [595, 596], "B": [592, 593]}},
         {"spans": {"A": [597, 598], "B": [594, 595]}},
@@ -8529,7 +8601,11 @@
       "roles": {},
       "cells": {"A": {"span": [671, 686]}, "B": {"span": [668, 683]}},
       "columns": [
-        {"spans": {"A": [671, 672], "B": [668, 669]}, "ext": {"lera": "54-1"}},
+        {
+          "spans": {"A": [671, 672], "B": [668, 669]},
+          "ext": {"lera": "54-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [673, 674], "B": [670, 671]}},
         {"spans": {"A": [675, 676], "B": [672, 673]}},
         {"spans": {"A": [677, 678], "B": [674, 675]}},
@@ -8602,7 +8678,11 @@
         {"spans": {"A": [692, 693], "B": [689, 690]}},
         {"spans": {"A": [694, 695], "B": [691, 692]}},
         {"spans": {"A": [696, 697], "B": [693, 694]}},
-        {"spans": {"A": [698, 699], "B": [695, 696]}, "ext": {"lera": "55-1"}},
+        {
+          "spans": {"A": [698, 699], "B": [695, 696]},
+          "ext": {"lera": "55-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [700, 701], "B": [697, 698]}}
       ],
       "ext": {
@@ -8815,7 +8895,11 @@
         {"spans": {"A": [734, 735], "B": [731, 732]}},
         {"spans": {"A": [736, 737], "B": [733, 734]}},
         {"spans": {"A": [738, 739], "B": [735, 736]}},
-        {"spans": {"A": [740, 741], "B": [737, 738]}, "ext": {"lera": "59-1"}},
+        {
+          "spans": {"A": [740, 741], "B": [737, 738]},
+          "ext": {"lera": "59-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [742, 743], "B": [739, 740]}},
         {"spans": {"A": [744, 745], "B": [741, 742]}},
         {"spans": {"A": [746, 747], "B": [743, 744]}}
@@ -9722,9 +9806,29 @@
       "roles": {},
       "cells": {"A": {"span": [934, 945]}, "B": {"span": [931, 944]}},
       "columns": [
-        {"spans": {"A": [934, 939], "B": [931, 936]}, "ext": {"lera": "75-1"}},
+        {
+          "spans": {"A": [934, 939], "B": [931, 936]},
+          "ext": {"lera": "75-1"},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings involve a change in grammatical case (genitive vs dative), a change in word order (transposition of 'hingegen'), and a change in the following adverb ('allerdings' vs 'gantz'), making it a complex variant that does not fit a single simple category."
+          }
+        },
         {"spans": {"A": [940, 941], "B": [937, 938]}},
-        {"spans": {"A": [942, 943], "B": [939, 942]}, "ext": {"lera": "75-2"}},
+        {
+          "spans": {"A": [942, 943], "B": [939, 942]},
+          "ext": {"lera": "75-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the specific adverb used (allerdings vs. gantz) and the word order of the adverbial phrase, constituting a change in wording."
+          }
+        },
         {"spans": {"A": [944, 945], "B": [943, 944]}}
       ],
       "ext": {
@@ -10224,7 +10328,11 @@
         {"spans": {"A": [1039, 1040], "B": [1038, 1039]}},
         {"spans": {"A": [1041, 1042], "B": [1040, 1041]}},
         {"spans": {"A": [1043, 1044], "B": [1042, 1043]}},
-        {"spans": {"A": [1045, 1046], "B": [1044, 1045]}, "ext": {"lera": "84-1"}},
+        {
+          "spans": {"A": [1045, 1046], "B": [1044, 1045]},
+          "ext": {"lera": "84-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1047, 1048], "B": [1046, 1047]}},
         {"spans": {"A": [1049, 1050], "B": [1048, 1049]}},
         {"spans": {"A": [1051, 1052], "B": [1050, 1051]}},
@@ -10723,9 +10831,29 @@
       "roles": {},
       "cells": {"A": {"span": [1148, 1159]}, "B": {"span": [1147, 1160]}},
       "columns": [
-        {"spans": {"A": [1148, 1151], "B": [1147, 1152]}, "ext": {"lera": "93-1"}},
+        {
+          "spans": {"A": [1148, 1151], "B": [1147, 1152]},
+          "ext": {"lera": "93-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ in the verb (bezeugen vs. alß zeugen) and the adjective (deine vs. deiner), representing different wordings."
+          }
+        },
         {"spans": {"A": [1152, 1153], "B": [1153, 1154]}},
-        {"spans": {"A": [1154, 1155], "B": [1155, 1156]}, "ext": {"lera": "93-2"}},
+        {
+          "spans": {"A": [1154, 1155], "B": [1155, 1156]},
+          "ext": {"lera": "93-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "weyßheit (wisdom) and vorſicht (prudence/foresight) are different words."
+          }
+        },
         {"spans": {"A": [1156, 1157], "B": [1157, 1158]}},
         {"spans": {"A": [1158, 1159], "B": [1159, 1160]}}
       ],
@@ -11151,7 +11279,11 @@
         {"spans": {"A": [1245, 1246], "B": [1246, 1247]}},
         {"spans": {"A": [1247, 1248], "B": [1248, 1249]}},
         {"spans": {"A": [1249, 1250], "B": [1250, 1251]}},
-        {"spans": {"A": [1251, 1252], "B": [1252, 1253]}, "ext": {"lera": "100-1"}},
+        {
+          "spans": {"A": [1251, 1252], "B": [1252, 1253]},
+          "ext": {"lera": "100-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1253, 1254], "B": [1254, 1255]}},
         {"spans": {"A": [1255, 1256], "B": [1256, 1257]}},
         {"spans": {"A": [1257, 1258], "B": [1258, 1259]}}
@@ -11377,7 +11509,17 @@
         {"spans": {"A": [1293, 1294], "B": [1294, 1295]}},
         {"spans": {"A": [1295, 1296], "B": [1296, 1297]}},
         {"spans": {"A": [1297, 1298], "B": [1298, 1299]}},
-        {"spans": {"A": [1299, 1300], "B": [1300, 1301]}, "ext": {"lera": "104-1"}},
+        {
+          "spans": {"A": [1299, 1300], "B": [1300, 1301]},
+          "ext": {"lera": "104-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the use of the long s (ſ) versus the short s (s) in the middle of the word, which is a graphic variation of the same letter."
+          }
+        },
         {"spans": {"A": [1301, 1302], "B": [1302, 1303]}}
       ],
       "ext": {
@@ -11532,7 +11674,17 @@
         {"spans": {"A": [1322, 1323], "B": [1323, 1324]}},
         {"spans": {"A": [1324, 1325], "B": [1325, 1326]}},
         {"spans": {"A": [1326, 1327], "B": [1327, 1328]}},
-        {"spans": {"A": [1328, 1329], "B": [1329, 1330]}, "ext": {"lera": "107-1"}},
+        {
+          "spans": {"A": [1328, 1329], "B": [1329, 1330]},
+          "ext": {"lera": "107-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "Difference between 'prophet' and 'profet' is a spelling variation (t/f) of the same word."
+          }
+        },
         {"spans": {"A": [1330, 1331], "B": [1331, 1332]}},
         {"spans": {"A": [1332, 1333], "B": [1333, 1334]}},
         {"spans": {"A": [1334, 1335], "B": [1335, 1336]}},
@@ -11894,7 +12046,11 @@
         {"spans": {"A": [1412, 1413], "B": [1413, 1414]}},
         {"spans": {"A": [1414, 1415], "B": [1415, 1416]}},
         {"spans": {"A": [1416, 1417], "B": [1417, 1418]}},
-        {"spans": {"A": [1418, 1419], "B": [1419, 1420]}, "ext": {"lera": "113-1"}},
+        {
+          "spans": {"A": [1418, 1419], "B": [1419, 1420]},
+          "ext": {"lera": "113-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1420, 1421], "B": [1421, 1422]}}
       ],
       "ext": {
@@ -11964,7 +12120,17 @@
         {"spans": {"A": [1429, 1430], "B": [1430, 1431]}},
         {"spans": {"A": [1431, 1432], "B": [1432, 1433]}},
         {"spans": {"A": [1433, 1434], "B": [1434, 1435]}},
-        {"spans": {"A": [1435, 1436], "B": [1436, 1437]}, "ext": {"lera": "114-1"}},
+        {
+          "spans": {"A": [1435, 1436], "B": [1436, 1437]},
+          "ext": {"lera": "114-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "wird and wirt are alternative spellings of the same verb form (3rd person singular present of werden), differing in the final consonant (d/t) without changing the grammatical form."
+          }
+        },
         {"spans": {"A": [1436, 1437], "B": [1437, 1438]}}
       ],
       "ext": {
@@ -12116,7 +12282,11 @@
       "columns": [
         {"spans": {"A": [1457, 1458], "B": [1458, 1459]}},
         {"spans": {"A": [1459, 1460], "B": [1460, 1461]}},
-        {"spans": {"A": [1461, 1462], "B": [1462, 1463]}, "ext": {"lera": "117-1"}},
+        {
+          "spans": {"A": [1461, 1462], "B": [1462, 1463]},
+          "ext": {"lera": "117-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1463, 1464], "B": [1464, 1465]}},
         {"spans": {"A": [1465, 1466], "B": [1466, 1467]}},
         {"spans": {"A": [1467, 1468], "B": [1468, 1469]}},
@@ -12324,7 +12494,11 @@
         {"spans": {"A": [1506, 1507], "B": [1507, 1508]}},
         {"spans": {"A": [1508, 1509], "B": [1509, 1510]}},
         {"spans": {"A": [1510, 1511], "B": [1511, 1512]}},
-        {"spans": {"A": [1512, 1513], "B": [1513, 1514]}, "ext": {"lera": "120-1"}},
+        {
+          "spans": {"A": [1512, 1513], "B": [1513, 1514]},
+          "ext": {"lera": "120-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1514, 1515], "B": [1515, 1516]}},
         {"spans": {"A": [1516, 1517], "B": [1517, 1518]}},
         {"spans": {"A": [1518, 1519], "B": [1519, 1520]}},
@@ -12417,7 +12591,11 @@
         {"spans": {"A": [1530, 1531], "B": [1531, 1532]}},
         {"spans": {"A": [1532, 1533], "B": [1533, 1534]}},
         {"spans": {"A": [1534, 1535], "B": [1535, 1536]}},
-        {"spans": {"A": [1536, 1537], "B": [1537, 1538]}, "ext": {"lera": "122-1"}},
+        {
+          "spans": {"A": [1536, 1537], "B": [1537, 1538]},
+          "ext": {"lera": "122-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1538, 1539], "B": [1539, 1540]}},
         {"spans": {"A": [1540, 1541], "B": [1541, 1542]}},
         {"spans": {"A": [1542, 1543], "B": [1543, 1544]}},
@@ -12495,9 +12673,17 @@
       "roles": {},
       "cells": {"A": {"span": [1545, 1562]}, "B": {"span": [1546, 1563]}},
       "columns": [
-        {"spans": {"A": [1545, 1546], "B": [1546, 1547]}, "ext": {"lera": "123-1"}},
+        {
+          "spans": {"A": [1545, 1546], "B": [1546, 1547]},
+          "ext": {"lera": "123-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1547, 1548], "B": [1548, 1549]}},
-        {"spans": {"A": [1549, 1550], "B": [1550, 1551]}, "ext": {"lera": "123-2"}},
+        {
+          "spans": {"A": [1549, 1550], "B": [1550, 1551]},
+          "ext": {"lera": "123-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1551, 1552], "B": [1552, 1553]}},
         {"spans": {"A": [1553, 1554], "B": [1554, 1555]}},
         {"spans": {"A": [1555, 1556], "B": [1556, 1557]}},
@@ -12570,7 +12756,17 @@
       "columns": [
         {"spans": {"A": [1562, 1563], "B": [1563, 1564]}},
         {"spans": {"A": [1564, 1565], "B": [1565, 1566]}},
-        {"spans": {"A": [1566, 1567], "B": [1567, 1568]}, "ext": {"lera": "124-1"}},
+        {
+          "spans": {"A": [1566, 1567], "B": [1567, 1568]},
+          "ext": {"lera": "124-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the presence or absence of a 'h' in the adjective (aufruͤhriſch vs aufruͤhrſche), which is a spelling variation of the same word form."
+          }
+        },
         {"spans": {"A": [1568, 1569], "B": [1569, 1570]}},
         {"spans": {"A": [1570, 1571], "B": [1571, 1572]}},
         {"spans": {"A": [1572, 1573], "B": [1573, 1574]}},
@@ -12800,7 +12996,11 @@
         {"spans": {"A": [1612, 1613], "B": [1613, 1614]}},
         {"spans": {"A": [1614, 1615], "B": [1615, 1616]}},
         {"spans": {"A": [1616, 1617], "B": [1617, 1618]}},
-        {"spans": {"A": [1618, 1619], "B": [1619, 1620]}, "ext": {"lera": "128-1"}},
+        {
+          "spans": {"A": [1618, 1619], "B": [1619, 1620]},
+          "ext": {"lera": "128-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1620, 1621], "B": [1621, 1622]}},
         {"spans": {"A": [1622, 1623], "B": [1623, 1624]}},
         {"spans": {"A": [1624, 1625], "B": [1625, 1626]}},
@@ -12952,7 +13152,11 @@
         {"spans": {"A": [1654, 1655], "B": [1655, 1656]}},
         {"spans": {"A": [1656, 1657], "B": [1657, 1658]}},
         {"spans": {"A": [1658, 1659], "B": [1659, 1660]}},
-        {"spans": {"A": [1660, 1663], "B": [1661, 1662]}, "ext": {"lera": "130-1"}},
+        {
+          "spans": {"A": [1660, 1663], "B": [1661, 1662]},
+          "ext": {"lera": "130-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
         {"spans": {"A": [1664, 1665], "B": [1663, 1664]}}
       ],
       "ext": {
@@ -13188,7 +13392,17 @@
         {"spans": {"A": [1703, 1704], "B": [1702, 1703]}},
         {"spans": {"A": [1705, 1706], "B": [1704, 1705]}},
         {"spans": {"A": [1707, 1708], "B": [1706, 1707]}},
-        {"spans": {"A": [1709, 1712], "B": [1708, 1711]}, "ext": {"lera": "134-1"}},
+        {
+          "spans": {"A": [1709, 1712], "B": [1708, 1711]},
+          "ext": {"lera": "134-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The verb 'bleiben' (remain) is replaced by 'dienen' (serve), which are distinct words with different meanings."
+          }
+        },
         {"spans": {"A": [1713, 1714], "B": [1712, 1713]}},
         {"spans": {"A": [1715, 1716], "B": [1714, 1715]}},
         {"spans": {"A": [1717, 1718], "B": [1716, 1717]}},
@@ -13261,7 +13475,17 @@
       "roles": {},
       "cells": {"A": {"span": [1720, 1735]}, "B": {"span": [1720, 1733]}},
       "columns": [
-        {"spans": {"A": [1720, 1731], "B": [1720, 1729]}, "ext": {"lera": "135-1"}},
+        {
+          "spans": {"A": [1720, 1731], "B": [1720, 1729]},
+          "ext": {"lera": "135-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in wording: 'zuͦ dienen ihm, daß ich ſein' vs 'damit ich ſeine huld und'. This is a change in phrasing/wording, not just a single word substitution or grammatical form."
+          }
+        },
         {"spans": {"A": [1732, 1733], "B": [1730, 1731]}},
         {"spans": {"A": [1734, 1735], "B": [1732, 1733]}}
       ],
@@ -13343,7 +13567,11 @@
       "cells": {"A": {"span": [1736, 1758]}, "B": {"span": [1734, 1756]}},
       "columns": [
         {"spans": {"A": [1736, 1737], "B": [1734, 1735]}},
-        {"spans": {"A": [1738, 1739], "B": [1736, 1737]}, "ext": {"lera": "137-1"}},
+        {
+          "spans": {"A": [1738, 1739], "B": [1736, 1737]},
+          "ext": {"lera": "137-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1739, 1740], "B": [1737, 1738]}},
         {"spans": {"A": [1741, 1742], "B": [1739, 1740]}},
         {"spans": {"A": [1743, 1744], "B": [1741, 1742]}},
@@ -13437,7 +13665,11 @@
         {"spans": {"A": [1768, 1769], "B": [1766, 1767]}},
         {"spans": {"A": [1770, 1771], "B": [1768, 1769]}},
         {"spans": {"A": [1772, 1773], "B": [1770, 1771]}},
-        {"spans": {"A": [1773, 1774], "B": [1771, 1772]}, "ext": {"lera": "138-1"}}
+        {
+          "spans": {"A": [1773, 1774], "B": [1771, 1772]},
+          "ext": {"lera": "138-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -13577,7 +13809,17 @@
         {"spans": {"A": [1797, 1798], "B": [1795, 1796]}},
         {"spans": {"A": [1799, 1800], "B": [1797, 1798]}},
         {"spans": {"A": [1801, 1802], "B": [1799, 1800]}},
-        {"spans": {"A": [1803, 1806], "B": [1801, 1802]}, "ext": {"lera": "140-1"}},
+        {
+          "spans": {"A": [1803, 1806], "B": [1801, 1802]},
+          "ext": {"lera": "140-1"},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "bitt (noun) vs bitten (infinitive/gerund)"
+          }
+        },
         {"spans": {"A": [1807, 1808], "B": [1803, 1804]}}
       ],
       "ext": {
@@ -13659,7 +13901,11 @@
         {"spans": {"A": [1817, 1818], "B": [1813, 1814]}},
         {"spans": {"A": [1819, 1820], "B": [1815, 1816]}},
         {"spans": {"A": [1821, 1822], "B": [1817, 1818]}},
-        {"spans": {"A": [1823, 1824], "B": [1819, 1820]}, "ext": {"lera": "142-1"}},
+        {
+          "spans": {"A": [1823, 1824], "B": [1819, 1820]},
+          "ext": {"lera": "142-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1825, 1826], "B": [1821, 1822]}}
       ],
       "ext": {
@@ -13729,10 +13975,18 @@
         {"spans": {"A": [1830, 1831], "B": [1826, 1827]}},
         {"spans": {"A": [1832, 1833], "B": [1828, 1829]}},
         {"spans": {"A": [1834, 1835], "B": [1830, 1831]}},
-        {"spans": {"A": [1836, 1837], "B": [1832, 1833]}, "ext": {"lera": "143-1"}},
+        {
+          "spans": {"A": [1836, 1837], "B": [1832, 1833]},
+          "ext": {"lera": "143-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1838, 1839], "B": [1834, 1835]}},
         {"spans": {"A": [1840, 1841], "B": [1836, 1837]}},
-        {"spans": {"A": [1842, 1843], "B": [1838, 1839]}, "ext": {"lera": "143-2"}},
+        {
+          "spans": {"A": [1842, 1843], "B": [1838, 1839]},
+          "ext": {"lera": "143-2"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
         {"spans": {"A": [1844, 1845], "B": [1840, 1841]}}
       ],
       "ext": {
@@ -13806,7 +14060,11 @@
       "roles": {},
       "cells": {"A": {"span": [1845, 1860]}, "B": {"span": [1841, 1856]}},
       "columns": [
-        {"spans": {"A": [1845, 1846], "B": [1841, 1842]}, "ext": {"lera": "144-1"}},
+        {
+          "spans": {"A": [1845, 1846], "B": [1841, 1842]},
+          "ext": {"lera": "144-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1847, 1848], "B": [1843, 1844]}},
         {"spans": {"A": [1849, 1850], "B": [1845, 1846]}},
         {"spans": {"A": [1851, 1852], "B": [1847, 1848]}},
@@ -14019,7 +14277,11 @@
         {"spans": {"A": [1893, 1894], "B": [1889, 1890]}},
         {"spans": {"A": [1895, 1896], "B": [1891, 1892]}},
         {"spans": {"A": [1897, 1898], "B": [1893, 1894]}},
-        {"spans": {"A": [1899, 1900], "B": [1895, 1896]}, "ext": {"lera": "148-1"}},
+        {
+          "spans": {"A": [1899, 1900], "B": [1895, 1896]},
+          "ext": {"lera": "148-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1901, 1902], "B": [1897, 1898]}}
       ],
       "ext": {
@@ -14082,7 +14344,17 @@
         {"spans": {"A": [1908, 1909], "B": [1904, 1905]}},
         {"spans": {"A": [1910, 1911], "B": [1906, 1907]}},
         {"spans": {"A": [1912, 1913], "B": [1908, 1909]}},
-        {"spans": {"A": [1914, 1915], "B": [1910, 1911]}, "ext": {"lera": "149-1"}},
+        {
+          "spans": {"A": [1914, 1915], "B": [1910, 1911]},
+          "ext": {"lera": "149-1"},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the spelling of the prefix (fu vs vo) for the same word 'vorauß'."
+          }
+        },
         {"spans": {"A": [1915, 1916], "B": [1911, 1912]}}
       ],
       "ext": {
@@ -14360,7 +14632,11 @@
         {"spans": {"A": [1964, 1965], "B": [1960, 1961]}},
         {"spans": {"A": [1966, 1967], "B": [1962, 1963]}},
         {"spans": {"A": [1968, 1969], "B": [1964, 1965]}},
-        {"spans": {"A": [1970, 1971], "B": [1966, 1967]}, "ext": {"lera": "154-1"}},
+        {
+          "spans": {"A": [1970, 1971], "B": [1966, 1967]},
+          "ext": {"lera": "154-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [1972, 1973], "B": [1968, 1969]}},
         {"spans": {"A": [1974, 1975], "B": [1970, 1971]}},
         {"spans": {"A": [1976, 1977], "B": [1972, 1973]}},
@@ -14436,7 +14712,11 @@
         {"spans": {"A": [1989, 1990], "B": [1985, 1986]}},
         {"spans": {"A": [1991, 1992], "B": [1987, 1988]}},
         {"spans": {"A": [1993, 1994], "B": [1989, 1990]}},
-        {"spans": {"A": [1995, 1996], "B": [1991, 1992]}, "ext": {"lera": "155-1"}},
+        {
+          "spans": {"A": [1995, 1996], "B": [1991, 1992]},
+          "ext": {"lera": "155-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [1996, 1997], "B": [1992, 1993]}}
       ],
       "ext": {
@@ -14585,7 +14865,11 @@
       "roles": {},
       "cells": {"A": {"span": [2015, 2030]}, "B": {"span": [2011, 2026]}},
       "columns": [
-        {"spans": {"A": [2015, 2016], "B": [2011, 2012]}, "ext": {"lera": "158-1"}},
+        {
+          "spans": {"A": [2015, 2016], "B": [2011, 2012]},
+          "ext": {"lera": "158-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [2017, 2018], "B": [2013, 2014]}},
         {"spans": {"A": [2019, 2020], "B": [2015, 2016]}},
         {"spans": {"A": [2021, 2022], "B": [2017, 2018]}},
@@ -14809,7 +15093,11 @@
       "columns": [
         {"spans": {"A": [2063, 2064], "B": [2059, 2060]}},
         {"spans": {"A": [2065, 2066], "B": [2061, 2062]}},
-        {"spans": {"A": [2067, 2068], "B": [2063, 2064]}, "ext": {"lera": "162-1"}},
+        {
+          "spans": {"A": [2067, 2068], "B": [2063, 2064]},
+          "ext": {"lera": "162-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [2069, 2070], "B": [2065, 2066]}},
         {"spans": {"A": [2071, 2072], "B": [2067, 2068]}},
         {"spans": {"A": [2073, 2074], "B": [2069, 2070]}},
@@ -15250,7 +15538,17 @@
       "cells": {"A": {"span": [2166, 2179]}, "B": {"span": [2162, 2175]}},
       "columns": [
         {"spans": {"A": [2166, 2167], "B": [2162, 2163]}},
-        {"spans": {"A": [2168, 2171], "B": [2164, 2167]}, "ext": {"lera": "169-1"}},
+        {
+          "spans": {"A": [2168, 2171], "B": [2164, 2167]},
+          "ext": {"lera": "169-1"},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Differences are in case (sein/ſeine) and long s vs short s (gemein/gmein), which are graphic variants."
+          }
+        },
         {"spans": {"A": [2172, 2173], "B": [2168, 2169]}},
         {"spans": {"A": [2174, 2175], "B": [2170, 2171]}},
         {"spans": {"A": [2176, 2177], "B": [2172, 2173]}},
@@ -15323,7 +15621,11 @@
         {"spans": {"A": [2187, 2188], "B": [2183, 2184]}},
         {"spans": {"A": [2189, 2190], "B": [2185, 2186]}},
         {"spans": {"A": [2191, 2192], "B": [2187, 2188]}},
-        {"spans": {"A": [2193, 2194], "B": [2189, 2192]}, "ext": {"lera": "170-1"}},
+        {
+          "spans": {"A": [2193, 2194], "B": [2189, 2192]},
+          "ext": {"lera": "170-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
         {"spans": {"A": [2194, 2195], "B": [2192, 2193]}}
       ],
       "ext": {
@@ -15532,7 +15834,17 @@
         {"spans": {"A": [2228, 2229], "B": [2226, 2227]}},
         {"spans": {"A": [2230, 2231], "B": [2228, 2229]}},
         {"spans": {"A": [2232, 2233], "B": [2230, 2231]}},
-        {"spans": {"A": [2234, 2235], "B": [2232, 2233]}, "ext": {"lera": "174-1"}},
+        {
+          "spans": {"A": [2234, 2235], "B": [2232, 2233]},
+          "ext": {"lera": "174-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ by the substitution of the possessive pronoun 'sein' (his) with the definite article 'die' (the)."
+          }
+        },
         {"spans": {"A": [2236, 2237], "B": [2234, 2235]}},
         {"spans": {"A": [2238, 2239], "B": [2236, 2237]}},
         {"spans": {"A": [2240, 2241], "B": [2238, 2239]}}
@@ -15601,7 +15913,11 @@
         {"spans": {"A": [2243, 2244], "B": [2241, 2242]}},
         {"spans": {"A": [2245, 2246], "B": [2243, 2244]}},
         {"spans": {"A": [2247, 2248], "B": [2245, 2246]}},
-        {"spans": {"A": [2249, 2250], "B": [2247, 2248]}, "ext": {"lera": "175-1"}},
+        {
+          "spans": {"A": [2249, 2250], "B": [2247, 2248]},
+          "ext": {"lera": "175-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [2250, 2251], "B": [2248, 2249]}},
         {"spans": {"A": [2252, 2253], "B": [2250, 2251]}},
         {"spans": {"A": [2254, 2255], "B": [2252, 2253]}},
@@ -15867,7 +16183,11 @@
         {"spans": {"A": [2299, 2300], "B": [2297, 2298]}},
         {"spans": {"A": [2301, 2302], "B": [2299, 2300]}},
         {"spans": {"A": [2303, 2304], "B": [2301, 2302]}},
-        {"spans": {"A": [2305, 2306], "B": [2303, 2304]}, "ext": {"lera": "180-1"}},
+        {
+          "spans": {"A": [2305, 2306], "B": [2303, 2304]},
+          "ext": {"lera": "180-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [2306, 2307], "B": [2304, 2305]}},
         {"spans": {"A": [2308, 2309], "B": [2306, 2307]}},
         {"spans": {"A": [2310, 2311], "B": [2308, 2309]}},
@@ -16021,7 +16341,11 @@
       "roles": {},
       "cells": {"A": {"span": [2331, 2348]}, "B": {"span": [2329, 2346]}},
       "columns": [
-        {"spans": {"A": [2331, 2332], "B": [2329, 2330]}, "ext": {"lera": "183-1"}},
+        {
+          "spans": {"A": [2331, 2332], "B": [2329, 2330]},
+          "ext": {"lera": "183-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [2333, 2334], "B": [2331, 2332]}},
         {"spans": {"A": [2335, 2336], "B": [2333, 2334]}},
         {"spans": {"A": [2337, 2338], "B": [2335, 2336]}},
@@ -16095,7 +16419,11 @@
       "roles": {},
       "cells": {"A": {"span": [2348, 2365]}, "B": {"span": [2346, 2363]}},
       "columns": [
-        {"spans": {"A": [2348, 2349], "B": [2346, 2347]}, "ext": {"lera": "184-1"}},
+        {
+          "spans": {"A": [2348, 2349], "B": [2346, 2347]},
+          "ext": {"lera": "184-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [2350, 2351], "B": [2348, 2349]}},
         {"spans": {"A": [2352, 2353], "B": [2350, 2351]}},
         {"spans": {"A": [2354, 2355], "B": [2352, 2353]}},
@@ -16336,7 +16664,11 @@
       "roles": {},
       "cells": {"A": {"span": [2402, 2417]}, "B": {"span": [2401, 2416]}},
       "columns": [
-        {"spans": {"A": [2402, 2403], "B": [2401, 2402]}, "ext": {"lera": "188-1"}},
+        {
+          "spans": {"A": [2402, 2403], "B": [2401, 2402]},
+          "ext": {"lera": "188-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [2404, 2405], "B": [2403, 2404]}},
         {"spans": {"A": [2406, 2407], "B": [2405, 2406]}},
         {"spans": {"A": [2408, 2409], "B": [2407, 2408]}},
@@ -16408,7 +16740,11 @@
         {"spans": {"A": [2421, 2422], "B": [2420, 2421]}},
         {"spans": {"A": [2423, 2424], "B": [2422, 2423]}},
         {"spans": {"A": [2425, 2426], "B": [2424, 2425]}},
-        {"spans": {"A": [2427, 2428], "B": [2426, 2427]}, "ext": {"lera": "189-1"}},
+        {
+          "spans": {"A": [2427, 2428], "B": [2426, 2427]},
+          "ext": {"lera": "189-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [2429, 2430], "B": [2428, 2429]}},
         {"spans": {"A": [2431, 2432], "B": [2430, 2431]}},
         {"spans": {"A": [2433, 2434], "B": [2432, 2433]}}
@@ -16474,7 +16810,11 @@
       "cells": {"A": {"span": [2434, 2451]}, "B": {"span": [2433, 2450]}},
       "columns": [
         {"spans": {"A": [2434, 2435], "B": [2433, 2434]}},
-        {"spans": {"A": [2436, 2437], "B": [2435, 2436]}, "ext": {"lera": "190-1"}},
+        {
+          "spans": {"A": [2436, 2437], "B": [2435, 2436]},
+          "ext": {"lera": "190-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
         {"spans": {"A": [2438, 2439], "B": [2437, 2438]}},
         {"spans": {"A": [2440, 2441], "B": [2439, 2440]}},
         {"spans": {"A": [2442, 2443], "B": [2441, 2442]}},
@@ -16656,7 +16996,11 @@
         {"spans": {"A": [2488, 2489], "B": [2487, 2488]}},
         {"spans": {"A": [2490, 2491], "B": [2489, 2490]}},
         {"spans": {"A": [2492, 2493], "B": [2491, 2492]}},
-        {"spans": {"A": [2494, 2497], "B": [2493, 2494]}, "ext": {"lera": "194-1"}},
+        {
+          "spans": {"A": [2494, 2497], "B": [2493, 2494]},
+          "ext": {"lera": "194-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
         {"spans": {"A": [2497, 2498], "B": [2494, 2495]}}
       ],
       "ext": {
@@ -16899,7 +17243,11 @@
         {"spans": {"A": [2539, 2540], "B": [2536, 2537]}},
         {"spans": {"A": [2541, 2542], "B": [2538, 2539]}},
         {"spans": {"A": [2543, 2544], "B": [2540, 2541]}},
-        {"spans": {"A": [2545, 2546], "B": [2542, 2543]}, "ext": {"lera": "198-1"}},
+        {
+          "spans": {"A": [2545, 2546], "B": [2542, 2543]},
+          "ext": {"lera": "198-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
         {"spans": {"A": [2546, 2547], "B": [2543, 2544]}}
       ],
       "ext": {
@@ -16928,7 +17276,17 @@
         {"spans": {"A": [2549, 2550], "B": [2546, 2547]}},
         {"spans": {"A": [2551, 2552], "B": [2548, 2549]}},
         {"spans": {"A": [2553, 2554], "B": [2550, 2551]}},
-        {"spans": {"A": [2555, 2560], "B": [2552, 2555]}, "ext": {"lera": "199-1"}},
+        {
+          "spans": {"A": [2555, 2560], "B": [2552, 2555]},
+          "ext": {"lera": "199-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The reading 'ich wil dein' (I will your) is replaced by 'auch deine' (also your), involving a change in word choice and form."
+          }
+        },
         {"spans": {"A": [2561, 2562], "B": [2556, 2557]}}
       ],
       "ext": {
@@ -17134,7 +17492,11 @@
         {"spans": {"A": [2589, 2590], "B": [2584, 2585]}},
         {"spans": {"A": [2591, 2592], "B": [2586, 2587]}},
         {"spans": {"A": [2593, 2594], "B": [2588, 2589]}},
-        {"spans": {"A": [2595, 2596], "B": [2590, 2591]}, "ext": {"lera": "203-1"}},
+        {
+          "spans": {"A": [2595, 2596], "B": [2590, 2591]},
+          "ext": {"lera": "203-1"},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
         {"spans": {"A": [2597, 2598], "B": [2592, 2593]}},
         {"spans": {"A": [2599, 2600], "B": [2594, 2595]}},
         {"spans": {"A": [2601, 2602], "B": [2596, 2597]}},
@@ -17212,9 +17574,17 @@
       "columns": [
         {"spans": {"A": [2608, 2609], "B": [2603, 2604]}},
         {"spans": {"A": [2610, 2611], "B": [2605, 2606]}},
-        {"spans": {"A": [2612, 2613], "B": [2607, 2608]}, "ext": {"lera": "204-1"}},
+        {
+          "spans": {"A": [2612, 2613], "B": [2607, 2608]},
+          "ext": {"lera": "204-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [2614, 2615], "B": [2609, 2610]}},
-        {"spans": {"A": [2616, 2617], "B": [2611, 2612]}, "ext": {"lera": "204-2"}},
+        {
+          "spans": {"A": [2616, 2617], "B": [2611, 2612]},
+          "ext": {"lera": "204-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [2617, 2618], "B": [2612, 2613]}},
         {"spans": {"A": [2619, 2620], "B": [2614, 2615]}},
         {"spans": {"A": [2621, 2622], "B": [2616, 2617]}},
@@ -17375,7 +17745,11 @@
         {"spans": {"A": [2647, 2648], "B": [2642, 2643]}},
         {"spans": {"A": [2649, 2650], "B": [2644, 2645]}},
         {"spans": {"A": [2651, 2652], "B": [2646, 2647]}},
-        {"spans": {"A": [2653, 2654], "B": [2648, 2649]}, "ext": {"lera": "206-1"}},
+        {
+          "spans": {"A": [2653, 2654], "B": [2648, 2649]},
+          "ext": {"lera": "206-1"},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
         {"spans": {"A": [2655, 2656], "B": [2650, 2651]}},
         {"spans": {"A": [2657, 2658], "B": [2652, 2653]}}
       ],

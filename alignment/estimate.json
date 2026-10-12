@@ -1,0 +1,2558 @@
+{
+ "total": {
+  "rows": 6860,
+  "complete": 6134,
+  "alone": 466,
+  "doubtful": 235,
+  "places": 5039,
+  "alike": 20462,
+  "unrelated": 107,
+  "proposals": 23,
+  "poems": 148,
+  "lera": 2
+ },
+ "rows": {
+  "alone": 405,
+  "fine": 6220,
+  "doubtful": 235
+ },
+ "types": {
+  "grammatical model": 55,
+  "lexical model": 254,
+  "omission": 699,
+  "open": 6,
+  "orthographic model": 568,
+  "orthographic rule": 2063,
+  "other model": 4,
+  "punctuation model": 6,
+  "punctuation rule": 470,
+  "repetition model": 1,
+  "spelling model": 232,
+  "spelling rule": 634,
+  "transposition model": 3,
+  "transposition rule": 1,
+  "uncertain model": 43
+ },
+ "confidence": {
+  "0.9": 44,
+  "0.95": 893,
+  "1": 229
+ },
+ "poems": {
+  "B.1": {
+   "rows": 12,
+   "complete": 9,
+   "alone": 3,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "B.2": {
+   "rows": 4,
+   "complete": 2,
+   "alone": 2,
+   "doubtful": 1,
+   "places": 0,
+   "alike": 2,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "A is missing where B has 6 words"
+    ]
+   }
+  },
+  "B.3": {
+   "rows": 8,
+   "complete": 8,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 8,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "B.4": {
+   "rows": 10,
+   "complete": 10,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 10,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "iii": {
+   "rows": 13,
+   "complete": 10,
+   "alone": 3,
+   "doubtful": 5,
+   "places": 295,
+   "alike": 26,
+   "unrelated": 2,
+   "proposals": 1,
+   "doubts": {
+    "s3": [
+     "“rechtſchaffnen” is paired with “Chriſtlichen” in column 4"
+    ],
+    "s6": [
+     "“nichts” is paired with “wenig” in column 19"
+    ],
+    "s8": [
+     "B's text is 3× as long as A's"
+    ],
+    "s12": [
+     "B is missing where A has 60 words",
+     "C is missing where A has 60 words"
+    ],
+    "s13": [
+     "B is missing where A has 180 words",
+     "C is missing where A has 180 words"
+    ]
+   }
+  },
+  "iv": {
+   "rows": 2,
+   "complete": 2,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 12,
+   "alike": 6,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "ix": {
+   "rows": 23,
+   "complete": 23,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 8,
+   "alike": 23,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n1": {
+   "rows": 206,
+   "complete": 206,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 73,
+   "alike": 203,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s93": [
+     "“weyßheit” is paired with “vorſicht” in column 3"
+    ]
+   }
+  },
+  "n10": {
+   "rows": 34,
+   "complete": 20,
+   "alone": 14,
+   "doubtful": 8,
+   "places": 25,
+   "alike": 17,
+   "unrelated": 2,
+   "proposals": 1,
+   "doubts": {
+    "s2": [
+     "D is missing where C has 6 words"
+    ],
+    "s6": [
+     "D is missing where C has 6 words"
+    ],
+    "s15": [
+     "D is missing where C has 10 words"
+    ],
+    "s16": [
+     "D is missing where C has 10 words"
+    ],
+    "s18": [
+     "C's text is 16× as long as D's"
+    ],
+    "s19": [
+     "D is missing where C has 10 words"
+    ],
+    "s20": [
+     "C's text is 20× as long as D's"
+    ],
+    "s21": [
+     "D is missing where C has 10 words"
+    ]
+   }
+  },
+  "n11": {
+   "rows": 34,
+   "complete": 34,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 8,
+   "alike": 34,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n12": {
+   "rows": 79,
+   "complete": 78,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 38,
+   "alike": 78,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s79": [
+     "C is missing where D has 15 words"
+    ]
+   }
+  },
+  "n123": {
+   "rows": 72,
+   "complete": 72,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 83,
+   "alike": 208,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n124": {
+   "rows": 24,
+   "complete": 18,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 10,
+   "alike": 60,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n125": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n126": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n128": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n129": {
+   "rows": 7,
+   "complete": 5,
+   "alone": 2,
+   "doubtful": 0,
+   "places": 7,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n13": {
+   "rows": 795,
+   "complete": 733,
+   "alone": 2,
+   "doubtful": 1,
+   "places": 494,
+   "alike": 2259,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s260": [
+     "“Hierzwüſchen” is paired with “Hier” in column 1",
+     "“Hier” is paired with “Hierzwuͤſchen” in column 1"
+    ]
+   }
+  },
+  "n132": {
+   "rows": 6,
+   "complete": 3,
+   "alone": 3,
+   "doubtful": 2,
+   "places": 2,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s5": [
+     "B is missing where C has 10 words"
+    ],
+    "s6": [
+     "B is missing where C has 7 words"
+    ]
+   }
+  },
+  "n138": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n139": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n14": {
+   "rows": 59,
+   "complete": 50,
+   "alone": 9,
+   "doubtful": 0,
+   "places": 27,
+   "alike": 50,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n140": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n141": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n142": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n143": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n144": {
+   "rows": 12,
+   "complete": 11,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 6,
+   "alike": 28,
+   "unrelated": 6,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "A is missing where B has 7 words"
+    ]
+   }
+  },
+  "n145": {
+   "rows": 3,
+   "complete": 3,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n146": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 15,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n147_1": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n147_2": {
+   "rows": 10,
+   "complete": 10,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 0,
+   "alike": 10,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n148": {
+   "rows": 9,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 7,
+   "alike": 27,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n149": {
+   "rows": 11,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 9,
+   "alike": 27,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "B is missing where A has 6 words"
+    ]
+   }
+  },
+  "n15": {
+   "rows": 63,
+   "complete": 62,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 22,
+   "alike": 61,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s43": [
+     "“HERREN” is paired with “HErꝛen” in column 3"
+    ]
+   }
+  },
+  "n150": {
+   "rows": 29,
+   "complete": 29,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 25,
+   "alike": 85,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n152": {
+   "rows": 19,
+   "complete": 15,
+   "alone": 4,
+   "doubtful": 0,
+   "places": 14,
+   "alike": 15,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n153": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n154": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n155": {
+   "rows": 26,
+   "complete": 25,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 11,
+   "alike": 25,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n158": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n159": {
+   "rows": 14,
+   "complete": 13,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 6,
+   "alike": 13,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n160": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n162": {
+   "rows": 14,
+   "complete": 13,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 13,
+   "alike": 13,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n163": {
+   "rows": 18,
+   "complete": 17,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 17,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n164": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 4,
+   "alike": 4,
+   "unrelated": 1,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "B's text is 24× as long as C's"
+    ]
+   }
+  },
+  "n168": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 0,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n169": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 0,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n171": {
+   "rows": 14,
+   "complete": 10,
+   "alone": 4,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 10,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n175": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n176": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n177": {
+   "rows": 8,
+   "complete": 6,
+   "alone": 2,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 6,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n178": {
+   "rows": 7,
+   "complete": 5,
+   "alone": 2,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n179": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n18": {
+   "rows": 66,
+   "complete": 58,
+   "alone": 8,
+   "doubtful": 0,
+   "places": 17,
+   "alike": 58,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n180": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n181": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n182": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n183": {
+   "rows": 21,
+   "complete": 18,
+   "alone": 3,
+   "doubtful": 1,
+   "places": 10,
+   "alike": 18,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s10": [
+     "“ver-” is paired with “vertreibt.” in column 9"
+    ]
+   }
+  },
+  "n184": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 2,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n189": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n19": {
+   "rows": 61,
+   "complete": 44,
+   "alone": 17,
+   "doubtful": 1,
+   "places": 14,
+   "alike": 44,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "D is missing where C has 9 words"
+    ]
+   }
+  },
+  "n190": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 1,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n194": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 3,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n2": {
+   "rows": 156,
+   "complete": 156,
+   "alone": 0,
+   "doubtful": 3,
+   "places": 146,
+   "alike": 929,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“Jnhalt” is paired with “Haubtbegriff” in column 1"
+    ],
+    "s2": [
+     "“langgewaͤhrter” is paired with “lang” in column 7"
+    ],
+    "s73": [
+     "“kein” is paired with “nirgend” in column 3",
+     "“bleibend” is paired with “ruͦh” in column 4"
+    ]
+   }
+  },
+  "n20": {
+   "rows": 299,
+   "complete": 260,
+   "alone": 34,
+   "doubtful": 3,
+   "places": 217,
+   "alike": 1551,
+   "unrelated": 3,
+   "proposals": 2,
+   "doubts": {
+    "s42": [
+     "“todsbeſchwerden.” is paired with “tods” in column 3"
+    ],
+    "s85": [
+     "“allein” is paired with “hingnommen/” in column 4"
+    ],
+    "s149": [
+     "“ohne” is paired with “ſonder” in column 4"
+    ]
+   }
+  },
+  "n21": {
+   "rows": 113,
+   "complete": 98,
+   "alone": 13,
+   "doubtful": 0,
+   "places": 84,
+   "alike": 588,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n210": {
+   "rows": 39,
+   "complete": 38,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 14,
+   "alike": 38,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n211": {
+   "rows": 21,
+   "complete": 21,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 22,
+   "alike": 63,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LXX.” is paired with “139.” in column 1"
+    ]
+   }
+  },
+  "n212": {
+   "rows": 21,
+   "complete": 21,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 29,
+   "alike": 63,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LXXI.” is paired with “140.” in column 1"
+    ]
+   }
+  },
+  "n22": {
+   "rows": 127,
+   "complete": 114,
+   "alone": 13,
+   "doubtful": 0,
+   "places": 85,
+   "alike": 684,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n223": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 7,
+   "alike": 15,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LVIII.” is paired with “151.” in column 1"
+    ]
+   }
+  },
+  "n224": {
+   "rows": 50,
+   "complete": 40,
+   "alone": 7,
+   "doubtful": 7,
+   "places": 48,
+   "alike": 110,
+   "unrelated": 13,
+   "proposals": 5,
+   "doubts": {
+    "s1": [
+     "B's text is 5× as long as C's",
+     "“LIX.” is paired with “152.” in column 1"
+    ],
+    "s13": [
+     "“LXI.” is paired with “354.” in column 1"
+    ],
+    "s19": [
+     "“LXII.” is paired with “155.” in column 1"
+    ],
+    "s25": [
+     "“LXIII.” is paired with “156.” in column 1"
+    ],
+    "s27": [
+     "B's text is 16× as long as C's"
+    ],
+    "s28": [
+     "C is missing where A has 10 words"
+    ],
+    "s35": [
+     "“LXV.” is paired with “157.” in column 1"
+    ]
+   }
+  },
+  "n225": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 9,
+   "alike": 13,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LXVI.” is paired with “158.” in column 1"
+    ]
+   }
+  },
+  "n226": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 2,
+   "places": 8,
+   "alike": 15,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LXVII.” is paired with “159.” in column 1"
+    ],
+    "s4": [
+     "“thraͤnen” is paired with “trehnentahl:” in column 9"
+    ]
+   }
+  },
+  "n227": {
+   "rows": 10,
+   "complete": 10,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 16,
+   "alike": 30,
+   "unrelated": 0,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "“LXVIII.” is paired with “160.” in column 1"
+    ]
+   }
+  },
+  "n23": {
+   "rows": 30,
+   "complete": 26,
+   "alone": 0,
+   "doubtful": 4,
+   "places": 35,
+   "alike": 165,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s23": [
+     "A is missing where B has 8 words"
+    ],
+    "s24": [
+     "A is missing where B has 6 words"
+    ],
+    "s25": [
+     "A is missing where B has 6 words"
+    ],
+    "s26": [
+     "A is missing where B has 8 words"
+    ]
+   }
+  },
+  "n230": {
+   "rows": 9,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 19,
+   "alike": 8,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n231": {
+   "rows": 9,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 15,
+   "alike": 9,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n232": {
+   "rows": 12,
+   "complete": 12,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 12,
+   "alike": 12,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n233": {
+   "rows": 9,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 10,
+   "alike": 8,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "“Jennes” is paired with “Diſes” in column 1",
+     "“Laſterthier” is paired with “ungeheur*” in column 2"
+    ]
+   }
+  },
+  "n237": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 6,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n238": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 10,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n239": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 7,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n24": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 30,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n240": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n241": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n242": {
+   "rows": 6,
+   "complete": 6,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 6,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n243": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 8,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n244": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 9,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s6": [
+     "“tods” is paired with “todsgedaͤchtnus” in column 2"
+    ]
+   }
+  },
+  "n245": {
+   "rows": 6,
+   "complete": 5,
+   "alone": 1,
+   "doubtful": 0,
+   "places": 6,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n247": {
+   "rows": 115,
+   "complete": 113,
+   "alone": 2,
+   "doubtful": 2,
+   "places": 98,
+   "alike": 337,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“LXXVI.” is paired with “182.” in column 1"
+    ],
+    "s69": [
+     "“ohne” is paired with “ſonder” in column 3"
+    ]
+   }
+  },
+  "n248": {
+   "rows": 123,
+   "complete": 119,
+   "alone": 4,
+   "doubtful": 3,
+   "places": 137,
+   "alike": 351,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s84": [
+     "B is missing where A has 7 words",
+     "C is missing where A has 7 words"
+    ],
+    "s85": [
+     "“Wann” is paired with “------Wan” in column 1"
+    ],
+    "s94": [
+     "B is missing where A has 6 words",
+     "C is missing where A has 6 words"
+    ]
+   }
+  },
+  "n25": {
+   "rows": 42,
+   "complete": 34,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 39,
+   "alike": 222,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s12": [
+     "A is missing where B has 6 words"
+    ]
+   }
+  },
+  "n251": {
+   "rows": 4,
+   "complete": 3,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 7,
+   "alike": 2,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s4": [
+     "“Freünd/” is paired with “übel” in column 3",
+     "“aller” is paired with “gefahr!” in column 5"
+    ]
+   }
+  },
+  "n26": {
+   "rows": 61,
+   "complete": 50,
+   "alone": 11,
+   "doubtful": 0,
+   "places": 24,
+   "alike": 300,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n265.i": {
+   "rows": 76,
+   "complete": 73,
+   "alone": 3,
+   "doubtful": 0,
+   "places": 28,
+   "alike": 73,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n265.ii": {
+   "rows": 5,
+   "complete": 4,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 4,
+   "alike": 4,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s4": [
+     "“Simleri,” is paired with “SIMLERI,” in column 1"
+    ]
+   }
+  },
+  "n265.iii": {
+   "rows": 7,
+   "complete": 5,
+   "alone": 2,
+   "doubtful": 2,
+   "places": 8,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s4": [
+     "“VVasero” is paired with “WASERO” in column 3",
+     "“Agapeti” is paired with “AGAPETI” in column 5"
+    ],
+    "s5": [
+     "“Consul” is paired with “CONSUL” in column 4"
+    ]
+   }
+  },
+  "n265.iv": {
+   "rows": 3,
+   "complete": 2,
+   "alone": 1,
+   "doubtful": 1,
+   "places": 0,
+   "alike": 2,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "C is missing where B has 38 words"
+    ]
+   }
+  },
+  "n265": {
+   "rows": 369,
+   "complete": 291,
+   "alone": 78,
+   "doubtful": 10,
+   "places": 149,
+   "alike": 289,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {
+    "s312": [
+     "“HERREN/” is paired with “Herꝛen/” in column 10"
+    ],
+    "s361": [
+     "C's text is 8× as long as B's"
+    ],
+    "s362": [
+     "B is missing where C has 7 words"
+    ],
+    "s363": [
+     "B is missing where C has 6 words"
+    ],
+    "s364": [
+     "B is missing where C has 9 words"
+    ],
+    "s365": [
+     "B is missing where C has 9 words"
+    ],
+    "s366": [
+     "B is missing where C has 8 words"
+    ],
+    "s367": [
+     "B is missing where C has 7 words"
+    ],
+    "s368": [
+     "B is missing where C has 7 words"
+    ],
+    "s369": [
+     "B is missing where C has 6 words"
+    ]
+   }
+  },
+  "n27": {
+   "rows": 57,
+   "complete": 50,
+   "alone": 7,
+   "doubtful": 0,
+   "places": 38,
+   "alike": 300,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n28": {
+   "rows": 32,
+   "complete": 21,
+   "alone": 0,
+   "doubtful": 6,
+   "places": 25,
+   "alike": 141,
+   "unrelated": 5,
+   "proposals": 1,
+   "doubts": {
+    "s3": [
+     "D is missing where A has 6 words"
+    ],
+    "s7": [
+     "C's text is 15× as long as D's"
+    ],
+    "s14": [
+     "“hinüber” is paired with “entfleuget” in column 2",
+     "“fahrt” is paired with “vogelſchwind” in column 3",
+     "“fahrt” is paired with “vogel” in column 3"
+    ],
+    "s28": [
+     "A is missing where C has 6 words",
+     "B is missing where C has 6 words"
+    ],
+    "s31": [
+     "A is missing where C has 6 words",
+     "B is missing where C has 6 words"
+    ],
+    "s32": [
+     "A is missing where C has 6 words",
+     "B is missing where C has 6 words"
+    ]
+   }
+  },
+  "n29": {
+   "rows": 27,
+   "complete": 19,
+   "alone": 8,
+   "doubtful": 3,
+   "places": 9,
+   "alike": 18,
+   "unrelated": 1,
+   "proposals": 1,
+   "doubts": {
+    "s3": [
+     "D is missing where C has 8 words"
+    ],
+    "s5": [
+     "D is missing where C has 7 words"
+    ],
+    "s6": [
+     "C's text is 8× as long as D's"
+    ]
+   }
+  },
+  "n3": {
+   "rows": 86,
+   "complete": 86,
+   "alone": 0,
+   "doubtful": 2,
+   "places": 80,
+   "alike": 512,
+   "unrelated": 0,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "“Jnhalt” is paired with “Haubtbegriff” in column 1"
+    ],
+    "s22": [
+     "“hochbetruͤbte” is paired with “hoch” in column 2"
+    ]
+   }
+  },
+  "n31.a": {
+   "rows": 62,
+   "complete": 62,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 16,
+   "alike": 62,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n31": {
+   "rows": 71,
+   "complete": 62,
+   "alone": 9,
+   "doubtful": 0,
+   "places": 17,
+   "alike": 62,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n33.a": {
+   "rows": 58,
+   "complete": 58,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 17,
+   "alike": 58,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n33": {
+   "rows": 64,
+   "complete": 48,
+   "alone": 16,
+   "doubtful": 1,
+   "places": 14,
+   "alike": 48,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "D is missing where C has 9 words"
+    ]
+   }
+  },
+  "n35.a": {
+   "rows": 52,
+   "complete": 52,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 20,
+   "alike": 52,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s21": [
+     "“heim” is paired with “heimgetragen/” in column 6"
+    ]
+   }
+  },
+  "n35": {
+   "rows": 70,
+   "complete": 54,
+   "alone": 16,
+   "doubtful": 5,
+   "places": 17,
+   "alike": 54,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "D is missing where C has 8 words"
+    ],
+    "s4": [
+     "D is missing where C has 6 words"
+    ],
+    "s6": [
+     "D is missing where C has 8 words"
+    ],
+    "s7": [
+     "D is missing where C has 6 words"
+    ],
+    "s27": [
+     "“heimgetragen” is paired with “heim” in column 2"
+    ]
+   }
+  },
+  "n37.a": {
+   "rows": 51,
+   "complete": 51,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 11,
+   "alike": 51,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n37": {
+   "rows": 57,
+   "complete": 43,
+   "alone": 14,
+   "doubtful": 2,
+   "places": 19,
+   "alike": 42,
+   "unrelated": 1,
+   "proposals": 0,
+   "doubts": {
+    "s3": [
+     "C's text is 16× as long as D's"
+    ],
+    "s4": [
+     "D is missing where C has 6 words"
+    ]
+   }
+  },
+  "n38": {
+   "rows": 55,
+   "complete": 42,
+   "alone": 1,
+   "doubtful": 10,
+   "places": 62,
+   "alike": 128,
+   "unrelated": 9,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "D is missing where B has 9 words"
+    ],
+    "s2": [
+     "D is missing where B has 10 words"
+    ],
+    "s3": [
+     "“Baden/” is paired with “Urdorf” in column 2",
+     "“Stein/” is paired with “Geiren-Rein/” in column 5"
+    ],
+    "s4": [
+     "D is missing where C has 6 words",
+     "“entſpringt/” is paired with “auff” in column 1"
+    ],
+    "s6": [
+     "“gab/” is paired with “ſondre” in column 3"
+    ],
+    "s9": [
+     "B's text is 4× as long as C's",
+     "“hilft” is paired with “koͤnnen” in column 1"
+    ],
+    "s10": [
+     "B's text is 4× as long as C's"
+    ],
+    "s12": [
+     "“vorgenommen” is paired with “ſchaden/” in column 2"
+    ],
+    "s13": [
+     "C's text is 6× as long as B's",
+     "“hab.” is paired with “auch” in column 1"
+    ],
+    "s48": [
+     "“für.” is paired with “fuͤr” in column 6"
+    ]
+   }
+  },
+  "n39": {
+   "rows": 55,
+   "complete": 40,
+   "alone": 5,
+   "doubtful": 3,
+   "places": 39,
+   "alike": 270,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where B has 7 words"
+    ],
+    "s3": [
+     "D is missing where A has 6 words"
+    ],
+    "s32": [
+     "“feind;” is paired with “ſtreit/” in column 5",
+     "“feind;” is paired with “ſtreit;” in column 5"
+    ]
+   }
+  },
+  "n4": {
+   "rows": 87,
+   "complete": 86,
+   "alone": 0,
+   "doubtful": 2,
+   "places": 89,
+   "alike": 515,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“Jnhalt” is paired with “Haubtbegriff” in column 1"
+    ],
+    "s54": [
+     "“fürauß” is paired with “fuͤr” in column 7"
+    ]
+   }
+  },
+  "n40": {
+   "rows": 64,
+   "complete": 50,
+   "alone": 5,
+   "doubtful": 0,
+   "places": 43,
+   "alike": 313,
+   "unrelated": 3,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n42": {
+   "rows": 101,
+   "complete": 32,
+   "alone": 28,
+   "doubtful": 33,
+   "places": 172,
+   "alike": 399,
+   "unrelated": 20,
+   "proposals": 4,
+   "doubts": {
+    "s1": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words"
+    ],
+    "s2": [
+     "A is missing where D has 16 words",
+     "B is missing where D has 16 words",
+     "C is missing where D has 16 words",
+     "“nachgeſetzten” is paired with “eines;” in column 2",
+     "“weiſen.” is paired with “naͤchſt” in column 3",
+     "“Schaͤfferinnen/” is paired with “Buͦß;” in column 15"
+    ],
+    "s3": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words"
+    ],
+    "s11": [
+     "A is missing where N has 6 words",
+     "B is missing where N has 6 words",
+     "C is missing where N has 6 words"
+    ],
+    "s13": [
+     "A is missing where N has 7 words",
+     "B is missing where N has 7 words",
+     "C is missing where N has 7 words"
+    ],
+    "s15": [
+     "“Sionshuͤgel” is paired with “Aron” in column 2",
+     "“ſetzet:” is paired with “geußt/” in column 3"
+    ],
+    "s16": [
+     "“werden/” is paired with “haubt” in column 4"
+    ],
+    "s18": [
+     "D's text is 8× as long as N's"
+    ],
+    "s22": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words",
+     "“Einigkeit” is paired with “mitlerin” in column 2",
+     "“groß” is paired with “ruh-erwuͤnſchtem” in column 4",
+     "“geringe” is paired with “leben:” in column 5"
+    ],
+    "s26": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words",
+     "“wall” is paired with “balſams” in column 4"
+    ],
+    "s28": [
+     "D's text is 4× as long as N's"
+    ],
+    "s30": [
+     "“freunden” is paired with “haubt” in column 2"
+    ],
+    "s31": [
+     "D's text is 4× as long as N's",
+     "“gfahren” is paired with “barte/” in column 1"
+    ],
+    "s36": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words",
+     "N is missing where D has 6 words"
+    ],
+    "s37": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words",
+     "N is missing where D has 6 words"
+    ],
+    "s39": [
+     "D's text is 9× as long as N's"
+    ],
+    "s42": [
+     "A is missing where D has 7 words",
+     "B is missing where D has 7 words",
+     "C is missing where D has 7 words",
+     "N is missing where D has 7 words"
+    ],
+    "s43": [
+     "A is missing where D has 6 words",
+     "B is missing where D has 6 words",
+     "C is missing where D has 6 words",
+     "N is missing where D has 6 words"
+    ],
+    "s44": [
+     "D's text is 8× as long as N's"
+    ],
+    "s48": [
+     "A is missing where D has 8 words",
+     "B is missing where D has 8 words",
+     "C is missing where D has 8 words",
+     "“dank-” is paired with “kleider” in column 6"
+    ],
+    "s49": [
+     "A is missing where D has 7 words",
+     "B is missing where D has 7 words",
+     "C is missing where D has 7 words",
+     "N is missing where D has 7 words"
+    ],
+    "s51": [
+     "D's text is 7× as long as N's"
+    ],
+    "s54": [
+     "N is missing where A has 6 words"
+    ],
+    "s55": [
+     "N is missing where A has 16 words"
+    ],
+    "s83": [
+     "“ſpott” is paired with “feind” in column 4"
+    ],
+    "s85": [
+     "“noch” is paired with “verneuert” in column 1"
+    ],
+    "s88": [
+     "A is missing where B has 7 words"
+    ],
+    "s89": [
+     "A is missing where B has 6 words"
+    ],
+    "s94": [
+     "A is missing where N has 7 words",
+     "B is missing where N has 7 words",
+     "C is missing where N has 7 words",
+     "D is missing where N has 7 words"
+    ],
+    "s95": [
+     "A is missing where B has 8 words"
+    ],
+    "s96": [
+     "A is missing where B has 7 words",
+     "“verlohrner” is paired with “gib/” in column 1",
+     "“kom͂t” is paired with “ſich” in column 3"
+    ],
+    "s99": [
+     "“zuͦvermehren/” is paired with “ſich” in column 3",
+     "“zuvermehren/” is paired with “ſich” in column 3"
+    ],
+    "s101": [
+     "A is missing where N has 28 words",
+     "B is missing where N has 28 words",
+     "C is missing where N has 28 words",
+     "D is missing where N has 28 words"
+    ]
+   }
+  },
+  "n43": {
+   "rows": 14,
+   "complete": 8,
+   "alone": 0,
+   "doubtful": 5,
+   "places": 12,
+   "alike": 29,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "D is missing where A has 8 words"
+    ],
+    "s3": [
+     "D is missing where A has 7 words"
+    ],
+    "s4": [
+     "D is missing where A has 7 words"
+    ],
+    "s5": [
+     "D is missing where A has 8 words"
+    ],
+    "s6": [
+     "D is missing where A has 6 words",
+     "“gleich” is paired with “ſinns” in column 5"
+    ]
+   }
+  },
+  "n44": {
+   "rows": 149,
+   "complete": 146,
+   "alone": 1,
+   "doubtful": 2,
+   "places": 102,
+   "alike": 872,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {
+    "s39": [
+     "“ohne” is paired with “ſonder” in column 1"
+    ],
+    "s63": [
+     "“mich” is paired with “geſunde/” in column 2"
+    ]
+   }
+  },
+  "n45": {
+   "rows": 124,
+   "complete": 108,
+   "alone": 14,
+   "doubtful": 1,
+   "places": 74,
+   "alike": 636,
+   "unrelated": 4,
+   "proposals": 0,
+   "doubts": {
+    "s2": [
+     "A is missing where D has 14 words",
+     "B is missing where D has 14 words",
+     "C is missing where D has 14 words"
+    ]
+   }
+  },
+  "n46": {
+   "rows": 55,
+   "complete": 40,
+   "alone": 4,
+   "doubtful": 2,
+   "places": 32,
+   "alike": 267,
+   "unrelated": 1,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where A has 7 words"
+    ],
+    "s2": [
+     "D is missing where A has 6 words"
+    ]
+   }
+  },
+  "n47": {
+   "rows": 57,
+   "complete": 50,
+   "alone": 6,
+   "doubtful": 1,
+   "places": 56,
+   "alike": 294,
+   "unrelated": 1,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "“cap.” is paired with “cap.31.v.10.ꝛc.” in column 10",
+     "“v.10.ꝛc.” is paired with “gezogenAuf” in column 11"
+    ]
+   }
+  },
+  "n48": {
+   "rows": 57,
+   "complete": 43,
+   "alone": 6,
+   "doubtful": 1,
+   "places": 39,
+   "alike": 279,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s29": [
+     "“liebſte” is paired with “Braute” in column 2"
+    ]
+   }
+  },
+  "n49": {
+   "rows": 78,
+   "complete": 60,
+   "alone": 6,
+   "doubtful": 6,
+   "places": 44,
+   "alike": 396,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where A has 19 words"
+    ],
+    "s3": [
+     "D is missing where A has 7 words"
+    ],
+    "s4": [
+     "D is missing where A has 6 words"
+    ],
+    "s5": [
+     "D is missing where A has 6 words"
+    ],
+    "s6": [
+     "D is missing where A has 6 words"
+    ],
+    "s12": [
+     "D is missing where A has 6 words"
+    ]
+   }
+  },
+  "n5": {
+   "rows": 221,
+   "complete": 220,
+   "alone": 0,
+   "doubtful": 5,
+   "places": 235,
+   "alike": 1313,
+   "unrelated": 0,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "“Jnhalt” is paired with “Haubtbegriff” in column 1"
+    ],
+    "s27": [
+     "“from͂-freygeber” is paired with “from͂” in column 2"
+    ],
+    "s103": [
+     "“unſerm” is paired with “eignem” in column 4"
+    ],
+    "s115": [
+     "“ohne” is paired with “ſonder” in column 8"
+    ],
+    "s221": [
+     "C is missing where A has 7 words"
+    ]
+   }
+  },
+  "n50": {
+   "rows": 62,
+   "complete": 62,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 34,
+   "alike": 184,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s48": [
+     "“Guͦt” is paired with “Gutkrautſamen;” in column 1"
+    ]
+   }
+  },
+  "n51": {
+   "rows": 84,
+   "complete": 82,
+   "alone": 2,
+   "doubtful": 1,
+   "places": 20,
+   "alike": 82,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s3": [
+     "“REchtbeſchaffne” is paired with “REcht” in column 1"
+    ]
+   }
+  },
+  "n57": {
+   "rows": 57,
+   "complete": 50,
+   "alone": 7,
+   "doubtful": 1,
+   "places": 46,
+   "alike": 150,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s43": [
+     "“ewer” is paired with “eure” in column 5"
+    ]
+   }
+  },
+  "n6": {
+   "rows": 451,
+   "complete": 450,
+   "alone": 1,
+   "doubtful": 2,
+   "places": 238,
+   "alike": 1348,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s11": [
+     "“reychszerſtoͤrer” is paired with “reichs” in column 4"
+    ],
+    "s108": [
+     "“Gottsvergeſſenheit.” is paired with “Gotts” in column 3"
+    ]
+   }
+  },
+  "n65.3": {
+   "rows": 14,
+   "complete": 12,
+   "alone": 2,
+   "doubtful": 5,
+   "places": 44,
+   "alike": 6,
+   "unrelated": 3,
+   "proposals": 2,
+   "doubts": {
+    "s1": [
+     "B's text is 5× as long as C's"
+    ],
+    "s2": [
+     "“Schrifft;” is paired with “Paul;” in column 5"
+    ],
+    "s11": [
+     "“dikes” is paired with “zeitlich” in column 4"
+    ],
+    "s12": [
+     "“Glaubenswerk':” is paired with “Kinder” in column 3"
+    ],
+    "s14": [
+     "“Uberſchrifften.” is paired with “HErꝛ” in column 3"
+    ]
+   }
+  },
+  "n66": {
+   "rows": 82,
+   "complete": 81,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 78,
+   "alike": 244,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n67": {
+   "rows": 58,
+   "complete": 57,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 61,
+   "alike": 172,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n68": {
+   "rows": 16,
+   "complete": 15,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 19,
+   "alike": 46,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n69": {
+   "rows": 153,
+   "complete": 100,
+   "alone": 22,
+   "doubtful": 57,
+   "places": 293,
+   "alike": 562,
+   "unrelated": 15,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "C is missing where A has 7 words",
+     "F42A is missing where A has 7 words"
+    ],
+    "s2": [
+     "A is missing where C has 6 words",
+     "B is missing where C has 6 words",
+     "F42A is missing where C has 6 words"
+    ],
+    "s6": [
+     "A is missing where F42A has 6 words",
+     "B is missing where F42A has 6 words",
+     "C is missing where F42A has 6 words"
+    ],
+    "s7": [
+     "A is missing where F42A has 6 words",
+     "B is missing where F42A has 6 words",
+     "C is missing where F42A has 6 words"
+    ],
+    "s8": [
+     "F42A is missing where A has 6 words"
+    ],
+    "s11": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s12": [
+     "A is missing where F42A has 10 words",
+     "B is missing where F42A has 10 words",
+     "C is missing where F42A has 10 words"
+    ],
+    "s15": [
+     "A is missing where F42A has 9 words",
+     "B is missing where F42A has 9 words",
+     "C is missing where F42A has 9 words"
+    ],
+    "s16": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s17": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s18": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s21": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s22": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s23": [
+     "F42A is missing where A has 7 words"
+    ],
+    "s24": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s25": [
+     "A is missing where F42A has 10 words",
+     "B is missing where F42A has 10 words",
+     "C is missing where F42A has 10 words"
+    ],
+    "s26": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s27": [
+     "A is missing where F42A has 6 words",
+     "B is missing where F42A has 6 words",
+     "C is missing where F42A has 6 words"
+    ],
+    "s28": [
+     "A is missing where F42A has 7 words",
+     "B is missing where F42A has 7 words",
+     "C is missing where F42A has 7 words"
+    ],
+    "s35": [
+     "A is missing where F42A has 7 words",
+     "B is missing where F42A has 7 words",
+     "C is missing where F42A has 7 words"
+    ],
+    "s36": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s41": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s42": [
+     "A is missing where F42A has 10 words",
+     "B is missing where F42A has 10 words",
+     "C is missing where F42A has 10 words"
+    ],
+    "s52": [
+     "“gleich” is paired with “fein” in column 5"
+    ],
+    "s54": [
+     "A is missing where F42A has 10 words",
+     "B is missing where F42A has 10 words",
+     "C is missing where F42A has 10 words"
+    ],
+    "s55": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s56": [
+     "“damit” is paired with “Salomon” in column 6"
+    ],
+    "s67": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s72": [
+     "“wenigſt” is paired with “minſte” in column 7"
+    ],
+    "s73": [
+     "“geſtalt” is paired with “Figur” in column 4"
+    ],
+    "s79": [
+     "“ſinn-freud” is paired with “Sinn” in column 1"
+    ],
+    "s90": [
+     "F42A is missing where A has 7 words"
+    ],
+    "s91": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s92": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s95": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s96": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s97": [
+     "F42A is missing where A has 6 words"
+    ],
+    "s98": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s99": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s100": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s101": [
+     "A is missing where F42A has 6 words",
+     "B is missing where F42A has 6 words",
+     "C is missing where F42A has 6 words"
+    ],
+    "s102": [
+     "A is missing where F42A has 9 words",
+     "B is missing where F42A has 9 words",
+     "C is missing where F42A has 9 words"
+    ],
+    "s103": [
+     "“künſchem” is paired with “ſonderm” in column 7",
+     "“kuͤnſchem” is paired with “ſonderm” in column 7"
+    ],
+    "s108": [
+     "A is missing where F42A has 9 words",
+     "B is missing where F42A has 9 words",
+     "C is missing where F42A has 9 words"
+    ],
+    "s109": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s121": [
+     "F42A is missing where A has 9 words"
+    ],
+    "s122": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s127": [
+     "A is missing where F42A has 7 words",
+     "B is missing where F42A has 7 words",
+     "C is missing where F42A has 7 words"
+    ],
+    "s128": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s129": [
+     "F42A is missing where A has 7 words"
+    ],
+    "s130": [
+     "F42A is missing where A has 8 words"
+    ],
+    "s132": [
+     "F42A is missing where A has 10 words"
+    ],
+    "s133": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s135": [
+     "A is missing where F42A has 8 words",
+     "B is missing where F42A has 8 words",
+     "C is missing where F42A has 8 words"
+    ],
+    "s136": [
+     "F42A is missing where A has 7 words"
+    ],
+    "s151": [
+     "B is missing where F42A has 9 words",
+     "C is missing where F42A has 9 words"
+    ],
+    "s152": [
+     "A is missing where B has 8 words",
+     "F42A is missing where B has 8 words"
+    ]
+   }
+  },
+  "n7": {
+   "rows": 102,
+   "complete": 100,
+   "alone": 2,
+   "doubtful": 0,
+   "places": 40,
+   "alike": 100,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n8": {
+   "rows": 65,
+   "complete": 58,
+   "alone": 7,
+   "doubtful": 0,
+   "places": 24,
+   "alike": 172,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n83": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 3,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "n9": {
+   "rows": 46,
+   "complete": 39,
+   "alone": 0,
+   "doubtful": 3,
+   "places": 37,
+   "alike": 241,
+   "unrelated": 0,
+   "proposals": 1,
+   "doubts": {
+    "s10": [
+     "“magnetenkrafft/” is paired with “gheime” in column 4"
+    ],
+    "s17": [
+     "“anders” is paired with “dergleichen” in column 3",
+     "“gleicher” is paired with “iſt/” in column 4"
+    ],
+    "s44": [
+     "A is missing where B has 7 words"
+    ]
+   }
+  },
+  "v": {
+   "rows": 2,
+   "complete": 2,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 8,
+   "alike": 6,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "vi": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 0,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "vii": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 12,
+   "alike": 13,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "viii": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 11,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "xi": {
+   "rows": 29,
+   "complete": 29,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 16,
+   "alike": 87,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "xiv": {
+   "rows": 61,
+   "complete": 61,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 51,
+   "alike": 181,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "xix": {
+   "rows": 15,
+   "complete": 15,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 18,
+   "alike": 45,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "xvi": {
+   "rows": 15,
+   "complete": 15,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 15,
+   "alike": 42,
+   "unrelated": 1,
+   "proposals": 0,
+   "doubts": {}
+  },
+  "xvii": {
+   "rows": 10,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 11,
+   "alike": 26,
+   "unrelated": 2,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "C's text is 13× as long as A's"
+    ]
+   }
+  },
+  "xviii": {
+   "rows": 9,
+   "complete": 9,
+   "alone": 0,
+   "doubtful": 1,
+   "places": 18,
+   "alike": 24,
+   "unrelated": 2,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "A's text is 20× as long as B's"
+    ]
+   }
+  }
+ }
+}
