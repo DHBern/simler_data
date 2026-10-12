@@ -1267,13 +1267,12 @@
           <model cssClass="note-speaker" predicate="@type='speaker'" behaviour="inline" useSourceRendition="true">
             <outputRendition>font-family: var(--f-ui); font-size: 0.72em; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <!-- printed in the margin, a Bible reference or a marginal note: beside its line, never in
-               the apparatus -->
-          <model cssClass="note-margin" predicate="@place='left' or @place='right' or @type='marginalia'" behaviour="inline" useSourceRendition="true">
-            <outputRendition>float: right; clear: right; max-width: min(11em, 35%); margin-left: 1em; font-family: var(--f-ui); font-size: 0.85em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
-          </model>
-          <model cssClass="note-bibl" predicate="@type='bibl'" behaviour="inline" useSourceRendition="true">
-            <outputRendition>font-family: var(--f-ui); font-size: 0.8em; color: rgb(var(--c-muted));</outputRendition>
+          <!-- printed beside or below the text, a Bible reference or a marginal note: never in the
+               apparatus. `data-margin` puts it in the page's margin, on the printed side, where the
+               window has room; otherwise it stays a small note in the line. -->
+          <model cssClass="note-margin" predicate="@place='left' or @place='right' or @type='marginalia' or @type='bibl'" behaviour="inline" useSourceRendition="true">
+            <param name="data-margin" value="if (@place='left') then 'left' else 'right'"/>
+            <outputRendition>margin-inline: 0.3em; font-family: var(--f-ui); font-size: 0.85em; line-height: 1.3; color: rgb(var(--c-muted));</outputRendition>
           </model>
           <model predicate="@type='remarkResponsibility'" behaviour="omit"/>
           <!-- a range comment: a numbered marker in the text, the note in the apparatus; the range
@@ -1324,18 +1323,21 @@
               </valList>
             </attDef>
           </attList>
-          <!-- notated music is a placeholder until the MEI encoding exists -->
-          <model predicate="@type='notatedMusic' and @corresp" behaviour="block" cssClass="figure-music">
+          <!-- notated music and an empty figure are placeholders: a box that shows where the print has one -->
+          <model predicate="@type='notatedMusic' and @corresp" behaviour="block" cssClass="figure-box figure-music">
             <param name="content" value="concat('Notensatz: ', @corresp)"/>
             <outputRendition>margin: 1.35rem 0; padding: 1.1rem 1rem; border: 1px dashed rgb(var(--c-line)); border-radius: var(--r); text-align: center; font-family: var(--f-ui); font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; color: rgb(var(--c-muted));</outputRendition>
           </model>
-          <model predicate="@type='notatedMusic'" behaviour="block" cssClass="figure-music">
+          <model predicate="@type='notatedMusic'" behaviour="block" cssClass="figure-box figure-music">
             <param name="content" value="'Notensatz'"/>
+          </model>
+          <model predicate="not(normalize-space())" behaviour="block" cssClass="figure-box figure-empty">
+            <param name="content" value="'Abbildung'"/>
           </model>
           <model cssClass="figure-plain" behaviour="block">
             <outputRendition>margin: 1.2em 0; text-align: center;</outputRendition>
           </model>
-          <model output="plain" predicate="@type='notatedMusic'" behaviour="omit"/>
+          <model output="plain" predicate="@type='notatedMusic' or not(normalize-space())" behaviour="omit"/>
         </elementSpec>
 
         <elementSpec ident="cit" module="core" mode="change">

@@ -44,6 +44,16 @@ main {
   max-width: calc(var(--measure) + 2 * var(--pad));
 }
 .tei-text { margin-inline: auto; }
+/* What the ODD puts in the margin (`data-margin`) stands there, beside its line, where the
+   page has room (`body` is what the facsimile leaves); in the line, its own lines run on. */
+body { container: page / inline-size; }
+[data-margin] br { display: none; }
+@container page (min-width: 50rem) {
+  main:has([data-margin]) { --margin: 9rem; padding-inline: calc(var(--pad) + var(--margin)); max-width: calc(var(--measure) + 2 * (var(--pad) + var(--margin))); }
+  [data-margin] { float: right; clear: right; width: calc(var(--margin) - 1.25rem); margin: 0.15em calc(-1 * var(--margin)) 0 1.25rem; text-align: left; text-indent: 0; }
+  [data-margin='left'] { float: left; clear: left; margin-inline: calc(-1 * var(--margin)) 1.25rem; text-align: right; }
+  [data-margin] br { display: inline; }
+}
 /* The document's title, for the outline; the bar shows it too. */
 .doc-title {
   margin: 0 0 1.5rem;
