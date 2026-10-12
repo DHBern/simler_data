@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
    <title>ISO Schematron rules</title>
-   <!-- This file generated 2026-10-11T23:15:05Z by 'extract-isosch.xsl'. -->
+   <!-- This file generated 2026-10-12T14:30:09Z by 'extract-isosch.xsl'. -->
    <!-- ********************* -->
    <!-- namespaces, declared: -->
    <!-- ********************* -->
@@ -12,7 +12,7 @@
    <ns prefix="sch" uri="http://purl.oclc.org/dsdl/schematron"/>
    <ns prefix="sch1x" uri="http://www.ascc.net/xml/schematron"/>
    <!-- ******************************************************* -->
-   <!-- constraints in en, und, mul, zxx, of which there are 38 -->
+   <!-- constraints in en, und, mul, zxx, of which there are 39 -->
    <!-- ******************************************************* -->
    <pattern id="schematron-constraint-att-datable-w3c-when-1">
       <rule context="tei:*[@when]">
@@ -157,60 +157,68 @@
                  test="matches(string-join(following-sibling::node()[position() le 2] ! string(), ''), '^\s*und([\s/.,:;!?]|$)', 'i')">[S-LBU] The next word is "und": the hyphen ends a word (Geburt- und Sterb-Getichte), so the line end is a plain lb.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-line-inner-space-22">
+   <pattern id="schematron-constraint-lb-joined-22">
+      <rule context="tei:lb[not(@break)]">
+         <let name="end"
+              value="(preceding-sibling::node()[normalize-space()][1]/descendant-or-self::text()[normalize-space()])[last()]"/>
+         <report role="warning"
+                 test="matches($end, '(^|[^-])[-¬⸗­‐‑]\s*$')                     and not($end/ancestor::tei:fw or $end/ancestor::*[@next])                     and not(matches(following-sibling::node()[normalize-space()][1], '^\s*(und|oder)([\s/.,:;!?]|$)', 'i'))">[S-LBH] A hyphen ends the line, but the line end is not joined: if the word continues, write lb break="no"; if the hyphen ends a word, nothing is to be done.</report>
+      </rule>
+   </pattern>
+   <pattern id="schematron-constraint-line-inner-space-23">
       <rule context="tei:text//tei:l | tei:text//tei:head | tei:text//tei:p">
          <report role="warning"
                  test="node()[1][self::text()][matches(., '^[ &#x9;]+([^\s]|$)')] or node()[last()][self::text()][matches(., '[^\s][ &#x9;]+$')]">[S-WS] A space directly after &lt;<name/>&gt; or before &lt;/<name/>&gt;: leave it out.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-abstractModel-structure-l-in-l-23">
+   <pattern id="schematron-constraint-abstractModel-structure-l-in-l-24">
       <rule context="tei:l">
          <report test="ancestor::tei:l[not(.//tei:note//tei:l[. = current()])]">Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain &lt;l&gt; or &lt;lg&gt; elements.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-lg-type-24">
+   <pattern id="schematron-constraint-lg-type-25">
       <rule context="tei:lg[@type]">
          <report role="warning" test="ancestor::tei:lg">[S-LGN] An lg inside an lg has no @type (here "<value-of select="@type"/>"): a stanza or a section is told by its nesting.</report>
          <report role="warning" test="not(ancestor::tei:lg) and @type ne 'poem'">[S-LGV] @type="<value-of select="@type"/>": the lg that holds a whole poem is type="poem". A stanza standing outside its poem's lg needs that lg round it.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-atleast1oflggapl-25">
+   <pattern id="schematron-constraint-atleast1oflggapl-26">
       <rule context="tei:lg">
          <assert test="count(descendant::tei:lg|descendant::tei:l|descendant::tei:gap) &gt; 0">An &lt;lg&gt; element must contain at least one child &lt;l&gt;, &lt;lg&gt;, or &lt;gap&gt; element.</assert>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-abstractModel-structure-lg-in-l-26">
+   <pattern id="schematron-constraint-abstractModel-structure-lg-in-l-27">
       <rule context="tei:lg">
          <report test="ancestor::tei:l[not(.//tei:note//tei:lg[. = current()])]">Abstract model violation: Lines may not contain line groups.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-div-type-27">
+   <pattern id="schematron-constraint-div-type-28">
       <rule context="tei:div[@type = 'poem-div']">
          <report role="warning" test="true()">[S-DIVT] div/@type="poem-div" is not used: leave the type out (a group or a voice part needs none; a single poem is type="poem").</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-abstractModel-structure-div-in-l-28">
+   <pattern id="schematron-constraint-abstractModel-structure-div-in-l-29">
       <rule context="tei:l//tei:div">
          <assert test="ancestor::tei:floatingText"> Abstract model violation: Metrical lines (&lt;l&gt; elements) may not contain higher-level structural elements such as &lt;div&gt;, unless &lt;div&gt; is a descendant of &lt;floatingText&gt;.</assert>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-abstractModel-structure-div-in-ab-or-p-29">
+   <pattern id="schematron-constraint-abstractModel-structure-div-in-ab-or-p-30">
       <rule context="tei:div">
          <report test="(ancestor::tei:p or ancestor::tei:ab) and not(ancestor::tei:floatingText)"> Abstract model violation: &lt;p&gt; and &lt;ab&gt; may not contain higher-level structural elements such as &lt;div&gt;, unless &lt;div&gt; is a descendant of &lt;floatingText&gt;.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-one_ms_singleton_max-30">
+   <pattern id="schematron-constraint-one_ms_singleton_max-31">
       <rule context="tei:msContents|tei:physDesc|tei:history|tei:additional">
          <let name="gi" value="name(.)"/>
          <report test="preceding-sibling::*[ name(.) eq $gi ]                           and                           not( following-sibling::*[ name(.) eq $gi ] )"> Only one &lt;<name/>&gt; is allowed as a child of &lt;<value-of select="name(..)"/>&gt;.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-msId_minimal-31">
+   <pattern id="schematron-constraint-msId_minimal-32">
       <rule context="tei:msIdentifier">
          <report test="not( parent::tei:msPart )                           and                           ( child::*[1]/self::idno  or  child::*[1]/self::altIdentifier  or  normalize-space(.) eq '')">An &lt;msIdentifier&gt; must contain either a &lt;repository&gt; or &lt;location&gt;.</report>
       </rule>
    </pattern>
-   <pattern id="schematron-constraint-anchor-note-32">
+   <pattern id="schematron-constraint-anchor-note-33">
       <rule context="tei:anchor[@xml:id]">
          <let name="id" value="@xml:id"/>
          <assert role="warning"
