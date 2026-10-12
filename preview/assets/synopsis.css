@@ -143,74 +143,91 @@
   border-radius: 2px;
   background-color: rgb(var(--c-ink) / 0.06);
 }
-/* The spellings are switched off: so are their lines. */
-[data-variants='words'] .syn-strip i[data-varies='spelling'] { opacity: 0.12; width: 0.15rem; }
+/* A segment with nothing left to show, by the reader's choice. */
+.syn-strip i.quiet:not(.tick) { opacity: 0.12; width: 0.15rem; }
 @media (max-width: 60rem) {
   .syn-strip { display: none; }
 }
 
 /* ── The reading options ──────────────────────────────────────────────────── */
 
+/* Three rows — what counts, how it is compared, how it is shown — each led by
+   a label in one column, and the legend of the colouring right under them. */
 .syn-bar {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.4rem 1.25rem;
-  margin: 1rem 0;
-  padding: 0.5rem 0;
-  border-block: 1px solid rgb(var(--c-line));
+  display: grid;
+  gap: 0.5rem;
+  margin: 1rem 0 0;
+  padding: 0.65rem 0 0.5rem;
+  border-top: 1px solid rgb(var(--c-line));
 }
+.syn-row { display: flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 1rem; }
+.syn-label {
+  font-family: var(--f-ui);
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgb(var(--c-ui-muted));
+}
+.syn-row > .syn-label:first-child, .syn-row > :first-child > .syn-label { min-width: 7.5rem; }
 .syn-witnesses { gap: 0.6rem; }
 .syn-witnesses label { display: inline-flex; align-items: center; gap: 0.25rem; }
 .syn-bar select { font: inherit; color: inherit; background-color: transparent; }
-.syn-count { color: rgb(var(--c-muted)); font-size: 0.8rem; }
+.syn-count { margin-left: auto; color: rgb(var(--c-muted)); font-size: 0.8rem; }
 
-/* Spelling only, or nothing at all: the marks go, the words stay. */
-[data-variants='words'] .var[data-kind='spelling'], [data-variants='off'] .var,
-[data-variants='words'] .var[data-kind='spelling'] b, [data-variants='off'] .var b { background-color: transparent; }
+/* A category is a chip with its count; one the filters have emptied fades. */
+.syn-row:first-child { gap: 0.35rem 0.4rem; }
+.syn-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.1rem 0.55rem 0.1rem 0.4rem;
+  border: 1px solid rgb(var(--c-line));
+  border-radius: 999px;
+  font-family: var(--f-ui);
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+.syn-chip:has(input:checked) { border-color: rgb(var(--c-accent) / 0.5); background-color: rgb(var(--c-accent) / 0.08); }
+.syn-chip input { margin: 0; accent-color: rgb(var(--c-ui-accent)); cursor: pointer; }
+.syn-chip .n { font-size: 0.7rem; font-variant-numeric: tabular-nums; color: rgb(var(--c-muted)); }
+.syn-chip[data-n='0'] { opacity: 0.45; }
+.syn-presets { margin-left: 0.5rem; }
+.syn-presets button {
+  padding: 0 0.25rem;
+  border: 0;
+  background: none;
+  font-family: var(--f-ui);
+  font-size: 0.75rem;
+  color: rgb(var(--c-muted));
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+.syn-presets button:hover { color: rgb(var(--c-ink)); }
+
+/* A place switched off, by category or by a filter: the words stay, the marks
+   go, whatever the colouring would give them. */
+.var[data-off], .var[data-off] b { background-color: transparent !important; }
+.app-list li[data-off], .syn-register li[data-off] { display: none; }
 
 /* Only the segments that differ — by the measure the reader chose. Headings go
    with the rest: one that reads the same in every witness is not a difference,
-   and the map keeps the poem's divisions in view. */
-[data-varying] tbody tr[data-varies='none'],
-[data-varying][data-variants='words'] tbody tr[data-varies='spelling'] { display: none; }
+   and the strip keeps the poem's divisions in view. */
+[data-varying] tbody tr.quiet { display: none; }
 
 /* A row the strip or a link points at. */
 .synopsis tbody tr { scroll-margin-top: 4rem; }
 .synopsis tbody tr:target { background-color: rgb(var(--c-accent) / 0.12); }
 
-/* A band whose poem the filter has emptied has nothing left to head. The two
-   rules restate the filter above, since `:has` tests the markup, not what the
-   rules did to it. */
-[data-varying] tbody:not(:has(tr[data-varies='word']:not(.app))):not(:has(tr[data-varies='spelling']:not(.app))) tr.unit,
-[data-varying][data-variants='words'] tbody:not(:has(tr[data-varies='word']:not(.app))) tr.unit { display: none; }
+/* A band whose poem the filter has emptied has nothing left to head. */
+[data-varying] tbody:not(:has(tr[id]:not(.quiet))) tr.unit { display: none; }
 
 /* A hidden witness: its column goes, header and cells alike. */
 [data-hide~='1'] [data-w='1'], [data-hide~='2'] [data-w='2'], [data-hide~='3'] [data-w='3'],
 [data-hide~='4'] [data-w='4'], [data-hide~='5'] [data-w='5'], [data-hide~='6'] [data-w='6'] { display: none; }
 
-/* A base witness reads as text; the others show only where they depart from it.
-   What they share is not dropped but reduced to a dot, so two departures cannot
-   run into one word and the reader still sees where in the line they fall. */
-[data-base] td[data-w] .same { font-size: 0; }
-[data-base] td[data-w] .same::after {
-  content: ' · ';
-  font-size: 0.8rem;
-  color: rgb(var(--c-muted) / 0.7);
-}
-[data-base='1'] td[data-w='1'] .same, [data-base='2'] td[data-w='2'] .same,
-[data-base='3'] td[data-w='3'] .same, [data-base='4'] td[data-w='4'] .same,
-[data-base='5'] td[data-w='5'] .same, [data-base='6'] td[data-w='6'] .same { font-size: inherit; }
-[data-base='1'] td[data-w='1'] .same::after, [data-base='2'] td[data-w='2'] .same::after,
-[data-base='3'] td[data-w='3'] .same::after, [data-base='4'] td[data-w='4'] .same::after,
-[data-base='5'] td[data-w='5'] .same::after, [data-base='6'] td[data-w='6'] .same::after { content: none; }
-
-[data-base] tr.no-base .same { font-size: inherit; }
-[data-base] tr.no-base .same::after { content: none; }
-
 /* The apparatus of a segment, under its row. */
 .synopsis tr.app { display: none; }
-[data-apparatus] .synopsis tr.app { display: table-row; }
+[data-apparatus] .synopsis tr.app:not(.quiet) { display: table-row; }
 .app-list {
   margin: 0;
   padding-left: 1.2rem;
@@ -219,17 +236,17 @@
   color: rgb(var(--c-muted));
 }
 .app-list li { padding: 0.1rem 0; }
-.app-list span { margin-right: 0.9rem; white-space: nowrap; }
+/* Lemma ] reading sigla; reading sigla: the readings in the reading face. */
+.app-list .rdg { font-family: var(--f-text); font-size: 0.95rem; color: rgb(var(--c-ink)); }
+.app-list .lem { font-weight: 600; }
+.app-list .rdg i { margin-left: 0.15rem; font-family: var(--f-ui); font-size: 0.75rem; }
+.app-list .rdg em { font-family: var(--f-ui); font-size: 0.75rem; color: rgb(var(--c-muted)); }
+.app-list .sep { margin-right: 0.35rem; color: rgb(var(--c-muted)); }
 /* A classification; a machine's, not yet confirmed, stays visibly provisional. */
-.app-rel { margin-left: 0.4rem; font-variant: small-caps; color: rgb(var(--c-ink)); }
+.app-rel { margin-left: 0.4rem; color: rgb(var(--c-ink)); }
 .app-rel[data-by] { color: rgb(var(--c-muted)); border-bottom: 1px dotted rgb(var(--c-muted)); }
-.app-rel small { font-variant: normal; font-size: 0.85em; }
+.app-rel small { font-size: 0.85em; }
 .app-list i { font-style: normal; font-weight: 600; color: rgb(var(--c-ink)); }
-/* The apparatus answers to the same choices as the table, and a row whose
-   readings are all switched off goes with them rather than standing empty. */
-[data-variants='words'] .app-list li[data-kind='spelling'],
-[data-variants='words'] .synopsis tr.app[data-kind='spelling'],
-[data-variants='off'] .synopsis tr.app[data-kind] { display: none; }
 .app-list li.is-linked { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
 
 /* The way from a reading back to the line it was taken from: out of the way
@@ -253,6 +270,9 @@
   line-height: 1.7;
   color: rgb(var(--c-muted));
 }
+/* Under the options, closing them off from the text. */
+.syn-legend { margin: 0 0 1rem; padding: 0.25rem 0 0.5rem 8.5rem; border-bottom: 1px solid rgb(var(--c-line)); }
+@media (max-width: 40rem) { .syn-legend { padding-left: 0; } }
 .syn-source { display: block; } /* a sentence, not a row of swatches */
 .syn-legend .var { padding: 0 0.15rem; }
 .syn-legend .line-link { opacity: 1; }
@@ -262,15 +282,70 @@
 .tei-l { scroll-margin-top: 5rem; }
 .tei-l:target { background-color: rgb(var(--c-accent) / 0.16); }
 
-/* Coloured by how many witnesses part (the default), or by what kind of change
-   it is. The legend's swatches are `.var` too, so one rule colours both. */
+/* Coloured by how many witnesses part (the default), by type, by how far the
+   classification is settled, by kind of change, or against one witness. The
+   legend's swatches are `.var` too, so one rule colours both. */
 [data-colour='change'] .var b { background-color: rgb(var(--c-accent) / 0.3); }
 [data-colour='change'] .var[data-change='om'] b { background-color: rgb(var(--c-gap) / 0.35); }
 [data-colour='change'] .var[data-change='om'] { background-color: rgb(var(--c-gap) / 0.08); }
+
+.var[data-cat='punctuation'] { --hue: var(--c-org); }
+.var[data-cat='spelling'] { --hue: var(--c-accent); }
+.var[data-cat='grammatical'] { --hue: var(--c-institution); }
+.var[data-cat='lexical'] { --hue: var(--c-bibl); }
+.var[data-cat='order'] { --hue: var(--c-work); }
+.var[data-cat='omission'] { --hue: var(--c-gap); }
+.var[data-cat='other'] { --hue: var(--c-place); }
+.var[data-cat='open'] { --hue: var(--c-muted); }
+[data-colour='type'] .var { background-color: rgb(var(--hue) / 0.12); }
+[data-colour='type'] .var b { background-color: rgb(var(--hue) / 0.5); }
+/* Not classified yet is no colour of its own: grey, and lighter. */
+[data-colour='type'] .var[data-cat='open'] b { background-color: rgb(var(--hue) / 0.3); }
+
+/* As the alignment editor shows it: open in the colour of a gap, a machine's
+   proposal faint and dotted, a person's decision solid. */
+[data-colour='state'] .var b { background-color: rgb(var(--c-gap) / 0.35); }
+[data-colour='state'] .var[data-state='proposed'] b {
+  background-color: rgb(var(--c-accent) / 0.15);
+  text-decoration: underline dotted rgb(var(--c-accent));
+}
+[data-colour='state'] .var[data-state='confirmed'] b { background-color: rgb(var(--c-accent) / 0.4); }
+[data-colour='state'] .var[data-state='significant'] b {
+  background-color: rgb(var(--c-accent) / 0.8);
+  color: rgb(var(--c-onaccent));
+}
+
+/* Against one witness: only what reads otherwise than its column is marked.
+   Where it has no text there is nothing to depart from, so nothing is. */
+[data-colour^='w'] .var, [data-colour^='w'] .var b { background-color: transparent; }
+[data-colour='w1'] tr:not(:has(> td.gap[data-w='1'])) .var:not([data-alike~='1']),
+[data-colour='w2'] tr:not(:has(> td.gap[data-w='2'])) .var:not([data-alike~='2']),
+[data-colour='w3'] tr:not(:has(> td.gap[data-w='3'])) .var:not([data-alike~='3']),
+[data-colour='w4'] tr:not(:has(> td.gap[data-w='4'])) .var:not([data-alike~='4']),
+[data-colour='w5'] tr:not(:has(> td.gap[data-w='5'])) .var:not([data-alike~='5']),
+[data-colour='w6'] tr:not(:has(> td.gap[data-w='6'])) .var:not([data-alike~='6']),
+[data-colour^='w'] .syn-legend .var { background-color: rgb(var(--c-accent) / 0.1); }
+[data-colour='w1'] tr:not(:has(> td.gap[data-w='1'])) .var:not([data-alike~='1']) b,
+[data-colour='w2'] tr:not(:has(> td.gap[data-w='2'])) .var:not([data-alike~='2']) b,
+[data-colour='w3'] tr:not(:has(> td.gap[data-w='3'])) .var:not([data-alike~='3']) b,
+[data-colour='w4'] tr:not(:has(> td.gap[data-w='4'])) .var:not([data-alike~='4']) b,
+[data-colour='w5'] tr:not(:has(> td.gap[data-w='5'])) .var:not([data-alike~='5']) b,
+[data-colour='w6'] tr:not(:has(> td.gap[data-w='6'])) .var:not([data-alike~='6']) b,
+[data-colour^='w'] .syn-legend .var b { background-color: rgb(var(--c-accent) / 0.45); }
+[data-colour='w1'] thead th[data-w='1'], [data-colour='w2'] thead th[data-w='2'], [data-colour='w3'] thead th[data-w='3'], [data-colour='w4'] thead th[data-w='4'], [data-colour='w5'] thead th[data-w='5'], [data-colour='w6'] thead th[data-w='6'] { box-shadow: inset 0 -2px rgb(var(--c-accent)); }
+
 /* Only the keys of the mode in force. */
 .syn-keys { display: none; }
 [data-colour='variance'] .syn-keys[data-for='variance'],
-[data-colour='change'] .syn-keys[data-for='change'] { display: contents; }
+[data-colour='type'] .syn-keys[data-for='type'],
+[data-colour='state'] .syn-keys[data-for='state'],
+[data-colour='change'] .syn-keys[data-for='change'],
+[data-colour='w1'] .syn-keys[data-for='w1'],
+[data-colour='w2'] .syn-keys[data-for='w2'],
+[data-colour='w3'] .syn-keys[data-for='w3'],
+[data-colour='w4'] .syn-keys[data-for='w4'],
+[data-colour='w5'] .syn-keys[data-for='w5'],
+[data-colour='w6'] .syn-keys[data-for='w6'] { display: contents; }
 
 /* The swatches are marks like any other, so one rule colours both. */
 .syn-swatch { display: inline-flex; align-items: baseline; gap: 0.3rem; white-space: nowrap; }
@@ -296,6 +371,4 @@
 .syn-register .places { margin-left: 0.4rem; }
 .syn-register .places a { color: rgb(var(--c-muted)); text-decoration: none; }
 .syn-register .places a:hover { text-decoration: underline; }
-/* The register answers to the same choice as the table. */
-[data-variants='words'] .syn-register li[data-kind='spelling'] { display: none; }
 

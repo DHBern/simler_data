@@ -5,11 +5,35 @@
  * knows nothing about the ODD, and the reading pages load none of its assets.
  */
 
-import { charDiff, type Entry, type Group, type Segment, type Synopsis, type Unit, type Witness } from './alignments'
+import { CATEGORIES, charDiff, FILTERS, type Category, type Entry, type Group, type Segment, type Synopsis, type Unit, type Witness } from './alignments'
 import { corpusPage, esc } from './page'
 
 /** Where a poem's synopsis lives; the pages sit flat beside the documents. */
 export const synopsisHref = (id: string): string => `synopse-${encodeURIComponent(id)}.html`
+
+/** The categories as the reader sees them: a name, and what it holds. */
+const CATEGORY_LABELS: Record<Category, [string, string]> = {
+  punctuation: ['Interpunktion', 'Nur die Zeichensetzung unterscheidet sich'],
+  spelling: ['Schreibung', 'Ein Wort, anders geschrieben — Orthographie (u/v, i/j, ſ, Groß/klein, Diakritika) oder Schreibung (Doppelkonsonanten, ck/k …)'],
+  grammatical: ['Grammatik', 'Dasselbe Wort in anderer Form: Kasus, Numerus, Tempus …'],
+  lexical: ['Wortlaut', 'Ein anderes Wort oder eine andere Formulierung'],
+  order: ['Umstellung', 'Dieselben Wörter in anderer Folge, oder ein Wort doppelt'],
+  omission: ['Auslassung', 'Ein Textzeuge liest hier nichts'],
+  other: ['Sonstige', 'Unsicher, oder keiner der anderen Typen'],
+  open: ['offen', 'Noch nicht klassifiziert'],
+}
+/** What *sachliche* leaves out. */
+const SPELLING: Category[] = ['punctuation', 'spelling']
+
+/** The relation types, as the apparatus names them. */
+const TYPE_LABELS: Record<string, string> = {
+  punctuation: 'Interpunktion', orthographic: 'Orthographie', spelling: 'Schreibung', grammatical: 'Grammatik',
+  lexical: 'Wortlaut', transposition: 'Umstellung', repetition: 'Wiederholung', uncertain: 'unsicher', other: 'sonstige',
+}
+
+const FILTER_LABELS: Record<(typeof FILTERS)[number], string> = {
+  punctuation: 'Interpunktion', case: 'Groß/klein', diacritics: 'Diakritika', 'long-s': 'ſ/s',
+}
 
 /**
  * Where each poem of a bundle begins. It is the one thing the filter cannot
@@ -37,8 +61,8 @@ function synopsisStrip(synopsis: Synopsis): string {
   const line = (segment: Segment, i: number) => {
     const level = Math.max(0, ...Object.values(segment.departures))
     const at = (i / segments.length * 100).toFixed(3)
-    return `<i data-row="${segment.n}" data-varies="${segment.varies}" data-level="${level}"` +
-      `${units.length > 1 && segment.head ? ' class="tick"' : ''} style="top:${at}%"></i>`
+    const classes = [units.length > 1 && segment.head && 'tick', !segment.differs && 'quiet'].filter(Boolean).join(' ')
+    return `<i data-row="${segment.n}" data-level="${level}"${classes ? ` class="${classes}"` : ''} style="top:${at}%"></i>`
   }
   return `<div class="syn-strip no-print" data-syn-strip title="Das ganze Gedicht: je Segment eine Linie, je länger desto mehr weichen die Textzeugen ab. Klicken oder ziehen führt dorthin.">
       ${segments.map(line).join('')}<u class="syn-here"></u>
@@ -46,77 +70,99 @@ function synopsisStrip(synopsis: Synopsis): string {
 }
 
 /**
- * How the marks are coloured, and what each shade means.
- *
- * The legend's swatches are the same elements the table uses, with the same
- * attributes, so the stylesheet colours both from one rule and the legend
- * cannot come to say something the page does not do.
+ * How the marks are coloured, and what each shade means: one table for the
+ * select and the legend. The legend's swatches are the same elements the table
+ * uses, with the same attributes, so the stylesheet colours both from one rule
+ * and the legend cannot come to say something the page does not do.
  */
-const COLOURS: Record<string, { label: string, keys: [string, string][] }> = {
-  variance: {
-    label: 'nach Varianz',
-    keys: [['data-degree="1"', 'zwei Lesarten'], ['data-degree="2"', 'drei'], ['data-degree="3"', 'vier oder mehr']],
-  },
-  change: {
-    label: 'nach Art',
-    keys: [['data-change="sub"', 'andere Lesart'], ['data-change="om"', 'fehlt bei einem Textzeugen']],
-  },
+function colours(witnesses: Witness[]): Record<string, { label: string, keys: [string, string][] }> {
+  return {
+    variance: {
+      label: 'nach Varianz',
+      keys: [['data-degree="1"', 'zwei Lesarten'], ['data-degree="2"', 'drei'], ['data-degree="3"', 'vier oder mehr']],
+    },
+    type: {
+      label: 'nach Typ',
+      keys: CATEGORIES.map((c) => [`data-cat="${c}"`, CATEGORY_LABELS[c][0]]),
+    },
+    state: {
+      label: 'nach Stand',
+      keys: [['data-state="significant"', 'bestätigt, erheblich'], ['data-state="confirmed"', 'bestätigt'],
+        ['data-state="proposed"', 'von Regel oder Modell vorgeschlagen'], ['data-state="open"', 'offen']],
+    },
+    change: {
+      label: 'nach Art',
+      keys: [['data-change="sub"', 'andere Lesart'], ['data-change="om"', 'fehlt bei einem Textzeugen']],
+    },
+    ...Object.fromEntries(witnesses.map((w, i) => [`w${i + 1}`, {
+      label: `gegen ${w.siglum}`,
+      keys: [['data-alike=""', `weicht von ${w.siglum} ab`]] as [string, string][],
+    }])),
+  }
 }
 
 /** A legend entry: a word marked as the table marks it, and what that means. */
 const swatch = (attrs: string, label: string) =>
-  `<span class="syn-swatch"><span class="var" ${attrs}><b>Aa</b></span> ${label}</span>`
-
-const legend = (): string => Object.entries(COLOURS).map(([mode, { keys }]) =>
-  `<span class="syn-keys" data-for="${mode}">${keys.map(([attrs, label]) => swatch(attrs, label)).join('')}</span>`).join('')
+  `<span class="syn-swatch"><span class="var" ${attrs}><b>Aa</b></span> ${esc(label)}</span>`
 
 /**
- * The reading options above a synopsis.
+ * The reading options above a synopsis, and the legend under them.
  *
- * Each control sets one attribute on the table; the stylesheet does the rest,
- * so the page is still right with no script - it starts with everything shown.
+ * What to show is chosen by category, each with its count, and by the compare
+ * filters to add to the document's; the script hides and counts. Every other
+ * control sets one attribute and the stylesheet does the rest. With no script
+ * the page shows everything, coloured by variance.
  */
-function synopsisControls(witnesses: Witness[], bundle: boolean): string {
+function synopsisControls(synopsis: Synopsis): string {
+  const { witnesses, units, segments } = synopsis
+  const counts = new Map<Category, number>()
+  for (const e of segments.flatMap((s) => s.apparatus)) counts.set(e.category, (counts.get(e.category) ?? 0) + 1)
+  const modes = colours(witnesses)
+
+  const chip = (c: Category) => `<label class="syn-chip" title="${esc(CATEGORY_LABELS[c][1])}" data-n="${counts.get(c) ?? 0}">` +
+    `<input type="checkbox" data-syn-cat="${c}" checked> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
+  const filter = (f: (typeof FILTERS)[number], bit: number) =>
+    `<label class="ctrl"><input type="checkbox" data-syn-ignore="${bit}"> ${FILTER_LABELS[f]}</label>`
   const witness = (w: Witness, i: number) =>
     `<label><input type="checkbox" data-syn-witness="${i + 1}" checked> ${esc(w.siglum)}</label>`
-  const base = witnesses.map((w, i) => `<option value="${i + 1}">${esc(w.siglum)}</option>`).join('')
 
   return `<form class="syn-bar no-print" data-syn-controls>
-      <label class="ctrl" title="Varianten, die nur die Schreibung betreffen (ſ/s, u/v, i/j, Virgel), von sachlichen trennen">
-        Varianten
-        <select data-syn="variants">
-          <option value="all">alle</option>
-          <option value="words">nur sachliche</option>
-          <option value="off">keine</option>
-        </select>
-      </label>
-      ${bundle ? '<label class="ctrl" title="Wo im Band ein Gedicht anfängt, und was es enthält">' +
-        '<input type="checkbox" data-syn="units"> Gedichte</label>' : ''}
-      <label class="ctrl" title="Wonach die Markierungen eingefärbt werden">
-        Färbung
-        <select data-syn="colour">${Object.entries(COLOURS).map(([mode, { label }]) =>
-          `<option value="${mode}">${label}</option>`).join('')}</select>
-      </label>
-      <label class="ctrl"><input type="checkbox" data-syn="varying"> nur Abweichungen</label>
-      <label class="ctrl"><input type="checkbox" data-syn="apparatus"> Apparat</label>
-      <label class="ctrl" title="Ein Textzeuge als Bezugstext; die anderen zeigen nur, wo sie abweichen">
-        Basis
-        <select data-syn="base"><option value="">keine</option>${base}</select>
-      </label>
-      <span class="ctrl syn-witnesses">Textzeugen ${witnesses.map(witness).join('')}</span>
-      <output class="ctrl syn-count" data-syn-count title="n und p springen zur nächsten Abweichung"></output>
-    </form>`
+      <div class="syn-row">
+        <span class="syn-label">Varianten</span>
+        ${CATEGORIES.map(chip).join('')}
+        <span class="syn-presets">
+          <button type="button" data-syn-preset="${CATEGORIES.join(' ')}">alle</button>
+          <button type="button" data-syn-preset="${CATEGORIES.filter((c) => !SPELLING.includes(c)).join(' ')}"
+            title="Ohne Interpunktion und Schreibung">sachliche</button>
+          <button type="button" data-syn-preset="">keine</button>
+        </span>
+      </div>
+      <div class="syn-row" title="Was beim Vergleich nicht als Unterschied zählt">
+        <span class="syn-label">Vergleich ohne</span>
+        ${FILTERS.map(filter).join('')}
+      </div>
+      <div class="syn-row">
+        <label class="ctrl"><span class="syn-label">Färbung</span>
+          <select data-syn="colour">${Object.entries(modes).map(([mode, { label }]) =>
+            `<option value="${mode}">${esc(label)}</option>`).join('')}</select>
+        </label>
+        <label class="ctrl"><input type="checkbox" data-syn="varying"> nur Abweichungen</label>
+        <label class="ctrl"><input type="checkbox" data-syn="apparatus"> Apparat</label>
+        ${units.length > 1 ? '<label class="ctrl" title="Wo im Band ein Gedicht anfängt, und was es enthält">' +
+          '<input type="checkbox" data-syn="units"> Gedichte</label>' : ''}
+        <span class="ctrl syn-witnesses"><span class="syn-label">Textzeugen</span> ${witnesses.map(witness).join('')}</span>
+        <output class="ctrl syn-count" data-syn-count title="n und p springen zur nächsten Abweichung"></output>
+      </div>
+    </form>
+    <p class="syn-legend no-print">
+      ${Object.entries(modes).map(([mode, { keys }]) =>
+        `<span class="syn-keys" data-for="${mode}">${keys.map(([attrs, label]) => swatch(attrs, label)).join('')}</span>`).join('')}
+      <span class="syn-swatch"><b>—</b> kein Text</span>
+      <span class="syn-swatch"><span class="copy">grau</span> wiederholt ein früheres Segment</span>
+      <span class="syn-swatch"><span class="line-link">↗</span> zur Zeile in der Ausgabe</span>
+    </p>`
 }
 
-/**
- * One poem, as its witnesses read it side by side.
- *
- * A row is one of LERA's segments, a column one witness. Words LERA marked as
- * varying carry their apparatus id, so pointing at a reading marks the readings
- * that answer it in the other columns — the correspondence the export states
- * and a static table otherwise loses. How much is shown is the reader's to
- * choose; see `synopsisControls`.
- */
 /**
  * Every distinct set of readings in the poem, the most frequent first.
  *
@@ -132,7 +178,7 @@ function readingRegister(groups: Group[]): string {
       form ? `<b>${esc(form)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')
     const where = group.places.slice(0, 12).map((n) =>
       `<a href="#seg-${n}">${n}</a>`).join(' ')
-    return `<li data-kind="${group.spelling ? 'spelling' : 'word'}">${forms}
+    return `<li data-cat="${group.category}" data-gone="${group.gone}">${forms}
         <span class="count">×${group.places.length}</span>
         <span class="places">${where}${group.places.length > 12 ? ' …' : ''}</span>
       </li>`
@@ -150,9 +196,9 @@ function readingRegister(groups: Group[]): string {
 function relationLabel(r: NonNullable<Entry['relation']>): string {
   const sure = r.confidence === undefined ? '' : ` ${Math.round(r.confidence * 100)} %`
   const who = r.by === 'model' ? `Modell${sure}` : r.by === 'rule' ? 'Regel' : ''
-  const title = [who && `${who}, nicht bestätigt`, r.model, r.rationale].filter(Boolean).join(' · ')
+  const title = [who && `${who}, nicht bestätigt`, r.rule, r.model, r.rationale].filter(Boolean).join(' · ')
   return `<span class="app-rel"${r.by ? ` data-by="${esc(r.by)}"` : ''}${title ? ` title="${esc(title)}"` : ''}>` +
-    `${esc(r.type)}${who ? ` <small>${esc(who)}</small>` : ''}</span>`
+    `${esc(TYPE_LABELS[r.type] ?? r.type)}${who ? ` <small>${esc(who)}</small>` : ''}</span>`
 }
 
 /**
@@ -169,24 +215,46 @@ function marked(text: string, entry?: Entry): string {
   return parts.map(({ text: part, differs }) => differs ? `<b>${esc(part)}</b>` : esc(part)).join('')
 }
 
+/**
+ * One place as a printed apparatus gives it: the lemma — the reading of the
+ * earliest print in the row, since the document lists the witnesses in the
+ * prints' order — then each reading that departs from it, with its sigla:
+ * `vertrawe A ] vertraue B C; glaube nicht F42A`.
+ */
+function lemmatised(e: Entry): string {
+  const forms = new Map<string, string[]>()
+  for (const [siglum, text] of Object.entries(e.readings)) {
+    forms.set(text.trim(), [...(forms.get(text.trim()) ?? []), siglum])
+  }
+  const reading = ([form, sigla]: [string, string[]], lemma = false) =>
+    `<span class="rdg${lemma ? ' lem' : ''}">${form ? esc(form) : '<em>fehlt</em>'} <i>${sigla.map(esc).join(' ')}</i></span>`
+  const [lemma, ...rest] = forms
+  return `${reading(lemma, true)} <span class="sep">]</span> ${rest.map((r) => reading(r)).join('<span class="sep">;</span> ')}`
+}
+
 /** The source line ids a row holds, all witnesses', for its number's title. */
 const marks = (segment: Segment): string => Object.values(segment.refs).flat().join(', ')
 
+/** What the script reads to show, hide and count a place. */
+const placeAttrs = (e: Entry) => `data-cat="${e.category}" data-gone="${e.gone}"`
+
 export function synopsisPage(synopsis: Synopsis): string {
   const { id, title, witnesses, segments, units, groups, variants, lines, provenance } = synopsis
-  const degrees = new Map(segments.flatMap((s) => s.apparatus.map((e) => [e.group, e])))
+  const entries = new Map(segments.flatMap((s) => s.apparatus.map((e) => [e.group, e])))
+  const column = new Map(witnesses.map((w, i) => [w.siglum, i + 1]))
 
-  const cell = (segment: Segment, witness: Witness, column: number): string => {
+  const cell = (segment: Segment, witness: Witness, at: number): string => {
     const { siglum } = witness
-    const at = ` data-w="${column}"`
-    if (segment.missing.includes(siglum)) return `<td class="gap"${at} title="fehlt"></td>`
+    const w = ` data-w="${at}"`
+    if (segment.missing.includes(siglum)) return `<td class="gap"${w} title="fehlt"></td>`
     const copied = segment.copy[siglum]
     const text = (segment.cells[siglum] ?? []).map((run) => {
-      if (!run.group) return `<span class="same">${esc(run.text)}</span>`
-      const entry = degrees.get(run.group)
-      const kind = entry?.spelling ? 'spelling' : 'word'
-      return `<span class="var" data-group="${esc(run.group)}" data-kind="${kind}"` +
-        ` data-degree="${entry?.degree ?? 1}" data-change="${entry?.omission ? 'om' : 'sub'}">` +
+      const entry = run.group ? entries.get(run.group) : undefined
+      if (!entry) return esc(run.text)
+      // `data-alike`: the columns reading the same here, for the *gegen* colourings.
+      return `<span class="var" data-group="${esc(entry.group)}" ${placeAttrs(entry)} data-state="${entry.state}"` +
+        ` data-degree="${entry.degree}" data-change="${entry.omission ? 'om' : 'sub'}"` +
+        ` data-alike="${(entry.alike[siglum] ?? []).map((s) => column.get(s)).join(' ')}">` +
         `${marked(run.text, entry)}</span>`
     }).join('')
     // Back to the line this reading was taken from, in the edition it stands in.
@@ -196,30 +264,29 @@ export function synopsisPage(synopsis: Synopsis): string {
       ? `<a class="line-link no-print" title="Diese Zeile in ${esc(siglum)}"` +
         ` href="${esc(witness.href.split('#')[0])}#${esc(id)}-l${place}">↗</a>`
       : ''
-    return `<td${copied ? ' class="copy"' : ''}${at}${copied ? ` title="wie Segment ${copied}"` : ''}>${text}${jump}</td>`
+    return `<td${copied ? ' class="copy"' : ''}${w}${copied ? ` title="wie Segment ${copied}"` : ''}>${text}${jump}</td>`
   }
 
-  /** The readings of one place, as a printed apparatus gives them. */
+  /** A segment's places under its row, one line of apparatus each. */
   const apparatus = (segment: Segment): string => {
     if (!segment.apparatus.length) return ''
-    const entries = segment.apparatus.map((e) => `<li data-group="${esc(e.group)}"
-            data-kind="${e.spelling ? 'spelling' : 'word'}">
-            ${Object.entries(e.readings).map(([siglum, reading]) =>
-              `<span><i>${esc(siglum)}</i> ${reading.trim() ? esc(reading) : '—'}</span>`).join('')}
-            ${e.relation ? relationLabel(e.relation) : ''}
+    const items = segment.apparatus.map((e) => `<li data-group="${esc(e.group)}" ${placeAttrs(e)}>
+            ${lemmatised(e)}${e.relation ? relationLabel(e.relation) : ''}
           </li>`).join('')
-    return `<tr class="app" data-varies="${segment.varies}"
-        data-kind="${segment.apparatus.every((e) => e.spelling) ? 'spelling' : 'word'}">
+    return `<tr class="app">
         <td class="num"></td>
-        <td colspan="${witnesses.length}"><ol class="app-list">${entries}</ol></td>
+        <td colspan="${witnesses.length}"><ol class="app-list">${items}</ol></td>
       </tr>`
   }
 
-  const row = (segment: Segment): string => `<tr id="seg-${segment.n}" data-varies="${segment.varies}"${segment.head ? ' class="is-head"' : ''}>
+  const row = (segment: Segment): string => {
+    const classes = [segment.head && 'is-head', !segment.differs && 'quiet'].filter(Boolean).join(' ')
+    return `<tr id="seg-${segment.n}"${classes ? ` class="${classes}"` : ''}>
         <td class="num"${marks(segment) ? ` title="${esc(marks(segment))}"` : ''}><a
           href="#seg-${segment.n}" data-syn-link>${segment.n}</a></td>
         ${witnesses.map((w, i) => cell(segment, w, i + 1)).join('')}
       </tr>${apparatus(segment)}`
+  }
 
   /** A bundle is read poem by poem: one tbody each, under a band that stays in view. */
   const body = units.length > 1
@@ -236,8 +303,8 @@ export function synopsisPage(synopsis: Synopsis): string {
     <p class="lead">
       ${witnesses.length} Textzeugen, ${segments.length} Segmente, ${variants} Varianten.
     </p>
-    ${synopsisControls(witnesses, units.length > 1)}
-    <div data-synopsis data-variants="all" data-colour="variance">
+    <div data-synopsis data-colour="variance">
+      ${synopsisControls(synopsis)}
       ${unitList(units)}
       ${synopsisStrip(synopsis)}
       <div class="synopsis-wrap">
@@ -252,12 +319,6 @@ export function synopsisPage(synopsis: Synopsis): string {
       </table>
       </div>
       ${readingRegister(groups)}
-      <p class="syn-legend">
-      ${legend()}
-      <span class="syn-swatch"><b>—</b> kein Text in diesem Textzeugen</span>
-      <span class="syn-swatch"><span class="copy">grau</span> LERA wiederholt ein früheres Segment</span>
-      <span class="syn-swatch"><span class="line-link">↗</span> zur Zeile in der Ausgabe</span>
-      </p>
     </div>
     <p class="syn-source">
       ${provenance.tool ? `Ausgerichtet mit ${esc(provenance.tool)}` : `Ausgerichtet in LERA`}, Verfahren
@@ -281,7 +342,7 @@ export function synopsesPage(synopses: Synopsis[]): string {
 
   return corpusPage('synopsen.html', `Synopsen · ${synopses.length}`, `
     <p class="lead">
-      Gedichte, die in mehreren Ausgaben stehen und in LERA ausgerichtet wurden.
+      Gedichte, die in mehreren Ausgaben stehen, ausgerichtet von Hand in LERA oder mit TextAlign.
       Jede Synopse stellt die Fassungen nebeneinander und hebt die Abweichungen hervor.
     </p>
     ${synopses.length ? `<table>

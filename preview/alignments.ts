@@ -17,6 +17,32 @@ export interface Reading {
   group: string | null
 }
 
+/**
+ * What a place is, as the reader filters and colours it: its relation type
+ * (`relation-types.md`), folded where the reader needs no finer cut. A place
+ * nobody classified is an omission where a witness reads nothing, else open.
+ */
+export const CATEGORIES = ['punctuation', 'spelling', 'grammatical', 'lexical', 'order', 'omission', 'other', 'open'] as const
+export type Category = (typeof CATEGORIES)[number]
+const CATEGORY: Record<string, Category> = {
+  punctuation: 'punctuation', orthographic: 'spelling', spelling: 'spelling', grammatical: 'grammatical',
+  lexical: 'lexical', transposition: 'order', repetition: 'order',
+}
+
+/** The compare filters a reader can add to the document's, in TextAlign's order; bit i of `Entry.gone` is filter i. */
+export const FILTERS = ['punctuation', 'case', 'diacritics', 'long-s'] as const
+
+export interface Relation {
+  type: string
+  significant?: boolean
+  /** Set while a rule or a model proposed it and no person confirmed it. */
+  by?: string
+  rule?: string
+  model?: string
+  confidence?: number
+  rationale?: string
+}
+
 /** One place where the witnesses part, as the apparatus records it. */
 export interface Entry {
   group: string
@@ -33,8 +59,15 @@ export interface Entry {
   /** What the other readings are marked against, and what that one is marked against. */
   reference: string
   other: string
-  /** How the place is classified, where it is; `by` is set while a rule or a model proposed it unconfirmed. */
-  relation?: { type: string, by?: string, model?: string, confidence?: number, rationale?: string }
+  /** The document's classification, or else the rules': `by: "rule"`. */
+  relation?: Relation
+  category: Category
+  /** How far it is settled: what the *nach Stand* colouring shows. */
+  state: 'significant' | 'confirmed' | 'proposed' | 'open'
+  /** Bit m is set where the readings agree under the reader's filter set m (bits as `FILTERS`). */
+  gone: number
+  /** Siglum → the sigla reading the same here, itself included. */
+  alike: Record<string, string[]>
 }
 
 export interface Segment {
@@ -50,8 +83,8 @@ export interface Segment {
   /** Siglum → the segment its cell repeats. */
   copy: Record<string, number>
   apparatus: Entry[]
-  /** The strongest kind of difference in this segment — what the filter reads. */
-  varies: 'none' | 'spelling' | 'word'
+  /** A place varies here, or a witness has no text: what *nur Abweichungen* keeps. */
+  differs: boolean
   /** Siglum → how far it stands from the others here, as the map shades it. */
   departures: Record<string, number>
   /** Which poem of a bundle this segment belongs to: an index into `units`. */
@@ -91,7 +124,9 @@ export interface Group {
   forms: string[]
   /** The segments it occurs in, in order. */
   places: number[]
-  spelling: boolean
+  /** As the first place's entry: the same readings fold alike everywhere. */
+  category: Category
+  gone: number
 }
 
 /**
@@ -105,7 +140,7 @@ function readingGroups(segments: Segment[]): Group[] {
     for (const entry of segment.apparatus) {
       const forms = [...new Set(Object.values(entry.readings).map((text) => text.trim()))]
       const key = [...forms].sort().join('\u0001')
-      const group = groups.get(key) ?? { forms, places: [], spelling: entry.spelling }
+      const group = groups.get(key) ?? { forms, places: [], category: entry.category, gone: entry.gone }
       if (group.places.at(-1) !== segment.n) group.places.push(segment.n)
       groups.set(key, group)
     }
@@ -135,18 +170,47 @@ const SPELLINGS = [['ck', 'k'], ['th', 't'], ['dt', 't'], ['tz', 'z'], ['ß', 's
 const undouble = (text: string): string => text.replace(/(\p{L})\1+/gu, '$1')
 
 /**
- * A reading as TextAlign's rule cascade compares it: two readings with the same
- * form are one word spelt otherwise (`vnd vertrawen`/`und vertrauen`,
- * `zuͦ erligen`/`zuͦerligen`, `Herꝛ`/`Herr`). Inflection survives it — `gelangen`
- * and `gelanget` stay two readings.
- *
- * A copy of `word_form` (`textalign/io/variant_rules.py`), as the preview builds
- * without TextAlign; `test/synopsis.test.ts` holds it to TextAlign's own cases.
+ * TextAlign's rule cascade, finest first: each step adds to those before it, and
+ * the first under which all readings agree names the type. A copy of
+ * `textalign/io/variant_rules.py`, as the preview builds without TextAlign;
+ * `test/synopsis.test.ts` holds it to TextAlign's own cases.
  */
-export const wordForm = (text: string): string => undouble(SPELLINGS.reduce((t, [a, b]) => t.replaceAll(a, b),
-  undouble(text.replaceAll(' ', '').replace(/[^\p{L}\p{N}\p{M}\s]/gu, '').toLowerCase()
-    .normalize('NFD').replace(/\p{Mn}/gu, '').replaceAll('ſ', 's').replaceAll('ꝛ', 'r')
-    .replaceAll('v', 'u').replaceAll('j', 'i'))))
+const RULES: { name: string, type: string, apply: (text: string) => string }[] = [
+  { name: 'word division', type: 'orthographic', apply: (t) => t.replaceAll(' ', '') },
+  { name: 'punctuation', type: 'punctuation', apply: (t) => t.replace(/[^\p{L}\p{N}\p{M}\s]/gu, '') },
+  { name: 'case', type: 'orthographic', apply: (t) => t.toLowerCase() },
+  { name: 'diacritics', type: 'orthographic', apply: (t) => t.normalize('NFD').replace(/\p{Mn}/gu, '') },
+  { name: 'long s, r rotunda', type: 'orthographic', apply: (t) => t.replaceAll('ſ', 's').replaceAll('ꝛ', 'r') },
+  { name: 'u/v, i/j', type: 'orthographic', apply: (t) => t.replaceAll('v', 'u').replaceAll('j', 'i') },
+  { name: 'doubled letters', type: 'spelling', apply: undouble },
+  { name: 'spelling variants', type: 'spelling', apply: (t) => undouble(SPELLINGS.reduce((x, [a, b]) => x.replaceAll(a, b), t)) },
+]
+
+/**
+ * A reading under the whole cascade: two readings with the same form are one
+ * word spelt otherwise (`vnd vertrawen`/`und vertrauen`, `zuͦ erligen`/`zuͦerligen`,
+ * `Herꝛ`/`Herr`). Inflection survives it — `gelangen` and `gelanget` stay two.
+ */
+export const wordForm = (text: string): string => RULES.reduce((t, rule) => rule.apply(t), text)
+
+/**
+ * The type the rules give a variant place, and the rule that decided it; null
+ * where they decide nothing, and for an omission, which they leave alone.
+ */
+export function ruleRelation(readings: string[]): { type: string, rule: string } | null {
+  const texts = readings.map((text) => text.replace(/\s+/g, ' ').trim())
+  if (texts.length < 2 || texts.some((t) => !t) || new Set(texts).size === 1) return null
+  let forms = texts
+  for (const rule of RULES) {
+    forms = forms.map(rule.apply)
+    if (new Set(forms).size === 1) return { type: rule.type, rule: rule.name }
+  }
+  const words = texts.map((t) => t.split(' ').map(wordForm).filter(Boolean))
+  const agree = (key: (w: string[]) => string) => new Set(words.map(key)).size === 1
+  if (words.every((w) => w.length > 1) && agree((w) => [...w].sort().join(' '))) return { type: 'transposition', rule: 'word order' }
+  if (agree((w) => w.filter((x, k) => x !== w[k - 1]).join(' '))) return { type: 'repetition', rule: 'repeated word' }
+  return null
+}
 
 /**
  * The sigla that stand apart at one place: those not reading, letter for
@@ -216,46 +280,42 @@ export function charDiff(a: string, b: string): { text: string, differs: boolean
 }
 
 /**
- * Read one apparatus entry: what differs here, and how much.
+ * Read one apparatus entry: what differs here, how much, and what it is.
  *
- * Only the witnesses that have text in the segment are weighed. LERA's export
- * gives every witness a reading, the empty string for one that is not in the
- * row at all; counting that as a reading would make every place in such a row
- * an omission and a difference of wording.
+ * `readings` are the witnesses with text in the segment; one absent from the row
+ * weighs on nothing in it. `under[m]` compares a reading under the document's
+ * filters and the reader's filter set `m`, so `under[0]` is the document's own.
  */
-function entry(raw: any, missing: string[]): Entry {
-  const readings: Record<string, string> = raw.readings ?? {}
-  const present = Object.fromEntries(
-    Object.entries(readings).filter(([siglum]) => !missing.includes(siglum)))
-  const values = Object.values(present).map((text) => text.trim())
-  const apart = departing(present)
+function entry(group: string, readings: Record<string, string>, stored: Relation | undefined,
+               under: ((text: string) => string)[]): Entry {
+  const sigla = Object.keys(readings)
+  const values = Object.values(readings).map((text) => text.trim())
+  const apart = departing(readings)
   // Every reading is marked against the one most of them share, and that one
   // against the first reading that differs, so it too shows what is distinctive.
-  const reference = Object.entries(present).find(([siglum]) => !apart.includes(siglum))?.[1].trim() ?? values[0] ?? ''
+  const reference = Object.entries(readings).find(([siglum]) => !apart.includes(siglum))?.[1].trim() ?? values[0] ?? ''
+  // A person's or a model's classification stands; the rules fill in the rest.
+  const found = stored ? null : ruleRelation(values)
+  const relation = stored ?? (found ? { type: found.type, by: 'rule', rule: found.rule } : undefined)
+  const omission = values.includes('')
+  const form = (siglum: string) => under[0](readings[siglum])
   return {
-    group: raw.alignment_id ?? String(raw.number ?? ''),
+    group,
     readings,
     spelling: new Set(values.map(wordForm)).size === 1,
     // Two readings among four witnesses is a lesser difference than four.
     degree: Math.min(3, Math.max(1, new Set(values).size - 1)),
     departing: apart,
-    omission: values.includes(''),
+    omission,
     reference,
     other: values.find((text) => text !== reference) ?? '',
+    ...(relation ? { relation } : {}),
+    category: relation ? CATEGORY[relation.type] ?? 'other' : omission ? 'omission' : 'open',
+    state: !relation ? 'open' : relation.by ? 'proposed' : relation.significant ? 'significant' : 'confirmed',
+    gone: under.reduce((mask, compare, m) => new Set(values.map(compare)).size < 2 ? mask | 1 << m : mask, 0),
+    alike: Object.fromEntries(sigla.map((s) => [s, sigla.filter((t) => form(t) === form(s))])),
   }
 }
-
-/**
- * The strongest difference in a segment.
- *
- * A witness that reads nothing here counts as the strongest: an omission is
- * not an apparatus entry — LERA has no marker to hang one on — but it is the
- * plainest departure there is, and a filter that hid it would hide exactly the
- * places where the editions part company.
- */
-const kind = (entries: Entry[], missing: string[]): Segment['varies'] =>
-  missing.length || entries.some((e) => !e.spelling) ? 'word'
-    : entries.length ? 'spelling' : 'none'
 
 /** What a segment reads, taking the first witness that has text there. */
 const text = (segment: Segment): string =>
@@ -388,7 +448,9 @@ const span = (tokens: { t: string }[], at?: [number, number]): string =>
 function readSegment(doc: any, raw: any, index: number, sigla: string[],
                   tokens: Record<string, { t: string }[]>, numbers: Map<string, number>): Segment {
   const filters: string[] = doc.settings?.filters ?? []
-  const regular = compared(filters, raw.regularizations ?? doc.settings?.regularizations ?? [])
+  const rules = raw.regularizations ?? doc.settings?.regularizations ?? []
+  const under = Array.from({ length: 1 << FILTERS.length }, (_, m) =>
+    compared([...filters, ...FILTERS.filter((_, bit) => m >> bit & 1)], rules))
   const present = sigla.filter((siglum) => raw.cells[siglum]?.span)
   const missing = sigla.filter((siglum) => !raw.cells[siglum]?.span)
 
@@ -399,10 +461,9 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
   raw.columns.forEach((column: any, c: number) => {
     const readings = Object.fromEntries(present.map((s) =>
       [s, span(tokens[s], column.spans[s])]))
-    if (new Set(present.map((s) => regular(readings[s]))).size < 2) return
+    if (new Set(present.map((s) => under[0](readings[s]))).size < 2) return
     const group = `${raw.number ?? index + 1}-${c + 1}`
-    apparatus.push({ ...entry({ alignment_id: group, readings }, missing),
-      ...(column.relation ? { relation: column.relation } : {}) })
+    apparatus.push(entry(group, readings, column.relation, under))
     for (const s of present) {
       const at = column.spans[s]
       if (at) for (let k = at[0]; k < at[1]; k++) groupOf.get(s)!.set(k, group)
@@ -437,7 +498,7 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
     missing,
     copy,
     apparatus,
-    varies: kind(apparatus, missing),
+    differs: apparatus.length > 0 || missing.length > 0,
     departures: departures(apparatus, sigla, missing),
     unit: 0,
   }

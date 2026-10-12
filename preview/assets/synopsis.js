@@ -22,13 +22,51 @@
     })
   }
 
-  // Each control writes one attribute on the table and the stylesheet reacts.
-  // What to show of the variants is kept across poems; which witnesses to show,
-  // and which is the base, belong to the poem being read.
+  // What to show is kept across poems; which witnesses to show belongs to the
+  // poem being read. Categories and filters are applied here, since both hide a
+  // place; every other control writes one attribute and the stylesheet reacts.
   var synopsis = document.querySelector('[data-synopsis]')
   var controls = document.querySelector('[data-syn-controls]')
   if (synopsis && controls) {
     var hidden = []
+    var all = function (selector, root) { return [].slice.call((root || synopsis).querySelectorAll(selector)) }
+    var chips = all('[data-syn-cat]', controls)
+    var filters = all('[data-syn-ignore]', controls)
+    var places = all('.synopsis [data-cat], .syn-register [data-cat]')
+    var entries = all('.app-list [data-cat]') // one per place: what the counts count
+    var rows = all('.synopsis tbody tr[id]')
+    var lines = {}
+    all('[data-syn-strip] i').forEach(function (line) { lines['seg-' + line.dataset.row] = line })
+
+    // A place is shown when its category is chosen and its readings still differ
+    // under the filters: bit m of `data-gone` says they agree under filter set m.
+    var refresh = function () {
+      var shown = chips.filter(function (c) { return c.checked }).map(function (c) { return c.dataset.synCat })
+      var mask = filters.reduce(function (m, f) { return f.checked ? m | 1 << f.dataset.synIgnore : m }, 0)
+      var gone = function (el) { return (el.dataset.gone >> mask & 1) === 1 }
+      places.forEach(function (el) { el.toggleAttribute('data-off', shown.indexOf(el.dataset.cat) < 0 || gone(el)) })
+
+      // Each count says what the filters leave of its category, chosen or not.
+      chips.forEach(function (chip) {
+        var n = entries.filter(function (e) { return e.dataset.cat === chip.dataset.synCat && !gone(e) }).length
+        chip.parentNode.dataset.n = n
+        chip.parentNode.querySelector('.n').textContent = n
+      })
+
+      // A row with nothing left to show is quiet, unless a witness has no text
+      // in it and omissions are shown; an apparatus row with nothing left goes.
+      var gaps = shown.indexOf('omission') >= 0
+      rows.forEach(function (row) {
+        var quiet = !row.querySelector('.var:not([data-off])') && !(gaps && row.querySelector('td.gap'))
+        row.classList.toggle('quiet', quiet)
+        if (lines[row.id]) lines[row.id].classList.toggle('quiet', quiet)
+        var app = row.nextElementSibling
+        if (app && app.classList.contains('app')) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
+      })
+      previewStore.set('syn-show', shown.join(' '))
+      previewStore.set('syn-ignore', filters.filter(function (f) { return f.checked })
+        .map(function (f) { return f.dataset.synIgnore }).join(' '))
+    }
 
     var apply = function (control) {
       var name = control.dataset.syn
@@ -40,34 +78,17 @@
       } else if (control.type === 'checkbox') {
         synopsis.toggleAttribute('data-' + name, control.checked)
         previewStore.set('syn-' + name, control.checked ? 'on' : 'off')
-      } else if (control.value) {
+      } else {
         synopsis.dataset[name] = control.value
         previewStore.set('syn-' + name, control.value)
-        if (name === 'base') markRowsWithoutBase(control.value)
-      } else {
-        synopsis.removeAttribute('data-' + name)
-        previewStore.set('syn-' + name, '')
       }
-    }
-
-    // Where the base witness itself reads nothing, there is nothing to depart
-    // from, so the other witnesses keep their full text in that row.
-    var markRowsWithoutBase = function (base) {
-      synopsis.querySelectorAll('tbody tr').forEach(function (row) {
-        var cell = base && row.querySelector('td[data-w="' + base + '"]')
-        row.classList.toggle('no-base', !!cell && cell.classList.contains('gap'))
-      })
     }
 
     // The places that vary, as the reader has just defined them: what the
     // counter counts and what n and p step through.
     var counter = controls.querySelector('[data-syn-count]')
-    var places = function () {
-      return [].slice.call(synopsis.querySelectorAll('tbody tr[data-varies]')).filter(function (row) {
-        return !row.classList.contains('app') && row.dataset.varies !== 'none' &&
-          row.offsetParent !== null &&
-          !(synopsis.dataset.variants === 'words' && row.dataset.varies === 'spelling')
-      })
+    var differing = function () {
+      return rows.filter(function (row) { return !row.classList.contains('quiet') && row.offsetParent !== null })
     }
 
     var tally = function (at, total) {
@@ -75,14 +96,19 @@
         : total + (total === 1 ? ' Abweichung' : ' Abweichungen')
     }
 
+    var changed = function () {
+      tally(0, differing().length)
+      dispatchEvent(new Event('synchange'))
+    }
+
     var step = function (by) {
-      var all = places()
-      if (!all.length) return
-      var here = all.indexOf(synopsis.querySelector('tbody tr:target'))
-      var at = here < 0 ? (by > 0 ? 0 : all.length - 1) : (here + by + all.length) % all.length
-      location.hash = all[at].id
-      all[at].scrollIntoView({ block: 'center' })
-      tally(at + 1, all.length)
+      var them = differing()
+      if (!them.length) return
+      var here = them.indexOf(synopsis.querySelector('tbody tr:target'))
+      var at = here < 0 ? (by > 0 ? 0 : them.length - 1) : (here + by + them.length) % them.length
+      location.hash = them[at].id
+      them[at].scrollIntoView({ block: 'center' })
+      tally(at + 1, them.length)
     }
 
     document.addEventListener('keydown', function (event) {
@@ -103,20 +129,38 @@
       }, function () {})
     })
 
-    controls.querySelectorAll('[data-syn], [data-syn-witness]').forEach(function (control) {
-      var kept = control.dataset.syn && previewStore.get('syn-' + control.dataset.syn)
-      if (kept !== null && kept !== undefined && !control.dataset.synWitness) {
-        if (control.type === 'checkbox') control.checked = kept === 'on'
-        else if (control.dataset.syn !== 'base') control.value = kept // the base is per poem
+    var show = previewStore.get('syn-show')
+    var ignore = previewStore.get('syn-ignore')
+    if (show !== null) chips.forEach(function (c) { c.checked = show.split(' ').indexOf(c.dataset.synCat) >= 0 })
+    if (ignore !== null) filters.forEach(function (f) { f.checked = ignore.split(' ').indexOf(f.dataset.synIgnore) >= 0 })
+    chips.concat(filters).forEach(function (control) {
+      control.addEventListener('change', function () { refresh(); changed() })
+    })
+    all('[data-syn-preset]', controls).forEach(function (button) {
+      button.addEventListener('click', function () {
+        var chosen = button.dataset.synPreset.split(' ')
+        chips.forEach(function (c) { c.checked = chosen.indexOf(c.dataset.synCat) >= 0 })
+        refresh()
+        changed()
+      })
+    })
+
+    all('[data-syn], [data-syn-witness]', controls).forEach(function (control) {
+      var value = control.dataset.syn && previewStore.get('syn-' + control.dataset.syn)
+      if (value) {
+        if (control.type === 'checkbox') control.checked = value === 'on'
+        // Against a column belongs to the poem: column 2 is another witness in the next.
+        else if (!/^w/.test(value)) control.value = value
+        if (control.value === '') control.selectedIndex = 0 // a mode this page does not have
       }
       apply(control)
       control.addEventListener('change', function () {
         apply(control)
-        tally(0, places().length)
-        dispatchEvent(new Event('synchange'))
+        changed()
       })
     })
-    tally(0, places().length)
+    refresh()
+    tally(0, differing().length)
   }
 
   // The strip beside the table: each line sits where its row does, a marker

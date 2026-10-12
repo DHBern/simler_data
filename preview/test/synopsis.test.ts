@@ -13,7 +13,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
 
-import { loadSynopses, numberLines, wordForm } from '../alignments'
+import { CATEGORIES, FILTERS, loadSynopses, numberLines, ruleRelation, wordForm } from '../alignments'
 import { synopsesPage, synopsisPage } from '../synopsis'
 
 /**
@@ -124,26 +124,67 @@ test('the overview lists what is aligned, and says so when nothing is', async ()
   assert.match(synopsesPage([]), /Noch keine Ausrichtung/)
 })
 
-test('a difference in spelling is told from a difference in wording', async () => {
+test('a place the rules decide gets their type; one they do not is open', async () => {
   const [synopsis] = await load()
   const [, wording, spelling] = synopsis.segments
 
   // `auff`/`auf` is one word twice; `nimmermehr`/`glaube` is two words.
   assert.equal(spelling.apparatus[0].spelling, true)
-  assert.equal(spelling.varies, 'spelling')
+  assert.deepEqual(spelling.apparatus[0].relation, { type: 'spelling', by: 'rule', rule: 'doubled letters' })
+  assert.equal(spelling.apparatus[0].category, 'spelling')
+  assert.equal(spelling.apparatus[0].state, 'proposed')
   assert.equal(wording.apparatus[0].spelling, false)
-  assert.equal(wording.varies, 'word')
+  assert.equal(wording.apparatus[0].relation, undefined)
+  assert.equal(wording.apparatus[0].category, 'open')
 
-  // The page carries the distinction, so the reader can switch it off.
+  // The page carries the category, so the reader can switch it off and colour by it.
   const page = synopsisPage(synopsis)
-  assert.match(page, /<span class="var" data-group="3-1" data-kind="spelling"/)
-  assert.match(page, /<span class="var" data-group="2-2" data-kind="word"/)
+  assert.match(page, /<span class="var" data-group="3-1" data-cat="spelling" data-gone="0" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="2-2" data-cat="open"/)
+  assert.match(page, /<span class="app-rel" data-by="rule" title="Regel, nicht bestätigt · doubled letters">Schreibung/)
 })
 
-test('a witness that reads nothing counts as the strongest difference', async () => {
+test('a witness that reads nothing is a difference, and a row without one is quiet', async () => {
   const [synopsis] = await load()
   // The heading segment: F42A has no text there at all.
-  assert.equal(synopsis.segments[0].varies, 'word')
+  assert.equal(synopsis.segments[0].differs, true)
+  const quiet = synopsisPage(await loadBundle())
+  assert.match(quiet, /<tr id="seg-2" class="quiet">/)
+  assert.match(quiet, /<i data-row="2" data-level="0" class="quiet"/)
+})
+
+test('the filters a reader can add are recorded per place, as a bit per filter set', async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7', C: 'tei/C_1663_dok.xml#n7' }, [
+    { cells: { A: ['Liebe', 'ſinnen/', 'figur'], B: ['liebe', 'ſinnen', 'figur'], C: ['liebe', 'ſinnen', 'geſtalt'] } },
+  ])
+  const dir = await mkdtemp(join(tmpdir(), 'filters-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const [synopsis] = await loadSynopses(dir)
+  const [capital, virgule, word] = synopsis.segments[0].apparatus
+  const bit = (name: (typeof FILTERS)[number]) => 1 << FILTERS.indexOf(name)
+  const goneUnder = (e: { gone: number }, set: number) => (e.gone >> set & 1) === 1
+
+  assert.ok(goneUnder(capital, bit('case')) && goneUnder(capital, bit('case') | bit('punctuation')))
+  assert.ok(!goneUnder(capital, bit('punctuation')))
+  assert.ok(goneUnder(virgule, bit('punctuation')) && !goneUnder(virgule, bit('case')))
+  assert.equal(word.gone, 0) // a different word stays one under every filter
+  assert.deepEqual([capital, virgule, word].map((e) => e.category), ['spelling', 'punctuation', 'open'])
+
+  // Which columns read alike, for colouring against one witness: A and B share `figur`.
+  assert.deepEqual(word.alike, { A: ['A', 'B'], B: ['A', 'B'], C: ['C'] })
+  assert.match(synopsisPage(synopsis), /data-group="1-3"[^>]* data-alike="1 2"><b>figur<\/b>/)
+})
+
+test("a person's classification stands, and says the place is settled", async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' }, [{ cells: { A: ['auff', 'figur'], B: ['auf', 'gestalt'] } }])
+  ;(doc.segments[0].columns[0] as object as { relation: object }).relation = { type: 'lexical' }
+  ;(doc.segments[0].columns[1] as object as { relation: object }).relation = { type: 'lexical', significant: true }
+  const dir = await mkdtemp(join(tmpdir(), 'person-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const [synopsis] = await loadSynopses(dir)
+  // The rules would call `auff`/`auf` a spelling; a person said otherwise, and wins.
+  assert.deepEqual(synopsis.segments[0].apparatus.map((e) => [e.category, e.state]),
+    [['lexical', 'confirmed'], ['lexical', 'significant']])
 })
 
 test('how far the witnesses are apart is graded', async () => {
@@ -157,11 +198,18 @@ test('the page offers the reading options, and the script that drives them', asy
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
 
-  for (const control of ['variants', 'varying', 'apparatus', 'base']) {
+  for (const control of ['colour', 'varying', 'apparatus']) {
     assert.match(page, new RegExp(`data-syn="${control}"`))
   }
-  // One box per witness, and one base to choose among them.
+  // A chip per category, with its count; a box per filter and per witness.
+  assert.equal((page.match(/data-syn-cat=/g) ?? []).length, CATEGORIES.length)
+  assert.match(page, /<label class="syn-chip"[^>]* data-n="1"><input type="checkbox" data-syn-cat="spelling" checked> Schreibung <span class="n">1<\/span>/)
+  assert.equal((page.match(/data-syn-ignore=/g) ?? []).length, FILTERS.length)
+  // *sachliche* is everything but punctuation and spelling.
+  assert.match(page, /data-syn-preset="grammatical lexical order omission other open"\s+title="[^"]*">sachliche/)
   assert.equal((page.match(/data-syn-witness=/g) ?? []).length, synopsis.witnesses.length)
+  // The legend stands right under the options, not under the table.
+  assert.ok(page.indexOf('class="syn-legend') < page.indexOf('<table class="synopsis">'))
   assert.match(page, /<td[^>]* data-w="1"/)
   // Only what a synopsis needs: the reading pages' script is not loaded here.
   assert.match(page, /<link rel="stylesheet" href="assets\/synopsis\.css">/)
@@ -173,10 +221,22 @@ test('the apparatus of a segment lists its readings', async () => {
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
 
-  assert.match(page, /<tr class="app" data-varies="word"\s+data-kind="word">/)
-  // A row of nothing but spellings says so, so it can go when they are switched off.
-  assert.match(page, /<tr class="app" data-varies="spelling"\s+data-kind="spelling">/)
-  assert.match(page, /<li data-group="2-2"[\s\S]*?<i>A<\/i> nimmermehr[\s\S]*?<i>F42A<\/i> glaube/)
+  assert.equal((page.match(/<tr class="app">/g) ?? []).length, 2)
+  // Each entry carries what the reader's choice is matched against.
+  assert.match(page, /<li data-group="3-1" data-cat="spelling" data-gone="0">/)
+  // Lemma, bracket, the departing readings with their sigla.
+  assert.match(page, /<li data-group="2-2"[^>]*>\s*<span class="rdg lem">nimmermehr <i>A<\/i><\/span> <span class="sep">]<\/span> <span class="rdg">glaube <i>F42A<\/i><\/span>/)
+})
+
+test('the apparatus groups witnesses that read alike, and says where one reads nothing', async () => {
+  const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7', C: 'tei/C_1663_dok.xml#n7', D: 'tei/D_1688.xml#n7' }, [
+    { cells: { A: ['vertrawe', 'mir'], B: ['vertraue', 'mir'], C: ['vertraue', ''], D: ['glaube nicht', 'mir'] } },
+  ])
+  const dir = await mkdtemp(join(tmpdir(), 'lemma-'))
+  await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
+  const page = synopsisPage((await loadSynopses(dir))[0])
+  assert.match(page, /<span class="rdg lem">vertrawe <i>A<\/i><\/span> <span class="sep">]<\/span> <span class="rdg">vertraue <i>B C<\/i><\/span><span class="sep">;<\/span> <span class="rdg">glaube nicht <i>D<\/i><\/span>/)
+  assert.match(page, /<span class="rdg lem">mir <i>A B D<\/i><\/span> <span class="sep">]<\/span> <span class="rdg"><em>fehlt<\/em> <i>C<\/i><\/span>/)
 })
 
 test('each witness gets its distance from the others, segment by segment', async () => {
@@ -193,11 +253,11 @@ test('the strip holds a line per segment, as long as that segment disagrees', as
   const page = synopsisPage(synopsis)
 
   assert.equal((page.match(/<i data-row=/g) ?? []).length, 3)
-  assert.match(page, /<i data-row="2" data-varies="word" data-level="2"/)
+  assert.match(page, /<i data-row="2" data-level="2"/)
   assert.match(page, /<u class="syn-here">/)
   // Ticks say where the next poem of a bundle starts; a single poem has none.
   assert.doesNotMatch(page, /class="tick"/)
-  assert.match(synopsisPage(await loadBundle()), /<i data-row="3"[^>]* class="tick"/)
+  assert.match(synopsisPage(await loadBundle()), /<i data-row="3"[^>]* class="tick quiet"/)
 })
 
 test('inside a variant, only the characters that differ are marked', async () => {
@@ -205,9 +265,9 @@ test('inside a variant, only the characters that differ are marked', async () =>
   const page = synopsisPage(synopsis)
 
   // `auff` against `auf` is one letter, not a whole word.
-  assert.match(page, /data-kind="spelling"[^>]*>auf<b>f<\/b><\/span>/)
+  assert.match(page, /data-cat="spelling"[^>]*>auf<b>f<\/b><\/span>/)
   // Another word is marked whole.
-  assert.match(page, /data-kind="word"[^>]*><b>glaube<\/b><\/span>/)
+  assert.match(page, /data-cat="open"[^>]*><b>glaube<\/b><\/span>/)
 })
 
 test('a bundle is divided into the poems its headings mark', async () => {
@@ -287,7 +347,7 @@ test('rows a model proposes are not shown until a person accepts them', async ()
 test('the page says which export it was built from', async () => {
   const page = synopsisPage((await load())[0])
   assert.match(page, /Ausgerichtet in LERA, Verfahren\s+<code>cgsa<\/code>, zuletzt geändert am 29\.09\.2026;/)
-  assert.match(page, /kein Text in diesem Textzeugen/) // the legend
+  assert.match(page, /<span class="syn-swatch"><b>—<\/b> kein Text<\/span>/) // the legend
 })
 
 test('the lines of an aligned poem are numbered where the reader can reach them', () => {
@@ -315,11 +375,16 @@ test('a witness absent from the row is not an omission at every place in it', as
 test('the colouring modes and their legend come from one table', async () => {
   const page = synopsisPage((await load())[0])
 
-  assert.match(page, /data-syn="colour"[\s\S]*?value="variance"[\s\S]*?value="change"/)
+  assert.match(page, /data-syn="colour"[\s\S]*?value="variance"[\s\S]*?value="type"[\s\S]*?value="state"[\s\S]*?value="change"/)
+  // Against each witness, by its column.
+  assert.match(page, /<option value="w2">gegen F42A<\/option>/)
   // The swatch is a mark like any other, so the stylesheet colours both at once.
   assert.match(page, /<span class="syn-keys" data-for="variance">[\s\S]*?<span class="var" data-degree="1">/)
+  assert.match(page, /<span class="syn-keys" data-for="type">[\s\S]*?<span class="var" data-cat="lexical"><b>Aa<\/b><\/span> Wortlaut/)
+  assert.match(page, /<span class="syn-keys" data-for="state">[\s\S]*?<span class="var" data-state="proposed">/)
   assert.match(page, /<span class="syn-keys" data-for="change">[\s\S]*?<span class="var" data-change="om">/)
-  assert.match(page, /<span class="var"[^>]* data-change="sub">/)
+  assert.match(page, /<span class="syn-keys" data-for="w1">[\s\S]*?weicht von A ab/)
+  assert.match(page, /<span class="var"[^>]* data-change="sub"/)
 })
 
 test('the register lists each set of readings once, the most frequent first', async () => {
@@ -330,7 +395,7 @@ test('the register lists each set of readings once, the most frequent first', as
 
   const page = synopsisPage(synopsis)
   assert.match(page, /<summary>Lesarten: 2 verschiedene an 2 Stellen<\/summary>/)
-  assert.match(page, /<li data-kind="spelling"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
+  assert.match(page, /<li data-cat="spelling" data-gone="0"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
 })
 
 test("a document's classifications reach the apparatus, a model's as provisional", async () => {
@@ -356,18 +421,20 @@ test("a document's classifications reach the apparatus, a model's as provisional
 
   assert.deepEqual(synopsis.segments[0].apparatus.map((e) => e.relation?.type), ['lexical', 'spelling'])
   const page = synopsisPage(synopsis)
-  assert.match(page, /<span class="app-rel">lexical<\/span>/) // a person's: the edition's judgement
-  assert.match(page, /<span class="app-rel" data-by="model" title="Modell 82 %, nicht bestätigt · m · doubled f">spelling <small>Modell 82 %<\/small><\/span>/)
+  assert.match(page, /<span class="app-rel">Wortlaut<\/span>/) // a person's: the edition's judgement
+  assert.match(page, /<span class="app-rel" data-by="model" title="Modell 82 %, nicht bestätigt · m · doubled f">Schreibung <small>Modell 82 %<\/small><\/span>/)
 })
 
 // TextAlign's own cases for its rule cascade, when a checkout is beside this one
-// (or at $TEXTALIGN): the preview's copy of `word_form` must agree with them.
+// (or at $TEXTALIGN): the preview's copy of the cascade must agree with them.
 const cases = join(process.env.TEXTALIGN ?? join(import.meta.dirname, '..', '..', '..', 'text-alignment'),
   'editor', 'test', 'fixtures', 'rule-cases.json')
 
 test("a spelling is what TextAlign's rule cascade calls one", { skip: !existsSync(cases) && 'no TextAlign checkout' }, () => {
   const fixture = JSON.parse(readFileSync(cases, 'utf8'))
   for (const [text, form] of Object.entries(fixture.word_forms)) assert.equal(wordForm(text), form, text)
+  // The same type and rule, case by case.
+  for (const { readings, expected } of fixture.cases) assert.deepEqual(ruleRelation(readings), expected, readings.join(' | '))
   // Readings share a word form exactly where a step of the cascade settles them.
   for (const { readings, expected } of fixture.cases) {
     if (new Set(readings).size < 2 || readings.some((r: string) => !r.trim())) continue // no variant, or an omission
