@@ -1,12 +1,13 @@
 /**
  * The hyphen at a printed line end.  (DTA-Basisformat, `lb/@break="no"`.)
  *
- * `@break="no"` says the word continues across the line end. The reading text joins the
- * word, so an encoded hyphen must go; the diplomatic view restores the break and
- * needs exactly one hyphen, never none, never two. CSS can neither hide nor
- * supply a hyphen inside a text node, so it is removed from what renders; the
- * ODD's predicates still see the text as encoded, and the `<lb/>`'s model sets
- * the print's hyphen.
+ * A joined line end, as the ODD has it (`odd.joins`), says the word continues across
+ * the line end. The reading text joins the word, so an encoded hyphen must go; the
+ * diplomatic view restores the break and needs exactly one hyphen, never none, never
+ * two. CSS can neither hide nor supply a hyphen inside a text node, so it is removed
+ * from what renders; the ODD's predicates still see the text as encoded, and the
+ * break's `label` sets the print's hyphen. A hyphen at any other line end stays: the
+ * ODD's Schematron asks about it.
  *
  * **The hyphen need not touch the break.**
  *
@@ -16,12 +17,9 @@
  */
 
 import type { Plugin } from 'unified'
-import type { VFile } from 'vfile'
 
 import type { Odd } from '../odd/odd.ts'
-import type { RenderState } from './teiToHast.ts'
 import {
-  attr,
   children,
   isElement,
   isText,
@@ -42,8 +40,8 @@ interface LineEdge {
   gap: Text[]
 }
 
-/** unified plugin: normalise the hyphen at every joined line end; `flow` from the ODD. */
-export const lineEndHyphens: Plugin<[Odd['flow']], Root, Root> = function (flow) {
+/** unified plugin: normalise the hyphen at every joined line end; `flow` and `joins` from the ODD. */
+export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins'>], Root, Root> = function ({ flow, joins }) {
   /**
    * Where the printed line ends before `from` (`step` -1), or the next one starts
    * after it (`step` 1) — `null` where a block is in between, and so where nothing
@@ -70,31 +68,20 @@ export const lineEndHyphens: Plugin<[Odd['flow']], Root, Root> = function (flow)
     return null
   }
 
-  return function transformer(tree: Root, file?: VFile): Root {
-    /** `<lb/>` with no `@break`, but a hyphen before it: `@break="no"` is missing. */
-    let unmarked = 0
-
+  return function transformer(tree: Root): Root {
     function walk(node: Nodes, up: Element[]): void {
       if (!('children' in node) || !Array.isArray(node.children)) return
       const list = node.children as ElementContent[]
       const inner = isElement(node) ? [...up, node] : up
 
       for (const [i, child] of list.entries()) {
-        if (!isElement(child, 'lb')) continue
+        if (!isElement(child) || !joins(child, inner)) continue
         const end = lineEdge(list, i, -1, inner)
-        const joined = attr(child, 'break') === 'no'
-
+        const start = lineEdge(list, i, 1, inner)
         if (end && HYPHEN.test(end.text.value ?? '')) {
-          if (!joined) {
-            unmarked++ // an editorial finding, not something to guess at
-            continue
-          }
           end.text.data = { ...end.text.data, source: end.text.value }
           end.text.value = end.text.value.replace(HYPHEN, '')
         }
-        if (!joined) continue
-
-        const start = lineEdge(list, i, 1, inner)
         if (end) end.text.value = end.text.value.trimEnd()
         if (start) start.text.value = start.text.value.trimStart()
         for (const space of [...(end?.gap ?? []), ...(start?.gap ?? [])]) space.value = ''
@@ -103,15 +90,6 @@ export const lineEndHyphens: Plugin<[Odd['flow']], Root, Root> = function (flow)
       for (const child of children(node)) walk(child as Nodes, inner)
     }
     walk(tree, [])
-
-    // The word is left broken in two rather than joined on a guess: only
-    // `@break="no"` says the print meant it to continue.
-    const state = file?.data.teiState as RenderState | undefined
-    if (state && unmarked > 0) {
-      state.warnings.push(
-        `${unmarked}× Trennstrich am Zeilenende ohne <lb break="no"/> — das Wort bleibt getrennt`,
-      )
-    }
     return tree
   }
 }

@@ -79,7 +79,7 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
 export function createProcessor(odd: Odd) {
   return unified()
     .use(wsTrim, odd.flow)
-    .use(lineEndHyphens, odd.flow)
+    .use(lineEndHyphens, odd)
     .use(teiToHast, odd)
     .use(rehypeStringify)
     .freeze()

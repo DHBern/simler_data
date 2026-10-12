@@ -11,7 +11,7 @@
 
 import { BEHAVIOURS } from '../tei/behaviours.ts'
 import { attr, elementChildren, findFirst, localName, parse, plainText, textOf, type Element } from '../tei/xast.ts'
-import { bool, compileXPath, type Pos, type XPath } from './xpath.ts'
+import { bool, compileXPath, str, type Pos, type XPath } from './xpath.ts'
 
 export interface Model {
   /** `<ident>-<n>`, by the model's place among its element's: what reports and records name it by. */
@@ -35,6 +35,8 @@ export interface Odd {
   models: Record<string, Model[]>
   /** Whether an element, where it stands, renders as a block or inline: by the base model it takes. */
   flow: (node: Element, up: Element[]) => 'block' | 'inline' | undefined
+  /** Whether an element is a joined line end: its base model is a `line` break with a `label`, the print's hyphen. */
+  joins: (node: Element, up: Element[]) => boolean
   /** Suggested and closed values, by element and attribute. */
   values: Record<string, Record<string, Set<string>>>
   /** Rendition ids declared in `<tagsDecl>`. */
@@ -99,19 +101,24 @@ const rules = (el: Element, selector: string) => elementChildren(el, 'outputRend
 
 export function readOdd(xml: string, tokensCss = ''): Odd {
   const tree = parse(xml)
-  /** An element's answer, once: where it stands does not change. */
-  const cached = new WeakMap<Element, ReturnType<Odd['flow']>>()
+  /** An element's base model, once: where it stands does not change. */
+  const cached = new WeakMap<Element, Model | undefined>()
+  const base = (node: Element, up: Element[]) => {
+    if (!cached.has(node)) cached.set(node, selectOutput(odd.models[localName(node.name)] ?? [], { node, up }))
+    return cached.get(node)
+  }
   const odd: Odd = {
     models: {},
     flow: (node, up) => {
-      if (cached.has(node)) return cached.get(node)
-      const m = selectOutput(odd.models[localName(node.name)] ?? [], { node, up })
+      const m = base(node, up)
       // Within a sequence, `text` is literal content, not a container.
       const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
       const flows = kinds.map((b) => BEHAVIOURS[b]?.flow)
-      const flow = flows.includes('block') ? 'block' : flows.every((f) => f === 'inline') ? 'inline' : undefined
-      cached.set(node, flow)
-      return flow
+      return flows.includes('block') ? 'block' : flows.every((f) => f === 'inline') ? 'inline' : undefined
+    },
+    joins: (node, up) => {
+      const m = base(node, up)
+      return m?.behaviour === 'break' && 'label' in m.params && str(m.params.type?.({ node, up }) ?? '') === 'line'
     },
     values: {},
     renditions: new Set(),

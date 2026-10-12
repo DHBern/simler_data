@@ -1639,7 +1639,9 @@
           <constraintSpec ident="lb-joined" scheme="schematron">
             <desc>A joined line end continues a word of its own line, so it does not open its
               element; the line of a catchword ends with a plain <gi>lb</gi>, as in the DTA base
-              format.</desc>
+              format. A hyphen at a plain line end is an ellipsis (before <mentioned>und</mentioned>
+              or <mentioned>oder</mentioned>), a catchword's, or a turnover's (<att>next</att>);
+              any other is a joined line end not marked as one.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lb[@break='no']">
                 <sch:report role="warning" test="not(preceding-sibling::node()[normalize-space() or self::*])">[S-LBJ]
@@ -1655,6 +1657,14 @@
                 <sch:report role="warning" test="matches(string-join(following-sibling::node()[position() le 2] ! string(), ''), '^\s*und([\s/.,:;!?]|$)', 'i')">[S-LBU]
                   The next word is "und": the hyphen ends a word (Geburt- und Sterb-Getichte), so the
                   line end is a plain lb.</sch:report>
+              </sch:rule>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lb[not(@break)]">
+                <sch:let name="end" value="(preceding-sibling::node()[normalize-space()][1]/descendant-or-self::text()[normalize-space()])[last()]"/>
+                <sch:report role="warning" test="matches($end, '(^|[^-])[-¬⸗&#xAD;&#x2010;&#x2011;]\s*$')
+                    and not($end/ancestor::tei:fw or $end/ancestor::*[@next])
+                    and not(matches(following-sibling::node()[normalize-space()][1], '^\s*(und|oder)([\s/.,:;!?]|$)', 'i'))">[S-LBH]
+                  A hyphen ends the line, but the line end is not joined: if the word continues,
+                  write lb break="no"; if the hyphen ends a word, nothing is to be done.</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
