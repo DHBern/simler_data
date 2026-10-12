@@ -1485,7 +1485,7 @@
               </valList>
             </attDef>
           </attList>
-          <!-- set where the print sets it, and kept out of the search index -->
+          <!-- set where the print sets it, and kept out of the search index and the reading text -->
           <modelGrp useSourceRendition="true">
             <outputRendition>font-family: var(--f-text); font-size: 0.7em; color: rgb(var(--c-muted)); margin: 0.4em 0;</outputRendition>
             <!-- Forme work the print sets on one line is two fw in a row: the first floats, so the
@@ -1503,6 +1503,7 @@
             </model>
             <model behaviour="block"/>
           </modelGrp>
+          <model output="normalized" behaviour="omit"/>
           <model output="plain" behaviour="omit"/>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1698,7 +1699,9 @@
             <model behaviour="break">
               <param name="type" value="'line'"/>
             </model>
-            <model behaviour="text">
+            <!-- the line end is a word boundary, except a forme work line's: the text's own line
+                 end before it already is one, and a word joined across the page goes on after it -->
+            <model behaviour="text" predicate="not(preceding-sibling::node()[normalize-space() or self::*][1][self::fw])">
               <param name="content" value="' '"/>
             </model>
           </modelSequence>

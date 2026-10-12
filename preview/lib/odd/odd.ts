@@ -37,6 +37,8 @@ export interface Odd {
   flow: (node: Element, up: Element[]) => 'block' | 'inline' | undefined
   /** Whether an element is a joined line end: its base model is a `line` break with a `label`, the print's hyphen. */
   joins: (node: Element, up: Element[]) => boolean
+  /** Whether the `plain` output, the search text, leaves the element out: page furniture, the apparatus. */
+  silent: (node: Element, up: Element[]) => boolean
   /** Suggested and closed values, by element and attribute. */
   values: Record<string, Record<string, Set<string>>>
   /** Rendition ids declared in `<tagsDecl>`. */
@@ -69,7 +71,8 @@ const readsParam = (behaviour: string, name: string) =>
 /** The name of the page's own output: a model may mark itself for it, or leave `@output` off. */
 const WEB = 'web'
 /** Outputs that render on their own, rather than as a view over the page. */
-const ALONE = [WEB, 'page', 'plain']
+const PLAIN = 'plain'
+const ALONE = [WEB, 'page', PLAIN]
 
 /** Where a view is on: the page says so, or its switch is checked — which needs no script. */
 const on = (output: string) => `:is([data-${output}='on'], :root:has(#view-${output}:checked))`
@@ -120,6 +123,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
       const m = base(node, up)
       return m?.behaviour === 'break' && 'label' in m.params && str(m.params.type?.({ node, up }) ?? '') === 'line'
     },
+    silent: (node, up) => select(odd.models[localName(node.name)] ?? [], { node, up }, PLAIN)?.behaviour === 'omit',
     values: {},
     renditions: new Set(),
     css: '',

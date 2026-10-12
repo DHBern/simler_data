@@ -40,13 +40,15 @@ interface LineEdge {
   gap: Text[]
 }
 
-/** unified plugin: normalise the hyphen at every joined line end; `flow` and `joins` from the ODD. */
-export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins'>], Root, Root> = function ({ flow, joins }) {
+/** unified plugin: normalise the hyphen at every joined line end; `flow`, `joins` and `silent` from the ODD. */
+export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins' | 'silent'>], Root, Root> = function ({ flow, joins, silent }) {
   /**
    * Where the printed line ends before `from` (`step` -1), or the next one starts
    * after it (`step` 1) — `null` where a block is in between, and so where nothing
    * is joined. Inline elements are looked into: the corpus has
-   * `<hi>ge-</hi><lb break="no"/>` as well as bare text.
+   * `<hi>ge-</hi><lb break="no"/>` as well as bare text. The word goes on past what the
+   * search text leaves out: across a page, after the catchword, the page break and the
+   * running head.
    */
   function lineEdge(list: ElementContent[], from: number, step: 1 | -1, up: Element[], gap: Text[] = []): LineEdge | null {
     for (let i = from + step; i >= 0 && i < list.length; i += step) {
@@ -59,6 +61,7 @@ export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins'>], Root, Root> =
         return { text: node, gap }
       }
       if (isElement(node)) {
+        if (step > 0 && silent(node, up)) continue
         if (flow(node, up) === 'block') return null
         const kids = children(node) as ElementContent[]
         const inner = lineEdge(kids, step > 0 ? -1 : kids.length, step, [...up, node], gap)
