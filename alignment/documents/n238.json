@@ -1,0 +1,309 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n238-B_1653",
+      "tokens": [
+        {"t": "6.", "n": "6"},
+        {"t": " "},
+        {"t": "Allein", "n": "alein"},
+        {"t": " "},
+        {"t": "von", "n": "uon"},
+        {"t": " "},
+        {"t": "oben"},
+        {"t": " "},
+        {"t": "herab.", "n": "herab"},
+        {"t": "Getreüe", "n": "getreue"},
+        {"t": " "},
+        {"t": "Lehrer", "n": "lerer"},
+        {"t": " "},
+        {"t": "ſeind", "n": "seint"},
+        {"t": " "},
+        {"t": "gefüllte", "n": "gefulte"},
+        {"t": " "},
+        {"t": "Gſchirꝛ", "n": "gschir"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Ehren;", "n": "ehren"},
+        {"t": "dem", "n": "tem"},
+        {"t": " "},
+        {"t": "ſeelendurſt", "n": "selenturst"},
+        {"t": " "},
+        {"t": "zuͦ", "n": "zu"},
+        {"t": " "},
+        {"t": "guͦt;", "n": "gut"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "leben"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "lehren:", "n": "lern"},
+        {"t": "die/", "n": "tie"},
+        {"t": " "},
+        {"t": "deren", "n": "tern"},
+        {"t": " "},
+        {"t": "Leben", "n": "leben"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "ihrer"},
+        {"t": " "},
+        {"t": "lehre", "n": "lere"},
+        {"t": " "},
+        {"t": "ſtim͂t/", "n": "stimt"},
+        {"t": "ſeind", "n": "seint"},
+        {"t": " "},
+        {"t": "Schandgeſchirꝛ'/", "n": "schantgeschir"},
+        {"t": " "},
+        {"t": "auf"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Herꝛ", "n": "her"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "zorn"},
+        {"t": " "},
+        {"t": "er-", "n": "er"},
+        {"t": "grim͂t.", "n": "grimt"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n238"
+    },
+    {
+      "siglum": "C",
+      "name": "n238-C_1663_dok",
+      "tokens": [
+        {"t": "173.", "n": "173"},
+        {"t": " "},
+        {"t": "Allein", "n": "alein"},
+        {"t": " "},
+        {"t": "von", "n": "uon"},
+        {"t": " "},
+        {"t": "oben"},
+        {"t": " "},
+        {"t": "herab.", "n": "herab"},
+        {"t": "Getreue", "n": "getreue"},
+        {"t": " "},
+        {"t": "Lehrer", "n": "lerer"},
+        {"t": " "},
+        {"t": "ſeind", "n": "seint"},
+        {"t": " "},
+        {"t": "gefuͦllte", "n": "gefulte"},
+        {"t": " "},
+        {"t": "Gſchirꝛ", "n": "gschir"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Ehren;", "n": "ehren"},
+        {"t": "dem", "n": "tem"},
+        {"t": " "},
+        {"t": "Seelendurſt", "n": "selenturst"},
+        {"t": " "},
+        {"t": "zu"},
+        {"t": " "},
+        {"t": "gut;", "n": "gut"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "leben"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "lehren:", "n": "lern"},
+        {"t": "die/", "n": "tie"},
+        {"t": " "},
+        {"t": "deren", "n": "tern"},
+        {"t": " "},
+        {"t": "Leben", "n": "leben"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "ihrer"},
+        {"t": " "},
+        {"t": "Lehre", "n": "lere"},
+        {"t": " "},
+        {"t": "ſtim̃t/", "n": "stimt"},
+        {"t": "ſeind", "n": "seint"},
+        {"t": " "},
+        {"t": "Schandgeſchirꝛ/", "n": "schantgeschir"},
+        {"t": " "},
+        {"t": "auf"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Herꝛ", "n": "her"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "zorn"},
+        {"t": " "},
+        {"t": "ergrim̃t.", "n": "ergrimt"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n238"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 9]}, "C": {"span": [0, 9]}},
+      "columns": [
+        {
+          "spans": {"B": [0, 1], "C": [0, 1]},
+          "relation": {
+            "type": "other",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ only in the verse number (6 vs 173), which is a structural label, not a variation in the text content itself."
+          }
+        },
+        {"spans": {"B": [2, 3], "C": [2, 3]}},
+        {"spans": {"B": [4, 5], "C": [4, 5]}},
+        {"spans": {"B": [6, 7], "C": [6, 7]}},
+        {"spans": {"B": [8, 9], "C": [8, 9]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [9, 22]}, "C": {"span": [9, 22]}},
+      "columns": [
+        {
+          "spans": {"B": [9, 10], "C": [9, 10]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [11, 12], "C": [11, 12]}},
+        {"spans": {"B": [13, 14], "C": [13, 14]}},
+        {
+          "spans": {"B": [15, 16], "C": [15, 16]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [17, 18], "C": [17, 18]}},
+        {"spans": {"B": [19, 20], "C": [19, 20]}},
+        {"spans": {"B": [21, 22], "C": [21, 22]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [22, 39]}, "C": {"span": [22, 39]}},
+      "columns": [
+        {"spans": {"B": [22, 23], "C": [22, 23]}},
+        {
+          "spans": {"B": [24, 25], "C": [24, 25]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
+        },
+        {
+          "spans": {"B": [26, 27], "C": [26, 27]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {
+          "spans": {"B": [28, 29], "C": [28, 29]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [30, 31], "C": [30, 31]}},
+        {"spans": {"B": [32, 33], "C": [32, 33]}},
+        {"spans": {"B": [34, 35], "C": [34, 35]}},
+        {"spans": {"B": [36, 37], "C": [36, 37]}},
+        {"spans": {"B": [38, 39], "C": [38, 39]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [39, 54]}, "C": {"span": [39, 54]}},
+      "columns": [
+        {"spans": {"B": [39, 40], "C": [39, 40]}},
+        {"spans": {"B": [41, 42], "C": [41, 42]}},
+        {"spans": {"B": [43, 44], "C": [43, 44]}},
+        {"spans": {"B": [45, 46], "C": [45, 46]}},
+        {"spans": {"B": [47, 48], "C": [47, 48]}},
+        {"spans": {"B": [49, 50], "C": [49, 50]}},
+        {
+          "spans": {"B": [51, 52], "C": [51, 52]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [53, 54], "C": [53, 54]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        }
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [54, 71]}, "C": {"span": [54, 71]}},
+      "columns": [
+        {"spans": {"B": [54, 55], "C": [54, 55]}},
+        {
+          "spans": {"B": [56, 57], "C": [56, 57]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [58, 59], "C": [58, 59]}},
+        {"spans": {"B": [60, 61], "C": [60, 61]}},
+        {"spans": {"B": [62, 63], "C": [62, 63]}},
+        {"spans": {"B": [64, 65], "C": [64, 65]}},
+        {"spans": {"B": [66, 67], "C": [66, 67]}},
+        {"spans": {"B": [68, 69], "C": [68, 69]}},
+        {
+          "spans": {"B": [70, 71], "C": [70, 71]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is a line-break hyphenation in B ('er-') versus the full word with a superscript n in C ('ergrim̃t'). This falls under word division and hyphenation."
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0004"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [71, 72]}, "C": {"missing": true}},
+      "columns": [{"spans": {"B": [71, 72]}}],
+      "refs": {"B": ["B-l0005"]}
+    }
+  ]
+}

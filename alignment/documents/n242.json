@@ -1,0 +1,264 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n242-B_1653",
+      "tokens": [
+        {"t": "10.", "n": "10"},
+        {"t": " "},
+        {"t": "Mit", "n": "mit"},
+        {"t": " "},
+        {"t": "Hofnungsflüglen.", "n": "hofnungsfluglen"},
+        {"t": "Auß", "n": "aus"},
+        {"t": " "},
+        {"t": "aͤüſſerſter", "n": "auserster"},
+        {"t": " "},
+        {"t": "gefahr/", "n": "gefar"},
+        {"t": " "},
+        {"t": "zuͦ", "n": "zu"},
+        {"t": " "},
+        {"t": "waſſer", "n": "waser"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "zuͦ", "n": "zu"},
+        {"t": " "},
+        {"t": "lande/", "n": "lante"},
+        {"t": "Leibs", "n": "leibs"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Seelen", "n": "seln"},
+        {"t": " "},
+        {"t": "halb;", "n": "halb"},
+        {"t": " "},
+        {"t": "wo"},
+        {"t": " "},
+        {"t": "keine"},
+        {"t": " "},
+        {"t": "rettungshande;", "n": "retungshante"},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "Hofnungsflüglen", "n": "hofnungsfluglen"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "glaͤubig", "n": "glaubig"},
+        {"t": " "},
+        {"t": "obſich", "n": "obsich"},
+        {"t": "ſchwingt/", "n": "schwingt"},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "durch", "n": "turch"},
+        {"t": " "},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "Firmament", "n": "firmament"},
+        {"t": " "},
+        {"t": "zuͦ", "n": "zu"},
+        {"t": " "},
+        {"t": "ſeinem", "n": "seinem"},
+        {"t": " "},
+        {"t": "Retter", "n": "reter"},
+        {"t": " "},
+        {"t": "dringt.", "n": "tringt"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n242"
+    },
+    {
+      "siglum": "C",
+      "name": "n242-C_1663_dok",
+      "tokens": [
+        {"t": "177.", "n": "177"},
+        {"t": " "},
+        {"t": "Mit", "n": "mit"},
+        {"t": " "},
+        {"t": "Hofnungsflüglen.", "n": "hofnungsfluglen"},
+        {"t": "Auß", "n": "aus"},
+        {"t": " "},
+        {"t": "aͤüſſerſter", "n": "auserster"},
+        {"t": " "},
+        {"t": "gefahr/", "n": "gefar"},
+        {"t": " "},
+        {"t": "zu"},
+        {"t": " "},
+        {"t": "waſſer", "n": "waser"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "zu"},
+        {"t": " "},
+        {"t": "lande/", "n": "lante"},
+        {"t": "Leibs", "n": "leibs"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Seelen", "n": "seln"},
+        {"t": " "},
+        {"t": "halb;", "n": "halb"},
+        {"t": " "},
+        {"t": "wo"},
+        {"t": " "},
+        {"t": "keine"},
+        {"t": " "},
+        {"t": "rettungshande:", "n": "retungshante"},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "Hofnungsflüglen", "n": "hofnungsfluglen"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "glaͤubig", "n": "glaubig"},
+        {"t": " "},
+        {"t": "obſich", "n": "obsich"},
+        {"t": "ſchwingt/", "n": "schwingt"},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "durch", "n": "turch"},
+        {"t": " "},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "Firmament", "n": "firmament"},
+        {"t": " "},
+        {"t": "zu"},
+        {"t": " "},
+        {"t": "ſeinem", "n": "seinem"},
+        {"t": " "},
+        {"t": "Retter", "n": "reter"},
+        {"t": " "},
+        {"t": "dringt.", "n": "tringt"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n242"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 5]}, "C": {"span": [0, 5]}},
+      "columns": [
+        {
+          "spans": {"B": [0, 1], "C": [0, 1]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is the use of a period (.) versus a semicolon (;) at the end of the line, which is a punctuation variation."
+          }
+        },
+        {"spans": {"B": [2, 3], "C": [2, 3]}},
+        {"spans": {"B": [4, 5], "C": [4, 5]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [5, 20]}, "C": {"span": [5, 20]}},
+      "columns": [
+        {"spans": {"B": [5, 6], "C": [5, 6]}},
+        {"spans": {"B": [7, 8], "C": [7, 8]}},
+        {"spans": {"B": [9, 10], "C": [9, 10]}},
+        {
+          "spans": {"B": [11, 12], "C": [11, 12]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [13, 14], "C": [13, 14]}},
+        {"spans": {"B": [15, 16], "C": [15, 16]}},
+        {
+          "spans": {"B": [17, 18], "C": [17, 18]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [19, 20], "C": [19, 20]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [20, 35]}, "C": {"span": [20, 35]}},
+      "columns": [
+        {"spans": {"B": [20, 21], "C": [20, 21]}},
+        {"spans": {"B": [22, 23], "C": [22, 23]}},
+        {"spans": {"B": [24, 25], "C": [24, 25]}},
+        {"spans": {"B": [26, 27], "C": [26, 27]}},
+        {"spans": {"B": [28, 29], "C": [28, 29]}},
+        {"spans": {"B": [30, 31], "C": [30, 31]}},
+        {"spans": {"B": [32, 33], "C": [32, 33]}},
+        {
+          "spans": {"B": [34, 35], "C": [34, 35]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [35, 46]}, "C": {"span": [35, 46]}},
+      "columns": [
+        {"spans": {"B": [35, 36], "C": [35, 36]}},
+        {"spans": {"B": [37, 38], "C": [37, 38]}},
+        {"spans": {"B": [39, 40], "C": [39, 40]}},
+        {"spans": {"B": [41, 42], "C": [41, 42]}},
+        {"spans": {"B": [43, 44], "C": [43, 44]}},
+        {"spans": {"B": [45, 46], "C": [45, 46]}}
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [46, 47]}, "C": {"span": [46, 47]}},
+      "columns": [{"spans": {"B": [46, 47], "C": [46, 47]}}],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [47, 62]}, "C": {"span": [47, 62]}},
+      "columns": [
+        {"spans": {"B": [47, 48], "C": [47, 48]}},
+        {"spans": {"B": [49, 50], "C": [49, 50]}},
+        {"spans": {"B": [51, 52], "C": [51, 52]}},
+        {"spans": {"B": [53, 54], "C": [53, 54]}},
+        {
+          "spans": {"B": [55, 56], "C": [55, 56]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [57, 58], "C": [57, 58]}},
+        {"spans": {"B": [59, 60], "C": [59, 60]}},
+        {"spans": {"B": [61, 62], "C": [61, 62]}}
+      ],
+      "refs": {"B": ["B-l0005"], "C": ["C-l0004"]}
+    }
+  ]
+}

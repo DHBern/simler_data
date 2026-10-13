@@ -12,8 +12,9 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
 
-import { CATEGORIES, FILTERS, loadSynopses, numberLines } from '../alignments'
-import { synopsesPage, synopsisPage } from '../synopsis'
+import { CATEGORIES, loadSynopses, numberLines, STEPS } from '../alignments'
+import { findingsPage } from '../page'
+import { synopsesPage, synopsisHref, synopsisPage } from '../synopsis'
 
 /**
  * An Alignment JSON document, as `alignment/pipeline.py` writes them. A row
@@ -144,7 +145,7 @@ test("a place keeps the type the pipeline's rules gave it; one nobody typed is o
 
   // The page carries the category, so the reader can switch it off and colour by it.
   const page = synopsisPage(synopsis)
-  assert.match(page, /<span class="var" data-group="3-1" data-cat="spelling" data-gone="0" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="3-1" data-cat="spelling" data-step="doubled letters" data-state="proposed"/)
   assert.match(page, /<span class="var" data-group="2-2" data-cat="open"/)
   assert.match(page, /<span class="app-rel" data-by="rule" title="Regel, nicht bestätigt · doubled letters">Schreibung/)
 })
@@ -155,26 +156,24 @@ test('a witness that reads nothing is a difference, and a row without one is qui
   assert.equal(synopsis.segments[0].differs, true)
   const quiet = synopsisPage(await loadBundle())
   assert.match(quiet, /<tr id="seg-2" class="quiet">/)
-  assert.match(quiet, /<i data-row="2" data-level="0" class="quiet"/)
 })
 
-test('the filters a reader can add are recorded per place, as a bit per filter set', async () => {
+test('each place carries the step of the rule cascade that settled it, for the reader to leave out', async () => {
   const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7', C: 'tei/C_1663_dok.xml#n7' }, [
-    { cells: { A: ['Liebe', 'ſinnen/', 'figur'], B: ['liebe', 'ſinnen', 'figur'], C: ['liebe', 'ſinnen', 'geſtalt'] },
-      relations: { 0: rule('orthographic', 'case'), 1: rule('punctuation', 'punctuation') } },
+    { cells: { A: ['Liebe', 'ſinnen/', 'figur', 'auff'], B: ['liebe', 'ſinnen', 'figur', 'auf'], C: ['liebe', 'ſinnen', 'geſtalt', 'auf'] },
+      relations: { 0: rule('orthographic', 'case'), 1: rule('punctuation', 'punctuation'), 3: { type: 'spelling' } } },
   ])
   const dir = await mkdtemp(join(tmpdir(), 'filters-'))
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
   const [synopsis] = await loadSynopses(dir)
-  const [capital, virgule, word] = synopsis.segments[0].apparatus
-  const bit = (name: (typeof FILTERS)[number]) => 1 << FILTERS.indexOf(name)
-  const goneUnder = (e: { gone: number }, set: number) => (e.gone >> set & 1) === 1
+  const [capital, virgule, word, confirmed] = synopsis.segments[0].apparatus
 
-  assert.ok(goneUnder(capital, bit('case')) && goneUnder(capital, bit('case') | bit('punctuation')))
-  assert.ok(!goneUnder(capital, bit('punctuation')))
-  assert.ok(goneUnder(virgule, bit('punctuation')) && !goneUnder(virgule, bit('case')))
-  assert.equal(word.gone, 0) // a different word stays one under every filter
+  // The rule's own step; for a person's type, which has none, the last step of that type.
+  assert.deepEqual([capital, virgule, word, confirmed].map((e) => e.step), ['case', 'punctuation', undefined, 'spelling variants'])
   assert.deepEqual([capital, virgule, word].map((e) => e.category), ['spelling', 'punctuation', 'open'])
+  const page = synopsisPage(synopsis)
+  assert.match(page, /<span class="var" data-group="1-1" data-cat="spelling" data-step="case" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="1-3" data-cat="open" data-state="open"/) // nothing to leave out
 
   // Which columns read alike, for colouring against one witness: A and B share `figur`.
   assert.deepEqual(word.alike, { A: ['A', 'B'], B: ['A', 'B'], C: ['C'] })
@@ -210,7 +209,9 @@ test('the page offers the reading options, and the script that drives them', asy
   // A chip per category, with its count; a box per filter and per witness.
   assert.equal((page.match(/data-syn-cat=/g) ?? []).length, CATEGORIES.length)
   assert.match(page, /<label class="syn-chip"[^>]* data-n="1"><input type="checkbox" data-syn-cat="spelling" checked> Schreibung <span class="n">1<\/span>/)
-  assert.equal((page.match(/data-syn-ignore=/g) ?? []).length, FILTERS.length)
+  // A box per step of the cascade, all on by default.
+  assert.equal((page.match(/data-syn-ignore="[^"]+" checked>/g) ?? []).length, STEPS.length)
+  assert.match(page, /title="ck\/k, th\/t[^"]*"><input type="checkbox" data-syn-ignore="spelling variants" checked> Schreibvarianten/)
   // *sachliche* is everything but punctuation and spelling.
   assert.match(page, /data-syn-preset="grammatical lexical order omission other open"\s+title="[^"]*">sachliche/)
   assert.equal((page.match(/data-syn-witness=/g) ?? []).length, synopsis.witnesses.length)
@@ -229,7 +230,7 @@ test('the apparatus of a segment lists its readings', async () => {
 
   assert.equal((page.match(/<tr class="app">/g) ?? []).length, 2)
   // Each entry carries what the reader's choice is matched against.
-  assert.match(page, /<li data-group="3-1" data-cat="spelling" data-gone="0">/)
+  assert.match(page, /<li data-group="3-1" data-cat="spelling" data-step="doubled letters">/)
   // Lemma, bracket, the departing readings with their sigla.
   assert.match(page, /<li data-group="2-2"[^>]*>\s*<span class="rdg lem">nimmermehr <i>A<\/i><\/span> <span class="sep">]<\/span> <span class="rdg">glaube <i>F42A<\/i><\/span>/)
 })
@@ -254,16 +255,13 @@ test('each witness gets its distance from the others, segment by segment', async
   assert.deepEqual(spelling.departures, { A: 1, F42A: 1 })
 })
 
-test('the strip holds a line per segment, as long as that segment disagrees', async () => {
-  const [synopsis] = await load()
-  const page = synopsisPage(synopsis)
-
-  assert.equal((page.match(/<i data-row=/g) ?? []).length, 3)
-  assert.match(page, /<i data-row="2" data-level="2"/)
-  assert.match(page, /<u class="syn-here">/)
-  // Ticks say where the next poem of a bundle starts; a single poem has none.
-  assert.doesNotMatch(page, /class="tick"/)
-  assert.match(synopsisPage(await loadBundle()), /<i data-row="3"[^>]* class="tick quiet"/)
+test('beside the bar, a sparkline: a bar per segment, as high as it disagrees, and a link to it', async () => {
+  const page = synopsisPage((await load())[0])
+  assert.match(page, /<div class="syn-glance"><span class="syn-mix">[\s\S]*?<\/span><svg class="syn-spark" viewBox="0 0 3 3"/)
+  // The heading reads in one witness only; segment 2 is a word apart, segment 3 a spelling.
+  assert.match(page, /<a href="#seg-1"><title>Segment 1<\/title><rect x="0" y="0" width="1" height="3" class="hit"\/><\/a>/)
+  assert.match(page, /<a href="#seg-2"><title>Segment 2<\/title><rect[^>]*class="hit"\/><rect x="1" y="1" width="0.8" height="2"\/><\/a>/)
+  assert.doesNotMatch(page, /syn-strip|data-row=/) // the strip it replaces
 })
 
 test('inside a variant, only the characters that differ are marked', async () => {
@@ -361,14 +359,19 @@ test('the rows the alignment editor doubts are marked, with its reasons', async 
   const dir = await mkdtemp(join(tmpdir(), 'doubts-'))
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
   const estimate = join(await mkdtemp(join(tmpdir(), 'estimate-')), 'estimate.json') // beside documents/, not in it
-  await writeFile(estimate, JSON.stringify({ poems: { n7: { doubts: { s2: ['B is missing'] } } } }), 'utf8')
+  await writeFile(estimate, JSON.stringify({ poems: { n7: { doubts: { s2: ['B is missing'] },
+    typos: [{ segment: 's1', readings: { A: 'ein', B: 'eyn' }, letters: 'i/y' }] } } }), 'utf8')
   const [synopsis] = await loadSynopses(dir, '', estimate)
   assert.deepEqual(synopsis.segments.map((s) => s.doubts), [[], ['B is missing']])
   const page = synopsisPage(synopsis)
   assert.match(page, /data-syn-link>2<\/a><span class="doubt" title="Ausrichtung zweifelhaft: B is missing">\?<\/span>/)
   assert.match(page, /1 Segment ist zweifelhaft ausgerichtet\./)
-  assert.match(page, /<i data-row="2" data-level="0" class="quiet doubt"/)
   assert.match(synopsesPage([synopsis]), /<td class="num">1<\/td>\s*<\/tr>/) // the overview's column
+  // The probable typos, by row number, as the Hinweise page lists them.
+  assert.deepEqual(synopsis.typos, [{ n: 1, readings: { A: 'ein', B: 'eyn' }, letters: 'i/y' }])
+  const typo = { href: `${synopsisHref('n7')}#seg-1`, title: 'n7 · Segment 1', file: 'n7', detail: 'i/y: A ein · B eyn' }
+  assert.match(findingsPage([], [], [], [typo]),
+    /Mögliche Transkriptionsfehler \(aus den Synopsen\) <span class="flag">1<\/span>[\s\S]*?<a href="synopse-n7\.html#seg-1">n7 · Segment 1<\/a>/)
   // Without a measurement nothing is marked, and nothing fails.
   assert.equal((await loadSynopses(dir, '', join(dir, 'none.json')))[0].doubtful, 0)
 })
@@ -465,7 +468,7 @@ test('the register lists each set of readings once, the most frequent first', as
 
   const page = synopsisPage(synopsis)
   assert.match(page, /<summary>Lesarten: 2 verschiedene an 2 Stellen<\/summary>/)
-  assert.match(page, /<li data-cat="spelling" data-gone="0"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
+  assert.match(page, /<li data-cat="spelling" data-step="doubled letters"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
 })
 
 test("a document's classifications reach the apparatus, a model's as provisional", async () => {
@@ -495,6 +498,6 @@ test("a document's classifications reach the apparatus, a model's as provisional
   assert.match(page, /<span class="app-rel" data-by="model" title="Modell 82 %, nicht bestätigt · m · doubled f">Schreibung <small>Modell 82 %<\/small><\/span>/)
   // The reader can take the model's types back; the place says it is the model's.
   assert.match(page, /<input type="checkbox" data-syn-model checked> Modellvorschläge/)
-  assert.match(page, /<span class="var" data-group="1-3" data-cat="spelling" data-gone="\d+" data-by="model" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="1-3" data-cat="spelling" data-by="model" data-state="proposed"/)
   assert.doesNotMatch(synopsisPage((await load())[0]), /data-syn-model/) // no model, no switch
 })

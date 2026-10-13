@@ -1,0 +1,184 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n251-B_1653",
+      "tokens": [
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Haußthüren.", "n": "hausturen"},
+        {"t": "Den", "n": "ten"},
+        {"t": " "},
+        {"t": "Eyn-", "n": "ein"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Außgang", "n": "ausgang"},
+        {"t": " "},
+        {"t": "Gott", "n": "got"},
+        {"t": " "},
+        {"t": "bewahr", "n": "beuar"},
+        {"t": "vor", "n": "uor"},
+        {"t": " "},
+        {"t": "falſchem", "n": "falschem"},
+        {"t": " "},
+        {"t": "Freünd/", "n": "freunt"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "aller", "n": "aler"},
+        {"t": " "},
+        {"t": "gfahr!", "n": "gfar"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n251"
+    },
+    {
+      "siglum": "C",
+      "name": "n251-C_1663_dok",
+      "tokens": [
+        {"t": "2.", "n": "2"},
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Haußthür.", "n": "haustur"},
+        {"t": "Den", "n": "ten"},
+        {"t": " "},
+        {"t": "Ein-", "n": "ein"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Außgang", "n": "ausgang"},
+        {"t": " "},
+        {"t": "Gott", "n": "got"},
+        {"t": " "},
+        {"t": "bewahr", "n": "beuar"},
+        {"t": "für", "n": "fur"},
+        {"t": " "},
+        {"t": "allem", "n": "alem"},
+        {"t": " "},
+        {"t": "übel", "n": "ubel"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "gefahr!", "n": "gefar"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n251"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"missing": true}, "C": {"span": [0, 1]}},
+      "columns": [{"spans": {"C": [0, 1]}}],
+      "refs": {"C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [0, 5]}, "C": {"span": [1, 6]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [1, 2]}},
+        {"spans": {"B": [2, 3], "C": [3, 4]}},
+        {
+          "spans": {"B": [4, 5], "C": [5, 6]},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference between plural (Haußthüren) and singular (Haußthür) form."
+          }
+        }
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [5, 16]}, "C": {"span": [6, 17]}},
+      "columns": [
+        {"spans": {"B": [5, 6], "C": [6, 7]}},
+        {
+          "spans": {"B": [7, 8], "C": [8, 9]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
+        {"spans": {"B": [9, 10], "C": [10, 11]}},
+        {"spans": {"B": [11, 12], "C": [12, 13]}},
+        {"spans": {"B": [13, 14], "C": [14, 15]}},
+        {"spans": {"B": [15, 16], "C": [16, 17]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [16, 27]}, "C": {"span": [17, 26]}},
+      "columns": [
+        {
+          "spans": {"B": [16, 17], "C": [17, 18]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The prepositions 'vor' and 'für' are distinct words with different meanings (before/in front of vs. for/against)."
+          }
+        },
+        {
+          "spans": {"B": [18, 19], "C": [19, 20]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The words 'falſchem' (false) and 'allem' (all) are different adjectives with different meanings."
+          }
+        },
+        {
+          "spans": {"B": [20, 21], "C": [21, 22]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'Freünd' (friend) and 'übel' (evil) are different words with different meanings, indicating a lexical variation."
+          }
+        },
+        {"spans": {"B": [22, 23], "C": [23, 24]}},
+        {
+          "spans": {"B": [24, 25], "C": [25, 26]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ in the specific words used ('aller' vs 'gefahr' is a misalignment of the phrase 'vor falschem Freund und aller gfahr' vs 'für allem übel und gefahr', but looking at the specific pair provided 'aller' vs 'gefahr!', they are different words. However, usually these tasks align corre"
+          }
+        },
+        {"spans": {"B": [26, 27]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    }
+  ]
+}

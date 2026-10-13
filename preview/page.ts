@@ -394,7 +394,10 @@ function splitFinding(warning: string): [string, string] {
 }
 
 /** Every finding in the corpus, grouped by kind and largest group first: a worklist. */
-export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string[]): string {
+/** A finding from elsewhere than the documents, ready to list: where it is, and what. */
+export interface Finding { href: string, title: string, file: string, detail: string }
+
+export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string[], typos: Finding[] = []): string {
   const row = (doc: PreviewDoc, detail: string) => `<tr>
           <td><a href="${esc(encodeURI(doc.out))}">${esc(doc.title)}</a></td>
           <td class="file">${esc(doc.file)}</td><td>${esc(detail)}</td>
@@ -416,7 +419,11 @@ export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string
   // A document that renders no text comes first, then the ODD, which affects every document.
   const malformed = docs.filter((doc) => doc.malformed).map((doc) => row(doc, doc.malformed!))
   const body = group('XML nicht wohlgeformt', malformed, 'flag flag-error')
-    + aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage) + [...groups]
+    + aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage)
+    // What the synopses show: a reading one letter off, the kind a transcriber of Fraktur misreads.
+    + group('Mögliche Transkriptionsfehler (aus den Synopsen)', typos.map((t) => `<tr>
+          <td><a href="${esc(t.href)}">${esc(t.title)}</a></td><td class="file">${esc(t.file)}</td><td>${esc(t.detail)}</td>
+        </tr>`)) + [...groups]
       .sort(([a, x], [b, y]) => y.length - x.length || a.localeCompare(b, 'de'))
       .map(([kind, rows]) => group(kind, rows)).join('')
   const flagged = docs.filter((doc) => doc.malformed || doc.warnings.length).length

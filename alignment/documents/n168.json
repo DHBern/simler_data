@@ -1,0 +1,148 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n168-B_1653",
+      "tokens": [
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Buͤcher", "n": "bucher"},
+        {"t": " "},
+        {"t": "ins"},
+        {"t": " "},
+        {"t": "gemein.", "n": "gemein"},
+        {"t": "Die", "n": "tie"},
+        {"t": " "},
+        {"t": "Buͤcher/", "n": "bucher"},
+        {"t": " "},
+        {"t": "mehr", "n": "mer"},
+        {"t": " "},
+        {"t": "alß", "n": "als"},
+        {"t": " "},
+        {"t": "wehr", "n": "wer"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "waffen/", "n": "wafen"},
+        {"t": "uns"},
+        {"t": " "},
+        {"t": "nutzen", "n": "nuzen"},
+        {"t": " "},
+        {"t": "oder", "n": "oter"},
+        {"t": " "},
+        {"t": "ſchaden", "n": "schaten"},
+        {"t": " "},
+        {"t": "ſchaffen.", "n": "schafen"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n168"
+    },
+    {
+      "siglum": "C",
+      "name": "n168-C_1663_dok",
+      "tokens": [
+        {"t": "76.", "n": "76"},
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Buͤcher", "n": "bucher"},
+        {"t": " "},
+        {"t": "ins"},
+        {"t": " "},
+        {"t": "gemein.", "n": "gemein"},
+        {"t": "Die", "n": "tie"},
+        {"t": " "},
+        {"t": "Buͤcher/", "n": "bucher"},
+        {"t": " "},
+        {"t": "mehr", "n": "mer"},
+        {"t": " "},
+        {"t": "alß", "n": "als"},
+        {"t": " "},
+        {"t": "wehr", "n": "wer"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "waffen/", "n": "wafen"},
+        {"t": "uns"},
+        {"t": " "},
+        {"t": "nutzen", "n": "nuzen"},
+        {"t": " "},
+        {"t": "oder", "n": "oter"},
+        {"t": " "},
+        {"t": "ſchaden", "n": "schaten"},
+        {"t": " "},
+        {"t": "ſchaffen.", "n": "schafen"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n168"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"missing": true}, "C": {"span": [0, 1]}},
+      "columns": [{"spans": {"C": [0, 1]}}],
+      "refs": {"C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [0, 9]}, "C": {"span": [1, 10]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [1, 2]}},
+        {"spans": {"B": [2, 3], "C": [3, 4]}},
+        {"spans": {"B": [4, 5], "C": [5, 6]}},
+        {"spans": {"B": [6, 7], "C": [7, 8]}},
+        {"spans": {"B": [8, 9], "C": [9, 10]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [9, 22]}, "C": {"span": [10, 23]}},
+      "columns": [
+        {"spans": {"B": [9, 10], "C": [10, 11]}},
+        {"spans": {"B": [11, 12], "C": [12, 13]}},
+        {"spans": {"B": [13, 14], "C": [14, 15]}},
+        {"spans": {"B": [15, 16], "C": [16, 17]}},
+        {"spans": {"B": [17, 18], "C": [18, 19]}},
+        {"spans": {"B": [19, 20], "C": [20, 21]}},
+        {"spans": {"B": [21, 22], "C": [22, 23]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [22, 31]}, "C": {"span": [23, 32]}},
+      "columns": [
+        {"spans": {"B": [22, 23], "C": [23, 24]}},
+        {"spans": {"B": [24, 25], "C": [25, 26]}},
+        {"spans": {"B": [26, 27], "C": [27, 28]}},
+        {"spans": {"B": [28, 29], "C": [29, 30]}},
+        {"spans": {"B": [30, 31], "C": [31, 32]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    }
+  ]
+}

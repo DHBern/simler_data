@@ -5,7 +5,7 @@
  * knows nothing about the ODD, and the reading pages load none of its assets.
  */
 
-import { CATEGORIES, charDiff, FILTERS, type Category, type Entry, type Group, type Segment, type Synopsis, type Unit, type Witness } from './alignments'
+import { CATEGORIES, charDiff, type Category, type Entry, type Group, type Segment, type Step, type Synopsis, type Unit, type Witness } from './alignments'
 import { corpusPage, esc } from './page'
 
 /** Where a poem's synopsis lives; the pages sit flat beside the documents. */
@@ -31,8 +31,17 @@ const TYPE_LABELS: Record<string, string> = {
   lexical: 'Wortlaut', transposition: 'Umstellung', repetition: 'Wiederholung', uncertain: 'unsicher', other: 'sonstige',
 }
 
-const FILTER_LABELS: Record<(typeof FILTERS)[number], string> = {
-  punctuation: 'Interpunktion', case: 'Groß/klein', diacritics: 'Diakritika', 'long-s': 'ſ/s',
+/** The cascade's steps as *Vergleich ohne* offers them, in reading order: a name, and what it leaves out. */
+const STEP_LABELS: Record<Step, [string, string]> = {
+  punctuation: ['Interpunktion', 'Virgel, Komma, Punkt …, auch gegen nichts'],
+  case: ['Groß/klein', 'Wer / wer'],
+  diacritics: ['Diakritika', 'aͤ / ä, uͦ / u'],
+  'nasal stroke': ['Nasalstrich', 'meldẽ / melden, uñ / und'],
+  'long s, r rotunda': ['ſ/ꝛ', 'ſein / sein, Herꝛ / Herr'],
+  'u/v, i/j': ['u/v, i/j', 'vnd / und, jhn / ihn'],
+  'doubled letters': ['Doppelbuchstaben', 'auff / auf'],
+  'spelling variants': ['Schreibvarianten', 'ck/k, th/t, dt/t, tz/z, ß/s, y/i, aw/au, d/t, bt/pt, Dehnungs-h, -eren/-ern'],
+  'word division': ['Getrenntschreibung', 'Gottes ſohn / Gottesſohn'],
 }
 
 /**
@@ -45,29 +54,6 @@ function unitList(units: Unit[]): string {
   const link = (unit: Unit) =>
     `<a href="#seg-${unit.start}" title="${esc(unit.title)}"><b>${unit.n}</b> ${esc(unit.title)}</a>`
   return `<nav class="syn-units no-print" aria-label="Gedichte">${units.map(link).join('')}</nav>`
-}
-
-/**
- * The poem as a strip beside the table: a line per segment, as long and as dark
- * as that segment's widest disagreement, a tick where a poem of a bundle
- * begins, and a marker for what is on screen. Click or drag it to move.
- *
- * Without script it is still the shape of the poem's variance, evenly spaced by
- * segment; the script places each line at its row's real position and follows
- * the scrolling.
- */
-function synopsisStrip(synopsis: Synopsis): string {
-  const { segments, units } = synopsis
-  const line = (segment: Segment, i: number) => {
-    const level = Math.max(0, ...Object.values(segment.departures))
-    const at = (i / segments.length * 100).toFixed(3)
-    const classes = [units.length > 1 && segment.head && 'tick', !segment.differs && 'quiet',
-      (segment.doubts.length || segment.proposal) && 'doubt'].filter(Boolean).join(' ')
-    return `<i data-row="${segment.n}" data-level="${level}"${classes ? ` class="${classes}"` : ''} style="top:${at}%"></i>`
-  }
-  return `<div class="syn-strip no-print" data-syn-strip title="Das ganze Gedicht: je Segment eine Linie, je länger desto mehr weichen die Textzeugen ab. Klicken oder ziehen führt dorthin.">
-      ${segments.map(line).join('')}<u class="syn-here"></u>
-    </div>`
 }
 
 /**
@@ -122,13 +108,13 @@ function synopsisControls(synopsis: Synopsis): string {
 
   const chip = (c: Category) => `<label class="syn-chip" title="${esc(CATEGORY_LABELS[c][1])}" data-n="${counts.get(c) ?? 0}">` +
     `<input type="checkbox" data-syn-cat="${c}" checked> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
-  const filter = (f: (typeof FILTERS)[number], bit: number) =>
-    `<label class="ctrl"><input type="checkbox" data-syn-ignore="${bit}"> ${FILTER_LABELS[f]}</label>`
+  const filter = ([step, [label, title]]: [string, [string, string]]) =>
+    `<label class="ctrl" title="${esc(title)}"><input type="checkbox" data-syn-ignore="${esc(step)}" checked> ${esc(label)}</label>`
   const witness = (w: Witness, i: number) =>
     `<label><input type="checkbox" data-syn-witness="${i + 1}" checked> ${esc(w.siglum)}</label>`
 
   return `<form class="syn-bar no-print" data-syn-controls>
-      ${mixBar(counts, true)}
+      <div class="syn-glance">${mixBar(counts, true)}${sparkline(segments, true)}</div>
       <div class="syn-row">
         <span class="syn-label">Varianten</span>
         ${CATEGORIES.map(chip).join('')}
@@ -139,9 +125,9 @@ function synopsisControls(synopsis: Synopsis): string {
           <button type="button" data-syn-preset="">keine</button>
         </span>
       </div>
-      <div class="syn-row" title="Was beim Vergleich nicht als Unterschied zählt">
+      <div class="syn-row" title="Was beim Vergleich nicht als Unterschied zählt: die Stufen der Schreibregeln">
         <span class="syn-label">Vergleich ohne</span>
-        ${FILTERS.map(filter).join('')}
+        ${Object.entries(STEP_LABELS).map(filter).join('')}
       </div>
       <div class="syn-row">
         <label class="ctrl"><span class="syn-label">Färbung</span>
@@ -185,7 +171,7 @@ function readingRegister(groups: Group[]): string {
       form ? `<b>${esc(form)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')
     const where = group.places.slice(0, 12).map((n) =>
       `<a href="#seg-${n}">${n}</a>`).join(' ')
-    return `<li data-cat="${group.category}" data-gone="${group.gone}"${group.by === 'model' ? ' data-by="model"' : ''}>${forms}
+    return `<li data-cat="${group.category}"${group.step ? ` data-step="${group.step}"` : ''}${group.by === 'model' ? ' data-by="model"' : ''}>${forms}
         <span class="count">×${group.places.length}</span>
         <span class="places">${where}${group.places.length > 12 ? ' …' : ''}</span>
       </li>`
@@ -247,16 +233,23 @@ function pairMatrix(witnesses: Witness[], entries: Entry[]): string {
 
 /**
  * How much a poem varies, and where: its segments in at most 60 bins, each as
- * high as the widest disagreement in it — the strip's scale, in small.
+ * high as the widest disagreement in it (0 none, 1 a spelling, 2 a word, 3
+ * several). On a synopsis each bin links to its first segment.
  */
-function sparkline(segments: Segment[]): string {
+function sparkline(segments: Segment[], links = false): string {
   const bins = Math.min(60, segments.length)
-  const level = (i: number) => Math.max(0, ...segments
-    .slice(Math.floor(i * segments.length / bins), Math.floor((i + 1) * segments.length / bins))
-    .flatMap((s) => Object.values(s.departures)))
-  const bars = Array.from({ length: bins }, (_, i) => level(i))
-    .map((l, i) => l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : '').join('')
-  return `<svg class="syn-spark" viewBox="0 0 ${bins} 3" preserveAspectRatio="none" aria-hidden="true">${bars}</svg>`
+  const bin = (i: number) => segments.slice(Math.floor(i * segments.length / bins), Math.floor((i + 1) * segments.length / bins))
+  const bar = (i: number) => {
+    const part = bin(i)
+    const l = Math.max(0, ...part.flatMap((s) => Object.values(s.departures)))
+    if (!links) return l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : ''
+    const [first, last] = [part[0].n, part.at(-1)!.n]
+    // The full height catches the click; only the bar is drawn.
+    return `<a href="#seg-${first}"><title>Segment${first === last ? ` ${first}` : `e ${first}–${last}`}</title>` +
+      `<rect x="${i}" y="0" width="1" height="3" class="hit"/>${l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : ''}</a>`
+  }
+  return `<svg class="syn-spark" viewBox="0 0 ${bins} 3" preserveAspectRatio="none"${links ? ' role="img" aria-label="Verlauf der Abweichungen"' : ' aria-hidden="true"'}>` +
+    `${Array.from({ length: bins }, (_, i) => bar(i)).join('')}</svg>`
 }
 
 /**
@@ -357,7 +350,7 @@ function basisLine(synopsis: Synopsis): string {
 
 /** What the script reads to show, hide and count a place; a model's type it can take back. */
 const placeAttrs = (e: Entry) =>
-  `data-cat="${e.category}" data-gone="${e.gone}"${e.relation?.by === 'model' ? ' data-by="model"' : ''}`
+  `data-cat="${e.category}"${e.step ? ` data-step="${e.step}"` : ''}${e.relation?.by === 'model' ? ' data-by="model"' : ''}`
 
 /**
  * What is left to check in a row: the alignment editor's doubts, and a model's
@@ -443,7 +436,6 @@ export function synopsisPage(synopsis: Synopsis): string {
     <div data-synopsis data-colour="variance">
       ${synopsisControls(synopsis)}
       ${unitList(units)}
-      ${synopsisStrip(synopsis)}
       <div class="synopsis-wrap">
       <table class="synopsis">
         <thead>

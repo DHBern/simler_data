@@ -1,0 +1,205 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n265.ii-B_1653",
+      "tokens": [
+        {"t": "Ad", "n": "at"},
+        {"t": " "},
+        {"t": "Lectorem", "n": "lectorem"},
+        {"t": " "},
+        {"t": "PROOEMII", "n": "proemi"},
+        {"t": " "},
+        {"t": "SIMLERIANI.", "n": "simleriani"},
+        {"t": "PUlvere", "n": "puluere"},
+        {"t": " "},
+        {"t": "de", "n": "te"},
+        {"t": " "},
+        {"t": "Pyrio", "n": "pirio"},
+        {"t": " "},
+        {"t": "ſi", "n": "si"},
+        {"t": " "},
+        {"t": "vis", "n": "uis"},
+        {"t": " "},
+        {"t": "deflere", "n": "teflere"},
+        {"t": " "},
+        {"t": "ruinam,", "n": "ruinam"},
+        {"t": "Ette", "n": "ete"},
+        {"t": " "},
+        {"t": "deficiunt", "n": "teficiunt"},
+        {"t": " "},
+        {"t": "lachrymæ:", "n": "lachrimæ"},
+        {"t": " "},
+        {"t": "lege"},
+        {"t": " "},
+        {"t": "Carmina", "n": "carmina"},
+        {"t": " "},
+        {"t": "Vatis", "n": "uatis"},
+        {"t": "Simleri,", "n": "simleri"},
+        {"t": " "},
+        {"t": "lachrymas", "n": "lachrimas"},
+        {"t": " "},
+        {"t": "&"},
+        {"t": " "},
+        {"t": "ſufficienter", "n": "suficienter"},
+        {"t": " "},
+        {"t": "habebis.", "n": "habebis"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n265.ii"
+    },
+    {
+      "siglum": "C",
+      "name": "n265.ii-C_1663_dok",
+      "tokens": [
+        {"t": "Ad", "n": "at"},
+        {"t": " "},
+        {"t": "Lectorem", "n": "lectorem"},
+        {"t": " "},
+        {"t": "PROOEMII", "n": "proemi"},
+        {"t": " "},
+        {"t": "SIMLERIANI.", "n": "simleriani"},
+        {"t": "PUlvere", "n": "puluere"},
+        {"t": " "},
+        {"t": "de", "n": "te"},
+        {"t": " "},
+        {"t": "Pyrio", "n": "pirio"},
+        {"t": " "},
+        {"t": "ſi", "n": "si"},
+        {"t": " "},
+        {"t": "vis", "n": "uis"},
+        {"t": " "},
+        {"t": "deflere", "n": "teflere"},
+        {"t": " "},
+        {"t": "ruinam,", "n": "ruinam"},
+        {"t": "Et", "n": "et"},
+        {"t": " "},
+        {"t": "te"},
+        {"t": " "},
+        {"t": "deficiunt", "n": "teficiunt"},
+        {"t": " "},
+        {"t": "lachrymæ:", "n": "lachrimæ"},
+        {"t": " "},
+        {"t": "lege"},
+        {"t": " "},
+        {"t": "Carmina", "n": "carmina"},
+        {"t": " "},
+        {"t": "Vatis", "n": "uatis"},
+        {"t": "SIMLERI,", "n": "simleri"},
+        {"t": " "},
+        {"t": "lachrymas,", "n": "lachrimas"},
+        {"t": " "},
+        {"t": "&"},
+        {"t": " "},
+        {"t": "ſufficienter", "n": "suficienter"},
+        {"t": " "},
+        {"t": "habebis.", "n": "habebis"},
+        {"t": "FELIX", "n": "felix"},
+        {"t": " "},
+        {"t": "VVYSSIUS,", "n": "uisius"},
+        {"t": " "},
+        {"t": "Abbatiſſanæ", "n": "abatisanæ"},
+        {"t": " "},
+        {"t": "Eccleſiæ", "n": "eclesiæ"},
+        {"t": " "},
+        {"t": "Paſtor.", "n": "pastor"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n265.ii"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 7]}, "C": {"span": [0, 7]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [0, 1]}},
+        {"spans": {"B": [2, 3], "C": [2, 3]}},
+        {"spans": {"B": [4, 5], "C": [4, 5]}},
+        {"spans": {"B": [6, 7], "C": [6, 7]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [7, 20]}, "C": {"span": [7, 20]}},
+      "columns": [
+        {"spans": {"B": [7, 8], "C": [7, 8]}},
+        {"spans": {"B": [9, 10], "C": [9, 10]}},
+        {"spans": {"B": [11, 12], "C": [11, 12]}},
+        {"spans": {"B": [13, 14], "C": [13, 14]}},
+        {"spans": {"B": [15, 16], "C": [15, 16]}},
+        {"spans": {"B": [17, 18], "C": [17, 18]}},
+        {"spans": {"B": [19, 20], "C": [19, 20]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [20, 31]}, "C": {"span": [20, 33]}},
+      "columns": [
+        {
+          "spans": {"B": [20, 21], "C": [20, 23]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
+        {"spans": {"B": [22, 23], "C": [24, 25]}},
+        {"spans": {"B": [24, 25], "C": [26, 27]}},
+        {"spans": {"B": [26, 27], "C": [28, 29]}},
+        {"spans": {"B": [28, 29], "C": [30, 31]}},
+        {"spans": {"B": [30, 31], "C": [32, 33]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [31, 40]}, "C": {"span": [33, 42]}},
+      "columns": [
+        {
+          "spans": {"B": [31, 32], "C": [33, 34]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [33, 34], "C": [35, 36]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [35, 36], "C": [37, 38]}},
+        {"spans": {"B": [37, 38], "C": [39, 40]}},
+        {"spans": {"B": [39, 40], "C": [41, 42]}}
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"missing": true}, "C": {"span": [42, 51]}},
+      "columns": [
+        {"spans": {"C": [42, 43]}},
+        {"spans": {"C": [44, 45]}},
+        {"spans": {"C": [46, 47]}},
+        {"spans": {"C": [48, 49]}},
+        {"spans": {"C": [50, 51]}}
+      ],
+      "refs": {"C": ["C-l0004"]}
+    }
+  ]
+}

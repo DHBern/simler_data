@@ -1,0 +1,809 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n65.3-B_1653",
+      "tokens": [
+        {"t": "Wir", "n": "wir"},
+        {"t": " "},
+        {"t": "haben"},
+        {"t": " "},
+        {"t": "nichts"},
+        {"t": " "},
+        {"t": "hineyn", "n": "hinein"},
+        {"t": " "},
+        {"t": "gebracht"},
+        {"t": " "},
+        {"t": "in"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Welt:", "n": "welt"},
+        {"t": " "},
+        {"t": "ꝛc.", "n": "rc"},
+        {"t": "Wir", "n": "wir"},
+        {"t": " "},
+        {"t": "haben;", "n": "haben"},
+        {"t": " "},
+        {"t": "ſpricht", "n": "spricht"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Schrifft;", "n": "schrift"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "mitgebracht"},
+        {"t": " "},
+        {"t": "auf"},
+        {"t": "Erden:", "n": "erten"},
+        {"t": "ſo", "n": "so"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "bekañt/", "n": "bekant"},
+        {"t": " "},
+        {"t": "daß", "n": "tas"},
+        {"t": " "},
+        {"t": "wir"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "mitnemmen", "n": "mitnemen"},
+        {"t": " "},
+        {"t": "werden.", "n": "werten"},
+        {"t": "Wir", "n": "wir"},
+        {"t": " "},
+        {"t": "werden", "n": "werten"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "doch;", "n": "toch"},
+        {"t": " "},
+        {"t": "ſpricht", "n": "spricht"},
+        {"t": " "},
+        {"t": "jenner", "n": "iener"},
+        {"t": " "},
+        {"t": "Gottes", "n": "gotes"},
+        {"t": "Knecht;", "n": "knecht"},
+        {"t": "mitnemmen/", "n": "mitnemen"},
+        {"t": " "},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "allhier", "n": "alhier"},
+        {"t": " "},
+        {"t": "wir"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "beſeſſen", "n": "besesen"},
+        {"t": " "},
+        {"t": "recht.", "n": "recht"},
+        {"t": "Nun", "n": "nun"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Frag:", "n": "frag"},
+        {"t": " "},
+        {"t": "Wie", "n": "wie"},
+        {"t": " "},
+        {"t": "Nichts/", "n": "nichts"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "zuͦverſtehen:", "n": "zuerstehen"},
+        {"t": "weil"},
+        {"t": " "},
+        {"t": "Nichts/", "n": "nichts"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "doch", "n": "toch"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "uns"},
+        {"t": " "},
+        {"t": "wird", "n": "wirt"},
+        {"t": " "},
+        {"t": "dorthin", "n": "tortin"},
+        {"t": " "},
+        {"t": "ge-", "n": "ge"},
+        {"t": "hen?", "n": "hen"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "Nichts/", "n": "nichts"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "dikes", "n": "tikes"},
+        {"t": " "},
+        {"t": "Koht/", "n": "kot"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "bleibet"},
+        {"t": " "},
+        {"t": "in"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "welt:", "n": "welt"},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "Etwas;", "n": "etwas"},
+        {"t": " "},
+        {"t": "Glaubenswerk':", "n": "glaubenswerk"},
+        {"t": " "},
+        {"t": "auß", "n": "aus"},
+        {"t": " "},
+        {"t": "gnaden", "n": "gnaten"},
+        {"t": " "},
+        {"t": "zuͦge-", "n": "zuge"},
+        {"t": "zehlt.", "n": "zelt"},
+        {"t": "Ende", "n": "ente"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Uberſchrifften.", "n": "uberschriften"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n65.3"
+    },
+    {
+      "siglum": "C",
+      "name": "n65.3-C_1663_dok",
+      "tokens": [
+        {"t": "Wir", "n": "wir"},
+        {"t": " "},
+        {"t": "haben;", "n": "haben"},
+        {"t": "ſpricht", "n": "spricht"},
+        {"t": " "},
+        {"t": "Sant", "n": "sant"},
+        {"t": " "},
+        {"t": "Paul;", "n": "paul"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "mitgebracht"},
+        {"t": " "},
+        {"t": "auf"},
+        {"t": "Erden:", "n": "erten"},
+        {"t": "So", "n": "so"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "bekañt/", "n": "bekant"},
+        {"t": " "},
+        {"t": "daß", "n": "tas"},
+        {"t": " "},
+        {"t": "wir"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "mitnem͂en", "n": "mitnemen"},
+        {"t": " "},
+        {"t": "werden", "n": "werten"},
+        {"t": "Wir", "n": "wir"},
+        {"t": " "},
+        {"t": "werden", "n": "werten"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "doch;", "n": "toch"},
+        {"t": " "},
+        {"t": "ſpricht", "n": "spricht"},
+        {"t": " "},
+        {"t": "jener", "n": "iener"},
+        {"t": " "},
+        {"t": "Gottesknecht;", "n": "gotesknecht"},
+        {"t": "Mit", "n": "mit"},
+        {"t": "nemmen/", "n": "nemen"},
+        {"t": " "},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "allhie", "n": "alhie"},
+        {"t": " "},
+        {"t": "wir"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "beſeſſen", "n": "besesen"},
+        {"t": " "},
+        {"t": "recht.", "n": "recht"},
+        {"t": "Nun", "n": "nun"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Frag:", "n": "frag"},
+        {"t": " "},
+        {"t": "Wie", "n": "wie"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "zuverſtehen:", "n": "zuerstehen"},
+        {"t": "Weil", "n": "weil"},
+        {"t": " "},
+        {"t": "Nichts/", "n": "nichts"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Etwas", "n": "etwas"},
+        {"t": " "},
+        {"t": "doch", "n": "toch"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "uns"},
+        {"t": " "},
+        {"t": "wird", "n": "wirt"},
+        {"t": " "},
+        {"t": "dorthin", "n": "tortin"},
+        {"t": " "},
+        {"t": "gehen?", "n": "gehen"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "Nichts", "n": "nichts"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "zeitlich"},
+        {"t": " "},
+        {"t": "Gut/", "n": "gut"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "muß", "n": "mus"},
+        {"t": " "},
+        {"t": "verbleiben", "n": "uerbleiben"},
+        {"t": " "},
+        {"t": "hier:", "n": "hier"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "Etwas/", "n": "etwas"},
+        {"t": " "},
+        {"t": "Kinder", "n": "kinter"},
+        {"t": " "},
+        {"t": "ſeind:", "n": "seint"},
+        {"t": "Der", "n": "ter"},
+        {"t": " "},
+        {"t": "HErꝛ", "n": "her"},
+        {"t": " "},
+        {"t": "Euch", "n": "euch"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "bezier!", "n": "bezier"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n65.3"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 17]}, "C": {"span": [0, 3]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [0, 1]}},
+        {
+          "spans": {"B": [2, 3], "C": [2, 3]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [4, 5]}},
+        {"spans": {"B": [6, 7]}},
+        {"spans": {"B": [8, 9]}},
+        {"spans": {"B": [10, 11]}},
+        {"spans": {"B": [12, 13]}},
+        {"spans": {"B": [14, 15]}},
+        {"spans": {"B": [16, 17]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [17, 32]}, "C": {"span": [3, 14]}},
+      "columns": [
+        {"spans": {"B": [17, 18]}},
+        {"spans": {"B": [19, 20]}},
+        {"spans": {"B": [21, 22], "C": [3, 4]}},
+        {
+          "spans": {"B": [23, 24], "C": [5, 6]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The reading 'die' (part of 'die Schrifft') is replaced by 'Sant Paul', which is a different word/phrase referring to the author rather than the text itself."
+          }
+        },
+        {
+          "spans": {"B": [25, 26], "C": [7, 8]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in the specific name used: 'Schrift' (Scripture) in B versus 'Sant Paul' (Saint Paul) in C."
+          }
+        },
+        {"spans": {"B": [27, 28], "C": [9, 10]}},
+        {"spans": {"B": [29, 30], "C": [11, 12]}},
+        {"spans": {"B": [31, 32], "C": [13, 14]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [32, 33]}, "C": {"span": [14, 15]}},
+      "columns": [{"spans": {"B": [32, 33], "C": [14, 15]}}],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [33, 50]}, "C": {"span": [15, 32]}},
+      "columns": [
+        {
+          "spans": {"B": [33, 34], "C": [15, 16]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "long s, r rotunda"}
+        },
+        {"spans": {"B": [35, 36], "C": [17, 18]}},
+        {"spans": {"B": [37, 38], "C": [19, 20]}},
+        {"spans": {"B": [39, 40], "C": [21, 22]}},
+        {"spans": {"B": [41, 42], "C": [23, 24]}},
+        {"spans": {"B": [43, 44], "C": [25, 26]}},
+        {"spans": {"B": [45, 46], "C": [27, 28]}},
+        {
+          "spans": {"B": [47, 48], "C": [29, 30]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
+        {
+          "spans": {"B": [49, 50], "C": [31, 32]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [50, 63]}, "C": {"span": [32, 45]}},
+      "columns": [
+        {"spans": {"B": [50, 51], "C": [32, 33]}},
+        {"spans": {"B": [52, 53], "C": [34, 35]}},
+        {"spans": {"B": [54, 55], "C": [36, 37]}},
+        {"spans": {"B": [56, 57], "C": [38, 39]}},
+        {"spans": {"B": [58, 59], "C": [40, 41]}},
+        {
+          "spans": {"B": [60, 61], "C": [42, 43]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
+        {
+          "spans": {"B": [62, 63], "C": [44, 45]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ by the presence of the word 'knecht' (servant) in the second reading, changing the noun phrase from 'Gottes' (God's) to 'Gottesknecht' (God's servant)."
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [63, 64]}, "C": {"span": [45, 46]}},
+      "columns": [
+        {
+          "spans": {"B": [63, 64], "C": [45, 46]},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings 'Knecht' and 'Mit' are completely different words with no obvious orthographic, grammatical, or lexical relationship that fits the standard categories for a single variant reading. This suggests a misalignment in the collation or a significant textual divergence that cannot be classifie"
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0005"], "C": ["C-l0004"]}
+    },
+    {
+      "id": "s7",
+      "number": 7,
+      "roles": {},
+      "cells": {"B": {"span": [64, 77]}, "C": {"span": [46, 59]}},
+      "columns": [
+        {
+          "spans": {"B": [64, 65], "C": [46, 47]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The first reading includes the prefix 'mit-' (mitnemmen) while the second omits it (nemmen), resulting in different words with distinct meanings (take along vs. take)."
+          }
+        },
+        {
+          "spans": {"B": [66, 67], "C": [48, 49]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [68, 69], "C": [50, 51]},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in the final syllable (hier vs hie) representing a variant spelling of the same word."
+          }
+        },
+        {"spans": {"B": [70, 71], "C": [52, 53]}},
+        {"spans": {"B": [72, 73], "C": [54, 55]}},
+        {"spans": {"B": [74, 75], "C": [56, 57]}},
+        {"spans": {"B": [76, 77], "C": [58, 59]}}
+      ],
+      "refs": {"B": ["B-l0006"], "C": ["C-l0004"]}
+    },
+    {
+      "id": "s8",
+      "number": 8,
+      "roles": {},
+      "cells": {"B": {"span": [77, 94]}, "C": {"span": [59, 76]}},
+      "columns": [
+        {"spans": {"B": [77, 78], "C": [59, 60]}},
+        {"spans": {"B": [79, 80], "C": [61, 62]}},
+        {"spans": {"B": [81, 82], "C": [63, 64]}},
+        {"spans": {"B": [83, 84], "C": [65, 66]}},
+        {"spans": {"B": [85, 86], "C": [67, 68]}},
+        {
+          "spans": {"B": [87, 88], "C": [69, 70]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [89, 90], "C": [71, 72]}},
+        {"spans": {"B": [91, 92], "C": [73, 74]}},
+        {
+          "spans": {"B": [93, 94], "C": [75, 76]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        }
+      ],
+      "refs": {"B": ["B-l0007"], "C": ["C-l0005"]}
+    },
+    {
+      "id": "s9",
+      "number": 9,
+      "roles": {},
+      "cells": {"B": {"span": [94, 113]}, "C": {"span": [76, 95]}},
+      "columns": [
+        {
+          "spans": {"B": [94, 95], "C": [76, 77]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [96, 97], "C": [78, 79]}},
+        {"spans": {"B": [98, 99], "C": [80, 81]}},
+        {"spans": {"B": [100, 101], "C": [82, 83]}},
+        {"spans": {"B": [102, 103], "C": [84, 85]}},
+        {"spans": {"B": [104, 105], "C": [86, 87]}},
+        {"spans": {"B": [106, 107], "C": [88, 89]}},
+        {"spans": {"B": [108, 109], "C": [90, 91]}},
+        {"spans": {"B": [110, 111], "C": [92, 93]}},
+        {
+          "spans": {"B": [112, 113], "C": [94, 95]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in word division/hyphenation (ge- vs gehen)"
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0008"], "C": ["C-l0006"]}
+    },
+    {
+      "id": "s10",
+      "number": 10,
+      "roles": {},
+      "cells": {"B": {"span": [113, 114]}, "C": {"missing": true}},
+      "columns": [{"spans": {"B": [113, 114]}}],
+      "refs": {"B": ["B-l0009"]}
+    },
+    {
+      "id": "s11",
+      "number": 11,
+      "roles": {},
+      "cells": {"B": {"span": [114, 133]}, "C": {"span": [95, 112]}},
+      "columns": [
+        {"spans": {"B": [114, 115], "C": [95, 96]}},
+        {
+          "spans": {"B": [116, 117], "C": [97, 98]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [118, 119], "C": [99, 100]}},
+        {
+          "spans": {"B": [120, 121], "C": [101, 102]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'dikes' and 'zeitlich' are completely different words with different meanings (demonstrative adjective vs. temporal adjective), indicating a lexical variation."
+          }
+        },
+        {
+          "spans": {"B": [122, 123], "C": [103, 104]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The words 'Koht' and 'Gut' are different nouns with different meanings."
+          }
+        },
+        {"spans": {"B": [124, 125], "C": [105, 106]}},
+        {
+          "spans": {"B": [126, 127], "C": [107, 108]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'bleibet' and 'muß' are different words with different meanings (stays vs. must), representing a lexical variation."
+          }
+        },
+        {
+          "spans": {"B": [128, 129], "C": [109, 110]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'in' and 'verbleiben' are different words with different meanings (preposition vs. verb)."
+          }
+        },
+        {
+          "spans": {"B": [130, 131], "C": [111, 112]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'der' and 'hier' are different words (demonstrative article vs. adverb of place)."
+          }
+        },
+        {"spans": {"B": [132, 133]}}
+      ],
+      "refs": {"B": ["B-l0010"], "C": ["C-l0007"]}
+    },
+    {
+      "id": "s12",
+      "number": 12,
+      "roles": {},
+      "cells": {"B": {"span": [133, 144]}, "C": {"span": [112, 119]}},
+      "columns": [
+        {
+          "spans": {"B": [133, 134], "C": [112, 113]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [135, 136], "C": [114, 115]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {
+          "spans": {"B": [137, 138], "C": [116, 117]},
+          "relation": {
+            "type": "uncertain",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.9,
+            "rationale": "The readings are not aligned; B contains a fragment of a different phrase ('auß gnaden zuͦge-') while C contains 'Kinder ſeind', making it impossible to classify a specific variant relation."
+          }
+        },
+        {
+          "spans": {"B": [139, 140], "C": [118, 119]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings 'auß' (out of/from) and 'ſeind' (are) are completely different words with different grammatical functions and meanings, indicating a lexical variation or significant textual difference."
+          }
+        },
+        {"spans": {"B": [141, 142]}},
+        {"spans": {"B": [143, 144]}}
+      ],
+      "refs": {"B": ["B-l0011"], "C": ["C-l0008"]}
+    },
+    {
+      "id": "s13",
+      "number": 13,
+      "roles": {},
+      "cells": {"B": {"span": [144, 145]}, "C": {"missing": true}},
+      "columns": [{"spans": {"B": [144, 145]}}],
+      "refs": {"B": ["B-l0012"]}
+    },
+    {
+      "id": "s14",
+      "number": 14,
+      "roles": {},
+      "cells": {"B": {"span": [145, 150]}, "C": {"span": [119, 128]}},
+      "columns": [
+        {"spans": {"B": [145, 146]}},
+        {
+          "spans": {"B": [147, 148], "C": [119, 120]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [149, 150], "C": [121, 122]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings contain completely different words and phrases ('Ende der Uberſchrifften' vs 'Der HErꝛ Euch mit bezier!')."
+          }
+        },
+        {"spans": {"C": [123, 124]}},
+        {"spans": {"C": [125, 126]}},
+        {"spans": {"C": [127, 128]}}
+      ],
+      "refs": {"B": ["B-l0013"], "C": ["C-l0008"]}
+    }
+  ],
+  "proposals": [
+    {
+      "rows": ["s1", "s2", "s3"],
+      "segments": [
+        {
+          "id": "s1-1",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [0, 17]}, "C": {"span": [0, 15]}},
+          "columns": [
+            {"spans": {"B": [0, 1], "C": [0, 1]}},
+            {"spans": {"B": [2, 3], "C": [2, 3]}},
+            {"spans": {"C": [3, 4]}},
+            {"spans": {"C": [5, 6]}},
+            {"spans": {"C": [7, 8]}},
+            {"spans": {"B": [4, 5], "C": [9, 10]}},
+            {"spans": {"B": [6, 7], "C": [11, 12]}},
+            {"spans": {"B": [8, 9], "C": [13, 14]}},
+            {"spans": {"B": [10, 11], "C": [14, 15]}},
+            {"spans": {"B": [12, 13]}},
+            {"spans": {"B": [14, 15]}},
+            {"spans": {"B": [16, 17]}}
+          ],
+          "refs": {"B": ["B-h001"], "C": ["C-l0001"]}
+        },
+        {
+          "id": "s1-2",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [17, 32]}, "C": {"missing": true}},
+          "columns": [
+            {"spans": {"B": [17, 18]}},
+            {"spans": {"B": [19, 20]}},
+            {"spans": {"B": [21, 22]}},
+            {"spans": {"B": [23, 24]}},
+            {"spans": {"B": [25, 26]}},
+            {"spans": {"B": [27, 28]}},
+            {"spans": {"B": [29, 30]}},
+            {"spans": {"B": [31, 32]}}
+          ],
+          "refs": {"B": ["B-l0001"]}
+        },
+        {
+          "id": "s1-3",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [32, 33]}, "C": {"missing": true}},
+          "columns": [{"spans": {"B": [32, 33]}}],
+          "refs": {"B": ["B-l0002"]}
+        }
+      ],
+      "by": "model",
+      "model": "qwen3.8-27b",
+      "confidence": 0.95,
+      "rationale": "B-h001 and C-l0001 are the same opening line (with C combining the split lines of B). B-l0001 and B-l0002 form a single verse in witness B that is missing in C."
+    },
+    {
+      "rows": ["s10", "s11", "s12", "s13", "s14"],
+      "segments": [
+        {
+          "id": "s10-1",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [113, 114]}, "C": {"missing": true}},
+          "columns": [{"spans": {"B": [113, 114]}}],
+          "refs": {"B": ["B-l0009"]}
+        },
+        {
+          "id": "s10-2",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [114, 133]}, "C": {"span": [95, 112]}},
+          "columns": [
+            {"spans": {"B": [114, 115], "C": [95, 96]}},
+            {"spans": {"B": [116, 117], "C": [97, 98]}},
+            {"spans": {"B": [118, 119], "C": [99, 100]}},
+            {"spans": {"B": [120, 121], "C": [101, 102]}},
+            {"spans": {"B": [122, 123], "C": [103, 104]}},
+            {"spans": {"B": [124, 125], "C": [105, 106]}},
+            {"spans": {"B": [126, 127], "C": [107, 108]}},
+            {"spans": {"B": [128, 129], "C": [109, 110]}},
+            {"spans": {"B": [130, 131], "C": [111, 112]}},
+            {"spans": {"B": [132, 133]}}
+          ],
+          "refs": {"B": ["B-l0010"], "C": ["C-l0007"]}
+        },
+        {
+          "id": "s10-3",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [133, 145]}, "C": {"span": [112, 128]}},
+          "columns": [
+            {"spans": {"B": [133, 134], "C": [112, 113]}},
+            {"spans": {"B": [135, 136], "C": [114, 115]}},
+            {"spans": {"B": [137, 138], "C": [116, 117]}},
+            {"spans": {"B": [139, 140], "C": [118, 119]}},
+            {"spans": {"B": [141, 142], "C": [119, 120]}},
+            {"spans": {"B": [143, 144], "C": [121, 122]}},
+            {"spans": {"B": [144, 145], "C": [123, 124]}},
+            {"spans": {"C": [125, 126]}},
+            {"spans": {"C": [127, 128]}}
+          ],
+          "refs": {"B": ["B-l0011", "B-l0012"], "C": ["C-l0008"]}
+        },
+        {
+          "id": "s10-4",
+          "number": null,
+          "roles": {},
+          "cells": {"B": {"span": [145, 150]}, "C": {"missing": true}},
+          "columns": [{"spans": {"B": [145, 146]}}, {"spans": {"B": [147, 148]}}, {"spans": {"B": [149, 150]}}],
+          "refs": {"B": ["B-l0013"]}
+        }
+      ],
+      "by": "model",
+      "model": "qwen3.8-27b",
+      "confidence": 0.9,
+      "rationale": "B-l0010 and C-l0007 correspond thematically (Nichts/zeitlich Gut vs Nichts/dikes Koht). B-l0011-12 (Etwas/Glaubenswerk) align with C-l0008 (Etwas/Kinder) as the second part of the couplet. B-l0009 is a fragment likely belonging to the previous line or a header, and B-l0013 is a standalone heading."
+    }
+  ]
+}

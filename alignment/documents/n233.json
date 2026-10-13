@@ -1,0 +1,353 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n233-B_1653",
+      "tokens": [
+        {"t": "4.", "n": "4"},
+        {"t": " "},
+        {"t": "Kaͤmpf", "n": "kampf"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "dich/", "n": "tich"},
+        {"t": " "},
+        {"t": "ſo", "n": "so"},
+        {"t": " "},
+        {"t": "ſchlaheſt", "n": "schlahest"},
+        {"t": " "},
+        {"t": "Mich.", "n": "mich"},
+        {"t": "Jennes", "n": "ienes"},
+        {"t": " "},
+        {"t": "Laſterthier", "n": "lastertier"},
+        {"t": " "},
+        {"t": "zuͦ", "n": "zu"},
+        {"t": " "},
+        {"t": "daͤmpfen/", "n": "tampfen"},
+        {"t": "ieder", "n": "ieter"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "muͦß", "n": "mus"},
+        {"t": " "},
+        {"t": "kaͤmpfen/", "n": "kampfen"},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Rüſtung", "n": "rustung"},
+        {"t": " "},
+        {"t": "angetahn/", "n": "angetan"},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Sant", "n": "sant"},
+        {"t": " "},
+        {"t": "Paul", "n": "paul"},
+        {"t": " "},
+        {"t": "ihm"},
+        {"t": " "},
+        {"t": "zeigen"},
+        {"t": " "},
+        {"t": "kan.", "n": "kan"},
+        {"t": "Er", "n": "er"},
+        {"t": " "},
+        {"t": "muͦß", "n": "mus"},
+        {"t": " "},
+        {"t": "ſeinen", "n": "seinen"},
+        {"t": " "},
+        {"t": "Leib", "n": "leib"},
+        {"t": " "},
+        {"t": "bezaͤmmen;", "n": "bezamen"},
+        {"t": "Glider", "n": "gliter"},
+        {"t": " "},
+        {"t": "toͤden;", "n": "toten"},
+        {"t": " "},
+        {"t": "Lüſte", "n": "luste"},
+        {"t": " "},
+        {"t": "haͤmmen;", "n": "hamen"},
+        {"t": "ſonſten", "n": "sonsten"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "ihn"},
+        {"t": " "},
+        {"t": "ertoͤhnt:", "n": "ertont"},
+        {"t": "Nicht", "n": "nicht"},
+        {"t": " "},
+        {"t": "gekaͤmpfet/", "n": "gekampfet"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "gekroͤnt.", "n": "gekront"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n233"
+    },
+    {
+      "siglum": "C",
+      "name": "n233-C_1663_dok",
+      "tokens": [
+        {"t": "168.", "n": "168"},
+        {"t": " "},
+        {"t": "Kaͤmpf", "n": "kampf"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "dich/", "n": "tich"},
+        {"t": " "},
+        {"t": "ſo", "n": "so"},
+        {"t": " "},
+        {"t": "ſchlaheſt", "n": "schlahest"},
+        {"t": " "},
+        {"t": "mich.", "n": "mich"},
+        {"t": "Diſes", "n": "tises"},
+        {"t": " "},
+        {"t": "ungeheur*", "n": "ungeheur"},
+        {"t": " "},
+        {"t": "zudaͤmpfen/", "n": "zutampfen"},
+        {"t": "ieder", "n": "ieter"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "muß", "n": "mus"},
+        {"t": " "},
+        {"t": "kaͤmpfen/", "n": "kampfen"},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "der", "n": "ter"},
+        {"t": " "},
+        {"t": "Rüſtung", "n": "rustung"},
+        {"t": " "},
+        {"t": "angetahn/", "n": "angetan"},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "Sant", "n": "sant"},
+        {"t": " "},
+        {"t": "Paul", "n": "paul"},
+        {"t": " "},
+        {"t": "ihm"},
+        {"t": " "},
+        {"t": "zeigen"},
+        {"t": " "},
+        {"t": "kan.", "n": "kan"},
+        {"t": "Er", "n": "er"},
+        {"t": " "},
+        {"t": "muß", "n": "mus"},
+        {"t": " "},
+        {"t": "ſeinen", "n": "seinen"},
+        {"t": " "},
+        {"t": "leib"},
+        {"t": " "},
+        {"t": "bezaͤmmen;", "n": "bezamen"},
+        {"t": "Glider", "n": "gliter"},
+        {"t": " "},
+        {"t": "toͤden;", "n": "toten"},
+        {"t": " "},
+        {"t": "Lüſte", "n": "luste"},
+        {"t": " "},
+        {"t": "haͤmmen;", "n": "hamen"},
+        {"t": "ſonſten", "n": "sonsten"},
+        {"t": " "},
+        {"t": "wider", "n": "witer"},
+        {"t": " "},
+        {"t": "ihn"},
+        {"t": " "},
+        {"t": "ertoͤhnt:", "n": "ertont"},
+        {"t": "Nicht", "n": "nicht"},
+        {"t": " "},
+        {"t": "gekaͤmpfet:", "n": "gekampfet"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "gekroͤnt.", "n": "gekront"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n233"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 13]}, "C": {"span": [0, 13]}},
+      "columns": [
+        {
+          "spans": {"B": [0, 1], "C": [0, 1]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization of the pronoun 'Mich' vs 'mich'."
+          }
+        },
+        {"spans": {"B": [2, 3], "C": [2, 3]}},
+        {"spans": {"B": [4, 5], "C": [4, 5]}},
+        {"spans": {"B": [6, 7], "C": [6, 7]}},
+        {"spans": {"B": [8, 9], "C": [8, 9]}},
+        {"spans": {"B": [10, 11], "C": [10, 11]}},
+        {
+          "spans": {"B": [12, 13], "C": [12, 13]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        }
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [13, 20]}, "C": {"span": [13, 18]}},
+      "columns": [
+        {
+          "spans": {"B": [13, 14], "C": [13, 14]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings 'Jennes' and 'Diſes' are different words (likely a proper name or specific term vs. the demonstrative pronoun 'this'), representing a change in wording rather than just spelling or grammar."
+          }
+        },
+        {
+          "spans": {"B": [15, 16], "C": [15, 16]},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "The readings differ in the specific noun used: 'Laſterthier' (vice-beast) vs 'ungeheur' (monster)."
+          }
+        },
+        {
+          "spans": {"B": [17, 20], "C": [17, 18]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        }
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [20, 29]}, "C": {"span": [18, 27]}},
+      "columns": [
+        {"spans": {"B": [20, 21], "C": [18, 19]}},
+        {"spans": {"B": [22, 23], "C": [20, 21]}},
+        {"spans": {"B": [24, 25], "C": [22, 23]}},
+        {
+          "spans": {"B": [26, 27], "C": [24, 25]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [28, 29], "C": [26, 27]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [29, 36]}, "C": {"span": [27, 34]}},
+      "columns": [
+        {"spans": {"B": [29, 30], "C": [27, 28]}},
+        {"spans": {"B": [31, 32], "C": [29, 30]}},
+        {"spans": {"B": [33, 34], "C": [31, 32]}},
+        {"spans": {"B": [35, 36], "C": [33, 34]}}
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [36, 47]}, "C": {"span": [34, 45]}},
+      "columns": [
+        {"spans": {"B": [36, 37], "C": [34, 35]}},
+        {"spans": {"B": [38, 39], "C": [36, 37]}},
+        {"spans": {"B": [40, 41], "C": [38, 39]}},
+        {"spans": {"B": [42, 43], "C": [40, 41]}},
+        {"spans": {"B": [44, 45], "C": [42, 43]}},
+        {"spans": {"B": [46, 47], "C": [44, 45]}}
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0004"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [47, 56]}, "C": {"span": [45, 54]}},
+      "columns": [
+        {"spans": {"B": [47, 48], "C": [45, 46]}},
+        {
+          "spans": {"B": [49, 50], "C": [47, 48]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [51, 52], "C": [49, 50]}},
+        {
+          "spans": {"B": [53, 54], "C": [51, 52]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [55, 56], "C": [53, 54]}}
+      ],
+      "refs": {"B": ["B-l0005"], "C": ["C-l0005"]}
+    },
+    {
+      "id": "s7",
+      "number": 7,
+      "roles": {},
+      "cells": {"B": {"span": [56, 63]}, "C": {"span": [54, 61]}},
+      "columns": [
+        {"spans": {"B": [56, 57], "C": [54, 55]}},
+        {"spans": {"B": [58, 59], "C": [56, 57]}},
+        {"spans": {"B": [60, 61], "C": [58, 59]}},
+        {"spans": {"B": [62, 63], "C": [60, 61]}}
+      ],
+      "refs": {"B": ["B-l0006"], "C": ["C-l0006"]}
+    },
+    {
+      "id": "s8",
+      "number": 8,
+      "roles": {},
+      "cells": {"B": {"span": [63, 70]}, "C": {"span": [61, 68]}},
+      "columns": [
+        {"spans": {"B": [63, 64], "C": [61, 62]}},
+        {"spans": {"B": [65, 66], "C": [63, 64]}},
+        {"spans": {"B": [67, 68], "C": [65, 66]}},
+        {"spans": {"B": [69, 70], "C": [67, 68]}}
+      ],
+      "refs": {"B": ["B-l0007"], "C": ["C-l0007"]}
+    },
+    {
+      "id": "s9",
+      "number": 9,
+      "roles": {},
+      "cells": {"B": {"span": [70, 77]}, "C": {"span": [68, 75]}},
+      "columns": [
+        {"spans": {"B": [70, 71], "C": [68, 69]}},
+        {
+          "spans": {"B": [72, 73], "C": [70, 71]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [74, 75], "C": [72, 73]}},
+        {"spans": {"B": [76, 77], "C": [74, 75]}}
+      ],
+      "refs": {"B": ["B-l0008"], "C": ["C-l0008"]}
+    }
+  ]
+}

@@ -6970,7 +6970,11 @@
         {"spans": {"A": [331, 332], "B": [331, 332]}},
         {"spans": {"A": [333, 334], "B": [333, 334]}},
         {"spans": {"A": [335, 336], "B": [335, 336]}},
-        {"spans": {"B": [336, 337]}, "ext": {"lera": "27-1"}}
+        {
+          "spans": {"B": [336, 337]},
+          "ext": {"lera": "27-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -7997,13 +8001,7 @@
         {
           "spans": {"A": [554, 555], "B": [551, 552]},
           "ext": {"lera": "44-1"},
-          "relation": {
-            "type": "spelling",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 1,
-            "rationale": "Difference between 'au' and 'au' with 'b' vs 'b' is not the case; it is 'haupt' vs 'haubt', which is a spelling variation of the same word."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [556, 557], "B": [553, 554]}},
         {
@@ -11512,13 +11510,7 @@
         {
           "spans": {"A": [1299, 1300], "B": [1300, 1301]},
           "ext": {"lera": "104-1"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The difference is the use of the long s (ſ) versus the short s (s) in the middle of the word, which is a graphic variation of the same letter."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [1301, 1302], "B": [1302, 1303]}}
       ],
@@ -12123,13 +12115,7 @@
         {
           "spans": {"A": [1435, 1436], "B": [1436, 1437]},
           "ext": {"lera": "114-1"},
-          "relation": {
-            "type": "spelling",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "wird and wirt are alternative spellings of the same verb form (3rd person singular present of werden), differing in the final consonant (d/t) without changing the grammatical form."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [1436, 1437], "B": [1437, 1438]}}
       ],
@@ -13239,12 +13225,20 @@
       "columns": [
         {"spans": {"A": [1666, 1667], "B": [1665, 1666]}},
         {"spans": {"A": [1668, 1669], "B": [1667, 1668]}},
-        {"spans": {"B": [1668, 1669]}, "ext": {"lera": "132-1"}},
+        {
+          "spans": {"B": [1668, 1669]},
+          "ext": {"lera": "132-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1670, 1671], "B": [1670, 1671]}},
         {"spans": {"A": [1672, 1673], "B": [1672, 1673]}},
         {"spans": {"A": [1674, 1675], "B": [1674, 1675]}},
         {"spans": {"A": [1676, 1677], "B": [1676, 1677]}},
-        {"spans": {"A": [1677, 1678]}, "ext": {"lera": "132-2"}},
+        {
+          "spans": {"A": [1677, 1678]},
+          "ext": {"lera": "132-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1679, 1680], "B": [1678, 1679]}},
         {"spans": {"A": [1681, 1682], "B": [1680, 1681]}},
         {"spans": {"A": [1683, 1684], "B": [1682, 1683]}},
@@ -13407,7 +13401,11 @@
         {"spans": {"A": [1715, 1716], "B": [1714, 1715]}},
         {"spans": {"A": [1717, 1718], "B": [1716, 1717]}},
         {"spans": {"A": [1719, 1720], "B": [1718, 1719]}},
-        {"spans": {"B": [1719, 1720]}, "ext": {"lera": "134-2"}}
+        {
+          "spans": {"B": [1719, 1720]},
+          "ext": {"lera": "134-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -16591,7 +16589,11 @@
       "cells": {"A": {"span": [2385, 2402]}, "B": {"span": [2383, 2401]}},
       "columns": [
         {"spans": {"A": [2385, 2386], "B": [2383, 2384]}},
-        {"spans": {"B": [2384, 2385]}, "ext": {"lera": "187-1"}},
+        {
+          "spans": {"B": [2384, 2385]},
+          "ext": {"lera": "187-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [2387, 2388], "B": [2386, 2387]}},
         {"spans": {"A": [2389, 2390], "B": [2388, 2389]}},
         {"spans": {"A": [2391, 2392], "B": [2390, 2391]}},

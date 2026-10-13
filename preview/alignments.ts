@@ -30,8 +30,17 @@ const CATEGORY: Record<string, Category> = {
   lexical: 'lexical', transposition: 'order', repetition: 'order',
 }
 
-/** The compare filters a reader can add to the document's, in TextAlign's order; bit i of `Entry.gone` is filter i. */
-export const FILTERS = ['punctuation', 'case', 'diacritics', 'long-s'] as const
+/**
+ * The steps of TextAlign's rule cascade (`textalign/io/variant_rules.py`), by
+ * name, finest first: what the reader can leave out of the comparison. A place
+ * the rules typed names its step (`relation.rule`), so the page compares
+ * nothing itself and holds no copy of the rules.
+ */
+export const STEPS = ['word division', 'punctuation', 'case', 'nasal stroke', 'diacritics', 'long s, r rotunda',
+  'u/v, i/j', 'doubled letters', 'spelling variants'] as const
+export type Step = (typeof STEPS)[number]
+/** A person's type has no rule (confirming drops it): the last step of that type stands in. */
+const STEP_OF_TYPE: Record<string, Step> = { punctuation: 'punctuation', orthographic: 'u/v, i/j', spelling: 'spelling variants' }
 
 export interface Relation {
   type: string
@@ -65,8 +74,8 @@ export interface Entry {
   category: Category
   /** How far it is settled: what the *nach Stand* colouring shows. */
   state: 'significant' | 'confirmed' | 'proposed' | 'open'
-  /** Bit m is set where the readings agree under the reader's filter set m (bits as `FILTERS`). */
-  gone: number
+  /** The cascade step that settles it; none for a model's type, an omission or an open place. */
+  step?: Step
   /** Siglum → the sigla reading the same here, itself included. */
   alike: Record<string, string[]>
 }
@@ -108,6 +117,13 @@ export interface Unit {
   variants: number
 }
 
+/** A probable typo in the TEI: the row, every witness's reading, the letters confused (`f/ſ`). */
+export interface Typo {
+  n: number
+  readings: Record<string, string>
+  letters: string
+}
+
 /** A model's proposal of how the lines of some rows pair, until a person accepts or rejects it. */
 export interface Proposal {
   /** The numbers of the rows it would replace. */
@@ -146,7 +162,7 @@ export interface Group {
   places: number[]
   /** As the first place's entry: the same readings fold alike everywhere. */
   category: Category
-  gone: number
+  step?: Step
   by?: string
 }
 
@@ -161,7 +177,7 @@ function readingGroups(segments: Segment[]): Group[] {
     for (const entry of segment.apparatus) {
       const forms = [...new Set(Object.values(entry.readings).map((text) => text.trim()))]
       const key = [...forms].sort().join('\u0001')
-      const group = groups.get(key) ?? { forms, places: [], category: entry.category, gone: entry.gone, by: entry.relation?.by }
+      const group = groups.get(key) ?? { forms, places: [], category: entry.category, step: entry.step, by: entry.relation?.by }
       if (group.places.at(-1) !== segment.n) group.places.push(segment.n)
       groups.set(key, group)
     }
@@ -185,6 +201,8 @@ export interface Synopsis {
   /** Rows the alignment editor doubts, and rows a model proposes to pair otherwise. */
   doubtful: number
   proposed: number
+  /** Places whose readings differ by one letter a transcriber of Fraktur confuses (`estimate.json`). */
+  typos: Typo[]
   /** Line id → where that line stands among the `l` of the poem in the edition. */
   lines: Record<string, number>
   provenance: Provenance
@@ -261,11 +279,10 @@ export function charDiff(a: string, b: string): { text: string, differs: boolean
  * Read one apparatus entry: what differs here, how much, and what it is.
  *
  * `readings` are the witnesses with text in the segment; one absent from the row
- * weighs on nothing in it. `under[m]` compares a reading under the document's
- * filters and the reader's filter set `m`, so `under[0]` is the document's own.
+ * weighs on nothing in it. `compare` is a reading under the document's filters.
  */
 function entry(group: string, readings: Record<string, string>, relation: Relation | undefined,
-               under: ((text: string) => string)[]): Entry {
+               compare: (text: string) => string): Entry {
   const sigla = Object.keys(readings)
   const values = Object.values(readings).map((text) => text.trim())
   const apart = departing(readings)
@@ -274,7 +291,8 @@ function entry(group: string, readings: Record<string, string>, relation: Relati
   const reference = Object.entries(readings).find(([siglum]) => !apart.includes(siglum))?.[1].trim() ?? values[0] ?? ''
   const omission = values.includes('')
   const category: Category = relation ? CATEGORY[relation.type] ?? 'other' : omission ? 'omission' : 'open'
-  const form = (siglum: string) => under[0](readings[siglum])
+  const form = (siglum: string) => compare(readings[siglum])
+  const step = relation?.by === 'rule' ? STEPS.find((s) => s === relation.rule) : relation?.by ? undefined : STEP_OF_TYPE[relation?.type ?? '']
   return {
     group,
     readings,
@@ -289,7 +307,7 @@ function entry(group: string, readings: Record<string, string>, relation: Relati
     ...(relation ? { relation } : {}),
     category,
     state: !relation ? 'open' : relation.by ? 'proposed' : relation.significant ? 'significant' : 'confirmed',
-    gone: under.reduce((mask, compare, m) => new Set(values.map(compare)).size < 2 ? mask | 1 << m : mask, 0),
+    ...(step ? { step } : {}),
     alike: Object.fromEntries(sigla.map((s) => [s, sigla.filter((t) => form(t) === form(s))])),
   }
 }
@@ -426,8 +444,7 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
                   tokens: Record<string, { t: string }[]>, numbers: Map<string, number>, doubts: string[]): Segment {
   const filters: string[] = doc.settings?.filters ?? []
   const rules = raw.regularizations ?? doc.settings?.regularizations ?? []
-  const under = Array.from({ length: 1 << FILTERS.length }, (_, m) =>
-    compared([...filters, ...FILTERS.filter((_, bit) => m >> bit & 1)], rules))
+  const compare = compared(filters, rules)
   const present = sigla.filter((siglum) => raw.cells[siglum]?.span)
   const missing = sigla.filter((siglum) => !raw.cells[siglum]?.span)
 
@@ -438,9 +455,9 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
   raw.columns.forEach((column: any, c: number) => {
     const readings = Object.fromEntries(present.map((s) =>
       [s, span(tokens[s], column.spans[s])]))
-    if (new Set(present.map((s) => under[0](readings[s]))).size < 2) return
+    if (new Set(present.map((s) => compare(readings[s]))).size < 2) return
     const group = `${raw.number ?? index + 1}-${c + 1}`
-    apparatus.push(entry(group, readings, column.relation, under))
+    apparatus.push(entry(group, readings, column.relation, compare))
     for (const s of present) {
       const at = column.spans[s]
       if (at) for (let k = at[0]; k < at[1]; k++) groupOf.get(s)!.set(k, group)
@@ -483,10 +500,11 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
 }
 
 /**
- * An alignment document, read as the synopsis pages show it; `doubts` is the
- * editor's, per row id, as `estimate.py` recorded it.
+ * An alignment document, read as the synopsis pages show it; `measured` is what
+ * `estimate.py` recorded per row id: the editor's doubts, the probable typos.
  */
-function readDocument(id: string, doc: any, lines: Record<string, number>, doubts: Record<string, string[]>): Synopsis {
+function readDocument(id: string, doc: any, lines: Record<string, number>, measured: Measured): Synopsis {
+  const doubts = measured.doubts ?? {}
   const sigla: string[] = doc.witnesses.map((w: any) => w.siglum)
   const tokens = Object.fromEntries(doc.witnesses.map((w: any) => [w.siglum, w.tokens]))
   const numbers = new Map<string, number>(
@@ -512,6 +530,7 @@ function readDocument(id: string, doc: any, lines: Record<string, number>, doubt
     variants: segments.reduce((n: number, s: Segment) => n + s.apparatus.length, 0),
     doubtful: segments.filter((s) => s.doubts.length).length,
     proposed: segments.filter((s) => s.proposal).length,
+    typos: (measured.typos ?? []).map((t) => ({ n: numbers.get(t.segment)!, readings: t.readings, letters: t.letters })),
     lines,
     provenance: {
       created: day(doc.meta?.created_at ?? ''),
@@ -523,6 +542,12 @@ function readDocument(id: string, doc: any, lines: Record<string, number>, doubt
         s.columns.some((c: any) => c.origin === 'manual' || (c.relation && !c.relation.by))).length,
     },
   }
+}
+
+/** What `estimate.json` records of one poem, as far as the pages show it. */
+interface Measured {
+  doubts?: Record<string, string[]>
+  typos?: { segment: string, readings: Record<string, string>, letters: string }[]
 }
 
 /**
@@ -537,7 +562,7 @@ export async function loadSynopses(dir: string, imports = '', estimate = ''): Pr
   } catch {
     return []
   }
-  let measured: Record<string, { doubts?: Record<string, string[]> }> = {}
+  let measured: Record<string, Measured> = {}
   try {
     measured = estimate ? JSON.parse(await readFile(estimate, 'utf8')).poems ?? {} : {}
   } catch { /* not measured yet */ }
@@ -554,7 +579,7 @@ export async function loadSynopses(dir: string, imports = '', estimate = ''): Pr
     if (data.format !== 'alignment-json') {
       throw new Error(`${name} is not Alignment JSON; regenerate it: python alignment/pipeline.py`)
     }
-    synopses.push(readDocument(id, data, lines, measured[id]?.doubts ?? {}))
+    synopses.push(readDocument(id, data, lines, measured[id] ?? {}))
   }
   return synopses
 }

@@ -1,0 +1,335 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "viii-B_1653",
+      "tokens": [
+        {"t": "III.", "n": "i"},
+        {"t": " "},
+        {"t": "JOANNES", "n": "ioanes"},
+        {"t": " "},
+        {"t": "GUIELMUS", "n": "guielmus"},
+        {"t": " "},
+        {"t": "SIMLERUS", "n": "simlerus"},
+        {"t": " "},
+        {"t": "ARTE", "n": "arte"},
+        {"t": " "},
+        {"t": "FECIT.", "n": "fecit"},
+        {"t": " "},
+        {"t": "Per", "n": "per"},
+        {"t": " "},
+        {"t": "Anagramma.", "n": "anagrama"},
+        {"t": " "},
+        {"t": "Anne", "n": "ane"},
+        {"t": " "},
+        {"t": "Muſicus", "n": "musicus"},
+        {"t": " "},
+        {"t": "eriget"},
+        {"t": " "},
+        {"t": "hiſce:", "n": "hisce"},
+        {"t": " "},
+        {"t": "ut,", "n": "ut"},
+        {"t": " "},
+        {"t": "re,", "n": "re"},
+        {"t": " "},
+        {"t": "mi,", "n": "mi"},
+        {"t": " "},
+        {"t": "fa,", "n": "fa"},
+        {"t": " "},
+        {"t": "ſol,", "n": "sol"},
+        {"t": " "},
+        {"t": "la?", "n": "la"},
+        {"t": "UT", "n": "ut"},
+        {"t": " "},
+        {"t": "RElevet", "n": "releuet"},
+        {"t": " "},
+        {"t": "Mlſerum", "n": "mlserum"},
+        {"t": " "},
+        {"t": "FAtum,", "n": "fatum"},
+        {"t": " "},
+        {"t": "SOLitóſque", "n": "solitosque"},
+        {"t": " "},
+        {"t": "LAbores", "n": "labores"},
+        {"t": "MVSICVS", "n": "musicus"},
+        {"t": " "},
+        {"t": "ANNE", "n": "ane"},
+        {"t": " "},
+        {"t": "notis"},
+        {"t": " "},
+        {"t": "abjectos", "n": "abiectos"},
+        {"t": " "},
+        {"t": "ERIGET", "n": "eriget"},
+        {"t": " "},
+        {"t": "HISce?", "n": "hisce"},
+        {"t": "Falleris:", "n": "faleris"},
+        {"t": " "},
+        {"t": "Eſt", "n": "est"},
+        {"t": " "},
+        {"t": "virtus", "n": "uirtus"},
+        {"t": " "},
+        {"t": "major,", "n": "maior"},
+        {"t": " "},
+        {"t": "Suadæq́ue", "n": "suatæque"},
+        {"t": " "},
+        {"t": "medulla", "n": "metula"},
+        {"t": "Largo", "n": "largo"},
+        {"t": " "},
+        {"t": "quam"},
+        {"t": " "},
+        {"t": "promit"},
+        {"t": " "},
+        {"t": "SIMLERIA", "n": "simleria"},
+        {"t": " "},
+        {"t": "pectore"},
+        {"t": " "},
+        {"t": "Muſa.", "n": "musa"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#viii"
+    },
+    {
+      "siglum": "C",
+      "name": "viii-C_1663_dok",
+      "tokens": [
+        {"t": "III.", "n": "i"},
+        {"t": " "},
+        {"t": "IOANNES", "n": "ioanes"},
+        {"t": " "},
+        {"t": "GVIELMVS", "n": "guielmus"},
+        {"t": " "},
+        {"t": "SIMLERVS", "n": "simlerus"},
+        {"t": " "},
+        {"t": "ARTE", "n": "arte"},
+        {"t": " "},
+        {"t": "FECIT.", "n": "fecit"},
+        {"t": " "},
+        {"t": "Per", "n": "per"},
+        {"t": " "},
+        {"t": "Anagramma,", "n": "anagrama"},
+        {"t": " "},
+        {"t": "Anne", "n": "ane"},
+        {"t": " "},
+        {"t": "Muſicus", "n": "musicus"},
+        {"t": " "},
+        {"t": "eriget"},
+        {"t": " "},
+        {"t": "hiſce:", "n": "hisce"},
+        {"t": " "},
+        {"t": "ut,", "n": "ut"},
+        {"t": " "},
+        {"t": "re,", "n": "re"},
+        {"t": " "},
+        {"t": "mi,", "n": "mi"},
+        {"t": " "},
+        {"t": "fa,", "n": "fa"},
+        {"t": " "},
+        {"t": "ſo,", "n": "so"},
+        {"t": " "},
+        {"t": "la?", "n": "la"},
+        {"t": "VT", "n": "ut"},
+        {"t": " "},
+        {"t": "RElevet", "n": "releuet"},
+        {"t": " "},
+        {"t": "MIſerum", "n": "miserum"},
+        {"t": " "},
+        {"t": "FArum,", "n": "farum"},
+        {"t": " "},
+        {"t": "SOLitóſque", "n": "solitosque"},
+        {"t": " "},
+        {"t": "LAbores", "n": "labores"},
+        {"t": "MVSICUS", "n": "musicus"},
+        {"t": " "},
+        {"t": "ANNE", "n": "ane"},
+        {"t": " "},
+        {"t": "notis"},
+        {"t": " "},
+        {"t": "abjectos", "n": "abiectos"},
+        {"t": " "},
+        {"t": "ERIGET", "n": "eriget"},
+        {"t": " "},
+        {"t": "HISce?", "n": "hisce"},
+        {"t": "Falleris:", "n": "faleris"},
+        {"t": " "},
+        {"t": "Eſt", "n": "est"},
+        {"t": " "},
+        {"t": "virtus", "n": "uirtus"},
+        {"t": " "},
+        {"t": "major.", "n": "maior"},
+        {"t": " "},
+        {"t": "Suadæq́ue", "n": "suatæque"},
+        {"t": " "},
+        {"t": "medulla", "n": "metula"},
+        {"t": "Largo", "n": "largo"},
+        {"t": " "},
+        {"t": "quam"},
+        {"t": " "},
+        {"t": "promit"},
+        {"t": " "},
+        {"t": "SlMLERlA", "n": "slmlerla"},
+        {"t": " "},
+        {"t": "pectore"},
+        {"t": " "},
+        {"t": "Muſa.", "n": "musa"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#viii"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 35]}, "C": {"span": [0, 35]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [0, 1]}},
+        {
+          "spans": {"B": [2, 3], "C": [2, 3]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
+        {
+          "spans": {"B": [4, 5], "C": [4, 5]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
+        {
+          "spans": {"B": [6, 7], "C": [6, 7]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
+        {"spans": {"B": [8, 9], "C": [8, 9]}},
+        {"spans": {"B": [10, 11], "C": [10, 11]}},
+        {"spans": {"B": [12, 13], "C": [12, 13]}},
+        {
+          "spans": {"B": [14, 15], "C": [14, 15]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [16, 17], "C": [16, 17]}},
+        {"spans": {"B": [18, 19], "C": [18, 19]}},
+        {"spans": {"B": [20, 21], "C": [20, 21]}},
+        {"spans": {"B": [22, 23], "C": [22, 23]}},
+        {"spans": {"B": [24, 25], "C": [24, 25]}},
+        {"spans": {"B": [26, 27], "C": [26, 27]}},
+        {"spans": {"B": [28, 29], "C": [28, 29]}},
+        {"spans": {"B": [30, 31], "C": [30, 31]}},
+        {
+          "spans": {"B": [32, 33], "C": [32, 33]},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is between 'ſol' and 'ſo', representing a variation in the spelling of the musical note name (sol vs so) without changing the grammatical form."
+          }
+        },
+        {"spans": {"B": [34, 35], "C": [34, 35]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [35, 46]}, "C": {"span": [35, 46]}},
+      "columns": [
+        {
+          "spans": {"B": [35, 36], "C": [35, 36]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
+        {"spans": {"B": [37, 38], "C": [37, 38]}},
+        {
+          "spans": {"B": [39, 40], "C": [39, 40]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (Ml vs MI) and long s vs short s (ſ vs s) within the same word."
+          }
+        },
+        {
+          "spans": {"B": [41, 42], "C": [41, 42]},
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is 'FAtum' vs 'FArum', which is a variation in the spelling of the same word (likely a typo or variant for 'Fatum' or 'Farrum' in context, but clearly a spelling difference of the same lexical item)."
+          }
+        },
+        {"spans": {"B": [43, 44], "C": [43, 44]}},
+        {"spans": {"B": [45, 46], "C": [45, 46]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [46, 57]}, "C": {"span": [46, 57]}},
+      "columns": [
+        {
+          "spans": {"B": [46, 47], "C": [46, 47]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "u/v, i/j"}
+        },
+        {"spans": {"B": [48, 49], "C": [48, 49]}},
+        {"spans": {"B": [50, 51], "C": [50, 51]}},
+        {"spans": {"B": [52, 53], "C": [52, 53]}},
+        {"spans": {"B": [54, 55], "C": [54, 55]}},
+        {"spans": {"B": [56, 57], "C": [56, 57]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [57, 68]}, "C": {"span": [57, 68]}},
+      "columns": [
+        {"spans": {"B": [57, 58], "C": [57, 58]}},
+        {"spans": {"B": [59, 60], "C": [59, 60]}},
+        {"spans": {"B": [61, 62], "C": [61, 62]}},
+        {
+          "spans": {"B": [63, 64], "C": [63, 64]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"B": [65, 66], "C": [65, 66]}},
+        {"spans": {"B": [67, 68], "C": [67, 68]}}
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [68, 79]}, "C": {"span": [68, 79]}},
+      "columns": [
+        {"spans": {"B": [68, 69], "C": [68, 69]}},
+        {"spans": {"B": [70, 71], "C": [70, 71]}},
+        {"spans": {"B": [72, 73], "C": [72, 73]}},
+        {
+          "spans": {"B": [74, 75], "C": [74, 75]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Difference in capitalization (I vs l) and case (S vs s) within the same word."
+          }
+        },
+        {"spans": {"B": [76, 77], "C": [76, 77]}},
+        {"spans": {"B": [78, 79], "C": [78, 79]}}
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0004"]}
+    }
+  ]
+}

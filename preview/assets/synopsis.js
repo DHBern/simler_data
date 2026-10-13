@@ -1,5 +1,5 @@
 /**
- * The synopsis pages: what the reader can choose, the strip, the keys.
+ * The synopsis pages: what the reader can choose, and the keys; the overview's sort.
  *
  * A classic script, loaded only by `synopse-*.html`; `previewStore.js` comes first and
  * holds the one thing this shares with `preview.js`.
@@ -74,17 +74,15 @@
       synopsis.toggleAttribute('data-no-model', !model.checked)
       previewStore.set('syn-model', model.checked ? 'on' : 'off')
     }
-    var lines = {}
-    all('[data-syn-strip] i').forEach(function (line) { lines['seg-' + line.dataset.row] = line })
 
-    // A place is shown when its category is chosen and its readings still differ
-    // under the filters: bit m of `data-gone` says they agree under filter set m.
+    // A place is shown when its category is chosen and the step of the rule
+    // cascade that settles it (`data-step`) is not one the reader leaves out.
     var refresh = function () {
       var chosen = chips.filter(function (c) { return c.checked }).map(function (c) { return c.dataset.synCat })
-      var mask = filters.reduce(function (m, f) { return f.checked ? m | 1 << f.dataset.synIgnore : m }, 0)
+      var ignored = filters.filter(function (f) { return f.checked }).map(function (f) { return f.dataset.synIgnore })
       var shown = shownColumns()
       var agree = agreeing(shown)
-      var gone = function (el) { return (el.dataset.gone >> mask & 1) === 1 || agree[el.dataset.group] === true }
+      var gone = function (el) { return ignored.indexOf(el.dataset.step) >= 0 || agree[el.dataset.group] === true }
       places.forEach(function (el) { el.toggleAttribute('data-off', chosen.indexOf(el.dataset.cat) < 0 || gone(el)) })
 
       // Each count says what the filters leave of its category, chosen or not.
@@ -101,13 +99,11 @@
         var gap = all('td.gap', row).some(function (td) { return shown.indexOf(td.dataset.w) >= 0 })
         var quiet = !row.querySelector('.var:not([data-off])') && !(gaps && gap)
         row.classList.toggle('quiet', quiet)
-        if (lines[row.id]) lines[row.id].classList.toggle('quiet', quiet)
         var app = row.nextElementSibling
         if (app && app.classList.contains('app')) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
       })
       previewStore.set('syn-show', chosen.join(' '))
-      previewStore.set('syn-ignore', filters.filter(function (f) { return f.checked })
-        .map(function (f) { return f.dataset.synIgnore }).join(' '))
+      previewStore.set('syn-steps', ignored.join('|'))
     }
 
     var apply = function (control) {
@@ -140,7 +136,6 @@
 
     var changed = function () {
       tally(0, differing().length)
-      dispatchEvent(new Event('synchange'))
     }
 
     var step = function (by) {
@@ -172,9 +167,9 @@
     })
 
     var show = previewStore.get('syn-show')
-    var ignore = previewStore.get('syn-ignore')
+    var ignore = previewStore.get('syn-steps')
     if (show !== null) chips.forEach(function (c) { c.checked = show.split(' ').indexOf(c.dataset.synCat) >= 0 })
-    if (ignore !== null) filters.forEach(function (f) { f.checked = ignore.split(' ').indexOf(f.dataset.synIgnore) >= 0 })
+    if (ignore !== null) filters.forEach(function (f) { f.checked = ignore.split('|').indexOf(f.dataset.synIgnore) >= 0 })
     chips.concat(filters).forEach(function (control) {
       control.addEventListener('change', function () { refresh(); changed() })
     })
@@ -222,56 +217,5 @@
       if (key) order.sort(function (a, b) { return b.getAttribute(key) - a.getAttribute(key) })
       order.forEach(function (row) { body.appendChild(row) })
     })
-  }
-
-  // The strip beside the table: each line sits where its row does, a marker
-  // shows what is on screen, and a click or a drag moves there. A row the
-  // filter hides loses its line, so the strip always maps the table as shown.
-  var strip = document.querySelector('[data-syn-strip]')
-  if (strip && table) {
-    var here = strip.querySelector('.syn-here')
-    var lines = [].slice.call(strip.querySelectorAll('i'))
-
-    var follow = function () {
-      var top = table.getBoundingClientRect().top + window.scrollY
-      var height = table.offsetHeight || 1
-      var from = Math.min(1, Math.max(0, (window.scrollY - top) / height))
-      var to = Math.min(1, Math.max(0, (window.scrollY + window.innerHeight - top) / height))
-      here.style.top = from * 100 + '%'
-      here.style.height = Math.max(to - from, 0.01) * 100 + '%'
-    }
-
-    // Rects, not offsetTop: a row and the table are positioned against
-    // different ancestors, so their offsets are not comparable.
-    var place = function () {
-      var base = table.getBoundingClientRect().top
-      var height = table.offsetHeight || 1
-      lines.forEach(function (line) {
-        var row = document.getElementById('seg-' + line.dataset.row)
-        var shown = row && row.offsetParent !== null
-        line.style.display = shown ? '' : 'none'
-        if (shown) line.style.top = ((row.getBoundingClientRect().top - base) / height * 100) + '%'
-      })
-      follow()
-    }
-
-    var goTo = function (event) {
-      var box = strip.getBoundingClientRect()
-      var at = (event.clientY - box.top) / box.height
-      var top = table.getBoundingClientRect().top + window.scrollY
-      window.scrollTo({ top: top + at * table.offsetHeight - window.innerHeight / 2 })
-    }
-
-    strip.addEventListener('pointerdown', function (event) {
-      strip.setPointerCapture(event.pointerId)
-      goTo(event)
-    })
-    strip.addEventListener('pointermove', function (event) {
-      if (event.buttons === 1) goTo(event)
-    })
-    addEventListener('scroll', follow, { passive: true })
-    addEventListener('resize', place)
-    addEventListener('synchange', place) // a reading option changed what is shown
-    place()
   }
 })()

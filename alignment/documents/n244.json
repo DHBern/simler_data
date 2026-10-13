@@ -1,0 +1,249 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n244-B_1653",
+      "tokens": [
+        {"t": "Geiſt-", "n": "geist"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Weltkinder", "n": "weltkinter"},
+        {"t": " "},
+        {"t": "ſchauen", "n": "schauen"},
+        {"t": " "},
+        {"t": "den", "n": "ten"},
+        {"t": " "},
+        {"t": "den", "n": "ten"},
+        {"t": " "},
+        {"t": "Tod", "n": "tot"},
+        {"t": " "},
+        {"t": "ungleich"},
+        {"t": " "},
+        {"t": "an.", "n": "an"},
+        {"t": "Der", "n": "ter"},
+        {"t": " "},
+        {"t": "glaub"},
+        {"t": " "},
+        {"t": "an"},
+        {"t": " "},
+        {"t": "Chriſtus", "n": "christus"},
+        {"t": " "},
+        {"t": "bringet"},
+        {"t": " "},
+        {"t": "freüd/", "n": "freut"},
+        {"t": "vertreibt", "n": "uertreipt"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "todes", "n": "totes"},
+        {"t": " "},
+        {"t": "forcht"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "leid:", "n": "leit"},
+        {"t": "Weltliebe/", "n": "weltliebe"},
+        {"t": " "},
+        {"t": "wolluſt/", "n": "wolust"},
+        {"t": " "},
+        {"t": "reichthum/", "n": "reichtum"},
+        {"t": " "},
+        {"t": "pracht/", "n": "pracht"},
+        {"t": "in"},
+        {"t": " "},
+        {"t": "tods", "n": "tots"},
+        {"t": " "},
+        {"t": "gedaͤchtnuß", "n": "getachtnus"},
+        {"t": " "},
+        {"t": "weinen"},
+        {"t": " "},
+        {"t": "macht.", "n": "macht"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n244"
+    },
+    {
+      "siglum": "C",
+      "name": "n244-C_1663_dok",
+      "tokens": [
+        {"t": "179.", "n": "179"},
+        {"t": "Geiſt-", "n": "geist"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Weltkinder", "n": "weltkinter"},
+        {"t": " "},
+        {"t": "ſchauen", "n": "schauen"},
+        {"t": " "},
+        {"t": "den", "n": "ten"},
+        {"t": " "},
+        {"t": "Tod", "n": "tot"},
+        {"t": " "},
+        {"t": "ungleich"},
+        {"t": " "},
+        {"t": "an.", "n": "an"},
+        {"t": "Der", "n": "ter"},
+        {"t": " "},
+        {"t": "Glaub", "n": "glaub"},
+        {"t": " "},
+        {"t": "an"},
+        {"t": " "},
+        {"t": "Chriſtum", "n": "christum"},
+        {"t": " "},
+        {"t": "bringet"},
+        {"t": " "},
+        {"t": "freud/", "n": "freut"},
+        {"t": "vertreibt", "n": "uertreipt"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "todes", "n": "totes"},
+        {"t": " "},
+        {"t": "forcht"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "leid:", "n": "leit"},
+        {"t": "Weltliebe/", "n": "weltliebe"},
+        {"t": " "},
+        {"t": "Wolluſt/", "n": "wolust"},
+        {"t": " "},
+        {"t": "Reichthum/", "n": "reichtum"},
+        {"t": " "},
+        {"t": "Pracht/", "n": "pracht"},
+        {"t": "in"},
+        {"t": " "},
+        {"t": "todsgedaͤchtnus", "n": "totsgetachtnus"},
+        {"t": " "},
+        {"t": "weinen"},
+        {"t": " "},
+        {"t": "macht.", "n": "macht"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n244"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"missing": true}, "C": {"span": [0, 1]}},
+      "columns": [{"spans": {"C": [0, 1]}}],
+      "refs": {"C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [0, 17]}, "C": {"span": [1, 16]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [1, 2]}},
+        {"spans": {"B": [2, 3], "C": [3, 4]}},
+        {"spans": {"B": [4, 5], "C": [5, 6]}},
+        {"spans": {"B": [6, 7], "C": [7, 8]}},
+        {"spans": {"B": [8, 9], "C": [9, 10]}},
+        {"spans": {"B": [10, 11]}},
+        {"spans": {"B": [12, 13], "C": [11, 12]}},
+        {"spans": {"B": [14, 15], "C": [13, 14]}},
+        {"spans": {"B": [16, 17], "C": [15, 16]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [17, 28]}, "C": {"span": [16, 27]}},
+      "columns": [
+        {"spans": {"B": [17, 18], "C": [16, 17]}},
+        {
+          "spans": {"B": [19, 20], "C": [18, 19]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [21, 22], "C": [20, 21]}},
+        {
+          "spans": {"B": [23, 24], "C": [22, 23]},
+          "relation": {
+            "type": "grammatical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "Chriſtum is the accusative singular form, while Chriſtus is the nominative singular form."
+          }
+        },
+        {"spans": {"B": [25, 26], "C": [24, 25]}},
+        {
+          "spans": {"B": [27, 28], "C": [26, 27]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        }
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [28, 39]}, "C": {"span": [27, 38]}},
+      "columns": [
+        {"spans": {"B": [28, 29], "C": [27, 28]}},
+        {"spans": {"B": [30, 31], "C": [29, 30]}},
+        {"spans": {"B": [32, 33], "C": [31, 32]}},
+        {"spans": {"B": [34, 35], "C": [33, 34]}},
+        {"spans": {"B": [36, 37], "C": [35, 36]}},
+        {"spans": {"B": [38, 39], "C": [37, 38]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [39, 46]}, "C": {"span": [38, 45]}},
+      "columns": [
+        {"spans": {"B": [39, 40], "C": [38, 39]}},
+        {
+          "spans": {"B": [41, 42], "C": [40, 41]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [43, 44], "C": [42, 43]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {
+          "spans": {"B": [45, 46], "C": [44, 45]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        }
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [46, 55]}, "C": {"span": [45, 52]}},
+      "columns": [
+        {"spans": {"B": [46, 47], "C": [45, 46]}},
+        {
+          "spans": {"B": [48, 51], "C": [47, 48]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
+        {"spans": {"B": [52, 53], "C": [49, 50]}},
+        {"spans": {"B": [54, 55], "C": [51, 52]}}
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0004"]}
+    }
+  ]
+}

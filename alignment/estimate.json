@@ -1,42 +1,43 @@
 {
  "total": {
-  "rows": 6860,
+  "rows": 6861,
   "complete": 6134,
-  "alone": 466,
+  "alone": 467,
   "doubtful": 223,
-  "places": 4855,
-  "alike": 20462,
-  "unrelated": 107,
+  "places": 4850,
+  "alike": 20460,
+  "unrelated": 102,
   "proposals": 23,
+  "typos_found": 55,
   "poems": 148,
   "lera": 2
  },
  "rows": {
-  "alone": 405,
+  "alone": 406,
   "fine": 6232,
   "doubtful": 223
  },
  "types": {
-  "grammatical model": 54,
+  "grammatical model": 53,
   "lexical model": 253,
-  "omission": 523,
-  "open": 5,
-  "orthographic model": 404,
-  "orthographic rule": 2216,
+  "omission": 483,
+  "open": 4,
+  "orthographic model": 318,
+  "orthographic rule": 2208,
   "other model": 4,
   "punctuation model": 4,
-  "punctuation rule": 474,
+  "punctuation rule": 509,
   "repetition model": 1,
-  "spelling model": 231,
-  "spelling rule": 639,
+  "spelling model": 148,
+  "spelling rule": 818,
   "transposition model": 3,
   "transposition rule": 1,
   "uncertain model": 43
  },
  "confidence": {
   "0.9": 44,
-  "0.95": 725,
-  "1": 228
+  "0.95": 585,
+  "1": 198
  },
  "poems": {
   "B.1": {
@@ -48,7 +49,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "B.2": {
    "rows": 4,
@@ -63,7 +66,9 @@
     "s1": [
      "A is missing where B has 6 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "B.3": {
    "rows": 8,
@@ -74,7 +79,9 @@
    "alike": 8,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "B.4": {
    "rows": 10,
@@ -85,14 +92,16 @@
    "alike": 10,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "iii": {
    "rows": 13,
    "complete": 10,
    "alone": 3,
    "doubtful": 5,
-   "places": 294,
+   "places": 292,
    "alike": 26,
    "unrelated": 2,
    "proposals": 1,
@@ -114,7 +123,9 @@
      "B is missing where A has 180 words",
      "C is missing where A has 180 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "iv": {
    "rows": 2,
@@ -125,7 +136,19 @@
    "alike": 6,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s2",
+     "readings": {
+      "A": "ſit",
+      "B": "ſit",
+      "C": "fit"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "ix": {
    "rows": 23,
@@ -136,7 +159,26 @@
    "alike": 23,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s14",
+     "readings": {
+      "B": "ſed",
+      "C": "ſcd"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s21",
+     "readings": {
+      "B": "Hæc",
+      "C": "Hæe"
+     },
+     "letters": "c/e"
+    }
+   ],
+   "typos_found": 2
   },
   "n1": {
    "rows": 206,
@@ -151,7 +193,9 @@
     "s93": [
      "“weyßheit” is paired with “vorſicht” in column 3"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n10": {
    "rows": 34,
@@ -187,7 +231,9 @@
     "s21": [
      "D is missing where C has 10 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n11": {
    "rows": 34,
@@ -198,7 +244,9 @@
    "alike": 34,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n12": {
    "rows": 79,
@@ -213,7 +261,34 @@
     "s79": [
      "C is missing where D has 15 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s3",
+     "readings": {
+      "C": "Chriſt/",
+      "D": "Ehriſt/"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s26",
+     "readings": {
+      "C": "Chriſtus",
+      "D": "Ehriſtus"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s27",
+     "readings": {
+      "C": "Eltern/",
+      "D": "Cltern/"
+     },
+     "letters": "c/e"
+    }
+   ],
+   "typos_found": 3
   },
   "n123": {
    "rows": 72,
@@ -224,7 +299,9 @@
    "alike": 208,
    "unrelated": 2,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n124": {
    "rows": 24,
@@ -235,7 +312,19 @@
    "alike": 60,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s23",
+     "readings": {
+      "A": "Chriſtus",
+      "B": "Chriſtus",
+      "C": "Chriftus"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n125": {
    "rows": 3,
@@ -246,7 +335,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n126": {
    "rows": 3,
@@ -257,7 +348,19 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s2",
+     "readings": {
+      "A": "frucht;",
+      "B": "frucht;",
+      "C": "ſrucht;"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n128": {
    "rows": 4,
@@ -268,7 +371,9 @@
    "alike": 3,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n129": {
    "rows": 7,
@@ -279,18 +384,32 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n13": {
    "rows": 795,
    "complete": 733,
    "alone": 2,
    "doubtful": 0,
-   "places": 467,
+   "places": 466,
    "alike": 2259,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s579",
+     "readings": {
+      "B": "ſie",
+      "C": "fie",
+      "D": "ſie"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n132": {
    "rows": 6,
@@ -308,7 +427,9 @@
     "s6": [
      "B is missing where C has 7 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n138": {
    "rows": 3,
@@ -319,7 +440,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n139": {
    "rows": 3,
@@ -330,7 +453,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n14": {
    "rows": 59,
@@ -341,7 +466,9 @@
    "alike": 50,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n140": {
    "rows": 3,
@@ -352,7 +479,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n141": {
    "rows": 3,
@@ -363,7 +492,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n142": {
    "rows": 3,
@@ -374,7 +505,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n143": {
    "rows": 3,
@@ -385,7 +518,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n144": {
    "rows": 12,
@@ -400,7 +535,9 @@
     "s1": [
      "A is missing where B has 7 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n145": {
    "rows": 3,
@@ -411,7 +548,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n146": {
    "rows": 5,
@@ -422,7 +561,9 @@
    "alike": 15,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n147_1": {
    "rows": 5,
@@ -433,7 +574,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n147_2": {
    "rows": 10,
@@ -444,7 +587,9 @@
    "alike": 10,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n148": {
    "rows": 9,
@@ -455,7 +600,9 @@
    "alike": 27,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n149": {
    "rows": 11,
@@ -470,7 +617,9 @@
     "s1": [
      "B is missing where A has 6 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n15": {
    "rows": 63,
@@ -485,7 +634,9 @@
     "s43": [
      "“HERREN” is paired with “HErꝛen” in column 3"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n150": {
    "rows": 29,
@@ -496,18 +647,22 @@
    "alike": 85,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n152": {
-   "rows": 19,
+   "rows": 20,
    "complete": 15,
-   "alone": 4,
+   "alone": 5,
    "doubtful": 0,
-   "places": 14,
+   "places": 13,
    "alike": 15,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n153": {
    "rows": 6,
@@ -518,7 +673,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n154": {
    "rows": 6,
@@ -529,7 +686,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n155": {
    "rows": 26,
@@ -540,7 +699,9 @@
    "alike": 25,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n158": {
    "rows": 6,
@@ -551,7 +712,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n159": {
    "rows": 14,
@@ -562,7 +725,9 @@
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n160": {
    "rows": 4,
@@ -573,7 +738,9 @@
    "alike": 3,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n162": {
    "rows": 14,
@@ -584,7 +751,9 @@
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n163": {
    "rows": 18,
@@ -595,7 +764,9 @@
    "alike": 17,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n164": {
    "rows": 5,
@@ -610,7 +781,9 @@
     "s1": [
      "B's text is 24× as long as C's"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n168": {
    "rows": 4,
@@ -621,7 +794,9 @@
    "alike": 3,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n169": {
    "rows": 4,
@@ -632,7 +807,9 @@
    "alike": 3,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n171": {
    "rows": 14,
@@ -643,7 +820,9 @@
    "alike": 10,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n175": {
    "rows": 6,
@@ -654,7 +833,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n176": {
    "rows": 6,
@@ -665,7 +846,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n177": {
    "rows": 8,
@@ -676,7 +859,9 @@
    "alike": 6,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n178": {
    "rows": 7,
@@ -687,7 +872,18 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s5",
+     "readings": {
+      "B": "ſich",
+      "C": "fich"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n179": {
    "rows": 6,
@@ -698,7 +894,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n18": {
    "rows": 66,
@@ -709,7 +907,9 @@
    "alike": 58,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n180": {
    "rows": 6,
@@ -720,7 +920,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n181": {
    "rows": 6,
@@ -731,7 +933,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n182": {
    "rows": 6,
@@ -742,7 +946,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n183": {
    "rows": 21,
@@ -757,7 +963,9 @@
     "s10": [
      "“ver-” is paired with “vertreibt.” in column 9"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n184": {
    "rows": 6,
@@ -768,7 +976,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n189": {
    "rows": 6,
@@ -779,7 +989,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n19": {
    "rows": 61,
@@ -794,7 +1006,26 @@
     "s2": [
      "D is missing where C has 9 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s18",
+     "readings": {
+      "C": "Chriſtus",
+      "D": "Chriſtns"
+     },
+     "letters": "n/u"
+    },
+    {
+     "segment": "s20",
+     "readings": {
+      "C": "ftraf",
+      "D": "ſtraf"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n190": {
    "rows": 6,
@@ -805,7 +1036,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n194": {
    "rows": 4,
@@ -816,7 +1049,9 @@
    "alike": 3,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n2": {
    "rows": 156,
@@ -835,7 +1070,30 @@
      "“kein” is paired with “nirgend” in column 3",
      "“bleibend” is paired with “ruͦh” in column 4"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s48",
+     "readings": {
+      "A": "gebe",
+      "B": "gebe",
+      "C": "gebe",
+      "D": "gebc"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s123",
+     "readings": {
+      "A": "und",
+      "B": "und",
+      "C": "und",
+      "D": "nnd"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 2
   },
   "n20": {
    "rows": 299,
@@ -856,7 +1114,40 @@
     "s149": [
      "“ohne” is paired with “ſonder” in column 4"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s2",
+     "readings": {
+      "A": "Chriſtenlicher",
+      "B": "Chriſtenlicher",
+      "C": "Chriſtenlicher",
+      "D": "Ehriſtenlicher"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s187",
+     "readings": {
+      "A": "und",
+      "B": "und",
+      "C": "und",
+      "D": "nnd"
+     },
+     "letters": "n/u"
+    },
+    {
+     "segment": "s214",
+     "readings": {
+      "A": "Chriſtus",
+      "B": "Chriſtus",
+      "C": "Chriſtus",
+      "D": "Ehriſtus"
+     },
+     "letters": "c/e"
+    }
+   ],
+   "typos_found": 3
   },
   "n21": {
    "rows": 113,
@@ -867,7 +1158,9 @@
    "alike": 588,
    "unrelated": 2,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n210": {
    "rows": 39,
@@ -878,7 +1171,18 @@
    "alike": 38,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s32",
+     "readings": {
+      "B": "ſuͤhret/",
+      "C": "fuͤhret/"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n211": {
    "rows": 21,
@@ -893,7 +1197,9 @@
     "s1": [
      "“LXX.” is paired with “139.” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n212": {
    "rows": 21,
@@ -908,7 +1214,19 @@
     "s1": [
      "“LXXI.” is paired with “140.” in column 1"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s1",
+     "readings": {
+      "A": "auf",
+      "B": "auſ",
+      "C": "auf"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n22": {
    "rows": 127,
@@ -919,7 +1237,30 @@
    "alike": 684,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s97",
+     "readings": {
+      "A": "zeit/",
+      "B": "zeit/",
+      "C": "zelt/",
+      "D": "zeit/"
+     },
+     "letters": "i/l"
+    },
+    {
+     "segment": "s98",
+     "readings": {
+      "A": "frommen",
+      "B": "frommen",
+      "C": "frommen",
+      "D": "ſrommen"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n223": {
    "rows": 5,
@@ -934,7 +1275,9 @@
     "s1": [
      "“LVIII.” is paired with “151.” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n224": {
    "rows": 50,
@@ -968,7 +1311,9 @@
     "s35": [
      "“LXV.” is paired with “157.” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n225": {
    "rows": 5,
@@ -983,7 +1328,9 @@
     "s1": [
      "“LXVI.” is paired with “158.” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n226": {
    "rows": 5,
@@ -1001,7 +1348,9 @@
     "s4": [
      "“thraͤnen” is paired with “trehnentahl:” in column 9"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n227": {
    "rows": 10,
@@ -1016,7 +1365,9 @@
     "s1": [
      "“LXVIII.” is paired with “160.” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n23": {
    "rows": 30,
@@ -1040,7 +1391,9 @@
     "s26": [
      "A is missing where B has 8 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n230": {
    "rows": 9,
@@ -1051,7 +1404,9 @@
    "alike": 8,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n231": {
    "rows": 9,
@@ -1062,7 +1417,9 @@
    "alike": 9,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n232": {
    "rows": 12,
@@ -1073,7 +1430,9 @@
    "alike": 12,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n233": {
    "rows": 9,
@@ -1089,7 +1448,9 @@
      "“Jennes” is paired with “Diſes” in column 1",
      "“Laſterthier” is paired with “ungeheur*” in column 2"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n237": {
    "rows": 6,
@@ -1100,7 +1461,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n238": {
    "rows": 6,
@@ -1111,7 +1474,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n239": {
    "rows": 6,
@@ -1122,7 +1487,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n24": {
    "rows": 5,
@@ -1133,7 +1500,20 @@
    "alike": 30,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s5",
+     "readings": {
+      "A": "und",
+      "B": "und",
+      "C": "und",
+      "D": "uud"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n240": {
    "rows": 5,
@@ -1144,7 +1524,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n241": {
    "rows": 5,
@@ -1155,7 +1537,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n242": {
    "rows": 6,
@@ -1166,7 +1550,9 @@
    "alike": 6,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n243": {
    "rows": 5,
@@ -1177,7 +1563,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n244": {
    "rows": 6,
@@ -1188,7 +1576,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n245": {
    "rows": 6,
@@ -1199,7 +1589,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n247": {
    "rows": 115,
@@ -1217,7 +1609,19 @@
     "s69": [
      "“ohne” is paired with “ſonder” in column 3"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s25",
+     "readings": {
+      "A": "überſüll",
+      "B": "überfüll",
+      "C": "überfüll"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n248": {
    "rows": 123,
@@ -1240,7 +1644,28 @@
      "B is missing where A has 6 words",
      "C is missing where A has 6 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s43",
+     "readings": {
+      "A": "Nunmehr",
+      "B": "Nunmehr",
+      "C": "Nnnmehr"
+     },
+     "letters": "n/u"
+    },
+    {
+     "segment": "s78",
+     "readings": {
+      "A": "ſechs",
+      "B": "ſechs",
+      "C": "fechs"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n25": {
    "rows": 42,
@@ -1255,7 +1680,9 @@
     "s12": [
      "A is missing where B has 6 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n251": {
    "rows": 4,
@@ -1271,7 +1698,9 @@
      "“Freünd/” is paired with “übel” in column 3",
      "“aller” is paired with “gefahr!” in column 5"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n26": {
    "rows": 61,
@@ -1282,7 +1711,9 @@
    "alike": 300,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n265.i": {
    "rows": 76,
@@ -1293,7 +1724,9 @@
    "alike": 73,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n265.ii": {
    "rows": 5,
@@ -1308,7 +1741,9 @@
     "s4": [
      "“Simleri,” is paired with “SIMLERI,” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n265.iii": {
    "rows": 7,
@@ -1327,7 +1762,26 @@
     "s5": [
      "“Consul” is paired with “CONSUL” in column 4"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s1",
+     "readings": {
+      "B": "Idéæ",
+      "C": "ldéæ"
+     },
+     "letters": "i/l"
+    },
+    {
+     "segment": "s2",
+     "readings": {
+      "B": "Idéam",
+      "C": "ldéam"
+     },
+     "letters": "i/l"
+    }
+   ],
+   "typos_found": 2
   },
   "n265.iv": {
    "rows": 3,
@@ -1342,7 +1796,9 @@
     "s2": [
      "C is missing where B has 38 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n265": {
    "rows": 369,
@@ -1384,7 +1840,18 @@
     "s369": [
      "B is missing where C has 6 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s193",
+     "readings": {
+      "B": "erfreuen:",
+      "C": "erſreuen:"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n27": {
    "rows": 57,
@@ -1395,7 +1862,9 @@
    "alike": 300,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n28": {
    "rows": 32,
@@ -1404,7 +1873,7 @@
    "doubtful": 6,
    "places": 25,
    "alike": 141,
-   "unrelated": 5,
+   "unrelated": 3,
    "proposals": 1,
    "doubts": {
     "s3": [
@@ -1430,7 +1899,20 @@
      "A is missing where C has 6 words",
      "B is missing where C has 6 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s20",
+     "readings": {
+      "A": "ſie",
+      "B": "ſie",
+      "C": "fie",
+      "D": "ſie"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "n29": {
    "rows": 27,
@@ -1451,7 +1933,9 @@
     "s6": [
      "C's text is 8× as long as D's"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n3": {
    "rows": 86,
@@ -1466,7 +1950,9 @@
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n31.a": {
    "rows": 62,
@@ -1477,7 +1963,9 @@
    "alike": 62,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n31": {
    "rows": 71,
@@ -1488,7 +1976,18 @@
    "alike": 62,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s7",
+     "readings": {
+      "C": "nnd",
+      "D": "und"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n33.a": {
    "rows": 58,
@@ -1499,7 +1998,9 @@
    "alike": 58,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n33": {
    "rows": 64,
@@ -1514,7 +2015,26 @@
     "s2": [
      "D is missing where C has 9 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s58",
+     "readings": {
+      "C": "reifſen",
+      "D": "reiffen"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s58",
+     "readings": {
+      "C": "ſchiken",
+      "D": "fchiken"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n35.a": {
    "rows": 52,
@@ -1525,7 +2045,9 @@
    "alike": 52,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n35": {
    "rows": 70,
@@ -1549,7 +2071,26 @@
     "s7": [
      "D is missing where C has 6 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s59",
+     "readings": {
+      "C": "felde",
+      "D": "ſelde"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s59",
+     "readings": {
+      "C": "pſluͤgt/",
+      "D": "pfluͤgt/"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n37.a": {
    "rows": 51,
@@ -1560,7 +2101,9 @@
    "alike": 51,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n37": {
    "rows": 57,
@@ -1578,7 +2121,9 @@
     "s4": [
      "D is missing where C has 6 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n38": {
    "rows": 55,
@@ -1624,7 +2169,9 @@
     "s48": [
      "“für.” is paired with “fuͤr” in column 6"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n39": {
    "rows": 55,
@@ -1646,7 +2193,20 @@
      "“feind;” is paired with “ſtreit/” in column 5",
      "“feind;” is paired with “ſtreit;” in column 5"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s22",
+     "readings": {
+      "A": "Emmanuel;",
+      "B": "Emmanuel;",
+      "C": "Emmanuel;",
+      "D": "Emmannel;"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n4": {
    "rows": 87,
@@ -1661,7 +2221,30 @@
     "s1": [
      "“Jnhalt” is paired with “Haubtbegriff” in column 1"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s42",
+     "readings": {
+      "A": "ſingt/",
+      "B": "fingt/",
+      "C": "ſingt/",
+      "D": "ſingt/"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s44",
+     "readings": {
+      "A": "geſchoͤpff",
+      "B": "geſchoͤpſf",
+      "C": "geſchoͤpff",
+      "D": "geſchoͤpff"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n40": {
    "rows": 64,
@@ -1672,7 +2255,9 @@
    "alike": 313,
    "unrelated": 3,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n42": {
    "rows": 101,
@@ -1680,7 +2265,7 @@
    "alone": 28,
    "doubtful": 33,
    "places": 171,
-   "alike": 399,
+   "alike": 396,
    "unrelated": 20,
    "proposals": 4,
    "doubts": {
@@ -1833,7 +2418,9 @@
      "C is missing where N has 28 words",
      "D is missing where N has 28 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n43": {
    "rows": 14,
@@ -1861,7 +2448,9 @@
      "D is missing where A has 6 words",
      "“gleich” is paired with “ſinns” in column 5"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n44": {
    "rows": 149,
@@ -1879,7 +2468,60 @@
     "s63": [
      "“mich” is paired with “geſunde/” in column 2"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s101",
+     "readings": {
+      "A": "weiche",
+      "B": "weiche",
+      "C": "welche",
+      "D": "welche"
+     },
+     "letters": "i/l"
+    },
+    {
+     "segment": "s117",
+     "readings": {
+      "A": "auf",
+      "B": "auf",
+      "C": "auf",
+      "D": "anf"
+     },
+     "letters": "n/u"
+    },
+    {
+     "segment": "s118",
+     "readings": {
+      "A": "ſeinen",
+      "B": "ſeinen",
+      "C": "ſeinen",
+      "D": "feinen"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s123",
+     "readings": {
+      "A": "ſeine",
+      "B": "ſeine",
+      "C": "ſeine",
+      "D": "feine"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s125",
+     "readings": {
+      "A": "und",
+      "B": "und",
+      "C": "und",
+      "D": "nnd"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 5
   },
   "n45": {
    "rows": 124,
@@ -1896,14 +2538,16 @@
      "B is missing where D has 14 words",
      "C is missing where D has 14 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n46": {
    "rows": 55,
    "complete": 40,
    "alone": 4,
    "doubtful": 2,
-   "places": 31,
+   "places": 30,
    "alike": 267,
    "unrelated": 1,
    "proposals": 0,
@@ -1914,7 +2558,9 @@
     "s2": [
      "D is missing where A has 6 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n47": {
    "rows": 57,
@@ -1930,7 +2576,30 @@
      "“cap.” is paired with “cap.31.v.10.ꝛc.” in column 10",
      "“v.10.ꝛc.” is paired with “gezogenAuf” in column 11"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s7",
+     "readings": {
+      "A": "ſie",
+      "B": "ſie",
+      "C": "ſie",
+      "D": "fie"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s57",
+     "readings": {
+      "A": "fortan!",
+      "B": "fortan!",
+      "C": "fortan!",
+      "D": "ſortan!"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n48": {
    "rows": 57,
@@ -1945,7 +2614,20 @@
     "s29": [
      "“liebſte” is paired with “Braute” in column 2"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s35",
+     "readings": {
+      "A": "offenbar",
+      "B": "offenbar",
+      "C": "offenbar",
+      "D": "offeubar"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n49": {
    "rows": 78,
@@ -1975,7 +2657,40 @@
     "s12": [
      "D is missing where A has 6 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s34",
+     "readings": {
+      "A": "klein.",
+      "B": "klein.",
+      "C": "kleiu.",
+      "D": "klein."
+     },
+     "letters": "n/u"
+    },
+    {
+     "segment": "s56",
+     "readings": {
+      "A": "Chriſtus",
+      "B": "Chriſtus",
+      "C": "Chriſtus",
+      "D": "Ehriſtus"
+     },
+     "letters": "c/e"
+    },
+    {
+     "segment": "s63",
+     "readings": {
+      "A": "gottsfoͤrchtigem",
+      "B": "gottsfoͤrchtigem",
+      "C": "gottsſoͤrchtigem",
+      "D": "gottsfoͤrchtigem"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 3
   },
   "n5": {
    "rows": 221,
@@ -1999,7 +2714,20 @@
     "s221": [
      "C is missing where A has 7 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s102",
+     "readings": {
+      "A": "und",
+      "B": "und",
+      "C": "und",
+      "D": "nnd"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n50": {
    "rows": 62,
@@ -2007,10 +2735,22 @@
    "alone": 0,
    "doubtful": 0,
    "places": 30,
-   "alike": 184,
+   "alike": 185,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s8",
+     "readings": {
+      "B": "ans",
+      "C": "ans",
+      "D": "aus"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "n51": {
    "rows": 84,
@@ -2021,7 +2761,9 @@
    "alike": 82,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n57": {
    "rows": 57,
@@ -2036,7 +2778,9 @@
     "s43": [
      "“ewer” is paired with “eure” in column 5"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n6": {
    "rows": 451,
@@ -2047,7 +2791,28 @@
    "alike": 1348,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s8",
+     "readings": {
+      "B": "aufſatz",
+      "C": "aufſatz",
+      "D": "auſſatz"
+     },
+     "letters": "f/ſ"
+    },
+    {
+     "segment": "s27",
+     "readings": {
+      "B": "ſein",
+      "C": "fein",
+      "D": "ſein"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 2
   },
   "n65.3": {
    "rows": 14,
@@ -2074,7 +2839,9 @@
     "s14": [
      "“Uberſchrifften.” is paired with “HErꝛ” in column 3"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n66": {
    "rows": 82,
@@ -2085,7 +2852,9 @@
    "alike": 244,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n67": {
    "rows": 58,
@@ -2096,7 +2865,9 @@
    "alike": 172,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n68": {
    "rows": 16,
@@ -2107,7 +2878,9 @@
    "alike": 46,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n69": {
    "rows": 153,
@@ -2116,7 +2889,7 @@
    "doubtful": 57,
    "places": 293,
    "alike": 562,
-   "unrelated": 15,
+   "unrelated": 12,
    "proposals": 0,
    "doubts": {
     "s1": [
@@ -2336,7 +3109,9 @@
      "A is missing where B has 8 words",
      "F42A is missing where B has 8 words"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "n7": {
    "rows": 102,
@@ -2347,7 +3122,9 @@
    "alike": 100,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n8": {
    "rows": 65,
@@ -2358,7 +3135,9 @@
    "alike": 172,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n83": {
    "rows": 5,
@@ -2369,7 +3148,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "n9": {
    "rows": 46,
@@ -2391,7 +3172,20 @@
     "s44": [
      "A is missing where B has 7 words"
     ]
-   }
+   },
+   "typos": [
+    {
+     "segment": "s39",
+     "readings": {
+      "A": "zum",
+      "B": "zum",
+      "C": "zum",
+      "D": "znm"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "typos_found": 1
   },
   "v": {
    "rows": 2,
@@ -2402,7 +3196,9 @@
    "alike": 6,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "vi": {
    "rows": 5,
@@ -2413,7 +3209,9 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "vii": {
    "rows": 5,
@@ -2424,7 +3222,9 @@
    "alike": 13,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "viii": {
    "rows": 5,
@@ -2435,7 +3235,18 @@
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s2",
+     "readings": {
+      "B": "Mlſerum",
+      "C": "MIſerum"
+     },
+     "letters": "i/l"
+    }
+   ],
+   "typos_found": 1
   },
   "xi": {
    "rows": 29,
@@ -2446,7 +3257,9 @@
    "alike": 87,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "xiv": {
    "rows": 61,
@@ -2457,7 +3270,19 @@
    "alike": 181,
    "unrelated": 2,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s47",
+     "readings": {
+      "A": "ſie",
+      "B": "ſie",
+      "C": "fie"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "typos_found": 1
   },
   "xix": {
    "rows": 15,
@@ -2468,7 +3293,9 @@
    "alike": 45,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "xvi": {
    "rows": 15,
@@ -2479,7 +3306,9 @@
    "alike": 42,
    "unrelated": 1,
    "proposals": 0,
-   "doubts": {}
+   "doubts": {},
+   "typos": [],
+   "typos_found": 0
   },
   "xvii": {
    "rows": 10,
@@ -2494,7 +3323,9 @@
     "s1": [
      "C's text is 13× as long as A's"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   },
   "xviii": {
    "rows": 9,
@@ -2509,7 +3340,9 @@
     "s1": [
      "A's text is 20× as long as B's"
     ]
-   }
+   },
+   "typos": [],
+   "typos_found": 0
   }
  }
 }

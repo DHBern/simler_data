@@ -115,53 +115,6 @@
 .var[data-degree='3'] b { background-color: rgb(var(--c-accent) / 0.5); }
 .var.is-linked { background-color: rgb(var(--c-accent) / 0.3); }
 
-/* ── The strip: where the variance is, and where the reader is in it ─────── */
-
-.syn-strip {
-  position: fixed;
-  top: 3.5rem;
-  right: 0.35rem;
-  bottom: 1rem;
-  width: 1.1rem;
-  cursor: pointer;
-  touch-action: none;
-}
-.syn-strip i {
-  position: absolute;
-  right: 0.35rem;
-  height: 2px;
-  border-radius: 1px;
-  background-color: rgb(var(--c-accent));
-}
-/* As long and as dark as the widest disagreement in that segment. */
-.syn-strip i[data-level='0'] { width: 0.15rem; opacity: 0.12; }
-.syn-strip i[data-level='1'] { width: 0.3rem; opacity: 0.35; }
-.syn-strip i[data-level='2'] { width: 0.45rem; opacity: 0.6; }
-.syn-strip i[data-level='3'] { width: 0.6rem; opacity: 0.85; }
-/* Where a poem of a bundle begins, across the whole strip. */
-.syn-strip i.tick {
-  right: 0;
-  width: 1.1rem;
-  height: 1px;
-  background-color: rgb(var(--c-ink));
-  opacity: 0.3;
-}
-/* What is on screen. */
-.syn-here {
-  position: absolute;
-  inset-inline: 0;
-  border: 1px solid rgb(var(--c-ink) / 0.45);
-  border-radius: 2px;
-  background-color: rgb(var(--c-ink) / 0.06);
-}
-/* A segment with nothing left to show, by the reader's choice. */
-.syn-strip i.quiet:not(.tick) { opacity: 0.12; width: 0.15rem; }
-/* One left to check: a mark at the strip's left edge, whatever its variance. */
-.syn-strip i.doubt { box-shadow: -0.55rem 0 0 rgb(var(--c-gap)); }
-@media (max-width: 60rem) {
-  .syn-strip { display: none; }
-}
-
 /* ── The reading options ──────────────────────────────────────────────────── */
 
 /* Three rows — what counts, how it is compared, how it is shown — each led by
@@ -188,7 +141,7 @@
 .syn-count { margin-left: auto; color: rgb(var(--c-muted)); font-size: 0.8rem; }
 
 /* A category is a chip with its count; one the filters have emptied fades. */
-.syn-row:first-child { gap: 0.35rem 0.4rem; }
+.syn-glance + .syn-row { gap: 0.35rem 0.4rem; }
 .syn-chip {
   display: inline-flex;
   align-items: center;
@@ -223,11 +176,10 @@
 .app-list li[data-off], .syn-register li[data-off] { display: none; }
 
 /* Only the segments that differ — by the measure the reader chose. Headings go
-   with the rest: one that reads the same in every witness is not a difference,
-   and the strip keeps the poem's divisions in view. */
+   with the rest: one that reads the same in every witness is not a difference. */
 [data-varying] tbody tr.quiet { display: none; }
 
-/* A row the strip or a link points at. */
+/* A row a link points at. */
 .synopsis tbody tr { scroll-margin-top: 4rem; }
 .synopsis tbody tr:target { background-color: rgb(var(--c-accent) / 0.12); }
 
@@ -329,13 +281,17 @@
 [data-cat='open'] { --hue: var(--c-muted); }
 
 /* A poem's variants as one bar, a part per category. */
-.syn-mix { display: flex; gap: 1px; min-width: 6rem; height: 0.55rem; border-radius: 2px; overflow: hidden; }
+.syn-mix { display: flex; gap: 1px; width: 6rem; height: 0.55rem; border-radius: 2px; overflow: hidden; }
 .syn-mix > * { display: block; flex-basis: 0; min-width: 2px; padding: 0; border: 0; background-color: rgb(var(--hue) / 0.7); }
-.syn-bar .syn-mix { margin-bottom: 0.4rem; }
 .syn-mix button { cursor: pointer; }
+/* On a synopsis: the bar and the sparkline side by side, at the bar's size. */
+.syn-glance { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.4rem; }
+.syn-glance .syn-spark { width: 10rem; }
+.syn-spark .hit { fill: transparent; }
+.syn-spark a:hover rect:not(.hit) { fill: rgb(var(--c-accent)); }
 .syn-mix button:hover { background-color: rgb(var(--hue)); }
 
-/* The overview: where in each poem it varies, on the strip's scale. */
+/* Where in a poem it varies: a bar per bin of segments, as high as they disagree. */
 .syn-spark { display: block; width: 6rem; height: 0.9rem; fill: rgb(var(--c-accent) / 0.75); }
 .syn-poems td { vertical-align: middle; }
 .syn-poems .file { white-space: nowrap; }

@@ -1,0 +1,287 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n237-B_1653",
+      "tokens": [
+        {"t": "5.", "n": "5"},
+        {"t": " "},
+        {"t": "Nicht", "n": "nicht"},
+        {"t": " "},
+        {"t": "nur"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "auſſern", "n": "ausern"},
+        {"t": " "},
+        {"t": "waffen.", "n": "wafen"},
+        {"t": "Durch", "n": "turch"},
+        {"t": " "},
+        {"t": "waffen", "n": "wafen"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "gebaͤtt", "n": "gebat"},
+        {"t": " "},
+        {"t": "ward", "n": "wart"},
+        {"t": " "},
+        {"t": "Amalek", "n": "amalek"},
+        {"t": " "},
+        {"t": "beſtritten/", "n": "bestriten"},
+        {"t": "beym", "n": "beim"},
+        {"t": " "},
+        {"t": "waffenſtreit", "n": "wafenstreit"},
+        {"t": " "},
+        {"t": "allein", "n": "alein"},
+        {"t": " "},
+        {"t": "hat"},
+        {"t": " "},
+        {"t": "Jſrael", "n": "israel"},
+        {"t": " "},
+        {"t": "gelitten:", "n": "geliten"},
+        {"t": "So", "n": "so"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "ſtreit", "n": "streit"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "Geiſts", "n": "geists"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "widerſtand", "n": "witerstant"},
+        {"t": " "},
+        {"t": "um-", "n": "um"},
+        {"t": "ſunſt/", "n": "sunst"},
+        {"t": "wo"},
+        {"t": " "},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "Gebaͤtte", "n": "gebate"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "erlangt"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "Hoͤchſten", "n": "hochsten"},
+        {"t": " "},
+        {"t": "gunſt.", "n": "gunst"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n237"
+    },
+    {
+      "siglum": "C",
+      "name": "n237-C_1663_dok",
+      "tokens": [
+        {"t": "172.", "n": "172"},
+        {"t": " "},
+        {"t": "Nicht", "n": "nicht"},
+        {"t": " "},
+        {"t": "nur"},
+        {"t": " "},
+        {"t": "mit"},
+        {"t": " "},
+        {"t": "auſſern", "n": "ausern"},
+        {"t": " "},
+        {"t": "Waffen.", "n": "wafen"},
+        {"t": "Durch", "n": "turch"},
+        {"t": " "},
+        {"t": "Waffen", "n": "wafen"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "Gebaͤtt", "n": "gebat"},
+        {"t": " "},
+        {"t": "ward", "n": "wart"},
+        {"t": " "},
+        {"t": "Amalek", "n": "amalek"},
+        {"t": " "},
+        {"t": "beſtritten/", "n": "bestriten"},
+        {"t": "beym", "n": "beim"},
+        {"t": " "},
+        {"t": "Waffenſtreit", "n": "wafenstreit"},
+        {"t": " "},
+        {"t": "allein", "n": "alein"},
+        {"t": " "},
+        {"t": "hat"},
+        {"t": " "},
+        {"t": "Jſrael", "n": "israel"},
+        {"t": " "},
+        {"t": "gelitten:", "n": "geliten"},
+        {"t": "So", "n": "so"},
+        {"t": " "},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "ſtreit", "n": "streit"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "Geiſts", "n": "geists"},
+        {"t": " "},
+        {"t": "iſt", "n": "ist"},
+        {"t": " "},
+        {"t": "widerſtand", "n": "witerstant"},
+        {"t": " "},
+        {"t": "umſonſt/", "n": "umsonst"},
+        {"t": "wo"},
+        {"t": " "},
+        {"t": "das", "n": "tas"},
+        {"t": " "},
+        {"t": "Gebaͤtte", "n": "gebate"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "erlangt"},
+        {"t": " "},
+        {"t": "des", "n": "tes"},
+        {"t": " "},
+        {"t": "Hoͤchſten", "n": "hochsten"},
+        {"t": " "},
+        {"t": "gunſt.", "n": "gunst"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n237"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"span": [0, 11]}, "C": {"span": [0, 11]}},
+      "columns": [
+        {
+          "spans": {"B": [0, 1], "C": [0, 1]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "Difference in capitalization of 'Waffen' (lowercase vs uppercase)."
+          }
+        },
+        {"spans": {"B": [2, 3], "C": [2, 3]}},
+        {"spans": {"B": [4, 5], "C": [4, 5]}},
+        {"spans": {"B": [6, 7], "C": [6, 7]}},
+        {"spans": {"B": [8, 9], "C": [8, 9]}},
+        {
+          "spans": {"B": [10, 11], "C": [10, 11]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        }
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [11, 24]}, "C": {"span": [11, 24]}},
+      "columns": [
+        {"spans": {"B": [11, 12], "C": [11, 12]}},
+        {
+          "spans": {"B": [13, 14], "C": [13, 14]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [15, 16], "C": [15, 16]}},
+        {
+          "spans": {"B": [17, 18], "C": [17, 18]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [19, 20], "C": [19, 20]}},
+        {"spans": {"B": [21, 22], "C": [21, 22]}},
+        {"spans": {"B": [23, 24], "C": [23, 24]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [24, 35]}, "C": {"span": [24, 35]}},
+      "columns": [
+        {"spans": {"B": [24, 25], "C": [24, 25]}},
+        {
+          "spans": {"B": [26, 27], "C": [26, 27]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "case"}
+        },
+        {"spans": {"B": [28, 29], "C": [28, 29]}},
+        {"spans": {"B": [30, 31], "C": [30, 31]}},
+        {"spans": {"B": [32, 33], "C": [32, 33]}},
+        {"spans": {"B": [34, 35], "C": [34, 35]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [35, 52]}, "C": {"span": [35, 52]}},
+      "columns": [
+        {"spans": {"B": [35, 36], "C": [35, 36]}},
+        {"spans": {"B": [37, 38], "C": [37, 38]}},
+        {"spans": {"B": [39, 40], "C": [39, 40]}},
+        {"spans": {"B": [41, 42], "C": [41, 42]}},
+        {"spans": {"B": [43, 44], "C": [43, 44]}},
+        {"spans": {"B": [45, 46], "C": [45, 46]}},
+        {"spans": {"B": [47, 48], "C": [47, 48]}},
+        {"spans": {"B": [49, 50], "C": [49, 50]}},
+        {
+          "spans": {"B": [51, 52], "C": [51, 52]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is a hyphenation break at the end of the line in edition B ('um-') versus the full word in edition C ('umſonſt'). This falls under word division and hyphenation."
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [52, 53]}, "C": {"missing": true}},
+      "columns": [{"spans": {"B": [52, 53]}}],
+      "refs": {"B": ["B-l0004"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [53, 68]}, "C": {"span": [52, 67]}},
+      "columns": [
+        {"spans": {"B": [53, 54], "C": [52, 53]}},
+        {"spans": {"B": [55, 56], "C": [54, 55]}},
+        {"spans": {"B": [57, 58], "C": [56, 57]}},
+        {"spans": {"B": [59, 60], "C": [58, 59]}},
+        {"spans": {"B": [61, 62], "C": [60, 61]}},
+        {"spans": {"B": [63, 64], "C": [62, 63]}},
+        {"spans": {"B": [65, 66], "C": [64, 65]}},
+        {"spans": {"B": [67, 68], "C": [66, 67]}}
+      ],
+      "refs": {"B": ["B-l0005"], "C": ["C-l0004"]}
+    }
+  ]
+}

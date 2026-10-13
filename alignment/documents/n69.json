@@ -9739,7 +9739,11 @@
         },
         {"spans": {"A": [21, 22], "B": [21, 22], "C": [19, 20], "F42A": [13, 14]}},
         {"spans": {"A": [23, 24], "B": [23, 24], "C": [21, 22], "F42A": [15, 16]}},
-        {"spans": {"A": [24, 25], "B": [24, 25], "C": [22, 23]}, "ext": {"lera": "4-2"}}
+        {
+          "spans": {"A": [24, 25], "B": [24, 25], "C": [22, 23]},
+          "ext": {"lera": "4-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -10078,13 +10082,7 @@
         {
           "spans": {"A": [45, 46], "B": [45, 46], "C": [43, 44]},
           "ext": {"lera": "8-1"},
-          "relation": {
-            "type": "spelling",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference between 'gedicht' and 'geticht' (d/t variation)"
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [47, 48], "B": [47, 48], "C": [45, 46]}},
         {
@@ -10241,7 +10239,11 @@
         },
         {"spans": {"A": [71, 72], "B": [71, 72], "C": [69, 70], "F42A": [64, 65]}},
         {"spans": {"A": [73, 74], "B": [73, 74], "C": [71, 72], "F42A": [66, 67]}},
-        {"spans": {"A": [74, 75], "B": [74, 75], "C": [72, 73]}, "ext": {"lera": "10-3"}},
+        {
+          "spans": {"A": [74, 75], "B": [74, 75], "C": [72, 73]},
+          "ext": {"lera": "10-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [76, 77], "B": [76, 77], "C": [74, 75], "F42A": [68, 69]}}
       ],
       "ext": {
@@ -12431,13 +12433,7 @@
         {
           "spans": {"A": [305, 306], "B": [305, 306], "C": [303, 304], "F42A": [285, 286]},
           "ext": {"lera": "31-1"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Differences are limited to the use of the long s (ſ) versus short s (s) and the presence or absence of the diaeresis (uͦ vs u), which are graphic variants of the same word form."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [307, 308], "B": [307, 308], "C": [305, 306], "F42A": [287, 288]}},
         {
@@ -13080,19 +13076,17 @@
       },
       "columns": [
         {"spans": {"A": [369, 370], "B": [369, 370], "C": [367, 368]}},
-        {"spans": {"A": [370, 371], "B": [370, 371]}, "ext": {"lera": "36-1"}},
+        {
+          "spans": {"A": [370, 371], "B": [370, 371]},
+          "ext": {"lera": "36-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [372, 373], "B": [372, 373], "C": [369, 370]}},
         {"spans": {"A": [374, 375], "B": [374, 375], "C": [371, 372]}},
         {
           "spans": {"A": [376, 377], "B": [376, 377], "C": [373, 374]},
           "ext": {"lera": "36-2"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The difference between 'under' and 'unter' is a graphic variant (u/v) of the same word."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [378, 379], "B": [378, 379], "C": [375, 376]}},
         {"spans": {"A": [380, 381], "B": [380, 381], "C": [377, 378]}},
@@ -13823,13 +13817,7 @@
         {
           "spans": {"A": [466, 467], "B": [466, 467], "C": [463, 464], "F42A": [443, 444]},
           "ext": {"lera": "43-2"},
-          "relation": {
-            "type": "spelling",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the number of 't's (gemuͤhter vs gemuͤter) representing a spelling variation of the same word."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [467, 468], "B": [467, 468], "C": [464, 465], "F42A": [444, 445]}}
       ],
@@ -14093,7 +14081,11 @@
       "columns": [
         {"spans": {"A": [486, 487], "B": [486, 487], "C": [483, 484], "F42A": [463, 464]}},
         {"spans": {"A": [488, 489], "B": [488, 489], "C": [485, 486], "F42A": [465, 466]}},
-        {"spans": {"A": [489, 490], "B": [489, 490], "C": [486, 487]}, "ext": {"lera": "45-1"}},
+        {
+          "spans": {"A": [489, 490], "B": [489, 490], "C": [486, 487]},
+          "ext": {"lera": "45-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [491, 492], "B": [491, 492], "C": [488, 489], "F42A": [467, 468]}},
         {
           "spans": {"A": [493, 500], "B": [493, 500], "C": [490, 497], "F42A": [469, 476]},
@@ -18080,7 +18072,11 @@
         },
         {"spans": {"A": [960, 961], "B": [960, 961], "C": [957, 958], "F42A": [927, 928]}},
         {"spans": {"A": [962, 963], "B": [962, 963], "C": [959, 960], "F42A": [929, 930]}},
-        {"spans": {"A": [963, 964], "B": [963, 964], "C": [960, 961]}, "ext": {"lera": "73-3"}}
+        {
+          "spans": {"A": [963, 964], "B": [963, 964], "C": [960, 961]},
+          "ext": {"lera": "73-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -18956,7 +18952,7 @@
         {
           "spans": {"A": [1060, 1061], "B": [1060, 1061], "C": [1055, 1056], "F42A": [1030, 1031]},
           "ext": {"lera": "79-3"},
-          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+          "relation": {"type": "orthographic", "by": "rule", "rule": "nasal stroke"}
         },
         {"spans": {"A": [1061, 1062], "B": [1061, 1062], "C": [1056, 1057], "F42A": [1031, 1032]}}
       ],
@@ -19393,13 +19389,7 @@
         {
           "spans": {"A": [1108, 1113], "B": [1108, 1113], "C": [1103, 1108], "F42A": [1079, 1084]},
           "ext": {"lera": "82-3"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference is the use of the long s (ſ) versus short s (s) in 'wahrer' (wahrer vs warer) and the capitalization of 'Lieb'. The apostrophe in C is a punctuation variant of the same word form, but the s/ſ difference is a clear orthographic variant."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [1113, 1114], "B": [1113, 1114], "C": [1108, 1109], "F42A": [1084, 1085]}}
       ],
@@ -19535,12 +19525,14 @@
         {"spans": {"A": [1116, 1117], "B": [1116, 1117], "C": [1111, 1112], "F42A": [1087, 1088]}},
         {
           "spans": {"A": [1117, 1118], "B": [1117, 1118], "C": [1112, 1113]},
-          "ext": {"lera": "83-1"}
+          "ext": {"lera": "83-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1119, 1120], "B": [1119, 1120], "C": [1114, 1115], "F42A": [1089, 1090]}},
         {
           "spans": {"A": [1120, 1121], "B": [1120, 1121], "C": [1115, 1116]},
-          "ext": {"lera": "83-2"}
+          "ext": {"lera": "83-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1122, 1123], "B": [1122, 1123], "C": [1117, 1118], "F42A": [1091, 1092]}},
         {
@@ -19853,7 +19845,8 @@
         {"spans": {"A": [1162, 1163], "B": [1162, 1163], "C": [1157, 1158], "F42A": [1133, 1134]}},
         {
           "spans": {"A": [1163, 1164], "B": [1163, 1164], "C": [1158, 1159]},
-          "ext": {"lera": "85-4"}
+          "ext": {"lera": "85-4"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -20685,7 +20678,11 @@
         {"spans": {"A": [1256, 1257], "B": [1258, 1259], "C": [1253, 1254]}},
         {"spans": {"A": [1258, 1259], "B": [1260, 1261], "C": [1255, 1256]}},
         {"spans": {"A": [1260, 1261], "B": [1262, 1263], "C": [1257, 1258]}},
-        {"spans": {"B": [1263, 1264], "C": [1258, 1259]}, "ext": {"lera": "92-1"}},
+        {
+          "spans": {"B": [1263, 1264], "C": [1258, 1259]},
+          "ext": {"lera": "92-1"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1262, 1263], "B": [1265, 1266], "C": [1260, 1261]}},
         {"spans": {"A": [1264, 1265], "B": [1267, 1268], "C": [1262, 1263]}}
       ],
@@ -21829,7 +21826,8 @@
         {"spans": {"A": [1409, 1410], "B": [1412, 1413], "C": [1407, 1408], "F42A": [1271, 1272]}},
         {
           "spans": {"A": [1410, 1411], "B": [1413, 1414], "C": [1408, 1409]},
-          "ext": {"lera": "103-2"}
+          "ext": {"lera": "103-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1412, 1413], "B": [1415, 1416], "C": [1410, 1411], "F42A": [1273, 1274]}},
         {
@@ -21846,7 +21844,8 @@
         {"spans": {"A": [1416, 1417], "B": [1419, 1420], "C": [1414, 1415], "F42A": [1277, 1278]}},
         {
           "spans": {"A": [1417, 1418], "B": [1420, 1421], "C": [1415, 1416]},
-          "ext": {"lera": "103-4"}
+          "ext": {"lera": "103-4"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -22158,7 +22157,8 @@
         {"spans": {"A": [1451, 1452], "B": [1454, 1455], "C": [1449, 1450], "F42A": [1311, 1312]}},
         {
           "spans": {"A": [1452, 1453], "B": [1455, 1456], "C": [1450, 1451]},
-          "ext": {"lera": "105-3"}
+          "ext": {"lera": "105-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         }
       ],
       "ext": {
@@ -23209,7 +23209,10 @@
           "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"F42A": [1423, 1426]}, "ext": {"lera": "113-2"}},
-        {"spans": {"F42A": [1426, 1427]}},
+        {
+          "spans": {"F42A": [1426, 1427]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1562, 1563], "B": [1565, 1566], "C": [1560, 1561], "F42A": [1428, 1429]}},
         {"spans": {"A": [1564, 1565], "B": [1567, 1568], "C": [1562, 1563], "F42A": [1430, 1431]}},
         {"spans": {"A": [1566, 1567], "B": [1569, 1570], "C": [1564, 1565], "F42A": [1432, 1433]}},
@@ -24150,7 +24153,11 @@
           }
         },
         {"spans": {"A": [1666, 1667], "B": [1669, 1670], "C": [1664, 1665], "F42A": [1538, 1539]}},
-        {"spans": {"A": [1667, 1668]}, "ext": {"lera": "119-2"}},
+        {
+          "spans": {"A": [1667, 1668]},
+          "ext": {"lera": "119-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1669, 1670], "B": [1671, 1672], "C": [1666, 1667], "F42A": [1540, 1541]}},
         {"spans": {"A": [1671, 1672], "B": [1673, 1674], "C": [1668, 1669], "F42A": [1542, 1543]}},
         {
@@ -24731,19 +24738,16 @@
         {
           "spans": {"A": [1738, 1739], "B": [1740, 1741], "C": [1735, 1736], "F42A": [1604, 1605]},
           "ext": {"lera": "124-2"},
-          "relation": {
-            "type": "spelling",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The difference between 'tohr' and 'tor' involves the presence or absence of the letter 'h', which is a spelling variation (likely reflecting dialectal or phonetic spelling differences) rather than a change in word identity or grammar."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {
           "spans": {"A": [1739, 1740], "B": [1741, 1742], "C": [1736, 1737], "F42A": [1605, 1606]},
           "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
-        {"spans": {"C": [1738, 1739]}},
+        {
+          "spans": {"C": [1738, 1739]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
         {"spans": {"A": [1741, 1742], "B": [1743, 1744], "C": [1740, 1741], "F42A": [1607, 1608]}},
         {"spans": {"A": [1743, 1744], "B": [1745, 1746], "C": [1742, 1743], "F42A": [1609, 1610]}},
         {"spans": {"A": [1745, 1746], "B": [1747, 1748], "C": [1744, 1745], "F42A": [1611, 1612]}},
@@ -26302,7 +26306,8 @@
         {"spans": {"A": [1904, 1905], "B": [1906, 1907], "C": [1903, 1904], "F42A": [1768, 1769]}},
         {
           "spans": {"A": [1905, 1906], "B": [1907, 1908], "C": [1904, 1905]},
-          "ext": {"lera": "138-2"}
+          "ext": {"lera": "138-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1907, 1908], "B": [1909, 1910], "C": [1906, 1907], "F42A": [1770, 1771]}},
         {
@@ -26607,7 +26612,8 @@
         {"spans": {"A": [1942, 1943], "B": [1944, 1945], "C": [1941, 1942], "F42A": [1805, 1806]}},
         {
           "spans": {"A": [1943, 1944], "B": [1945, 1946], "C": [1942, 1943]},
-          "ext": {"lera": "140-3"}
+          "ext": {"lera": "140-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [1945, 1946], "B": [1947, 1948], "C": [1944, 1945], "F42A": [1807, 1808]}},
         {
@@ -27036,7 +27042,11 @@
         {"spans": {"A": [1986, 1987], "B": [1988, 1989], "C": [1985, 1986], "F42A": [1854, 1855]}},
         {"spans": {"A": [1988, 1989], "B": [1990, 1991], "C": [1987, 1988], "F42A": [1856, 1857]}},
         {"spans": {"A": [1990, 1991], "B": [1992, 1993], "C": [1989, 1990], "F42A": [1858, 1859]}},
-        {"spans": {"F42A": [1859, 1860]}, "ext": {"lera": "143-3"}}
+        {
+          "spans": {"F42A": [1859, 1860]},
+          "ext": {"lera": "143-3"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
       ],
       "ext": {
         "lera": {
@@ -27496,7 +27506,8 @@
         {"spans": {"A": [2033, 2034], "B": [2035, 2036], "C": [2032, 2033], "F42A": [1902, 1903]}},
         {
           "spans": {"A": [2034, 2035], "B": [2036, 2037], "C": [2033, 2034]},
-          "ext": {"lera": "146-2"}
+          "ext": {"lera": "146-2"},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
         },
         {"spans": {"A": [2036, 2037], "B": [2038, 2039], "C": [2035, 2036], "F42A": [1904, 1905]}},
         {
@@ -27680,13 +27691,7 @@
         {
           "spans": {"A": [2059, 2064], "B": [2061, 2066], "C": [2058, 2063], "F42A": [1924, 1929]},
           "ext": {"lera": "147-2"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference is the long s (ſ) vs short s (s) in 'außerwehltes' vs 'außerweltes'. The capitalization difference in 'Par' is also orthographic."
-          }
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
         },
         {"spans": {"A": [2064, 2065], "B": [2066, 2067], "C": [2063, 2064], "F42A": [1929, 1930]}}
       ],

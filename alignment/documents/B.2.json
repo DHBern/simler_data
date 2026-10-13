@@ -1,0 +1,162 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "A",
+      "name": "B.2-A_1648",
+      "tokens": [
+        {"t": "Der", "n": "ter"},
+        {"t": " "},
+        {"t": "überſchreite", "n": "uberschreite"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "ſchwellen", "n": "schweln"},
+        {"t": " "},
+        {"t": "diſer", "n": "tiser"},
+        {"t": " "},
+        {"t": "thüren/", "n": "turen"},
+        {"t": "auß", "n": "aus"},
+        {"t": " "},
+        {"t": "deſſen", "n": "tesen"},
+        {"t": " "},
+        {"t": "munde", "n": "munte"},
+        {"t": " "},
+        {"t": "man"},
+        {"t": " "},
+        {"t": "mag"},
+        {"t": " "},
+        {"t": "kalt"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "warms"},
+        {"t": " "},
+        {"t": "verſpüren.", "n": "uerspuren"}
+      ],
+      "source": "webdav/data/sources/tei/A_1648.xml#B.2"
+    },
+    {
+      "siglum": "B",
+      "name": "B.2-B_1653",
+      "tokens": [
+        {"t": "XLVIII.", "n": "xlui"},
+        {"t": " "},
+        {"t": "über", "n": "uber"},
+        {"t": " "},
+        {"t": "eine"},
+        {"t": " "},
+        {"t": "porten"},
+        {"t": " "},
+        {"t": "oder", "n": "oter"},
+        {"t": " "},
+        {"t": "thüren.", "n": "turen"},
+        {"t": "3"},
+        {"t": "Der", "n": "ter"},
+        {"t": " "},
+        {"t": "überſchreite", "n": "uberschreite"},
+        {"t": " "},
+        {"t": "nicht"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "ſchwellen", "n": "schweln"},
+        {"t": " "},
+        {"t": "diſer", "n": "tiser"},
+        {"t": " "},
+        {"t": "thüren/", "n": "turen"},
+        {"t": "auß", "n": "aus"},
+        {"t": " "},
+        {"t": "deſſen", "n": "tesen"},
+        {"t": " "},
+        {"t": "munde", "n": "munte"},
+        {"t": " "},
+        {"t": "man"},
+        {"t": " "},
+        {"t": "mag"},
+        {"t": " "},
+        {"t": "kalt"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "warms"},
+        {"t": " "},
+        {"t": "verſpüren.", "n": "uerspuren"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#B.2"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"A": {"missing": true}, "B": {"span": [0, 11]}},
+      "columns": [
+        {"spans": {"B": [0, 1]}},
+        {"spans": {"B": [2, 3]}},
+        {"spans": {"B": [4, 5]}},
+        {"spans": {"B": [6, 7]}},
+        {"spans": {"B": [8, 9]}},
+        {"spans": {"B": [10, 11]}}
+      ],
+      "refs": {"B": ["B-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"A": {"missing": true}, "B": {"span": [11, 12]}},
+      "columns": [{"spans": {"B": [11, 12]}}],
+      "refs": {"B": ["B-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"A": {"span": [0, 13]}, "B": {"span": [12, 25]}},
+      "columns": [
+        {"spans": {"A": [0, 1], "B": [12, 13]}},
+        {"spans": {"A": [2, 3], "B": [14, 15]}},
+        {"spans": {"A": [4, 5], "B": [16, 17]}},
+        {"spans": {"A": [6, 7], "B": [18, 19]}},
+        {"spans": {"A": [8, 9], "B": [20, 21]}},
+        {"spans": {"A": [10, 11], "B": [22, 23]}},
+        {"spans": {"A": [12, 13], "B": [24, 25]}}
+      ],
+      "refs": {"A": ["A-l0001"], "B": ["B-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"A": {"span": [13, 30]}, "B": {"span": [25, 42]}},
+      "columns": [
+        {"spans": {"A": [13, 14], "B": [25, 26]}},
+        {"spans": {"A": [15, 16], "B": [27, 28]}},
+        {"spans": {"A": [17, 18], "B": [29, 30]}},
+        {"spans": {"A": [19, 20], "B": [31, 32]}},
+        {"spans": {"A": [21, 22], "B": [33, 34]}},
+        {"spans": {"A": [23, 24], "B": [35, 36]}},
+        {"spans": {"A": [25, 26], "B": [37, 38]}},
+        {"spans": {"A": [27, 28], "B": [39, 40]}},
+        {"spans": {"A": [29, 30], "B": [41, 42]}}
+      ],
+      "refs": {"A": ["A-l0002"], "B": ["B-l0002"]}
+    }
+  ]
+}

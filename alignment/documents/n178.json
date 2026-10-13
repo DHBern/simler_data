@@ -1,0 +1,278 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "B",
+      "name": "n178-B_1653",
+      "tokens": [
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "den", "n": "ten"},
+        {"t": " "},
+        {"t": "Elefanten/", "n": "elefanten"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "ſchwaͤres", "n": "schwares"},
+        {"t": " "},
+        {"t": "Rindervieh.", "n": "rinteruie"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "groͤſſeſt", "n": "grosest"},
+        {"t": " "},
+        {"t": "Erdenthier/", "n": "ertentier"},
+        {"t": " "},
+        {"t": "an"},
+        {"t": " "},
+        {"t": "künſchheit", "n": "kunscheit"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "vernunft/", "n": "uernunft"},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "etwan"},
+        {"t": " "},
+        {"t": "übertrifft", "n": "ubertrift"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "kluͦge", "n": "kluge"},
+        {"t": " "},
+        {"t": "Menſchenzunft/", "n": "menschenzunft"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "ſchwaͤre", "n": "schware"},
+        {"t": " "},
+        {"t": "Rindervieh", "n": "rinteruie"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "maͤſſiget", "n": "masiget"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "trinken:", "n": "trinken"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "Menſchenthier", "n": "menschentier"},
+        {"t": " "},
+        {"t": "allein", "n": "alein"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "füllt", "n": "fult"},
+        {"t": " "},
+        {"t": "zum"},
+        {"t": " "},
+        {"t": "niderſin-", "n": "nitersin"},
+        {"t": "ken.", "n": "ken"}
+      ],
+      "source": "webdav/data/sources/tei/B_1653.xml#n178"
+    },
+    {
+      "siglum": "C",
+      "name": "n178-C_1663_dok",
+      "tokens": [
+        {"t": "87.", "n": "87"},
+        {"t": "Uber", "n": "uber"},
+        {"t": " "},
+        {"t": "den", "n": "ten"},
+        {"t": " "},
+        {"t": "Elefanten/", "n": "elefanten"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "ſchwaͤres", "n": "schwares"},
+        {"t": " "},
+        {"t": "Rindervieh.", "n": "rinteruie"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "groͤſſeſt", "n": "grosest"},
+        {"t": " "},
+        {"t": "Erdenthier/", "n": "ertentier"},
+        {"t": " "},
+        {"t": "an"},
+        {"t": " "},
+        {"t": "künſchheit", "n": "kunscheit"},
+        {"t": " "},
+        {"t": "und", "n": "unt"},
+        {"t": " "},
+        {"t": "vernunft/", "n": "uernunft"},
+        {"t": "auch"},
+        {"t": " "},
+        {"t": "etwan"},
+        {"t": " "},
+        {"t": "uͤbertrifft", "n": "ubertrift"},
+        {"t": " "},
+        {"t": "die", "n": "tie"},
+        {"t": " "},
+        {"t": "kluge"},
+        {"t": " "},
+        {"t": "Menſchenzunft/", "n": "menschenzunft"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "ſchwaͤre", "n": "schware"},
+        {"t": " "},
+        {"t": "Rindervieh", "n": "rinteruie"},
+        {"t": " "},
+        {"t": "fich"},
+        {"t": " "},
+        {"t": "maͤſſiget", "n": "masiget"},
+        {"t": " "},
+        {"t": "im"},
+        {"t": " "},
+        {"t": "trinken;", "n": "trinken"},
+        {"t": "Das", "n": "tas"},
+        {"t": " "},
+        {"t": "Menſchenthier", "n": "menschentier"},
+        {"t": " "},
+        {"t": "allein", "n": "alein"},
+        {"t": " "},
+        {"t": "ſich", "n": "sich"},
+        {"t": " "},
+        {"t": "füllt", "n": "fult"},
+        {"t": " "},
+        {"t": "zum"},
+        {"t": " "},
+        {"t": "niderſinken.", "n": "nitersinken"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n178"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"B": {"missing": true}, "C": {"span": [0, 1]}},
+      "columns": [{"spans": {"C": [0, 1]}}],
+      "refs": {"C": ["C-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"B": {"span": [0, 11]}, "C": {"span": [1, 12]}},
+      "columns": [
+        {"spans": {"B": [0, 1], "C": [1, 2]}},
+        {"spans": {"B": [2, 3], "C": [3, 4]}},
+        {"spans": {"B": [4, 5], "C": [5, 6]}},
+        {"spans": {"B": [6, 7], "C": [7, 8]}},
+        {"spans": {"B": [8, 9], "C": [9, 10]}},
+        {"spans": {"B": [10, 11], "C": [11, 12]}}
+      ],
+      "refs": {"B": ["B-h001"], "C": ["C-h001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"B": {"span": [11, 24]}, "C": {"span": [12, 25]}},
+      "columns": [
+        {"spans": {"B": [11, 12], "C": [12, 13]}},
+        {"spans": {"B": [13, 14], "C": [14, 15]}},
+        {"spans": {"B": [15, 16], "C": [16, 17]}},
+        {"spans": {"B": [17, 18], "C": [18, 19]}},
+        {"spans": {"B": [19, 20], "C": [20, 21]}},
+        {"spans": {"B": [21, 22], "C": [22, 23]}},
+        {"spans": {"B": [23, 24], "C": [24, 25]}}
+      ],
+      "refs": {"B": ["B-l0001"], "C": ["C-l0001"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"B": {"span": [24, 35]}, "C": {"span": [25, 36]}},
+      "columns": [
+        {"spans": {"B": [24, 25], "C": [25, 26]}},
+        {"spans": {"B": [26, 27], "C": [27, 28]}},
+        {
+          "spans": {"B": [28, 29], "C": [29, 30]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [30, 31], "C": [31, 32]}},
+        {
+          "spans": {"B": [32, 33], "C": [33, 34]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"B": [34, 35], "C": [35, 36]}}
+      ],
+      "refs": {"B": ["B-l0002"], "C": ["C-l0002"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"B": {"span": [35, 48]}, "C": {"span": [36, 49]}},
+      "columns": [
+        {"spans": {"B": [35, 36], "C": [36, 37]}},
+        {"spans": {"B": [37, 38], "C": [38, 39]}},
+        {"spans": {"B": [39, 40], "C": [40, 41]}},
+        {
+          "spans": {"B": [41, 42], "C": [42, 43]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "Difference between long s (ſ) and short f (f) in the same word."
+          }
+        },
+        {"spans": {"B": [43, 44], "C": [44, 45]}},
+        {"spans": {"B": [45, 46], "C": [46, 47]}},
+        {
+          "spans": {"B": [47, 48], "C": [48, 49]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        }
+      ],
+      "refs": {"B": ["B-l0003"], "C": ["C-l0003"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"B": {"span": [48, 61]}, "C": {"span": [49, 62]}},
+      "columns": [
+        {"spans": {"B": [48, 49], "C": [49, 50]}},
+        {"spans": {"B": [50, 51], "C": [51, 52]}},
+        {"spans": {"B": [52, 53], "C": [53, 54]}},
+        {"spans": {"B": [54, 55], "C": [55, 56]}},
+        {"spans": {"B": [56, 57], "C": [57, 58]}},
+        {"spans": {"B": [58, 59], "C": [59, 60]}},
+        {
+          "spans": {"B": [60, 61], "C": [61, 62]},
+          "relation": {
+            "type": "orthographic",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The difference is solely due to line-end hyphenation in edition B, which splits the word 'niderſinken' into 'niderſin-' and 'ken' (implied on next line), whereas edition C prints the full word."
+          }
+        }
+      ],
+      "refs": {"B": ["B-l0004"], "C": ["C-l0004"]}
+    },
+    {
+      "id": "s7",
+      "number": 7,
+      "roles": {},
+      "cells": {"B": {"span": [61, 62]}, "C": {"missing": true}},
+      "columns": [{"spans": {"B": [61, 62]}}],
+      "refs": {"B": ["B-l0005"]}
+    }
+  ]
+}

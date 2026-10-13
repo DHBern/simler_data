@@ -250,7 +250,11 @@ async function main() {
     await writeFile(join(out, synopsisHref(synopsis.id)), synopsisPage(synopsis))
   }
   const gaps = coverage(odd)
-  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps))
+  const typos = synopses.flatMap((s) => s.typos.map((t) => ({
+    href: `${synopsisHref(s.id)}#seg-${t.n}`, title: `${s.title} · Segment ${t.n}`, file: s.id,
+    detail: `${t.letters}: ${Object.entries(t.readings).map(([siglum, text]) => `${siglum} ${text}`).join(' · ')}`,
+  })))
+  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps, typos))
   await buildIndex(docs, out)
 
   console.log(`Synopsen: ${synopses.length} aus ${posix(relative(resolve(here, '..'), ALIGNMENTS))}.`)
