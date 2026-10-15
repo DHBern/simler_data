@@ -66,8 +66,10 @@
         <rendition xml:id="right" scheme="css">text-align: right;</rendition>
         <rendition xml:id="g" scheme="css">letter-spacing: 0.125em;</rendition><!-- gesperrt -->
         <rendition xml:id="k" scheme="css">font-variant: small-caps;</rendition><!-- Kapitälchen -->
+        <rendition xml:id="u" scheme="css">text-decoration: underline;</rendition>
         <rendition xml:id="in" scheme="css">float: left; font-size: 2.1em; line-height: 0.86; padding-right: 0.06em; font-weight: 500;</rendition><!-- Initiale -->
         <rendition xml:id="sup" scheme="css">vertical-align: super; font-size: smaller;</rendition>
+        <rendition xml:id="sub" scheme="css">vertical-align: sub; font-size: smaller;</rendition>
         <rendition xml:id="larger" scheme="css">font-size: larger;</rendition>
         <rendition xml:id="smaller" scheme="css">font-size: smaller;</rendition>
         <rendition xml:id="et" scheme="css">text-indent: 2em;</rendition>
@@ -229,8 +231,8 @@
           </attList>
         </classSpec>
 
-        <!-- @rendition: pointer tokens declared in tagsDecl. As in tei_simplePrint the value space is
-             not closed: new appearance tokens are added by declaring them in tagsDecl. -->
+        <!-- @rendition: pointer tokens declared in tagsDecl. As in the DTA base format the values are
+             a closed list. A new token is declared in tagsDecl and added to the list. -->
         <classSpec type="atts" ident="att.global.rendition" mode="change">
           <constraintSpec ident="rendition-order" scheme="schematron">
             <desc>The tokens of <att>rendition</att> are a set; they are written once, separated by
@@ -240,14 +242,14 @@
               two agree and applies the order.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@rendition]">
-                <sch:let name="order" value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#in', '#sup', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
+                <sch:let name="order" value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
                 <sch:let name="t" value="tokenize(normalize-space(@rendition), ' ')"/>
-                <sch:report role="warning"
-                  test="string(@rendition) ne string-join(for $o in $order return $t[. = $o], ' ')">[S-REN]
+                <sch:let name="sorted" value="string-join((for $o in $order return $o[. = $t], distinct-values($t[not(. = $order)])), ' ')"/>
+                <sch:report role="warning" test="string(@rendition) ne $sorted">[S-REN]
                   @rendition="<sch:value-of select="@rendition"/>" should read "<sch:value-of
-                  select="string-join(for $o in $order return $t[. = $o], ' ')"/>": its tokens in
-                  the order of tagsDecl, single-spaced (a token tagsDecl does not declare is
-                  dropped from the suggestion).</sch:report>
+                  select="$sorted"/>": its tokens once, in the order of tagsDecl, single-spaced
+                  (a token tagsDecl does not declare stays at the end; the schema rejects
+                  it).</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -261,6 +263,30 @@
               <datatype minOccurs="1" maxOccurs="unbounded">
                 <dataRef key="teidata.pointer"/>
               </datatype>
+              <valList type="closed" mode="add">
+                <valItem ident="#aq"><desc>Antiqua in a Fraktur work</desc></valItem>
+                <valItem ident="#fr"><desc>Fraktur within Antiqua</desc></valItem>
+                <valItem ident="#b"><desc>bold</desc></valItem>
+                <valItem ident="#i"><desc>italic</desc></valItem>
+                <valItem ident="#c"><desc>centred</desc></valItem>
+                <valItem ident="#right"><desc>right-aligned</desc></valItem>
+                <valItem ident="#g"><desc>letter-spaced (gesperrt)</desc></valItem>
+                <valItem ident="#k"><desc>small capitals</desc></valItem>
+                <valItem ident="#u"><desc>underlined</desc></valItem>
+                <valItem ident="#in"><desc>initial</desc></valItem>
+                <valItem ident="#sup"><desc>superscript</desc></valItem>
+                <valItem ident="#sub"><desc>subscript</desc></valItem>
+                <valItem ident="#larger"><desc>larger than the main text</desc></valItem>
+                <valItem ident="#smaller"><desc>smaller than the main text</desc></valItem>
+                <valItem ident="#et"><desc>indented</desc></valItem>
+                <valItem ident="#et2"><desc>indented twice</desc></valItem>
+                <valItem ident="#et3"><desc>indented three times</desc></valItem>
+                <valItem ident="#hr"><desc>a rule (line) between units</desc></valItem>
+                <valItem ident="#twocol"><desc>two interleaved columns</desc></valItem>
+                <valItem ident="#acrostic"><desc>an acrostic line</desc></valItem>
+                <valItem ident="#acroInit"><desc>the acrostic's initial letter</desc></valItem>
+                <valItem ident="#acroFin"><desc>the acrostic's final letter</desc></valItem>
+              </valList>
             </attDef>
           </attList>
         </classSpec>
