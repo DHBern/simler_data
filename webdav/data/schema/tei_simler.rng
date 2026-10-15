@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-10-15T11:37:41Z. . 
+Schema generated from ODD source 2026-10-15T14:24:58Z. . 
 TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
@@ -2641,7 +2641,7 @@ Elements]</a:documentation>
                   xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;titlePage&gt;</code> closes.  * for a word hyphenated across the line, the visible hyphen is kept in the transcription and <code xmlns="http://www.w3.org/1999/xhtml"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0">@break</code>=no is set on the <code xmlns="http://www.w3.org/1999/xhtml"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;lb&gt;</code> at that line end, and no whitespace stands beside it ([S-LBW]). A hyphen that ends a word (an ellipsis, as in buß- und gnadbegierig) takes a plain <code xmlns="http://www.w3.org/1999/xhtml"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;lb&gt;</code>. No whitespace stands next to a joined line end in the text; where the XML line breaks with the printed one, the break stands inside the tag (`er-&lt;lb`⏎`break="no"/&gt;weißt`). The Schematron constraint lb-line-end-placement checks this placement; sonstige_transformationen/homogenize-closing-lb.py applies it. [3.11.3. Milestone
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;lb&gt;</code>. No whitespace stands next to a joined line end in the text; where the XML line breaks with the printed one, the break stands inside the tag (`er-&lt;lb`⏎`break="no"/&gt;weißt`). The Schematron constraint lb-line-end-placement checks this placement. [3.11.3. Milestone
 Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
@@ -2748,23 +2748,47 @@ Elements 7.2.6. Speech Contents]</a:documentation>
    </define>
    <define name="tei_cb">
       <element name="cb">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column beginning) Marks the beginning or end of a column. <code xmlns="http://www.w3.org/1999/xhtml"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@type</code>=start/end brackets a two-column passage. [3.11.3. Milestone
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(column beginning) A column break, as in the DTA base format's occasional columns: <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@type</code>=start where the page's columns begin, a plain <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;cb&gt;</code> where each further column begins, <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@type</code>=end where they end. The first column needs no <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;cb&gt;</code> of its own. A column set ends on its page: it closes before the page's foot and opens again after the next page's head. [3.11.3. Milestone
 Elements]</a:documentation>
          <empty/>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_simler-cb-cb-set-constraint-rule-24">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:cb">
+               <sch:let name="open" value="preceding::tei:cb[@type][1]/@type = 'start'"/>
+               <sch:report test="@type = 'start' and not(following::tei:cb[@type][1]/@type = 'end')">[S-CBS]
+                  A column set without its end (cb type="end").</sch:report>
+               <sch:report test="not(@type = 'start') and not($open)">[S-CBS] A column break
+                  outside a column set (cb type="start" … cb type="end").</sch:report>
+               <sch:report role="warning"
+                           test="not(@type) and $open and not(preceding::text()[normalize-space()][1] &gt;&gt; preceding::tei:cb[@type][1])">[S-CBF]
+                  The first column needs no cb of its own.</sch:report>
+            </sch:rule>
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:pb | tei:fw[@place = 'bottom']">
+               <sch:report test="preceding::tei:cb[@type][1]/@type = 'start'">[S-CBP] A column set
+                  ends on its page: cb type="end" before the page's foot, cb type="start" after the
+                  next page's head.</sch:report>
+            </sch:rule>
+         </pattern>
          <ref name="tei_att.global.attributes"/>
          <optional>
             <attribute name="type">
-               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
-Suggested values include: 1] start; 2] end</a:documentation>
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.</a:documentation>
                <choice>
                   <value>start</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
                   <value>end</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
-                  <data type="token">
-                     <param name="pattern">[^\p{C}\p{Z}]+</param>
-                  </data>
                </choice>
             </attribute>
          </optional>
@@ -2946,7 +2970,7 @@ Suggested values include: 1] M</a:documentation>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-line-inner-space-constraint-rule-24">
+                  id="tei_simler-l-line-inner-space-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2959,7 +2983,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-25">
+                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3033,7 +3057,7 @@ Suggested values include: 1] M</a:documentation>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-lg-type-constraint-rule-26">
+                  id="tei_simler-lg-lg-type-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3048,7 +3072,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-27">
+                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3058,7 +3082,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-28">
+                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3478,7 +3502,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-div-type-constraint-rule-29">
+                  id="tei_simler-div-div-type-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3490,7 +3514,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-30">
+                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3502,7 +3526,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-31">
+                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3841,7 +3865,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-32">
+                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3876,7 +3900,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-33">
+                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4196,7 +4220,7 @@ Suggested values include: 1] notatedMusic</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-anchor-anchor-note-constraint-rule-34">
+                  id="tei_simler-anchor-anchor-note-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
