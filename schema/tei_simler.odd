@@ -963,9 +963,9 @@
           <model cssClass="hi-initial-inline" predicate="contains-token(@rendition, '#in') and (ancestor::l or ancestor::hi or ancestor::titlePage or ancestor::*[contains-token(@rendition, '#c')] or preceding-sibling::*[contains-token(@rendition, '#in')] or following-sibling::*[contains-token(@rendition, '#in')])" behaviour="inline" useSourceRendition="true">
             <outputRendition>float: none; font-size: 1.15em; line-height: inherit;</outputRendition>
           </model>
-          <!-- Fallback for an indent left on a hi: on a line of its own within a block, the hi is
-               that line, since a span cannot be indented. -->
-          <model predicate="(contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block" useSourceRendition="true"/>
+          <!-- Fallback for an alignment or indent left on a hi: on lines of its own within a
+               block, the hi is those lines, since a span cannot be aligned or indented. -->
+          <model predicate="(contains-token(@rendition, '#c') or contains-token(@rendition, '#right') or contains-token(@rendition, '#et') or contains-token(@rendition, '#et2') or contains-token(@rendition, '#et3')) and (parent::head or parent::p or parent::l or parent::salute or parent::signed or parent::dateline or parent::closer or parent::titlePart or parent::docAuthor or parent::item) and (not(preceding-sibling::*) or preceding-sibling::*[1][self::lb]) and (not(following-sibling::*) or following-sibling::*[1][self::lb])" behaviour="block" useSourceRendition="true"/>
           <model behaviour="inline" useSourceRendition="true"/>
           <exemplum>
             <egXML xmlns="http://www.tei-c.org/ns/Examples">
@@ -1484,12 +1484,13 @@
             </attDef>
           </attList>
           <!-- `data-region` brackets the set: what stands between start and end moves into the
-               start, which renders it in columns where they fit (12em each), else in one. -->
+               start, which renders it in columns where they fit (12em each), else in one. Each
+               column begins flush, so the columns start on one line, as printed. -->
           <model cssClass="columns" predicate="@type = 'start'" behaviour="break">
             <param name="type" value="'column'"/>
             <param name="label" value="''"/>
             <param name="data-region" value="'start'"/>
-            <outputRendition>columns: 2 12em; column-gap: 2.5em; column-rule: 1px solid rgb(var(--c-line));</outputRendition>
+            <outputRendition>columns: 2 12em; column-gap: 2.5em; column-rule: 1px solid rgb(var(--c-line)); &amp; :is(:first-child, .column-break + *) { margin-top: 0; }</outputRendition>
           </model>
           <model predicate="@type = 'end'" behaviour="break">
             <param name="type" value="'column'"/>
