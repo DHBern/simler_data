@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-10-12T14:30:06Z. . 
+Schema generated from ODD source 2026-10-15T11:37:41Z. . 
 TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
@@ -198,9 +198,52 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/
                      xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;tagsDecl&gt;</code>.</a:documentation>
             <list>
                <oneOrMore>
-                  <data type="anyURI">
-                     <param name="pattern">\S+</param>
-                  </data>
+                  <choice>
+                     <value>#aq</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Antiqua in a Fraktur work</a:documentation>
+                     <value>#fr</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fraktur within Antiqua</a:documentation>
+                     <value>#b</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">bold</a:documentation>
+                     <value>#i</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">italic</a:documentation>
+                     <value>#c</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">centred</a:documentation>
+                     <value>#right</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">right-aligned</a:documentation>
+                     <value>#g</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">letter-spaced (gesperrt)</a:documentation>
+                     <value>#k</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">small capitals</a:documentation>
+                     <value>#u</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">underlined</a:documentation>
+                     <value>#in</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">initial</a:documentation>
+                     <value>#sup</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">superscript</a:documentation>
+                     <value>#sub</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subscript</a:documentation>
+                     <value>#larger</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">larger than the main text</a:documentation>
+                     <value>#smaller</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">smaller than the main text</a:documentation>
+                     <value>#et</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented</a:documentation>
+                     <value>#et2</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented twice</a:documentation>
+                     <value>#et3</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented three times</a:documentation>
+                     <value>#hr</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a rule (line) between units</a:documentation>
+                     <value>#twocol</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">two interleaved columns</a:documentation>
+                     <value>#acrostic</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an acrostic line</a:documentation>
+                     <value>#acroInit</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the acrostic's initial letter</a:documentation>
+                     <value>#acroFin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the acrostic's final letter</a:documentation>
+                  </choice>
                </oneOrMore>
             </list>
          </attribute>
@@ -215,13 +258,29 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[@rendition]">
          <sch:let name="order"
-                  value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#in', '#sup', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
+                  value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
          <sch:let name="t" value="tokenize(normalize-space(@rendition), ' ')"/>
+         <sch:let name="sorted"
+                  value="string-join((for $o in $order return $o[. = $t], distinct-values($t[not(. = $order)])), ' ')"/>
+         <sch:report role="warning" test="string(@rendition) ne $sorted">[S-REN]
+                  @rendition="<sch:value-of select="@rendition"/>" should read "<sch:value-of select="$sorted"/>": its tokens once, in the order of tagsDecl, single-spaced
+                  (a token tagsDecl does not declare stays at the end; the schema rejects
+                  it).</sch:report>
+      </sch:rule>
+   </pattern>
+   <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+            id="tei_simler-att.global.rendition-rendition-letter-constraint-rule-5">
+      <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                xmlns:eg="http://www.tei-c.org/ns/Examples"
+                xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                xmlns:xi="http://www.w3.org/2001/XInclude"
+                context="tei:*[not(self::tei:hi)][@rendition]">
          <sch:report role="warning"
-                     test="string(@rendition) ne string-join(for $o in $order return $t[. = $o], ' ')">[S-REN]
-                  @rendition="<sch:value-of select="@rendition"/>" should read "<sch:value-of select="string-join(for $o in $order return $t[. = $o], ' ')"/>": its tokens in
-                  the order of tagsDecl, single-spaced (a token tagsDecl does not declare is
-                  dropped from the suggestion).</sch:report>
+                     test="tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin')">[S-REP]
+                  @rendition="<sch:value-of select="@rendition"/>" on &lt;<sch:name/>&gt;: an
+                  initial, superscript, subscript or acrostic letter (#in, #sup, #sub, #acroInit,
+                  #acroFin) is marked on the hi that holds the letters.</sch:report>
       </sch:rule>
    </pattern>
    <define name="tei_att.global.responsibility.attributes">
@@ -327,7 +386,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_simler-att.pointing-targetLang-constraint-rule-5">
+            id="tei_simler-att.pointing-targetLang-constraint-rule-6">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:eg="http://www.tei-c.org/ns/Examples"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -351,7 +410,7 @@ Suggested values include: 1] top; 2] bottom; 3] margin; 4] opposite; 5] overleaf
       </optional>
    </define>
    <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
-            id="tei_simler-att.typed-subtypeTyped-constraint-rule-6">
+            id="tei_simler-att.typed-subtypeTyped-constraint-rule-7">
       <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                 xmlns:eg="http://www.tei-c.org/ns/Examples"
                 xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -1788,7 +1847,7 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-7">
+                  id="tei_simler-p-abstractModel-structure-p-in-ab-or-p-constraint-rule-8">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -1800,7 +1859,7 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-p-abstractModel-structure-p-in-l-constraint-rule-8">
+                  id="tei_simler-p-abstractModel-structure-p-in-l-constraint-rule-9">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -1826,24 +1885,25 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          <ref name="tei_macro.simlerInline"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-hi-hi-block-rendition-constraint-rule-9">
+                  id="tei_simler-hi-hi-block-rendition-constraint-rule-10">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3')]">
-               <sch:report role="warning" test="true()">[S-HI] Alignment and indent (#c, #right,
-                  #et, #et2, #et3) belong on the enclosing block (head, p, l, …), not on hi.</sch:report>
+                      context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic')]">
+               <sch:report role="warning" test="true()">[S-HI] Alignment, indent and the other
+                  block renditions (#c, #right, #et, #et2, #et3, #hr, #twocol, #acrostic) belong on
+                  the enclosing block (head, p, l, lg, milestone, …), not on hi.</sch:report>
             </sch:rule>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-hi-hi-spanning-rendition-constraint-rule-10">
+                  id="tei_simler-hi-hi-spanning-rendition-constraint-rule-11">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                       context="tei:hi[@rendition][ancestor::tei:text]">
                <sch:report role="warning"
-                           test="parent::tei:*[local-name() = ('head', 'p', 'ab', 'signed', 'salute', 'closer', 'opener', 'dateline', 'byline', 'postscript', 'argument', 'epigraph', 'trailer', 'docTitle', 'titlePart', 'docAuthor', 'docEdition', 'docImprint', 'l', 'lg', 'label', 'speaker', 'stage', 'item', 'cell', 'note', 'fw')] and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1 and node() and not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))">[S-HIB]
+                           test="parent::tei:*[local-name() = ('head', 'p', 'ab', 'signed', 'salute', 'closer', 'opener', 'dateline', 'byline', 'postscript', 'argument', 'epigraph', 'trailer', 'docTitle', 'titlePart', 'docAuthor', 'docEdition', 'docImprint', 'l', 'lg', 'label', 'speaker', 'stage', 'item', 'cell', 'note', 'fw')] and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1 and node() and not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin'))">[S-HIB]
                   This hi covers the whole &lt;<sch:value-of select="local-name(..)"/>&gt;: its
                   rendition belongs on the &lt;<sch:value-of select="local-name(..)"/>&gt;
                   (merged with the block's own, in tagsDecl order), and the hi can go.</sch:report>
@@ -1851,11 +1911,11 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-hi-hi-adjacent-constraint-rule-11">
+                  id="tei_simler-hi-hi-adjacent-constraint-rule-12">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))]">
+                      context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin'))]">
                <sch:report role="warning"
                            test="let $n := following-sibling::*[not(self::tei:lb)][1] return $n[self::tei:hi][count(@*) = 1][@rendition = current()/@rendition] and exists(following-sibling::tei:lb[. &lt;&lt; $n]) and not(following-sibling::node()[. &lt;&lt; $n][self::comment() or self::processing-instruction() or self::text()[normalize-space()] or self::*[not(self::tei:lb)] or self::tei:lb[*]]) and string-length(normalize-space(.)) gt 1 and string-length(normalize-space($n)) gt 1 and (every $b in following-sibling::tei:lb[. &lt;&lt; $n] satisfies $b/@break = 'no' or ancestor::*[not(self::tei:hi)][1][local-name() = ('head', 'l', 'p', 'signed', 'closer', 'salute', 'dateline', 'byline', 'trailer', 'titlePart', 'docTitle', 'docAuthor', 'docImprint', 'docEdition', 'label', 'item')])">[S-HIA]
                   The next hi has the same rendition and only line ends stand between: one hi
@@ -1864,7 +1924,7 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-hi-hi-nesting-constraint-rule-12">
+                  id="tei_simler-hi-hi-nesting-constraint-rule-13">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -1897,9 +1957,52 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
                      xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;tagsDecl&gt;</code>.</a:documentation>
             <list>
                <oneOrMore>
-                  <data type="anyURI">
-                     <param name="pattern">\S+</param>
-                  </data>
+                  <choice>
+                     <value>#aq</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Antiqua in a Fraktur work</a:documentation>
+                     <value>#fr</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Fraktur within Antiqua</a:documentation>
+                     <value>#b</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">bold</a:documentation>
+                     <value>#i</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">italic</a:documentation>
+                     <value>#c</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">centred</a:documentation>
+                     <value>#right</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">right-aligned</a:documentation>
+                     <value>#g</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">letter-spaced (gesperrt)</a:documentation>
+                     <value>#k</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">small capitals</a:documentation>
+                     <value>#u</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">underlined</a:documentation>
+                     <value>#in</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">initial</a:documentation>
+                     <value>#sup</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">superscript</a:documentation>
+                     <value>#sub</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">subscript</a:documentation>
+                     <value>#larger</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">larger than the main text</a:documentation>
+                     <value>#smaller</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">smaller than the main text</a:documentation>
+                     <value>#et</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented</a:documentation>
+                     <value>#et2</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented twice</a:documentation>
+                     <value>#et3</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented three times</a:documentation>
+                     <value>#hr</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a rule (line) between units</a:documentation>
+                     <value>#twocol</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">two interleaved columns</a:documentation>
+                     <value>#acrostic</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an acrostic line</a:documentation>
+                     <value>#acroInit</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the acrostic's initial letter</a:documentation>
+                     <value>#acroFin</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">the acrostic's final letter</a:documentation>
+                  </choice>
                </oneOrMore>
             </list>
          </attribute>
@@ -1969,7 +2072,7 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-choice-choice-order-constraint-rule-13">
+                  id="tei_simler-choice-choice-order-constraint-rule-14">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2056,7 +2159,7 @@ Sample values include: 1] rubbing; 2] mildew; 3] smoke</a:documentation>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-rs-rs-key-constraint-rule-14">
+                  id="tei_simler-rs-rs-key-constraint-rule-15">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2229,7 +2332,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          <ref name="tei_macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-ref-refAtts-constraint-rule-15">
+                  id="tei_simler-ref-refAtts-constraint-rule-16">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2257,7 +2360,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-list-gloss-list-must-have-labels-constraint-rule-16">
+                  id="tei_simler-list-gloss-list-must-have-labels-constraint-rule-17">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2379,7 +2482,7 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-note-note-range-constraint-rule-17">
+                  id="tei_simler-note-note-range-constraint-rule-18">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2391,7 +2494,7 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-note-note-type-constraint-rule-18">
+                  id="tei_simler-note-note-type-constraint-rule-19">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2543,7 +2646,7 @@ Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lb-lb-line-end-placement-constraint-rule-19">
+                  id="tei_simler-lb-lb-line-end-placement-constraint-rule-20">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2592,7 +2695,7 @@ Elements 7.2.6. Speech Contents]</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lb-lb-joined-constraint-rule-21">
+                  id="tei_simler-lb-lb-joined-constraint-rule-22">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2843,7 +2946,7 @@ Suggested values include: 1] M</a:documentation>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-line-inner-space-constraint-rule-23">
+                  id="tei_simler-l-line-inner-space-constraint-rule-24">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2856,7 +2959,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-24">
+                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2930,7 +3033,7 @@ Suggested values include: 1] M</a:documentation>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-lg-type-constraint-rule-25">
+                  id="tei_simler-lg-lg-type-constraint-rule-26">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2945,7 +3048,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-26">
+                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2955,7 +3058,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-27">
+                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3375,7 +3478,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-div-type-constraint-rule-28">
+                  id="tei_simler-div-div-type-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3387,7 +3490,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-29">
+                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3399,7 +3502,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-30">
+                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3738,7 +3841,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-31">
+                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3773,7 +3876,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-32">
+                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4093,7 +4196,7 @@ Suggested values include: 1] notatedMusic</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-anchor-anchor-note-constraint-rule-33">
+                  id="tei_simler-anchor-anchor-note-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
