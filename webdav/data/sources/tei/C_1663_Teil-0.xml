@@ -1172,7 +1172,6 @@
                 <!--NE: Hier beim Lesetext ev. cb herausnehmen und einspaltig codieren-->
                 <cb type="start"/>
                 <lg type="poem">
-                    <cb/>
                     <lg n="1">
                         <l><hi rendition="#in">E</hi>uers Herren <rs type="person" key="person_001"
                                 >Vatters</rs> dichten/</l>
@@ -1322,8 +1321,9 @@
                         <l>nichts an Euch ist zuvergiften.</l>
                     </lg>
                     <lb/>
+                    <cb type="end"/>
                     <pb n="[X iii v]" facs="4049197"/>
-                    <cb/>
+                    <cb type="start"/>
                     <lg n="9">
                         <l rendition="#larger">O Jhr wehrtesten Weisheiten/</l>
                         <lb/>
