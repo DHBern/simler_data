@@ -253,6 +253,23 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <constraintSpec ident="rendition-letter" scheme="schematron">
+            <desc>Some renditions describe single letters or a position within a line: an
+              initial, superscript, subscript, an acrostic's first or last letter. They stand on
+              the <gi>hi</gi> that holds those letters, never on a block. The letter tokens of
+              <gi>tagsDecl</gi> are listed here once; the block tokens in
+              <ident>hi-block-rendition</ident>.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                context="tei:*[not(self::tei:hi)][@rendition]">
+                <sch:report role="warning"
+                  test="tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin')">[S-REP]
+                  @rendition="<sch:value-of select="@rendition"/>" on &lt;<sch:name/>&gt;: an
+                  initial, superscript, subscript or acrostic letter (#in, #sup, #sub, #acroInit,
+                  #acroFin) is marked on the hi that holds the letters.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="rend" mode="delete"/>
             <attDef ident="style" mode="delete"/>
@@ -883,13 +900,15 @@
             recorded on the block, not on <gi>hi</gi>.</desc>
           <content><macroRef key="macro.simlerInline"/></content>
           <constraintSpec ident="hi-block-rendition" scheme="schematron">
-            <desc>Alignment and indent are properties of a line or block: they are recorded on the
-              block element, where they take effect.</desc>
+            <desc>Alignment, indent and the other block renditions are properties of a line or
+              block: they are recorded on the block element, where they take effect. The block
+              tokens of <gi>tagsDecl</gi> are listed here once.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3')]">
-                <sch:report role="warning" test="true()">[S-HI] Alignment and indent (#c, #right,
-                  #et, #et2, #et3) belong on the enclosing block (head, p, l, …), not on hi.</sch:report>
+                context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic')]">
+                <sch:report role="warning" test="true()">[S-HI] Alignment, indent and the other
+                  block renditions (#c, #right, #et, #et2, #et3, #hr, #twocol, #acrostic) belong on
+                  the enclosing block (head, p, l, lg, milestone, …), not on hi.</sch:report>
               </sch:rule>
             </constraint>
           </constraintSpec>
@@ -897,12 +916,12 @@
             <desc>A <gi>hi</gi> that covers the whole content of a block describes the block: its
               <att>rendition</att> goes on the block, merged with the block's own tokens (in
               <gi>tagsDecl</gi> order), and the <gi>hi</gi> goes. Only empty milestones may stand
-              beside it. Positional renditions (initials, superscript, acrostics) stay on
+              beside it. Positional renditions (initials, superscript, acrostic letters) stay on
               <gi>hi</gi>.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
                 context="tei:hi[@rendition][ancestor::tei:text]">
-                <sch:report role="warning" test="parent::tei:*[local-name() = ('head', 'p', 'ab', 'signed', 'salute', 'closer', 'opener', 'dateline', 'byline', 'postscript', 'argument', 'epigraph', 'trailer', 'docTitle', 'titlePart', 'docAuthor', 'docEdition', 'docImprint', 'l', 'lg', 'label', 'speaker', 'stage', 'item', 'cell', 'note', 'fw')] and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1 and node() and not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))">[S-HIB]
+                <sch:report role="warning" test="parent::tei:*[local-name() = ('head', 'p', 'ab', 'signed', 'salute', 'closer', 'opener', 'dateline', 'byline', 'postscript', 'argument', 'epigraph', 'trailer', 'docTitle', 'titlePart', 'docAuthor', 'docEdition', 'docImprint', 'l', 'lg', 'label', 'speaker', 'stage', 'item', 'cell', 'note', 'fw')] and not(../text()[normalize-space()]) and count(../*[not(self::tei:lb or self::tei:pb or self::tei:cb or self::tei:milestone or self::tei:anchor or self::tei:space or self::tei:gap)]) = 1 and count(@*) = 1 and node() and not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin'))">[S-HIB]
                   This hi covers the whole &lt;<sch:value-of select="local-name(..)"/>&gt;: its
                   rendition belongs on the &lt;<sch:value-of select="local-name(..)"/>&gt;
                   (merged with the block's own, in tagsDecl order), and the hi can go.</sch:report>
@@ -914,10 +933,10 @@
               one <gi>hi</gi> across them: always across a joined line end (the word goes on), and
               across a plain one inside a block whose lines stay together (<gi>head</gi>,
               <gi>l</gi>, <gi>p</gi>, <gi>signed</gi>, …). A single letter, and positional
-              renditions (initials, superscript, acrostics), are marked by themselves.</desc>
+              renditions (initials, superscript, acrostic letters), are marked by themselves.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acrostic', '#acroInit', '#acroFin'))]">
+                context="tei:hi[@rendition][count(@*) = 1][ancestor::tei:text][not(tokenize(@rendition, '\s+') = ('#in', '#sup', '#sub', '#acroInit', '#acroFin'))]">
                 <sch:report role="warning" test="let $n := following-sibling::*[not(self::tei:lb)][1] return $n[self::tei:hi][count(@*) = 1][@rendition = current()/@rendition] and exists(following-sibling::tei:lb[. &lt;&lt; $n]) and not(following-sibling::node()[. &lt;&lt; $n][self::comment() or self::processing-instruction() or self::text()[normalize-space()] or self::*[not(self::tei:lb)] or self::tei:lb[*]]) and string-length(normalize-space(.)) gt 1 and string-length(normalize-space($n)) gt 1 and (every $b in following-sibling::tei:lb[. &lt;&lt; $n] satisfies $b/@break = 'no' or ancestor::*[not(self::tei:hi)][1][local-name() = ('head', 'l', 'p', 'signed', 'closer', 'salute', 'dateline', 'byline', 'trailer', 'titlePart', 'docTitle', 'docAuthor', 'docImprint', 'docEdition', 'label', 'item')])">[S-HIA]
                   The next hi has the same rendition and only line ends stand between: one hi
                   across them.</sch:report>
