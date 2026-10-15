@@ -7,7 +7,8 @@
  *       .use(lineEndHyphens)  xast   → xast     the hyphen at a joined line end
  *       .use(teiToHast)       xast   → hast     the ODD's Processing Model; its
  *                                              `plain` output is the search text;
- *                                              commented ranges resolved on the result
+ *                                              regions and commented ranges resolved
+ *                                              on the result
  *       .use(rehypeStringify) hast   → string
  *
  * Everything element-specific — which elements are blocks where they stand, how
@@ -25,6 +26,7 @@ import { hastToSearchText } from '../search/text.ts'
 import { lineEndHyphens } from './hyphens.ts'
 import { wsTrim } from './plugins.ts'
 import { resolveRanges } from './ranges.ts'
+import { resolveRegions } from './regions.ts'
 import { createRenderer, type CollectedNote, type Decision, type RenderState } from './teiToHast.ts'
 import { isElement, localName, type Element, type Root as XastRoot } from './xast.ts'
 
@@ -68,6 +70,7 @@ const teiToHast: Plugin<[Odd], XastRoot, HastRoot> = function (odd) {
 
     const state = file.data.teiState as RenderState
     const root: HastRoot = { type: 'root', children: render(tree, state) }
+    state.warnings.push(...resolveRegions(root))
     // A range lies in the text, or within one note's body.
     const bodies = state.notes.map((n): HastRoot => ({ type: 'root', children: n.body }))
     state.warnings.push(...resolveRanges([root, ...bodies], state.anchors, `${PLAINTEXT}-omit`))

@@ -65,7 +65,7 @@ the findings page next to what the documents get wrong.
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
 | `lib/` | The renderer, as the package `tei-odd-interpreter`: everything below is behind `lib/index.ts` |
 | `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
-| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges, the behaviour table, the PM walker |
+| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges and regions, the behaviour table, the PM walker |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis |
@@ -193,6 +193,9 @@ break: the drawer finds its pages by it, and clicking the break opens its page. 
 `data-margin` param (`left` or `right`) puts the element in the page's margin, on
 that side and beside its line, where the window leaves room for a margin beside the
 text; elsewhere, as on a phone or beside the open facsimile, it stays in the line.
+A `data-region` param (`start`, `end`) brackets a region between two milestones, as
+`cb` brackets a column set: what stands between moves into the start, across any
+element boundary, so the start's model styles the region.
 
 Models with `@output` belong to that output and take precedence over the base
 models there. `plain` is rendered on its own and is what the search indexes;

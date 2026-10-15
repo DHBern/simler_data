@@ -17,9 +17,8 @@
         </availability>
       </publicationStmt>
       <sourceDesc>
-        <p>This ODD was created from scratch as a slim, project-focused replacement for the
-          adapted <ref target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat
-          (DTABf)</ref> customization (<ident>basisformat_all_customized.odd</ident>), and carries all of
+        <p>This ODD is a project-focused customization of 
+          <ref target="https://www.deutschestextarchiv.de/doku/basisformat/">DTA-Basisformat (DTABf)</ref>, and carries all of
           the project's modifications of that customization. Its scope is derived from the encoding of
           Simler's <hi rend="italic">Teutsche Gedichte</hi>; it selects the elements, attributes and
           values the edition uses, and follows the documentation conventions of the TEI
@@ -33,9 +32,9 @@
       <projectDesc>
         <p>TEI Simler is a TEI P5 customization for the digital scholarly edition of the collected
           poems of the Zurich poet Johann Wilhelm Simler (1605–1672). Several editions of the
-          <hi rend="italic">Teutsche Gedichte</hi> are transcribed (A 1648, B 1653, C 1663, D 1688
-          and minor pieces); this schema serves the whole corpus. The transcription is a line- and
-          page-faithful diplomatic rendering of early-modern printed books set mainly in Fraktur.</p>
+          <hi rend="italic">Teutsche Gedichte</hi> are transcribed; this schema serves the whole corpus. 
+          The transcription is a line- and page-faithful diplomatic rendering of early-modern printed 
+          books set mainly in Fraktur.</p>
       </projectDesc>
       <editorialDecl>
         <p>The transcription preserves the physical layout of the printed source: every printed line
@@ -237,9 +236,7 @@
           <constraintSpec ident="rendition-order" scheme="schematron">
             <desc>The tokens of <att>rendition</att> are a set; they are written once, separated by
               single spaces, in the order in which <gi>tagsDecl</gi> declares them, so that the
-              same appearance is always the same value. The list below is that order;
-              <ident>sonstige_transformationen/normalize-rendition-order.py</ident> checks that the
-              two agree and applies the order.</desc>
+              same appearance is always the same value. The list below is that order.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:*[@rendition]">
                 <sch:let name="order" value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
@@ -783,8 +780,7 @@
             </alternate>
           </content>
           <constraintSpec ident="lg-type" scheme="schematron">
-            <desc>One <val>poem</val> per poem, no <att>type</att> below it
-              (sonstige_transformationen/normalize-lg-type.py; verlauf §28).</desc>
+            <desc>One <val>poem</val> per poem, no <att>type</att> below it.</desc>
             <constraint>
               <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:lg[@type]">
                 <sch:report role="warning" test="ancestor::tei:lg">[S-LGN] An lg inside an lg has
@@ -1455,19 +1451,59 @@
         </elementSpec>
 
         <elementSpec ident="cb" module="core" mode="change">
-          <desc>Marks the beginning or end of a column. <att>type</att>=<val>start</val>/<val>end</val>
-            brackets a two-column passage.</desc>
+          <desc>A column break, as in the DTA base format's occasional columns: <att>type</att>=<val>start</val>
+            where the page's columns begin, a plain <gi>cb</gi> where each further column begins,
+            <att>type</att>=<val>end</val> where they end. The first column needs no <gi>cb</gi> of its
+            own. A column set ends on its page: it closes before the page's foot and opens again
+            after the next page's head.</desc>
           <content><empty/></content>
+          <constraintSpec ident="cb-set" scheme="schematron">
+            <desc>Columns stand within one set, and one set within one page.</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:cb">
+                <sch:let name="open" value="preceding::tei:cb[@type][1]/@type = 'start'"/>
+                <sch:report test="@type = 'start' and not(following::tei:cb[@type][1]/@type = 'end')">[S-CBS]
+                  A column set without its end (cb type="end").</sch:report>
+                <sch:report test="not(@type = 'start') and not($open)">[S-CBS] A column break
+                  outside a column set (cb type="start" … cb type="end").</sch:report>
+                <sch:report role="warning" test="not(@type) and $open and not(preceding::text()[normalize-space()][1] &gt;&gt; preceding::tei:cb[@type][1])">[S-CBF]
+                  The first column needs no cb of its own.</sch:report>
+              </sch:rule>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:pb | tei:fw[@place = 'bottom']">
+                <sch:report test="preceding::tei:cb[@type][1]/@type = 'start'">[S-CBP] A column set
+                  ends on its page: cb type="end" before the page's foot, cb type="start" after the
+                  next page's head.</sch:report>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="opt">
-              <valList type="semi" mode="replace">
+              <valList type="closed" mode="replace">
                 <valItem ident="start"/><valItem ident="end"/>
               </valList>
             </attDef>
           </attList>
-          <model behaviour="break">
+          <!-- `data-region` brackets the set: what stands between start and end moves into the
+               start, which renders it in columns where they fit (12em each), else in one. -->
+          <model cssClass="columns" predicate="@type = 'start'" behaviour="break">
             <param name="type" value="'column'"/>
             <param name="label" value="''"/>
+            <param name="data-region" value="'start'"/>
+            <outputRendition>columns: 2 12em; column-gap: 2.5em; column-rule: 1px solid rgb(var(--c-line));</outputRendition>
+          </model>
+          <model predicate="@type = 'end'" behaviour="break">
+            <param name="type" value="'column'"/>
+            <param name="label" value="''"/>
+            <param name="data-region" value="'end'"/>
+          </model>
+          <model cssClass="column-break" behaviour="break">
+            <param name="type" value="'column'"/>
+            <param name="label" value="''"/>
+            <outputRendition>display: block; break-before: column;</outputRendition>
+          </model>
+          <model output="normalized" cssClass="columns-off" predicate="@type = 'start'" behaviour="break">
+            <desc>The reading text runs in one column.</desc>
+            <outputRendition>columns: auto; column-rule: none;</outputRendition>
           </model>
         </elementSpec>
 
@@ -1624,8 +1660,7 @@
                 with the printed one, the break stands inside the tag
                 (<code>er-&lt;lb</code>⏎<code>break="no"/>weißt</code>).</item>
             </list>
-            The Schematron constraint <ident>lb-line-end-placement</ident> checks this placement;
-            <ident>sonstige_transformationen/homogenize-closing-lb.py</ident> applies it.</desc>
+            The Schematron constraint <ident>lb-line-end-placement</ident> checks this placement.</desc>
           <content><empty/></content>
           <constraintSpec ident="lb-line-end-placement" scheme="schematron">
             <desc>The line end of the last line of an element follows the element that holds the
