@@ -60,18 +60,19 @@
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E54C" type="poem">
+         <div xml:id="n174 " type="poem">
             <pb facs="11836671"/>
             <head rendition="#c">Vnverdenkliche
             <lb/>
-            <hi rendition="#b #larger">Limmatsſchweinung</hi>
+            Limmatsſchweinung
             <lb/>
             zu Zu&#x364;rich.</head>
             <lb/>
             
             <milestone unit="section" rendition="#hr"/>
+            
             <lg type="poem">
-            <lg>
+            <lg n="1">
             <l><hi rendition="#in">D</hi>Er Nachwelt ſeye diß getichtet zum nachſinnen/</l>
             <lb/>
             <l>was Wir die Trukker heut denkwürdiges beginnen/</l>
@@ -82,7 +83,7 @@
             </lg>
             <lb/>
             
-            <lg>
+            <lg n="2">
             <l>Jm ſchlanken Limmatfluß/ grad unterhalb der Brugken/</l>
             <lb/>
             <l>beyſeits dem Brunnenrad/ era&#x364;ugte ſich vaſt trukken</l>
@@ -93,7 +94,7 @@
             </lg>
             <lb/>
             
-            <lg>
+            <lg n="3">
             <l>Was nun die dünne Flut (die ſonſten mit geliſpel/</l>
             <lb/>
             <l>Mit Tigerſchnellem lauff/ und vilem Wirbelwiſpel</l>
@@ -104,7 +105,7 @@
             </lg>
             <lb/>
             
-            <lg>
+            <lg n="4">
             <l>Wann dann auß anlaß deß/ vil Handwerker bewogen/</l>
             <lb/>
             <l>mit ihrem Werkgezeug vor uns ſeind aufgezogen/</l>
@@ -113,7 +114,6 @@
             <lb/>
             <l rendition="#et">ihrs Handwerks außgemacht: ſo zeigen wirs im Trukk</l>
             <lb/>
-            
             <l>an eben diſem Ort: Wir ſetzen Wort und Zeilen/</l>
             <lb/>
             <l>Wir ſchlieſſen ein Patent/ und mit zur Preſſen eilen/</l>
@@ -124,7 +124,7 @@
             </lg>
             <lb/>
             
-            <lg>
+            <lg n="5">
             <l>Der Schriftengieſſer ſich mit recht zu uns geſellet/</l>
             <lb/>
             <l>und alß ein Künſtler auch ſich offenlich darſtellet.</l>
@@ -136,7 +136,7 @@
             <lb/>
             </lg>
             
-            <closer>Getrukt zu Zu&#x364;rich/
+            <closer rendition="#right">Getrukt zu Zu&#x364;rich/
             <lb/>
             auf dem in der Limmat ligenden Felſenſtein/
             <lb/>

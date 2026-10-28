@@ -2,25 +2,30 @@
 <?xml-model href="../../schema/tei_simler.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
 <?xml-model href="../../schema/tei_simler.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="../../schema/basisformat_customized.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0"
-     xml:id="E42A_doc"
-     type="simler-framework">
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="E42A_doc" type="simler-framework">
    <teiHeader>
       <fileDesc>
          <titleStmt>
-            <title type="main">Oeconomia, Oder Poetisch Gesang/ von Christlichem Hauszwesen. Neben freundlicher Glückwünschung ... Dem ... Herren Hans Heinrich Rahnen ... So dann auch der ... Jungfr. Elisabetha Holtzhalbin ...</title>
+            <title type="main">Oeconomia, Oder Poetisch Gesang/ von Christlichem Haußwesen. Nebend
+               freundtlicher Glückwünschung [...] Dem [...] Herren Hans Heinrich Rahnen [...] So
+               dann auch der [...] Jungfr. Elisabetha Holtzhalbin [...].</title>
          </titleStmt>
          <publicationStmt>
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl type="M">Oeconomia, Oder Poetisch Gesang/ von Christlichem Haußwesen. [Zürich] 1642.</bibl>
+            <bibl type="M">Oeconomia, Oder Poetisch Gesang/ von Christlichem Haußwesen. [Zürich]
+               1642.</bibl>
             <biblFull>
                <titleStmt>
-                  <title type="main" level="m">Oeconomia, Oder Poetisch Gesang/ von Christlichem Hauszwesen. Neben freundlicher Glückwünschung ... Dem ... Herren Hans Heinrich Rahnen ... So dann auch der ... Jungfr. Elisabetha Holtzhalbin ...</title>
+                  <title type="main" level="m">Oeconomia, Oder Poetisch Gesang/ von Christlichem
+                     Haußwesen. Nebend freundtlicher Glückwünschung [...] Dem [...] Herren Hans
+                     Heinrich Rahnen [...] So dann auch der [...] Jungfr. Elisabetha Holtzhalbin
+                     [...].</title>
                </titleStmt>
                <extent>
-                  <measure type="pages">1 Einblattdruck : Holzschnitt und Letterndruck ; Bild 37,1 x 28 cm, Blatt 42,4 x 33,1 cm</measure>
+                  <measure type="pages">1 Einblattdruck : Holzschnitt und Letterndruck ; Bild 37,1 x
+                     28 cm, Blatt 42,4 x 33,1 cm</measure>
                </extent>
                <publicationStmt>
                   <publisher>
@@ -35,7 +40,8 @@
                   <repository>Zentralbibliothek Zürich</repository>
                   <idno>
                      <idno type="shelfmark">EDR 1642 Rahn Ia,1</idno>
-                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990102794410205508</idno>
+                     <idno type="URLCatalogue"
+                        >https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990102794410205508</idno>
                      <idno type="URLImages">https://doi.org/10.3931/e-rara-38664</idno>
                      <idno type="DOI">10.3931/e-rara-38664</idno>
                      <idno type="Transkribus">17753495</idno>
@@ -55,410 +61,257 @@
             <language ident="deu">(Früh-)Neuhochdeutsch</language>
          </langUsage>
          <textClass>
-            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main"
+               >Belletristik</classCode>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:id="E42A" type="poem">
+         <div xml:id="n66" type="poem">
             <pb facs="11598495"/>
-            <head rendition="#c">OECONOMIA,
+            <head rendition="#c"><hi rendition="#aq #g">OECONOMIA,</hi>
+               <lb/> Oder Poetiſch Geſang/ von Chriſtlichem Haußweſen: <lb/> Nebend freundtlicher
+               Glu&#x364;ckwünſchung/ <lb/> Zu Ehren geſtellt <lb/> Dem Frommen/ Ehrenveſten vnd
+               Weyſen/ <lb/> Herꝛen Hans Heinrich Rahnen <lb/> des Loblichen Regiments der Statt
+               Zürich: <lb/> Des Hochgeachten/ Frommen/ Veſten/ Fürſichtigen vnd Weyſen Herꝛen/
+               <lb/> Hr. Hans Heinrich Rahnen/ des Rahts/ vnd Obmans gemeiner der Statt Zürich <lb/>
+               Clo&#x364;ſteren/ vielgeliebten Sohn/ alß Herꝛen Hochzeiter: <lb/> So dann auch <lb/>
+               Der Edlen/ Ehren- vnd Tugendreichen Jungfrauwen/ <lb/> Jungfr. Eliſabetha
+               Holtzhalbin: <lb/> Weyland des Edlen/ Frommen/ Veſten/ Fürſichtigen vnd Weyſen
+               Herꝛen/ <lb/> Hr. David Holtzhalben Sel.angedenckens/ ehelich hinderlaßner Tochter/
+               <lb/> alß Jungfrauw Hochzeiterin. <lb/> Auff dero Hochzeitlich Ehren- vnd
+               Frewdenfeſt/ gehalten auff Felicitas den <hi rendition="#aq">VII.</hi> Merzens/ <lb/>
+               <hi rendition="#aq">M CD XLII</hi>.</head>
             <lb/>
-            Oder Poetiſch Geſang/ von Chriſtlichem Haußweſen:
-            <lb/>
-            Nebend freundtlicher Glu&#x364;ckwünſchung/
-            <lb/>
-            Zu Ehren geſtellt
-            <lb/>
-            Dem Frommen/ Ehrenveſten vnd Weyſen/
-            <lb/>
-            Herꝛen Hans Heinrich Rahnen
-            <lb/>
-            des Loblichen Regiments der Statt Zürich:
-            <lb/>
-            Des Hochgeachten/ Frommen/ Veſten/ Fürſichtigen vnd Weyſen Herꝛen/
-            <lb/>
-            Hr. Hans Heinrich Rahnen/ des Rahts/ vnd Obmans gemeiner der Statt Zürich
-            <lb/>
-            Clo&#x364;ſteren/ vielgeliebten Sohn/ alß Herꝛen Hochzeiter:
-            <lb/>
-            So dann auch
-            <lb/>
-            Der Edlen/ Ehren- vnd Tugendreichen Jungfrauwen/
-            <lb/>
-            Jungfr. Eliſabetha Holtzhalbin:
-            <lb/>
-            Weyland des Edlen/ Frommen/ Veſten/ Fürſichtigen vnd Weyſen Herꝛen/
-            <lb/>
-            Hr. David Holtzhalben Sel.angedenckens/ ehelich hinderlaßner Tochter/
-            <lb/>
-            alß Jungfrauw Hochzeiterin.
-            <lb/>
-            Auff dero Hochzeitlich Ehren- vnd Frewdenfeſt/ gehalten auff Felicitas den VII. Merzens/
-            <lb/>
-            M CD XLII.</head>
-            <lb/>
-            
-            <!-- TODO HiWi: Randnoten (Inhaltsangaben und Bibelstellen) stehen im Export blockweise vor den Versen; sie gehoeren zu einzelnen Strophen und sind noch nicht getrennt. Die Strophennummern "2." bis "10." stehen im l (num). -->
-            <note place="left" type="marginalia">Poetiſch Ge-<lb
-            break="no"/>ſang vom Chri-<lb
-            break="no"/>ſtlichen Hauß-<lb
-            break="no"/>weſen.
-            <lb/>
-            1.Sam.6.5.
-            <lb/>
-            Wie man den
-            <lb/>
-            Ehestand / anhe-<lb
-            break="no"/>ben ſo&#x364;lle / daß
-            <lb/>
-            er wol gerahte.
-            <lb/>
-            Tob.1. vnd 8.	
-            <lb/>
-            1.Tim.4.8.
-            <lb/>
-            1.Theſs.5.17.
-            <lb/>
-            Epheſ.5.4.
-            <lb/>
-            Syr.26.3. vnd
-            <lb/>
-            17.
-            <lb/>
-            Prov.19.14.
-            <lb/>
-            Geneſ.24.
-            <lb/>
-            Exod.20.12.
-            <lb/>
-            Deut.15.16.
-            <lb/>
-            Coloſs.3.20.
-            <lb/>
-            Prov.6.20. ꝛc.
-            <lb/>
-            Syr.7.29.
-            <lb/>
-            Gen.29.26.
-            <lb/>
-            Syr.13.
-            <lb/>
-            Levit.18.
-            <lb/>
-            Matth.14.
-            <lb/>
-            Pflichten eines
-            <lb/>
-            Ehemanns.
-            <lb/>
-            Eph.5.26.26.
-            <lb/>
-            28.29.30.31.
-            <lb/>
-            32. 
-            <lb/>
-            Proverb.10.
-            <lb/>
-            1.Pet.4.8.
-            <lb/>
-            Pflichten eines
-            <lb/>
-            Eheweibs.
-            <lb/>
-            Eph.5.22.23.
-            <lb/>
-            24.
-            <lb/>
-            Tit.2.4.5.
-            <lb/>
-            Coloſs.3.18.</note>
-            <lb/>
-            
+            <milestone unit="section" rendition="#hr"/><lb/>
+            <cb type="start"/>
             <lg type="poem">
-            <lg n="1">
-            <l><hi rendition="#in">O</hi> Daß ich jetzund ein Davids Harpff beka&#x364;m/</l>
-            <lb/>
-            <l>Vnd ich gleich jhme ko&#x364;nt ſo zierlich ſie tractieren/</l>
-            <lb/>
-            <l>Daß jhrem ſcho&#x364;nen klang ein Melodey bequa&#x364;m</l>
-            <lb/>
-            <l>Doch mengklich folgen tha&#x364;t! O him&#x303;liſch Musicieren!</l>
-            <lb/>
-            <l>Doch weil es nicht kan seyn; wiewol mir angena&#x364;m;</l>
-            <lb/>
-            <l>Wil auff ein ander art diß Ehrenfeſt ich zieren:</l>
-            <lb/>
-            <l rendition="#et">Ich wil mit ſtummem mund auch ſingen scho&#x364;n vnd klar/</l>
-            <lb/>
-            <l rendition="#et">Daß meine stim&#x303; ohn ſtim&#x303; ſol werden offenbar.</l>
+               <lg n="1">
+                  <note place="left" type="marginalia">Poetiſch Ge-<lb break="no"/>ſang vom Chri-<lb
+                        break="no"/>ſtlichen Hauß-<lb break="no"/>weſen. <lb/> 1.Sam.6.5.</note>
+                  <l><hi rendition="#in">O</hi> Daß ich jetzund ein Davids Harpff beka&#x364;m/</l>
+                  <lb/>
+                  <l>Vnd ich gleich jhme ko&#x364;nt ſo zierlich ſie tractieren/</l>
+                  <lb/>
+                  <l>Daß jhrem ſcho&#x364;nen klang ein Melodey bequa&#x364;m</l>
+                  <lb/>
+                  <l>Doch mengklich folgen tha&#x364;t! O him&#x303;liſch Musicieren!</l>
+                  <lb/>
+                  <l>Doch weil es nicht kan seyn; wiewol mir angena&#x364;m;</l>
+                  <lb/>
+                  <l>Wil auff ein ander art diß Ehrenfeſt ich zieren:</l>
+                  <lb/>
+                  <l rendition="#et">Ich wil mit ſtummem mund auch ſingen scho&#x364;n vnd klar/</l>
+                  <lb/>
+                  <l rendition="#et">Daß meine stim&#x303; ohn ſtim&#x303; ſol werden offenbar.</l>
+               </lg>
+               <lb/>
+               <lg n="2">
+                  <note place="left" type="marginalia">Wie man den <lb/> Ehestand / anhe-<lb
+                        break="no"/>ben ſo&#x364;lle / daß <lb/> er wol gerahte. <lb/> Tob.1. vnd 8.
+                     <lb/> 1.Tim.4.8. <lb/> 1.Theſs.5.17. <lb/> Epheſ.5.4. <lb/> Syr.26.3. vnd <lb/>
+                     17. <lb/> Prov.19.14.</note>
+                  <l>2. O du/ wer du auch ſeyſt/ der du frid/ frewd vnd rhu&#x366;</l>
+                  <lb/>
+                  <l>Jm Eheſtand haben wilt/ geſpo&#x364;tt nicht wo&#x364;lleſt treiben:</l>
+                  <lb/>
+                  <l>Vil mehr in Gottes-forcht die ſach angreiffen thu&#x366;/</l>
+                  <lb/>
+                  <l>Wann in den ſinne dir genommen haſt zu weiben:</l>
+                  <lb/>
+                  <l>Gott bitte daß er dir in gnaden fu&#x364;hre zu&#x366;</l>
+                  <lb/>
+                  <l>Ein wolgezogen Weib/ wie Syrach thu&#x366;t beſchreiben.</l>
+                  <lb/>
+                  <l rendition="#et">Die Gu&#x364;ter/ Hauß vnd Hof/ vnd was dergleichen mehr/</l>
+                  <lb/>
+                  <l rendition="#et">Von Eltern man ererbt; ein from&#x342; Weib bſchert der
+                     Herꝛ.</l>
+               </lg>
+               <lb/>
+               <lg n="3">
+                  <note place="left" type="marginalia">Geneſ.24. <lb/> Exod.20.12. <lb/> Deut.15.16.
+                     <lb/> Coloſs.3.20. <lb/> Prov.6.20. ꝛc. <lb/> Syr.7.29. <lb/> Gen.29.26. <lb/>
+                     Syr.13. <lb/> Levit.18. <lb/> Matth.14.</note>
+                  <l>3. Nechſt Gott/ in diſer ſach zu fragen dich nicht ſcha&#x364;m</l>
+                  <lb/>
+                  <l>Die lieben Eltern dein/ vnd folge jhrem rahte/</l>
+                  <lb/>
+                  <l>Dir wol gefallen laß was jhnen angena&#x364;m/</l>
+                  <lb/>
+                  <l>So wird zu deinem nutz gereichen raht vnd thate.</l>
+                  <lb/>
+                  <l>Erwart der rechten zeit/ nicht jede iſt bequa&#x364;m/</l>
+                  <lb/>
+                  <l>Das Alter mit verſtand iſt weder z'fru&#x364;h noch z'ſpahte.</l>
+                  <lb/>
+                  <l rendition="#et">Deins gleichen dir erliß: vor kupplerey dich hu&#x364;t:</l>
+                  <lb/>
+                  <l rendition="#et">Wilt daß gelinge dir/ nicht frey zunah ins
+                     blu&#x366;&#x364;t.</l>
+               </lg>
+               <lb/>
+               <lg n="4">
+                  <note place="left" type="marginalia">Pflichten eines <lb/> Ehemanns. <lb/>
+                     Eph.5.26.26. <lb/> 28.29.30.31. <lb/> 32. <lb/> Proverb.10. <lb/>
+                     1.Pet.4.8.</note>
+                  <l>4. Wie dann im Eheſtand ſelb/ damit das Glu&#x364;ck nicht weich/</l>
+                  <lb/>
+                  <l>Der Mann ſich halten ſo&#x364;ll/ S. Paulus ſo thut lehren:</l>
+                  <lb/>
+                  <l>Wie Chriſtus ſeine Kirch/ wie deinen Leib/ zugleich</l>
+                  <lb/>
+                  <l>Solt lieben dein Eheweib/ in zu&#x364;chten vnd in ehren.</l>
+                  <lb/>
+                  <l>Mit Chriſto ſie beſchirm/ fu&#x364;r ſie dein blu&#x366;t darꝛeich/</l>
+                  <lb/>
+                  <l>Wie deinen Leibe ſie thu&#x366; zieren vnd ernehren.</l>
+                  <lb/>
+                  <l rendition="#et">Auch ſol die liebe dem vernu&#x364;nfftig decken zu&#x366;</l>
+                  <lb/>
+                  <l rendition="#et">Die ma&#x364;ngel deines Weibs: das ſchaffet frid vnd
+                     rhu&#x366;.</l>
+               </lg>
+               <lb/>
+               <lg n="5">
+                  <note place="left" type="marginalia">Pflichten eines <lb/> Eheweibs. <lb/>
+                     Eph.5.22.23. <lb/> 24. <lb/> Tit.2.4.5. <lb/> Coloſs.3.18.</note>
+                  <l>5. Das Weib/ der Kirchen gleich die nur auff Chriſtum ſicht/</l>
+                  <lb/>
+                  <l>Vnd nach deſſelben Wort anſtellet jhre ſachen/</l>
+                  <lb/>
+                  <l>Sol jhrem Mann allein [wie Paulus weiter ſpricht]</l>
+                  <lb/>
+                  <l>Jn aller freundlichkeit ſich vndertha&#x364;nig machen:</l>
+                  <lb/>
+                  <l>Er iſt jhr Haupt vnd Herꝛ/ darumb nach jhrer pflicht</l>
+                  <lb/>
+                  <l>Sie jhne ehren ſol/ ſein Ehr vnd Gu&#x366;t verwachen:</l>
+                  <lb/>
+                  <l rendition="#et">Das machet angena&#x364;m: ja/ ich red ohne ſpott/</l>
+                  <lb/>
+                  <l rendition="#et">Jn jhrem Ehemann ſie auch ehret jhren Gott.</l>
+               </lg>
+               <lb/>
+               
+               <cb/>
+               <lg n="6">
+                  <note place="left" type="marginalia">Gmeine Pflich-<lb break="no"/>ten der
+                        Eheleu-<lb break="no"/>then. <lb/> 1. Gegen sich <lb/> selbsten. <lb/>
+                     Prov.4.20. vnd <lb/> c.5.18.19.20. <lb/> Syr.9.20. <lb/> Eph.5.3. <lb/>
+                     1.Cor.6.18. <lb/> Gen.2.24. <lb/> Matth.19.5.6. <lb/> Eph.5.31.</note>
+                  <l>6. Sie beyde/ Mann vnd Weib/ wie ich geſchriben find/</l>
+                  <lb/>
+                  <l>Sol eins das ander jhm allein gefallen laſſen:</l>
+                  <lb/>
+                  <l>Ein fro&#x364;mbde liebe zim&#x342;t ja keinem Gottes-kind</l>
+                  <lb/>
+                  <l>Das angetretten iſt des Himmels reine ſtraſſen:</l>
+                  <lb/>
+                  <l>Dann Ehebruch vnd Hu&#x366;rey ein ſolcher grewel ſind/</l>
+                  <lb/>
+                  <l>Die Gott in ewigkeit wird ſtraffen ohne maſſen.</l>
+                  <lb/>
+                  <l rendition="#et">Vnd weil zwey in der Ehe nur ſind ein fleiſch vnd
+                     blu&#x366;t/</l>
+                  <lb/>
+                  <l rendition="#et">Je eins dem andern ſol erfreuwen ſeinen mu&#x364;&#x366;ht.</l>
+               </lg>
+               <lb/>
+               <lg n="7">
+                  <note place="left" type="marginalia">2. Gegen Elte-<lb break="no"/>ren. <lb/>
+                     Syr.3.1.2. ꝛc. <lb/> 3. Kinderen. <lb/> Gen.18.19. <lb/> Tob.1.10. <lb/>
+                     Proverb.6.6. <lb/> cap.23.13. <lb/> Syr.7.25. <lb/> cap.30.13. <lb/> Eph.6.4.
+                     <lb/> 4. Diensten. <lb/> Levit.25.39. <lb/> vnd v.43. <lb/> Eph.6.9.</note>
+                  <l>7. Eheleuthe ſollen auch; wie Eltern; ehren recht</l>
+                  <lb/>
+                  <l>Den Schwa&#x364;her beyderſseits/ die Schwigere deßgleichen:</l>
+                  <lb/>
+                  <l>So anderſt mit der zeit allhie ein gleiches Recht</l>
+                  <lb/>
+                  <l>An jhren Kindern ſie bega&#x364;ren zu&#x366; erꝛeychen:</l>
+                  <lb/>
+                  <l>Dieſelben ziehind ſie von beyderley Geſchlecht</l>
+                  <lb/>
+                  <l>Zur Arbeit/ Gottes-forcht/ mit worten vnd mit ſtreichen/</l>
+                  <lb/>
+                  <l rendition="#et">Doch mit beſcheidenheit: wie auch die Dienſte dein</l>
+                  <lb/>
+                  <l rendition="#et">Nicht halt zu hart/ gedenck daß ſie auch Chriſten ſein.</l>
+               </lg>
+               <lb/>
+               <lg n="8">
+                  <note place="left" type="marginalia">5. Gegen dem <lb/> gantzen Hauß-<lb
+                        break="no"/>geſind. <lb/> Tit.2.v.4.7. <lb/> 6. Gegen Nach-<lb break="no"
+                     />baren. <lb/> 1.Sam.15.17. <lb/> Prov.20.3. vn&#x303; <lb/> c.27.10. item
+                     <lb/> c.3.27. vn&#x303;. c.5. <lb/> 16.</note>
+                  <l>8. Dem gantzen Haußgeſind dich ſtell zum beyſpil dar</l>
+                  <lb/>
+                  <l>Der Gottes-forcht/ es ſey dein Hauſe wie ein Tempel</l>
+                  <lb/>
+                  <l>Gezieret/ daß geſchwind ein jeder Menſch gewar</l>
+                  <lb/>
+                  <l>Des Glaub- vnd Lebens halb an euch ein gu&#x366;t Exempel.</l>
+                  <lb/>
+                  <l>Mit Nachbarn dich betrag: zu&#x366; Ehren nichts erſpar/</l>
+                  <lb/>
+                  <l>Ja/ wanns dein Pflu&#x366;g erehrt/ erwirbt Gewa&#x364;rb vnd Grempel.</l>
+                  <lb/>
+                  <l rendition="#et">Mit jenem Hauptman dort von dir auch werd geehrt</l>
+                  <lb/>
+                  <l rendition="#et">Die Oberkeit/ vnd wer in Kirch- vnd Schu&#x366;len lehrt.</l>
+               </lg>
+               <lb/>
+               <lg n="9">
+                  <note place="left" type="marginalia">7. Gegen Für-<lb break="no"/>geſeßten. <lb/>
+                     Matth.8.5. <lb/> Luc.7.1. ꝛc. <lb/> Syr.7.31. <lb/> Frucht und nutz <lb/>
+                     ehelicher from-<lb break="no"/>keit. <lb/> Psal.128.</note>
+                  <l>9. Wer nun/ wie obgemeldt/ wird tretten in die Ehe/</l>
+                  <lb/>
+                  <l>Vnd/ was die pflichte ſein erho&#x364;uſcht/in s'wercke ſetzen:</l>
+                  <lb/>
+                  <l>Dem wird mit Segen vil das wenig Ach vnd Wehe/</l>
+                  <lb/>
+                  <l>Der liebe Gott allhie/ mit frewden dort/ erſetzen.</l>
+                  <lb/>
+                  <l>Vnd/ wie an einem Hauß ein Ra&#x364;b gepflantzet/ ehe</l>
+                  <lb/>
+                  <l>Alß jehne fruchtbar wird/ die alle Wetter letzen:</l>
+                  <lb/>
+                  <l rendition="#et">So wird ſein Weibe ſeyn: die Kind vmb ſeinen Tiſch</l>
+                  <lb/>
+                  <l rendition="#et">Mit luſt er ſehen wird gleich wie die o&#x364;lzweyg
+                     friſch.</l>
+               </lg>
+               <lb/>
+               <lg n="10">
+                  <note place="left" type="marginalia">Wunſch für die <lb/> neuwen Ehe-<lb
+                        break="no"/>leuth.</note>
+                  <l>10. Nun ſchreit ich zu&#x366; dem Wunſch fu&#x364;r euch/ Herꝛ
+                     Bra&#x364;utigam/</l>
+                  <lb/>
+                  <l>Vnd ewer Edle Braut/ euch ehelich heut verpflichtet:</l>
+                  <lb/>
+                  <l>Gott wo&#x364;lle/ ja er wird euch ſegnen wunneſam:</l>
+                  <lb/>
+                  <l>Der anfang ewer Ehe/ nach ſeinem Wort gerichtet/</l>
+                  <lb/>
+                  <l>Den Segen euch verheißt: und/ ſo ihr tugendſam</l>
+                  <lb/>
+                  <l>Beyſammen leben werd/ wird es nicht ſeyn erdichtet.</l>
+                  <lb/>
+                  <l rendition="#et">Heut iſt Felicitas in dem Calender zwar:</l>
+                  <lb/>
+                  <l rendition="#et">Felicitas von Gott/ verbleib euch jmmerdar!</l>
+               </lg>
+               <lb/>
             </lg>
-            <lb/>
-            <lg n="2">
-            <l>2. O du/ wer du auch ſeyſt/ der du frid/ frewd vnd rhu&#x366;</l>
-            <lb/>
-            <l>Jm Eheſtand haben wilt/ geſpo&#x364;tt nicht wo&#x364;lleſt treiben:</l>
-            <lb/>
-            <l>Vil mehr in Gottes-forcht die ſach angreiffen thu&#x366;/</l>
-            <lb/>
-            <l>Wann in den ſinne dir genommen haſt zu weiben:</l>
-            <lb/>
-            <l>Gott bitte daß er dir in gnaden fu&#x364;hre zu&#x366;</l>
-            <lb/>
-            <l>Ein wolgezogen Weib/ wie Syrach thu&#x366;t beſchreiben.</l>
-            <lb/>
-            <l rendition="#et">Die Gu&#x364;ter/ Hauß vnd Hof/ vnd was dergleichen mehr/</l>
-            <lb/>
-            <l rendition="#et">Von Eltern man ererbt; ein from&#x342; Weib bſchert der Herꝛ.</l>
-            </lg>
-            <lb/>
-            <lg n="3">
-            <l>3. Nechſt Gott/ in diſer ſach zu fragen dich nicht ſcha&#x364;m</l>
-            <lb/>
-            <l>Die lieben Eltern dein/ vnd folge jhrem rahte/</l>
-            <lb/>
-            <l>Dir wol gefallen laß was jhnen angena&#x364;m/</l>
-            <lb/>
-            <l>So wird zu deinem nutz gereichen raht vnd thate.</l>
-            <lb/>
-            <l>Erwart der rechten zeit/ nicht jede iſt bequa&#x364;m/</l>
-            <lb/>
-            <l>Das Alter mit verſtand iſt weder z'fru&#x364;h noch z'ſpahte.</l>
-            <lb/>
-            <l rendition="#et">Deins gleichen dir erliß: vor kupplerey dich hu&#x364;t:</l>
-            <lb/>
-            <l rendition="#et">Wilt daß gelinge dir/ nicht frey zunah ins blu&#x366;&#x364;t.</l>
-            </lg>
-            <lb/>
-            <lg n="4">
-            <l>4. Wie dann im Eheſtand ſelb/ damit das Glu&#x364;ck nicht weich/</l>
-            <lb/>
-            <l>Der Mann ſich halten ſo&#x364;ll/ S. Paulus ſo thut lehren:</l>
-            <lb/>
-            <l>Wie Chriſtus ſeine Kirch/ wie deinen Leib/ zugleich</l>
-            <lb/>
-            <l>Solt lieben dein Eheweib/ in zu&#x364;chten vnd in ehren.</l>
-            <lb/>
-            <l>Mit Chriſto ſie beſchirm/ fu&#x364;r ſie dein blu&#x366;t darꝛeich/</l>
-            <lb/>
-            <l>Wie deinen Leibe ſie thu&#x366; zieren vnd ernehren.</l>
-            <lb/>
-            <l rendition="#et">Auch ſol die liebe dem vernu&#x364;nfftig decken zu&#x366;</l>
-            <lb/>
-            <l rendition="#et">Die ma&#x364;ngel deines Weibs: das ſchaffet frid vnd rhu&#x366;.</l>
-            </lg>
-            <lb/>
-            <lg n="5">
-            <l>5. Das Weib/ der Kirchen gleich die nur auff Chriſtum ſicht/</l>
-            <lb/>
-            <l>Vnd nach deſſelben Wort anſtellet jhre ſachen/</l>
-            <lb/>
-            <l>Sol jhrem Mann allein [wie Paulus weiter ſpricht]</l>
-            <lb/>
-            <l>Jn aller freundlichkeit ſich vndertha&#x364;nig machen:</l>
-            <lb/>
-            <l>Er iſt jhr Haupt vnd Herꝛ/ darumb nach jhrer pflicht</l>
-            <lb/>
-            <l>Sie jhne ehren ſol/ ſein Ehr vnd Gu&#x366;t verwachen:</l>
-            <lb/>
-            <l rendition="#et">Das machet angena&#x364;m: ja/ ich red ohne ſpott/</l>
-            <lb/>
-            <l rendition="#et">Jn jhrem Ehemann ſie auch ehret jhren Gott.</l> 
-            </lg>
-            <lb/>
-            
-            <note place="left" type="marginalia">Gmeine Pflich-<lb
-            break="no"/>ten der Eheleu-<lb
-            break="no"/>then.
-            <lb/>
-            1. Gegen sich
-            <lb/>
-            selbsten.
-            <lb/>
-            Prov.4.20. vnd
-            <lb/>
-            c.5.18.19.20.
-            <lb/>
-            Syr.9.20.
-            <lb/>
-            Eph.5.3.
-            <lb/>
-            1.Cor.6.18.
-            <lb/>
-            Gen.2.24.
-            <lb/>
-            Matth.19.5.6. 
-            <lb/>
-            Eph.5.31.
-            <lb/>
-            2. Gegen Elte-<lb
-            break="no"/>ren.
-            <lb/>
-            Syr.3.1.2. ꝛc.
-            <lb/>
-            3. Kinderen.
-            <lb/>
-            Gen.18.19.
-            <lb/>
-            Tob.1.10.
-            <lb/>
-            Proverb.6.6.
-            <lb/>
-            cap.23.13.
-            <lb/>
-            Syr.7.25.
-            <lb/>
-            cap.30.13.
-            <lb/>
-            Eph.6.4.
-            <lb/>
-            4. Diensten.
-            <lb/>
-            Levit.25.39.
-            <lb/>
-            vnd v.43.
-            <lb/>
-            Eph.6.9.
-            <lb/>
-            5. Gegen dem
-            <lb/>
-            gantzen Hauß-<lb
-            break="no"/>geſind.
-            <lb/>
-            Tit.2.v.4.7.
-            <lb/>
-            6. Gegen Nach-<lb
-            break="no"/>baren.
-            <lb/>
-            1.Sam.15.17.
-            <lb/>
-            Prov.20.3. vn&#x303;
-            <lb/>
-            c.27.10. item
-            <lb/>
-            c.3.27. vn&#x303;. c.5.
-            <lb/>
-            16.
-            <lb/>
-            7. Gegen Für-<lb
-            break="no"/>geſeßten.
-            <lb/>
-            Matth.8.5.
-            <lb/>
-            Luc.7.1. ꝛc.
-            <lb/>
-            Syr.7.31.
-            <lb/>
-            Frucht und nutz
-            <lb/>
-            ehelicher from-<lb
-            break="no"/>keit.
-            <lb/>
-            Psal.128.
-            <lb/>
-            Wunſch für die
-            <lb/>
-            neuwen Ehe-<lb
-            break="no"/>leuth.</note>
-            <lb/>
-            
-            <lg n="6">
-            <l>6. Sie beyde/ Mann vnd Weib/ wie ich geſchriben find/</l>
-            <lb/>
-            <l>Sol eins das ander jhm allein gefallen laſſen:</l>
-            <lb/>
-            <l>Ein fro&#x364;mbde liebe zim&#x342;t ja keinem Gottes-kind</l>
-            <lb/>
-            <l>Das angetretten iſt des Himmels reine ſtraſſen:</l>
-            <lb/>
-            <l>Dann Ehebruch vnd Hu&#x366;rey ein ſolcher grewel ſind/</l>
-            <lb/>
-            <l>Die Gott in ewigkeit wird ſtraffen ohne maſſen.</l>
-            <lb/>
-            <l rendition="#et">Vnd weil zwey in der Ehe nur ſind ein fleiſch vnd blu&#x366;t/</l>
-            <lb/>
-            <l rendition="#et">Je eins dem andern ſol erfreuwen ſeinen mu&#x364;&#x366;ht.</l>
-            </lg>
-            <lb/>
-            <lg n="7">
-            <l>7. Eheleuthe ſollen auch; wie Eltern; ehren recht</l>
-            <lb/>
-            <l>Den Schwa&#x364;her beyderſseits/ die Schwigere deßgleichen:</l>
-            <lb/>
-            <l>So anderſt mit der zeit allhie ein gleiches Recht</l>
-            <lb/>
-            <l>An jhren Kindern ſie bega&#x364;ren zu&#x366; erꝛeychen:</l>
-            <lb/>
-            <l>Dieſelben ziehind ſie von beyderley Geſchlecht</l>
-            <lb/>
-            <l>Zur Arbeit/ Gottes-forcht/ mit worten vnd mit ſtreichen/</l>
-            <lb/>
-            <l rendition="#et">Doch mit beſcheidenheit: wie auch die Dienſte dein</l>
-            <lb/>
-            <l rendition="#et">Nicht halt zu hart/ gedenck daß ſie auch Chriſten ſein.</l>
-            </lg>
-            <lb/>
-            <lg n="8">
-            <l>8. Dem gantzen Haußgeſind dich ſtell zum beyſpil dar</l>
-            <lb/>
-            <l>Der Gottes-forcht/ es ſey dein Hauſe wie ein Tempel</l>
-            <lb/>
-            <l>Gezieret/ daß geſchwind ein jeder Menſch gewar</l>
-            <lb/>
-            <l>Des Glaub- vnd Lebens halb an euch ein gu&#x366;t Exempel.</l>
-            <lb/>
-            <l>Mit Nachbarn dich betrag: zu&#x366; Ehren nichts erſpar/</l>
-            <lb/>
-            <l>Ja/ wanns dein Pflu&#x366;g erehrt/ erwirbt Gewa&#x364;rb vnd Grempel.</l>
-            <lb/>
-            <l rendition="#et">Mit jenem Hauptman dort von dir auch werd geehrt</l>
-            <lb/>
-            <l rendition="#et">Die Oberkeit/ vnd wer in Kirch- vnd Schu&#x366;len lehrt.</l>
-            </lg>
-            <lb/>
-            <lg n="9">
-            <l>9. Wer nun/ wie obgemeldt/ wird tretten in die Ehe/</l>
-            <lb/>
-            <l>Vnd/ was die pflichte ſein erho&#x364;uſcht/in s'wercke ſetzen:</l>
-            <lb/>
-            <l>Dem wird mit Segen vil das wenig Ach vnd Wehe/</l>
-            <lb/>
-            <l>Der liebe Gott allhie/ mit frewden dort/ erſetzen.</l>
-            <lb/>
-            <l>Vnd/ wie an einem Hauß ein Ra&#x364;b gepflantzet/ ehe</l>
-            <lb/>
-            <l>Alß jehne fruchtbar wird/ die alle Wetter letzen:</l>
-            <lb/>
-            <l rendition="#et">So wird ſein Weibe ſeyn: die Kind vmb ſeinen Tiſch</l>
-            <lb/>
-            <l rendition="#et">Mit luſt er ſehen wird gleich wie die o&#x364;lzweyg friſch.</l>
-            </lg>
-            <lb/>
-            <lg n="10">
-            <l>10. Nun ſchreit ich zu&#x366; dem Wunſch fu&#x364;r euch/ Herꝛ Bra&#x364;utigam/</l>
-            <lb/>
-            <l>Vnd ewer Edle Braut/ euch ehelich heut verpflichtet:</l>
-            <lb/>
-            <l>Gott wo&#x364;lle/ ja er wird euch ſegnen wunneſam:</l>
-            <lb/>
-            <l>Der anfang ewer Ehe/ nach ſeinem Wort gerichtet/</l>
-            <lb/>
-            <l>Den Segen euch verheißt: und/ ſo ihr tugendſam</l>
-            <lb/>
-            <l>Beyſammen leben werd/ wird es nicht ſeyn erdichtet.</l>
-            <lb/>
-            <l rendition="#et">Heut iſt Felicitas in dem Calender zwar:</l>
-            <lb/>
-            <l rendition="#et">Felicitas von Gott/ verbleib euch jmmerdar!</l>
-            </lg>
-            <lb/>
-            </lg>
+            <cb type="end"/>
             <closer>
-            <signed rendition="#right">Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.</signed>
+               <signed rendition="#right">Joh. Wilhelm Simler/ Zuchtm. zum Fr. M.</signed>
             </closer>
             <lb/>
-            
          </div>
       </body>
    </text>

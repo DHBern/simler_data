@@ -13,20 +13,21 @@
             <p/>
          </publicationStmt>
          <sourceDesc>
-            <bibl type="M">Christen-Kampf. [Schweiz?] 1640.</bibl>
+            <bibl type="M">Christen Kampf. [Schweiz?] [zwischen 1640 und 1689?].</bibl>
             <biblFull>
                <titleStmt>
                   <title type="main" level="m">Christen Kampf</title>
                </titleStmt>
                <extent>
-                  <measure type="pages">1 Einblattdruck : Radierung ; Bild 35,7 x 28,2 cm, Platte 39 x 29 cm, Blatt 49,3 x 38,4 cm</measure>
+                  <measure type="pages">1 Einblattdruck : Radierung ; Bild 35,7 x 28,2 cm, Platte 39
+                     x 29 cm, Blatt 49,3 x 38,4 cm</measure>
                </extent>
                <publicationStmt>
                   <publisher>
                      <name>[Schweiz?].</name>
                   </publisher>
                   <pubPlace>[Schweiz?]</pubPlace>
-                  <date type="publication">1640</date>
+                  <date type="publication">[zwischen 1640 und 1689?]</date>
                </publicationStmt>
             </biblFull>
             <msDesc xml:id="imagesource-1">
@@ -34,7 +35,8 @@
                   <repository>Zentralbibliothek Zürich</repository>
                   <idno>
                      <idno type="shelfmark">EDR II 164./8. Meyer II,1</idno>
-                     <idno type="URLCatalogue">https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990103508740205508</idno>
+                     <idno type="URLCatalogue"
+                        >https://uzb.swisscovery.ch/permalink/41SLSP_UZB/16q6nq6/alma990103508740205508</idno>
                      <idno type="URLImages">https://doi.org/10.3931/e-rara-36987</idno>
                      <idno type="DOI">10.3931/e-rara-36987</idno>
                      <idno type="Transkribus">3291083</idno>
@@ -54,91 +56,91 @@
             <language ident="deu">(Früh-)Neuhochdeutsch</language>
          </langUsage>
          <textClass>
-            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main">Belletristik</classCode>
+            <classCode scheme="https://www.deutschestextarchiv.de/doku/klassifikation#dwds1main"
+               >Belletristik</classCode>
          </textClass>
       </profileDesc>
    </teiHeader>
    <text>
       <body>
-         <div xml:id="Es.a.A" type="poem">
+         <div xml:id="n150" type="poem">
             <pb facs="11288049"/>
             <figure>
-            <p rendition="#aq">Jnventor.
-            <lb/>
-            Con: Meÿer
-            <lb/>
-            fecit. et ex.</p>
+               <p rendition="#aq">Jnventor. <lb/> Con: Meÿer <lb/> fecit. et ex.</p>
             </figure>
             <lb/>
-            
-            <!-- TODO HiWi: der Titel steht in der Kartusche der Radierung; das Gedicht steht in vier Spalten darunter. -->
             <head rendition="#aq">CHRiSTEN KAMPF.</head>
             <lb/>
-            
+            <cb type="start"/>
             <lg type="poem">
-            <l>Der Menſch<anchor xml:id="a1"/><unclear>:</unclear><note type="annotation" targetEnd="a1"><p>Wahrscheinlich Doppelpunkt, aber Semikolon nicht auszuschliessen</p></note> wie Job bezeügt: im Streit mu&#x366;ß jmmer Leben:</l>
-            <lb/>
-            <l>Die hölliſch Wu&#x364;tereÿ thu&#x366;t jhme wider ſtreben<anchor xml:id="a2"/><unclear>/</unclear><note type="annotation" targetEnd="a2"><p>Es scheint ein Komma bzw. eine Virgel zu stehen, ist aber nicht gut erkennbar.</p></note></l>
-            <lb/>
-            <l rendition="#et">Vnd nach vil ander Feind: worunder ſeind gezellt</l>
-            <lb/>
-            <l rendition="#et">Sein eigen Fleiſch: der Tod: die <anchor xml:id="a3"/><unclear>laſterhaffte</unclear><note type="annotation" targetEnd="a3"><p>Abstand nach klein r oft etwas grösser, siehe z.B. "Auſserwehlten", "vorauſs"</p></note> Wellt:</l>
-            <lb/>
-            <l>Anfechtung vilerleÿ: Verfolgung/ vnd Beſchwerden/</l>
-            <lb/>
-            <l>Vnd was der Sathan mehr erwecket hier auff Erden/</l>
-            <lb/>
-            <l rendition="#et">Alſs der von zorn entbrandt/ geleich dem Donner Keÿl/</l>
-            <lb/>
-            <l rendition="#et">Vns zu vertilgen gar abſchieſſet fewrig pfeil.</l>
-            <lb/>
-            <l>Wie aber ſolche Feind wir mo&#x364;gen <anchor xml:id="a4"/><unclear>v̈ber winden</unclear><note type="annotation" targetEnd="a4"><p>Der Bindestrich wurde wohl später von Hand eingezeichnet</p></note>/</l>
-            <lb/>
-            <l>Der Krieges Fürſt vns Lehrt: wie beÿ Matth<hi rendition="#aq">æ</hi>o zfinden:</l>
-            <lb/>
-            <l rendition="#et">Da/ wider Sathans Liſt/ vnd wider Sathans Macht/</l>
-            <lb/>
-            <l rendition="#et">Die Waaffen ſeines Worts Er in das Feld gebracht.</l>
-            <lb/>
-            <l>Dieſelben Waaffen auch der Heiden Lehrer preiſet/</l>
-            <lb/>
-            <l>Vnd ſie von Stuck zu Stuck den Auſserwehlten weiſet.</l>
-            <lb/>
-            <l rendition="#et">Er ſpricht: Die La&#x364;nden Eüch vmbgürtet mit Waarheit:</l>
-            <lb/>
-            <l rendition="#et">Es b'ſchirme Ewer Bruſt der Krebſs der Grechtigkeit:</l>
-            <lb/>
-            <l>An Fu&#x364;ſſen ſeit geſchu&#x364;cht in jehne Wellt zugehen:</l>
-            <lb/>
-            <l>(Die Lehr von Chriſto wir durch diſe Schuch verſtehen)</l>
-            <lb/>
-            <l rendition="#et">Jedoch/ zu&#x366;lo&#x364;ſchen gar des bo&#x364;ſen fewrig Pfeil/</l>
-            <lb/>
-            <l rendition="#et">Den Glaubens Schilt vorauſs ergreiffet in der eil:</l>
-            <lb/>
-            <l>Setzt auff den Helm des Heÿls/ vnd faſſet mit der Rechten</l>
-            <lb/>
-            <l>Das ſcharpfe Schwert des Geiſts: So werdt jhr Sighafft fechten/</l>
-            <lb/>
-            <l rendition="#et">Vnd/ nach vollbrachtem Streit/ in ho&#x364;chſter Herꝛlikeit/</l>
-            <lb/>
-            <l rendition="#et">Die ewig-wehrend Cron empfahen allbereit.</l>
-            <lb/>
-            <l>Der Menſch; wie ob gema&#x364;ldt; im Streit mu&#x366;ſſ jm&#x303;er Leben:</l>
-            <lb/>
-            <l>Der Sieg/ vnd Siegers Lohn vom Herꝛen wird gegeben.</l>
-            <lb/>
-            <l>Des ru&#x364;ffen wir zu jhm/ wir/ die wir wehrloſ ſeind:</l>
-            <lb/>
-            <l>O Herꝛ/ bewaaffne vns/ ſo weichet vnſer Feind.</l>
+               <l>Der Menſch<unclear>;</unclear> wie Job bezeügt: im Streit mu&#x366;ß jmmer
+                  Leben:</l>
+               <lb/>
+               <l>Die hölliſch Wu&#x364;tereÿ thu&#x366;t jhme wider ſtreben<unclear>.</unclear></l>
+               <lb/>
+               <l rendition="#et">Vnd nach vil ander Feind: worunder ſeind gezellt</l>
+               <lb/>
+               <l rendition="#et">Sein eigen Fleiſch: der Tod: die laſterhaffte Wellt:</l>
+               <lb/>
+               <l>Anfechtung vilerleÿ: Verfolgung, vnd Beſchwerden,</l>
+               <lb/>
+               <l>Vnd was der Sathan mehr erwecket hier auff Erden,</l>
+               <lb/>
+               <l rendition="#et">Alſs der von zorn entbrandt, geleich dem Donner Keÿl,</l>
+               <lb/>
+               <l rendition="#et">Vns zu vertilgen gar abſchieſſet fewrig pfeil.</l>
+               <lb/>
+               <cb/>
+               <l>Wie aber ſolche Feind wir mo&#x364;gen <unclear>v̈ber
+                     winden</unclear>,</l>
+               <lb/>
+               <l>Der Krieges Fürſt vns Lehrt: wie beÿ Matth<hi rendition="#aq">æ</hi>o zfinden:</l>
+               <lb/>
+               <l rendition="#et">Da, wider Sathans Liſt, vnd wider Sathans Macht,</l>
+               <lb/>
+               <l rendition="#et">Die Waaffen ſeines Worts Er in das Feld gebracht.</l>
+               <lb/>
+               <l>Dieſelben Waaffen auch der Heiden Lehrer preiſet,</l>
+               <lb/>
+               <l>Vnd ſie von Stuck zu Stuck den Auſserwehlten weiſet.</l>
+               <lb/>
+               <l rendition="#et">Er ſpricht: Die La&#x364;nden Eüch vmbgürtet mit Waarheit:</l>
+               <lb/>
+               <l rendition="#et">Es b'ſchirme Ewer Bruſt der Krebſs der Grechtigkeit:</l>
+               <lb/>
+               <cb/>
+               <l>An Fu&#x364;ſſen ſeit geſchu&#x364;cht in jehne Wellt zugehen:</l>
+               <lb/>
+               <l>(Die Lehr von Chriſto wir durch diſe Schuch verſtehen)</l>
+               <lb/>
+               <l rendition="#et">Jedoch, zu&#x366;lo&#x364;ſchen gar des bo&#x364;ſen fewrig
+                  Pfeil,</l>
+               <lb/>
+               <l rendition="#et">Den Glaubens Schilt vorauſs ergreiffet in der eil:</l>
+               <lb/>
+               <l>Setzt auff den Helm des Heÿls, vnd faſſet mit der Rechten</l>
+               <lb/>
+               <l>Das ſcharpfe Schwert des Geiſts: So werdt jhr Sighafft fechten,</l>
+               <lb/>
+               <l rendition="#et">Vnd, nach vollbrachtem Streit, in ho&#x364;chſter Herꝛlikeit,</l>
+               <lb/>
+               <l rendition="#et">Die ewig-wehrend Cron empfahen allbereit.</l>
+               <lb/>
+               <cb/>
+               <l>Der Menſch; wie ob gema&#x364;ldt; im Streit mu&#x366;ſſ jm&#x303;er Leben:</l>
+               <lb/>
+               <l>Der Sieg, vnd Siegers Lohn vom Herꝛen wird gegeben.</l>
+               <lb/>
+               <l>Des ru&#x364;ffen wir zu jhm, wir, die wir wehrloſ ſeind:</l>
+               <lb/>
+               <l>O Herꝛ, bewaaffne vns, ſo weichet vnſer Feind.</l>
             </lg>
             <lb/>
-            
+            <cb type="end"/>
             <closer>
-            <signed rendition="#right">J. W. S.</signed>
+               <signed rendition="#right">J. W. S.</signed>
             </closer>
             <lb/>
-            
          </div>
       </body>
    </text>
