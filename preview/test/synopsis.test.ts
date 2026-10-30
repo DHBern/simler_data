@@ -12,7 +12,7 @@ import { tmpdir } from 'node:os'
 import { join } from 'node:path'
 import { test } from 'node:test'
 
-import { CATEGORIES, loadSynopses, numberLines, STEPS } from '../alignments'
+import { CATEGORIES, loadSynopses, numberLines, SETTINGS, STEPS } from '../alignments'
 import { findingsPage } from '../page'
 import { synopsesPage, synopsisHref, synopsisPage } from '../synopsis'
 
@@ -137,7 +137,7 @@ test("a place keeps the type the pipeline's rules gave it; one nobody typed is o
   // `auff`/`auf` is one word twice; `nimmermehr`/`glaube` is two words.
   assert.equal(spelling.apparatus[0].spelling, true)
   assert.deepEqual(spelling.apparatus[0].relation, { type: 'spelling', by: 'rule', rule: 'doubled letters' })
-  assert.equal(spelling.apparatus[0].category, 'spelling')
+  assert.equal(spelling.apparatus[0].category, 'orthography')
   assert.equal(spelling.apparatus[0].state, 'proposed')
   assert.equal(wording.apparatus[0].spelling, false)
   assert.equal(wording.apparatus[0].relation, undefined)
@@ -145,7 +145,7 @@ test("a place keeps the type the pipeline's rules gave it; one nobody typed is o
 
   // The page carries the category, so the reader can switch it off and colour by it.
   const page = synopsisPage(synopsis)
-  assert.match(page, /<span class="var" data-group="3-1" data-cat="spelling" data-step="doubled letters" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="3-1" data-cat="orthography" data-step="doubled letters" data-state="proposed"/)
   assert.match(page, /<span class="var" data-group="2-2" data-cat="open"/)
   assert.match(page, /<span class="app-rel" data-by="rule" title="Regel, nicht bestätigt · doubled letters">Schreibung/)
 })
@@ -170,9 +170,9 @@ test('each place carries the step of the rule cascade that settled it, for the r
 
   // The rule's own step; for a person's type, which has none, the last step of that type.
   assert.deepEqual([capital, virgule, word, confirmed].map((e) => e.step), ['case', 'punctuation', undefined, 'spelling variants'])
-  assert.deepEqual([capital, virgule, word].map((e) => e.category), ['spelling', 'punctuation', 'open'])
+  assert.deepEqual([capital, virgule, word].map((e) => e.category), ['orthography', 'punctuation', 'open'])
   const page = synopsisPage(synopsis)
-  assert.match(page, /<span class="var" data-group="1-1" data-cat="spelling" data-step="case" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="1-1" data-cat="orthography" data-step="case" data-state="proposed"/)
   assert.match(page, /<span class="var" data-group="1-3" data-cat="open" data-state="open"/) // nothing to leave out
 
   // Which columns read alike, for colouring against one witness: A and B share `figur`.
@@ -189,7 +189,7 @@ test("a person's classification stands, and says the place is settled", async ()
   const [synopsis] = await loadSynopses(dir)
   // The rules would call `auff`/`auf` a spelling; a person said otherwise, and wins.
   assert.deepEqual(synopsis.segments[0].apparatus.map((e) => [e.category, e.state]),
-    [['lexical', 'confirmed'], ['lexical', 'significant']])
+    [['word', 'confirmed'], ['word', 'significant']])
 })
 
 test('how far the witnesses are apart is graded', async () => {
@@ -208,12 +208,12 @@ test('the page offers the reading options, and the script that drives them', asy
   }
   // A chip per category, with its count; a box per filter and per witness.
   assert.equal((page.match(/data-syn-cat=/g) ?? []).length, CATEGORIES.length)
-  assert.match(page, /<label class="syn-chip"[^>]* data-n="1"><input type="checkbox" data-syn-cat="spelling" checked> Schreibung <span class="n">1<\/span>/)
+  assert.match(page, /<label class="syn-chip"[^>]* data-n="1"><input type="checkbox" data-syn-cat="orthography"> Orthographie <span class="n">1<\/span>/)
   // A box per step of the cascade, all on by default.
   assert.equal((page.match(/data-syn-ignore="[^"]+" checked>/g) ?? []).length, STEPS.length)
   assert.match(page, /title="ck\/k, th\/t[^"]*"><input type="checkbox" data-syn-ignore="spelling variants" checked> Schreibvarianten/)
-  // *sachliche* is everything but punctuation and spelling.
-  assert.match(page, /data-syn-preset="grammatical lexical order omission other open"\s+title="[^"]*">sachliche/)
+  // The default is what the settings say.
+  assert.match(page, /data-syn-preset="added deleted word grammar unclear open"\s+title="[^"]*">Voreinstellung/)
   assert.equal((page.match(/data-syn-witness=/g) ?? []).length, synopsis.witnesses.length)
   // The legend stands right under the options, not under the table.
   assert.ok(page.indexOf('class="syn-legend') < page.indexOf('<table class="synopsis">'))
@@ -228,9 +228,10 @@ test('the apparatus of a segment lists its readings', async () => {
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
 
-  assert.equal((page.match(/<tr class="app">/g) ?? []).length, 2)
+  // The heading only A has is a whole line more; the two others hold a place each.
+  assert.equal((page.match(/<tr class="app">/g) ?? []).length, 3)
   // Each entry carries what the reader's choice is matched against.
-  assert.match(page, /<li data-group="3-1" data-cat="spelling" data-step="doubled letters">/)
+  assert.match(page, /<li data-group="3-1" data-cat="orthography" data-step="doubled letters">/)
   // Lemma, bracket, the departing readings with their sigla.
   assert.match(page, /<li data-group="2-2"[^>]*>\s*<span class="rdg lem">nimmermehr <i>A<\/i><\/span> <span class="sep">]<\/span> <span class="rdg">glaube <i>F42A<\/i><\/span>/)
 })
@@ -269,7 +270,7 @@ test('inside a variant, only the characters that differ are marked', async () =>
   const page = synopsisPage(synopsis)
 
   // `auff` against `auf` is one letter, not a whole word.
-  assert.match(page, /data-cat="spelling"[^>]*>auf<b>f<\/b><\/span>/)
+  assert.match(page, /data-cat="orthography"[^>]*>auf<b>f<\/b><\/span>/)
   // Another word is marked whole.
   assert.match(page, /data-cat="open"[^>]*><b>glaube<\/b><\/span>/)
 })
@@ -401,17 +402,17 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
   const [synopsis] = await loadSynopses(dir)
   const page = synopsisPage(synopsis)
   // One bar, a part per category, each a preset for that category alone.
-  assert.match(page, /<span class="syn-mix"><button type="button" data-cat="spelling" data-syn-preset="spelling" style="flex-grow:2" title="Schreibung 2 — nur diese zeigen"><\/button><button type="button" data-cat="open"[^>]*flex-grow:1/)
+  assert.match(page, /<span class="syn-mix"><button type="button" data-cat="orthography" data-syn-preset="orthography" style="flex-grow:2" title="Orthographie 2 — nur diese zeigen"><\/button><button type="button" data-cat="open"[^>]*flex-grow:1/)
   // The register under the categories' names.
-  assert.match(page, /<h4>Schreibung <span class="count">1<\/span><\/h4>\s*<ol><li data-cat="spelling"[^>]*><b>vnd<\/b>/)
+  assert.match(page, /<h4>Orthographie <span class="count">1<\/span><\/h4>\s*<ol><li data-cat="orthography"[^>]*><b>vnd<\/b>/)
   // `vnd`/`und` is spelling, so A and B are 0 apart in substance; `figur`/`geſtalt` puts C 1 from both.
   assert.match(page, /<tr><th>A<\/th><td><\/td><td style="--k:0\.00" title="A gegen B: 0 sachliche von 2 Stellen">0<\/td><td style="--k:1\.00" title="A gegen C: 1 sachliche von 3 Stellen">1<\/td><\/tr>/)
   assert.doesNotMatch(synopsisPage((await load())[0]), /syn-pairs/) // two witnesses: the poem's own count
 
   // The overview: a bar and a sparkline per poem, every count to sort by, and the sets that recur.
   const overview = synopsesPage([synopsis, { ...synopsis, id: 'n8' }])
-  assert.match(overview, /<tr data-variants="3" data-doubtful="0" data-segments="2" data-punctuation="0" data-spelling="2"[^>]*>/)
-  assert.match(overview, /<option value="data-lexical">Wortlaut<\/option>/)
+  assert.match(overview, /<tr data-variants="3" data-doubtful="0" data-segments="2" data-added="0" data-deleted="0" data-word="0" data-grammar="0" data-punctuation="0" data-orthography="2"[^>]*>/)
+  assert.match(overview, /<option value="data-word">Wortvariante<\/option>/)
   assert.match(overview, /<svg class="syn-spark" viewBox="0 0 2 3"[^>]*><rect x="0" y="1" width="0.8" height="2"\/><rect x="1" y="2"/)
   assert.match(overview, /<summary>Wiederkehrende Lesarten: 2 Sätze[\s\S]*?<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>/)
   assert.doesNotMatch(synopsesPage([synopsis]), /Wiederkehrende/) // one poem recurs in nothing
@@ -453,7 +454,7 @@ test('the colouring modes and their legend come from one table', async () => {
   assert.match(page, /<option value="w2">gegen F42A<\/option>/)
   // The swatch is a mark like any other, so the stylesheet colours both at once.
   assert.match(page, /<span class="syn-keys" data-for="variance">[\s\S]*?<span class="var" data-degree="1">/)
-  assert.match(page, /<span class="syn-keys" data-for="type">[\s\S]*?<span class="var" data-cat="lexical"><b>Aa<\/b><\/span> Wortlaut/)
+  assert.match(page, /<span class="syn-keys" data-for="type">[\s\S]*?<span class="var" data-cat="word"><b>Aa<\/b><\/span> Wortvariante/)
   assert.match(page, /<span class="syn-keys" data-for="state">[\s\S]*?<span class="var" data-state="proposed">/)
   assert.match(page, /<span class="syn-keys" data-for="change">[\s\S]*?<span class="var" data-change="om">/)
   assert.match(page, /<span class="syn-keys" data-for="w1">[\s\S]*?weicht von A ab/)
@@ -468,7 +469,7 @@ test('the register lists each set of readings once, the most frequent first', as
 
   const page = synopsisPage(synopsis)
   assert.match(page, /<summary>Lesarten: 2 verschiedene an 2 Stellen<\/summary>/)
-  assert.match(page, /<li data-cat="spelling" data-step="doubled letters"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
+  assert.match(page, /<li data-cat="orthography" data-step="doubled letters"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
 })
 
 test("a document's classifications reach the apparatus, a model's as provisional", async () => {
@@ -498,6 +499,50 @@ test("a document's classifications reach the apparatus, a model's as provisional
   assert.match(page, /<span class="app-rel" data-by="model" title="Modell 82 %, nicht bestätigt · m · doubled f">Schreibung <small>Modell 82 %<\/small><\/span>/)
   // The reader can take the model's types back; the place says it is the model's.
   assert.match(page, /<input type="checkbox" data-syn-model checked> Modellvorschläge/)
-  assert.match(page, /<span class="var" data-group="1-3" data-cat="spelling" data-by="model" data-state="proposed"/)
+  assert.match(page, /<span class="var" data-group="1-3" data-cat="orthography" data-by="model" data-state="proposed"/)
   assert.doesNotMatch(synopsisPage((await load())[0]), /data-syn-model/) // no model, no switch
+})
+
+const SOURCES = (...sigla: string[]) => Object.fromEntries(sigla.map((s) => [s, `tei/${s}.xml#n1`]))
+
+async function synopsisOf(sources: Record<string, string>, rows: Row[]) {
+  const dir = await mkdtemp(join(tmpdir(), 'categories-'))
+  await writeFile(join(dir, 'n1.json'), JSON.stringify(alignment(sources, rows)), 'utf8')
+  return (await loadSynopses(dir))[0]
+}
+
+test('additions and deletions follow the prints, by the default ones where they part', async () => {
+  const synopsis = await synopsisOf(SOURCES('A', 'B', 'C', 'F42A'), [
+    { cells: { A: ['eins', 'mehr'], B: ['eins', ''], C: ['eins', ''], F42A: ['eins', 'mehr'] } },
+    { cells: { A: ['', 'zwei'], B: ['neu', 'zwei'], C: ['neu', 'zwei'], F42A: ['neu', 'zwei'] } },
+    { cells: { A: ['drei', ''], B: ['drei', ''], C: ['drei', ''], F42A: ['drei', 'alt'] } },
+  ])
+  assert.deepEqual(synopsis.segments.map((s) => s.apparatus[0].category), ['deleted', 'added', 'deleted'])
+})
+
+test('a witness without text in a row makes it a whole line more or less, and only the default prints start shown', async () => {
+  const synopsis = await synopsisOf(SOURCES('A', 'B', 'D'), [
+    { cells: { A: ['alt'], B: ['alt'], D: ['alt'] } },
+    { cells: { A: ['nur'], B: null, D: null } },
+    { cells: { A: null, B: ['neu'], D: ['neu'] } },
+  ])
+  assert.deepEqual(synopsis.segments.map((s) => s.line), [undefined, 'deleted', 'added'])
+  const page = synopsisPage(synopsis)
+  assert.match(page, /<li data-cat="deleted" data-missing="2 3" data-present="1">\s*Ganze Zeile: fehlt in B D/)
+  assert.match(page, /data-syn-witness="1" checked> A/)
+  assert.match(page, /data-syn-witness="3"> D/)
+  assert.match(page, /data-syn-cat="word" checked>/)
+  assert.doesNotMatch(page, /data-syn-cat="punctuation" checked>/)
+})
+
+test('where the default prints leave nothing to compare, every witness starts shown', async () => {
+  const page = synopsisPage(await synopsisOf(SOURCES('C', 'D'), [{ cells: { C: ['a'], D: ['b'] } }]))
+  assert.match(page, /data-syn-witness="2" checked> D/)
+})
+
+test('every relation type of the format has a category, and every setting names one', () => {
+  for (const type of ['spelling', 'orthographic', 'punctuation', 'grammatical', 'lexical', 'transposition', 'repetition', 'uncertain', 'other']) {
+    assert.ok(type in SETTINGS.types, type)
+  }
+  for (const c of [...Object.values(SETTINGS.types), ...SETTINGS.shown, ...SETTINGS.checkFirst]) assert.ok(c in SETTINGS.categories, c)
 })

@@ -10,6 +10,7 @@
 
 import { readdir, readFile } from 'node:fs/promises'
 import { basename, join } from 'node:path'
+import settings from '../alignment/categories.json'
 
 /** A run of words that share a state: invariant, or one side of one variant. */
 export interface Reading {
@@ -19,15 +20,22 @@ export interface Reading {
 }
 
 /**
- * What a place is, as the reader filters and colours it: its relation type
- * (`relation-types.md`), folded where the reader needs no finer cut. A place
- * nobody classified is an omission where a witness reads nothing, else open.
+ * What a place is, as the reader filters and colours it: its relation type,
+ * folded as `alignment/categories.json` says, the one place to change that and
+ * what is shown first. A place nobody classified is an addition or a deletion
+ * where a witness reads nothing, else open.
  */
-export const CATEGORIES = ['punctuation', 'spelling', 'grammatical', 'lexical', 'order', 'omission', 'other', 'open'] as const
-export type Category = (typeof CATEGORIES)[number]
-const CATEGORY: Record<string, Category> = {
-  punctuation: 'punctuation', orthographic: 'spelling', spelling: 'spelling', grammatical: 'grammatical',
-  lexical: 'lexical', transposition: 'order', repetition: 'order',
+export const SETTINGS = settings
+export type Category = keyof typeof settings.categories
+export const CATEGORIES = Object.keys(settings.categories) as Category[]
+const CATEGORY: Record<string, Category> = settings.types as Record<string, Category>
+
+/** Added or deleted, by which prints have the text: among the default prints where they part, else all; as `categories.py`. */
+export function direction(has: Record<string, boolean>): Category {
+  const among = Object.entries(has).filter(([s]) => settings.witnesses.includes(s))
+  const scope = new Set(among.map(([, h]) => h)).size > 1 ? among : Object.entries(has)
+  const year = (s: string) => (settings.years as Record<string, number>)[s] ?? 9999
+  return scope.reduce((a, b) => (year(b[0]) < year(a[0]) ? b : a))[1] ? 'deleted' : 'added'
 }
 
 /**
@@ -58,11 +66,11 @@ export interface Entry {
   group: string
   /** Siglum → its reading; a witness that omits reads the empty string. */
   readings: Record<string, string>
-  /** Its type is punctuation or spelling — one word, written otherwise — or no reading holds a letter. */
+  /** Its type is punctuation or orthography — one word, written otherwise — or no reading holds a letter. */
   spelling: boolean
   /** How far apart the witnesses are here: 1 to 3, as LERA grades its scale. */
   degree: number
-  /** A witness present in the row reads nothing here: an omission, not a substitution. */
+  /** A witness present in the row reads nothing here: an addition or a deletion, not a substitution. */
   omission: boolean
   /** The sigla that do not read what most of the others read here. */
   departing: string[]
@@ -90,6 +98,8 @@ export interface Segment {
   cells: Record<string, Reading[]>
   /** Sigla LERA says have no text here. */
   missing: string[]
+  /** Some witnesses have no text in this row: a whole line more or less. */
+  line?: Category
   /** Siglum → the segment its cell repeats. */
   copy: Record<string, number>
   apparatus: Entry[]
@@ -290,14 +300,15 @@ function entry(group: string, readings: Record<string, string>, relation: Relati
   // against the first reading that differs, so it too shows what is distinctive.
   const reference = Object.entries(readings).find(([siglum]) => !apart.includes(siglum))?.[1].trim() ?? values[0] ?? ''
   const omission = values.includes('')
-  const category: Category = relation ? CATEGORY[relation.type] ?? 'other' : omission ? 'omission' : 'open'
+  const category: Category = relation ? CATEGORY[relation.type] ?? 'unclear'
+    : omission ? direction(Object.fromEntries(Object.entries(readings).map(([s, r]) => [s, Boolean(r.trim())]))) : 'open'
   const form = (siglum: string) => compare(readings[siglum])
   const step = relation?.by === 'rule' ? STEPS.find((s) => s === relation.rule) : relation?.by ? undefined : STEP_OF_TYPE[relation?.type ?? '']
   return {
     group,
     readings,
-    // A virgule against nothing is an omission, and still no other word.
-    spelling: category === 'spelling' || category === 'punctuation' || values.every((v) => !/[\p{L}\p{N}]/u.test(v)),
+    // A mark against nothing is no other word either.
+    spelling: category === 'orthography' || category === 'punctuation' || values.every((v) => !/[\p{L}\p{N}]/u.test(v)),
     // Two readings among four witnesses is a lesser difference than four.
     degree: Math.min(3, Math.max(1, new Set(values).size - 1)),
     departing: apart,
@@ -490,6 +501,8 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
     head: Object.values(raw.roles ?? {}).includes('head'),
     cells,
     missing,
+    ...(present.length && missing.length
+      ? { line: direction(Object.fromEntries(sigla.map((s) => [s, present.includes(s)]))) } : {}),
     copy,
     apparatus,
     differs: apparatus.length > 0 || missing.length > 0,

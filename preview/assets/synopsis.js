@@ -82,7 +82,12 @@
       var ignored = filters.filter(function (f) { return f.checked }).map(function (f) { return f.dataset.synIgnore })
       var shown = shownColumns()
       var agree = agreeing(shown)
-      var gone = function (el) { return ignored.indexOf(el.dataset.step) >= 0 || agree[el.dataset.group] === true }
+      // A whole line more or less counts while a witness shown has it and one shown has not.
+      var some = function (list) { return list.split(' ').some(function (w) { return shown.indexOf(w) >= 0 }) }
+      var gone = function (el) {
+        if (el.dataset.missing) return !some(el.dataset.missing) || !some(el.dataset.present)
+        return ignored.indexOf(el.dataset.step) >= 0 || agree[el.dataset.group] === true
+      }
       places.forEach(function (el) { el.toggleAttribute('data-off', chosen.indexOf(el.dataset.cat) < 0 || gone(el)) })
 
       // Each count says what the filters leave of its category, chosen or not.
@@ -92,17 +97,16 @@
         chip.parentNode.querySelector('.n').textContent = n
       })
 
-      // A row with nothing left to show is quiet, unless a witness shown has no
-      // text in it and omissions are shown; an apparatus row with nothing left goes.
-      var gaps = chosen.indexOf('omission') >= 0
+      // A row with nothing left to show is quiet, its whole line included; an
+      // apparatus row with nothing left goes.
       rows.forEach(function (row) {
-        var gap = all('td.gap', row).some(function (td) { return shown.indexOf(td.dataset.w) >= 0 })
-        var quiet = !row.querySelector('.var:not([data-off])') && !(gaps && gap)
-        row.classList.toggle('quiet', quiet)
         var app = row.nextElementSibling
-        if (app && app.classList.contains('app')) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
+        var isApp = app && app.classList.contains('app')
+        var line = isApp && app.querySelector('li[data-missing]:not([data-off])')
+        row.classList.toggle('quiet', !row.querySelector('.var:not([data-off])') && !line)
+        if (isApp) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
       })
-      previewStore.set('syn-show', chosen.join(' '))
+      previewStore.set('syn-cats', chosen.join(' '))
       previewStore.set('syn-steps', ignored.join('|'))
     }
 
@@ -166,7 +170,7 @@
       }, function () {})
     })
 
-    var show = previewStore.get('syn-show')
+    var show = previewStore.get('syn-cats')
     var ignore = previewStore.get('syn-steps')
     if (show !== null) chips.forEach(function (c) { c.checked = show.split(' ').indexOf(c.dataset.synCat) >= 0 })
     if (ignore !== null) filters.forEach(function (f) { f.checked = ignore.split('|').indexOf(f.dataset.synIgnore) >= 0 })

@@ -17,33 +17,33 @@
       "siglum": "B",
       "name": "n251-B_1653",
       "tokens": [
-        {"t": "Uber", "n": "uber"},
+        {"t": "Uber", "ref": "B-h001"},
         {"t": " "},
-        {"t": "die", "n": "tie"},
+        {"t": "die", "ref": "B-h001"},
         {"t": " "},
-        {"t": "Haußthüren.", "n": "hausturen"},
-        {"t": "Den", "n": "ten"},
+        {"t": "Haußthüren.", "ref": "B-h001"},
+        {"t": "Den", "ref": "B-l0001"},
         {"t": " "},
-        {"t": "Eyn-", "n": "ein"},
+        {"t": "Eyn-", "ref": "B-l0001"},
         {"t": " "},
-        {"t": "und", "n": "unt"},
+        {"t": "und", "ref": "B-l0001"},
         {"t": " "},
-        {"t": "Außgang", "n": "ausgang"},
+        {"t": "Außgang", "ref": "B-l0001"},
         {"t": " "},
-        {"t": "Gott", "n": "got"},
+        {"t": "Gott", "ref": "B-l0001"},
         {"t": " "},
-        {"t": "bewahr", "n": "beuar"},
-        {"t": "vor", "n": "uor"},
+        {"t": "bewahr", "ref": "B-l0001"},
+        {"t": "vor", "ref": "B-l0002"},
         {"t": " "},
-        {"t": "falſchem", "n": "falschem"},
+        {"t": "falſchem", "ref": "B-l0002"},
         {"t": " "},
-        {"t": "Freünd/", "n": "freunt"},
+        {"t": "Freünd/", "ref": "B-l0002"},
         {"t": " "},
-        {"t": "und", "n": "unt"},
+        {"t": "und", "ref": "B-l0002"},
         {"t": " "},
-        {"t": "aller", "n": "aler"},
+        {"t": "aller", "ref": "B-l0002"},
         {"t": " "},
-        {"t": "gfahr!", "n": "gfar"}
+        {"t": "gfahr!", "ref": "B-l0002"}
       ],
       "source": "webdav/data/sources/tei/B_1653.xml#n251"
     },
@@ -51,32 +51,32 @@
       "siglum": "C",
       "name": "n251-C_1663_dok",
       "tokens": [
-        {"t": "2.", "n": "2"},
-        {"t": "Uber", "n": "uber"},
+        {"t": "2.", "ref": "C-h001"},
+        {"t": "Uber", "ref": "C-h001"},
         {"t": " "},
-        {"t": "die", "n": "tie"},
+        {"t": "die", "ref": "C-h001"},
         {"t": " "},
-        {"t": "Haußthür.", "n": "haustur"},
-        {"t": "Den", "n": "ten"},
+        {"t": "Haußthür.", "ref": "C-h001"},
+        {"t": "Den", "ref": "C-l0001"},
         {"t": " "},
-        {"t": "Ein-", "n": "ein"},
+        {"t": "Ein-", "ref": "C-l0001"},
         {"t": " "},
-        {"t": "und", "n": "unt"},
+        {"t": "und", "ref": "C-l0001"},
         {"t": " "},
-        {"t": "Außgang", "n": "ausgang"},
+        {"t": "Außgang", "ref": "C-l0001"},
         {"t": " "},
-        {"t": "Gott", "n": "got"},
+        {"t": "Gott", "ref": "C-l0001"},
         {"t": " "},
-        {"t": "bewahr", "n": "beuar"},
-        {"t": "für", "n": "fur"},
+        {"t": "bewahr", "ref": "C-l0001"},
+        {"t": "für", "ref": "C-l0002"},
         {"t": " "},
-        {"t": "allem", "n": "alem"},
+        {"t": "allem", "ref": "C-l0002"},
         {"t": " "},
-        {"t": "übel", "n": "ubel"},
+        {"t": "übel", "ref": "C-l0002"},
         {"t": " "},
-        {"t": "und", "n": "unt"},
+        {"t": "und", "ref": "C-l0002"},
         {"t": " "},
-        {"t": "gefahr!", "n": "gefar"}
+        {"t": "gefahr!", "ref": "C-l0002"}
       ],
       "source": "webdav/data/sources/tei/C_1663_dok.xml#n251"
     }
@@ -105,7 +105,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference between plural (Haußthüren) and singular (Haußthür) form."
+            "rationale": "Difference in number (plural vs singular) of the noun 'Haußthür'."
           }
         }
       ],
@@ -142,7 +142,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The prepositions 'vor' and 'für' are distinct words with different meanings (before/in front of vs. for/against)."
+            "rationale": "The prepositions 'vor' and 'für' are distinct words with different meanings (before vs. for)."
           }
         },
         {
@@ -152,7 +152,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The words 'falſchem' (false) and 'allem' (all) are different adjectives with different meanings."
+            "rationale": "The words 'falſchem' (false) and 'allem' (all) are completely different in meaning and form."
           }
         },
         {
@@ -162,7 +162,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings 'Freünd' (friend) and 'übel' (evil) are different words with different meanings, indicating a lexical variation."
+            "rationale": "The readings differ in the specific word used ('Freünd' vs 'übel'), which changes the meaning of the phrase."
           }
         },
         {"spans": {"B": [22, 23], "C": [23, 24]}},
@@ -173,7 +173,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings differ in the specific words used ('aller' vs 'gefahr' is a misalignment of the phrase 'vor falschem Freund und aller gfahr' vs 'für allem übel und gefahr', but looking at the specific pair provided 'aller' vs 'gefahr!', they are different words. However, usually these tasks align corre"
+            "rationale": "The readings differ in the specific word used ('aller' vs 'gefahr'), representing a change in wording rather than just form or spelling."
           }
         },
         {"spans": {"B": [26, 27]}}

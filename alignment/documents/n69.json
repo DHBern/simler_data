@@ -9733,8 +9733,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ between 'vertrawe' (trust) and 'glaube nicht' (do not believe), which are different words/wordings."
+            "confidence": 1,
+            "rationale": "The readings differ in wording: 'vertrawe' (trust) vs 'glaube nicht' (do not believe), which is a lexical substitution."
           }
         },
         {"spans": {"A": [21, 22], "B": [21, 22], "C": [19, 20], "F42A": [13, 14]}},
@@ -9856,7 +9856,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference between the main variants (A, B, C) is the use of the long s (ſ) versus short s (s) in 'zuͦ' vs 'zu' and 'muͤglich' vs 'müglich', which are orthographic variations. F42A is a misaligned or unrelated reading."
+            "rationale": "The primary difference between the main variants (A, B, C) is the use of the long s (ſ) versus short s (s) in 'zuͦ' vs 'zu' and 'muͤglich' vs 'müglich' (though B has u/v difference too, A vs C is purely long s). The prompt asks to classify the variant readings. Comparing A and C: 'zuͦ' vs 'zu' is lo"
           }
         },
         {"spans": {"A": [39, 40], "B": [39, 40], "C": [37, 38], "F42A": [30, 31]}},
@@ -10230,11 +10230,11 @@
           "spans": {"A": [69, 70], "B": [69, 70], "C": [67, 68], "F42A": [62, 63]},
           "ext": {"lera": "10-2"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference in capitalization (harf/ vs Harpff) and long s (ff vs f) constitutes an orthographic variation."
+            "rationale": "The difference is between 'harf' and 'Harpff', which involves a doubled consonant (f/ff) and case, falling under spelling variations for the same word form."
           }
         },
         {"spans": {"A": [71, 72], "B": [71, 72], "C": [69, 70], "F42A": [64, 65]}},
@@ -10564,7 +10564,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is between the neuter singular nominative/accusative 'beſt' and the neuter singular nominative/accusative with ending 'beſte' (or potentially a different grammatical form depending on interpretation, but clearly a morphological variation of the same word)."
+            "rationale": "The difference is between 'beſt' (neuter singular) and 'beſte' (feminine singular or adjective ending), representing a change in grammatical form/ending."
           }
         },
         {"spans": {"A": [112, 113], "B": [112, 113], "C": [110, 111], "F42A": [102, 103]}},
@@ -10719,7 +10719,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings 'jederzeit' (every time) and 'jeder friſt' (every term/period) are different words with distinct lexical meanings, despite similar context."
+            "rationale": "The readings 'jederzeit' (every time) and 'jeder friſt' (every term/period) are different words with distinct meanings, constituting a lexical variation."
           }
         },
         {"spans": {"A": [124, 125], "B": [124, 125], "C": [122, 123], "F42A": [116, 117]}},
@@ -11210,7 +11210,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings 'auch' (also) and 'Vnd' (and) are different words with different meanings."
+            "rationale": "The readings differ in the word itself ('auch' vs 'Vnd'), which is a lexical difference."
           }
         },
         {"spans": {"A": [171, 172], "B": [171, 172], "C": [169, 170], "F42A": [159, 160]}},
@@ -11221,8 +11221,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The phrase 'dem Rund der welt' (the round of the world) is replaced by 'wͦelt-weitem Thal' (world-wide valley), which constitutes a change in wording and imagery."
+            "confidence": 1,
+            "rationale": "The readings differ in wording: 'dem Rund der welt' vs 'wͦelt-weitem Thal'."
           }
         },
         {"spans": {"A": [181, 182], "B": [181, 182], "C": [179, 180], "F42A": [165, 166]}},
@@ -12275,8 +12275,8 @@
             "type": "orthographic",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in capitalization (nun vs Nu) and long s (ſonne vs Sonne) are orthographic variants."
+            "confidence": 1,
+            "rationale": "Difference in capitalization (nun vs Nu) and long s (ſonne vs Sonne) are orthographic variations."
           }
         },
         {"spans": {"A": [294, 295], "B": [294, 295], "C": [292, 293], "F42A": [274, 275]}},
@@ -12450,7 +12450,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are limited to capitalization (Sie/Sy), long s (knüpfet/knüpffet), and u/v (und/vnd)."
+            "rationale": "The difference is between 'und' and 'vnd', which is a standard u/v orthographic variation in early modern German."
           }
         },
         {"spans": {"A": [319, 320], "B": [319, 320], "C": [317, 318], "F42A": [299, 300]}}
@@ -12603,8 +12603,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the subject ('jeder' vs 'man') and the predicate structure ('stark befindt' vs 'am stärcksten findt'), representing different wordings."
+            "confidence": 1,
+            "rationale": "The readings differ in the subject (jeder/ieder vs man) and the verb form/degree (stark befindt vs am stärcksten findt), representing different wordings."
           }
         },
         {"spans": {"A": [336, 337], "B": [336, 337], "C": [334, 335], "F42A": [318, 319]}}
@@ -12742,7 +12742,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in word choice ('Was immer' vs 'Alles was') and adjective ('dünnen' vs 'hohen'), which constitutes a lexical difference."
           }
         },
@@ -12887,8 +12887,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Edition F42A contains the additional word 'Alles' and uses different wording ('in gantzer Welte' vs 'um und neben uns auf diker erde'), constituting a lexical difference."
+            "confidence": 1,
+            "rationale": "Edition F42A contains the additional word 'Alles' and uses completely different wording ('neben vns in gantzer Welte') compared to the other editions ('um und neben uns auf diker erde')."
           }
         },
         {"spans": {"A": [358, 359], "B": [358, 359], "C": [356, 357], "F42A": [338, 339]}},
@@ -12899,7 +12899,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in wording: 'auf diker erde' vs 'in gantzer Welte'."
           }
         },
@@ -14095,7 +14095,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'bezeuget rund und frey' vs 'von ſich bezeuget frey'."
+            "rationale": "Edition F42A adds the phrase 'von ſich' and changes the word order, which constitutes a different wording."
           }
         },
         {"spans": {"A": [501, 502], "B": [501, 502], "C": [498, 499], "F42A": [477, 478]}}
@@ -14373,8 +14373,8 @@
             "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the representation of the umlaut (u with diaeresis vs. i) for the same grammatical form."
+            "confidence": 1,
+            "rationale": "Difference in vowel length (u vs i) representing the same grammatical form."
           }
         },
         {"spans": {"A": [537, 538], "B": [537, 538], "C": [534, 535], "F42A": [514, 515]}}
@@ -14522,7 +14522,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Edition F42A contains the word 'allein' and uses the stem 'solt' instead of 'solte', whereas the other editions use 'solte' and lack 'allein'. This constitutes a difference in wording/lexicon."
+            "rationale": "Edition F42A contains the word 'allein' and uses the stem 'solt' instead of 'solte', whereas the other editions use 'dann' and 'solte'. The presence of an extra word ('allein') makes this a lexical difference."
           }
         },
         {"spans": {"A": [544, 545], "B": [544, 545], "C": [541, 542], "F42A": [523, 524]}},
@@ -14664,7 +14664,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in the spelling of 'vermerckt' (ck/k) and 'Braͤutigamb' (final b vs m), which are orthographic variants of the same words."
+            "rationale": "The differences are 'gam' vs 'gamb' (final b) and 'vermerkt' vs 'vermerckt' (ck/k), which are spelling variations of the same words."
           }
         },
         {"spans": {"A": [561, 562], "B": [561, 562], "C": [558, 559], "F42A": [538, 539]}},
@@ -14810,7 +14810,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference in the aligned segment is the long s vs. short s (ihm / jhn) and capitalization (dann / Dann), which are orthographic variations."
+            "rationale": "The primary difference in the aligned segment is the long s vs. short s (ihm / jhn) and capitalization (dann / Dann), which are orthographic variations. The lexical difference (berichtet / ſterckt) is in the following word, not the aligned one."
           }
         },
         {"spans": {"A": [574, 575], "B": [574, 575], "C": [571, 572], "F42A": [555, 556]}},
@@ -14821,8 +14821,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference in the aligned segment is 'ohne' vs 'sonder', which are different words (prepositions) with similar meaning but distinct lexical forms."
+            "confidence": 1,
+            "rationale": "The primary difference is the substitution of the word 'ohne' (without) with 'sonder' (without/except), which are distinct lexical items."
           }
         },
         {"spans": {"A": [584, 585], "B": [584, 585], "C": [581, 582], "F42A": [563, 564]}}
@@ -15101,7 +15101,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading 'einem' (dative article) is replaced by 'wie ein' (conjunction + nominative article), changing the wording and grammatical structure of the phrase."
+            "rationale": "The readings differ in wording: 'einem' (dative article) vs 'wie ein' (conjunction + article), changing the syntactic structure and meaning slightly (like a river vs as a river)."
           }
         },
         {"spans": {"A": [608, 609], "B": [608, 609], "C": [605, 606], "F42A": [589, 590]}},
@@ -15113,7 +15113,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The word 'gleich' (like/equal) is replaced by 'fein' (fine) in reading F42A, which is a different word with a different meaning."
+            "rationale": "The words 'gleich' (equal/like) and 'fein' (fine) are different words with different meanings."
           }
         },
         {"spans": {"A": [611, 612], "B": [611, 612], "C": [608, 609], "F42A": [592, 593]}},
@@ -15273,7 +15273,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The interjection 'Ey' in editions A, B, and C is replaced by the word 'Mein' in edition F42A, representing a change in wording."
+            "rationale": "The interjection 'Ey' is replaced by 'Mein' in reading F42A, which is a different word."
           }
         },
         {"spans": {"A": [621, 622], "B": [621, 622], "C": [618, 619], "F42A": [602, 603]}},
@@ -15297,8 +15297,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'da! redt' vs 'von dir? Redt'."
+            "confidence": 1,
+            "rationale": "The readings differ in the specific words used ('da! redt' vs 'von dir? Redt'), representing a change in wording."
           }
         },
         {"spans": {"A": [635, 636], "B": [635, 636], "C": [632, 633], "F42A": [616, 617]}},
@@ -15664,7 +15664,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference is hyphenation (wolbedacht vs wol-bedacht)."
+            "rationale": "Difference is only in hyphenation (wolbedacht vs wol-bedacht)."
           }
         },
         {"spans": {"A": [672, 673], "B": [672, 673], "C": [669, 670], "F42A": [650, 651]}},
@@ -15672,11 +15672,11 @@
           "spans": {"A": [674, 675], "B": [674, 675], "C": [671, 672], "F42A": [652, 653]},
           "ext": {"lera": "56-3"},
           "relation": {
-            "type": "uncertain",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.9,
-            "rationale": "The readings 'damit' and 'Salomon' are not aligned variants of the same position; they are different words in different syntactic roles within the sentence structure."
+            "confidence": 0.95,
+            "rationale": "Edition F42A includes the proper name 'Salomon' which is absent in the other editions, constituting a lexical difference."
           }
         },
         {"spans": {"A": [676, 677], "B": [676, 677], "C": [673, 674], "F42A": [654, 655]}}
@@ -15801,8 +15801,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The reading in F42A uses the compound noun 'Liebes-macht' (love-power) whereas the others use the phrase 'macht der liebe' (power of love). This is a change in wording/wording structure."
+            "confidence": 1,
+            "rationale": "The reading in F42A uses a completely different phrase ('Die groſſe Liebes-macht') compared to the other editions ('die macht der liebe'), constituting a lexical difference in wording."
           }
         },
         {"spans": {"A": [686, 687], "B": [686, 687], "C": [683, 684], "F42A": [660, 661]}},
@@ -16131,7 +16131,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ significantly in wording: 'alſo zu deinem weib' vs 'So auch dein Liebes-gunſt zu deinem Weib'."
           }
         },
@@ -16140,11 +16140,11 @@
           "spans": {"A": [733, 734], "B": [733, 734], "C": [730, 731], "F42A": [709, 710]},
           "ext": {"lera": "59-2"},
           "relation": {
-            "type": "spelling",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is the presence or absence of the prefix 'be-', which is a spelling variation of the same verb form (reflexive 'finden' vs 'befinden') without changing the grammatical function or meaning significantly in this context."
+            "rationale": "The difference between 'befind' and 'find' represents a change in the verb form (prefixation or different verb stem) within the same grammatical slot."
           }
         },
         {"spans": {"A": [734, 735], "B": [734, 735], "C": [731, 732], "F42A": [710, 711]}}
@@ -16276,8 +16276,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference is the substitution of the verb 'verzeih' (forgive) with 'erlaub' (allow) in edition F42A, which constitutes a lexical change. The variation between 'worauß' and 'warauß' is a minor spelling/orthographic difference, but the verb change is the dominant feature."
+            "confidence": 1,
+            "rationale": "The primary difference is between 'verzeih' (forgive) and 'erlaub' (allow), which are different words. The spelling difference 'worauß' vs 'warauß' is secondary."
           }
         },
         {"spans": {"A": [745, 746], "B": [745, 746], "C": [742, 743], "F42A": [721, 722]}},
@@ -16413,7 +16413,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Turturtaub vs Turteldaub involves a difference in the spelling of the root (Turtur vs Turtel), representing a variant spelling of the same word."
+            "rationale": "The difference is 'Turturtaub' vs 'Turteldaub', which involves a different vowel (u vs e) and a different consonant cluster (r vs l) within the same word, constituting a spelling variation."
           }
         },
         {"spans": {"A": [755, 756], "B": [755, 756], "C": [752, 753], "F42A": [731, 732]}},
@@ -16558,8 +16558,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'mannes tod' vs 'jhres Liebſten todt' and 'ſie' vs 'ſy'."
+            "confidence": 1,
+            "rationale": "The readings differ in word choice ('mannes' vs 'jhres Liebſten') and word order, constituting a lexical difference."
           }
         },
         {"spans": {"A": [775, 776], "B": [775, 776], "C": [772, 773], "F42A": [752, 753]}},
@@ -16689,7 +16689,14 @@
       "columns": [
         {
           "spans": {"A": [780, 793], "B": [780, 793], "C": [777, 790], "F42A": [755, 772]},
-          "ext": {"lera": "63-1"}
+          "ext": {"lera": "63-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The first three readings (A, B, C) are nearly identical, differing only in orthography (auff/auf, jederzeit/iederzeit). However, reading F42A contains completely different words ('jhr noht', 'sy klagt', 'jhr lebens-zeit') compared to the others ('denſelben jederzeit'), representing a different wordi"
+          }
         }
       ],
       "ext": {
@@ -16818,7 +16825,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are i/j (ſie/ſy) and long s/ck (trinken/trincken), which are graphic variants."
+            "rationale": "Differences are u/v (ſie/ſy) and ck/k (trinken/trincken), which are graphic variants."
           }
         },
         {"spans": {"A": [801, 802], "B": [801, 802], "C": [798, 799], "F42A": [780, 781]}},
@@ -16958,8 +16965,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'auß traurigkeit' vs 'Weil ſy des trawrens voll'."
+            "confidence": 1,
+            "rationale": "The readings differ in wording and structure: 'auß traurigkeit' vs 'Weil ſy des trawrens voll'."
           }
         },
         {"spans": {"A": [816, 817], "B": [816, 817], "C": [813, 814], "F42A": [797, 798]}},
@@ -16971,7 +16978,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading in F42A uses 'sy' (she) and omits 'dieſelben' (the same/them), whereas the other editions use 'dieſelben' as the object. This represents a difference in wording/word choice."
+            "rationale": "The readings differ in wording: 'dieſelben' (these same) vs 'die' (the/them), and the surrounding context in F42A is also different."
           }
         },
         {"spans": {"A": [820, 821], "B": [820, 821], "C": [817, 818], "F42A": [805, 806]}},
@@ -17340,7 +17347,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.9,
-            "rationale": "The readings provided do not align; A, B, and C are variations of one sentence, while F42A is a completely different sentence."
+            "rationale": "The readings are not aligned; A, B, and C contain a complete clause ('es mußt...'), while F42A contains a completely different sentence fragment ('Jhr Liebe...'). They do not correspond to the same textual unit."
           }
         }
       ],
@@ -17408,8 +17415,8 @@
             "type": "orthographic",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference between long s (ſ) and y (y) in the same word form."
+            "confidence": 1,
+            "rationale": "Difference between long s (ſ) and y (y) is a graphic variant."
           }
         },
         {"spans": {"A": [877, 878], "B": [877, 878], "C": [874, 875], "F42A": [845, 846]}},
@@ -17421,7 +17428,14 @@
         {"spans": {"A": [880, 881], "B": [880, 881], "C": [877, 878], "F42A": [848, 849]}},
         {
           "spans": {"A": [882, 887], "B": [882, 887], "C": [879, 884], "F42A": [850, 857]},
-          "ext": {"lera": "69-3"}
+          "ext": {"lera": "69-3"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The third reading introduces the word 'gar' which is absent in the others, constituting a lexical difference."
+          }
         },
         {"spans": {"A": [888, 889], "B": [888, 889], "C": [885, 886], "F42A": [858, 859]}},
         {
@@ -17431,8 +17445,8 @@
             "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the representation of the umlaut (u with diaeresis vs. i) for the same grammatical form."
+            "confidence": 1,
+            "rationale": "Difference in vowel length (u vs i) representing the same grammatical form."
           }
         }
       ],
@@ -17593,7 +17607,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading 'heiſſe nur' in F42A replaces 'und ſey' in the other editions, involving a change in word choice and structure."
+            "rationale": "The reading 'heiſſe nur' (means only) replaces 'und ſey' (and be), changing the wording and meaning of the clause."
           }
         },
         {"spans": {"A": [901, 902], "B": [901, 902], "C": [898, 899], "F42A": [868, 869]}},
@@ -17921,7 +17935,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ between 'wenigst' (least) and 'minste' (smallest/least), which are distinct words with different etymologies and forms, not just orthographic variants of the same word."
+            "rationale": "The readings differ between 'wenigst' (superlative of wenig) and 'minste' (superlative of min), which are distinct words with different etymologies, even if semantically similar in this context."
           }
         },
         {"spans": {"A": [945, 946], "B": [945, 946], "C": [942, 943], "F42A": [912, 913]}},
@@ -18061,7 +18075,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "geſtalt and Figur are different words with similar meanings"
+            "rationale": "Different words (geſtalt vs Figur) with different meanings"
           }
         },
         {"spans": {"A": [956, 957], "B": [956, 957], "C": [953, 954], "F42A": [923, 924]}},
@@ -18214,7 +18228,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading 'liebwürdig' (adjective) is replaced by 'Liebens-werth' (adjective/noun) and the object 'ihn' is moved to the end, changing the wording and structure."
+            "rationale": "The reading 'Liebens-werth' (lovable) is a different word/formation compared to 'liebwürdig' (lovely/estimable), representing a lexical variation in wording."
           }
         },
         {"spans": {"A": [980, 981], "B": [980, 981], "C": [977, 978], "F42A": [946, 947]}}
@@ -18353,7 +18367,14 @@
       "columns": [
         {
           "spans": {"A": [981, 984], "B": [981, 984], "C": [978, 981], "F42A": [947, 950]},
-          "ext": {"lera": "75-1"}
+          "ext": {"lera": "75-1"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice ('ja' vs 'jhn') and subsequent wording ('Schoͤpfer' vs 'hoͤchſte Herꝛ'), which constitutes a lexical difference."
+          }
         },
         {"spans": {"A": [985, 986], "B": [985, 986], "C": [982, 983], "F42A": [951, 952]}},
         {
@@ -18364,7 +18385,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings differ in the subject noun: 'Schoͤpfer' (Creator) vs 'hoͤchſte Herꝛ' (highest Lord)."
+            "rationale": "The readings differ in the subject noun ('Schoͤpfer' vs 'hoͤchſte Herꝛ') and the verb form ('erſchaffen' vs 'geſchaffen'), representing a change in wording."
           }
         },
         {"spans": {"A": [991, 992], "B": [991, 992], "C": [988, 989], "F42A": [957, 958]}},
@@ -18373,11 +18394,11 @@
           "spans": {"A": [995, 996], "B": [995, 996], "C": [992, 993], "F42A": [961, 962]},
           "ext": {"lera": "75-3"},
           "relation": {
-            "type": "orthographic",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the long s (ſ) vs short s (s) in the prefix 'ge-'."
+            "confidence": 1,
+            "rationale": "Different verb forms (erſchaffen vs geſchaffen) indicating different wording."
           }
         },
         {"spans": {"A": [997, 998], "B": [997, 998], "C": [994, 995], "F42A": [963, 964]}}
@@ -18510,11 +18531,11 @@
           "spans": {"A": [998, 1003], "B": [998, 1003], "C": [995, 1000], "F42A": [964, 969]},
           "ext": {"lera": "76-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are in capitalization (wie/Wie, thier/Thier) and spelling (andre/ander), which fall under orthographic variations."
+            "rationale": "The difference 'andre' vs 'ander' involves the presence or absence of a final 'e', which is a grammatical ending (adjective declension)."
           }
         },
         {"spans": {"A": [1003, 1004], "B": [1003, 1004], "C": [1000, 1001], "F42A": [969, 970]}},
@@ -18665,11 +18686,11 @@
           "spans": {"A": [1025, 1028], "B": [1025, 1028], "C": [1022, 1025], "F42A": [991, 994]},
           "ext": {"lera": "77-3"},
           "relation": {
-            "type": "orthographic",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference is the capitalization of 'Liebeszeichen' (lowercase vs. uppercase) and the hyphenation in one variant, which are orthographic variations. The spelling difference 'foller' vs 'voller' is likely a typo in the prompt's reading list for F42A, but the provided readings A, B, and C "
+            "rationale": "The primary difference is 'foller' vs 'voller' (different word/meaning), which outweighs the orthographic differences in capitalization and hyphenation."
           }
         },
         {"spans": {"A": [1028, 1029], "B": [1028, 1029], "C": [1025, 1026], "F42A": [994, 995]}}
@@ -18793,8 +18814,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The third reading (F42A) contains entirely different wording ('zu der Lieb dir waeg vnd staeg') compared to the first three ('zur gegenliebe'), indicating a lexical difference."
+            "confidence": 1,
+            "rationale": "The third reading (F42A) contains completely different wording ('zu der Lieb dir waeg vnd staeg') compared to the others ('zur gegenliebe'), constituting a lexical difference."
           }
         },
         {"spans": {"A": [1043, 1044], "B": [1043, 1044], "C": [1040, 1041], "F42A": [1013, 1014]}},
@@ -18931,7 +18952,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference in the aligned segment is the capitalization of the first word (ſinn vs Sinn), which falls under orthographic variation (case)."
+            "rationale": "The difference is the use of a hyphen in 'ſinn-freud' versus the open compound 'ſinn freud' (or 'Sinn Frewd'), which falls under word division and hyphenation."
           }
         },
         {"spans": {"A": [1046, 1047], "B": [1046, 1047], "C": [1043, 1044], "F42A": [1016, 1017]}},
@@ -18943,7 +18964,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are limited to case (Sinn/Frewd/Huldenreich vs lowercase), u/v (vnd/und), and hyphenation/spacing (Sinn- Frewd- vs sinn-freud-)."
+            "rationale": "Differences are limited to case (Sinn/Frewd/Huldenreich vs lowercase), u/v (vnd/und), and hyphenation/spacing (freud- und vs freud- und)."
           }
         },
         {"spans": {"A": [1054, 1055], "B": [1054, 1055], "C": [1049, 1050], "F42A": [1024, 1025]}},
@@ -19100,8 +19121,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The reading 'jhr' (your) is an additional word not present in the other editions, which simply have 'die' (the). This constitutes a difference in wording/lexicon."
+            "confidence": 1,
+            "rationale": "The reading 'jhr' (your) is an additional word not present in the other editions, changing the wording."
           }
         },
         {"spans": {"A": [1077, 1078], "B": [1077, 1078], "C": [1072, 1073], "F42A": [1046, 1047]}},
@@ -19248,8 +19269,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'Wann aber' vs 'Vnd ſo du' and 'wilt verhoͤren' vs 'wirſt ... zuͦhoͤren'."
+            "confidence": 1,
+            "rationale": "Edition F42A uses a completely different wording and verb (zuhoeren vs verhoeren) compared to the other editions."
           }
         },
         {"spans": {"A": [1095, 1096], "B": [1095, 1096], "C": [1090, 1091], "F42A": [1066, 1067]}}
@@ -19548,7 +19569,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The third reading adds the possessive pronoun 'seinem' and capitalizes 'Weib', changing the wording and specificity compared to the other readings which use the bare noun 'weib'."
           }
         }
@@ -19713,7 +19734,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences in word division (compound vs. separated), case (lowercase vs. uppercase), and diacritics (aͤ vs. a, ß vs. s)."
+            "rationale": "Differences are in word division (compound vs. separated), long s vs. short s, and case (lowercase vs. uppercase), which are graphic/orthographic variations."
           }
         }
       ],
@@ -19980,7 +20001,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.9,
-            "rationale": "The readings differ in multiple ways (orthography, grammar, and lexical content), and the fourth reading (F42A) contains entirely different wording ('in demſelben Jahr', 's'Maͤñlin') that does not align with the others, making a single classification impossible."
+            "rationale": "The readings differ in multiple ways: 'wann' vs 'wan' (spelling), 'wer' vs 'waͤr' (grammatical/lexical), and F42A contains entirely different wording ('in demſelben Jahr... s'Maͤñlin') compared to the others, making a single classification impossible."
           }
         },
         {"spans": {"A": [1178, 1179], "B": [1178, 1179], "C": [1173, 1174], "F42A": [1148, 1149]}}
@@ -20109,7 +20130,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading F42A uses 'weggerafft' (carried away) and adds 'jhm' (to him), whereas the other readings use 'gerafft' (seized) without the dative object. This constitutes a difference in wording/word choice."
+            "rationale": "The reading F42A differs significantly in wording and structure (e.g., 'weggerafft' vs 'gerafft', addition of 'jhm', different word order), which constitutes a lexical difference."
           }
         }
       ],
@@ -20246,7 +20267,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference in the last reading is the addition of the phrase 'welch ein', which changes the wording."
+            "rationale": "Reading F42A introduces the phrase 'welch ein' which is absent in the other readings, constituting a difference in wording."
           }
         },
         {"spans": {"A": [1207, 1208], "B": [1209, 1210], "C": [1204, 1205], "F42A": [1177, 1178]}}
@@ -20373,7 +20394,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in the core content of the clause: 'für jenes koͤnigs leben' (for that king's life) vs 'ſeine Kirch der Herꝛ' (his church the Lord). This is a substitution of words/wording."
           }
         },
@@ -20387,7 +20408,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.9,
-            "rationale": "The readings involve a simple orthographic variant (jenes/jennes) in A/B/C, but F42A contains a completely different wording ('die er gab das Leben') that does not align with the others, making the set unclassifiable as a single type."
+            "rationale": "The readings provided do not align; A and B are identical, C differs only in orthography (jenes/jennes), but F42A contains completely different wording ('Wie ſeine Kirch der Herꝛ/ für die er gab das Leben:') which does not correspond to the other lines."
           }
         }
       ],
@@ -20788,7 +20809,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The word 'mehr' (more) is replaced by 'vil' (many), which are different words with distinct meanings."
+            "rationale": "The word 'mehr' (more) is replaced by 'vil' (many), which are different words with different meanings."
           }
         },
         {"spans": {"A": [1271, 1272], "B": [1274, 1275], "C": [1269, 1270], "F42A": [1206, 1207]}},
@@ -20909,8 +20930,8 @@
             "type": "transposition",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The word order of 'nun' and 'Dich' is swapped between the editions."
+            "confidence": 1,
+            "rationale": "The words 'nun' and 'Dich' (dich) are swapped in position relative to the rest of the clause."
           }
         },
         {"spans": {"A": [1282, 1283], "B": [1285, 1286], "C": [1280, 1281], "F42A": [1217, 1218]}},
@@ -20927,7 +20948,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The word order of 'dich' and 'nun' is swapped between the readings."
+            "rationale": "The word order differs significantly between the standard reading (nun aber wil ich dich) and F42A (Dich aber ich nun wil)."
           }
         },
         {"spans": {"A": [1290, 1291], "B": [1293, 1294], "C": [1288, 1289], "F42A": [1225, 1226]}},
@@ -21204,11 +21225,11 @@
           "spans": {"A": [1334, 1335], "B": [1337, 1338], "C": [1332, 1333]},
           "ext": {"lera": "96-2"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the representation of the umlaut (diaeresis) on the vowel u (uͦh vs u)."
+            "confidence": 1,
+            "rationale": "The difference is the placement of the letter 'h' (ruͦh vs rhu), which is a spelling variation."
           }
         },
         {"spans": {"A": [1335, 1336], "B": [1338, 1339], "C": [1333, 1334]}}
@@ -21814,11 +21835,11 @@
           "spans": {"A": [1398, 1405], "B": [1401, 1408], "C": [1396, 1403], "F42A": [1260, 1267]},
           "ext": {"lera": "103-1"},
           "relation": {
-            "type": "uncertain",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.9,
-            "rationale": "The readings contain multiple distinct types of variation (orthographic, grammatical, and lexical) that cannot be classified as a single relation type."
+            "confidence": 0.95,
+            "rationale": "The third reading (F42A) changes the verb from 'lesen wir' to 'liset man' and the adjective from 'künstchem' to 'sonderm', which constitutes a different wording."
           }
         },
         {"spans": {"A": [1405, 1406], "B": [1408, 1409], "C": [1403, 1404], "F42A": [1267, 1268]}},
@@ -21837,7 +21858,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in the word used: 'künstlichem' (artificial/cunning) vs 'sonderm' (special/particular). These are different adjectives with different meanings."
           }
         },
@@ -22002,7 +22023,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading 'gliebet' is a different word (likely a corruption or variant of 'geliebet') compared to 'lieb', and 'hab' is a different grammatical form of 'gehabt', but the primary difference in the specific pair provided is the substitution of 'lieb' with 'gliebet'."
+            "rationale": "The reading 'gliebet' is a different word (likely a corruption or variant of 'geliebet') compared to 'lieb', and 'hab' is a different grammatical form (present tense) compared to 'gehabt' (past participle). The change in the main verb constitutes a lexical difference."
           }
         },
         {"spans": {"A": [1432, 1433], "B": [1435, 1436], "C": [1430, 1431], "F42A": [1292, 1293]}},
@@ -22140,17 +22161,24 @@
           "spans": {"A": [1437, 1440], "B": [1440, 1443], "C": [1435, 1438], "F42A": [1297, 1300]},
           "ext": {"lera": "105-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The differences are 'th' vs 't' (long s/initial t variation or archaic spelling) and 'Jacob' vs 'Jakob' (u/v or o/u variation), which are graphic/orthographic variants of the same words."
+            "rationale": "The primary difference is the spelling of the verb 'thate' vs 'tahte' (th/t variation) and the name 'Jacob' vs 'Jakob' (c/k variation), which are spelling variants of the same words."
           }
         },
         {"spans": {"A": [1441, 1442], "B": [1444, 1445], "C": [1439, 1440], "F42A": [1301, 1302]}},
         {
           "spans": {"A": [1443, 1446], "B": [1446, 1449], "C": [1441, 1444], "F42A": [1303, 1306]},
-          "ext": {"lera": "105-2"}
+          "ext": {"lera": "105-2"},
+          "relation": {
+            "type": "lexical",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 0.95,
+            "rationale": "The primary difference is the substitution of the demonstrative pronoun 'deß' (his) with the possessive pronoun 'Sein' (His), which constitutes a change in wording/word choice. The case difference (lowercase vs uppercase) is secondary to the lexical change."
+          }
         },
         {"spans": {"A": [1447, 1448], "B": [1450, 1451], "C": [1445, 1446], "F42A": [1307, 1308]}},
         {"spans": {"A": [1449, 1450], "B": [1452, 1453], "C": [1447, 1448], "F42A": [1309, 1310]}},
@@ -22438,7 +22466,7 @@
             "type": "orthographic",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "Difference in capitalization (um vs Vmb) and long s (mb vs mb is same, but Vmb is capitalized form of um/vmb)."
           }
         },
@@ -22450,8 +22478,8 @@
             "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "dienet (present tense) vs diente (past tense)"
+            "confidence": 1,
+            "rationale": "Difference in verb tense (present vs. past)"
           }
         },
         {"spans": {"A": [1477, 1478], "B": [1480, 1481], "C": [1475, 1476], "F42A": [1336, 1337]}},
@@ -23034,7 +23062,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference in the final consonant cluster (ct vs t) for the same word 'Sanct/Sant'."
+            "rationale": "The difference is the presence or absence of the letter 'c' in the word 'Sanct' vs 'Sant', which is a spelling variation of the same word."
           }
         },
         {"spans": {"A": [1539, 1540], "B": [1542, 1543], "C": [1537, 1538], "F42A": [1398, 1399]}},
@@ -23045,8 +23073,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording and structure ('heißt den mann' vs 'wil noch mehr: der Mann'), indicating a lexical or phrasing difference rather than a simple orthographic or punctuation variant."
+            "confidence": 1,
+            "rationale": "The readings differ in wording and structure ('heißt den mann' vs 'wil noch mehr: der Mann'), representing a different phrasing of the same concept."
           }
         },
         {"spans": {"A": [1547, 1548], "B": [1550, 1551], "C": [1545, 1546], "F42A": [1410, 1411]}},
@@ -23058,7 +23086,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'ehweib alſo' (wife thus) vs 'Weib ſoll' (wife shall), involving different words and grammatical structures."
+            "rationale": "The readings differ in wording and structure: 'ehweib alſo' vs 'Weib ſoll', involving different words and grammatical constructions."
           }
         },
         {"spans": {"A": [1553, 1554], "B": [1556, 1557], "C": [1551, 1552], "F42A": [1416, 1417]}}
@@ -23200,7 +23228,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is solely the capitalization of the first letter (wie vs Wie)."
+            "rationale": "Difference is only in capitalization (lowercase 'wie' vs uppercase 'Wie')."
           }
         },
         {"spans": {"A": [1558, 1559], "B": [1561, 1562], "C": [1556, 1557], "F42A": [1419, 1420]}},
@@ -23526,14 +23554,7 @@
       "columns": [
         {
           "spans": {"A": [1594, 1611], "B": [1597, 1614], "C": [1592, 1609], "F42A": [1460, 1479]},
-          "ext": {"lera": "115-1"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference between the aligned readings (A/C vs B) is the use of the long s (ſ) versus the short s (s) in 'mann' vs 'mañ' (where ñ represents a long s or similar variant in this context, or simply a graphic variation of the final consonant). The F42A reading is a different sentence struc"
-          }
+          "ext": {"lera": "115-1"}
         },
         {"spans": {"A": [1611, 1612], "B": [1614, 1615], "C": [1609, 1610], "F42A": [1479, 1480]}}
       ],
@@ -23674,8 +23695,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings 'welt' (world) and 'Erd' (earth) are different words with distinct meanings, although they are often used synonymously in this context."
+            "confidence": 1,
+            "rationale": "Different words: 'welt' (world) vs 'Erd' (earth)."
           }
         },
         {"spans": {"A": [1624, 1625], "B": [1627, 1628], "C": [1622, 1623], "F42A": [1492, 1493]}},
@@ -23683,11 +23704,11 @@
           "spans": {"A": [1626, 1627], "B": [1629, 1630], "C": [1624, 1625], "F42A": [1494, 1495]},
           "ext": {"lera": "116-3"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference is the use of the long s (ſ) versus the short s (s) in the word 'schweres'."
+            "rationale": "The difference is between 'schwaͤres' and 'schweres', which is a variation in vowel spelling (a/e) for the same word form."
           }
         },
         {"spans": {"A": [1628, 1629], "B": [1631, 1632], "C": [1626, 1627], "F42A": [1496, 1497]}},
@@ -23843,8 +23864,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording and structure ('das durch die liebe wir nicht moͤgen überwinden' vs 'Daß nicht die Liebe werd' im nohtfall vberwinden'), involving different words and syntax."
+            "confidence": 1,
+            "rationale": "The readings differ in wording and structure (relative clause vs. finite verb clause)."
           }
         },
         {"spans": {"A": [1636, 1637], "B": [1639, 1640], "C": [1634, 1635], "F42A": [1506, 1507]}},
@@ -23856,7 +23877,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is the capitalization of 'liebe' vs 'Liebe'."
+            "rationale": "The difference is solely the capitalization of the first letter in 'liebe' vs 'Liebe'."
           }
         }
       ],
@@ -23996,7 +24017,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference in the aligned readings is the use of the long s (zuͦgleich) versus the short s (zugleich), which is an orthographic variation. The additional text in F42A is not part of the specific aligned variant pair provided."
+            "rationale": "The primary difference in the aligned readings is the use of the long s (zuͦgleich) versus the short s (zugleich), which is an orthographic variation. The reading in F42A is a different textual variant (lexical/grammatical) but the prompt asks to classify the relation between the provided readings, "
           }
         },
         {"spans": {"A": [1655, 1656], "B": [1658, 1659], "C": [1653, 1654], "F42A": [1527, 1528]}},
@@ -24009,8 +24030,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the verb form (stehe vs. stände) and the adverb (wol vs. frey), representing different word choices."
+            "confidence": 1,
+            "rationale": "The readings differ in the verb (stehe vs. stande) and the adverb (wol vs. frey), representing different word choices."
           }
         }
       ],
@@ -24148,8 +24169,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the conjunction used ('wann'/'wan' vs 'Daß') and the wording of the predicate ('liebet' vs 'der Lieb' ergeben sey'), indicating a change in wording rather than just spelling or punctuation."
+            "confidence": 1,
+            "rationale": "The readings differ in the conjunction used ('wann'/'wan' vs 'Daß') and the overall wording of the clause in F42A, which is a lexical difference."
           }
         },
         {"spans": {"A": [1666, 1667], "B": [1669, 1670], "C": [1664, 1665], "F42A": [1538, 1539]}},
@@ -24167,7 +24188,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in wording: 'mehr liebet alß er ſol' vs 'der Lieb' ergeben ſey'."
           }
         },
@@ -24317,7 +24338,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences in capitalization, hyphenation, and the use of the long s (ſ) vs. short s (s) or the abbreviation mark (ꝛ) for 'r'."
+            "rationale": "The readings differ in capitalization (Weiber vs weiber), hyphenation (Weiber-mann vs weibermann), and the use of the long s (ſ) vs short s (s) in the second part (mann vs narꝛ, where ꝛ is a variant of s). These are graphic variations of the same word."
           }
         },
         {"spans": {"A": [1689, 1690], "B": [1691, 1692], "C": [1686, 1687], "F42A": [1557, 1558]}},
@@ -24332,7 +24353,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings differ between the verbs 'geſchriben' (written) and 'geleſen' (read), which are distinct words with different meanings."
+            "rationale": "The readings differ between 'geſchriben' (written) and 'geleſen' (read), which are distinct verbs with different meanings."
           }
         }
       ],
@@ -24604,7 +24625,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in the adverb (zuͦgleich vs zuͦvor) and the verb form (truge vs truͦge/truͤge), representing different wordings."
+            "rationale": "The final word differs significantly between 'zuͦgleich' (at the same time) in A/B/C and 'zuͦvor' (before) in F42A, representing a change in meaning/wording."
           }
         },
         {"spans": {"A": [1723, 1724], "B": [1725, 1726], "C": [1720, 1721], "F42A": [1589, 1590]}},
@@ -24897,11 +24918,11 @@
           "spans": {"A": [1748, 1755], "B": [1750, 1757], "C": [1747, 1754], "F42A": [1614, 1621]},
           "ext": {"lera": "125-1"},
           "relation": {
-            "type": "lexical",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference is the substitution of the demonstrative pronoun 'ihr' (your) with the indefinite article 'ein' (a/an) in reading F42A, which changes the meaning. The other variations (muͦßt/mußt, jedes/iedes) are orthographic or spelling variants, but the lexical change dominates the classif"
+            "rationale": "The primary difference is 'ihr' (demonstrative pronoun) vs 'ein' (indefinite article), which changes the grammatical form and meaning of the phrase."
           }
         },
         {"spans": {"A": [1756, 1757], "B": [1758, 1759], "C": [1755, 1756], "F42A": [1622, 1623]}},
@@ -24915,11 +24936,11 @@
           "spans": {"A": [1761, 1766], "B": [1763, 1768], "C": [1760, 1765], "F42A": [1627, 1632]},
           "ext": {"lera": "125-3"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are limited to capitalization (liebe/Liebe), long s vs short s (zuͦ/zu), and long s vs z (ergaͤntzen/ergentzen)."
+            "rationale": "The primary difference in the aligned segment is 'ergaͤntzen' vs 'ergentzen' (a vs e), which is a spelling variation. The case difference (liebe/Liebe) is orthographic, but spelling weighs more heavily than orthography in the hierarchy provided (lexical > grammatical > others, where spelling and ort"
           }
         }
       ],
@@ -25073,7 +25094,7 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
+            "confidence": 1,
             "rationale": "The readings differ in wording: 'seinen trunk' vs 'auß gebrauch ein jeden Trunck'."
           }
         },
@@ -25085,8 +25106,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The reading in F42A replaces 'zum vorderſten' with 'auß gebrauch, ein jeden', which constitutes a change in wording/lexicon rather than a simple orthographic or grammatical variant."
+            "confidence": 1,
+            "rationale": "The reading in F42A replaces 'zum vorderſten' with 'auß gebrauch, ein jeden', which constitutes a different wording and phrase structure."
           }
         },
         {"spans": {"A": [1779, 1780], "B": [1781, 1782], "C": [1778, 1779], "F42A": [1648, 1649]}}
@@ -25513,11 +25534,11 @@
           "spans": {"A": [1812, 1815], "B": [1814, 1817], "C": [1811, 1814], "F42A": [1681, 1684]},
           "ext": {"lera": "131-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is between 'sol' (archaic/short form) and 'soll' (standard form), which is a spelling variation of the same word."
+            "rationale": "The difference is between 'sol' (archaic/short form) and 'soll' (standard form), which is a variation in the ending of the verb."
           }
         },
         {"spans": {"A": [1816, 1817], "B": [1818, 1819], "C": [1815, 1816], "F42A": [1685, 1686]}},
@@ -25847,7 +25868,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference is only in capitalization (lowercase 'l' vs uppercase 'L')."
+            "rationale": "Difference is only in capitalization (case) of the first word."
           }
         },
         {"spans": {"A": [1851, 1852], "B": [1853, 1854], "C": [1850, 1851], "F42A": [1714, 1715]}},
@@ -25859,21 +25880,14 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading in F42A includes the verb 'iſt' (is) and changes 'deckt' to 'decken', whereas the other readings lack 'iſt' and use 'deket'. The presence of an extra word constitutes a lexical difference."
+            "rationale": "Edition F42A includes the verb 'iſt' (is) which is absent in the other editions, changing the wording."
           }
         },
         {"spans": {"A": [1857, 1858], "B": [1859, 1860], "C": [1856, 1857], "F42A": [1720, 1721]}},
         {"spans": {"A": [1859, 1860], "B": [1861, 1862], "C": [1858, 1859], "F42A": [1722, 1723]}},
         {
           "spans": {"A": [1861, 1864], "B": [1863, 1866], "C": [1860, 1863], "F42A": [1724, 1727]},
-          "ext": {"lera": "134-3"},
-          "relation": {
-            "type": "orthographic",
-            "by": "model",
-            "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The primary difference is the use of the long s (ſ) in 'deket' versus the short s (s) in 'decken' (deket/decken), which is an orthographic variation. The difference between 'zuͦ' and 'zu' is also orthographic (superscript o vs. none)."
-          }
+          "ext": {"lera": "134-3"}
         },
         {"spans": {"A": [1864, 1865], "B": [1866, 1867], "C": [1863, 1864], "F42A": [1727, 1728]}}
       ],
@@ -26073,11 +26087,11 @@
           "spans": {"A": [1877, 1878], "B": [1879, 1880], "C": [1876, 1877]},
           "ext": {"lera": "136-2"},
           "relation": {
-            "type": "orthographic",
+            "type": "spelling",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference in the representation of the umlaut (diaeresis) on the vowel u (uͦh vs u)."
+            "confidence": 1,
+            "rationale": "The difference is the placement of the letter 'h' (ruͦh vs rhu), which is a spelling variation."
           }
         },
         {"spans": {"A": [1878, 1879], "B": [1880, 1881], "C": [1877, 1878]}}
@@ -26295,11 +26309,11 @@
           "spans": {"A": [1896, 1901], "B": [1898, 1903], "C": [1895, 1900], "F42A": [1760, 1765]},
           "ext": {"lera": "138-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences in capitalization (dem/Dem, hertz/Hertz) and punctuation (comma after Dem) are orthographic/punctuation variants; 'deſſe' vs 'deſſen' is a minor spelling/orthographic variation in the same form."
+            "rationale": "The reading 'deſſe' in the first edition is a non-standard or archaic form of the possessive pronoun 'deſſen' (whose) found in the later edition. This represents a difference in the grammatical form/ending of the word."
           }
         },
         {"spans": {"A": [1902, 1903], "B": [1904, 1905], "C": [1901, 1902], "F42A": [1766, 1767]}},
@@ -26323,8 +26337,8 @@
             "type": "orthographic",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference between long s (ſ) and short s (s) in the same word."
+            "confidence": 1,
+            "rationale": "Difference is long s (ſ) vs short s (s) in the same word."
           }
         },
         {"spans": {"A": [1914, 1915], "B": [1916, 1917], "C": [1913, 1914], "F42A": [1777, 1778]}}
@@ -26483,7 +26497,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in word choice ('außerwehlt' vs 'erwehlt') and wording ('zu lieben' is present in one but not the others), which constitutes a lexical difference."
+            "rationale": "Reading F42A contains the additional phrase 'zu lieben' and uses 'erwehlt' instead of 'außerwehlt', representing a different wording."
           }
         }
       ],
@@ -26760,8 +26774,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the verb: 'gleicht' (resembles) vs 'ist' (is). These are different words with different meanings."
+            "confidence": 1,
+            "rationale": "The verb 'gleicht' (resembles) is replaced by 'ist' (is), which changes the meaning and wording."
           }
         },
         {"spans": {"A": [1951, 1952], "B": [1953, 1954], "C": [1950, 1951], "F42A": [1813, 1814]}},
@@ -26896,7 +26910,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'fromkeit' (noun) vs 'From ſeyn' (phrase) and 'einiges' vs 'Gſpil'."
+            "rationale": "The readings differ in wording: 'fromkeit' (noun) vs 'From ſeyn' (phrase), and 'ihr' vs 'jhr' (orthographic variant of the same word, but the primary difference is lexical)."
           }
         },
         {"spans": {"A": [1973, 1974], "B": [1975, 1976], "C": [1972, 1973], "F42A": [1841, 1842]}}
@@ -27031,11 +27045,11 @@
           "spans": {"A": [1980, 1983], "B": [1982, 1985], "C": [1979, 1982], "F42A": [1848, 1851]},
           "ext": {"lera": "143-2"},
           "relation": {
-            "type": "orthographic",
+            "type": "punctuation",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is the capitalization of the first letter of the word 'an' (lowercase in A/B/C, uppercase in F42A)."
+            "rationale": "The difference is a semicolon in one reading versus a colon in the other, with identical word forms."
           }
         },
         {"spans": {"A": [1984, 1985], "B": [1986, 1987], "C": [1983, 1984], "F42A": [1852, 1853]}},
@@ -27184,8 +27198,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'nach hertzens wunſch' vs 'wie ich ſy wünſch' and 'an hulden reich' vs 'Huldenreich'."
+            "confidence": 1,
+            "rationale": "The readings differ in wording and word choice ('nach hertzens wunſch: ihr Herꝛ an hulden reich' vs 'wie ich ſy wünſch/ ſpricht jhr Herꝛ Huldenreich')."
           }
         },
         {"spans": {"A": [2003, 2004], "B": [2005, 2006], "C": [2002, 2003], "F42A": [1876, 1877]}},
@@ -27197,7 +27211,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference is word division (an hulden / Hulden) and capitalization."
+            "rationale": "Difference is only in word division (an hulden reich vs Huldenreich)."
           }
         },
         {"spans": {"A": [2010, 2011], "B": [2012, 2013], "C": [2009, 2010], "F42A": [1879, 1880]}}
@@ -27369,7 +27383,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The variants differ in the spelling of the verb 'erdenken' (erdencken, erdaͤnken) and the capitalization of 'Wunsch', which are orthographic/spelling variations of the same word forms."
+            "rationale": "The variants differ in the spelling of the second word: 'erdenken' vs 'erdaͤnken' (a vs ä) and 'erdencken' (ck vs k). These are graphic/spelling variations of the same word form."
           }
         },
         {"spans": {"A": [2028, 2029], "B": [2030, 2031], "C": [2027, 2028], "F42A": [1897, 1898]}}
@@ -27517,8 +27531,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The reading 'thuͦn' (to do) in F42A replaces the verb 'henken' (to hang) or 'haͤnken' found in the other editions, representing a different word/wording."
+            "confidence": 1,
+            "rationale": "The readings differ by the presence of the word 'thuͦn' in F42A, which is absent in the other editions. This constitutes a difference in wording/wording."
           }
         },
         {"spans": {"A": [2041, 2042], "B": [2043, 2044], "C": [2040, 2041], "F42A": [1908, 1909]}},
@@ -27531,7 +27545,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The primary difference is the presence of the diaeresis (haͤnken vs henken) and long s (hencken vs henken), which are graphic variations of the same word."
+            "rationale": "The primary difference is the use of the long s (ſ) versus the short s (s) in 'Gedichte' vs 'Getichte' and 'henken' vs 'hencken' (where c represents the long s sound or is a variant spelling of the same phoneme in this context, but 'henken' vs 'hencken' is often orthographic in early modern texts; h"
           }
         },
         {"spans": {"A": [2048, 2049], "B": [2050, 2051], "C": [2047, 2048], "F42A": [1915, 1916]}}
@@ -27684,7 +27698,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The reading 'Friden Euch' in F42A uses a different word ('Friden' vs 'frid') and a different grammatical construction (accusative object vs dative prepositional phrase 'bey euch') compared to the other editions."
+            "rationale": "The readings differ in the word itself ('frid' vs 'Friden') and the case/number form ('bey euch' vs 'Euch'), representing a different wording or formation."
           }
         },
         {"spans": {"A": [2057, 2058], "B": [2059, 2060], "C": [2056, 2057], "F42A": [1922, 1923]}},
@@ -27825,7 +27839,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in word choice and structure: 'sey der Streit' (let the strife be) vs 'Der Streit besteh' (the strife consists), and 'in liebe' vs 'in Lieb'."
+            "rationale": "Edition F42A uses a completely different wording ('Der Streit besteh in Lieb') compared to the other editions ('in liebe sey der streit'), which constitutes a lexical difference."
           }
         },
         {"spans": {"A": [2075, 2076], "B": [2077, 2078], "C": [2074, 2075], "F42A": [1940, 1941]}},
@@ -27977,7 +27991,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in case (accusative 'Frid' vs. dative 'Friden') and number (singular vs. plural), which constitutes a grammatical variation."
+            "rationale": "The readings differ in case (accusative 'frid' vs. dative 'Friden') and capitalization."
           }
         },
         {"spans": {"A": [2088, 2089], "B": [2090, 2091], "C": [2087, 2088], "F42A": [1953, 1954]}},
@@ -27988,8 +28002,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the prepositional phrase: 'in ewer/euer hauß' (in your house) vs 'in das Hauß' (into the house). This involves a change from a possessive pronoun to a definite article and a change in the prepositional case/meaning, which constitutes a lexical difference in wording."
+            "confidence": 1,
+            "rationale": "The readings differ in the prepositional phrase: 'in ewer/euer hauß' (in your house) vs 'in das Hauß' (into the house). This involves a change from a possessive pronoun to a definite article and a prepositional shift, constituting a lexical difference in wording."
           }
         },
         {"spans": {"A": [2094, 2095], "B": [2096, 2097], "C": [2093, 2094], "F42A": [1959, 1960]}},
@@ -27997,11 +28011,11 @@
           "spans": {"A": [2096, 2097], "B": [2098, 2099], "C": [2095, 2096], "F42A": [1961, 1962]},
           "ext": {"lera": "149-3"},
           "relation": {
-            "type": "orthographic",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is the use of a long s (ſ) versus a short s (S) at the beginning of the word, which is a graphic variation of the same letter."
+            "rationale": "The readings differ between 'ſegen' (blessing) and 'Saͤgen' (saws/sawing), which are distinct words with different meanings and forms."
           }
         },
         {"spans": {"A": [2098, 2099], "B": [2100, 2101], "C": [2097, 2098], "F42A": [1963, 1964]}},
@@ -28138,7 +28152,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in word choice (muß vs. none, boß vs. Boſe, verdringen vs. verdringen) and structure, not just spelling or punctuation."
+            "rationale": "F42A uses a different word order and wording ('gar' vs 'das boß', 'Boß' vs 'Boße') compared to the other editions."
           }
         },
         {"spans": {"A": [2109, 2110], "B": [2111, 2112], "C": [2108, 2109], "F42A": [1972, 1973]}},
@@ -28150,7 +28164,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'boͤß darauß' (the evil out of it) vs 'Boͤſe gar' (the evil completely). 'gar' is a different word than 'darauß', and 'Boͤſe' is a different form/word than 'boͤß'."
+            "rationale": "The readings differ in word choice ('darauß' vs 'gar') and form ('boͤß' vs 'Boͤſe'), constituting a lexical difference."
           }
         },
         {"spans": {"A": [2115, 2116], "B": [2117, 2118], "C": [2114, 2115], "F42A": [1978, 1979]}}
@@ -28281,8 +28295,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the specific words used to describe the subject ('lebensſatt' vs 'alle beyd'), which constitutes a lexical variation."
+            "confidence": 1,
+            "rationale": "The readings differ in the specific words used to describe the subjects ('lebensſatt' vs 'alle beyd'), which is a change in wording/lexicon."
           }
         },
         {"spans": {"A": [2124, 2125], "F42A": [1989, 1990]}},
@@ -28469,7 +28483,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'So wünſcht' vs 'Diß iſt' and the presence/absence of the verb 'wünſcht' vs 'iſt'."
+            "rationale": "The readings differ in wording: 'So wünſcht' vs 'Diß iſt' and the presence/absence of the word 'mein' before 'letſtes wort'."
           }
         },
         {"spans": {"A": [2146, 2147], "B": [2148, 2149], "C": [2145, 2146], "F42A": [2011, 2012]}},

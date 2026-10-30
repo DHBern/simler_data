@@ -5,25 +5,24 @@
  * knows nothing about the ODD, and the reading pages load none of its assets.
  */
 
-import { CATEGORIES, charDiff, type Category, type Entry, type Group, type Segment, type Step, type Synopsis, type Unit, type Witness } from './alignments'
+import { CATEGORIES, charDiff, SETTINGS, type Category, type Entry, type Group, type Segment, type Step, type Synopsis, type Unit, type Witness } from './alignments'
 import { corpusPage, esc } from './page'
 
 /** Where a poem's synopsis lives; the pages sit flat beside the documents. */
 export const synopsisHref = (id: string): string => `synopse-${encodeURIComponent(id)}.html`
 
 /** The categories as the reader sees them: a name, and what it holds. */
-const CATEGORY_LABELS: Record<Category, [string, string]> = {
-  punctuation: ['Interpunktion', 'Nur die Zeichensetzung unterscheidet sich'],
-  spelling: ['Schreibung', 'Ein Wort, anders geschrieben — Orthographie (u/v, i/j, ſ, Groß/klein, Diakritika) oder Schreibung (Doppelkonsonanten, ck/k …)'],
-  grammatical: ['Grammatik', 'Dasselbe Wort in anderer Form: Kasus, Numerus, Tempus …'],
-  lexical: ['Wortlaut', 'Ein anderes Wort oder eine andere Formulierung'],
-  order: ['Umstellung', 'Dieselben Wörter in anderer Folge, oder ein Wort doppelt'],
-  omission: ['Auslassung', 'Ein Textzeuge liest hier nichts'],
-  other: ['Sonstige', 'Unsicher, oder keiner der anderen Typen'],
-  open: ['offen', 'Noch nicht klassifiziert'],
+const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map((c) => [c, [SETTINGS.categories[c].label, SETTINGS.categories[c].title]])) as Record<Category, [string, string]>
+/** What *sachlich* leaves out. */
+const SPELLING: Category[] = ['punctuation', 'orthography']
+/** The witnesses shown first: the default ones, unless that left nothing to compare. */
+const firstShown = (sigla: string[]): string[] => {
+  const own = sigla.filter((s) => SETTINGS.witnesses.includes(s))
+  return own.length > 1 ? own : sigla
 }
-/** What *sachliche* leaves out. */
-const SPELLING: Category[] = ['punctuation', 'spelling']
+/** What the counts count: the places, and each row a witness has no text in. */
+const counted = (segments: Segment[]): { category: Category }[] =>
+  segments.flatMap((s) => [...s.apparatus, ...(s.line ? [{ category: s.line }] : [])])
 
 /** The relation types, as the apparatus names them. */
 const TYPE_LABELS: Record<string, string> = {
@@ -102,16 +101,17 @@ const swatch = (attrs: string, label: string) =>
  */
 function synopsisControls(synopsis: Synopsis): string {
   const { witnesses, units, segments, doubtful, proposed } = synopsis
-  const counts = tally(segments.flatMap((s) => s.apparatus))
+  const counts = tally(counted(segments))
+  const shown = firstShown(witnesses.map((w) => w.siglum))
   const modes = colours(witnesses)
   const machine = segments.some((s) => s.apparatus.some((e) => e.relation?.by === 'model'))
 
   const chip = (c: Category) => `<label class="syn-chip" title="${esc(CATEGORY_LABELS[c][1])}" data-n="${counts.get(c) ?? 0}">` +
-    `<input type="checkbox" data-syn-cat="${c}" checked> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
+    `<input type="checkbox" data-syn-cat="${c}"${SETTINGS.shown.includes(c) ? ' checked' : ''}> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
   const filter = ([step, [label, title]]: [string, [string, string]]) =>
     `<label class="ctrl" title="${esc(title)}"><input type="checkbox" data-syn-ignore="${esc(step)}" checked> ${esc(label)}</label>`
   const witness = (w: Witness, i: number) =>
-    `<label><input type="checkbox" data-syn-witness="${i + 1}" checked> ${esc(w.siglum)}</label>`
+    `<label><input type="checkbox" data-syn-witness="${i + 1}"${shown.includes(w.siglum) ? ' checked' : ''}> ${esc(w.siglum)}</label>`
 
   return `<form class="syn-bar no-print" data-syn-controls>
       <div class="syn-glance">${mixBar(counts, true)}${sparkline(segments, true)}</div>
@@ -120,8 +120,8 @@ function synopsisControls(synopsis: Synopsis): string {
         ${CATEGORIES.map(chip).join('')}
         <span class="syn-presets">
           <button type="button" data-syn-preset="${CATEGORIES.join(' ')}">alle</button>
-          <button type="button" data-syn-preset="${CATEGORIES.filter((c) => !SPELLING.includes(c)).join(' ')}"
-            title="Ohne Interpunktion und Schreibung">sachliche</button>
+          <button type="button" data-syn-preset="${SETTINGS.shown.join(' ')}"
+            title="Was zuerst gezeigt wird">Voreinstellung</button>
           <button type="button" data-syn-preset="">keine</button>
         </span>
       </div>
@@ -184,7 +184,7 @@ function readingRegister(groups: Group[]): string {
 }
 
 /** Places per category. */
-function tally(entries: Entry[]): Map<Category, number> {
+function tally(entries: { category: Category }[]): Map<Category, number> {
   const counts = new Map<Category, number>()
   for (const e of entries) counts.set(e.category, (counts.get(e.category) ?? 0) + 1)
   return counts
@@ -396,8 +396,12 @@ export function synopsisPage(synopsis: Synopsis): string {
 
   /** A segment's places under its row, one line of apparatus each. */
   const apparatus = (segment: Segment): string => {
-    if (!segment.apparatus.length) return ''
-    const items = segment.apparatus.map((e) => `<li data-group="${esc(e.group)}" ${placeAttrs(e)}>
+    if (!segment.apparatus.length && !segment.line) return ''
+    const at = (sigla: string[]) => sigla.map((s) => column.get(s)).join(' ')
+    const line = segment.line ? `<li data-cat="${segment.line}" data-missing="${at(segment.missing)}" data-present="${at(Object.keys(segment.cells))}">
+            Ganze Zeile: fehlt in ${segment.missing.map(esc).join(' ')}
+          </li>` : ''
+    const items = line + segment.apparatus.map((e) => `<li data-group="${esc(e.group)}" ${placeAttrs(e)}>
             ${lemmatised(e)}${e.relation ? relationLabel(e.relation) : ''}
           </li>`).join('')
     return `<tr class="app">
@@ -463,7 +467,7 @@ export function synopsisPage(synopsis: Synopsis): string {
 /** What is aligned so far, and what it cost: the worklist's public side. */
 export function synopsesPage(synopses: Synopsis[]): string {
   const rows = synopses.map((s) => {
-    const counts = tally(s.segments.flatMap((segment) => segment.apparatus))
+    const counts = tally(counted(s.segments))
     // What the sort reads: every count, by its name.
     const keys = CATEGORIES.map((c) => ` data-${c}="${counts.get(c) ?? 0}"`).join('')
     return `<tr data-variants="${s.variants}" data-doubtful="${s.doubtful}" data-segments="${s.segments.length}"${keys}>

@@ -272,12 +272,12 @@
 
 /* A colour per category: the marks, the legend, the mix bars. */
 [data-cat='punctuation'] { --hue: var(--c-org); }
-[data-cat='spelling'] { --hue: var(--c-accent); }
-[data-cat='grammatical'] { --hue: var(--c-institution); }
-[data-cat='lexical'] { --hue: var(--c-bibl); }
-[data-cat='order'] { --hue: var(--c-work); }
-[data-cat='omission'] { --hue: var(--c-gap); }
-[data-cat='other'] { --hue: var(--c-place); }
+[data-cat='orthography'] { --hue: var(--c-accent); }
+[data-cat='grammar'] { --hue: var(--c-institution); }
+[data-cat='word'] { --hue: var(--c-bibl); }
+[data-cat='added'] { --hue: var(--c-work); }
+[data-cat='deleted'] { --hue: var(--c-gap); }
+[data-cat='unclear'] { --hue: var(--c-place); }
 [data-cat='open'] { --hue: var(--c-muted); }
 
 /* A poem's variants as one bar, a part per category. */

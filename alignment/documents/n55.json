@@ -1,0 +1,314 @@
+{
+  "format": "alignment-json",
+  "format_version": "1.0",
+  "meta": {
+    "align_algorithm": "dekker",
+    "aligned_by": {
+      "tool": "textalign",
+      "version": "0.1.0",
+      "algorithm": "dekker",
+      "tokenizer": "WhitespaceTokenizer",
+      "normalizer": "RuleNormalizer"
+    }
+  },
+  "settings": {"filters": []},
+  "witnesses": [
+    {
+      "siglum": "C",
+      "name": "n55-C_1663_dok",
+      "tokens": [
+        {"t": "Allgemeiner", "ref": "C-h001"},
+        {"t": " "},
+        {"t": "Hochzeitlicher", "ref": "C-h001"},
+        {"t": " "},
+        {"t": "Segenwunſch:", "ref": "C-h001"},
+        {"t": "Jn", "ref": "C-l0001"},
+        {"t": " "},
+        {"t": "vorgeſetzter", "ref": "C-l0001"},
+        {"t": " "},
+        {"t": "melodey.", "ref": "C-l0001"},
+        {"t": "DEn", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "neuverlobten", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "wünſchen", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "wir", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "gnad/", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "frid", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "und", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "reichen", "ref": "C-l0002"},
+        {"t": " "},
+        {"t": "ſegen.", "ref": "C-l0002"},
+        {"t": "Wir", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "wünſchen", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "ihnen", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "ehr", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "und", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "glük:", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "nichts", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "widrigs", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "ſey", "ref": "C-l0003"},
+        {"t": " "},
+        {"t": "entgegen.", "ref": "C-l0003"},
+        {"t": "Wir", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "wünſchen", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "kindes", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "kindeskind:", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "geſunde", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "tag", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "und", "ref": "C-l0004"},
+        {"t": " "},
+        {"t": "zeit.", "ref": "C-l0004"},
+        {"t": "Wir", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "wünſchen/", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "wan", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "ſie", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "lebens", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "ſatt/", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "die", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "ſelig", "ref": "C-l0005"},
+        {"t": " "},
+        {"t": "ewigkeit!", "ref": "C-l0005"}
+      ],
+      "source": "webdav/data/sources/tei/C_1663_dok.xml#n55"
+    },
+    {
+      "siglum": "D",
+      "name": "n55-D_1688",
+      "tokens": [
+        {"t": "Allgemeiner", "ref": "D-h001"},
+        {"t": " "},
+        {"t": "Hochzeitlicher", "ref": "D-h001"},
+        {"t": " "},
+        {"t": "Segenwunſch:", "ref": "D-h001"},
+        {"t": "Jn", "ref": "D-l0001"},
+        {"t": " "},
+        {"t": "vorgeſetzter", "ref": "D-l0001"},
+        {"t": " "},
+        {"t": "melodey.", "ref": "D-l0001"},
+        {"t": "DEn", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "neu", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "verlobten", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "wuͤnſchen", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "wir/", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "gnad", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "frid", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "und", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "reichen", "ref": "D-l0002"},
+        {"t": " "},
+        {"t": "ſegen.", "ref": "D-l0002"},
+        {"t": "Wir", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "wuͤnſchen", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "ihnen", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "ehr", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "und", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "gluͤck;", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "nichts", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "widrigs", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "ſey", "ref": "D-l0003"},
+        {"t": " "},
+        {"t": "entgegen.", "ref": "D-l0003"},
+        {"t": "Wir", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "wuͤnſchen", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "kindes", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "kindeskind:", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "geſunde", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "tag", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "und", "ref": "D-l0004"},
+        {"t": " "},
+        {"t": "zeit.", "ref": "D-l0004"},
+        {"t": "Wir", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "wuͤnſchen/", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "wann", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "ſie", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "lebensſatt/", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "die", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "ſelig", "ref": "D-l0005"},
+        {"t": " "},
+        {"t": "ewigkeit!", "ref": "D-l0005"}
+      ],
+      "source": "webdav/data/sources/tei/D_1688.xml#n55"
+    }
+  ],
+  "segments": [
+    {
+      "id": "s1",
+      "number": 1,
+      "roles": {},
+      "cells": {"C": {"span": [0, 5]}, "D": {"span": [0, 5]}},
+      "columns": [
+        {"spans": {"C": [0, 1], "D": [0, 1]}},
+        {"spans": {"C": [2, 3], "D": [2, 3]}},
+        {"spans": {"C": [4, 5], "D": [4, 5]}}
+      ],
+      "refs": {"C": ["C-h001"], "D": ["D-h001"]}
+    },
+    {
+      "id": "s2",
+      "number": 2,
+      "roles": {},
+      "cells": {"C": {"span": [5, 10]}, "D": {"span": [5, 10]}},
+      "columns": [
+        {"spans": {"C": [5, 6], "D": [5, 6]}},
+        {"spans": {"C": [7, 8], "D": [7, 8]}},
+        {"spans": {"C": [9, 10], "D": [9, 10]}}
+      ],
+      "refs": {"C": ["C-l0001"], "D": ["D-l0001"]}
+    },
+    {
+      "id": "s3",
+      "number": 3,
+      "roles": {},
+      "cells": {"C": {"span": [10, 27]}, "D": {"span": [10, 29]}},
+      "columns": [
+        {"spans": {"C": [10, 11], "D": [10, 11]}},
+        {
+          "spans": {"C": [12, 13], "D": [12, 15]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
+        {
+          "spans": {"C": [14, 15], "D": [16, 17]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {
+          "spans": {"C": [16, 17], "D": [18, 19]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {
+          "spans": {"C": [18, 19], "D": [20, 21]},
+          "relation": {"type": "punctuation", "by": "rule", "rule": "punctuation"}
+        },
+        {"spans": {"C": [20, 21], "D": [22, 23]}},
+        {"spans": {"C": [22, 23], "D": [24, 25]}},
+        {"spans": {"C": [24, 25], "D": [26, 27]}},
+        {"spans": {"C": [26, 27], "D": [28, 29]}}
+      ],
+      "refs": {"C": ["C-l0002"], "D": ["D-l0002"]}
+    },
+    {
+      "id": "s4",
+      "number": 4,
+      "roles": {},
+      "cells": {"C": {"span": [27, 46]}, "D": {"span": [29, 48]}},
+      "columns": [
+        {"spans": {"C": [27, 28], "D": [29, 30]}},
+        {
+          "spans": {"C": [29, 30], "D": [31, 32]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"C": [31, 32], "D": [33, 34]}},
+        {"spans": {"C": [33, 34], "D": [35, 36]}},
+        {"spans": {"C": [35, 36], "D": [37, 38]}},
+        {
+          "spans": {"C": [37, 38], "D": [39, 40]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+        },
+        {"spans": {"C": [39, 40], "D": [41, 42]}},
+        {"spans": {"C": [41, 42], "D": [43, 44]}},
+        {"spans": {"C": [43, 44], "D": [45, 46]}},
+        {"spans": {"C": [45, 46], "D": [47, 48]}}
+      ],
+      "refs": {"C": ["C-l0003"], "D": ["D-l0003"]}
+    },
+    {
+      "id": "s5",
+      "number": 5,
+      "roles": {},
+      "cells": {"C": {"span": [46, 61]}, "D": {"span": [48, 63]}},
+      "columns": [
+        {"spans": {"C": [46, 47], "D": [48, 49]}},
+        {
+          "spans": {"C": [48, 49], "D": [50, 51]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {"spans": {"C": [50, 51], "D": [52, 53]}},
+        {"spans": {"C": [52, 53], "D": [54, 55]}},
+        {"spans": {"C": [54, 55], "D": [56, 57]}},
+        {"spans": {"C": [56, 57], "D": [58, 59]}},
+        {"spans": {"C": [58, 59], "D": [60, 61]}},
+        {"spans": {"C": [60, 61], "D": [62, 63]}}
+      ],
+      "refs": {"C": ["C-l0004"], "D": ["D-l0004"]}
+    },
+    {
+      "id": "s6",
+      "number": 6,
+      "roles": {},
+      "cells": {"C": {"span": [61, 78]}, "D": {"span": [63, 78]}},
+      "columns": [
+        {"spans": {"C": [61, 62], "D": [63, 64]}},
+        {
+          "spans": {"C": [63, 64], "D": [65, 66]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "diacritics"}
+        },
+        {
+          "spans": {"C": [65, 66], "D": [67, 68]},
+          "relation": {"type": "spelling", "by": "rule", "rule": "doubled letters"}
+        },
+        {"spans": {"C": [67, 68], "D": [69, 70]}},
+        {
+          "spans": {"C": [69, 72], "D": [71, 72]},
+          "relation": {"type": "orthographic", "by": "rule", "rule": "word division"}
+        },
+        {"spans": {"C": [73, 74], "D": [73, 74]}},
+        {"spans": {"C": [75, 76], "D": [75, 76]}},
+        {"spans": {"C": [77, 78], "D": [77, 78]}}
+      ],
+      "refs": {"C": ["C-l0005"], "D": ["D-l0005"]}
+    }
+  ]
+}

@@ -8234,11 +8234,11 @@
           "spans": {"A": [591, 592], "B": [588, 589]},
           "ext": {"lera": "48-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "Difference between 'ab' and 'ob' is a single letter substitution (a/o), which is a graphic/orthographic variation, not a change in word identity or grammar."
+            "confidence": 1,
+            "rationale": "Different prepositions (ab vs ob) with different meanings"
           }
         },
         {"spans": {"A": [593, 594], "B": [590, 591]}},
@@ -9808,11 +9808,11 @@
           "spans": {"A": [934, 939], "B": [931, 936]},
           "ext": {"lera": "75-1"},
           "relation": {
-            "type": "uncertain",
+            "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.9,
-            "rationale": "The readings involve a change in grammatical case (genitive vs dative), a change in word order (transposition of 'hingegen'), and a change in the following adverb ('allerdings' vs 'gantz'), making it a complex variant that does not fit a single simple category."
+            "confidence": 0.95,
+            "rationale": "The readings differ in word choice ('hingegen' vs 'der') and word form ('loſer leüht' vs 'loſen leuhten'), which constitutes a lexical difference in wording."
           }
         },
         {"spans": {"A": [940, 941], "B": [937, 938]}},
@@ -9823,8 +9823,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in the specific adverb used (allerdings vs. gantz) and the word order of the adverbial phrase, constituting a change in wording."
+            "confidence": 1,
+            "rationale": "The readings differ in word choice ('allerdings' vs 'gantz') and word order ('hingegen' position), which constitutes a lexical difference in wording."
           }
         },
         {"spans": {"A": [944, 945], "B": [943, 944]}}
@@ -10837,7 +10837,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings differ in the verb (bezeugen vs. alß zeugen) and the adjective (deine vs. deiner), representing different wordings."
+            "rationale": "The readings differ in the main verb (bezeugen vs. alß zeugen) and the adjective (weyßheit vs. vorſicht), representing different wordings."
           }
         },
         {"spans": {"A": [1152, 1153], "B": [1153, 1154]}},
@@ -10849,7 +10849,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "weyßheit (wisdom) and vorſicht (prudence/foresight) are different words."
+            "rationale": "The words 'weyßheit' (wisdom) and 'vorſicht' (prudence/foresight) are different lexical items."
           }
         },
         {"spans": {"A": [1156, 1157], "B": [1157, 1158]}},
@@ -11674,7 +11674,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "Difference between 'prophet' and 'profet' is a spelling variation (t/f) of the same word."
+            "rationale": "Difference between 'prophet' and 'profet' is a spelling variation (ph/f) of the same word."
           }
         },
         {"spans": {"A": [1330, 1331], "B": [1331, 1332]}},
@@ -12115,7 +12115,13 @@
         {
           "spans": {"A": [1435, 1436], "B": [1436, 1437]},
           "ext": {"lera": "114-1"},
-          "relation": {"type": "spelling", "by": "rule", "rule": "spelling variants"}
+          "relation": {
+            "type": "spelling",
+            "by": "model",
+            "model": "qwen3.8-27b",
+            "confidence": 1,
+            "rationale": "Difference between 'wird' and 'wirt' is a spelling variation (d/t) of the same grammatical form."
+          }
         },
         {"spans": {"A": [1436, 1437], "B": [1437, 1438]}}
       ],
@@ -12746,11 +12752,11 @@
           "spans": {"A": [1566, 1567], "B": [1567, 1568]},
           "ext": {"lera": "124-1"},
           "relation": {
-            "type": "spelling",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "The difference is the presence or absence of a 'h' in the adjective (aufruͤhriſch vs aufruͤhrſche), which is a spelling variation of the same word form."
+            "rationale": "The difference is the presence of the feminine adjective ending '-e' in 'aufruͤhrſche' versus the lack thereof in 'aufruͤhriſch', which modifies the grammatical form of the adjective."
           }
         },
         {"spans": {"A": [1568, 1569], "B": [1569, 1570]}},
@@ -13394,7 +13400,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The verb 'bleiben' (remain) is replaced by 'dienen' (serve), which are distinct words with different meanings."
+            "rationale": "The verb 'bleiben' (to stay) is replaced by 'dienen' (to serve), which are different words with different meanings."
           }
         },
         {"spans": {"A": [1713, 1714], "B": [1712, 1713]}},
@@ -13480,8 +13486,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The readings differ in wording: 'zuͦ dienen ihm, daß ich ſein' vs 'damit ich ſeine huld und'. This is a change in phrasing/wording, not just a single word substitution or grammatical form."
+            "confidence": 1,
+            "rationale": "The readings differ in wording: 'zuͦ dienen ihm' (to serve him) vs 'damit ich' (so that I), and 'ſein' (his) vs 'ſeine huld und' (his grace and)."
           }
         },
         {"spans": {"A": [1732, 1733], "B": [1730, 1731]}},
@@ -13815,7 +13821,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "bitt (noun) vs bitten (infinitive/gerund)"
+            "rationale": "bitt (noun, singular) vs. bitten (noun, plural or infinitive); difference in number/form."
           }
         },
         {"spans": {"A": [1807, 1808], "B": [1803, 1804]}}
@@ -14350,7 +14356,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Difference in the spelling of the prefix (fu vs vo) for the same word 'vorauß'."
+            "rationale": "Difference in the spelling of the prefix (fu- vs vo-), same grammatical form and meaning."
           }
         },
         {"spans": {"A": [1915, 1916], "B": [1911, 1912]}}
@@ -15540,11 +15546,11 @@
           "spans": {"A": [2168, 2171], "B": [2164, 2167]},
           "ext": {"lera": "169-1"},
           "relation": {
-            "type": "orthographic",
+            "type": "grammatical",
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 0.95,
-            "rationale": "Differences are in case (sein/ſeine) and long s vs short s (gemein/gmein), which are graphic variants."
+            "rationale": "The difference is between 'sein' (possessive pronoun, likely neuter or archaic form) and 'seine' (possessive pronoun, feminine singular), which is a change in grammatical form (gender/ending). The difference 'gemein' vs 'gmein' is orthographic/spelling but the grammatical change in the pronoun is th"
           }
         },
         {"spans": {"A": [2172, 2173], "B": [2168, 2169]}},
@@ -15840,7 +15846,7 @@
             "by": "model",
             "model": "qwen3.8-27b",
             "confidence": 1,
-            "rationale": "The readings differ by the substitution of the possessive pronoun 'sein' (his) with the definite article 'die' (the)."
+            "rationale": "The readings differ by the substitution of the possessive pronoun 'sein' (his) with the definite article 'die' (the), which are distinct words with different grammatical functions."
           }
         },
         {"spans": {"A": [2236, 2237], "B": [2234, 2235]}},
@@ -17285,8 +17291,8 @@
             "type": "lexical",
             "by": "model",
             "model": "qwen3.8-27b",
-            "confidence": 0.95,
-            "rationale": "The reading 'ich wil dein' (I will your) is replaced by 'auch deine' (also your), involving a change in word choice and form."
+            "confidence": 1,
+            "rationale": "The reading 'dein' (your) in A is replaced by 'deine' (your) in B, which is a different word form (adjective vs. pronoun) and changes the wording."
           }
         },
         {"spans": {"A": [2561, 2562], "B": [2556, 2557]}}

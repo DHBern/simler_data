@@ -1,43 +1,61 @@
 {
  "total": {
-  "rows": 6861,
-  "complete": 6134,
-  "alone": 467,
-  "doubtful": 223,
-  "places": 4850,
-  "alike": 20460,
-  "unrelated": 102,
-  "proposals": 23,
-  "typos_found": 55,
-  "poems": 148,
+  "rows": 7724,
+  "complete": 6946,
+  "alone": 504,
+  "doubtful": 278,
+  "places": 5905,
+  "alike": 22275,
+  "unrelated": 214,
+  "proposals": 33,
+  "to_check": 2167,
+  "to_check_default": 1352,
+  "typos_found": 61,
+  "poems": 169,
   "lera": 2
  },
  "rows": {
-  "alone": 406,
-  "fine": 6232,
-  "doubtful": 223
+  "alone": 429,
+  "fine": 7017,
+  "doubtful": 278
  },
  "types": {
-  "grammatical model": 53,
-  "lexical model": 253,
-  "omission": 483,
-  "open": 4,
-  "orthographic model": 318,
-  "orthographic rule": 2208,
-  "other model": 4,
-  "punctuation model": 4,
-  "punctuation rule": 509,
-  "repetition model": 1,
-  "spelling model": 148,
-  "spelling rule": 818,
-  "transposition model": 3,
+  "grammatical model": 129,
+  "lexical model": 331,
+  "omission": 708,
+  "open": 5,
+  "orthographic model": 224,
+  "orthographic rule": 2610,
+  "other model": 165,
+  "punctuation model": 8,
+  "punctuation rule": 593,
+  "spelling model": 169,
+  "spelling rule": 912,
+  "transposition model": 6,
   "transposition rule": 1,
-  "uncertain model": 43
+  "uncertain model": 44
+ },
+ "categories": {
+  "added none": 392,
+  "deleted none": 316,
+  "grammar model": 129,
+  "open none": 5,
+  "orthography model": 393,
+  "orthography rule": 3522,
+  "punctuation model": 8,
+  "punctuation rule": 593,
+  "unclear model": 209,
+  "word model": 337,
+  "word rule": 1
+ },
+ "lines": {
+  "added": 354,
+  "deleted": 424
  },
  "confidence": {
-  "0.9": 44,
-  "0.95": 585,
-  "1": 198
+  "0.9": 45,
+  "0.95": 432,
+  "1": 599
  },
  "poems": {
   "B.1": {
@@ -51,6 +69,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 3,
+   "to_check_default": 3,
    "typos_found": 0
   },
   "B.2": {
@@ -68,6 +88,8 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "B.3": {
@@ -81,6 +103,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "B.4": {
@@ -94,6 +118,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "iii": {
@@ -125,6 +151,8 @@
     ]
    },
    "typos": [],
+   "to_check": 199,
+   "to_check_default": 199,
    "typos_found": 0
   },
   "iv": {
@@ -148,6 +176,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 1
   },
   "ix": {
@@ -178,6 +208,8 @@
      "letters": "c/e"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 2
   },
   "n1": {
@@ -195,6 +227,8 @@
     ]
    },
    "typos": [],
+   "to_check": 12,
+   "to_check_default": 12,
    "typos_found": 0
   },
   "n10": {
@@ -233,6 +267,8 @@
     ]
    },
    "typos": [],
+   "to_check": 33,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n11": {
@@ -246,6 +282,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n12": {
@@ -288,6 +326,8 @@
      "letters": "c/e"
     }
    ],
+   "to_check": 7,
+   "to_check_default": 0,
    "typos_found": 3
   },
   "n123": {
@@ -301,6 +341,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 33,
+   "to_check_default": 33,
    "typos_found": 0
   },
   "n124": {
@@ -324,6 +366,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 7,
+   "to_check_default": 7,
    "typos_found": 1
   },
   "n125": {
@@ -337,6 +381,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n126": {
@@ -360,6 +406,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 1
   },
   "n128": {
@@ -373,6 +421,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n129": {
@@ -386,6 +436,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n13": {
@@ -393,7 +445,7 @@
    "complete": 733,
    "alone": 2,
    "doubtful": 0,
-   "places": 466,
+   "places": 468,
    "alike": 2259,
    "unrelated": 0,
    "proposals": 0,
@@ -409,6 +461,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 74,
+   "to_check_default": 70,
    "typos_found": 1
   },
   "n132": {
@@ -429,6 +483,8 @@
     ]
    },
    "typos": [],
+   "to_check": 3,
+   "to_check_default": 3,
    "typos_found": 0
   },
   "n138": {
@@ -442,6 +498,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n139": {
@@ -455,6 +513,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n14": {
@@ -468,6 +528,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 10,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n140": {
@@ -481,6 +543,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n141": {
@@ -494,6 +558,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n142": {
@@ -507,6 +573,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n143": {
@@ -520,6 +588,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n144": {
@@ -537,6 +607,8 @@
     ]
    },
    "typos": [],
+   "to_check": 5,
+   "to_check_default": 5,
    "typos_found": 0
   },
   "n145": {
@@ -550,6 +622,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n146": {
@@ -563,6 +637,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n147_1": {
@@ -576,6 +652,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n147_2": {
@@ -589,6 +667,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n148": {
@@ -602,6 +682,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n149": {
@@ -619,6 +701,8 @@
     ]
    },
    "typos": [],
+   "to_check": 5,
+   "to_check_default": 5,
    "typos_found": 0
   },
   "n15": {
@@ -636,19 +720,61 @@
     ]
    },
    "typos": [],
+   "to_check": 7,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n150": {
    "rows": 29,
    "complete": 29,
    "alone": 0,
-   "doubtful": 0,
-   "places": 24,
-   "alike": 85,
+   "doubtful": 9,
+   "places": 157,
+   "alike": 145,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {},
+   "doubts": {
+    "s1": [
+     "“LXIX.” is paired with “CHRiSTEN” in column 1",
+     "“Chriſtenkampff.” is paired with “KAMPF.” in column 2",
+     "“Chriſtenkampf.” is paired with “KAMPF.” in column 2"
+    ],
+    "s3": [
+     "“hoͤllen” is paired with “hölliſch” in column 2",
+     "“ernſt” is paired with “jhme” in column 5"
+    ],
+    "s4": [
+     "“andern” is paired with “nach” in column 2",
+     "“mehr/” is paired with “ander” in column 4"
+    ],
+    "s11": [
+     "“Herꝛ” is paired with “Krieges” in column 2",
+     "“beym” is paired with “Matthæo” in column 9",
+     "“Lucas” is paired with “zfinden:” in column 10"
+    ],
+    "s12": [
+     "“ſeine” is paired with “Sathans” in column 7",
+     "“deſſe” is paired with “Sathans” in column 7"
+    ],
+    "s17": [
+     "“euch” is paired with “Ewer” in column 3"
+    ],
+    "s20": [
+     "“feindes” is paired with “fewrig” in column 5"
+    ],
+    "s24": [
+     "“rittersleuht/” is paired with “Streit,” in column 4"
+    ],
+    "s25": [
+     "“ewig” is paired with “ewig-wehrend” in column 2",
+     "“ewig'” is paired with “ewig-wehrend” in column 2",
+     "“ehrenkron” is paired with “Cron” in column 3",
+     "“nach” is paired with “allbereit.” in column 5"
+    ]
+   },
    "typos": [],
+   "to_check": 48,
+   "to_check_default": 11,
    "typos_found": 0
   },
   "n152": {
@@ -662,6 +788,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 6,
+   "to_check_default": 6,
    "typos_found": 0
   },
   "n153": {
@@ -675,6 +803,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n154": {
@@ -688,6 +818,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n155": {
@@ -701,6 +833,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n158": {
@@ -714,6 +848,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n159": {
@@ -727,6 +863,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n160": {
@@ -740,6 +878,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n162": {
@@ -753,6 +893,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n163": {
@@ -766,6 +908,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n164": {
@@ -783,6 +927,8 @@
     ]
    },
    "typos": [],
+   "to_check": 4,
+   "to_check_default": 4,
    "typos_found": 0
   },
   "n168": {
@@ -796,6 +942,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n169": {
@@ -809,32 +957,66 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n171": {
-   "rows": 14,
-   "complete": 10,
-   "alone": 4,
+   "rows": 12,
+   "complete": 9,
+   "alone": 3,
    "doubtful": 0,
-   "places": 2,
-   "alike": 10,
+   "places": 1,
+   "alike": 9,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 3,
+   "to_check_default": 3,
    "typos_found": 0
   },
+  "n174": {
+   "rows": 27,
+   "complete": 25,
+   "alone": 2,
+   "doubtful": 1,
+   "places": 26,
+   "alike": 25,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s27": [
+     "E54C is missing where C has 19 words"
+    ]
+   },
+   "typos": [
+    {
+     "segment": "s12",
+     "readings": {
+      "C": "Lauſf/",
+      "E54C": "lauff/"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "to_check": 3,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
   "n175": {
-   "rows": 6,
+   "rows": 5,
    "complete": 5,
-   "alone": 1,
+   "alone": 0,
    "doubtful": 0,
-   "places": 5,
+   "places": 4,
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n176": {
@@ -848,19 +1030,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n177": {
-   "rows": 8,
-   "complete": 6,
+   "rows": 7,
+   "complete": 5,
    "alone": 2,
    "doubtful": 0,
    "places": 2,
-   "alike": 6,
+   "alike": 5,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n178": {
@@ -883,6 +1069,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 1
   },
   "n179": {
@@ -896,6 +1084,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n18": {
@@ -909,6 +1099,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 8,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n180": {
@@ -922,19 +1114,28 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n181": {
    "rows": 6,
    "complete": 5,
    "alone": 1,
-   "doubtful": 0,
-   "places": 3,
-   "alike": 5,
-   "unrelated": 0,
-   "proposals": 0,
-   "doubts": {},
+   "doubtful": 1,
+   "places": 11,
+   "alike": 4,
+   "unrelated": 1,
+   "proposals": 1,
+   "doubts": {
+    "s5": [
+     "C's text is 4× as long as B's",
+     "“(len:” is paired with “auch” in column 2"
+    ]
+   },
    "typos": [],
+   "to_check": 10,
+   "to_check_default": 10,
    "typos_found": 0
   },
   "n182": {
@@ -948,23 +1149,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n183": {
-   "rows": 21,
-   "complete": 18,
-   "alone": 3,
-   "doubtful": 1,
-   "places": 10,
-   "alike": 18,
+   "rows": 19,
+   "complete": 17,
+   "alone": 2,
+   "doubtful": 0,
+   "places": 9,
+   "alike": 17,
    "unrelated": 0,
    "proposals": 0,
-   "doubts": {
-    "s10": [
-     "“ver-” is paired with “vertreibt.” in column 9"
-    ]
-   },
+   "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n184": {
@@ -978,6 +1179,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n189": {
@@ -991,6 +1194,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n19": {
@@ -1025,6 +1230,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 18,
+   "to_check_default": 0,
    "typos_found": 2
   },
   "n190": {
@@ -1038,6 +1245,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n194": {
@@ -1051,6 +1260,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n2": {
@@ -1093,6 +1304,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 10,
+   "to_check_default": 6,
    "typos_found": 2
   },
   "n20": {
@@ -1147,6 +1360,8 @@
      "letters": "c/e"
     }
    ],
+   "to_check": 56,
+   "to_check_default": 48,
    "typos_found": 3
   },
   "n21": {
@@ -1160,21 +1375,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 20,
+   "to_check_default": 19,
    "typos_found": 0
   },
   "n210": {
-   "rows": 39,
-   "complete": 38,
+   "rows": 38,
+   "complete": 37,
    "alone": 1,
    "doubtful": 0,
    "places": 14,
-   "alike": 38,
+   "alike": 37,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [
     {
-     "segment": "s32",
+     "segment": "s31",
      "readings": {
       "B": "ſuͤhret/",
       "C": "fuͤhret/"
@@ -1182,6 +1399,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 1
   },
   "n211": {
@@ -1199,6 +1418,8 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n212": {
@@ -1226,6 +1447,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 7,
+   "to_check_default": 7,
    "typos_found": 1
   },
   "n22": {
@@ -1260,6 +1483,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 16,
+   "to_check_default": 15,
    "typos_found": 2
   },
   "n223": {
@@ -1277,6 +1502,8 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n224": {
@@ -1313,6 +1540,8 @@
     ]
    },
    "typos": [],
+   "to_check": 30,
+   "to_check_default": 30,
    "typos_found": 0
   },
   "n225": {
@@ -1330,6 +1559,8 @@
     ]
    },
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n226": {
@@ -1350,6 +1581,8 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n227": {
@@ -1367,6 +1600,8 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n23": {
@@ -1393,6 +1628,8 @@
     ]
    },
    "typos": [],
+   "to_check": 13,
+   "to_check_default": 13,
    "typos_found": 0
   },
   "n230": {
@@ -1406,6 +1643,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 5,
+   "to_check_default": 5,
    "typos_found": 0
   },
   "n231": {
@@ -1419,19 +1658,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n232": {
-   "rows": 12,
-   "complete": 12,
+   "rows": 9,
+   "complete": 9,
    "alone": 0,
    "doubtful": 0,
-   "places": 12,
-   "alike": 12,
+   "places": 13,
+   "alike": 9,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n233": {
@@ -1450,12 +1693,14 @@
     ]
    },
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n237": {
-   "rows": 6,
+   "rows": 5,
    "complete": 5,
-   "alone": 1,
+   "alone": 0,
    "doubtful": 0,
    "places": 6,
    "alike": 5,
@@ -1463,12 +1708,14 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n238": {
-   "rows": 6,
+   "rows": 5,
    "complete": 5,
-   "alone": 1,
+   "alone": 0,
    "doubtful": 0,
    "places": 10,
    "alike": 5,
@@ -1476,19 +1723,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n239": {
-   "rows": 6,
+   "rows": 5,
    "complete": 5,
-   "alone": 1,
+   "alone": 0,
    "doubtful": 0,
-   "places": 7,
+   "places": 6,
    "alike": 5,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n24": {
@@ -1513,6 +1764,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 1
   },
   "n240": {
@@ -1526,6 +1779,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n241": {
@@ -1539,19 +1794,23 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n242": {
-   "rows": 6,
-   "complete": 6,
+   "rows": 5,
+   "complete": 5,
    "alone": 0,
    "doubtful": 0,
-   "places": 5,
-   "alike": 6,
+   "places": 6,
+   "alike": 5,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n243": {
@@ -1565,6 +1824,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n244": {
@@ -1578,6 +1839,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 3,
+   "to_check_default": 3,
    "typos_found": 0
   },
   "n245": {
@@ -1591,6 +1854,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n247": {
@@ -1621,6 +1886,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 13,
+   "to_check_default": 13,
    "typos_found": 1
   },
   "n248": {
@@ -1665,6 +1932,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 15,
+   "to_check_default": 15,
    "typos_found": 2
   },
   "n25": {
@@ -1682,6 +1951,8 @@
     ]
    },
    "typos": [],
+   "to_check": 25,
+   "to_check_default": 25,
    "typos_found": 0
   },
   "n251": {
@@ -1700,6 +1971,8 @@
     ]
    },
    "typos": [],
+   "to_check": 7,
+   "to_check_default": 7,
    "typos_found": 0
   },
   "n26": {
@@ -1713,6 +1986,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 12,
+   "to_check_default": 12,
    "typos_found": 0
   },
   "n265.i": {
@@ -1726,6 +2001,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 4,
+   "to_check_default": 4,
    "typos_found": 0
   },
   "n265.ii": {
@@ -1743,6 +2020,8 @@
     ]
    },
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n265.iii": {
@@ -1781,6 +2060,8 @@
      "letters": "i/l"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 2
   },
   "n265.iv": {
@@ -1798,52 +2079,57 @@
     ]
    },
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n265": {
-   "rows": 369,
-   "complete": 291,
-   "alone": 78,
-   "doubtful": 10,
-   "places": 146,
+   "rows": 370,
+   "complete": 361,
+   "alone": 9,
+   "doubtful": 11,
+   "places": 215,
    "alike": 289,
-   "unrelated": 2,
-   "proposals": 0,
+   "unrelated": 72,
+   "proposals": 2,
    "doubts": {
-    "s312": [
+    "s161": [
+     "“XXXIII.” is paired with “erfreüt.” in column 1"
+    ],
+    "s313": [
      "“HERREN/” is paired with “Herꝛen/” in column 10"
     ],
-    "s361": [
+    "s362": [
      "C's text is 8× as long as B's"
     ],
-    "s362": [
+    "s363": [
      "B is missing where C has 7 words"
     ],
-    "s363": [
-     "B is missing where C has 6 words"
-    ],
     "s364": [
-     "B is missing where C has 9 words"
+     "B is missing where C has 6 words"
     ],
     "s365": [
      "B is missing where C has 9 words"
     ],
     "s366": [
-     "B is missing where C has 8 words"
+     "B is missing where C has 9 words"
     ],
     "s367": [
-     "B is missing where C has 7 words"
+     "B is missing where C has 8 words"
     ],
     "s368": [
      "B is missing where C has 7 words"
     ],
     "s369": [
+     "B is missing where C has 7 words"
+    ],
+    "s370": [
      "B is missing where C has 6 words"
     ]
    },
    "typos": [
     {
-     "segment": "s193",
+     "segment": "s194",
      "readings": {
       "B": "erfreuen:",
       "C": "erſreuen:"
@@ -1851,6 +2137,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 81,
+   "to_check_default": 81,
    "typos_found": 1
   },
   "n27": {
@@ -1864,6 +2152,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 8,
+   "to_check_default": 8,
    "typos_found": 0
   },
   "n28": {
@@ -1912,6 +2202,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 20,
+   "to_check_default": 15,
    "typos_found": 1
   },
   "n29": {
@@ -1935,6 +2227,8 @@
     ]
    },
    "typos": [],
+   "to_check": 14,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n3": {
@@ -1952,6 +2246,8 @@
     ]
    },
    "typos": [],
+   "to_check": 4,
+   "to_check_default": 3,
    "typos_found": 0
   },
   "n31.a": {
@@ -1965,6 +2261,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n31": {
@@ -1987,6 +2285,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 11,
+   "to_check_default": 0,
    "typos_found": 1
   },
   "n33.a": {
@@ -2000,6 +2300,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n33": {
@@ -2034,6 +2336,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 16,
+   "to_check_default": 0,
    "typos_found": 2
   },
   "n35.a": {
@@ -2047,6 +2351,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n35": {
@@ -2090,6 +2396,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 17,
+   "to_check_default": 0,
    "typos_found": 2
   },
   "n37.a": {
@@ -2103,6 +2411,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "n37": {
@@ -2110,7 +2420,7 @@
    "complete": 43,
    "alone": 14,
    "doubtful": 2,
-   "places": 19,
+   "places": 20,
    "alike": 42,
    "unrelated": 1,
    "proposals": 0,
@@ -2123,16 +2433,18 @@
     ]
    },
    "typos": [],
+   "to_check": 25,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n38": {
-   "rows": 55,
-   "complete": 42,
-   "alone": 1,
+   "rows": 61,
+   "complete": 43,
+   "alone": 5,
    "doubtful": 10,
-   "places": 61,
-   "alike": 128,
-   "unrelated": 9,
+   "places": 62,
+   "alike": 127,
+   "unrelated": 12,
    "proposals": 1,
    "doubts": {
     "s1": [
@@ -2163,14 +2475,15 @@
      "“vorgenommen” is paired with “ſchaden/” in column 2"
     ],
     "s13": [
-     "C's text is 6× as long as B's",
      "“hab.” is paired with “auch” in column 1"
     ],
-    "s48": [
+    "s53": [
      "“für.” is paired with “fuͤr” in column 6"
     ]
    },
    "typos": [],
+   "to_check": 54,
+   "to_check_default": 54,
    "typos_found": 0
   },
   "n39": {
@@ -2206,6 +2519,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 17,
+   "to_check_default": 17,
    "typos_found": 1
   },
   "n4": {
@@ -2244,6 +2559,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 5,
+   "to_check_default": 5,
    "typos_found": 2
   },
   "n40": {
@@ -2257,6 +2574,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 26,
+   "to_check_default": 16,
    "typos_found": 0
   },
   "n42": {
@@ -2420,6 +2739,8 @@
     ]
    },
    "typos": [],
+   "to_check": 187,
+   "to_check_default": 73,
    "typos_found": 0
   },
   "n43": {
@@ -2450,6 +2771,8 @@
     ]
    },
    "typos": [],
+   "to_check": 8,
+   "to_check_default": 8,
    "typos_found": 0
   },
   "n44": {
@@ -2521,6 +2844,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 17,
+   "to_check_default": 15,
    "typos_found": 5
   },
   "n45": {
@@ -2540,6 +2865,8 @@
     ]
    },
    "typos": [],
+   "to_check": 25,
+   "to_check_default": 21,
    "typos_found": 0
   },
   "n46": {
@@ -2560,6 +2887,8 @@
     ]
    },
    "typos": [],
+   "to_check": 22,
+   "to_check_default": 20,
    "typos_found": 0
   },
   "n47": {
@@ -2567,14 +2896,14 @@
    "complete": 50,
    "alone": 6,
    "doubtful": 1,
-   "places": 56,
+   "places": 57,
    "alike": 294,
    "unrelated": 1,
    "proposals": 0,
    "doubts": {
     "s1": [
      "“cap.” is paired with “cap.31.v.10.ꝛc.” in column 10",
-     "“v.10.ꝛc.” is paired with “gezogenAuf” in column 11"
+     "“v.10.ꝛc.” is paired with “gezogen-” in column 11"
     ]
    },
    "typos": [
@@ -2599,6 +2928,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 31,
+   "to_check_default": 13,
    "typos_found": 2
   },
   "n48": {
@@ -2627,6 +2958,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 19,
+   "to_check_default": 18,
    "typos_found": 1
   },
   "n49": {
@@ -2690,6 +3023,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 28,
+   "to_check_default": 27,
    "typos_found": 3
   },
   "n5": {
@@ -2727,12 +3062,14 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 14,
+   "to_check_default": 11,
    "typos_found": 1
   },
   "n50": {
-   "rows": 62,
+   "rows": 66,
    "complete": 62,
-   "alone": 0,
+   "alone": 4,
    "doubtful": 0,
    "places": 30,
    "alike": 185,
@@ -2750,19 +3087,147 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 7,
+   "to_check_default": 6,
    "typos_found": 1
   },
   "n51": {
-   "rows": 84,
-   "complete": 82,
-   "alone": 2,
+   "rows": 93,
+   "complete": 74,
+   "alone": 10,
+   "doubtful": 2,
+   "places": 39,
+   "alike": 229,
+   "unrelated": 2,
+   "proposals": 1,
+   "doubts": {
+    "s7": [
+     "D is missing where B has 6 words"
+    ],
+    "s9": [
+     "C's text is 7× as long as D's"
+    ]
+   },
+   "typos": [],
+   "to_check": 25,
+   "to_check_default": 20,
+   "typos_found": 0
+  },
+  "n52": {
+   "rows": 90,
+   "complete": 72,
+   "alone": 18,
+   "doubtful": 3,
+   "places": 27,
+   "alike": 72,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where C has 16 words"
+    ],
+    "s7": [
+     "D is missing where C has 7 words"
+    ],
+    "s8": [
+     "D is missing where C has 6 words"
+    ]
+   },
+   "typos": [
+    {
+     "segment": "s53",
+     "readings": {
+      "C": "eyſrig",
+      "D": "eyfrig"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "to_check": 19,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
+  "n53": {
+   "rows": 38,
+   "complete": 31,
+   "alone": 7,
+   "doubtful": 2,
+   "places": 9,
+   "alike": 30,
+   "unrelated": 0,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "D is missing where C has 16 words"
+    ],
+    "s29": [
+     "“well” is paired with “(Felix)” in column 1"
+    ]
+   },
+   "typos": [
+    {
+     "segment": "s23",
+     "readings": {
+      "C": "zucht-",
+      "D": "zncht-"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "to_check": 9,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
+  "n54": {
+   "rows": 24,
+   "complete": 24,
+   "alone": 0,
    "doubtful": 0,
-   "places": 19,
-   "alike": 82,
+   "places": 20,
+   "alike": 24,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n55": {
+   "rows": 6,
+   "complete": 6,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 10,
+   "alike": 6,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n56": {
+   "rows": 37,
+   "complete": 30,
+   "alone": 7,
+   "doubtful": 2,
+   "places": 10,
+   "alike": 30,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where C has 30 words"
+    ],
+    "s2": [
+     "D is missing where C has 10 words"
+    ]
+   },
+   "typos": [],
+   "to_check": 7,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n57": {
@@ -2770,8 +3235,8 @@
    "complete": 50,
    "alone": 7,
    "doubtful": 1,
-   "places": 45,
-   "alike": 150,
+   "places": 64,
+   "alike": 300,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {
@@ -2780,6 +3245,8 @@
     ]
    },
    "typos": [],
+   "to_check": 11,
+   "to_check_default": 11,
    "typos_found": 0
   },
   "n6": {
@@ -2812,17 +3279,189 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 17,
+   "to_check_default": 12,
    "typos_found": 2
   },
+  "n60": {
+   "rows": 95,
+   "complete": 77,
+   "alone": 18,
+   "doubtful": 2,
+   "places": 15,
+   "alike": 77,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {
+    "s1": [
+     "D is missing where C has 8 words"
+    ],
+    "s7": [
+     "D is missing where C has 6 words"
+    ]
+   },
+   "typos": [],
+   "to_check": 19,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n61": {
+   "rows": 34,
+   "complete": 34,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 24,
+   "alike": 34,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s25",
+     "readings": {
+      "C": "fie",
+      "D": "ſie"
+     },
+     "letters": "f/ſ"
+    }
+   ],
+   "to_check": 1,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
+  "n62": {
+   "rows": 154,
+   "complete": 130,
+   "alone": 24,
+   "doubtful": 3,
+   "places": 41,
+   "alike": 128,
+   "unrelated": 1,
+   "proposals": 1,
+   "doubts": {
+    "s1": [
+     "C's text is 8× as long as D's",
+     "“Hochzeitliches” is paired with “Auch” in column 1"
+    ],
+    "s2": [
+     "“Selig” is paired with “Pſal.128.v.130.” in column 4"
+    ],
+    "s131": [
+     "“thut” is paired with “wird” in column 4"
+    ]
+   },
+   "typos": [],
+   "to_check": 40,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n63": {
+   "rows": 34,
+   "complete": 28,
+   "alone": 6,
+   "doubtful": 1,
+   "places": 12,
+   "alike": 26,
+   "unrelated": 1,
+   "proposals": 1,
+   "doubts": {
+    "s3": [
+     "C's text is 6× as long as D's",
+     "“Selig” is paired with “Jhrer” in column 1"
+    ]
+   },
+   "typos": [
+    {
+     "segment": "s32",
+     "readings": {
+      "C": "anff",
+      "D": "auff"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "to_check": 13,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
+  "n64.1": {
+   "rows": 15,
+   "complete": 15,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 7,
+   "alike": 15,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [
+    {
+     "segment": "s1",
+     "readings": {
+      "C": "und",
+      "D": "nnd"
+     },
+     "letters": "n/u"
+    }
+   ],
+   "to_check": 1,
+   "to_check_default": 0,
+   "typos_found": 1
+  },
+  "n64.2": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 4,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n65.1": {
+   "rows": 25,
+   "complete": 25,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 13,
+   "alike": 25,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 6,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n65.2": {
+   "rows": 16,
+   "complete": 16,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 9,
+   "alike": 16,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
   "n65.3": {
-   "rows": 14,
-   "complete": 12,
-   "alone": 2,
+   "rows": 11,
+   "complete": 10,
+   "alone": 0,
    "doubtful": 5,
-   "places": 44,
-   "alike": 6,
-   "unrelated": 3,
-   "proposals": 2,
+   "places": 45,
+   "alike": 20,
+   "unrelated": 5,
+   "proposals": 1,
    "doubts": {
     "s1": [
      "B's text is 5× as long as C's"
@@ -2830,30 +3469,116 @@
     "s2": [
      "“Schrifft;” is paired with “Paul;” in column 5"
     ],
-    "s11": [
+    "s9": [
      "“dikes” is paired with “zeitlich” in column 4"
     ],
-    "s12": [
+    "s10": [
      "“Glaubenswerk':” is paired with “Kinder” in column 3"
     ],
-    "s14": [
+    "s11": [
      "“Uberſchrifften.” is paired with “HErꝛ” in column 3"
     ]
    },
    "typos": [],
+   "to_check": 30,
+   "to_check_default": 30,
    "typos_found": 0
   },
   "n66": {
-   "rows": 82,
-   "complete": 81,
-   "alone": 0,
-   "doubtful": 0,
-   "places": 76,
-   "alike": 244,
-   "unrelated": 0,
-   "proposals": 0,
-   "doubts": {},
+   "rows": 97,
+   "complete": 84,
+   "alone": 9,
+   "doubtful": 23,
+   "places": 484,
+   "alike": 734,
+   "unrelated": 31,
+   "proposals": 2,
+   "doubts": {
+    "s1": [
+     "“LXXII.” is paired with “OECONOMIA,” in column 1"
+    ],
+    "s2": [
+     "E42A's text is 9× as long as D's",
+     "“Chriſtenliches” is paired with “Oder” in column 1",
+     "“eine” is paired with “Felicitas” in column 93",
+     "“heiliger” is paired with “Merzens/” in column 96",
+     "“gezogen.” is paired with “XLII.” in column 99"
+    ],
+    "s3": [
+     "“doch” is paired with “jetzund” in column 4"
+    ],
+    "s4": [
+     "“ſeiten” is paired with “zierlich” in column 7"
+    ],
+    "s6": [
+     "“eine” is paired with “Melodey” in column 6"
+    ],
+    "s7": [
+     "“ſaͤngern” is paired with “mengklich” in column 2",
+     "“lobopfer” is paired with “thaͤt!” in column 4",
+     "“Lobopfer” is paired with “thaͤt!” in column 4",
+     "“zuͦbringen!” is paired with “him̃liſch” in column 6",
+     "“zubringen!” is paired with “him̃liſch” in column 6"
+    ],
+    "s10": [
+     "“erzeigen” is paired with “auch” in column 6",
+     "“mich” is paired with “ſingen” in column 7"
+    ],
+    "s15": [
+     "“haben” is paired with “geſpoͤtt” in column 2"
+    ],
+    "s16": [
+     "“anheb/” is paired with “angreiffen” in column 6"
+    ],
+    "s19": [
+     "“erſtlich/” is paired with “bitte” in column 2"
+    ],
+    "s20": [
+     "“heiterm” is paired with “thuͦt” in column 6"
+    ],
+    "s22": [
+     "“wir:” is paired with “ererbt;” in column 4"
+    ],
+    "s23": [
+     "“dir.” is paired with “bſchert” in column 8"
+    ],
+    "s26": [
+     "“darbey” is paired with “folge” in column 6"
+    ],
+    "s32": [
+     "“nicht” is paired with “zunah” in column 7"
+    ],
+    "s34": [
+     "“glük” is paired with “Gluͤck” in column 8"
+    ],
+    "s35": [
+     "“zuͦhalten” is paired with “ſich” in column 3",
+     "“zuhalten” is paired with “ſich” in column 3",
+     "“ſich:” is paired with “ſoͤll/” in column 5"
+    ],
+    "s39": [
+     "“auch” is paired with “thuͦ” in column 5"
+    ],
+    "s54": [
+     "“andre” is paired with “froͤmbde” in column 2"
+    ],
+    "s67": [
+     "“dienſten” is paired with “auch” in column 5",
+     "“gemein” is paired with “Dienſte” in column 7"
+    ],
+    "s73": [
+     "“bald” is paired with “geſchwind” in column 2"
+    ],
+    "s81": [
+     "“erhaͤuſcht/” is paired with “ſein” in column 6"
+    ],
+    "s82": [
+     "“Herꝛ” is paired with “Segen” in column 4"
+    ]
+   },
    "typos": [],
+   "to_check": 249,
+   "to_check_default": 33,
    "typos_found": 0
   },
   "n67": {
@@ -2861,12 +3586,14 @@
    "complete": 57,
    "alone": 0,
    "doubtful": 0,
-   "places": 61,
-   "alike": 172,
+   "places": 75,
+   "alike": 343,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 7,
+   "to_check_default": 7,
    "typos_found": 0
   },
   "n68": {
@@ -2874,12 +3601,14 @@
    "complete": 15,
    "alone": 0,
    "doubtful": 0,
-   "places": 18,
-   "alike": 46,
+   "places": 22,
+   "alike": 91,
    "unrelated": 0,
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "n69": {
@@ -3111,6 +3840,8 @@
     ]
    },
    "typos": [],
+   "to_check": 149,
+   "to_check_default": 91,
    "typos_found": 0
   },
   "n7": {
@@ -3124,6 +3855,132 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
+   "typos_found": 0
+  },
+  "n72": {
+   "rows": 65,
+   "complete": 65,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 34,
+   "alike": 65,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 2,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n73": {
+   "rows": 60,
+   "complete": 53,
+   "alone": 7,
+   "doubtful": 6,
+   "places": 39,
+   "alike": 50,
+   "unrelated": 1,
+   "proposals": 2,
+   "doubts": {
+    "s2": [
+     "D is missing where C has 6 words"
+    ],
+    "s3": [
+     "D is missing where C has 6 words"
+    ],
+    "s4": [
+     "C's text is 4× as long as D's"
+    ],
+    "s5": [
+     "D is missing where C has 6 words"
+    ],
+    "s41": [
+     "C is missing where D has 24 words"
+    ],
+    "s42": [
+     "C is missing where D has 14 words"
+    ]
+   },
+   "typos": [],
+   "to_check": 18,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n74": {
+   "rows": 16,
+   "complete": 16,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 9,
+   "alike": 16,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n75": {
+   "rows": 16,
+   "complete": 16,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 14,
+   "alike": 16,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n76": {
+   "rows": 76,
+   "complete": 76,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 35,
+   "alike": 76,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 2,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n77": {
+   "rows": 7,
+   "complete": 7,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 5,
+   "alike": 7,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
+   "typos_found": 0
+  },
+  "n79": {
+   "rows": 5,
+   "complete": 5,
+   "alone": 0,
+   "doubtful": 0,
+   "places": 13,
+   "alike": 5,
+   "unrelated": 0,
+   "proposals": 0,
+   "doubts": {},
+   "typos": [],
+   "to_check": 6,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n8": {
@@ -3137,6 +3994,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 12,
+   "to_check_default": 12,
    "typos_found": 0
   },
   "n83": {
@@ -3150,6 +4009,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "n9": {
@@ -3185,6 +4046,8 @@
      "letters": "n/u"
     }
    ],
+   "to_check": 23,
+   "to_check_default": 22,
    "typos_found": 1
   },
   "v": {
@@ -3198,6 +4061,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "vi": {
@@ -3211,6 +4076,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 0,
+   "to_check_default": 0,
    "typos_found": 0
   },
   "vii": {
@@ -3224,6 +4091,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 7,
+   "to_check_default": 7,
    "typos_found": 0
   },
   "viii": {
@@ -3246,6 +4115,8 @@
      "letters": "i/l"
     }
    ],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 1
   },
   "xi": {
@@ -3259,6 +4130,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "xiv": {
@@ -3282,6 +4155,8 @@
      "letters": "f/ſ"
     }
    ],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 1
   },
   "xix": {
@@ -3295,6 +4170,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 2,
+   "to_check_default": 2,
    "typos_found": 0
   },
   "xvi": {
@@ -3308,6 +4185,8 @@
    "proposals": 0,
    "doubts": {},
    "typos": [],
+   "to_check": 1,
+   "to_check_default": 1,
    "typos_found": 0
   },
   "xvii": {
@@ -3325,6 +4204,8 @@
     ]
    },
    "typos": [],
+   "to_check": 6,
+   "to_check_default": 6,
    "typos_found": 0
   },
   "xviii": {
@@ -3342,6 +4223,8 @@
     ]
    },
    "typos": [],
+   "to_check": 10,
+   "to_check_default": 10,
    "typos_found": 0
   }
  }
