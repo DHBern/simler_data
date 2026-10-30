@@ -114,7 +114,7 @@ function synopsisControls(synopsis: Synopsis): string {
     `<label><input type="checkbox" data-syn-witness="${i + 1}"${shown.includes(w.siglum) ? ' checked' : ''}> ${esc(w.siglum)}</label>`
 
   return `<form class="syn-bar no-print" data-syn-controls>
-      <div class="syn-glance">${mixBar(counts, true)}${sparkline(segments, true)}</div>
+      <div class="syn-glance">${mixBar(counts, true)}${stack(synopsis, true)}</div>
       <div class="syn-row">
         <span class="syn-label">Varianten</span>
         ${CATEGORIES.map(chip).join('')}
@@ -152,6 +152,7 @@ function synopsisControls(synopsis: Synopsis): string {
       <span class="syn-swatch"><span class="line-link">↗</span> zur Zeile in der Ausgabe</span>
       ${doubtful ? '<span class="syn-swatch"><span class="doubt">?</span> Ausrichtung zweifelhaft</span>' : ''}
       ${proposed ? '<span class="syn-swatch"><span class="pairing">⇄</span> andere Zeilenpaarung vorgeschlagen</span>' : ''}
+      <span class="syn-swatch">Streifen oben, einer je Textzeuge: Lücke = Zeilen fehlen, Spalt = neue Strophe, dunkler = stärkere Abweichung, <span class="syn-moved-key"></span> wohl verschoben</span>
     </p>`
 }
 
@@ -231,25 +232,45 @@ function pairMatrix(witnesses: Witness[], entries: Entry[]): string {
     </details>`
 }
 
+/** At most this many columns of a poem's stack; what a 10rem strip can still tell apart. */
+const STACK_BINS = 120
+
 /**
- * How much a poem varies, and where: its segments in at most 60 bins, each as
- * high as the widest disagreement in it (0 none, 1 a spelling, 2 a word, 3
- * several). On a synopsis each bin links to its first segment.
+ * A poem's rows as one strip per print, stacked, on one axis: what a print
+ * lacks is a hole, a stanza it lacks a long hole, against the other strips.
+ * A cell is as dark as its print departs most in that bin (0 same, 1 a spelling,
+ * 2 a word, 3 several), a thin gap starts a stanza, and a line that seems moved
+ * has a colour of its own. On a synopsis each cell, holes too, links to its row.
  */
-function sparkline(segments: Segment[], links = false): string {
-  const bins = Math.min(60, segments.length)
+function stack({ witnesses, segments, stanzas }: Synopsis, links = false): string {
+  const bins = Math.min(STACK_BINS, segments.length)
+  // In viewBox units, which stretch to the strip: about a pixel of 10rem.
+  const px = bins / 160
   const bin = (i: number) => segments.slice(Math.floor(i * segments.length / bins), Math.floor((i + 1) * segments.length / bins))
-  const bar = (i: number) => {
-    const part = bin(i)
-    const l = Math.max(0, ...part.flatMap((s) => Object.values(s.departures)))
-    if (!links) return l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : ''
-    const [first, last] = [part[0].n, part.at(-1)!.n]
-    // The full height catches the click; only the bar is drawn.
-    return `<a href="#seg-${first}"><title>Segment${first === last ? ` ${first}` : `e ${first}–${last}`}</title>` +
-      `<rect x="${i}" y="0" width="1" height="3" class="hit"/>${l > 0 ? `<rect x="${i}" y="${3 - l}" width="0.8" height="${l}"/>` : ''}</a>`
+  const strip = ({ siglum }: Witness, at: number) => {
+    let stanza: number | undefined
+    const cell = (i: number) => {
+      const part = bin(i)
+      const level = Math.max(...part.map((s) => s.departures[siglum]))
+      const moved = part.find((s) => siglum in s.moved)
+      const here = level < 0 ? undefined : part.flatMap((s) => s.refs[siglum] ?? []).map((ref) => stanzas[ref]).find(Boolean)
+      const opens = here !== undefined && stanza !== undefined && here !== stanza
+      if (here !== undefined) stanza = here
+      const [first, last] = [part[0].n, part.at(-1)!.n]
+      const where = `Segment${first === last ? ` ${first}` : `e ${first}–${last}`}`
+      const said = level < 0 ? `${where}: fehlt in ${siglum}`
+        : moved ? `${where}: steht wohl anders, vgl. Segment ${moved.moved[siglum]}` : where
+      const inset = opens ? 1.5 * px : 0
+      const shape = level < 0 ? '' : `<rect x="${(i + inset).toFixed(3)}" y="0" width="${Math.max(0.05, 1 - inset - px / 4).toFixed(3)}" height="1" class="${moved ? 'moved' : `l${level}`}"/>`
+      if (!links) return shape
+      return `<a href="#seg-${first}"><title>${esc(said)}</title><rect x="${i}" y="0" width="1" height="1" class="hit"/>${shape}</a>`
+    }
+    const has = segments.filter((s) => s.departures[siglum] >= 0).length
+    const svg = `<svg viewBox="0 0 ${bins} 1" preserveAspectRatio="none" role="img" aria-label="${esc(`${siglum}: ${has} von ${segments.length} Segmenten`)}">` +
+      `${Array.from({ length: bins }, (_, i) => cell(i)).join('')}</svg>`
+    return links ? `<span class="syn-strip" data-w="${at}"><b>${esc(siglum)}</b>${svg}</span>` : `<span class="syn-strip">${svg}</span>`
   }
-  return `<svg class="syn-spark" viewBox="0 0 ${bins} 3" preserveAspectRatio="none"${links ? ' role="img" aria-label="Verlauf der Abweichungen"' : ' aria-hidden="true"'}>` +
-    `${Array.from({ length: bins }, (_, i) => bar(i)).join('')}</svg>`
+  return `<span class="syn-stack">${witnesses.map((w, i) => strip(w, i + 1)).join('')}</span>`
 }
 
 /**
@@ -478,7 +499,7 @@ export function synopsesPage(synopses: Synopsis[]): string {
           <td class="num">${s.segments.length}</td>
           <td class="num">${s.variants}</td>
           <td>${mixBar(counts)}</td>
-          <td>${sparkline(s.segments)}</td>
+          <td>${stack(s)}</td>
           <td class="num">${s.doubtful || ''}</td>
         </tr>`
   }).join('')
@@ -491,7 +512,7 @@ export function synopsesPage(synopses: Synopsis[]): string {
       und hebt die Abweichungen hervor. <i>Grundlage</i> sagt, wer ausgerichtet hat — TextAlign
       oder LERA, beide automatisch — und ob eine Person die Ausrichtung geprüft hat;
       <i>zweifelhaft</i> zählt die Segmente, deren Ausrichtung noch jemand prüfen sollte.
-      <i>Arten</i> teilt die Varianten nach Kategorie, <i>Verlauf</i> zeigt, wo im Gedicht sie stehen.
+      <i>Arten</i> teilt die Varianten nach Kategorie, <i>Verlauf</i> zeigt je Textzeuge, wo im Gedicht Zeilen fehlen und wo er abweicht.
     </p>
     ${synopses.length ? `<p class="no-print"><label class="ctrl">Sortieren nach
       <select data-syn-sort>${sorts.map(([key, label]) => `<option value="${key}">${label}</option>`).join('')}</select></label></p>

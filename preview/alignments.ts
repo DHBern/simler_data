@@ -109,6 +109,8 @@ export interface Segment {
   departures: Record<string, number>
   /** Why the alignment editor doubts this row (`estimate.json`); empty where it does not. */
   doubts: string[]
+  /** Siglum → the row that print's line here seems to answer instead (`estimate.json`). */
+  moved: Record<string, number>
   /** A model proposes to pair the lines of this row and its neighbours otherwise. */
   proposal?: Proposal
   /** Which poem of a bundle this segment belongs to: an index into `units`. */
@@ -215,6 +217,8 @@ export interface Synopsis {
   typos: Typo[]
   /** Line id → where that line stands among the `l` of the poem in the edition. */
   lines: Record<string, number>
+  /** Line id → its stanza, numbered per print. */
+  stanzas: Record<string, number>
   provenance: Provenance
 }
 
@@ -370,22 +374,24 @@ const href = (source = ''): string => encodeURI(source.split('/').pop()!.replace
  * line inside notated music is not imported at all. Counting on this side would
  * drift — `n69` in A is 128 imported lines against 130 printed ones.
  */
-async function lineMap(dir: string, id: string): Promise<Record<string, number>> {
+async function lineMap(dir: string, id: string): Promise<Pick<Synopsis, 'lines' | 'stanzas'>> {
   const lines: Record<string, number> = {}
+  const stanzas: Record<string, number> = {}
   let names: string[]
   try {
     names = (await readdir(dir)).filter((name) => name.startsWith(`${id}-`) && name.endsWith('.csv'))
   } catch {
-    return lines // no line maps beside the export: the links are simply left out
+    return { lines, stanzas } // no line maps beside the export: no links, no stanzas
   }
   for (const name of names) {
     const rows = (await readFile(join(dir, name), 'utf8')).split(/\r?\n/).slice(1)
     for (const row of rows) {
-      const [mark, at] = row.split(',')
+      const [mark, at, stanza] = row.split(',')
       if (at) lines[mark] = Number(at)
+      if (stanza) stanzas[mark] = Number(stanza)
     }
   }
-  return lines
+  return { lines, stanzas }
 }
 
 /** `2026-09-29T02:10:42.000+02:00` → `29.09.2026`. */
@@ -508,6 +514,7 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
     differs: apparatus.length > 0 || missing.length > 0,
     departures: departures(apparatus, sigla, missing),
     doubts,
+    moved: {},
     unit: 0,
   }
 }
@@ -516,7 +523,7 @@ function readSegment(doc: any, raw: any, index: number, sigla: string[],
  * An alignment document, read as the synopsis pages show it; `measured` is what
  * `estimate.py` recorded per row id: the editor's doubts, the probable typos.
  */
-function readDocument(id: string, doc: any, lines: Record<string, number>, measured: Measured): Synopsis {
+function readDocument(id: string, doc: any, { lines, stanzas }: Pick<Synopsis, 'lines' | 'stanzas'>, measured: Measured): Synopsis {
   const doubts = measured.doubts ?? {}
   const sigla: string[] = doc.witnesses.map((w: any) => w.siglum)
   const tokens = Object.fromEntries(doc.witnesses.map((w: any) => [w.siglum, w.tokens]))
@@ -530,6 +537,7 @@ function readDocument(id: string, doc: any, lines: Record<string, number>, measu
     const proposal = { rows: p.rows.map((row: string) => numbers.get(row)!), model: p.model ?? '', rationale: p.rationale ?? '' }
     for (const n of proposal.rows) segments.find((s) => s.n === n)!.proposal = proposal
   }
+  for (const m of measured.moved ?? []) segments.find((s) => s.n === numbers.get(m.segment))!.moved[m.siglum] = numbers.get(m.like)!
   const units = divide(segments)
   const by = doc.meta?.aligned_by
 
@@ -545,6 +553,7 @@ function readDocument(id: string, doc: any, lines: Record<string, number>, measu
     proposed: segments.filter((s) => s.proposal).length,
     typos: (measured.typos ?? []).map((t) => ({ n: numbers.get(t.segment)!, readings: t.readings, letters: t.letters })),
     lines,
+    stanzas,
     provenance: {
       created: day(doc.meta?.created_at ?? ''),
       updated: day(doc.meta?.updated_at ?? ''),
@@ -561,6 +570,7 @@ function readDocument(id: string, doc: any, lines: Record<string, number>, measu
 interface Measured {
   doubts?: Record<string, string[]>
   typos?: { segment: string, readings: Record<string, string>, letters: string }[]
+  moved?: { segment: string, siglum: string, like: string }[]
 }
 
 /**
@@ -587,7 +597,7 @@ export async function loadSynopses(dir: string, imports = '', estimate = ''): Pr
     // kept for comparison; a poem id may itself hold a dot (`n31.a`).
     const id = basename(name, '.json')
     if (id.endsWith('.auto')) continue
-    const lines = imports ? await lineMap(imports, id) : {}
+    const lines = imports ? await lineMap(imports, id) : { lines: {}, stanzas: {} }
     // `pipeline.py` writes every alignment in this one format; anything else is stale.
     if (data.format !== 'alignment-json') {
       throw new Error(`${name} is not Alignment JSON; regenerate it: python alignment/pipeline.py`)

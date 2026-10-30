@@ -11,6 +11,7 @@
   "to_check": 2167,
   "to_check_default": 1352,
   "typos_found": 61,
+  "moved_found": 5,
   "poems": 169,
   "lera": 2
  },
@@ -71,7 +72,9 @@
    "typos": [],
    "to_check": 3,
    "to_check_default": 3,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "B.2": {
    "rows": 4,
@@ -90,7 +93,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "B.3": {
    "rows": 8,
@@ -105,7 +110,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "B.4": {
    "rows": 10,
@@ -120,7 +127,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "iii": {
    "rows": 13,
@@ -153,7 +162,15 @@
    "typos": [],
    "to_check": 199,
    "to_check_default": 199,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [
+    {
+     "segment": "s13",
+     "siglum": "A",
+     "like": "s8"
+    }
+   ],
+   "moved_found": 1
   },
   "iv": {
    "rows": 2,
@@ -178,7 +195,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "ix": {
    "rows": 23,
@@ -210,7 +229,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n1": {
    "rows": 206,
@@ -229,7 +250,9 @@
    "typos": [],
    "to_check": 12,
    "to_check_default": 12,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n10": {
    "rows": 34,
@@ -269,7 +292,9 @@
    "typos": [],
    "to_check": 33,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n11": {
    "rows": 34,
@@ -284,7 +309,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n12": {
    "rows": 79,
@@ -328,7 +355,9 @@
    ],
    "to_check": 7,
    "to_check_default": 0,
-   "typos_found": 3
+   "typos_found": 3,
+   "moved": [],
+   "moved_found": 0
   },
   "n123": {
    "rows": 72,
@@ -343,7 +372,9 @@
    "typos": [],
    "to_check": 33,
    "to_check_default": 33,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n124": {
    "rows": 24,
@@ -368,7 +399,9 @@
    ],
    "to_check": 7,
    "to_check_default": 7,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n125": {
    "rows": 3,
@@ -383,7 +416,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n126": {
    "rows": 3,
@@ -408,7 +443,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n128": {
    "rows": 4,
@@ -423,7 +460,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n129": {
    "rows": 7,
@@ -438,7 +477,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n13": {
    "rows": 795,
@@ -463,7 +504,9 @@
    ],
    "to_check": 74,
    "to_check_default": 70,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n132": {
    "rows": 6,
@@ -485,7 +528,9 @@
    "typos": [],
    "to_check": 3,
    "to_check_default": 3,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n138": {
    "rows": 3,
@@ -500,7 +545,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n139": {
    "rows": 3,
@@ -515,7 +562,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n14": {
    "rows": 59,
@@ -530,7 +579,9 @@
    "typos": [],
    "to_check": 10,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n140": {
    "rows": 3,
@@ -545,7 +596,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n141": {
    "rows": 3,
@@ -560,7 +613,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n142": {
    "rows": 3,
@@ -575,7 +630,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n143": {
    "rows": 3,
@@ -590,7 +647,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n144": {
    "rows": 12,
@@ -609,7 +668,9 @@
    "typos": [],
    "to_check": 5,
    "to_check_default": 5,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n145": {
    "rows": 3,
@@ -624,7 +685,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n146": {
    "rows": 5,
@@ -639,7 +702,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n147_1": {
    "rows": 5,
@@ -654,7 +719,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n147_2": {
    "rows": 10,
@@ -669,7 +736,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n148": {
    "rows": 9,
@@ -684,7 +753,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n149": {
    "rows": 11,
@@ -703,7 +774,9 @@
    "typos": [],
    "to_check": 5,
    "to_check_default": 5,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n15": {
    "rows": 63,
@@ -722,7 +795,9 @@
    "typos": [],
    "to_check": 7,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n150": {
    "rows": 29,
@@ -775,7 +850,9 @@
    "typos": [],
    "to_check": 48,
    "to_check_default": 11,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n152": {
    "rows": 20,
@@ -790,7 +867,9 @@
    "typos": [],
    "to_check": 6,
    "to_check_default": 6,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n153": {
    "rows": 6,
@@ -805,7 +884,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n154": {
    "rows": 6,
@@ -820,7 +901,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n155": {
    "rows": 26,
@@ -835,7 +918,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n158": {
    "rows": 6,
@@ -850,7 +935,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n159": {
    "rows": 14,
@@ -865,7 +952,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n160": {
    "rows": 4,
@@ -880,7 +969,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n162": {
    "rows": 14,
@@ -895,7 +986,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n163": {
    "rows": 18,
@@ -910,7 +1003,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n164": {
    "rows": 5,
@@ -929,7 +1024,9 @@
    "typos": [],
    "to_check": 4,
    "to_check_default": 4,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n168": {
    "rows": 4,
@@ -944,7 +1041,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n169": {
    "rows": 4,
@@ -959,7 +1058,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n171": {
    "rows": 12,
@@ -974,7 +1075,9 @@
    "typos": [],
    "to_check": 3,
    "to_check_default": 3,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n174": {
    "rows": 27,
@@ -1002,7 +1105,9 @@
    ],
    "to_check": 3,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n175": {
    "rows": 5,
@@ -1017,7 +1122,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n176": {
    "rows": 6,
@@ -1032,7 +1139,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n177": {
    "rows": 7,
@@ -1047,7 +1156,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n178": {
    "rows": 7,
@@ -1071,7 +1182,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n179": {
    "rows": 6,
@@ -1086,7 +1199,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n18": {
    "rows": 66,
@@ -1101,7 +1216,9 @@
    "typos": [],
    "to_check": 8,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n180": {
    "rows": 6,
@@ -1116,7 +1233,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n181": {
    "rows": 6,
@@ -1136,7 +1255,9 @@
    "typos": [],
    "to_check": 10,
    "to_check_default": 10,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n182": {
    "rows": 6,
@@ -1151,7 +1272,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n183": {
    "rows": 19,
@@ -1166,7 +1289,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n184": {
    "rows": 6,
@@ -1181,7 +1306,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n189": {
    "rows": 6,
@@ -1196,7 +1323,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n19": {
    "rows": 61,
@@ -1232,7 +1361,9 @@
    ],
    "to_check": 18,
    "to_check_default": 0,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n190": {
    "rows": 6,
@@ -1247,7 +1378,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n194": {
    "rows": 4,
@@ -1262,7 +1395,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n2": {
    "rows": 156,
@@ -1306,7 +1441,9 @@
    ],
    "to_check": 10,
    "to_check_default": 6,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n20": {
    "rows": 299,
@@ -1362,7 +1499,9 @@
    ],
    "to_check": 56,
    "to_check_default": 48,
-   "typos_found": 3
+   "typos_found": 3,
+   "moved": [],
+   "moved_found": 0
   },
   "n21": {
    "rows": 113,
@@ -1377,7 +1516,9 @@
    "typos": [],
    "to_check": 20,
    "to_check_default": 19,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n210": {
    "rows": 38,
@@ -1401,7 +1542,9 @@
    ],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n211": {
    "rows": 21,
@@ -1420,7 +1563,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n212": {
    "rows": 21,
@@ -1449,7 +1594,9 @@
    ],
    "to_check": 7,
    "to_check_default": 7,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n22": {
    "rows": 127,
@@ -1485,7 +1632,9 @@
    ],
    "to_check": 16,
    "to_check_default": 15,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n223": {
    "rows": 5,
@@ -1504,7 +1653,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n224": {
    "rows": 50,
@@ -1542,7 +1693,9 @@
    "typos": [],
    "to_check": 30,
    "to_check_default": 30,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n225": {
    "rows": 5,
@@ -1561,7 +1714,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n226": {
    "rows": 5,
@@ -1583,7 +1738,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n227": {
    "rows": 10,
@@ -1602,7 +1759,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n23": {
    "rows": 30,
@@ -1630,7 +1789,9 @@
    "typos": [],
    "to_check": 13,
    "to_check_default": 13,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n230": {
    "rows": 9,
@@ -1645,7 +1806,9 @@
    "typos": [],
    "to_check": 5,
    "to_check_default": 5,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n231": {
    "rows": 9,
@@ -1660,7 +1823,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n232": {
    "rows": 9,
@@ -1675,7 +1840,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n233": {
    "rows": 9,
@@ -1695,7 +1862,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n237": {
    "rows": 5,
@@ -1710,7 +1879,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n238": {
    "rows": 5,
@@ -1725,7 +1896,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n239": {
    "rows": 5,
@@ -1740,7 +1913,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n24": {
    "rows": 5,
@@ -1766,7 +1941,9 @@
    ],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n240": {
    "rows": 5,
@@ -1781,7 +1958,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n241": {
    "rows": 5,
@@ -1796,7 +1975,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n242": {
    "rows": 5,
@@ -1811,7 +1992,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n243": {
    "rows": 5,
@@ -1826,7 +2009,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n244": {
    "rows": 6,
@@ -1841,7 +2026,9 @@
    "typos": [],
    "to_check": 3,
    "to_check_default": 3,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n245": {
    "rows": 6,
@@ -1856,7 +2043,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n247": {
    "rows": 115,
@@ -1888,7 +2077,9 @@
    ],
    "to_check": 13,
    "to_check_default": 13,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n248": {
    "rows": 123,
@@ -1934,7 +2125,9 @@
    ],
    "to_check": 15,
    "to_check_default": 15,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n25": {
    "rows": 42,
@@ -1953,7 +2146,9 @@
    "typos": [],
    "to_check": 25,
    "to_check_default": 25,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n251": {
    "rows": 4,
@@ -1973,7 +2168,9 @@
    "typos": [],
    "to_check": 7,
    "to_check_default": 7,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n26": {
    "rows": 61,
@@ -1988,7 +2185,9 @@
    "typos": [],
    "to_check": 12,
    "to_check_default": 12,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n265.i": {
    "rows": 76,
@@ -2003,7 +2202,9 @@
    "typos": [],
    "to_check": 4,
    "to_check_default": 4,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n265.ii": {
    "rows": 5,
@@ -2022,7 +2223,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n265.iii": {
    "rows": 7,
@@ -2062,7 +2265,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n265.iv": {
    "rows": 3,
@@ -2081,7 +2286,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n265": {
    "rows": 370,
@@ -2139,7 +2346,9 @@
    ],
    "to_check": 81,
    "to_check_default": 81,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n27": {
    "rows": 57,
@@ -2154,7 +2363,9 @@
    "typos": [],
    "to_check": 8,
    "to_check_default": 8,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n28": {
    "rows": 32,
@@ -2204,7 +2415,9 @@
    ],
    "to_check": 20,
    "to_check_default": 15,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n29": {
    "rows": 27,
@@ -2229,7 +2442,9 @@
    "typos": [],
    "to_check": 14,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n3": {
    "rows": 86,
@@ -2248,7 +2463,9 @@
    "typos": [],
    "to_check": 4,
    "to_check_default": 3,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n31.a": {
    "rows": 62,
@@ -2263,7 +2480,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n31": {
    "rows": 71,
@@ -2287,7 +2506,9 @@
    ],
    "to_check": 11,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n33.a": {
    "rows": 58,
@@ -2302,7 +2523,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n33": {
    "rows": 64,
@@ -2338,7 +2561,9 @@
    ],
    "to_check": 16,
    "to_check_default": 0,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n35.a": {
    "rows": 52,
@@ -2353,7 +2578,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n35": {
    "rows": 70,
@@ -2398,7 +2625,9 @@
    ],
    "to_check": 17,
    "to_check_default": 0,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n37.a": {
    "rows": 51,
@@ -2413,7 +2642,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n37": {
    "rows": 57,
@@ -2435,7 +2666,9 @@
    "typos": [],
    "to_check": 25,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n38": {
    "rows": 61,
@@ -2484,7 +2717,9 @@
    "typos": [],
    "to_check": 54,
    "to_check_default": 54,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n39": {
    "rows": 55,
@@ -2521,7 +2756,9 @@
    ],
    "to_check": 17,
    "to_check_default": 17,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n4": {
    "rows": 87,
@@ -2561,7 +2798,9 @@
    ],
    "to_check": 5,
    "to_check_default": 5,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n40": {
    "rows": 64,
@@ -2576,7 +2815,9 @@
    "typos": [],
    "to_check": 26,
    "to_check_default": 16,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n42": {
    "rows": 101,
@@ -2741,7 +2982,9 @@
    "typos": [],
    "to_check": 187,
    "to_check_default": 73,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n43": {
    "rows": 14,
@@ -2773,7 +3016,9 @@
    "typos": [],
    "to_check": 8,
    "to_check_default": 8,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n44": {
    "rows": 149,
@@ -2846,7 +3091,9 @@
    ],
    "to_check": 17,
    "to_check_default": 15,
-   "typos_found": 5
+   "typos_found": 5,
+   "moved": [],
+   "moved_found": 0
   },
   "n45": {
    "rows": 124,
@@ -2867,7 +3114,9 @@
    "typos": [],
    "to_check": 25,
    "to_check_default": 21,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n46": {
    "rows": 55,
@@ -2889,7 +3138,9 @@
    "typos": [],
    "to_check": 22,
    "to_check_default": 20,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n47": {
    "rows": 57,
@@ -2930,7 +3181,9 @@
    ],
    "to_check": 31,
    "to_check_default": 13,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n48": {
    "rows": 57,
@@ -2960,7 +3213,9 @@
    ],
    "to_check": 19,
    "to_check_default": 18,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n49": {
    "rows": 78,
@@ -3025,7 +3280,9 @@
    ],
    "to_check": 28,
    "to_check_default": 27,
-   "typos_found": 3
+   "typos_found": 3,
+   "moved": [],
+   "moved_found": 0
   },
   "n5": {
    "rows": 221,
@@ -3064,7 +3321,9 @@
    ],
    "to_check": 14,
    "to_check_default": 11,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n50": {
    "rows": 66,
@@ -3089,7 +3348,9 @@
    ],
    "to_check": 7,
    "to_check_default": 6,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n51": {
    "rows": 93,
@@ -3111,7 +3372,9 @@
    "typos": [],
    "to_check": 25,
    "to_check_default": 20,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n52": {
    "rows": 90,
@@ -3145,7 +3408,9 @@
    ],
    "to_check": 19,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n53": {
    "rows": 38,
@@ -3176,7 +3441,9 @@
    ],
    "to_check": 9,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n54": {
    "rows": 24,
@@ -3191,7 +3458,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n55": {
    "rows": 6,
@@ -3206,7 +3475,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n56": {
    "rows": 37,
@@ -3228,7 +3499,9 @@
    "typos": [],
    "to_check": 7,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n57": {
    "rows": 57,
@@ -3247,7 +3520,9 @@
    "typos": [],
    "to_check": 11,
    "to_check_default": 11,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n6": {
    "rows": 451,
@@ -3281,7 +3556,9 @@
    ],
    "to_check": 17,
    "to_check_default": 12,
-   "typos_found": 2
+   "typos_found": 2,
+   "moved": [],
+   "moved_found": 0
   },
   "n60": {
    "rows": 95,
@@ -3303,7 +3580,9 @@
    "typos": [],
    "to_check": 19,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n61": {
    "rows": 34,
@@ -3327,7 +3606,9 @@
    ],
    "to_check": 1,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n62": {
    "rows": 154,
@@ -3353,7 +3634,9 @@
    "typos": [],
    "to_check": 40,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n63": {
    "rows": 34,
@@ -3382,7 +3665,9 @@
    ],
    "to_check": 13,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n64.1": {
    "rows": 15,
@@ -3406,7 +3691,9 @@
    ],
    "to_check": 1,
    "to_check_default": 0,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "n64.2": {
    "rows": 5,
@@ -3421,7 +3708,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n65.1": {
    "rows": 25,
@@ -3436,7 +3725,9 @@
    "typos": [],
    "to_check": 6,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n65.2": {
    "rows": 16,
@@ -3451,7 +3742,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n65.3": {
    "rows": 11,
@@ -3482,7 +3775,9 @@
    "typos": [],
    "to_check": 30,
    "to_check_default": 30,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n66": {
    "rows": 97,
@@ -3579,7 +3874,9 @@
    "typos": [],
    "to_check": 249,
    "to_check_default": 33,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n67": {
    "rows": 58,
@@ -3594,7 +3891,9 @@
    "typos": [],
    "to_check": 7,
    "to_check_default": 7,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n68": {
    "rows": 16,
@@ -3609,7 +3908,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n69": {
    "rows": 153,
@@ -3842,7 +4143,30 @@
    "typos": [],
    "to_check": 149,
    "to_check_default": 91,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [
+    {
+     "segment": "s16",
+     "siglum": "F42A",
+     "like": "s18"
+    },
+    {
+     "segment": "s25",
+     "siglum": "F42A",
+     "like": "s21"
+    },
+    {
+     "segment": "s26",
+     "siglum": "F42A",
+     "like": "s22"
+    },
+    {
+     "segment": "s127",
+     "siglum": "F42A",
+     "like": "s129"
+    }
+   ],
+   "moved_found": 4
   },
   "n7": {
    "rows": 102,
@@ -3857,7 +4181,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n72": {
    "rows": 65,
@@ -3872,7 +4198,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n73": {
    "rows": 60,
@@ -3906,7 +4234,9 @@
    "typos": [],
    "to_check": 18,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n74": {
    "rows": 16,
@@ -3921,7 +4251,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n75": {
    "rows": 16,
@@ -3936,7 +4268,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n76": {
    "rows": 76,
@@ -3951,7 +4285,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n77": {
    "rows": 7,
@@ -3966,7 +4302,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n79": {
    "rows": 5,
@@ -3981,7 +4319,9 @@
    "typos": [],
    "to_check": 6,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n8": {
    "rows": 65,
@@ -3996,7 +4336,9 @@
    "typos": [],
    "to_check": 12,
    "to_check_default": 12,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n83": {
    "rows": 5,
@@ -4011,7 +4353,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "n9": {
    "rows": 46,
@@ -4048,7 +4392,9 @@
    ],
    "to_check": 23,
    "to_check_default": 22,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "v": {
    "rows": 2,
@@ -4063,7 +4409,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "vi": {
    "rows": 5,
@@ -4078,7 +4426,9 @@
    "typos": [],
    "to_check": 0,
    "to_check_default": 0,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "vii": {
    "rows": 5,
@@ -4093,7 +4443,9 @@
    "typos": [],
    "to_check": 7,
    "to_check_default": 7,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "viii": {
    "rows": 5,
@@ -4117,7 +4469,9 @@
    ],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "xi": {
    "rows": 29,
@@ -4132,7 +4486,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "xiv": {
    "rows": 61,
@@ -4157,7 +4513,9 @@
    ],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 1
+   "typos_found": 1,
+   "moved": [],
+   "moved_found": 0
   },
   "xix": {
    "rows": 15,
@@ -4172,7 +4530,9 @@
    "typos": [],
    "to_check": 2,
    "to_check_default": 2,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "xvi": {
    "rows": 15,
@@ -4187,7 +4547,9 @@
    "typos": [],
    "to_check": 1,
    "to_check_default": 1,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "xvii": {
    "rows": 10,
@@ -4206,7 +4568,9 @@
    "typos": [],
    "to_check": 6,
    "to_check_default": 6,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   },
   "xviii": {
    "rows": 9,
@@ -4225,7 +4589,9 @@
    "typos": [],
    "to_check": 10,
    "to_check_default": 10,
-   "typos_found": 0
+   "typos_found": 0,
+   "moved": [],
+   "moved_found": 0
   }
  }
 }

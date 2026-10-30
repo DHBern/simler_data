@@ -256,13 +256,15 @@ test('each witness gets its distance from the others, segment by segment', async
   assert.deepEqual(spelling.departures, { A: 1, F42A: 1 })
 })
 
-test('beside the bar, a sparkline: a bar per segment, as high as it disagrees, and a link to it', async () => {
-  const page = synopsisPage((await load())[0])
-  assert.match(page, /<div class="syn-glance"><span class="syn-mix">[\s\S]*?<\/span><svg class="syn-spark" viewBox="0 0 3 3"/)
-  // The heading reads in one witness only; segment 2 is a word apart, segment 3 a spelling.
-  assert.match(page, /<a href="#seg-1"><title>Segment 1<\/title><rect x="0" y="0" width="1" height="3" class="hit"\/><\/a>/)
-  assert.match(page, /<a href="#seg-2"><title>Segment 2<\/title><rect[^>]*class="hit"\/><rect x="1" y="1" width="0.8" height="2"\/><\/a>/)
-  assert.doesNotMatch(page, /syn-strip|data-row=/) // the strip it replaces
+test('beside the bar, a strip per print: a hole where it has no text, each cell a link to its row', async () => {
+  const [synopsis] = await load()
+  const page = synopsisPage(synopsis)
+  assert.match(page, /<div class="syn-glance"><span class="syn-mix">[\s\S]*?<\/span><span class="syn-stack"><span class="syn-strip" data-w="1"><b>A<\/b><svg/)
+  // F42A has no heading, so its first cell links to the row and draws nothing.
+  assert.match(page, /<a href="#seg-1"><title>Segment 1: fehlt in F42A<\/title><rect x="0" y="0" width="1" height="1" class="hit"\/><\/a>/)
+  // The spelling, in row 3, is the lightest departure.
+  assert.match(page, /<a href="#seg-3"><title>Segment 3<\/title><rect[^>]*class="hit"\/><rect[^>]*class="l1"\/><\/a>/)
+  assert.doesNotMatch(page, /syn-spark/)
 })
 
 test('inside a variant, only the characters that differ are marked', async () => {
@@ -413,7 +415,8 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
   const overview = synopsesPage([synopsis, { ...synopsis, id: 'n8' }])
   assert.match(overview, /<tr data-variants="3" data-doubtful="0" data-segments="2" data-added="0" data-deleted="0" data-word="0" data-grammar="0" data-punctuation="0" data-orthography="2"[^>]*>/)
   assert.match(overview, /<option value="data-word">Wortvariante<\/option>/)
-  assert.match(overview, /<svg class="syn-spark" viewBox="0 0 2 3"[^>]*><rect x="0" y="1" width="0.8" height="2"\/><rect x="1" y="2"/)
+  assert.match(overview, /<td><span class="syn-stack"><span class="syn-strip"><svg viewBox="0 0 2 1"/)
+  assert.doesNotMatch(overview.split('syn-stack')[1], /<a href="#seg/)
   assert.match(overview, /<summary>Wiederkehrende Lesarten: 2 Sätze[\s\S]*?<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>/)
   assert.doesNotMatch(synopsesPage([synopsis]), /Wiederkehrende/) // one poem recurs in nothing
 })
@@ -545,4 +548,39 @@ test('every relation type of the format has a category, and every setting names 
     assert.ok(type in SETTINGS.types, type)
   }
   for (const c of [...Object.values(SETTINGS.types), ...SETTINGS.shown, ...SETTINGS.checkFirst]) assert.ok(c in SETTINGS.categories, c)
+})
+
+async function stacked(rows: Row[], stanzas?: Record<string, string>, moved?: object[]) {
+  const dir = await mkdtemp(join(tmpdir(), 'stack-'))
+  const docs = join(dir, 'docs')
+  const imports = join(dir, 'lines')
+  await mkdir(docs, { recursive: true })
+  await mkdir(imports, { recursive: true })
+  await writeFile(join(docs, 'n1.json'), JSON.stringify(alignment(SOURCES('A', 'B'), rows)), 'utf8')
+  await writeFile(join(imports, 'n1-A.csv'), 'id,line,stanza\n' + Object.entries(stanzas ?? {}).map(([id, n]) => `${id},1,${n}`).join('\n'), 'utf8')
+  const estimate = join(dir, 'estimate.json')
+  await writeFile(estimate, JSON.stringify({ poems: { n1: { moved: moved ?? [] } } }), 'utf8')
+  return (await loadSynopses(docs, imports, estimate))[0]
+}
+
+test('a stanza opens with a gap in that print only; without a line map there is none', async () => {
+  const rows: Row[] = [1, 2].map((n) => ({ cells: { A: ['a'], B: ['a'] }, refs: { A: [`A-l${n}`], B: [`B-l${n}`] } }))
+  const page = synopsisPage(await stacked(rows, { 'A-l1': '1', 'A-l2': '2' }))
+  const strips = page.split('class="syn-strip"')
+  assert.match(strips[1], /<rect x="1\.\d+"/) // A's second stanza starts past its cell's edge
+  assert.match(strips[2], /<rect x="1\.000"/)
+  assert.match(synopsisPage(await stacked(rows)).split('class="syn-strip"')[1], /<rect x="1\.000"/)
+})
+
+test('a long poem stays at 120 columns, and a bin keeps its strongest state', async () => {
+  const rows: Row[] = Array.from({ length: 300 }, (_, i) => ({ cells: { A: [i === 5 ? 'x' : 'a'], B: ['a'] } }))
+  const page = synopsisPage(await stacked(rows))
+  assert.match(page, /viewBox="0 0 120 1"/)
+  assert.match(page.split('class="syn-strip"')[1], /<a href="#seg-6">[\s\S]*?class="l2"\/><\/a>/)
+})
+
+test('a line estimate.py found moved has a colour of its own, and says where to', async () => {
+  const rows: Row[] = [1, 2, 3].map(() => ({ cells: { A: ['a'], B: ['a'] } }))
+  const page = synopsisPage(await stacked(rows, {}, [{ segment: 's1', siglum: 'B', like: 's3' }]))
+  assert.match(page, /<title>Segment 1: steht wohl anders, vgl\. Segment 3<\/title>[^]*?class="moved"/)
 })

@@ -284,15 +284,25 @@
 .syn-mix { display: flex; gap: 1px; width: 6rem; height: 0.55rem; border-radius: 2px; overflow: hidden; }
 .syn-mix > * { display: block; flex-basis: 0; min-width: 2px; padding: 0; border: 0; background-color: rgb(var(--hue) / 0.7); }
 .syn-mix button { cursor: pointer; }
-/* On a synopsis: the bar and the sparkline side by side, at the bar's size. */
+/* On a synopsis: the bar and the stack side by side. */
 .syn-glance { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.4rem; }
-.syn-glance .syn-spark { width: 10rem; }
-.syn-spark .hit { fill: transparent; }
-.syn-spark a:hover rect:not(.hit) { fill: rgb(var(--c-accent)); }
 .syn-mix button:hover { background-color: rgb(var(--hue)); }
 
-/* Where in a poem it varies: a bar per bin of segments, as high as they disagree. */
-.syn-spark { display: block; width: 6rem; height: 0.9rem; fill: rgb(var(--c-accent) / 0.75); }
+/* A poem per print: a strip of its rows, holes where it has no text. */
+.syn-stack { display: flex; flex-direction: column; gap: 1px; width: 6rem; }
+.syn-strip { display: flex; align-items: center; gap: 0.3rem; }
+.syn-strip svg { display: block; flex: 1; min-width: 0; height: 3px; background: rgb(var(--c-muted) / 0.08); }
+.syn-glance .syn-stack { width: 13rem; gap: 2px; }
+.syn-glance .syn-strip svg { height: 9px; }
+.syn-strip b { width: 2.2rem; font: 600 0.6rem/9px var(--f-ui); color: rgb(var(--c-muted)); text-align: right; }
+.syn-strip .hit { fill: transparent; }
+.syn-strip .l0 { fill: rgb(var(--c-muted) / 0.6); }
+.syn-strip .l1 { fill: rgb(var(--c-accent) / 0.45); }
+.syn-strip .l2 { fill: rgb(var(--c-accent) / 0.75); }
+.syn-strip .l3 { fill: rgb(var(--c-accent)); }
+.syn-strip .moved { fill: rgb(var(--c-gap)); }
+.syn-strip a:hover .hit { fill: rgb(var(--c-ink) / 0.25); }
+.syn-moved-key { display: inline-block; width: 0.7rem; height: 0.4rem; background: rgb(var(--c-gap)); }
 .syn-poems td { vertical-align: middle; }
 .syn-poems .file { white-space: nowrap; }
 
