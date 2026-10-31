@@ -17151,7 +17151,8 @@
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
+                           <figure type="notatedMusic"/>
                            <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
                            <lb/>
                            <l>deſſen ſu&#x364;ſſer namm mein ſeelenhort alleine:</l>
@@ -17627,7 +17628,7 @@
                      <div>
                         <head rendition="#aq #b #c">Baſis.</head>
                         <lb/>
-                        <lg type="poem">
+                        <lg>
                            <figure type="notatedMusic"/>
                            <l>Alß Gott auß nichts geſtaltet die hoch un&#x303; nidre welt:</l>
                            <lb/>
@@ -20246,6 +20247,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <head>2.</head>
@@ -20273,6 +20275,7 @@
                            <lb/>
                            <l rendition="#et">das winterleid empfunden:</l>
                            <lb/>
+                           <cb/>
                            <l>Frau Braut geleiche traurigkeit/</l>
                            <lb/>
                            <l rendition="#et2">als von der ſeit</l>
@@ -20298,6 +20301,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <pb facs="4077024" n="249"/>
                   <fw place="top" type="pageNum">249</fw>
@@ -20336,6 +20340,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="5">
                            <head>5.</head>
@@ -20370,6 +20375,7 @@
                            <lb break="no"/>
                            <l xml:id="l106b" prev="#l106a">ſchar/</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et2">unwandelbar/</l>
                            <lb/>
                            <l rendition="#et">weil alles dran gelegen.</l>
@@ -20399,6 +20405,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="sig">R v</fw>
@@ -20859,6 +20866,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <head>2</head>
@@ -20891,6 +20899,7 @@
                            <lb break="no"/>
                            <l xml:id="l110b" prev="#l110a" rendition="#larger">frau Braut/</l>
                            <lb/>
+                           <cb/>
                            <l>und es no&#x364;htig ſeyn erachtet/</l>
                            <lb/>
                            <l rendition="#et">vor und eh ſie ſich vertraut:</l>
@@ -20922,6 +20931,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <fw place="bottom" type="catch">in</fw>
                   <lb/>
@@ -20962,6 +20972,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="4">
                            <l rendition="#et">in der vorgenomnen Eh/</l>
@@ -20987,6 +20998,7 @@
                            <lb/>
                            <l rendition="#et">daß in diſer Ehren-Eh</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et">ſeye wenig Ach und Weh!</l>
                         </lg>
                         <lb/>
@@ -21017,6 +21029,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="sig">S</fw>
@@ -21381,7 +21394,7 @@
                            Fru&#x364;cht</hi> (ich wu&#x364;nſch) <hi rendition="#larger">von
                            gruenenden</hi></l>
                      <lb/>
-                     <l xml:id="l114b" prev="#l114a" rendition="#b #larger">Zweyg-ſchoſſen!</l>
+                     <l xml:id="l114b" prev="#l114a" rendition="#larger">Zweyg-ſchoſſen!</l>
                      <lb/>
                      <l xml:id="l115a" next="#l115b" rendition="#et">Verſtehet hu&#x364;pſche Kind/
                         von beyderley Ge-</l>
@@ -21532,6 +21545,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <head>2</head>
@@ -21553,6 +21567,7 @@
                            <l>Auch Ko&#x364;nigs-Cron voran.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="3">
                            <head>3</head>
@@ -21575,6 +21590,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <fw place="bottom" type="catch">4 Die</fw>
                   <lb/>
@@ -21616,6 +21632,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="4">
                            <head>4</head>
@@ -21637,6 +21654,7 @@
                            <l>Jhr Schoſſe grad und krum.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="5">
                            <head>5</head>
@@ -21658,6 +21676,7 @@
                            <l>Der Reich und Arme ſucht.</l>
                         </lg>
                         <lb/>
+                        <cb type="end"/>
                         <fw place="bottom" type="sig">S v</fw>
                         <fw place="bottom" type="catch">6 Die</fw>
                         <lb/>
@@ -21666,6 +21685,7 @@
                         <fw place="top" type="header">Das Achzehende Hochzeit-</fw>
                         <lb/>
 
+                        <cb type="start"/>
                         <lg n="6">
                            <head>6</head>
                            <lb/>
@@ -21766,6 +21786,7 @@
                            <lb/>
                            <l>Do ſie erſchaffen ſeyn:</l>
                            <lb/>
+                           <cb/>
                            <l>Wie ſolches etlich dichten</l>
                            <lb/>
                            <l>Von liebſter Fru&#x364;hlings-zeit/</l>
@@ -21856,12 +21877,14 @@
                            <lb/>
                            <l xml:id="l128b" prev="#l128a" rendition="#larger">nehren</l>
                            <lb/>
+                           <cb type="end"/>
                            <fw place="bottom" type="catch">Mit</fw>
                            <lb/>
                            <pb facs="4077042" n="267"/>
                            <fw place="top" type="pageNum">267</fw>
                            <fw place="top" type="header">und Frühlings-Geſang.</fw>
                            <lb/>
+                           <cb type="start"/>
                            <l rendition="#larger">Mit arbeit deiner Hand/</l>
                            <lb/>
                            <l xml:id="l129a" next="#l129b" rendition="#larger">Gott wird dir
@@ -21914,6 +21937,7 @@
                            <lb/>
                            <l xml:id="l134b" prev="#l134a" rendition="#larger">Gaben</l>
                            <lb/>
+                           <cb/>
                            <l xml:id="l135a" next="#l135b" rendition="#larger">Die Gott dem
                               Menſchen</l>
                            <lb/>
@@ -21957,6 +21981,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="catch">Pin-</fw>
@@ -23271,6 +23296,7 @@
                      <lg n="1">
                         <head rendition="#b #c">Aufgabe.</head>
                         <lb/>
+                        <cb type="start"/>
                         <l><hi rendition="#in">J</hi>N ſo ſchwerer zeit und ſtunde/</l>
                         <lb/>
                         <l rendition="#et">die ich nit beſchreiben mag:</l>
@@ -23297,6 +23323,7 @@
                         <lb/>
                         <l>es ſchon raucht von deſſen hitzen.</l>
                         <lb/>
+                        <cb/>
                         <l>Jn ſo ſchwerer zeit und ſtunde/</l>
                         <lb/>
                         <l rendition="#et">die ich nicht beſchreiben mag:</l>
@@ -23346,10 +23373,12 @@
                         <l>wan jetz einer weib und freye?</l>
                      </lg>
                      <lb/>
+                     <cb type="end"/>
 
                      <lg n="2">
                         <head rendition="#b #c">Antwort Herꝛen Hochzeiters.</head>
                         <lb/>
+                        <cb type="start"/>
                         <l>Es iſt zwar die zeit und ſtunde</l>
                         <lb/>
                         <l rendition="#et">ſchwerer als ich ſchreiben mag:</l>
@@ -23366,6 +23395,7 @@
                         <lb/>
                         <l rendition="#et">(wie ihr ſelber wiſſet wol)</l>
                         <lb/>
+                        <cb/>
                         <l>domals ſchwerer als jetzunde/</l>
                         <lb/>
                         <l rendition="#et">und ſo ichs bekennen ſol/</l>
@@ -23382,6 +23412,7 @@
                         <lb/>
                         <l rendition="#et">daß es Gott gefalle wol:</l>
                         <lb/>
+                        <cb type="end"/>
                         <fw place="bottom" type="catch">dann</fw>
                         <lb/>
                         <pb facs="4077061" n="286"/>
@@ -23389,6 +23420,7 @@
                         <fw place="top" type="pageNum">286</fw>
                         <fw place="top" type="header">Das Neunzehende</fw>
                         <lb/>
+                        <cb type="start"/>
                         <l>Dan Jhn hab' ich drum gebetten</l>
                         <lb/>
                         <l>do ich wolt' in Ehſtand tretten.</l>
@@ -23399,6 +23431,7 @@
                         <lb/>
                         <l rendition="#et">eine Braut ins Ehbeht mein.</l>
                         <lb/>
+                        <cb/>
                         <l>die das gute mir vermehret/</l>
                         <lb/>
                         <l rendition="#et">und das bo&#x364;ſe ſtillet fein;</l>
@@ -23409,6 +23442,7 @@
                      </lg>
                      <lb/>
                   </lg>
+                  <cb type="end"/>
                </div>
                <fw place="bottom" type="catch">Urtheil</fw>
                <lb/>
@@ -23464,12 +23498,14 @@
                      <lg n="3">
                         <head rendition="#b #c">Urtheil über Herꝛen Hochzeiters Antwort.</head>
                         <lb/>
+                        <cb type="start"/>
                         <l>Jn ſo ſchwerer zeit und ſtunde/</l>
                         <lb/>
                         <l rendition="#et">die ich nicht beſchreiben wolt/</l>
                         <lb/>
                         <l>hat mir Herꝛn Hochzeiteꝛs munde</l>
                         <lb/>
+                        <cb/>
                         <l rendition="#et">meine frag aufglo&#x364;ßt dergſtalt/</l>
                         <lb/>
                         <l>daß/ wo ich nicht gweibet hette</l>
@@ -23477,10 +23513,12 @@
                         <l>ich noch jetz ein gleiches thete.</l>
                      </lg>
                      <lb/>
+                     <cb type="end"/>
 
                      <lg n="4">
                         <head rendition="#b #c">Wunſch.</head>
                         <lb/>
+                        <cb type="start"/>
                         <l>Gott wo&#x364;ll diſ' und ander Ehen</l>
                         <lb/>
                         <l rendition="#et">in ſo ſchwerer zeit und ſtund/</l>
@@ -23489,6 +23527,7 @@
                         <lb break="no"/>
                         <l xml:id="l158b" prev="#l158a">wehen/</l>
                         <lb/>
+                        <cb/>
                         <l rendition="#et">und ſie lang erhalten gſund:</l>
                         <lb/>
                         <l>daß ſie zeitlich fruchtbar werden/</l>
@@ -23497,6 +23536,7 @@
                      </lg>
                      <lb/>
                   </lg>
+                  <cb type="end"/>
                </div>
                <div n="2" xml:id="n71_2" prev="#n71_1">
                   <div type="music">
@@ -23545,6 +23585,7 @@
                      <p rendition="#c">Auch in der weiſe: Fertig iſt mein Hertz <lb/> zu ſingen/
                         ꝛc.</p>
                      <lb/>
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <l><hi rendition="#in">O</hi>Hnverſehens/ in der eile/</l>
@@ -23617,6 +23658,7 @@
                            <l>junge werden gleich verhalten.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="4">
                            <head>4</head>
@@ -23693,6 +23735,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="catch">Ver-</fw>
@@ -23727,7 +23770,7 @@
                         <l xml:id="l168a" next="#l168b" rendition="#larger #et">Und weißt man bald
                            ſchier anders nichts</l>
                         <lb/>
-                        <l xml:id="l168b" prev="#l168a">zu ſchreiben</l>
+                        <l xml:id="l168b" prev="#l168a" rendition="#larger">zu ſchreiben</l>
                         <lb/>
                         <l rendition="#larger #et">als was der Mars und ſeine Diener treiben.</l>
                         <lb/>
@@ -23746,7 +23789,7 @@
                         <l xml:id="l169a" next="#l169b" rendition="#larger #et">Und weißt man bald
                            ſchier anders nichts zu</l>
                         <lb/>
-                        <l xml:id="l169b" prev="#l169a">ſchreiben</l>
+                        <l xml:id="l169b" prev="#l169a" rendition="#larger">ſchreiben</l>
                         <lb/>
                         <l rendition="#larger #et">als was der Mars und ſeine Diener treiben.</l>
                         <lb/>
@@ -23772,7 +23815,7 @@
                         <l xml:id="l170a" next="#l170b" rendition="#larger #et">und weißt man bald
                            ſchier anders nichts zu</l>
                         <lb/>
-                        <l xml:id="l170b" prev="#l170a">ſchreiben</l>
+                        <l xml:id="l170b" prev="#l170a" rendition="#larger">ſchreiben</l>
                         <lb/>
                         <l rendition="#larger #et">als was der Mars und ſeine Diener treiben.</l>
                         <lb/>
@@ -23791,7 +23834,7 @@
                         <l xml:id="l171a" next="#l171b" rendition="#larger #et">Und darf man nicht/
                            was mehr beſchicht/ be-</l>
                         <lb break="no"/>
-                        <l xml:id="l171b" prev="#l171a">ſchreiben/</l>
+                        <l xml:id="l171b" prev="#l171a" rendition="#larger">ſchreiben/</l>
                         <lb/>
                         <l rendition="#larger #et">wo Mars im Land und ſeine Diener bleiben.</l>
                      </lg>
@@ -23818,7 +23861,7 @@
                         <l xml:id="l173a" next="#l173b" rendition="#larger #et">Dann er; Gott lob;
                            bißhar nicht weißt zu-</l>
                         <lb break="no"/>
-                        <l xml:id="l173b" prev="#l173a">ſchreiben/</l>
+                        <l xml:id="l173b" prev="#l173a" rendition="#larger">ſchreiben/</l>
                         <lb/>
                         <l rendition="#larger #et">Was Mars im Land un&#x303; ſeine Diener
                            treiben.</l>
@@ -23832,8 +23875,8 @@
                         <l>Nach <hi rendition="#larger">Dieſſenhoff'n</hi> am <hi
                               rendition="#larger">Rhein/</hi> allwo er angetroffen</l>
                         <lb/>
-                        <l rendition="#et">eine werthe <hi rendition="#b"
-                           >Ka&#x364;llerinne/</hi></l>
+                        <l rendition="#et">eine werthe <hi rendition="#larger"
+                              >Ka&#x364;llerinne/</hi></l>
                         <lb/>
                         <l rendition="#et">nach all ſeinem muht und ſinne/</l>
                         <lb/>
@@ -23850,7 +23893,7 @@
                         <l xml:id="l174a" next="#l174b" rendition="#larger #et">Die auch nicht weißt
                            von ihrem Land zu</l>
                         <lb/>
-                        <l xml:id="l174b" prev="#l174a">ſchreiben</l>
+                        <l xml:id="l174b" prev="#l174a" rendition="#larger">ſchreiben</l>
                         <lb/>
                         <l rendition="#larger #et">Was Mars darin&#x303; und ſeine Diener
                            treiben.</l>
@@ -23892,7 +23935,7 @@
                         <l xml:id="l175a" next="#l175b" rendition="#larger #et">Was Mars im Land und
                            ſeine Diener trei-</l>
                         <lb break="no"/>
-                        <l xml:id="l175b" prev="#l175a">ben!</l>
+                        <l xml:id="l175b" prev="#l175a" rendition="#larger">ben!</l>
                      </lg>
                      <lb/>
                   </lg>
@@ -23919,7 +23962,7 @@
                         <lb/>
                      </div>
                      <div>
-                        <head rendition="#aq">Tenor.</head>
+                        <head rendition="#aq #b #c">Tenor.</head>
                         <lb/>
                         <lg>
                            <figure type="notatedMusic"/>
@@ -23932,6 +23975,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <l xml:id="l176a" next="#l176b" rendition="#et">Wann er das bo&#x364;s in
@@ -23983,6 +24027,7 @@
                            <lb/>
                            <l xml:id="l180b" prev="#l180a">nicht/</l>
                            <lb/>
+                           <cb/>
                            <l>kein ſchla&#x364;gler/ un&#x303; wie oft beſchicht</l>
                            <lb/>
                            <l>dem geitz ergeben nicht zu vil:</l>
@@ -24032,6 +24077,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <fw place="bottom" type="catch">Und</fw>
                   <lb/>
@@ -24066,6 +24112,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="8">
                            <l xml:id="l184a" next="#l184b" rendition="#et">Und weil der Ehſtand
@@ -24110,6 +24157,7 @@
                            <l>Jſt ehrbar: ſich vor bo&#x364;ſem hu&#x364;t</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="11">
                            <l xml:id="l188a" next="#l188b" rendition="#et">Zweymal glu&#x364;ckſelig
@@ -24155,6 +24203,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="sig">V iij</fw>
@@ -24305,12 +24354,12 @@
                         <lb/>
                         <l>ſein gantze lebens-zeit im Ehſtand zu verſchleiſſen</l>
                         <lb/>
-                        <l>mit einer die von euch <hi rendition="#b">Hartma&#x364;nnin</hi> wird
-                           geheiſſen:</l>
+                        <l>mit einer die von euch <hi rendition="#larger">Hartma&#x364;nnin</hi>
+                           wird geheiſſen:</l>
                         <lb/>
                         <l xml:id="l196a" next="#l196b" rendition="#et">Jſt ſie nun <hi
-                              rendition="#b">Hart</hi> dem <hi rendition="#b">Mann!</hi> mag er ſie
-                           lieben</l>
+                              rendition="#larger">Hart</hi> dem <hi rendition="#larger">Mann!</hi>
+                           mag er ſie lieben</l>
                         <lb/>
                         <l xml:id="l196b" prev="#l196a">nicht.</l>
                      </lg>
@@ -24326,19 +24375,19 @@
                      <lg n="4">
                         <note rendition="#b #c" type="speaker">Weib.</note>
                         <lb/>
-                        <l rendition="#et">Sie ſey und heiſſe gleich <hi rendition="#b"
+                        <l rendition="#et">Sie ſey und heiſſe gleich <hi rendition="#larger"
                               >Hartma&#x364;nnin</hi> oder lind/</l>
                         <lb/>
                         <l>ſol er ſie lieben doch: weil Gottes wort ihn lehret</l>
                         <lb/>
-                        <l>daß auch ein <hi rendition="#b">hartes</hi> Weib vom Herꝛen werd'
+                        <l>daß auch ein <hi rendition="#larger">hartes</hi> Weib vom Herꝛen werd'
                            beſchehret</l>
                         <lb/>
                         <l rendition="#et">wie Job und Simſon deß genugſam Zeugen ſind.</l>
                         <lb/>
                         <l rendition="#et">Zu deme weißt er auch/ daß groſſe nutzbarkeit</l>
                         <lb/>
-                        <l>von einem <hi rendition="#b">harten</hi> Weib ein from&#x342;er Mann
+                        <l>von einem <hi rendition="#larger">harten</hi> Weib ein from&#x342;er Mann
                            bekrieget/</l>
                         <lb/>
                         <l>wan anderſt uns hierinn ein Bu&#x364;chlein nicht betrieget/</l>
@@ -24360,7 +24409,7 @@
                         <l rendition="#et">Nicht wenig/ und nicht klein:</l>
                         <lb/>
                         <l xml:id="l197a" next="#l197b">Dann wie ein freundtlich Weib: ſo auch ein
-                              <hi rendition="#b">Harts</hi></l>
+                              <hi rendition="#larger">Harts</hi></l>
                         <lb/>
                         <l xml:id="l197b" prev="#l197a">nicht minder</l>
                         <lb/>
@@ -24368,8 +24417,8 @@
                         <lb/>
                         <l rendition="#et">die ſeine Leid-vergeß und Alters-ſtu&#x364;zzen ſeyn.</l>
                         <lb/>
-                        <l rendition="#et">So haltet offt den Mann ein <hi rendition="#b">hart-</hi>
-                           und bo&#x364;ſes Weib</l>
+                        <l rendition="#et">So haltet offt den Mann ein <hi rendition="#larger"
+                              >hart-</hi> und bo&#x364;ſes Weib</l>
                         <lb/>
                         <l>von naſſer Gſellſchafft ab/ und ihn hingegen lehret</l>
                         <lb/>
@@ -24377,8 +24426,8 @@
                         <lb/>
                         <l rendition="#et">und machet daß das Gelt in ſeinem Beutel bleib.</l>
                         <lb/>
-                        <l rendition="#et">Wan auch ihr <hi rendition="#b">harter</hi> Zahn ihn hat
-                           gebiſſen wund/</l>
+                        <l rendition="#et">Wan auch ihr <hi rendition="#larger">harter</hi> Zahn ihn
+                           hat gebiſſen wund/</l>
                         <lb/>
                         <l>ſo daß er in dem Hauß muß ob der Arbeit bleiben/</l>
                         <lb/>
@@ -24394,8 +24443,8 @@
                         <lb/>
                         <l rendition="#et">Daß er mit ſolchem Weib werd' angeſeilt geſchwind.</l>
                         <lb/>
-                        <l rendition="#et">Auch lehrt ein <hi rendition="#b">hartes</hi> Weib den
-                           Man&#x303; gedultig ſeyn</l>
+                        <l rendition="#et">Auch lehrt ein <hi rendition="#larger">hartes</hi> Weib
+                           den Man&#x303; gedultig ſeyn</l>
                         <lb/>
                         <fw place="bottom" type="catch">in</fw>
                         <lb/>
@@ -24422,7 +24471,7 @@
                         <lb/>
                         <l rendition="#et">Es iſt auch troſtlich das/ und ohne nutzen nicht/</l>
                         <lb/>
-                        <l>daß Ma&#x364;nner allerley im <hi rendition="#b">harten</hi>
+                        <l>daß Ma&#x364;nner allerley im <hi rendition="#larger">harten</hi>
                            Weiber-Orden</l>
                         <lb/>
                         <l>von anbeginn der welt biß jetz erfunden worden/</l>
@@ -24437,7 +24486,7 @@
                         <lb/>
                         <l>hiemit/ unabſolviert/ in ſu&#x364;nden bleibet ſteken/</l>
                         <lb/>
-                        <l rendition="#et">Den wird ſein <hi rendition="#b">hartes</hi> Weib
+                        <l rendition="#et">Den wird ſein <hi rendition="#larger">hartes</hi> Weib
                            erinnern jeder friſt.</l>
                         <lb/>
                         <l xml:id="l198a" next="#l198b" rendition="#et">Und wie der/ welchem Gott
@@ -24473,14 +24522,14 @@
                         <l rendition="#et">Und ſeye nicht geredt zu ihrem ungelimpff.</l>
                         <lb/>
                         <l rendition="#et">Dan nur dem Namen nach die Jungf. Br. iſt <hi
-                              rendition="#b">hart:</hi></l>
+                              rendition="#larger">hart:</hi></l>
                         <lb/>
                         <l>Da ſonſten ihr gemu&#x364;ht der Bra&#x364;utigam befindet/</l>
                         <lb/>
                         <l>geſchlacht/ gelind und ſanfft/ wardurch er u&#x364;berwindet</l>
                         <lb/>
-                        <l rendition="#et">was <hi rendition="#b">hartes</hi> immer ihm im Ehſtand
-                           widerfahrt.</l>
+                        <l rendition="#et">was <hi rendition="#larger">hartes</hi> immer ihm im
+                           Ehſtand widerfahrt.</l>
                      </lg>
                      <lb/>
                      <fw place="bottom" type="catch">Mann</fw>
@@ -24493,8 +24542,8 @@
                      <lg n="9">
                         <note rendition="#b #c" type="speaker">Mann.</note>
                         <lb/>
-                        <l rendition="#et">Nun/ nun! Jſt dem alſo? Jſt <hi rendition="#b">Hart</hi>
-                           allein ihr <hi rendition="#b">Nam.</hi></l>
+                        <l rendition="#et">Nun/ nun! Jſt dem alſo? Jſt <hi rendition="#larger"
+                              >Hart</hi> allein ihr <hi rendition="#larger">Nam.</hi></l>
                         <lb/>
                         <l>Sie aber iſt und bleibt/ durch Gottes gnad und gu&#x364;te/</l>
                         <lb/>
@@ -24543,14 +24592,14 @@
                      den 15. Chriſtm. <lb/> 1657.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l199a" next="#l199b"><hi rendition="#b"><hi rendition="#in"
-                           >R</hi>Echt tuhn iſt u&#x364;ber hu&#x364;bſch;</hi> hat recht und wol
+                     <l xml:id="l199a" next="#l199b"><hi rendition="#larger"><hi rendition="#in"
+                              >R</hi>Echt tuhn iſt u&#x364;ber hu&#x364;bſch;</hi> hat recht und wol
                         ge-</l>
                      <lb break="no"/>
                      <l xml:id="l199b" prev="#l199a">ſprochen:</l>
                      <lb/>
                      <l xml:id="l200a" next="#l200b" rendition="#et">die heutig Jungfrau Braut/ als
-                        man ſie <hi rendition="#b">Wu&#x364;ſt</hi> ge-</l>
+                        man ſie <hi rendition="#larger">Wu&#x364;ſt</hi> ge-</l>
                      <lb break="no"/>
                      <l xml:id="l200b" prev="#l200a">nennt:</l>
                      <lb/>
@@ -24655,7 +24704,7 @@
                   </lg>
                   <lb/>
                </div>
-               <div n="2" xml:id="D.3_1">
+               <div n="2" xml:id="D.3_1" next="#D.3_2">
                   <div type="music">
                      <div>
                         <head rendition="#aq #b #c">Cantus.</head>
@@ -24691,7 +24740,7 @@
                <fw place="top" type="pageNum">301</fw>
                <fw place="top" type="header">Hochzeit-Geſang.</fw>
                <lb/>
-               <div n="2" xml:id="D.2_1">
+               <div n="2" xml:id="D.2_1" next="#D.2_2">
                   <head rendition="#b #c">Beſchließlicher Segenwunſch/ <lb/> Auf Hr. J. J. U. Pf.
                      zum Gr. M. un&#x303; Fr. A. O. <lb/> anſeh. Ehefeſt/ den 29. April 1667.</head>
                   <lb/>
@@ -24716,7 +24765,7 @@
                      <lb/>
                   </lg>
                </div>
-               <div n="2" xml:id="D.3_2">
+               <div n="2" xml:id="D.3_2" prev="#D.3_1">
                   <head rendition="#b #c">Mahnung an alle Tichter/ zu erledigung des gefangnen <lb/>
                      Tichter-Helden/ G. M.</head>
                   <lb/>
@@ -24755,7 +24804,7 @@
                <fw place="top" type="pageNum">302</fw>
                <fw place="top" type="header">Hochzeitgedicht.</fw>
                <lb/>
-               <div n="2" xml:id="D.2_2">
+               <div n="2" xml:id="D.2_2" prev="#D.2_1">
                   <lg type="poem">
                      <lg n="2">
                         <l>Die <hi rendition="#larger">Lokerin</hi> hat Jhn verſtrickt</l>
@@ -24802,21 +24851,22 @@
                </div>
                <div n="2" xml:id="n79">
                   <head rendition="#b #c">Wolwu&#x364;nſchendes Viergedicht/ <lb/> Auf gedachte
-                     <lb/> Ehrenhochzeit <lb/>den 9. <hi rendition="#aq">Decembr.</hi> 1662.</head>
+                     <lb/> Ehrenhochzeit den 9.<hi rendition="#aq">Decembr.</hi> 1662.</head>
                   <lb/>
                   <lg type="poem">
-                     <l xml:id="l201a" next="#l201b"><hi rendition="#in">D</hi>Je <hi rendition="#b"
-                           >Kolen</hi> ſind begehrt: Herꝛ <hi rendition="#b">Müller</hi> wußt es</l>
+                     <l xml:id="l201a" next="#l201b"><hi rendition="#in">D</hi>Je <hi
+                           rendition="#larger">Kolen</hi> ſind begehrt: Herꝛ <hi rendition="#larger"
+                           >Müller</hi> wußt es</l>
                      <lb/>
                      <l xml:id="l201b" prev="#l201a">wol/</l>
                      <lb/>
-                     <l>drum hat er ſich bey zeit/ verſeh'n mit eignen <hi rendition="#b"
-                        >Kol:</hi></l>
+                     <l>drum hat er ſich bey zeit/ verſeh'n mit eignen <hi rendition="#larger"
+                           >Kol:</hi></l>
                      <lb/>
                      <l>Wir wu&#x364;nſchen glu&#x364;k darzu! wir wu&#x364;nſchen <hi
-                           rendition="#b">Müllerlein/</hi></l>
+                           rendition="#larger">Müllerlein/</hi></l>
                      <lb/>
-                     <l>und/ weilen die zu weiß; auch halbe <hi rendition="#b"
+                     <l>und/ weilen die zu weiß; auch halbe <hi rendition="#larger"
                            >Ko&#x364;llerlein!</hi></l>
                   </lg>
                   <lb/>
@@ -24841,11 +24891,11 @@
                         <l>mit Herꝛen Admiral <hi rendition="#aq">de</hi> Ru&#x364;yter
                            außgefahren</l>
                         <lb/>
-                        <l rendition="#et">im Schiff; die <hi rendition="#b">Liebe</hi>
+                        <l rendition="#et">im Schiff; die <hi rendition="#larger">Liebe</hi>
                            g'nen&#x303;t; zu ſtreiten auf der See/</l>
                         <lb/>
-                        <l rendition="#et">wo/ fu&#x364;r die <hi rendition="#b">Liebe/</hi> man nur
-                           krieget Ach und Wee?</l>
+                        <l rendition="#et">wo/ fu&#x364;r die <hi rendition="#larger">Liebe/</hi>
+                           man nur krieget Ach und Wee?</l>
                      </lg>
                      <lb/>
 
@@ -24864,7 +24914,7 @@
                         <lb/>
                         <l>an wolverwahrtem Ohrt: laßt uns anjetz beſehen/</l>
                         <lb/>
-                        <l rendition="#et">das rechte <hi rendition="#b">Liebe</hi>-Schiff/ in
+                        <l rendition="#et">das rechte <hi rendition="#larger">Liebe</hi>-Schiff/ in
                            welchs Jhr trettet eyn/</l>
                         <lb/>
                         <l rendition="#et">auff eben diſen tag: Gott laß ihn gſegnet ſeyn!</l>
@@ -24886,8 +24936,8 @@
                      <lg n="3">
                         <head rendition="#b #c">Beſchließlicher Neben-wunſch.</head>
                         <lb/>
-                        <l>Noch eines iſt allhier zu wu&#x364;nſchen: daß die <hi rendition="#b"
-                              >Liebe;</hi></l>
+                        <l>Noch eines iſt allhier zu wu&#x364;nſchen: daß die <hi
+                              rendition="#larger">Liebe;</hi></l>
                         <lb/>
                         <l xml:id="l204a" next="#l204b">Jch meine jenes Schiff; zum Streit ſich
                            nicht mehr</l>
@@ -24897,7 +24947,7 @@
                         <l rendition="#et">Ach/ daß es ba&#x364;ldeſt mo&#x364;g ung'ſcha&#x364;digt
                            lauffen eyn</l>
                         <lb/>
-                        <l rendition="#et"><hi rendition="#b">in Texel oder Flie:</hi> ein
+                        <l rendition="#et"><hi rendition="#larger">in Texel oder Flie:</hi> ein
                            Fridenſchiff zu ſeyn!</l>
                      </lg>
                      <lb/>
@@ -24944,6 +24994,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <head>2.</head>
@@ -24973,6 +25024,7 @@
                            <lb/>
                            <l rendition="#et">zu Waſſer und zu Land;</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et">im Ledig-Freyen Stand;</l>
                            <lb/>
                            <l>Auch kriegen iſt zu preiſen.</l>
@@ -25000,6 +25052,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <fw place="bottom" type="catch">Fu&#x364;r</fw>
                   <lb/>
@@ -25045,6 +25098,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="4">
                            <l>fu&#x364;r ernſtes Kriegen/ Schertzen!</l>
@@ -25074,6 +25128,7 @@
                            <lb/>
                            <l>ſampt Eltern/ Herꝛ Großvatter/</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et">in ſteter Lieb und Treu:</l>
                            <lb/>
                            <l>Der Ho&#x364;chſt verbleib Erſtatter!</l>
@@ -25101,6 +25156,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="sig">X</fw>
@@ -25148,6 +25204,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <l><hi rendition="#in">V</hi>enus/ in der Beckelhauben</l>
@@ -25167,6 +25224,7 @@
                            <l>ſonder ihrem Marſen zeiget.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg>
                            <head>2.</head>
@@ -25190,6 +25248,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                   <fw place="bottom" type="catch">die</fw>
                   <lb/>
@@ -25233,6 +25292,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <l>die Vulcanus hat beſtriket</l>
@@ -25261,6 +25321,7 @@
                            <l>die den <supplied>B</supplied>ekelhauben gleichen.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="4">
                            <head>4.</head>
@@ -25285,6 +25346,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="sig">X ij</fw>
@@ -25448,6 +25510,7 @@
                   <fw place="top" type="header">Das Fu&#x364;nff- und Zwantzigſte</fw>
                   <lb/>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <head>1.</head>
@@ -25476,6 +25539,7 @@
                            <l>mich eine <hi rendition="#larger">Hirtin</hi> zart.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="2">
                            <head>2.</head>
@@ -25503,6 +25567,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <milestone unit="section" rendition="#hr"/>
@@ -25555,6 +25620,7 @@
                <lb/>
                <div n="2" xml:id="D.9_3" prev="#D.9_2">
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
                            <l rendition="#et">Von Lieb' und Tugend foll/</l>
@@ -25565,6 +25631,7 @@
                            <lb/>
                            <l rendition="#et">Geleiches part ſich wol.</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et2">Himmelsgunſt es ſchikket/</l>
                            <lb/>
                            <l rendition="#et2">daß es mir gelu&#x364;kket</l>
@@ -25574,11 +25641,13 @@
                            <l>in allwa&#x364;g/ wie man ſoll.</l>
                         </lg>
                         <lb/>
+                        <cb type="end"/>
 
                         <lg n="3">
                            <head rendition="#c">Sa&#x364;genwunſch der gantzen
                               Hochzeit-ſchar.</head>
                            <lb/>
+                           <cb type="start"/>
                            <l xml:id="l216a" next="#l216b">Vil glu&#x364;k und heil dem werthen</l>
                            <lb/>
                            <l xml:id="l216b" prev="#l216a">Par!</l>
@@ -25589,6 +25658,7 @@
                            <lb/>
                            <l rendition="#et">von beiderley geſchlecht!</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et2">Him&#x342;elsgunſt es ſchikke</l>
                            <lb/>
                            <l rendition="#et2">daß es ſich gelu&#x364;kke/</l>
@@ -25599,6 +25669,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <div n="2" xml:id="D.11_2" prev="#D.11_1" next="#D.11_3">
@@ -25651,6 +25722,7 @@
                      <head rendition="#b #c">Ehren-Lied: <lb/> Auf Hr. C. Kl. und Jfr. D. Sp.
                         Hochzeit-Feſt/ <lb/> den 17. Meyen/ 1669. hertzwolmeinlich geſungen.</head>
                      <lb/>
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <head>1.</head>
@@ -25680,6 +25752,7 @@
                            <lb/>
                            <l rendition="#et">weil ihr Tugend mir bekannt:</l>
                            <lb/>
+                           <cb/>
                            <l xml:id="l217a" next="#l217b">Hertzlich
                               wu&#x364;<supplied>n</supplied>ſch ich/ daß/ ohn lei-</l>
                            <lb break="no"/>
@@ -25709,6 +25782,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <div n="2" xml:id="n78_1" next="#n78_2">
@@ -25757,6 +25831,7 @@
                <lb/>
                <div n="2" xml:id="D.11_3" prev="#D.11_2">
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="3">
                            <l xml:id="l220a" next="#l220b" rendition="#et">Feld dem Holtz
@@ -25785,7 +25860,7 @@
                         </lg>
                         <lb/>
 
-                        <lg>
+                        <lg n="4">
                            <head>4.</head>
                            <lb/>
                            <l>Dann auch Da<supplied>vid ſ</supplied>elig preiſet</l>
@@ -25808,8 +25883,9 @@
                            <l xml:id="l223b" prev="#l223a">ren!</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
-                        <lg>
+                        <lg n="5">
                            <head>5.</head>
                            <lb/>
                            <l>Herꝛ Hochzeiter mu&#x364;ß nicht gehe&#x303;</l>
@@ -25835,7 +25911,7 @@
                         </lg>
                         <lb/>
 
-                        <lg>
+                        <lg n="6">
                            <head>6.</head>
                            <lb/>
                            <l xml:id="l226a" next="#l226b">Kinder; gleich den Oelgezwey-</l>
@@ -25858,6 +25934,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <milestone unit="section" rendition="#hr"/>
@@ -25906,6 +25983,7 @@
                      <p rendition="#c">Sonſt auch in der weiſe: Jeſus wahrer Gottes Sohn/ ꝛc.</p>
                      <lb/>
                      <div type="poem">
+                        <cb type="start"/>
                         <lg type="poem">
                            <lg n="1">
                               <l xml:id="l227a" next="#l227b"><hi rendition="#in">H</hi>Erꝛſcher auf
@@ -25964,6 +26042,7 @@
                               <lb/>
                               <l>Jhme wird man ghorſam ſeyn/</l>
                               <lb/>
+                              <cb/>
                               <l>weil der Mond- und Son&#x303;enſchein</l>
                               <lb/>
                               <l rendition="#et">halten ihre Rechte.</l>
@@ -26022,6 +26101,7 @@
                               <lb/>
                               <l rendition="#et">freyga&#x364;b ihm erzeigen:</l>
                               <lb/>
+                              <cb type="end"/>
                               <fw place="bottom" type="catch">alle</fw>
                               <lb/>
                               <pb facs="4077090" n="315"/>
@@ -26029,6 +26109,7 @@
                               <fw place="top" type="pageNum">315</fw>
                               <fw place="top" type="header">Regenten Kleinod.</fw>
                               <lb/>
+                              <cb type="start"/>
                               <l>alle ko&#x364;nig in gemein/</l>
                               <lb/>
                               <l>ſamt den Heiden/ ihn allein</l>
@@ -26079,6 +26160,7 @@
                               <lb/>
                               <l>von dem wind beweget ſchon/</l>
                               <lb/>
+                              <cb/>
                               <l rendition="#et">ein gera&#x364;uſch erheben.</l>
                            </lg>
                            <lb/>
@@ -26128,6 +26210,7 @@
                            </lg>
                            <lb/>
                         </lg>
+                        <cb type="end"/>
                      </div>
                      <closer rendition="#c">Getrukt in dem Fridenwu&#x364;nſchenden
                         Heiljahr:<lb/>Herꝛ Rahn <hi rendition="#aq">V</hi>ns <hi rendition="#aq"
@@ -26375,17 +26458,18 @@
                            <lb/>
                            <l rendition="#et">daß/ auff ſo groſſes Leide/</l>
                            <lb/>
-                           <l rendition="#et2">in Herꝛen <hi rendition="#b">Waſers</hi> fahl/</l>
+                           <l rendition="#et2">in Herꝛen <hi rendition="#larger">Waſers</hi>
+                              fahl/</l>
                            <lb/>
                            <l rendition="#et">Er uns ergetzt mit Freude/</l>
                            <lb/>
-                           <l rendition="#et2">durch <hi rendition="#b">Herꝛen Hirtzels</hi>
+                           <l rendition="#et2">durch <hi rendition="#larger">Herꝛen Hirtzels</hi>
                               Wahl!</l>
                         </lg>
                         <lb/>
 
                         <lg n="7">
-                           <l>Nicht minder iſts/ mit <hi rendition="#b">Waſern</hi> iſt
+                           <l>Nicht minder iſts/ mit <hi rendition="#larger">Waſern</hi> iſt
                               verblichen</l>
                            <lb/>
                            <l>vil Wu&#x364;ſſenſchafft: mit Jhm iſt auch gewichen/</l>
@@ -26401,10 +26485,10 @@
                         <lb/>
 
                         <lg n="8">
-                           <l>Doch wird uns auch im <hi rendition="#b">Hirtzel</hi> wol
+                           <l>Doch wird uns auch im <hi rendition="#larger">Hirtzel</hi> wol
                               erſetzet/</l>
                            <lb/>
-                           <l>was/ traurigeſt/ im <hi rendition="#b">Waſer</hi> abgeletzet;</l>
+                           <l>was/ traurigeſt/ im <hi rendition="#larger">Waſer</hi> abgeletzet;</l>
                            <lb/>
                            <l rendition="#et">Deß mag ſich wider freuen</l>
                            <lb/>
@@ -26427,7 +26511,7 @@
                            <lb/>
                            <l rendition="#et">Gott wo&#x364;lle Wunſches gwerꝛen</l>
                            <lb/>
-                           <l rendition="#b #et2">Herꝛ'n Hirtzlen: Herꝛen Rohn!</l>
+                           <l rendition="#larger #et2">Herꝛ'n Hirtzlen: Herꝛen Rohn!</l>
                         </lg>
                         <lb/>
                      </lg>
@@ -26450,8 +26534,8 @@
                   <lb/>
                   <div type="poem">
                      <lg type="poem">
-                        <l>So ſeyt/ <hi rendition="#b">Herꝛ Grebel/</hi> Jhr/ <hi rendition="#b"
-                              >Herꝛ'n Hirtzeln</hi> zugeſellet</l>
+                        <l>So ſeyt/ <hi rendition="#larger">Herꝛ Grebel/</hi> Jhr/ <hi
+                              rendition="#larger">Herꝛ'n Hirtzeln</hi> zugeſellet</l>
                         <lb/>
                         <l>im Burgermeiſterthum: der Fu&#x364;nfzigſt wol erwehlet</l>
                         <lb/>
@@ -26459,7 +26543,7 @@
                            wolgethan/</l>
                         <lb/>
                         <l rendition="#et">hetts nur gekoſtet nicht den Theuren Herꝛen <hi
-                              rendition="#b">Rahn/</hi></l>
+                              rendition="#larger">Rahn/</hi></l>
                         <lb/>
                         <l>den ſo ſanftmu&#x364;thigen/ den ſo liebreichen Vatter</l>
                         <lb/>
@@ -26613,12 +26697,13 @@
                      wu&#x364;nſch ich Jhr ein gute Nacht/ ꝛc.</p>
                   <lb/>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <l xml:id="l231a" next="#l231b" rendition="#larger">Heilwaſſer in dem
                               Bader-</l>
                            <lb break="no"/>
-                           <l xml:id="l231b" prev="#l231a">loch/</l>
+                           <l xml:id="l231b" prev="#l231a" rendition="#larger">loch/</l>
                            <lb/>
                            <l rendition="#et">vom Legerberg gefloſſen:</l>
                            <lb/>
@@ -26666,6 +26751,7 @@
                            <lb/>
                            <l>die Erſten auß der Va&#x364;ttern zal/</l>
                            <lb/>
+                           <cb/>
                            <l rendition="#et">die Hoffnung unſrer Erden:</l>
                            <lb/>
                            <l rendition="#et2">Durch Freundtlichkeit</l>
@@ -26720,6 +26806,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                   </div>
                </div>
                <fw place="bottom" type="catch">Trau-</fw>
@@ -27203,6 +27290,7 @@
                   <fw place="top" type="header">Vermahnungs-Geſang.</fw>
                   <lb/>
                   <div type="poem">
+                     <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
                            <head>1.</head>
@@ -27268,6 +27356,7 @@
                            <l>warnach ihr ſoltet zilen.</l>
                         </lg>
                         <lb/>
+                        <cb/>
 
                         <lg n="4">
                            <head>4.</head>
@@ -27334,6 +27423,7 @@
                         </lg>
                         <lb/>
                      </lg>
+                     <cb type="end"/>
                      <p rendition="#c">Ab der <hi rendition="#aq">Biblioth.</hi> verehrt An.
                         1669.</p>
                      <lb/>
@@ -27341,490 +27431,545 @@
                </div>
             </div>
             <!-- Teil IV -->
-            <pb facs="4077106" n="331."/>
-            <fw place="top" type="pageNum">331.</fw>
-            <lb/>
-            <l>Neuaußgeſezte/ mit geiſtlichen</l>
-            <lb/>
-            <l>neuen Texten unterlegte</l>
-            <lb/>
-            <l>Muſikſtu&#x364;kke:</l>
-            <lb/>
-            <l>Samt noch etlichen anderen auß den berühm-</l>
-            <lb break="no"/>
-            <l>teſten Muſicanten außerleſenen und beyge-</l>
-            <lb break="no"/>
-            <l>fu&#x364;gten Geſa&#x364;ngen.</l>
-            <lb/>
-            <pb facs="4077107" n="332"/>
-            <fw place="top" type="pageNum">332</fw>
-            <fw place="top" type="header">Neu-außgeſetzte</fw>
-            <lb/>
-            <l><label>[80.]</label><lb/>
-               <hi rendition="#aq">Cantus. I.</hi></l>
-            <lb/>
-            <l>Das gut in mir/ o Herꝛ/ von dir/</l>
-            <lb/>
-            <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
-            <lb/>
-            <l>das gut in mir/ gho&#x364;rt wider dir/</l>
-            <lb/>
-            <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
-            <lb/>
-            <div>
-               <head rendition="#aq">Cantus II.</head>
+            <div n="1">
+               <pb facs="4077106" n="331."/>
+               <fw place="top" type="pageNum">331.</fw>
                <lb/>
-               <lg type="poem">
-                  <l>Das gut in mir/ o Herꝛ/ von dir/</l>
-                  <lb/>
-                  <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
-                  <lb/>
-                  <l>das gut in mir/ gho&#x364;rt wider dir/</l>
-                  <lb/>
-                  <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
-               </lg>
+               <head rendition="#b #c">Neuaußgeſezte/ mit geiſtlichen<lb/>neuen Texten
+                  unterlegte<lb/>Muſikſtu&#x364;kke:<lb/>Samt noch etlichen anderen auß den
+                     berühm-<lb break="no"/>teſten Muſicanten außerleſenen und beyge-<lb break="no"
+                  />fu&#x364;gten Geſa&#x364;ngen.</head>
                <lb/>
-            </div>
-            <pb facs="4077108" n="333"/>
-            <fw place="top" type="pageNum">333</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;ke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
+               <pb facs="4077107" n="332"/>
+               <fw place="top" type="pageNum">332</fw>
+               <fw place="top" type="header">Neu-außgeſetzte</fw>
                <lb/>
-               <lg type="poem">
-                  <l>Das gut in mir/ o Herꝛ/ von dir/</l>
-                  <lb/>
-                  <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
-                  <lb/>
-                  <l>Das gut in mir/ gho&#x364;rt wider dir/</l>
-                  <lb/>
-                  <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
-               </lg>
+               <div n="2" xml:id="n80">
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus. I.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Das gut in mir/ o Herꝛ/ von dir/</l>
+                           <lb/>
+                           <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
+                           <lb/>
+                           <l>das gut in mir/ gho&#x364;rt wider dir/</l>
+                           <lb/>
+                           <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Cantus II.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Das gut in mir/ o Herꝛ/ von dir/</l>
+                           <lb/>
+                           <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
+                           <lb/>
+                           <l>das gut in mir/ gho&#x364;rt wider dir/</l>
+                           <lb/>
+                           <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077108" n="333"/>
+                     <fw place="top" type="pageNum">333</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;ke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Das gut in mir/ o Herꝛ/ von dir/</l>
+                           <lb/>
+                           <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
+                           <lb/>
+                           <l>Das gut in mir/ gho&#x364;rt wider dir/</l>
+                           <lb/>
+                           <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Das gut in mir/ o Herꝛ/ von dir/</l>
+                           <lb/>
+                           <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
+                           <lb/>
+                           <l>das gut in mir/ gho&#x364;rt wider dir/</l>
+                           <lb/>
+                           <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+               <pb facs="4077109" n="334"/>
+               <fw place="top" type="pageNum">334</fw>
+               <fw place="top" type="header">Neu-außgeſetzte</fw>
                <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Baſis.</head>
+               <div n="2" xml:id="n81">
+                  <div type="music">
+                     <div>
+                        <head rendition="#b #c"><hi rendition="#aq">Cantus.</hi><lb/>Gott/ und ein
+                           gut</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
+                              Lebensſta&#x364;rke/</l>
+                           <lb/>
+                           <l>mich machet unverzagt/ in allem dem das ich mir</l>
+                           <lb/>
+                           <l>widrig merke/ und das mich plagt und nagt:</l>
+                           <lb/>
+                           <l>Gewiſſens rhu nicht laſſet zu/ daß ich erſchra&#x364;k</l>
+                           <lb/>
+                           <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
+                           <lb/>
+                           <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
+                           <lb/>
+                           <l>auch vorabe das blaue Sternenzelt?</l>
+                           <lb/>
+                           <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
+                              Lebensſta&#x364;rke/</l>
+                           <lb/>
+                           <l>mich machet unverzagt/ in allem dem das ich mir</l>
+                           <lb/>
+                           <l>widrig merke/ und das mich plagt und nagt:</l>
+                           <lb/>
+                           <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
+                           <lb/>
+                           <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
+                           <lb/>
+                           <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
+                           <lb/>
+                           <l>auch vorabe das blaue Sternenzelt?</l>
+                           <lb/>
+                           <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077110" n="335"/>
+                     <fw place="top" type="pageNum">335</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtüke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#b #c"><hi rendition="#aq">Altus.</hi><lb/>Gewiſſen.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
+                              Lebensſta&#x364;rke/</l>
+                           <lb/>
+                           <l>mich machet unverzagt/ in allem dem das ich mir</l>
+                           <lb/>
+                           <l>widrig merke/ und das mich plagt und nagt:</l>
+                           <lb/>
+                           <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
+                           <lb/>
+                           <l>Herꝛ/ wan ich dich/ ja/ wann ich nur dich habe/</l>
+                           <lb/>
+                           <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
+                           <lb/>
+                           <l>auch vorabe das blaue Sternenzelt?</l>
+                           <lb/>
+                           <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
+                              Lebensſta&#x364;rke/</l>
+                           <lb/>
+                           <l>mich machet unverzagt/ in allem dem das ich mir</l>
+                           <lb/>
+                           <l>widrig merke/ und das mich plagt und nagt:</l>
+                           <lb/>
+                           <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
+                           <lb/>
+                           <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
+                           <lb/>
+                           <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
+                           <lb/>
+                           <l>auch vorabe das blaue Sternenzelt?</l>
+                           <lb/>
+                           <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077111" n="336"/>
+                     <fw place="top" type="pageNum">336</fw>
+                     <fw place="top" type="header">Neu-außgeſezte</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Cantus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>ab denen die mich neiden: die auſſerſt noht/</l>
+                           <lb/>
+                           <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen ſcheiden: mich nimmer mo&#x364;gen/ nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
+                           <lb/>
+                           <l>der Himmel ſelbſt vergeben. Hab ich nur dich/</l>
+                           <lb/>
+                           <l>hab alles ich: Welt/ Himmel/ Leib/ durch dich ver-</l>
+                           <lb break="no"/>
+                           <l>neu&#x364;ert ſtehen: durch dich verneu&#x364;ert/ dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert/ dich verneuert ſtehen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Tenor.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>ab denen die mich neiden: die auſſerſt noth/</l>
+                           <lb/>
+                           <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen ſcheiden: mich nimmer mo&#x364;gen/ nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen<anchor xml:id="a229"/><note type="annotation"
+                                 targetEnd="a229"><p>Tintenspur: Das Zeichen ist unerkennbar. Sieht
+                                    im Augsburger Exemplar gleich aus.</p></note> nimmer
+                              mo&#x364;gen ſcheiden.</l>
+                           <lb/>
+                           <l>der Himmel ſelbſt vergehen. Hab ich nur dich/</l>
+                           <lb/>
+                           <l>hab alles ich: Welt: Himmel: Leib durch dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert/ dich verneuert ſtehen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077112" n="337"/>
+                     <fw place="top" type="pageNum">337</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;kke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>ab denen die mich neiden: die auſſerſt noht/</l>
+                           <lb/>
+                           <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen ſcheiden/ mich nimmer mo&#x364;gen/ nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
+                           <lb/>
+                           <l>der Himmel ſelbſt vergehen. Hab ich nur dich/</l>
+                           <lb/>
+                           <l>hab alles ich: Welt/ Himmel/ Leib durch dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
+                           <lb break="no"/>
+                           <l>neu&#x364;ert/ dich verneu&#x364;ert ſtehen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>ab denen die mich neiden: die auſſerſt noht/</l>
+                           <lb/>
+                           <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen ſcheiden/ mich nimmer mo&#x364;gen/ nimmer</l>
+                           <lb/>
+                           <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
+                           <lb/>
+                           <l>der Himmel ſelbſt vergehen Hab ich nur dich</l>
+                           <lb/>
+                           <l>hab alles ich: Welt/ Himmel/ Leib durch dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
+                           <lb break="no"/>
+                           <l>neuert/ dich verneuert ſtehen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+               <fw place="bottom" type="sig">Z</fw>
                <lb/>
-               <lg type="poem">
-                  <l>Das gut in mir/ o Herꝛ/ von dir/</l>
-                  <lb/>
-                  <l>kom&#x342;t har allein/ das bo&#x364;ß iſt mein:</l>
-                  <lb/>
-                  <l>das gut in mir/ gho&#x364;rt wider dir/</l>
-                  <lb/>
-                  <l>das bo&#x364;ſe mein wo&#x364;lſt machen rein.</l>
-                  <lb/>
-                  <pb facs="4077109" n="334"/>
-
-                  <fw place="top" type="pageNum">334</fw>
-                  <fw place="top" type="header">Neu-außgeſetzte</fw>
-                  <lb/>
-                  <l><label>[81.]</label><lb/>
-                     <hi rendition="#aq">Cantus.</hi></l>
-                  <lb/>
-                  <l>Gott/ und ein gut</l>
-                  <lb/>
-                  <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
-                     Lebensſta&#x364;rke/</l>
-                  <lb/>
-                  <l>mich machet unverzagt/ in allem dem das ich mir</l>
-                  <lb/>
-                  <l>widrig merke/ und das mich plagt und nagt:</l>
-                  <lb/>
-                  <l>Gewiſſe<anchor xml:id="a228"/>n<note type="annotation" targetEnd="a228"><p>Im
-                           Augsburger Exemplar gibt es über dem n kein Zeichen.</p></note>s rhu
-                     nicht laſſet zu/ daß ich erſchra&#x364;k</l>
-                  <lb/>
-                  <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
-                  <lb/>
-                  <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
-                  <lb/>
-                  <l>auch vorabe das blaue Sternenzelt?</l>
-                  <lb/>
-                  <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
-               </lg>
+               <pb facs="4077113" n="338"/>
+               <fw place="top" type="pageNum">338</fw>
+               <fw place="top" type="header">Neu-außgeſetzte</fw>
                <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Tenor.</head>
+               <div n="2" xml:id="n82">
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c"><anchor xml:id="a230"/>Cantus.<note
+                              type="annotation" targetEnd="a230"><p>Da es ein Cantus II gibt, soll
+                                 hier die römische Zahl I stehen, ist aber nicht der
+                              Fall.</p></note></head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
+                           <lb/>
+                           <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
+                           <lb/>
+                           <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
+                           <lb/>
+                           <l>von Sa&#x364;ngern folgete: Lobopffer Gott zubringen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Cantus II.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
+                           <lb/>
+                           <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
+                           <lb/>
+                           <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
+                           <lb/>
+                           <l>von S<supplied>a&#x364;</supplied>ngern folgete: Lobopffer Gott
+                              zubringen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077114" n="339"/>
+                     <fw place="top" type="pageNum">339</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;kke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
+                           <lb/>
+                           <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
+                           <lb/>
+                           <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
+                           <lb/>
+                           <l>von Sa&#x364;ngern folgete: Lobopfer Gott zu bringen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
+                           <lb/>
+                           <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
+                           <lb/>
+                           <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
+                           <lb/>
+                           <l>von Sa&#x364;ngern folgete: Lobopfer Gott zu bringen.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+               <pb facs="4077115" n="340"/>
+               <fw place="top" type="pageNum">340</fw>
+               <fw place="top" type="header">Neu-außgeſetzte</fw>
                <lb/>
-               <lg type="poem">
-                  <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
-                     Lebensſta&#x364;rke/</l>
-                  <lb/>
-                  <l>mich machet unverzagt/ in allem dem das ich mir</l>
-                  <lb/>
-                  <l>widrig merke/ und das mich plagt und nagt:</l>
-                  <lb/>
-                  <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
-                  <lb/>
-                  <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
-                  <lb/>
-                  <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
-                  <lb/>
-                  <l>auch vorabe das blaue Sternenzelt?</l>
-                  <lb/>
-                  <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
-               </lg>
+               <div n="2" xml:id="n83">
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus. I.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
+                           <lb/>
+                           <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
+                           <lb/>
+                           <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn/</l>
+                           <lb/>
+                           <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
+                           <lb/>
+                           <l>und loben ſeinen Gott.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Cantus<choice>
+                              <sic>,</sic>
+                              <corr>.</corr>
+                           </choice> II.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
+                           <lb/>
+                           <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
+                           <lb/>
+                           <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
+                           <lb/>
+                           <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
+                           <lb/>
+                           <l>und loben ſeinen Gott.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077116" n="341"/>
+                     <fw place="top" type="pageNum">341</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtükke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
+                           <lb/>
+                           <l>und Seiten/ ergetzen ſich/ und Gottes Lob bis in</l>
+                           <lb/>
+                           <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
+                           <lb/>
+                           <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich</l>
+                           <lb/>
+                           <l>und loben ſeinen Gott.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Baſis.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
+                           <lb/>
+                           <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
+                           <lb/>
+                           <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
+                           <lb/>
+                           <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
+                           <lb/>
+                           <l>und loben ſeinen Gott.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+               <pb facs="4077117" n="342"/>
+               <fw place="top" type="pageNum">342</fw>
+               <fw place="top" type="header">Neu-außgeſezte</fw>
                <lb/>
-            </div>
-            <pb facs="4077110" n="335"/>
-            <fw place="top" type="pageNum">335</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtüke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
+               <div n="2" xml:id="D.19">
+                  <div type="music">
+                     <div>
+                        <head rendition="#aq #b #c">Cantus. I.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
+                           <lb/>
+                           <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
+                           <lb/>
+                           <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c">Cantus II.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
+                           <lb/>
+                           <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
+                           <lb/>
+                           <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <pb facs="4077118" n="343"/>
+                     <fw place="top" type="pageNum">343</fw>
+                     <fw place="top" type="header">Geiſtliche Muſikſtükke.</fw>
+                     <lb/>
+                     <div>
+                        <head rendition="#aq #b #c">Altus.</head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
+                           <lb/>
+                           <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
+                           <lb/>
+                           <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                     <div>
+                        <head rendition="#aq #b #c"><anchor xml:id="a231"/>Altus.<note
+                              type="annotation" targetEnd="a231"><p>Es fehlt in diesem Gesang die
+                                 Basis. Es ist zu klären, ob dies wirklich so gemeint war oder sich
+                                 um einen Druckfehler handelt.</p></note></head>
+                        <lb/>
+                        <lg>
+                           <figure type="notatedMusic"/>
+                           <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
+                           <lb/>
+                           <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
+                           <lb/>
+                           <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
+                        </lg>
+                        <lb/>
+                     </div>
+                  </div>
+               </div>
+               <pb facs="4077119" n="344"/>
+               <fw place="top" type="pageNum">344</fw>
+               <fw place="top" type="header">Neu-außgeſetzte</fw>
                <lb/>
-               <lg type="poem">
-                  <l>Gewiſſen.</l>
-                  <lb/>
-                  <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
-                     Lebensſta&#x364;rke/</l>
-                  <lb/>
-                  <l>mich machet unverzagt/ in allem dem das ich mir</l>
-                  <lb/>
-                  <l>widrig merke/ und das mich plagt und nagt:</l>
-                  <lb/>
-                  <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
-                  <lb/>
-                  <l>Herꝛ/ wan ich dich/ ja/ wann ich nur dich habe/</l>
-                  <lb/>
-                  <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
-                  <lb/>
-                  <l>auch vorabe das blaue Sternenzelt?</l>
-                  <lb/>
-                  <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
-               </lg>
+               <l><label>[85.]</label><lb/>
+                  <hi rendition="#aq">Cantus.</hi></l>
                <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Baſis.</head>
+               <l>O Gott du mein gerechtigkeit/ gerechtigkeit und leben/</l>
                <lb/>
-               <lg type="poem">
-                  <l><hi rendition="#in">D</hi>Er Herꝛ mein Liecht/ mein Heil und
-                     Lebensſta&#x364;rke/</l>
-                  <lb/>
-                  <l>mich machet unverzagt/ in allem dem das ich mir</l>
-                  <lb/>
-                  <l>widrig merke/ und das mich plagt und nagt:</l>
-                  <lb/>
-                  <l>Gewiſſens rhu/ nicht laſſet zu/ daß ich erſchra&#x364;k</l>
-                  <lb/>
-                  <l>Herꝛ/ wan ich dich/ ja/ wan ich nur dich habe/</l>
-                  <lb/>
-                  <l>was acht ich diſe Welt? was meinen Leib? was acht ich</l>
-                  <lb/>
-                  <l>auch vorabe das blaue Sternenzelt?</l>
-                  <lb/>
-                  <l>Nichts ohne dich/ erfreuet mich: die Welt: mein Leib:</l>
-               </lg>
+               <l>der du mir oft/ der du mir oft in a&#x364;ngſten luft</l>
                <lb/>
-            </div>
-            <pb facs="4077111" n="336"/>
-            <fw place="top" type="pageNum">336</fw>
-            <fw place="top" type="header">Neu-außgeſezte</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Cantus.</head>
+               <l>gegeben/ Erho&#x364;r auch ietz/ erho&#x364;r auch ietz/ erho&#x364;r auch
+                  ietz</l>
                <lb/>
-               <lg type="poem">
-                  <l>ab denen die mich neiden: die auſſerſt noht/</l>
-                  <lb/>
-                  <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen ſcheiden: mich nimmer mo&#x364;gen/ nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
-                  <lb/>
-                  <l>der Himmel ſelbſt vergeben. Hab ich nur dich/</l>
-                  <lb/>
-                  <l>hab alles ich: Welt/ Himmel/ Leib/ durch dich ver-</l>
-                  <lb break="no"/>
-                  <l>neu&#x364;ert ſtehen: durch dich verneu&#x364;ert/ dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert/ dich verneuert ſtehen.</l>
-               </lg>
+               <l>mein ru&#x364;ffen/ mein ru&#x364;ffen/ mein ru&#x364;ffen/ mein
+                  ru&#x364;ffen/</l>
                <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Tenor.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>ab denen die mich neiden: die auſſerſt noth/</l>
-                  <lb/>
-                  <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen ſcheiden: mich nimmer mo&#x364;gen/ nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen<anchor xml:id="a229"/><note type="annotation" targetEnd="a229"
-                           ><p>Tintenspur: Das Zeichen ist unerkennbar. Sieht im Augsburger Exemplar
-                           gleich aus.</p></note> nimmer mo&#x364;gen ſcheiden.</l>
-                  <lb/>
-                  <l>der Himmel ſelbſt vergehen. Hab ich nur dich/</l>
-                  <lb/>
-                  <l>hab alles ich: Welt: Himmel: Leib durch dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert/ dich verneuert ſtehen.</l>
-               </lg>
-               <lb/>
-            </div>
-            <pb facs="4077112" n="337"/>
-            <fw place="top" type="pageNum">337</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;kke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>ab denen die mich neiden: die auſſerſt noht/</l>
-                  <lb/>
-                  <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen ſcheiden/ mich nimmer mo&#x364;gen/ nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
-                  <lb/>
-                  <l>der Himmel ſelbſt vergehen. Hab ich nur dich/</l>
-                  <lb/>
-                  <l>hab alles ich: Welt/ Himmel/ Leib durch dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
-                  <lb break="no"/>
-                  <l>neu&#x364;ert/ dich verneu&#x364;ert ſtehen.</l>
-               </lg>
-               <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Baſis.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>ab denen die mich neiden: die auſſerſt noht/</l>
-                  <lb/>
-                  <l>der bleiche tod/ von meinem Gott/ mich nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen ſcheiden/ mich nimmer mo&#x364;gen/ nimmer</l>
-                  <lb/>
-                  <l>mo&#x364;gen/ nimmer mo&#x364;gen ſcheiden.</l>
-                  <lb/>
-                  <l>der Himmel ſelbſt vergehen Hab ich nur dich</l>
-                  <lb/>
-                  <l>hab alles ich: Welt/ Himmel/ Leib durch dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert ſtehen: durch dich verneuert/ dich ver-</l>
-                  <lb break="no"/>
-                  <l>neuert/ dich verneuert ſtehen.</l>
-                  <lb/>
-                  <fw place="bottom" type="sig">Z</fw>
-                  <lb/>
-                  <pb facs="4077113" n="338"/>
-
-                  <fw place="top" type="pageNum">338</fw>
-                  <fw place="top" type="header">Neu-außgeſetzte</fw>
-                  <lb/>
-                  <l><label>[82.]</label><lb/>
-                     <hi rendition="#aq"><anchor xml:id="a230"/>Cantus.<note type="annotation"
-                           targetEnd="a230"><p>Da es ein Cantus II gibt, soll hier die römische Zahl
-                              I stehen, ist aber nicht der Fall.</p></note></hi></l>
-                  <lb/>
-                  <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
-                  <lb/>
-                  <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
-                  <lb/>
-                  <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
-                  <lb/>
-                  <l>von Sa&#x364;ngern folgete: Lobopffer Gott zubringen.</l>
-               </lg>
-               <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Cantus II.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
-                  <lb/>
-                  <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
-                  <lb/>
-                  <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
-                  <lb/>
-                  <l>von S<supplied>a&#x364;</supplied>ngern folgete: Lobopffer Gott zubringen.</l>
-               </lg>
-               <lb/>
-            </div>
-            <pb facs="4077114" n="339"/>
-            <fw place="top" type="pageNum">339</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtu&#x364;kke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
-                  <lb/>
-                  <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
-                  <lb/>
-                  <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
-                  <lb/>
-                  <l>von Sa&#x364;ngern folgete: Lobopfer Gott zu bringen.</l>
-               </lg>
-               <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Baſis.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>O daß ich doch einmahl die Davids Harff beka&#x364;m/</l>
-                  <lb/>
-                  <l>und ich gleich ihme ko&#x364;nt derſelben Seiten zwingen!</l>
-                  <lb/>
-                  <l>O daß dem ſcho&#x364;nen Klang/ auch eine weis bequa&#x364;m/</l>
-                  <lb/>
-                  <l>von Sa&#x364;ngern folgete: Lobopfer Gott zu bringen.</l>
-                  <lb/>
-                  <pb facs="4077115" n="340"/>
-
-                  <fw place="top" type="pageNum">340</fw>
-                  <fw place="top" type="header">Neu-außgeſetzte</fw>
-                  <lb/>
-                  <l><label>[83.]</label><lb/>
-                     <hi rendition="#aq">Cantus. I.</hi></l>
-                  <lb/>
-                  <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
-                  <lb/>
-                  <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
-                  <lb/>
-                  <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn/</l>
-                  <lb/>
-                  <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
-                  <lb/>
-                  <l>und loben ſeinen Gott.</l>
-                  <lb/>
-                  <l rendition="#aq">Cantus<choice>
-                        <sic>,</sic>
-                        <corr>.</corr>
-                     </choice> II.</l>
-                  <lb/>
-                  <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
-                  <lb/>
-                  <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
-                  <lb/>
-                  <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
-                  <lb/>
-                  <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
-                  <lb/>
-                  <l>und loben ſeinen Gott.</l>
-               </lg>
-               <lb/>
-            </div>
-            <pb facs="4077116" n="341"/>
-            <fw place="top" type="pageNum">341</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtükke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
-                  <lb/>
-                  <l>und Seiten/ ergetzen ſich/ und Gottes Lob bis in</l>
-                  <lb/>
-                  <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
-                  <lb/>
-                  <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich</l>
-                  <lb/>
-                  <l>und loben ſeinen Gott.</l>
-               </lg>
-               <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Baſis.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Ein ku&#x364;nſches Hertz mag mit Geſang/ mit Jnſtrument</l>
-                  <lb/>
-                  <l>und Seiten/ ergetzen ſich/ und Gottes Lob biß in</l>
-                  <lb/>
-                  <l>den tod außbreiten: und ſolt ihm gleich zuwider ſeyn</l>
-                  <lb/>
-                  <l>die widerſinnig Rott/ ſo mag es doch ergetzen ſich/</l>
-                  <lb/>
-                  <l>und loben ſeinen Gott.</l>
-                  <lb/>
-                  <pb facs="4077117" n="342"/>
-
-                  <fw place="top" type="pageNum">342</fw>
-                  <fw place="top" type="header">Neu-außgeſezte</fw>
-                  <lb/>
-                  <l><label>[D.19.]</label><lb/>
-                     <hi rendition="#aq">Cantus. I.</hi></l>
-                  <lb/>
-                  <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
-                  <lb/>
-                  <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
-                  <lb/>
-                  <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
-               </lg>
-               <lb/>
-            </div>
-            <div>
-               <head rendition="#aq">Cantus II.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
-                  <lb/>
-                  <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
-                  <lb/>
-                  <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
-               </lg>
-               <lb/>
-            </div>
-            <pb facs="4077118" n="343"/>
-            <fw place="top" type="pageNum">343</fw>
-            <fw place="top" type="header">Geiſtliche Muſikſtükke.</fw>
-            <lb/>
-            <div>
-               <head rendition="#aq">Altus.</head>
-               <lb/>
-               <lg type="poem">
-                  <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
-                  <lb/>
-                  <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
-                  <lb/>
-                  <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
-                  <lb/>
-                  <l rendition="#aq"><anchor xml:id="a231"/>Altus.<note type="annotation"
-                        targetEnd="a231"><p>Es fehlt in diesem Gesang die Basis. Es ist zu klären,
-                           ob dies wirklich so gemeint war oder sich um einen Druckfehler
-                           handelt.</p></note></l>
-                  <lb/>
-                  <l>Danket dem Herꝛen/ benedeyt den Ko&#x364;nge/</l>
-                  <lb/>
-                  <l>benedeyt den Ko&#x364;nge der Ehren: Opfert anietz</l>
-                  <lb/>
-                  <l>ohne ſchertz/ euer ihm eigenes Hertz.</l>
-                  <lb/>
-                  <pb facs="4077119" n="344"/>
-
-                  <fw place="top" type="pageNum">344</fw>
-                  <fw place="top" type="header">Neu-außgeſetzte</fw>
-                  <lb/>
-                  <l><label>[85.]</label><lb/>
-                     <hi rendition="#aq">Cantus.</hi></l>
-                  <lb/>
-                  <l>O Gott du mein gerechtigkeit/ gerechtigkeit und leben/</l>
-                  <lb/>
-                  <l>der du mir oft/ der du mir oft in a&#x364;ngſten luft</l>
-                  <lb/>
-                  <l>gegeben/ Erho&#x364;r auch ietz/ erho&#x364;r auch ietz/ erho&#x364;r auch
-                     ietz</l>
-                  <lb/>
-                  <l>mein ru&#x364;ffen/ mein ru&#x364;ffen/ mein ru&#x364;ffen/ mein
-                     ru&#x364;ffen/</l>
-                  <lb/>
-                  <l>und Geſchrey; gib was ich bitt/ und mir gena&#x364;dig ſey/</l>
-               </lg>
+               <l>und Geſchrey; gib was ich bitt/ und mir gena&#x364;dig ſey/</l>
                <lb/>
             </div>
             <div>
