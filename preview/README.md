@@ -175,8 +175,9 @@ XPath: the nodes they select are rendered by their own models, anything else is
 text, so
 `<param name="content" value="corr"/>` renders the correction. Params named
 `--…` become CSS custom properties of the rendered element, `data-…` its
-attributes. The element's own attributes are there too, as `data-*`
-(`targetEnd` → `data-target-end`), except `@rendition`; attribute values are
+attributes, and `join` says a line joins the next: the spaces around it go, and a
+last character of its text that the param names. Of an element's own attributes only
+`xml:id` and `xml:lang` reach the page without a param; attribute values are
 read with their whitespace collapsed. `<outputRendition>` and `<tagsDecl>` compile to
 `dist/assets/odd.css`; a `<modelGrp>`'s rendition styles all its models, and a
 styled model among several must name its class with `@cssClass`. A `<modelGrp>` has

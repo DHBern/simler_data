@@ -30,8 +30,8 @@ import {
   type Text,
 } from './xast.ts'
 
-/** Hyphen, soft hyphen, not sign, hyphen, non-breaking hyphen, double oblique. */
-const HYPHEN = /[-­¬‐‑⸗][ \t]*$/
+/** A last character of those the model's `join` names, and the space after it. */
+const hyphen = (join: string) => (join ? new RegExp(`[${join.replace(/[\\\]^-]/g, '\\$&')}][ \\t]*$`) : /$^/)
 
 interface LineEdge {
   /** The text node the line ends (or starts) in. */
@@ -78,12 +78,13 @@ export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins' | 'silent'>], Ro
       const inner = isElement(node) ? [...up, node] : up
 
       for (const [i, child] of list.entries()) {
-        if (!isElement(child) || !joins(child, inner)) continue
+        const join = isElement(child) ? joins(child, inner) : undefined
+        if (join === undefined) continue
         const end = lineEdge(list, i, -1, inner)
         const start = lineEdge(list, i, 1, inner)
-        if (end && HYPHEN.test(end.text.value ?? '')) {
+        if (end && hyphen(join).test(end.text.value ?? '')) {
           end.text.data = { ...end.text.data, source: end.text.value }
-          end.text.value = end.text.value.replace(HYPHEN, '')
+          end.text.value = end.text.value.replace(hyphen(join), '')
         }
         if (end) end.text.value = end.text.value.trimEnd()
         if (start) start.text.value = start.text.value.trimStart()

@@ -171,7 +171,7 @@ const HIT_BANNER = `<div class="hits no-print" data-hits hidden>
  * The entity card — the same panel idiom as the note tooltip, one gesture.
  *
  * It holds no data: `assets/preview.js` fills it from the JSON island below,
- * keyed by the `data-key` the `rs` handler emits. No link into a register — the
+ * keyed by the `data-key` the ODD's model gives. No link into a register — the
  * preview has none — so the trigger stays a plain `<span>`.
  */
 const ENTITY_CARD = `<aside id="entity-card" class="popover-panel no-print" popover="auto" tabindex="-1"

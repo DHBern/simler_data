@@ -180,21 +180,11 @@ function paramProps(params: Record<string, Value>): Properties {
   return { ...Object.fromEntries(named('data-').map(([k, v]) => [k, str(v)])), ...(style ? { style } : {}) }
 }
 
-/**
- * The element's attributes: `xml:id` and `xml:lang` as HTML's, the others as `data-*`
- * (`targetEnd` → `data-target-end`); `@rendition` is the model's to use.
- */
-function attrMap(node: Element): Properties {
-  const props: Properties = {}
-  for (const [name, value] of Object.entries(node.attributes ?? {})) {
-    if (value == null || name === 'rendition') continue
-    if (name === 'xml:id') props.id = value
-    else if (name === 'xml:lang') props.lang = value
-    else if (name.startsWith('data-')) props[name] = value
-    else if (!name.includes(':') && name !== 'xmlns') props[`data-${name.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)}`] = value
-  }
-  return props
-}
+/** What XML itself says of an element, as HTML says it. Any other attribute reaches the page only by a param. */
+const attrMap = (node: Element): Properties => ({
+  ...(attr(node, 'xml:id') && { id: attr(node, 'xml:id') }),
+  ...(attr(node, 'xml:lang') && { lang: attr(node, 'xml:lang') }),
+})
 
 /** `@rendition="#a #b"` → `['a', 'b']`. */
 const renditions = (node: Element) => (attr(node, 'rendition') ?? '').split(/\s+/).filter(Boolean).map((t) => t.replace(/^#/, ''))

@@ -35,8 +35,8 @@ export interface Odd {
   models: Record<string, Model[]>
   /** Whether an element, where it stands, renders as a block or inline: by the base model it takes. */
   flow: (node: Element, up: Element[]) => 'block' | 'inline' | undefined
-  /** Whether an element is a joined line end: its base model is a `line` break with a `label`, the print's hyphen. */
-  joins: (node: Element, up: Element[]) => boolean
+  /** At a joined line end, the last characters of its text that go: the param `join` of the element's base model; else undefined. */
+  joins: (node: Element, up: Element[]) => string | undefined
   /** Whether the `plain` output, the search text, leaves the element out: page furniture, the apparatus. */
   silent: (node: Element, up: Element[]) => boolean
   /** Suggested and closed values, by element and attribute. */
@@ -65,6 +65,7 @@ export interface View {
 const readsParam = (behaviour: string, name: string) =>
   behaviour === 'metadata' ||
   name === 'content' ||
+  name === 'join' ||
   /^(--|data-)/.test(name) ||
   (BEHAVIOURS[behaviour]?.params ?? []).includes(name)
 
@@ -121,7 +122,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     },
     joins: (node, up) => {
       const m = base(node, up)
-      return m?.behaviour === 'break' && 'label' in m.params && str(m.params.type?.({ node, up }) ?? '') === 'line'
+      return m && 'join' in m.params ? str(m.params.join({ node, up })) : undefined
     },
     silent: (node, up) => select(odd.models[localName(node.name)] ?? [], { node, up }, PLAIN)?.behaviour === 'omit',
     values: {},

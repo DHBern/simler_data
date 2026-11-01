@@ -229,7 +229,7 @@
       element.hidden = !value
     }
 
-    createPopover(cardPanel, ['.tei-rs[data-key]'], function (trigger) {
+    createPopover(cardPanel, ['[data-key]'], function (trigger) {
       // A key may list several entries; the card shows them side by side.
       var found = trigger.dataset.key.split(/\s+/).map(function (key) { return entities[key] }).filter(Boolean)
       if (!found.length) return false // no register entry: nothing to show

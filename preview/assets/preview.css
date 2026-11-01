@@ -44,15 +44,15 @@ main {
   max-width: calc(var(--measure) + 2 * var(--pad));
 }
 .tei-text { margin-inline: auto; }
-/* What the ODD puts in the margin (`data-margin`) stands there, beside its line, where the
-   page has room (`body` is what the facsimile leaves); in the line, its own lines run on. */
+/* The ODD sets what it puts in the margin (`data-margin`); the page leaves the room for it,
+   and where the facsimile leaves it none (`body` is what remains), takes it back into the line. */
 body { container: page / inline-size; }
-[data-margin] br { display: none; }
-@container page (min-width: 50rem) {
+@container page (min-width: 58rem) {
   main:has([data-margin]) { --margin: 9rem; padding-inline: calc(var(--pad) + var(--margin)); max-width: calc(var(--measure) + 2 * (var(--pad) + var(--margin))); }
-  [data-margin] { float: right; clear: right; width: calc(var(--margin) - 1.25rem); margin: 0.15em calc(-1 * var(--margin)) 0 1.25rem; text-align: left; text-indent: 0; }
-  [data-margin='left'] { float: left; clear: left; margin-inline: calc(-1 * var(--margin)) 1.25rem; text-align: right; }
-  [data-margin] br { display: inline; }
+}
+@container page (max-width: 57.99rem) {
+  .tei-text [data-margin] { float: none; clear: none; width: auto; margin: 0 0.3em; text-align: inherit; }
+  .tei-text [data-margin] br { display: none; }
 }
 /* The document's title, for the outline; the bar shows it too. */
 .doc-title {
@@ -308,8 +308,8 @@ body { container: page / inline-size; }
 .note-marker:hover { text-decoration: underline; }
 /* The marker, or the reference, whose panel is open. */
 .note-marker:is([aria-expanded='true'], .is-linked) { background-color: rgb(var(--c-accent) / 0.2); border-radius: 3px; }
-.tei-rs[aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
-.tei-rs[data-key] { cursor: pointer; }
+[data-key][aria-expanded='true'] { background-color: rgb(var(--c-accent) / 0.14); border-radius: 3px; }
+[data-key] { cursor: pointer; }
 /* A page break that opens its page in the facsimile, where the window has room for it. */
 @media (min-width: 64rem) {
   /* The label carries the accent, so the break looks clickable before it is hovered;

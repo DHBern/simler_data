@@ -41,7 +41,7 @@
     if (i === index || !pages[i]) return
     index = i
     // The page name the print gives: `[A vij r]`, `194`.
-    var label = marks[i] ? marks[i].getAttribute('data-n') || '' : ''
+    var label = marks[i] ? marks[i].textContent.trim() : ''
     caption.textContent = (label ? label + ' · ' : '') + 'Bild ' + (i + 1) + ' von ' + pages.length
     if (link) link.href = data.library + '/' + encodeURIComponent(pages[i])
     // Scrolling crosses many pages; only the one the reader stops on is fetched.
