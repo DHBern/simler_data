@@ -14,7 +14,7 @@ export interface PreviewDoc {
   file: string
   /** Output file name, e.g. `A_1648.html`. */
   out: string
-  /** `titleStmt/title`, or the file name where the header has none. */
+  /** The title the ODD's `page` model gives, or the file name. */
   title: string
   html: string
   /** The same text as plain characters — what `build.ts` feeds to Pagefind. */

@@ -300,8 +300,8 @@ body { container: page / inline-size; }
 .endnote-body { min-width: 0; }
 .endnote { scroll-margin-top: 5rem; }
 .endnote:target { background-color: rgb(var(--c-accent) / 0.09); border-radius: var(--r); }
-.endnote .tei-p:first-child { margin-top: 0; }
-.endnote .tei-p:last-child { margin-bottom: 0; }
+.endnote-body > :first-child { margin-top: 0; }
+.endnote-body > :last-child { margin-bottom: 0; }
 
 /* ── In the text: what reacts to the reader ───────────────────────────────── */
 

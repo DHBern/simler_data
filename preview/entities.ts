@@ -22,13 +22,6 @@ export interface Entity {
   links: EntityLink[]
 }
 
-const REGISTERS = [
-  { file: 'persons.csv', prefix: 'person', kind: 'Person' },
-  { file: 'places.csv', prefix: 'place', kind: 'Ort' },
-  { file: 'works.csv', prefix: 'work', kind: 'Werk' },
-  { file: 'institutions.csv', prefix: 'institution', kind: 'Institution' },
-] as const
-
 /** RFC 4180: quoted fields, doubled quotes, newlines inside quotes. */
 export function parseCsv(text: string): string[][] {
   const rows: string[][] = []
@@ -70,47 +63,54 @@ function lifespan(birth: string, death: string): string | null {
   return b || d ? `${b || '?'}–${d || '?'}` : null
 }
 
-function entityOf(prefix: string, kind: string, record: Record<string, string>): Entity | null {
-  const links: EntityLink[] = []
-  const gnd = clean(pick(record, 'GND'))
-  if (gnd) links.push({ authority: 'GND', id: gnd, href: `https://d-nb.info/gnd/${gnd}` })
+type Row = Record<string, string>
+const col = (record: Row, ...names: string[]) => clean(pick(record, ...names))
+const authority = (name: string, id: string, href: string): EntityLink[] => (id ? [{ authority: name, id, href }] : [])
 
-  let label = ''
-  let detail: string | null = null
-  let note: string | null = null
+/**
+ * The registers: each file, and how its columns make a card. This is the sheet's shape,
+ * project data the TEI does not hold, so it is not the ODD's to say.
+ */
+const REGISTERS: { file: string, prefix: string, kind: string, card: (r: Row) => Partial<Entity> }[] = [
+  {
+    file: 'persons.csv', prefix: 'person', kind: 'Person',
+    card: (r) => {
+      // The HLS article turns up in the sources column and is worth a real link.
+      const hls = col(r, 'Quellen').split(/;\s*/).find((source) => source.includes('hls-dhs-dss.ch'))
+      return {
+        label: [col(r, 'Familienname'), col(r, 'Vorname')].filter(Boolean).join(', ') || col(r, 'Label'),
+        detail: lifespan(pick(r, 'Geburtsdatum'), pick(r, 'Sterbedatum')),
+        note: col(r, 'Kurzbeschreibung') || null,
+        links: hls ? [{ authority: 'HLS', id: '', href: hls.trim() }] : [],
+      }
+    },
+  },
+  {
+    file: 'places.csv', prefix: 'place', kind: 'Ort',
+    card: (r) => ({
+      label: col(r, 'Name') || col(r, 'Label'),
+      detail: col(r, 'Namensvariante') ? `auch: ${col(r, 'Namensvariante')}` : null,
+      links: authority('GeoNames', col(r, 'GeoNames'), `https://www.geonames.org/${col(r, 'GeoNames')}`),
+    }),
+  },
+  {
+    file: 'works.csv', prefix: 'work', kind: 'Werk',
+    card: (r) => ({
+      label: col(r, 'Titel') || col(r, 'Label'),
+      detail: [col(r, 'Person'), [col(r, 'Ort'), col(r, 'Jahr')].filter(Boolean).join(' ')].filter(Boolean).join(' · ') || null,
+      note: col(r, 'Verlag') ? `Verlag: ${col(r, 'Verlag')}` : null,
+    }),
+  },
+  {
+    file: 'institutions.csv', prefix: 'institution', kind: 'Institution',
+    card: (r) => ({ label: col(r, 'Name') || col(r, 'Label'), detail: col(r, 'Bemerkungen') || null }),
+  },
+]
 
-  if (prefix === 'person') {
-    const name = [clean(pick(record, 'Familienname')), clean(pick(record, 'Vorname'))]
-      .filter(Boolean)
-      .join(', ')
-    label = name || clean(pick(record, 'Label'))
-    detail = lifespan(pick(record, 'Geburtsdatum'), pick(record, 'Sterbedatum'))
-    note = clean(pick(record, 'Kurzbeschreibung')) || null
-    // The HLS article turns up in the sources column and is worth a real link.
-    const hls = clean(pick(record, 'Quellen'))
-      .split(/;\s*/)
-      .find((source) => source.includes('hls-dhs-dss.ch'))
-    if (hls) links.push({ authority: 'HLS', id: '', href: hls.trim() })
-  } else if (prefix === 'place') {
-    label = clean(pick(record, 'Name')) || clean(pick(record, 'Label'))
-    const variant = clean(pick(record, 'Namensvariante'))
-    detail = variant ? `auch: ${variant}` : null
-    const geonames = clean(pick(record, 'GeoNames'))
-    if (geonames) {
-      links.push({ authority: 'GeoNames', id: geonames, href: `https://www.geonames.org/${geonames}` })
-    }
-  } else if (prefix === 'work') {
-    label = clean(pick(record, 'Titel')) || clean(pick(record, 'Label'))
-    const where = [clean(pick(record, 'Ort')), clean(pick(record, 'Jahr'))].filter(Boolean).join(' ')
-    detail = [clean(pick(record, 'Person')), where].filter(Boolean).join(' · ') || null
-    const publisher = clean(pick(record, 'Verlag'))
-    note = publisher ? `Verlag: ${publisher}` : null
-  } else {
-    label = clean(pick(record, 'Name')) || clean(pick(record, 'Label'))
-    detail = clean(pick(record, 'Bemerkungen')) || null
-  }
-
-  return label ? { kind, label, detail, note, links } : null
+function entityOf(register: (typeof REGISTERS)[number], record: Row): Entity | null {
+  const { label = '', detail = null, note = null, links = [] } = register.card(record)
+  const gnd = authority('GND', col(record, 'GND'), `https://d-nb.info/gnd/${col(record, 'GND')}`)
+  return label ? { kind: register.kind, label, detail, note, links: [...gnd, ...links] } : null
 }
 
 /**
@@ -123,7 +123,8 @@ function entityOf(prefix: string, kind: string, record: Record<string, string>):
 export async function loadEntities(dir: string): Promise<Record<string, Entity>> {
   const entities: Record<string, Entity> = {}
 
-  for (const { file, prefix, kind } of REGISTERS) {
+  for (const register of REGISTERS) {
+    const { file, kind } = register
     let text: string
     try {
       text = await readFile(join(dir, file), 'utf8')
@@ -138,7 +139,7 @@ export async function loadEntities(dir: string): Promise<Record<string, Entity>>
       const record: Record<string, string> = {}
       keys.forEach((key, i) => (record[key] = (cells[i] ?? '').trim()))
       const id = pick(record, `${kind}-ID`, 'Werk-ID', 'Ort-ID', 'ID')
-      const entity = id ? entityOf(prefix, kind, record) : null
+      const entity = id ? entityOf(register, record) : null
       if (id && entity) entities[id] = entity
     }
   }
