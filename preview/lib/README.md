@@ -1,0 +1,185 @@
+# tei-odd-interpreter
+
+Reads a TEI ODD and renders TEI documents by its Processing Model, in Node or a
+bundler, without generating code. It knows no TEI element by name: the ODD says how
+everything renders, and what the ODD gets wrong is reported instead of stopping the run.
+
+```sh
+npm add tei-odd-interpreter
+```
+
+```ts
+import { readFileSync } from 'node:fs'
+import { createProcessor, parse, readOdd, renderTei } from 'tei-odd-interpreter'
+
+const odd = readOdd(readFileSync('my.odd', 'utf8'))
+const processor = createProcessor(odd) // once per build
+
+const result = renderTei(parse(readFileSync('doc.xml', 'utf8')), processor)
+result.html // the page; odd.css styles it
+```
+
+The input is a **flattened ODD**: `schemaSpec/@source` is not followed, and only the first
+`schemaSpec` is read. Both are reported.
+
+## API
+
+| | |
+| --- | --- |
+| `readOdd(xml, { tokensCss?, behaviours? })` | The ODD as an `Odd`: its models, `css`, `views`, `availability`, `findings` |
+| `createProcessor(odd)` | The processor for one ODD |
+| `parse(xml)` | TEI as xast; throws on XML that is not well-formed |
+| `renderTei(tree, processor, decisions?)` | One document as a `RenderResult` |
+| `coverage(odd)` | After rendering: the models that never fired, the elements without one |
+| `idFindings(tree)` | Ids used twice, and ids that are no NCName |
+| `toHtml(hast)` | hast as HTML, for a tree you changed |
+
+`RenderResult` holds:
+
+| | |
+| --- | --- |
+| `html`, `hast` | The page, as a string and as a tree to map to your own components |
+| `text` | The `plain` output, for any search index |
+| `notes` | In document order: `place`, `number` and `id` where numbered, `html`, `hast` |
+| `page` | The params of the root element's `page` model, each as strings |
+| `warnings` | Findings about this document |
+| `unmapped` | Elements the ODD has no model for; they render as `span.tei-<name>.tei-unmapped` |
+| `decisions` | Per element the model that won, with its classes and params, when asked for |
+
+`tokensCss` is the stylesheet that defines the custom properties your ODD's CSS reads. It
+is only used to check them, and is not added to `odd.css`.
+
+## Findings
+
+`odd.findings`, `result.warnings`, `coverage(odd)` and `idFindings(tree)` all return
+`{ code, args, message }`. `message` is in English; to report in another language, format
+`code` and `args`. An expression that cannot be evaluated counts as empty, and a behaviour
+that is not known, or missing, renders as `inline`, so one flaw costs one rule, not the
+document. Only XML that is not well-formed throws.
+
+## Behaviours
+
+`alternate`, `anchor`, `block`, `body`, `break`, `cell`, `cit`, `document`, `figDesc`,
+`figure`, `glyph`, `graphic`, `heading`, `index`, `inline`, `link`, `list`, `listItem`,
+`metadata`, `note`, `omit`, `paragraph`, `row`, `section`, `table`, `text`, `title`.
+
+`index` renders its content; generating the list TEI describes is left to you. `note`
+collects its body into `result.notes` and leaves a numbered marker in the text when its
+`place` is `end`, the default.
+
+A project adds behaviours, or replaces one. One that only wraps needs a `tag`, any other a
+`render`, which is given the element's params, its `content` and the rest of
+`BehaviourContext`. `flow` decides how whitespace and line breaks around it are treated.
+
+```ts
+import { h, readOdd } from 'tei-odd-interpreter'
+
+const odd = readOdd(xml, { behaviours: {
+  verse: { tag: 'blockquote', flow: 'block' },
+  stamp: { flow: 'block', params: ['by'], render: (c) => h('aside', c.props, c.content('aside')) },
+} })
+```
+
+## Params and the XPath subset
+
+Besides what a behaviour reads, a param named `--…` becomes a CSS custom property of the
+rendered element, and one named `data-…` its attribute. `content` replaces the element's
+content. `join` on a line break says the line joins the next: the spaces around it go, and
+a last character of the text that the param names.
+
+Predicates and params use a subset of XPath:
+
+- **Paths:** `.`, `..`, `@name`, `name`, `*`, `node()`, `text()`, `/`, `//`, absolute paths
+  and `[predicate]`. Namespace prefixes are ignored.
+- **Axes:** `self`, `child`, `parent`, `ancestor`, `ancestor-or-self`, `descendant`,
+  `descendant-or-self`, `preceding-sibling`, `following-sibling`, `preceding`, `following`.
+- **Operators:** `or`, `and`, `=`, `!=`, `<`, `<=`, `>`, `>=`, `eq`, `ne`, `lt`, `le`, `gt`,
+  `ge`, `+`, `-`, `mod`, `if (…) then … else …`, sequences `(a, b)`.
+- **Functions:** `position`, `last`, `exists`, `empty`, `local-name`, `string-length`,
+  `ends-with`, `matches`, `replace`, `not`, `count`, `concat`, `contains`, `contains-token`,
+  `starts-with`, `normalize-space`, `translate`, `string`, `true`, `false`.
+
+## Outputs
+
+Models with `@output` belong to that output, and take precedence over the base models there.
+
+| Output | Meaning |
+| --- | --- |
+| `web` | The page itself, the same as no `@output` |
+| `plain` | Rendered on its own: `result.text` |
+| `page` | Not rendered. The root element's params describe the page: `result.page` |
+| any other | A **view** over the page, listed in `odd.views`: its label is the model's first `<desc>`, its explanation the second |
+
+A view renders in the same HTML and is switched by CSS: set `data-<output>="on"` on an
+ancestor, or check an element with the id `view-<output>`. No script is needed.
+
+## The HTML
+
+You can rely on these, and they follow semantic versioning:
+
+| | |
+| --- | --- |
+| `.tei-<element>` | On every element rendered |
+| `.r-<id>` | A `@rendition`, where the model has `@useSourceRendition="true"` |
+| `id`, `lang` | From `xml:id` and `xml:lang`, the only attributes passed on without a param |
+| `.<ident>-group`, `@cssClass` | A `modelGrp` beyond an element's only entry, and a styled model among several |
+| `.pm-block` | A block set inside phrasing content, rendered as a span |
+| `.pm-alt`, `.<output>-default`, `.<output>-alternate` | The readings of an `alternate`; `pm` stands for the page |
+| `.<output>-omit` | An element a view leaves out |
+| `a.note-marker` | A note's marker, with `id="ref-note-<n>"`, `href="#note-<n>"`, `role="doc-noteref"`, `data-note` and, for a range, `data-range` |
+| `.note-range` | The text of a commented range, with the `data-note` of its note |
+| `data-region` | A param with `start` and `end`: what stands between moves into the start |
+
+## In a site (Astro, SvelteKit)
+
+Render at build time or on the server. Read the ODD and create the processor once, then
+render each document with it.
+
+```ts
+// src/lib/edition.ts
+import { readFileSync } from 'node:fs'
+import { createProcessor, parse, readOdd, renderTei } from 'tei-odd-interpreter'
+
+const read = (path: string) => readFileSync(`edition/${path}`, 'utf8')
+export const odd = readOdd(read('my.odd'))
+const processor = createProcessor(odd)
+export const render = (name: string) => renderTei(parse(read(`${name}.xml`)), processor)
+```
+
+**Astro**: `src/pages/[doc].astro`
+
+```astro
+---
+import { odd, render } from '../lib/edition'
+export const getStaticPaths = () => ['first', 'second'].map((doc) => ({ params: { doc } }))
+const { html, page } = render(Astro.params.doc)
+---
+<Fragment set:html={`<style>${odd.css}</style>`} />
+<h1>{page.title?.[0]}</h1>
+<div set:html={html} />
+```
+
+**SvelteKit**: `src/routes/[doc]/+page.server.ts` and `+page.svelte`
+
+```ts
+import { odd, render } from '../../lib/edition'
+export const prerender = true
+export const entries = () => [{ doc: 'first' }, { doc: 'second' }]
+export const load = ({ params }) => {
+  const { html, page } = render(params.doc)
+  return { html, title: page.title?.[0], css: odd.css }
+}
+```
+
+```svelte
+<script>
+  let { data } = $props()
+</script>
+<svelte:head>{@html `<style>${data.css}</style>`}</svelte:head>
+<h1>{data.title}</h1>
+<div>{@html data.html}</div>
+```
+
+## Licence
+
+BSD-2-Clause.

@@ -9,9 +9,8 @@
  * itself says wrong is on `odd.findings`, what the rendering reached on `odd.reached`,
  * which `coverage` reads back.
  *
- * The package ships TypeScript, so a consumer brings a loader — `node --import tsx`,
- * Vite, esbuild. Its own imports name the file they mean (`./odd/odd.ts`), which is
- * what lets plain Node resolve them; nothing here needs a build step.
+ * Published compiled (`npm pack` builds `dist/`). Its own imports name the file they
+ * mean (`./odd/odd.ts`), so the source also runs as it is, under a TypeScript loader.
  */
 
 // The ODD: the Processing Model, the stylesheet it compiles to, and what is wrong in it.

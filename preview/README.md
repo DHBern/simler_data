@@ -84,91 +84,15 @@ the findings page next to what the documents get wrong.
 | `build.ts` | Walks the corpus and writes `dist/` |
 | `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
 
-## Using the renderer in a site (Astro, SvelteKit)
+## Using the renderer in a site
 
-`lib/` is the package `tei-odd-interpreter`. It ships TypeScript source and needs no build
-step: Vite, which Astro and SvelteKit build on, compiles it as part of the site with no
-configuration (checked with `vite build --ssr`). Plain Node needs a loader
-(`node --import tsx`).
-
-```sh
-npm add tei-odd-interpreter@file:../simler_data/preview/lib
-```
-
-Render at build time and on the server side only: read the ODD and create the
-processor **once**, then render each document with it. The ODD's CSS reads the design
-tokens (`var(--c-person)`, …), so a page needs both stylesheets.
-
-```ts
-// src/lib/edition.ts
-import { readFileSync } from 'node:fs'
-import { createProcessor, parse, readOdd, renderTei } from 'tei-odd-interpreter'
-
-const read = (path: string) => readFileSync(`../simler_data/${path}`, 'utf8')
-const tokens = read('preview/assets/tokens.css')
-export const odd = readOdd(read('schema/tei_simler.odd'), { tokensCss: tokens })
-export const css = tokens + odd.css
-const processor = createProcessor(odd)
-export const render = (name: string) => renderTei(parse(read(`webdav/data/sources/tei/${name}.xml`)), processor)
-```
-
-**Astro** — `src/pages/[doc].astro`:
-
-```astro
----
-import { css, render } from '../lib/edition'
-export const getStaticPaths = () => ['A_1648', 'B_1653'].map((doc) => ({ params: { doc } }))
-const { html, page } = render(Astro.params.doc)
----
-<Fragment set:html={`<style>${css}</style>`} />
-<h1>{page.title?.[0]}</h1>
-<div set:html={html} />
-```
-
-**SvelteKit** — `src/routes/[doc]/+page.server.ts` and `+page.svelte`:
-
-```ts
-import { css, render } from '$lib/edition'
-export const prerender = true
-export const entries = () => [{ doc: 'A_1648' }, { doc: 'B_1653' }]
-export const load = ({ params }) => {
-  const { html, page } = render(params.doc)
-  return { html, title: page.title?.[0], css }
-}
-```
-
-```svelte
-<script>
-  let { data } = $props()
-</script>
-<svelte:head>{@html `<style>${data.css}</style>`}</svelte:head>
-<h1>{data.title}</h1>
-<div>{@html data.html}</div>
-```
-
-What `render` returns besides `html`: `hast`, the same page as a tree, for a site that
-maps elements to its own components; `text`, the search text for any index; `notes`,
-each with its `place`, its `number` and its body as `html` and `hast`, for the apparatus;
-`page`, the `page` model's params (`title`, `manifest`, `pages`, `entities`); and
-`warnings`. Warnings, `odd.findings` and `coverage(odd)` are findings: a `code`, its
-`args`, and an English `message`, so a site can say them in its own language.
-The views need nothing but that CSS and an attribute: `data-normalized="on"` on an
-ancestor, or a checked `#view-normalized` checkbox, switches one on — `odd.views`
-names them and gives their labels.
-
-A project adds behaviours of its own, or replaces one, when it reads the ODD; a behaviour
-that only wraps needs a `tag`, any other a `render`, which is given the element's params,
-its `content` and the rest of `BehaviourContext`:
-
-```ts
-const odd = readOdd(xml, { behaviours: {
-  stamp: { flow: 'block', params: ['by'], render: (c) => h('aside', c.props, c.content('aside')) },
-} })
-```
-
-`page.ts` here is a working reference for the rest;
-the note popovers, entity cards and facsimile viewer are the preview's own
-`assets/*.js`, not part of the package.
+`lib/` is the package `tei-odd-interpreter`; [lib/README.md](lib/README.md) describes its
+API, the HTML it promises and how to use it in Astro or SvelteKit. The preview imports its
+source directly, so no build step is needed here; `npm pack` in `lib/` compiles it. The
+ODD's CSS reads the design tokens (`var(--c-person)`, …), so a page of this edition needs
+`assets/tokens.css` as well as `odd.css`. `page.ts` here is a working reference for the rest;
+the note popovers, entity cards and facsimile viewer are the preview's own `assets/*.js`,
+not part of the package.
 
 ## The ODD renders the text
 

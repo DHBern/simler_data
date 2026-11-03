@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "lib": ["ES2022"],
+    "strict": true,
+    "types": [],
+    "rootDir": ".",
+    "outDir": "dist",
+    "declaration": true,
+    // The sources name the file they mean (`./odd/odd.ts`); the output names the `.js`.
+    "rewriteRelativeImportExtensions": true,
+    "skipLibCheck": true
+  },
+  "include": ["index.ts", "findings.ts", "odd", "search", "tei"]
+}
