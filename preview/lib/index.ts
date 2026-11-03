@@ -32,7 +32,7 @@ export type { Behaviour, BehaviourContext, CollectedNote, Decision, RenderState 
 
 // What is reported, as data.
 export { finding } from './findings.ts'
-export type { Finding, FindingCode } from './findings.ts'
+export type { Finding, FindingCode, Severity } from './findings.ts'
 
 // The document itself: parsing, and what no XML tool would accept in it.
 export { attr, children, findAll, findFirst, idFindings, isElement, isText, localName, parse, plainText, textOf } from './tei/xast.ts'

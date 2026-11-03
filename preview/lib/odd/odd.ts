@@ -11,7 +11,7 @@
 
 import { finding, type Finding, type FindingCode } from '../findings.ts'
 import { BEHAVIOURS, type BehaviourSpec } from '../tei/behaviours.ts'
-import { attr, elementChildren, findAll, findFirst, localName, parse, plainText, textOf, type Element } from '../tei/xast.ts'
+import { attr, elementChildren, findAll, findFirst, isElement, localName, parse, plainText, textOf, type Element, type Root } from '../tei/xast.ts'
 import { bool, compileXPath, str, type Pos, type XPath } from './xpath.ts'
 
 export interface Model {
@@ -62,6 +62,8 @@ export interface ReadOddOptions {
   tokensCss?: string
   /** Behaviours to add, or to replace those of the Processing Model. */
   behaviours?: Record<string, BehaviourSpec>
+  /** Outputs that are neither the page nor a view of it, so their models are not read. */
+  ignoredOutputs?: string[]
 }
 
 export interface View {
@@ -84,6 +86,8 @@ const WEB = 'web'
 /** Outputs that render on their own, rather than as a view over the page. */
 const PLAIN = 'plain'
 const ALONE = [WEB, 'page', PLAIN]
+/** The outputs of other media, which an ODD may also describe. */
+const OTHER_MEDIA = ['print', 'latex', 'fo', 'epub', 'markdown']
 
 /** Where a view is on: the page says so, or its switch is checked — which needs no script. */
 const on = (output: string) => `:is([data-${output}='on'], :root:has(#view-${output}:checked))`
@@ -113,8 +117,14 @@ const rule = (selector: string, r: Element) =>
   `${selector}${attr(r, 'scope') ? `::${attr(r, 'scope')}` : ''} { ${textOf(r).trim()} }`
 const rules = (el: Element, selector: string) => elementChildren(el, 'outputRendition').map((r) => rule(selector, r))
 
-export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOddOptions = {}): Odd {
-  const tree = parse(xml)
+/** The tree without its `egXML`s: they document ODD markup, and say nothing about this ODD. */
+const withoutExamples = <T extends Root | Element>(node: T): T => ({
+  ...node,
+  children: node.children.filter((c) => !isElement(c, 'egXML')).map((c) => (isElement(c) ? withoutExamples(c) : c)),
+})
+
+export function readOdd(xml: string, { tokensCss = '', behaviours = {}, ignoredOutputs = OTHER_MEDIA }: ReadOddOptions = {}): Odd {
+  const tree = withoutExamples(parse(xml))
   /** An element's base model, once: where it stands does not change. */
   const cached = new WeakMap<Element, Model | undefined>()
   const base = (node: Element, up: Element[]) => {
@@ -160,10 +170,11 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
   /** Each output over the page, and the `<desc>`s of the first of its models that has any. */
   const views = new Map<string, string[]>()
 
-  // Neither is read, and nothing in the rendering would show what that cost.
+  // Neither is read, and nothing in the rendering would show what that cost. A source that is
+  // TEI itself is no chain: `odd2odd` leaves it on the ODD it flattened.
   const [schema, ...others] = findAll(tree, 'schemaSpec')
   const source = schema && attr(schema, 'source')
-  if (source) report('chain-not-followed', { ident: attr(schema, 'ident') ?? '', source })
+  if (source && !/p5subset|^tei:/.test(source)) report('chain-not-followed', { ident: attr(schema, 'ident') ?? '', source })
   for (const other of others) report('schema-spec-ignored', { ident: attr(other, 'ident') ?? '' })
 
   for (const r of elementChildren(findFirst(tree, 'tagsDecl'), 'rendition')) {
@@ -172,7 +183,23 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
     css.push(rule(`.r-${id}`, r))
   }
 
-  for (const spec of elementChildren(schema, 'elementSpec')) {
+  const groups = new Map(findAll(tree, 'specGrp').map((g) => [attr(g, 'xml:id'), g]))
+  const followed = new Set<Element>()
+  /** The specs under a `schemaSpec` or `specGrp`, in order, through the groups it holds and refers to. */
+  const specsIn = (parent: unknown): Element[] =>
+    elementChildren(parent).flatMap((child) => {
+      const name = localName(child.name)
+      if (name === 'elementSpec') return [child]
+      if (name !== 'specGrp' && name !== 'specGrpRef') return []
+      const target = attr(child, 'target') ?? ''
+      const group = name === 'specGrp' ? child : target.startsWith('#') ? groups.get(target.slice(1)) : undefined
+      if (!group) report('spec-group-not-found', { target })
+      if (!group || followed.has(group)) return []
+      followed.add(group)
+      return specsIn(group)
+    })
+
+  for (const spec of specsIn(schema)) {
     const ident = attr(spec, 'ident')!
     const entries = elementChildren(spec).filter((e) => /^model(Grp|Sequence)?$/.test(localName(e.name)))
     const models: Model[] = []
@@ -186,7 +213,7 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
       if (group) css.push(...rules(group, sole ? `.tei-${ident}` : `.${groupClass}`))
 
       /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
-      const read = (m: Element, outer?: Element): Model => {
+      const read = (m: Element, outer?: Element, only?: string): Model => {
         const id = `${ident}-${models.length + 1}`
         /**
          * An expression that cannot be read, or that fails where it is evaluated, counts as empty —
@@ -214,7 +241,7 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
         }
         const inherited = (name: string) => attr(m, name) ?? (outer && attr(outer, name)) ?? (group && attr(group, name))
         const predicate = attr(m, 'predicate')
-        const output = inherited('output')
+        const output = only ?? inherited('output')
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
         const bare = sole && !group && !outer && !predicate && !output
@@ -229,7 +256,7 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
           const descs = elementChildren(m, 'desc').map((d) => textOf(d).replace(/\s+/g, ' ').trim())
           if (!views.get(output)?.length) views.set(output, descs)
         }
-        const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
+        const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m, only)) : undefined
         const named = attr(m, 'behaviour')
         const known = !!sequence || (named !== undefined && Object.hasOwn(odd.behaviours, named))
         if (!sequence && !named) report('behaviour-missing', { model: id })
@@ -254,7 +281,12 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
         }
       }
       const members = group ? elementChildren(group).filter((e) => /^model(Sequence)?$/.test(localName(e.name))) : [entry]
-      for (const m of members) models.push(read(m))
+      for (const m of members) {
+        // `@output` is a list: the model belongs to each of them.
+        const outputs = tokens(m, 'output').length ? tokens(m, 'output') : tokens(group, 'output')
+        if (!outputs.length) models.push(read(m))
+        for (const output of outputs) if (!ignoredOutputs.includes(output)) models.push(read(m, undefined, output))
+      }
     })
     css.push(...view)
 
@@ -278,16 +310,17 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOd
     }
   }
 
-  for (const v of views.keys()) {
+  if (!Object.keys(odd.models).length) report('no-models', {})
+
+  const overlays = [...views].filter(([output]) => !ALONE.includes(output))
+  for (const [v] of overlays) {
     css.push(
       `${on(v)} .${v}-omit { display: none; }`,
       `${on(v)} .pm-alt.${v}-default { display: inline; }`,
       `${on(v)} .pm-alt.${v}-alternate { display: none; }`,
     )
   }
-  odd.views = [...views]
-    .filter(([output]) => !ALONE.includes(output))
-    .map(([output, [label, title]]) => ({ output, label: label || output, title }))
+  odd.views = overlays.map(([output, [label, title]]) => ({ output, label: label || output, title }))
   const availability = findFirst(findFirst(tree, 'teiHeader'), 'availability')
   const licence = findFirst(availability, 'licence')
   if (availability) odd.availability = { text: plainText(availability), licence: licence && attr(licence, 'target') }

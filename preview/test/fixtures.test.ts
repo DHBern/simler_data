@@ -22,7 +22,7 @@ import { fileURLToPath } from 'node:url'
 import { createProcessor, parse, readOdd, renderTei, type RenderResult } from '../lib'
 
 const dir = join(dirname(fileURLToPath(import.meta.url)), 'fixtures')
-const processor = createProcessor(readOdd(readFileSync(join(dir, 'pm.odd'), 'utf8')))
+const processor = createProcessor(readOdd(readFileSync(join(dir, 'pm.odd'), 'utf8'), { ignoredOutputs: [] }))
 
 /** The page, and below it every note body, as the apparatus would hold it. */
 const page = (r: RenderResult) =>

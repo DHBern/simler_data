@@ -20,7 +20,7 @@ them worth borrowing: they exercise models this edition's ODD never reaches.
 | `structure` | a spec's only model; a model group with an inherited source rendition; `@cssClass`; document order (the first model wins, the next predicate is never asked); a `modelSequence` with the id on its first part; a block inside phrasing content |
 | `outputs` | `@output`: an output's models take precedence there, a view laid over the page (`omit`, added classes, the readings of an `alternate`), and a model marked `web` |
 | `params` | params as CSS custom properties and as attributes; node-valued params, including one that selects the element itself; predicates with positions, value comparisons and conditionals; breaks, labels, and the hyphen at a joined line end; `link` and `graphic` |
-| `notes` | notes numbered in document order, the outer before the one inside it; a note in the margin, collected without a marker; a commented range closed by `@targetEnd` |
+| `notes` | notes numbered in document order, the outer before the one inside it; a note in the margin, with its marker too; a commented range closed by `@targetEnd` |
 
 **Kept up to date by hand.** The files are a copy, not a submodule; refresh them
 from that repository when its suite grows, and re-read the differences below.

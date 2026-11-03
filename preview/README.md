@@ -128,7 +128,7 @@ takes one of its models or none, and a model behind it is never reached.
 The ODD's `<availability>` travels into what is generated from it: the head of
 `odd.css`, the footer of the pages, and each `--records` file. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
-stands, and from its behaviour's flow. A note's `range` param names the element its commented range starts at;
+stands, and from its behaviour's flow. A note's `marker` param, where false, leaves no marker in the text. Its `range` param names the element its commented range starts at;
 the range is resolved on the rendered page, across any element boundary. Range
 and marker share `data-note`: pointing at either lights up both, and clicking the
 range opens the note. A `data-page` param names the facsimile image of a page

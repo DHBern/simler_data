@@ -19,14 +19,15 @@ const result = renderTei(parse(readFileSync('doc.xml', 'utf8')), processor)
 result.html // the page; odd.css styles it
 ```
 
-The input is a **flattened ODD**: `schemaSpec/@source` is not followed, and only the first
-`schemaSpec` is read. Both are reported.
+An ODD is read from its first `schemaSpec`, through the `specGrp`s it refers to in the same
+file. A chain to another ODD (`schemaSpec/@source`) is not followed and is reported: flatten
+such an ODD first, with `odd2odd` from the TEI Stylesheets.
 
 ## API
 
 | | |
 | --- | --- |
-| `readOdd(xml, { tokensCss?, behaviours? })` | The ODD as an `Odd`: its models, `css`, `views`, `availability`, `findings` |
+| `readOdd(xml, { tokensCss?, behaviours?, ignoredOutputs? })` | The ODD as an `Odd`: its models, `css`, `views`, `availability`, `findings` |
 | `createProcessor(odd)` | The processor for one ODD |
 | `parse(xml)` | TEI as xast; throws on XML that is not well-formed |
 | `renderTei(tree, processor, decisions?)` | One document as a `RenderResult` |
@@ -52,8 +53,9 @@ is only used to check them, and is not added to `odd.css`.
 ## Findings
 
 `odd.findings`, `result.warnings`, `coverage(odd)` and `idFindings(tree)` all return
-`{ code, args, message }`. `message` is in English; to report in another language, format
-`code` and `args`. An expression that cannot be evaluated counts as empty, and a behaviour
+`{ code, severity, args, message }`. `severity` is `error` (a rule is lost), `warning` (the
+result may not be what the ODD means) or `info` (it works, but may need a look). `message` is
+in English; to report in another language, format `code` and `args`. An expression that cannot be evaluated counts as empty, and a behaviour
 that is not known, or missing, renders as `inline`, so one flaw costs one rule, not the
 document. Only XML that is not well-formed throws.
 
@@ -63,9 +65,9 @@ document. Only XML that is not well-formed throws.
 `figure`, `glyph`, `graphic`, `heading`, `index`, `inline`, `link`, `list`, `listItem`,
 `metadata`, `note`, `omit`, `paragraph`, `row`, `section`, `table`, `text`, `title`.
 
-`index` renders its content; generating the list TEI describes is left to you. `note`
-collects its body into `result.notes` and leaves a numbered marker in the text when its
-`place` is `end`, the default.
+`index` renders nothing; generating the list TEI describes is left to you. `note` collects
+its body and `place` into `result.notes` and leaves a numbered marker in the text, unless the
+model's `marker` param is false, as for a note placed elsewhere on the page.
 
 A project adds behaviours, or replaces one. One that only wraps needs a `tag`, any other a
 `render`, which is given the element's params, its `content` and the rest of
@@ -101,13 +103,15 @@ Predicates and params use a subset of XPath:
 
 ## Outputs
 
-Models with `@output` belong to that output, and take precedence over the base models there.
+Models with `@output` belong to the outputs it lists, and take precedence over the base models
+there.
 
 | Output | Meaning |
 | --- | --- |
 | `web` | The page itself, the same as no `@output` |
 | `plain` | Rendered on its own: `result.text` |
 | `page` | Not rendered. The root element's params describe the page: `result.page` |
+| `print`, `latex`, `fo`, `epub`, `markdown` | Other media: their models are not read. `ignoredOutputs` changes the list |
 | any other | A **view** over the page, listed in `odd.views`: its label is the model's first `<desc>`, its explanation the second |
 
 A view renders in the same HTML and is switched by CSS: set `data-<output>="on"` on an

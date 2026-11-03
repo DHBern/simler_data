@@ -1330,6 +1330,7 @@
           <!-- a comment on the whole division: no marker, shown above the text; any other note is unmapped -->
           <model predicate="@type='annotation'" behaviour="note" useSourceRendition="true">
             <param name="place" value="'overview'"/>
+            <param name="marker" value="false()"/>
           </model>
           <model output="plain" predicate="@targetEnd" behaviour="omit"/>
         </elementSpec>

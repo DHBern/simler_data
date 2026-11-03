@@ -36,8 +36,8 @@ export const BEHAVIOURS: Record<string, BehaviourSpec> = {
   cit: { tag: 'blockquote', flow: 'block' },
   figure: { flow: 'block', params: ['title'] },
   figDesc: { tag: 'figcaption', flow: 'block' },
-  /** The list TEI's `index` asks for is the consumer's to generate; here its content renders. */
-  index: { tag: 'div', flow: 'block', params: ['type'] },
+  /** The list TEI's `index` asks for is the consumer's to generate, so nothing renders here. */
+  index: { flow: 'block', params: ['type'] },
   table: { tag: 'table', flow: 'block' },
   row: { tag: 'tr', flow: 'block' },
   cell: { tag: 'td', flow: 'block' },
@@ -46,7 +46,7 @@ export const BEHAVIOURS: Record<string, BehaviourSpec> = {
   glyph: { tag: 'span', flow: 'inline' },
   heading: { flow: 'block', params: ['level'] },
   text: { flow: 'block' },
-  note: { flow: 'inline', params: ['place', 'range'] },
+  note: { flow: 'inline', params: ['place', 'range', 'marker'] },
   alternate: { flow: 'inline', params: ['default', 'alternate'] },
   break: { flow: 'inline', params: ['type', 'label'] },
   anchor: { flow: 'inline' },

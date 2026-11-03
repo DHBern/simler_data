@@ -20,9 +20,9 @@ import { attr, children, isElement, isText, localName, type Element, type Nodes 
 export type { ElementContent }
 
 export interface CollectedNote {
-  /** `end` for the numbered apparatus, or where else the note belongs. */
+  /** Where the note belongs: its `place` param, `end` without one. */
   place: string
-  /** `note-1`, … and the marker's number, for the numbered apparatus only. */
+  /** `note-1`, … and the marker's number; neither where the model's `marker` param is false. */
   id?: string
   number?: number
   body: ElementContent[]
@@ -94,6 +94,7 @@ const wrap =
 /** The behaviours that do more than wrap, written out. */
 const RENDER: Record<string, Behaviour> = {
   omit: () => null,
+  index: () => null,
   metadata: () => null,
   text: (c) => c.content(),
   heading: (c) => wrap(`h${Math.min(6, Math.max(1, Number(str(c.params.level)) || 1))}`, 'block')(c),
@@ -132,19 +133,20 @@ const RENDER: Record<string, Behaviour> = {
     return line ? [span, h('br', { ...c.props, id: undefined })] : span
   },
   /**
-   * Collected for the apparatus; in the text, a numbered marker when it goes to the end,
-   * which closes the range its `range` param names. Collected before its body is
+   * Collected for the apparatus; in the text, a numbered marker unless its `marker` param is
+   * false, which closes the range its `range` param names. Collected before its body is
    * rendered, so that a note inside comes after it.
    */
   note: (c) => {
     const note: CollectedNote = { place: 'place' in c.params ? str(c.params.place) : 'end', body: [] }
     c.state.notes.push(note)
-    if (note.place === 'end') {
-      note.number = c.state.notes.filter((n) => n.place === 'end').length
+    if (!('marker' in c.params) || bool(c.params.marker)) {
+      note.number = c.state.notes.filter((n) => n.number).length + 1
       note.id = `note-${note.number}` // not `n<number>`: the corpus uses those as xml:id
     }
     note.body = c.content('div')
-    if (note.place !== 'end') return null
+    // An output rendered on its own, as the search text, has no use for the marker.
+    if (!note.number || !c.views) return null
     return h(
       'a',
       {

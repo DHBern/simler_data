@@ -173,7 +173,9 @@ test('figure, figDesc and index are behaviours', () => {
   assert.deepEqual(figure.odd.findings, [])
   assert.equal(figure.result.html, '<figure class="tei-p"><figcaption>t</figcaption>a <span class="tei-q">b</span></figure>')
   assert.match(renderBy('<model behaviour="figDesc"/>').result.html, /^<figcaption class="tei-p">/)
-  assert.match(renderBy(`<model behaviour="index"><param name="type" value="'toc'"/></model>`).result.html, /^<div class="tei-p">/)
+  // As TEI Simple Print's `body` has it: the index asked for, and the text once.
+  const body = renderBy(`<modelSequence><model behaviour="index"><param name="type" value="'toc'"/></model><model behaviour="block"/></modelSequence>`)
+  assert.equal(body.result.html, '<div class="tei-p">a <span class="tei-q">b</span></div>')
 })
 
 test('an unknown behaviour is a finding, and its element still shows its text', () => {
@@ -219,4 +221,76 @@ test('HTML is escaped as the standard serialiser escapes it', () => {
     text('<&>"\''), h('br', {}),
   ])
   assert.equal(toHtml(tree), '<a class="x y" href="?a=1&#x26;b=&#x22;&#x27;&#x60;" hidden alt="">&#x3C;&#x26;>"\'<br></a>')
+})
+
+test('a note in any place has a marker, unless its model says not', () => {
+  const place = `<param name="place" value="'foot'"/>`
+  const marked = renderBy(`<model behaviour="note">${place}</model>`).result
+  assert.match(marked.html, /^<a class="note-marker tei-p" id="ref-note-1" href="#note-1"/)
+  assert.equal(marked.notes[0].place, 'foot')
+  assert.equal(marked.notes[0].number, 1)
+  assert.equal(marked.text, '') // the search text has no markers
+  const unmarked = renderBy(`<model behaviour="note">${place}<param name="marker" value="false()"/></model>`).result
+  assert.equal(unmarked.html, '')
+  assert.equal(unmarked.notes[0].number, undefined)
+})
+
+/** An ODD with the given text in its `<body>`. */
+const whole = (body: string) => readOdd(`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body>${body}</body></text></TEI>`)
+const P = '<elementSpec ident="p"><model behaviour="paragraph"/></elementSpec>'
+
+test('specs are read through the groups a schemaSpec refers to, however nested', () => {
+  const odd = whole(`<schemaSpec ident="a"><specGrpRef target="#outer"/><specGrpRef target="#outer"/></schemaSpec>
+    <specGrp xml:id="outer">${P}<specGrpRef target="#inner"/></specGrp>
+    <specGrp xml:id="inner"><elementSpec ident="q"><model behaviour="inline"/></elementSpec><specGrpRef target="#outer"/></specGrp>
+    <specGrp xml:id="unused"><elementSpec ident="r"><model behaviour="inline"/></elementSpec></specGrp>`)
+  assert.deepEqual(Object.keys(odd.models), ['p', 'q'])
+  assert.deepEqual(odd.findings, [])
+})
+
+test('a group that cannot be found, or an ODD without models, is an error', () => {
+  const odd = whole(`<schemaSpec ident="a"><specGrpRef target="other.xml#g"/></schemaSpec>`)
+  assert.deepEqual(odd.findings.map((f) => [f.code, f.severity]), [['spec-group-not-found', 'error'], ['no-models', 'error']])
+})
+
+test('a flattened ODD, and a schemaSpec in an example, are not findings', () => {
+  const flat = whole(`<schemaSpec ident="a" source="https://www.tei-c.org/Vault/P5/current/xml/tei/odd/p5subset.xml">${P}</schemaSpec>`)
+  assert.deepEqual(flat.findings, [])
+  assert.deepEqual(whole(`<schemaSpec ident="a" source="tei:4.9.0">${P}</schemaSpec>`).findings, [])
+  const examples = whole(`<egXML xmlns="http://www.tei-c.org/ns/Examples"><schemaSpec ident="ex"/></egXML><schemaSpec ident="a">${P}
+    <elementSpec ident="q"><exemplum><egXML><schemaSpec ident="myODD" source="my.xml"/></egXML></exemplum><model behaviour="inline"/></elementSpec></schemaSpec>`)
+  assert.deepEqual(examples.findings, [])
+  assert.deepEqual(Object.keys(examples.models), ['p', 'q'])
+})
+
+test('findings say how much they matter', () => {
+  const odd = read(`<elementSpec ident="p" mode="change">
+    <model predicate="@a | @b" behaviour="inline"/>
+    <model predicate="@c" behaviour="pb-x"/>
+    <model behaviour="block"><outputRendition>color: red;</outputRendition></model>
+  </elementSpec>`)
+  assert.deepEqual(odd.findings.map((f) => [f.code, f.severity]), [
+    ['behaviour-unknown', 'warning'], ['css-class-missing', 'info'],
+  ])
+  assert.ok(!odd.findings.some((f) => f.severity === 'error'))
+  selectOutput(odd.models.p, paragraph)
+  assert.deepEqual(odd.findings.at(-1)?.severity, 'error') // unreadable, once it is evaluated
+})
+
+test('only an output over the page is a view', () => {
+  const specs = `<elementSpec ident="p" mode="change">
+    <model output="print latex" behaviour="omit"/>
+    <model output="web print epub" predicate="@a" behaviour="block" cssClass="w"/>
+    <model output="plain" behaviour="omit"/>
+    <model output="page" behaviour="metadata"/>
+    <model output="reading other" behaviour="inline"><desc>Lesen</desc></model>
+    <model behaviour="paragraph"/>
+  </elementSpec>`
+  const odd = read(specs)
+  assert.deepEqual(odd.views.map((v) => v.output), ['reading', 'other'])
+  assert.deepEqual(odd.models.p.map((m) => m.output), ['web', 'plain', 'page', 'reading', 'other', undefined])
+  assert.doesNotMatch(odd.css, /data-(plain|page|print|latex)|view-(plain|page|print)/)
+  assert.match(odd.css, /\[data-reading='on'\]/)
+  const asked = readOdd(`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body><schemaSpec ident="t">${specs}</schemaSpec></body></text></TEI>`, { ignoredOutputs: [] })
+  assert.deepEqual(asked.views.map((v) => v.output), ['print', 'latex', 'epub', 'reading', 'other'])
 })

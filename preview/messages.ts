@@ -14,6 +14,8 @@ const GERMAN: Record<FindingCode, (a: Record<string, string>) => string> = {
   'css-property-undefined': (a) => `CSS: ${a.property} ist nirgends definiert`,
   'chain-not-followed': (a) => `schemaSpec "${a.ident}": @source "${a.source}" wird nicht verfolgt, die ODD muss zuerst aufgelöst werden`,
   'schema-spec-ignored': (a) => `schemaSpec "${a.ident}" bleibt unbeachtet: nur die erste wird gelesen`,
+  'spec-group-not-found': (a) => `specGrpRef "${a.target}" führt zu keiner specGrp in dieser Datei`,
+  'no-models': () => 'Die ODD enthält kein einziges Modell',
   'element-absent': (a) => `<${a.element}>: im Korpus nicht vorgekommen, ${a.count} Modell(e) ungenutzt`,
   'model-unused': (a) => `Modell ${a.model}: greift nie`,
   'element-no-match': (a) => `<${a.element}>: Modelle vorhanden, keines trifft zu`,
