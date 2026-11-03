@@ -11,9 +11,10 @@
 
 import type { Element as HastElement, ElementContent, Properties } from 'hast'
 
+import { finding, type Finding } from '../findings.ts'
 import { select, selectOutput, type Model, type Odd } from '../odd/odd.ts'
 import { bool, isPos, seq, str, type Item, type Pos, type Value } from '../odd/xpath.ts'
-import { BEHAVIOURS, type Flow } from './behaviours.ts'
+import type { Flow } from './behaviours.ts'
 import { attr, children, isElement, isText, localName, type Element, type Nodes } from './xast.ts'
 
 export type { ElementContent }
@@ -42,7 +43,7 @@ export interface Decision {
 
 export interface RenderState {
   notes: CollectedNote[]
-  warnings: string[]
+  warnings: Finding[]
   /** Elements without a model, rendered as plain spans. */
   unmapped: Set<string>
   /** The ids of the anchors rendered, for the ranges that start at them. */
@@ -51,7 +52,8 @@ export interface RenderState {
   open?: Decision
 }
 
-interface Ctx {
+/** What a behaviour is given to render an element with. */
+export interface BehaviourContext {
   pos: Pos
   props: Properties
   params: Record<string, Value>
@@ -66,7 +68,7 @@ interface Ctx {
   state: RenderState
   atLineStart: () => boolean
 }
-type Behaviour = (c: Ctx) => ElementContent | ElementContent[] | null
+export type Behaviour = (c: BehaviourContext) => ElementContent | ElementContent[] | null
 
 export const h = (tagName: string, properties: Properties = {}, content: ElementContent[] = []): HastElement =>
   ({ type: 'element', tagName, properties, children: content })
@@ -89,17 +91,19 @@ const wrap =
     return h(t, props, c.content(t))
   }
 
-/** How each behaviour renders: the table's own for those that only wrap, written out for the rest. */
+/** The behaviours that do more than wrap, written out. */
 const RENDER: Record<string, Behaviour> = {
-  ...Object.fromEntries(
-    Object.entries(BEHAVIOURS)
-      .filter(([, b]) => b.tag)
-      .map(([name, b]) => [name, wrap(b.tag!, b.flow)]),
-  ),
   omit: () => null,
   metadata: () => null,
   text: (c) => c.content(),
   heading: (c) => wrap(`h${Math.min(6, Math.max(1, Number(str(c.params.level)) || 1))}`, 'block')(c),
+  /** Its title, where the model gives one, is the caption. */
+  figure: (c) => {
+    const figure = wrap('figure', 'block')(c) as HastElement
+    const tag = figure.tagName === 'figure' ? 'figcaption' : 'span'
+    if ('title' in c.params) figure.children.unshift(h(tag, {}, c.value(c.params.title, tag)))
+    return figure
+  },
   link: (c) => h('a', { ...c.props, href: str(c.params.uri ?? '') }, c.content('a')),
   graphic: (c) => h('img', { ...c.props, src: str(c.params.url ?? ''), alt: '' }),
   /** Each reading once, marked as the default or not of the page and of each view; alone, the default. */
@@ -190,11 +194,12 @@ const attrMap = (node: Element): Properties => ({
 const renditions = (node: Element) => (attr(node, 'rendition') ?? '').split(/\s+/).filter(Boolean).map((t) => t.replace(/^#/, ''))
 
 export function createRenderer(odd: Odd) {
-  for (const [ident, models] of Object.entries(odd.models)) {
-    for (const m of models.flatMap((m) => m.sequence ?? [m])) {
-      if (!RENDER[m.behaviour]) throw new Error(`${ident}: unknown behaviour "${m.behaviour}"`)
-    }
-  }
+  const behaviours = Object.fromEntries(
+    Object.entries(odd.behaviours).map(([name, b]) => [
+      name,
+      b.render ?? (b.tag ? wrap(b.tag, b.flow) : RENDER[name] ?? wrap('span', b.flow)),
+    ]),
+  )
   const outputs = Object.fromEntries(
     Object.entries(odd.models).map(([ident, ms]) => [ident, [...new Set(ms.flatMap((m) => (m.output ? [m.output] : [])))]]),
   )
@@ -214,11 +219,11 @@ export function createRenderer(odd: Odd) {
   function check(node: Element, ln: string, state: RenderState) {
     for (const [name, value] of Object.entries(node.attributes ?? {})) {
       if (value != null && odd.values[ln]?.[name] && !odd.values[ln][name].has(value)) {
-        state.warnings.push(`Wert nicht in der Werteliste der ODD: ${ln}/@${name}="${value}"`)
+        state.warnings.push(finding('value-not-listed', { element: ln, attribute: name, value }))
       }
     }
     for (const r of renditions(node)) {
-      if (!odd.renditions.has(r)) state.warnings.push(`Rendition nicht in der ODD deklariert: #${r}`)
+      if (!odd.renditions.has(r)) state.warnings.push(finding('rendition-undeclared', { rendition: r }))
     }
   }
 
@@ -293,7 +298,7 @@ export function createRenderer(odd: Odd) {
           decision.params = Object.fromEntries(Object.entries(params).map(([n, v]) => [n, seq(v).map((i) => str([i]))]))
         }
       }
-      const out = RENDER[model.behaviour]({
+      const out = behaviours[model.behaviour]({
         pos,
         props,
         params,

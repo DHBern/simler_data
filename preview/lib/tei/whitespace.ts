@@ -1,9 +1,3 @@
-/**
- * xast → xast transforms that run before the tree is converted to hast.
- */
-
-import type { Plugin } from 'unified'
-
 import type { Odd } from '../odd/odd.ts'
 import {
   attr,
@@ -17,11 +11,10 @@ import {
 } from './xast.ts'
 
 /**
- * TEI-aware whitespace normalisation; `flow` from the ODD says which elements,
+ * TEI-aware whitespace normalisation, before the tree is converted to hast; `flow` from the ODD says which elements,
  * where they stand, render as blocks or inline.
  */
-export const wsTrim: Plugin<[Odd['flow']], Root, Root> = function (flow) {
-
+export function wsTrim(tree: Root, flow: Odd['flow']): Root {
   /** Is this whitespace-only node the file's indentation rather than a space? */
   function isIndentation(node: Nodes, ancestors: Nodes[]): boolean {
     const parent = ancestors.at(-1)
@@ -62,7 +55,5 @@ export const wsTrim: Plugin<[Odd['flow']], Root, Root> = function (flow) {
     return node
   }
 
-  return function transformer(tree: Root): Root {
-    return (walk(tree, []) as Root | null) ?? tree
-  }
+  return (walk(tree, []) as Root | null) ?? tree
 }

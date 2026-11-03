@@ -3,6 +3,8 @@
 import { parseXml, XmlElement, XmlText, type XmlNode } from '@rgrove/parse-xml'
 import type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text } from 'xast'
 
+import { finding, type Finding } from '../findings.ts'
+
 export type { Element, ElementContent, Nodes, Parents, Root, RootContent, Text }
 
 declare module 'xast' {
@@ -100,7 +102,7 @@ const NCNAME = /^[\p{L}_][\p{L}\p{N}\p{M}._-]*$/u
  * which makes two HTML elements answer to one link, and one that is no NCName, which
  * libxml2 and Saxon refuse to parse at all.
  */
-export function idFindings(tree: Root): string[] {
+export function idFindings(tree: Root): Finding[] {
   const seen = new Set<string>()
   const twice = new Set<string>()
   const invalid = new Set<string>()
@@ -117,7 +119,7 @@ export function idFindings(tree: Root): string[] {
   }
   walk(tree)
   return [
-    ...[...twice].sort().map((id) => `xml:id zweimal vergeben, Verweise landen an der falschen Stelle: ${id}`),
-    ...[...invalid].sort().map((id) => `xml:id ist kein NCName, XML-Werkzeuge lehnen die Datei ab: ${id}`),
+    ...[...twice].sort().map((id) => finding('id-twice', { id })),
+    ...[...invalid].sort().map((id) => finding('id-invalid', { id })),
   ]
 }

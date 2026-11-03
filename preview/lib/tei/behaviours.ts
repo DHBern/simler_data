@@ -7,7 +7,10 @@
  * source's indentation is insignificant and where a line break is already
  * implied, which is asked before anything is rendered — hence a table both the
  * ODD and the walker read, rather than a second list of block-level behaviours.
+ * A project adds its own, or replaces one, through `readOdd`'s `behaviours`.
  */
+
+import type { Behaviour } from './teiToHast.ts'
 
 export type Flow = 'block' | 'inline'
 
@@ -18,6 +21,8 @@ export interface BehaviourSpec {
   flow?: Flow
   /** The params it reads, beyond `content` and the `--…` and `data-…` conventions. */
   params?: string[]
+  /** How it renders, for a project's behaviour that does more than wrap. */
+  render?: Behaviour
 }
 
 export const BEHAVIOURS: Record<string, BehaviourSpec> = {
@@ -29,6 +34,10 @@ export const BEHAVIOURS: Record<string, BehaviourSpec> = {
   list: { tag: 'ul', flow: 'block' },
   listItem: { tag: 'li', flow: 'block' },
   cit: { tag: 'blockquote', flow: 'block' },
+  figure: { flow: 'block', params: ['title'] },
+  figDesc: { tag: 'figcaption', flow: 'block' },
+  /** The list TEI's `index` asks for is the consumer's to generate; here its content renders. */
+  index: { tag: 'div', flow: 'block', params: ['type'] },
   table: { tag: 'table', flow: 'block' },
   row: { tag: 'tr', flow: 'block' },
   cell: { tag: 'td', flow: 'block' },

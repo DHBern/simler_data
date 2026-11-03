@@ -4,7 +4,8 @@
 
 import type { Entity } from './entities'
 
-import { imageBase, imageUrl, type Odd, type RenderedNote, type View } from './lib'
+import { imageBase, imageUrl } from './iiif'
+import type { Odd, RenderedNote, View } from './lib'
 
 type Availability = Odd['availability']
 
@@ -19,7 +20,7 @@ export interface PreviewDoc {
   html: string
   /** The same text as plain characters — what `build.ts` feeds to Pagefind. */
   text: string
-  notes: RenderedNote[]
+  notes: Omit<RenderedNote, 'hast'>[]
   /** `pb/@facs` in reading order: the extent of the document, and its facsimiles. */
   pages: string[]
   /** IIIF image root from the header, or null where the document names none. */
@@ -126,7 +127,7 @@ const PLACES: Record<string, string> = { overview: 'Überblickskommentar' }
  * The apparatus: the notes that go to the end, numbered, and every other place in a box
  * of its own — a place the ODD invents must not swallow the text.
  */
-function endnotes(notes: RenderedNote[]): string {
+function endnotes(notes: Omit<RenderedNote, 'hast'>[]): string {
   const anchored = notes.filter((n) => n.place === 'end')
   const elsewhere = notes.filter((n) => n.place !== 'end')
 

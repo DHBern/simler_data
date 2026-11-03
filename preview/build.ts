@@ -21,8 +21,10 @@ import { normalizeForSearch } from './assets/normalize.js'
 
 import { loadEntities, type Entity } from './entities'
 import {
-  coverage, createProcessor, idFindings, imageRoot, parse, readOdd, renderTei, type Decision,
+  coverage, createProcessor, idFindings, parse, readOdd, renderTei, type Decision,
 } from './lib'
+import { imageRoot } from './iiif'
+import { inGerman } from './messages'
 import { loadSynopses, numberLines } from './alignments'
 import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
 import { synopsesPage, synopsisHref, synopsisPage } from './synopsis'
@@ -135,13 +137,13 @@ function render(
     title: title[0] || file,
     html: result.html,
     text: result.text,
-    notes: result.notes,
+    notes: result.notes.map(({ hast, ...note }) => note),
     pages,
     facsRoot,
     entities: entities.used,
     warnings: [
-      ...idFindings(tree),
-      ...tally(result.warnings),
+      ...idFindings(tree).map(inGerman),
+      ...tally(result.warnings.map(inGerman)),
       ...(result.unmapped.length ? [`Ohne Rendering-Regel, als Fliesstext ausgegeben: ${result.unmapped.join(', ')}`] : []),
       ...(entities.unknown.length
         ? [`rs/@key ohne Eintrag im Register: ${entities.unknown.join(', ')}`]
@@ -215,7 +217,7 @@ async function main() {
     console.warn('  Keine Registerdaten in gsheet/csv — Entitäten bleiben ohne Karte.')
   }
 
-  const odd = readOdd(await readFile(ODD, 'utf8'), await readFile(join(here, 'assets', 'tokens.css'), 'utf8'))
+  const odd = readOdd(await readFile(ODD, 'utf8'), { tokensCss: await readFile(join(here, 'assets', 'tokens.css'), 'utf8') })
   await writeFile(join(out, 'assets', 'odd.css'), odd.css)
   const processor = createProcessor(odd)
 
@@ -249,12 +251,12 @@ async function main() {
   for (const synopsis of synopses) {
     await writeFile(join(out, synopsisHref(synopsis.id)), synopsisPage(synopsis))
   }
-  const gaps = coverage(odd)
+  const gaps = coverage(odd).map(inGerman).sort((a, b) => a.localeCompare(b, 'de'))
   const typos = synopses.flatMap((s) => s.typos.map((t) => ({
     href: `${synopsisHref(s.id)}#seg-${t.n}`, title: `${s.title} · Segment ${t.n}`, file: s.id,
     detail: `${t.letters}: ${Object.entries(t.readings).map(([siglum, text]) => `${siglum} ${text}`).join(' · ')}`,
   })))
-  await writeFile(join(out, 'findings.html'), findingsPage(docs, [...odd.findings], gaps, typos))
+  await writeFile(join(out, 'findings.html'), findingsPage(docs, odd.findings.map(inGerman), gaps, typos))
   await buildIndex(docs, out)
 
   console.log(`Synopsen: ${synopses.length} aus ${posix(relative(resolve(here, '..'), ALIGNMENTS))}.`)
@@ -272,9 +274,9 @@ async function main() {
   // The corpus is rendered whatever the ODD says; a flaw in the ODD still fails the run, since
   // every page was rendered without what it asked for. A malformed document is the corpus's, not the
   // ODD's: it is reported loudly, but the other pages are still published.
-  if (odd.findings.size) {
-    for (const finding of odd.findings) console.error(`  ODD: ${finding}`)
-    console.error(`ODD: ${odd.findings.size} Befund(e) — siehe findings.html.`)
+  if (odd.findings.length) {
+    for (const finding of odd.findings) console.error(`  ODD: ${inGerman(finding)}`)
+    console.error(`ODD: ${odd.findings.length} Befund(e) — siehe findings.html.`)
     process.exitCode = 1
   }
   if (malformed) {

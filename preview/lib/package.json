@@ -9,10 +9,7 @@
   "dependencies": {
     "@rgrove/parse-xml": "^4.2.3",
     "@types/hast": "^3.0.4",
-    "@types/xast": "^2.0.4",
-    "rehype-stringify": "^10.0.1",
-    "unified": "^11.0.5",
-    "vfile": "^6.0.3"
+    "@types/xast": "^2.0.4"
   },
   "engines": {
     "node": ">=20"

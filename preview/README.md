@@ -65,7 +65,10 @@ the findings page next to what the documents get wrong.
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
 | `lib/` | The renderer, as the package `tei-odd-interpreter`: everything below is behind `lib/index.ts` |
 | `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
-| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges and regions, the behaviour table, the PM walker |
+| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges and regions, the behaviour table, the PM walker, the HTML serialiser |
+| `lib/findings.ts` | What the package reports, as data: a code, its values and an English message |
+| `messages.ts` | Those findings in German, as the preview's pages say them |
+| `iiif.ts` | The IIIF image addresses the document pages and the facsimile drawer use |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis |
@@ -103,7 +106,7 @@ import { createProcessor, parse, readOdd, renderTei } from 'tei-odd-interpreter'
 
 const read = (path: string) => readFileSync(`../simler_data/${path}`, 'utf8')
 const tokens = read('preview/assets/tokens.css')
-export const odd = readOdd(read('schema/tei_simler.odd'), tokens)
+export const odd = readOdd(read('schema/tei_simler.odd'), { tokensCss: tokens })
 export const css = tokens + odd.css
 const processor = createProcessor(odd)
 export const render = (name: string) => renderTei(parse(read(`webdav/data/sources/tei/${name}.xml`)), processor)
@@ -143,12 +146,27 @@ export const load = ({ params }) => {
 <div>{@html data.html}</div>
 ```
 
-What `render` returns besides `html`: `text`, the search text for any index; `notes`,
-each with its `place`, its `number` and its body as HTML, for the apparatus; `page`,
-the `page` model's params (`title`, `manifest`, `pages`, `entities`); and `warnings`.
+What `render` returns besides `html`: `hast`, the same page as a tree, for a site that
+maps elements to its own components; `text`, the search text for any index; `notes`,
+each with its `place`, its `number` and its body as `html` and `hast`, for the apparatus;
+`page`, the `page` model's params (`title`, `manifest`, `pages`, `entities`); and
+`warnings`. Warnings, `odd.findings` and `coverage(odd)` are findings: a `code`, its
+`args`, and an English `message`, so a site can say them in its own language.
 The views need nothing but that CSS and an attribute: `data-normalized="on"` on an
 ancestor, or a checked `#view-normalized` checkbox, switches one on — `odd.views`
-names them and gives their labels. `page.ts` here is a working reference for the rest;
+names them and gives their labels.
+
+A project adds behaviours of its own, or replaces one, when it reads the ODD; a behaviour
+that only wraps needs a `tag`, any other a `render`, which is given the element's params,
+its `content` and the rest of `BehaviourContext`:
+
+```ts
+const odd = readOdd(xml, { behaviours: {
+  stamp: { flow: 'block', params: ['by'], render: (c) => h('aside', c.props, c.content('aside')) },
+} })
+```
+
+`page.ts` here is a working reference for the rest;
 the note popovers, entity cards and facsimile viewer are the preview's own
 `assets/*.js`, not part of the package.
 
@@ -224,8 +242,11 @@ outside it, or one that fails where it is evaluated, counts as empty — the
 predicate is false and the next model decides, the param has no value — so the
 corpus still renders; the build names it, `findings.html` lists it under *ODD*,
 and the run ends non-zero. Reading the ODD also reports a param the behaviour does
-not read, a model an earlier one or a group makes unreachable, and a CSS custom property that
-neither the design tokens nor the ODD itself defines.
+not read, a model an earlier one or a group makes unreachable, a CSS custom property that
+neither the design tokens nor the ODD itself defines, and what it does not take from the ODD:
+the `@source` of a `schemaSpec`, since the ODD must be flattened first, and any `schemaSpec`
+but the first. A behaviour it does not know, or a model without one, renders as `inline`; a
+styled model among several without `@cssClass` is styled by its id. All three are findings too.
 
 Every build also reads the ODD back against the corpus: which of its models fired,
 which element it has models for that the corpus never has, and which element it has

@@ -16,8 +16,6 @@
  * **Neither side of a joined break is a space**, however the source is indented.
  */
 
-import type { Plugin } from 'unified'
-
 import type { Odd } from '../odd/odd.ts'
 import {
   children,
@@ -40,8 +38,8 @@ interface LineEdge {
   gap: Text[]
 }
 
-/** unified plugin: normalise the hyphen at every joined line end; `flow`, `joins` and `silent` from the ODD. */
-export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins' | 'silent'>], Root, Root> = function ({ flow, joins, silent }) {
+/** Normalise the hyphen at every joined line end; `flow`, `joins` and `silent` from the ODD. */
+export function lineEndHyphens(tree: Root, { flow, joins, silent }: Pick<Odd, 'flow' | 'joins' | 'silent'>): Root {
   /**
    * Where the printed line ends before `from` (`step` -1), or the next one starts
    * after it (`step` 1) — `null` where a block is in between, and so where nothing
@@ -71,29 +69,27 @@ export const lineEndHyphens: Plugin<[Pick<Odd, 'flow' | 'joins' | 'silent'>], Ro
     return null
   }
 
-  return function transformer(tree: Root): Root {
-    function walk(node: Nodes, up: Element[]): void {
-      if (!('children' in node) || !Array.isArray(node.children)) return
-      const list = node.children as ElementContent[]
-      const inner = isElement(node) ? [...up, node] : up
+  function walk(node: Nodes, up: Element[]): void {
+    if (!('children' in node) || !Array.isArray(node.children)) return
+    const list = node.children as ElementContent[]
+    const inner = isElement(node) ? [...up, node] : up
 
-      for (const [i, child] of list.entries()) {
-        const join = isElement(child) ? joins(child, inner) : undefined
-        if (join === undefined) continue
-        const end = lineEdge(list, i, -1, inner)
-        const start = lineEdge(list, i, 1, inner)
-        if (end && hyphen(join).test(end.text.value ?? '')) {
-          end.text.data = { ...end.text.data, source: end.text.value }
-          end.text.value = end.text.value.replace(hyphen(join), '')
-        }
-        if (end) end.text.value = end.text.value.trimEnd()
-        if (start) start.text.value = start.text.value.trimStart()
-        for (const space of [...(end?.gap ?? []), ...(start?.gap ?? [])]) space.value = ''
+    for (const [i, child] of list.entries()) {
+      const join = isElement(child) ? joins(child, inner) : undefined
+      if (join === undefined) continue
+      const end = lineEdge(list, i, -1, inner)
+      const start = lineEdge(list, i, 1, inner)
+      if (end && hyphen(join).test(end.text.value ?? '')) {
+        end.text.data = { ...end.text.data, source: end.text.value }
+        end.text.value = end.text.value.replace(hyphen(join), '')
       }
-
-      for (const child of children(node)) walk(child as Nodes, inner)
+      if (end) end.text.value = end.text.value.trimEnd()
+      if (start) start.text.value = start.text.value.trimStart()
+      for (const space of [...(end?.gap ?? []), ...(start?.gap ?? [])]) space.value = ''
     }
-    walk(tree, [])
-    return tree
+
+    for (const child of children(node)) walk(child as Nodes, inner)
   }
+  walk(tree, [])
+  return tree
 }

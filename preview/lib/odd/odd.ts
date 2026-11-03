@@ -9,8 +9,9 @@
  * hides the element in that view.
  */
 
-import { BEHAVIOURS } from '../tei/behaviours.ts'
-import { attr, elementChildren, findFirst, localName, parse, plainText, textOf, type Element } from '../tei/xast.ts'
+import { finding, type Finding, type FindingCode } from '../findings.ts'
+import { BEHAVIOURS, type BehaviourSpec } from '../tei/behaviours.ts'
+import { attr, elementChildren, findAll, findFirst, localName, parse, plainText, textOf, type Element } from '../tei/xast.ts'
 import { bool, compileXPath, str, type Pos, type XPath } from './xpath.ts'
 
 export interface Model {
@@ -45,13 +46,22 @@ export interface Odd {
   renditions: Set<string>
   css: string
   /** What is wrong in the ODD itself, each once: unreadable expressions, and what the checks below found. */
-  findings: Set<string>
+  findings: Finding[]
+  /** The behaviours its models may name: the Processing Model's, and the project's own. */
+  behaviours: Record<string, BehaviourSpec>
   /** What the rendering reached, filled as it runs: the models that fired, and the elements walked. */
   reached: { models: Set<string>; elements: Set<string>; unmodelled: Set<string> }
   /** The outputs laid over the page, each named by the first `<desc>` of its models: the reading switches. */
   views: View[]
   /** The header's `<availability>`: the terms of the ODD, and so of everything generated from it. */
   availability?: { text: string; licence?: string }
+}
+
+export interface ReadOddOptions {
+  /** The stylesheet the ODD's CSS reads its custom properties from, for checking them. */
+  tokensCss?: string
+  /** Behaviours to add, or to replace those of the Processing Model. */
+  behaviours?: Record<string, BehaviourSpec>
 }
 
 export interface View {
@@ -62,12 +72,12 @@ export interface View {
 }
 
 /** A param a behaviour does not read is a typo — unless it is a custom property or an attribute. */
-const readsParam = (behaviour: string, name: string) =>
+const readsParam = (behaviours: Odd['behaviours'], behaviour: string, name: string) =>
   behaviour === 'metadata' ||
   name === 'content' ||
   name === 'join' ||
   /^(--|data-)/.test(name) ||
-  (BEHAVIOURS[behaviour]?.params ?? []).includes(name)
+  (behaviours[behaviour]?.params ?? []).includes(name)
 
 /** The name of the page's own output: a model may mark itself for it, or leave `@output` off. */
 const WEB = 'web'
@@ -103,7 +113,7 @@ const rule = (selector: string, r: Element) =>
   `${selector}${attr(r, 'scope') ? `::${attr(r, 'scope')}` : ''} { ${textOf(r).trim()} }`
 const rules = (el: Element, selector: string) => elementChildren(el, 'outputRendition').map((r) => rule(selector, r))
 
-export function readOdd(xml: string, tokensCss = ''): Odd {
+export function readOdd(xml: string, { tokensCss = '', behaviours = {} }: ReadOddOptions = {}): Odd {
   const tree = parse(xml)
   /** An element's base model, once: where it stands does not change. */
   const cached = new WeakMap<Element, Model | undefined>()
@@ -117,7 +127,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
       const m = base(node, up)
       // Within a sequence, `text` is literal content, not a container.
       const kinds = m?.sequence?.map((p) => p.behaviour).filter((b) => b !== 'text') ?? [m?.behaviour ?? '']
-      const flows = kinds.map((b) => BEHAVIOURS[b]?.flow)
+      const flows = kinds.map((b) => odd.behaviours[b]?.flow)
       return flows.includes('block') ? 'block' : flows.every((f) => f === 'inline') ? 'inline' : undefined
     },
     joins: (node, up) => {
@@ -128,9 +138,18 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
     values: {},
     renditions: new Set(),
     css: '',
-    findings: new Set(),
+    findings: [],
+    behaviours: { ...BEHAVIOURS, ...behaviours },
     reached: { models: new Set(), elements: new Set(), unmodelled: new Set() },
     views: [],
+  }
+  /** Each finding once: an expression that fails, fails wherever it is evaluated. */
+  const reported = new Set<string>()
+  const report = (code: FindingCode, args: Record<string, string>) => {
+    const found = finding(code, args)
+    if (reported.has(found.message)) return
+    reported.add(found.message)
+    odd.findings.push(found)
   }
   /** Custom properties the models set, which the ODD's CSS may then read. */
   const properties = new Set<string>()
@@ -141,13 +160,19 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
   /** Each output over the page, and the `<desc>`s of the first of its models that has any. */
   const views = new Map<string, string[]>()
 
+  // Neither is read, and nothing in the rendering would show what that cost.
+  const [schema, ...others] = findAll(tree, 'schemaSpec')
+  const source = schema && attr(schema, 'source')
+  if (source) report('chain-not-followed', { ident: attr(schema, 'ident') ?? '', source })
+  for (const other of others) report('schema-spec-ignored', { ident: attr(other, 'ident') ?? '' })
+
   for (const r of elementChildren(findFirst(tree, 'tagsDecl'), 'rendition')) {
     const id = attr(r, 'xml:id')!
     odd.renditions.add(id)
     css.push(rule(`.r-${id}`, r))
   }
 
-  for (const spec of elementChildren(findFirst(tree, 'schemaSpec'), 'elementSpec')) {
+  for (const spec of elementChildren(schema, 'elementSpec')) {
     const ident = attr(spec, 'ident')!
     const entries = elementChildren(spec).filter((e) => /^model(Grp|Sequence)?$/.test(localName(e.name)))
     const models: Model[] = []
@@ -163,15 +188,14 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
       /** A model, or a sequence of them; `outer` is the sequence a model belongs to. */
       const read = (m: Element, outer?: Element): Model => {
         const id = `${ident}-${models.length + 1}`
-        const where = `Modell ${id}`
         /**
          * An expression that cannot be read, or that fails where it is evaluated, counts as empty —
          * what a failed evaluation gives anyway: the predicate is false, the param has no value.
          * One document renders without it, rather than none at all.
          */
-        const compile = (expr: string, what: string): XPath => {
+        const compile = (expr: string, code: FindingCode, args: Record<string, string> = {}): XPath => {
           const empty = (error: unknown) => {
-            odd.findings.add(`${where}: ${what} nicht auswertbar, gilt als leer — ${(error as Error).message}`)
+            report(code, { model: id, ...args, error: (error as Error).message })
             return []
           }
           let evaluate: XPath
@@ -194,7 +218,7 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
         const own = tokens(m, 'cssClass')
         const styled = elementChildren(m, 'outputRendition').length > 0
         const bare = sole && !group && !outer && !predicate && !output
-        const cls = styled && !bare ? own[0] ?? fail(`${where}: ein gestaltetes Modell unter mehreren braucht @cssClass`) : undefined
+        const cls = styled && !bare ? own[0] ?? (report('css-class-missing', { model: id }), id) : undefined
         // A `web` model belongs to the page itself, so its CSS is the page's, not a view's.
         const overlay = output && !ALONE.includes(output) ? output : undefined
         if (styled) {
@@ -206,18 +230,23 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
           if (!views.get(output)?.length) views.set(output, descs)
         }
         const sequence = localName(m.name) === 'modelSequence' ? elementChildren(m, 'model').map((part) => read(part, m)) : undefined
-        const behaviour = sequence ? 'modelSequence' : attr(m, 'behaviour') ?? fail(`${where}: kein @behaviour`)
+        const named = attr(m, 'behaviour')
+        const known = !!sequence || (named !== undefined && Object.hasOwn(odd.behaviours, named))
+        if (!sequence && !named) report('behaviour-missing', { model: id })
+        else if (!known) report('behaviour-unknown', { model: id, behaviour: named! })
+        // An element whose behaviour is not known still shows its text, as an unreadable expression leaves the rest.
+        const behaviour = sequence ? 'modelSequence' : known ? named! : 'inline'
         const params = elementChildren(m, 'param').map((p) => ({ name: attr(p, 'name')!, value: attr(p, 'value') ?? "''" }))
         for (const { name } of params) {
           if (name.startsWith('--')) properties.add(name)
-          if (!readsParam(behaviour, name)) odd.findings.add(`${where}: "${behaviour}" liest den Parameter "${name}" nicht`)
+          if (known && !readsParam(odd.behaviours, behaviour, name)) report('param-unread', { model: id, behaviour, param: name })
         }
         return {
           id,
           behaviour,
-          predicate: predicate ? compile(predicate, 'Prädikat') : undefined,
+          predicate: predicate ? compile(predicate, 'predicate-unreadable') : undefined,
           output: output || undefined,
-          params: Object.fromEntries(params.map(({ name, value }) => [name, compile(value, `Parameter "${name}"`)])),
+          params: Object.fromEntries(params.map(({ name, value }) => [name, compile(value, 'param-unreadable', { param: name })])),
           classes: [...new Set([...(groupClass ? [groupClass] : []), ...own, ...(cls ? [cls] : [])])],
           useSourceRendition: inherited('useSourceRendition') === 'true',
           sequence,
@@ -236,9 +265,9 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
       const output = m.output ?? ''
       const earlier = decides.get(output)
       if (earlier && (earlier.group === undefined || earlier.group !== m.group)) {
-        odd.findings.add(`Modell ${m.id}: nie erreichbar, ${earlier.by} entscheidet schon`)
+        report(earlier.group === undefined ? 'model-unreachable' : 'model-unreachable-group', { model: m.id, by: earlier.by })
       } else if (!m.predicate) decides.set(output, { by: m.id })
-      else if (m.group !== undefined && !earlier) decides.set(output, { by: `die Gruppe ab ${m.id}`, group: m.group })
+      else if (m.group !== undefined && !earlier) decides.set(output, { by: m.id, group: m.group })
     }
 
     if (models.length) odd.models[ident] = models
@@ -269,13 +298,9 @@ export function readOdd(xml: string, tokensCss = ''): Odd {
   // A custom property the CSS reads is defined by the design tokens, by the CSS itself, or by a param.
   const defined = new Set([...`${tokensCss}\n${odd.css}`.matchAll(/(--[\w-]+)\s*:/g)].map(([, name]) => name))
   for (const [, name] of odd.css.matchAll(/var\((--[\w-]+)/g)) {
-    if (!defined.has(name) && !properties.has(name)) odd.findings.add(`CSS: ${name} ist nirgends definiert`)
+    if (!defined.has(name) && !properties.has(name)) report('css-property-undefined', { property: name })
   }
   return odd
-}
-
-function fail(message: string): never {
-  throw new Error(message)
 }
 
 /**
@@ -283,19 +308,15 @@ function fail(message: string): never {
  * read off what the rendering reached. Over every output at once: a model that fires
  * in the search text earns its place as much as one that fires on the page.
  */
-export function coverage(odd: Odd): string[] {
+export function coverage(odd: Odd): Finding[] {
   const { models, elements, unmodelled } = odd.reached
-  const out: string[] = []
+  const out: Finding[] = []
   for (const [ident, list] of Object.entries(odd.models)) {
-    if (!elements.has(ident)) out.push(`<${ident}>: im Korpus nicht vorgekommen, ${list.length} Modell(e) ungenutzt`)
-    else for (const m of list) if (!models.has(m.id)) out.push(`Modell ${m.id}: greift nie`)
+    if (!elements.has(ident)) out.push(finding('element-absent', { element: ident, count: String(list.length) }))
+    else for (const m of list) if (!models.has(m.id)) out.push(finding('model-unused', { model: m.id }))
   }
   for (const name of unmodelled) {
-    out.push(
-      odd.models[name]
-        ? `<${name}>: Modelle vorhanden, keines trifft zu`
-        : `<${name}>: kein Modell in der ODD`,
-    )
+    out.push(finding(odd.models[name] ? 'element-no-match' : 'element-no-model', { element: name }))
   }
-  return out.sort((a, b) => a.localeCompare(b, 'de'))
+  return out.sort((a, b) => a.message.localeCompare(b.message))
 }

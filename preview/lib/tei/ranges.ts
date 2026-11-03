@@ -13,12 +13,13 @@
 
 import type { Element, Root, Text } from 'hast'
 
+import { finding, type Finding } from '../findings.ts'
 import { h } from './teiToHast.ts'
 
 type Parent = Root | Element
 
 /** Wraps the ranges of each tree on its own; returns the findings for what did not resolve. */
-export function resolveRanges(trees: Parent[], anchors: string[], skip: string): string[] {
+export function resolveRanges(trees: Parent[], anchors: string[], skip: string): Finding[] {
   const unresolved: string[] = []
   const referenced = new Set<string>()
 
@@ -58,7 +59,7 @@ export function resolveRanges(trees: Parent[], anchors: string[], skip: string):
 
   const orphans = anchors.filter((id) => !referenced.has(id))
   return [
-    ...(unresolved.length ? [`Kommentierter Bereich ohne Anfangspunkt: ${unresolved.join(', ')}`] : []),
-    ...(orphans.length ? [`Anker, auf den keine Anmerkung zeigt: ${orphans.join(', ')}`] : []),
+    ...(unresolved.length ? [finding('range-no-start', { ids: unresolved.join(', ') })] : []),
+    ...(orphans.length ? [finding('anchor-unused', { ids: orphans.join(', ') })] : []),
   ]
 }

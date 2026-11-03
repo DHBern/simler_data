@@ -11,6 +11,8 @@
 
 import type { Element, ElementContent, Root } from 'hast'
 
+import { finding, type Finding } from '../findings.ts'
+
 type Parent = Root | Element
 
 /** The path from the root to each element with a `data-region`, in document order. */
@@ -45,7 +47,7 @@ function lift(tree: Root, path: Element[], depth: number) {
 }
 
 /** Wraps each region; returns the findings for markers without a partner. */
-export function resolveRegions(tree: Root): string[] {
+export function resolveRegions(tree: Root): Finding[] {
   const all = markers(tree).map((p) => p.at(-1)!)
   let unpaired = 0
   for (let i = 0; i < all.length; i++) {
@@ -68,5 +70,5 @@ export function resolveRegions(tree: Root): string[] {
     start.children = parent.children.splice(s + 1, e - s - 1) as ElementContent[]
     parent.children.splice(parent.children.indexOf(end), 1)
   }
-  return unpaired ? [`Bereichsmarke ohne Gegenstück (${unpaired}×)`] : []
+  return unpaired ? [finding('region-unpaired', { count: String(unpaired) })] : []
 }

@@ -9,7 +9,8 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
-import { idFindings, parse } from '../lib'
+import { finding, idFindings, parse } from '../lib'
+import { inGerman } from '../messages'
 import { documentPage, findingsPage, indexPage, type PreviewDoc } from '../page'
 
 test('an id used twice, or one no XML tool takes, is a finding', () => {
@@ -18,10 +19,15 @@ test('an id used twice, or one no XML tool takes, is a finding', () => {
       <teiHeader><msDesc xml:id="src"/></teiHeader>
       <text><body><note xml:id="n1"/><note xml:id="n1"/><note xml:id="Töchterlein"/></body></text>
     </TEI>`),
-  ).join('\n')
-  assert.match(findings, /zweimal vergeben.*: n1$/m)
-  assert.match(findings, /kein NCName.*: Aa,_Bb$/m)
+  ).map((f) => f.message).join('\n')
+  assert.match(findings, /used twice.*: n1$/m)
+  assert.match(findings, /no NCName.*: Aa,_Bb$/m)
   assert.doesNotMatch(findings, /Töchterlein|src/) // letters beyond ASCII are names too
+})
+
+test('the pages say the findings in German', () => {
+  assert.equal(inGerman(finding('model-unused', { model: 'p-1' })), 'Modell p-1: greift nie')
+  assert.equal(inGerman(finding('id-twice', { id: 'n1' })), 'xml:id zweimal vergeben, Verweise landen an der falschen Stelle: n1')
 })
 
 test('a note goes to the apparatus whatever its place', () => {
