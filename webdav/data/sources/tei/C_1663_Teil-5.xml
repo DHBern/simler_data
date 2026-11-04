@@ -5533,14 +5533,14 @@
                                 Stand.</l>
                         </lg>
                         <lb/>
-                        <lg n="8">
-                            <l>E. E. W.</l>
-                            <lb/>
-                            <l>Schuldgeneigewilligster Diener <lb/>und Vetter</l>
-                            <lb/>
-                            <l n="75"><rs type="person" key="person_001">Joh. Wilhelm
-                                Simler</rs>.</l>
-                        </lg>
+                        <l rendition="#c">E. E. W.</l>
+                        <lb/>
+                        <closer>
+                            <salute>Schuldgeneigewilligster Diener<lb/>und Vetter<lb/>
+                            </salute>
+                            <signed><rs type="person" key="person_001">Joh. Wilhelm Simler</rs>     
+                            </signed>
+                        </closer>
                         <lb/>
                     </lg>
                 </div>
