@@ -118,7 +118,7 @@ test('words that vary keep the id that pairs them across witnesses', async () =>
 test('a missing witness and a copied cell are told apart on the page', async () => {
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
-  assert.match(page, /<td class="gap" data-w="2" title="fehlt">/)
+  assert.match(page, /<td class="gap" data-w="2" title="fehlt in F42A"><span class="gap-label">fehlt<\/span><\/td>/)
   assert.match(page, /<td class="copy" data-w="2" title="wie Segment 1">/)
   assert.equal((page.match(/class="var" data-group="2-2"/g) ?? []).length, 2) // the pair, one per column
   assert.match(page, /<th data-w="1"><a href="A_1648\.html#n69">A<\/a><\/th>/)
@@ -228,8 +228,10 @@ test('the apparatus of a segment lists its readings', async () => {
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
 
-  // The heading only A has is a whole line more; the two others hold a place each.
-  assert.equal((page.match(/<tr class="app">/g) ?? []).length, 3)
+  // A column beside the rows: the heading only A has is a whole line more; the two others hold a place each.
+  assert.match(page, /<th class="app">Apparat<\/th>/)
+  assert.equal((page.match(/<td class="app"><ul class="app-list">/g) ?? []).length, 3)
+  assert.match(page, /<\/td>\s*<td class="app"><ul class="app-list">\s*<li data-group="2-2"/) // the last cell of its row
   // Each entry carries what the reader's choice is matched against.
   assert.match(page, /<li data-group="3-1" data-cat="orthography" data-step="doubled letters">/)
   // Lemma, bracket, the departing readings with their sigla.
@@ -256,15 +258,17 @@ test('each witness gets its distance from the others, segment by segment', async
   assert.deepEqual(spelling.departures, { A: 1, F42A: 1 })
 })
 
-test('beside the bar, a strip per print: a hole where it has no text, each cell a link to its row', async () => {
+test('a strip per print, upright beside the table and flat above it: a hole where it has no text', async () => {
   const [synopsis] = await load()
   const page = synopsisPage(synopsis)
-  assert.match(page, /<div class="syn-glance"><span class="syn-mix">[\s\S]*?<\/span><span class="syn-stack"><span class="syn-strip" data-w="1"><b>A<\/b><svg/)
-  // F42A has no heading, so its first cell links to the row and draws nothing.
-  assert.match(page, /<a href="#seg-1"><title>Segment 1: fehlt in F42A<\/title><rect x="0" y="0" width="1" height="1" class="hit"\/><\/a>/)
-  // The spelling, in row 3, is the lightest departure.
-  assert.match(page, /<a href="#seg-3"><title>Segment 3<\/title><rect[^>]*class="hit"\/><rect[^>]*class="l1"\/><\/a>/)
-  assert.doesNotMatch(page, /syn-spark/)
+  assert.match(page, /<div class="syn-glance"><span class="syn-stack"><span class="syn-strip" data-w="1"><b>A<\/b><svg viewBox="0 0 3 1"/)
+  const map = page.slice(page.indexOf('<aside class="syn-aside'), page.indexOf('</aside>'))
+  assert.match(map, /hidden data-syn-map/) // the script shows it
+  assert.match(map, /<b data-w="2">F42A<\/b>/)
+  // F42A has no heading: its strip starts one row down; the spelling, in row 3, is the lightest departure.
+  assert.match(map, /<svg data-w="2" viewBox="0 0 1 3"[^>]*><rect x="0" y="1\.000" width="1" height="0\.999" class="l2"><\/rect><rect x="0" y="2\.000"[^>]*class="l1">/)
+  assert.match(map, /<i class="syn-frame"><\/i>/)
+  assert.doesNotMatch(page, /<a href="#seg-\d+"><title>/) // the strips are pictures; the minimap jumps
 })
 
 test('inside a variant, only the characters that differ are marked', async () => {
@@ -308,7 +312,7 @@ test('a segment can be linked to and counted', async () => {
   const page = synopsisPage(synopsis)
 
   assert.match(page, /<td class="num"[^>]*><a\s+href="#seg-2" data-syn-link>2<\/a><\/td>/)
-  assert.match(page, /<output class="ctrl syn-count" data-syn-count/)
+  assert.match(page, /<output class="syn-count" data-syn-count/)
 })
 
 test('a reading links back to the line it was taken from', async () => {
@@ -337,7 +341,7 @@ test('a document aligned by TextAlign says so, and a witness without a source is
   const dir = await mkdtemp(join(tmpdir(), 'by-'))
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
   const page = synopsisPage((await loadSynopses(dir))[0])
-  assert.match(page, /Ausgerichtet mit TextAlign 0\.1\.0, Verfahren\s+<code>dekker, RuleNormalizer<\/code>;/)
+  assert.match(page, /Automatisch ausgerichtet mit TextAlign 0\.1\.0, Verfahren <code>dekker, RuleNormalizer<\/code>;/)
   assert.match(page, /<th data-w="1"><a href="A_1648\.html#n7">A<\/a><\/th>\s*<th data-w="2">B<\/th>/)
 })
 
@@ -353,7 +357,7 @@ test("a model's other pairing of the lines is marked on its rows, not shown in t
   const page = synopsisPage(synopsis)
   assert.equal((page.match(/<tr id="seg-/g) ?? []).length, 2) // the rows as they are
   assert.match(page, /data-syn-link>1<\/a><span class="pairing" title="Das Modell m schlägt vor, die Zeilen der Segmente 1–2 anders zu paaren: one verse\./)
-  assert.match(page, /Für 2 schlägt ein Modell eine andere Zeilenpaarung vor\./)
+  assert.match(page, /<p class="lead syn-summary">1 Variante <span class="syn-mix">[^]*?<\/span> · 2 andere Zeilenpaarungen vorgeschlagen · /)
 })
 
 test('the rows the alignment editor doubts are marked, with its reasons', async () => {
@@ -368,7 +372,7 @@ test('the rows the alignment editor doubts are marked, with its reasons', async 
   assert.deepEqual(synopsis.segments.map((s) => s.doubts), [[], ['B is missing']])
   const page = synopsisPage(synopsis)
   assert.match(page, /data-syn-link>2<\/a><span class="doubt" title="Ausrichtung zweifelhaft: B is missing">\?<\/span>/)
-  assert.match(page, /1 Segment ist zweifelhaft ausgerichtet\./)
+  assert.match(page, / · 1 Segment zweifelhaft ausgerichtet · /)
   assert.match(synopsesPage([synopsis]), /<td class="num">1<\/td>\s*<\/tr>/) // the overview's column
   // The probable typos, by row number, as the Hinweise page lists them.
   assert.deepEqual(synopsis.typos, [{ n: 1, readings: { A: 'ein', B: 'eyn' }, letters: 'i/y' }])
@@ -379,9 +383,10 @@ test('the rows the alignment editor doubts are marked, with its reasons', async 
   assert.equal((await loadSynopses(dir, '', join(dir, 'none.json')))[0].doubtful, 0)
 })
 
-test('the page says first what it rests on: who aligned it, who checked it, who typed it', async () => {
+test('the page says first what a reader acts on and whether a person checked it; at its foot, who aligned and typed it', async () => {
   const [synopsis] = await load()
-  assert.match(synopsisPage(synopsis), /<p class="syn-basis"><b class="basis" data-basis="lera">LERA<\/b> automatisch ausgerichtet \(<code>cgsa<\/code>\) · noch von niemandem geprüft · Typen: 1 von Regeln<\/p>/)
+  assert.match(synopsisPage(synopsis), /<p class="lead syn-summary">2 Varianten <span class="syn-mix">[^]*?<\/span> · <span title="[^"]*">noch ungeprüft<\/span><\/p>/)
+  assert.match(synopsisPage(synopsis), /Automatisch ausgerichtet in LERA, Verfahren <code>cgsa<\/code>, zuletzt geändert am 29\.09\.2026;\s+Typen: 1 von Regeln; Datei/)
   assert.match(synopsesPage([synopsis]), /<td><b class="basis" data-basis="lera">LERA<\/b><\/td>/)
   // A place a person typed is a row a person worked on.
   const doc = alignment({ A: 'tei/A_1648.xml#n7', B: 'tei/B_1653.xml#n7' },
@@ -390,7 +395,8 @@ test('the page says first what it rests on: who aligned it, who checked it, who 
   const dir = await mkdtemp(join(tmpdir(), 'basis-'))
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
   const [checked] = await loadSynopses(dir)
-  assert.match(synopsisPage(checked), /data-basis="textalign">TextAlign<\/b> automatisch ausgerichtet \(<code>dekker<\/code>\) · <b class="basis" data-basis="person">von Hand geprüft<\/b> 1 von 2 Segmenten · Typen: 1 bestätigt/)
+  assert.match(synopsisPage(checked), /1 Variante <span class="syn-mix">[^]*?<\/span> · <b class="basis" data-basis="person">von Hand geprüft<\/b> 1 von 2 Segmenten<\/p>/)
+  assert.match(synopsisPage(checked), /Typen: 1 bestätigt;/)
   assert.match(synopsesPage([checked]), /TextAlign<\/b> <b class="basis" data-basis="person">geprüft<\/b><\/td>/)
 })
 
@@ -403,8 +409,8 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
   await writeFile(join(dir, 'n7.json'), JSON.stringify(doc), 'utf8')
   const [synopsis] = await loadSynopses(dir)
   const page = synopsisPage(synopsis)
-  // One bar, a part per category, each a preset for that category alone.
-  assert.match(page, /<span class="syn-mix"><button type="button" data-cat="orthography" data-syn-preset="orthography" style="flex-grow:2" title="Orthographie 2 — nur diese zeigen"><\/button><button type="button" data-cat="open"[^>]*flex-grow:1/)
+  // One bar in the summary, a part per category.
+  assert.match(page, /3 Varianten <span class="syn-mix"><i data-cat="orthography" style="flex-grow:2" title="Orthographie 2"><\/i><i data-cat="open"[^>]*flex-grow:1/)
   // The register under the categories' names.
   assert.match(page, /<h4>Orthographie <span class="count">1<\/span><\/h4>\s*<ol><li data-cat="orthography"[^>]*><b>vnd<\/b>/)
   // `vnd`/`und` is spelling, so A and B are 0 apart in substance; `figur`/`geſtalt` puts C 1 from both.
@@ -423,8 +429,8 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
 
 test('the page says which export it was built from', async () => {
   const page = synopsisPage((await load())[0])
-  assert.match(page, /Ausgerichtet in LERA, Verfahren\s+<code>cgsa<\/code>, zuletzt geändert am 29\.09\.2026;/)
-  assert.match(page, /<span class="syn-swatch"><b>—<\/b> kein Text<\/span>/) // the legend
+  assert.match(page, /ausgerichtet in LERA, Verfahren <code>cgsa<\/code>, zuletzt geändert am 29\.09\.2026;/)
+  assert.match(page, /<span class="syn-swatch"><span class="gap-key"><\/span> kein Text<\/span>/) // the legend
 })
 
 test('the lines of an aligned poem are numbered where the reader can reach them', () => {
@@ -452,13 +458,18 @@ test('a witness absent from the row is not an omission at every place in it', as
 test('the colouring modes and their legend come from one table', async () => {
   const page = synopsisPage((await load())[0])
 
-  assert.match(page, /data-syn="colour"[\s\S]*?value="variance"[\s\S]*?value="type"[\s\S]*?value="state"[\s\S]*?value="change"/)
+  // By type first, the default; the page starts so.
+  assert.match(page, /data-syn="colour"[\s\S]*?value="type"[\s\S]*?value="variance"[\s\S]*?value="change"/)
+  assert.doesNotMatch(page, /value="state"/) // how settled a type is, every mode shows by its underline
+  assert.match(page, /<div data-synopsis data-colour="type">/)
   // Against each witness, by its column.
   assert.match(page, /<option value="w2">gegen F42A<\/option>/)
   // The swatch is a mark like any other, so the stylesheet colours both at once.
   assert.match(page, /<span class="syn-keys" data-for="variance">[\s\S]*?<span class="var" data-degree="1">/)
-  assert.match(page, /<span class="syn-keys" data-for="type">[\s\S]*?<span class="var" data-cat="word"><b>Aa<\/b><\/span> Wortvariante/)
-  assert.match(page, /<span class="syn-keys" data-for="state">[\s\S]*?<span class="var" data-state="proposed">/)
+  // By type, the chips are the legend: each carries its category, and so its colour.
+  assert.match(page, /<span class="syn-keys" data-for="type"><\/span>/)
+  assert.match(page, /<label class="syn-chip" data-cat="word" title="[^"]*" data-n="\d+"><input type="checkbox" data-syn-cat="word" checked> Wortvariante/)
+  assert.match(page, /<span class="syn-swatch"><span class="var" data-state="proposed"><b>Aa<\/b><\/span> von Regel oder Modell vorgeschlagen<\/span>/)
   assert.match(page, /<span class="syn-keys" data-for="change">[\s\S]*?<span class="var" data-change="om">/)
   assert.match(page, /<span class="syn-keys" data-for="w1">[\s\S]*?weicht von A ab/)
   assert.match(page, /<span class="var"[^>]* data-change="sub"/)
@@ -567,20 +578,60 @@ test('a stanza opens with a gap in that print only; without a line map there is 
   const rows: Row[] = [1, 2].map((n) => ({ cells: { A: ['a'], B: ['a'] }, refs: { A: [`A-l${n}`], B: [`B-l${n}`] } }))
   const page = synopsisPage(await stacked(rows, { 'A-l1': '1', 'A-l2': '2' }))
   const strips = page.split('class="syn-strip"')
-  assert.match(strips[1], /<rect x="1\.\d+"/) // A's second stanza starts past its cell's edge
-  assert.match(strips[2], /<rect x="1\.000"/)
-  assert.match(synopsisPage(await stacked(rows)).split('class="syn-strip"')[1], /<rect x="1\.000"/)
+  assert.match(strips[1], /<rect x="0\.000"[^>]*><\/rect><rect x="1\.0\d\d"/) // A's second stanza starts past its cell's edge
+  assert.match(strips[2], /^[^]*?<rect x="0\.000" y="0" width="1\.99\d"[^>]*><\/rect><\/svg>/) // B's cells run together
+  assert.match(synopsisPage(await stacked(rows)).split('class="syn-strip"')[1], /^[^]*?<rect x="0\.000" y="0" width="1\.99\d"/)
 })
 
 test('a long poem stays at 120 columns, and a bin keeps its strongest state', async () => {
   const rows: Row[] = Array.from({ length: 300 }, (_, i) => ({ cells: { A: [i === 5 ? 'x' : 'a'], B: ['a'] } }))
   const page = synopsisPage(await stacked(rows))
   assert.match(page, /viewBox="0 0 120 1"/)
-  assert.match(page.split('class="syn-strip"')[1], /<a href="#seg-6">[\s\S]*?class="l2"\/><\/a>/)
+  assert.match(page.split('class="syn-strip"')[1], /<rect x="2\.000" y="0" width="[\d.]+" height="1" class="l2">/) // row 6 is in bin 2
+  assert.match(page, /viewBox="0 0 1 300"/) // upright, every row: a screen's height tells more apart
 })
 
 test('a line estimate.py found moved has a colour of its own, and says where to', async () => {
   const rows: Row[] = [1, 2, 3].map(() => ({ cells: { A: ['a'], B: ['a'] } }))
   const page = synopsisPage(await stacked(rows, {}, [{ segment: 's1', siglum: 'B', like: 's3' }]))
-  assert.match(page, /<title>Segment 1: steht wohl anders, vgl\. Segment 3<\/title>[^]*?class="moved"/)
+  assert.match(page, /class="moved"><title>Segment 1: steht wohl anders, vgl\. Segment 3<\/title><\/rect>/)
+})
+
+test('the colours come with the page, from the settings', async () => {
+  const page = synopsisPage((await load())[0])
+  assert.match(page, /<style>\[data-cat="added"\]\{--hue:78 121 167\}/)
+  for (const c of CATEGORIES) assert.match(SETTINGS.categories[c].colour, /^#[0-9a-f]{6}$/)
+})
+
+test('what is changed rarely is folded under Optionen, with the legend', async () => {
+  const page = synopsisPage((await load())[0])
+  const options = page.slice(page.indexOf('<details class="syn-options"'), page.indexOf('</details>', page.indexOf('syn-options')))
+  for (const control of ['data-syn-ignore', 'data-syn="colour"', 'data-syn="apparatus"', 'syn-legend']) assert.ok(options.includes(control), control)
+  for (const control of ['data-syn-cat', 'data-syn-witness', 'data-syn="varying"']) assert.ok(!options.includes(control), control)
+})
+
+test('a run of lines a witness lacks is one band, said once', async () => {
+  const synopsis = await synopsisOf(SOURCES('A', 'B'), [
+    { cells: { A: ['eins'], B: ['eins'] } },
+    { cells: { A: null, B: ['zwei'] } },
+    { cells: { A: null, B: ['drei'] } },
+    { cells: { A: null, B: ['vier'] } },
+    { cells: { A: ['fünf'], B: ['fünf'] } },
+  ])
+  const page = synopsisPage(synopsis)
+  assert.match(page, /<td class="gap more" data-w="1" title="fehlt in A"><span class="gap-label">fehlt · 3 Zeilen<\/span><\/td>/)
+  assert.match(page, /<td class="gap cont more" data-w="1" title="fehlt in A"><\/td>/)
+  assert.match(page, /<td class="gap cont" data-w="1" title="fehlt in A"><\/td>/)
+  assert.match(page, /3 ganze Zeilen \(2–4\): fehlt in A/)
+  // The others still count, but are not said again.
+  assert.equal((page.match(/<li data-cat="added"[^>]* class="cont">/g) ?? []).length, 2)
+})
+
+test('on a phone the controls fold under Ansicht, the strips stay above, and each cell names its witness', async () => {
+  const page = synopsisPage((await load())[0])
+  const view = page.slice(page.indexOf('<details class="syn-view" open data-syn-view>'), page.indexOf('</form>'))
+  assert.match(view, /^<details class="syn-view" open data-syn-view>\s*<summary>Ansicht<\/summary>/)
+  for (const control of ['data-syn-cat', 'data-syn-witness', 'syn-options']) assert.ok(view.includes(control), control)
+  assert.ok(page.indexOf('class="syn-glance"') < page.indexOf('class="syn-view"'))
+  assert.match(page, /<style>\.synopsis \[data-w="1"\]\{--siglum:"A"\}\.synopsis \[data-w="2"\]\{--siglum:"F42A"\}<\/style>/)
 })

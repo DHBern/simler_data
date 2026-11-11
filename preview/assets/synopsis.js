@@ -97,19 +97,66 @@
         chip.parentNode.querySelector('.n').textContent = n
       })
 
-      // A row with nothing left to show is quiet, its whole line included; an
-      // apparatus row with nothing left goes.
+      // A row with nothing left to show is quiet, its whole line included.
       rows.forEach(function (row) {
-        var app = row.nextElementSibling
-        var isApp = app && app.classList.contains('app')
-        var line = isApp && app.querySelector('li[data-missing]:not([data-off])')
+        var line = row.querySelector('li[data-missing]:not([data-off])')
         row.classList.toggle('quiet', !row.querySelector('.var:not([data-off])') && !line)
-        if (isApp) app.classList.toggle('quiet', !app.querySelector('li:not([data-off])'))
+        // Text only in witnesses not shown: nothing to read here.
+        row.classList.toggle('unseen', !all('td[data-w]:not(.gap)', row).some(function (td) { return shown.indexOf(td.dataset.w) >= 0 }))
       })
       previewStore.set('syn-cats', chosen.join(' '))
       previewStore.set('syn-steps', ignored.join('|'))
+      frame()
     }
 
+    // The minimap: a frame over the rows on screen, and a click or a drag on it
+    // goes to the row at that height. Its axis is the rows, hidden ones too.
+    var map = synopsis.querySelector('[data-syn-map]')
+    var area = map && map.querySelector('.syn-map')
+    var box = map && map.querySelector('.syn-frame')
+    var queued = false
+    var frame = function () {
+      if (!map || queued) return
+      queued = true
+      requestAnimationFrame(function () {
+        queued = false
+        var first = -1
+        var last = -1
+        for (var i = 0; i < rows.length; i++) {
+          if (!rows[i].offsetParent) continue
+          var r = rows[i].getBoundingClientRect()
+          if (r.top > innerHeight) break
+          if (r.bottom < 0) continue
+          if (first < 0) first = i
+          last = i
+        }
+        box.hidden = first < 0
+        box.style.top = first / rows.length * 100 + '%'
+        box.style.height = (last - first + 1) / rows.length * 100 + '%'
+      })
+    }
+    if (map) {
+      map.hidden = false
+      var go = function (event) {
+        var r = area.getBoundingClientRect()
+        var i = Math.max(0, Math.min(rows.length - 1, Math.floor((event.clientY - r.top) / r.height * rows.length)))
+        while (i < rows.length - 1 && !rows[i].offsetParent) i++
+        rows[i].scrollIntoView({ block: 'start' })
+      }
+      area.addEventListener('pointerdown', function (event) { area.setPointerCapture(event.pointerId); go(event) })
+      area.addEventListener('pointermove', function (event) { if (area.hasPointerCapture(event.pointerId)) go(event) })
+      addEventListener('scroll', frame, { passive: true })
+      addEventListener('resize', frame)
+    }
+
+    // On a narrow screen the controls start folded under *Ansicht*; on a wide one they are always open.
+    var view = controls.querySelector('[data-syn-view]')
+    var narrow = matchMedia('(max-width: 40rem)')
+    var fit = function () { view.open = !narrow.matches }
+    fit()
+    narrow.addEventListener('change', fit)
+
+    var key = function (name) { return 'syn-' + (name === 'colour' ? 'colouring' : name) }
     var apply = function (control) {
       var name = control.dataset.syn
       if (control.dataset.synWitness) {
@@ -119,10 +166,10 @@
         synopsis.dataset.hide = hidden.join(' ')
       } else if (control.type === 'checkbox') {
         synopsis.toggleAttribute('data-' + name, control.checked)
-        previewStore.set('syn-' + name, control.checked ? 'on' : 'off')
+        previewStore.set(key(name), control.checked ? 'on' : 'off')
       } else {
         synopsis.dataset[name] = control.value
-        previewStore.set('syn-' + name, control.value)
+        previewStore.set(key(name), control.value)
       }
     }
 
@@ -140,6 +187,7 @@
 
     var changed = function () {
       tally(0, differing().length)
+      frame()
     }
 
     var step = function (by) {
@@ -192,7 +240,7 @@
     })
 
     all('[data-syn], [data-syn-witness]', controls).forEach(function (control) {
-      var value = control.dataset.syn && previewStore.get('syn-' + control.dataset.syn)
+      var value = control.dataset.syn && previewStore.get(key(control.dataset.syn))
       if (value) {
         if (control.type === 'checkbox') control.checked = value === 'on'
         // Against a column belongs to the poem: column 2 is another witness in the next.
@@ -206,6 +254,12 @@
         changed()
       })
     })
+    // The options rarely changed stay folded, unless the reader opened them.
+    var options = controls.querySelector('[data-syn-options]')
+    if (options) {
+      options.open = previewStore.get('syn-options') === 'open'
+      options.addEventListener('toggle', function () { previewStore.set('syn-options', options.open ? 'open' : 'closed') })
+    }
     refresh()
     tally(0, differing().length)
   }

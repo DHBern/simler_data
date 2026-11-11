@@ -1,13 +1,13 @@
 {
  "categories": {
-  "added": { "number": "1.1", "label": "Hinzufügung", "title": "Ein späterer Druck hat hier mehr Text: ein Wort oder eine ganze Zeile" },
-  "deleted": { "number": "1.2", "label": "Streichung", "title": "Ein späterer Druck hat hier weniger Text: ein Wort oder eine ganze Zeile" },
-  "word": { "number": "2", "label": "Wortvariante", "title": "Ein anderes Wort, eine andere Formulierung oder eine andere Wortfolge" },
-  "grammar": { "number": "3", "label": "Grammatikvariante", "title": "Dasselbe Wort in anderer Form: Kasus, Numerus, Tempus, eine andere Endung" },
-  "punctuation": { "number": "4.1", "label": "Interpunktion", "title": "Nur die Zeichensetzung unterscheidet sich" },
-  "orthography": { "number": "4.2", "label": "Orthographie", "title": "Ein Wort, anders geschrieben: u/v, i/j, ſ, Groß/klein, Diakritika, Doppelkonsonanten, ck/k, Getrenntschreibung" },
-  "unclear": { "number": "", "label": "Unklar", "title": "Unsicher, falsch gepaart, ein Druck- oder Transkriptionsfehler, eine Nummer: von Hand zu klären" },
-  "open": { "number": "", "label": "offen", "title": "Noch nicht klassifiziert" }
+  "added": { "colour": "#4e79a7", "number": "1.1", "label": "Hinzufügung", "title": "Ein späterer Druck hat hier mehr Text: ein Wort oder eine ganze Zeile" },
+  "deleted": { "colour": "#f28e2b", "number": "1.2", "label": "Streichung", "title": "Ein späterer Druck hat hier weniger Text: ein Wort oder eine ganze Zeile" },
+  "word": { "colour": "#e15759", "number": "2", "label": "Wortvariante", "title": "Ein anderes Wort, eine andere Formulierung oder eine andere Wortfolge" },
+  "grammar": { "colour": "#b07aa1", "number": "3", "label": "Grammatikvariante", "title": "Dasselbe Wort in anderer Form: Kasus, Numerus, Tempus, eine andere Endung" },
+  "punctuation": { "colour": "#bab0ac", "number": "4.1", "label": "Interpunktion", "title": "Nur die Zeichensetzung unterscheidet sich" },
+  "orthography": { "colour": "#76b7b2", "number": "4.2", "label": "Orthographie", "title": "Ein Wort, anders geschrieben: u/v, i/j, ſ, Groß/klein, Diakritika, Doppelkonsonanten, ck/k, Getrenntschreibung" },
+  "unclear": { "colour": "#edc948", "number": "", "label": "Unklar", "title": "Unsicher, falsch gepaart, ein Druck- oder Transkriptionsfehler, eine Nummer: von Hand zu klären" },
+  "open": { "colour": "#9a948b", "number": "", "label": "offen", "title": "Noch nicht klassifiziert" }
  },
  "types": {
   "lexical": "word",
