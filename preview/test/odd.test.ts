@@ -316,7 +316,7 @@ test('a label that selects nothing is no label; an empty string is one', () => {
     <elementSpec ident="lb"><model behaviour="break"><param name="type" value="'line'"/><param name="label" value="@n"/></model></elementSpec>
     <elementSpec ident="cb"><model behaviour="break"><param name="type" value="'column'"/><param name="label" value="''"/></model></elementSpec>`)
   assert.equal(renderWith(odd, '<p>a<lb/>b<lb n="2"/>c<cb/>d</p>').html,
-    '<p class="tei-p">a<br class="tei-lb">b<span class="tei-lb">2</span><br class="tei-lb">c<span class="tei-cb"></span>d</p>')
+    '<p class="tei-p">a<br class="tei-lb">b<br class="tei-lb"><span class="tei-lb">2</span>c<span class="tei-cb"></span>d</p>')
 })
 
 test('a source rendition comes by pointer or by prefix, and its style with it', () => {
@@ -326,4 +326,29 @@ test('a source rendition comes by pointer or by prefix, and its style with it', 
   const result = renderWith(odd, '<p rendition="#b simple:allcaps other:b" style="color: red">a</p>')
   assert.equal(result.html, '<p class="tei-p r-b r-allcaps r-b" style="color: red; --x: 1">a</p>')
   assert.deepEqual(result.warnings, [])
+})
+
+test('a line number starts its line, a joined line end ends it', () => {
+  const odd = read(`${SHELL}<elementSpec ident="p"><model behaviour="paragraph"/></elementSpec>
+    <elementSpec ident="lb">
+      <model predicate="@break = 'no'" behaviour="break"><param name="type" value="'line'"/><param name="label" value="'-'"/><param name="join" value="'-'"/></model>
+      <model behaviour="break"><param name="type" value="'line'"/><param name="label" value="@n"/></model>
+    </elementSpec>`)
+  assert.equal(renderWith(odd, '<p><lb n="1"/>a<lb n="2"/>b-<lb break="no"/>c</p>').html,
+    '<p class="tei-p"><span class="tei-lb">1</span>a<br class="tei-lb"><span class="tei-lb">2</span>b<span class="tei-lb">-</span><br class="tei-lb">c</p>')
+})
+
+test('a list holds only items, ordered where its type says so', () => {
+  const odd = read(`${SHELL}<elementSpec ident="list"><model behaviour="list"><param name="type" value="@type"/></model></elementSpec>
+    <elementSpec ident="head"><model behaviour="block"/></elementSpec><elementSpec ident="item"><model behaviour="listItem"/></elementSpec>`)
+  assert.equal(renderWith(odd, '<list type="ordered"><head>h</head><item>a</item></list><list><item>b</item></list>').html,
+    '<div class="tei-head">h</div><ol class="tei-list"><li class="tei-item">a</li></ol><ul class="tei-list"><li class="tei-item">b</li></ul>')
+})
+
+test('a cell may head its row, and span columns and rows', () => {
+  const odd = read(`${SHELL}<elementSpec ident="table"><model behaviour="table"/></elementSpec><elementSpec ident="row"><model behaviour="row"/></elementSpec>
+    <elementSpec ident="cell"><model behaviour="cell"><param name="heading" value="parent::row/@role = 'label'"/><param name="cols" value="@cols"/><param name="rows" value="@rows"/></model></elementSpec>`)
+  const result = renderWith(odd, '<table><row role="label"><cell cols="2">h</cell></row><row><cell rows="2">a</cell><cell>b</cell></row></table>')
+  assert.equal(result.html, '<table class="tei-table"><tr class="tei-row"><th class="tei-cell" colspan="2">h</th></tr><tr class="tei-row"><td class="tei-cell" rowspan="2">a</td><td class="tei-cell">b</td></tr></table>')
+  assert.match(JSON.stringify(result.hast), /"colSpan":"2"/) // hast's own name, for a consumer's components
 })

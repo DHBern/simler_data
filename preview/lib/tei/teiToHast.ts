@@ -124,17 +124,34 @@ const RENDER: Record<string, Behaviour> = {
     return h('span', c.props)
   },
   /**
-   * A line break where the output already starts a line would be an empty line; a labelled one
-   * is its label, then the break. A label that selects nothing, as `@n` where there is none, is no
-   * label; an empty string is one, and renders as an empty element.
+   * A line break where the output already starts a line would be an empty line. A label starts
+   * the line, as a line number does, unless the line joins the next: then it ends it, as the
+   * print's hyphen. A label that selects nothing, as `@n` where there is none, is no label; an
+   * empty string is one, and renders as an empty element.
    */
   break: (c) => {
     const line = str(c.params.type) === 'line'
-    if (line && c.atLineStart()) return null
-    if (!items(c.params.label).length) return h('br', c.props)
+    const start = line && c.atLineStart()
+    const joins = 'join' in c.params
+    if (!items(c.params.label).length || (start && joins)) return start ? null : h('br', c.props)
     const label = str(c.params.label)
     const span = h('span', c.props, label ? [text(label)] : [])
-    return line ? [span, h('br', { ...c.props, id: undefined })] : span
+    if (!line || start) return span
+    const br = h('br', { ...c.props, id: undefined })
+    return joins ? [span, br] : [br, span]
+  },
+  /** An ordered list where `type` says so. HTML lists hold items only, so what comes before the first one, a head, goes before the list. */
+  list: (c) => {
+    const list = wrap(str(c.params.type ?? '') === 'ordered' ? 'ol' : 'ul', 'block')(c) as HastElement
+    const first = list.children.findIndex((n) => n.type === 'element' && n.tagName === 'li')
+    return list.tagName === 'span' || first <= 0 ? list : [...list.children.splice(0, first), list]
+  },
+  /** A heading cell where `heading` is true; `cols` and `rows` are its spans. */
+  cell: (c) => {
+    const cell = wrap(bool(c.params.heading ?? false) ? 'th' : 'td', 'block')(c) as HastElement
+    const span = (v: Value | undefined) => (items(v).length ? str(v!) : undefined)
+    if (cell.tagName !== 'span') Object.assign(cell.properties, { colSpan: span(c.params.cols), rowSpan: span(c.params.rows) })
+    return cell
   },
   /**
    * Collected for the apparatus; in the text, a numbered marker unless its `marker` param is

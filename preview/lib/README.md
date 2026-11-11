@@ -67,7 +67,12 @@ cannot be evaluated counts as empty, and a behaviour that is not known, or missi
 `figure`, `glyph`, `graphic`, `heading`, `index`, `inline`, `link`, `list`, `listItem`,
 `metadata`, `note`, `omit`, `paragraph`, `row`, `section`, `table`, `text`, `title`.
 
-`index` renders nothing; generating the list TEI describes is left to you. `note` collects
+`index` renders nothing; generating the list TEI describes is left to you. `list` gives `ol`
+where its `type` param is `ordered`, else `ul`, and puts what comes before the first item, such
+as a head, before the list. `cell` gives `th` where its `heading` param is true, with `cols` and
+`rows` as `colspan` and `rowspan`. A `break` of `type` `line` puts its `label` at the start of the
+new line, as a line number, unless the model joins the lines (`join`): then the label ends the line,
+as the print's hyphen. `note` collects
 its body and `place` into `result.notes` and leaves a numbered marker in the text, unless the
 model's `marker` param is false, as for a note placed elsewhere on the page.
 
