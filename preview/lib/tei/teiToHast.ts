@@ -123,11 +123,15 @@ const RENDER: Record<string, Behaviour> = {
     c.state.anchors.push(String(c.props.id))
     return h('span', c.props)
   },
-  /** A line break where the output already starts a line would be an empty line; a labelled one is its label, then the break. */
+  /**
+   * A line break where the output already starts a line would be an empty line; a labelled one
+   * is its label, then the break. A label that selects nothing, as `@n` where there is none, is no
+   * label; an empty string is one, and renders as an empty element.
+   */
   break: (c) => {
     const line = str(c.params.type) === 'line'
     if (line && c.atLineStart()) return null
-    if (!('label' in c.params)) return h('br', c.props)
+    if (!items(c.params.label).length) return h('br', c.props)
     const label = str(c.params.label)
     const span = h('span', c.props, label ? [text(label)] : [])
     return line ? [span, h('br', { ...c.props, id: undefined })] : span
@@ -192,8 +196,8 @@ const attrMap = (node: Element): Properties => ({
   ...(attr(node, 'xml:lang') && { lang: attr(node, 'xml:lang') }),
 })
 
-/** `@rendition="#a #b"` → `['a', 'b']`. */
-const renditions = (node: Element) => (attr(node, 'rendition') ?? '').split(/\s+/).filter(Boolean).map((t) => t.replace(/^#/, ''))
+/** `@rendition="#a simple:b"` → `['a', 'b']`. */
+const renditions = (node: Element, odd: Odd) => (attr(node, 'rendition') ?? '').split(/\s+/).filter(Boolean).map(odd.rendition)
 
 export function createRenderer(odd: Odd) {
   const behaviours = Object.fromEntries(
@@ -224,7 +228,7 @@ export function createRenderer(odd: Odd) {
         state.warnings.push(finding('value-not-listed', { element: ln, attribute: name, value }))
       }
     }
-    for (const r of renditions(node)) {
+    for (const r of renditions(node, odd)) {
       if (!odd.renditions.has(r)) state.warnings.push(finding('rendition-undeclared', { rendition: r }))
     }
   }
@@ -287,12 +291,16 @@ export function createRenderer(odd: Odd) {
         }
       }
       const params = evaluate(model)
-      const source = model.useSourceRendition ? renditions(node).map((r) => `r-${r}`) : []
+      const source = model.useSourceRendition ? renditions(node, odd).map((r) => `r-${r}`) : []
+      const own = paramProps(params)
+      // The source's `@style` goes with its renditions, the params' custom properties after it.
+      const style = [model.useSourceRendition && attr(node, 'style'), own.style].filter(Boolean).join('; ')
       const props = {
         className: [`tei-${ln}`, ...model.classes, ...viewClasses, ...source],
         ...attrMap(node),
         ...(again && { id: undefined }),
-        ...paramProps(params),
+        ...own,
+        ...(style ? { style } : {}),
       }
       if (decision && k === 0) {
         decision.classes = classes(props)

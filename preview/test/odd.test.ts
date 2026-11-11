@@ -294,3 +294,36 @@ test('only an output over the page is a view', () => {
   const asked = readOdd(`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body><schemaSpec ident="t">${specs}</schemaSpec></body></text></TEI>`, { ignoredOutputs: [] })
   assert.deepEqual(asked.views.map((v) => v.output), ['print', 'latex', 'epub', 'reading', 'other'])
 })
+
+/** One document through the whole pipeline, by the given specs. */
+const renderWith = (odd: ReturnType<typeof readOdd>, body: string) =>
+  renderTei(parse(`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body>${body}</body></text></TEI>`), createProcessor(odd))
+const SHELL = `<elementSpec ident="TEI"><model behaviour="text"/></elementSpec><elementSpec ident="text"><model behaviour="text"/></elementSpec>
+  <elementSpec ident="body"><model behaviour="text"/></elementSpec>`
+
+test('only a value outside a closed list is a warning, unless more lists are asked for', () => {
+  const list = (type: string) => `<attDef ident="${type}"><valList${type === 'none' ? '' : ` type="${type}"`}><valItem ident="x"/></valList></attDef>`
+  const specs = `${SHELL}<elementSpec ident="p"><attList>${['closed', 'semi', 'open', 'none'].map(list).join('')}</attList><model behaviour="paragraph"/></elementSpec>`
+  const doc = '<p closed="y" semi="y" open="y" none="y">a</p>'
+  const warned = (odd: ReturnType<typeof readOdd>) => renderWith(odd, doc).warnings.map((w) => w.args.attribute)
+  assert.deepEqual(warned(read(specs)), ['closed'])
+  const asked = readOdd(`<TEI xmlns="http://www.tei-c.org/ns/1.0"><text><body><schemaSpec ident="t">${specs}</schemaSpec></body></text></TEI>`, { checkedValueLists: ['closed', 'semi'] })
+  assert.deepEqual(warned(asked), ['closed', 'semi'])
+})
+
+test('a label that selects nothing is no label; an empty string is one', () => {
+  const odd = read(`${SHELL}<elementSpec ident="p"><model behaviour="paragraph"/></elementSpec>
+    <elementSpec ident="lb"><model behaviour="break"><param name="type" value="'line'"/><param name="label" value="@n"/></model></elementSpec>
+    <elementSpec ident="cb"><model behaviour="break"><param name="type" value="'column'"/><param name="label" value="''"/></model></elementSpec>`)
+  assert.equal(renderWith(odd, '<p>a<lb/>b<lb n="2"/>c<cb/>d</p>').html,
+    '<p class="tei-p">a<br class="tei-lb">b<span class="tei-lb">2</span><br class="tei-lb">c<span class="tei-cb"></span>d</p>')
+})
+
+test('a source rendition comes by pointer or by prefix, and its style with it', () => {
+  const odd = whole(`<listPrefixDef><prefixDef ident="simple" matchPattern="([a-z]+)" replacementPattern="https://example.org/simple.odd#$1"/></listPrefixDef>
+    <tagsDecl><rendition xml:id="b">font-weight: bold;</rendition><rendition xml:id="allcaps">text-transform: uppercase;</rendition></tagsDecl>
+    <schemaSpec ident="t">${SHELL}<elementSpec ident="p"><model behaviour="paragraph" useSourceRendition="true"><param name="--x" value="'1'"/></model></elementSpec></schemaSpec>`)
+  const result = renderWith(odd, '<p rendition="#b simple:allcaps other:b" style="color: red">a</p>')
+  assert.equal(result.html, '<p class="tei-p r-b r-allcaps r-b" style="color: red; --x: 1">a</p>')
+  assert.deepEqual(result.warnings, [])
+})

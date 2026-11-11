@@ -27,7 +27,7 @@ such an ODD first, with `odd2odd` from the TEI Stylesheets.
 
 | | |
 | --- | --- |
-| `readOdd(xml, { tokensCss?, behaviours?, ignoredOutputs? })` | The ODD as an `Odd`: its models, `css`, `views`, `availability`, `findings` |
+| `readOdd(xml, { tokensCss?, behaviours?, ignoredOutputs?, checkedValueLists? })` | The ODD as an `Odd`: its models, `css`, `views`, `availability`, `findings` |
 | `createProcessor(odd)` | The processor for one ODD |
 | `parse(xml)` | TEI as xast; throws on XML that is not well-formed |
 | `renderTei(tree, processor, decisions?)` | One document as a `RenderResult` |
@@ -48,16 +48,18 @@ such an ODD first, with `odd2odd` from the TEI Stylesheets.
 | `decisions` | Per element the model that won, with its classes and params, when asked for |
 
 `tokensCss` is the stylesheet that defines the custom properties your ODD's CSS reads. It
-is only used to check them, and is not added to `odd.css`.
+is only used to check them, and is not added to `odd.css`. A value outside its `valList` is a
+warning where the list is `closed`; `checkedValueLists: ['closed', 'semi']` also reports the
+values a `semi` list does not suggest.
 
 ## Findings
 
 `odd.findings`, `result.warnings`, `coverage(odd)` and `idFindings(tree)` all return
 `{ code, severity, args, message }`. `severity` is `error` (a rule is lost), `warning` (the
 result may not be what the ODD means) or `info` (it works, but may need a look). `message` is
-in English; to report in another language, format `code` and `args`. An expression that cannot be evaluated counts as empty, and a behaviour
-that is not known, or missing, renders as `inline`, so one flaw costs one rule, not the
-document. Only XML that is not well-formed throws.
+in English; to report in another language, format `code` and `args`. An expression that
+cannot be evaluated counts as empty, and a behaviour that is not known, or missing, renders as
+`inline`, so one flaw costs one rule, not the document. Only XML that is not well-formed throws.
 
 ## Behaviours
 
@@ -86,8 +88,8 @@ const odd = readOdd(xml, { behaviours: {
 
 Besides what a behaviour reads, a param named `--…` becomes a CSS custom property of the
 rendered element, and one named `data-…` its attribute. `content` replaces the element's
-content. `join` on a line break says the line joins the next: the spaces around it go, and
-a last character of the text that the param names.
+content. A param that selects nothing has no value: a `break` whose `label` is `@n` on a line
+without one is a plain break, while a `label` of `''` gives an empty element.
 
 Predicates and params use a subset of XPath:
 
@@ -100,6 +102,30 @@ Predicates and params use a subset of XPath:
 - **Functions:** `position`, `last`, `exists`, `empty`, `local-name`, `string-length`,
   `ends-with`, `matches`, `replace`, `not`, `count`, `concat`, `contains`, `contains-token`,
   `starts-with`, `normalize-space`, `translate`, `string`, `true`, `false`.
+
+## Beyond the Processing Model
+
+TEI's Processing Model does not cover everything an edition needs. These are this package's own
+conventions; an ODD that does not use them renders as TEI describes.
+
+| | |
+| --- | --- |
+| `page` output | Params of the root element's `page` model describe the page: `result.page`, each as strings. Simler's ODD gives `title`, `manifest`, `pages` and `entities` |
+| `join` param of a `break` | The line joins the next: the spaces around it go, and a last character of the text that the param names, such as a hyphen |
+| `marker` param of a `note` | False: the note is collected without a marker in the text |
+| `place` param of a `note` | Where the note belongs, passed on to `result.notes` |
+| `range` param of a `note` | The element its commented range starts at; the text between becomes `.note-range` |
+| `data-region` param | `start` and `end` bracket a region: what stands between moves into the start |
+| `--…` and `data-…` params | A CSS custom property and an attribute of the rendered element |
+
+**A title without a `page` model:** take it from the parsed tree.
+
+```ts
+import { findFirst, parse, plainText } from 'tei-odd-interpreter'
+
+const tree = parse(xml)
+const title = plainText(findFirst(findFirst(tree, 'titleStmt'), 'title'))
+```
 
 ## Outputs
 
@@ -124,7 +150,7 @@ You can rely on these, and they follow semantic versioning:
 | | |
 | --- | --- |
 | `.tei-<element>` | On every element rendered |
-| `.r-<id>` | A `@rendition`, where the model has `@useSourceRendition="true"` |
+| `.r-<id>`, `style` | A `@rendition` (`#id`, or a prefix the ODD's `prefixDef` resolves) and the source's `@style`, where the model has `@useSourceRendition="true"` |
 | `id`, `lang` | From `xml:id` and `xml:lang`, the only attributes passed on without a param |
 | `.<ident>-group`, `@cssClass` | A `modelGrp` beyond an element's only entry, and a styled model among several |
 | `.pm-block` | A block set inside phrasing content, rendered as a span |

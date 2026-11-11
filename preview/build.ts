@@ -217,7 +217,11 @@ async function main() {
     console.warn('  Keine Registerdaten in gsheet/csv — Entitäten bleiben ohne Karte.')
   }
 
-  const odd = readOdd(await readFile(ODD, 'utf8'), { tokensCss: await readFile(join(here, 'assets', 'tokens.css'), 'utf8') })
+  const odd = readOdd(await readFile(ODD, 'utf8'), {
+    tokensCss: await readFile(join(here, 'assets', 'tokens.css'), 'utf8'),
+    // The editors also want to hear of values outside a list that only suggests them.
+    checkedValueLists: ['closed', 'semi'],
+  })
   await writeFile(join(out, 'assets', 'odd.css'), odd.css)
   const processor = createProcessor(odd)
 

@@ -40,10 +40,12 @@ export interface Odd {
   joins: (node: Element, up: Element[]) => string | undefined
   /** Whether the `plain` output, the search text, leaves the element out: page furniture, the apparatus. */
   silent: (node: Element, up: Element[]) => boolean
-  /** Suggested and closed values, by element and attribute. */
+  /** The values of the checked lists (`checkedValueLists`), by element and attribute. */
   values: Record<string, Record<string, Set<string>>>
   /** Rendition ids declared in `<tagsDecl>`. */
   renditions: Set<string>
+  /** A `@rendition` token as the id it points to: `#b`, or `simple:b` by the ODD's `prefixDef`. */
+  rendition: (token: string) => string
   css: string
   /** What is wrong in the ODD itself, each once: unreadable expressions, and what the checks below found. */
   findings: Finding[]
@@ -64,6 +66,8 @@ export interface ReadOddOptions {
   behaviours?: Record<string, BehaviourSpec>
   /** Outputs that are neither the page nor a view of it, so their models are not read. */
   ignoredOutputs?: string[]
+  /** The `valList/@type`s a value outside its list is reported for; a list without one is `open`. */
+  checkedValueLists?: string[]
 }
 
 export interface View {
@@ -123,8 +127,16 @@ const withoutExamples = <T extends Root | Element>(node: T): T => ({
   children: node.children.filter((c) => !isElement(c, 'egXML')).map((c) => (isElement(c) ? withoutExamples(c) : c)),
 })
 
-export function readOdd(xml: string, { tokensCss = '', behaviours = {}, ignoredOutputs = OTHER_MEDIA }: ReadOddOptions = {}): Odd {
+export function readOdd(xml: string, { tokensCss = '', behaviours = {}, ignoredOutputs = OTHER_MEDIA, checkedValueLists = ['closed'] }: ReadOddOptions = {}): Odd {
   const tree = withoutExamples(parse(xml))
+  /** The ODD's private URI schemes, as `simple:` in TEI Simple Print; one that does not compile is left out. */
+  const prefixes = new Map(findAll(tree, 'prefixDef').flatMap((p) => {
+    try {
+      return [[attr(p, 'ident'), [new RegExp(`^(?:${attr(p, 'matchPattern')})$`), attr(p, 'replacementPattern') ?? '']] as const]
+    } catch {
+      return []
+    }
+  }))
   /** An element's base model, once: where it stands does not change. */
   const cached = new WeakMap<Element, Model | undefined>()
   const base = (node: Element, up: Element[]) => {
@@ -147,6 +159,13 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {}, ignoredO
     silent: (node, up) => select(odd.models[localName(node.name)] ?? [], { node, up }, PLAIN)?.behaviour === 'omit',
     values: {},
     renditions: new Set(),
+    rendition: (token) => {
+      const colon = token.indexOf(':')
+      if (token.startsWith('#') || colon < 0) return token.replace(/^#/, '')
+      const [match, replacement] = prefixes.get(token.slice(0, colon)) ?? [/^/, '']
+      const uri = token.slice(colon + 1).replace(match, replacement)
+      return uri.slice(uri.lastIndexOf('#') + 1)
+    },
     css: '',
     findings: [],
     behaviours: { ...BEHAVIOURS, ...behaviours },
@@ -305,7 +324,9 @@ export function readOdd(xml: string, { tokensCss = '', behaviours = {}, ignoredO
     if (models.length) odd.models[ident] = models
 
     for (const def of elementChildren(elementChildren(spec, 'attList')[0], 'attDef')) {
-      const items = elementChildren(findFirst(def, 'valList'), 'valItem').map((v) => attr(v, 'ident')!)
+      const list = findFirst(def, 'valList')
+      if (!list || !checkedValueLists.includes(attr(list, 'type') ?? 'open')) continue
+      const items = elementChildren(list, 'valItem').map((v) => attr(v, 'ident')!)
       if (items.length) (odd.values[ident] ??= {})[attr(def, 'ident')!] = new Set(items)
     }
   }
