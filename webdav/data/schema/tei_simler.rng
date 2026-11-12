@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-11-12T07:22:41Z. . 
+Schema generated from ODD source 2026-11-12T23:23:42Z. . 
 TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
@@ -61,6 +61,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/
             <ref name="tei_corr"/>
             <ref name="tei_unclear"/>
             <ref name="tei_supplied"/>
+            <ref name="tei_gap"/>
             <ref name="tei_num"/>
             <ref name="tei_note"/>
             <ref name="tei_anchor"/>
@@ -233,6 +234,8 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented twice</a:documentation>
                      <value>#et3</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented three times</a:documentation>
+                     <value>#hang</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">hanging indent: the lines after the first indented</a:documentation>
                      <value>#hr</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a rule (line) between units</a:documentation>
                      <value>#twocol</value>
@@ -258,7 +261,7 @@ TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/
                 xmlns:xi="http://www.w3.org/2001/XInclude"
                 context="tei:*[@rendition]">
          <sch:let name="order"
-                  value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
+                  value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hang', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
          <sch:let name="t" value="tokenize(normalize-space(@rendition), ' ')"/>
          <sch:let name="sorted"
                   value="string-join((for $o in $order return $o[. = $t], distinct-values($t[not(. = $order)])), ' ')"/>
@@ -531,6 +534,30 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
                   </data>
                </oneOrMore>
             </list>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_att.timed.attributes">
+      <ref name="tei_att.timed.attribute.start"/>
+      <ref name="tei_att.timed.attribute.end"/>
+   </define>
+   <define name="tei_att.timed.attribute.start">
+      <optional>
+         <attribute name="start">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location within a temporal alignment at which this element begins.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
+         </attribute>
+      </optional>
+   </define>
+   <define name="tei_att.timed.attribute.end">
+      <optional>
+         <attribute name="end">
+            <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indicates the location within a temporal alignment at which this element ends.</a:documentation>
+            <data type="anyURI">
+               <param name="pattern">\S+</param>
+            </data>
          </attribute>
       </optional>
    </define>
@@ -1413,28 +1440,40 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
    </define>
    <define name="tei_model.global.edit">
       <choice>
+         <ref name="tei_gap"/>
          <ref name="tei_space"/>
       </choice>
    </define>
    <define name="tei_model.global.edit_alternation">
       <choice>
+         <ref name="tei_gap"/>
          <ref name="tei_space"/>
       </choice>
    </define>
    <define name="tei_model.global.edit_sequence">
+      <ref name="tei_gap"/>
       <ref name="tei_space"/>
    </define>
    <define name="tei_model.global.edit_sequenceOptional">
+      <optional>
+         <ref name="tei_gap"/>
+      </optional>
       <optional>
          <ref name="tei_space"/>
       </optional>
    </define>
    <define name="tei_model.global.edit_sequenceOptionalRepeatable">
       <zeroOrMore>
+         <ref name="tei_gap"/>
+      </zeroOrMore>
+      <zeroOrMore>
          <ref name="tei_space"/>
       </zeroOrMore>
    </define>
    <define name="tei_model.global.edit_sequenceRepeatable">
+      <oneOrMore>
+         <ref name="tei_gap"/>
+      </oneOrMore>
       <oneOrMore>
          <ref name="tei_space"/>
       </oneOrMore>
@@ -1491,6 +1530,12 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
       <oneOrMore>
          <ref name="tei_model.placeNamePart_sequenceRepeatable"/>
       </oneOrMore>
+   </define>
+   <define name="tei_model.certLike">
+      <notAllowed/>
+   </define>
+   <define name="tei_model.descLike">
+      <notAllowed/>
    </define>
    <define name="tei_model.quoteLike">
       <choice>
@@ -1835,6 +1880,7 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
                <ref name="tei_choice"/>
                <ref name="tei_unclear"/>
                <ref name="tei_supplied"/>
+               <ref name="tei_gap"/>
                <ref name="tei_num"/>
                <ref name="tei_note"/>
                <ref name="tei_ref"/>
@@ -1889,9 +1935,9 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
-                      context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic')]">
+                      context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hang', '#hr', '#twocol', '#acrostic')]">
                <sch:report role="warning" test="true()">[S-HI] Alignment, indent and the other
-                  block renditions (#c, #right, #et, #et2, #et3, #hr, #twocol, #acrostic) belong on
+                  block renditions (#c, #right, #et, #et2, #et3, #hang, #hr, #twocol, #acrostic) belong on
                   the enclosing block (head, p, l, lg, milestone, …), not on hi.</sch:report>
             </sch:rule>
          </pattern>
@@ -1992,6 +2038,8 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented twice</a:documentation>
                      <value>#et3</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">indented three times</a:documentation>
+                     <value>#hang</value>
+                     <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">hanging indent: the lines after the first indented</a:documentation>
                      <value>#hr</value>
                      <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a rule (line) between units</a:documentation>
                      <value>#twocol</value>
@@ -2084,6 +2132,69 @@ Suggested values include: 1] cm (centimetres); 2] mm (millimetres); 3] in (inche
             </sch:rule>
          </pattern>
          <ref name="tei_att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_gap">
+      <element name="gap">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(gap) Text left out of the transcription; <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@reason</code> says why, <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@unit</code> and <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@quantity</code> how much. [3.5.3. Additions, Deletions, and Omissions]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_model.descLike"/>
+               <ref name="tei_model.certLike"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <ref name="tei_att.dimensions.attribute.quantity"/>
+         <ref name="tei_att.dimensions.attribute.extent"/>
+         <ref name="tei_att.editLike.attributes"/>
+         <ref name="tei_att.timed.attributes"/>
+         <optional>
+            <attribute name="unit">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">names the unit used for the measurement</a:documentation>
+               <choice>
+                  <value>chars</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>words</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>lines</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+                  <value>pages</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0"/>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="reason">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reason) gives the reason for omission.</a:documentation>
+               <list>
+                  <oneOrMore>
+                     <choice>
+                        <value>lost</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">lost (damage)</a:documentation>
+                        <value>illegible</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">illegible</a:documentation>
+                        <value>fm</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">foreign-language material</a:documentation>
+                        <value>insignificant</value>
+                        <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">not transcribed</a:documentation>
+                     </choice>
+                  </oneOrMore>
+               </list>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="agent">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(agent) in the case of text omitted because of damage, categorizes the cause of the damage, if it can be identified.
+Sample values include: 1] rubbing (rubbing); 2] mildew (mildew); 3] smoke (smoke)</a:documentation>
+               <data type="token">
+                  <param name="pattern">[^\p{C}\p{Z}]+</param>
+               </data>
+            </attribute>
+         </optional>
          <empty/>
       </element>
    </define>
@@ -2328,7 +2439,8 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
    </define>
    <define name="tei_ref">
       <element name="ref">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) A link, as in the commentary: to a dictionary, a record or another work (#n129). [3.7. Simple Links and Cross-References 17.1. Links]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) A link, as in the commentary: to a dictionary, a record or another work (#n129). In a register it holds the page number, as in the DTABf; <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">@target</code> may point to that page. [3.7. Simple Links and Cross-References 17.1. Links]</a:documentation>
          <ref name="tei_macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2400,15 +2512,21 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
    </define>
    <define name="tei_item">
       <element name="item">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(item) contains one component of a list. [3.8. Lists 2.6. The Revision Description]</a:documentation>
-         <ref name="tei_macro.simlerInline"/>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(item) A list item; in a register, <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;ref&gt;</code> holds the page number. [3.8. Lists 2.6. The Revision Description]</a:documentation>
+         <zeroOrMore>
+            <choice>
+               <ref name="tei_macro.simlerInline"/>
+               <ref name="tei_ref"/>
+            </choice>
+         </zeroOrMore>
          <ref name="tei_att.global.attributes"/>
          <empty/>
       </element>
    </define>
    <define name="tei_label">
       <element name="label">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) A label, typically the (often editorially supplied, bracketed) number of a heading or poem. [3.8. Lists]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(label) An editorial label, the bracketed number of a heading or poem; it stands on a line of its own. [3.8. Lists]</a:documentation>
          <ref name="tei_macro.simlerInline"/>
          <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.placement.attributes"/>
@@ -3450,8 +3568,9 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
    <define name="tei_text">
       <element name="text">
          <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(text) The transcribed text: an optional <code xmlns="http://www.w3.org/1999/xhtml"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;front&gt;</code> and a <code xmlns="http://www.w3.org/1999/xhtml"
-                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;body&gt;</code>. A front-matter volume may carry <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;front&gt;</code>, a <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;body&gt;</code> and an optional <code xmlns="http://www.w3.org/1999/xhtml"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;back&gt;</code>. A front-matter volume may carry <code xmlns="http://www.w3.org/1999/xhtml"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;front&gt;</code> without a <code xmlns="http://www.w3.org/1999/xhtml"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0">&lt;body&gt;</code>. [4. Default Text Structure 16.1. Varieties of Composite Text]</a:documentation>
          <group>
@@ -3460,6 +3579,9 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
             </optional>
             <optional>
                <ref name="tei_body"/>
+            </optional>
+            <optional>
+               <ref name="tei_back"/>
             </optional>
          </group>
          <ref name="tei_att.global.attributes"/>
@@ -3563,7 +3685,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          <optional>
             <attribute name="type">
                <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">characterizes the element in some sense, using any convenient classification scheme or typology.
-Suggested values include: 1] poem; 2] stanza-div; 3] dedication; 4] frontispiece; 5] letter; 6] preface; 7] music</a:documentation>
+Suggested values include: 1] poem; 2] stanza-div; 3] dedication; 4] frontispiece; 5] letter; 6] preface; 7] music; 8] postface; 9] index; 10] corrigenda; 11] appendix</a:documentation>
                <choice>
                   <value>poem</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an individual poem</a:documentation>
@@ -3579,6 +3701,14 @@ Suggested values include: 1] poem; 2] stanza-div; 3] dedication; 4] frontispiece
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a preface</a:documentation>
                   <value>music</value>
                   <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">notated music (Noten)</a:documentation>
+                  <value>postface</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a postface</a:documentation>
+                  <value>index</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a register</a:documentation>
+                  <value>corrigenda</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a list of errata</a:documentation>
+                  <value>appendix</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">an appendix</a:documentation>
                   <data type="token">
                      <param name="pattern">[^\p{C}\p{Z}]+</param>
                   </data>
@@ -3776,6 +3906,22 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          <zeroOrMore>
             <choice>
                <ref name="tei_titlePage"/>
+               <ref name="tei_div"/>
+               <ref name="tei_figure"/>
+               <ref name="tei_milestone"/>
+               <ref name="tei_lb"/>
+               <ref name="tei_pb"/>
+            </choice>
+         </zeroOrMore>
+         <ref name="tei_att.global.attributes"/>
+         <empty/>
+      </element>
+   </define>
+   <define name="tei_back">
+      <element name="back">
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(back matter) Back matter: postface, register, corrigenda, appendix. [4.7. Back Matter 4. Default Text Structure]</a:documentation>
+         <zeroOrMore>
+            <choice>
                <ref name="tei_div"/>
                <ref name="tei_figure"/>
                <ref name="tei_milestone"/>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <schema xmlns="http://purl.oclc.org/dsdl/schematron" queryBinding="xslt2">
    <title>ISO Schematron rules</title>
-   <!-- This file generated 2026-11-12T07:22:43Z by 'extract-isosch.xsl'. -->
+   <!-- This file generated 2026-11-12T23:23:45Z by 'extract-isosch.xsl'. -->
    <!-- ********************* -->
    <!-- namespaces, declared: -->
    <!-- ********************* -->
@@ -32,7 +32,7 @@
    <pattern id="schematron-constraint-rendition-order-4">
       <rule context="tei:*[@rendition]">
          <let name="order"
-              value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
+              value="('#aq', '#fr', '#b', '#i', '#c', '#right', '#g', '#k', '#u', '#in', '#sup', '#sub', '#larger', '#smaller', '#et', '#et2', '#et3', '#hang', '#hr', '#twocol', '#acrostic', '#acroInit', '#acroFin')"/>
          <let name="t" value="tokenize(normalize-space(@rendition), ' ')"/>
          <let name="sorted"
               value="string-join((for $o in $order return $o[. = $t], distinct-values($t[not(. = $order)])), ' ')"/>
@@ -66,8 +66,8 @@
       </rule>
    </pattern>
    <pattern id="schematron-constraint-hi-block-rendition-10">
-      <rule context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hr', '#twocol', '#acrostic')]">
-         <report role="warning" test="true()">[S-HI] Alignment, indent and the other block renditions (#c, #right, #et, #et2, #et3, #hr, #twocol, #acrostic) belong on the enclosing block (head, p, l, lg, milestone, …), not on hi.</report>
+      <rule context="tei:hi[tokenize(@rendition, '\s+') = ('#c', '#right', '#et', '#et2', '#et3', '#hang', '#hr', '#twocol', '#acrostic')]">
+         <report role="warning" test="true()">[S-HI] Alignment, indent and the other block renditions (#c, #right, #et, #et2, #et3, #hang, #hr, #twocol, #acrostic) belong on the enclosing block (head, p, l, lg, milestone, …), not on hi.</report>
       </rule>
    </pattern>
    <pattern id="schematron-constraint-hi-spanning-rendition-11">
