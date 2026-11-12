@@ -14,7 +14,6 @@ export const synopsisHref = (id: string): string => `synopse-${encodeURIComponen
 /** The categories as the reader sees them: a name, and what it holds. */
 const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map((c) => [c, [SETTINGS.categories[c].label, SETTINGS.categories[c].title]])) as Record<Category, [string, string]>
 /** What *sachlich* leaves out. */
-const SPELLING: Category[] = ['punctuation', 'orthography']
 /**
  * A colour per category, from `categories.json` (Tableau 10, chosen by meaning):
  * the marks, the chips, the mix bars. `--hue` is an `r g b` triplet, as the tokens are.
@@ -51,6 +50,8 @@ const STEP_LABELS: Record<Step, [string, string]> = {
   'spelling variants': ['Schreibvarianten', 'ck/k, th/t, dt/t, tz/z, ß/s, y/i, aw/au, d/t, bt/pt, Dehnungs-h, -eren/-ern'],
   'word division': ['Getrenntschreibung', 'Gottes ſohn / Gottesſohn'],
 }
+/** The category a step settles a place in: the type its rule gives, as `categories.json` files it. */
+const stepCategory = (s: Step) => (SETTINGS.types as Record<string, Category>)[s === 'punctuation' ? 'punctuation' : 'orthographic']
 
 /**
  * Where each poem of a bundle begins. It is the one thing the filter cannot
@@ -114,8 +115,17 @@ function synopsisControls(synopsis: Synopsis): string {
     `<input type="checkbox" data-syn-cat="${c}"${SETTINGS.shown.includes(c) ? ' checked' : ''}> ${CATEGORY_LABELS[c][0]} <span class="n">${counts.get(c) ?? 0}</span></label>`
   const filter = ([step, [label, title]]: [string, [string, string]]) =>
     `<label class="ctrl" title="${esc(title)}"><input type="checkbox" data-syn-ignore="${esc(step)}" checked> ${esc(label)}</label>`
+  // The steps under the category they settle, in its colour; the script dims a group whose category is not shown.
+  const steps = [...new Set((Object.keys(STEP_LABELS) as Step[]).map(stepCategory))].map((c) => `<span class="syn-steps" data-cat="${c}" data-syn-steps>` +
+    `<span class="syn-steps-of">${CATEGORY_LABELS[c][0]}:</span> ` +
+    `${Object.entries(STEP_LABELS).filter(([s]) => stepCategory(s as Step) === c).map(filter).join('')}</span>`).join('')
   const witness = (w: Witness, i: number) =>
     `<label><input type="checkbox" data-syn-witness="${i + 1}"${shown.includes(w.siglum) ? ' checked' : ''}> ${esc(w.siglum)}</label>`
+
+  // The boxes of their row: all, as on first opening, or none.
+  const presets = '<span class="syn-presets"><button type="button" data-syn-preset="all">alle</button>' +
+    '<button type="button" data-syn-preset="default" title="Wie beim ersten Öffnen">Voreinstellung</button>' +
+    '<button type="button" data-syn-preset="none">keine</button></span>'
 
   // On a narrow screen the strips stand above, and the controls fold into *Ansicht*.
   return `<form class="syn-bar no-print" data-syn-controls>
@@ -125,23 +135,18 @@ function synopsisControls(synopsis: Synopsis): string {
       <div class="syn-row">
         <span class="syn-label">Zeigen</span>
         ${CATEGORIES.map(chip).join('')}
-        <span class="syn-presets">
-          <button type="button" data-syn-preset="${CATEGORIES.join(' ')}">alle</button>
-          <button type="button" data-syn-preset="${SETTINGS.shown.join(' ')}"
-            title="Was zuerst gezeigt wird">Voreinstellung</button>
-          <button type="button" data-syn-preset="">keine</button>
-        </span>
+        ${presets}
       </div>
       <div class="syn-row">
         <span class="ctrl syn-witnesses"><span class="syn-label">Textzeugen</span> ${witnesses.map(witness).join('')}</span>
-        <label class="ctrl"><input type="checkbox" data-syn="varying"> nur Abweichungen</label>
-        <output class="syn-count" data-syn-count title="n und p springen zur nächsten Abweichung"></output>
+        <label class="ctrl" title="n und p springen zur nächsten Abweichung"><input type="checkbox" data-syn="varying"> nur Abweichungen
+          <output class="syn-count" data-syn-count></output></label>
       </div>
-      <details class="syn-options" data-syn-options>
-        <summary>Optionen</summary>
-        <div class="syn-row" title="Was beim Vergleich nicht als Unterschied zählt: die Stufen der Schreibregeln">
+      <div class="syn-options">
+        <div class="syn-row" title="Was beim Vergleich nicht als Unterschied zählt: die Stufen der Schreibregeln. Sie betreffen nur Stellen der Kategorie darüber, die eine Regel oder eine Person so bestimmt hat; Vorschläge des Modells bleiben.">
           <span class="syn-label">Gleich trotz</span>
-          ${Object.entries(STEP_LABELS).map(filter).join('')}
+          ${steps}
+          ${presets}
         </div>
         <div class="syn-row">
           <label class="ctrl"><span class="syn-label">Färben nach</span>
@@ -165,7 +170,7 @@ function synopsisControls(synopsis: Synopsis): string {
           ${proposed ? '<span class="syn-swatch"><span class="pairing">⇄</span> andere Zeilenpaarung vorgeschlagen</span>' : ''}
           <span class="syn-swatch">Streifen rechts (schmal: oben), einer je Textzeuge: Lücke = Zeilen fehlen, Spalt = neue Strophe, dunkler = stärkere Abweichung, <span class="syn-moved-key"></span> wohl verschoben</span>
         </p>
-      </details>
+      </div>
       </details>
     </form>`
 }
@@ -180,21 +185,26 @@ function synopsisControls(synopsis: Synopsis): string {
 function readingRegister(groups: Group[]): string {
   if (!groups.length) return ''
   const places = groups.reduce((n, group) => n + group.places.length, 0)
-  const sections = CATEGORIES.map((c) => [c, groups.filter((g) => g.category === c)] as const).filter(([, gs]) => gs.length)
+  // Without the model's types its sets are open again: that fold must be there to take them.
+  const machine = groups.some((g) => g.by === 'model')
+  const sections = CATEGORIES.map((c) => [c, groups.filter((g) => g.category === c)] as const)
+    .filter(([c, gs]) => gs.length || (c === 'open' && machine))
   const item = (group: Group) => {
     const forms = group.forms.map((form) =>
       form ? `<b>${esc(form)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')
     const where = group.places.slice(0, 12).map((n) =>
       `<a href="#seg-${n}">${n}</a>`).join(' ')
-    return `<li data-cat="${group.category}"${group.step ? ` data-step="${group.step}"` : ''}${group.by === 'model' ? ' data-by="model"' : ''}>${forms}
+    return `<li data-cat="${group.category}"${group.step ? ` data-step="${group.step}"` : ''}${group.by === 'model' ? ' data-by="model"' : ''} data-n="${group.places.length}">${forms}
         <span class="count">×${group.places.length}</span>
         <span class="places">${where}${group.places.length > 12 ? ' …' : ''}</span>
       </li>`
   }
   return `<details class="syn-register">
       <summary>Lesarten: ${groups.length} verschiedene an ${places} Stellen</summary>
-      ${sections.map(([c, gs]) => `<h4>${CATEGORY_LABELS[c][0]} <span class="count">${gs.length}</span></h4>
-      <ol>${gs.map(item).join('')}</ol>`).join('')}
+      ${sections.map(([c, gs]) => `<details class="syn-cat" data-cat="${c}" open>
+        <summary>${CATEGORY_LABELS[c][0]} <span class="count">${gs.length}</span></summary>
+        <ol>${gs.map(item).join('')}</ol>
+      </details>`).join('')}
     </details>`
 }
 
@@ -215,29 +225,42 @@ function mixBar(counts: Map<Category, number>): string {
 }
 
 /**
- * Witness against witness: at how many places two read otherwise, counting
- * only what is neither spelling nor punctuation — which edition stands closest
- * to which. Two witnesses need no table: that is the poem's count.
+ * Witness against witness: at how many places two read otherwise, which edition
+ * stands closest to which. It counts what the page shows: built with the
+ * categories shown first and no rule's place, then the script recounts it as
+ * the reader chooses. Two witnesses need no table: that is the poem's count.
  */
-function pairMatrix(witnesses: Witness[], entries: Entry[]): string {
+function pairMatrix(witnesses: Witness[], segments: Segment[]): string {
   if (witnesses.length < 3) return ''
-  const sigla = witnesses.map((w) => w.siglum)
-  const apart = (a: string, b: string) => entries.filter((e) => a in e.readings && b in e.readings && !e.alike[a].includes(b))
-  const counts = sigla.map((a) => sigla.map((b) => {
-    const all = a === b ? [] : apart(a, b)
-    return [all.filter((e) => !SPELLING.includes(e.category)).length, all.length]
-  }))
-  const most = Math.max(1, ...counts.flat().map(([n]) => n))
-  const cell = ([n, all]: number[], a: string, b: string) => a === b ? '<td></td>'
-    : `<td style="--k:${(n / most).toFixed(2)}" title="${esc(`${a} gegen ${b}: ${n} sachliche von ${all} Stellen`)}">${n}</td>`
-  return `<details class="syn-pairs">
-      <summary>Textzeugen paarweise: sachliche Abweichungen</summary>
+  const column = new Map(witnesses.map((w, i) => [w.siglum, i + 1]))
+  const places = segments.flatMap((s) => [
+    ...(s.line ? [{ category: s.line, pairs: linePairs(s, column) }] : []),
+    ...s.apparatus.map((e) => ({ ...e, pairs: apartPairs(e, column) }))])
+  const shown = (p: (typeof places)[number]) => (SETTINGS.shown as string[]).includes(p.category) && !('step' in p && p.step)
+  const counts = witnesses.map((_, i) => witnesses.map((_, j) =>
+    places.filter((p) => shown(p) && p.pairs.includes(`${Math.min(i, j) + 1}-${Math.max(i, j) + 1}`)).length))
+  const most = Math.max(1, ...counts.flat())
+  const cell = (i: number, j: number) => i === j ? '<td></td>'
+    : `<td data-pair="${Math.min(i, j) + 1}-${Math.max(i, j) + 1}" style="--k:${(counts[i][j] / most).toFixed(2)}"` +
+      ` title="${esc(`${witnesses[i].siglum} gegen ${witnesses[j].siglum}: ${counts[i][j]} Stellen`)}">${counts[i][j]}</td>`
+  return `<details class="syn-pairs" data-syn-pairs>
+      <summary>Textzeugen paarweise: wie oft sie abweichen, nach dem, was oben gewählt ist</summary>
       <table>
-        <tr><th></th>${sigla.map((s) => `<th>${esc(s)}</th>`).join('')}</tr>
-        ${sigla.map((a, i) => `<tr><th>${esc(a)}</th>${sigla.map((b, j) => cell(counts[i][j], a, b)).join('')}</tr>`).join('')}
+        <tr><th></th>${witnesses.map((w) => `<th>${esc(w.siglum)}</th>`).join('')}</tr>
+        ${witnesses.map((a, i) => `<tr><th>${esc(a.siglum)}</th>${witnesses.map((_, j) => cell(i, j)).join('')}</tr>`).join('')}
       </table>
     </details>`
 }
+
+/** The pairs of columns (`1-3`) that read otherwise at a place. */
+const apartPairs = (e: Entry, column: Map<string, number>): string[] => {
+  const sigla = Object.keys(e.readings)
+  return sigla.flatMap((a, i) => sigla.slice(i + 1).filter((b) => !e.alike[a].includes(b))
+    .map((b) => [column.get(a)!, column.get(b)!].sort((x, y) => x - y).join('-')))
+}
+/** And for a whole line: each witness without it against each with it. */
+const linePairs = (s: Segment, column: Map<string, number>): string[] =>
+  s.missing.flatMap((a) => Object.keys(s.cells).map((b) => [column.get(a)!, column.get(b)!].sort((x, y) => x - y).join('-')))
 
 /** At most this many cells of a strip: what 10rem can still tell apart, and upright, what a screen's height can. */
 const STACK_BINS = 120
@@ -307,30 +330,35 @@ function minimap(synopsis: Synopsis): string {
 }
 
 /**
- * The reading sets that recur from poem to poem, most frequent first: the
- * printers' habits across the corpus (`vnd | und`), with where they occur.
+ * Every reading set of the corpus, by category as in a poem's register, the
+ * most frequent first: the printers' habits (`vnd | und`) on top, the readings
+ * found once, where the interesting variants are, below; each with its poems.
  */
 function corpusRegister(synopses: Synopsis[]): string {
-  const sets = new Map<string, { forms: string[], category: Category, places: number, poems: string[] }>()
+  const sets = new Map<string, { forms: string[], category: Category, places: number, poems: [string, number][] }>()
   for (const s of synopses) {
     for (const g of s.groups) {
-      const key = [...g.forms].sort().join('\u0001')
+      const key = `${g.category}${[...g.forms].sort().join('')}`
       const set = sets.get(key) ?? { forms: g.forms, category: g.category, places: 0, poems: [] }
       set.places += g.places.length
-      set.poems.push(s.id)
+      set.poems.push([s.id, g.places[0]])
       sets.set(key, set)
     }
   }
-  const recurring = [...sets.values()].filter((s) => s.poems.length > 1).sort((a, b) => b.places - a.places)
-  if (!recurring.length) return ''
-  const item = (s: (typeof recurring)[number]) => `<li data-cat="${s.category}">
-        ${s.forms.map((f) => f ? `<b>${esc(f)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')}
-        <span class="count">×${s.places} in ${s.poems.length} Gedichten</span>
-        <span class="places">${s.poems.slice(0, 8).map((id) => `<a href="${esc(synopsisHref(id))}">${esc(id)}</a>`).join(' ')}${s.poems.length > 8 ? ' …' : ''}</span>
-      </li>`
+  if (!sets.size) return ''
+  const all = [...sets.values()].sort((a, b) => b.places - a.places || b.poems.length - a.poems.length)
+  const count = (list: typeof all) => list.reduce((n, s) => n + s.places, 0)
+  // On one line each: there are thousands.
+  const item = (s: (typeof all)[number]) => `<li>${s.forms.map((f) => f ? `<b>${esc(f)}</b>` : '<i>fehlt</i>').join(' <span class="sep">|</span> ')}` +
+    ` <span class="count">×${s.places}${s.poems.length > 1 ? ` in ${s.poems.length} Gedichten` : ''}</span>` +
+    ` <span class="places">${s.poems.slice(0, 8).map(([id, n]) => `<a href="${esc(synopsisHref(id))}#seg-${n}">${esc(id)}</a>`).join(' ')}${s.poems.length > 8 ? ' …' : ''}</span></li>`
+  const sections = CATEGORIES.map((c) => [c, all.filter((s) => s.category === c)] as const).filter(([, list]) => list.length)
   return `<details class="syn-register">
-      <summary>Wiederkehrende Lesarten: ${recurring.length} Sätze in mehr als einem Gedicht, die häufigsten zuerst</summary>
-      <ol>${recurring.slice(0, 200).map(item).join('')}</ol>
+      <summary>Lesarten: ${all.length} verschiedene an ${count(all)} Stellen, nach Kategorie, die häufigsten zuerst</summary>
+      ${sections.map(([c, list]) => `<details class="syn-cat" data-cat="${c}">
+        <summary>${CATEGORY_LABELS[c][0]} <span class="count">${list.length} verschiedene an ${count(list)} Stellen</span></summary>
+        <ol>${list.map(item).join('')}</ol>
+      </details>`).join('')}
     </details>`
 }
 
@@ -485,7 +513,7 @@ export function synopsisPage(synopsis: Synopsis): string {
     const line = segment.line ? `<li data-cat="${segment.line}" data-missing="${at(segment.missing)}" data-present="${at(Object.keys(segment.cells))}"${cont ? ' class="cont"' : ''}>
             ${n > 1 ? `${n} ganze Zeilen (${segment.n}–${segment.n + n - 1})` : 'Ganze Zeile'}: fehlt in ${segment.missing.map(esc).join(' ')}
           </li>` : ''
-    const items = line + segment.apparatus.map((e) => `<li data-group="${esc(e.group)}" ${placeAttrs(e)}>
+    const items = line + segment.apparatus.map((e) => `<li data-group="${esc(e.group)}" ${placeAttrs(e)} data-apart="${apartPairs(e, column).join(' ')}">
             ${lemmatised(e)}${e.relation ? relationLabel(e.relation) : ''}
           </li>`).join('')
     return `<td class="app"><ul class="app-list">${items}</ul></td>`
@@ -533,7 +561,7 @@ export function synopsisPage(synopsis: Synopsis): string {
       ${minimap(synopsis)}
       </div>
       ${readingRegister(groups)}
-      ${pairMatrix(witnesses, segments.flatMap((s) => s.apparatus))}
+      ${pairMatrix(witnesses, segments)}
     </div>
     ${sourceLine(synopsis)}`,
     { styles: `<link rel="stylesheet" href="assets/synopsis.css">${PALETTE}${sigla}`,

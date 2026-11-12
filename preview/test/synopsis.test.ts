@@ -212,8 +212,12 @@ test('the page offers the reading options, and the script that drives them', asy
   // A box per step of the cascade, all on by default.
   assert.equal((page.match(/data-syn-ignore="[^"]+" checked>/g) ?? []).length, STEPS.length)
   assert.match(page, /title="ck\/k, th\/t[^"]*"><input type="checkbox" data-syn-ignore="spelling variants" checked> Schreibvarianten/)
-  // The default is what the settings say.
-  assert.match(page, /data-syn-preset="added deleted word grammar unclear open"\s+title="[^"]*">Voreinstellung/)
+  // The steps stand under the category they settle.
+  assert.match(page, /<span class="syn-steps" data-cat="punctuation" data-syn-steps><span class="syn-steps-of">Interpunktion:<\/span> <label[^>]*><input type="checkbox" data-syn-ignore="punctuation" checked> Interpunktion<\/label><\/span>/)
+  assert.match(page, /<span class="syn-steps" data-cat="orthography" data-syn-steps><span class="syn-steps-of">Orthographie:<\/span>[^]*?Schreibvarianten[^]*?<\/span>/)
+  // The default is what the settings say; the categories and the steps each have all, default and none.
+  assert.match(page, /data-syn-cat="unclear" checked>/)
+  assert.equal((page.match(/data-syn-preset="default"/g) ?? []).length, 2)
   assert.equal((page.match(/data-syn-witness=/g) ?? []).length, synopsis.witnesses.length)
   // The legend stands right under the options, not under the table.
   assert.ok(page.indexOf('class="syn-legend') < page.indexOf('<table class="synopsis">'))
@@ -233,7 +237,7 @@ test('the apparatus of a segment lists its readings', async () => {
   assert.equal((page.match(/<td class="app"><ul class="app-list">/g) ?? []).length, 3)
   assert.match(page, /<\/td>\s*<td class="app"><ul class="app-list">\s*<li data-group="2-2"/) // the last cell of its row
   // Each entry carries what the reader's choice is matched against.
-  assert.match(page, /<li data-group="3-1" data-cat="orthography" data-step="doubled letters">/)
+  assert.match(page, /<li data-group="3-1" data-cat="orthography" data-step="doubled letters" data-apart="1-2">/)
   // Lemma, bracket, the departing readings with their sigla.
   assert.match(page, /<li data-group="2-2"[^>]*>\s*<span class="rdg lem">nimmermehr <i>A<\/i><\/span> <span class="sep">]<\/span> <span class="rdg">glaube <i>F42A<\/i><\/span>/)
 })
@@ -411,20 +415,23 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
   const page = synopsisPage(synopsis)
   // One bar in the summary, a part per category.
   assert.match(page, /3 Varianten <span class="syn-mix"><i data-cat="orthography" style="flex-grow:2" title="Orthographie 2"><\/i><i data-cat="open"[^>]*flex-grow:1/)
-  // The register under the categories' names.
-  assert.match(page, /<h4>Orthographie <span class="count">1<\/span><\/h4>\s*<ol><li data-cat="orthography"[^>]*><b>vnd<\/b>/)
-  // `vnd`/`und` is spelling, so A and B are 0 apart in substance; `figur`/`geſtalt` puts C 1 from both.
-  assert.match(page, /<tr><th>A<\/th><td><\/td><td style="--k:0\.00" title="A gegen B: 0 sachliche von 2 Stellen">0<\/td><td style="--k:1\.00" title="A gegen C: 1 sachliche von 3 Stellen">1<\/td><\/tr>/)
+  // The register in a fold per category, in its colour; each set says how often, for the script to keep the order.
+  assert.match(page, /<details class="syn-cat" data-cat="orthography" open>\s*<summary>Orthographie <span class="count">1<\/span><\/summary>\s*<ol><li data-cat="orthography"[^>]* data-n="2"><b>vnd<\/b>/)
+  // Each place names the pairs of columns that read otherwise there, for the matrix.
+  assert.match(page, /<li data-group="[^"]+" data-cat="open" data-apart="1-3 2-3">/)
+  // As first shown, `vnd`/`und` (orthography) is not counted, so A and B are 0 apart; `figur`/`geſtalt` puts C 1 from both.
+  assert.match(page, /<tr><th>A<\/th><td><\/td><td data-pair="1-2" style="--k:0\.00" title="A gegen B: 0 Stellen">0<\/td><td data-pair="1-3" style="--k:1\.00" title="A gegen C: 1 Stellen">1<\/td><\/tr>/)
   assert.doesNotMatch(synopsisPage((await load())[0]), /syn-pairs/) // two witnesses: the poem's own count
 
-  // The overview: a bar and a sparkline per poem, every count to sort by, and the sets that recur.
+  // The overview: a bar and a sparkline per poem, every count to sort by, and every reading set by category.
   const overview = synopsesPage([synopsis, { ...synopsis, id: 'n8' }])
   assert.match(overview, /<tr data-variants="3" data-doubtful="0" data-segments="2" data-added="0" data-deleted="0" data-word="0" data-grammar="0" data-punctuation="0" data-orthography="2"[^>]*>/)
   assert.match(overview, /<option value="data-word">Wortvariante<\/option>/)
   assert.match(overview, /<td><span class="syn-stack"><span class="syn-strip"><svg viewBox="0 0 2 1"/)
   assert.doesNotMatch(overview.split('syn-stack')[1], /<a href="#seg/)
-  assert.match(overview, /<summary>Wiederkehrende Lesarten: 2 Sätze[\s\S]*?<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>/)
-  assert.doesNotMatch(synopsesPage([synopsis]), /Wiederkehrende/) // one poem recurs in nothing
+  assert.match(overview, /<summary>Lesarten: 2 verschiedene an 6 Stellen[^<]*<\/summary>\s*<details class="syn-cat" data-cat="orthography">\s*<summary>Orthographie <span class="count">1 verschiedene an 4 Stellen<\/span><\/summary>\s*<ol><li>\s*<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>\s*<span class="places"><a href="synopse-n7\.html#seg-\d+">n7<\/a> <a href="synopse-n8\.html#seg-\d+">n8<\/a>/)
+  // A set found once is listed too, in its poem only.
+  assert.match(synopsesPage([synopsis]), /<span class="count">×2<\/span>\s*<span class="places"><a href="synopse-n7\.html#seg-\d+">n7<\/a><\/span>/)
 })
 
 test('the page says which export it was built from', async () => {
@@ -483,7 +490,7 @@ test('the register lists each set of readings once, the most frequent first', as
 
   const page = synopsisPage(synopsis)
   assert.match(page, /<summary>Lesarten: 2 verschiedene an 2 Stellen<\/summary>/)
-  assert.match(page, /<li data-cat="orthography" data-step="doubled letters"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
+  assert.match(page, /<li data-cat="orthography" data-step="doubled letters" data-n="1"><b>auff<\/b>[\s\S]*?<b>auf<\/b>[\s\S]*?×1[\s\S]*?href="#seg-3"/)
 })
 
 test("a document's classifications reach the apparatus, a model's as provisional", async () => {
@@ -514,6 +521,9 @@ test("a document's classifications reach the apparatus, a model's as provisional
   // The reader can take the model's types back; the place says it is the model's.
   assert.match(page, /<input type="checkbox" data-syn-model checked> Modellvorschläge/)
   assert.match(page, /<span class="var" data-group="1-3" data-cat="orthography" data-by="model" data-state="proposed"/)
+  // In the register too: without them the set moves to offen, whose fold is there, empty, to take it.
+  assert.match(page, /<details class="syn-cat" data-cat="open" open>\s*<summary>offen <span class="count">0<\/span><\/summary>\s*<ol><\/ol>/)
+  assert.match(page, /<li data-cat="orthography" data-by="model" data-n="1">/)
   assert.doesNotMatch(synopsisPage((await load())[0]), /data-syn-model/) // no model, no switch
 })
 
@@ -603,9 +613,9 @@ test('the colours come with the page, from the settings', async () => {
   for (const c of CATEGORIES) assert.match(SETTINGS.categories[c].colour, /^#[0-9a-f]{6}$/)
 })
 
-test('what is changed rarely is folded under Optionen, with the legend', async () => {
+test('what is changed rarely stands apart, with the legend', async () => {
   const page = synopsisPage((await load())[0])
-  const options = page.slice(page.indexOf('<details class="syn-options"'), page.indexOf('</details>', page.indexOf('syn-options')))
+  const options = page.slice(page.indexOf('<div class="syn-options">'), page.indexOf('</details>', page.indexOf('syn-options')))
   for (const control of ['data-syn-ignore', 'data-syn="colour"', 'data-syn="apparatus"', 'syn-legend']) assert.ok(options.includes(control), control)
   for (const control of ['data-syn-cat', 'data-syn-witness', 'data-syn="varying"']) assert.ok(!options.includes(control), control)
 })

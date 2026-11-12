@@ -119,7 +119,7 @@
    would shift the metrics of a diplomatic text, so only the colour marks them.
    An underline under the whole reading makes even one letter findable, and
    says how settled its type is: solid confirmed, dashed proposed by a rule or
-   a model, none and an outline open. */
+   a model, none and a dashed outline open. */
 .var {
   --mark: var(--c-accent);
   background-color: rgb(var(--c-accent) / 0.1);
@@ -128,7 +128,7 @@
   text-underline-offset: 0.22em;
 }
 .var[data-state='proposed'] { text-decoration-style: dashed; }
-.var[data-state='open'] { text-decoration: none; outline: 1px dashed rgb(var(--mark) / 0.8); outline-offset: -1px; }
+.var[data-state='open'] { text-decoration: none; outline: 1.5px dashed rgb(var(--mark)); outline-offset: -1px; }
 .var b { font-weight: inherit; border-radius: 2px; background-color: rgb(var(--c-accent) / 0.25); }
 .var[data-degree='2'] b { background-color: rgb(var(--c-accent) / 0.38); }
 .var[data-degree='3'] b { background-color: rgb(var(--c-accent) / 0.5); }
@@ -155,22 +155,19 @@
 }
 .syn-row > .syn-label:first-child, .syn-row > :first-child > .syn-label { min-width: 7.5rem; }
 .syn-witnesses { gap: 0.6rem; }
+/* The steps under the category they settle, marked in its colour. */
+.syn-steps { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 0.35rem 1rem; padding-left: 0.5rem; border-left: 3px solid rgb(var(--hue)); }
+.syn-steps-of { font-family: var(--f-ui); font-size: 0.75rem; color: rgb(var(--c-muted)); }
+.syn-steps[data-off] { opacity: 0.5; }
 .syn-witnesses label { display: inline-flex; align-items: center; gap: 0.25rem; }
 .syn-bar select { font: inherit; color: inherit; background-color: transparent; }
-.syn-count { margin-left: 0.5rem; color: rgb(var(--c-muted)); font-family: var(--f-ui); font-size: 0.8rem; }
-/* What is changed rarely, folded under one line. */
-.syn-options summary {
-  width: max-content;
-  font-family: var(--f-ui);
-  font-size: 0.75rem;
-  color: rgb(var(--c-muted));
-  cursor: pointer;
-}
+.syn-count { color: rgb(var(--c-muted)); font-family: var(--f-ui); font-size: 0.8rem; }
 /* Margins, not a gap: the content of a details element sits in a box of its own. */
 .syn-view > .syn-row + * { margin-top: 0.9rem; }
 .syn-view[open] { padding-bottom: 0.4rem; }
 .syn-options > * + * { margin-top: 0.6rem; }
-.syn-options[open] { padding-top: 0.6rem; border-top: 1px solid rgb(var(--c-line) / 0.6); }
+/* What is changed rarely, set off by a line. */
+.syn-options { padding-top: 0.6rem; border-top: 1px solid rgb(var(--c-line) / 0.6); }
 /* *Ansicht* folds the controls on a narrow screen; on a wide one they stay open, without it. */
 .syn-view > summary { display: none; }
 
@@ -377,8 +374,6 @@
 .syn-pairs td { background-color: rgb(var(--c-accent) / calc(var(--k, 0) * 0.45)); }
 [data-colour='type'] .var[data-cat] { --mark: var(--hue); background-color: rgb(var(--hue) / 0.16); }
 [data-colour='type'] .var[data-cat] b { background-color: rgb(var(--hue) / 0.45); }
-/* Not classified yet is no colour of its own: the outline alone. */
-[data-colour='type'] .var[data-cat='open'], [data-colour='type'] .var[data-cat='open'] b { background-color: transparent; }
 :root[data-mode='dark'] [data-colour='type'] .var[data-cat] b { background-color: rgb(var(--hue) / 0.6); }
 @media (prefers-color-scheme: dark) {
   :root:not([data-mode='light']) [data-colour='type'] .var[data-cat] b { background-color: rgb(var(--hue) / 0.6); }
@@ -427,7 +422,6 @@
   color: rgb(var(--c-muted));
 }
 .syn-register summary { cursor: pointer; }
-.syn-register h4 { margin: 0.8rem 0 0.2rem; font-size: 0.8rem; font-weight: 600; color: rgb(var(--hue, var(--c-muted))); }
 .syn-register ol {
   columns: 22rem;
   margin: 0.6rem 0 0;
@@ -440,6 +434,10 @@
 .syn-register .places { margin-left: 0.4rem; }
 .syn-register .places a { color: rgb(var(--c-muted)); text-decoration: none; }
 .syn-register .places a:hover { text-decoration: underline; }
+/* A fold per category, marked in its colour; one the filters have emptied goes. */
+.syn-cat { margin-top: 0.5rem; padding-left: 0.5rem; border-left: 3px solid rgb(var(--hue)); }
+.syn-cat > summary { color: rgb(var(--c-ink)); }
+.syn-cat:not(:has(li:not([data-off]))) { display: none; }
 
 /* A phone: each row a stack, the witnesses one under the other, each named. */
 @media (max-width: 40rem) {

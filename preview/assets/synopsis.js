@@ -32,7 +32,7 @@
     var all = function (selector, root) { return [].slice.call((root || synopsis).querySelectorAll(selector)) }
     var chips = all('[data-syn-cat]', controls)
     var filters = all('[data-syn-ignore]', controls)
-    var places = all('.synopsis [data-cat], .syn-register [data-cat]')
+    var places = all('.synopsis [data-cat], .syn-register li[data-cat]')
     var entries = all('.app-list [data-cat]') // one per place: what the counts count
     var rows = all('.synopsis tbody tr[id]')
     var columns = all('[data-syn-witness]', controls)
@@ -89,6 +89,10 @@
         return ignored.indexOf(el.dataset.step) >= 0 || agree[el.dataset.group] === true
       }
       places.forEach(function (el) { el.toggleAttribute('data-off', chosen.indexOf(el.dataset.cat) < 0 || gone(el)) })
+      // A step only acts on its category: while that is not shown, the step is dimmed.
+      all('[data-syn-steps]', controls).forEach(function (g) { g.toggleAttribute('data-off', chosen.indexOf(g.dataset.cat) < 0) })
+      register()
+      pairs(function (el) { return chosen.indexOf(el.dataset.cat) >= 0 && ignored.indexOf(el.dataset.step) < 0 })
 
       // Each count says what the filters leave of its category, chosen or not.
       chips.forEach(function (chip) {
@@ -107,6 +111,45 @@
       previewStore.set('syn-cats', chosen.join(' '))
       previewStore.set('syn-steps', ignored.join('|'))
       frame()
+    }
+
+    // The register follows the model and the filters: a set stands in the fold of
+    // its category as it is now, the most frequent first, and a fold counts what is left.
+    var folds = {}
+    all('.syn-register .syn-cat').forEach(function (fold) { folds[fold.dataset.cat] = fold })
+    var register = function () {
+      all('.syn-register li[data-cat]').forEach(function (li) {
+        var list = folds[li.dataset.cat] && folds[li.dataset.cat].querySelector('ol')
+        if (!list || li.parentNode === list) return
+        var before = [].slice.call(list.children).filter(function (o) { return +o.dataset.n < +li.dataset.n })[0]
+        list.insertBefore(li, before || null)
+      })
+      Object.keys(folds).forEach(function (c) {
+        folds[c].querySelector('.count').textContent = all('li:not([data-off])', folds[c]).length
+      })
+    }
+
+    // Witness against witness, over the places the categories and steps chosen
+    // leave; the columns shown do not matter here, every pair is in the table.
+    var cells = all('[data-syn-pairs] td[data-pair]')
+    var pairs = function (counts) {
+      var n = {}
+      entries.filter(counts).forEach(function (el) {
+        var apart = el.dataset.apart ? el.dataset.apart.split(' ') : []
+        if (el.dataset.missing) {
+          el.dataset.missing.split(' ').forEach(function (a) {
+            el.dataset.present.split(' ').forEach(function (b) { apart.push(Math.min(a, b) + '-' + Math.max(a, b)) })
+          })
+        }
+        apart.forEach(function (pair) { n[pair] = (n[pair] || 0) + 1 })
+      })
+      var most = Math.max.apply(null, [1].concat(cells.map(function (td) { return n[td.dataset.pair] || 0 })))
+      cells.forEach(function (td) {
+        var k = n[td.dataset.pair] || 0
+        td.textContent = k
+        td.style.setProperty('--k', (k / most).toFixed(2))
+        td.title = td.title.replace(/\d+ Stellen$/, k + ' Stellen')
+      })
     }
 
     // The minimap: a frame over the rows on screen, and a click or a drag on it
@@ -181,8 +224,7 @@
     }
 
     var tally = function (at, total) {
-      counter.textContent = !total ? '' : at ? at + ' von ' + total + ' Abweichungen'
-        : total + (total === 1 ? ' Abweichung' : ' Abweichungen')
+      counter.textContent = !total ? '' : '(' + (at ? at + ' von ' : '') + total + ')'
     }
 
     var changed = function () {
@@ -230,10 +272,13 @@
       typed()
       model.addEventListener('change', function () { typed(); refresh(); changed() })
     }
+    // All, none, or as the page came: the boxes of the button's row.
     all('[data-syn-preset]', controls).forEach(function (button) {
       button.addEventListener('click', function () {
-        var chosen = button.dataset.synPreset.split(' ')
-        chips.forEach(function (c) { c.checked = chosen.indexOf(c.dataset.synCat) >= 0 })
+        var how = button.dataset.synPreset
+        all('input', button.closest('.syn-row')).forEach(function (c) {
+          c.checked = how === 'all' || (how === 'default' && c.defaultChecked)
+        })
         refresh()
         changed()
       })
@@ -254,12 +299,6 @@
         changed()
       })
     })
-    // The options rarely changed stay folded, unless the reader opened them.
-    var options = controls.querySelector('[data-syn-options]')
-    if (options) {
-      options.open = previewStore.get('syn-options') === 'open'
-      options.addEventListener('toggle', function () { previewStore.set('syn-options', options.open ? 'open' : 'closed') })
-    }
     refresh()
     tally(0, differing().length)
   }
