@@ -5,7 +5,7 @@
          xmlns:xlink="http://www.w3.org/1999/xlink"
          datatypeLibrary="http://www.w3.org/2001/XMLSchema-datatypes"
          ns="http://www.tei-c.org/ns/1.0"><!--
-Schema generated from ODD source 2026-11-08T02:38:05Z. . 
+Schema generated from ODD source 2026-11-12T07:22:41Z. . 
 TEI Edition: P5 Version 4.12.0. Last updated on 28th July 2026, revision 113e933e2 
 TEI Edition Location: https://www.tei-c.org/Vault/P5/4.12.0/ 
   
@@ -2328,7 +2328,7 @@ Sample values include: 1] suspension (suspension); 2] contraction (contraction);
    </define>
    <define name="tei_ref">
       <element name="ref">
-         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) defines a reference to another location, possibly modified by additional text or comment. [3.7. Simple Links and Cross-References 17.1. Links]</a:documentation>
+         <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">(reference) A link, as in the commentary: to a dictionary, a record or another work (#n129). [3.7. Simple Links and Cross-References 17.1. Links]</a:documentation>
          <ref name="tei_macro.paraContent"/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
@@ -2503,6 +2503,19 @@ Suggested values include: 1] gloss (gloss); 2] index (index); 3] instructions (i
                   type.</sch:assert>
             </sch:rule>
          </pattern>
+         <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
+                  xmlns:rng="http://relaxng.org/ns/structure/1.0"
+                  id="tei_simler-note-note-commentary-constraint-rule-20">
+            <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
+                      xmlns:eg="http://www.tei-c.org/ns/Examples"
+                      xmlns:sch="http://purl.oclc.org/dsdl/schematron"
+                      context="tei:note[@subtype = 'commentary']">
+               <sch:assert test="@type = 'annotation'">[S-NC] A commentary note has
+                  type="annotation".</sch:assert>
+               <sch:assert test="not(@targetEnd) or matches(@targetEnd, '^#?k.+\.\d+$')">[S-NC] A
+                  commentary range starts at an anchor k + work + . + number.</sch:assert>
+            </sch:rule>
+         </pattern>
          <ref name="tei_att.global.attributes"/>
          <ref name="tei_att.anchoring.attributes"/>
          <ref name="tei_att.pointing.attributes"/>
@@ -2545,6 +2558,15 @@ Suggested values include: 1] annotation; 2] bibl; 3] speaker; 4] marginalia; 5] 
                   <data type="token">
                      <param name="pattern">[^\p{C}\p{Z}]+</param>
                   </data>
+               </choice>
+            </attribute>
+         </optional>
+         <optional>
+            <attribute name="subtype">
+               <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">Only for the commentary, which is imported from the editors' Word documents and replaced on every import; other notes have none.</a:documentation>
+               <choice>
+                  <value>commentary</value>
+                  <a:documentation xmlns:a="http://relaxng.org/ns/compatibility/annotations/1.0">a comment from the edition's commentary</a:documentation>
                </choice>
             </attribute>
          </optional>
@@ -2646,7 +2668,7 @@ Elements 7.2.6. Speech Contents]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lb-lb-line-end-placement-constraint-rule-20">
+                  id="tei_simler-lb-lb-line-end-placement-constraint-rule-21">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2695,7 +2717,7 @@ Elements 7.2.6. Speech Contents]</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lb-lb-joined-constraint-rule-22">
+                  id="tei_simler-lb-lb-joined-constraint-rule-23">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2757,7 +2779,7 @@ Elements]</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-cb-cb-set-constraint-rule-24">
+                  id="tei_simler-cb-cb-set-constraint-rule-25">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2970,7 +2992,7 @@ Suggested values include: 1] M</a:documentation>
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-line-inner-space-constraint-rule-26">
+                  id="tei_simler-l-line-inner-space-constraint-rule-27">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -2983,7 +3005,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-27">
+                  id="tei_simler-l-abstractModel-structure-l-in-l-constraint-rule-28">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3057,7 +3079,7 @@ Suggested values include: 1] M</a:documentation>
          </oneOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-lg-type-constraint-rule-28">
+                  id="tei_simler-lg-lg-type-constraint-rule-29">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3072,7 +3094,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-29">
+                  id="tei_simler-lg-atleast1oflggapl-constraint-rule-30">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3082,7 +3104,7 @@ Suggested values include: 1] M</a:documentation>
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-30">
+                  id="tei_simler-lg-abstractModel-structure-lg-in-l-constraint-rule-31">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3502,7 +3524,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </zeroOrMore>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-div-type-constraint-rule-31">
+                  id="tei_simler-div-div-type-constraint-rule-32">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3514,7 +3536,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-32">
+                  id="tei_simler-div-abstractModel-structure-div-in-l-constraint-rule-33">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3526,7 +3548,7 @@ Suggested values include: 1] URLIIIF; 2] URLImages; 3] URLCatalogue; 4] DOI; 5] 
          </pattern>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-33">
+                  id="tei_simler-div-abstractModel-structure-div-in-ab-or-p-constraint-rule-34">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3865,7 +3887,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-34">
+                  id="tei_simler-msDesc-one_ms_singleton_max-constraint-rule-35">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -3900,7 +3922,7 @@ Suggested values include: 1] main; 2] desc</a:documentation>
          </group>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-35">
+                  id="tei_simler-msIdentifier-msId_minimal-constraint-rule-36">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"
@@ -4220,7 +4242,7 @@ Suggested values include: 1] notatedMusic</a:documentation>
          <empty/>
          <pattern xmlns="http://purl.oclc.org/dsdl/schematron"
                   xmlns:rng="http://relaxng.org/ns/structure/1.0"
-                  id="tei_simler-anchor-anchor-note-constraint-rule-36">
+                  id="tei_simler-anchor-anchor-note-constraint-rule-37">
             <sch:rule xmlns="http://www.tei-c.org/ns/1.0"
                       xmlns:eg="http://www.tei-c.org/ns/Examples"
                       xmlns:sch="http://purl.oclc.org/dsdl/schematron"

@@ -33,8 +33,8 @@
             <pb facs="4049174"/>
             <figure>
                 <head><hi rendition="#aq"><hi rendition="#k">Joh. Gulielmus Simlerus</hi><lb/>
-                        Tigurinus. V. D. M. et CollegI Perthenici Inspector. Æ</hi>
-                    <!-- NE: unbekanntes Zeichen --> 58. 1663.</head>
+                        Tigurinus. V. D. M. et CollegI Perthenici Inspector. Æ <gap unit="chars" quantity="1" reason="fm"/></hi>
+                    <!-- NE: unbekanntes Zeichen --> 5 8. 1663.</head>
                 <p><lg>
                         <l>Herr Fatter/ zörnet nicht/ daß ich/ eüch; unbefraget;</l>
                         <lb/>
@@ -49,7 +49,9 @@
             <pb n="[A i r]" facs="4049175"/>
             <div n="2" type="frontispiece" xml:id="i">
                 <figure>
-                    <p><lg>
+                    <head><label>[i.]</label></head>
+                    <p>
+                        <lg>
                             <l><hi rendition="#in">E</hi>In künsches Hertz mag mit Gesang/ mit
                                 Instrument- und Seiten/</l>
                             <lb/>
@@ -66,6 +68,7 @@
             <pb n="[A i v]" facs="4049176"/>
             <pb n="[A ii r]" facs="4049178"/>
             <titlePage type="main">
+                <label>[ii.]</label>
                 <docAuthor rendition="#c"><rs type="person" key="person_001">Johann-Wilhelm<lb/>
                             Simlers</rs></docAuthor>
                 <docTitle>
@@ -148,14 +151,14 @@
                         Altschüzzenmeistern:</item>
                 </list>
                 <lb/>
-                <p rendition="#et">Meinen allerseits hochgeehrten Herren Gönnern
-                    teihls;<!--Strichpunkt wurde von Hand gestrichen und nach «Gönnern» eingefügt.--><lb/>
-                    auch lieben Herren Vettern/<lb/> Schwägeren und Gefätteren.</p>
+                <p><hi rendition="#et">Meinen allerseits hochgeehrten Herren Gönnern
+                    teihls;</hi><lb/>
+                    <hi rendition="#et2">auch lieben Herren Vettern/<lb/> Schwägeren und Gefätteren.</hi></p>
                 <lb/>
                 <pb n="[A iii r]" facs="4049180"/>
                 <div>
-                    <p><hi rendition="#in">H</hi><hi rendition="#larger">Ochgeachte/ woledle/ veste/
-                                from<lb break="no"/></hi>me/ ehren-nohtveste/ fu&#x364;rsichtige/
+                    <p><hi rendition="#in">H</hi>Ochgeachte/ woledle/ veste/
+                                from<lb break="no"/>me/ ehren-nohtveste/ fu&#x364;rsichtige/
                         weyse/<lb/> hochgeehrte Herren Gönnere; auch liebe<lb/> Herren Vettere/
                         Schwägere/ und Gefättere.</p>
                     <lb/>
@@ -176,10 +179,10 @@
                             nar<lb break="no"/>renpossen zutichten gewu&#x366;ßt; warauß verdamli<lb
                             break="no"/>cher schad/ Christlicher ohren und ku&#x364;nscher
                         hertzen<lb/> verletzung/ ja/ betru&#x364;bung des H. Geistes erwachsen<lb/>
-                        mu&#x364;ssen: andere hingegen/ mit ihren u&#x364;belklingenden Versen
+                        mu&#x364;ssen: andere hingegen/ mit ihren u&#x364;belklingen<lb break="no"/>den Versen
                         nichts minders alß belustigen können.</p>
                     <lb/>
-                    <p rendition="#et">Diser zeit aber/ und zwar mitten unter denen<pb n="[A iii v]" facs="4049181"
+                    <p rendition="#et">Diser zeit aber/ und zwar mitten unter denen<lb/><pb n="[A iii v]" facs="4049181"
                         /> verzehrenden kriegsflammen/ bemu&#x364;het sich die<lb/> höchstlöbliche
                             <rs type="org" key="institution_002">Fruchtbringende Gesellschafft</rs>
                             bei<lb break="no"/>den erwehnten poetischen Forderungen und Zier<lb
@@ -283,7 +286,7 @@
                         <hi rendition="#in">C</hi>Ommunicavit mihi vir præstantissimus <rs
                             type="person" key="person_027">Dn. Veiras<lb break="no"/>sius</rs> varia
                         tua Scripta Poëtica, quæ cum voluptate legi,<lb/> imò relegi, quippe quæ
-                        probarent quàm cordi Tibi fit<lb/> atque curæ, ut tenera Ætas rectè
+                        probarent quàm cordi Tibi sit<lb/> atque curæ, ut tenera Ætas rectè
                         instituatur non modò in<lb/> veræ Religionis fundamentis, sed etiam in bonis
                         Moribus.<lb/> Memini me vidisse homines impensè doctos, sed in Ethicis<lb/>
                         minùs versatos, qui nonnunquam ridendos se præbebant.<lb/> Perge, quæso,
@@ -622,8 +625,6 @@
                         Warnung an die unteutschen.</hi>
                 </head>
                 <lb/>
-                <!-- In der ersten Spalte des Akrostichon wird zudem der Name SJMLER hervorgehoben, 
-                     allerdings ohne Einrückung. Kodieren? -->
                 <lg type="poem" rendition="#twocol">
                     <l><hi rendition="#in">S</hi>Eht/ wie der Teutschen ru&#x366;h</l>
                     <lb/>
@@ -633,7 +634,7 @@
                     <lb/>
                     <l rendition="#et">und <rs type="person" key="person_046">Nydhart</rs> zörnt darob.</l>
                     <lb/>
-                    <l>Jn einem kurtzen</l>
+                    <l rendition="#acrostic"><hi rendition="#in">J</hi>n einem kurtzen</l>
                     <lb/>
                     <l rendition="#acrostic"><hi rendition="#acroInit">nV</hi>nd blik erwachset s<hi rendition="#acroFin">O</hi></l>
                     <lb/>
@@ -641,7 +642,7 @@
                     <lb/>
                     <l rendition="#et">und weißt nicht wie und wo</l>
                     <lb/>
-                    <l>Mein armer Grimmefol</l>
+                    <l rendition="#acrostic"><hi rendition="#in">M</hi>ein armer Grimmefol</l>
                     <lb/>
                     <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>aß fahren deinen ny<hi rendition="#acroFin">D</hi></l>
                     <lb/>
@@ -649,7 +650,7 @@
                     <lb/>
                     <l rendition="#et2">zum zorn zureitzen myd.</l>
                     <lb/>
-                    <l>Lern schweigen; und das mau</l>
+                    <l rendition="#acrostic"><hi rendition="#in">L</hi>ern schweigen; und das mau</l>
                     <lb/>
                     <l rendition="#acrostic"><hi rendition="#acroInit">L</hi>eit im gebiß und zau<hi rendition="#acroFin">M</hi></l>
                     <lb/>
@@ -657,15 +658,15 @@
                     <lb/>
                     <l rendition="#et2">für deinen albern gaum.</l>
                     <lb/>
-                    <l>Es wachßt hier an dem se</l>
+                    <l rendition="#acrostic"><hi rendition="#in">E</hi>s wachßt hier an dem se</l>
                     <lb/>
-                    <l rendition="#acrostic"><hi rendition="#acroInit">E</hi>y<!--Von Hand (mit Bleistift?) den y-Strich verlängert und y-Punkte hinzugefügt.--> an dem <rs type="place" key="place_007">Zürichse<hi rendition="#acroFin">E</hi></rs></l>
+                    <l rendition="#acrostic"><hi rendition="#acroInit">E</hi><choice><sic>v</sic><corr>y</corr></choice> an dem <rs type="place" key="place_007">Zürichse<hi rendition="#acroFin">E</hi></rs></l>
                     <lb/>
                     <l rendition="#et">so gu&#x366;t alß irgend wo</l>
                     <lb/>
                     <l rendition="#et2"><hi rendition="#aq">V</hi>lisses su&#x364;sser klee.</l>
                     <lb/>
-                    <l>Rott auß; so säen wi</l>
+                    <l rendition="#acrostic"><hi rendition="#in">R</hi>ott auß; so säen wi</l>
                     <lb/>
                     <l rendition="#acrostic"><hi rendition="#acroInit">R</hi>eiß ab/ so pflantzen wi<hi rendition="#acroFin">R:</hi></l>
                     <lb/>
@@ -706,7 +707,7 @@
                     <l><hi rendition="#in">O</hi>Bgleich der <hi rendition="#larger">Tichter</hi>
                         kunst sehr hoch bisher gestigen/</l>
                     <lb/>
-                    <l rendition="#et">Will ihr verdienter Ru&#x366;hm bey uns doch bald
+                    <l>Will ihr verdienter Ru&#x366;hm bey uns doch bald
                         erligen/</l>
                     <lb/>
                     <l rendition="#et">Nicht darum/ daß nunmermehr kein geist zu finden sey</l>
@@ -890,7 +891,7 @@
                 </head>
                 <lb/>
                 <lg type="poem">
-                    <l rendition="#larger"><hi rendition="#in">J</hi>st dan der Teutschen Geist
+                    <l><hi rendition="#in">J</hi>st dan der Teutschen Geist
                             von seinem eignen blut/</l>
                     <lb/>
                     <l rendition="#et">wie zuvor von dem Wein/ nunmehr so gar besoffen/</l>
