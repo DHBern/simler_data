@@ -78,7 +78,7 @@
         <!-- The Buchstabwechsel pages: an interleaved two-column setting (read row by row, so the
              lines alternate left and right) whose acrostic lines carry marginal letters, set in the
              line's padding. The line boxes are laid out by the l models. -->
-        <rendition xml:id="twocol" scheme="css">--acro-body: 1.45em; --acro-fin: 1.25em; --indent-step: 0.5em; display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.3em; align-items: baseline;</rendition>
+        <rendition xml:id="twocol" scheme="css">--acro-body: 1.45em; --acro-fin: 1.25em; --indent-step: 1.2em; display: grid; grid-template-columns: 1fr 1fr; column-gap: 1.3em; align-items: baseline;</rendition>
         <rendition xml:id="acrostic" scheme="css">position: relative;</rendition>
         <rendition xml:id="acroInit" scheme="css">position: absolute; left: 0; font-weight: 600;</rendition>
         <rendition xml:id="acroFin" scheme="css">position: absolute; right: 0; font-weight: 600;</rendition>
@@ -1295,6 +1295,18 @@
               </sch:rule>
             </constraint>
           </constraintSpec>
+          <constraintSpec ident="note-commentary" scheme="schematron">
+            <desc>A commentary note is an annotation; its range starts at an anchor
+              <val>k</val> + work + <val>.</val> + number (<val>k135.2</val>).</desc>
+            <constraint>
+              <sch:rule xmlns:sch="http://purl.oclc.org/dsdl/schematron" context="tei:note[@subtype = 'commentary']">
+                <sch:assert test="@type = 'annotation'">[S-NC] A commentary note has
+                  type="annotation".</sch:assert>
+                <sch:assert test="not(@targetEnd) or matches(@targetEnd, '^#?k.+\.\d+$')">[S-NC] A
+                  commentary range starts at an anchor k + work + . + number.</sch:assert>
+              </sch:rule>
+            </constraint>
+          </constraintSpec>
           <attList>
             <attDef ident="type" mode="change" usage="opt">
               <valList type="semi" mode="replace">
@@ -1303,6 +1315,14 @@
                 <valItem ident="speaker"><desc>a speaker designation in dialogue verse</desc></valItem>
                 <valItem ident="marginalia"><desc>a marginal note printed in the source</desc></valItem>
                 <valItem ident="remarkResponsibility"><desc>a note on editorial responsibility</desc></valItem>
+              </valList>
+            </attDef>
+            <attDef ident="subtype" mode="add" usage="opt">
+              <desc>Only for the commentary, which is imported from the editors' Word documents and
+                replaced on every import; other notes have none.</desc>
+              <datatype><dataRef key="teidata.enumerated"/></datatype>
+              <valList type="closed">
+                <valItem ident="commentary"><desc>a comment from the edition's commentary</desc></valItem>
               </valList>
             </attDef>
             <attDef ident="place" mode="change" usage="opt">
@@ -1336,6 +1356,14 @@
             <param name="marker" value="false()"/>
           </model>
           <model output="plain" predicate="@targetEnd" behaviour="omit"/>
+        </elementSpec>
+
+        <elementSpec ident="ref" module="core" mode="change">
+          <desc>A link, as in the commentary: to a dictionary, a record or another work
+            (<val>#n129</val>).</desc>
+          <model predicate="@target" behaviour="link" useSourceRendition="true">
+            <param name="uri" value="@target"/>
+          </model>
         </elementSpec>
 
         <elementSpec ident="list" module="core" mode="change">
