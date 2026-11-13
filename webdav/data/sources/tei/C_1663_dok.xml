@@ -1118,7 +1118,7 @@
             <lb/>
             übergeben.</head>
             <lb/>
-            
+            <cb type="start"/>
             <lg type="poem">
             <lg n="1">
             <l><hi rendition="#in">E</hi>uers Herꝛen Vatters dichten/</l>
@@ -1192,7 +1192,7 @@
             <l>auch fu&#x364;r andre preißt ein jeder.</l>
             </lg>
             <lb/>
-            
+            <cb/>
             <lg n="5">
             <l>Gottes groſſe gnadeng<choice><sic>aa</sic><corr/></choice>ben/</l>
             <lb/>
@@ -1265,9 +1265,11 @@
             <l>nichts an Euch iſt zuvergiften.</l>
             </lg>
             <lb/>
+            <cb type="end"/>
             <fw place="bottom" type="catch">O Jhr</fw>
             <lb/>
             <pb facs="4049197"/>
+            <cb type="start"/>
             <lg n="9">
             <l rendition="#b #larger">O Jhr wehrteſten Weisheiten/</l>
             <lb/>
@@ -1295,7 +1297,7 @@
             <lb/>
             <l rendition="#et">dreyfach ſelig Euch bereit/</l>
             <lb/>
-            
+            <cb/>
             <l rendition="#et">weil auf heut der dritte Sohn</l>
             <lb/>
             <l rendition="#et">Traget eines Bra&#x364;utgams Kron.</l>
@@ -1324,7 +1326,7 @@
             </lg>
             <lb/>
             </lg>
-            
+            <cb type="end"/>
             <closer><signed rendition="#right">Johann Jacob Sta&#x364;ffen/ Pfarꝛer
             <lb/>
             zu Weinfelden.</signed></closer>
@@ -9927,7 +9929,7 @@
             <fw place="top" type="pageNum">128</fw>
             <fw place="top" type="header">Himmelfahrtsgeſang.</fw>
             <lb/>
-            
+            <cb type="start"/>
             <lg n="5">
             <head><num>5.</num></head>
             <lb/>
@@ -9943,7 +9945,7 @@
             <lb/>
             <l>ſuchen/ nicht im kott.</l>
             <lb/>
-            
+            <cb/>
             <l>Du Haubt der Gemein/</l>
             <lb/>
             <l>zieh uns Gliederlein/</l>
@@ -9958,6 +9960,7 @@
             </lg>
             <lb/>
             </lg>
+            <cb type="end"/>
             </div>
             <milestone unit="section" rendition="#hr"/>
             <lb/>
@@ -13448,6 +13451,7 @@
             <div>
             <head rendition="#aq"><num>XXXII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Der Fru&#x364;hling foller luſt die berg und th<anchor xml:id="a66"/><unclear>a&#x364;</unclear><note type="annotation" targetEnd="a66"><p>Das kleine "e" ist in keinem einzigen Exemplar eindeutig</p></note>ler kleidet/</l>
             <lb/>
             <l>darvon ſich alles vieh in follen ſprüngen weidet:</l>
@@ -13455,6 +13459,7 @@
             <l>das federvo&#x364;lklein ſingt: es hüp<anchor xml:id="a67"/>f<note type="annotation" targetEnd="a67"><p>In den Vergleichsexemplaren ist das f besser zu erkennen</p></note>t der Nymphen chor:</l>
             <lb/>
             <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+            </lg>
             <lb/>
             </div>
             
@@ -13481,18 +13486,21 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/ dar-<lb
             break="no"/>von ſich alles vieh in follen ſprüngen weidet:</l>
             <lb/>
             <l>das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:</l>
             <lb/>
             <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Der Fru&#x364;hling foller luſt die berg und tha&#x364;ler kleidet/</l>
             <lb/>
             <l>darvon ſich alles vieh in follen ſprüngen weidet:</l>
@@ -13500,6 +13508,7 @@
             <l>das federvo&#x364;lklein ſingt: es hüpft der Nymfen chor:</l>
             <lb/>
             <l>das naſſe ſchu&#x364;ppenheer auch klimmet hoch empor.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -13515,6 +13524,7 @@
             <div>
             <head rendition="#aq"><num>XXXIII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13522,12 +13532,14 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
@@ -13535,6 +13547,7 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             
@@ -13546,6 +13559,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13553,12 +13567,14 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zu ſchertzen:</l>
@@ -13566,6 +13582,7 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -13581,6 +13598,7 @@
             <div>
             <head rendition="#aq"><num>XXXIV.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13588,12 +13606,14 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13601,6 +13621,7 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſa&#x364;et.</l>
+            </lg>
             <lb/>
             </div>
             
@@ -13612,6 +13633,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13619,12 +13641,14 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſ<anchor xml:id="a68"/>a&#x364;<note type="annotation" targetEnd="a68"><p>Im Münchner Exemplar ist das übergeschriebene e klar</p></note>et.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Luſtig werden bekümmerte hertzen/ wan die guldene</l>
             <lb/>
             <l>ſonnen im mertzen/ mit dem widder beginnet zuſchertzen:</l>
@@ -13632,6 +13656,7 @@
             <l>da der leidige winter vergehet/ und der liebliche Fru&#x364;hling</l>
             <lb/>
             <l>entſtehet/ den der Zephyr mit blumen beſ<supplied>a&#x364;</supplied>et.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -13882,6 +13907,7 @@
             <div>
             <head rendition="#aq"><num>XXXVI.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo komt iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
@@ -13889,12 +13915,14 @@
             <l>Da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
@@ -13902,6 +13930,7 @@
             <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten/ die ſaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
@@ -13913,6 +13942,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
@@ -13920,12 +13950,14 @@
             <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
@@ -13933,6 +13965,7 @@
             <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -13946,6 +13979,7 @@
             <div>
             <head rendition="#aq"><num>XXXVIII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſch<supplied>o&#x364;</supplied>nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
@@ -13953,12 +13987,14 @@
             <l>da wir Gott zubitten/ daß nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
@@ -13966,6 +14002,7 @@
             <l>da wir Gott zubitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
@@ -13977,6 +14014,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;<supplied>t</supplied> iedoch mit nutzbarkeit der ſommer an ihr ſtatt:</l>
@@ -13984,12 +14022,14 @@
             <l>da wir Gott zu bitten/ daß/ nach landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Wiewol der zeiten ſcho&#x364;nſte zeit uns abgenadet hat/</l>
             <lb/>
             <l>ſo kom&#x342;t iedoch mit nutzbarkeit der ſommer an ihr ſtatt.</l>
@@ -13997,6 +14037,7 @@
             <l>da wir Gott zu bitten/ daß/ n<choice><sic>o</sic><corr>a</corr></choice>ch landes ſitten/ werden</l>
             <lb/>
             <l>abgeſchnidten die ſaaten fru&#x364;h und ſpaht.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -14232,22 +14273,26 @@
             <div>
             <head rendition="#aq"><num>XXXIX.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
             <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
             <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049412" n="213"/>
@@ -14258,22 +14303,26 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Die dr<supplied>i</supplied>tte ze<supplied>i</supplied>t in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
             <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Die dritte zeit in iedem jahr/ nicht minder gar alß andre</l>
             <lb/>
             <l>mich erfreut: ſie kommet aufgezogen wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -14288,22 +14337,26 @@
             <div>
             <head rendition="#aq"><num>XL.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Die dritte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
             <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Die dr<choice><sic>Eindeutig "i" im Wiener Exemplar</sic><corr>i</corr></choice>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
             <l>andre mich erfreut: ſie kommet aufge<supplied>z</supplied>ogen/ wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049414" n="215"/>
@@ -14314,22 +14367,26 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
             <l>andre mich erfreut: ſie kommet aufgezogen/ wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Die dr<supplied>i</supplied>tte zeit in iedem jahr/ nicht minder gar alß</l>
             <lb/>
             <l>andre mich erfreut: ſie kommet aufgezogen<anchor xml:id="a73"/>/<note type="annotation" targetEnd="a73"><p>Die hier etwas ausgebleichte Virgel ist im Münchner Exemplar eindeutig</p></note> wan ſtork</l>
             <lb/>
             <l>und ſchwalb entflogen/ die ſonn der wag nicht weit.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -14561,6 +14618,7 @@
             <div>
             <head rendition="#aq"><num>XLII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht/</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14572,12 +14630,14 @@
             <l>die ſtro&#x364;hm und ſee vor froßt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14589,6 +14649,7 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049420" n="221"/>
@@ -14599,6 +14660,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14610,12 +14672,14 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14627,6 +14691,7 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -14639,6 +14704,7 @@
             <div>
             <head rendition="#aq"><num>XLIII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14650,12 +14716,14 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht/</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14667,6 +14735,7 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049422" n="223"/>
@@ -14677,6 +14746,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14688,12 +14758,14 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen aller dingen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Der kürtzeſt tag und la&#x364;ngſte nacht</l>
             <lb/>
             <l>den grauen winter bringen:</l>
@@ -14705,6 +14777,7 @@
             <l>die ſtro&#x364;hm und ſee vor froſt und ſchnee</l>
             <lb/>
             <l>ſich ſchlieſſen allerdingen.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -15575,6 +15648,7 @@
             <div>
             <head rendition="#aq"><num>XLVIII.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
             <l>die mitlerin zu ruherwünſchtem leben:</l>
@@ -15582,12 +15656,14 @@
             <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
             <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
             <l>die mitlerin zu ruherwünſchtem leben:</l>
@@ -15595,6 +15671,7 @@
             <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
             <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049440" n="241"/>
@@ -15605,6 +15682,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Mit David wir die einigkeit erheben/</l>
             <lb/>
             <l>die mitlerin zu ruherwünſchtem leben:</l>
@@ -15612,12 +15690,14 @@
             <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
             <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Mit David wir die einigkeit erheben</l>
             <lb/>
             <l>die mitlerin zu ruherwünſchtem leben:</l>
@@ -15625,6 +15705,7 @@
             <l>ſie riecht nach balſams arte/ den man auf Aron geußt/</l>
             <lb/>
             <l>und der vom haubt in barte/ und auf die kleider fleußt.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -15884,6 +15965,7 @@
             <div>
             <head rendition="#aq"><num>L.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
             <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine:</l>
@@ -15894,12 +15976,14 @@
             <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
             <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
             <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?</l>
@@ -15910,6 +15994,7 @@
             <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
             <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049446" n="247"/>
@@ -15920,6 +16005,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
             <l>deſſen ſu&#x364;ſſer nam&#x342;/ mein ſeelenhort alleine?</l>
@@ -15930,12 +16016,14 @@
             <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
             <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l>Wie leuchtet doch mein Bra&#x364;utigam/ Herꝛ Jeſus/</l>
             <lb/>
             <l>deſſen ſu&#x364;ſſer nam&#x342; mein ſeelenhort alleine:</l>
@@ -15946,6 +16034,7 @@
             <l>lieblich zeigt ſich der/ ſo gu&#x364;tig/ grecht/ ſanfftmu&#x364;htig/</l>
             <lb/>
             <l>reich an ehren/ ma&#x364;chtig iſt mich zu bekehren.</l>
+            </lg>
             <lb/>
             </div>
             </div>
@@ -19157,6 +19246,7 @@
             <div>
             <head rendition="#aq"><num>LX.</num> Cantus.</head>
             <lb/>
+            <lg>
             <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach geb<anchor xml:id="a110"/>ü<note type="annotation" targetEnd="a110"><p>Im andern Zürcher Exemplar ist das Trema besser zu erkennen</p></note>r und würdigkeit/</l>
             <lb/>
             <l>durch die Verſe zu erho&#x364;hen/ jenen Stand/ da ſich bereit</l>
@@ -19164,12 +19254,14 @@
             <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
             <l>vor der Gmein/ in des Allerho&#x364;chſten Nammen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Tenor.</head>
             <lb/>
+            <lg>
             <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
             <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
@@ -19177,6 +19269,7 @@
             <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
             <l>vor der Gmein/ in des Allerho&#x364;chſten Nammen.</l>
+            </lg>
             <lb/>
             </div>
             <pb facs="4049504" n="305"/>
@@ -19187,6 +19280,7 @@
             <div>
             <head rendition="#aq">Altus.</head>
             <lb/>
+            <lg>
             <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
             <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
@@ -19194,12 +19288,14 @@
             <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
             <l>vor der Gmein/ in des Allerho&#x364;chſten nammen.</l>
+            </lg>
             <lb/>
             </div>
             
             <div>
             <head rendition="#aq">Baſis.</head>
             <lb/>
+            <lg>
             <l><hi rendition="#in">K</hi>Einer ſol ſich unterſtehen/ nach gebür und würdigkeit/</l>
             <lb/>
             <l>durch die Verſe zuerho&#x364;hen/ jenen Stand/ da ſich bereit</l>
@@ -19207,6 +19303,7 @@
             <l>zwey/ wie heut/ vereint zuſammen/ künſch und rein/</l>
             <lb/>
             <l>vor der Gmein/ in des Allerho&#x364;chſten nammen.</l>
+            </lg>
             <lb/>
             </div>
             </div>
