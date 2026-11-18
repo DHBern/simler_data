@@ -13,7 +13,7 @@ npm run build              # whole corpus to dist/
 npm run build -- A_1648    # only matching file names
 npm run build -- --src ../exported --out /tmp/preview
 npm run build -- --records # also: what the ODD decided, as data
-npm test                   # the conformance fixtures
+npm test                   # the pages and the synopses
 npm run check              # types
 ```
 
@@ -63,10 +63,7 @@ the findings page next to what the documents get wrong.
 | Path | Contents |
 | --- | --- |
 | `../schema/tei_simler.odd` | The schema **and** the rendering: every element's Processing Model and all text styling |
-| `lib/` | The renderer, as the package `tei-odd-interpreter`: everything below is behind `lib/index.ts` |
-| `lib/odd/` | Reads the ODD: models, XPath predicates and params, the generated `odd.css` |
-| `lib/tei/` | The pipeline that applies it: parsing, whitespace, hyphens, note ranges and regions, the behaviour table, the PM walker, the HTML serialiser |
-| `lib/findings.ts` | What the package reports, as data: a code, its values and an English message |
+| [`tei-odd-interpreter`](https://github.com/cforney/tei-odd-interpreter) | The renderer, a package of its own, installed from its GitHub release: reads the ODD, applies it, reports findings as data |
 | `messages.ts` | Those findings in German, as the preview's pages say them |
 | `iiif.ts` | The IIIF image addresses the document pages and the facsimile drawer use |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
@@ -82,13 +79,15 @@ the findings page next to what the documents get wrong.
 | `page.ts` | The HTML shell: top bar, apparatus (the numbered notes, and a box per other place); document, index, search and findings pages |
 | `synopsis.ts` | The synopsis pages; it knows nothing of the ODD, and `page.ts` knows nothing of alignments |
 | `build.ts` | Walks the corpus and writes `dist/` |
-| `test/` | What reading the ODD must report, and one ODD with four TEI cases, one per Processing-Model feature, with what they must render |
+| `test/` | The pages: the findings in German, the index, the synopses. The renderer's own tests are in the package |
 
 ## Using the renderer in a site
 
-`lib/` is the package `tei-odd-interpreter`; [lib/README.md](lib/README.md) describes its
-API, the HTML it promises and how to use it in Astro or SvelteKit. The preview imports its
-source directly, so no build step is needed here; `npm pack` in `lib/` compiles it. The
+The renderer is the package [`tei-odd-interpreter`](https://github.com/cforney/tei-odd-interpreter); its README describes its API,
+the HTML it promises and how to use it in Astro or SvelteKit. `package.json` pins one release by
+its tarball's URL: to update, `npm add` the new release's URL, then compare the corpus build before
+and after. To work on the package and the preview together, `npm link ../../tei-odd-interpreter`
+(after `npm run build` there); `npm install` undoes it. The
 ODD's CSS reads the design tokens (`var(--c-person)`, …), so a page of this edition needs
 `assets/tokens.css` as well as `odd.css`. `page.ts` here is a working reference for the rest;
 the note popovers, entity cards and facsimile viewer are the preview's own `assets/*.js`,
@@ -99,7 +98,7 @@ not part of the package.
 `schema/tei_simler.odd` is the only source of truth for the rendering; the code
 knows no TEI element by name. Each element takes the first `<model>` whose
 `@predicate` holds, and its `@behaviour` (`block`, `inline`, `heading`, `break`,
-`note`, `alternate`, …) decides the HTML. `lib/tei/behaviours.ts` gives each
+`note`, `alternate`, …) decides the HTML. The package's behaviour table gives each
 behaviour the element it wraps its content in and whether that renders as a block
 or inline; a behaviour that does more than wrap is written out in the walker.
 A `<modelSequence>` renders each of its models whose predicate holds, one after
@@ -161,7 +160,7 @@ params, what the page shows around the text: `title`, `manifest` (the IIIF
 manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 
 To change how something looks or renders, edit its `elementSpec` and rebuild.
-Predicates and params use an XPath subset (`lib/odd/xpath.ts`). An expression
+Predicates and params use [an XPath subset](https://github.com/cforney/tei-odd-interpreter#params-and-the-xpath-subset). An expression
 outside it, or one that fails where it is evaluated, counts as empty — the
 predicate is false and the next model decides, the param has no value — so the
 corpus still renders; the build names it, `findings.html` lists it under *ODD*,

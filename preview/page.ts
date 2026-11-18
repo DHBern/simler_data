@@ -5,7 +5,7 @@
 import type { Entity } from './entities'
 
 import { imageBase, imageUrl } from './iiif'
-import type { Odd, RenderedNote, View } from './lib'
+import type { Odd, RenderedNote, View } from 'tei-odd-interpreter'
 
 type Availability = Odd['availability']
 

@@ -1,6 +1,6 @@
 /** The package's findings as the preview's pages say them. */
 
-import type { Finding, FindingCode } from './lib'
+import type { Finding, FindingCode } from 'tei-odd-interpreter'
 
 const GERMAN: Record<FindingCode, (a: Record<string, string>) => string> = {
   'predicate-unreadable': (a) => `Modell ${a.model}: Prädikat nicht auswertbar, gilt als leer — ${a.error}`,

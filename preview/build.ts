@@ -22,7 +22,7 @@ import { normalizeForSearch } from './assets/normalize.js'
 import { loadEntities, type Entity } from './entities'
 import {
   coverage, createProcessor, idFindings, parse, readOdd, renderTei, type Decision,
-} from './lib'
+} from 'tei-odd-interpreter'
 import { imageRoot } from './iiif'
 import { inGerman } from './messages'
 import { loadSynopses, numberLines } from './alignments'

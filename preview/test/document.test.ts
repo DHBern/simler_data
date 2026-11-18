@@ -9,7 +9,7 @@
 import assert from 'node:assert/strict'
 import { test } from 'node:test'
 
-import { finding, idFindings, parse } from '../lib'
+import { finding, idFindings, parse } from 'tei-odd-interpreter'
 import { inGerman } from '../messages'
 import { documentPage, findingsPage, indexPage, type PreviewDoc } from '../page'
 
