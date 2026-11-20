@@ -71,13 +71,17 @@
     }
   })
 
-  /** `selectors` by rank; `fill` returns false to decline — the click is then not intercepted. */
+  /**
+   * `selectors` by rank; `fill` returns the element focus goes back to on closing, or false to
+   * decline — the click is then not intercepted.
+   */
   function createPopover(panel, selectors, fill, closed) {
     // Safari < 17 has no popover API: a plain `hidden` toggle, so no top layer
     // and no light dismiss, but the panel still opens, reads and closes.
     var native = typeof panel.showPopover === 'function'
     if (!native) panel.hidden = true
     var active = null
+    var home = null
 
     var isOpen = function () { return native ? panel.matches(':popover-open') : !panel.hidden }
 
@@ -99,7 +103,9 @@
     }
 
     function open(trigger) {
-      if (!fill(trigger)) return false
+      var back = fill(trigger)
+      if (!back) return false
+      home = back
       if (active && active !== trigger) active.setAttribute('aria-expanded', 'false')
       active = trigger
       if (native) { if (!isOpen()) panel.showPopover() } else { panel.hidden = false }
@@ -116,8 +122,11 @@
     }
 
     function close() {
+      // Read before hiding: a hidden panel loses its focus.
+      var back = panel.contains(document.activeElement) && home
       if (native) { if (isOpen()) panel.hidePopover() } else { panel.hidden = true }
       reset()
+      if (back) back.focus({ preventScroll: true })
     }
 
     var popover = {
@@ -184,7 +193,10 @@
       title.textContent =
         'Anmerkung ' + (marker.textContent || '').trim() +
         (markers.length > 1 ? ' von ' + markers.length : '')
-      body.replaceChildren.apply(body, source.cloneNode(true).childNodes)
+      // The copy without ids: a target inside the note stays unique.
+      var copy = source.cloneNode(true)
+      copy.querySelectorAll('[id]').forEach(function (el) { el.removeAttribute('id') })
+      body.replaceChildren.apply(body, copy.childNodes)
       jump.href = '#' + marker.dataset.note
       notePanel.querySelectorAll('[data-note-step]').forEach(function (button) {
         var to = at + Number(button.dataset.noteStep)
@@ -193,7 +205,7 @@
       })
       shown = marker
       light(marker.dataset.note)
-      return true
+      return marker
     }, function () {
       shown = null
       light(null)
@@ -254,7 +266,7 @@
         a.textContent = (link.authority + ' ' + link.id + ' ↗').replace(/\s+/g, ' ')
         meta.append(a)
       })
-      return true
+      return trigger
     })
   }
   // ── The way into a synopsis ──────────────────────────────────────────────
