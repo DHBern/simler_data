@@ -103,6 +103,11 @@ function entitiesIn(
   return { used, unknown: [...unknown].sort() }
 }
 
+/** The header's language code as HTML wants it (`deu` is `de`), or undefined where it is none. */
+function bcp47(code = ''): string | undefined {
+  try { return Intl.getCanonicalLocales(code)[0] } catch { return undefined }
+}
+
 function render(
   file: string,
   xml: string,
@@ -112,7 +117,7 @@ function render(
 ): PreviewDoc & { decisions?: Decision } {
   const out = file.replace(/\.xml$/i, '.html')
   const base: PreviewDoc = {
-    file, out, title: file, html: '', text: '', notes: [],
+    file, out, title: file, lang: 'de', html: '', text: '', notes: [],
     pages: [], facsRoot: null, entities: {}, warnings: [],
   }
 
@@ -126,15 +131,17 @@ function render(
     return { ...base, malformed: (error as Error).message }
   }
 
-  // Where title, facsimile and entities come from is the ODD's `page` model.
+  // Where title, language, credit, facsimile and entities come from is the ODD's `page` model.
   const result = renderTei(tree, processor, records)
-  const { title = [], manifest = [], pages = [], entities: keys = [] } = result.page
+  const { title = [], lang = [], credit = [], manifest = [], pages = [], entities: keys = [] } = result.page
   const entities = entitiesIn(keys, registers)
   const facsRoot = imageRoot(manifest[0])
   return {
     ...base,
     decisions: result.decisions,
     title: title[0] || file,
+    lang: bcp47(lang[0]) ?? base.lang,
+    credit: credit[0] || undefined,
     html: result.html,
     text: result.text,
     notes: result.notes.map(({ hast, ...note }) => note),

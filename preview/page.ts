@@ -17,6 +17,10 @@ export interface PreviewDoc {
   out: string
   /** The title the ODD's `page` model gives, or the file name. */
   title: string
+  /** The language the `page` model gives, as a BCP 47 tag; `de` where it gives none. */
+  lang: string
+  /** The credit the `page` model gives, for the footer. */
+  credit?: string
   html: string
   /** The same text as plain characters — what `build.ts` feeds to Pagefind. */
   text: string
@@ -278,8 +282,9 @@ const NOTE_POPOVER = `<aside id="note-popover" class="popover-panel no-print" po
     <p class="popover-foot"><a class="btn" href="#" data-note-jump>Im Apparat anzeigen ↓</a></p>
   </aside>`
 
-/** The ODD's terms, which the pages generated from it carry. */
-function terms(availability?: Availability): string {
+/** The ODD's terms, which the pages generated from it carry; a document's own credit takes their place. */
+function terms(availability?: Availability, credit?: string): string {
+  if (credit) return `<footer class="terms">${esc(credit)}</footer>`
   if (!availability) return ''
   const { text, licence } = availability
   return `<footer class="terms">${esc(text)}${licence ? ` <a href="${esc(licence)}" rel="license">${esc(licence)}</a>` : ''}</footer>`
@@ -291,7 +296,7 @@ export function documentPage(doc: PreviewDoc, views: View[], availability?: Avai
   const attrs = Object.entries({ ...defaults(views), ...(drawer && { facs: 'on' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
   return `<!doctype html>
-<html lang="de" ${attrs}>
+<html lang="${esc(doc.lang)}" ${attrs}>
 <head>
   ${head(doc.title)}
 </head>
@@ -308,7 +313,7 @@ export function documentPage(doc: PreviewDoc, views: View[], availability?: Avai
     <h1 class="doc-title">${esc(doc.title)}</h1>
     ${doc.malformed ? malformedNotice(doc.malformed) : doc.html}
     ${endnotes(doc.notes)}
-    ${terms(availability)}
+    ${terms(availability, doc.credit)}
   </main>
   ${NOTE_POPOVER}
   ${entityData(doc)}

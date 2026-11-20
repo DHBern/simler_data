@@ -32,7 +32,7 @@ test('the pages say the findings in German', () => {
 
 test('a note goes to the apparatus whatever its place', () => {
   const doc: PreviewDoc = {
-    file: 'x.xml', out: 'x.html', title: 'X', html: '<p>Text</p>', text: 'Text',
+    file: 'x.xml', out: 'x.html', title: 'X', lang: 'de', html: '<p>Text</p>', text: 'Text',
     notes: [
       { place: 'end', id: 'note-1', number: 1, html: '<p>Am Ende</p>' },
       { place: 'margin', html: '<p>Am Rand</p>' },
@@ -44,9 +44,20 @@ test('a note goes to the apparatus whatever its place', () => {
   assert.match(page, /class="endnote" id="note-1"[\s\S]*<p>Am Ende<\/p>/)
 })
 
+test('the page takes its language and credit from the page model', () => {
+  const doc: PreviewDoc = {
+    file: 'x.xml', out: 'x.html', title: 'X', lang: 'la', credit: 'Facsimiles: e-rara.ch.', html: '', text: '',
+    notes: [], pages: [], facsRoot: null, entities: {}, warnings: [],
+  }
+  const page = documentPage(doc, [], { text: 'The ODD’s terms.' } as Parameters<typeof documentPage>[2])
+  assert.match(page, /<html lang="la"/)
+  assert.match(page, /<footer class="terms">Facsimiles: e-rara\.ch\.<\/footer>/)
+  assert.doesNotMatch(page, /The ODD’s terms/) // the credit takes their place
+})
+
 test('a document that will not parse says so on its page, the index and the findings', () => {
   const doc: PreviewDoc = {
-    file: 'x.xml', out: 'x.html', title: 'x.xml', html: '', text: '', notes: [],
+    file: 'x.xml', out: 'x.html', title: 'x.xml', lang: 'de', html: '', text: '', notes: [],
     pages: [], facsRoot: null, entities: {}, warnings: [], malformed: 'Missing end tag (line 3)',
   }
   assert.match(documentPage(doc, []), /nicht wohlgeformt[\s\S]*Missing end tag \(line 3\)/)

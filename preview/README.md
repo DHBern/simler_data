@@ -125,7 +125,7 @@ styled model among several must name its class with `@cssClass`. A `<modelGrp>` 
 no predicate, so it decides like a model without one: an element that reaches it
 takes one of its models or none, and a model behind it is never reached. 
 The ODD's `<availability>` travels into what is generated from it: the head of
-`odd.css`, the footer of the pages, and each `--records` file. Whether an element counts as a
+`odd.css`, the footer of the pages (where a document gives no `credit`), and each `--records` file. Whether an element counts as a
 block for whitespace and line breaks follows from the model it takes where it
 stands, and from its behaviour's flow. A note's `marker` param, where false, leaves no marker in the text. Its `range` param names the element its commented range starts at;
 the range is resolved on the rendered page, across any element boundary. Range
@@ -156,7 +156,8 @@ its models and explained by a second; a new view is an ODD change, and nothing h
 knows their names. Each view's CSS keys on its switch as well as on the attribute
 the script sets, so the views work with JavaScript off. *Anmerkungen*, *Schrift* and
 *Dunkler Modus* are the preview's own controls, not renderings. The `page` model of the root element says, in its
-params, what the page shows around the text: `title`, `manifest` (the IIIF
+params, what the page shows around the text: `title`, `lang` (`<html lang>`, as a BCP 47 tag:
+`deu` is `de`), `credit` (the footer, in place of the ODD's terms), `manifest` (the IIIF
 manifest), `pages` (the facsimile ids) and `entities` (the register keys).
 
 To change how something looks or renders, edit its `elementSpec` and rebuild.
