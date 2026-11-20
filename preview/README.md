@@ -62,7 +62,10 @@ For proof-reading, each poem (a rendered `section` with an id) and each page bre
 (`data-page`) links to its lines in the TEI file, as built: the renderer keeps each
 element's source position, and the page carries the lines in an island. The sources
 are copied into `dist/sources/` as scripts, so the source view works from `file://`
-too. Corrections still go to the WebDAV.
+too. Where the window has room, the links open the XML in the drawer beside the text
+instead, which follows the reading line: it stands at the line between those of the
+page breaks and poems around it, in proportion, and marks the poem there; a line
+number scrolls the text to that place. Corrections still go to the WebDAV.
 
 ## Layout
 
@@ -75,10 +78,10 @@ too. Corrections still go to the WebDAV.
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
 | `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis and into the source |
-| `assets/source.js` | The source view (`source.html?A_1648.xml#L12-L80`): the TEI file from `dist/sources/`, numbered and highlighted, only the lines in view drawn |
+| `assets/source.js` | The TEI file from `dist/sources/`, numbered and highlighted, only the lines in view drawn: for the source view (`source.html?A_1648.xml#L12-L80`) and the drawer |
 | `assets/store.js` | What a reader chose, kept across pages; the one thing the two scripts share |
 | `assets/synopsis.css`, `synopsis.js` | The synopsis pages, loaded by them alone |
-| `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |
+| `assets/facsimile.js` | The drawer: open, close, resize, facsimile or XML, both following the text; OpenSeadragon over the IIIF images |
 | `assets/normalize.js` | Search normalisation — plain ESM |
 | `assets/search.js` | The search page, and marking the hits in a document |
 | `entities.ts` | The project's registers (persons, places, works, institutions) from `gsheet/csv`, for the entity cards |

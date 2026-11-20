@@ -75,3 +75,19 @@ test('a page says where its poems and pages stand in the source, for the source 
   assert.match(sourcePage('https://github.com/o/r/blob/main/tei'), /data-source-github="https:\/\/github.com\/o\/r\/blob\/main\/tei\/"[\s\S]*assets\/source.js/)
   assert.doesNotMatch(sourcePage(null), /GitHub/) // a source outside the repository has no place there
 })
+
+test('the drawer shows the XML beside the text, the facsimile too where there is one', () => {
+  const doc: PreviewDoc = {
+    file: 'x.xml', out: 'x.html', title: 'X', lang: 'de', html: '', text: '', notes: [], pages: [], facsRoot: null,
+    entities: {}, warnings: [], source: { file: 'x.xml', ids: {}, pages: {} },
+  }
+  const xml = documentPage(doc, [])
+  assert.match(xml, /<html [^>]*data-facs="off" data-facs-view="xml"/) // the XML alone waits to be asked for
+  assert.match(xml, /data-xml-link target="simler-source" href="source.html\?x.xml"[\s\S]*data-xml-frame/)
+  assert.doesNotMatch(xml, /data-facs-show|facs-frame/)
+  assert.match(xml, /assets\/source.js[\s\S]*assets\/facsimile.js/)
+  const both = documentPage({ ...doc, pages: ['1'], facsRoot: 'https://iiif.example/x' }, [])
+  assert.match(both, /<html [^>]*data-facs="on" data-facs-view="facs"/)
+  assert.match(both, /data-facs-show="facs" aria-pressed="true">Faksimile[\s\S]*data-facs-show="xml" aria-pressed="false">XML/)
+  assert.doesNotMatch(documentPage({ ...doc, source: undefined }, []), /id="facsimile"|source.js/)
+})

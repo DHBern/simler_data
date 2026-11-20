@@ -229,18 +229,21 @@ function entityData(doc: PreviewDoc): string {
 }
 
 /**
- * The facsimile drawer, beside the text: closed, a rail with the arrow that
- * opens it; open, the page image, resizable at its left edge.
+ * The drawer beside the text: closed, a rail with the arrow that opens it;
+ * open, the page image or the XML, resizable at its left edge.
  *
  * The `<img>` is the baseline — one IIIF JPEG, right without any script, and
- * not loaded while the drawer is closed, so it costs e-rara nothing.
- * `assets/facsimile.js` opens and sizes the drawer, upgrades the image to
- * OpenSeadragon and keeps it on the page the reader has scrolled to. Emitted
- * only where the header names a IIIF manifest.
+ * not loaded while the drawer is closed, so it costs e-rara nothing. The XML
+ * comes only when its view first opens. `assets/facsimile.js` opens and sizes
+ * the drawer, upgrades the image to OpenSeadragon, draws the XML, and keeps both
+ * at the place the reader has scrolled to. The facsimile needs a IIIF manifest
+ * in the header, the XML the source lines.
  */
-function facsimile(doc: PreviewDoc): string {
-  if (!doc.facsRoot || !doc.pages.length) return ''
-  const lib = libraryRoot(doc.facsRoot)
+function drawer(doc: PreviewDoc): string {
+  const facs = !!doc.facsRoot && doc.pages.length > 0
+  if (!facs && !doc.source) return ''
+  const name = !doc.source ? 'Faksimile' : facs ? 'Faksimile und XML' : 'XML'
+  const lib = facs ? libraryRoot(doc.facsRoot!) : null
   const tool = (id: string, label: string, glyph: string) =>
     `<button type="button" class="btn" id="${id}" aria-label="${esc(label)}">${glyph}</button>`
   const paging = doc.pages.length > 1
@@ -249,20 +252,26 @@ function facsimile(doc: PreviewDoc): string {
   const toggle = (to: 'on' | 'off', label: string, cls: string) =>
     `<button type="button" class="${cls}" data-facs-toggle="${to}" aria-controls="facsimile"
       aria-expanded="${to === 'off'}" aria-label="${label}" title="${label}"></button>`
+  const show = (to: string, label: string) =>
+    `<button type="button" class="btn" data-facs-show="${to}" aria-pressed="${to === 'facs'}">${label}</button>`
+  const sourcePage = doc.source && `source.html?${encodeURIComponent(doc.source.file)}`
 
-  return `<aside id="facsimile" class="facsimile no-print" aria-label="Faksimile">
-    ${toggle('on', 'Faksimile einblenden', 'icon-btn facs-toggle facs-open')}
+  return `<aside id="facsimile" class="facsimile no-print" aria-label="${name}">
+    ${toggle('on', `${name} einblenden`, 'icon-btn facs-toggle facs-open')}
     <div class="facs-resize" data-facs-resize role="separator" aria-orientation="vertical"
-      aria-label="Breite des Faksimiles" tabindex="0"></div>
+      aria-label="Breite der Seitenleiste" tabindex="0"></div>
     <p class="facs-caption">
-      ${toggle('off', 'Faksimile ausblenden', 'icon-btn facs-toggle')}
-      <span data-facs-label>Bild 1 von ${doc.pages.length}</span>
-      ${lib ? `<a data-facs-link target="_blank" rel="noreferrer"
+      ${toggle('off', `${name} ausblenden`, 'icon-btn facs-toggle')}
+      ${facs && doc.source ? `<span class="facs-views" role="group" aria-label="Ansicht">${show('facs', 'Faksimile')}${show('xml', 'XML')}</span>` : ''}
+      ${facs ? `<span class="facs-only" data-facs-label>Bild 1 von ${doc.pages.length}</span>` : ''}
+      ${lib ? `<a class="facs-only" data-facs-link target="_blank" rel="noreferrer"
         href="${esc(lib)}/${encodeURIComponent(doc.pages[0])}">Digitalisat ↗</a>` : ''}
+      ${sourcePage ? `<span class="xml-only" data-xml-label>${esc(doc.source!.file)}</span>
+      <a class="xml-only" data-xml-link target="simler-source" href="${esc(sourcePage)}">Quelltext ↗</a>` : ''}
     </p>
-    <div class="facs-frame">
+    ${facs ? `<div class="facs-frame facs-only">
       <img class="facs-image" data-facs-image loading="lazy" alt="Faksimile der aufgeschlagenen Seite"
-        src="${esc(imageUrl(imageBase(doc.facsRoot, doc.pages[0])))}">
+        src="${esc(imageUrl(imageBase(doc.facsRoot!, doc.pages[0])))}">
       <div class="osd-mount" data-facs-mount></div>
       <div class="facs-tools" data-facs-tools hidden>
         ${tool('osd-zoom-in', 'Vergrössern', '+')}
@@ -272,7 +281,8 @@ function facsimile(doc: PreviewDoc): string {
         ${paging}
       </div>
     </div>
-    ${island('facs-data', { root: doc.facsRoot, pages: doc.pages, library: lib })}
+    ${island('facs-data', { root: doc.facsRoot, pages: doc.pages, library: lib })}` : ''}
+    ${doc.source ? '<div class="xml-frame xml-only" data-xml-frame><div class="source" data-xml-view></div></div>' : ''}
   </aside>`
 }
 
@@ -301,8 +311,10 @@ function terms(availability?: Availability, credit?: string): string {
 
 export function documentPage(doc: PreviewDoc, views: View[], availability?: Availability,
                              synopses: Record<string, string> = {}): string {
-  const drawer = facsimile(doc)
-  const attrs = Object.entries({ ...defaults(views), ...(drawer && { facs: 'on' }) })
+  const side = drawer(doc)
+  // Open on the facsimile where there is one; the XML alone waits to be asked for.
+  const facs = doc.pages.length > 0 && !!doc.facsRoot
+  const attrs = Object.entries({ ...defaults(views), ...(side && { facs: facs ? 'on' : 'off', 'facs-view': facs ? 'facs' : 'xml' }) })
     .map(([k, v]) => `data-${k}="${v}"`).join(' ')
   return `<!doctype html>
 <html lang="${esc(doc.lang)}" ${attrs}>
@@ -327,10 +339,10 @@ export function documentPage(doc: PreviewDoc, views: View[], availability?: Avai
   ${NOTE_POPOVER}
   ${entityData(doc)}
   ${Object.keys(synopses).length ? island('synopses', synopses) : ''}${doc.source ? island('source', doc.source) : ''}
-  ${drawer}
+  ${side}
   <script src="assets/store.js"></script>
   <script src="assets/preview.js"></script>
-  ${drawer ? '<script src="assets/facsimile.js"></script>' : ''}
+  ${side ? `${doc.source ? '<script src="assets/source.js"></script>' : ''}<script src="assets/facsimile.js"></script>` : ''}
   <script type="module" src="assets/search.js"></script>
 </body>
 </html>

@@ -1,21 +1,26 @@
 /**
- * The facsimile drawer.
+ * The drawer beside the text: the facsimile, or the XML.
  *
- * Text and viewer follow each other: the page whose `<pb/>` last crossed the
- * reading line is the page in the viewer, and paging the viewer, or clicking a
- * `<pb/>`, scrolls the text to that `<pb/>`. Whether the drawer is open, and how
- * wide, outlasts the page.
+ * Both follow the text. The page whose `<pb/>` last crossed the reading line is
+ * the page in the viewer, and paging the viewer, or clicking a `<pb/>`, scrolls
+ * the text to that `<pb/>`. The XML stands at the reading line's place in the
+ * source, between the lines of the page breaks and poems around it, and its
+ * line numbers scroll the text there. Whether the drawer is open, how wide, and
+ * which view it shows, outlasts the page.
  */
 ;(function () {
   'use strict'
 
   var root = document.documentElement
   var panel = document.getElementById('facsimile')
-  var island = panel && panel.querySelector('script[data-facs-data]')
-  if (!island) return
-
-  var data = JSON.parse(island.textContent || '{}')
-  var pages = data.pages || []
+  if (!panel) return
+  var island = function (scope, name) {
+    var script = scope.querySelector('script[data-' + name + ']')
+    return script && JSON.parse(script.textContent)
+  }
+  var data = island(panel, 'facs-data') || { pages: [] }
+  var at = island(document, 'source')
+  var pages = data.pages
   var frame = panel.querySelector('.facs-frame')
   var image = panel.querySelector('[data-facs-image]')
   var mount = panel.querySelector('[data-facs-mount]')
@@ -27,6 +32,8 @@
   var marks = pages.map(function (facs) {
     return document.querySelector('[data-page="' + CSS.escape(facs) + '"]')
   })
+  var READING = 0.35 // the reading line, as a share of the window's height
+  var shown = function (el) { return !!el && el.getClientRects().length > 0 }
 
   var base = function (facs) { return data.root + '/' + encodeURIComponent(facs) }
 
@@ -62,7 +69,7 @@
   // order, so the scan stops at the first one below it.
 
   function atReadingLine() {
-    var line = window.innerHeight * 0.35
+    var line = window.innerHeight * READING
     var at = 0
     for (var i = 0; i < marks.length; i++) {
       if (!marks[i]) continue
@@ -78,7 +85,8 @@
     queued = true
     requestAnimationFrame(function () {
       queued = false
-      if (window.scrollY !== driven) show(atReadingLine())
+      if (root.getAttribute('data-facs-view') === 'xml') follow()
+      else if (window.scrollY !== driven) show(atReadingLine())
     })
   }
 
@@ -154,26 +162,102 @@
     })
   }
 
-  // ── Open, closed, how wide: `data-facs` and `--facs-w` on <html> ─────────
+  // ── The XML ──────────────────────────────────────────────────────────────
+  // The page breaks and poems with a line in the source, in document order, so
+  // in the order of their lines; the text between two of them stands for the
+  // lines between theirs, in proportion.
+
+  var xml = null
+  var ready = false
+  var xmlView = panel.querySelector('[data-xml-view]')
+  var xmlLabel = panel.querySelector('[data-xml-label]')
+  var xmlLink = panel.querySelector('[data-xml-link]')
+  var lines = function (el) { return (el.dataset.page && at.pages[el.dataset.page]) || at.ids[el.id] }
+  var anchors = at ? Array.prototype.filter.call(document.querySelectorAll('main [id], main [data-page]'), lines) : []
+  var page = function (n) { return 'source.html?' + encodeURIComponent(at.file) + '#L' + n }
+
+  /** The last anchor at or above `y`, by its top in the window, or -1. */
+  function anchorAt(y) {
+    var lo = 0, hi = anchors.length - 1, found = -1
+    while (lo <= hi) {
+      var mid = (lo + hi) >> 1
+      if (anchors[mid].getBoundingClientRect().top <= y) { found = mid; lo = mid + 1 } else hi = mid - 1
+    }
+    return found
+  }
+
+  /** Between anchors `i` and `i + 1`, the source line `n` at `y`, or with `n`, the `y` of that line. */
+  function between(i, y, n) {
+    var a = anchors[i], b = anchors[i + 1]
+    var la = lines(a)[0], lb = b ? lines(b)[0] : la
+    var ya = a.getBoundingClientRect().top, yb = b ? b.getBoundingClientRect().top : ya
+    if (n === undefined) return la + (lb > la && yb > ya ? Math.min(1, (y - ya) / (yb - ya)) * (lb - la) : 0)
+    return ya + (lb > la ? (n - la) / (lb - la) * (yb - ya) : 0)
+  }
+
+  /** The XML at the reading line, and the poem standing there marked. */
+  function follow() {
+    if (!ready) return
+    var y = window.innerHeight * READING
+    var i = anchorAt(y)
+    var n = i < 0 ? 1 : between(i, y)
+    var poem = null
+    for (var k = i; k >= 0 && !poem; k--) if (at.ids[anchors[k].id]) poem = anchors[k]
+    var range = poem && poem.getBoundingClientRect().bottom >= y ? at.ids[poem.id] : [0, 0]
+    xml.show(n, READING)
+    xml.mark(range[0], range[1])
+    xmlLabel.textContent = at.file + ' · Zeile ' + Math.round(n)
+    xmlLink.href = page(range[0] ? range[0] + (range[1] > range[0] ? '-L' + range[1] : '') : Math.round(n))
+  }
+
+  function loadXml() {
+    if (xml) return follow()
+    xml = window.SourceView(xmlView, panel.querySelector('[data-xml-frame]'), page)
+    xml.load(at.file, function () { ready = true; follow() })
+  }
+
+  // A line number scrolls the text to that line's place; with a modifier it opens the source page.
+  if (xmlView) xmlView.addEventListener('click', function (event) {
+    var no = event.target.closest('.source-no')
+    if (!no || event.ctrlKey || event.metaKey || event.shiftKey || !anchors.length) return
+    event.preventDefault()
+    var n = Number(no.textContent)
+    var i = 0
+    while (i + 1 < anchors.length && lines(anchors[i + 1])[0] <= n) i++
+    window.scrollBy(0, between(i, 0, n) - window.innerHeight * READING)
+  })
+
+  // ── Open, closed, how wide, which view: `data-facs`, `--facs-w` and `data-facs-view` on <html> ──
 
   var load = function (key) { try { return localStorage.getItem('simler-preview:' + key) } catch (e) { return null } }
   var save = function (key, value) { try { localStorage.setItem('simler-preview:' + key, value) } catch (e) { /* file:// */ } }
 
   function update() {
-    // Closed, or too narrow a window (preview.css): no box to boot the viewer into.
-    if (window.getComputedStyle(frame).display === 'none') {
+    // Closed, or too narrow a window (preview.css): nothing to follow.
+    if (root.getAttribute('data-facs') !== 'on' || !shown(panel)) {
       window.removeEventListener('scroll', sync)
       return
     }
     handle.setAttribute('aria-valuenow', String(Math.round(panel.offsetWidth / window.innerWidth * 100)))
     window.addEventListener('scroll', sync, { passive: true })
+    if (root.getAttribute('data-facs-view') === 'xml') return loadXml()
     show(atReadingLine())
     boot()
   }
 
   function open(value) {
     root.setAttribute('data-facs', value)
+    save('facs-open', value)
     update()
+  }
+
+  /** `facs` or `xml`, where the document has it. */
+  function view(value) {
+    if (!(value === 'facs' ? pages.length : value === 'xml' && at)) return
+    root.setAttribute('data-facs-view', value)
+    panel.querySelectorAll('[data-facs-show]').forEach(function (button) {
+      button.setAttribute('aria-pressed', String(button.dataset.facsShow === value))
+    })
   }
 
   /** The stylesheet bounds the width; what is kept is what it allowed. */
@@ -184,10 +268,15 @@
   }
 
   panel.addEventListener('click', function (event) {
+    var to = event.target.closest('[data-facs-show]')
+    if (to) {
+      view(to.dataset.facsShow)
+      save('facs-view', to.dataset.facsShow)
+      return update()
+    }
     var button = event.target.closest('[data-facs-toggle]')
     if (!button) return
     open(button.dataset.facsToggle)
-    save('facs-open', button.dataset.facsToggle)
     // The clicked button is hidden now; focus moves to its counterpart.
     panel.querySelector('[data-facs-toggle]:not([data-facs-toggle="' + button.dataset.facsToggle + '"])').focus()
   })
@@ -204,29 +293,44 @@
     if (step) widen(panel.offsetWidth + step)
   })
 
-  // A page break in the text opens the drawer at its page.
-  function turnTo(mark) {
+  /** Open the drawer in `value`, with `el` at the reading line (facsimile: a little above). */
+  function bring(value, el) {
+    view(value)
+    save('facs-view', value)
     open('on')
-    save('facs-open', 'on')
-    if (window.getComputedStyle(frame).display === 'none') return
-    window.scrollTo(0, window.scrollY + mark.getBoundingClientRect().top - window.innerHeight * 0.2)
+    window.scrollBy(0, el.getBoundingClientRect().top - window.innerHeight * (value === 'xml' ? READING : 0.2))
     driven = window.scrollY
-    show(marks.indexOf(mark))
+    if (value === 'xml') loadXml()
+    else show(marks.indexOf(el))
   }
+
+  // A page break in the text opens the drawer at its page.
   marks.forEach(function (mark) {
     if (!mark) return
     mark.tabIndex = 0
     mark.setAttribute('role', 'button')
     mark.title = 'Seite im Faksimile zeigen'
-    mark.addEventListener('click', function () { turnTo(mark) })
+    mark.addEventListener('click', function (event) {
+      if (!event.target.closest('a') && shown(panel)) bring('facs', mark) // not its *XML* link
+    })
     mark.addEventListener('keydown', function (event) {
-      if (event.key !== 'Enter' && event.key !== ' ') return
+      if (event.target !== mark || (event.key !== 'Enter' && event.key !== ' ')) return
       event.preventDefault()
-      turnTo(mark)
+      if (shown(panel)) bring('facs', mark)
     })
   })
 
+  // An *XML* link opens the XML here, where the window has room for the drawer; elsewhere its own page.
+  document.addEventListener('click', function (event) {
+    var to = at && event.target.closest('.source-link, .page-source-link')
+    if (!to || event.ctrlKey || event.metaKey || event.shiftKey || !shown(panel)) return
+    event.preventDefault()
+    bring('xml', to.parentNode)
+  })
+
   if (load('facs-w')) root.style.setProperty('--facs-w', load('facs-w') + 'px')
-  open(load('facs-open') || 'on')
+  view(load('facs-view') || root.getAttribute('data-facs-view'))
+  root.setAttribute('data-facs', load('facs-open') || root.getAttribute('data-facs'))
+  update()
   window.addEventListener('resize', update)
 })()

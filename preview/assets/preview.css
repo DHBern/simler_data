@@ -163,8 +163,9 @@ body { container: page / inline-size; }
   --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.25' fill='none' stroke='black' stroke-width='1.5'/%3E%3Cpath d='M8 1.75a6.25 6.25 0 0 1 0 12.5z'/%3E%3C/svg%3E");
 }
 
-/* ── The facsimile drawer ─────────────────────────────────────────────────── */
-/* Open with `data-facs='on'`, as wide as `--facs-w`, bounded so the text keeps room. */
+/* ── The drawer: facsimile or XML ─────────────────────────────────────────── */
+/* Open with `data-facs='on'`, as wide as `--facs-w`, bounded so the text keeps room;
+   `data-facs-view` says which of the two it shows. */
 
 :root {
   --facs-w: min(42vw, 34rem);
@@ -189,7 +190,13 @@ body { container: page / inline-size; }
   [data-facs='on'] .facsimile { width: var(--facs); padding: 0.75rem; }
 }
 [data-facs='off'] .facsimile > :not(.facs-open),
-[data-facs='on'] .facs-open { display: none; }
+[data-facs='on'] .facs-open,
+[data-facs-view='xml'] .facs-only,
+[data-facs-view='facs'] .xml-only { display: none; }
+
+.facs-views { display: inline-flex; gap: 0.2rem; }
+.facs-views .btn { padding: 0.1rem 0.5rem; }
+.facs-views [aria-pressed='true'] { background-color: rgb(var(--c-ui-ink) / 0.1); color: rgb(var(--c-ui-ink)); }
 
 .facs-toggle {
   --icon: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 11 13 8l-2.5-3M6 8h7' fill='none' stroke='black' stroke-width='2'/%3E%3Crect x='2' y='2' width='2' height='12' rx='.5'/%3E%3C/svg%3E");
@@ -223,6 +230,11 @@ body { container: page / inline-size; }
   border-radius: var(--r);
   background-color: rgb(var(--c-ink) / 0.06);
 }
+
+/* The XML scrolls in its own box; the text beside it keeps the window's scrolling. */
+.xml-frame { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+.xml-frame .source { --bg: var(--c-ui-bg); font-size: 0.75rem; }
+.xml-frame .source-no { width: 3.5rem; padding-right: 0.75rem; }
 
 /* Still image and viewer share one box; the rail gives the height. */
 .facs-image,
@@ -502,12 +514,14 @@ body { container: page / inline-size; }
 
 .page-source-link { color: rgb(var(--c-muted)); font-weight: 400; }
 
-/* The source view: fixed lines, so only those in view are drawn; a long line widens the page. */
+/* The source view: fixed lines, so only those in view are drawn; a long line widens the page,
+   and the line numbers stay at its left edge. */
 main:has(> .source) { max-width: none; margin: 0; }
 .source-head { margin: 0 0 1rem 4.5rem; }
 .source {
   position: relative;
   width: max(100%, calc(var(--widest, 0ch) + 6rem));
+  --bg: var(--c-paper);
   font: 0.8125rem/20px ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace;
   tab-size: 2;
 }
@@ -515,7 +529,10 @@ main:has(> .source) { max-width: none; margin: 0; }
 .source-line.is-marked { background-color: rgb(var(--c-accent) / 0.12); }
 .source-line code { font: inherit; }
 .source-no {
+  position: sticky;
+  left: 0;
   flex: none;
+  background-color: rgb(var(--bg));
   width: 4.5rem;
   padding-right: 1rem;
   text-align: right;
@@ -524,6 +541,7 @@ main:has(> .source) { max-width: none; margin: 0; }
   user-select: none;
 }
 .source-no:hover { color: rgb(var(--c-accent)); }
+.is-marked .source-no { background-image: linear-gradient(rgb(var(--c-accent) / 0.12) 0 0); }
 .x-tag { color: rgb(var(--c-org)); }
 .x-attr { color: rgb(var(--c-place)); }
 .x-val { color: rgb(var(--c-work)); }

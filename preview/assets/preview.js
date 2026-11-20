@@ -307,15 +307,13 @@
       var section = document.getElementById(id)
       if (section) section.prepend(sourceLink(at.ids[id]))
     })
-    // A page's link stands in its break, after the label; a click on it is not one on the break,
-    // which turns the facsimile to the page.
+    // A page's link stands in its break, after the label. Where the drawer has room, `facsimile.js`
+    // opens the links in its XML view instead.
     document.querySelectorAll('main [data-page]').forEach(function (page) {
       var lines = at.pages[page.dataset.page]
       if (!lines) return
       var link = sourceLink(lines)
       link.className = 'page-source-link no-print'
-      link.addEventListener('click', function (event) { event.stopPropagation() })
-      link.addEventListener('keydown', function (event) { event.stopPropagation() })
       page.append(link)
     })
   }
