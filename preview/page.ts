@@ -31,10 +31,19 @@ export interface PreviewDoc {
   facsRoot: string | null
   /** The register entries this document names, keyed by `rs/@key`. */
   entities: Record<string, Entity & { count: number }>
+  /** Where the poems and pages stand in the source, for the links into the source view. */
+  source?: SourceLines
   /** What an editor should look at: unmapped elements, ids, register keys. */
   warnings: string[]
   /** Why the file would not parse, where it would not: the page then has no text. */
   malformed?: string
+}
+
+/** First and last line of each poem (by id) and page (by `data-page`) in the source file. */
+export interface SourceLines {
+  file: string
+  ids: Record<string, [number, number]>
+  pages: Record<string, [number, number]>
 }
 
 const ESCAPES: Record<string, string> = {
@@ -317,7 +326,7 @@ export function documentPage(doc: PreviewDoc, views: View[], availability?: Avai
   </main>
   ${NOTE_POPOVER}
   ${entityData(doc)}
-  ${Object.keys(synopses).length ? island('synopses', synopses) : ''}
+  ${Object.keys(synopses).length ? island('synopses', synopses) : ''}${doc.source ? island('source', doc.source) : ''}
   ${drawer}
   <script src="assets/store.js"></script>
   <script src="assets/preview.js"></script>
@@ -441,6 +450,13 @@ export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string
     </p>
     ${body ? `<table>${body}</table>` : '<p class="lead">Keine Hinweise.</p>'}`)
 }
+
+/** The source view: `assets/source.js` draws the file the address names; `github` is where it is on GitHub. */
+export const sourcePage = (github: string | null): string =>
+  corpusPage('', 'Quelltext', `
+    ${github ? `<p class="source-head no-print"><a data-source-github="${esc(github)}/" href="${esc(github)}">Auf GitHub</a></p>` : ''}
+    <div class="source" id="source">Quelltext wird geladen …</div>`,
+  { script: '<script src="assets/source.js"></script>' })
 
 /** The frame the corpus pages share: bar, title, one column. */
 export function corpusPage(here: string, title: string, main: string,

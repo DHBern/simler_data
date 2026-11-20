@@ -11,7 +11,7 @@ import { test } from 'node:test'
 
 import { finding, idFindings, parse } from 'tei-odd-interpreter'
 import { inGerman } from '../messages'
-import { documentPage, findingsPage, indexPage, type PreviewDoc } from '../page'
+import { documentPage, findingsPage, indexPage, sourcePage, type PreviewDoc } from '../page'
 
 test('an id used twice, or one no XML tool takes, is a finding', () => {
   const findings = idFindings(
@@ -64,4 +64,14 @@ test('a document that will not parse says so on its page, the index and the find
   assert.match(indexPage([doc], 'tei', null), /flag-error/)
   const findings = findingsPage([doc], ['Modell p-1: Prädikat nicht auswertbar'], [])
   assert.ok(findings.indexOf('XML nicht wohlgeformt') < findings.indexOf('ODD')) // first, above the ODD
+})
+
+test('a page says where its poems and pages stand in the source, for the source view', () => {
+  const doc: PreviewDoc = {
+    file: 'x.xml', out: 'x.html', title: 'X', lang: 'de', html: '', text: '', notes: [], pages: [], facsRoot: null,
+    entities: {}, warnings: [], source: { file: 'x.xml', ids: { n1: [3, 9] }, pages: { 17: [4, 4] } },
+  }
+  assert.match(documentPage(doc, []), /<script type="application\/json" data-source>\{"file":"x.xml","ids":\{"n1":\[3,9\]\},"pages":\{"17":\[4,4\]\}\}<\/script>/)
+  assert.match(sourcePage('https://github.com/o/r/blob/main/tei'), /data-source-github="https:\/\/github.com\/o\/r\/blob\/main\/tei\/"[\s\S]*assets\/source.js/)
+  assert.doesNotMatch(sourcePage(null), /GitHub/) // a source outside the repository has no place there
 })

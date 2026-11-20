@@ -15,6 +15,7 @@ import { cp, mkdir, readdir, readFile, rm, writeFile } from 'node:fs/promises'
 import { dirname, join, relative, resolve, sep } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
+import type { Root as HastRoot, RootContent } from 'hast'
 import * as pagefind from 'pagefind'
 
 import { normalizeForSearch } from './assets/normalize.js'
@@ -26,7 +27,7 @@ import {
 import { imageRoot } from './iiif'
 import { inGerman } from './messages'
 import { loadSynopses, numberLines } from './alignments'
-import { documentPage, findingsPage, indexPage, searchPage, type PreviewDoc } from './page'
+import { documentPage, findingsPage, indexPage, searchPage, sourcePage, type PreviewDoc, type SourceLines } from './page'
 import { synopsesPage, synopsisHref, synopsisPage } from './synopsis'
 
 type Processor = ReturnType<typeof createProcessor>
@@ -96,6 +97,24 @@ function entitiesIn(
   return { used, unknown: [...unknown].sort() }
 }
 
+/**
+ * Where each poem (a `section` with an id) and each page (`data-page`) stands in the source, first
+ * and last line: what the source view opens at. Read off the output, so the ODD decides what they are.
+ */
+function sourceLines(file: string, tree: HastRoot): SourceLines {
+  const at: SourceLines = { file, ids: {}, pages: {} }
+  const walk = (node: RootContent) => {
+    if (node.type !== 'element') return
+    const { position, properties: { id, 'data-page': page } } = node
+    const lines: [number, number] | undefined = position && [position.start.line, position.end.line]
+    if (lines && node.tagName === 'section' && typeof id === 'string') at.ids[id] ??= lines
+    if (lines && page != null) at.pages[String(page)] ??= lines
+    node.children.forEach(walk)
+  }
+  tree.children.forEach(walk)
+  return at
+}
+
 /** The header's language code as HTML wants it (`deu` is `de`), or undefined where it is none. */
 function bcp47(code = ''): string | undefined {
   try { return Intl.getCanonicalLocales(code)[0] } catch { return undefined }
@@ -141,6 +160,7 @@ function render(
     pages,
     facsRoot,
     entities: entities.used,
+    source: sourceLines(file, result.hast),
     warnings: [
       ...idFindings(tree).map(inGerman),
       ...result.warnings.map(inGerman),
@@ -231,9 +251,13 @@ async function main() {
   const aligned = synopses.map((synopsis) => synopsis.id)
 
   const docs: PreviewDoc[] = []
+  await mkdir(join(out, 'sources'), { recursive: true })
   for (const name of names) {
+    const xml = await readFile(join(src, name), 'utf8')
+    // The source for the source view, as a script: it loads from `file://` too, where a fetch is refused.
+    await writeFile(join(out, 'sources', `${name}.js`), `previewSource(${JSON.stringify(xml)})\n`)
     // The decisions are written and dropped; keeping 74 of these trees is not worth the memory.
-    const { decisions, ...doc } = render(name, await readFile(join(src, name), 'utf8'), registers, processor, records)
+    const { decisions, ...doc } = render(name, xml, registers, processor, records)
     // Only the poems standing in this document, so the page carries no list of the rest.
     const here = aligned.filter((id) => doc.html.includes(`id="${id}"`))
     if (here.length) doc.html = numberLines(doc.html, new Set(here))
@@ -249,7 +273,9 @@ async function main() {
   }
 
   const source = posix(relative(resolve(here, '..'), src))
-  await writeFile(join(out, 'index.html'), indexPage(docs, source, source.startsWith('..') ? null : `${BLOB}/${source}`, odd.availability))
+  const blob = source.startsWith('..') ? null : `${BLOB}/${source}`
+  await writeFile(join(out, 'index.html'), indexPage(docs, source, blob, odd.availability))
+  await writeFile(join(out, 'source.html'), sourcePage(blob))
   await writeFile(join(out, 'search.html'), searchPage(docs))
   await writeFile(join(out, 'synopsen.html'), synopsesPage(synopses))
   for (const synopsis of synopses) {

@@ -58,6 +58,12 @@ switches); a second walk gives the `plain` output, which is what the search inde
 What the ODD itself gets wrong, and which of its models never fire, is reported on
 the findings page next to what the documents get wrong.
 
+For proof-reading, each poem (a rendered `section` with an id) and each page break
+(`data-page`) links to its lines in the TEI file, as built: the renderer keeps each
+element's source position, and the page carries the lines in an island. The sources
+are copied into `dist/sources/` as scripts, so the source view works from `file://`
+too. Corrections still go to the WebDAV.
+
 ## Layout
 
 | Path | Contents |
@@ -68,7 +74,8 @@ the findings page next to what the documents get wrong.
 | `iiif.ts` | The IIIF image addresses the document pages and the facsimile drawer use |
 | `assets/tokens.css`, `fonts.css` | Design tokens and the fallback face the ODD's CSS refers to |
 | `assets/preview.css` | The preview's own chrome, as plain CSS |
-| `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis |
+| `assets/preview.js` | The reading pages: the switches, the two anchored panels, the way into a synopsis and into the source |
+| `assets/source.js` | The source view (`source.html?A_1648.xml#L12-L80`): the TEI file from `dist/sources/`, numbered and highlighted, only the lines in view drawn |
 | `assets/store.js` | What a reader chose, kept across pages; the one thing the two scripts share |
 | `assets/synopsis.css`, `synopsis.js` | The synopsis pages, loaded by them alone |
 | `assets/facsimile.js` | The facsimile drawer: open, close, resize; OpenSeadragon over the IIIF images |

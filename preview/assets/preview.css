@@ -491,14 +491,44 @@ body { container: page / inline-size; }
 .malformed { font-family: var(--f-ui); font-size: 0.875rem; }
 .malformed pre { overflow-x: auto; padding: 0.75rem; background-color: rgb(var(--c-ink) / 0.05); }
 
-/* On a witness page: the way into the synopsis of the poem standing there. */
-.synopsis-link {
+/* On a witness page: the way into the synopsis of the poem standing there, and into the source. */
+.synopsis-link, .source-link {
   float: right;
   margin-left: 1rem;
   font-family: var(--f-ui);
   font-size: 0.75rem;
   color: rgb(var(--c-muted));
 }
+
+.page-source-link { color: rgb(var(--c-muted)); font-weight: 400; }
+
+/* The source view: fixed lines, so only those in view are drawn; a long line widens the page. */
+main:has(> .source) { max-width: none; margin: 0; }
+.source-head { margin: 0 0 1rem 4.5rem; }
+.source {
+  position: relative;
+  width: max(100%, calc(var(--widest, 0ch) + 6rem));
+  font: 0.8125rem/20px ui-monospace, 'Cascadia Mono', Menlo, Consolas, monospace;
+  tab-size: 2;
+}
+.source-line { position: absolute; left: 0; right: 0; height: 20px; display: flex; white-space: pre; }
+.source-line.is-marked { background-color: rgb(var(--c-accent) / 0.12); }
+.source-line code { font: inherit; }
+.source-no {
+  flex: none;
+  width: 4.5rem;
+  padding-right: 1rem;
+  text-align: right;
+  color: rgb(var(--c-muted));
+  text-decoration: none;
+  user-select: none;
+}
+.source-no:hover { color: rgb(var(--c-accent)); }
+.x-tag { color: rgb(var(--c-org)); }
+.x-attr { color: rgb(var(--c-place)); }
+.x-val { color: rgb(var(--c-work)); }
+.x-ent { color: rgb(var(--c-bibl)); }
+.x-com, .x-decl { color: rgb(var(--c-muted)); font-style: italic; }
 
 @media print {
   .no-print { display: none !important; }

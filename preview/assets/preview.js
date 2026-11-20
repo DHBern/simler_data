@@ -286,4 +286,37 @@
       section.prepend(link)
     })
   }
+
+  // ── The way into the source ──────────────────────────────────────────────
+  // Each poem and each page break links to its lines in the TEI file, from the
+  // island `build.ts` writes: where they stand in the source.
+
+  var source = document.querySelector('script[data-source]')
+  if (source) {
+    var at = JSON.parse(source.textContent)
+    var sourceLink = function (lines) {
+      var a = document.createElement('a')
+      a.className = 'source-link no-print'
+      a.href = 'source.html?' + encodeURIComponent(at.file) + '#L' + lines[0] + (lines[1] > lines[0] ? '-L' + lines[1] : '')
+      a.target = 'simler-source' // one tab for the source, beside the text
+      a.title = 'Im Quelltext, Zeile ' + lines[0] + (lines[1] > lines[0] ? '–' + lines[1] : '')
+      a.textContent = 'XML'
+      return a
+    }
+    Object.keys(at.ids).forEach(function (id) {
+      var section = document.getElementById(id)
+      if (section) section.prepend(sourceLink(at.ids[id]))
+    })
+    // A page's link stands in its break, after the label; a click on it is not one on the break,
+    // which turns the facsimile to the page.
+    document.querySelectorAll('main [data-page]').forEach(function (page) {
+      var lines = at.pages[page.dataset.page]
+      if (!lines) return
+      var link = sourceLink(lines)
+      link.className = 'page-source-link no-print'
+      link.addEventListener('click', function (event) { event.stopPropagation() })
+      link.addEventListener('keydown', function (event) { event.stopPropagation() })
+      page.append(link)
+    })
+  }
 })()
