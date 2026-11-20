@@ -72,13 +72,6 @@ function parseArgs(argv: string[]): Args {
   return args
 }
 
-/** `a`, `a`, `b` → `b`, `2× a`: the same finding twenty times is one finding. */
-function tally(warnings: string[]): string[] {
-  const counts = new Map<string, number>()
-  for (const warning of warnings) counts.set(warning, (counts.get(warning) ?? 0) + 1)
-  return [...counts].map(([warning, n]) => (n > 1 ? `${n}× ${warning}` : warning))
-}
-
 /**
  * The entities this document names, with how often — the card's own page data.
  * A key may list several entries (`person_012 person_310`): each counts.
@@ -150,7 +143,7 @@ function render(
     entities: entities.used,
     warnings: [
       ...idFindings(tree).map(inGerman),
-      ...tally(result.warnings.map(inGerman)),
+      ...result.warnings.map(inGerman),
       ...(result.unmapped.length ? [`Ohne Rendering-Regel, als Fliesstext ausgegeben: ${result.unmapped.join(', ')}`] : []),
       ...(entities.unknown.length
         ? [`rs/@key ohne Eintrag im Register: ${entities.unknown.join(', ')}`]

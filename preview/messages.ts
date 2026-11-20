@@ -8,6 +8,9 @@ const GERMAN: Record<FindingCode, (a: Record<string, string>) => string> = {
   'param-unread': (a) => `Modell ${a.model}: "${a.behaviour}" liest den Parameter "${a.param}" nicht`,
   'behaviour-unknown': (a) => `Modell ${a.model}: unbekanntes Behaviour "${a.behaviour}", als inline ausgegeben`,
   'behaviour-missing': (a) => `Modell ${a.model}: kein @behaviour, als inline ausgegeben`,
+  'sequence-empty': (a) => `Modell ${a.model}: eine leere modelSequence gibt nichts aus`,
+  'param-name-missing': (a) => `Modell ${a.model}: ein Parameter ohne @name wird übergangen`,
+  'ident-missing': () => 'Eine elementSpec ohne @ident wird übergangen',
   'css-class-missing': (a) => `Modell ${a.model}: ein gestaltetes Modell unter mehreren braucht @cssClass, gestaltet als .${a.model}`,
   'model-unreachable': (a) => `Modell ${a.model}: nie erreichbar, ${a.by} entscheidet schon`,
   'model-unreachable-group': (a) => `Modell ${a.model}: nie erreichbar, die Gruppe ab ${a.by} entscheidet schon`,
@@ -23,10 +26,12 @@ const GERMAN: Record<FindingCode, (a: Record<string, string>) => string> = {
   'value-not-listed': (a) => `Wert nicht in der Werteliste der ODD: ${a.element}/@${a.attribute}="${a.value}"`,
   'rendition-undeclared': (a) => `Rendition nicht in der ODD deklariert: #${a.rendition}`,
   'range-no-start': (a) => `Kommentierter Bereich ohne Anfangspunkt: ${a.ids}`,
+  'reference-unresolved': (a) => `Verweis, der zu keinem Element im Dokument führt: ${a.uri}`,
   'anchor-unused': (a) => `Anker, auf den keine Anmerkung zeigt: ${a.ids}`,
   'region-unpaired': (a) => `Bereichsmarke ohne Gegenstück (${a.count}×)`,
   'id-twice': (a) => `xml:id zweimal vergeben, Verweise landen an der falschen Stelle: ${a.id}`,
   'id-invalid': (a) => `xml:id ist kein NCName, XML-Werkzeuge lehnen die Datei ab: ${a.id}`,
 }
 
-export const inGerman = ({ code, args }: Finding): string => GERMAN[code](args)
+/** A repeated finding with how often: `3× …`. */
+export const inGerman = ({ code, args, count }: Finding): string => `${count ? `${count}× ` : ''}${GERMAN[code](args)}`
