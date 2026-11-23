@@ -126,7 +126,7 @@ test('a missing witness and a copied cell are told apart on the page', async () 
 
 test('the overview lists what is aligned, and says so when nothing is', async () => {
   const synopses = await load()
-  assert.match(synopsesPage(synopses), /synopse-n69\.html/)
+  assert.match(synopsesPage(synopses), /varianten-n69\.html/)
   assert.match(synopsesPage([]), /Noch keine Ausrichtung/)
 })
 
@@ -382,7 +382,7 @@ test('the rows the alignment editor doubts are marked, with its reasons', async 
   assert.deepEqual(synopsis.typos, [{ n: 1, readings: { A: 'ein', B: 'eyn' }, letters: 'i/y' }])
   const typo = { href: `${synopsisHref('n7')}#seg-1`, title: 'n7 · Segment 1', file: 'n7', detail: 'i/y: A ein · B eyn' }
   assert.match(findingsPage([], [], [], [typo]),
-    /Mögliche Transkriptionsfehler \(aus den Synopsen\) <span class="flag">1<\/span>[\s\S]*?<a href="synopse-n7\.html#seg-1">n7 · Segment 1<\/a>/)
+    /Mögliche Transkriptionsfehler \(aus den Varianten\) <span class="flag">1<\/span>[\s\S]*?<a href="varianten-n7\.html#seg-1">n7 · Segment 1<\/a>/)
   // Without a measurement nothing is marked, and nothing fails.
   assert.equal((await loadSynopses(dir, '', join(dir, 'none.json')))[0].doubtful, 0)
 })
@@ -429,9 +429,9 @@ test("a poem's variants are summed up by category, and by pair of witnesses", as
   assert.match(overview, /<option value="data-word">Wortvariante<\/option>/)
   assert.match(overview, /<td><span class="syn-stack"><span class="syn-strip"><svg viewBox="0 0 2 1"/)
   assert.doesNotMatch(overview.split('syn-stack')[1], /<a href="#seg/)
-  assert.match(overview, /<summary>Lesarten: 2 verschiedene an 6 Stellen[^<]*<\/summary>\s*<details class="syn-cat" data-cat="orthography">\s*<summary>Orthographie <span class="count">1 verschiedene an 4 Stellen<\/span><\/summary>\s*<ol><li>\s*<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>\s*<span class="places"><a href="synopse-n7\.html#seg-\d+">n7<\/a> <a href="synopse-n8\.html#seg-\d+">n8<\/a>/)
+  assert.match(overview, /<summary>Lesarten: 2 verschiedene an 6 Stellen[^<]*<\/summary>\s*<details class="syn-cat" data-cat="orthography">\s*<summary>Orthographie <span class="count">1 verschiedene an 4 Stellen<\/span><\/summary>\s*<ol><li>\s*<b>vnd<\/b> <span class="sep">\|<\/span> <b>und<\/b>\s*<span class="count">×4 in 2 Gedichten<\/span>\s*<span class="places"><a href="varianten-n7\.html#seg-\d+">n7<\/a> <a href="varianten-n8\.html#seg-\d+">n8<\/a>/)
   // A set found once is listed too, in its poem only.
-  assert.match(synopsesPage([synopsis]), /<span class="count">×2<\/span>\s*<span class="places"><a href="synopse-n7\.html#seg-\d+">n7<\/a><\/span>/)
+  assert.match(synopsesPage([synopsis]), /<span class="count">×2<\/span>\s*<span class="places"><a href="varianten-n7\.html#seg-\d+">n7<\/a><\/span>/)
 })
 
 test('the page says which export it was built from', async () => {

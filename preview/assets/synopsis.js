@@ -1,7 +1,7 @@
 /**
  * The synopsis pages: what the reader can choose, and the keys; the overview's sort.
  *
- * A classic script, loaded only by `synopse-*.html`; `previewStore.js` comes first and
+ * A classic script, loaded only by `varianten-*.html`; `previewStore.js` comes first and
  * holds the one thing this shares with `preview.js`.
  */
 (function () {

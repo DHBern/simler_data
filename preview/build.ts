@@ -277,7 +277,7 @@ async function main() {
   await writeFile(join(out, 'index.html'), indexPage(docs, source, blob, odd.availability))
   await writeFile(join(out, 'source.html'), sourcePage(blob))
   await writeFile(join(out, 'search.html'), searchPage(docs))
-  await writeFile(join(out, 'synopsen.html'), synopsesPage(synopses))
+  await writeFile(join(out, 'varianten.html'), synopsesPage(synopses))
   for (const synopsis of synopses) {
     await writeFile(join(out, synopsisHref(synopsis.id)), synopsisPage(synopsis))
   }
@@ -289,7 +289,7 @@ async function main() {
   await writeFile(join(out, 'findings.html'), findingsPage(docs, odd.findings.map(inGerman), gaps, typos))
   await buildIndex(docs, out)
 
-  console.log(`Synopsen: ${synopses.length} aus ${posix(relative(resolve(here, '..'), ALIGNMENTS))}.`)
+  console.log(`Varianten: ${synopses.length} Gedichte aus ${posix(relative(resolve(here, '..'), ALIGNMENTS))}.`)
 
   const named = new Set(docs.flatMap((doc) => Object.keys(doc.entities)))
   console.log(`Register: ${Object.keys(registers).length} Einträge, ${named.size} im Korpus genannt.`)

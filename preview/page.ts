@@ -129,7 +129,7 @@ function libraryRoot(root: string): string | null {
 
 /** The corpus pages, for the bar; the page we are on is marked. */
 const NAV = [['index.html', 'Übersicht'], ['search.html', 'Suche'],
-  ['synopsen.html', 'Synopsen'], ['findings.html', 'Hinweise']]
+  ['varianten.html', 'Varianten'], ['findings.html', 'Hinweise']]
 const nav = (here = ''): string => NAV.map(([href, text]) =>
   `<a class="bar-home" href="${href}"${href === here ? ' aria-current="page"' : ''}>${text}</a>`).join('\n    ')
 
@@ -448,7 +448,7 @@ export function findingsPage(docs: PreviewDoc[], odd: string[], coverage: string
   const body = group('XML nicht wohlgeformt', malformed, 'flag flag-error')
     + aboutOdd('ODD', odd) + aboutOdd('ODD-Abdeckung', coverage)
     // What the synopses show: a reading one letter off, the kind a transcriber of Fraktur misreads.
-    + group('Mögliche Transkriptionsfehler (aus den Synopsen)', typos.map((t) => `<tr>
+    + group('Mögliche Transkriptionsfehler (aus den Varianten)', typos.map((t) => `<tr>
           <td><a href="${esc(t.href)}">${esc(t.title)}</a></td><td class="file">${esc(t.file)}</td><td>${esc(t.detail)}</td>
         </tr>`)) + [...groups]
       .sort(([a, x], [b, y]) => y.length - x.length || a.localeCompare(b, 'de'))

@@ -282,7 +282,7 @@
       var link = document.createElement('a')
       link.className = 'synopsis-link no-print'
       link.href = hrefs[id]
-      link.textContent = 'Synopse'
+      link.textContent = 'Varianten'
       section.prepend(link)
     })
   }

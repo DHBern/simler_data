@@ -9,7 +9,7 @@ import { CATEGORIES, charDiff, SETTINGS, type Category, type Entry, type Group, 
 import { corpusPage, esc } from './page'
 
 /** Where a poem's synopsis lives; the pages sit flat beside the documents. */
-export const synopsisHref = (id: string): string => `synopse-${encodeURIComponent(id)}.html`
+export const synopsisHref = (id: string): string => `varianten-${encodeURIComponent(id)}.html`
 
 /** The categories as the reader sees them: a name, and what it holds. */
 const CATEGORY_LABELS = Object.fromEntries(CATEGORIES.map((c) => [c, [SETTINGS.categories[c].label, SETTINGS.categories[c].title]])) as Record<Category, [string, string]>
@@ -436,7 +436,7 @@ function sourceLine({ id, provenance, segments }: Synopsis): string {
   return `<p class="syn-source">
       Automatisch ausgerichtet ${provenance.tool ? `mit ${esc(provenance.tool)}` : 'in LERA'}, Verfahren <code>${esc(provenance.algorithm)}</code>${provenance.updated ? `, zuletzt geändert am ${esc(provenance.updated)}` : ''};
       ${types ? `Typen: ${types}; ` : ''}Datei <code>alignment/documents/${esc(id)}.json</code>.
-      · <a href="synopsen.html">Alle Synopsen</a>
+      · <a href="varianten.html">Alle Gedichte mit Varianten</a>
     </p>`
 }
 
@@ -542,7 +542,7 @@ export function synopsisPage(synopsis: Synopsis): string {
 
   // Stacked on a phone, each cell names its witness.
   const sigla = `<style>${witnesses.map((w, i) => `.synopsis [data-w="${i + 1}"]{--siglum:${JSON.stringify(w.siglum)}}`).join('')}</style>`
-  return corpusPage('', `${title} · Synopse`, `
+  return corpusPage('', `${title} · Varianten`, `
     ${summaryLine(synopsis)}
     <div data-synopsis data-colour="type">
       ${synopsisControls(synopsis)}
@@ -589,9 +589,9 @@ export function synopsesPage(synopses: Synopsis[]): string {
   const sorts = [['', 'Gedicht'], ['data-variants', 'Varianten'], ['data-doubtful', 'zweifelhaft'], ['data-segments', 'Segmente'],
     ...CATEGORIES.map((c) => [`data-${c}`, CATEGORY_LABELS[c][0]])]
 
-  return corpusPage('synopsen.html', `Synopsen · ${synopses.length}`, `
+  return corpusPage('varianten.html', `Varianten · ${synopses.length} Gedichte`, `
     <p class="lead">
-      Gedichte, die in mehreren Ausgaben stehen. Jede Synopse stellt die Fassungen nebeneinander
+      Gedichte, die in mehreren Ausgaben stehen. Jede Seite stellt die Fassungen nebeneinander
       und hebt die Abweichungen hervor. <i>Grundlage</i> sagt, wer ausgerichtet hat — TextAlign
       oder LERA, beide automatisch — und ob eine Person die Ausrichtung geprüft hat;
       <i>zweifelhaft</i> zählt die Segmente, deren Ausrichtung noch jemand prüfen sollte.
