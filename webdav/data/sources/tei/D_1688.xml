@@ -8461,7 +8461,6 @@
                            <fw place="bottom" type="catch"><supplied>es na-</supplied></fw>
                            <lb/>
                            <pb facs="4076868" n="93"/>
-
                            <fw place="top" type="pageNum">93</fw>
                            <fw place="top" type="header">Vom leiden Chriſti.</fw>
                            <lb/>
@@ -11143,7 +11142,7 @@
                   <lb/>
                   <div type="music">
                      <div>
-                        <!-- Cantus -->
+                        <!-- Cantus, keine Überschrift hier – einfügen? -->
                         <lb/>
                         <lg>
                            <figure type="notatedMusic"/>
@@ -11465,6 +11464,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Strophe 4 – Erste Einrückung wurde nicht umgesetzt "wil ewigklich […]" -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
@@ -12962,12 +12962,12 @@
                            <fw place="bottom" type="catch">ehr</fw>
                            <lb/>
                            <pb facs="4076926" n="151"/>
-
                            <fw place="top" type="pageNum">151</fw>
                            <fw place="top" type="header">fu&#x364;r gna&#x364;dige Erho&#x364;rung/
                               ꝛc.</fw>
                            <lb/>
 
+                           <!-- Strophe 14 – et2 wird nicht eingehalten -->
                            <cb type="start"/>
                            <l>ehr und dank dir ſollen geben</l>
                            <lb/>
@@ -13219,7 +13219,7 @@
                            <l rendition="#et">damit ſie des tages verku&#x364;nderin ſey.</l>
                         </lg>
                         <lb/>
-                        
+
                         <lg n="2">
                            <head rendition="#c">2.</head>
                            <lb/>
@@ -13233,7 +13233,7 @@
                            <l rendition="#et">den ſcho&#x364;pfer zu loben/ mit ihnen erwacht.</l>
                         </lg>
                         <lb/>
-                        
+
                         <lg n="3">
                            <head rendition="#c">3.</head>
                            <lb/>
@@ -13246,7 +13246,7 @@
                            <l rendition="#et">verjaget das dunkel ab erden und meer.</l>
                         </lg>
                         <lb/>
-                        
+
                         <lg n="4">
                            <head rendition="#c">4.</head>
                            <lb/>
@@ -13280,7 +13280,7 @@
                            <l rendition="#et">nach meinem beruffe zuhandlen ohn klag.</l>
                         </lg>
                         <lb/>
-                        
+
                         <lg n="6">
                            <head rendition="#c">6.</head>
                            <lb/>
@@ -13293,7 +13293,7 @@
                            <l rendition="#et">vor allem doch ſuche das ewig und dich!</l>
                         </lg>
                         <lb/>
-                        
+
                         <lg n="7">
                            <head rendition="#c">7.</head>
                            <lb/>
@@ -14275,6 +14275,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Zweite Spalte – Einrückungen wurden nicht eingehalten -->
                      <lg type="poem">
                         <lg n="2">
                            <head rendition="#c">2.</head>
@@ -15386,6 +15387,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Strophe 4 – Erste Einrückung "und fallt […]" nicht umgesetzt -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
@@ -15501,6 +15503,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Strophe 9 – Erste Einrückung "alß wol […]" nicht umgesetzt -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="6">
@@ -15807,6 +15810,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Einrückungen nicht ganz klar, auf nächster Seite einheitlicher -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="2">
@@ -17208,6 +17212,7 @@
                      <lb/>
                      <p rendition="#c">Jn der weiſe: Wie ſcho&#x364;n leucht uns der/ ꝛc.</p>
                      <lb/>
+                     <!-- Strophe 5 – Die letzten zwei Zeilen sind eingerückt, nicht nach "Muster" -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="1">
@@ -18765,7 +18770,6 @@
                            <fw place="bottom" type="catch">mit</fw>
                            <lb/>
                            <pb facs="4077003" n="228"/>
-
                            <fw place="top" type="pageNum">228</fw>
                            <fw place="top" type="header">Das ſibende</fw>
                            <lb/>
@@ -19942,6 +19946,7 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Strophe 5 – Zweite Einrückung "wie außgeweiset […]" nicht eingehalten -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="5">
@@ -20371,6 +20376,8 @@
                      </div>
                   </div>
                   <div type="poem">
+                     <!-- Strophe 5 – Erste Einrückung "Herr Caspar […] nicht eingehalten -->
+                     <!-- Strophe 7 – Erste "vom Waserhauß […]" und dritte "des Schöpfers […]" Einrückung nicht eingehalten -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="5">
@@ -25873,6 +25880,7 @@
                <lb/>
                <div n="2" xml:id="D.11_3" prev="#D.11_2">
                   <div type="poem">
+                     <!-- Strophe 4 – zweite doppelte Einrückung "Nun auch […]" nicht eingehalten -->
                      <cb type="start"/>
                      <lg type="poem">
                         <lg n="3">
@@ -36063,10 +36071,10 @@
                   <lb/>
                   <l rendition="#aq">Vtraque ſed juſtis eſt aliena viris.</l>
                   <lb/>
-                  <l>Der Fuchß argliſtig iſt: gwalth<supplied>a&#x364;</supplied>tig iſt der
-                     Leu;</l>
+                  <l rendition="#et2">Der Fuchß argliſtig iſt:
+                     gwalth<supplied>a&#x364;</supplied>tig iſt der Leu;</l>
                   <lb/>
-                  <l>nach anerborner art: der fromm fallt keinem bey.</l>
+                  <l rendition="#et2">nach anerborner art: der fromm fallt keinem bey.</l>
                </lg>
                <lb/>
             </div>
@@ -36099,8 +36107,8 @@
                <cb type="end"/>
             </div>
             <div n="2" xml:id="n152">
-               <head rendition="#b #c">82. Klinggetichte/ <lb/> Uber Herꝛen Felix Weiſſen/ ꝛc. hundert Chriſt-<lb
-                     break="no"/>liche/ neu&#x364;außgegebene Feſtpredigen.</head>
+               <head rendition="#b #c">82. Klinggetichte/ <lb/> Uber Herꝛen Felix Weiſſen/ ꝛc.
+                  hundert Chriſt-<lb break="no"/>liche/ neu&#x364;außgegebene Feſtpredigen.</head>
                <lb/>
                <lg type="poem">
                   <l>Es ſchallet viler Nam&#x342; noch heut in aller welt/</l>
@@ -37758,7 +37766,7 @@
                   <l xml:id="l248b" prev="#l248a">det</l>
                   <lb/>
                   <cb/>
-                  <l>weſſen Blut die Felſen bricht.</l>
+                  <l rendition="#et">weſſen Blut die Felſen bricht.</l>
                   <lb/>
                   <l>Glarus iſt ein feiner Ort:</l>
                   <lb/>
@@ -40475,9 +40483,9 @@
                <lb/>
             </div>
             <div n="2" xml:id="n216">
-               <head rendition="#b #c">238. Sonnet/ <lb/> oder <lb/> Trauriger Todtenklang/ <lb/> u&#x364;ber <lb/>
-                  Herꝛen Lands-Haubtmann Meinrad <lb/> Buolen/ ihme ſeliges; dem Vatterland <lb/>
-                  ho&#x364;chſtſcha&#x364;dliches Ab-<lb break="no"/>leiben.</head>
+               <head rendition="#b #c">238. Sonnet/ <lb/> oder <lb/> Trauriger Todtenklang/ <lb/>
+                  u&#x364;ber <lb/> Herꝛen Lands-Haubtmann Meinrad <lb/> Buolen/ ihme ſeliges; dem
+                  Vatterland <lb/> ho&#x364;chſtſcha&#x364;dliches Ab-<lb break="no"/>leiben.</head>
                <lb/>
                <lg type="poem">
                   <l><hi rendition="#larger">Ach!</hi> armes <hi rendition="#larger"
